@@ -492,11 +492,11 @@
   "readingText": {
     "type": "diary",
     "title": "민준의 첫 한글 공부 (Minjun's First Hangul Study)",
-    "body": "오늘 처음으로 한글을 공부했어요. 한글 글자는 자음과 모음으로 만들어요. 자음이 열 개 있어요: ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ, ㅈ, ㅎ. 모음도 있어요: ㅏ, ㅓ, ㅗ, ㅜ, ㅡ, ㅣ. 이 자음과 모음을 합치면 글자가 돼요. 예를 들어, ㅎ + ㅏ + ㄴ = 한이에요. 처음에는 어려웠지만 이제 조금 읽을 수 있어요. 내일 더 연습할 거예요.",
-    "bodyTranslation": "Today I studied Hangul for the first time. Hangul characters are made with consonants and vowels. There are ten consonants: ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ, ㅈ, ㅎ. There are also vowels: ㅏ, ㅓ, ㅗ, ㅜ, ㅡ, ㅣ. When you combine these consonants and vowels, you get a character. For example, ㅎ + ㅏ + ㄴ = 한. At first it was difficult, but now I can read a little. I will practice more tomorrow.",
+    "body": "오늘 처음으로 한글을 공부했어요. 한글 글자는 자음과 모음으로 만들어요. 오늘 자음 열 개를 배웠어요: ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ, ㅈ, ㅎ. 모음도 여섯 개 배웠어요: ㅏ, ㅓ, ㅗ, ㅜ, ㅡ, ㅣ. 이 자음과 모음을 합치면 글자가 돼요. 예를 들어, ㅎ + ㅏ + ㄴ = 한이에요. 처음에는 어려웠지만 이제 조금 읽을 수 있어요. 내일 더 연습할 거예요.",
+    "bodyTranslation": "Today I studied Hangul for the first time. Hangul characters are made with consonants and vowels. Today I learned ten consonants: ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ, ㅈ, ㅎ. I also learned six vowels: ㅏ, ㅓ, ㅗ, ㅜ, ㅡ, ㅣ. When you combine these consonants and vowels, you get a character. For example, ㅎ + ㅏ + ㄴ = 한. At first it was difficult, but now I can read a little. I will practice more tomorrow.",
     "comprehensionQuestions": [
       {
-        "question": "How many basic consonants does Minjun list in the diary?",
+        "question": "How many consonants did Minjun learn today?",
         "answer": "열 개 (ten) — ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ, ㅈ, ㅎ"
       },
       {
@@ -505,7 +505,7 @@
       },
       {
         "question": "Find all the 이에요/예요 copula forms in the text. Why does each one appear, and when does the ending change from 이에요 to 예요?",
-        "answer": "The true copula form in the text is 한이에요: 한 ends in the final consonant ㄴ, so it takes 이에요. 글자가 돼요 is not 이에요/예요; it is 되다, meaning 'becomes.' The reusable rule is: consonant-final words take 이에요, vowel-final words take 예요."
+        "answer": "Two: 한이에요 (한 ends in the final consonant ㄴ, so it takes 이에요) and 거예요 in 연습할 거예요 (거 ends in a vowel, so it takes 예요). 글자가 돼요 is not the copula; it is 되다, meaning becomes. The reusable rule is: consonant-final words take 이에요, vowel-final words take 예요."
       }
     ]
   },

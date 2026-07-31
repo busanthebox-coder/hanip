@@ -87,7 +87,7 @@
 
     <div class="nav">
       <button class="go" disabled={!resolved} on:click={next}>
-        {i === cards.length - 1 ? '한 입 끝 →' : '다음 →'}
+        {i === cards.length - 1 ? '한 입 끝 · Finish →' : '다음 · Next →'}
       </button>
     </div>
   {:else if finished}
@@ -100,14 +100,14 @@
         </g>
         <path d="M6 20 h36 a1 1 0 0 1 -4 16 a14 8 0 0 1 -28 0 a1 1 0 0 1 -4-16 z" fill="none" stroke="var(--ink)" stroke-width="2.4"/>
       </svg>
-      <h2>한 입 끝!</h2>
+      <h2>한 입 끝! <span class="h-en">Bite done!</span></h2>
       {#if answeredCount}
-        <div class="score">{answeredCount}문제 중 {correctCount}개 스스로 맞혔어요</div>
+        <div class="score">{correctCount} of {answeredCount} on your own · {answeredCount}문제 중 {correctCount}개</div>
       {/if}
       {#if bite.canDo}<div class="cando">☑ {bite.canDo}</div>{/if}
       <div class="actions">
-        <button class="go" on:click={() => onExit(true, true)}>한 입 더 →</button>
-        <button class="ghost" on:click={() => onExit(true, false)}>오늘은 여기까지</button>
+        <button class="go" on:click={() => onExit(true, true)}>한 입 더 · One more bite →</button>
+        <button class="ghost" on:click={() => onExit(true, false)}>오늘은 여기까지 · Done for today</button>
       </div>
     </div>
   {/if}
@@ -142,6 +142,7 @@
   .bowl .fill { transform: translateY(28px); animation: fillup 1.1s var(--ease) .15s forwards; }
   @keyframes fillup { to { transform: translateY(5px); } }
   .win h2 { margin: 14px 0 0; font-size: 27px; font-weight: 900; }
+  .h-en { display: block; font-size: 14px; font-weight: 800; color: var(--ink-3); }
   .score { margin-top: 6px; font-size: 13.5px; color: var(--ink-2); font-weight: 700; }
   .cando { margin-top: 12px; padding: 11px 16px; border-radius: 14px; background: var(--good-soft); color: var(--good-deep);
     font-size: 14px; font-weight: 750; word-break: keep-all; }

@@ -9,7 +9,7 @@
   onResolve(true);
 </script>
 
-<div class="step-label">배우기 · {card.name}</div>
+<div class="step-label">배우기 · Learn — {card.name}</div>
 {#if card.sub}<div class="q">{card.sub}</div>{/if}
 
 {#if card.rows?.length}
@@ -38,7 +38,7 @@
 {/if}
 
 {#if card.more && (card.more.func || card.more.keyPoint)}
-  <button class="more-link" on:click={() => { moreShown = !moreShown; }}>더 알아보기 {moreShown ? '⌃' : '⌄'}</button>
+  <button class="more-link" on:click={() => { moreShown = !moreShown; }}>더 알아보기 · Full explanation {moreShown ? '⌃' : '⌄'}</button>
   {#if moreShown}
     <div class="more-body">
       {#if card.more.func}<p>{card.more.func}</p>{/if}

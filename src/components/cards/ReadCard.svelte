@@ -12,24 +12,24 @@
   $: if (allRead) onResolve(true);
 </script>
 
-<div class="step-label">읽기 · {card.title}</div>
+<div class="step-label">읽기 · Reading — {card.title}</div>
 
 <div class="paper">
   {#each card.chunks.slice(0, chunkShown) as chunk}
     <p class="chunk">{chunk}</p>
   {/each}
   {#if chunkShown < card.chunks.length}
-    <button class="more" on:click={() => { chunkShown += 1; }}>계속 읽기 ⌄</button>
+    <button class="more" on:click={() => { chunkShown += 1; }}>계속 읽기 · Keep reading ⌄</button>
   {:else if card.translation}
     <button class="more ghost" on:click={() => { translationOpen = !translationOpen; }}>
-      {translationOpen ? '번역 접기 ⌃' : '번역 보기 ⌄'}
+      {translationOpen ? '번역 접기 · Hide translation ⌃' : '번역 보기 · Show translation ⌄'}
     </button>
     {#if translationOpen}<p class="trans">{card.translation}</p>{/if}
   {/if}
 </div>
 
 {#if allRead && card.qas.length}
-  <div class="qa-cap">스스로 확인 — 탭해서 답 맞춰보기</div>
+  <div class="qa-cap">스스로 확인 · Check yourself — tap a question to flip the answer</div>
   <div class="qas">
     {#each card.qas as qa, i}
       <button class="qa" class:open={flipped[i]} on:click={() => { flipped = { ...flipped, [i]: !flipped[i] }; }}>

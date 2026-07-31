@@ -15,8 +15,8 @@
 </script>
 
 <section class="shelf">
-  <div class="cap">책장 · A1 코스 전체</div>
-  <p class="sub">챕터를 열면 한입 목록이 나와요. 아무 한입이나 골라 다시 씹을 수 있어요.</p>
+  <div class="cap">책장 · Bookshelf — the whole A1 course</div>
+  <p class="sub">Open a chapter to see its bites — replay any of them anytime. · 챕터를 열면 한입 목록이 나와요.</p>
 
   <div class="rows">
     {#each chapters as ch}

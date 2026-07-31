@@ -31,14 +31,14 @@
   }
 </script>
 
-<div class="step-label">{card.warmup ? '복습 · 기억나요?' : '단어 · 추측 먼저'}</div>
+<div class="step-label">{card.warmup ? '복습 · Do you remember?' : '단어 · Guess first'}</div>
 
 {#if parts}
   <div class="sent">{parts.pre}<span class="target">{parts.mid}</span>{parts.post}</div>
 {:else}
   <div class="sent"><span class="target">{card.word.ko}</span></div>
 {/if}
-<div class="q">무슨 뜻일까요?</div>
+<div class="q">무슨 뜻일까요? <span class="q-en">What does the highlighted word mean?</span></div>
 
 <div class="chips">
   {#each card.options as opt}
@@ -51,7 +51,7 @@
   {/each}
 </div>
 {#if !revealed}
-  <button class="dunno" on:click={giveUp}>몰라요 — 그냥 보여주세요</button>
+  <button class="dunno" on:click={giveUp}>몰라요 · Don't know — just show me</button>
 {/if}
 
 {#if revealed}
@@ -66,7 +66,7 @@
     {/if}
     {#if card.note}<div class="note sub">{card.note}</div>{/if}
     {#if !romajaShown}
-      <button class="romaja" on:click={() => { romajaShown = true; }}>발음 보기</button>
+      <button class="romaja" on:click={() => { romajaShown = true; }}>발음 · Show romanization</button>
     {:else}
       <div class="note sub">{card.word.romanization}</div>
     {/if}
@@ -78,6 +78,7 @@
   .sent { margin: 16px 0 4px; font-size: 26px; font-weight: 750; line-height: 1.5; word-break: keep-all; }
   .target { background: var(--gold-soft); border-bottom: 3px solid var(--gold); border-radius: 4px 4px 0 0; padding: 0 2px; }
   .q { font-size: 19px; font-weight: 800; }
+  .q-en { display: block; font-size: 12.5px; font-weight: 650; color: var(--ink-3); }
   .chips { margin-top: 14px; display: grid; gap: 9px; }
   .chip { padding: 14px 16px; border-radius: var(--r-chip); background: var(--card); border: 1.5px solid var(--line);
     font-size: 16px; font-weight: 700; text-align: left;

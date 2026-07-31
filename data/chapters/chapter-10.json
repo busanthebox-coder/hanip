@@ -539,7 +539,7 @@
       },
       {
         "question": "Find every use of 부터 and 까지 in the text. Why is each one used — and why does one sentence use both?",
-        "answer": "몇 시까지 열어? — 까지 alone marks the end-point of the opening hours (asking 'until what time'). 오전 9시부터 오후 6시까지 열어 — both 부터 and 까지 appear because Mina is giving the full range: 'from 9 AM (부터 = start) to 6 PM (까지 = end)'. The first question only needed the endpoint; the answer needed both endpoints of the ruler."
+        "answer": "몇 시까지 열어? — 까지 alone marks the end-point of the opening hours (asking 'until what time'). 오전 9시부터 오후 6시까지 열어 — both 부터 and 까지 appear because Mina is giving the full range: 'from 9 AM (부터 = start) to 6 PM (까지 = end)'. The first question only needed the endpoint; the answer needed both endpoints of the ruler. And 2호선 타는 곳까지 걸어서 5분이야 — 까지 marking the spatial end-point of the walk (as far as the Line 2 boarding area)."
       }
     ]
   },

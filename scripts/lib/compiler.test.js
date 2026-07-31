@@ -2,10 +2,45 @@ import { describe, expect, it } from 'vitest';
 import {
   expandVariants,
   findPattern,
+  findAllPatterns,
   huntTokens,
+  guessTarget,
   buildWordBites,
   buildPatternBites,
 } from './compiler.mjs';
+
+describe('guessTarget', () => {
+  const w = (hangul, pos) => ({ hangul, partOfSpeech: pos, english: 'x' });
+  it('matches fused vowel conjugations', () => {
+    expect(guessTarget(w('오다', 'verb'), '오늘 친구가 집에 와요.')).toBe('와요'.slice(0, 1) === '와' ? '와' : null);
+    expect(guessTarget(w('마시다', 'verb'), '물을 마셔요.')).toBe('마셔');
+    expect(guessTarget(w('기다리다', 'verb'), '여기서 기다릴게요.')).toBe('기다릴');
+    expect(guessTarget(w('걸리다', 'verb'), '한 시간쯤 걸려요.')).toBe('걸려');
+  });
+  it('never lets 오다 claim 오늘', () => {
+    // 오늘 contains 오 but no conjugated form of 오다 — must return null, not 오
+    expect(guessTarget(w('오다', 'verb'), '오늘 날씨가 좋아요.')).toBeNull();
+  });
+  it('handles 하다 contraction and ㅂ-irregular', () => {
+    expect(guessTarget(w('공부하다', 'verb'), '도서관에서 공부해요.')).toBe('공부해');
+    expect(guessTarget(w('반갑다', 'adjective'), '만나서 반가워요.')).toBe('반가워');
+  });
+  it('splits slashed headwords', () => {
+    expect(guessTarget(w('이거 / 이것', 'pronoun'), '이것도 주세요.')).toBe('이것');
+  });
+  it('returns null when the word truly is not in the sentence', () => {
+    expect(guessTarget(w('시간', 'noun'), '몇 시에 만나요?')).toBeNull();
+  });
+});
+
+describe('findAllPatterns', () => {
+  it('marks every instance, not just the first', () => {
+    const matches = findAllPatterns('아홉 시부터 여섯 시까지 있어요. 학교까지 가요.', ['부터', '까지']);
+    expect(matches.length).toBe(3);
+    const tokens = huntTokens('여섯 시까지 있어요. 학교까지 가요.', findAllPatterns('여섯 시까지 있어요. 학교까지 가요.', ['까지']));
+    expect(tokens.filter((t) => t.hit).length).toBe(2);
+  });
+});
 
 describe('expandVariants', () => {
   it('splits whole-segment particle pairs', () => {

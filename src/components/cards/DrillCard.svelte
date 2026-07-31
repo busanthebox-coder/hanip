@@ -13,7 +13,7 @@
   }
 </script>
 
-<div class="step-label">확인 · 다 걸어요</div>
+<div class="step-label">확인 · Check yourself</div>
 <div class="q">{card.prompt}</div>
 {#if card.sentence}<div class="sent">{card.sentence}</div>{/if}
 

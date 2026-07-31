@@ -7,10 +7,11 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const srcDir = join(root, 'data', 'chapters');
 const outFile = join(root, 'src', 'lib', 'bites.json');
 
+const overrides = JSON.parse(readFileSync(join(root, 'data', 'overrides.json'), 'utf8'));
 const files = readdirSync(srcDir).filter((f) => f.endsWith('.json')).sort();
 const chapters = files.map((f, i) => {
   const raw = JSON.parse(readFileSync(join(srcDir, f), 'utf8'));
-  return compileChapter(raw, i + 1);
+  return compileChapter(raw, i + 1, overrides);
 });
 
 mkdirSync(dirname(outFile), { recursive: true });

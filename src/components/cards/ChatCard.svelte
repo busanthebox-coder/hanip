@@ -18,7 +18,7 @@
   }
 </script>
 
-<div class="step-label">대화 · 한 줄씩</div>
+<div class="step-label">대화 · Real dialogue, line by line</div>
 {#if card.setting}<div class="setting">{card.setting}</div>{/if}
 
 <div class="thread">
@@ -35,9 +35,9 @@
 </div>
 
 {#if shown < card.lines.length}
-  <button class="reveal-next" on:click={reveal}>다음 줄 ⌄ ({shown}/{card.lines.length})</button>
+  <button class="reveal-next" on:click={reveal}>다음 줄 · Next line ⌄ ({shown}/{card.lines.length})</button>
 {:else}
-  <div class="done-hint">말풍선을 탭하면 번역이 보여요</div>
+  <div class="done-hint">말풍선 탭 = 번역 · Tap a bubble for English</div>
 {/if}
 
 <style>

@@ -28,25 +28,26 @@
   }
   function hookLine(next) {
     const kindMap = {
-      words: '새 단어를 추측으로 만나요',
-      pattern: '예문에서 무늬를 직접 찾아요',
-      dialogue: '진짜 대화를 한 줄씩 읽어요',
-      reading: '짧은 글 한 편을 읽어내요',
-      boss: '이번 과 전부를 걸어봐요',
+      words: 'Meet new words by guessing first — 새 단어를 추측으로',
+      pattern: 'Find the repeating pattern yourself — 무늬를 직접 찾아요',
+      dialogue: 'Read a real conversation line by line — 진짜 대화',
+      reading: 'Read a short passage — 짧은 글 한 편',
+      boss: 'Everything from this chapter — 이번 과 전부',
     };
-    return kindMap[next.bite.kind] || '3분이면 충분해요';
+    return kindMap[next.bite.kind] || 'Three minutes is plenty — 3분이면 충분해요';
   }
 </script>
 
 <section class="home">
-  <div class="kicker">오늘의 한 입 {#if nextBite}· {nextBite.chapter.number}과{/if}</div>
+  <div class="kicker">오늘의 한 입 · Today's bite {#if nextBite}· Ch. {nextBite.chapter.number}{/if}</div>
 
   {#if nextBite}
     <h1 class="word">{headWord(nextBite.bite)}</h1>
-    <p class="hook">{hookLine(nextBite)} · {nextBite.bite.title}</p>
+    <p class="hook">{hookLine(nextBite)}</p>
+    <p class="hook sub">{nextBite.bite.title}</p>
   {:else}
     <h1 class="word">다 먹었어요!</h1>
-    <p class="hook">A1 코스의 모든 한입을 끝냈어요. 책장에서 아무 한입이나 다시 씹어보세요.</p>
+    <p class="hook">All done — you finished every bite in A1. Re-chew any bite from the bookshelf. · 책장에서 아무 한입이나 다시 씹어보세요.</p>
   {/if}
 
   <div class="bowl-row">
@@ -59,13 +60,13 @@
       <path d="M6 20 h36 a1 1 0 0 1 -4 16 a14 8 0 0 1 -28 0 a1 1 0 0 1 -4-16 z" fill="none" stroke="var(--ink)" stroke-width="2.4"/>
     </svg>
     <div class="bowl-cap">
-      <b>이번 주 {bowls}그릇</b>
-      <span>{bitesToday > 0 ? `오늘 ${bitesToday}입 먹었어요` : '오늘 그릇이 비어 있어요'} · 지금까지 {doneTotal}입</span>
+      <b>이번 주 {bowls}그릇 · {bowls} bowl{bowls === 1 ? '' : 's'} this week</b>
+      <span>{bitesToday > 0 ? `today ${bitesToday} bite${bitesToday === 1 ? '' : 's'} · 오늘 ${bitesToday}입` : "today's bowl is empty · 오늘 그릇이 비어 있어요"} · total {doneTotal}</span>
     </div>
   </div>
 
   {#if nextBite}
-    <button class="start" on:click={() => onStart(nextBite.chapter, nextBite.bite)}>시작 →</button>
+    <button class="start" on:click={() => onStart(nextBite.chapter, nextBite.bite)}>시작 · Start →</button>
   {/if}
 </section>
 
@@ -76,6 +77,7 @@
   .word { margin: 90px 0 0; font-size: clamp(56px, 17vw, 76px); font-weight: 900; letter-spacing: -.02em; line-height: 1.05;
     word-break: keep-all; text-wrap: balance; }
   .hook { margin: 12px 0 0; font-size: 15.5px; color: var(--ink-2); font-weight: 650; word-break: keep-all; text-wrap: pretty; }
+  .hook.sub { margin-top: 4px; font-size: 12.5px; color: var(--ink-3); font-weight: 700; }
   .bowl-row { margin-top: 28px; display: flex; align-items: center; gap: 12px; }
   .bowl { width: 46px; height: 46px; flex: none; }
   .bowl-cap { display: grid; font-size: 12.5px; color: var(--ink-3); font-weight: 700; }

@@ -37,11 +37,11 @@
   }
 </script>
 
-<div class="step-label">배열 · 한국어 어순으로</div>
+<div class="step-label">배열 · Korean word order</div>
 <div class="q">{card.prompt}</div>
 
 <div class="slot" class:right={state === 'right'} class:wrong={state === 'wrong'}>
-  {#if picked.length === 0}<span class="hint">어절을 순서대로 탭하세요</span>{/if}
+  {#if picked.length === 0}<span class="hint">어절을 순서대로 탭하세요 · Tap the tiles in Korean order</span>{/if}
   {#each picked as tokenText, i}
     <button class="tile picked" on:click={() => untake(i)}>{tokenText}</button>
   {/each}
@@ -56,11 +56,11 @@
 {#if state === 'right'}
   <div class="why good-note">{card.correct}{#if card.explanation} — {card.explanation}{/if}</div>
 {:else if state === 'wrong'}
-  <div class="why bad-note">순서를 다시 만져보세요 — 어절을 탭하면 되돌아가요.</div>
+  <div class="why bad-note">순서를 다시 만져보세요 · Not quite — tap a tile to send it back and retry.</div>
 {/if}
 
 {#if bank.length === 0 && state !== 'right'}
-  <button class="check" on:click={check}>확인</button>
+  <button class="check" on:click={check}>확인 · Check</button>
 {/if}
 
 <style>

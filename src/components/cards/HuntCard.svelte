@@ -30,8 +30,8 @@
   }
 </script>
 
-<div class="step-label">문법 · 무늬 찾기</div>
-<div class="q">두 문장에서 반복되는 무늬를 탭하세요</div>
+<div class="step-label">문법 · Pattern hunt</div>
+<div class="q">두 문장에서 반복되는 무늬를 탭하세요 <span class="q-en">Tap the piece that repeats in both sentences</span></div>
 
 <div class="hunt">
   {#each card.lines as line, li}
@@ -55,7 +55,7 @@
 
 {#if ruleShown}
   <div class="rule">
-    <div class="rule-cap">발견한 규칙 · {card.rule.name}{#if card.sub} — {card.sub}{/if}</div>
+    <div class="rule-cap">발견한 규칙 · You found the rule — {card.rule.name}{#if card.sub} · {card.sub}{/if}</div>
     <div class="fork">
       {#each card.rule.rows as row}
         <div class="fork-row">
@@ -68,7 +68,7 @@
       {/each}
     </div>
     {#if card.more && (card.more.func || card.more.keyPoint || card.more.pronunciation)}
-      <button class="more-link" on:click={() => { moreShown = !moreShown; }}>더 알아보기 — 원래 설명 그대로 {moreShown ? '⌃' : '⌄'}</button>
+      <button class="more-link" on:click={() => { moreShown = !moreShown; }}>더 알아보기 · Full explanation {moreShown ? '⌃' : '⌄'}</button>
       {#if moreShown}
         <div class="more-body">
           {#if card.more.func}<p>{card.more.func}</p>{/if}
@@ -83,6 +83,7 @@
 <style>
   .step-label { font-size: 11px; font-weight: 850; letter-spacing: .16em; color: var(--accent); text-transform: uppercase; }
   .q { margin-top: 6px; font-size: 19px; font-weight: 800; word-break: keep-all; }
+  .q-en { display: block; font-size: 12.5px; font-weight: 650; color: var(--ink-3); }
   .hunt { margin-top: 16px; display: grid; gap: 14px; }
   .hunt-line { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
   .tok { padding: 8px 11px; border-radius: 12px; background: var(--card); border: 1.5px solid var(--line);

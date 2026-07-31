@@ -1,0 +1,40 @@
+{
+  "_comment": "Hand-curated from the 11-chapter content audit. guessDistractorBans: for the word (key), never offer an option whose English contains the banned substring — these pairs are equally plausible in the word's own example-sentence frame, so they can't teach. Mutual entries exist for both directions of a confusable pair.",
+  "guessDistractorBans": {
+    "자음": ["vowel"],
+    "모음": ["consonant"],
+    "받침": ["consonant", "vowel"],
+    "천천히": ["again"],
+    "다시": ["slowly"],
+    "읽다": ["to write", "to speak"],
+    "쓰다": ["to read", "to speak"],
+    "말하다": ["to read", "to write"],
+    "연습하다": ["to read", "to write"],
+    "모르겠어요": ["I understand", "I see"],
+    "알겠어요": ["don't know", "not sure"],
+    "발음": ["Hangul", "consonant", "vowel"],
+    "학생": ["teacher"],
+    "선생님": ["student"],
+    "주문하다": ["to pay"],
+    "계산하다": ["to order"],
+    "현금": ["card"],
+    "카드": ["cash"],
+    "매일": ["a lot", "many", "much"],
+    "많이": ["every day"],
+    "바쁘다": ["tired", "sick", "hurt"],
+    "피곤하다": ["busy", "sick", "hurt"],
+    "아프다": ["busy", "tired"],
+    "늦다": ["busy", "sick", "hurt"],
+    "좀": ["more"],
+    "더": ["a little"],
+    "먼저": ["later"],
+    "나중에": ["first"],
+    "약속": ["reason"],
+    "이유": ["appointment", "promise"]
+  },
+  "huntExampleBans": ["물 좀 주세요"],
+  "payoffBans": [
+    { "word": "저기 / 저것", "contains": "저기요" },
+    { "word": "저기", "contains": "저기요" }
+  ]
+}

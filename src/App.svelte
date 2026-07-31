@@ -56,10 +56,10 @@
   </main>
   <nav class="tabs">
     <button class:on={tab === 'today'} on:click={() => { tab = 'today'; }}>
-      <span class="ico">🍚</span>오늘
+      <span class="ico">🍚</span>오늘 Today
     </button>
     <button class:on={tab === 'shelf'} on:click={() => { tab = 'shelf'; }}>
-      <span class="ico">📚</span>책장
+      <span class="ico">📚</span>책장 Shelf
     </button>
   </nav>
 {/if}

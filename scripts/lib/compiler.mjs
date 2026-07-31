@@ -99,27 +99,39 @@ function expandOptional(text) {
   return [...out].filter(Boolean);
 }
 
-// Find the best variant occurrence in a sentence. Spaceless variants must sit
+// Find EVERY variant occurrence in a sentence. Spaceless variants must sit
 // at the END of a word token (Korean particles/endings are suffixal) or be a
-// standalone token (안). Longest variant wins so 에서 beats 에.
-export function findPattern(ko, variants) {
+// standalone token (안). Longest variant wins at any given position, so 에서
+// beats 에 and a sentence with two 까지 gets both marked — a learner tapping
+// the second instance must not be told they're wrong.
+export function findAllPatterns(ko, variants) {
+  const matches = [];
+  const add = (m) => {
+    if (!matches.some((x) => x.start < m.end && m.start < x.end)) matches.push(m);
+  };
   const sorted = [...variants].sort((a, b) => b.length - a.length);
   for (const variant of sorted) {
     if (variant.includes(' ')) {
-      const at = ko.indexOf(variant);
-      if (at >= 0) return { variant, start: at, end: at + variant.length };
+      let from = 0, at;
+      while ((at = ko.indexOf(variant, from)) >= 0) {
+        add({ variant, start: at, end: at + variant.length });
+        from = at + 1;
+      }
     } else {
-      const tokens = tokenize(ko);
-      for (const tok of tokens) {
+      for (const tok of tokenize(ko)) {
         const core = tok.text.replace(/[.,!?…"']+$/u, '');
         if (core === variant || (core.endsWith(variant) && core.length > variant.length)) {
           const start = tok.start + core.length - variant.length;
-          return { variant, start, end: start + variant.length };
+          add({ variant, start, end: start + variant.length });
         }
       }
     }
   }
-  return null;
+  return matches.sort((a, b) => a.start - b.start);
+}
+
+export function findPattern(ko, variants) {
+  return findAllPatterns(ko, variants)[0] || null;
 }
 
 function tokenize(ko) {
@@ -130,21 +142,41 @@ function tokenize(ko) {
   return tokens;
 }
 
-// Split a sentence into tappable tokens, marking the ones covering the match.
-export function huntTokens(ko, match) {
+// Split a sentence into tappable tokens, marking every token covering ANY of
+// the matches (a line can contain the pattern twice — both must be tappable).
+export function huntTokens(ko, matches) {
+  const list = Array.isArray(matches) ? matches : matches ? [matches] : [];
   return tokenize(ko).map((tok) => {
     const tokEnd = tok.start + tok.text.length;
-    const hit = match && tok.start < match.end && tokEnd > match.start;
+    const match = list.find((m) => tok.start < m.end && tokEnd > m.start);
     let pre = tok.text, mid = '', post = '';
-    if (hit) {
+    if (match) {
       const from = Math.max(match.start - tok.start, 0);
       const to = Math.min(match.end - tok.start, tok.text.length);
       pre = tok.text.slice(0, from);
       mid = tok.text.slice(from, to);
       post = tok.text.slice(to);
     }
-    return { pre, mid, post, hit: !!hit };
+    return { pre, mid, post, hit: !!match };
   });
+}
+
+/* ---------------- hangul jamo helpers ---------------- */
+
+const L_LIST = [...'ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ'];
+const V_LIST = [...'ㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢㅣ'];
+const T_LIST = ['', ...'ㄱㄲ', 'ㄳ', ...'ㄴ', 'ㄵ', 'ㄶ', ...'ㄷㄹ', 'ㄺ', 'ㄻ', 'ㄼ', 'ㄽ', 'ㄾ', 'ㄿ', 'ㅀ', ...'ㅁㅂ', 'ㅄ', ...'ㅅㅆㅇㅈㅊㅋㅌㅍㅎ'];
+
+function decomposeSyl(ch) {
+  const code = ch.codePointAt(0) - 0xac00;
+  if (code < 0 || code > 11171) return null;
+  const T = code % 28;
+  const V = ((code - T) / 28) % 21;
+  const L = Math.floor((code - T) / 28 / 21);
+  return { L: L_LIST[L], V: V_LIST[V], T: T_LIST[T] };
+}
+function composeSyl(L, V, T = '') {
+  return String.fromCodePoint(0xac00 + (L_LIST.indexOf(L) * 21 + V_LIST.indexOf(V)) * 28 + T_LIST.indexOf(T));
 }
 
 /* ---------------- word bites ---------------- */
@@ -154,6 +186,51 @@ function stemOf(word) {
   const pos = String(word.partOfSpeech || '').toLowerCase();
   if ((pos.startsWith('verb') || pos.startsWith('adj')) && ko.endsWith('다')) return ko.slice(0, -1);
   return ko;
+}
+
+// The span of the sentence to highlight as "this word". Conjugation fuses
+// stems (오+아→와요, 공부하+어→공부해요, 기다리+ㄹ게요→기다릴게요, ㅂ-irregular
+// 반갑+어→반가워요), so a plain indexOf on the stem misses — or worse, hits the
+// wrong word (오다's 오 inside 오늘). Try the fused forms, longest first;
+// return null when the word genuinely isn't in the sentence.
+const V_FUSE = { 'ㅣ': 'ㅕ', 'ㅗ': 'ㅘ', 'ㅜ': 'ㅝ', 'ㅡ': 'ㅓ' };
+export function guessTarget(word, sentenceKo) {
+  const pos = String(word.partOfSpeech || '').toLowerCase();
+  const conjugates = pos.startsWith('verb') || pos.startsWith('adj');
+  // plain forms need ≥2 chars (a bare 오 would claim 오늘); fused products
+  // (와, 올, 해) are distinctive conjugation syllables, allowed at 1 char
+  const plain = new Set();
+  const fused = new Set();
+  for (const rawKo of String(word.hangul).split('/').map((s) => s.trim()).filter(Boolean)) {
+    let stem = rawKo;
+    if (conjugates && rawKo.endsWith('다')) stem = rawKo.slice(0, -1);
+    if (stem.length >= 2) plain.add(stem);
+    if (!conjugates) continue;
+    const base = stem.slice(0, -1);
+    const d = decomposeSyl(stem.at(-1));
+    if (!d) continue;
+    if (!d.T) {
+      if (V_FUSE[d.V]) fused.add(base + composeSyl(d.L, V_FUSE[d.V]));
+      fused.add(base + composeSyl(d.L, d.V, 'ㄹ'));            // future/promise 갈·올·릴
+      if (stem.at(-1) === '하') fused.add(base + '해');
+    } else if (d.T === 'ㅂ') {
+      fused.add(base + composeSyl(d.L, d.V) + '워');           // ㅂ-irregular 반가워
+    }
+    if (stem.length === 1) for (const o of CONJ_OPENERS) plain.add(stem + o);
+  }
+  // a 1-char NOUN (집, 물) appears literally in its own example sentence and
+  // can't be mistaken for a conjugation fragment — allow it; 1-char verb
+  // stems stay excluded (오 must never claim 오늘)
+  if (!conjugates) {
+    const bare = String(word.hangul).trim();
+    if (bare.length === 1) plain.add(bare);
+  }
+  const candidates = [...new Set([...plain, ...fused])].sort((a, b) => b.length - a.length);
+  for (const form of candidates) {
+    if (!fused.has(form) && form.length < 2 && conjugates) continue;
+    if (sentenceKo.includes(form)) return form;
+  }
+  return null;
 }
 
 // Does this dialogue line visibly contain the word? Multi-char stems match as
@@ -172,9 +249,26 @@ function stemMatchIn(lineKo, word) {
   return null;
 }
 
-function guessOptions(word, pool) {
-  const same = pool.filter((w) => w !== word && w.partOfSpeech === word.partOfSpeech && w.english !== word.english);
-  const rest = pool.filter((w) => w !== word && w.english !== word.english && !same.includes(w));
+// A distractor that would ALSO be a fair answer teaches nothing. Two guards:
+// shared content words (consonant ⊂ "final consonant …") and the audit-built
+// ban list for semantically interchangeable pairs (천천히↔다시, 학생↔선생님…).
+function sharesContentWord(a, b) {
+  const words = (s) => new Set(
+    String(s).toLowerCase().split(/[^a-z]+/).filter((w) => w.length > 2 && !['the', 'and', 'for', 'you', 'your'].includes(w))
+  );
+  const A = words(a);
+  for (const w of words(b)) if (A.has(w)) return true;
+  return false;
+}
+
+function guessOptions(word, pool, overrides = {}) {
+  const bans = (overrides.guessDistractorBans || {})[word.hangul] || [];
+  const banned = (en) =>
+    sharesContentWord(en, word.english) ||
+    bans.some((b) => en.toLowerCase().includes(b.toLowerCase()));
+  const usable = pool.filter((w) => w !== word && w.english !== word.english && !banned(w.english));
+  const same = usable.filter((w) => w.partOfSpeech === word.partOfSpeech);
+  const rest = usable.filter((w) => !same.includes(w));
   const picks = [];
   const seen = new Set([word.english]);
   for (const cand of [...same, ...rest]) {
@@ -190,12 +284,13 @@ function guessOptions(word, pool) {
   return options;
 }
 
-export function buildWordBites(chapter) {
+export function buildWordBites(chapter, overrides = {}) {
   const words = chapter.extendedVocabulary || [];
   if (!words.length) return [];
   const biteCount = Math.min(MAX_WORD_BITES, Math.ceil(words.length / WORDS_PER_BITE));
   const per = Math.ceil(words.length / biteCount);
   const dialogueLines = chapter.extendedDialogue?.lines || [];
+  const payoffBans = overrides.payoffBans || [];
   const bites = [];
   for (let b = 0; b < biteCount; b++) {
     const chunk = words.slice(b * per, (b + 1) * per);
@@ -204,13 +299,14 @@ export function buildWordBites(chapter) {
       kind: 'guess',
       word: { ko: w.hangul, romanization: w.romanization, en: w.english, pos: w.partOfSpeech },
       sentence: w.exampleSentence ? { ko: w.exampleSentence.ko, en: w.exampleSentence.en } : null,
-      target: w.exampleSentence ? stemOf(w) : null,
-      options: guessOptions(w, words),
+      target: w.exampleSentence ? guessTarget(w, w.exampleSentence.ko) : null,
+      options: guessOptions(w, words, overrides),
       note: w.exampleSentence?.note || '',
     }));
     // payoff: the first dialogue line that contains one of this bite's words
     outer: for (const line of dialogueLines) {
       for (const w of chunk) {
+        if (payoffBans.some((ban) => ban.word === w.hangul && line.ko.includes(ban.contains))) continue;
         const hl = stemMatchIn(line.ko, w);
         if (hl) {
           cards.push({ kind: 'payoff', line: { speaker: line.speaker, ko: line.ko, en: line.en || '' }, hl });
@@ -218,19 +314,21 @@ export function buildWordBites(chapter) {
         }
       }
     }
-    bites.push({ kind: 'words', title: `단어 ${b + 1} · ${chunk[0].hangul}부터`, cards });
+    bites.push({ kind: 'words', title: `단어 Words ${b + 1} · ${chunk[0].hangul}~`, cards });
   }
   return bites;
 }
 
 /* ---------------- pattern bites ---------------- */
 
-export function buildPatternBites(chapter) {
+export function buildPatternBites(chapter, overrides = {}) {
+  const exampleBans = overrides.huntExampleBans || [];
   return (chapter.grammarNotes || []).map((note) => {
     const variants = expandVariants(note.title);
     const examples = note.examples || [];
     const hits = examples
-      .map((ex) => ({ ex, match: findPattern(ex.ko, variants) }))
+      .filter((ex) => !exampleBans.some((ban) => ex.ko.includes(ban)))
+      .map((ex) => ({ ex, matches: findAllPatterns(ex.ko, variants), match: findPattern(ex.ko, variants) }))
       .filter((h) => h.match);
     const name = note.title.split('—')[0].trim();
     const sub = note.title.includes('—') ? note.title.split('—').slice(1).join('—').trim() : '';
@@ -250,7 +348,7 @@ export function buildPatternBites(chapter) {
         kind: 'hunt',
         name, sub,
         lines: huntPair.map((h) => ({
-          tokens: huntTokens(h.ex.ko, h.match),
+          tokens: huntTokens(h.ex.ko, h.matches),
           ko: h.ex.ko, en: h.ex.en || '', romanization: h.ex.romanization || '',
         })),
         rule: { name, rows },
@@ -270,15 +368,16 @@ export function buildPatternBites(chapter) {
         });
       }
     } else {
-      // no clean morpheme (e.g. the Hangul chapter) — teach card, still one screen
+      // no clean morpheme (e.g. the Hangul chapter) — teach card, still one
+      // screen. With no form table the examples ARE the content, so show all.
       cards.push({
         kind: 'teach',
         name, sub, rows,
-        examples: examples.slice(0, 2).map((ex) => ({ ko: ex.ko, en: ex.en || '', romanization: ex.romanization || '', note: ex.note || '' })),
+        examples: examples.slice(0, rows.length ? 2 : 4).map((ex) => ({ ko: ex.ko, en: ex.en || '', romanization: ex.romanization || '', note: ex.note || '' })),
         more,
       });
     }
-    return { kind: 'pattern', title: `무늬 · ${name}`, cards };
+    return { kind: 'pattern', title: `무늬 Pattern · ${name}`, cards };
   });
 }
 
@@ -296,7 +395,7 @@ export function buildDialogueBite(chapter) {
   if (order) {
     cards.push({ kind: 'order', prompt: order.prompt, tokens: order.tokens, correct: order.correct, explanation: order.explanation || '' });
   }
-  return { kind: 'dialogue', title: '대화 · 진짜 한국어', cards };
+  return { kind: 'dialogue', title: '대화 Dialogue · 진짜 한국어', cards };
 }
 
 export function buildReadingBite(chapter) {
@@ -311,7 +410,7 @@ export function buildReadingBite(chapter) {
     translation: rt.bodyTranslation || '',
     qas: (rt.comprehensionQuestions || []).map((q) => ({ q: q.question, a: q.answer })),
   }];
-  return { kind: 'reading', title: '읽기 · ' + (rt.title || ''), cards };
+  return { kind: 'reading', title: '읽기 Reading · ' + (rt.title || ''), cards };
 }
 
 const BOSS_TYPES = new Set(['multipleChoice', 'particleChoice', 'orderWords']);
@@ -331,14 +430,14 @@ export function buildBossBite(chapter) {
       explanation: ex.explanation || '',
     };
   });
-  return { kind: 'boss', title: '보스 한입 · 다 걸어요', cards };
+  return { kind: 'boss', title: '보스 Boss bite · 다 걸어요', cards };
 }
 
 /* ---------------- chapter assembly ---------------- */
 
-export function compileChapter(chapter, number) {
-  const wordBites = buildWordBites(chapter);
-  const patternBites = buildPatternBites(chapter);
+export function compileChapter(chapter, number, overrides = {}) {
+  const wordBites = buildWordBites(chapter, overrides);
+  const patternBites = buildPatternBites(chapter, overrides);
   // interleave: words1, pattern1, words2, pattern2, …
   const woven = [];
   const max = Math.max(wordBites.length, patternBites.length);
