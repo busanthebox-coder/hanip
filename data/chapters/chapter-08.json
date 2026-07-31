@@ -1,0 +1,644 @@
+{
+  "id": "chapter-08",
+  "hook": {
+    "situation": "A Korean colleague invites you for samgyeopsal tonight. You want to go, you probably can go — but you're not sure yet. In English you'd say 'I want to go,' 'I can go,' or 'I can't go.' Korean has three distinct grammar forms for these three meanings, and mixing them up sounds strange: saying 못 가고 싶어요 (a nonsensical blend) signals confusion between wanting and being able.",
+    "objectives": [
+      "Use 고 싶어요 correctly to express what you want or desire to do",
+      "Use ㄹ/을 수 있어요 to say you can do something (ability or possibility)",
+      "Use 못 + verb to say you cannot do something — and know why 못 가해요 is wrong"
+    ],
+    "whyItMatters": "These three patterns are the engine of polite Korean conversation. Koreans use them constantly to navigate invitations, menus, schedules, and apologies. Without them you can only say what you DO — you can't express what you want, what you're capable of, or what you have to decline. Master all three and you can have real adult conversations about your life."
+  },
+  "grammarNotes": [
+    {
+      "title": "-고 싶어요 — saying what you want to do (\"I want to…\")",
+      "func": "Add -고 싶어요 to a verb stem to say what you want to do. It's for your own wants; talking about what someone else wants uses -고 싶어 하다, which comes in a later chapter.",
+      "formTable": [
+        {
+          "when": "Verb stem ends in a vowel",
+          "add": "stem + 고 싶어요",
+          "ex": "가다 → 가고 싶어요 (want to go)"
+        },
+        {
+          "when": "Verb stem ends in a consonant (받침)",
+          "add": "stem + 고 싶어요 (no change)",
+          "ex": "먹다 → 먹고 싶어요 (want to eat)"
+        },
+        {
+          "when": "Past and negative go on 싶다, not the main verb",
+          "add": "…고 싶었어요 (wanted to) / …고 싶지 않아요 (don't want to)",
+          "ex": "보다 → 보고 싶었어요 / 보고 싶지 않아요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "저는 물을 마시고 싶어요.",
+          "romanization": "jeoneun mureul masigo sipeoyo.",
+          "en": "I want to drink water.",
+          "note": "마시다 ends in a vowel → 마시고 싶어요. The object keeps 을/를 (물을)."
+        },
+        {
+          "ko": "오늘 친구를 만나고 싶어요.",
+          "romanization": "oneul chingureul mannago sipeoyo.",
+          "en": "I want to meet a friend today.",
+          "note": "만나다 → 만나고 싶어요. It's your own wish, so plain -고 싶어요 is right."
+        },
+        {
+          "ko": "집에서 영화를 보고 싶어요.",
+          "romanization": "jibeseo yeonghwareul bogo sipeoyo.",
+          "en": "I want to watch a movie at home.",
+          "note": "보다 → 보고 싶어요. The place where you do something takes 에서 (집에서)."
+        },
+        {
+          "ko": "한국어를 더 공부하고 싶었어요.",
+          "romanization": "hangugeoreul deo gongbuhago sipeosseoyo.",
+          "en": "I wanted to study Korean more.",
+          "note": "Past tense goes on 싶다 (싶었어요), never on 공부하다."
+        }
+      ],
+      "keyPoint": {
+        "label": "Keep 을/를 on the thing you want",
+        "body": "With -고 싶어요 the thing you want is still the object, so use 을/를: 밥을 먹고 싶어요 (I want to eat). You'll also hear 밥이 먹고 싶어요 in casual speech, but 밥을 먹고 싶어요 is the safe, standard choice for now."
+      },
+      "pronunciation": "싶어요 links across the boundary and sounds like [시퍼요]; 먹고 tenses the ㄱ, so 먹고 싶어요 sounds like [먹꼬 시퍼요].",
+      "drill": {
+        "instruction": "Turn each verb into an \"I want to…\" sentence with -고 싶어요.",
+        "model": "자다 → 자고 싶어요. (I want to sleep.)",
+        "items": [
+          "쉬다 → ____ (I want to rest.)",
+          "책을 읽다 → ____ (I want to read a book.)",
+          "집에 가다 → ____ (I want to go home.)"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "저는 행복하고 싶어요.",
+        "right": "저는 행복해지고 싶어요. / 행복하면 좋겠어요.",
+        "explanation": "\"I want to be happy\" tempts you to stick -고 싶어요 on 행복하다. But -고 싶어요 only goes on action verbs, not on adjectives (descriptive verbs). For a state, use 행복해지다 (become happy) or the wish pattern -으면 좋겠다."
+      }
+    },
+    {
+      "title": "-(으)ㄹ 수 있어요 / 없어요 — can and can't",
+      "func": "Add -(으)ㄹ 수 있어요 to a verb stem for \"can / be able to,\" and -(으)ㄹ 수 없어요 for \"can't.\" Putting 못 right before the verb is a shorter, more everyday way to say \"can't.\"",
+      "formTable": [
+        {
+          "when": "Stem ends in a vowel",
+          "add": "stem + ㄹ 수 있어요/없어요",
+          "ex": "가다 → 갈 수 있어요 (can go) / 갈 수 없어요 (can't go)"
+        },
+        {
+          "when": "Stem ends in a consonant (받침)",
+          "add": "stem + 을 수 있어요/없어요",
+          "ex": "먹다 → 먹을 수 있어요 (can eat) / 먹을 수 없어요 (can't eat)"
+        },
+        {
+          "when": "Stem already ends in ㄹ",
+          "add": "stem + 수 있어요 (that ㄹ is the ending, add nothing)",
+          "ex": "만들다 → 만들 수 있어요 (can make)"
+        },
+        {
+          "when": "Using 못 for \"can't\"",
+          "add": "못 + verb",
+          "ex": "먹다 → 못 먹어요 (can't eat) / 가다 → 못 가요 (can't go)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "저는 한국어를 조금 할 수 있어요.",
+          "romanization": "jeoneun hangugeoreul jogeum hal su isseoyo.",
+          "en": "I can speak a little Korean.",
+          "note": "하다 ends in a vowel → 할 수 있어요."
+        },
+        {
+          "ko": "오늘은 시간이 없어서 못 가요.",
+          "romanization": "oneureun sigani eopseoseo mot gayo.",
+          "en": "I can't go today because I don't have time.",
+          "note": "못 + 가요 is the short, natural way to say \"can't\" about one situation."
+        },
+        {
+          "ko": "이 책은 너무 어려워서 읽을 수 없어요.",
+          "romanization": "i chaegeun neomu eoryeowoseo ilgeul su eopseoyo.",
+          "en": "This book is too hard, so I can't read it.",
+          "note": "읽다 ends in a consonant → 읽을 수 없어요."
+        },
+        {
+          "ko": "저는 김치를 만들 수 있어요.",
+          "romanization": "jeoneun gimchireul mandeul su isseoyo.",
+          "en": "I can make kimchi.",
+          "note": "만들다 already ends in ㄹ, so add nothing → 만들 수 있어요."
+        }
+      ],
+      "keyPoint": {
+        "label": "못 (can't) vs 안 (don't / won't)",
+        "body": "Both sit right before the verb but mean different things. 못 = can't — you're unable, even if you'd like to (시간이 없어서 못 자요, I can't sleep because I have no time). 안 = a choice not to (피곤하지만 안 자요, I'm tired but I'm not going to sleep). So \"can't eat\" is 못 먹어요; \"don't eat (by choice)\" is 안 먹어요."
+      },
+      "pronunciation": "수 있어요 links to [수 이써요]; 못 changes before the next sound — 못 가요 sounds like [몯까요] and 못 먹어요 like [몬머거요].",
+      "drill": {
+        "instruction": "Make a \"can\" sentence with -(으)ㄹ 수 있어요, then a \"can't\" sentence with 못.",
+        "model": "가다 → 갈 수 있어요. / 못 가요.",
+        "items": [
+          "먹다 → ____ / ____ (can eat / can't eat)",
+          "읽다 → ____ / ____ (can read / can't read)",
+          "오다 → ____ / ____ (can come / can't come)"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "저는 수영을 안 할 수 있어요.",
+        "right": "저는 수영을 못 해요. / 수영을 할 수 없어요.",
+        "explanation": "For \"I can't swim,\" learners try to negate 할 수 있어요 by adding 안. Korean doesn't do that — switch the whole phrase to 없어요 (할 수 없어요), or more naturally say 못 해요. Save 안 for choosing not to do something."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "먹다",
+      "romanization": "meokda",
+      "english": "to eat",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "맵지 않은 것을 먹고 싶어요.",
+        "en": "I want to eat something that isn't spicy.",
+        "note": "먹고 싶어요 — desire form; essential at Korean restaurants for dietary preferences"
+      },
+      "collocations": [
+        "먹고 싶어요",
+        "먹을 수 있어요",
+        "못 먹어요",
+        "같이 먹어요"
+      ]
+    },
+    {
+      "hangul": "마시다",
+      "romanization": "masida",
+      "english": "to drink",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "커피를 마시고 싶어요.",
+        "en": "I want to drink coffee.",
+        "note": "마시 + 고 싶어요 — the stem ends in a vowel so 고 attaches cleanly"
+      },
+      "collocations": [
+        "마시고 싶어요",
+        "마실 수 있어요",
+        "못 마셔요",
+        "물을 마시다"
+      ]
+    },
+    {
+      "hangul": "가다",
+      "romanization": "gada",
+      "english": "to go",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "오늘은 못 가요. 내일 갈 수 있어요.",
+        "en": "I can't go today. I can go tomorrow.",
+        "note": "Two patterns in one sentence: 못 가요 (blocked today) vs 갈 수 있어요 (open tomorrow)"
+      },
+      "collocations": [
+        "가고 싶어요",
+        "갈 수 있어요",
+        "못 가요",
+        "같이 가요"
+      ]
+    },
+    {
+      "hangul": "하다",
+      "romanization": "hada",
+      "english": "to do",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "한국어를 잘하고 싶어요.",
+        "en": "I want to get better at Korean.",
+        "note": "잘하 + 고 싶어요 — long-term aspiration; note that 못 for 하다 = 못 해요, NOT 못 하해요"
+      },
+      "collocations": [
+        "하고 싶어요",
+        "할 수 있어요",
+        "못 해요",
+        "잘하다"
+      ]
+    },
+    {
+      "hangul": "말하다",
+      "romanization": "malhada",
+      "english": "to speak / to say",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "한국어로 말할 수 있어요.",
+        "en": "I can speak in Korean.",
+        "note": "말하다 → stem 말하 + ㄹ 수 있어요 → 말할 수 있어요; often used to express language ability"
+      },
+      "collocations": [
+        "말하고 싶어요",
+        "말할 수 있어요",
+        "못 말해요",
+        "천천히 말해요"
+      ]
+    },
+    {
+      "hangul": "먹을 수 있다",
+      "romanization": "meogeul su itda",
+      "english": "to be able to eat / can eat",
+      "partOfSpeech": "verb phrase",
+      "exampleSentence": {
+        "ko": "저는 매운 음식을 먹을 수 있어요.",
+        "en": "I can eat spicy food.",
+        "note": "먹 (consonant ending stem) + 을 수 있어요 — consonant stems take 을 수, vowel stems take ㄹ 수"
+      },
+      "collocations": [
+        "먹을 수 있다",
+        "먹을 수 없다",
+        "무엇을 먹을 수 있어요?"
+      ]
+    },
+    {
+      "hangul": "맵다",
+      "romanization": "maepda",
+      "english": "spicy / hot (taste)",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "이 음식은 너무 매워서 못 먹어요.",
+        "en": "This food is too spicy so I can't eat it.",
+        "note": "맵다 is a ㅂ-irregular adjective: 매워서 (not 맵어서) — important for describing food limitations"
+      },
+      "collocations": [
+        "너무 맵다",
+        "맵지 않다",
+        "매운 음식",
+        "맵게 하다"
+      ]
+    },
+    {
+      "hangul": "괜찮다",
+      "romanization": "gwaenchanta",
+      "english": "to be okay / fine / alright",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "조금 매워도 괜찮아요.",
+        "en": "It's okay even if it's a little spicy.",
+        "note": "괜찮아요 alone works as 'it's fine'; combined with 먹을 수 있어요 context it reassures the other person"
+      },
+      "collocations": [
+        "괜찮아요",
+        "괜찮아요?",
+        "다 괜찮아요",
+        "조금 매워도 괜찮아요"
+      ]
+    },
+    {
+      "hangul": "알다",
+      "romanization": "alda",
+      "english": "to know",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "한국어를 조금 알아요.",
+        "en": "I know a little Korean.",
+        "note": "알다 is ㄹ-irregular: 알 + 아요 = 알아요. For ability: 알 수 있어요 (stem already ends in ㄹ so no extra ㄹ added)"
+      },
+      "collocations": [
+        "알아요",
+        "알 수 있어요",
+        "못 알아요",
+        "알겠어요"
+      ]
+    },
+    {
+      "hangul": "오다",
+      "romanization": "oda",
+      "english": "to come",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "오늘 파티에 올 수 있어요?",
+        "en": "Can you come to the party today?",
+        "note": "오다 → stem 오 (vowel) → 올 수 있어요? A common social question — the ㄹ is added to the vowel stem"
+      },
+      "collocations": [
+        "오고 싶어요",
+        "올 수 있어요",
+        "못 와요",
+        "같이 와요"
+      ]
+    },
+    {
+      "hangul": "쉬다",
+      "romanization": "swida",
+      "english": "to rest / take a break",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "오늘은 좀 쉬고 싶어요.",
+        "en": "I want to rest a bit today.",
+        "note": "쉬 + 고 싶어요 — expressing the very human desire for rest; common in daily conversation"
+      },
+      "collocations": [
+        "쉬고 싶어요",
+        "쉴 수 있어요",
+        "잠깐 쉬어요",
+        "오늘 쉬어요"
+      ]
+    },
+    {
+      "hangul": "운동하다",
+      "romanization": "undonghada",
+      "english": "to exercise",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "요즘 바빠서 운동 못 해요.",
+        "en": "Lately I'm busy so I can't exercise.",
+        "note": "운동하다 is a 하다 verb: 못 + 해요 = 못 해요. The noun 운동 and 못 해요 can be separated: 운동 못 해요."
+      },
+      "collocations": [
+        "운동하고 싶어요",
+        "운동할 수 있어요",
+        "운동 못 해요",
+        "매일 운동해요"
+      ]
+    },
+    {
+      "hangul": "시간이 있다",
+      "romanization": "sigani itda",
+      "english": "to have time (lit. time exists)",
+      "partOfSpeech": "verb phrase",
+      "exampleSentence": {
+        "ko": "오늘 시간이 있어요? 같이 밥 먹고 싶어요.",
+        "en": "Do you have time today? I want to eat together.",
+        "note": "시간이 있어요 is the natural Korean way to say 'have time' — pairs perfectly with 고 싶어요 for invitations"
+      },
+      "collocations": [
+        "시간이 있어요",
+        "시간이 없어요",
+        "시간이 있으면",
+        "언제 시간이 있어요?"
+      ]
+    },
+    {
+      "hangul": "바쁘다",
+      "romanization": "bappuda",
+      "english": "to be busy",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "오늘 너무 바빠서 못 가요.",
+        "en": "I'm too busy today so I can't go.",
+        "note": "바쁘다 is ㅡ-irregular: 바빠서 (not 바쁘어서). Used constantly as a reason for 못 + verb"
+      },
+      "collocations": [
+        "너무 바빠요",
+        "바빠서 못 해요",
+        "요즘 바빠요",
+        "바쁘지 않아요"
+      ]
+    },
+    {
+      "hangul": "주문하다",
+      "romanization": "jumunhada",
+      "english": "to order (food/items)",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "뭐 주문하고 싶어요?",
+        "en": "What do you want to order?",
+        "note": "주문하 + 고 싶어요 — essential restaurant phrase; 주문하다 is a 하다 verb"
+      },
+      "collocations": [
+        "주문하고 싶어요",
+        "주문할 수 있어요",
+        "주문 못 해요",
+        "지금 주문해요"
+      ]
+    },
+    {
+      "hangul": "이해하다",
+      "romanization": "ihaehada",
+      "english": "to understand",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "아직 한국어를 다 이해할 수 없어요.",
+        "en": "I can't understand all Korean yet.",
+        "note": "이해하다 → 이해할 수 없어요 — a humble and accurate self-assessment for language learners"
+      },
+      "collocations": [
+        "이해할 수 있어요",
+        "이해 못 해요",
+        "잘 이해해요",
+        "이해했어요"
+      ]
+    },
+    {
+      "hangul": "못",
+      "romanization": "mot",
+      "english": "cannot (inability marker, pre-verb)",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "오늘은 못 가요. 다음에 갈 수 있어요.",
+        "en": "I can't go today. I can go next time.",
+        "note": "못 always goes BEFORE the verb. It's not a sentence ending — it's a pre-verb blocker. 못 가요, 못 먹어요, 못 마셔요."
+      },
+      "collocations": [
+        "못 가요",
+        "못 먹어요",
+        "못 해요",
+        "못 와요"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Jihye invites her coworker Minsu to dinner at a Korean BBQ restaurant",
+    "lines": [
+      {
+        "speaker": "지혜",
+        "ko": "민수 씨, 오늘 저녁에 삼겹살 먹고 싶어요?",
+        "romanization": "Minsu ssi, oneul jeonyeoge samgyeopsal meokgo sipeoyo?",
+        "en": "Minsu, do you want to eat samgyeopsal this evening?",
+        "grammarNote": "먹고 싶어요? — direct but polite desire question. The speaker is checking whether Minsu also wants the same dinner."
+      },
+      {
+        "speaker": "민수",
+        "ko": "네, 먹고 싶어요! 어디에서 먹을 수 있어요?",
+        "romanization": "Ne, meokgo sipeoyo! Eodieseo meogeul su isseoyo?",
+        "en": "Yes, I want to eat it! Where can we eat it?",
+        "grammarNote": "먹고 싶어요 (desire) + 먹을 수 있어요 (possibility) — two separate patterns in two sentences. 먹 ends in a consonant so 을 수 있어요."
+      },
+      {
+        "speaker": "지혜",
+        "ko": "회사 근처에 좋은 식당이 있어요. 7시에 갈 수 있어요?",
+        "romanization": "Hoesa geuncheoe joeun sikdangi isseoyo. Ilgop sie gal su isseoyo?",
+        "en": "There's a good restaurant near the office. Can you go at 7?",
+        "grammarNote": "갈 수 있어요? — open-door question: is your door open at 7? 가다 stem 가 (vowel) → 갈 수 있어요."
+      },
+      {
+        "speaker": "민수",
+        "ko": "7시는 좀... 오늘 회의가 있어서 7시까지 못 가요.",
+        "romanization": "Ilgop sineun jom... oneul hoeuiga isseoseo ilgop sikkaji mot gayo.",
+        "en": "7 o'clock is a bit... I have a meeting today so I can't get there by 7.",
+        "grammarNote": "못 가요 — locked door: the meeting blocks him. 못 directly precedes the verb stem 가요. Note: NOT 못 가해요."
+      },
+      {
+        "speaker": "지혜",
+        "ko": "그럼 8시는요? 기다릴 수 있어요.",
+        "romanization": "Geureom yeodeol-ssineun-yo? Gidaril su isseoyo.",
+        "en": "Then how about 8 o'clock? I can wait.",
+        "grammarNote": "기다릴 수 있어요 — 기다리다 stem 기다리 (vowel) → 기다릴 수 있어요. She's reassuring him by stating her own capability to wait."
+      },
+      {
+        "speaker": "민수",
+        "ko": "고마워요! 그런데 저는 너무 매운 것은 못 먹어요.",
+        "romanization": "Gomawoyo! Geureonde jeoneun neomu maeun geoseun mot meogeoyo.",
+        "en": "Thank you! But I can't eat things that are too spicy.",
+        "grammarNote": "못 먹어요 — locked door for spicy food: a dietary limitation. This is 못 + 먹어요 (plain verb form). Useful for communicating food restrictions."
+      },
+      {
+        "speaker": "지혜",
+        "ko": "괜찮아요. 거기서 맵지 않은 것도 먹을 수 있어요.",
+        "romanization": "Gwaenchanayo. Geogieseo maepji aneun geotdo meogeul su isseoyo.",
+        "en": "That's okay. You can also eat non-spicy things there.",
+        "grammarNote": "먹을 수 있어요 — open door: the possibility exists. 먹 ends in consonant ㄱ → 을 수 있어요. She's reassuring with an ability/option statement."
+      },
+      {
+        "speaker": "민수",
+        "ko": "완전 좋아요! 8시에 식당 앞에서 만나요.",
+        "romanization": "Wanjeon joayo! Yeodeol sie sikdang apeseo mannayo.",
+        "en": "Sounds perfect! Let's meet in front of the restaurant at 8.",
+        "grammarNote": "No grammar notes needed — 만나요 is a Chapter 6 review. Notice how want (먹고 싶어요), can (먹을 수 있어요), and can't (못 먹어요) all appeared naturally in this conversation."
+      }
+    ]
+  },
+  "readingText": {
+    "type": "sms",
+    "title": "단체 채팅방 — 이번 주말에 뭐 할 수 있어요? (Group Chat — What can everyone do this weekend?)",
+    "body": "지은: 이번 주말에 같이 한강에 가고 싶어요. 다들 어때요?\n유진: 저도 가고 싶어요! 토요일에 갈 수 있어요.\n다니엘: 저는 토요일에 일이 있어서 못 가요. 일요일은 갈 수 있어요.\n지은: 그럼 일요일에 가요! 자전거도 탈 수 있어요?\n유진: 저는 자전거를 탈 수 있어요. 재미있겠다!\n다니엘: 저는 자전거를 잘 못 타요. 천천히 가도 돼요?\n지은: 물론이죠! 천천히 갈 수 있어요.",
+    "bodyTranslation": "Jieun: I want to go to the Han River together this weekend. What does everyone think?\nYujin: I want to go too! I can go on Saturday.\nDaniel: I have work on Saturday so I can't go. I can go on Sunday.\nJieun: Then let's go on Sunday! Can you also ride bikes?\nYujin: I can ride a bike. That sounds fun!\nDaniel: I can't ride a bike well. Is it okay if we go slowly?\nJieun: Of course! We can go slowly.",
+    "comprehensionQuestions": [
+      {
+        "question": "Why can't Daniel go on Saturday?",
+        "answer": "일이 있어서 못 가요 — he has work, so something is blocking him (못 = locked door)."
+      },
+      {
+        "question": "What does Daniel say about bike riding, and how does he express it?",
+        "answer": "자전거를 잘 못 타요 — he can't ride a bike well. He uses 못 before 타요 (ride) to express inability. 잘 못 = 'not well' (not exactly the same as 전혀 못 = 'can't at all')."
+      },
+      {
+        "question": "Find every instance of 고 싶어요, ㄹ/을 수 있어요, and 못 in the text. For each one, identify which grammar pattern it is and explain why that specific pattern is used instead of the others.",
+        "answer": "고 싶어요 (desire): 한강에 가고 싶어요 (Jieun wants to go — her desire), 저도 가고 싶어요 (Yujin shares the desire). | 수 있어요 (ability/possibility): 토요일에 갈 수 있어요 (Yujin: the door is open Saturday), 일요일은 갈 수 있어요 (Daniel: Sunday door is open), 자전거도 탈 수 있어요? (is the door open for biking?), 자전거를 탈 수 있어요 (Yujin: yes, open door), 천천히 갈 수 있어요 (the slow pace is possible). | 못 (inability): 토요일에 못 가요 (Daniel: work blocks Saturday — locked door), 자전거를 잘 못 타요 (Daniel: skill gap blocks him)."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "못 해요 as the polite Korean refusal",
+    "body": "In Korean social culture, saying you 'can't' do something (못 해요) is often more polite and face-saving than saying you 'don't want to' (싶지 않아요). If someone invites you somewhere you don't want to go, saying 오늘 못 가요 (I can't go today) is a softer decline than 가고 싶지 않아요 (I don't want to go), which can sound blunt or even rude. This is why Koreans sometimes use 못 해요 even when the real reason is lack of desire, not inability. When you start hearing 못 해요 in Korean conversations, know that it often carries the social function of a gentle 'no' — not necessarily a factual statement about impossibility."
+  },
+  "inlineExercises": [
+    {
+      "type": "fillBlank",
+      "prompt": "저는 초밥을 먹___ 싶어요. (I want to eat sushi.)",
+      "options": [
+        "고",
+        "을",
+        "는"
+      ],
+      "correct": "고",
+      "explanation": "고 싶어요 requires 고 between the verb stem and 싶어요. The stem of 먹다 is 먹, so: 먹고 싶어요. 을 would start the ability form (먹을 수 있어요), and 는 is a topic marker — neither makes sense here."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "오늘 회의가 있어서 ___ 가요. (I can't go because I have a meeting today.)",
+      "options": [
+        "못",
+        "안",
+        "고 싶지"
+      ],
+      "correct": "못",
+      "explanation": "못 expresses inability blocked by circumstances (the meeting). 안 가요 = 'I don't go / I won't go' (choice or habit, not inability). 고 싶지 않아요 = 'I don't want to go' (lack of desire). Only 못 captures 'I'm blocked — I can't.'"
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "다음 문장에서 틀린 것을 찾아보세요: '운동을 못 하해요.'",
+      "correct": "운동 못 해요.",
+      "explanation": "운동하다 is a 하다 verb. The 못 inability form for 하다 verbs is 못 해요 — NOT 못 하해요, which doubles the 하다 part. The noun and 못 해요 can be split naturally: 운동 못 해요."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "You want to say 'I can speak a little Korean.' Which is correct?",
+      "options": [
+        "한국어를 조금 말하고 싶어요.",
+        "한국어로 조금 말할 수 있어요.",
+        "한국어를 조금 못 말해요."
+      ],
+      "correct": "한국어로 조금 말할 수 있어요.",
+      "explanation": "한국어로 marks the language used as the means of speaking, and 말할 수 있어요 = ability/capability (open door). Option A (말하고 싶어요) = 'I want to speak Korean' — desire, not ability. Option C (못 말해요) = 'I can't speak Korean' — the opposite of what you want to say."
+    },
+    {
+      "type": "translate",
+      "prompt": "Translate: 'I want to rest today, but I can't.'",
+      "correct": "오늘 쉬고 싶어요. 그런데 못 쉬어요.",
+      "hint": "You need two patterns: 쉬다 (to rest) with 고 싶어요 for desire, and 못 + verb for inability. The two parts contrast with 그런데 (but/however).",
+      "explanation": "-고 싶어요 expresses what you want to do. 못 쉬어요 says the situation blocks the action, not simply that you do not want to rest."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "저는 매운 음식을 먹___ 수 있어요. (I can eat spicy food.)",
+      "options": [
+        "을",
+        "ㄹ",
+        "고"
+      ],
+      "correct": "을",
+      "explanation": "먹다 has a consonant-ending stem (먹, ending in ㄱ). Consonant-ending stems take 을 수 있어요, not ㄹ 수 있어요. ㄹ 수 attaches to vowel-ending stems (가 → 갈 수, 오 → 올 수). 고 would start the desire form — not ability."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Your Korean friend says '술 마시고 싶어요?' You can't drink alcohol. What's the most natural reply?",
+      "options": [
+        "아니요, 술을 마시고 싶지 않아요.",
+        "아니요, 저는 술을 못 마셔요.",
+        "아니요, 술을 마실 수 없어요."
+      ],
+      "correct": "아니요, 저는 술을 못 마셔요.",
+      "explanation": "못 마셔요 is the most natural, socially smooth way to decline — it signals inability/circumstances rather than personal rejection, which is more polite in Korean culture. 마시고 싶지 않아요 (don't want to) sounds blunt. 마실 수 없어요 is grammatically fine but sounds formal/stiff in casual conversation. 못 마셔요 is the everyday go-to for dietary or health limitations."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "한국어___ 조금 말할 수 있어요. (I can speak a little Korean.)",
+      "options": [
+        "를",
+        "가",
+        "에"
+      ],
+      "correct": "를",
+      "explanation": "한국어 is what you speak, so it takes the object marker 를. 가 would make Korean the subject, which changes the sentence logic."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "오늘은 집에 ___ . (가다 → want)",
+      "base": "가다",
+      "form": "want",
+      "correct": "가고 싶어요",
+      "explanation": "-고 싶어요 attaches to the verb stem to express desire. 가다 loses 다, then takes 고 싶어요: 가고 싶어요."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'I cannot eat spicy food.'",
+      "tokens": [
+        "매운 음식을",
+        "못 먹어요"
+      ],
+      "correct": "매운 음식을 못 먹어요",
+      "explanation": "못 before the verb marks inability. 매운 음식 is the thing you cannot eat, so it takes 을."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "MAGNET (고 싶어요): Verb stem + 고 싶어요 = desire, a pull toward an action. Always needs a verb — you can't attach it to a noun.",
+      "OPEN DOOR (ㄹ/을 수 있어요): Vowel stem + ㄹ 수 있어요 / Consonant stem + 을 수 있어요 = ability or possibility. The path is clear.",
+      "LOCKED DOOR (못 + verb): 못 goes BEFORE the regular verb form. Regular verbs use forms like 못 가요; 하다 verbs use 못 해요. Never make hybrids like 못 가해요 or 못 하해요."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Reply to a friend planning the weekend: say one thing you want to do, one thing you can do, and one thing you can't.",
+    "hint": "Use V-고 싶어요 for wants, V-(으)ㄹ 수 있어요 for can, and V-(으)ㄹ 수 없어요 (or 못) for can't.",
+    "model": "저는 영화를 보고 싶어요. 토요일에 갈 수 있어요. 그런데 일요일에는 못 가요.",
+    "modelEn": "I want to watch a movie. I can go on Saturday. But I can't go on Sunday."
+  },
+  "canDo": [
+    "Say what you want to do with V-고 싶어요 (가고 싶어요)",
+    "Say what you're able to do with V-(으)ㄹ 수 있어요",
+    "Say what you can't do with V-(으)ㄹ 수 없어요 or 못 + verb",
+    "Attach -(으)ㄹ correctly after a 받침 vs a vowel stem"
+  ]
+}

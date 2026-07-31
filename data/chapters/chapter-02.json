@@ -1,0 +1,608 @@
+{
+  "id": "chapter-02",
+  "hook": {
+    "situation": "You walk into your first Korean language exchange. Someone smiles at you and says '안녕하세요!' You want to reply, say your name, and make a good impression — but you freeze because you're not sure whether to say '나는 마이클이에요' or '저는 마이클이에요', and you have no idea where to start. This chapter gives you the exact phrases you need from the very first second.",
+    "objectives": [
+      "Greet, thank, and apologize using the five most essential Korean phrases",
+      "Introduce yourself with 저는 ___이에요 / 예요 — the pattern every Korean conversation starts with",
+      "Understand why 은/는 is the topic marker and when to use 이에요 vs 예요"
+    ],
+    "whyItMatters": "These phrases are not 'beginner drills' — they are the exact sentences Koreans use every day in every context. Getting 저는 ___예요 right from day one sets the foundation for the entire 은/는 system, which appears in hundreds of later sentences. And using 감사합니다 vs 고마워요 correctly shows you understand Korean social register — Koreans notice that instantly."
+  },
+  "grammarNotes": [
+    {
+      "title": "N은/는 — topic marker",
+      "func": "은/는 marks the topic of a sentence — the thing you single out to talk about (\"as for ___\"). It is the backbone of introductions and of saying what something is.",
+      "formTable": [
+        {
+          "when": "Noun ends in a consonant (받침)",
+          "add": "은",
+          "ex": "이름 → 이름은 · 선생님 → 선생님은"
+        },
+        {
+          "when": "Noun ends in a vowel",
+          "add": "는",
+          "ex": "저 → 저는 · 어머니 → 어머니는"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "저는 마이클이에요.",
+          "romanization": "jeoneun maikeurieyo.",
+          "en": "I'm Michael.",
+          "note": "Introducing yourself — 저 ends in a vowel, so 는."
+        },
+        {
+          "ko": "이름은 뭐예요?",
+          "romanization": "ireumeun mwoyeyo?",
+          "en": "What's your name?",
+          "note": "The topic is 'the name' — 이름 ends in a consonant, so 은."
+        },
+        {
+          "ko": "오늘은 바빠요.",
+          "romanization": "oneureun bappayo.",
+          "en": "Today I'm busy.",
+          "note": "Spotlighting 오늘 hints at a contrast — other days may be different."
+        },
+        {
+          "ko": "친구는 한국 사람이에요.",
+          "romanization": "chinguneun hanguk saramieyo.",
+          "en": "My friend is Korean.",
+          "note": "친구 ends in a vowel → 는. Everyday topic, everyday words."
+        }
+      ],
+      "keyPoint": {
+        "label": "은/는 also hints at a contrast",
+        "body": "Besides naming the topic, 은/는 often quietly sets one thing against others. 저는 학생이에요 = 'as for me, I'm a student' (someone else might not be). 오늘은 바빠요 = 'today I'm busy' (other days, maybe not). You don't have to force this nuance — just notice that spotlighting something with 은/는 can imply a comparison."
+      },
+      "pronunciation": "이름은 is pronounced [이르믄]: the final ㅁ links into the next vowel (linking, 연음).",
+      "drill": {
+        "instruction": "Say it about yourself — follow the model.",
+        "model": "저는 (마이클)이에요. → 저는 (학생)이에요. → 저는 (미국 사람)이에요.",
+        "items": [
+          "저는 ______이에요.",
+          "제 이름은 ______이에요.",
+          "오늘은 ______."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "나는 이름 마이클이에요.",
+        "right": "저는 마이클이에요.",
+        "explanation": "Don't translate \"my name\" word for word. 저는 ___이에요 already means \"as for me, I'm ___,\" so there is no separate word for \"name\" here. Also use 저 (polite I), not 나 (casual), with people you have just met."
+      }
+    },
+    {
+      "title": "N이에요/예요 — polite \"to be\"",
+      "func": "이에요/예요 is the polite present tense of 이다 (\"to be\"). Attach it to a noun to say what something is: 저는 학생이에요 — \"I'm a student.\"",
+      "formTable": [
+        {
+          "when": "Noun ends in a consonant (받침)",
+          "add": "이에요",
+          "ex": "학생 → 학생이에요 · 선생님 → 선생님이에요"
+        },
+        {
+          "when": "Noun ends in a vowel",
+          "add": "예요",
+          "ex": "의사 → 의사예요 · 하나 → 하나예요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "저는 학생이에요.",
+          "romanization": "jeoneun haksaengieyo.",
+          "en": "I'm a student.",
+          "note": "학생 ends in a consonant → 이에요."
+        },
+        {
+          "ko": "저는 하나예요.",
+          "romanization": "jeoneun hanayeyo.",
+          "en": "I'm Hana.",
+          "note": "하나 ends in a vowel → 예요."
+        },
+        {
+          "ko": "이분은 선생님이에요.",
+          "romanization": "ibuneun seonsaengnimieyo.",
+          "en": "This person is a teacher.",
+          "note": "It works for other people too — 이분 = 'this person' (polite)."
+        },
+        {
+          "ko": "이건 물이에요.",
+          "romanization": "igeon murieyo.",
+          "en": "This is water.",
+          "note": "물 ends in a consonant → 이에요."
+        }
+      ],
+      "keyPoint": {
+        "label": "Polite vs formal, and the negative",
+        "body": "이에요/예요 is the everyday polite form — use it in class, with new acquaintances, and in shops. 입니다 (저는 학생입니다) is more formal: presentations, business, announcements. Both are correct, but 이에요/예요 is the natural default in conversation. To say what something is NOT, use N이/가 아니에요: 저는 학생이 아니에요 (\"I'm not a student\")."
+      },
+      "pronunciation": "학생이에요 is pronounced [학쌩이에요]: ㄱ followed by ㅅ tightens the ㅅ to a tense [ㅆ].",
+      "drill": {
+        "instruction": "Introduce three people — follow the model.",
+        "model": "저는 (학생)이에요. → 이분은 (선생님)이에요. → 친구는 (의사)예요.",
+        "items": [
+          "저는 ______이에요/예요.",
+          "이분은 ______이에요/예요.",
+          "제 친구는 ______이에요/예요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "저는 학생예요.",
+        "right": "저는 학생이에요.",
+        "explanation": "A consonant ending needs 이에요. 학생 ends in ㅇ (a 받침), so 학생예요 is wrong. Feel the final sound: a consonant takes 이에요, a vowel takes 예요."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "안녕하세요",
+      "romanization": "annyeonghaseyo",
+      "english": "Hello / Hi (polite)",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "안녕하세요. 저는 지수예요.",
+        "en": "Hello. I am Jisu.",
+        "note": "안녕하세요 is always the opener; then your name introduction follows naturally."
+      },
+      "collocations": [
+        "안녕하세요, 처음 뵙겠습니다",
+        "선생님, 안녕하세요",
+        "안녕하세요! (in person and text)"
+      ]
+    },
+    {
+      "hangul": "안녕히 계세요",
+      "romanization": "annyeonghi gyeseyo",
+      "english": "Goodbye (said by the one leaving)",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "제가 먼저 갈게요. 안녕히 계세요!",
+        "en": "I'll go first. Goodbye!",
+        "note": "Say 안녕히 계세요 when you are leaving and the other person is staying. Say 안녕히 가세요 to someone who is leaving."
+      },
+      "collocations": [
+        "제가 먼저 갈게요. 안녕히 계세요",
+        "안녕히 가세요",
+        "또 만나요"
+      ]
+    },
+    {
+      "hangul": "감사합니다",
+      "romanization": "gamsahamnida",
+      "english": "Thank you (formal)",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "도와주셔서 감사합니다.",
+        "en": "Thank you for helping me.",
+        "note": "감사합니다 is the safer, more formal option — use it with strangers, in shops, and in any formal setting."
+      },
+      "collocations": [
+        "정말 감사합니다",
+        "도와주셔서 감사합니다",
+        "감사합니다 vs 고마워요"
+      ]
+    },
+    {
+      "hangul": "고마워요",
+      "romanization": "gomawoyo",
+      "english": "Thank you (warm/friendly)",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "선물이에요? 정말 고마워요!",
+        "en": "It's a gift? Thank you so much!",
+        "note": "고마워요 is warmer and more personal than 감사합니다 — great for friends and classmates."
+      },
+      "collocations": [
+        "정말 고마워요",
+        "오늘 고마워요",
+        "고마워 (casual, drop -요)"
+      ]
+    },
+    {
+      "hangul": "죄송합니다",
+      "romanization": "joesonghamnida",
+      "english": "I'm sorry / I apologize (formal)",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "늦어서 죄송합니다.",
+        "en": "I'm sorry for being late.",
+        "note": "죄송합니다 is the formal apology — use it when you've genuinely caused trouble or in professional/service situations."
+      },
+      "collocations": [
+        "정말 죄송합니다",
+        "늦어서 죄송해요",
+        "죄송한데요 (softer)"
+      ]
+    },
+    {
+      "hangul": "미안해요",
+      "romanization": "mianhaeyo",
+      "english": "I'm sorry (friendly)",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "미안해요, 늦었어요.",
+        "en": "Sorry, I'm late.",
+        "note": "미안해요 is the everyday polite apology — less heavy than 죄송합니다, appropriate for friends and classmates."
+      },
+      "collocations": [
+        "미안해요",
+        "정말 미안해요",
+        "미안해 (casual)"
+      ]
+    },
+    {
+      "hangul": "네",
+      "romanization": "ne",
+      "english": "Yes / I see / okay",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "네, 알겠어요.",
+        "en": "Yes, I understand.",
+        "note": "네 doesn't only mean 'yes' — it's also used as a listening signal ('I hear you') while someone is talking."
+      },
+      "collocations": [
+        "네, 맞아요",
+        "네, 알겠어요",
+        "네, 괜찮아요"
+      ]
+    },
+    {
+      "hangul": "아니요",
+      "romanization": "aniyo",
+      "english": "No (polite)",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "아니요, 저는 학생이 아니에요.",
+        "en": "No, I'm not a student.",
+        "note": "아니요 is the polite 'no' — always softer when followed by a short explanation like 괜찮아요 or 몰라요."
+      },
+      "collocations": [
+        "아니요, 괜찮아요",
+        "아니요, 몰라요",
+        "아니요, 저는 ___이 아니에요"
+      ]
+    },
+    {
+      "hangul": "만나서 반가워요",
+      "romanization": "mannaseo bangawoyo",
+      "english": "Nice to meet you",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "저는 민준이에요. 만나서 반가워요!",
+        "en": "I'm Minjun. Nice to meet you!",
+        "note": "This is the standard 'nice to meet you' — said after exchanging names for the first time."
+      },
+      "collocations": [
+        "만나서 반갑습니다 (formal)",
+        "처음 뵙겠습니다 (very formal first meeting)",
+        "반가워요"
+      ]
+    },
+    {
+      "hangul": "잠시만요",
+      "romanization": "jamsimanyo",
+      "english": "One moment, please",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "잠시만요, 다시 말씀해 주세요.",
+        "en": "One moment, please say that again.",
+        "note": "Use 잠시만요 any time you need a pause — at stores, classrooms, or when you haven't heard something clearly."
+      },
+      "collocations": [
+        "잠시만 기다려 주세요",
+        "잠시만요, 확인할게요",
+        "잠깐만요 (slightly casual)"
+      ]
+    },
+    {
+      "hangul": "저",
+      "romanization": "jeo",
+      "english": "I / me (polite)",
+      "partOfSpeech": "pronoun",
+      "exampleSentence": {
+        "ko": "저는 마이클이에요.",
+        "en": "I am Michael.",
+        "note": "저 is the polite first-person pronoun — always use this until you're on casual terms with the other person."
+      },
+      "collocations": [
+        "저는",
+        "저의 / 제 (my)",
+        "저도 (me too)"
+      ]
+    },
+    {
+      "hangul": "이름",
+      "romanization": "ireum",
+      "english": "name",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "이름이 뭐예요?",
+        "en": "What is your name?",
+        "note": "이름 ends in 'm' (consonant) → 이에요 when you predicate it: 제 이름은 ___이에요."
+      },
+      "collocations": [
+        "이름이 뭐예요?",
+        "제 이름은 ___이에요",
+        "이름을 쓰세요"
+      ]
+    },
+    {
+      "hangul": "학생",
+      "romanization": "haksaeng",
+      "english": "student",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "저는 한국어 학생이에요.",
+        "en": "I am a Korean language student.",
+        "note": "학생 ends in 'ng' (consonant) → 이에요. One of the most-used identity nouns in self-introductions."
+      },
+      "collocations": [
+        "한국어 학생",
+        "대학생 (university student)",
+        "학생이에요"
+      ]
+    },
+    {
+      "hangul": "선생님",
+      "romanization": "seonsaengnim",
+      "english": "teacher / instructor",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "선생님, 안녕하세요!",
+        "en": "Hello, teacher!",
+        "note": "선생님 is both 'teacher' as a noun and the address form used directly — like calling someone 'Teacher' instead of their name."
+      },
+      "collocations": [
+        "선생님, 안녕하세요",
+        "한국어 선생님",
+        "선생님이에요"
+      ]
+    },
+    {
+      "hangul": "처음",
+      "romanization": "cheoeum",
+      "english": "first time",
+      "partOfSpeech": "noun/adverb",
+      "exampleSentence": {
+        "ko": "처음 뵙겠습니다.",
+        "en": "How do you do. / I'm meeting you for the first time.",
+        "note": "처음 뵙겠습니다 is a very formal first-meeting phrase. In everyday language exchange settings, 만나서 반가워요 is more natural."
+      },
+      "collocations": [
+        "처음 만나요",
+        "처음 뵙겠습니다",
+        "처음이에요 (it's my first time)"
+      ]
+    },
+    {
+      "hangul": "반갑다",
+      "romanization": "bangapda",
+      "english": "to be glad / pleased to meet",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "만나서 정말 반가워요.",
+        "en": "I'm so pleased to meet you.",
+        "note": "반갑다 is an adjective meaning 'glad to see/meet someone.' In 해요 speech it becomes 반가워요 — an irregular adjective (ㅂ irregular: 반갑다 → 반가워요)."
+      },
+      "collocations": [
+        "만나서 반가워요",
+        "반갑습니다 (formal)",
+        "정말 반가워요"
+      ]
+    },
+    {
+      "hangul": "아니에요",
+      "romanization": "anieyo",
+      "english": "am not / is not / are not",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "저는 학생이 아니에요. 선생님이에요.",
+        "en": "I'm not a student. I'm a teacher.",
+        "note": "아니에요 is the polite negative of 이에요/예요. Notice the pattern: N이/가 아니에요 — the noun takes 이/가 (subject marker), then 아니에요."
+      },
+      "collocations": [
+        "학생이 아니에요",
+        "___이 아니에요",
+        "아니에요 (standalone = 'not at all / no problem')"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "A Korean language exchange meetup in Seoul. Minjun approaches Emma, who is joining for the first time.",
+    "lines": [
+      {
+        "speaker": "민준",
+        "ko": "안녕하세요! 오늘 처음이에요?",
+        "romanization": "Annyeonghaseyo! Oneul cheoeumieyo?",
+        "en": "Hello! Is this your first time here?",
+        "grammarNote": "안녕하세요 is the all-purpose polite greeting. 오늘 처음이에요? keeps the question beginner-safe: 처음 ends in a consonant, so it takes 이에요."
+      },
+      {
+        "speaker": "엠마",
+        "ko": "네, 처음이에요. 저는 엠마예요.",
+        "romanization": "Ne, cheoeumieyo. Jeoneun emmayeyo.",
+        "en": "Yes, it's my first time. I'm Emma.",
+        "grammarNote": "처음이에요 — 처음 ends in 'm' (consonant) → 이에요. 저는 엠마예요 — 엠마 ends in 'a' (vowel) → 예요. Two 이에요/예요 forms in one turn!"
+      },
+      {
+        "speaker": "민준",
+        "ko": "만나서 반가워요! 저는 민준이에요.",
+        "romanization": "Mannaseo bangawoyo! Jeoneun minjunieyo.",
+        "en": "Nice to meet you! I'm Minjun.",
+        "grammarNote": "민준 ends in 'n' (consonant) → 이에요. 만나서 반가워요 is the standard 'nice to meet you' — use it immediately after learning someone's name for the first time."
+      },
+      {
+        "speaker": "엠마",
+        "ko": "죄송해요, 이름을 다시 말해 주세요.",
+        "romanization": "Joesonghaeyo, ireumeul dasi malhae juseyo.",
+        "en": "Sorry, please say your name again.",
+        "grammarNote": "죄송해요 softens the request, and 다시 말해 주세요 is a survival phrase for first meetings and language class."
+      },
+      {
+        "speaker": "민준",
+        "ko": "네, 민준이에요. 천천히 말할게요. 민-준.",
+        "romanization": "Ne, minjunieyo. Cheoncheonhi malhalgeyo. Min-jun.",
+        "en": "Sure, it is Minjun. I will say it slowly. Min-jun.",
+        "grammarNote": "민준 ends in a consonant, so it takes 이에요. 천천히 is the natural adverb when repeating a name slowly."
+      },
+      {
+        "speaker": "엠마",
+        "ko": "아, 민준 씨. 감사합니다.",
+        "romanization": "A, Minjun ssi. Gamsahamnida.",
+        "en": "Ah, Minjun. Thank you.",
+        "grammarNote": "씨 is a polite name suffix used after someone else's name. 감사합니다 is the safe thank-you for a new person."
+      },
+      {
+        "speaker": "민준",
+        "ko": "저는 먼저 갈게요. 안녕히 계세요.",
+        "romanization": "Jeoneun meonjeo galgeyo. Annyeonghi gyeseyo.",
+        "en": "I will head out first. Goodbye.",
+        "grammarNote": "안녕히 계세요 is said by the person leaving when the other person stays."
+      },
+      {
+        "speaker": "엠마",
+        "ko": "네, 안녕히 가세요. 다음에 또 만나요.",
+        "romanization": "Ne, annyeonghi gaseyo. Daeume tto mannayo.",
+        "en": "Okay, goodbye. See you again next time.",
+        "grammarNote": "The person staying replies with 안녕히 가세요 to the person leaving. 다음에 또 만나요 is a friendly closing."
+      }
+    ]
+  },
+  "readingText": {
+    "type": "sms",
+    "title": "첫 언어 교환 후 메시지 (Text messages after the first language exchange)",
+    "body": "민준: 엠마 씨, 오늘 만나서 반가워요.\n엠마: 저도 반가워요. 이름을 다시 물어봐서 죄송해요.\n민준: 괜찮아요. 한국어 공부는 처음이에요?\n엠마: 네, 처음이에요. 천천히 말해 주세요.\n민준: 네, 좋아요. 다음 주에 또 만나요?\n엠마: 네, 감사합니다. 다음 주에 만나요!",
+    "bodyTranslation": "Minjun: Emma, nice to meet you today.\nEmma: Nice to meet you too. Sorry for asking your name again.\nMinjun: It's okay. Is this your first time studying Korean?\nEmma: Yes, it is my first time. Please speak slowly.\nMinjun: Sure, sounds good. Shall we meet again next week?\nEmma: Yes, thank you. See you next week!",
+    "comprehensionQuestions": [
+      {
+        "question": "What does Emma apologize for in the text exchange?",
+        "answer": "She apologizes for asking Minjun's name again: 이름을 다시 물어봐서 죄송해요."
+      },
+      {
+        "question": "What phrase does Emma use when she needs slower Korean?",
+        "answer": "천천히 말해 주세요 — Please speak slowly."
+      },
+      {
+        "question": "Find all instances of 이에요/예요 in the text. For each one, explain whether the noun ends in a consonant or vowel and why that determines the form used.",
+        "answer": "처음이에요 appears twice. 처음 ends in the final consonant ㅁ, so it takes 이에요. This demonstrates the phonetic rule: consonant-final noun → 이에요, vowel-final noun → 예요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "감사합니다 vs 고마워요 — Reading the Room",
+    "body": "Both mean 'thank you,' but using the wrong one in the wrong setting is a social signal that Koreans pick up on immediately. 감사합니다 (formal, 입니다-style speech) is what you say to a shop assistant, a server, a stranger who helped you, your boss, or anyone you've just met — it's the safe, respectful default. 고마워요 (polite, 해요-style speech) is warmer and more personal — use it with classmates, language exchange partners, and friends you've started to get comfortable with. As a beginner, you'll never go wrong defaulting to 감사합니다. When someone uses 고마워요 with you, it's a small sign they feel at ease with you — a good thing."
+  },
+  "inlineExercises": [
+    {
+      "type": "fillBlank",
+      "prompt": "저는 학생___ (I am a student.)",
+      "options": [
+        "이에요",
+        "예요"
+      ],
+      "correct": "이에요",
+      "explanation": "학생 ends in 'ng' — a final consonant (받침). The rule: consonant-final noun → 이에요. 학생예요 creates an awkward sound break and sounds unnatural. Check the final sound first: if you feel a consonant, attach 이에요."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "저는 의사___ (I am a doctor.)",
+      "options": [
+        "이에요",
+        "예요"
+      ],
+      "correct": "예요",
+      "explanation": "의사 ends in 'a' — a vowel. The rule: vowel-final noun → 예요. 의사이에요 would add an extra syllable that sounds clunky. When the noun ends in a vowel, attach 예요 directly."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "다음 문장에서 틀린 것을 찾아보세요: '나는 마이클예요.'",
+      "correct": "저는 마이클이에요.",
+      "explanation": "Two errors: (1) 나는 should be 저는 in polite speech — 나 is casual and sounds rude to someone you've just met. (2) 마이클 ends in 'l' (consonant) → must use 이에요, not 예요. Always use 저 until you're on casual terms."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Someone asks you 이름이 뭐예요? How do you answer if your name is 지수?",
+      "options": [
+        "저는 미국이에요.",
+        "저는 지수예요.",
+        "나는 지수 이름이에요."
+      ],
+      "correct": "저는 지수예요.",
+      "explanation": "Option 1 is wrong because 미국 is a country, not a name — this says 'I am America.' Option 3 is wrong because 이름 (name) is unnecessary in the answer and 나 is too casual for a first meeting. Option 2 is the natural, correct structure: topic (저는) + name + 예요. 지수 ends in a vowel, so use 예요."
+    },
+    {
+      "type": "translate",
+      "prompt": "Translate: 'Nice to meet you. I'm a Korean language teacher.'",
+      "correct": "만나서 반가워요. 저는 한국어 선생님이에요.",
+      "hint": "선생님 ends in 'm' (consonant) — which form of 'to be' do you use? 만나서 반가워요 is the standard 'nice to meet you' phrase.",
+      "explanation": "만나서 반가워요 is the natural fixed greeting for first meetings. 저는 한국어 선생님이에요 uses 저는 for self-introduction and 이에요 after the consonant-ending noun 선생님."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "이름___ 민수예요. (The name is Minsu. / My name is Minsu.)",
+      "options": [
+        "은",
+        "는"
+      ],
+      "correct": "은",
+      "explanation": "이름 ends in 'm' — a final consonant. The 은/는 rule mirrors 이에요/예요: consonant final → 은, vowel final → 는. 이름은 spotlights 'name' as the topic of the sentence."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "You bump into someone accidentally and want to apologize. Which do you use in this situation?",
+      "options": [
+        "감사합니다",
+        "죄송합니다",
+        "만나서 반가워요"
+      ],
+      "correct": "죄송합니다",
+      "explanation": "감사합니다 means 'thank you' — not an apology. 만나서 반가워요 is 'nice to meet you' — also wrong context. 죄송합니다 is the correct formal apology for causing inconvenience to a stranger. In casual situations with friends, 미안해요 would also work, but 죄송합니다 is the safe formal choice in public."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "저___ 학생이에요. (As for me, I am a student.)",
+      "options": [
+        "는",
+        "가",
+        "를"
+      ],
+      "correct": "는",
+      "explanation": "저는 sets \"I/me\" as the topic for a polite self-introduction. With the subject marker, 저 changes form to 제가 — 저가 does not exist — and 를 would wrongly make 저 an object."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'I am a student.'",
+      "tokens": [
+        "저는",
+        "학생이에요"
+      ],
+      "correct": "저는 학생이에요",
+      "explanation": "A simple Korean self-introduction starts with the topic 저는. 학생 ends in a consonant, so the polite “am/is” form is 이에요."
+    },
+    {
+      "type": "translate",
+      "prompt": "Translate: 'Thank you.'",
+      "correct": "감사합니다",
+      "explanation": "감사합니다 is the safest polite thank-you for first meetings and service situations. 고마워요 is warm but a little more familiar."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "은/는 = SPOTLIGHT: attach to the topic noun to say 'as for ___' — 은 after a consonant, 는 after a vowel (학생은, 저는)",
+      "이에요/예요 = NAMEPLATE: polite 'to be' — 이에요 after a consonant, 예요 after a vowel (학생이에요, 의사예요)",
+      "감사합니다 (formal) vs 고마워요 (warm/friendly) — same meaning, different register; default to 감사합니다 until you read the room"
+    ]
+  },
+  "writingTask": {
+    "prompt": "Write a short self-introduction (3 sentences): your name, what you do, and a polite closing.",
+    "hint": "Use 저는 ___이에요/예요 for the first two, and end with 만나서 반가워요.",
+    "model": "안녕하세요. 저는 마이클이에요. 저는 학생이에요. 만나서 반가워요.",
+    "modelEn": "Hello. I'm Michael. I'm a student. Nice to meet you."
+  },
+  "canDo": [
+    "Greet, thank, and apologize politely (안녕하세요 · 감사합니다 · 죄송합니다)",
+    "Introduce myself with 저는 ___이에요/예요",
+    "Choose 은 or 는 correctly from the 받침",
+    "Tell 감사합니다 from 고마워요 by who I'm talking to"
+  ]
+}

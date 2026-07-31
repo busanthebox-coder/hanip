@@ -1,0 +1,53 @@
+:root {
+  /* 한입 — rice-white ground, ink text, one gochujang accent.
+     Gold is reserved for progress + target-word highlights only;
+     celadon green means "correct" so right ≠ brand color. */
+  --bg: #FAF6EE;
+  --ink: #26221C;
+  --ink-2: #5E5346;
+  --ink-3: #8C7F6B;
+  --card: #FFFFFF;
+  --wash: #F2E9DA;
+  --line: #E5DCC8;
+  --line-2: #D6C9AE;
+
+  --accent: #E4572E;
+  --accent-deep: #C13D1B;
+  --accent-soft: #FBE7DD;
+
+  --gold: #C9A227;
+  --gold-soft: rgba(201, 162, 39, 0.16);
+
+  --good: #4E8D6E;
+  --good-deep: #2E6B4E;
+  --good-soft: #E2EFE6;
+  --bad: #C4452E;
+
+  --r-card: 20px;
+  --r-chip: 16px;
+
+  --shadow-1: 0 1px 2px rgba(38, 34, 28, 0.05), 0 10px 26px -14px rgba(38, 34, 28, 0.16);
+  --shadow-2: 0 3px 8px rgba(38, 34, 28, 0.06), 0 20px 44px -20px rgba(38, 34, 28, 0.26);
+
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --sans: 'Pretendard Variable', Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+button { font: inherit; cursor: pointer; border: 0; background: none; color: inherit; padding: 0; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+::selection { background: var(--accent-soft); color: var(--accent-deep); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

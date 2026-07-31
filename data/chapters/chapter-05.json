@@ -1,0 +1,716 @@
+{
+  "id": "chapter-05",
+  "hook": {
+    "situation": "You want to tell a Korean friend 'I drink coffee every morning.' You know the word 커피, you know 마셔요 — but you're not sure what goes between them. Is it 커피가? 커피는? 커피를? One small particle changes the entire grammatical logic of the sentence.",
+    "objectives": [
+      "Attach 을 or 를 correctly after the object in any present-tense sentence",
+      "Say what you eat, drink, study, read, and write every day",
+      "Use the short negative (안) to say what you don't do"
+    ],
+    "whyItMatters": "을/를 is the particle that tells listeners WHAT is being acted on. Without it your sentences sound like a list of disconnected words. Once this clicks, you can build an unlimited number of complete action sentences — and Koreans will immediately know you understand Korean sentence structure."
+  },
+  "grammarNotes": [
+    {
+      "title": "N을/를 — the object particle",
+      "func": "을/를 marks the object of a sentence — the thing the action happens to (what you eat, drink, read, watch). It attaches to the noun that receives the verb's action, so it is the partner of every action verb you learn.",
+      "formTable": [
+        {
+          "when": "Noun ends in a consonant (받침)",
+          "add": "을",
+          "ex": "밥 → 밥을 · 책 → 책을 · 물 → 물을"
+        },
+        {
+          "when": "Noun ends in a vowel (no 받침)",
+          "add": "를",
+          "ex": "우유 → 우유를 · 커피 → 커피를 · 친구 → 친구를"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "밥을 먹어요.",
+          "romanization": "bab-eul meogeoyo.",
+          "en": "I eat (a meal of) rice.",
+          "note": "밥 ends in a consonant (ㅂ 받침) → 을. 밥 is the object of 먹다."
+        },
+        {
+          "ko": "물을 마셔요.",
+          "romanization": "mul-eul masyeoyo.",
+          "en": "I drink water.",
+          "note": "물 ends in ㄹ 받침 (a consonant) → 을, not 를."
+        },
+        {
+          "ko": "책을 봐요.",
+          "romanization": "chaeg-eul bwayo.",
+          "en": "I read a book.",
+          "note": "책 ends in ㄱ 받침 → 을. 보다 here means 'read / look at'."
+        },
+        {
+          "ko": "친구를 만나요.",
+          "romanization": "chingu-reul mannayo.",
+          "en": "I meet a friend.",
+          "note": "친구 ends in a vowel (ㅜ), no 받침 → 를. 만나다 takes its object with 을/를, not 와/과."
+        }
+      ],
+      "keyPoint": {
+        "label": "Object 을/를 vs subject 이/가",
+        "body": "을/를 marks WHAT receives the action (the object); 이/가 marks WHO does it (the subject). In 친구가 밥을 먹어요 (A friend eats), 친구 is the doer → 가, and 밥 is the thing eaten → 을. Don't swap them. In casual speech Koreans often drop 을/를 (밥 먹어요), but learn to add it correctly first — the dropping comes naturally later.",
+        "when": "",
+        "add": "",
+        "ex": ""
+      },
+      "pronunciation": "밥을 is pronounced [바블]: the final ㅂ links into the following vowel (linking, 연음). Likewise 책을 → [채글], 한국어를 → [한구거를].",
+      "drill": {
+        "instruction": "Add the right object particle and say the full sentence — follow the model.",
+        "model": "(물) 마셔요. → 물을 마셔요. · (커피) 마셔요. → 커피를 마셔요.",
+        "items": [
+          "(밥) 먹어요. → ______",
+          "(책) 봐요. → ______",
+          "(친구) 만나요. → ______",
+          "(한국어) 공부해요. → ______"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "저는 밥 먹어요 treated as the 'correct, complete' textbook form",
+        "right": "저는 밥을 먹어요.",
+        "explanation": "English has no object particle, so learners forget 을/를 and treat the bare noun as finished. The neutral, fully-formed sentence keeps the particle; dropping it is a casual-speech shortcut, not the default you should write."
+      }
+    },
+    {
+      "title": "안 + verb — the short negative",
+      "func": "안 makes a verb negative — it means 'do not / does not'. You put 안 directly in front of the verb to say you don't do the action (안 먹어요 = I don't eat).",
+      "formTable": [
+        {
+          "when": "Ordinary action verb",
+          "add": "안 + verb",
+          "ex": "먹어요 → 안 먹어요 · 봐요 → 안 봐요 · 마셔요 → 안 마셔요"
+        },
+        {
+          "when": "하다 verb (noun + 하다)",
+          "add": "안 goes between the noun and 하다",
+          "ex": "공부해요 → 공부 안 해요 · 운동해요 → 운동 안 해요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "저는 밥을 안 먹어요.",
+          "romanization": "jeoneun bab-eul an meogeoyo.",
+          "en": "I don't eat (the meal).",
+          "note": "안 sits right before the verb 먹어요. The object 밥을 keeps its normal place."
+        },
+        {
+          "ko": "물을 안 마셔요.",
+          "romanization": "mul-eul an masyeoyo.",
+          "en": "I don't drink water.",
+          "note": "Simple verb → just 안 + 마셔요."
+        },
+        {
+          "ko": "친구가 책을 안 봐요.",
+          "romanization": "chinguga chaeg-eul an bwayo.",
+          "en": "My friend doesn't read books.",
+          "note": "안 negates the action 보다, not the object 책을."
+        },
+        {
+          "ko": "오늘은 한국어를 공부 안 해요.",
+          "romanization": "oneureun hangugeo-reul gongbu an haeyo.",
+          "en": "Today I don't study Korean.",
+          "note": "With a 하다 verb, 안 splits in: 공부 안 해요, NOT 안 공부해요."
+        }
+      ],
+      "keyPoint": {
+        "label": "안 (choose not to) vs 못 (can't) — preview",
+        "body": "안 means you simply don't / choose not to do something (안 먹어요 = I don't eat it). 못 means you're unable to even though you might want to (못 먹어요 = I can't eat it). Both go in front of the verb, but the meaning differs: 안 = won't / don't, 못 = can't. You'll practice 못 in its own chapter — for now just remember 안 is the everyday negative.",
+        "when": "",
+        "add": "",
+        "ex": ""
+      },
+      "pronunciation": "안 + verb does not fuse: the ㄴ of 안 stays crisp and there is no tensing on the verb (안 봐요 = [안봐요], not [안뽜요]). Keep them as two clear beats.",
+      "drill": {
+        "instruction": "Make each sentence negative with 안 — follow the model. Watch the 하다 verb.",
+        "model": "밥을 먹어요. → 밥을 안 먹어요. · 공부해요. → 공부 안 해요.",
+        "items": [
+          "물을 마셔요. → ______",
+          "책을 봐요. → ______",
+          "친구를 만나요. → ______",
+          "한국어를 공부해요. → ______"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "오늘은 한국어를 안 공부해요.",
+        "right": "오늘은 한국어를 공부 안 해요.",
+        "explanation": "English puts 'not' before the whole verb, so learners say 안 공부해요. But 공부하다 is noun(공부) + 하다, and 안 must slip between them: 공부 안 해요. This split only happens with 하다 verbs; ordinary verbs take 안 straight in front (안 먹어요)."
+      }
+    },
+    {
+      "title": "자연스럽게 말하기 — How Korean actually sounds",
+      "func": "Korean squeezes its most common words the moment people speak, and those short forms are what fill KakaoTalk, subtitles, and everyday conversation. 저는 becomes 전, 것이 becomes 게, 무엇을 becomes 뭘. The meaning stays the same and so does the respect level — what shifts is how formal you sound, so these belong to speech rather than to a business email. You have just learned 은/는 and 을/를, so you can now see exactly what is being squeezed together.",
+      "formTable": [
+        {
+          "when": "나는 / 저는 (topic)",
+          "add": "전 / 난",
+          "ex": "전 학생이에요. (\"I'm a student.\") — 난 is the same squeeze on 나는, but this app sticks to 저/전."
+        },
+        {
+          "when": "너는 (topic) — read only",
+          "add": "넌",
+          "ex": "넌 어디 가? (\"Where are you going?\") — 반말. Read it, don't say it: use 전 + 해요체 instead."
+        },
+        {
+          "when": "것이 / 것을 / 것은",
+          "add": "게 / 걸 / 건",
+          "ex": "먹을 게 없어요. (\"There's nothing to eat.\") · 이걸 주세요. (\"Give me this one.\") · 이건 뭐예요? (\"What's this?\")"
+        },
+        {
+          "when": "무엇을 / 무엇이",
+          "add": "뭘 / 뭐가",
+          "ex": "뭘 먹을까요? (\"What shall we eat?\") · 뭐가 맛있어요? (\"What's tasty?\") — 무엇 shrinks to 뭐 first, then 뭐+를 → 뭘; 뭐가 takes 가 because 뭐 ends in a vowel."
+        },
+        {
+          "when": "것 같아요 (speech only)",
+          "add": "거 같아요",
+          "ex": "좋은 거 같아요. (\"I think it's good.\") — but write 좋은 것 같습니다 in an email or a report."
+        },
+        {
+          "when": "이것 / 그것 / 저것",
+          "add": "이거 / 그거 / 저거",
+          "ex": "이거 주세요. (\"This one, please.\")"
+        },
+        {
+          "when": "-지요",
+          "add": "-죠",
+          "ex": "맛있죠? (\"It's tasty, right?\")"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "전 커피를 마셔요.",
+          "romanization": "jeon keopi-reul masyeoyo.",
+          "en": "I drink coffee.",
+          "note": "저는 → 전. The topic marker 는 collapses onto 저. Still 해요체, still polite — 전 is not more casual than 저는."
+        },
+        {
+          "ko": "뭘 봐요?",
+          "romanization": "mwol bwayo?",
+          "en": "What are you watching?",
+          "note": "무엇을 → 뭘. In everyday conversation 뭘 (or 뭐) is the norm, even when you're being polite. 무엇을 isn't dead — it's just formal: you'll hear it from news anchors and in set service phrases like 무엇을 도와드릴까요?"
+        },
+        {
+          "ko": "이거 진짜 맛있는 거 같아요.",
+          "romanization": "igeo jinjja masinneun geo gatayo.",
+          "en": "I think this is really tasty.",
+          "note": "이것 → 이거, 것 같아요 → 거 같아요. Two contractions in one polite sentence — this is ordinary adult speech, not slang."
+        },
+        {
+          "ko": "오늘 좀 춥죠?",
+          "romanization": "chupjo.",
+          "en": "It's a bit cold today, isn't it?",
+          "note": "-지요 → -죠. The full -지요 sounds stiff in conversation; -죠 is what you actually hear."
+        }
+      ],
+      "keyPoint": {
+        "label": "Shorter spelling, same politeness — but not the same formality",
+        "body": "A contraction changes the spelling, not the meaning and not the level of respect: 전 학생이에요 and 저는 학생이에요 are equally polite, and 이거 주세요 is no ruder than 이것을 주세요. What it does change is how FORMAL you sound. Short forms are speech; the full forms are for writing and for formal rooms — a job interview, a presentation, a business email, an exam. Say 거 같아요 to a friend or a coworker, but write 것 같습니다 in that email. And one warning: none of this rescues 넌. 너 is a 반말 word by itself, so 넌 stays 반말 even with -요 on the end. Politeness lives in the ending (-요, -습니다) and in which words you pick — never in how many syllables they have.",
+        "when": "",
+        "add": "",
+        "ex": ""
+      },
+      "pronunciation": "These short forms are the spoken sound written down — but watch the actual route. In speech 것 becomes 거, and only then do the particles fuse onto it: 거 + 이 → 게, 거 + 를 → 걸, 거 + 는 → 건. (Don't be fooled by the full forms: 것을 is pronounced [거슬], not [거를].) 뭘 takes the same route: 무엇 shrinks to 뭐 [무어 → 뭐], and then 뭐 + 를 → 뭘. And -지요 squeezes into one syllable as -죠, which is pronounced [조] — there is no 'y' glide in it, and after a 받침 it tightens: 춥죠 = [춥쪼].",
+      "drill": {
+        "instruction": "Say each sentence the way you would actually say it out loud — contract what can be contracted. Follow the model.",
+        "model": "저는 학생이에요. → 전 학생이에요. · 이것이 좋아요. → 이게 좋아요. · 그렇지요? → 그렇죠?",
+        "items": [
+          "저는 한국어를 공부해요. → ______",
+          "그것 좀 주세요. → ______",
+          "먹을 것이 없어요. → ______",
+          "오늘 바쁘지요? → ______"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "Avoiding 전 / 거 같아요 / 이거 because they look like slang or 반말",
+        "right": "전 학생이에요. · 좋은 거 같아요. · 이거 주세요.",
+        "explanation": "English contractions (\"I'm\", \"gonna\") really do drop the register, so learners assume Korean works the same way and stick to 저는 / 것 같아요 / 이것 to stay polite. It backfires: in conversation the full forms sound like a textbook being read aloud. Politeness in Korean lives in the ending (-요, -습니다), not in the length of the word. What shortness does signal is informality — so let 전 and 거 같아요 do the talking, and keep 저는 and 것 같습니다 for interviews, emails, and essays."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "먹다",
+      "romanization": "meokda",
+      "english": "to eat",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "점심을 먹어요.",
+        "en": "I eat lunch.",
+        "note": "점심 ends in consonant ㅁ → 을; eating is directed at lunch"
+      },
+      "collocations": [
+        "밥을 먹다",
+        "점심을 먹다",
+        "저녁을 먹다",
+        "안 먹어요"
+      ]
+    },
+    {
+      "hangul": "마시다",
+      "romanization": "masida",
+      "english": "to drink",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "물을 마셔요.",
+        "en": "I drink water.",
+        "note": "물 ends in consonant ㄹ → 을; the drinking action hits 물"
+      },
+      "collocations": [
+        "커피를 마시다",
+        "물을 마시다",
+        "차를 마시다",
+        "안 마셔요"
+      ]
+    },
+    {
+      "hangul": "공부하다",
+      "romanization": "gongbuhada",
+      "english": "to study",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "한국어를 공부해요.",
+        "en": "I study Korean.",
+        "note": "한국어 ends in vowel 어 → 를; can also split: 한국어 공부를 해요"
+      },
+      "collocations": [
+        "한국어를 공부하다",
+        "공부를 하다",
+        "공부 안 해요"
+      ]
+    },
+    {
+      "hangul": "읽다",
+      "romanization": "ikda",
+      "english": "to read",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "책을 읽어요.",
+        "en": "I read a book.",
+        "note": "책 ends in consonant ㄱ → 을; reading is directed at the book"
+      },
+      "collocations": [
+        "책을 읽다",
+        "신문을 읽다",
+        "안 읽어요"
+      ]
+    },
+    {
+      "hangul": "쓰다",
+      "romanization": "sseuda",
+      "english": "to write",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "일기를 써요.",
+        "en": "I write a diary.",
+        "note": "일기 ends in vowel 기 → 를; writing is directed at the diary"
+      },
+      "collocations": [
+        "일기를 쓰다",
+        "메모를 쓰다",
+        "이메일을 쓰다"
+      ]
+    },
+    {
+      "hangul": "듣다",
+      "romanization": "deutda",
+      "english": "to listen / to hear",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "음악을 들어요.",
+        "en": "I listen to music.",
+        "note": "음악 ends in consonant ㄱ → 을; listening is directed at the music"
+      },
+      "collocations": [
+        "음악을 듣다",
+        "라디오를 듣다",
+        "수업을 듣다"
+      ]
+    },
+    {
+      "hangul": "보다",
+      "romanization": "boda",
+      "english": "to watch / to see",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "영화를 봐요.",
+        "en": "I watch a movie.",
+        "note": "영화 ends in vowel 아 → 를; watching is directed at the movie"
+      },
+      "collocations": [
+        "영화를 보다",
+        "TV를 보다",
+        "뉴스를 보다"
+      ]
+    },
+    {
+      "hangul": "운동하다",
+      "romanization": "undonghada",
+      "english": "to exercise",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "매일 운동해요.",
+        "en": "I exercise every day.",
+        "note": "운동하다 has no object here — not everything needs 을/를; negative form: 운동 안 해요"
+      },
+      "collocations": [
+        "운동을 하다",
+        "운동 안 해요",
+        "매일 운동하다"
+      ]
+    },
+    {
+      "hangul": "일하다",
+      "romanization": "ilhada",
+      "english": "to work",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "오늘 일 안 해요.",
+        "en": "I'm not working today.",
+        "note": "Noun+하다 split negative: 일 + 안 + 해요 — the stop sign goes between noun and verb"
+      },
+      "collocations": [
+        "일을 하다",
+        "일 안 해요",
+        "열심히 일하다"
+      ]
+    },
+    {
+      "hangul": "밥",
+      "romanization": "bap",
+      "english": "cooked rice / meal",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "밥을 먹어요?",
+        "en": "Are you eating? / Do you eat rice?",
+        "note": "밥 ends in consonant ㅂ → 을; 밥을 먹다 is the most common eating phrase in Korean"
+      },
+      "collocations": [
+        "밥을 먹다",
+        "아침을 먹다",
+        "점심을 먹다"
+      ]
+    },
+    {
+      "hangul": "커피",
+      "romanization": "keopi",
+      "english": "coffee",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "커피를 마셔요.",
+        "en": "I drink coffee.",
+        "note": "커피 ends in vowel 이 → 를; 마시다 is directed at the drink."
+      },
+      "collocations": [
+        "커피를 마시다",
+        "아이스커피를 마시다",
+        "커피를 안 마셔요"
+      ]
+    },
+    {
+      "hangul": "물",
+      "romanization": "mul",
+      "english": "water",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "물을 많이 마셔요.",
+        "en": "I drink a lot of water.",
+        "note": "물 ends in consonant ㄹ → 을; 많이 = a lot, modifying the verb"
+      },
+      "collocations": [
+        "물을 마시다",
+        "물을 많이 마시다",
+        "물을 안 마셔요"
+      ]
+    },
+    {
+      "hangul": "책",
+      "romanization": "chaek",
+      "english": "book",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "책을 읽어요.",
+        "en": "I read a book.",
+        "note": "책 ends in consonant ㄱ → 을; reading is directed at the book."
+      },
+      "collocations": [
+        "책을 읽다",
+        "책을 안 읽다",
+        "한국어 책을 읽다"
+      ]
+    },
+    {
+      "hangul": "음악",
+      "romanization": "eumak",
+      "english": "music",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "음악을 들어요.",
+        "en": "I listen to music.",
+        "note": "음악 ends in consonant ㄱ → 을; listening is directed at the music."
+      },
+      "collocations": [
+        "음악을 듣다",
+        "한국 음악을 듣다",
+        "음악을 안 들어요"
+      ]
+    },
+    {
+      "hangul": "영화",
+      "romanization": "yeonghwa",
+      "english": "movie / film",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "영화를 봐요.",
+        "en": "I watch a movie.",
+        "note": "영화 ends in vowel 아 → 를; watching is directed at the movie."
+      },
+      "collocations": [
+        "영화를 보다",
+        "영화를 안 보다",
+        "한국 영화를 보다"
+      ]
+    },
+    {
+      "hangul": "매일",
+      "romanization": "maeil",
+      "english": "every day",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "매일 커피를 마셔요.",
+        "en": "I drink coffee every day.",
+        "note": "매일 is a time adverb — it doesn't need a particle; it modifies the entire sentence"
+      },
+      "collocations": [
+        "매일 먹다",
+        "매일 운동하다",
+        "매일 공부하다"
+      ]
+    },
+    {
+      "hangul": "많이",
+      "romanization": "mani",
+      "english": "a lot / many / much",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "물을 많이 마셔요.",
+        "en": "I drink a lot of water.",
+        "note": "많이 (adverb) modifies the verb directly — no particle needed on the adverb itself"
+      },
+      "collocations": [
+        "많이 먹다",
+        "많이 마시다",
+        "많이 공부하다"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Jihee (지희) and her coworker Minho (민호) are chatting over lunch about their daily habits",
+    "lines": [
+      {
+        "speaker": "지희",
+        "ko": "민호 씨, 매일 아침을 먹어요?",
+        "romanization": "Minho ssi, maeil achimeul meogeoyo?",
+        "en": "Minho, do you eat breakfast every day?",
+        "grammarNote": "아침을 먹어요 — 아침 ends in consonant ㅁ → 을; eating (먹다) is directed at breakfast"
+      },
+      {
+        "speaker": "민호",
+        "ko": "아니요, 아침을 안 먹어요. 바빠요.",
+        "romanization": "aniyo, achimeul an meogeoyo. bappayo.",
+        "en": "No, I don't eat breakfast. I'm busy.",
+        "grammarNote": "아침을 안 먹어요 — the stop-sign 안 goes directly before 먹어요 (a pure verb, not noun+하다)"
+      },
+      {
+        "speaker": "지희",
+        "ko": "그래요? 저는 매일 밥을 먹어요. 물을 많이 마셔요.",
+        "romanization": "Geuraeyo? Jeoneun maeil babeul meogeoyo. Mureul mani masyeoyo.",
+        "en": "Really? I eat rice every day. I drink a lot of water.",
+        "grammarNote": "밥을 먹어요 and 물을 마셔요 both use 을 because 밥 and 물 end in consonants. 많이 modifies 마셔요; it does not take a particle."
+      },
+      {
+        "speaker": "민호",
+        "ko": "커피를 마셔요. 그게 제 아침이에요.",
+        "romanization": "Keopireul masyeoyo. Geuge je achimieyo.",
+        "en": "I drink coffee. That's my breakfast.",
+        "grammarNote": "커피를 마셔요 — 커피 ends in vowel 이 → 를 attaches; drinking is directed at coffee"
+      },
+      {
+        "speaker": "지희",
+        "ko": "하하, 한국어를 공부해요?",
+        "romanization": "Haha, hangugeoreul gongbuhaeyo?",
+        "en": "Haha, do you study Korean?",
+        "grammarNote": "한국어를 공부해요 — 한국어 ends in vowel 어 → 를; this is also valid as 한국어 공부를 해요 (split form)"
+      },
+      {
+        "speaker": "민호",
+        "ko": "네, 매일 한국어를 공부해요. 그런데 책을 안 읽어요.",
+        "romanization": "Ne, maeil hangugeoreul gongbuhaeyo. Geureonde chaegeul an ilgeoyo.",
+        "en": "Yes, I study Korean every day. But I don't read books.",
+        "grammarNote": "한국어를 공부해요 uses 를 because 한국어 ends in a vowel. 책을 안 읽어요 keeps 을 on the object and puts 안 before the pure verb 읽어요."
+      },
+      {
+        "speaker": "지희",
+        "ko": "저는 책을 읽어요. 그리고 음악을 들어요.",
+        "romanization": "Jeoneun chaegeul ilgeoyo. Geurigo eumageul deureoyo.",
+        "en": "I read books. And I listen to music.",
+        "grammarNote": "책을 읽어요 and 음악을 들어요 both use 을 because 책 and 음악 end in consonants. Two clean object sentences."
+      },
+      {
+        "speaker": "민호",
+        "ko": "좋아요. 오늘은 영화를 안 봐요. 책을 읽어요.",
+        "romanization": "Joayo. Oneureun yeonghwareul an bwayo. Chaegeul ilgeoyo.",
+        "en": "Good. Today I won't watch a movie. I'll read a book.",
+        "grammarNote": "영화를 안 봐요 puts 안 before the pure verb 봐요. 책을 읽어요 keeps 을 because 책 ends in consonant ㄱ."
+      }
+    ]
+  },
+  "readingText": {
+    "type": "diary",
+    "title": "수빈의 하루 일과 (Subin's Daily Routine)",
+    "body": "저는 매일 아침 밥을 먹어요. 커피를 마셔요. 회사에서 이메일을 써요. 보고서를 읽어요. 점심에는 동료들과 밥을 먹어요. 퇴근 후에는 음악을 들어요. 한국어를 공부해요. 드라마를 봐요. 주말에는 운동 안 해요. 그냥 책을 읽어요.",
+    "bodyTranslation": "Every morning I eat a meal. I drink coffee. At work I write emails. I read reports. At lunch I eat with my coworkers. After work I listen to music. I study Korean. I watch dramas. On weekends I don't exercise. I just read books.",
+    "comprehensionQuestions": [
+      {
+        "question": "What two things does Subin do in the morning?",
+        "answer": "밥을 먹어요 (eats a meal) and 커피를 마셔요 (drinks coffee)."
+      },
+      {
+        "question": "What two things does Subin do after work?",
+        "answer": "음악을 들어요 (listens to music) and 한국어를 공부해요 (studies Korean)"
+      },
+      {
+        "question": "Find all the 을/를 in the text. For each one, explain why 을 or 를 is used — not the other form.",
+        "answer": "밥을 (ㅂ consonant ending → 을), 커피를 (이 vowel ending → 를), 이메일을 (ㄹ consonant ending → 을), 보고서를 (어 vowel ending → 를), 밥을 (again, ㅂ → 을), 음악을 (ㄱ consonant ending → 을), 한국어를 (어 vowel ending → 를), 드라마를 (아 vowel ending → 를), 책을 (ㄱ consonant ending → 을). The rule: consonant-ending nouns take 을, vowel-ending nouns take 를."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "밥 먹었어요? — The Korean greeting that's really about food",
+    "body": "In Korea, one of the most common informal greetings is '밥 먹었어요?' (Have you eaten?) — said instead of 'How are you?' to close friends and family. Offering food is central to Korean social bonding. Answering 'yes' (네, 먹었어요) or 'not yet' (아직요) is totally normal. Notice that in this casual greeting, the particle 을 is often dropped: '밥 먹었어요?' rather than '밥을 먹었어요?' This is the natural particle-dropping that Koreans do in fast speech — but you now know the full form with 을, which makes the shortened form easy to understand."
+  },
+  "inlineExercises": [
+    {
+      "type": "fillBlank",
+      "prompt": "저는 아침___ 먹어요. (I eat breakfast.)",
+      "options": [
+        "을",
+        "를",
+        "이",
+        "가"
+      ],
+      "correct": "을",
+      "explanation": "아침 ends in consonant ㅁ, so it takes 을. 를 is only used after vowel-ending nouns. 이 and 가 are subject markers, not object markers — they mark who is doing the action, not what receives it."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "커피___ 마셔요. (I drink coffee.)",
+      "options": [
+        "을",
+        "를",
+        "은",
+        "는"
+      ],
+      "correct": "를",
+      "explanation": "커피 ends in vowel 이, so it takes 를. 을 is for consonant-ending nouns. 은/는 are topic markers, not object markers — they set the topic of the sentence, which is different from marking what is being drunk."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "다음 문장을 자연스럽게 고쳐보세요: '저는 안 공부해요.'",
+      "correct": "저는 공부 안 해요.",
+      "explanation": "공부하다 is a noun+하다 verb. In the everyday short negative, split it into 공부 + 안 + 해요. Pure verbs take 안 right before the verb (안 먹어요), but noun+하다 verbs usually split: 공부 안 해요, 운동 안 해요, 일 안 해요."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "한국어___ 공부해요. (I study Korean.)",
+      "options": [
+        "을",
+        "를"
+      ],
+      "correct": "를",
+      "explanation": "한국어 ends in vowel 어, so it takes 를. This is one of the most common sentences a Korean learner will ever say — 한국어를 공부해요 — so it's worth drilling until it's automatic."
+    },
+    {
+      "type": "translate",
+      "prompt": "Translate: 'I don't watch movies.'",
+      "correct": "영화를 안 봐요.",
+      "hint": "영화 ends in a vowel — which form of the object marker do you need? And 보다 is a pure verb, so where does 안 go?",
+      "explanation": "안 goes right before the action verb to make a short negative. 영화 is the thing watched, so 영화를 stays as the object."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence correctly says 'I don't study' using the 안 negative?",
+      "options": [
+        "안 공부해요.",
+        "공부 안 해요.",
+        "공부를 않아요.",
+        "안 공부를 해요."
+      ],
+      "correct": "공부 안 해요.",
+      "explanation": "공부 안 해요 is correct — noun + stop-sign + 해요. '안 공부해요' is wrong because 안 can't go before a noun-verb compound. '공부를 않아요' is missing the -지 needed for the long negative form (공부를 하지 않아요). '안 공부를 해요' mixes up the word order in an unnatural way."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Your friend says '책을 읽어요.' What is the role of 을 in this sentence?",
+      "options": [
+        "It marks 책 as the subject doing the reading.",
+        "It marks 책 as the object receiving the action of reading.",
+        "It marks 책 as a topic being discussed.",
+        "It is a verb ending attached to 책."
+      ],
+      "correct": "It marks 책 as the object receiving the action of reading.",
+      "explanation": "을/를 is the object marker — it marks WHAT gets acted upon. 책 is what is being read. Subject markers (이/가) mark who does the action; topic markers (은/는) set what we're talking about. 을/를 is specifically for the thing that receives the verb's action."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "책___ 읽어요. (I read a book.)",
+      "options": [
+        "을",
+        "이",
+        "에"
+      ],
+      "correct": "을",
+      "explanation": "읽다 is an action, and 책 is what you read, so it takes the object marker 을. 이 would mark 책 as a subject, not the thing being read."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "매일 한국어를 ___ . (공부하다 → polite present)",
+      "base": "공부하다",
+      "form": "politePresent",
+      "correct": "공부해요",
+      "explanation": "하다 verbs become 해요 in polite present. 매일 makes this a normal present habit: 매일 한국어를 공부해요."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'I drink coffee every morning.'",
+      "tokens": [
+        "매일 아침",
+        "커피를 마셔요"
+      ],
+      "correct": "매일 아침 커피를 마셔요",
+      "explanation": "The time phrase comes before the object and verb. 커피 is what you drink, so 커피를 stays right before 마셔요."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "을/를 = ARROW from verb to object: consonant-ending noun + 을 / vowel-ending noun + 를",
+      "안 = STOP SIGN before a pure verb (안 먹어요); for noun+하다 verbs split it: noun + 안 + 해요",
+      "Key daily verbs with their objects: 밥을 먹다, 커피를 마시다, 한국어를 공부하다, 책을 읽다, 음악을 듣다, 영화를 보다"
+    ]
+  },
+  "writingTask": {
+    "prompt": "Write 3 sentences about your daily routine: two things you do and one thing you don't do.",
+    "hint": "Mark the thing with N을/를 and use the present tense (먹어요, 마셔요); make one negative with 안 + verb.",
+    "model": "저는 밥을 먹어요. 커피를 마셔요. 그런데 술은 안 마셔요.",
+    "modelEn": "I eat rice. I drink coffee. But I don't drink alcohol."
+  },
+  "canDo": [
+    "Mark what the action happens to with N을/를 (밥을, 커피를)",
+    "Say everyday actions in the polite present tense (먹어요, 마셔요)",
+    "Make a verb negative with 안 + verb (안 먹어요)",
+    "Choose 을 or 를 from the noun's 받침"
+  ]
+}

@@ -1,0 +1,633 @@
+{
+  "id": "chapter-09",
+  "hook": {
+    "situation": "You're at a Korean museum and want to take a photo of an exhibit. You try to say 'May I take a photo?' but accidentally say '사진 찍어 주세요' — and the guard now thinks you're asking HIM to take your photo. The difference between asking permission and making a request is one tiny pattern.",
+    "objectives": [
+      "Ask someone to do something with V아/어 주세요 (please do)",
+      "Ask for permission with V아/어도 돼요? (may I / is it okay to?)",
+      "Understand and use prohibition V지 마세요 (please do not) and obligation V아/어야 해요 (have to)"
+    ],
+    "whyItMatters": "These four patterns cover almost every real-life rule situation: museum signs, restaurant staff, classrooms, public spaces. Miss one and you either sound rude, ask the wrong person for the wrong thing, or can't understand why someone is shaking their head at you."
+  },
+  "grammarNotes": [
+    {
+      "title": "V아/어 주세요 vs V아/어도 돼요? — Asking Someone to DO vs Asking IF You May",
+      "func": "Use V아/어 주세요 to politely ask someone to DO something for you ('please do X'). Use V아/어도 돼요? to ask whether YOU are allowed to do something ('is it okay if I do X?'). One asks the listener to act; the other asks the listener for permission.",
+      "formTable": [
+        {
+          "when": "Stem's last vowel is ㅏ or ㅗ (bright)",
+          "add": "stem + 아 주세요 / 아도 돼요?",
+          "ex": "받다 → 받아 주세요 (please take it) · 앉다 → 앉아도 돼요? (may I sit?)"
+        },
+        {
+          "when": "Stem's last vowel is anything else (dark)",
+          "add": "stem + 어 주세요 / 어도 돼요?",
+          "ex": "읽다 → 읽어 주세요 (please read it) · 먹다 → 먹어도 돼요? (may I eat?)"
+        },
+        {
+          "when": "하다 verbs",
+          "add": "하 → 해 + 주세요 / 도 돼요?",
+          "ex": "말하다 → 말해 주세요 (please say it) · 전화하다 → 전화해도 돼요? (may I call?)"
+        },
+        {
+          "when": "Stem ends in ㅡ (the ㅡ drops)",
+          "add": "ㅡ → 어/아 form, then attach",
+          "ex": "쓰다 → 써 주세요 (please write it) · 끄다 → 꺼도 돼요? (may I turn it off?)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "물 좀 주세요.",
+          "romanization": "mul jom juseyo.",
+          "en": "Some water, please.",
+          "note": "주세요 attaches straight to a NOUN (물) to ask for the thing itself — no 아/어 needed. 좀 softens it, like 'a little.'"
+        },
+        {
+          "ko": "천천히 말해 주세요.",
+          "romanization": "cheoncheonhi malhae juseyo.",
+          "en": "Please speak slowly (for me).",
+          "note": "말하다 → 말해 + 주세요. The 아/어 주세요 form asks the listener to do the action for your benefit."
+        },
+        {
+          "ko": "여기 앉아도 돼요?",
+          "romanization": "yeogi anjado dwaeyo?",
+          "en": "Is it okay if I sit here?",
+          "note": "앉다 has ㅏ, so 앉아 + 도 돼요? You're asking permission for yourself, not asking them to do anything."
+        },
+        {
+          "ko": "사진 찍어도 돼요?",
+          "romanization": "sajin jjigeodo dwaeyo?",
+          "en": "Can I take a photo?",
+          "note": "찍다 has ㅣ (dark), so 찍어 + 도 돼요? Said with rising intonation, it's a real permission question."
+        }
+      ],
+      "keyPoint": {
+        "label": "주세요 + noun vs 아/어 주세요 + verb",
+        "body": "주세요 alone follows a NOUN to ask for the thing: 물 주세요 (water, please), 메뉴 주세요 (the menu, please). To ask someone to DO an action, the verb must take its 아/어 form first: 도와주세요 (please help), 기다려 주세요 (please wait). Beginners often stick a plain dictionary verb in front of 주세요 (돕다 주세요 is wrong; 도와주세요 is right) — change the verb to its 아/어 form first."
+      },
+      "pronunciation": "돼요 is one syllable, [dwae-yo] — a single glide, not two beats.",
+      "drill": {
+        "instruction": "Decide if it's a REQUEST (아/어 주세요) or asking PERMISSION (아/어도 돼요?), then complete the sentence.",
+        "model": "창문을 (열다) → REQUEST: 창문을 열어 주세요. / PERMISSION: 창문을 열어도 돼요?",
+        "items": [
+          "이름을 (쓰다) → REQUEST: 이름을 ___ 주세요. (Please write your name → 써)",
+          "지금 (가다) → PERMISSION: 지금 ___ 돼요? (May I go now? → 가도)",
+          "문을 (닫다) → REQUEST: 문을 ___ 주세요. (Please close the door → 닫아)"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "여기 앉아 주세요? (when you mean 'May I sit here?')",
+        "right": "여기 앉아도 돼요?",
+        "explanation": "English uses 'can/may' for both 'please do this' and 'may I do this,' so learners mix the two Korean forms. 앉아 주세요 means 'please sit (for me)' — you're telling THEM to sit. To ask permission for yourself, add 도 돼요?: 앉아도 돼요? Remember: 아/어 주세요 = you act; 아/어도 돼요? = I'm allowed."
+      }
+    },
+    {
+      "title": "V지 마세요 & V아/어야 돼요 — Telling Someone Not To, and Saying You Have To",
+      "func": "Use V지 마세요 to politely tell someone NOT to do something ('please don't do X'). Use V아/어야 돼요 to say something must be done ('have to do X'). Together they cover both sides of a rule: what's not allowed and what's required.",
+      "formTable": [
+        {
+          "when": "Prohibition: any verb stem",
+          "add": "stem + 지 마세요",
+          "ex": "들어가다 → 들어가지 마세요 (don't go in) · 먹다 → 먹지 마세요 (don't eat it)"
+        },
+        {
+          "when": "Have to: stem vowel ㅏ/ㅗ",
+          "add": "stem + 아야 돼요",
+          "ex": "가다 → 가야 돼요 (have to go) · 자다 → 자야 돼요 (have to sleep)"
+        },
+        {
+          "when": "Have to: other stem vowels",
+          "add": "stem + 어야 돼요",
+          "ex": "먹다 → 먹어야 돼요 (have to eat) · 기다리다 → 기다려야 돼요 (have to wait)"
+        },
+        {
+          "when": "하다 verbs (have to)",
+          "add": "하 → 해 + 야 돼요",
+          "ex": "공부하다 → 공부해야 돼요 (have to study) · 일하다 → 일해야 돼요 (have to work)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "여기에서 담배를 피우지 마세요.",
+          "romanization": "yeogieseo dambaereul piuji maseyo.",
+          "en": "Please don't smoke here.",
+          "note": "피우다 → 피우 + 지 마세요. 지 마세요 attaches straight to the stem — no vowel harmony for prohibition."
+        },
+        {
+          "ko": "사진을 찍지 마세요.",
+          "romanization": "sajineul jjikji maseyo.",
+          "en": "Please don't take photos.",
+          "note": "찍다 → 찍 + 지 마세요. A common sign you'll see; the form is the same no matter the final consonant."
+        },
+        {
+          "ko": "내일 일찍 일어나야 돼요.",
+          "romanization": "naeil iljjik ireonaya dwaeyo.",
+          "en": "I have to get up early tomorrow.",
+          "note": "일어나다 ends in ㅏ → 일어나 + 야 돼요. 아/어야 돼요 and 아/어야 해요 mean the same thing; 돼요 is more common in everyday speech."
+        },
+        {
+          "ko": "약을 먹어야 돼요.",
+          "romanization": "yageul meogeoya dwaeyo.",
+          "en": "I have to take the medicine.",
+          "note": "먹다 (dark vowel) → 먹어 + 야 돼요. In Korean you 'eat' (먹다) medicine, not 'take' it."
+        }
+      ],
+      "keyPoint": {
+        "label": "지 마세요 (don't!) vs 안 + verb (doesn't/isn't)",
+        "body": "지 마세요 is a COMMAND telling someone NOT to do something: 뛰지 마세요 (don't run). It is not how you say YOU don't do something — for that, use 안: 저는 안 뛰어요 (I don't run). So 지 마세요 is only for telling other people what not to do."
+      },
+      "pronunciation": "In 먹어야 the ㄱ links into the next vowel, so it flows as [meo-geo-ya], one smooth piece rather than 먹+어야.",
+      "drill": {
+        "instruction": "Turn each cue into either a PROHIBITION (지 마세요) or a 'have to' (아/어야 돼요) as marked.",
+        "model": "(뛰다) PROHIBITION → 뛰지 마세요. / (자다) HAVE TO → 자야 돼요.",
+        "items": [
+          "(들어가다) PROHIBITION → 여기에 ___ . (Please don't go in here → 들어가지 마세요)",
+          "(공부하다) HAVE TO → 시험이 있어서 ___ . (I have to study because there's a test → 공부해야 돼요)",
+          "(기다리다) HAVE TO → 친구를 ___ . (I have to wait for my friend → 기다려야 돼요)"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "먹지 않으세요 (when you mean 'please don't eat it')",
+        "right": "먹지 마세요",
+        "explanation": "Learners build prohibition from the negative 지 않다 ('does not'), getting 먹지 않으세요, which sounds like an odd statement, not a command. Negative commands ('don't') use the special verb 말다: 먹지 마세요. Keep 안 먹어요 / 먹지 않아요 ('I don't eat it') for plain negatives, and 지 마세요 for telling someone not to do it."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "도와주다",
+      "romanization": "dowajuda",
+      "english": "to help",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "도와주세요!",
+        "en": "Please help me!",
+        "note": "주다 (give) fused into a request — asking someone to give you the action of helping"
+      },
+      "collocations": [
+        "도와주세요",
+        "도와드릴까요?",
+        "도움이 필요해요"
+      ]
+    },
+    {
+      "hangul": "사진",
+      "romanization": "sajin",
+      "english": "photo / picture",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "사진 찍어도 돼요?",
+        "en": "May I take a photo?",
+        "note": "사진 as object — permission asked using 도 돼요?"
+      },
+      "collocations": [
+        "사진 찍다",
+        "사진 찍어 주세요",
+        "사진 찍지 마세요"
+      ]
+    },
+    {
+      "hangul": "찍다",
+      "romanization": "jjikda",
+      "english": "to take (a photo) / to stamp",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "여기서는 사진을 찍지 마세요.",
+        "en": "Please do not take photos here.",
+        "note": "찍지 마세요 = RED X SIGN — prohibition on the action of taking photos"
+      },
+      "collocations": [
+        "사진 찍다",
+        "사진 찍어 주세요",
+        "사진 찍어도 돼요?"
+      ]
+    },
+    {
+      "hangul": "앉다",
+      "romanization": "anda",
+      "english": "to sit",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "여기 앉아도 돼요?",
+        "en": "May I sit here?",
+        "note": "앉아도 돼요? — vowel ending stem: 앉 + 아도 돼요?"
+      },
+      "collocations": [
+        "앉아도 돼요?",
+        "여기 앉으세요",
+        "앉지 마세요"
+      ]
+    },
+    {
+      "hangul": "들어가다",
+      "romanization": "deureogada",
+      "english": "to go in / enter",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "들어가도 돼요?",
+        "en": "May I go in?",
+        "note": "가 + 아도 → 가도 is absorbed into 들어가도 — entering is checked with permission form"
+      },
+      "collocations": [
+        "들어가도 돼요?",
+        "들어가지 마세요",
+        "들어가세요"
+      ]
+    },
+    {
+      "hangul": "열다",
+      "romanization": "yeolda",
+      "english": "to open",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "창문 좀 열어 주세요.",
+        "en": "Please open the window a bit.",
+        "note": "열다 + 어 주세요 — asking someone else to perform the opening action"
+      },
+      "collocations": [
+        "열어 주세요",
+        "열어도 돼요?",
+        "열지 마세요"
+      ]
+    },
+    {
+      "hangul": "닫다",
+      "romanization": "datda",
+      "english": "to close",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "문 닫아 주세요.",
+        "en": "Please close the door.",
+        "note": "닫다 + 아 주세요 — the ㄷ stem is regular here; asking another person to close it"
+      },
+      "collocations": [
+        "닫아 주세요",
+        "닫아도 돼요?",
+        "닫지 마세요"
+      ]
+    },
+    {
+      "hangul": "말하다",
+      "romanization": "malhada",
+      "english": "to speak / say",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "천천히 말해 주세요.",
+        "en": "Please speak slowly.",
+        "note": "말하다 + 여 주세요 → 말해 주세요 — classic classroom and daily-life request"
+      },
+      "collocations": [
+        "말해 주세요",
+        "다시 말해 주세요",
+        "한국어로 말해도 돼요?"
+      ]
+    },
+    {
+      "hangul": "기다리다",
+      "romanization": "gidarida",
+      "english": "to wait",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "잠깐 기다려 주세요.",
+        "en": "Please wait a moment.",
+        "note": "기다리다 + 어 주세요 — 리 contracts to 려; asking someone to hold on"
+      },
+      "collocations": [
+        "기다려 주세요",
+        "기다려도 돼요?",
+        "기다리지 않아도 돼요"
+      ]
+    },
+    {
+      "hangul": "뛰다",
+      "romanization": "ttwida",
+      "english": "to run",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "복도에서 뛰지 마세요.",
+        "en": "Please do not run in the hallway.",
+        "note": "뛰다 + 지 마세요 — common school/museum prohibition sign"
+      },
+      "collocations": [
+        "뛰지 마세요",
+        "뛰어도 돼요?",
+        "뛰지 않아도 돼요"
+      ]
+    },
+    {
+      "hangul": "걱정하다",
+      "romanization": "geokjeonghada",
+      "english": "to worry",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "걱정하지 마세요.",
+        "en": "Please do not worry.",
+        "note": "지 마세요 used not as a rule sign but as warm reassurance between people"
+      },
+      "collocations": [
+        "걱정하지 마세요",
+        "걱정 마세요",
+        "걱정하지 않아도 돼요"
+      ]
+    },
+    {
+      "hangul": "가야 해요",
+      "romanization": "gaya haeyo",
+      "english": "have to go / must go",
+      "partOfSpeech": "pattern",
+      "exampleSentence": {
+        "ko": "지금 가야 해요. 늦었어요.",
+        "en": "I have to go now. I'm late.",
+        "note": "가다 + 아야 해요 — MUST-DO CHECKLIST: non-negotiable obligation"
+      },
+      "collocations": [
+        "가야 해요",
+        "가야 돼요",
+        "안 가도 돼요?"
+      ]
+    },
+    {
+      "hangul": "좀",
+      "romanization": "jom",
+      "english": "a bit / please (softener)",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "좀 도와주세요.",
+        "en": "Please help me (softened).",
+        "note": "좀 before a request softens it — like 'kindly' or 'if you could'; almost always present in polite Korean requests"
+      },
+      "collocations": [
+        "좀 도와주세요",
+        "좀 기다려 주세요",
+        "좀 더 주세요"
+      ]
+    },
+    {
+      "hangul": "죄송하지만",
+      "romanization": "joesonghajiman",
+      "english": "I'm sorry but / I apologize but",
+      "partOfSpeech": "conjunction",
+      "exampleSentence": {
+        "ko": "죄송하지만 여기서 음식을 드시면 안 돼요.",
+        "en": "I'm sorry but you cannot eat here.",
+        "note": "죄송하지만 softens a refusal or prohibition — staff use this before giving bad news"
+      },
+      "collocations": [
+        "죄송하지만 안 돼요",
+        "죄송하지만 지 마세요",
+        "죄송합니다"
+      ]
+    },
+    {
+      "hangul": "입장권",
+      "romanization": "ipjanggwon",
+      "english": "admission ticket",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "입장권을 보여줘야 해요.",
+        "en": "You have to show your admission ticket.",
+        "note": "입장권 + 어야 해요 — obligation before entry at museums and event spaces"
+      },
+      "collocations": [
+        "입장권을 사다",
+        "입장권을 보여주다",
+        "입장권이 있어야 해요"
+      ]
+    },
+    {
+      "hangul": "음식",
+      "romanization": "eumsik",
+      "english": "food",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "여기서 음식을 먹지 마세요.",
+        "en": "Please do not eat food here.",
+        "note": "Common museum/gallery prohibition — 지 마세요 as RED X SIGN"
+      },
+      "collocations": [
+        "음식을 먹다",
+        "음식을 가져오다",
+        "음식 금지"
+      ]
+    },
+    {
+      "hangul": "만지다",
+      "romanization": "manjida",
+      "english": "to touch",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "전시품을 만지지 마세요.",
+        "en": "Please do not touch the exhibits.",
+        "note": "만지다 + 지 마세요 — classic museum rule you will definitely encounter"
+      },
+      "collocations": [
+        "만지지 마세요",
+        "만져도 돼요?",
+        "손대지 마세요"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Jihoon visits a traditional craft museum with his friend Sora. They encounter signs and staff along the way.",
+    "lines": [
+      {
+        "speaker": "지훈",
+        "ko": "소라 씨, 저 사진 찍어도 돼요?",
+        "romanization": "Sora ssi, jeo sajin jjigeodo dwaeyo?",
+        "en": "Sora, may I take a photo?",
+        "grammarNote": "사진 찍어도 돼요? — TRAFFIC LIGHT: asking if the green light is on for Jihoon's own action of taking a photo"
+      },
+      {
+        "speaker": "소라",
+        "ko": "저도 잘 모르겠어요. 직원한테 물어봐요.",
+        "romanization": "Jeodo jal moreugesseoyo. Jigwonhante mureobwayo.",
+        "en": "I'm not sure either. Let's ask a staff member.",
+        "grammarNote": "직원한테 물어봐요 — 한테 is the spoken-language form of 에게 (to/from a person): asking 'to/at the staff member'"
+      },
+      {
+        "speaker": "지훈",
+        "ko": "저기요! 여기서 사진 찍어도 돼요?",
+        "romanization": "Jeogiyo! Yeogiseo sajin jjigeodo dwaeyo?",
+        "en": "Excuse me! May I take photos here?",
+        "grammarNote": "저기요 = 'excuse me' to get attention; 여기서 사진 찍어도 돼요? — TRAFFIC LIGHT for a specific location 여기서"
+      },
+      {
+        "speaker": "직원",
+        "ko": "죄송하지만 이 구역에서는 사진 찍지 마세요. 저쪽은 괜찮아요.",
+        "romanization": "Joesonghajiman i guyeogeseoneun sajin jjikji maseyo. Jeotjjogeun gwaenchanayo.",
+        "en": "I'm sorry, but please do not take photos in this section. That area over there is fine.",
+        "grammarNote": "찍지 마세요 — RED X SIGN: prohibition on photo-taking in this zone; 괜찮아요 = it's okay (implicit permission for the other area)"
+      },
+      {
+        "speaker": "소라",
+        "ko": "알겠어요. 그리고 저 전시품 만져도 돼요?",
+        "romanization": "Algesseoyo. Geurigo jeo jeonsipum manjyeodo dwaeyo?",
+        "en": "Got it. And may I touch that exhibit?",
+        "grammarNote": "만져도 돼요? — TRAFFIC LIGHT: 만지다 + 어도 돼요? asking permission to touch"
+      },
+      {
+        "speaker": "직원",
+        "ko": "아니요, 만지지 마세요. 그리고 음식도 안에서 드시면 안 돼요.",
+        "romanization": "Aniyo, manjiji maseyo. Geurigo eumsikdo aneseo deusimyeon an dwaeyo.",
+        "en": "No, please do not touch them. And food is also not allowed inside.",
+        "grammarNote": "만지지 마세요 — another RED X SIGN; 드시면 안 돼요 = if you eat it won't be okay — a softer way to express prohibition using conditional"
+      },
+      {
+        "speaker": "지훈",
+        "ko": "감사합니다. 소라 씨, 저기 사진 구역에서 사진 찍어 주세요!",
+        "romanization": "Gamsahamnida. Sora ssi, jeogi sajin guyeogeseo sajin jjigeo juseyo!",
+        "en": "Thank you. Sora, please take a photo of me in that photo zone!",
+        "grammarNote": "사진 찍어 주세요 — HANDOFF: now asking Sora to perform the action of taking the photo for him"
+      },
+      {
+        "speaker": "소라",
+        "ko": "네, 찍어 줄게요! 여기 서 보세요.",
+        "romanization": "Ne, jjigeo julgeyo! Yeogi seo boseyo.",
+        "en": "Sure, I'll take it for you! Try standing here.",
+        "grammarNote": "찍어 줄게요 is a natural promise between classmates/friends; 서 보세요 gently suggests a position for the photo"
+      }
+    ]
+  },
+  "readingText": {
+    "type": "notice",
+    "title": "국립 한국 문화 박물관 관람 안내 (National Korean Culture Museum Visitor Guide)",
+    "body": "박물관에 오신 것을 환영합니다. 즐거운 관람을 위해 다음 사항을 지켜 주세요. 전시실 내에서는 사진을 찍지 마세요. 전시품은 만지지 마세요. 음식이나 음료는 드시면 안 됩니다. 어린이는 보호자와 함께해야 해요. 박물관 안에서는 조용히 해 주세요. 입장 전에 가방을 검사받아야 해요. 궁금한 것이 있으면 직원한테 물어보세요.",
+    "bodyTranslation": "Welcome to the museum. Please observe the following for an enjoyable visit. Please do not take photos inside the exhibition hall. Please do not touch the exhibits. You may not eat food or drink beverages. Children must be accompanied by a guardian. Please be quiet inside the museum. You must have your bag inspected before entering. If you have any questions, please ask a staff member.",
+    "comprehensionQuestions": [
+      {
+        "question": "What two things does the notice say you must NOT do with exhibits?",
+        "answer": "사진을 찍지 마세요 (do not take photos) and 전시품은 만지지 마세요 (do not touch the exhibits)"
+      },
+      {
+        "question": "What must children do according to the notice?",
+        "answer": "보호자와 함께해야 해요 — children must be with a guardian (해야 해요 = must/have to)"
+      },
+      {
+        "question": "Find all 지 마세요 and 아/어야 해요 forms in the text. For each one, say whether it is a prohibition (RED X SIGN) or an obligation (MUST-DO CHECKLIST), and explain why that form is used rather than the other.",
+        "answer": "지 마세요 forms (RED X SIGN — stopping an action): 찍지 마세요 (don't take photos — prohibition on visitor action), 만지지 마세요 (don't touch — prohibition). 아/어야 해요 forms (MUST-DO CHECKLIST — requiring an action): 함께해야 해요 (children must be with guardian — positive obligation), 검사받아야 해요 (must have bag inspected — required step). The distinction is key: 지 마세요 blocks an action the visitor might want to do; 아/어야 해요 requires an action the visitor must perform."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "좀 — the magic softener every Korean learner needs",
+    "body": "Koreans almost always add 좀 before a request to soften it: 도와주세요 is fine, but 좀 도와주세요 sounds more polite. 물 주세요 is acceptable, but 물 좀 주세요 is what locals actually say at restaurants. 좀 doesn't mean 'a little' here — it functions like 'if you could' or 'kindly' in English. Foreigners who skip 좀 don't sound rude exactly, but they do sound slightly abrupt or robotic. In contrast, 잠깐만요 (just a moment) and 실례합니다 (excuse me, pardon) are also essential softening phrases. Watch how staff at museums and cafés use 죄송하지만 before every prohibition — Koreans soften bad news first, then deliver the rule."
+  },
+  "inlineExercises": [
+    {
+      "type": "fillBlank",
+      "prompt": "사진 찍___ 돼요? (May I take a photo?)",
+      "options": [
+        "어도",
+        "지 않아도",
+        "아야"
+      ],
+      "correct": "어도",
+      "explanation": "어도 돼요? = TRAFFIC LIGHT — asking if YOU are allowed to take a photo. 지 않아도 돼요 would mean 'you don't have to take a photo' (no obligation), and 아야 해요 would mean 'you have to take a photo' (obligation). Only 어도 돼요? asks for permission."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "전시품을 만지___ 마세요. (Please do not touch the exhibits.)",
+      "options": [
+        "지",
+        "어도",
+        "아야"
+      ],
+      "correct": "지",
+      "explanation": "지 마세요 = RED X SIGN — prohibition. 어도 돼요 would turn this into a permission question. 아야 해요 would make it an obligation to touch, which is the opposite of what a museum sign says."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "다음 문장에서 틀린 것을 찾아보세요: '사진 찍어 주세요?' (trying to ask permission to take a photo)",
+      "correct": "사진 찍어도 돼요?",
+      "explanation": "주세요 is a HANDOFF — it asks the OTHER person to take a photo. Adding '?' to 주세요 does not transform it into a permission question in Korean. To ask if YOU may take a photo, you need 어도 돼요? — the TRAFFIC LIGHT form."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "A museum staff member walks up and says something. Which sentence means 'Please do not run in the hallway'?",
+      "options": [
+        "복도에서 뛰어도 돼요?",
+        "복도에서 뛰지 마세요.",
+        "복도에서 뛰어야 해요."
+      ],
+      "correct": "복도에서 뛰지 마세요.",
+      "explanation": "뛰지 마세요 = RED X SIGN — prohibition. 뛰어도 돼요? is a permission question (may I run?). 뛰어야 해요 is an obligation (you have to run). Only 지 마세요 delivers the prohibition instruction you see on signs."
+    },
+    {
+      "type": "translate",
+      "prompt": "Translate: 'Please help me a bit.'",
+      "correct": "좀 도와주세요.",
+      "hint": "도와주다 = to help. Which pattern asks someone ELSE to perform an action? And which adverb softens requests?",
+      "explanation": "도와주세요 is the direct polite request 'please help me.' 좀 softens the request so it sounds less blunt."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "입장권을 사___ 해요. (I have to buy an admission ticket.)",
+      "options": [
+        "아야",
+        "지 않아도",
+        "지 마세요"
+      ],
+      "correct": "아야",
+      "explanation": "아야 해요 = MUST-DO CHECKLIST — a non-negotiable obligation. 지 않아도 돼요 would mean 'you don't have to buy it' (opposite meaning). 지 마세요 would mean 'please do not buy it' — completely wrong here. Only 아야 해요 expresses the requirement."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Your friend says '가지 마세요!' and you reply that you must go. What do you say?",
+      "options": [
+        "네, 가지 않아도 돼요.",
+        "미안해요, 가야 해요.",
+        "미안해요, 가지 마세요."
+      ],
+      "correct": "미안해요, 가야 해요.",
+      "explanation": "가야 해요 = MUST-DO CHECKLIST — I have to go, it's an obligation. 가지 않아도 돼요 means 'I don't have to go' (no obligation), which contradicts your intention. 가지 마세요 would mean 'please don't go' — you'd be repeating your friend's prohibition back to them."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "사진___ 찍어도 돼요? (May I take a photo?)",
+      "options": [
+        "을",
+        "이",
+        "에"
+      ],
+      "correct": "을",
+      "explanation": "사진 is what you take, so it takes the object marker 을. 이 would make the photo the subject instead of the object."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "문을 ___ . (닫다 → please do)",
+      "base": "닫다",
+      "form": "pleaseDo",
+      "correct": "닫아 주세요",
+      "explanation": "닫다 becomes 닫아 주세요 for a polite request. This asks someone to close the door for you."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'Please do not touch this.'",
+      "tokens": [
+        "이것을",
+        "만지지 마세요"
+      ],
+      "correct": "이것을 만지지 마세요",
+      "explanation": "-지 마세요 is the polite \"please do not\" form. 이것 is the thing being touched, so 이것을 comes before the verb."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "주세요 = HANDOFF: V아/어 주세요 asks the OTHER person to perform the action for you",
+      "도 돼요? = TRAFFIC LIGHT: V아/어도 돼요? asks if YOU are allowed to perform the action",
+      "지 마세요 = RED X SIGN: V지 마세요 prohibits an action | 아/어야 해요 = MUST-DO CHECKLIST: V아/어야 해요 requires an action"
+    ]
+  },
+  "writingTask": {
+    "prompt": "Leave a short note for a guest in your home: ask them to do one thing, grant one permission, and state one rule.",
+    "hint": "Use V아/어 주세요 to ask them to do something, V아/어도 돼요 for permission, and V지 마세요 / V아/어야 돼요 for the rule.",
+    "model": "문을 닫아 주세요. 여기 앉아도 돼요. 하지만 사진은 찍지 마세요. 신발은 벗어야 돼요.",
+    "modelEn": "Please close the door. You may sit here. But please don't take photos. You have to take off your shoes."
+  },
+  "canDo": [
+    "Ask someone to do something for you with V아/어 주세요 (도와주세요)",
+    "Ask or give permission with V아/어도 돼요? (앉아도 돼요?)",
+    "Tell someone not to do something with V지 마세요 (찍지 마세요)",
+    "Say what must be done with V아/어야 돼요 (가야 돼요)"
+  ]
+}

@@ -1,0 +1,670 @@
+{
+  "id": "chapter-06",
+  "hook": {
+    "situation": "You're texting a Korean friend to arrange where to meet. You type '카페에 만나요' — but your friend is confused. Did you mean you're going TO the café, or hanging out AT the café? In Korean, those are different sentences.",
+    "objectives": [
+      "Use 에 correctly for destinations and static locations",
+      "Use 에서 correctly for places where actions happen",
+      "Avoid the #1 English-speaker mistake: mixing up 에 and 에서 with movement vs. action verbs"
+    ],
+    "whyItMatters": "에 and 에서 look almost identical to beginners, but Koreans hear the difference immediately. Using 에서 with 가다 (학교에서 가요) is a clear signal that you're still learning — after this chapter you won't make that mistake again."
+  },
+  "grammarNotes": [
+    {
+      "title": "N에 — where you go, when it happens, where it is",
+      "func": "에 attaches to a noun to mark a destination (with 가다/오다), a point in time (\"at/on\"), or the place where someone or something simply exists (with 있다/없다). One way to keep it straight: 에 is for going there, being there, or when — never for an action you actually do at a place.",
+      "formTable": [
+        {
+          "when": "Destination (with 가다/오다)",
+          "add": "에 가다 / 에 오다",
+          "ex": "학교 → 학교에 가요 · 집 → 집에 와요"
+        },
+        {
+          "when": "Where something is (with 있다/없다)",
+          "add": "에 있다 / 에 없다",
+          "ex": "집 → 집에 있어요 · 학교 → 학교에 없어요"
+        },
+        {
+          "when": "A point in time (clock time, day, date)",
+          "add": "에",
+          "ex": "세 시 → 세 시에 · 월요일 → 월요일에"
+        },
+        {
+          "when": "Time words that take NO 에",
+          "add": "(no 에)",
+          "ex": "오늘 · 어제 · 내일 · 지금 (오늘에 ✗)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "저는 학교에 가요.",
+          "romanization": "jeo-neun hak-gyo-e ga-yo.",
+          "en": "I go to school.",
+          "note": "에 marks 학교 as where I'm headed — the destination of 가다."
+        },
+        {
+          "ko": "친구가 집에 있어요.",
+          "romanization": "chin-gu-ga ji-be i-sseo-yo.",
+          "en": "My friend is at home.",
+          "note": "With 있다, 에 marks where someone simply is. 집에 sounds like [지베]."
+        },
+        {
+          "ko": "세 시에 친구를 만나요.",
+          "romanization": "se si-e chin-gu-reul man-na-yo.",
+          "en": "I meet a friend at three.",
+          "note": "에 on a clock time means \"at\" — 세 시에 = at 3:00."
+        },
+        {
+          "ko": "오늘 집에 없어요.",
+          "romanization": "o-neul ji-be eop-seo-yo.",
+          "en": "I'm not home today.",
+          "note": "집에 takes 에, but 오늘 takes none — today/tomorrow/now never use it."
+        }
+      ],
+      "keyPoint": {
+        "label": "에 vs 에서 — being there vs doing there",
+        "body": "Use 에 for where something IS or where you're GOING (있다/없다/가다/오다): 집에 있어요 (I'm at home), 학교에 가요 (I go to school). Use 에서 for where you DO something (먹다/공부하다/일하다 …): 집에서 밥을 먹어요 (I eat at home). Quick test: 있다/없다/가다/오다 → 에; any \"doing\" verb → 에서. The 에서 note below drills the full contrast."
+      },
+      "pronunciation": "After a 받침 noun, 에 slides onto the final consonant (연음): 집에 → [지베]. After a vowel there's nothing to link, so 학교에 stays [학꾜에] (and note 학교 itself is [학꾜]).",
+      "drill": {
+        "instruction": "Say where each person goes or is, adding 에 — follow the model.",
+        "model": "(학교 / 가다) → 학교에 가요. · (집 / 있다) → 집에 있어요.",
+        "items": [
+          "(집 / 가다) → ______",
+          "(학교 / 있다) → ______",
+          "(친구 집 / 없다) → ______"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "오늘에 학교에 가요.",
+        "right": "오늘 학교에 가요.",
+        "explanation": "Because of \"at three / on Monday,\" learners stick 에 onto every time word. But 에 only goes on clock times, days, and dates (세 시에, 월요일에) — the words 오늘 (today), 어제 (yesterday), 내일 (tomorrow), and 지금 (now) never take it. Just memorize that short list."
+      }
+    },
+    {
+      "title": "N에서 — where you do something, and \"from\"",
+      "func": "에서 attaches to a place noun to mark where an action happens (\"at/in\"): 집에서 밥을 먹어요 (I eat at home). The same 에서 also marks a starting point — where something comes \"from\": 한국에서 왔어요 (I'm from Korea). Same particle, two jobs: where you do something, and where it starts from.",
+      "formTable": [
+        {
+          "when": "Where an action happens (with \"doing\" verbs)",
+          "add": "에서",
+          "ex": "집 → 집에서 먹어요 · 학교 → 학교에서 공부해요"
+        },
+        {
+          "when": "Starting point: \"from\" (with 오다)",
+          "add": "에서",
+          "ex": "한국 → 한국에서 왔어요 · 집 → 집에서 나와요"
+        },
+        {
+          "when": "Spoken short form (어디/여기/거기 + 에서)",
+          "add": "서",
+          "ex": "어디에서 → 어디서 · 여기에서 → 여기서"
+        },
+        {
+          "when": "Same form after 받침 or vowel",
+          "add": "에서",
+          "ex": "집 → 집에서 · 학교 → 학교에서"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "집에서 밥을 먹어요.",
+          "romanization": "ji-be-seo ba-beul meo-geo-yo.",
+          "en": "I eat at home.",
+          "note": "먹다 is something you do, so the place takes 에서, not 에. Sounds like [지베서]."
+        },
+        {
+          "ko": "학교에서 한국어를 공부해요.",
+          "romanization": "hak-gyo-e-seo han-gu-geo-reul gong-bu-hae-yo.",
+          "en": "I study Korean at school.",
+          "note": "공부하다 is an action → 에서. Compare 학교에 가요 (going there)."
+        },
+        {
+          "ko": "저는 한국에서 왔어요.",
+          "romanization": "jeo-neun han-gu-ge-seo wa-sseo-yo.",
+          "en": "I'm from Korea.",
+          "note": "Here 에서 = \"from,\" the starting point of 오다. Sounds like [한구게서]."
+        },
+        {
+          "ko": "친구를 어디서 만나요?",
+          "romanization": "chin-gu-reul eo-di-seo man-na-yo?",
+          "en": "Where do you meet your friend?",
+          "note": "만나다 is an action → 에서; 어디에서 shortens to 어디서 in everyday speech."
+        }
+      ],
+      "keyPoint": {
+        "label": "에서 vs 에 — the action test",
+        "body": "Both sit on a place noun, but the verb decides which. 에서 + a \"doing\" verb = where you DO something: 도서관에서 책을 읽어요 (I read at the library). 에 + 있다/없다/가다/오다 = where you ARE or GO: 도서관에 있어요 (I'm at the library), 도서관에 가요 (I go to the library). Lock in the pair: 학교에 가요 (go to school) vs 학교에서 공부해요 (study at school)."
+      },
+      "pronunciation": "After a 받침 noun, 에서 slides onto the final consonant (연음): 집에서 → [지베서], 한국에서 → [한구게서]. After a vowel there's nothing to link, so 학교에서 stays [학꾜에서].",
+      "drill": {
+        "instruction": "Say where each action happens, adding 에서 — follow the model.",
+        "model": "(집 / 밥을 먹다) → 집에서 밥을 먹어요. · (학교 / 공부하다) → 학교에서 공부해요.",
+        "items": [
+          "(집 / 영화를 보다) → ______",
+          "(학교 / 친구를 만나다) → ______",
+          "(도서관 / 책을 읽다) → ______"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "학교에 한국어를 공부해요.",
+        "right": "학교에서 한국어를 공부해요.",
+        "explanation": "English uses one word, \"at,\" for both \"I'm at school\" and \"I study at school,\" so learners grab 에 for both. Korean splits them: 에 is only for existence and destination (있다/없다/가다/오다), while anything you DO at a place needs 에서. If there's a real verb of doing — eating, studying, meeting, watching — use 에서."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "학교",
+      "romanization": "hakgyo",
+      "english": "school",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "학교에서 한국어를 공부해요.",
+        "en": "I study Korean at school.",
+        "note": "에서 — studying is an action"
+      },
+      "collocations": [
+        "학교에 가다",
+        "학교에서 공부하다",
+        "학교에 있다"
+      ]
+    },
+    {
+      "hangul": "도서관",
+      "romanization": "doseogwan",
+      "english": "library",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "도서관에서 책을 읽어요.",
+        "en": "I read books at the library.",
+        "note": "에서 — reading is an active action"
+      },
+      "collocations": [
+        "도서관에 가다",
+        "도서관에서 공부하다",
+        "도서관에서 읽다"
+      ]
+    },
+    {
+      "hangul": "카페",
+      "romanization": "kape",
+      "english": "café",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "카페에서 친구를 기다려요.",
+        "en": "I wait for my friend at the café.",
+        "note": "에서 — waiting is an active state/action"
+      },
+      "collocations": [
+        "카페에 가다",
+        "카페에서 만나다",
+        "카페에서 일하다"
+      ]
+    },
+    {
+      "hangul": "회사",
+      "romanization": "hoesa",
+      "english": "company / office",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "회사에서 8시간 일해요.",
+        "en": "I work at the office for 8 hours.",
+        "note": "에서 — working is an active action"
+      },
+      "collocations": [
+        "회사에 가다",
+        "회사에서 일하다",
+        "회사에 다니다"
+      ]
+    },
+    {
+      "hangul": "식당",
+      "romanization": "sikdang",
+      "english": "restaurant",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "식당에서 비빔밥을 먹어요.",
+        "en": "I eat bibimbap at the restaurant.",
+        "note": "에서 — eating is an active action"
+      },
+      "collocations": [
+        "식당에 가다",
+        "식당에서 먹다",
+        "식당에서 만나다"
+      ]
+    },
+    {
+      "hangul": "집",
+      "romanization": "jip",
+      "english": "home / house",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "집에서 쉬고 싶어요.",
+        "en": "I want to rest at home.",
+        "note": "에서 — resting is an action at a location"
+      },
+      "collocations": [
+        "집에 가다",
+        "집에 있다",
+        "집에서 요리하다"
+      ]
+    },
+    {
+      "hangul": "공원",
+      "romanization": "gongwon",
+      "english": "park",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "공원에서 운동해요.",
+        "en": "I exercise at the park.",
+        "note": "에서 — exercising is an action"
+      },
+      "collocations": [
+        "공원에 가다",
+        "공원에서 걷다",
+        "공원에서 운동하다"
+      ]
+    },
+    {
+      "hangul": "가다",
+      "romanization": "gada",
+      "english": "to go",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "내일 학교에 가요.",
+        "en": "I go to school tomorrow.",
+        "note": "가다 = movement → destination takes 에, never 에서"
+      },
+      "collocations": [
+        "N에 가다",
+        "어디에 가요?"
+      ]
+    },
+    {
+      "hangul": "오다",
+      "romanization": "oda",
+      "english": "to come",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "우리 집에 와요.",
+        "en": "Come to my place.",
+        "note": "오다 = movement → destination takes 에"
+      },
+      "collocations": [
+        "N에 오다",
+        "어디에서 왔어요?"
+      ]
+    },
+    {
+      "hangul": "있다",
+      "romanization": "itda",
+      "english": "to be / to exist / to have",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "지금 카페에 있어요.",
+        "en": "I'm at the café right now.",
+        "note": "있다 = static existence → ALWAYS takes 에, never 에서"
+      },
+      "collocations": [
+        "N에 있다",
+        "집에 있다",
+        "어디에 있어요?"
+      ]
+    },
+    {
+      "hangul": "공부하다",
+      "romanization": "gongbuhada",
+      "english": "to study",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "도서관에서 공부해요.",
+        "en": "I study at the library.",
+        "note": "Active verb → location takes 에서"
+      },
+      "collocations": [
+        "N에서 공부하다",
+        "한국어를 공부하다"
+      ]
+    },
+    {
+      "hangul": "일하다",
+      "romanization": "ilhada",
+      "english": "to work",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "카페에서 아르바이트해요.",
+        "en": "I do a part-time job at a café.",
+        "note": "Action verb → 에서"
+      },
+      "collocations": [
+        "N에서 일하다",
+        "회사에서 일하다"
+      ]
+    },
+    {
+      "hangul": "만나다",
+      "romanization": "mannada",
+      "english": "to meet",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "어디에서 만나요?",
+        "en": "Where shall we meet?",
+        "note": "Meeting is an action → 에서"
+      },
+      "collocations": [
+        "N에서 만나다",
+        "친구를 만나다"
+      ]
+    },
+    {
+      "hangul": "기다리다",
+      "romanization": "gidarida",
+      "english": "to wait",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "카페에서 기다릴게요.",
+        "en": "I'll wait at the café.",
+        "note": "Waiting = active state → 에서"
+      },
+      "collocations": [
+        "N에서 기다리다",
+        "얼마나 기다려요?"
+      ]
+    },
+    {
+      "hangul": "먹다",
+      "romanization": "meokda",
+      "english": "to eat",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "식당에서 같이 먹어요.",
+        "en": "Let's eat together at the restaurant.",
+        "note": "Eating is an action → 에서"
+      },
+      "collocations": [
+        "N에서 먹다",
+        "뭐 먹어요?"
+      ]
+    },
+    {
+      "hangul": "시간",
+      "romanization": "sigan",
+      "english": "time",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "몇 시에 만나요?",
+        "en": "What time shall we meet?",
+        "note": "Clock time takes 에 when you mark when something happens"
+      },
+      "collocations": [
+        "몇 시에",
+        "시간이 있다",
+        "시간이 없다"
+      ]
+    },
+    {
+      "hangul": "아침",
+      "romanization": "achim",
+      "english": "morning",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "아침에 학교에 가요.",
+        "en": "I go to school in the morning.",
+        "note": "아침에 sets the time; 학교에 marks the destination"
+      },
+      "collocations": [
+        "아침에",
+        "아침 시간",
+        "아침에 가다"
+      ]
+    },
+    {
+      "hangul": "오후",
+      "romanization": "ohu",
+      "english": "afternoon / PM",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "오후에 도서관에서 공부해요.",
+        "en": "I study at the library in the afternoon.",
+        "note": "오후에 marks time; 도서관에서 marks the action place"
+      },
+      "collocations": [
+        "오후에",
+        "오후 시간",
+        "오후에 만나다"
+      ]
+    },
+    {
+      "hangul": "저녁",
+      "romanization": "jeonyeok",
+      "english": "evening",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "저녁에 집에 와요.",
+        "en": "I come home in the evening.",
+        "note": "저녁에 marks time; 집에 marks the destination of 오다"
+      },
+      "collocations": [
+        "저녁에",
+        "저녁 시간",
+        "저녁에 오다"
+      ]
+    },
+    {
+      "hangul": "병원",
+      "romanization": "byeongwon",
+      "english": "hospital / clinic",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "병원에 가요.",
+        "en": "I go to the hospital.",
+        "note": "가다 is movement, so 병원 takes 에 as the destination"
+      },
+      "collocations": [
+        "병원에 가다",
+        "병원에서 기다리다",
+        "병원에 있다"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Jihoon texts his coworker Sora to plan their lunch break",
+    "lines": [
+      {
+        "speaker": "지훈",
+        "ko": "소라 씨, 지금 어디에 있어요?",
+        "romanization": "Sora ssi, jigeum eodie isseoyo?",
+        "en": "Sora, where are you right now?",
+        "grammarNote": "어디에 있어요? — 있다 is static existence, so the location takes 에, not 에서"
+      },
+      {
+        "speaker": "소라",
+        "ko": "저는 회사에 있어요. 왜요?",
+        "romanization": "Jeoneun hoesae isseoyo. waeyo?",
+        "en": "I'm at the office. Why?",
+        "grammarNote": "회사에 있어요 — same rule: 있다 + 에 = just existing at a place"
+      },
+      {
+        "speaker": "지훈",
+        "ko": "점심 같이 먹어요! 어디에서 먹을까요?",
+        "romanization": "Jeomsim gachi meogeoyo! Eodieseo meogeulkkayo?",
+        "en": "Let's have lunch together! Where should we eat?",
+        "grammarNote": "어디에서 먹을까요? — eating is an action, so 에서 asks about the stage for that action"
+      },
+      {
+        "speaker": "소라",
+        "ko": "회사 근처 식당에서 먹어요. 거기 음식이 맛있어요.",
+        "romanization": "Hoesa geuncheo sikdangeseo meogeoyo. Geogi eumsigi massisseoyo.",
+        "en": "Let's eat at the restaurant near the office. The food there is good.",
+        "grammarNote": "식당에서 먹어요 — 에서 marks the restaurant as the stage where eating happens"
+      },
+      {
+        "speaker": "지훈",
+        "ko": "좋아요! 몇 시에 가요?",
+        "romanization": "Joayo! Myeot sie gayo?",
+        "en": "Great! What time do we go?",
+        "grammarNote": "몇 시에 — time takes 에; 가요 is movement so no location particle needed here"
+      },
+      {
+        "speaker": "소라",
+        "ko": "12시에 식당에 가요.",
+        "romanization": "Yeoldu sie sikdange gayo.",
+        "en": "We go to the restaurant at 12.",
+        "grammarNote": "12시에 (time → 에) + 식당에 가요 (destination of 가다 → 에) — two 에 in one sentence!"
+      },
+      {
+        "speaker": "지훈",
+        "ko": "저는 지금 카페에서 일해요. 12시에 식당 앞에서 만나요.",
+        "romanization": "Jeoneun jigeum kapeeseo ilhaeyo. Yeoldu sie sikdang apeseo mannayo.",
+        "en": "I'm working at a café right now. Let's meet in front of the restaurant at 12.",
+        "grammarNote": "카페에서 일해요 (action at café → 에서) + 식당 앞에서 만나요 (meeting is an action → 에서)"
+      },
+      {
+        "speaker": "소라",
+        "ko": "알겠어요! 그럼 12시에 봐요.",
+        "romanization": "Algesseoyo! Geureom yeoldu sie bwayo.",
+        "en": "Got it! See you at twelve then.",
+        "grammarNote": "12시에 봐요 — time takes 에; no location particle since 보다 (to see) doesn't specify a stage here"
+      }
+    ]
+  },
+  "readingText": {
+    "type": "diary",
+    "title": "수진의 하루 (Sujin's Day)",
+    "body": "오늘 아침 7시에 일어나요. 그리고 집에서 아침을 먹어요. 9시에 학교에 가요. 학교에서 한국어를 공부해요. 점심에 학교 식당에서 친구를 만나요. 오후에 도서관에서 숙제를 해요. 저녁 6시에 집에 와요. 집에서 쉬어요.",
+    "bodyTranslation": "This morning I wake up at 7. Then I eat breakfast at home. At 9 I go to school. At school I study Korean. At lunch I meet a friend at the school cafeteria. In the afternoon I do homework at the library. At 6 in the evening I come home. I rest at home.",
+    "comprehensionQuestions": [
+      {
+        "question": "What time did Sujin wake up?",
+        "answer": "7시에 (at 7 o'clock)"
+      },
+      {
+        "question": "Where did Sujin meet her friend?",
+        "answer": "학교 식당에서 (at the school cafeteria)"
+      },
+      {
+        "question": "Find all the 에서 in the text. Why does each one use 에서 and not 에?",
+        "answer": "집에서 먹어요 (eating is an action), 학교에서 공부해요 (studying is an action), 식당에서 만나요 (meeting is an action), 도서관에서 해요 (doing homework is an action), 집에서 쉬어요 (resting is an action at home)."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "어디에서 왔어요? — The most important question you'll hear",
+    "body": "One of the first things Koreans ask foreigners is '어디에서 왔어요?' (Where did you come from? / Where are you from?). Notice it uses 에서 — this is the FROM meaning. The answer also uses 에서: '미국에서 왔어요' (I came from America). You'll hear this question constantly. A common beginner mistake is answering '미국에 왔어요' — that sounds like you came TO America, not FROM it. 에서 = origin/from. Get this one right and Koreans will be impressed."
+  },
+  "inlineExercises": [
+    {
+      "type": "fillBlank",
+      "prompt": "학교___ 가요. (I go to school.)",
+      "options": [
+        "에",
+        "에서"
+      ],
+      "correct": "에",
+      "explanation": "가다 is a movement verb, so its destination takes 에. 학교에서 가요 would sound like the going-action happens at school, which makes no sense."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "도서관___ 공부해요. (I study at the library.)",
+      "options": [
+        "에",
+        "에서"
+      ],
+      "correct": "에서",
+      "explanation": "공부하다 is an action. The library is the STAGE where studying happens → 에서. If you used 에, it would sound like you're just existing at the library, not doing anything."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "지금 집___ 있어요. (I'm at home right now.)",
+      "options": [
+        "에",
+        "에서"
+      ],
+      "correct": "에",
+      "explanation": "있다 always takes 에, never 에서. It describes static existence — just being somewhere, not performing an action."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "다음 문장에서 틀린 것을 찾아보세요: '카페에서 가요.'",
+      "correct": "카페에 가요.",
+      "explanation": "가다 is a movement verb — its destination takes 에. 에서 with 가다 is one of the most common beginner errors. Whenever you see 가다 or 오다, the destination takes 에."
+    },
+    {
+      "type": "translate",
+      "prompt": "Translate: 'I eat at the restaurant.'",
+      "correct": "식당에서 먹어요.",
+      "hint": "먹다 (to eat) is an action. The restaurant is the stage where eating happens. Which particle marks an action stage?",
+      "explanation": "Eating is an action happening at a place, so the place takes 에서. 에 would fit a destination or existence sentence, not this action sentence."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Your friend asks '어디에서 왔어요?' You want to say 'I came from England.' Which is correct?",
+      "options": [
+        "영국에 왔어요.",
+        "영국에서 왔어요.",
+        "영국을 왔어요."
+      ],
+      "correct": "영국에서 왔어요.",
+      "explanation": "에서 has a second meaning: FROM (a starting point). 영국에서 왔어요 = I came from England. If you said 영국에 왔어요, that means 'I came TO England' — the opposite!"
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "친구를 카페___ 만나요. (I meet my friend at the café.)",
+      "options": [
+        "에",
+        "에서"
+      ],
+      "correct": "에서",
+      "explanation": "만나다 (to meet) is an action. The café is the stage where the meeting happens → 에서."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "카페___ 만나요. (We meet at a cafe.)",
+      "options": [
+        "에서",
+        "에",
+        "를"
+      ],
+      "correct": "에서",
+      "explanation": "Meeting is an action happening at the cafe, so use 에서. 에 would fit going to the cafe or being there, not doing the meeting action."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'I go to school.'",
+      "tokens": [
+        "학교에",
+        "가요"
+      ],
+      "correct": "학교에 가요",
+      "explanation": "가요 is movement toward a destination, so the place takes 에. 에서 would wrongly make 학교 the action place."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "친구가 집에 ___ . (오다 → polite present)",
+      "base": "오다",
+      "form": "politePresent",
+      "correct": "와요",
+      "explanation": "오다 changes to 와요 in polite present. 집에 marks the place the friend comes to."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "에 = PIN DROP: destination of movement (가다/오다), time, or static location (있다/없다/살다)",
+      "에서 = STAGE: where an active verb (eat, study, work, meet, wait) happens — or FROM a starting point",
+      "The golden rule: if you're DOING something there → 에서 / if you're just GOING there or IT EXISTS there → 에"
+    ]
+  },
+  "writingTask": {
+    "prompt": "Tell a friend your plan for today: where you're going and what you'll do there.",
+    "hint": "Use N에 for the destination with 가다/오다 and N에서 for where the action happens (학교에 가요, 도서관에서 공부해요).",
+    "model": "오늘 학교에 가요. 도서관에서 공부해요. 그다음에 집에서 쉬어요.",
+    "modelEn": "Today I'm going to school. I study at the library. After that I rest at home."
+  },
+  "canDo": [
+    "Mark a destination or time with N에 (학교에 가요)",
+    "Mark where an action happens with N에서 (집에서 일해요)",
+    "Keep 에 and 에서 apart by going there vs doing there",
+    "Use 에서 for where you came from (한국에서 왔어요)"
+  ]
+}

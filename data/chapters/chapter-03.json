@@ -1,0 +1,617 @@
+{
+  "id": "chapter-03",
+  "hook": {
+    "situation": "It's your first day at a Korean workplace or language-exchange group. Someone hands you a name card, points to a menu or book, and asks simple identity questions. You want to ask 'What is this?' and introduce your name, country, and job. You know a few Korean words — but how do you actually build a sentence that says what something IS? This chapter gives you the most useful two-word engine in Korean.",
+    "objectives": [
+      "Use 이에요 after a noun ending in a consonant and 예요 after a noun ending in a vowel",
+      "Ask 이건 뭐예요? (What is this?) and answer with N이에요/예요",
+      "Use 은/는 to set the topic of a sentence, including the contrast meaning"
+    ],
+    "whyItMatters": "N이에요/예요 is the 'is' of Korean — it builds every sentence that identifies, names, or defines something. You will use it within the first minute of any real Korean conversation. And 은/는 is not just grammar: it is how Korean tells the listener what the sentence is about. Miss this and your Korean sounds like a word list. Master it and your sentences feel complete."
+  },
+  "grammarNotes": [
+    {
+      "title": "N이에요/예요 — the polite copula (\"is/am/are\")",
+      "func": "N이에요/예요 turns a noun into a polite statement of identity: \"X is a/an N.\" It is the everyday spoken way to say what someone or something is. The negative — \"X is not an N\" — is N이/가 아니에요.",
+      "formTable": [
+        {
+          "when": "Noun ends in a consonant (받침)",
+          "add": "이에요",
+          "ex": "학생 → 학생이에요 · 집 → 집이에요"
+        },
+        {
+          "when": "Noun ends in a vowel",
+          "add": "예요",
+          "ex": "친구 → 친구예요 · 의자 → 의자예요"
+        },
+        {
+          "when": "Negative: \"is not N\" (받침 noun)",
+          "add": "이 아니에요",
+          "ex": "학생 → 학생이 아니에요"
+        },
+        {
+          "when": "Negative: \"is not N\" (vowel noun)",
+          "add": "가 아니에요",
+          "ex": "친구 → 친구가 아니에요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "저는 학생이에요.",
+          "romanization": "jeo-neun hak-saeng-i-e-yo.",
+          "en": "I'm a student.",
+          "note": "학생 ends in a consonant (받침 ㅇ) → 이에요."
+        },
+        {
+          "ko": "이건 물이에요.",
+          "romanization": "i-geon mu-ri-e-yo.",
+          "en": "This is water.",
+          "note": "물 ends in a consonant (ㄹ) → 이에요; spoken [무리에요] by linking. 이건 = 이것은 (this) shortened."
+        },
+        {
+          "ko": "이분은 제 친구예요.",
+          "romanization": "i-bu-neun je chin-gu-ye-yo.",
+          "en": "This (person) is my friend.",
+          "note": "친구 ends in a vowel → 예요, not 이에요."
+        },
+        {
+          "ko": "여기는 학교가 아니에요.",
+          "romanization": "yeo-gi-neun hak-gyo-ga a-ni-e-yo.",
+          "en": "This place isn't a school.",
+          "note": "Negative of a vowel noun: 학교 + 가 아니에요. You attach 이/가 (never 이에요/예요) to the noun before 아니에요."
+        }
+      ],
+      "keyPoint": {
+        "label": "이에요/예요 vs 입니다",
+        "body": "Both mean \"is.\" 이에요/예요 is the polite-conversational 해요체 you use in everyday talk. 입니다 is the formal 합니다체 used in announcements, presentations, the news, and the military. 입니다 attaches the same way regardless of 받침 — 학생입니다, 친구입니다 (no 이에요/예요 split). They mean the same thing; you choose by setting. This chapter uses 이에요/예요; 입니다 gets its own chapter."
+      },
+      "pronunciation": "After a 받침 noun, 이에요 links onto the consonant: 물이에요 is pronounced [무리에요] and 집이 아니에요 is [지비 아니에요] (연음 — the final consonant slides onto the following vowel).",
+      "drill": {
+        "instruction": "Say what each thing is — follow the model, choosing 이에요 or 예요.",
+        "model": "(학생) → 학생이에요. / (친구) → 친구예요.",
+        "items": [
+          "(물) → ______",
+          "(가방) → ______",
+          "(의자) → ______"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "친구이에요 / 학생예요",
+        "right": "친구예요 / 학생이에요",
+        "explanation": "English has one form, \"is,\" for everything, so learners pick 이에요 or 예요 at random. In Korean the choice is automatic and depends only on the noun's last sound: 받침 → 이에요, vowel → 예요. Check the noun's ending first, then attach the matching form."
+      }
+    },
+    {
+      "title": "N은/는 — the topic marker",
+      "func": "은/는 attaches to a noun to mark it as the topic — the thing you single out to talk about, roughly \"as for ___.\" It is the backbone of introductions (저는…) and of stating what something is, and it can also signal a contrast between two things.",
+      "formTable": [
+        {
+          "when": "Noun ends in a consonant (받침)",
+          "add": "은",
+          "ex": "집 → 집은 · 선생님 → 선생님은"
+        },
+        {
+          "when": "Noun ends in a vowel",
+          "add": "는",
+          "ex": "저 → 저는 · 친구 → 친구는"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "저는 한국어 학생이에요.",
+          "romanization": "jeo-neun han-gu-geo hak-saeng-i-e-yo.",
+          "en": "I'm a Korean(-language) student.",
+          "note": "저 ends in a vowel → 는. The standard self-introduction frame."
+        },
+        {
+          "ko": "이 책은 한국어 책이에요.",
+          "romanization": "i chae-geun han-gu-geo chae-gi-e-yo.",
+          "en": "This book is a Korean book.",
+          "note": "책 ends in a consonant → 은; spoken [채근] by linking."
+        },
+        {
+          "ko": "선생님은 한국 사람이에요.",
+          "romanization": "seon-saeng-ni-meun han-guk sa-ra-mi-e-yo.",
+          "en": "The teacher is Korean.",
+          "note": "선생님 ends in a consonant → 은; spoken [선생니믄]. 은/는 raises 선생님 as the topic we're describing."
+        },
+        {
+          "ko": "저는 학생이에요. 친구는 의사예요.",
+          "romanization": "jeo-neun hak-saeng-i-e-yo. chin-gu-neun ui-sa-ye-yo.",
+          "en": "I'm a student. My friend is a doctor.",
+          "note": "Two 는 set up a contrast — me vs. my friend — another core job of 은/는."
+        }
+      ],
+      "keyPoint": {
+        "label": "Topic, not subject — 은/는 vs 이/가",
+        "body": "은/는 marks the topic (\"as for X, …\") and often carries a quiet comparison; 이/가 marks the grammatical subject and points to new or specific information (누가 왔어요? — 친구가 왔어요). For now, use 은/는 for introductions and for saying what something is, and use 이/가 when answering \"who/what?\" The full 은/는 vs 이/가 distinction has its own chapter."
+      },
+      "pronunciation": "After a 받침 noun, 은 links onto the consonant: 책은 is pronounced [채근] and 집은 is [지븐] (연음).",
+      "drill": {
+        "instruction": "Introduce each person — follow the model, choosing 은 or 는.",
+        "model": "(저 / 학생) → 저는 학생이에요. / (친구 / 의사) → 친구는 의사예요.",
+        "items": [
+          "(저 / 한국어 학생) → ______",
+          "(이분 / 제 친구) → ______",
+          "(선생님 / 한국 사람) → ______"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "저는도 학생이에요.",
+        "right": "저도 학생이에요.",
+        "explanation": "English keeps the subject the same whether you add \"too\" or not (\"I'm a student\" / \"I'm a student too\"). In Korean, 도 (\"also\") replaces 은/는 rather than stacking onto it. Drop the 는 and say 저도 — never 저는도."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "저",
+      "romanization": "jeo",
+      "english": "I / me (humble/polite)",
+      "partOfSpeech": "pronoun",
+      "exampleSentence": {
+        "ko": "저는 학생이에요.",
+        "en": "I am a student.",
+        "note": "저 ends in a vowel, so the topic marker is 는. Use 저 with strangers and adults; 나 is casual."
+      },
+      "collocations": [
+        "저는 ___이에요",
+        "저는 ___예요",
+        "저도 ___이에요"
+      ]
+    },
+    {
+      "hangul": "이름",
+      "romanization": "ireum",
+      "english": "name",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "제 이름은 민수예요.",
+        "en": "My name is Minsu.",
+        "note": "이름 ends in consonant ㅁ → topic marker 은; 민수 ends in vowel ㅜ → 예요."
+      },
+      "collocations": [
+        "이름이 뭐예요?",
+        "제 이름은 ___예요",
+        "이름은 ___이에요"
+      ]
+    },
+    {
+      "hangul": "학생",
+      "romanization": "haksaeng",
+      "english": "student",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "저는 대학생이에요.",
+        "en": "I am a university student.",
+        "note": "대학생 ends in consonant 받침 ㅇ → 이에요; 대학 (university) + 학생 (student)"
+      },
+      "collocations": [
+        "학생이에요",
+        "학생이 아니에요",
+        "대학생"
+      ]
+    },
+    {
+      "hangul": "선생님",
+      "romanization": "seonsaengnim",
+      "english": "teacher",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "저는 영어 선생님이에요.",
+        "en": "I am an English teacher.",
+        "note": "선생님 ends in consonant ㅁ → 이에요; 님 is a respectful suffix — never drop it when addressing a teacher"
+      },
+      "collocations": [
+        "선생님이에요",
+        "한국어 선생님",
+        "선생님, 안녕하세요"
+      ]
+    },
+    {
+      "hangul": "의사",
+      "romanization": "uisa",
+      "english": "doctor",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "제 친구는 의사예요.",
+        "en": "My friend is a doctor.",
+        "note": "의사 ends in vowel ㅏ → 예요; 제 is the possessive form of 저 (my)"
+      },
+      "collocations": [
+        "의사예요",
+        "의사 선생님",
+        "병원 의사"
+      ]
+    },
+    {
+      "hangul": "회사원",
+      "romanization": "hoesawon",
+      "english": "office worker",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "저는 회사원이에요.",
+        "en": "I am an office worker.",
+        "note": "회사원 ends in consonant 받침 ㄴ → 이에요; 회사(company) + 원(member/worker)"
+      },
+      "collocations": [
+        "회사원이에요",
+        "저는 회사원이에요",
+        "직장인"
+      ]
+    },
+    {
+      "hangul": "나라",
+      "romanization": "nara",
+      "english": "country",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "어느 나라 사람이에요?",
+        "en": "What country are you from?",
+        "note": "나라 ends in vowel ㅏ → would take 예요 when used as the sentence topic; 어느 = which"
+      },
+      "collocations": [
+        "어느 나라",
+        "나라 이름",
+        "우리나라"
+      ]
+    },
+    {
+      "hangul": "사람",
+      "romanization": "saram",
+      "english": "person / people",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "저는 한국 사람이에요.",
+        "en": "I am Korean.",
+        "note": "사람 ends in consonant ㅁ → 이에요; [country] + 사람 is the standard pattern for nationality"
+      },
+      "collocations": [
+        "한국 사람",
+        "미국 사람",
+        "어느 나라 사람"
+      ]
+    },
+    {
+      "hangul": "이건",
+      "romanization": "igeon",
+      "english": "this (thing) is / as for this",
+      "partOfSpeech": "pronoun + particle (contraction)",
+      "exampleSentence": {
+        "ko": "이건 뭐예요?",
+        "en": "What is this?",
+        "note": "이건 = 이것 + 은 (contracted); 이것 = this thing, 은 = topic marker; used constantly in real speech — more natural than 이것은"
+      },
+      "collocations": [
+        "이건 뭐예요?",
+        "이건 메뉴예요",
+        "이건 제 명함이에요"
+      ]
+    },
+    {
+      "hangul": "뭐",
+      "romanization": "mwo",
+      "english": "what",
+      "partOfSpeech": "question pronoun",
+      "exampleSentence": {
+        "ko": "이름이 뭐예요?",
+        "en": "What is your name?",
+        "note": "뭐 ends in vowel → 예요; 뭐 is the spoken/colloquial form of 무엇 (what)"
+      },
+      "collocations": [
+        "이건 뭐예요?",
+        "직업이 뭐예요?",
+        "이름이 뭐예요?"
+      ]
+    },
+    {
+      "hangul": "아니에요",
+      "romanization": "anieyo",
+      "english": "is not / no (polite negative copula)",
+      "partOfSpeech": "copula (negative)",
+      "exampleSentence": {
+        "ko": "저는 일본 사람이 아니에요.",
+        "en": "I am not Japanese.",
+        "note": "아니에요 is the negative of 이에요/예요; the noun before it takes 이/가 (subject marker): 일본 사람이 아니에요"
+      },
+      "collocations": [
+        "이/가 아니에요",
+        "아니에요, 저는",
+        "그게 아니에요"
+      ]
+    },
+    {
+      "hangul": "제",
+      "romanization": "je",
+      "english": "my (humble/polite possessive)",
+      "partOfSpeech": "pronoun",
+      "exampleSentence": {
+        "ko": "제 이름은 민수예요.",
+        "en": "My name is Minsu.",
+        "note": "제 is the possessive form of 저 (polite 'I'); 내 is the possessive of 나 (casual 'I') — use 제 in formal/polite situations"
+      },
+      "collocations": [
+        "제 이름",
+        "제 친구",
+        "제 직업"
+      ]
+    },
+    {
+      "hangul": "직업",
+      "romanization": "jigeop",
+      "english": "job / occupation / profession",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "직업이 뭐예요?",
+        "en": "What is your job?",
+        "note": "직업 ends in consonant 받침 ㅂ → if the answer uses it as topic: 직업은; as subject in the question: 직업이"
+      },
+      "collocations": [
+        "직업이 뭐예요?",
+        "직업은",
+        "좋은 직업"
+      ]
+    },
+    {
+      "hangul": "한국어",
+      "romanization": "hangugeo",
+      "english": "Korean language",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "이건 한국어예요.",
+        "en": "This is Korean (the language).",
+        "note": "한국어 ends in vowel ㅓ → 예요. Use this when identifying a word, sentence, label, or class as Korean."
+      },
+      "collocations": [
+        "한국어예요",
+        "한국어 공부",
+        "한국어 선생님"
+      ]
+    },
+    {
+      "hangul": "영어",
+      "romanization": "yeongeo",
+      "english": "English language",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "저는 영어 선생님이에요.",
+        "en": "I am an English teacher.",
+        "note": "영어 describes the kind of teacher; 선생님 is the final noun, and it ends in ㅁ → 이에요."
+      },
+      "collocations": [
+        "영어 선생님",
+        "영어예요",
+        "영어 공부"
+      ]
+    },
+    {
+      "hangul": "반갑습니다",
+      "romanization": "bangapseumnida",
+      "english": "Nice to meet you",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "저는 민준이에요. 반갑습니다!",
+        "en": "I'm Minjun. Nice to meet you!",
+        "note": "반갑습니다 is formal; 반가워요 is slightly less formal — both are appropriate when meeting someone for the first time"
+      },
+      "collocations": [
+        "처음 뵙겠습니다",
+        "반갑습니다",
+        "저도 반가워요"
+      ]
+    },
+    {
+      "hangul": "어느",
+      "romanization": "eoneu",
+      "english": "which / what (kind of)",
+      "partOfSpeech": "determiner",
+      "exampleSentence": {
+        "ko": "어느 나라 사람이에요?",
+        "en": "Which country are you from?",
+        "note": "어느 is a modifier — it must be followed by a noun; unlike 어디 (where), 어느 modifies a noun directly"
+      },
+      "collocations": [
+        "어느 나라",
+        "어느 학교",
+        "어느 쪽"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Jiyeon, a Korean office worker, meets Minho, a new foreign colleague, in the break room on his first day",
+    "lines": [
+      {
+        "speaker": "지연",
+        "ko": "안녕하세요! 저는 지연이에요. 처음 뵙겠습니다.",
+        "romanization": "Annyeonghaseyo! Jeoneun jiyeonieyo. Cheoeum boepgetseumnida.",
+        "en": "Hello! I'm Jiyeon. Nice to meet you for the first time.",
+        "grammarNote": "저는 — 저 ends in vowel → 는; 지연이에요 — 지연 ends in consonant ㄴ → 이에요"
+      },
+      {
+        "speaker": "민호",
+        "ko": "안녕하세요! 저는 민호예요. 저도 반가워요.",
+        "romanization": "Annyeonghaseyo! Jeoneun minhoyeyo. Jeodo bangawoyo.",
+        "en": "Hello! I'm Minho. I'm glad to meet you too.",
+        "grammarNote": "민호예요 — 민호 ends in vowel ㅗ → 예요; 저도 — 도 means 'also/too,' not a topic marker"
+      },
+      {
+        "speaker": "지연",
+        "ko": "민호 씨, 어느 나라 사람이에요?",
+        "romanization": "Minho ssi, eoneu nara saramieyo?",
+        "en": "Minho, what country are you from?",
+        "grammarNote": "사람이에요 — 사람 ends in consonant ㅁ → 이에요; the question has the same form as the statement — only intonation changes"
+      },
+      {
+        "speaker": "민호",
+        "ko": "저는 호주 사람이에요. 제 나라는 호주예요.",
+        "romanization": "Jeoneun hoju saramieyo. Je naraneun hojuyeyo.",
+        "en": "I'm Australian. My country is Australia.",
+        "grammarNote": "호주 사람이에요 — 사람 ends in consonant ㅁ → 이에요. 나라는 uses 는 because 나라 ends in a vowel, and 호주 ends in a vowel → 예요."
+      },
+      {
+        "speaker": "지연",
+        "ko": "아, 그래요? 직업이 뭐예요?",
+        "romanization": "A, geuraeyo? Jigeobi mwoyeyo?",
+        "en": "Oh, really? What is your job?",
+        "grammarNote": "직업이 뭐예요? — 직업 takes subject marker 이 here (not topic marker 은); 뭐 ends in vowel → 예요"
+      },
+      {
+        "speaker": "민호",
+        "ko": "저는 디자이너예요. 지연 씨는요?",
+        "romanization": "Jeoneun dijaineoyeyo. Jiyeon ssineunyo?",
+        "en": "I'm a designer. What about you, Jiyeon?",
+        "grammarNote": "디자이너예요 — 디자이너 ends in vowel ㅓ → 예요; 씨는요? — 는 is the topic marker + 요 means 'and you?' — a natural way to return a question"
+      },
+      {
+        "speaker": "지연",
+        "ko": "저는 회사원이에요. 이건 제 명함이에요.",
+        "romanization": "Jeoneun hoesawonieyo. Igeon je myeonghamieyo.",
+        "en": "I'm an office worker. This is my business card.",
+        "grammarNote": "회사원이에요 — 회사원 ends in consonant ㄴ → 이에요. 이건 = 이것 + 은; 명함 ends in consonant ㅁ → 이에요."
+      },
+      {
+        "speaker": "민호",
+        "ko": "감사합니다. 이건 제 명함이에요. 잘 부탁드려요!",
+        "romanization": "Gamsahamnida. Igeon je myeonghamieyo. Jal butakdeuryeoyo!",
+        "en": "Thank you. This is my business card. I look forward to working with you!",
+        "grammarNote": "이건 제 명함이에요 repeats the chapter's object-identifying frame in a real exchange. 잘 부탁드려요 is a first-meeting set phrase."
+      }
+    ]
+  },
+  "readingText": {
+    "type": "sms",
+    "title": "새 친구 소개 (Introducing a New Friend)",
+    "body": "엄마, 저 오늘 새 친구 생겼어요! 이름은 지수예요. 지수는 대학생이에요. 우리 학교 학생이에요. 지수 씨는 제주도 사람이에요. 저는 서울 사람이에요. 지수 씨의 꿈은 영어 선생님이에요. 정말 좋은 사람이에요!",
+    "bodyTranslation": "Mom, I made a new friend today! Her name is Jisu. Jisu is a university student. She's a student at our school. Jisu is from Jeju Island. I am from Seoul. Jisu's dream is to be an English teacher. She is a really good person!",
+    "comprehensionQuestions": [
+      {
+        "question": "What is the new friend's name and where is she from?",
+        "answer": "이름은 지수예요 (Her name is Jisu). 제주도 사람이에요 (She is from Jeju Island)."
+      },
+      {
+        "question": "What is Jisu's dream job?",
+        "answer": "꿈은 영어 선생님이에요 (Her dream is to be an English teacher). 선생님 ends in consonant ㅁ → 이에요."
+      },
+      {
+        "question": "Find all the 이에요/예요 forms in the text. For each one, explain why 이에요 or 예요 was chosen based on the noun it follows.",
+        "answer": "지수예요 — 지수 ends in vowel ㅜ → 예요. 대학생이에요 — 대학생 ends in consonant 받침 ㅇ → 이에요. 학생이에요 — 학생 ends in consonant 받침 ㅇ → 이에요. 제주도 사람이에요 — 사람 ends in consonant ㅁ → 이에요. 서울 사람이에요 — 사람 ends in consonant ㅁ → 이에요. 영어 선생님이에요 — 선생님 ends in consonant ㅁ → 이에요. 좋은 사람이에요 — 사람 ends in consonant ㅁ → 이에요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "명함 (Meongham) — Business Cards and First Meetings in Korea",
+    "body": "When meeting someone in a Korean professional or semi-formal context, business cards (명함) are exchanged with both hands or with one hand supported by the other at the wrist — never one-handed or casually tossed. You receive the card with both hands, read it, and then place it respectfully on the table in front of you (never stuff it straight into a pocket). The exchange is usually accompanied by 잘 부탁드려요, which literally means 'I humbly ask for your care' but functions like 'I look forward to working with you.' Even social introductions follow a similar rhythm: name, hometown, and job are the first three pieces of information Koreans typically share. Knowing 저는 [name]이에요/예요 and 저는 [place] 사람이에요 will carry you through the first five minutes of almost any Korean introduction."
+  },
+  "inlineExercises": [
+    {
+      "type": "fillBlank",
+      "prompt": "저는 학생___ (I am a student.)",
+      "options": [
+        "이에요",
+        "예요"
+      ],
+      "correct": "이에요",
+      "explanation": "학생 ends in the final consonant ㅇ (받침). After a consonant, you must use 이에요 — the 이 acts as a phonetic bridge between the consonant and 에요. 예요 can only follow a vowel-ending noun, so 학생예요 is wrong."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "이건 커피___ (This is coffee.)",
+      "options": [
+        "이에요",
+        "예요"
+      ],
+      "correct": "예요",
+      "explanation": "커피 ends in the vowel ㅣ. After a vowel, 예요 attaches directly without any connector. If you chose 이에요, the 이 would create an awkward extra syllable — 커피이에요 — which sounds unnatural."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "저___ 민준이에요. (I am Minjun.)",
+      "options": [
+        "은",
+        "는"
+      ],
+      "correct": "는",
+      "explanation": "저 ends in the vowel ㅓ. After a vowel, the topic marker is 는. 은 is only used after a final consonant (받침). This is the same vowel/consonant rule as 이에요/예요 — one consistent rule governs both."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "다음 문장에서 틀린 것을 찾아보세요: '저는 의사이에요.'",
+      "correct": "저는 의사예요.",
+      "explanation": "의사 ends in the vowel ㅏ. After a vowel, you must use 예요, not 이에요. 의사이에요 sounds like adding an extra unnecessary syllable — 이 is only the bridge needed after a consonant. Correct: 저는 의사예요."
+    },
+    {
+      "type": "translate",
+      "prompt": "Translate: 'What is your name?'",
+      "correct": "이름이 뭐예요?",
+      "hint": "이름 (name) + subject marker 이 + 뭐 (what) + 예요 (is). 뭐 ends in a vowel — which ending does that require?",
+      "explanation": "이름이 뭐예요? is the everyday way to ask someone's name. 무엇 is grammatically possible but sounds more written or formal here."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "You want to say 'I am not Japanese.' Which sentence is correct?",
+      "options": [
+        "저는 일본 사람이에요.",
+        "저는 일본 사람이 아니에요.",
+        "저는 일본 사람이에요 아니에요."
+      ],
+      "correct": "저는 일본 사람이 아니에요.",
+      "explanation": "The careful beginner form is [noun] + 이/가 아니에요. 사람 ends in consonant ㅁ → use 이 before 아니에요. The first option says the opposite: 'I am Japanese.' The third option wrongly stacks 이에요 and 아니에요."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "이___ 뭐예요? (What is this?)",
+      "options": [
+        "건",
+        "는"
+      ],
+      "correct": "건",
+      "explanation": "이건 is the contracted form of 이것 + 은 (이것은 → 이건). This is how native speakers actually say it — 이것은 뭐예요? is grammatically correct but sounds stiff. 이는 is not a standard form. The contraction 이건 is what you will hear in real conversation every time."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "저___ 민준이에요. (As for me, I am Minjun.)",
+      "options": [
+        "는",
+        "를",
+        "가"
+      ],
+      "correct": "는",
+      "explanation": "저는 introduces the topic “as for me” before giving your name. 를 would mark an object, which does not fit an identity sentence."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'This is coffee.'",
+      "tokens": [
+        "이건",
+        "커피예요"
+      ],
+      "correct": "이건 커피예요",
+      "explanation": "이건 sets “this thing” as the topic. 커피 ends in a vowel sound, so the natural copula form is 예요."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the sentence: '저는 학생예요.'",
+      "correct": "저는 학생이에요.",
+      "explanation": "학생 ends in a consonant sound, so it takes 이에요. 예요 is for vowel-ending nouns like 커피예요."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "LABEL MAKER rule: consonant-ending noun + 이에요, vowel-ending noun + 예요 — check the very last letter of the noun",
+      "SPOTLIGHT rule: 은/는 marks what you're talking about (topic); consonant → 은, vowel → 는; 이건 (이것은) is the contraction you'll use most",
+      "Negative: [noun]이/가 아니에요 — the 이/가 before 아니에요 is required and beginners often drop it"
+    ]
+  },
+  "writingTask": {
+    "prompt": "A new classmate points at three things and people and asks what they are; write your answers identifying each one.",
+    "hint": "Use N이에요/예요 to say what something is (이에요 after a 받침, 예요 after a vowel), and N이/가 아니에요 for one that is wrong.",
+    "model": "저는 학생이에요. 이 사람은 선생님이에요. 이건 제 이름이에요. 의사가 아니에요.",
+    "modelEn": "I'm a student. This person is a teacher. This is my name. (I'm) not a doctor."
+  },
+  "canDo": [
+    "Say what someone or something is with N이에요/예요",
+    "Pick 이에요 or 예요 from the noun's final sound (받침 vs vowel)",
+    "Single out a topic with N은/는 (저는, 이름은)",
+    "Say what something is NOT with N이/가 아니에요"
+  ]
+}

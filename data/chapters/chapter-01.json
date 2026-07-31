@@ -1,0 +1,649 @@
+{
+  "id": "chapter-01",
+  "hook": {
+    "situation": "You open a Korean app and see 안녕하세요. You have no idea what any of those shapes mean. Then someone tells you: each block is one spoken syllable, and the shapes literally show you where to put your mouth. You try 한 — it's ㅎ (breath from the throat) + ㅏ (mouth open wide) + ㄴ (tongue behind teeth). Suddenly the writing system makes sense.",
+    "objectives": [
+      "Read any syllable block by identifying its consonant and vowel components",
+      "Produce the basic consonants ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ ㅈ ㅎ and basic vowels ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ",
+      "Use romanization only as a checking tool, not as a pronunciation crutch"
+    ],
+    "whyItMatters": "Every other chapter in this course is built on Hangul. If you skip this and rely on romanization, you will mispronounce Korean for months — romanization uses English spelling habits that do not match Korean sounds. Twenty minutes with Hangul now saves hundreds of hours of re-learning later. King Sejong designed this alphabet to be learned in a single morning, and he was right."
+  },
+  "grammarNotes": [
+    {
+      "id": "gn-consonants",
+      "title": "자음 (Consonants) — Ten Core Shapes",
+      "mentalModel": "Think of consonants as MOUTH BLUEPRINTS. Each shape is a rough sketch of the part of your mouth that makes the sound. ㄱ looks like the back of the throat closing (a bent shape, like the back of your tongue pressing up). ㄴ looks like the tongue tip touching the roof of the mouth. ㅁ is a closed mouth (a box). ㅂ adds lips opening from that box. ㅅ is two lines like teeth. Once you see the blueprint, the sound is no longer random — it is a diagram.",
+      "formation": "Consonant placed at the top-left of a syllable block (onset position) or at the bottom (coda position, called 받침)",
+      "examples": [
+        {
+          "ko": "가 / 고 / 구",
+          "romanization": "ga / go / gu",
+          "en": "ㄱ with different vowels",
+          "note": "ㄱ makes a 'g/k' sound — the shape curves like the back of the throat closing. Same consonant, different vowels produce different syllables"
+        },
+        {
+          "ko": "나 / 노 / 누",
+          "romanization": "na / no / nu",
+          "en": "ㄴ with different vowels",
+          "note": "ㄴ = 'n' — the shape shows the tongue tip pressed to the ridge behind the upper teeth; this is exactly the mouth position for 'n'"
+        },
+        {
+          "ko": "마 / 모 / 무",
+          "romanization": "ma / mo / mu",
+          "en": "ㅁ with different vowels",
+          "note": "ㅁ = 'm' — literally a box representing a closed mouth; lips close for 'm', which is what the box shape shows"
+        },
+        {
+          "ko": "바 / 보 / 부",
+          "romanization": "ba / bo / bu",
+          "en": "ㅂ with different vowels",
+          "note": "ㅂ = 'b/p' — the box (ㅁ) opens at the top as lips part; the two top strokes represent the lips opening"
+        },
+        {
+          "ko": "아 / 오 / 우",
+          "romanization": "a / o / u",
+          "en": "ㅇ as a silent placeholder — no consonant sound",
+          "note": "ㅇ in the onset (top) position is silent — it is a zero-sound placeholder so the syllable block can be built. When ㅇ appears at the bottom (받침), it makes an 'ng' sound"
+        }
+      ],
+      "contrastPairs": [
+        {
+          "a": {
+            "ko": "다 (ㄷ)",
+            "en": "da — 'd' made with the tongue flat against the ridge"
+          },
+          "b": {
+            "ko": "나 (ㄴ)",
+            "en": "na — 'n' also made with the tongue at the same ridge"
+          },
+          "explanation": "ㄷ and ㄴ look similar and use the same part of the mouth. The difference: ㄴ lets air flow through the nose (nasal), while ㄷ blocks and releases air through the mouth (stop). ㄴ has a curved foot shape; ㄷ adds a top horizontal line, making it 'heavier' — visually and phonetically."
+        },
+        {
+          "a": {
+            "ko": "사 (ㅅ)",
+            "en": "sa — soft 's' between vowels"
+          },
+          "b": {
+            "ko": "자 (ㅈ)",
+            "en": "ja — 'j' / 'ch' sound, more pressure"
+          },
+          "explanation": "Both ㅅ and ㅈ involve the front of the mouth. ㅅ (two lines like teeth) is a light 's/sh' shape. ㅈ adds a horizontal base, increasing the pressure to produce 'j'. More strokes in Hangul often means more mouth pressure for the sound."
+        }
+      ],
+      "englishSpeakerPitfall": {
+        "wrong": "Reading 이 as 'ee' (as in 'see') — exactly like English",
+        "right": "이 is close to English 'ee' but shorter and unrounded — and only approximately. The real fix is to listen to a native speaker and imitate, not to map to English sounds.",
+        "explanation": "English speakers instinctively reach for their own vowel sounds when they see romanization. But Korean 이 is not English 'ee', Korean 으 has no English equivalent at all, and Korean ㄹ is not 'r' or 'l'. Romanization is a temporary scaffold — use it to check yourself, but learn the actual sounds by ear. The earlier you stop reading romanization as English, the faster your pronunciation improves."
+      },
+      "exceptions": [
+        "ㄹ is romanized as 'r' between vowels (바람 = baram) and as 'l' at the end of a syllable (달 = dal), but it is neither the English 'r' nor 'l' — it is a single Korean sound that you learn by ear",
+        "ㅇ is silent at the start of a syllable but pronounced 'ng' at the bottom (받침): 강 = gang, 방 = bang",
+        "Some consonants sound different depending on their position in the word — this is called consonant assimilation and you will learn it naturally as your listening improves"
+      ]
+    },
+    {
+      "id": "gn-vowels",
+      "title": "모음 (Vowels) — Lines, Dots, and Direction",
+      "mentalModel": "Think of vowels as a COMPASS ROSE. Every basic Korean vowel is built from three strokes: a vertical line (|), a horizontal line (—), and a short tick that points like a compass needle. The tick's direction tells you the sound. When the tick points RIGHT from a vertical line → ㅏ (open 'a'). When it points LEFT → ㅓ (deeper 'uh'). Tick ABOVE a horizontal line → ㅗ ('o'). Tick BELOW → ㅜ ('oo'). No tick on horizontal → ㅡ (flat 'eu'). Vertical line alone → ㅣ ('ee'). Once you see the compass, you never forget which way the vowel sounds.",
+      "formation": "Tall vowels (ㅏ ㅓ ㅣ ㅐ ㅔ) sit to the RIGHT of the consonant. Wide vowels (ㅗ ㅜ ㅡ) sit BELOW the consonant. Combined vowels are built by merging two basic vowels.",
+      "examples": [
+        {
+          "ko": "아 / 어",
+          "romanization": "a / eo",
+          "en": "ㅏ vs ㅓ — both tall vowels beside the consonant",
+          "note": "ㅏ: tick points RIGHT — mouth open, sound comes forward. ㅓ: tick points LEFT — sound pulls back in the throat. The tick is the only difference on the page and in your mouth."
+        },
+        {
+          "ko": "오 / 우",
+          "romanization": "o / u",
+          "en": "ㅗ vs ㅜ — both wide vowels below the consonant",
+          "note": "ㅗ: tick points UP from the horizontal line — lips round and rise. ㅜ: tick points DOWN — lips round and drop. The compass direction = the lip movement direction."
+        },
+        {
+          "ko": "으 / 이",
+          "romanization": "eu / i",
+          "en": "ㅡ vs ㅣ — no tick needed",
+          "note": "ㅡ: just the horizontal bar — the mouth is flat and neutral, no rounding. ㅣ: just the vertical bar — teeth close, sound is 'ee'. These are the simplest vowel shapes."
+        },
+        {
+          "ko": "애 / 에",
+          "romanization": "ae / e",
+          "en": "Combined vowels — ㅏ+ㅣ and ㅓ+ㅣ",
+          "note": "ㅐ (ㅏ+ㅣ) and ㅔ (ㅓ+ㅣ) look similar and in modern Korean are often pronounced identically as a mid-front 'e' sound. Beginners can treat them the same."
+        },
+        {
+          "ko": "와 / 워 / 위",
+          "romanization": "wa / wo / wi",
+          "en": "Compound vowels starting with ㅗ/ㅜ",
+          "note": "ㅗ+ㅏ = ㅘ (wa), ㅜ+ㅓ = ㅝ (wo/weo), ㅜ+ㅣ = ㅟ (wi). These compound vowels are built by stacking two base vowels — you can decode them by recognizing the parts"
+        }
+      ],
+      "contrastPairs": [
+        {
+          "a": {
+            "ko": "보 (ㅗ)",
+            "en": "bo — tall 'o', lips rounded, sound rises"
+          },
+          "b": {
+            "ko": "부 (ㅜ)",
+            "en": "bu — deep 'oo', lips rounded, sound drops"
+          },
+          "explanation": "Same consonant ㅂ, different vowels. ㅗ sits with its tick pointing UP — the vowel shape tells you the sound moves upward/forward in the mouth. ㅜ has its tick pointing DOWN — the sound descends to a deeper 'oo'. The visual and physical direction match."
+        },
+        {
+          "a": {
+            "ko": "하 (ㅏ)",
+            "en": "ha — open 'a', mouth opens wide"
+          },
+          "b": {
+            "ko": "허 (ㅓ)",
+            "en": "heo — 'uh', sound pulls back"
+          },
+          "explanation": "ㅏ and ㅓ look almost the same but the tick faces opposite directions. ㅏ faces right (toward open space) → mouth opens. ㅓ faces left (inward) → the sound retreats to the back of the mouth. This is not coincidence — King Sejong's design mapped physical articulation to visual direction."
+        }
+      ],
+      "englishSpeakerPitfall": {
+        "wrong": "Pronouncing 으 (ㅡ) as 'oo' or 'u' based on romanization 'eu'",
+        "right": "으 has no English equivalent — it is a central unrounded vowel. Keep your lips flat (no rounding) and the tongue in the middle of the mouth.",
+        "explanation": "The romanization 'eu' looks like the French 'eu' or English 'uh', so beginners round their lips. But 으 is made with flat, unrounded lips — the opposite of 'oo'. To train this sound: say 'ee' (이) and keep your lips in exactly that flat position, then move your tongue back. The sound you get is 으. Practice 이 then 으 back and forth."
+      },
+      "exceptions": [
+        "ㅢ (의) is technically ㅡ+ㅣ but in natural speech it often sounds like just 이 (ee) or 에 (e) depending on position: 의사 = 'uisa' (doctor) but the particle 의 usually sounds like 에",
+        "Vowel length (long vs. short) existed in classical Korean but modern Seoul Korean has largely lost it — beginners can ignore vowel length completely",
+        "Some compound vowels like ㅙ (ㅗ+ㅐ) and ㅞ (ㅜ+ㅔ) are rare and sound very similar to ㅘ and ㅝ respectively"
+      ]
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "한글",
+      "romanization": "hangeul",
+      "english": "Hangul (Korean writing system)",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "한글은 배우기 쉬워요.",
+        "en": "Hangul is easy to learn.",
+        "note": "Topic particle 은 attaches to 한글 — you will learn this particle in Chapter 2"
+      },
+      "collocations": [
+        "한글을 배우다",
+        "한글을 읽다",
+        "한글을 쓰다"
+      ]
+    },
+    {
+      "hangul": "자음",
+      "romanization": "jaeum",
+      "english": "consonant",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "ㄱ은 자음이에요.",
+        "en": "ㄱ is a consonant.",
+        "note": "이에요 means 'is/am/are' — the simplest Korean copula; perfect for labeling what something is"
+      },
+      "collocations": [
+        "자음을 배우다",
+        "받침 자음",
+        "기본 자음"
+      ]
+    },
+    {
+      "hangul": "모음",
+      "romanization": "moeum",
+      "english": "vowel",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "ㅏ는 모음이에요.",
+        "en": "ㅏ is a vowel.",
+        "note": "는 is the topic marker for vowel-ending words — 모음 ends in ㅁ so it uses 은, but ㅏ alone ends in a vowel, so 는 attaches"
+      },
+      "collocations": [
+        "모음을 배우다",
+        "기본 모음",
+        "합성 모음"
+      ]
+    },
+    {
+      "hangul": "글자",
+      "romanization": "geulja",
+      "english": "letter / character",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "이 글자가 뭐예요?",
+        "en": "What is this character?",
+        "note": "뭐예요 = 'what is it?' — an essential question frame for asking about unfamiliar characters"
+      },
+      "collocations": [
+        "글자를 읽다",
+        "글자를 쓰다",
+        "한글 글자"
+      ]
+    },
+    {
+      "hangul": "소리",
+      "romanization": "sori",
+      "english": "sound",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "이 글자의 소리가 뭐예요?",
+        "en": "What is the sound of this character?",
+        "note": "의 is a possessive particle — '글자의 소리' = 'the sound of the character'"
+      },
+      "collocations": [
+        "소리를 듣다",
+        "소리를 내다",
+        "같은 소리"
+      ]
+    },
+    {
+      "hangul": "받침",
+      "romanization": "batchim",
+      "english": "final consonant (bottom of syllable block)",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "한에는 받침 ㄴ이 있어요.",
+        "en": "한 has the final consonant ㄴ.",
+        "note": "한 = ㅎ + ㅏ + ㄴ. The final ㄴ is the 받침."
+      },
+      "collocations": [
+        "받침이 있다",
+        "받침이 없다",
+        "받침 ㄴ"
+      ]
+    },
+    {
+      "hangul": "발음",
+      "romanization": "bareum",
+      "english": "pronunciation",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "발음이 어려워요.",
+        "en": "The pronunciation is difficult.",
+        "note": "A natural comment to make as a beginner — acknowledges that pronunciation takes practice"
+      },
+      "collocations": [
+        "발음을 연습하다",
+        "발음이 좋다",
+        "정확한 발음"
+      ]
+    },
+    {
+      "hangul": "읽다",
+      "romanization": "ikda",
+      "english": "to read",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "한글을 천천히 읽어요.",
+        "en": "I read Hangul slowly.",
+        "note": "Focus on reading the Hangul shape before checking romanization."
+      },
+      "collocations": [
+        "한글을 읽다",
+        "글자를 읽다",
+        "천천히 읽다"
+      ]
+    },
+    {
+      "hangul": "쓰다",
+      "romanization": "sseuda",
+      "english": "to write / use",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "이름을 써요.",
+        "en": "I write my name.",
+        "note": "쓰다 is ㅡ-irregular: the ㅡ drops before 아/어, giving 써요 not 쓰어요"
+      },
+      "collocations": [
+        "이름을 쓰다",
+        "한글을 쓰다",
+        "펜으로 쓰다"
+      ]
+    },
+    {
+      "hangul": "듣다",
+      "romanization": "deutda",
+      "english": "to listen",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "소리를 듣고 따라 해요.",
+        "en": "I listen to the sound and repeat it.",
+        "note": "Useful first-lesson action; the irregular form 들어요 is learned later."
+      },
+      "collocations": [
+        "소리를 듣다",
+        "다시 듣다",
+        "듣고 따라 하다"
+      ]
+    },
+    {
+      "hangul": "말하다",
+      "romanization": "malhada",
+      "english": "to speak / say",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "천천히 말해요.",
+        "en": "I speak slowly.",
+        "note": "말하다 → 말해요 in polite form; 천천히 = slowly — essential classroom vocabulary"
+      },
+      "collocations": [
+        "천천히 말하다",
+        "한국어로 말하다",
+        "다시 말하다"
+      ]
+    },
+    {
+      "hangul": "따라 하다",
+      "romanization": "ttara hada",
+      "english": "to repeat / follow along",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "저를 따라 하세요.",
+        "en": "Please repeat after me.",
+        "note": "따라 하세요 is a polite command — very common in language class settings"
+      },
+      "collocations": [
+        "따라 하다",
+        "따라 읽다",
+        "따라 쓰다"
+      ]
+    },
+    {
+      "hangul": "천천히",
+      "romanization": "cheoncheonhi",
+      "english": "slowly",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "천천히 말해 주세요.",
+        "en": "Please speak slowly.",
+        "note": "One of the most useful phrases for a beginner — you will say this constantly in your first weeks of Korean"
+      },
+      "collocations": [
+        "천천히 말하다",
+        "천천히 읽다",
+        "천천히 쓰다"
+      ]
+    },
+    {
+      "hangul": "다시",
+      "romanization": "dasi",
+      "english": "again",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "다시 들어요.",
+        "en": "I listen again.",
+        "note": "다시 comes before the verb it modifies — Korean adverbs do not change form"
+      },
+      "collocations": [
+        "다시 듣다",
+        "다시 읽다",
+        "다시 말하다"
+      ]
+    },
+    {
+      "hangul": "알겠어요",
+      "romanization": "algesseoyo",
+      "english": "I understand / I see / okay",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "네, 알겠어요.",
+        "en": "Yes, I understand.",
+        "note": "알겠어요 literally means 'I will know it' (future-inference form of 알다) but functions as 'I get it now' — use it as a fixed phrase"
+      },
+      "collocations": [
+        "네, 알겠어요",
+        "잘 알겠어요",
+        "알겠습니다"
+      ]
+    },
+    {
+      "hangul": "모르겠어요",
+      "romanization": "moreugesseoyo",
+      "english": "I don't know / I'm not sure",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "이 글자 모르겠어요.",
+        "en": "I don't know this character.",
+        "note": "The counterpart to 알겠어요 — equally important to have in your first lesson vocabulary"
+      },
+      "collocations": [
+        "잘 모르겠어요",
+        "아직 모르겠어요"
+      ]
+    },
+    {
+      "hangul": "연습하다",
+      "romanization": "yeonseupada",
+      "english": "to practice",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "매일 한글을 연습해요.",
+        "en": "I practice Hangul every day.",
+        "note": "매일 = every day; 연습하다 follows the 하다 verb pattern — 연습 (practice noun) + 하다 (to do)"
+      },
+      "collocations": [
+        "발음을 연습하다",
+        "매일 연습하다",
+        "열심히 연습하다"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Jiyeon (a Korean tutor) meets Minjun (a complete beginner) for their first online lesson",
+    "lines": [
+      {
+        "speaker": "지연",
+        "ko": "안녕하세요! 지연이에요. 이름이 뭐예요?",
+        "romanization": "Annyeonghaseyo! Jiyeonieyo. Ireumi mwoyeyo?",
+        "en": "Hello! I'm Jiyeon. What's your name?",
+        "grammarNote": "이름이 뭐예요? is a real first-lesson question. 뭐예요 asks 'what is it?' using the polite copula 예요."
+      },
+      {
+        "speaker": "민준",
+        "ko": "저는 민준이에요. 한글은 처음이에요.",
+        "romanization": "Jeoneun minjunieyo. Hangeureun cheoeumieyo.",
+        "en": "I'm Minjun. Hangul is new for me.",
+        "grammarNote": "처음이에요 = 'it is my first time.' This sounds more natural for a beginner than asking for an abstract explanation immediately."
+      },
+      {
+        "speaker": "지연",
+        "ko": "좋아요. 오늘은 글자 하나만 먼저 볼게요. 이건 '한'이에요.",
+        "romanization": "Joayo. Oneureun geulja hanaman meonjeo bolgeyo. Igeon 'han'ieyo.",
+        "en": "Good. Today let's look at just one character first. This is 한.",
+        "grammarNote": "하나만 = 'only one'; 먼저 볼게요 is a teacher's gentle 'we'll look first,' not a textbook definition."
+      },
+      {
+        "speaker": "민준",
+        "ko": "한... 조금 천천히 말해 주세요.",
+        "romanization": "Han... jogeum cheoncheonhi malhae juseyo.",
+        "en": "Han... please say it a little slowly.",
+        "grammarNote": "조금 천천히 말해 주세요 is a natural survival request when the sound is still unfamiliar."
+      },
+      {
+        "speaker": "지연",
+        "ko": "한. ㅎ, ㅏ, ㄴ이 같이 있어요.",
+        "romanization": "Han. Hieut, a, nieuni gachi isseoyo.",
+        "en": "Han. ㅎ, ㅏ, and ㄴ are together.",
+        "grammarNote": "같이 있어요 keeps the syllable-block idea concrete: the letters sit together inside one block."
+      },
+      {
+        "speaker": "민준",
+        "ko": "그러면 ㅎ은 자음이고, ㅏ는 모음이에요?",
+        "romanization": "Geureomyeon hieuteun jaeumigo, aneun moeumieyo?",
+        "en": "Then ㅎ is a consonant, and ㅏ is a vowel?",
+        "grammarNote": "은/는 marks the item being identified: ㅎ은..., ㅏ는.... The learner is checking the category, not reciting a definition."
+      },
+      {
+        "speaker": "지연",
+        "ko": "맞아요. 마지막 ㄴ도 자음이에요. 세 개가 모여서 한 글자가 돼요.",
+        "romanization": "Majayo. Majimak nieundo jaeumieyo. Se gaega moyeoseo han geuljaga dwaeyo.",
+        "en": "Right. The final ㄴ is also a consonant. Three pieces come together and become one character.",
+        "grammarNote": "도 adds 'also'; 글자가 돼요 explains the result of combining the pieces."
+      },
+      {
+        "speaker": "민준",
+        "ko": "아, 한이에요. 로마자보다 한글을 먼저 볼게요.",
+        "romanization": "A, hanieyo. Romajaboda hangeureul meonjeo bolgeyo.",
+        "en": "Ah, it's 한. I'll look at the Hangul first, before the romanization.",
+        "grammarNote": "보다 marks comparison: 로마자보다 한글 = Hangul rather than romanization as the main focus."
+      }
+    ]
+  },
+  "readingText": {
+    "type": "diary",
+    "title": "민준의 첫 한글 공부 (Minjun's First Hangul Study)",
+    "body": "오늘 처음으로 한글을 공부했어요. 한글 글자는 자음과 모음으로 만들어요. 자음이 열 개 있어요: ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ, ㅈ, ㅎ. 모음도 있어요: ㅏ, ㅓ, ㅗ, ㅜ, ㅡ, ㅣ. 이 자음과 모음을 합치면 글자가 돼요. 예를 들어, ㅎ + ㅏ + ㄴ = 한이에요. 처음에는 어려웠지만 이제 조금 읽을 수 있어요. 내일 더 연습할 거예요.",
+    "bodyTranslation": "Today I studied Hangul for the first time. Hangul characters are made with consonants and vowels. There are ten consonants: ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ, ㅈ, ㅎ. There are also vowels: ㅏ, ㅓ, ㅗ, ㅜ, ㅡ, ㅣ. When you combine these consonants and vowels, you get a character. For example, ㅎ + ㅏ + ㄴ = 한. At first it was difficult, but now I can read a little. I will practice more tomorrow.",
+    "comprehensionQuestions": [
+      {
+        "question": "How many basic consonants does Minjun list in the diary?",
+        "answer": "열 개 (ten) — ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅅ, ㅇ, ㅈ, ㅎ"
+      },
+      {
+        "question": "What example does the diary give for how a syllable block is made?",
+        "answer": "ㅎ + ㅏ + ㄴ = 한 — a consonant (ㅎ) + a vowel (ㅏ) + a final consonant (ㄴ) combine into one spoken syllable block"
+      },
+      {
+        "question": "Find all the 이에요/예요 copula forms in the text. Why does each one appear, and when does the ending change from 이에요 to 예요?",
+        "answer": "The true copula form in the text is 한이에요: 한 ends in the final consonant ㄴ, so it takes 이에요. 글자가 돼요 is not 이에요/예요; it is 되다, meaning 'becomes.' The reusable rule is: consonant-final words take 이에요, vowel-final words take 예요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "한글날 — The Holiday That Celebrates an Alphabet",
+    "body": "October 9th is 한글날 (Hangul Day), a national holiday in South Korea celebrating Hangul's proclamation. King Sejong's court created Hangul in 1443 and proclaimed it in 1446 through Hunminjeongeum. This makes Korean one of the only languages in the world with a holiday dedicated to its writing system. King Sejong commissioned Hangul because the existing Chinese characters (한자) were so difficult that ordinary people could not easily read or write. He designed Hangul specifically to be learned quickly by everyone. Historical records say it could be learned 'in a morning' by a wise person and 'in ten days' by a less clever person. Modern linguists consider it one of the most scientifically designed writing systems ever created. When you struggle with a new letter, remember: King Sejong designed it so that you would not have to struggle for long."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which vowel has a vertical stroke with a short tick pointing right?",
+      "options": [
+        "ㅓ",
+        "ㅏ",
+        "ㅗ",
+        "ㅣ"
+      ],
+      "correct": "ㅏ",
+      "explanation": "ㅏ has a vertical stroke with a short tick pointing RIGHT. ㅓ looks similar but the tick points LEFT (that is the 'uh/eo' sound). ㅗ is a horizontal stroke with a tick pointing UP (the 'o' sound). ㅣ is just a vertical bar with no tick (the 'ee' sound). The direction of the tick is the key distinguishing feature."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "The syllable block 한 is made of which components?",
+      "options": [
+        "ㅎ + ㅏ + ㄴ",
+        "ㅎ + ㄴ + ㅏ",
+        "ㄴ + ㅏ + ㅎ",
+        "ㅎ + ㅓ + ㄴ"
+      ],
+      "correct": "ㅎ + ㅏ + ㄴ",
+      "explanation": "Korean syllable blocks follow the order: (1) initial consonant at top-left, (2) vowel to the right or below, (3) optional final consonant at the bottom. So 한 = ㅎ (initial) + ㅏ (vowel, to the right because it is a tall vowel) + ㄴ (final, at the bottom). The other options have the order wrong or use the wrong vowel — ㅓ would give 헌, not 한."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which of these is the SILENT consonant placeholder used when a syllable starts with a vowel sound?",
+      "options": [
+        "ㅎ",
+        "ㅇ",
+        "ㅅ",
+        "ㄴ"
+      ],
+      "correct": "ㅇ",
+      "explanation": "ㅇ in the onset (initial) position makes no sound — it is a placeholder that allows vowel-initial syllables to have a proper block shape. So 아 is written as ㅇ+ㅏ, not just ㅏ floating alone. ㅎ makes an 'h' sound, ㅅ makes an 's' sound, ㄴ makes an 'n' sound. Only ㅇ is silent at the start of a syllable (though it makes 'ng' at the end)."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "How do you say 'Please speak slowly' in Korean?",
+      "options": [
+        "천천히 말해 주세요.",
+        "다시 들어요.",
+        "알겠어요.",
+        "모르겠어요."
+      ],
+      "correct": "천천히 말해 주세요.",
+      "explanation": "천천히 = slowly, 말해 주세요 = please speak (V + 아/어 주세요 pattern). 다시 들어요 means 'listen again', 알겠어요 means 'I understand', 모르겠어요 means 'I don't know'. The V + 아/어 주세요 pattern (pattern-015) is used for polite requests for someone to perform an action for you."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "A learner sees ㅎ + ㅏ + ㄴ. Which block should they read?",
+      "options": [
+        "한",
+        "하",
+        "나",
+        "헌"
+      ],
+      "correct": "한",
+      "explanation": "ㅎ is the first consonant, ㅏ is the vowel, and ㄴ sits at the bottom as 받침. Together they form 한. This checks the Chapter 1 skill: read the block from its parts before relying on romanization."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Where does a TALL vowel like ㅏ, ㅓ, or ㅣ appear in a syllable block?",
+      "options": [
+        "Below the consonant",
+        "To the right of the consonant",
+        "Above the consonant",
+        "It can go anywhere"
+      ],
+      "correct": "To the right of the consonant",
+      "explanation": "Tall vowels (ㅏ, ㅓ, ㅣ, ㅐ, ㅔ and their compounds) sit to the RIGHT of the consonant: 가 (ㄱ+ㅏ), 서 (ㅅ+ㅓ), 시 (ㅅ+ㅣ). Wide vowels (ㅗ, ㅜ, ㅡ) sit BELOW the consonant: 고 (ㄱ+ㅗ), 수 (ㅅ+ㅜ). This layout rule is completely regular — once you know it, you can read any block."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "What does 알겠어요 most naturally mean in a classroom context?",
+      "options": [
+        "I don't understand.",
+        "Please say it again.",
+        "I understand / I see / Okay.",
+        "Is that right?"
+      ],
+      "correct": "I understand / I see / Okay.",
+      "explanation": "알겠어요 literally contains 알다 (to know) + 겠 (future/inference marker) + 어요, but it functions as 'I got it / I understand / Okay' in conversation. It is NOT 모르겠어요 (I don't know / I'm not sure), NOT 다시 말해 주세요 (please say it again), NOT 맞아요? (is that right?). Use 알겠어요 to signal to your teacher that you have understood what they just explained."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Type the syllable block made from ㅁ + ㅏ.",
+      "correct": "마",
+      "explanation": "ㅁ gives the first sound and ㅏ sits to its right as a tall vowel. Together they form the single syllable block 마."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'Please speak slowly.'",
+      "tokens": [
+        "천천히",
+        "말해",
+        "주세요"
+      ],
+      "correct": "천천히 말해 주세요",
+      "explanation": "천천히 tells how to speak, and 말해 주세요 makes the polite request. This is the classroom phrase learners need when the Korean is too fast."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which block starts with a vowel sound and uses ㅇ as the silent placeholder?",
+      "options": [
+        "아",
+        "나",
+        "한"
+      ],
+      "correct": "아",
+      "explanation": "아 begins with a vowel sound, so ㅇ fills the first consonant slot silently. 나 and 한 begin with real consonant sounds."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "Each Hangul syllable is a BLOCK built from: initial consonant + vowel (+ optional final consonant 받침) — read left-to-right, top-to-bottom within the block",
+      "MOUTH BLUEPRINTS: consonant shapes sketch the mouth position (ㅁ = closed lips, ㄴ = tongue at ridge, ㅇ = silent/circular). COMPASS ROSE: vowel ticks point in the direction of the mouth movement (ㅏ = right/open, ㅓ = left/back, ㅗ = up, ㅜ = down)",
+      "Romanization is a CHECKING TOOL, not Korean spelling — use it to verify your reading, then cover it and practice reading Hangul directly"
+    ]
+  },
+  "writingTask": {
+    "prompt": "Write your own first name (or a Korean word you know) in Hangul, breaking it into syllable blocks.",
+    "hint": "Build each block as 자음 + 모음 (+ 받침 if there is a bottom consonant), e.g. 한 = ㅎ+ㅏ+ㄴ.",
+    "model": "한글: ㅎ + ㅏ + ㄴ → 한, ㄱ + ㅡ + ㄹ → 글. 소리: 한글.",
+    "modelEn": "Hangul: ㅎ + ㅏ + ㄴ → 한, ㄱ + ㅡ + ㄹ → 글. Sound: \"hangeul.\""
+  },
+  "canDo": [
+    "Tell consonants from vowels and name the ten core 자음 shapes",
+    "See a vowel's lines and dots and read its direction (모음)",
+    "Build a syllable block from 자음 + 모음 (+ 받침)",
+    "Read a written block back as one sound, not separate letters (글자 · 소리)"
+  ]
+}
