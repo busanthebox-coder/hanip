@@ -24,18 +24,33 @@ export function expandVariants(title) {
   if (!/[가-힣]/.test(head)) return [];
   const groups = head.split(/\s+vs\.?\s+|\s*&\s*/i);
   const out = new Set();
-  const structural = /[/\-+&(]|(^|\s)[NVA][-가-힣(]|\svs\.?\s/u;
+  const structural = /[/\-+&(]|(^|\s)[NVA](?:[-가-힣(]|\s+[가-힣])|\svs\.?\s/u;
   for (const rawGroup of groups) {
     // a bare Korean word with no morpheme markup ("자음", "덕분에") is a topic
     // name, not a pattern — emitting it would make the hunt highlight a noun
     if (!structural.test(rawGroup) && !structural.test(head)) continue;
     const group = rawGroup
-      .replace(/(^|\s)[NVA](?=[-가-힣(])/gu, '$1') // pos markers: N을 → 을, V아 → 아
+      .replace(/(^|\s)[NVA](?=[-가-힣(]|\s+[가-힣])/gu, '$1') // pos markers: N을/N 동안 → 을/동안
       .replace(/^-\s*/, '')
       .replace(/[+a-zA-Z?.!]+/g, ' ')             // "안 + verb" → "안"
       .replace(/\s+/g, ' ')
       .trim();
     if (!group) continue;
+    if (group.endsWith('하다')) out.add(group.slice(0, -2).trim());
+    if (group.endsWith('같다')) {
+      const visible = group.slice(0, -1).trim();
+      const words = visible.split(/\s+/);
+      out.add(words.length > 2 ? words.slice(1).join(' ') : visible);
+    }
+    // Nested endings share the tail after the slash: (으)ㄴ/는데도 means
+    // 은데도, ㄴ데도, or 는데도, rather than the unrelated pieces 으ㄴ/ㄴ.
+    const nested = group.match(/\(으\)([ㄱ-ㅎ])\/([가-힣])([가-힣]+)/u);
+    if (nested) {
+      const [, final, second, tail] = nested;
+      out.add(composeSyl('ㅇ', 'ㅡ', final) + tail);
+      out.add(final + tail);
+      out.add(second + tail);
+    }
     // A) whole-segment split — drop bare 1-syllable segments unless ALL are
     //    1-syllable (은/는), so "-고 / -(으)면" can't emit a false-hit-prone 고
     const segs = group.split('/').map((s) => s.trim().replace(/^-\s*/, '')).filter(Boolean);
@@ -194,13 +209,26 @@ function stemOf(word) {
 // wrong word (오다's 오 inside 오늘). Try the fused forms, longest first;
 // return null when the word genuinely isn't in the sentence.
 const V_FUSE = { 'ㅣ': 'ㅕ', 'ㅗ': 'ㅘ', 'ㅜ': 'ㅝ', 'ㅡ': 'ㅓ' };
-export function guessTarget(word, sentenceKo) {
+const H_FUSE = { 'ㅓ': 'ㅐ', 'ㅑ': 'ㅒ' };
+export function guessTarget(word, sentenceKo, { advanced = true } = {}) {
   const pos = String(word.partOfSpeech || '').toLowerCase();
   const conjugates = pos.startsWith('verb') || pos.startsWith('adj');
   // plain forms need ≥2 chars (a bare 오 would claim 오늘); fused products
   // (와, 올, 해) are distinctive conjugation syllables, allowed at 1 char
   const plain = new Set();
   const fused = new Set();
+  const addFused = (form) => {
+    if (!form) return;
+    fused.add(form);
+    const last = decomposeSyl(form.at(-1));
+    if (advanced && last && !last.T) {
+      fused.add(form.slice(0, -1) + composeSyl(last.L, last.V, 'ㅆ'));
+    }
+  };
+  const addPast = (form) => {
+    const last = decomposeSyl(form.at(-1));
+    if (last && !last.T) fused.add(form.slice(0, -1) + composeSyl(last.L, last.V, 'ㅆ'));
+  };
   for (const rawKo of String(word.hangul).split('/').map((s) => s.trim()).filter(Boolean)) {
     let stem = rawKo;
     if (conjugates && rawKo.endsWith('다')) stem = rawKo.slice(0, -1);
@@ -210,11 +238,30 @@ export function guessTarget(word, sentenceKo) {
     const d = decomposeSyl(stem.at(-1));
     if (!d) continue;
     if (!d.T) {
-      if (V_FUSE[d.V]) fused.add(base + composeSyl(d.L, V_FUSE[d.V]));
-      fused.add(base + composeSyl(d.L, d.V, 'ㄹ'));            // future/promise 갈·올·릴
-      if (stem.at(-1) === '하') fused.add(base + '해');
+      if (advanced) addPast(stem);                             // 가→갔 without accepting bare 가
+      if (V_FUSE[d.V]) addFused(base + composeSyl(d.L, V_FUSE[d.V]));
+      addFused(base + composeSyl(d.L, d.V, 'ㄹ'));             // future/promise 갈·올·릴
+      if (advanced) addFused(base + composeSyl(d.L, d.V, 'ㄴ')); // modifier 간·본·큰
+      if (stem.at(-1) === '하') addFused(base + '해');
+      if (advanced && stem.at(-1) === '르') {
+        const before = decomposeSyl(base.at(-1));
+        if (before) {
+          const doubled = base.slice(0, -1) + composeSyl(before.L, before.V, 'ㄹ');
+          addFused(doubled + (['ㅏ', 'ㅗ'].includes(before.V) ? '라' : '러'));
+        }
+      }
     } else if (d.T === 'ㅂ') {
-      fused.add(base + composeSyl(d.L, d.V) + '워');           // ㅂ-irregular 반가워
+      addFused(base + composeSyl(d.L, d.V) + '워');            // ㅂ-irregular 반가워·추웠
+    } else if (advanced && d.T === 'ㄷ') {
+      const irregular = base + composeSyl(d.L, d.V, 'ㄹ');
+      addFused(irregular + '어');                              // 듣다→들어
+      addFused(irregular + '은');                              // 듣다→들은
+    } else if (advanced && d.T === 'ㅅ') {
+      const irregular = base + composeSyl(d.L, d.V);
+      addFused(irregular + (['ㅏ', 'ㅗ'].includes(d.V) ? '아' : '어'));
+      addFused(irregular + '은');                              // 낫다→나은
+    } else if (advanced && d.T === 'ㅎ' && H_FUSE[d.V]) {
+      addFused(base + composeSyl(d.L, H_FUSE[d.V]));           // 그렇다→그래
     }
     if (stem.length === 1) for (const o of CONJ_OPENERS) plain.add(stem + o);
   }
@@ -225,12 +272,12 @@ export function guessTarget(word, sentenceKo) {
     const bare = String(word.hangul).trim();
     if (bare.length === 1) plain.add(bare);
   }
-  const candidates = [...new Set([...plain, ...fused])].sort((a, b) => b.length - a.length);
-  for (const form of candidates) {
-    if (!fused.has(form) && form.length < 2 && conjugates) continue;
-    if (sentenceKo.includes(form)) return form;
-  }
-  return null;
+  const candidates = [...new Set([...plain, ...fused])]
+    .filter((form) => fused.has(form) || form.length >= 2 || !conjugates)
+    .map((form) => ({ form, at: sentenceKo.indexOf(form) }))
+    .filter(({ at }) => at >= 0)
+    .sort((a, b) => b.form.length - a.form.length || a.at - b.at);
+  return candidates[0]?.form || null;
 }
 
 // Does this dialogue line visibly contain the word? Multi-char stems match as
@@ -291,6 +338,8 @@ export function buildWordBites(chapter, overrides = {}) {
   const per = Math.ceil(words.length / biteCount);
   const dialogueLines = chapter.extendedDialogue?.lines || [];
   const payoffBans = overrides.payoffBans || [];
+  const chapterNumber = Number(String(chapter.id || '').match(/\d+/)?.[0]);
+  const advancedTargets = Number.isFinite(chapterNumber) && chapterNumber >= 12;
   const bites = [];
   for (let b = 0; b < biteCount; b++) {
     const chunk = words.slice(b * per, (b + 1) * per);
@@ -299,7 +348,7 @@ export function buildWordBites(chapter, overrides = {}) {
       kind: 'guess',
       word: { ko: w.hangul, romanization: w.romanization, en: w.english, pos: w.partOfSpeech },
       sentence: w.exampleSentence ? { ko: w.exampleSentence.ko, en: w.exampleSentence.en } : null,
-      target: w.exampleSentence ? guessTarget(w, w.exampleSentence.ko) : null,
+      target: w.exampleSentence ? guessTarget(w, w.exampleSentence.ko, { advanced: advancedTargets }) : null,
       options: guessOptions(w, words, overrides),
       note: w.exampleSentence?.note || '',
     }));

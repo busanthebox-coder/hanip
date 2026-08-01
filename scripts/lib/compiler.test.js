@@ -31,6 +31,31 @@ describe('guessTarget', () => {
   it('returns null when the word truly is not in the sentence', () => {
     expect(guessTarget(w('시간', 'noun'), '몇 시에 만나요?')).toBeNull();
   });
+  it('matches the 르-irregular from chapter 26', () => {
+    expect(guessTarget(w('모르다', 'verb'), '늦을지도 몰라요.')).toBe('몰라');
+  });
+  it('matches the ㄷ-irregular from chapter 21', () => {
+    expect(guessTarget(w('듣다', 'verb'), '어제 들은 노래를 또 들어요.')).toBe('들은');
+    expect(guessTarget(w('듣다', 'verb'), '노래를 다시 들어요.')).toBe('들어');
+  });
+  it('matches the ㅅ-irregular from chapter 15', () => {
+    expect(guessTarget(w('낫다', 'verb'), '내일은 오늘보다 나은 하루이길 바란다.')).toBe('나은');
+  });
+  it('matches the ㅎ-irregular from chapter 19', () => {
+    expect(guessTarget(w('그렇다', 'adjective'), '왜 그래요?')).toBe('그래');
+  });
+  it('matches the past contraction for 가다 from chapter 17', () => {
+    expect(guessTarget(w('가다', 'verb'), '지난주에 부산에 갔어요.')).toBe('갔');
+  });
+  it('matches the past contraction for 보다 from chapter 17', () => {
+    expect(guessTarget(w('보다', 'verb'), '친구랑 영화를 봤어요.')).toBe('봤');
+  });
+  it('matches the past contraction for 하다 from chapter 17', () => {
+    expect(guessTarget(w('하다', 'verb'), '어제 숙제를 했어요.')).toBe('했');
+  });
+  it('matches the past ㅂ-irregular from chapter 17', () => {
+    expect(guessTarget(w('춥다', 'adjective'), '어제 정말 추웠어요.')).toBe('추웠');
+  });
 });
 
 describe('findAllPatterns', () => {
@@ -63,6 +88,47 @@ describe('expandVariants', () => {
   it('drops a lone single-syllable segment among longer ones', () => {
     const v = expandVariants('-고 / -(으)면 / -(으)ㄹ게요');
     expect(v).not.toContain('고');
+  });
+  it('expands the nested optional slash ending from chapter 25', () => {
+    expect(expandVariants('A/V-(으)ㄴ/는데도 — even though, and still'))
+      .toEqual(expect.arrayContaining(['은데도', 'ㄴ데도', '는데도']));
+  });
+  it('extracts single 잖아요 and 거든요 endings used in chapter 12', () => {
+    expect(expandVariants('V/A-잖아요 / -거든요'))
+      .toEqual(expect.arrayContaining(['잖아요', '거든요']));
+  });
+  it('treats 못 plus a verb like the existing 안 plus a verb shape', () => {
+    expect(expandVariants('못 + verb')).toEqual(['못']);
+    expect(findPattern('시간이 없어서 못 갔어요.', expandVariants('못 + verb')))
+      .toMatchObject({ variant: '못' });
+  });
+  it('keeps discourse words in a slash pair whole', () => {
+    expect(expandVariants('따라서 / 그러므로'))
+      .toEqual(expect.arrayContaining(['따라서', '그러므로']));
+  });
+  it('keeps morphologically empty A2 headings on the teach fallback', () => {
+    for (const title of ['Question words (누구, 뭐, 어디)', 'Choosing the style', 'Written endings', 'Boundary check']) {
+      const [bite] = buildPatternBites({ grammarNotes: [{ title, formTable: [], examples: [{ ko: '실제 예문입니다.' }] }] });
+      expect(bite.cards[0].kind).toBe('teach');
+    }
+  });
+  it('extracts the noun connector 때문에 from chapter 30', () => {
+    expect(expandVariants('N 때문에 — because of a noun')).toContain('때문에');
+  });
+  it('extracts the noun duration marker 동안 from chapter 31', () => {
+    expect(expandVariants('N 동안 — for or during N')).toContain('동안');
+  });
+  it('extracts the stable decision ending from chapter 14', () => {
+    expect(expandVariants('-기로 하다 — deciding')).toContain('기로');
+  });
+  it('extracts the stable reported-question ending from chapter 13', () => {
+    expect(expandVariants('-냐고 하다 — reporting a question')).toContain('냐고');
+  });
+  it('extracts the stable pretend phrase from chapter 15', () => {
+    expect(expandVariants('-는 척하다 — pretend')).toContain('는 척');
+  });
+  it('extracts the stable soft-opinion phrase from chapter 12', () => {
+    expect(expandVariants('-는 것 같다 — soft opinions')).toContain('것 같');
   });
 });
 
