@@ -12,7 +12,7 @@ Evidence artifact: `docs/harness/audit/order-02-evidence.md`
 - Before metrics invocation: `node scripts/report-gaps.mjs 12 34`; exit `0`; observable: 59 patterns, 31 hunt, 28 teach, 73 sentence cards with null target.
 - First red invocation, before production edits: `npx vitest run scripts/lib/compiler.test.js`; exit `1`; observable: 9 failed / 25 passed. The failures were eight real A2 target cases (`모르다→몰라`, `듣다→들은`, `낫다→나은`, `그렇다→그래`, `가다→갔`, `보다→봤`, `하다→했`, `춥다→추웠`) plus nested `A/V-(으)ㄴ/는데도` expansion.
 - Second red invocation, before the hunt-rate parser batch: `npx vitest run scripts/lib/compiler.test.js`; exit `1`; observable: 6 failed / 34 passed for `N 때문에`, `N 동안`, `-기로 하다`, `-냐고 하다`, `-는 척하다`, and `-는 것 같다`.
-- Test inventory invocation: `rg -c "\\bit\\(" scripts/lib/compiler.test.js`; observable: 21 before, 40 after, therefore 19 new tests.
+- Test inventory invocation: `rg -c "\\bit\\(" scripts/lib/compiler.test.js`; observable: 21 before, 42 after the verifier correction, therefore 21 new tests.
 
 The required parser probes for single `잖아요`/`거든요`, `못 + verb`, `따라서 / 그러므로`, and empty headings were also added before production edits. They passed in the first red run, confirming those existing behaviors while the nine newly exposed gaps failed.
 
@@ -35,23 +35,31 @@ The required parser probes for single `잖아요`/`거든요`, `못 + verb`, `�
 - Independent reconciliation invocation: direct `compileChapter` traversal over chapters 12–34 with hard failure thresholds; exit `0`; observable JSON: `{"patterns":59,"hunt":37,"teach":22,"huntPercent":62.7,"nullTargets":36}`.
 - The six new hunts are chapter 12 `-는 것 같다`, chapter 13 `-냐고 하다`, chapter 14 `-기로 하다`, chapter 15 `-는 척하다`, chapter 30 `N 때문에`, and chapter 31 `N 동안`.
 
+## Independent verifier correction
+
+- Finding: the first implementation applied the ㄷ-irregular transform to every ㄷ-final conjugating word. This let regular `받다` claim unrelated `발은` and regular `닫다` claim unrelated `달은`.
+- Failing-first invocation: `npx vitest run scripts/lib/compiler.test.js`; exit `1`; observable: 2 failed / 40 passed. `받다` on `발은 아파요.` returned `발은`, and `닫다` on `달은 밝아요.` returned `달은` instead of `null`.
+- Minimal correction: ㄷ transformation is gated by the explicit, data-confirmed irregular lemma set `걷다`, `듣다`. The regular A2 verbs `받다`, `닫다` no longer receive invented ㄹ forms.
+- Green invocation: `npx vitest run scripts/lib/compiler.test.js`; exit `0`; observable: 42/42 passed, including both negative regressions and positive `듣다→들은/들어`, `걷다→걸어` checks.
+
 ## Gates and adversarial QA
 
 | Scenario | Invocation | Binary observable |
 |---|---|---|
-| Final repository gate | `npm run guard` | exit `0`; 34 chapters / 285 bites valid; A1 identical; 40/40 tests pass |
+| Final repository gate | `npm run guard` | exit `0`; 34 chapters / 285 bites valid; A1 identical; 42/42 tests pass |
 | Final gap report | `node scripts/report-gaps.mjs 12 34` | exit `0`; 37 hunt, 22 teach, 36 null targets |
 | Independent metric check | direct `compileChapter` traversal with assertions | exit `0`; exact JSON shown above |
 | Malformed and boundary headings | Node assertions over empty/null/`V/A-(`/`N /`, empty titles, `못` vs `잘못`, discourse pair, nested ending | exit `0`; 15 assertions OK |
 | Deterministic regeneration | compile twice and compare `src/lib/bites.json` SHA-256 | exit `0`; both `29212d54d06da09a2d86a73119d12697a18ba0b07e586936d27b8d68ccc392b0` |
-| Flake probe | targeted test twice, full test twice | all four exits `0`; 40/40 on every run |
+| Flake probe | targeted test twice, full test twice | all four exits `0`; 42/42 on every run |
 | Immutable inputs | diff from starting revision plus SHA-256 | exit `0`; chapter manifest `7f478a974543d99f6a27baff443c05cd2f023b182b8b75579f51db2f0ef58f5d`; A1 baseline `904e30e1eec0151c60ca29acdd01522900d8f92e074ef521eb1797791f9d8303` |
-| Misleading-success defense | every scenario used `set -e` or explicit process assertions, and exit code plus expected content were checked | all required checks exited `0`; both red runs exited `1` as expected |
+| Misleading-success defense | every scenario used `set -e` or explicit process assertions, and exit code plus expected content were checked | all required checks exited `0`; all three red runs exited `1` as expected |
 
 `data/chapters/*.json` and `docs/harness/baseline-a1.json` are unchanged from the starting revision. No baseline resnapshot, validation weakening, budget change, `guard:full`, or deploy was performed.
 
 ## Cleanup and scope
 
 - Temporary logs under `.omo/evidence/order-02` were summarized here and removed before staging; no `.omo` file is committed.
-- Final staging is restricted to the compiler, compiler tests, refreshed gap report, progress row, and this evidence file.
-- Remaining risk: target generation is deliberately conservative. Thirty-six A2 sentence cards still have no safe target, and morphologically empty headings remain teach cards by design.
+- Verifier-correction red, green, and repeat logs under `/private/tmp` were summarized above and removed before staging.
+- The verifier-correction staging is restricted to the compiler, compiler tests, progress row, and this evidence file.
+- Remaining risk: target generation is deliberately conservative. A newly introduced ㄷ-irregular lemma must be added to the explicit set. Thirty-six A2 sentence cards still have no safe target, and morphologically empty headings remain teach cards by design.

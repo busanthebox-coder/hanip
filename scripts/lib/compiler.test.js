@@ -37,6 +37,13 @@ describe('guessTarget', () => {
   it('matches the ㄷ-irregular from chapter 21', () => {
     expect(guessTarget(w('듣다', 'verb'), '어제 들은 노래를 또 들어요.')).toBe('들은');
     expect(guessTarget(w('듣다', 'verb'), '노래를 다시 들어요.')).toBe('들어');
+    expect(guessTarget(w('걷다', 'verb'), '역까지 걸어서 십 분 걸려요.')).toBe('걸어');
+  });
+  it('does not treat regular ㄷ verb 받다 as irregular', () => {
+    expect(guessTarget(w('받다', 'verb'), '발은 아파요.')).toBeNull();
+  });
+  it('does not treat regular ㄷ verb 닫다 as irregular', () => {
+    expect(guessTarget(w('닫다', 'verb'), '달은 밝아요.')).toBeNull();
   });
   it('matches the ㅅ-irregular from chapter 15', () => {
     expect(guessTarget(w('낫다', 'verb'), '내일은 오늘보다 나은 하루이길 바란다.')).toBe('나은');

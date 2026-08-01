@@ -210,6 +210,7 @@ function stemOf(word) {
 // return null when the word genuinely isn't in the sentence.
 const V_FUSE = { 'ㅣ': 'ㅕ', 'ㅗ': 'ㅘ', 'ㅜ': 'ㅝ', 'ㅡ': 'ㅓ' };
 const H_FUSE = { 'ㅓ': 'ㅐ', 'ㅑ': 'ㅒ' };
+const D_IRREGULAR_LEMMAS = new Set(['걷다', '듣다']);
 export function guessTarget(word, sentenceKo, { advanced = true } = {}) {
   const pos = String(word.partOfSpeech || '').toLowerCase();
   const conjugates = pos.startsWith('verb') || pos.startsWith('adj');
@@ -252,7 +253,7 @@ export function guessTarget(word, sentenceKo, { advanced = true } = {}) {
       }
     } else if (d.T === 'ㅂ') {
       addFused(base + composeSyl(d.L, d.V) + '워');            // ㅂ-irregular 반가워·추웠
-    } else if (advanced && d.T === 'ㄷ') {
+    } else if (advanced && d.T === 'ㄷ' && D_IRREGULAR_LEMMAS.has(rawKo)) {
       const irregular = base + composeSyl(d.L, d.V, 'ㄹ');
       addFused(irregular + '어');                              // 듣다→들어
       addFused(irregular + '은');                              // 듣다→들은
