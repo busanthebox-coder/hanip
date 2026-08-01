@@ -1,0 +1,1028 @@
+{
+ "writtenFor": "A1 chapters 01-11",
+ "chapters": [
+  {
+   "id": "chapter-01",
+   "biteCount": 8,
+   "bites": [
+    {
+     "id": "chapter-01-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 한글~",
+     "cards": [
+      "guess:한글:한글:consonant|vowel|Hangul (Korean writing system)",
+      "guess:자음:자음:Hangul (Korean writing system)|letter / character|consonant",
+      "guess:모음:모음:Hangul (Korean writing system)|vowel|letter / character",
+      "guess:글자:글자:Hangul (Korean writing system)|consonant|letter / character",
+      "guess:소리:소리:Hangul (Korean writing system)|sound|consonant",
+      "guess:받침:받침:Hangul (Korean writing system)|letter / character|final consonant (bottom of syllable block)",
+      "payoff:한글:저는 민준이에요. 한글은 처음이에요."
+     ]
+    },
+    {
+     "id": "chapter-01-b2",
+     "kind": "pattern",
+     "title": "무늬 Pattern · 자음 (Consonants)",
+     "cards": [
+      "teach:자음 (Consonants):4ex"
+     ]
+    },
+    {
+     "id": "chapter-01-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 발음~",
+     "cards": [
+      "guess:발음:발음:pronunciation|letter / character|sound",
+      "guess:읽다:읽어:to read|to listen|to repeat / follow along",
+      "guess:쓰다:써:to listen|to write / use|to repeat / follow along",
+      "guess:듣다:듣고:to read|to write / use|to listen",
+      "guess:말하다:말해:to listen|to repeat / follow along|to speak / say",
+      "guess:따라 하다:따라 하:to read|to write / use|to repeat / follow along"
+     ]
+    },
+    {
+     "id": "chapter-01-b4",
+     "kind": "pattern",
+     "title": "무늬 Pattern · 모음 (Vowels)",
+     "cards": [
+      "teach:모음 (Vowels):4ex"
+     ]
+    },
+    {
+     "id": "chapter-01-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 천천히~",
+     "cards": [
+      "guess:천천히:천천히:slowly|Hangul (Korean writing system)|consonant",
+      "guess:다시:다시:Hangul (Korean writing system)|again|consonant",
+      "guess:알겠어요:알겠어요:Hangul (Korean writing system)|I understand / I see / okay|consonant",
+      "guess:모르겠어요:모르겠어요:Hangul (Korean writing system)|consonant|I don't know / I'm not sure",
+      "guess:연습하다:연습해:to practice|to listen|to speak / say",
+      "payoff:천천히:한... 조금 천천히 말해 주세요."
+     ]
+    },
+    {
+     "id": "chapter-01-b6",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cards": [
+      "chat:8",
+      "order:천천히 말해 주세요"
+     ]
+    },
+    {
+     "id": "chapter-01-b7",
+     "kind": "reading",
+     "title": "읽기 Reading · 민준의 첫 한글 공부 (Minjun's First Hangul Study)",
+     "cards": [
+      "read:2:3qa"
+     ]
+    },
+    {
+     "id": "chapter-01-b8",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cards": [
+      "drill:Which vowel has a vertical stroke with a short tick pointing right?:ㅓ|ㅏ*|ㅗ|ㅣ",
+      "drill:The syllable block 한 is made of which components?:ㅎ + ㅏ + ㄴ*|ㅎ + ㄴ + ㅏ|ㄴ + ㅏ + ㅎ|ㅎ + ㅓ + ㄴ",
+      "drill:Which of these is the SILENT consonant placeholder used when a syllable starts with a vowel sound?:ㅎ|ㅇ*|ㅅ|ㄴ",
+      "drill:How do you say 'Please speak slowly' in Korean?:천천히 말해 주세요.*|다시 들어요.|알겠어요.|모르겠어요.",
+      "drill:A learner sees ㅎ + ㅏ + ㄴ. Which block should they read?:한*|하|나|헌",
+      "drill:Where does a TALL vowel like ㅏ, ㅓ, or ㅣ appear in a syllable block?:Below the consonant|To the right of the consonant*|Above the consonant|It can go anywhere",
+      "drill:What does 알겠어요 most naturally mean in a classroom context?:I don't understand.|Please say it again.|I understand / I see / Okay.*|Is that right?",
+      "order:천천히 말해 주세요",
+      "drill:Which block starts with a vowel sound and uses ㅇ as the silent placeholder?:아*|나|한"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chapter-02",
+   "biteCount": 8,
+   "bites": [
+    {
+     "id": "chapter-02-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 안녕하세요~",
+     "cards": [
+      "guess:안녕하세요:안녕하세요:Hello / Hi (polite)|Goodbye (said by the one leaving)|Thank you (formal)",
+      "guess:안녕히 계세요:안녕히 계세요:Hello / Hi (polite)|Goodbye (said by the one leaving)|Thank you (formal)",
+      "guess:감사합니다:감사합니다:Hello / Hi (polite)|Goodbye (said by the one leaving)|Thank you (formal)",
+      "guess:고마워요:고마워요:Hello / Hi (polite)|Goodbye (said by the one leaving)|Thank you (warm/friendly)",
+      "guess:죄송합니다:죄송합니다:Hello / Hi (polite)|I'm sorry / I apologize (formal)|Goodbye (said by the one leaving)",
+      "guess:미안해요:미안해요:I'm sorry (friendly)|Hello / Hi (polite)|Goodbye (said by the one leaving)",
+      "payoff:안녕하세요:안녕하세요! 오늘 처음이에요?"
+     ]
+    },
+    {
+     "id": "chapter-02-b2",
+     "kind": "pattern",
+     "title": "무늬 Pattern · N은/는",
+     "cards": [
+      "hunt:N은/는:는;은",
+      "drill:Today I'm busy.:는|은*"
+     ]
+    },
+    {
+     "id": "chapter-02-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 네~",
+     "cards": [
+      "guess:네:네:Hello / Hi (polite)|Yes / I see / okay|Goodbye (said by the one leaving)",
+      "guess:아니요:아니요:Goodbye (said by the one leaving)|Thank you (formal)|No (polite)",
+      "guess:만나서 반가워요:만나서 반가워요:Nice to meet you|Hello / Hi (polite)|Goodbye (said by the one leaving)",
+      "guess:잠시만요:잠시만요:Hello / Hi (polite)|One moment, please|Thank you (formal)",
+      "guess:저:저:Goodbye (said by the one leaving)|I / me (polite)|Thank you (formal)",
+      "guess:이름:이름:name|student|teacher / instructor",
+      "payoff:저는:네, 처음이에요. 저는 엠마예요."
+     ]
+    },
+    {
+     "id": "chapter-02-b4",
+     "kind": "pattern",
+     "title": "무늬 Pattern · N이에요/예요",
+     "cards": [
+      "hunt:N이에요/예요:이에요;예요",
+      "drill:This person is a teacher.:이에요*|예요"
+     ]
+    },
+    {
+     "id": "chapter-02-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 학생~",
+     "cards": [
+      "guess:학생:학생:student|name|Hello / Hi (polite)",
+      "guess:선생님:선생님:name|Hello / Hi (polite)|teacher / instructor",
+      "guess:처음:처음:first time|Hello / Hi (polite)|Goodbye (said by the one leaving)",
+      "guess:반갑다:반가워:Hello / Hi (polite)|to be glad / pleased to meet|Goodbye (said by the one leaving)",
+      "guess:아니에요:아니에요:Hello / Hi (polite)|Goodbye (said by the one leaving)|am not / is not / are not",
+      "payoff:처음:안녕하세요! 오늘 처음이에요?"
+     ]
+    },
+    {
+     "id": "chapter-02-b6",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cards": [
+      "chat:8",
+      "order:저는 학생이에요"
+     ]
+    },
+    {
+     "id": "chapter-02-b7",
+     "kind": "reading",
+     "title": "읽기 Reading · 첫 언어 교환 후 메시지 (Text messages after the first language exchange)",
+     "cards": [
+      "read:2:3qa"
+     ]
+    },
+    {
+     "id": "chapter-02-b8",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cards": [
+      "drill:Someone asks you 이름이 뭐예요? How do you answer if your name is 지수?:저는 미국이에요.|저는 지수예요.*|나는 지수 이름이에요.",
+      "drill:You bump into someone accidentally and want to apologize. Which do you use in this situation?:감사합니다|죄송합니다*|만나서 반가워요",
+      "drill:저___ 학생이에요. (As for me, I am a student.):는*|가|를",
+      "order:저는 학생이에요"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chapter-03",
+   "biteCount": 8,
+   "bites": [
+    {
+     "id": "chapter-03-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 저~",
+     "cards": [
+      "guess:저:저:name|student|I / me (humble/polite)",
+      "guess:이름:이름:name|student|teacher",
+      "guess:학생:학생:student|name|doctor",
+      "guess:선생님:선생님:name|teacher|doctor",
+      "guess:의사:의사:name|student|doctor",
+      "guess:회사원:회사원:name|office worker|student",
+      "payoff:저는:안녕하세요! 저는 지연이에요. 처음 뵙겠습니다."
+     ]
+    },
+    {
+     "id": "chapter-03-b2",
+     "kind": "pattern",
+     "title": "무늬 Pattern · N이에요/예요",
+     "cards": [
+      "hunt:N이에요/예요:이에요;예요",
+      "drill:This is water.:이에요*|예요"
+     ]
+    },
+    {
+     "id": "chapter-03-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 나라~",
+     "cards": [
+      "guess:나라:나라:country|name|student",
+      "guess:사람:사람:name|student|person / people",
+      "guess:이건:이건:I / me (humble/polite)|this (thing) is / as for this|name",
+      "guess:뭐:뭐:I / me (humble/polite)|name|what",
+      "guess:아니에요:아니에요:name|is not / no (polite negative copula)|student",
+      "guess:제:제:my (humble/polite possessive)|name|student",
+      "payoff:나라:민호 씨, 어느 나라 사람이에요?"
+     ]
+    },
+    {
+     "id": "chapter-03-b4",
+     "kind": "pattern",
+     "title": "무늬 Pattern · N은/는",
+     "cards": [
+      "hunt:N은/는:는;은",
+      "drill:The teacher is Korean.:는|은*"
+     ]
+    },
+    {
+     "id": "chapter-03-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 직업~",
+     "cards": [
+      "guess:직업:직업:name|job / occupation / profession|student",
+      "guess:한국어:한국어:Korean language|name|student",
+      "guess:영어:영어:English language|name|student",
+      "guess:반갑습니다:반갑습니다:Nice to meet you|I / me (humble/polite)|name",
+      "guess:어느:어느:which / what (kind of)|I / me (humble/polite)|name",
+      "payoff:어느:민호 씨, 어느 나라 사람이에요?"
+     ]
+    },
+    {
+     "id": "chapter-03-b6",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cards": [
+      "chat:8",
+      "order:이건 커피예요"
+     ]
+    },
+    {
+     "id": "chapter-03-b7",
+     "kind": "reading",
+     "title": "읽기 Reading · 새 친구 소개 (Introducing a New Friend)",
+     "cards": [
+      "read:2:3qa"
+     ]
+    },
+    {
+     "id": "chapter-03-b8",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cards": [
+      "drill:You want to say 'I am not Japanese.' Which sentence is correct?:저는 일본 사람이에요.|저는 일본 사람이 아니에요.*|저는 일본 사람이에요 아니에요.",
+      "drill:저___ 민준이에요. (As for me, I am Minjun.):는*|를|가",
+      "order:이건 커피예요"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chapter-04",
+   "biteCount": 8,
+   "bites": [
+    {
+     "id": "chapter-04-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 시간~",
+     "cards": [
+      "guess:시간:시간:time|reservation / booking|money",
+      "guess:예약:예약:time|money|reservation / booking",
+      "guess:돈:돈:money|time|reservation / booking",
+      "guess:문제:문제:time|reservation / booking|problem / issue",
+      "guess:화장실:화장실:time|bathroom / restroom|reservation / booking",
+      "guess:친구:친구:time|reservation / booking|friend",
+      "payoff:예약:어서 오세요. 예약이 있으세요?"
+     ]
+    },
+    {
+     "id": "chapter-04-b2",
+     "kind": "pattern",
+     "title": "무늬 Pattern · 있어요/없어요",
+     "cards": [
+      "hunt:있어요/없어요:있어요;없어요",
+      "drill:Do you have time?:있어요*|없어요"
+     ]
+    },
+    {
+     "id": "chapter-04-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 방~",
+     "cards": [
+      "guess:방:방:time|reservation / booking|room",
+      "guess:자리:자리:seat / spot / space|time|reservation / booking",
+      "guess:물:물:water|time|reservation / booking",
+      "guess:시간이 있다::to have time / be available|reservation / booking|money",
+      "guess:있어요:있어요:there is / have / exists (polite)|to reserve / book|time",
+      "guess:없어요:없어요:there isn't / don't have / absent (polite)|to reserve / book|time",
+      "payoff:있어요:네, 예약이 있어요. 이름은 민지예요."
+     ]
+    },
+    {
+     "id": "chapter-04-b4",
+     "kind": "pattern",
+     "title": "무늬 Pattern · N이/가",
+     "cards": [
+      "hunt:N이/가:가;이",
+      "drill:Who is a student?:가*|이"
+     ]
+    },
+    {
+     "id": "chapter-04-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 많다~",
+     "cards": [
+      "guess:많다:많아:to hurt / be sick / be in pain|to be good / to like|to be a lot / many",
+      "guess:예약하다::to reserve / book|there is / have / exists (polite)|there isn't / don't have / absent (polite)",
+      "guess:아프다::to hurt / be sick / be in pain|to be a lot / many|to be good / to like",
+      "guess:좋다:좋아:to be a lot / many|to be good / to like|to hurt / be sick / be in pain"
+     ]
+    },
+    {
+     "id": "chapter-04-b6",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cards": [
+      "chat:8",
+      "order:시간이 없어요"
+     ]
+    },
+    {
+     "id": "chapter-04-b7",
+     "kind": "reading",
+     "title": "읽기 Reading · 호텔 예약 문자 (Hotel Booking Text Exchange)",
+     "cards": [
+      "read:2:3qa"
+     ]
+    },
+    {
+     "id": "chapter-04-b8",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cards": [
+      "drill:You want to say 'I like coffee.' Which is correct?:커피를 좋아요.|커피가 좋아요.*|커피는 좋아요.",
+      "drill:The hotel receptionist has found your reservation. Which sentence would they say?:예약이 없어요.|예약을 있어요.|예약이 있어요.*",
+      "drill:예약___ 있어요? (Do you have a reservation?):이*|을|에서",
+      "order:시간이 없어요"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chapter-05",
+   "biteCount": 9,
+   "bites": [
+    {
+     "id": "chapter-05-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 먹다~",
+     "cards": [
+      "guess:먹다:먹어:to drink|to study|to eat",
+      "guess:마시다:마셔:to eat|to study|to drink",
+      "guess:공부하다:공부해:to study|to eat|to drink",
+      "guess:읽다:읽어:to read|to eat|to drink",
+      "guess:쓰다:써:to eat|to write|to drink",
+      "guess:듣다::to listen / to hear|to eat|to drink",
+      "payoff:먹어:민호 씨, 매일 아침을 먹어요?"
+     ]
+    },
+    {
+     "id": "chapter-05-b2",
+     "kind": "pattern",
+     "title": "무늬 Pattern · N을/를",
+     "cards": [
+      "hunt:N을/를:을;를",
+      "drill:I drink water.:을*|를"
+     ]
+    },
+    {
+     "id": "chapter-05-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 보다~",
+     "cards": [
+      "guess:보다:봐:to eat|to watch / to see|to drink",
+      "guess:운동하다:운동해:to exercise|to eat|to drink",
+      "guess:일하다::to eat|to work|to drink",
+      "guess:밥:밥:coffee|cooked rice / meal|water",
+      "guess:커피:커피:cooked rice / meal|water|coffee",
+      "guess:물:물:water|cooked rice / meal|coffee",
+      "payoff:밥을:그래요? 저는 매일 밥을 먹어요. 물을 많이 마셔요."
+     ]
+    },
+    {
+     "id": "chapter-05-b4",
+     "kind": "pattern",
+     "title": "무늬 Pattern · 안 + verb",
+     "cards": [
+      "hunt:안 + verb:안;안"
+     ]
+    },
+    {
+     "id": "chapter-05-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 책~",
+     "cards": [
+      "guess:책:책:cooked rice / meal|coffee|book",
+      "guess:음악:음악:cooked rice / meal|music|coffee",
+      "guess:영화:영화:cooked rice / meal|coffee|movie / film",
+      "guess:매일:매일:to eat|to drink|every day",
+      "guess:많이:많이:a lot / many / much|to eat|to drink",
+      "payoff:매일:민호 씨, 매일 아침을 먹어요?"
+     ]
+    },
+    {
+     "id": "chapter-05-b6",
+     "kind": "pattern",
+     "title": "무늬 Pattern · 자연스럽게 말하기",
+     "cards": [
+      "teach:자연스럽게 말하기:2ex"
+     ]
+    },
+    {
+     "id": "chapter-05-b7",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cards": [
+      "chat:8",
+      "order:매일 아침 커피를 마셔요"
+     ]
+    },
+    {
+     "id": "chapter-05-b8",
+     "kind": "reading",
+     "title": "읽기 Reading · 수빈의 하루 일과 (Subin's Daily Routine)",
+     "cards": [
+      "read:2:3qa"
+     ]
+    },
+    {
+     "id": "chapter-05-b9",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cards": [
+      "drill:Which sentence correctly says 'I don't study' using the 안 negative?:안 공부해요.|공부 안 해요.*|공부를 않아요.|안 공부를 해요.",
+      "drill:Your friend says '책을 읽어요.' What is the role of 을 in this sentence?:It marks 책 as the subject doing the reading.|It marks 책 as the object receiving the action of reading.*|It marks 책 as a topic being discussed.|It is a verb ending attached to 책.",
+      "drill:책___ 읽어요. (I read a book.):을*|이|에",
+      "order:매일 아침 커피를 마셔요"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chapter-06",
+   "biteCount": 8,
+   "bites": [
+    {
+     "id": "chapter-06-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 학교~",
+     "cards": [
+      "guess:학교:학교:library|café|school",
+      "guess:도서관:도서관:school|library|café",
+      "guess:카페:카페:café|school|library",
+      "guess:회사:회사:company / office|school|library",
+      "guess:식당:식당:restaurant|school|library",
+      "guess:집:집:school|home / house|library",
+      "guess:공원:공원:park|school|library",
+      "payoff:회사:저는 회사에 있어요. 왜요?"
+     ]
+    },
+    {
+     "id": "chapter-06-b2",
+     "kind": "pattern",
+     "title": "무늬 Pattern · N에",
+     "cards": [
+      "hunt:N에:에;에"
+     ]
+    },
+    {
+     "id": "chapter-06-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 가다~",
+     "cards": [
+      "guess:가다:가요:to come|to go|to be / to exist / to have",
+      "guess:오다:와:to come|to go|to be / to exist / to have",
+      "guess:있다:있어:to go|to be / to exist / to have|to come",
+      "guess:공부하다:공부해:to study|to go|to come",
+      "guess:일하다::to go|to work|to come",
+      "guess:만나다:만나:to go|to meet|to come",
+      "guess:기다리다:기다릴:to go|to come|to wait",
+      "payoff:있어:소라 씨, 지금 어디에 있어요?"
+     ]
+    },
+    {
+     "id": "chapter-06-b4",
+     "kind": "pattern",
+     "title": "무늬 Pattern · N에서",
+     "cards": [
+      "hunt:N에서:에서;에서"
+     ]
+    },
+    {
+     "id": "chapter-06-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 먹다~",
+     "cards": [
+      "guess:먹다:먹어:to go|to come|to eat",
+      "guess:시간::time|school|library",
+      "guess:아침:아침:morning|school|library",
+      "guess:오후:오후:school|afternoon / PM|library",
+      "guess:저녁:저녁:evening|school|library",
+      "guess:병원:병원:school|hospital / clinic|library",
+      "payoff:먹어:점심 같이 먹어요! 어디에서 먹을까요?"
+     ]
+    },
+    {
+     "id": "chapter-06-b6",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cards": [
+      "chat:8",
+      "order:학교에 가요"
+     ]
+    },
+    {
+     "id": "chapter-06-b7",
+     "kind": "reading",
+     "title": "읽기 Reading · 수진의 하루 (Sujin's Day)",
+     "cards": [
+      "read:2:3qa"
+     ]
+    },
+    {
+     "id": "chapter-06-b8",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cards": [
+      "drill:Your friend asks '어디에서 왔어요?' You want to say 'I came from England.' Which is correct?:영국에 왔어요.|영국에서 왔어요.*|영국을 왔어요.",
+      "drill:카페___ 만나요. (We meet at a cafe.):에서*|에|를",
+      "order:학교에 가요"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chapter-07",
+   "biteCount": 8,
+   "bites": [
+    {
+     "id": "chapter-07-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 주세요~",
+     "cards": [
+      "guess:주세요:주세요:how much is it?|card (credit/debit)|please give me / please do",
+      "guess:얼마예요:얼마예요:please give me / please do|how much is it?|card (credit/debit)",
+      "guess:카드:카드:card (credit/debit)|receipt|menu",
+      "guess:현금:현금:cash|receipt|menu",
+      "guess:결제하다:결제하:to order|to pay / to process payment|it's okay / it works / available",
+      "guess:영수증:영수증:card (credit/debit)|receipt|cash",
+      "payoff:주세요:아메리카노 한 잔 주세요."
+     ]
+    },
+    {
+     "id": "chapter-07-b2",
+     "kind": "pattern",
+     "title": "무늬 Pattern · 도 vs 만",
+     "cards": [
+      "hunt:도 vs 만:도;만",
+      "drill:My friend is coming too.:도*|만"
+     ]
+    },
+    {
+     "id": "chapter-07-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 주문하다~",
+     "cards": [
+      "guess:주문하다:주문해:to order|it's okay / it works / available|please give me / please do",
+      "guess:메뉴:메뉴:menu|card (credit/debit)|cash",
+      "guess:하나:하나:please give me / please do|one (native Korean number)|how much is it?",
+      "guess:좀:좀:how much is it?|card (credit/debit)|a little / please (softener)",
+      "guess:더:더:please give me / please do|how much is it?|more",
+      "guess:됩니다 / 돼요:돼요:to pay / to process payment|it's okay / it works / available|to order",
+      "payoff:하나:빵도 하나 주세요."
+     ]
+    },
+    {
+     "id": "chapter-07-b4",
+     "kind": "pattern",
+     "title": "무늬 Pattern · (으)로",
+     "cards": [
+      "hunt:(으)로:로;으로",
+      "drill:Please speak in Korean.:로*|으로"
+     ]
+    },
+    {
+     "id": "chapter-07-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 이거 / 이것~",
+     "cards": [
+      "guess:이거 / 이것:이것:please give me / please do|how much is it?|this (one)",
+      "guess:포장:포장:please give me / please do|how much is it?|takeout / to go",
+      "guess:추천:추천:card (credit/debit)|recommendation|cash",
+      "guess:할인:할인:card (credit/debit)|discount|cash",
+      "guess:맵다::please give me / please do|to be spicy|how much is it?"
+     ]
+    },
+    {
+     "id": "chapter-07-b6",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cards": [
+      "chat:8",
+      "order:물도 주세요"
+     ]
+    },
+    {
+     "id": "chapter-07-b7",
+     "kind": "reading",
+     "title": "읽기 Reading · 편의점에서 (At the Convenience Store)",
+     "cards": [
+      "read:2:3qa"
+     ]
+    },
+    {
+     "id": "chapter-07-b8",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cards": [
+      "drill:The staff asks how you want to pay. You want to ask 'Is it okay if I pay by card?' Which is the most natural?:카드에 결제해도 돼요?|카드로 결제해도 돼요?*|카드를 결제해도 돼요?",
+      "drill:카드___ 결제할게요. (I will pay by card.):로*|도|만",
+      "order:물도 주세요"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chapter-08",
+   "biteCount": 8,
+   "bites": [
+    {
+     "id": "chapter-08-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 먹다~",
+     "cards": [
+      "guess:먹다:먹고:to drink|to go|to eat",
+      "guess:마시다:마시:to eat|to go|to drink",
+      "guess:가다:가요:to eat|to go|to drink",
+      "guess:하다:하고:to eat|to do|to drink",
+      "guess:말하다:말할:to eat|to drink|to speak / to say",
+      "guess:먹을 수 있다:먹을 수 있:to have time (lit. time exists)|to be able to eat / can eat|to drink",
+      "payoff:먹고:민수 씨, 오늘 저녁에 삼겹살 먹고 싶어요?"
+     ]
+    },
+    {
+     "id": "chapter-08-b2",
+     "kind": "pattern",
+     "title": "무늬 Pattern · -고 싶어요",
+     "cards": [
+      "hunt:-고 싶어요:고,싶어요;고,싶어요"
+     ]
+    },
+    {
+     "id": "chapter-08-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 맵다~",
+     "cards": [
+      "guess:맵다:매워:spicy / hot (taste)|to be okay / fine / alright|to be busy",
+      "guess:괜찮다:괜찮:to be okay / fine / alright|spicy / hot (taste)|to be busy",
+      "guess:알다:알아:to know|to eat|to drink",
+      "guess:오다:올:to come|to eat|to drink",
+      "guess:쉬다:쉬고:to rest / take a break|to eat|to drink",
+      "guess:운동하다::to exercise|to eat|to drink",
+      "payoff:맵지:괜찮아요. 거기서 맵지 않은 것도 먹을 수 있어요."
+     ]
+    },
+    {
+     "id": "chapter-08-b4",
+     "kind": "pattern",
+     "title": "무늬 Pattern · -(으)ㄹ 수 있어요 / 없어요",
+     "cards": [
+      "hunt:-(으)ㄹ 수 있어요 / 없어요:수,있어요;없어요",
+      "drill:I can make kimchi.:수 있어요*|없어요"
+     ]
+    },
+    {
+     "id": "chapter-08-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 시간이 있다~",
+     "cards": [
+      "guess:시간이 있다:시간이 있:to be able to eat / can eat|to have time (lit. time exists)|to eat",
+      "guess:바쁘다::spicy / hot (taste)|to be busy|to be okay / fine / alright",
+      "guess:주문하다:주문하:to eat|to order (food/items)|to drink",
+      "guess:이해하다:이해할:to eat|to drink|to understand",
+      "guess:못:못:cannot (inability marker, pre-verb)|to eat|to drink"
+     ]
+    },
+    {
+     "id": "chapter-08-b6",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cards": [
+      "chat:8",
+      "order:매운 음식을 못 먹어요"
+     ]
+    },
+    {
+     "id": "chapter-08-b7",
+     "kind": "reading",
+     "title": "읽기 Reading · 단체 채팅방 — 이번 주말에 뭐 할 수 있어요? (Group Chat — What can everyone do this weekend?)",
+     "cards": [
+      "read:2:3qa"
+     ]
+    },
+    {
+     "id": "chapter-08-b8",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cards": [
+      "drill:You want to say 'I can speak a little Korean.' Which is correct?:한국어를 조금 말하고 싶어요.|한국어로 조금 말할 수 있어요.*|한국어를 조금 못 말해요.",
+      "drill:Your Korean friend says '술 마시고 싶어요?' You can't drink alcohol. What's the most natural reply?:아니요, 술을 마시고 싶지 않아요.|아니요, 저는 술을 못 마셔요.*|아니요, 술을 마실 수 없어요.",
+      "drill:한국어___ 조금 말할 수 있어요. (I can speak a little Korean.):를*|가|에",
+      "order:매운 음식을 못 먹어요"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chapter-09",
+   "biteCount": 8,
+   "bites": [
+    {
+     "id": "chapter-09-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 도와주다~",
+     "cards": [
+      "guess:도와주다:도와주:to take (a photo) / to stamp|to sit|to help",
+      "guess:사진:사진:admission ticket|food|photo / picture",
+      "guess:찍다:찍지:to take (a photo) / to stamp|to help|to sit",
+      "guess:앉다:앉아:to help|to take (a photo) / to stamp|to sit",
+      "guess:들어가다:들어가:to help|to take (a photo) / to stamp|to go in / enter",
+      "guess:열다:열어:to open|to help|to take (a photo) / to stamp",
+      "payoff:사진:소라 씨, 저 사진 찍어도 돼요?"
+     ]
+    },
+    {
+     "id": "chapter-09-b2",
+     "kind": "pattern",
+     "title": "무늬 Pattern · V아/어 주세요 vs V아/어도 돼요?",
+     "cards": [
+      "hunt:V아/어 주세요 vs V아/어도 돼요?:주세요;아도,돼요",
+      "drill:Can I take a photo?:주세요|아도 돼요|어도 돼요*"
+     ]
+    },
+    {
+     "id": "chapter-09-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 닫다~",
+     "cards": [
+      "guess:닫다:닫아:to help|to close|to take (a photo) / to stamp",
+      "guess:말하다:말해:to help|to take (a photo) / to stamp|to speak / say",
+      "guess:기다리다:기다려:to help|to take (a photo) / to stamp|to wait",
+      "guess:뛰다:뛰지:to help|to take (a photo) / to stamp|to run",
+      "guess:걱정하다:걱정하:to worry|to help|to take (a photo) / to stamp",
+      "guess:가야 해요:가야 해요:to help|have to go / must go|photo / picture"
+     ]
+    },
+    {
+     "id": "chapter-09-b4",
+     "kind": "pattern",
+     "title": "무늬 Pattern · V지 마세요 & V아/어야 돼요",
+     "cards": [
+      "hunt:V지 마세요 & V아/어야 돼요:지,마세요;돼요",
+      "drill:Please don't take photos.:지 마세요*|돼요|어야 돼요"
+     ]
+    },
+    {
+     "id": "chapter-09-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 좀~",
+     "cards": [
+      "guess:좀:좀:to help|photo / picture|a bit / please (softener)",
+      "guess:죄송하지만:죄송하지만:I'm sorry but / I apologize but|to help|photo / picture",
+      "guess:입장권:입장권:photo / picture|admission ticket|food",
+      "guess:음식:음식:food|photo / picture|admission ticket",
+      "guess:만지다:만지:to help|to take (a photo) / to stamp|to touch",
+      "payoff:죄송하지만:죄송하지만 이 구역에서는 사진 찍지 마세요. 저쪽은 괜찮아요."
+     ]
+    },
+    {
+     "id": "chapter-09-b6",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cards": [
+      "chat:8",
+      "order:이것을 만지지 마세요"
+     ]
+    },
+    {
+     "id": "chapter-09-b7",
+     "kind": "reading",
+     "title": "읽기 Reading · 국립 한국 문화 박물관 관람 안내 (National Korean Culture Museum Visitor Guide)",
+     "cards": [
+      "read:2:3qa"
+     ]
+    },
+    {
+     "id": "chapter-09-b8",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cards": [
+      "drill:A museum staff member walks up and says something. Which sentence means 'Please do not run in the hallway'?:복도에서 뛰어도 돼요?|복도에서 뛰지 마세요.*|복도에서 뛰어야 해요.",
+      "drill:Your friend says '가지 마세요!' and you reply that you must go. What do you say?:네, 가지 않아도 돼요.|미안해요, 가야 해요.*|미안해요, 가지 마세요.",
+      "drill:사진___ 찍어도 돼요? (May I take a photo?):을*|이|에",
+      "order:이것을 만지지 마세요"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chapter-10",
+   "biteCount": 8,
+   "bites": [
+    {
+     "id": "chapter-10-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 화장실~",
+     "cards": [
+      "guess:화장실:화장실:subway station|bathroom / restroom|exit",
+      "guess:지하철역:지하철역:subway station|bathroom / restroom|exit",
+      "guess:출구:출구:exit|bathroom / restroom|subway station",
+      "guess:안내소:안내소:bathroom / restroom|information desk / help desk|subway station",
+      "guess:2호선:2호선:Line 2 (subway)|bathroom / restroom|exit",
+      "guess:부터:부터:bathroom / restroom|subway station|from (starting point)",
+      "guess:까지:까지:to / until / as far as (end point)|bathroom / restroom|subway station",
+      "payoff:화장실:저기요, 화장실이 어디예요?"
+     ]
+    },
+    {
+     "id": "chapter-10-b2",
+     "kind": "pattern",
+     "title": "무늬 Pattern · N부터 / N까지",
+     "cards": [
+      "hunt:N부터 / N까지:부터,까지;까지",
+      "drill:It's far from home to school.:부터*|까지"
+     ]
+    },
+    {
+     "id": "chapter-10-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 다시~",
+     "cards": [
+      "guess:다시:다시:bathroom / restroom|again / once more|subway station",
+      "guess:천천히:천천히:slowly|bathroom / restroom|subway station",
+      "guess:모르다:모르:to walk|to take (time) / to be required|to not know",
+      "guess:걷다::to walk|to not know|to take (time) / to be required",
+      "guess:걸리다:걸려:to not know|to take (time) / to be required|to walk",
+      "guess:도와주다:도와주:to not know|to walk|to help",
+      "guess:찾다:찾고:to not know|to walk|to look for / find",
+      "payoff:천천히:죄송한데, 천천히 말해 주세요. 잘 이해가 안 돼요."
+     ]
+    },
+    {
+     "id": "chapter-10-b4",
+     "kind": "pattern",
+     "title": "무늬 Pattern · V아/어 주세요",
+     "cards": [
+      "hunt:V아/어 주세요:주세요;어,주세요",
+      "drill:Please speak slowly.:주세요*|어 주세요"
+     ]
+    },
+    {
+     "id": "chapter-10-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 여기~",
+     "cards": [
+      "guess:여기:여기:bathroom / restroom|here (this place)|subway station",
+      "guess:저기:저기:bathroom / restroom|subway station|over there (that place in the distance)",
+      "guess:왼쪽:왼쪽:bathroom / restroom|subway station|left side",
+      "guess:오른쪽:오른쪽:bathroom / restroom|right side|subway station",
+      "guess:알겠어요:알겠어요:bathroom / restroom|subway station|I understand / okay / got it",
+      "payoff:오른쪽:3번 출구 쪽으로 가세요. 오른쪽에 있어요."
+     ]
+    },
+    {
+     "id": "chapter-10-b6",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cards": [
+      "chat:8",
+      "order:다시 말해 주세요"
+     ]
+    },
+    {
+     "id": "chapter-10-b7",
+     "kind": "reading",
+     "title": "읽기 Reading · 서울역에서 온 문자 (Text messages from Seoul Station)",
+     "cards": [
+      "read:2:3qa"
+     ]
+    },
+    {
+     "id": "chapter-10-b8",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cards": [
+      "drill:A local just gave you fast directions. You didn't catch everything. What do you say?:잘 모르겠어요.|천천히 말해 주세요.*|다시 한 번 주세요.|네, 알겠어요.",
+      "drill:안내소는 오전 9시___ 오후 6시___ 열어요. Which pair of particles fits?:에 / 에|부터 / 까지*|에서 / 까지|부터 / 에",
+      "drill:9시___ 6시까지 일해요. (I work from 9 to 6.):부터*|에|를",
+      "order:다시 말해 주세요"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chapter-11",
+   "biteCount": 8,
+   "bites": [
+    {
+     "id": "chapter-11-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 바쁘다~",
+     "cards": [
+      "guess:바쁘다::to be expensive|to be busy|to be cheap / inexpensive",
+      "guess:아프다::to be expensive|to be cheap / inexpensive|to be sick / to hurt",
+      "guess:피곤하다:피곤해:to be tired|to be expensive|to be cheap / inexpensive",
+      "guess:늦다:늦어:to be late|to be tired|to be expensive",
+      "guess:비싸다:비싸:to be expensive|to be busy|to be sick / to hurt",
+      "guess:싸다:싸고:to be cheap / inexpensive|to be busy|to be sick / to hurt"
+     ]
+    },
+    {
+     "id": "chapter-11-b2",
+     "kind": "pattern",
+     "title": "무늬 Pattern · -아서/어서",
+     "cards": [
+      "teach:-아서/어서:2ex"
+     ]
+    },
+    {
+     "id": "chapter-11-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 연락하다~",
+     "cards": [
+      "guess:연락하다:연락할:to arrive|to explain|to contact / get in touch",
+      "guess:도착하다:도착하:to contact / get in touch|to arrive|to explain",
+      "guess:시간:시간:reason|time / hour|appointment / promise / plans",
+      "guess:이유:이유:time / hour|text message|reason",
+      "guess:약속:약속:time / hour|appointment / promise / plans|text message",
+      "guess:괜찮다:괜찮:to be okay / fine / alright|to be busy|to be sick / to hurt",
+      "payoff:시간:고마워요! 다음 주에 시간 괜찮으면 제가 살게요."
+     ]
+    },
+    {
+     "id": "chapter-11-b4",
+     "kind": "pattern",
+     "title": "무늬 Pattern · -고 / -(으)면 / -(으)ㄹ게요",
+     "cards": [
+      "teach:-고 / -(으)면 / -(으)ㄹ게요:2ex"
+     ]
+    },
+    {
+     "id": "chapter-11-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 나중에~",
+     "cards": [
+      "guess:나중에:나중에:to be busy|to be sick / to hurt|later",
+      "guess:먼저:먼저:first / ahead|to be busy|to be sick / to hurt",
+      "guess:그럼:그럼:then / in that case / well then|to be busy|to be sick / to hurt",
+      "guess:문자:문자:time / hour|reason|text message",
+      "guess:설명하다:설명할:to contact / get in touch|to arrive|to explain",
+      "payoff:그럼:알겠어요. 그럼 다음에 같이 먹어요."
+     ]
+    },
+    {
+     "id": "chapter-11-b6",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cards": [
+      "chat:8",
+      "order:바빠서 못 가요"
+     ]
+    },
+    {
+     "id": "chapter-11-b7",
+     "kind": "reading",
+     "title": "읽기 Reading · 지연 씨의 문자 대화 (Jiyeon's Text Exchange)",
+     "cards": [
+      "read:2:3qa"
+     ]
+    },
+    {
+     "id": "chapter-11-b8",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cards": [
+      "drill:Your friend says she'll treat you. You want to respond 'Then I'll choose the restaurant!' Which is correct?:그럼 제가 식당을 고를게요.*|그럼 제가 식당을 고릴게요.|그럼 제가 식당을 고를 거예요.",
+      "drill:You want to say 'I'm tired, so I'm going to rest.' Which connector is correct?:피곤하면 쉴게요.|피곤해서 쉴게요.*|피곤하고 쉴게요.",
+      "drill:이유___ 있어요? (Is there a reason?):가*|를|에서",
+      "order:바빠서 못 가요"
+     ]
+    }
+   ]
+  }
+ ]
+}

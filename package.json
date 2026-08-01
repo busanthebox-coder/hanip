@@ -10,7 +10,10 @@
     "compile": "node scripts/extract-wordbook.mjs && node scripts/compile-bites.mjs",
     "validate": "node scripts/validate-bites.mjs",
     "test": "vitest run",
-    "deploy": "npm run build && gh-pages -d dist"
+    "baseline": "node scripts/baseline.mjs",
+    "guard": "npm run compile && node scripts/validate-bites.mjs && node scripts/baseline.mjs && vitest run",
+    "guard:full": "npm run guard && vite build && node scripts/check-budget.mjs",
+    "deploy": "npm run guard:full && gh-pages -d dist"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.1.2",
