@@ -1,0 +1,697 @@
+{
+  "id": "chapter-32",
+  "hook": {
+    "situation": "You explain a decision you made, a situation you ended up in, or a change you can now feel in your body, schedule, or skill.",
+    "objectives": [
+      "Use V-기로 했어요 for decisions that are already settled.",
+      "Use V-게 됐어요 for changes that came about through circumstances.",
+      "Use A/V-아/어지다 for state changes like 좋아지다, 편해지다, and 가벼워지다."
+    ],
+    "whyItMatters": "English often says 'I started', 'I decided', or 'I became' loosely. Korean separates agency. 운동하기로 했어요 says you decided. 운동하게 됐어요 says circumstances led you there. 몸이 가벼워졌어요 says the state changed."
+  },
+  "grammarNotes": [
+    {
+      "title": "V-기로 했어요 — decided to V",
+      "func": "Used to say you have decided or made up your mind to do something. Often the decision was made after thinking it over or agreeing with other people.",
+      "formTable": [
+        {
+          "when": "Verb stem ending in a vowel",
+          "add": "stem + 기로 했어요",
+          "ex": "가다 → 가기로 했어요 (decided to go)"
+        },
+        {
+          "when": "Verb stem ending in a consonant",
+          "add": "stem + 기로 했어요",
+          "ex": "먹다 → 먹기로 했어요 (decided to eat)"
+        },
+        {
+          "when": "Decided NOT to do it",
+          "add": "안 + V-기로 했어요 (or stem + 지 않기로 했어요)",
+          "ex": "마시다 → 안 마시기로 했어요 (decided not to drink)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "내일부터 한국어를 공부하기로 했어요.",
+          "romanization": "naeil-buteo hangugeo-reul gongbuhagiro haesseoyo.",
+          "en": "I decided to study Korean starting tomorrow.",
+          "note": "공부하다 → 공부하기로 했어요; an everyday verb plus a personal decision."
+        },
+        {
+          "ko": "친구하고 같이 영화를 보기로 했어요.",
+          "romanization": "chinguhago gachi yeonghwa-reul bogiro haesseoyo.",
+          "en": "My friend and I decided to watch a movie together.",
+          "note": "보다 → 보기로 했어요; a decision made together with someone (친구하고)."
+        },
+        {
+          "ko": "오늘부터 물을 많이 마시기로 했어요.",
+          "romanization": "oneul-buteo mul-eul mani masigiro haesseoyo.",
+          "en": "I decided to drink a lot of water from today.",
+          "note": "마시다 → 마시기로 했어요; a simple self-improvement plan."
+        },
+        {
+          "ko": "저녁에는 밥을 안 먹기로 했어요.",
+          "romanization": "jeonyeog-eneun bab-eul an meokgiro haesseoyo.",
+          "en": "I decided not to eat dinner.",
+          "note": "Negative: 안 먹기로 했어요, for deciding NOT to do something."
+        }
+      ],
+      "keyPoint": {
+        "label": "-기로 했어요 (a decision) vs. -(으)ㄹ 거예요 (a plan)",
+        "body": "-기로 했어요 stresses that you reached a decision, often after thinking or agreeing with others. -(으)ㄹ 거예요 just says what you are going to do. 했어요 is past because the deciding already happened, even though the action itself is still coming up. (The negative -지 않기로 했어요 comes later.)"
+      },
+      "pronunciation": "먹기로 sounds like [먹끼로] (meok-kkiro): after the ㄱ at the end of 먹, the next ㄱ becomes a tense [ㄲ].",
+      "drill": {
+        "instruction": "Turn each cue into a sentence saying you decided to do it, using V-기로 했어요.",
+        "model": "한국어를 공부하다 → 한국어를 공부하기로 했어요.",
+        "items": [
+          "매일 운동하다 → ____________",
+          "친구를 만나다 → ____________",
+          "커피를 안 마시다 → ____________"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "공부하기로 해요.",
+        "right": "공부하기로 했어요.",
+        "explanation": "The decision was already made, so 하다 stays past (했어요), not present (해요). English 'I decided' is past, and Korean keeps it past too."
+      }
+    },
+    {
+      "title": "V-게 됐어요 — ended up V-ing / came to V",
+      "func": "Used when something happens because of circumstances rather than your own choice. It shows a change or a result that came about, often through other people or how things worked out.",
+      "formTable": [
+        {
+          "when": "Verb stem ending in a vowel",
+          "add": "stem + 게 됐어요",
+          "ex": "가다 → 가게 됐어요 (ended up going)"
+        },
+        {
+          "when": "Verb stem ending in a consonant",
+          "add": "stem + 게 됐어요",
+          "ex": "살다 → 살게 됐어요 (ended up living)"
+        },
+        {
+          "when": "With a negative (못/안)",
+          "add": "못/안 + V-게 됐어요",
+          "ex": "먹다 → 못 먹게 됐어요 (ended up not being able to eat)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "일 때문에 한국에 살게 됐어요.",
+          "romanization": "il ttaemune hanguge salge dwaesseoyo.",
+          "en": "I ended up living in Korea because of work.",
+          "note": "살다 → 살게 됐어요; 일 때문에 shows an outside reason, not a personal choice."
+        },
+        {
+          "ko": "친구 덕분에 한국 영화를 좋아하게 됐어요.",
+          "romanization": "chingu deokbune hanguk yeonghwa-reul joahage dwaesseoyo.",
+          "en": "Thanks to my friend, I came to like Korean movies.",
+          "note": "좋아하다 → 좋아하게 됐어요; a feeling that changed because of someone else."
+        },
+        {
+          "ko": "시간이 없어서 밥을 못 먹게 됐어요.",
+          "romanization": "sigani eopseoseo bab-eul mot meokge dwaesseoyo.",
+          "en": "I ended up not being able to eat because I had no time.",
+          "note": "못 먹다 → 못 먹게 됐어요; the situation (시간이 없어서) caused the result."
+        },
+        {
+          "ko": "그 학교에 다니게 됐어요.",
+          "romanization": "geu hakgyoe danige dwaesseoyo.",
+          "en": "I ended up going to that school.",
+          "note": "다니다 → 다니게 됐어요; announces a new situation that came about, often happy news."
+        }
+      ],
+      "keyPoint": {
+        "label": "-기로 했어요 (my choice) vs. -게 됐어요 (not my choice)",
+        "body": "-기로 했어요 means 'I decided' — the will is yours. -게 됐어요 means 'it came about' — the result is from circumstances or other people. Koreans often use -게 됐어요 to sound modest, even with good news (for example, 결혼하게 됐어요, 'I'm getting married')."
+      },
+      "pronunciation": "좋아하게 sounds like [조아하게] (jo-a-ha-ge): the ㅎ in 좋 goes silent before the vowel, so 좋아 links smoothly.",
+      "drill": {
+        "instruction": "Rewrite each cue to say it came about by circumstances, using V-게 됐어요.",
+        "model": "한국에 살다 → 한국에 살게 됐어요.",
+        "items": [
+          "한국어를 배우다 → ____________",
+          "그 회사에서 일하다 → ____________",
+          "그 사람을 만나다 → ____________"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "한국에 살게 해요.",
+        "right": "한국에 살게 됐어요.",
+        "explanation": "Don't mix up 되다 (to become / come about) with 하다. For 'I ended up living,' use 되다 → 됐어요. 살게 해요 means 'make someone live' — a different grammar point."
+      }
+    },
+    {
+      "title": "A-아/어졌어요 — became / got (a change of state)",
+      "func": "Added to adjectives to say a state changed — something 'became' or 'got' a certain way. It turns a description (is ~) into a change (became ~).",
+      "formTable": [
+        {
+          "when": "Stem vowel is ㅏ or ㅗ",
+          "add": "stem + 아졌어요",
+          "ex": "좋다 → 좋아졌어요 (got better)"
+        },
+        {
+          "when": "Other stem vowels",
+          "add": "stem + 어졌어요",
+          "ex": "많다 → 많아졌어요 (became more); 크다 → 커졌어요 (got bigger)"
+        },
+        {
+          "when": "하다 adjectives",
+          "add": "stem + 해졌어요",
+          "ex": "편하다 → 편해졌어요 (became comfortable)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "한국어 공부가 점점 재미있어졌어요.",
+          "romanization": "hangugeo gongbuga jeomjeom jaemiisseojyeosseoyo.",
+          "en": "Studying Korean has gradually gotten fun.",
+          "note": "재미있다 → 재미있어졌어요; 점점 (gradually) goes naturally with a change of state."
+        },
+        {
+          "ko": "날씨가 따뜻해졌어요.",
+          "romanization": "nalssiga ttatteuthaejyeosseoyo.",
+          "en": "The weather has gotten warm.",
+          "note": "따뜻하다 (a 하다 adjective) → 따뜻해졌어요; the change has already happened (past)."
+        },
+        {
+          "ko": "친구가 많아졌어요.",
+          "romanization": "chinguga manajyeosseoyo.",
+          "en": "I have more friends now.",
+          "note": "많다 → 많아졌어요; the ㅏ stem takes 아졌어요, showing things increased."
+        },
+        {
+          "ko": "운동을 해서 몸이 건강해졌어요.",
+          "romanization": "undong-eul haeseo mom-i geonganghaejyeosseoyo.",
+          "en": "I exercised, so I got healthier.",
+          "note": "건강하다 → 건강해졌어요; the change comes from a cause (운동을 해서)."
+        }
+      ],
+      "keyPoint": {
+        "label": "좋다 (a state) vs. 좋아졌어요 (a change of state)",
+        "body": "좋다 means 'is good' — it just describes. 좋아졌어요 means 'got/became good' — it shows a change. Use -아/어졌어요 whenever English would say 'became,' 'got,' or 'grew' plus an adjective. (For ㅡ-vowel stems like 크다, the ㅡ drops: 크 → 커졌어요 — more on those later.)"
+      },
+      "pronunciation": "많아졌어요 sounds like [마나져써요] (ma-na-jyeo-sseo-yo): the ㅎ in 많 is silent and the ㄴ links to the next vowel.",
+      "drill": {
+        "instruction": "Change each adjective into a 'became/got' statement using A-아/어졌어요.",
+        "model": "날씨가 따뜻하다 → 날씨가 따뜻해졌어요.",
+        "items": [
+          "한국어가 쉽다 → ____________",
+          "방이 깨끗하다 → ____________",
+          "값이 비싸다 → ____________"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "날씨가 따뜻했어요. (meaning 'the weather got warm')",
+        "right": "날씨가 따뜻해졌어요.",
+        "explanation": "따뜻했어요 just means 'it was warm' — a past state, no change. To say it CHANGED and 'became' warm, add -아/어지다 → 따뜻해졌어요. English 'got warm' means it changed, so keep the 졌어요."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "결정하다",
+      "romanization": "gyeoljeonghada",
+      "english": "to decide",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "다음 달부터 운동하기로 결정했어요.",
+        "en": "I decided to exercise starting next month.",
+        "note": "A direct verb for decision-making."
+      },
+      "collocations": [
+        "결정하다",
+        "결정했어요",
+        "무엇을 할지 결정하다"
+      ]
+    },
+    {
+      "hangul": "운동하다",
+      "romanization": "undonghada",
+      "english": "to exercise",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "아침마다 운동하기로 했어요.",
+        "en": "I decided to exercise every morning.",
+        "note": "A natural new-habit decision."
+      },
+      "collocations": [
+        "운동하기로 하다",
+        "매일 운동하다",
+        "운동하고 나서"
+      ]
+    },
+    {
+      "hangul": "시작하다",
+      "romanization": "sijakhada",
+      "english": "to start",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "건강이 안 좋아져서 운동을 시작하기로 했어요.",
+        "en": "My health got worse, so I decided to start exercising.",
+        "note": "The new action begins because of a change."
+      },
+      "collocations": [
+        "운동을 시작하다",
+        "공부를 시작하다",
+        "새로 시작하다"
+      ]
+    },
+    {
+      "hangul": "계획",
+      "romanization": "gyehoek",
+      "english": "plan",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "계획이 바뀌었어요.",
+        "en": "The plan changed.",
+        "note": "A common changed-schedule sentence."
+      },
+      "collocations": [
+        "계획이 바뀌다",
+        "계획을 바꾸다",
+        "새 계획"
+      ]
+    },
+    {
+      "hangul": "습관",
+      "romanization": "seupgwan",
+      "english": "habit",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "운동하면서 습관이 바뀌었어요.",
+        "en": "As I exercised, my habits changed.",
+        "note": "The noun that names the lifestyle change."
+      },
+      "collocations": [
+        "좋은 습관",
+        "나쁜 습관",
+        "습관이 바뀌다"
+      ]
+    },
+    {
+      "hangul": "건강",
+      "romanization": "geongang",
+      "english": "health",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "건강이 좋아졌어요.",
+        "en": "My health got better.",
+        "note": "A core state-change sentence."
+      },
+      "collocations": [
+        "건강이 좋아지다",
+        "건강이 안 좋아지다",
+        "건강을 위해서"
+      ]
+    },
+    {
+      "hangul": "좋아지다",
+      "romanization": "joajida",
+      "english": "to get better",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "한국어 실력이 좋아졌어요.",
+        "en": "My Korean ability improved.",
+        "note": "좋다 plus -아지다."
+      },
+      "collocations": [
+        "건강이 좋아지다",
+        "실력이 좋아지다",
+        "조금 좋아지다"
+      ]
+    },
+    {
+      "hangul": "바뀌다",
+      "romanization": "bakkwida",
+      "english": "to change; to be switched",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "회의 시간이 세 시로 바뀌었어요.",
+        "en": "The meeting time changed to three.",
+        "note": "Useful for schedules and plans."
+      },
+      "collocations": [
+        "시간이 바뀌다",
+        "계획이 바뀌다",
+        "습관이 바뀌다"
+      ]
+    },
+    {
+      "hangul": "달라지다",
+      "romanization": "dallajida",
+      "english": "to become different; to change",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "운동을 시작하고 하루가 달라졌어요.",
+        "en": "After starting exercise, my day became different.",
+        "note": "Emphasizes that the whole feel is different now."
+      },
+      "collocations": [
+        "생활이 달라지다",
+        "생각이 달라지다",
+        "분위기가 달라지다"
+      ]
+    },
+    {
+      "hangul": "실력",
+      "romanization": "sillyeok",
+      "english": "skill level; actual ability",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "연습할수록 실력이 늘어요.",
+        "en": "The more I practice, the more my skill improves.",
+        "note": "실력 pairs naturally with 늘다 and 좋아지다."
+      },
+      "collocations": [
+        "실력이 늘다",
+        "실력이 좋아지다",
+        "한국어 실력"
+      ]
+    },
+    {
+      "hangul": "늘다",
+      "romanization": "neulda",
+      "english": "to increase; to improve",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "한국어를 매일 쓰니까 실력이 늘었어요.",
+        "en": "Because I use Korean every day, my skill improved.",
+        "note": "Intransitive improvement: 실력이 늘다."
+      },
+      "collocations": [
+        "실력이 늘다",
+        "시간이 늘다",
+        "조금씩 늘다"
+      ]
+    },
+    {
+      "hangul": "줄다",
+      "romanization": "julda",
+      "english": "to decrease",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "운동을 시작하고 스트레스가 줄었어요.",
+        "en": "After I started exercising, my stress decreased.",
+        "note": "A natural result-change verb."
+      },
+      "collocations": [
+        "스트레스가 줄다",
+        "실수가 줄다",
+        "시간이 줄다"
+      ]
+    },
+    {
+      "hangul": "살다",
+      "romanization": "salda",
+      "english": "to live",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "회사 일 때문에 한국에 살게 됐어요.",
+        "en": "Because of work, I ended up living in Korea.",
+        "note": "A classic circumstantial 게 되다 sentence."
+      },
+      "collocations": [
+        "한국에 살다",
+        "살게 되다",
+        "혼자 살다"
+      ]
+    },
+    {
+      "hangul": "이사하다",
+      "romanization": "isahada",
+      "english": "to move house",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "회사 때문에 갑자기 이사하게 됐어요.",
+        "en": "Because of work, I suddenly ended up moving.",
+        "note": "A change caused by circumstances."
+      },
+      "collocations": [
+        "이사하게 되다",
+        "갑자기 이사하다",
+        "다음 달에 이사하다"
+      ]
+    },
+    {
+      "hangul": "맡다",
+      "romanization": "matda",
+      "english": "to take charge of; to be assigned",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "새 일을 맡게 됐어요.",
+        "en": "I ended up taking charge of a new task.",
+        "note": "Good for work or school responsibilities."
+      },
+      "collocations": [
+        "일을 맡다",
+        "프로젝트를 맡다",
+        "맡게 되다"
+      ]
+    },
+    {
+      "hangul": "일찍",
+      "romanization": "iljjik",
+      "english": "early",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "요즘 일찍 자게 됐어요.",
+        "en": "These days I have come to sleep earlier.",
+        "note": "A practical new-habit sentence."
+      },
+      "collocations": [
+        "일찍 자다",
+        "일찍 일어나다",
+        "일찍 시작하다"
+      ]
+    },
+    {
+      "hangul": "자다",
+      "romanization": "jada",
+      "english": "to sleep",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "오늘부터 일찍 자기로 했어요.",
+        "en": "I decided to sleep early starting today.",
+        "note": "자다 becomes 자기로 in the decision pattern."
+      },
+      "collocations": [
+        "일찍 자다",
+        "자기로 하다",
+        "자게 되다"
+      ]
+    },
+    {
+      "hangul": "몸",
+      "romanization": "mom",
+      "english": "body",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "운동하고 나서 몸이 가벼워졌어요.",
+        "en": "After exercising, my body felt lighter.",
+        "note": "몸 is the subject of the changed state."
+      },
+      "collocations": [
+        "몸이 가볍다",
+        "몸이 안 좋다",
+        "몸이 좋아지다"
+      ]
+    },
+    {
+      "hangul": "가볍다",
+      "romanization": "gabyeopda",
+      "english": "light",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "몸이 가벼워졌어요.",
+        "en": "My body felt lighter.",
+        "note": "가볍다 becomes 가벼워지다."
+      },
+      "collocations": [
+        "몸이 가볍다",
+        "가벼워지다",
+        "가벼운 운동"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "A friend explains a new health decision and the changes that followed.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "다음 달부터 뭐가 달라져요?",
+        "romanization": "daeum dalbuteo mwoga dallajyeoyo?",
+        "en": "What will be different starting next month?",
+        "grammarNote": "달라지다 is a practical change verb."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "아침마다 운동하기로 했어요.",
+        "romanization": "achimmada undonghagiro haesseoyo.",
+        "en": "I decided to exercise every morning.",
+        "grammarNote": "-기로 했어요 reports a settled decision."
+      },
+      {
+        "speaker": "민서",
+        "ko": "직접 결정한 거예요?",
+        "romanization": "jikjeop gyeoljeonghan geoyeyo?",
+        "en": "Did you decide that yourself?",
+        "grammarNote": "결정하다 checks agency."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "네, 건강이 안 좋아져서 시작하기로 했어요.",
+        "romanization": "ne, geongangi an joajyeoseo sijakagiro haesseoyo.",
+        "en": "Yes, my health got worse, so I decided to start.",
+        "grammarNote": "좋아지다 in the negative gives a state-change reason."
+      },
+      {
+        "speaker": "민서",
+        "ko": "벌써 습관이 바뀌었어요?",
+        "romanization": "beolsseo seupgwani bakkwieosseoyo?",
+        "en": "Have your habits already changed?",
+        "grammarNote": "바뀌다 is a real-life change verb."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "네. 일찍 자게 되고 몸도 가벼워졌어요.",
+        "romanization": "ne. iljjik jage doego momdo gabyeowojyeosseoyo.",
+        "en": "Yes. I came to sleep earlier, and my body feels lighter too.",
+        "grammarNote": "자게 되다 shows a new habit that came about; 가벼워지다 shows state change."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "A habit that changed the day",
+    "body": "지훈은 건강이 안 좋아져서 아침마다 운동하기로 했어요. 처음에는 직접 결정한 일이었지만, 운동을 시작하고 나서 하루가 조금씩 달라졌어요. 밤에는 일찍 자게 됐고, 아침에는 몸이 가벼워졌어요. 한 달 후에는 습관도 많이 바뀌었어요. 지훈은 한국어도 매일 연습하기로 했고, 연습할수록 실력이 늘어서 더 자신감이 생겼어요.",
+    "bodyTranslation": "Jihoon decided to exercise every morning because his health had gotten worse. At first it was a decision he made himself, but after he started exercising, his day gradually became different. At night he came to sleep earlier, and in the morning his body felt lighter. After one month, his habits changed a lot too. Jihoon also decided to practice Korean every day, and as he practiced, his ability improved and he gained more confidence.",
+    "comprehensionQuestions": [
+      {
+        "question": "지훈은 왜 운동하기로 했어요?",
+        "answer": "건강이 안 좋아져서 운동하기로 했어요."
+      },
+      {
+        "question": "지훈은 밤에 어떻게 자게 됐어요?",
+        "answer": "일찍 자게 됐어요."
+      },
+      {
+        "question": "한국어를 연습할수록 무엇이 늘었어요?",
+        "answer": "실력이 늘었어요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "Agency matters",
+    "body": "Korean often cares whether you chose something, it happened through circumstances, or the state simply changed. 기로 했어요 sounds responsible and deliberate. 게 됐어요 can sound softer or more modest. 아/어졌어요 focuses on the result you can observe.",
+    "tip": "Ask yourself: Did I decide it? Use 기로 했어요. Did circumstances lead there? Use 게 됐어요. Did the state change? Use 아/어졌어요."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence states a settled decision?",
+      "options": [
+        "아침마다 운동하기로 했어요.",
+        "아침마다 운동하게 됐어요.",
+        "아침마다 운동이 좋아졌어요."
+      ],
+      "correct": "아침마다 운동하기로 했어요.",
+      "explanation": "-기로 했어요 reports a decision that has already been made."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence sounds like the situation came about through circumstances?",
+      "options": [
+        "회사 때문에 한국에 살게 됐어요.",
+        "회사 때문에 한국에 살기로 했어요.",
+        "회사 때문에 한국에 살고 있어요."
+      ],
+      "correct": "회사 때문에 한국에 살게 됐어요.",
+      "explanation": "-게 됐어요 shows how the situation came to be."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence describes a state change?",
+      "options": [
+        "몸이 가벼워졌어요.",
+        "몸이 가볍기로 했어요.",
+        "몸이 가볍게 됐어요."
+      ],
+      "correct": "몸이 가벼워졌어요.",
+      "explanation": "가볍다 becomes 가벼워지다 for a change of state."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Complete: 오늘부터 일찍 자___ 했어요.",
+      "explanation": "자다 becomes 자기로 in the decision frame.",
+      "correct": "기로"
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the sentence: 운동하기로 할 거예요. (The decision is already made.)",
+      "explanation": "Use 했어요 when reporting a decision that has already been made.",
+      "correct": "운동하기로 했어요."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the sentence: 건강이 좋게 됐어요.",
+      "explanation": "For a simple state improvement, use 좋아지다.",
+      "correct": "건강이 좋아졌어요."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "건강___ 좋아졌어요. (My health got better.)",
+      "options": [
+        "이",
+        "을",
+        "에"
+      ],
+      "correct": "이",
+      "explanation": "좋아지다 describes a subject changing state, so 건강 takes 이. 을 would make health the object of an action."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "오늘부터 운동을 ___ . (시작하다 → decided to)",
+      "base": "시작하다",
+      "form": "decision",
+      "correct": "시작하기로 했어요",
+      "explanation": "V-기로 했어요 states a settled decision. 시작하다 becomes 시작하기로 했어요."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'My habit changed.'",
+      "tokens": [
+        "습관이",
+        "바뀌었어요"
+      ],
+      "correct": "습관이 바뀌었어요",
+      "explanation": "바뀌다 describes something changing, so 습관이 is the subject. The past form 바뀌었어요 reports the completed change."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Say: 'I ended up exercising every morning.'",
+      "correct": "매일 아침 운동하게 됐어요.",
+      "explanation": "V-게 됐어요 sounds like the situation developed that way. It is less like a sudden promise and more like a change in routine."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "Use V-기로 했어요 for a decision you made: 운동하기로 했어요.",
+      "Use V-게 됐어요 when circumstances led to a new situation: 살게 됐어요.",
+      "Use A/V-아/어지다 for state change: 좋아졌어요, 가벼워졌어요.",
+      "Use real change words too: 바뀌다, 달라지다, 늘다, 줄다.",
+      "Do not use 게 되다 to hide a simple decision unless the situation really led you there."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Write a short note about a decision you made and a change that has happened since, like starting a new habit.",
+    "hint": "Use V-기로 했어요 for the decision, V-게 됐어요 for what came about, and A-아/어졌어요 for how something became.",
+    "model": "저는 매일 운동하기로 했어요. 그래서 아침에 일찍 일어나게 됐어요. 요즘 건강이 좋아졌어요.",
+    "modelEn": "I decided to exercise every day. So I ended up getting up early in the morning. These days my health has gotten better."
+  },
+  "canDo": [
+    "Announce a decision you made (운동하기로 했어요)",
+    "Describe a change that came about from circumstances (-게 됐어요)",
+    "Say how a state changed over time (좋아졌어요 · 달라졌어요)"
+  ]
+}

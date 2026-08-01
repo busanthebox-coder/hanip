@@ -1,0 +1,522 @@
+{
+  "id": "chapter-19",
+  "hook": {
+    "situation": "Asking natural follow-up questions in Korean: what, where, when, why, how, who, how many, what kind, and which one.",
+    "objectives": [
+      "Choose the question word that matches the missing information.",
+      "Keep the question word in the position where the answer would normally appear.",
+      "Use particles with question words: 어디에, 어디에서, 누구를, 누구랑, 몇 시에."
+    ],
+    "whyItMatters": "Good follow-up questions make conversation continue. If learners only memorize isolated words like 뭐 or 어디, they often ask unclear questions. This chapter connects each question word to the sentence role it actually fills."
+  },
+  "grammarNotes": [
+    {
+      "title": "Question words (누구, 뭐, 어디, 언제, 왜, 어떻게, 몇, 얼마)",
+      "func": "Question words ask for one missing piece of info — who, what, where, when, why, how, how many, how much. The big thing: in Korean the question word sits in the exact spot the answer would go. It does not jump to the front like English 'where' or 'what' does.",
+      "formTable": [
+        {
+          "when": "who — 누구",
+          "add": "누구 + 가 → 누가 (subject); 누구 + 를 (object); 누구 + 예요",
+          "ex": "누가 와요? / 누구를 만나요? / 이 사람 누구예요?"
+        },
+        {
+          "when": "what — 뭐 (everyday)",
+          "add": "뭐 + 예요; 뭐 + 를 → 뭘 (object). 무엇 is the written form, rare in speech",
+          "ex": "이거 뭐예요? / 뭘 먹어요? / 뭐 해요?"
+        },
+        {
+          "when": "where — 어디",
+          "add": "어디 + 예요; 어디 + 에 (where you go / where something is); 어디 + 에서 (where you do something)",
+          "ex": "집이 어디예요? / 어디에 가요? / 어디에서 일해요?"
+        },
+        {
+          "when": "when / why / how — 언제, 왜, 어떻게",
+          "add": "no particle — they work like adverbs on their own",
+          "ex": "언제 와요? / 왜 안 와요? / 어떻게 가요?"
+        },
+        {
+          "when": "how many / how much — 몇 + counter, 얼마",
+          "add": "몇 + 개/명/시/살 …; 얼마 + 예요 (price)",
+          "ex": "몇 개예요? / 몇 시예요? / 이거 얼마예요?"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "이 사람 누구예요?",
+          "romanization": "i saram nuguyeyo?",
+          "en": "Who is this person?",
+          "note": "누구 sits right where the answer goes: 제 친구예요 (It's my friend). Same slot, just swap the word."
+        },
+        {
+          "ko": "점심에 뭘 먹어요?",
+          "romanization": "jeomsime mwol meogeoyo?",
+          "en": "What do you eat for lunch?",
+          "note": "뭘 (뭐+를) stays in the object slot before the verb. Answer 밥을 먹어요 fills the very same slot."
+        },
+        {
+          "ko": "어디에서 일해요?",
+          "romanization": "eodieseo ilhaeyo?",
+          "en": "Where do you work?",
+          "note": "어디 takes 에서 because work happens there (an action). Answer 회사에서 일해요 keeps the same 에서."
+        },
+        {
+          "ko": "이거 얼마예요?",
+          "romanization": "igeo eolmayeyo?",
+          "en": "How much is this?",
+          "note": "얼마 is the normal word for asking a price. Answer 만 원이에요 drops right into the 얼마 spot."
+        }
+      ],
+      "keyPoint": {
+        "label": "The question word stays where the answer goes",
+        "body": "English moves the question word up front: 'WHAT do you eat?' Korean leaves it in place, right before the verb: 뭐 먹어요? → 밥 먹어요. Look at the slot: 밥 먹어요 / 뭐 먹어요 — same spot, you just swap 밥 for 뭐. So think of the answer first, then drop the question word into its slot. (어디 still needs 에 or 에서 — that comes next.)"
+      },
+      "pronunciation": "누구 + 가 squeezes down to 누가 (the 구 disappears, it doesn't just link). 뭐 + 를 squeezes to 뭘. 무엇을 links over the patchim and sounds like [무어슬].",
+      "drill": {
+        "instruction": "Turn each statement into a question. Swap the underlined answer for the matching question word and leave it in the same slot (keep the particle).",
+        "model": "친구를 만나요. → 누구를 만나요?",
+        "items": [
+          "학교에 가요. → ___에 가요?",
+          "물을 마셔요. → ___ 마셔요?",
+          "세 시에 와요. → ___ 와요?",
+          "회사에서 일해요. → ___에서 일해요?"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "먹어요 뭐? / 가요 어디?",
+        "right": "뭐 먹어요? / 어디 가요?",
+        "explanation": "From English, people want to swing the question word to the very front of the sentence (Where do you go?). In Korean it does not move up front and it never goes after the verb — it stays in the answer's slot, right before the verb. So it's 어디 가요?, not 가요 어디? and not 어디 가요 fronted away from its slot."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "뭐",
+      "romanization": "mwo",
+      "english": "what",
+      "partOfSpeech": "question-word",
+      "exampleSentence": {
+        "ko": "오늘 뭐 해요?",
+        "en": "What are you doing today?",
+        "note": "Use 뭐 for things, actions, food, plans, or objects."
+      },
+      "collocations": [
+        "뭐 해요?",
+        "뭐 먹어요?",
+        "뭐라고 했어요?"
+      ]
+    },
+    {
+      "hangul": "어디",
+      "romanization": "eodi",
+      "english": "where",
+      "partOfSpeech": "question-word",
+      "exampleSentence": {
+        "ko": "주말에 어디에 가요?",
+        "en": "Where are you going on the weekend?",
+        "note": "Pair 어디 with 에 for destination/location and 에서 for action place."
+      },
+      "collocations": [
+        "어디예요?",
+        "어디에 가요?",
+        "어디에서 만나요?"
+      ]
+    },
+    {
+      "hangul": "언제",
+      "romanization": "eonje",
+      "english": "when",
+      "partOfSpeech": "question-word",
+      "exampleSentence": {
+        "ko": "수업은 언제 시작해요?",
+        "en": "When does class start?",
+        "note": "언제 asks for time without needing a counter."
+      },
+      "collocations": [
+        "언제 가요?",
+        "언제 만나요?",
+        "언제까지 해요?"
+      ]
+    },
+    {
+      "hangul": "왜",
+      "romanization": "wae",
+      "english": "why",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "왜 한국어를 공부해요?",
+        "en": "Why do you study Korean?",
+        "note": "왜 expects a reason, not a place or time answer."
+      },
+      "collocations": [
+        "왜요?",
+        "왜 그래요?",
+        "왜 그렇게 생각해요?"
+      ]
+    },
+    {
+      "hangul": "어떻게",
+      "romanization": "eotteoke",
+      "english": "how; in what way",
+      "partOfSpeech": "question-word",
+      "exampleSentence": {
+        "ko": "한국어 단어를 어떻게 외워요?",
+        "en": "How do you memorize Korean words?",
+        "note": "어떻게 asks method. For opinion, use 어때요?"
+      },
+      "collocations": [
+        "어떻게 가요?",
+        "어떻게 해요?",
+        "어떻게 말해요?"
+      ]
+    },
+    {
+      "hangul": "누구",
+      "romanization": "nugu",
+      "english": "who",
+      "partOfSpeech": "question-word",
+      "exampleSentence": {
+        "ko": "오늘 누구를 만나요?",
+        "en": "Whom are you meeting today?",
+        "note": "Attach the role: 누구가 becomes 누가, but 누구를 and 누구랑 stay visible."
+      },
+      "collocations": [
+        "누구예요?",
+        "누구랑 가요?",
+        "누구한테 줘요?"
+      ]
+    },
+    {
+      "hangul": "얼마나",
+      "romanization": "eolmana",
+      "english": "how much; how long; to what degree",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "회사까지 얼마나 걸려요?",
+        "en": "How long does it take to get to work?",
+        "note": "얼마나 asks about degree, distance, time length, or frequency."
+      },
+      "collocations": [
+        "얼마나 걸려요?",
+        "얼마나 자주",
+        "얼마나 멀어요?"
+      ]
+    },
+    {
+      "hangul": "몇",
+      "romanization": "myeot",
+      "english": "how many; what number",
+      "partOfSpeech": "determiner",
+      "exampleSentence": {
+        "ko": "스터디에 몇 명이 와요?",
+        "en": "How many people are coming to the study group?",
+        "note": "몇 needs a number word or counter such as 시, 명, 개, 번."
+      },
+      "collocations": [
+        "몇 시",
+        "몇 명",
+        "몇 개"
+      ]
+    },
+    {
+      "hangul": "무슨",
+      "romanization": "museun",
+      "english": "what; what kind of",
+      "partOfSpeech": "determiner",
+      "exampleSentence": {
+        "ko": "무슨 음악을 좋아해요?",
+        "en": "What kind of music do you like?",
+        "note": "Use 무슨 before a noun when asking the kind, name, or category."
+      },
+      "collocations": [
+        "무슨 일이에요?",
+        "무슨 요일이에요?",
+        "무슨 뜻이에요?"
+      ]
+    },
+    {
+      "hangul": "어느",
+      "romanization": "eoneu",
+      "english": "which",
+      "partOfSpeech": "determiner",
+      "exampleSentence": {
+        "ko": "어느 카페에서 만날까요?",
+        "en": "Which cafe shall we meet at?",
+        "note": "Use 어느 when choosing among options the listener can imagine."
+      },
+      "collocations": [
+        "어느 것",
+        "어느 나라",
+        "어느 쪽"
+      ]
+    },
+    {
+      "hangul": "질문",
+      "romanization": "jilmun",
+      "english": "question",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "질문이 있으면 지금 물어보세요.",
+        "en": "If you have a question, please ask now.",
+        "note": "질문 pairs naturally with 하다, 있다, and 물어보다."
+      },
+      "collocations": [
+        "질문을 하다",
+        "질문이 있다",
+        "질문에 답하다"
+      ]
+    },
+    {
+      "hangul": "대답",
+      "romanization": "daedap",
+      "english": "answer; reply",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "왜 대답이 없어요?",
+        "en": "Why is there no answer?",
+        "note": "대답 is a spoken or written reply to a question."
+      },
+      "collocations": [
+        "대답을 하다",
+        "질문에 대답하다",
+        "대답이 없다"
+      ]
+    },
+    {
+      "hangul": "이유",
+      "romanization": "iyu",
+      "english": "reason",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "그 이유가 뭐예요?",
+        "en": "What is the reason?",
+        "note": "이유 helps expand 왜 questions into clearer follow-ups."
+      },
+      "collocations": [
+        "이유가 있어요",
+        "이유를 말해요",
+        "무슨 이유로"
+      ]
+    },
+    {
+      "hangul": "방법",
+      "romanization": "bangbeop",
+      "english": "method; way",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "좋은 방법이 있어요?",
+        "en": "Is there a good way?",
+        "note": "방법 helps turn 어떻게 into a fuller question about method."
+      },
+      "collocations": [
+        "방법이 있어요",
+        "방법을 찾아요",
+        "이 방법으로"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "A learner asks follow-up questions after hearing that someone studies Korean online.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "어디에서 한국어를 배워요?",
+        "romanization": "eodieseo hangugeoreul baewoyo?",
+        "en": "Where do you learn Korean?",
+        "grammarNote": "어디에서 asks for the action place."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "집에서 온라인 수업으로 배워요.",
+        "romanization": "jibeseo ollain sueobeuro baewoyo.",
+        "en": "I learn at home through an online class.",
+        "grammarNote": "집에서 marks where the learning happens; 온라인 수업으로 marks the means."
+      },
+      {
+        "speaker": "민서",
+        "ko": "언제 시작했어요?",
+        "romanization": "eonje sijakaesseoyo?",
+        "en": "When did you start?",
+        "grammarNote": "언제 asks for the time."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "작년부터 시작했어요.",
+        "romanization": "jangnyeonbuteo sijakaesseoyo.",
+        "en": "I started last year.",
+        "grammarNote": "The answer fills the time slot."
+      },
+      {
+        "speaker": "민서",
+        "ko": "왜 한국어를 공부해요?",
+        "romanization": "wae hangugeoreul gongbuhaeyo?",
+        "en": "Why do you study Korean?",
+        "grammarNote": "왜 asks for a reason."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "한국 친구들과 더 편하게 이야기하고 싶어서요.",
+        "romanization": "hanguk chingudeulgwa deo pyeonhage iyagihago sipeoseoyo.",
+        "en": "Because I want to talk more comfortably with Korean friends.",
+        "grammarNote": "-고 싶어서요 gives the reason in a natural short answer."
+      },
+      {
+        "speaker": "민서",
+        "ko": "보통 어떻게 연습해요?",
+        "romanization": "botong eotteoke yeonseupaeyo?",
+        "en": "How do you usually practice?",
+        "grammarNote": "어떻게 asks for method."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "드라마를 보고 문장을 따라 말해요.",
+        "romanization": "deuramareul bogo munjangeul ttara malhaeyo.",
+        "en": "I watch dramas and repeat the sentences.",
+        "grammarNote": "The answer gives a concrete study method."
+      },
+      {
+        "speaker": "민서",
+        "ko": "누구랑 같이 연습해요?",
+        "romanization": "nugurang gachi yeonseupaeyo?",
+        "en": "Who do you practice with?",
+        "grammarNote": "누구랑 asks for the person you do the action with."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "스터디 친구들이랑 연습해요.",
+        "romanization": "seuteodi chingudeurirang yeonseupaeyo.",
+        "en": "I practice with my study group friends.",
+        "grammarNote": "친구들이랑 fills the same companion slot as 누구랑."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "A study-plan chat",
+    "body": "민서는 새 스터디에 들어가기 전에 지훈에게 여러 가지를 물어봤어요. 먼저 어디에서 모이는지 물었고, 지훈은 학교 앞 카페에서 만난다고 대답했어요. 민서는 몇 시에 시작하는지도 물었어요. 지훈은 토요일 두 시에 시작한다고 했어요. 민서가 왜 그 스터디를 만들었냐고 묻자, 지훈은 혼자 공부하면 자꾸 미뤄서 친구들과 같이 연습하고 싶었다고 했어요. 마지막으로 민서는 어떻게 준비하면 좋으냐고 물었고, 지훈은 짧은 자기소개와 질문 세 개를 준비하면 된다고 말했어요.",
+    "bodyTranslation": "Before joining a new study group, Minseo asked Jihoon several questions. She asked where they meet, what time they start, why he made the group, and how she should prepare. Jihoon answered each question with the missing place, time, reason, and method.",
+    "comprehensionQuestions": [
+      {
+        "question": "민서는 처음에 무엇을 물어봤어요?",
+        "answer": "어디에서 모이는지 물어봤어요."
+      },
+      {
+        "question": "스터디는 몇 시에 시작해요?",
+        "answer": "토요일 두 시에 시작해요."
+      },
+      {
+        "question": "민서는 마지막으로 무엇을 물어봤어요?",
+        "answer": "어떻게 준비하면 좋은지 물어봤어요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "Follow-up questions should feel connected",
+    "body": "In Korean conversation, a follow-up question often reuses the other person's topic instead of starting from zero. If someone says 한국어를 배워요, natural follow-ups are 어디에서요?, 언제부터요?, 왜요?, 어떻게 연습해요?, and 누구랑요?",
+    "tip": "Short follow-ups with 요 can sound natural after the topic is already clear: 어디에서요? 왜요? 누구랑요?"
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "You want to ask where someone studies. Which form fits the action place?",
+      "options": [
+        "어디에서 공부해요?",
+        "어디에 공부해요?",
+        "어디를 공부해요?"
+      ],
+      "correct": "어디에서 공부해요?",
+      "explanation": "공부하다 is an action, so the place of the action takes -에서."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which answer naturally responds to 왜 한국어를 공부해요?",
+      "options": [
+        "친구들과 이야기하고 싶어서요.",
+        "한국어를 잘 못해서 미안해요.",
+        "한국어를 공부한 지 두 달 됐어요."
+      ],
+      "correct": "친구들과 이야기하고 싶어서요.",
+      "explanation": "왜 expects a reason, often answered with -아서/어서요 or -고 싶어서요."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Ask 'Who are you meeting today?' in Korean.",
+      "explanation": "The person you meet is the object, so 누구를 is the full form.",
+      "correct": "오늘 누구를 만나요?"
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Ask 'What time does class start?' using 몇.",
+      "explanation": "몇 combines with 시 to ask for clock time.",
+      "correct": "수업은 몇 시에 시작해요?"
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the question: 어떻게 영화였어요?",
+      "explanation": "Use 어땠어요 for 'How was it?' 어떻게 asks method, as in 어떻게 갔어요?",
+      "correct": "영화는 어땠어요?"
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "어디___ 일해요? (Where do you work?)",
+      "options": [
+        "에서",
+        "에",
+        "를"
+      ],
+      "correct": "에서",
+      "explanation": "일하다 is an action, so the place where it happens takes 에서. 에 would fit a destination or static location, not work happening there."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Ask: 'How much is this?'",
+      "correct": "이거 얼마예요?",
+      "explanation": "얼마 asks about price. 이거 sets “this thing” as what you are asking about."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'When are you coming?'",
+      "tokens": [
+        "언제",
+        "와요?"
+      ],
+      "correct": "언제 와요?",
+      "explanation": "언제 asks for time and sits before the verb. Korean keeps the question word in the answer slot rather than moving it far away."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the question: '누구가 와요?'",
+      "correct": "누가 와요?",
+      "explanation": "누구 + 가 always contracts to 누가 — 누구가 is not used in standard Korean. The correct subject question is 누가 와요?"
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which question asks about method or way?",
+      "options": [
+        "어떻게 가요?",
+        "언제 가요?",
+        "왜 가요?"
+      ],
+      "correct": "어떻게 가요?",
+      "explanation": "어떻게 asks “how” or by what method. 언제 asks time, and 왜 asks reason."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "Question words match the missing information: 뭐, 어디, 언제, 왜, 어떻게, 누구.",
+      "Particles still matter: 어디에, 어디에서, 누구를, 누구랑, 몇 시에.",
+      "몇, 무슨, and 어느 attach before nouns: 몇 명, 무슨 뜻, 어느 카페.",
+      "Best check: answer the question and see whether the answer fits the same slot."
+    ]
+  },
+  "writingTask": {
+    "prompt": "You just met someone new — write 3 short questions to keep the conversation going: ask where they live, what they do on weekends, and when they're free.",
+    "hint": "Put the question word in the answer's slot, with no inversion (어디 살아요? / 주말에 뭐 해요? / 언제 시간이 있어요?).",
+    "model": "어디에 살아요? 주말에 보통 뭐 해요? 언제 시간이 있어요?",
+    "modelEn": "Where do you live? What do you usually do on weekends? When are you free?"
+  },
+  "canDo": [
+    "Ask who, what, where with question words in the answer's slot (누구 · 뭐 · 어디)",
+    "Ask when and why without changing word order (언제 · 왜)",
+    "Ask how, how many, and how much (어떻게 · 몇 · 얼마나)",
+    "Ask follow-up questions that keep a conversation moving (질문 · 대답)"
+  ]
+}

@@ -1,0 +1,507 @@
+{
+  "id": "chapter-17",
+  "hook": {
+    "situation": "A friend asks, '어제 뭐 했어요?' If you answer in present tense — 영화 봐요, 밥 먹어요 — it sounds like you are talking about your usual routine or what you do now. For yesterday, Korean needs the polite past frame: 봤어요, 먹었어요, 갔어요, 했어요.",
+    "objectives": [
+      "Build polite past-tense sentences with -았/었어요",
+      "Choose 았어요 vs 었어요 from the last vowel of the stem",
+      "Handle the first everyday contractions and irregulars: 했어요, 봤어요, 왔어요, 추웠어요"
+    ],
+    "whyItMatters": "Past tense is the grammar that lets beginners tell real stories. You use it after class, on KakaoTalk, when explaining why you are late, and any time someone asks what happened. A clean short past sentence sounds much more natural than a long sentence with the wrong tense."
+  },
+  "grammarNotes": [
+    {
+      "title": "V았/었어요 — the polite past tense",
+      "func": "Use V았/었어요 to say an action or state happened in the past. It is the polite, everyday way to answer questions like \"What did you do yesterday?\"",
+      "formTable": [
+        {
+          "when": "Stem's last vowel is ㅏ or ㅗ",
+          "add": "-았어요",
+          "ex": "가다 → 갔어요, 보다 → 봤어요, 살다 → 살았어요"
+        },
+        {
+          "when": "Any other vowel (ㅓ, ㅜ, ㅣ, ㅡ, ㅔ …)",
+          "add": "-었어요",
+          "ex": "먹다 → 먹었어요, 마시다 → 마셨어요, 읽다 → 읽었어요"
+        },
+        {
+          "when": "하다 verbs",
+          "add": "하다 → 했어요",
+          "ex": "하다 → 했어요, 공부하다 → 공부했어요, 일하다 → 일했어요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "어제 친구를 만났어요.",
+          "romanization": "eoje chingu-reul mannasseoyo.",
+          "en": "I met a friend yesterday.",
+          "note": "만나다's stem 만나- ends in ㅏ, so -았 contracts: 만나 + 았 → 만났어요."
+        },
+        {
+          "ko": "아침에 밥을 먹었어요.",
+          "romanization": "achim-e bab-eul meogeosseoyo.",
+          "en": "I ate (a meal) in the morning.",
+          "note": "먹- has the vowel ㅓ, so it takes -었어요 (no contraction)."
+        },
+        {
+          "ko": "어제 집에서 한국어를 공부했어요.",
+          "romanization": "eoje jib-eseo hangugeo-reul gongbuhaesseoyo.",
+          "en": "I studied Korean at home yesterday.",
+          "note": "공부하다 is a 하다 verb, so 하다 → 했어요 → 공부했어요."
+        },
+        {
+          "ko": "주말에 영화를 봤어요.",
+          "romanization": "jumal-e yeonghwa-reul bwasseoyo.",
+          "en": "I watched a movie over the weekend.",
+          "note": "보다's stem 보- ends in ㅗ, so 보 + 았 → 봤어요."
+        }
+      ],
+      "keyPoint": {
+        "label": "이다 → 였어요 / 이었어요",
+        "body": "The copula 이다 (\"to be\") has its own past form. After a vowel use 였어요 (친구이다 → 친구였어요), and after a final consonant use 이었어요 (학생이다 → 학생이었어요; 책이다 → 책이었어요). For now just memorize these two endings — the full ins and outs of 이다 come in its home chapter."
+      },
+      "pronunciation": "먹었어요 links across the boundary and sounds like [머거써요]; 했어요 sounds like [해써요] — the 어 is swallowed and the ㅆ is tense.",
+      "drill": {
+        "instruction": "Change each verb into the polite past form V았/었어요.",
+        "model": "마시다 (to drink) → 마셨어요",
+        "items": [
+          "읽다 (to read) → ____",
+          "오다 (to come) → ____",
+          "운동하다 (to exercise) → ____"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "어제 학교에 가요.",
+        "right": "어제 학교에 갔어요.",
+        "explanation": "English often leans on the time word (\"yesterday\") and leaves the verb in its plain form. In Korean the verb itself has to carry the past tense — adding 어제 (yesterday) does not make 가요 mean \"went.\" You have to change 가요 to 갔어요."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "어제",
+      "romanization": "eoje",
+      "english": "yesterday",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "어제 친구를 만났어요.",
+        "en": "I met a friend yesterday.",
+        "note": "어제 almost always pulls the sentence into past tense."
+      },
+      "collocations": [
+        "어제 뭐 했어요?",
+        "어제저녁",
+        "어제부터"
+      ]
+    },
+    {
+      "hangul": "지난주",
+      "romanization": "jinanju",
+      "english": "last week",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "지난주에 부산에 갔어요.",
+        "en": "I went to Busan last week.",
+        "note": "지난주에 marks when the completed event happened."
+      },
+      "collocations": [
+        "지난주에",
+        "지난 주말",
+        "지난주 금요일"
+      ]
+    },
+    {
+      "hangul": "작년",
+      "romanization": "jangnyeon",
+      "english": "last year",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "작년에 한국에 왔어요.",
+        "en": "I came to Korea last year.",
+        "note": "오다 becomes 왔어요 in the past."
+      },
+      "collocations": [
+        "작년에",
+        "작년부터",
+        "작년 겨울"
+      ]
+    },
+    {
+      "hangul": "만나다",
+      "romanization": "mannada",
+      "english": "to meet",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "어제 친구를 만났어요.",
+        "en": "I met a friend yesterday.",
+        "note": "만나다 → 만났어요."
+      },
+      "collocations": [
+        "친구를 만나다",
+        "어제 만났어요",
+        "처음 만났어요"
+      ]
+    },
+    {
+      "hangul": "먹다",
+      "romanization": "meokda",
+      "english": "to eat",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "식당에서 저녁을 먹었어요.",
+        "en": "I ate dinner at a restaurant.",
+        "note": "먹다 → 먹었어요."
+      },
+      "collocations": [
+        "밥을 먹었어요",
+        "점심을 먹었어요",
+        "많이 먹었어요"
+      ]
+    },
+    {
+      "hangul": "보다",
+      "romanization": "boda",
+      "english": "to see / watch",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "친구랑 영화를 봤어요.",
+        "en": "I watched a movie with a friend.",
+        "note": "보다 → 봤어요."
+      },
+      "collocations": [
+        "영화를 봤어요",
+        "사진을 봤어요",
+        "못 봤어요"
+      ]
+    },
+    {
+      "hangul": "가다",
+      "romanization": "gada",
+      "english": "to go",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "지난주에 부산에 갔어요.",
+        "en": "I went to Busan last week.",
+        "note": "가다 → 갔어요."
+      },
+      "collocations": [
+        "학교에 갔어요",
+        "집에 갔어요",
+        "안 갔어요"
+      ]
+    },
+    {
+      "hangul": "오다",
+      "romanization": "oda",
+      "english": "to come",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "집에 늦게 왔어요.",
+        "en": "I came home late.",
+        "note": "오다 → 왔어요."
+      },
+      "collocations": [
+        "집에 왔어요",
+        "친구가 왔어요",
+        "늦게 왔어요"
+      ]
+    },
+    {
+      "hangul": "하다",
+      "romanization": "hada",
+      "english": "to do",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "어제 숙제를 했어요.",
+        "en": "I did homework yesterday.",
+        "note": "하다 → 했어요."
+      },
+      "collocations": [
+        "뭐 했어요?",
+        "공부했어요",
+        "일했어요"
+      ]
+    },
+    {
+      "hangul": "친구",
+      "romanization": "chingu",
+      "english": "friend",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "친구랑 카페에 갔어요.",
+        "en": "I went to a cafe with a friend.",
+        "note": "친구랑 is natural in casual polite conversation."
+      },
+      "collocations": [
+        "친구랑",
+        "친구를 만났어요",
+        "친구가 왔어요"
+      ]
+    },
+    {
+      "hangul": "영화",
+      "romanization": "yeonghwa",
+      "english": "movie",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "영화가 조금 길었어요.",
+        "en": "The movie was a little long.",
+        "note": "Adjectives also take past tense: 길다 → 길었어요."
+      },
+      "collocations": [
+        "영화를 봤어요",
+        "영화가 재미있었어요",
+        "영화는 어땠어요?"
+      ]
+    },
+    {
+      "hangul": "식당",
+      "romanization": "sikdang",
+      "english": "restaurant / eatery",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "식당에서 밥을 먹었어요.",
+        "en": "I ate at a restaurant.",
+        "note": "Use 에서 for where the action happened."
+      },
+      "collocations": [
+        "식당에 갔어요",
+        "식당에서 먹었어요",
+        "식당이 좋았어요"
+      ]
+    },
+    {
+      "hangul": "집",
+      "romanization": "jip",
+      "english": "home / house",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "일찍 집에 왔어요.",
+        "en": "I came home early.",
+        "note": "Destination takes 에."
+      },
+      "collocations": [
+        "집에 갔어요",
+        "집에 왔어요",
+        "집에서 쉬었어요"
+      ]
+    },
+    {
+      "hangul": "날씨",
+      "romanization": "nalssi",
+      "english": "weather",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "날씨가 추웠어요.",
+        "en": "The weather was cold.",
+        "note": "A common past-tense adjective sentence."
+      },
+      "collocations": [
+        "날씨가 좋았어요",
+        "날씨가 추웠어요",
+        "날씨는 어땠어요?"
+      ]
+    },
+    {
+      "hangul": "춥다",
+      "romanization": "chupda",
+      "english": "to be cold",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "어제 정말 추웠어요.",
+        "en": "It was really cold yesterday.",
+        "note": "ㅂ irregular: 춥다 → 추웠어요."
+      },
+      "collocations": [
+        "날씨가 춥다",
+        "추웠어요",
+        "추운 날"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Two friends talk about yesterday after class.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "어제 뭐 했어요?",
+        "romanization": "eoje mwo haesseoyo?",
+        "en": "What did you do yesterday?",
+        "grammarNote": "했어요 is the polite past form of 하다."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "친구랑 영화를 봤어요. 그다음에 식당에서 밥을 먹었어요.",
+        "romanization": "chingurang yeonghwareul bwasseoyo. geudaeume sikdangeseo babeul meogeosseoyo.",
+        "en": "I watched a movie with a friend. After that, we ate at a restaurant.",
+        "grammarNote": "봤어요 and 먹었어요 are two finished events in sequence."
+      },
+      {
+        "speaker": "민서",
+        "ko": "영화는 어땠어요?",
+        "romanization": "yeonghwaneun eottaesseoyo?",
+        "en": "How was the movie?",
+        "grammarNote": "어땠어요 asks for a past evaluation."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "조금 길었지만 재미있었어요.",
+        "romanization": "jogeum gireotjiman jaemiisseosseoyo.",
+        "en": "It was a little long, but it was fun.",
+        "grammarNote": "길었지만 and 재미있었어요 show past adjectives plus contrast."
+      },
+      {
+        "speaker": "민서",
+        "ko": "집에는 몇 시쯤 왔어요?",
+        "romanization": "jibeneun myeot sijjeum wasseoyo?",
+        "en": "About what time did you come home?",
+        "grammarNote": "왔어요 is the contracted past of 오다."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "열한 시쯤 왔어요. 날씨가 추워서 바로 잤어요.",
+        "romanization": "yeolhan sijjeum wasseoyo. nalssiga chuwoseo baro jasseoyo.",
+        "en": "I came home around eleven. It was cold, so I went straight to sleep.",
+        "grammarNote": "왔어요 and 잤어요 are past actions; 추워서 gives the reason."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "어제 한 일",
+    "body": "어제는 수업이 끝난 뒤에 친구를 만났어요. 같이 카페에 갔고, 저는 커피를 마셨어요. 친구는 차를 마셨어요. 그다음 영화를 봤어요. 영화는 조금 길었지만 마지막 장면이 정말 재미있었어요. 집에 올 때는 날씨가 추웠어요. 그래서 집에 오자마자 따뜻한 물을 마시고 바로 잤어요.",
+    "bodyTranslation": "Yesterday, after class ended, I met a friend. We went to a cafe together, and I drank coffee. My friend drank tea. Then we watched a movie. The movie was a little long, but the last scene was really fun. When I came home, the weather was cold. So as soon as I got home, I drank warm water and went straight to sleep.",
+    "comprehensionQuestions": [
+      {
+        "question": "What did the writer do after class?",
+        "answer": "친구를 만났어요 and 같이 카페에 갔어요."
+      },
+      {
+        "question": "Find three contracted past forms in the text.",
+        "answer": "갔어요 (가다), 봤어요 (보다), 왔어요 (오다)."
+      },
+      {
+        "question": "Which adjective uses the ㅂ irregular past form?",
+        "answer": "추웠어요 from 춥다."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "Short Past Answers Sound Natural",
+    "body": "When Koreans ask 어제 뭐 했어요?, they are often opening a small everyday conversation, not asking for a long report. A natural answer can be short: 친구 만났어요, 영화 봤어요, 집에서 쉬었어요. Once the tense is clean, you can add one detail: 누구랑, 어디에서, 어땠는지. Accurate short past sentences are better than long translated sentences with the wrong ending.",
+    "tip": "Answer in one finished event first, then add time, person, or place."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence correctly reports a completed action yesterday?",
+      "options": [
+        "어제 친구랑 영화를 봤어요.",
+        "어제 친구랑 영화를 봐요.",
+        "어제 친구랑 영화를 볼 거예요."
+      ],
+      "correct": "어제 친구랑 영화를 봤어요.",
+      "explanation": "봤어요 is the polite past form, so it fits 어제."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "어제 밥을 ___. (먹다)",
+      "options": [
+        "먹어요",
+        "먹었어요",
+        "먹을 거예요"
+      ],
+      "correct": "먹었어요",
+      "explanation": "먹다 uses -었어요 in the past: 먹었어요."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "작년에 한국에 ___. (가다)",
+      "options": [
+        "갔어요",
+        "가었어요",
+        "가요"
+      ],
+      "correct": "갔어요",
+      "explanation": "가다 + 았어요 contracts to 갔어요."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Correct the sentence: 어제 날씨가 춥었어요.",
+      "correct": "어제 날씨가 추웠어요.",
+      "explanation": "춥다 is a ㅂ irregular adjective. In the past it becomes 추웠어요, not 춥었어요."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "어땠어요 asks about:",
+      "options": [
+        "how something was in the past",
+        "where someone is now",
+        "what someone will do tomorrow"
+      ],
+      "correct": "how something was in the past",
+      "explanation": "어땠어요 is the past form of 어떻다."
+    },
+    {
+      "type": "translate",
+      "prompt": "Translate: 'I came home late yesterday.'",
+      "correct": "어제 집에 늦게 왔어요.",
+      "hint": "오다 becomes 왔어요 in the past.",
+      "explanation": "집에 왔어요 is the natural way to say you came home. 늦게 describes how the coming happened, so it goes before 왔어요."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "친구___ 영화를 봤어요. (I watched a movie with a friend.)",
+      "options": [
+        "랑",
+        "를",
+        "에"
+      ],
+      "correct": "랑",
+      "explanation": "친구랑 means with a friend. 를 would make the friend the thing watched, and 에 would mark a place or direction."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "어제 영화를 ___ . (보다 → past)",
+      "base": "보다",
+      "form": "past",
+      "correct": "봤어요",
+      "explanation": "보다 contracts in past polite form: 보았어요 becomes 봤어요. 어제 makes the past tense necessary."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'I met a friend yesterday.'",
+      "tokens": [
+        "어제",
+        "친구를 만났어요"
+      ],
+      "correct": "어제 친구를 만났어요",
+      "explanation": "어제 sets the past time, and 만났어요 marks the completed meeting. 친구 is the person met, so 친구를 comes before the verb."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the sentence: '어제 학교에 가요.'",
+      "correct": "어제 학교에 갔어요.",
+      "explanation": "어제 is a past-time word, so the verb must be past tense. 가요 becomes 갔어요."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "Past snapshot: use -았/었어요 for finished events.",
+      "ㅏ/ㅗ usually take -았어요; most other vowels take -었어요.",
+      "Memorize the high-frequency contractions: 했어요, 갔어요, 왔어요, 봤어요.",
+      "First irregular: 춥다/덥다 become 추웠어요/더웠어요."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Answer the question \"What did you do yesterday?\" in 3 sentences about where you went, who you met, and what you ate.",
+    "hint": "Use V았/었어요 for every verb (갔어요, 만났어요, 먹었어요).",
+    "model": "어제 친구를 만났어요. 같이 영화를 봤어요. 그리고 식당에서 밥을 먹었어요.",
+    "modelEn": "Yesterday I met a friend. We watched a movie together. And we ate at a restaurant."
+  },
+  "canDo": [
+    "Say a past action with the polite past tense V았/었어요 (먹었어요 · 갔어요)",
+    "Answer \"what did you do yesterday?\" in one clean sentence (어제 …었어요)",
+    "Conjugate the past tense correctly by vowel harmony (만났어요 · 봤어요 · 했어요)",
+    "Place a past time word at the start (어제 · 지난주 · 작년)"
+  ]
+}

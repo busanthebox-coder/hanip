@@ -1,0 +1,642 @@
+{
+  "id": "chapter-27",
+  "hook": {
+    "situation": "You are texting someone what you are doing right now, why you did not reply, or what happened during another action.",
+    "objectives": [
+      "Use V-고 있어요 for an action in progress.",
+      "Use V-는 중이에요 or N 중이에요 when you are right in the middle of something.",
+      "Use V-는 동안 to show what happens during the same time span."
+    ],
+    "whyItMatters": "Korean does not need a separate word like English 'am/is/are doing.' The ongoing meaning is built with endings and nouns: 공부하고 있어요, 공부하는 중이에요, 공부하는 동안. These forms make Kakao replies and daily updates much more natural."
+  },
+  "grammarNotes": [
+    {
+      "title": "V-고 있다 — an action in progress",
+      "func": "Add -고 있다 to a verb stem to say an action is happening right now. It is the closest match to English 'be -ing' (am/is/are doing).",
+      "formTable": [
+        {
+          "when": "Any verb stem (vowel or consonant): drop -다, add -고 있다",
+          "add": "-고 있다",
+          "ex": "먹다 → 먹고 있다 (eating), 보다 → 보고 있다 (watching)"
+        },
+        {
+          "when": "Polite present (talking now)",
+          "add": "-고 있어요",
+          "ex": "읽다 → 읽고 있어요 (am reading)"
+        },
+        {
+          "when": "Past — 'was -ing'",
+          "add": "-고 있었어요",
+          "ex": "자다 → 자고 있었어요 (was sleeping)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "지금 밥을 먹고 있어요.",
+          "romanization": "jigeum babeul meokgo isseoyo.",
+          "en": "I'm eating right now.",
+          "note": "지금 + -고 있어요 is the go-to pair for something happening this very moment."
+        },
+        {
+          "ko": "친구가 책을 읽고 있어요.",
+          "romanization": "chinguga chaegeul ikko isseoyo.",
+          "en": "My friend is reading a book.",
+          "note": "Other people work the same way; just change the subject to 친구가."
+        },
+        {
+          "ko": "동생이 영화를 보고 있어요.",
+          "romanization": "dongsaengi yeonghwareul bogo isseoyo.",
+          "en": "My little brother is watching a movie.",
+          "note": "보다 ends in a vowel and still just takes -고 있어요 — the rule never changes."
+        },
+        {
+          "ko": "아까 한국어를 공부하고 있었어요.",
+          "romanization": "akka hangugeoreul gongbuhago isseosseoyo.",
+          "en": "I was studying Korean a little while ago.",
+          "note": "-고 있었어요 is the past version: 'was doing.'"
+        }
+      ],
+      "keyPoint": {
+        "label": "-고 있어요 vs. plain -아요/-어요",
+        "body": "먹어요 can mean 'I eat (usually)' or even 'I'll eat.' 먹고 있어요 pins it down to 'I'm eating right now.' Reach for -고 있어요 when you want to make clear the action is happening as you speak."
+      },
+      "pronunciation": "있어요 runs together as [이써요], and -고 tenses to [꼬] after ㄱ, so 먹고 있어요 sounds like [먹꼬 이써요].",
+      "drill": {
+        "instruction": "Say what each person is doing right now with -고 있어요.",
+        "model": "학생 / 공부하다 → 학생이 공부하고 있어요.",
+        "items": [
+          "엄마 / 요리하다 → ____",
+          "친구 / 물을 마시다 → ____",
+          "아빠 / 신문을 보다 → ____"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "나는 한국어를 좋아하고 있어요.",
+        "right": "나는 한국어를 좋아해요.",
+        "explanation": "English can say 'I'm liking it,' but Korean feeling/state verbs like 좋아하다, 알다, 사랑하다 don't take -고 있다 for a current state. Just use the plain present. Save -고 있다 for actions you can actually watch happening."
+      }
+    },
+    {
+      "title": "V-는 중이에요 / N 중이에요 — in the middle of",
+      "func": "중 means 'the middle of.' Add -는 중이에요 to a verb stem, or just 중이에요 to a noun, to say you're 'in the middle of' something right now.",
+      "formTable": [
+        {
+          "when": "Verb stem + -는 중이에요 (vowel or consonant stem)",
+          "add": "-는 중이에요",
+          "ex": "먹다 → 먹는 중이에요 (in the middle of eating)"
+        },
+        {
+          "when": "ㄹ-stem verb: drop ㄹ, then add -는 중이에요",
+          "add": "-는 중이에요",
+          "ex": "만들다 → 만드는 중이에요 (in the middle of making)"
+        },
+        {
+          "when": "Noun + 중이에요 (no 을/를)",
+          "add": " 중이에요",
+          "ex": "회의 → 회의 중이에요 (in a meeting), 공부 → 공부 중이에요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "지금 밥을 먹는 중이에요.",
+          "romanization": "jigeum babeul meongneun jungieyo.",
+          "en": "I'm in the middle of eating right now.",
+          "note": "-는 중이에요 plays up that you're partway through it, not done."
+        },
+        {
+          "ko": "친구를 기다리는 중이에요.",
+          "romanization": "chingureul gidarineun jungieyo.",
+          "en": "I'm waiting for my friend.",
+          "note": "기다리다 ends in a vowel and just takes -는 중이에요."
+        },
+        {
+          "ko": "지금 공부 중이에요.",
+          "romanization": "jigeum gongbu jungieyo.",
+          "en": "I'm studying right now.",
+          "note": "With a noun like 공부, drop the verb and say just 'noun + 중이에요' — no 을/를."
+        },
+        {
+          "ko": "엄마가 전화 중이에요.",
+          "romanization": "eommaga jeonhwa jungieyo.",
+          "en": "Mom is on the phone.",
+          "note": "전화 중이에요 is the set phrase for 'on the phone.'"
+        }
+      ],
+      "keyPoint": {
+        "label": "-는 중이에요 vs. -고 있어요",
+        "body": "Both mean 'be doing,' but -는 중이에요 means you're smack in the middle of one specific action, so it can't describe a lasting state. You can say 한국에 살고 있어요 (I'm living in Korea), but not 사는 중이에요 — 중 needs a action that starts and stops, like eating or waiting."
+      },
+      "pronunciation": "먹는 → ㄱ before ㄴ turns into [ㅇ] (nasal), so 먹는 sounds like [멍는]: [멍는 중이에요].",
+      "drill": {
+        "instruction": "Answer '지금 뭐 해요?' saying you're right in the middle of it, with -는 중이에요 or N 중이에요.",
+        "model": "밥을 먹다 → 밥을 먹는 중이에요.",
+        "items": [
+          "책을 읽다 → ____",
+          "친구를 만나다 → ____",
+          "공부 (noun) → ____"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "밥을 먹는 중에요.",
+        "right": "밥을 먹는 중이에요.",
+        "explanation": "중 is a noun, so it needs 이에요 after it: 중이에요, not 중에요. Learners drop the 이 because it goes by fast when spoken, but the full form keeps 중 + 이에요."
+      }
+    },
+    {
+      "title": "V-는 동안 — while / during",
+      "func": "동안 means 'the whole time of.' Add -는 동안 to a verb stem to say 'while (someone) is doing something.' The main action happens over that same stretch of time.",
+      "formTable": [
+        {
+          "when": "Verb stem + -는 동안 (vowel or consonant stem)",
+          "add": "-는 동안",
+          "ex": "먹다 → 먹는 동안 (while eating), 자다 → 자는 동안 (while sleeping)"
+        },
+        {
+          "when": "ㄹ-stem verb: drop ㄹ, then add -는 동안",
+          "add": "-는 동안",
+          "ex": "살다 → 사는 동안 (while living)"
+        },
+        {
+          "when": "Noun + 동안 ('for / during' a stretch of time)",
+          "add": " 동안",
+          "ex": "한 시간 → 한 시간 동안 (for one hour), 방학 → 방학 동안 (during vacation)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "제가 요리하는 동안 친구는 청소했어요.",
+          "romanization": "jega yorihaneun dongan chinguneun cheongsohaesseoyo.",
+          "en": "While I cooked, my friend cleaned.",
+          "note": "Two people, same time: I cook, my friend cleans."
+        },
+        {
+          "ko": "동생이 자는 동안 저는 책을 읽었어요.",
+          "romanization": "dongsaengi janeun dongan jeoneun chaegeul ilgeosseoyo.",
+          "en": "While my little brother was sleeping, I read a book.",
+          "note": "자다 → 자는 동안. The main verb (past) tells you when it all happened."
+        },
+        {
+          "ko": "밥을 먹는 동안 영화를 봤어요.",
+          "romanization": "babeul meongneun dongan yeonghwareul bwasseoyo.",
+          "en": "I watched a movie while I ate.",
+          "note": "One person doing both at once is fine too."
+        },
+        {
+          "ko": "방학 동안 한국어를 공부할 거예요.",
+          "romanization": "banghak dongan hangugeoreul gongbuhal geoyeyo.",
+          "en": "I'll study Korean during the vacation.",
+          "note": "With a noun like 방학, use just 'noun + 동안' for 'during / for' that time."
+        }
+      ],
+      "keyPoint": {
+        "label": "-는 동안 (always 는) vs. -(으)ㄹ 때",
+        "body": "-는 동안 always keeps -는, no matter the tense, because it marks a whole stretch of time. 때 ('when') points at one moment or occasion; 동안 covers the full length. Use 동안 when one action runs the whole time another is going on."
+      },
+      "pronunciation": "먹는 동안 → 먹는 nasalizes to [멍는] (ㄱ+ㄴ → ㅇ+ㄴ), so it's [멍는 동안].",
+      "drill": {
+        "instruction": "Join the two halves with -는 동안 to mean 'while ___, ___.'",
+        "model": "제가 자다 / 엄마가 요리하다 → 제가 자는 동안 엄마가 요리했어요.",
+        "items": [
+          "친구가 전화하다 / 저는 밥을 먹다 → ____",
+          "제가 공부하다 / 동생이 게임하다 → ____",
+          "비가 오다 / 우리는 집에 있다 → ____"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "밥을 먹었는 동안 영화를 봤어요.",
+        "right": "밥을 먹는 동안 영화를 봤어요.",
+        "explanation": "English puts 'while' on a past verb ('while I ate'), so learners add 었 before 동안. In Korean, -는 동안 stays in the -는 form no matter the tense — only the main clause shows past."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "지금",
+      "romanization": "jigeum",
+      "english": "now",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "지금 뭐 하고 있어요?",
+        "en": "What are you doing now?",
+        "note": "The default opening for an ongoing-action check-in."
+      },
+      "collocations": [
+        "지금 뭐 해요?",
+        "지금 하고 있어요",
+        "지금은 안 돼요"
+      ]
+    },
+    {
+      "hangul": "중",
+      "romanization": "jung",
+      "english": "middle; in progress",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "회의 중이에요.",
+        "en": "I am in a meeting.",
+        "note": "N 중 is a concise status reply."
+      },
+      "collocations": [
+        "회의 중",
+        "전화 중",
+        "먹는 중"
+      ]
+    },
+    {
+      "hangul": "동안",
+      "romanization": "dongan",
+      "english": "during; for a duration",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "기다리는 동안 책을 읽었어요.",
+        "en": "I read a book while waiting.",
+        "note": "동안 marks the overlapping time span."
+      },
+      "collocations": [
+        "기다리는 동안",
+        "회의하는 동안",
+        "한 시간 동안"
+      ]
+    },
+    {
+      "hangul": "공부하다",
+      "romanization": "gongbuhada",
+      "english": "to study",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "한국어를 공부하고 있어요.",
+        "en": "I am studying Korean.",
+        "note": "A basic V-고 있어요 example."
+      },
+      "collocations": [
+        "공부하고 있어요",
+        "공부하는 중",
+        "공부하는 동안"
+      ]
+    },
+    {
+      "hangul": "기다리다",
+      "romanization": "gidarida",
+      "english": "to wait",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "친구를 기다리는 중이에요.",
+        "en": "I am waiting for a friend.",
+        "note": "Waiting is a natural ongoing action."
+      },
+      "collocations": [
+        "기다리고 있어요",
+        "기다리는 중",
+        "기다리는 동안"
+      ]
+    },
+    {
+      "hangul": "전화하다",
+      "romanization": "jeonhwahada",
+      "english": "to call by phone",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "지금 전화하는 중이에요.",
+        "en": "I am on a call right now.",
+        "note": "전화 중이에요 is also common."
+      },
+      "collocations": [
+        "전화하고 있어요",
+        "전화하는 중",
+        "전화 중"
+      ]
+    },
+    {
+      "hangul": "회의",
+      "romanization": "hoeui",
+      "english": "meeting",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "회의하는 동안 메시지를 못 봤어요.",
+        "en": "I could not see the message during the meeting.",
+        "note": "A common reason for a delayed reply."
+      },
+      "collocations": [
+        "회의 중",
+        "회의하다",
+        "회의하는 동안"
+      ]
+    },
+    {
+      "hangul": "메시지",
+      "romanization": "mesiji",
+      "english": "message",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "메시지를 못 봤어요.",
+        "en": "I did not see the message.",
+        "note": "Often explained with an ongoing action."
+      },
+      "collocations": [
+        "메시지를 보다",
+        "메시지를 보내다",
+        "메시지를 못 보다"
+      ]
+    },
+    {
+      "hangul": "아직",
+      "romanization": "ajik",
+      "english": "still; yet",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "아직 회의 중이에요.",
+        "en": "I am still in a meeting.",
+        "note": "아직 pairs naturally with ongoing status."
+      },
+      "collocations": [
+        "아직 하는 중",
+        "아직 안 끝났어요",
+        "아직 기다리고 있어요"
+      ]
+    },
+    {
+      "hangul": "벌써",
+      "romanization": "beolsseo",
+      "english": "already",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "벌써 끝났어요?",
+        "en": "Is it already finished?",
+        "note": "Contrasts naturally with 아직."
+      },
+      "collocations": [
+        "벌써 끝나다",
+        "벌써 왔어요",
+        "벌써 다 했어요"
+      ]
+    },
+    {
+      "hangul": "계속",
+      "romanization": "gyesok",
+      "english": "continuously; keep doing",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "계속 공부하고 있어요.",
+        "en": "I am still studying / I keep studying.",
+        "note": "계속 emphasizes the action continues."
+      },
+      "collocations": [
+        "계속 하다",
+        "계속 기다리다",
+        "계속 공부하다"
+      ]
+    },
+    {
+      "hangul": "잠깐",
+      "romanization": "jamkkan",
+      "english": "for a moment; briefly",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "잠깐 쉬고 있어요.",
+        "en": "I am resting for a moment.",
+        "note": "Useful for short status updates."
+      },
+      "collocations": [
+        "잠깐만요",
+        "잠깐 기다리다",
+        "잠깐 쉬다"
+      ]
+    },
+    {
+      "hangul": "일하다",
+      "romanization": "ilhada",
+      "english": "to work",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "지금 일하는 중이에요.",
+        "en": "I am working right now.",
+        "note": "Natural quick reply to why you cannot talk."
+      },
+      "collocations": [
+        "일하고 있어요",
+        "일하는 중",
+        "일하는 동안"
+      ]
+    },
+    {
+      "hangul": "쉬다",
+      "romanization": "swida",
+      "english": "to rest",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "잠깐 쉬고 있어요.",
+        "en": "I am resting for a moment.",
+        "note": "A simple ongoing action."
+      },
+      "collocations": [
+        "쉬고 있어요",
+        "쉬는 중",
+        "쉬는 동안"
+      ]
+    },
+    {
+      "hangul": "먹다",
+      "romanization": "meokda",
+      "english": "to eat",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "지금 밥 먹는 중이에요.",
+        "en": "I am eating right now.",
+        "note": "먹다 becomes 먹는 before 중."
+      },
+      "collocations": [
+        "먹고 있어요",
+        "먹는 중",
+        "먹는 동안"
+      ]
+    },
+    {
+      "hangul": "만들다",
+      "romanization": "mandeulda",
+      "english": "to make",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "발표 자료를 만드는 중이에요.",
+        "en": "I am making presentation materials.",
+        "note": "ㄹ drops before 는: 만드는."
+      },
+      "collocations": [
+        "만들고 있어요",
+        "만드는 중",
+        "만드는 동안"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "A KakaoTalk check-in about current status and a delayed reply.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "지금 뭐 하고 있어요?",
+        "romanization": "jigeum mwo hago isseoyo?",
+        "en": "What are you doing right now?",
+        "grammarNote": "-고 있어요 asks about an action in progress."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "도서관에서 한국어를 공부하고 있어요.",
+        "romanization": "doseogwaneseo hangugeoreul gongbuhago isseoyo.",
+        "en": "I am studying Korean at the library.",
+        "grammarNote": "공부하고 있어요 gives the ongoing action."
+      },
+      {
+        "speaker": "민서",
+        "ko": "저는 카페에서 친구를 기다리는 중이에요.",
+        "romanization": "jeoneun kapeeseo chingureul gidarineun jungieyo.",
+        "en": "I am waiting for a friend at a cafe.",
+        "grammarNote": "-는 중이에요 zooms in on the current task."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "아까 회의하는 동안 메시지를 못 봤어요.",
+        "romanization": "akka hoeuihaneun dongan mesijireul mot bwasseoyo.",
+        "en": "Earlier, I could not see the message during the meeting.",
+        "grammarNote": "-는 동안 gives the overlapping time span."
+      },
+      {
+        "speaker": "민서",
+        "ko": "괜찮아요. 끝나면 잠깐 전화해 주세요.",
+        "romanization": "gwaenchanayo. kkeunnamyeon jamkkan jeonhwahae juseyo.",
+        "en": "It is okay. Please call for a moment when you finish.",
+        "grammarNote": "A natural follow-up after hearing the status."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "Why the reply was late",
+    "body": "지훈은 도서관에서 한국어를 공부하고 있었어요. 민서가 메시지를 보냈지만 지훈은 바로 답장하지 못했어요. 그때 지훈은 회의하는 동안 휴대폰을 보지 못했고, 회의가 끝난 뒤에도 발표 자료를 만드는 중이었어요. 민서는 카페에서 친구를 기다리는 중이라 시간이 조금 있었어요. 그래서 두 사람은 지훈이 끝나면 잠깐 전화하기로 했어요.",
+    "bodyTranslation": "Jihoon was studying Korean at the library. Minseo sent a message, but Jihoon could not reply right away. During the meeting he could not check his phone, and after the meeting he was still making presentation materials. Minseo had a little time because she was waiting for a friend at a cafe, so they decided to call briefly when Jihoon finished.",
+    "comprehensionQuestions": [
+      {
+        "question": "지훈은 어디에서 한국어를 공부하고 있었어요?",
+        "answer": "도서관에서 한국어를 공부하고 있었어요."
+      },
+      {
+        "question": "지훈은 왜 메시지를 바로 못 봤어요?",
+        "answer": "회의하는 동안 휴대폰을 보지 못했어요."
+      },
+      {
+        "question": "민서는 무엇을 하고 있었어요?",
+        "answer": "카페에서 친구를 기다리는 중이었어요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "Short status replies",
+    "body": "In Korean messaging, short status replies like 회의 중이에요, 가는 중이에요, and 지금 공부하고 있어요 are common and polite. They explain availability without over-explaining.",
+    "tip": "Use N 중이에요 for quick status, and V-고 있어요 when you want to state the actual action."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence describes an action in progress?",
+      "options": [
+        "한국어를 공부하고 있어요.",
+        "한국어를 공부했어요.",
+        "한국어를 공부할 거예요."
+      ],
+      "correct": "한국어를 공부하고 있어요.",
+      "explanation": "-고 있어요 marks an ongoing action."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence is the best short status reply?",
+      "options": [
+        "회의 중이에요.",
+        "회의가 될 거예요.",
+        "회의를 좋아해요."
+      ],
+      "correct": "회의 중이에요.",
+      "explanation": "N 중이에요 is a compact way to say an activity is in progress."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "During the meeting, I could not see the message.",
+      "options": [
+        "회의하는 동안 메시지를 못 봤어요.",
+        "회의하려고 메시지를 못 봤어요.",
+        "회의보다 메시지를 못 봤어요."
+      ],
+      "correct": "회의하는 동안 메시지를 못 봤어요.",
+      "explanation": "-는 동안 gives the time span during another action."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Complete: 친구를 기다리___ 중이에요.",
+      "explanation": "Use the verb modifier -는 before 중: 기다리는 중이에요.",
+      "correct": "는"
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the sentence: 저는 바쁘고 있어요.",
+      "explanation": "Do not attach -고 있어요 to adjectives. Use a direct adjective or an action verb.",
+      "correct": "저는 바빠요. / 지금 일하고 있어요."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "회의___ 하는 중이에요. (I am in the middle of a meeting.)",
+      "options": [
+        "를",
+        "가",
+        "에"
+      ],
+      "correct": "를",
+      "explanation": "회의를 하다 is the action phrase “to have/do a meeting.” 회의를 하는 중이에요 means you are in the middle of that action."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "지금 한국어를 ___ . (공부하다 → in progress)",
+      "base": "공부하다",
+      "form": "progressive",
+      "correct": "공부하고 있어요",
+      "explanation": "-고 있어요 marks an action currently in progress. 공부하다 becomes 공부하고 있어요."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'I am waiting for a friend now.' (Start with 지금.)",
+      "tokens": [
+        "지금",
+        "친구를",
+        "기다리고 있어요"
+      ],
+      "correct": "지금 친구를 기다리고 있어요",
+      "explanation": "지금 sets the current moment. 기다리고 있어요 shows the waiting is happening now."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Say: 'I'm in a meeting.'",
+      "correct": "회의 중이에요.",
+      "explanation": "N 중이에요 is the compact way to say you are in the middle of a noun activity. 회의 중이에요 is a natural short status reply."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the sentence: '공부하고 동안 메시지를 못 봤어요.'",
+      "correct": "공부하는 동안 메시지를 못 봤어요.",
+      "explanation": "동안 needs the modifier form before it. 공부하다 becomes 공부하는 동안, not 공부하고 동안."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "V-고 있어요 marks an action in progress: 한국어를 공부하고 있어요.",
+      "V-는 중이에요 and N 중이에요 focus on being in the middle of something: 회의 중이에요.",
+      "V-는 동안 marks an overlapping time span: 회의하는 동안 메시지를 못 봤어요.",
+      "Do not use -고 있어요 with adjectives like 바쁘다 or 피곤하다."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Reply to a friend's message saying what you're doing right now and asking them to wait a moment.",
+    "hint": "Use V-고 있다 for an action in progress (공부하고 있어요), V-는 중이에요 for 'in the middle of' (회의 중이에요), and V-는 동안 for 'while' (기다리는 동안).",
+    "model": "지금 회의하는 중이에요. 친구를 기다리는 동안 메시지를 보내요. 잠깐만요, 지금 일하고 있어요.",
+    "modelEn": "I'm in the middle of a meeting right now. I'm sending this message while waiting for a friend. Just a moment, I'm working right now."
+  },
+  "canDo": [
+    "Say an action is in progress with V-고 있다 (공부하고 있어요)",
+    "Say I'm in the middle of something with V-는 중이에요 (회의 중이에요)",
+    "Set one action against a stretch of time with V-는 동안 (기다리는 동안)"
+  ]
+}

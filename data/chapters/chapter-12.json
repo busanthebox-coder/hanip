@@ -1,0 +1,661 @@
+{
+  "id": "chapter-12",
+  "hook": {
+    "situation": "You just finished watching a Korean film with a friend. She asks '이 영화 어땠어요?' You want to say it was a bit slow — but you don't want to sound too blunt. You try '좀 느려요' and it sounds like you're stating a fact. Your friend raises an eyebrow. In Korean, the difference between 'it IS slow' and 'it SEEMS slow' is one short grammar ending — and natives use the softer version almost every time.",
+    "objectives": [
+      "Use -는 것 같다 to express soft opinions and guesses without sounding arrogant",
+      "Use -잖아(요) to remind someone of something you both already know",
+      "Use -거든(요) to introduce new background information as a reason or explanation"
+    ],
+    "whyItMatters": "At B1 level, the gap between textbook Korean and real conversation is mostly about hedging. Koreans rarely state opinions as bare facts — they soften them with -것 같다, link them to shared knowledge with -잖아, or introduce reasons with -거든. Learn these three endings and you'll immediately sound less like a robot and more like someone who understands Korean social nuance."
+  },
+  "grammarNotes": [
+    {
+      "title": "-는 것 같다 — soft opinions and impressions",
+      "func": "Use -는 것 같다 to say 'it seems / I think / probably' instead of stating something as a flat fact. It softens your opinion so you sound less blunt and more polite, even when you're fairly sure.",
+      "formTable": [
+        {
+          "when": "Action verb, present (happening now)",
+          "add": "verb stem + 는 것 같다",
+          "ex": "오다 → 오는 것 같다 (seems to be coming); 먹다 → 먹는 것 같다"
+        },
+        {
+          "when": "Adjective, present (vowel-ending stem)",
+          "add": "stem + ㄴ 것 같다",
+          "ex": "비싸다 → 비싼 것 같다 (seems expensive); 크다 → 큰 것 같다"
+        },
+        {
+          "when": "Adjective, present (받침-ending stem)",
+          "add": "stem + 은 것 같다",
+          "ex": "작다 → 작은 것 같다 (seems small); 좋다 → 좋은 것 같다"
+        },
+        {
+          "when": "Verb, past",
+          "add": "stem + (으)ㄴ 것 같다",
+          "ex": "가다 → 간 것 같다 (seems to have gone); 먹다 → 먹은 것 같다"
+        },
+        {
+          "when": "Future / guess",
+          "add": "stem + (으)ㄹ 것 같다",
+          "ex": "오다 → 올 것 같다 (will probably come); 없다 → 없을 것 같다"
+        },
+        {
+          "when": "Noun",
+          "add": "noun + 인 것 같다",
+          "ex": "학생 → 학생인 것 같다 (seems to be a student)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "지금 밖에 비가 오는 것 같아요.",
+          "romanization": "jigeum bakke biga oneun geot gatayo.",
+          "en": "It seems to be raining outside right now.",
+          "note": "Action verb, present: 오는 것 같다, because the rain is happening now."
+        },
+        {
+          "ko": "이 책은 좀 어려운 것 같아요.",
+          "romanization": "i chaegeun jom eoryeoun geot gatayo.",
+          "en": "This book seems a bit hard.",
+          "note": "Adjective 어렵다 (받침, ㅂ-irregular) → 어려운 것 같다; softer than just 어려워요."
+        },
+        {
+          "ko": "친구가 벌써 집에 간 것 같아요.",
+          "romanization": "chinguga beolsseo jibe gan geot gatayo.",
+          "en": "It seems my friend already went home.",
+          "note": "Past guess: 가다 → 간 것 같다 for something that already happened."
+        },
+        {
+          "ko": "내일은 시간이 없을 것 같아요.",
+          "romanization": "naeireun sigani eopseul geot gatayo.",
+          "en": "I probably won't have time tomorrow.",
+          "note": "Future/guess: 없다 → 없을 것 같다; a gentle, indirect way to say no."
+        }
+      ],
+      "keyPoint": {
+        "label": "present 는 것 같다 vs future 을 것 같다",
+        "body": "Use -는 것 같다 for something you can sense right now (비가 오는 것 같아요 — I can hear/see it). Use -(으)ㄹ 것 같다 for a guess about the future or when you have no direct evidence yet (비가 올 것 같아요 — the sky looks like it). For the past, use -(으)ㄴ 것 같다 (간 것 같아요). Don't worry about every irregular form yet — just get the present/past/future split right."
+      },
+      "pronunciation": "것 같다 sounds like [걷 깓따]: 것 ends in a [t], which tenses the next ㄱ so 같 comes out as [깓]. In casual speech it often blurs to [거 같아요].",
+      "drill": {
+        "instruction": "Soften each blunt statement into a -는 것 같다 impression. Watch the tense.",
+        "model": "이 영화 재미있어요. → 이 영화 재미있는 것 같아요.",
+        "items": [
+          "그 식당 비싸요. → ____ (adjective, present)",
+          "친구가 아까 밥을 먹었어요. → ____ (past guess)",
+          "내일 날씨가 추워요. → ____ (future guess)"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "나는 이 책이 어려운 것 같다고 생각해요.",
+        "right": "이 책은 어려운 것 같아요.",
+        "explanation": "English speakers tack a separate '나는 ~ 생각해요' (I think) onto -는 것 같다, but -는 것 같다 already means 'I think / it seems,' so you'd be saying it twice. Also, 것 같다 changes with tense (present 어려운, past 어려웠던, future 어려울) — English 'seems' stays the same, Korean doesn't."
+      }
+    },
+    {
+      "title": "-잖아(요) vs -거든(요) — shared info vs new info",
+      "func": "Both end a sentence to give a reason or background, but they point in opposite directions. -잖아(요) reminds the listener of something you BOTH already know ('you know...', 'remember?'). -거든(요) gives information that's NEW to the listener, often the reason behind what you just said.",
+      "formTable": [
+        {
+          "when": "-잖아요 after a verb/adjective stem (present)",
+          "add": "stem + 잖아요",
+          "ex": "있다 → 있잖아요; 바쁘다 → 바쁘잖아요 (you know I'm busy)"
+        },
+        {
+          "when": "-잖아요 after past",
+          "add": "stem + 았/었/했 + 잖아요",
+          "ex": "가다 → 갔잖아요 (we did go, remember); 먹다 → 먹었잖아요"
+        },
+        {
+          "when": "-잖아요 after a noun",
+          "add": "noun + (이)잖아요",
+          "ex": "학생 → 학생이잖아요; 친구 → 친구잖아요"
+        },
+        {
+          "when": "-거든요 after a verb/adjective stem (present)",
+          "add": "stem + 거든요",
+          "ex": "바쁘다 → 바쁘거든요 (the thing is, I'm busy); 좋다 → 좋거든요"
+        },
+        {
+          "when": "-거든요 after past",
+          "add": "stem + 았/었/했 + 거든요",
+          "ex": "가다 → 갔거든요 (the thing is, I went); 먹다 → 먹었거든요"
+        },
+        {
+          "when": "-거든요 after a noun",
+          "add": "noun + (이)거든요",
+          "ex": "학생 → 학생이거든요; 친구 → 친구거든요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "빨리 가요. 우리 시간 없잖아요.",
+          "romanization": "ppalli gayo. uri sigan eopjanayo.",
+          "en": "Let's hurry. We don't have time, you know.",
+          "note": "-잖아요: the listener already knows time is short; you're reminding them."
+        },
+        {
+          "ko": "어제 그 영화 같이 봤잖아요. 진짜 재미있었어요.",
+          "romanization": "eoje geu yeonghwa gachi bwatjanayo. jinjja jaemiisseosseoyo.",
+          "en": "We watched that movie together yesterday, remember? It was really fun.",
+          "note": "-잖아요 over a shared memory ('remember?')."
+        },
+        {
+          "ko": "A: 왜 안 와요? B: 지금 일이 많거든요.",
+          "romanization": "A: wae an wayo? B: jigeum iri mankeodeunyo.",
+          "en": "A: Why aren't you coming? B: The thing is, I've got a lot of work right now.",
+          "note": "-거든요: B's workload is NEW info that answers A's question."
+        },
+        {
+          "ko": "요즘 한국어를 공부해요. 다음 달에 한국에 가거든요.",
+          "romanization": "yojeum hangugeoreul gongbuhaeyo. daeum dare hanguge gageodeunyo.",
+          "en": "I'm studying Korean these days. It's because I'm going to Korea next month.",
+          "note": "-거든요 gives the new reason behind the first sentence."
+        }
+      ],
+      "keyPoint": {
+        "label": "-잖아요 (you know) vs -거든요 (the thing is)",
+        "body": "Ask yourself: does the listener already know this? If YES, use -잖아요 ('you know...', 'remember?'). If NO and you're telling them for the first time, use -거든요 ('the thing is...', 'because...'). Using -잖아요 for brand-new info can sound like you're scolding them for not already knowing."
+      },
+      "pronunciation": "-잖아요 is pronounced [자나요]: 잖 has a silent ㅎ in its 받침, so it just links smoothly into 아요. -거든요 is simply [거든뇨], with the final 요 tucked on — no special change.",
+      "drill": {
+        "instruction": "Choose -잖아요 (shared knowledge) or -거든요 (new info) and finish the sentence.",
+        "model": "(reminding a friend you both know it's closed today) 오늘 문 닫았잖아요.",
+        "items": [
+          "(reminding: we both know she's busy) 민수 씨한테 부탁하지 마세요. 그 사람 요즘 ____ .",
+          "(new reason why you can't eat it) 저는 그거 안 먹어요. 제가 채식주의자____ .",
+          "(reminding: we already paid) 또 돈 내요? 우리 아까 ____ ."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "저 지금 못 가요. 일이 많잖아요.",
+        "right": "저 지금 못 가요. 일이 많거든요.",
+        "explanation": "English uses one phrase, 'because / you see,' for both situations, so learners reach for -잖아요 every time. But if the listener doesn't already know your reason, -잖아요 wrongly implies 'as you obviously know,' which sounds blaming. For information you're sharing for the first time, you need -거든요."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "생각",
+      "romanization": "saenggak",
+      "english": "thought, opinion, idea",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "제 생각에는 이 방법이 더 좋을 것 같아요.",
+        "en": "In my opinion, I think this method is better.",
+        "note": "제 생각에는 = 'in my view' — a standard phrase for introducing soft opinions in conversation"
+      },
+      "collocations": [
+        "제 생각에는",
+        "생각하다",
+        "생각이 다르다",
+        "같은 생각이에요"
+      ]
+    },
+    {
+      "hangul": "의견",
+      "romanization": "uigyeon",
+      "english": "opinion, view",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "당신의 의견을 말해 주세요.",
+        "en": "Please share your opinion.",
+        "note": "More formal than 생각 — used in meetings, discussions, and written Korean"
+      },
+      "collocations": [
+        "의견을 말하다",
+        "의견이 다르다",
+        "의견을 나누다",
+        "반대 의견"
+      ]
+    },
+    {
+      "hangul": "이유",
+      "romanization": "iyu",
+      "english": "reason",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "이유가 있거든요. 설명할게요.",
+        "en": "There's a reason, you see. Let me explain.",
+        "note": "-거든요 introduces the fact of having a reason as new information, then promises the full explanation"
+      },
+      "collocations": [
+        "이유가 있다",
+        "이유를 설명하다",
+        "특별한 이유",
+        "이유 없이"
+      ]
+    },
+    {
+      "hangul": "지루하다",
+      "romanization": "jirukhada",
+      "english": "to be boring, tedious",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "그 강의 진짜 지루한 것 같아요.",
+        "en": "That lecture seems really boring.",
+        "note": "Adjective → -(으)ㄴ 것 같다: 지루한 것 같다. Bare 지루해요 would sound like a harsh verdict"
+      },
+      "collocations": [
+        "지루한 것 같다",
+        "지루하게 느끼다",
+        "지루하지 않다"
+      ]
+    },
+    {
+      "hangul": "재미있다",
+      "romanization": "jaemiitda",
+      "english": "to be interesting, fun",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "저는 재미있었거든요. 오히려 좋았어요.",
+        "en": "I found it fun, actually. I rather liked it.",
+        "note": "-거든요: introducing a contrasting opinion the other person didn't know you held — new information to explain your reaction"
+      },
+      "collocations": [
+        "재미있는 것 같다",
+        "재미있게 봤다",
+        "꽤 재미있어요"
+      ]
+    },
+    {
+      "hangul": "전개",
+      "romanization": "jeongae",
+      "english": "development, pacing (of a story)",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "이 소설은 전개가 느린 것 같아요.",
+        "en": "I think this novel's pacing is slow.",
+        "note": "느리다 is an adjective → 느린 것 같다. 전개 is commonly used in film and book reviews"
+      },
+      "collocations": [
+        "전개가 빠르다/느리다",
+        "이야기 전개",
+        "전개 방식"
+      ]
+    },
+    {
+      "hangul": "결말",
+      "romanization": "gyeolmal",
+      "english": "ending, conclusion (of a story)",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "결말이 좀 아쉬운 것 같아요.",
+        "en": "I think the ending was a bit disappointing.",
+        "note": "아쉽다 (to feel a lack, to be slightly disappointing) → 아쉬운 것 같다. Softening a criticism with -것 같다 is natural here"
+      },
+      "collocations": [
+        "결말이 좋다/나쁘다",
+        "예상치 못한 결말",
+        "결말을 보다"
+      ]
+    },
+    {
+      "hangul": "배우",
+      "romanization": "baeu",
+      "english": "actor/actress",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "그 배우 연기 정말 잘하거든요. 꼭 봐 보세요.",
+        "en": "That actor is genuinely great at acting, you see. Definitely watch it.",
+        "note": "-거든요 here shares a personal assessment as new information, then follows up with a recommendation"
+      },
+      "collocations": [
+        "배우가 연기하다",
+        "좋아하는 배우",
+        "신인 배우",
+        "유명한 배우"
+      ]
+    },
+    {
+      "hangul": "연기",
+      "romanization": "yeongi",
+      "english": "acting, performance",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "연기가 자연스러운 것 같아요.",
+        "en": "The acting seems natural.",
+        "note": "자연스럽다 (to be natural) → irregular: 자연스러운 것 같다. The ㅂ irregular applies here"
+      },
+      "collocations": [
+        "연기를 잘하다",
+        "연기가 좋다",
+        "연기력이 뛰어나다"
+      ]
+    },
+    {
+      "hangul": "아쉽다",
+      "romanization": "aswipda",
+      "english": "to feel a slight lack, to be a (gentle) disappointment",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "끝이 좀 아쉬운 것 같아요.",
+        "en": "I think the end was a bit unsatisfying.",
+        "note": "ㅂ irregular adjective: 아쉽다 → 아쉬운 것 같다. This exact phrase is very common in Korean reviews and casual talk"
+      },
+      "collocations": [
+        "아쉬운 점",
+        "좀 아쉽네요",
+        "아쉬운 것 같아요",
+        "아쉬움이 남다"
+      ]
+    },
+    {
+      "hangul": "주인공",
+      "romanization": "juingong",
+      "english": "main character, protagonist",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "주인공이 너무 완벽한 것 같아요.",
+        "en": "The protagonist seems a bit too perfect.",
+        "note": "완벽하다 (to be perfect) → 완벽한 것 같다. Common critique in drama reviews"
+      },
+      "collocations": [
+        "주인공 역할",
+        "주인공을 맡다",
+        "주인공이 마음에 들다"
+      ]
+    },
+    {
+      "hangul": "공감하다",
+      "romanization": "gonggamhada",
+      "english": "to empathize, to relate to",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "그 인물한테 공감하기 어려운 것 같아요.",
+        "en": "I think it's hard to relate to that character.",
+        "note": "공감하기 어렵다 = 'it's hard to empathize' — the -기 turns 공감하다 into a noun, then 어렵다 (hard) applies → 어려운 것 같다"
+      },
+      "collocations": [
+        "공감이 되다",
+        "공감하기 어렵다",
+        "공감대를 형성하다"
+      ]
+    },
+    {
+      "hangul": "개인적으로",
+      "romanization": "gaeinjeoguro",
+      "english": "personally, in my personal opinion",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "개인적으로는 이 영화가 좀 과대평가된 것 같아요.",
+        "en": "Personally, I think this movie is a bit overrated.",
+        "note": "개인적으로 + -것 같다 is a double-hedging strategy very common in Korean — softens with both 'personally' and 'seems'"
+      },
+      "collocations": [
+        "개인적으로는",
+        "개인적인 의견",
+        "개인적인 생각"
+      ]
+    },
+    {
+      "hangul": "솔직히",
+      "romanization": "soljiki",
+      "english": "honestly, frankly",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "솔직히 말하면 좀 실망했거든요.",
+        "en": "To be honest, I was a bit disappointed, you see.",
+        "note": "-거든요 after an honest admission: the speaker is sharing the real reason/feeling the listener may not have guessed"
+      },
+      "collocations": [
+        "솔직히 말하면",
+        "솔직히 말해서",
+        "솔직한 의견"
+      ]
+    },
+    {
+      "hangul": "평가하다",
+      "romanization": "pyeonggahada",
+      "english": "to evaluate, to review",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "사람마다 다르게 평가하는 것 같아요.",
+        "en": "It seems everyone evaluates it differently.",
+        "note": "Verb → -는 것 같다: 평가하는 것 같다. Using this form for a general observation about people in general is very natural"
+      },
+      "collocations": [
+        "높이 평가하다",
+        "평가가 좋다/나쁘다",
+        "긍정적으로 평가하다"
+      ]
+    },
+    {
+      "hangul": "기대하다",
+      "romanization": "gidaehada",
+      "english": "to expect, to look forward to",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "기대했는데 좀 아쉬웠거든요.",
+        "en": "I had high expectations, so I was a bit let down, you see.",
+        "note": "-거든요 again here: explaining personal background (had expectations) that the listener didn't know — this is why the disappointment makes sense"
+      },
+      "collocations": [
+        "기대가 크다",
+        "기대 이상이다",
+        "기대에 못 미치다",
+        "기대하다"
+      ]
+    },
+    {
+      "hangul": "추천하다",
+      "romanization": "chucheonhada",
+      "english": "to recommend",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "이 드라마 추천할 만한 것 같아요.",
+        "en": "I think this drama is worth recommending.",
+        "note": "추천할 만하다 = 'worth recommending' → 추천할 만한 것 같다. The -(으)ㄹ 만한 것 같다 construction softens a recommendation"
+      },
+      "collocations": [
+        "추천해 주다",
+        "강력 추천",
+        "추천을 받다",
+        "추천 영화"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Minjun and Yujin are having coffee after watching a film at the cinema. They're comparing their reactions.",
+    "lines": [
+      {
+        "speaker": "민준",
+        "ko": "유진 씨, 영화 어땠어요? 저는 좀 아쉬웠어요. 기대가 컸거든요.",
+        "romanization": "Yujin ssi, yeonghwa eottaesseoyo? Jeoneun jom aswiwosseoyo. Gidaega keotgeodeunyo.",
+        "en": "Yujin, how was the movie? I was a bit disappointed. My expectations were high, you see.",
+        "grammarNote": "-거든요: Minjun gives the background reason for his disappointment. 기대가 컸거든요 explains why 아쉬웠어요 makes sense."
+      },
+      {
+        "speaker": "유진",
+        "ko": "그래요? 저는 꽤 재미있었는데요. 전개가 좀 느린 것 같긴 했지만.",
+        "romanization": "Geuraeyo? Jeoneun kkwae jaemiisseonneundeyo. Jeongaega jom neurin geot gatgin haetjiman.",
+        "en": "Really? I found it quite fun. Though I did think the pacing was a bit slow.",
+        "grammarNote": "-는 것 같긴 했지만: conceding a partial criticism (slow pacing) using -것 같다 in the past; 긴 했지만 = 'though it did seem that way'"
+      },
+      {
+        "speaker": "민준",
+        "ko": "맞아요! 전개가 너무 느리잖아요. 2시간 동안 뭔가 일어나는 게 별로 없었어요.",
+        "romanization": "Majayo! Jeongaega neomu neurijanayo. Du-sigan dongan mwonga ireonaneun ge byeollo eopseosseoyo.",
+        "en": "Right! The pacing really is too slow, you know. Not much happens in those two hours.",
+        "grammarNote": "-잖아요: both viewers just experienced the film, so the slow pacing is shared observable knowledge — Minjun is nudging Yujin to agree"
+      },
+      {
+        "speaker": "유진",
+        "ko": "음, 그래도 배우들 연기가 굉장히 좋은 것 같았어요.",
+        "romanization": "Eum, geuraedo baeudeul yeongiga goengjanghi joeun geot gatassoyo.",
+        "en": "Hmm, but I thought the acting was really good though.",
+        "grammarNote": "-것 같았어요: past tense of -것 같다, expressing a personal impression during and after watching"
+      },
+      {
+        "speaker": "민준",
+        "ko": "그건 저도 동의해요. 특히 주인공 배우가 정말 잘하거든요.",
+        "romanization": "Geugeon jeodo donguihaeyo. Teuki juingong baeuga jeongmal jalhageodeunyo.",
+        "en": "I agree on that. Especially the lead actor — they're genuinely great, you see.",
+        "grammarNote": "-거든요: Minjun adds this as a reason or supporting fact the listener may not have fully appreciated yet"
+      },
+      {
+        "speaker": "유진",
+        "ko": "맞아요, 연기가 자연스러운 것 같아요. 억지스럽지 않잖아요.",
+        "romanization": "Majayo, yeongiga jayeonseureoun geot gatayo. Eokjiseureopji anjanayo.",
+        "en": "Exactly, the acting seems natural. It's not forced, you know.",
+        "grammarNote": "Two different endings: 자연스러운 것 같아요 (soft impression) + 억지스럽지 않잖아요 (shared observable fact — both can see it's not forced)"
+      },
+      {
+        "speaker": "민준",
+        "ko": "그래서 결말이 좀 더 강했으면 좋았을 것 같아요. 솔직히 좀 아쉬웠거든요.",
+        "romanization": "Geuraeseo gyeolmari jom deo ganghaesseumyeon joasseul geot gatayo. Soljiki jom aswieotgeodeunyo.",
+        "en": "That's why I think it would've been better if the ending were stronger. Honestly, I was a bit disappointed, you see.",
+        "grammarNote": "-것 같아요 on a conditional (강했으면 좋았을 것 같다) softens what would otherwise sound like demanding criticism; -거든요 introduces the honest emotional reaction"
+      },
+      {
+        "speaker": "유진",
+        "ko": "개인적으로는 이런 열린 결말을 좋아하거든요. 생각할 거리가 많잖아요.",
+        "romanization": "Gaeinjeogeuro-neun ireon yeollin gyeolmareul joahageodeunyo. Saenggakhal georiga manchanayo.",
+        "en": "Personally, I like open endings like this, you see. There's a lot to think about, you know.",
+        "grammarNote": "개인적으로는 + -거든요 = double personal-framing; then -잖아요 to invite agreement on the 'lots to think about' observation"
+      }
+    ]
+  },
+  "readingText": {
+    "type": "sms",
+    "title": "영화 보고 나서 (After the Movie)",
+    "body": "유진: 민준 씨, 아까 그 영화 어땠어요? 저는 꽤 좋았거든요.\n민준: 저는 좀 아쉬웠어요. 기대가 너무 컸던 것 같아요.\n유진: 아, 그래요? 전 결말이 인상적인 것 같았는데.\n민준: 저는 결말이 좀 급한 것 같았어요. 그리고 스토리가 단순한 것 같기도 하고요.\n유진: 음... 그래도 배우들 연기만큼은 정말 좋았잖아요.\n민준: 그건 맞아요. 특히 주인공 배우가 굉장한 것 같아요. 이제 팬이 됐거든요!\n유진: 저도요! 다음에 그 배우 나오는 드라마 같이 봐요.",
+    "bodyTranslation": "Yujin: Minjun, how was that movie earlier? I quite liked it, you see.\nMinjun: I was a bit disappointed. I think my expectations were too high.\nYujin: Oh, really? I thought the ending was impressive.\nMinjun: I thought the ending felt a bit rushed. And I thought the story was kind of simple too.\nYujin: Hmm... But the acting was really good, you know.\nMinjun: That's true. Especially the lead actor seems amazing. I've become a fan, you see!\nYujin: Me too! Next time let's watch the drama that actor's in together.",
+    "comprehensionQuestions": [
+      {
+        "question": "How does Minjun feel about the movie overall? What specific issues does he mention?",
+        "answer": "Minjun was disappointed (아쉬웠어요). He thought his expectations were too high (기대가 너무 컸던 것 같아요), the ending felt rushed (결말이 좀 급한 것 같았어요), and the story was a bit simple (스토리가 단순한 것 같기도 하고요)."
+      },
+      {
+        "question": "What do both Minjun and Yujin agree on?",
+        "answer": "They both agree the acting was great, especially the lead actor (배우들 연기만큼은 정말 좋았잖아요 / 주인공 배우가 굉장한 것 같아요). They both became fans of the actor (저도요!)."
+      },
+      {
+        "question": "Find every -것 같다, -잖아요, and -거든요 in the text. For each one, explain why that ending was chosen and not one of the other two.",
+        "answer": "1) 기대가 너무 컸던 것 같아요 — Minjun uses -것 같다 (past: -던 것 같다) to frame his high expectations as a personal impression/self-reflection, softening self-criticism. 2) 결말이 인상적인 것 같았는데 — Yujin hedges her positive reaction as a personal impression (past -것 같다), not a fact. 3) 결말이 좀 급한 것 같았어요 and 스토리가 단순한 것 같기도 하고요 — Minjun consistently uses -것 같다 to soften criticisms into impressions. 4) 배우들 연기만큼은 정말 좋았잖아요 — -잖아요 fits here because both speakers JUST WATCHED the film together — the good acting is shared, observable knowledge Yujin is reminding Minjun of. 5) 좋았거든요 (Yujin's opening) — -거든요 because Yujin is volunteering her positive reaction as NEW personal information Minjun didn't know yet. 6) 이제 팬이 됐거든요 — -거든요 because Minjun is sharing a new personal fact (becoming a fan) that Yujin didn't know."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "왜 한국인은 항상 '것 같아요'를 쓸까요? — Why Koreans always say 'it seems'",
+    "body": "If you watch any Korean variety show or drama, you'll notice that Koreans rarely state opinions as flat facts — they're constantly hedging with -것 같아요, -것 같은데요, -것 같긴 해요. This isn't uncertainty or lack of confidence; it's a deep cultural preference for avoiding confrontational directness. Saying '이 영화 별로예요' (This movie isn't great) can come across as dismissive and final — it invites no discussion. But '이 영화가 별로인 것 같아요' opens space for the other person to disagree gracefully. This extends to professional settings too: in meetings, Koreans often frame even strong opinions as -것 같습니다 to maintain group harmony (눈치 culture). Mastering -것 같다 isn't just grammar — it's learning to speak with appropriate Korean social grace."
+  },
+  "inlineExercises": [
+    {
+      "type": "fillBlank",
+      "prompt": "이 음식이 좀 짠___ 것 같아요. (I think this food is a bit salty.)",
+      "options": [
+        "는",
+        "은",
+        "ㄴ"
+      ],
+      "correct": "ㄴ",
+      "explanation": "짜다 is an adjective with a vowel-ending stem (짜-), so the modifier is ㄴ: 짠 것 같아요. 는 is for present verb modifiers, and 은 is used after consonant-ending adjective stems."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "저 오늘 못 가요. 약속이 있___. (I can't go today. I have plans.)",
+      "options": [
+        "잖아요",
+        "거든요",
+        "는 것 같아요"
+      ],
+      "correct": "거든요",
+      "explanation": "-거든요 is correct because the speaker is giving the listener NEW information (the plans) as a reason. -잖아요 would only work if the listener already knew about the plans. '-는 것 같아요' expresses uncertainty — but the speaker KNOWS they have plans, so that would be odd."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "다음 문장에서 틀린 것을 찾아보세요: '그 배우 유명하는 것 같아요.'",
+      "correct": "그 배우 유명한 것 같아요.",
+      "explanation": "유명하다 is an adjective (not a verb), so it takes the adjective modifier -ㄴ/-은, not the verb modifier -는. 유명하다 has a vowel-ending stem (유명하-), so the modifier is -ㄴ → 유명한 것 같아요. This is the most common -것 같다 mistake among English learners."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Your friend says '나 왜 화났는지 알아?' You reply: '어제 네가 약속을 안 지켰___ .' Which ending fits?",
+      "options": [
+        "잖아",
+        "거든",
+        "는 것 같아"
+      ],
+      "correct": "잖아",
+      "explanation": "-잖아 is correct here. The person you're talking TO is the one who broke the promise — they KNOW they did it. You're reminding them of their own action as the reason for your anger. -거든 would mean 'just so you know you broke the promise' — but they clearly already know. -는 것 같아 would express uncertainty about whether they broke it, which is too weak for this situation."
+    },
+    {
+      "type": "translate",
+      "prompt": "Translate: 'I think it's going to rain tomorrow.'",
+      "correct": "내일 비가 올 것 같아요.",
+      "hint": "Decide whether the rain is happening now, already happened, or expected later. Then choose the modifier before 것 같아요.",
+      "explanation": "비가 올 것 같아요 is a softened future guess, not a firm plan. The future modifier 올 fits because the rain is expected tomorrow."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "At work, a colleague offers to switch to English because you look unsure. You want to say you can keep using Korean because you're actually quite good at it. Which is correct?",
+      "options": [
+        "사실 저 한국어 꽤 잘하잖아요.",
+        "사실 저 한국어 꽤 잘하거든요.",
+        "사실 저 한국어 꽤 잘하는 것 같아요."
+      ],
+      "correct": "사실 저 한국어 꽤 잘하거든요.",
+      "explanation": "-거든요 is correct because you're giving NEW background information as a reason to continue in Korean. -잖아요 would imply they already knew you were good at Korean. -는 것 같아요 would sound strangely uncertain — 'I seem to be good at Korean?' That doesn't convey confidence; it sounds like you're guessing about your own skill."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "그 식당 오늘 문 닫___ 것 같아요. 불이 꺼져 있어요. (That restaurant seems to be closed today. The lights are off.)",
+      "options": [
+        "는",
+        "은",
+        "을"
+      ],
+      "correct": "은",
+      "explanation": "닫다 (to close/be closed) is a verb, but here we're inferring a PRESENT STATE from evidence — the speaker means 'it seems closed right now.' The present state is expressed with the adjective-like -(으)ㄴ modifier: 닫은 것 같다 (seems closed). If you used 닫는 것 같다 it would mean 'seems to be in the process of closing,' and 닫을 것 같다 would mean 'seems like it will close (in the future).' The correct reading is current state: 닫은 것 같다."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "약속___ 있거든요. (I have plans, you see.)",
+      "options": [
+        "이",
+        "을",
+        "에서"
+      ],
+      "correct": "이",
+      "explanation": "있거든요 still uses 이/가 for the thing that exists or is possessed. 을 would wrongly treat 약속 as an object of an action."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "그 영화가 좀 ___ . (지루하다 → soft opinion)",
+      "base": "지루하다",
+      "form": "softOpinion",
+      "correct": "지루한 것 같아요",
+      "explanation": "Adjectives use -(으)ㄴ 것 같아요 for a softened impression. 지루하다 becomes 지루한 것 같아요, not 지루하는 것 같아요."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'I think this movie is a little boring.'",
+      "tokens": [
+        "이 영화는",
+        "좀",
+        "지루한 것 같아요"
+      ],
+      "correct": "이 영화는 좀 지루한 것 같아요",
+      "explanation": "좀 softens the criticism, and -한 것 같아요 makes it an impression rather than a blunt fact. This is much safer than saying 이 영화는 지루해요 directly."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "-는 것 같다 = FROSTED GLASS: softens opinions/guesses into impressions; verbs use -는, adjectives use -(으)ㄴ, past uses -(으)ㄴ, future uses -(으)ㄹ",
+      "-잖아(요) = REPLAY BUTTON: reminds listener of something they already know or should know — shared information",
+      "-거든(요) = UPLOAD BUTTON: introduces new background information or a reason the listener didn't have — use this when telling someone something for the first time"
+    ]
+  },
+  "writingTask": {
+    "prompt": "Write a short comment giving your opinion about a movie you just watched, softening it and adding a reason.",
+    "hint": "Use -는 것 같다 to soften your opinion, and use -거든요 (new info) or -잖아요 (shared info) to give a reason.",
+    "model": "이 영화는 좀 지루한 것 같아요. 전개가 너무 느리거든요. 그래도 배우 연기는 좋잖아요.",
+    "modelEn": "I think this movie is a bit boring. The pacing is too slow (you see). But the acting is good, you know."
+  },
+  "canDo": [
+    "Soften an opinion so it sounds less blunt (-는 것 같다)",
+    "Give a reason as new information the listener didn't know (-거든요)",
+    "Remind the listener of something you both already know (-잖아요)",
+    "Talk about a movie or story using 전개 · 결말 · 연기 · 주인공"
+  ]
+}

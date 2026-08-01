@@ -1,0 +1,704 @@
+{
+  "id": "chapter-14",
+  "hook": {
+    "situation": "You're talking to a Korean colleague about your future plans. You want to say 'I decided to start my own business' — but you accidentally say something that sounds like you're making a promise on the spot, not announcing a settled decision. Then they ask if you're worried, and you want to express 'I'm afraid it might fail' — but you use the wrong pattern and it sounds like you're asking a question. These three patterns (기로 하다, -(으)ㄹ까 봐, -게 되다) define how Koreans talk about plans, worries, and how things unfold — and mixing them up sends completely wrong signals.",
+    "objectives": [
+      "Use -기로 하다 to announce a firm decision or agreed-upon plan",
+      "Use -(으)ㄹ까 봐 to express worry or fear about an unwanted outcome",
+      "Use -게 되다 to describe how a situation came about through circumstances, not pure choice"
+    ],
+    "whyItMatters": "These three patterns appear constantly in adult Korean conversations about work, life decisions, and relationships. -기로 했어요 is how you announce plans. -(으)ㄹ까 봐 is how you express anxiety without sounding dramatic. -게 됐어요 is how Koreans modestly describe their own successes — saying 'it turned out that way' rather than 'I chose this.' Native speakers use -게 됐어요 constantly to soften good news. After this chapter you will sound like someone who actually thinks in Korean, not just translates from English."
+  },
+  "grammarNotes": [
+    {
+      "title": "-기로 하다 — deciding / agreeing to do something",
+      "func": "Use -기로 하다 to say you've decided or agreed to do something. The verb stem + 기로 names the action and 하다 marks the act of deciding. It's usually in the past (-기로 했어요) because the decision is already made.",
+      "formTable": [
+        {
+          "when": "Any verb (받침 or no 받침)",
+          "add": "verb stem + 기로 하다 (no harmony, no stem change)",
+          "ex": "가다 → 가기로 하다, 먹다 → 먹기로 하다"
+        },
+        {
+          "when": "Reporting a decision you've made (most common)",
+          "add": "verb stem + 기로 했어요",
+          "ex": "운동하다 → 운동하기로 했어요, 읽다 → 읽기로 했어요"
+        },
+        {
+          "when": "Agreeing with someone",
+          "add": "…하고 + verb stem + 기로 했어요",
+          "ex": "친구하고 만나기로 했어요"
+        },
+        {
+          "when": "Deciding NOT to do something",
+          "add": "안 + verb + 기로 하다 / verb + 지 않기로 하다",
+          "ex": "안 먹기로 했어요, 먹지 않기로 했어요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "내일부터 매일 운동하기로 했어요.",
+          "romanization": "naeil-buteo maeil undonghagiro haesseoyo.",
+          "en": "I've decided to exercise every day from tomorrow.",
+          "note": "Past 했어요 because the decision is already settled."
+        },
+        {
+          "ko": "친구하고 주말에 영화 보기로 했어요.",
+          "romanization": "chinguhago jumare yeonghwa bogiro haesseoyo.",
+          "en": "My friend and I decided to watch a movie this weekend.",
+          "note": "With 친구하고 it sounds like a mutual plan, not a solo one."
+        },
+        {
+          "ko": "오늘부터 커피 안 마시기로 했어요.",
+          "romanization": "oneul-buteo keopi an masigiro haesseoyo.",
+          "en": "I've decided not to drink coffee from today.",
+          "note": "안 goes right before the verb for a 'decide not to' meaning."
+        },
+        {
+          "ko": "우리 내년에 같이 한국어 공부하기로 해요.",
+          "romanization": "uri naenyeone gachi hangugeo gongbuhagiro haeyo.",
+          "en": "Let's make a deal to study Korean together next year.",
+          "note": "Present 해요 turns it into a proposal rather than a report."
+        }
+      ],
+      "keyPoint": {
+        "label": "-기로 했어요 vs -(으)ㄹ 거예요",
+        "body": "Both point to the future, but -기로 했어요 reports a decision that's now fixed ('I've decided to…'), while -(으)ㄹ 거예요 just states a plan or guess ('I'm going to…'). Use -기로 하다 when the point is that a choice was made — a promise to yourself or a deal with someone. (How the 했어요 past ending works is covered separately.)"
+      },
+      "pronunciation": "",
+      "drill": {
+        "instruction": "Turn each plan into a decision using -기로 했어요.",
+        "model": "매일 운동하다 → 매일 운동하기로 했어요.",
+        "items": [
+          "일찍 자다 → ___",
+          "친구를 만나다 → ___",
+          "담배를 안 피우다 → ___"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "운동하는 것을 결정했어요.",
+        "right": "운동하기로 했어요.",
+        "explanation": "English speakers turn 'decided to' into 결정하다 plus a noun clause, which sounds heavy for everyday plans. Korean packs 'decide to do X' into the set phrase -기로 하다; keep 결정하다 for big, formal decisions."
+      }
+    },
+    {
+      "title": "-(으)ㄹ까 봐 — doing something because you're worried (\"in case / afraid that\")",
+      "func": "Use -(으)ㄹ까 봐 to give the worried 'what if' that's behind an action. It means 'because I'm afraid that…' or 'in case…', and the main clause says what you do to head that off.",
+      "formTable": [
+        {
+          "when": "Verb/adjective stem ends in a vowel",
+          "add": "stem + ㄹ까 봐",
+          "ex": "자다 → 잘까 봐, 오다 → 올까 봐"
+        },
+        {
+          "when": "Verb/adjective stem ends in 받침",
+          "add": "stem + 을까 봐",
+          "ex": "늦다 → 늦을까 봐, 먹다 → 먹을까 봐"
+        },
+        {
+          "when": "ㄹ-final stem (drop ㄹ first)",
+          "add": "drop ㄹ, then + ㄹ까 봐",
+          "ex": "멀다 → 멀까 봐, 힘들다 → 힘들까 봐"
+        },
+        {
+          "when": "Worry about something that already happened",
+          "add": "past stem 았/었 + 을까 봐",
+          "ex": "갔다 → 갔을까 봐, 잊었다 → 잊었을까 봐"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "비가 올까 봐 우산을 가져왔어요.",
+          "romanization": "biga olkka bwa usaneul gajyeowasseoyo.",
+          "en": "I brought an umbrella in case it rains.",
+          "note": "올까 봐 is the feared event; the main clause is the precaution."
+        },
+        {
+          "ko": "학교에 늦을까 봐 일찍 나왔어요.",
+          "romanization": "hakgyoe neujeulkka bwa iljjik nawasseoyo.",
+          "en": "I left early because I was afraid I'd be late for school.",
+          "note": "받침 stem 늦- takes 을까 봐."
+        },
+        {
+          "ko": "친구가 배고플까 봐 밥을 준비했어요.",
+          "romanization": "chinguga baegopeulkka bwa babeul junbihaesseoyo.",
+          "en": "I made some food in case my friend is hungry.",
+          "note": "The one you're worried about (친구) can be someone other than you."
+        },
+        {
+          "ko": "시험에서 틀릴까 봐 책을 다시 봤어요.",
+          "romanization": "siheomeseo teullilkka bwa chaegeul dasi bwasseoyo.",
+          "en": "I went over the book again because I was afraid I'd get things wrong on the test.",
+          "note": "틀리다 ('get wrong') ends in a vowel, so it takes ㄹ까 봐."
+        }
+      ],
+      "keyPoint": {
+        "label": "-(으)ㄹ까 봐 vs -(으)니까",
+        "body": "Both give reasons, but -(으)니까 states a plain fact ('because it's raining'), while -(으)ㄹ까 봐 gives a worried 'what if' that hasn't happened ('in case it rains'). Use -(으)ㄹ까 봐 only when the reason is something you're afraid of or want to prevent, and don't put a command or suggestion in the main clause."
+      },
+      "pronunciation": "-(으)ㄹ까 tenses the 까: 올까 sounds like [올까], 늦을까 like [느즐까] — the 까 is always a hard, tense sound.",
+      "drill": {
+        "instruction": "Add the worried reason with -(으)ㄹ까 봐.",
+        "model": "(비가 오다) 우산을 가져왔어요 → 비가 올까 봐 우산을 가져왔어요.",
+        "items": [
+          "(늦다) 택시를 탔어요 → ___",
+          "(친구가 못 먹다) 밥을 많이 만들었어요 → ___",
+          "(시험이 어렵다) 공부를 많이 했어요 → ___"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "비가 올까 봐 우산을 가져오세요.",
+        "right": "비가 올까 봐 우산을 가져왔어요.",
+        "explanation": "English 'in case it rains, bring an umbrella' makes you want to add a command, but -(으)ㄹ까 봐 can't be followed by an order or suggestion. The main clause has to say what someone actually does or did, not what they should do."
+      }
+    },
+    {
+      "title": "-게 되다 — how something ended up happening (not by your own choice)",
+      "func": "Use -게 되다 to show a situation came about through circumstances rather than your own decision. It's the difference between 'I do X' and 'it ended up that I do X', usually because of outside events or other people.",
+      "formTable": [
+        {
+          "when": "Any verb (받침 or no 받침)",
+          "add": "verb stem + 게 되다 (no stem change)",
+          "ex": "가다 → 가게 되다, 먹다 → 먹게 되다"
+        },
+        {
+          "when": "Saying how it turned out (most common)",
+          "add": "verb stem + 게 됐어요",
+          "ex": "살다 → 살게 됐어요, 알다 → 알게 됐어요"
+        },
+        {
+          "when": "A change that's now true",
+          "add": "verb stem + 게 됐어요 / 되었어요",
+          "ex": "잘하다 → 잘하게 됐어요"
+        },
+        {
+          "when": "Future: it'll end up that way",
+          "add": "verb stem + 게 될 거예요",
+          "ex": "만나다 → 만나게 될 거예요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "일 때문에 부산에서 살게 됐어요.",
+          "romanization": "il ttaemune busaneseo salge dwaesseoyo.",
+          "en": "I ended up living in Busan because of work.",
+          "note": "되다 shows the move came from circumstances, not free choice."
+        },
+        {
+          "ko": "한국 친구를 만나서 한국어를 잘하게 됐어요.",
+          "romanization": "hanguk chingureul mannaseo hangugeoreul jalhage dwaesseoyo.",
+          "en": "After I made a Korean friend, I got good at Korean.",
+          "note": "A gradual change in ability — a natural result, not a decision."
+        },
+        {
+          "ko": "그 영화를 우연히 보게 됐어요.",
+          "romanization": "geu yeonghwareul ujeonhi boge dwaesseoyo.",
+          "en": "I happened to end up watching that movie.",
+          "note": "우연히 ('by chance') goes well with 게 되다 for unplanned things."
+        },
+        {
+          "ko": "이제 그 이유를 알게 됐어요.",
+          "romanization": "ije geu iyureul alge dwaesseoyo.",
+          "en": "Now I've come to understand why.",
+          "note": "ㄹ-stem 알다 keeps its ㄹ before 게: 알게 됐어요."
+        }
+      ],
+      "keyPoint": {
+        "label": "-게 되다 vs plain past",
+        "body": "Plain past (살았어요 'I lived') just states the fact. -게 됐어요 ('I ended up living') adds that it happened through circumstances or other people, not purely by your own plan. Reach for -게 되다 when you want to sound modest about a result or play down your own role in it."
+      },
+      "pronunciation": "",
+      "drill": {
+        "instruction": "Say how it turned out using -게 됐어요.",
+        "model": "부산에서 살다 → 부산에서 살게 됐어요.",
+        "items": [
+          "그 사람을 좋아하다 → ___",
+          "한국 음식을 잘 먹다 → ___",
+          "그 사실을 알다 → ___"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "부산에서 살기로 됐어요.",
+        "right": "부산에서 살게 됐어요.",
+        "explanation": "-기로 하다 (decide to) and -게 되다 (end up) get mixed up. If circumstances decided it for you, use -게 됐어요; -기로 했어요 means you yourself chose it. Don't blend them into 살기로 됐어요."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "사업",
+      "romanization": "saeop",
+      "english": "business / enterprise",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "작은 사업을 시작하기로 했어요.",
+        "en": "I decided to start a small business.",
+        "note": "기로 했어요 — a settled decision to begin the business"
+      },
+      "collocations": [
+        "사업을 시작하다",
+        "사업을 하다",
+        "사업이 잘 되다"
+      ]
+    },
+    {
+      "hangul": "시작하다",
+      "romanization": "sijakhada",
+      "english": "to start / begin",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "새 프로젝트를 시작하게 됐어요.",
+        "en": "I ended up starting a new project.",
+        "note": "게 됐어요 — the project arose through circumstances, not purely personal choice"
+      },
+      "collocations": [
+        "사업을 시작하다",
+        "일을 시작하다",
+        "새로 시작하다"
+      ]
+    },
+    {
+      "hangul": "실패하다",
+      "romanization": "silpaehada",
+      "english": "to fail",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "실패할까 봐 잠도 못 자요.",
+        "en": "I can't even sleep because I'm afraid of failing.",
+        "note": "실패하다 → 실패할까 봐: feared outcome expressed with -(으)ㄹ까 봐"
+      },
+      "collocations": [
+        "사업이 실패하다",
+        "시험에 실패하다",
+        "실패를 두려워하다"
+      ]
+    },
+    {
+      "hangul": "성공하다",
+      "romanization": "seonggonghada",
+      "english": "to succeed",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "열심히 하다 보니까 성공하게 됐어요.",
+        "en": "As I kept working hard, I came to succeed.",
+        "note": "하다 보니까 + 게 됐어요: a natural combination — persistent effort led to the circumstantial outcome"
+      },
+      "collocations": [
+        "사업에 성공하다",
+        "성공을 거두다",
+        "성공하게 되다"
+      ]
+    },
+    {
+      "hangul": "걱정",
+      "romanization": "geokjeong",
+      "english": "worry / concern",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "걱정이 많아서 잠을 잘 못 자요.",
+        "en": "I have so many worries that I can't sleep well.",
+        "note": "걱정이 많다 — literally 'worries are many'; Korean treats worry as a countable thing"
+      },
+      "collocations": [
+        "걱정이 많다",
+        "걱정하지 마세요",
+        "걱정이 되다"
+      ]
+    },
+    {
+      "hangul": "결정하다",
+      "romanization": "gyeoljeonghada",
+      "english": "to decide",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "이미 결정했어요. 기로 했어요.",
+        "en": "I've already decided. I've made up my mind.",
+        "note": "결정했어요 and 기로 했어요 both express decisions, but 기로 했어요 attaches to the specific action decided upon"
+      },
+      "collocations": [
+        "결정을 내리다",
+        "이미 결정했다",
+        "같이 결정하다"
+      ]
+    },
+    {
+      "hangul": "도전하다",
+      "romanization": "dojeonhada",
+      "english": "to challenge oneself / attempt",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "한번 도전해 보기로 했어요.",
+        "en": "I decided to give it a try.",
+        "note": "도전해 보기로 했어요 — 해 보다 (try doing) + 기로 했어요: decided to at least attempt"
+      },
+      "collocations": [
+        "도전하기로 하다",
+        "도전해 보다",
+        "새로운 도전"
+      ]
+    },
+    {
+      "hangul": "포기하다",
+      "romanization": "pogihada",
+      "english": "to give up",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "포기하지 않기로 했어요.",
+        "en": "I decided not to give up.",
+        "note": "-지 않기로 하다 = decided NOT to: the negative form of 기로 하다"
+      },
+      "collocations": [
+        "포기하지 않다",
+        "포기하지 않기로 하다",
+        "절대 포기 안 해요"
+      ]
+    },
+    {
+      "hangul": "수입",
+      "romanization": "suip",
+      "english": "income / earnings",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "수입이 줄어들까 봐 걱정이에요.",
+        "en": "I'm worried that my income might decrease.",
+        "note": "줄어들다 → 줄어들까 봐: the feared outcome is shrinking income"
+      },
+      "collocations": [
+        "수입이 생기다",
+        "수입이 늘다",
+        "수입이 줄다"
+      ]
+    },
+    {
+      "hangul": "투자하다",
+      "romanization": "tujahada",
+      "english": "to invest",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "그 사업에 투자하기로 했어요.",
+        "en": "I decided to invest in that business.",
+        "note": "기로 했어요 — a definitive financial commitment, not an on-the-spot promise"
+      },
+      "collocations": [
+        "투자하기로 하다",
+        "돈을 투자하다",
+        "미래에 투자하다"
+      ]
+    },
+    {
+      "hangul": "퇴직하다",
+      "romanization": "toejikhada",
+      "english": "to retire / resign",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "내년에 퇴직하게 될 것 같아요.",
+        "en": "It looks like I'll end up retiring next year.",
+        "note": "게 될 것 같아요 — future form of 게 되다: circumstances will likely lead to retirement"
+      },
+      "collocations": [
+        "퇴직하다",
+        "퇴직을 결정하다",
+        "퇴직 후에"
+      ]
+    },
+    {
+      "hangul": "책임",
+      "romanization": "chaegim",
+      "english": "responsibility",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "책임을 질까 봐 두려워요.",
+        "en": "I'm afraid of having to take responsibility.",
+        "note": "지다 → 질까 봐: ㄹ irregular — 지다 adds ㄹ before 까 봐 since the stem ends in a vowel"
+      },
+      "collocations": [
+        "책임을 지다",
+        "책임감이 있다",
+        "책임을 다하다"
+      ]
+    },
+    {
+      "hangul": "알게 되다",
+      "romanization": "alge doeda",
+      "english": "to come to know / find out",
+      "partOfSpeech": "verb phrase",
+      "exampleSentence": {
+        "ko": "나중에 그 사실을 알게 됐어요.",
+        "en": "I found out that fact later (it came to me).",
+        "note": "알다 + 게 됐어요: knowing came about through circumstances — you didn't actively seek the info, it found you"
+      },
+      "collocations": [
+        "알게 되다",
+        "이해하게 되다",
+        "깨닫게 되다"
+      ]
+    },
+    {
+      "hangul": "계획",
+      "romanization": "gyehoek",
+      "english": "plan",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "5년 계획을 세우기로 했어요.",
+        "en": "I decided to make a 5-year plan.",
+        "note": "세우다 → 세우기로 했어요: the decision is to create the plan itself"
+      },
+      "collocations": [
+        "계획을 세우다",
+        "계획대로",
+        "계획이 바뀌다"
+      ]
+    },
+    {
+      "hangul": "두려워하다",
+      "romanization": "duryeowohada",
+      "english": "to fear / be afraid of",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "실패를 너무 두려워하지 마세요.",
+        "en": "Don't be too afraid of failure.",
+        "note": "두려워하다 expresses fear about a noun; -(으)ㄹ까 봐 is used when the feared thing is an action/event"
+      },
+      "collocations": [
+        "실패를 두려워하다",
+        "변화를 두려워하다",
+        "두려워하지 마세요"
+      ]
+    },
+    {
+      "hangul": "용기",
+      "romanization": "yongi",
+      "english": "courage",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "용기를 내기로 했어요.",
+        "en": "I decided to summon my courage.",
+        "note": "용기를 내다 (to gather courage) + 기로 했어요: even emotional decisions use 기로 하다"
+      },
+      "collocations": [
+        "용기를 내다",
+        "용기가 필요하다",
+        "용기 있다"
+      ]
+    },
+    {
+      "hangul": "인맥",
+      "romanization": "inmek",
+      "english": "network / personal connections",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "일을 하다 보니까 인맥이 생기게 됐어요.",
+        "en": "As I worked, I ended up building a network of connections.",
+        "note": "하다 보니까 + 게 됐어요: a natural growth over time through circumstances, not planned directly"
+      },
+      "collocations": [
+        "인맥을 쌓다",
+        "인맥이 넓다",
+        "인맥을 활용하다"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Jieun and her colleague Hyunwoo talk over lunch about her decision to leave the company and start a business",
+    "lines": [
+      {
+        "speaker": "지은",
+        "ko": "저 이번에 회사를 그만두기로 했어요.",
+        "romanization": "jeo ibeone hoesareul geumandugiro haesseoyo.",
+        "en": "I've decided to quit the company this time.",
+        "grammarNote": "그만두다 → 그만두기로 했어요: the contract is signed — this is a settled decision, not an on-the-spot announcement"
+      },
+      {
+        "speaker": "현우",
+        "ko": "정말요? 왜요? 갑자기라서 좀 놀랐어요.",
+        "romanization": "jeongmallyo? waeyo? gapjagiraseo jom nollaasseoyo.",
+        "en": "Really? Why? It's sudden, so I'm a bit surprised.",
+        "grammarNote": "갑자기라서 좀 놀랐어요 sounds more conversational than a flat 'I'm totally surprised' and keeps the reason-result feel."
+      },
+      {
+        "speaker": "지은",
+        "ko": "사실 오래전부터 사업을 해 보고 싶었는데, 이번에 좋은 기회를 잡게 됐어요.",
+        "romanization": "sasil oraejeonbuteo saeobeul hae bogo sipeonneunde, ibeone joheun gihoereul japge dwaesseoyo.",
+        "en": "Actually I've wanted to try running a business for a long time, and this time I ended up getting a good opportunity.",
+        "grammarNote": "잡게 됐어요 frames the opportunity as something that came about through circumstances, while still sounding like natural business talk."
+      },
+      {
+        "speaker": "현우",
+        "ko": "대단하네요. 수입이 줄어들까 봐 걱정되진 않아요?",
+        "romanization": "daedanhaneyo. suibi jureodleulkka bwa geokjeongdoejin anayo?",
+        "en": "That's impressive. Aren't you worried your income might decrease?",
+        "grammarNote": "줄어들다 → 줄어들까 봐: feared outcome (income drop) + 걱정되다 (feel worried) — asking if she's looking through that worst-case window"
+      },
+      {
+        "speaker": "지은",
+        "ko": "솔직히 실패할까 봐 두려운 건 사실이에요. 그래도 해 보기로 했어요.",
+        "romanization": "soljiki silpaehalkka bwa duryeoun geon sasilieyo. geuraedo hae bogiro haesseoyo.",
+        "en": "Honestly, I'm afraid it might fail — that's true. But I decided to try anyway.",
+        "grammarNote": "실패할까 봐 — fear of failure as a worst-case window; 해 보기로 했어요 — despite the fear, the decision-contract is signed"
+      },
+      {
+        "speaker": "현우",
+        "ko": "용기 있네요! 저도 이 회사에 처음 오게 됐을 때 많이 떨렸어요.",
+        "romanization": "yongi inneyo! jeodo i hoesae cheoeum oge dwaesseul ttae mani tteollyeosseoyo.",
+        "en": "That takes courage! When I first ended up coming to this company, I was really nervous too.",
+        "grammarNote": "오게 됐을 때: past circumstantial form — 'when it came to be that I arrived here' — Hyunwoo frames his own job as something circumstances led him into, not a pure choice"
+      },
+      {
+        "speaker": "지은",
+        "ko": "그 말 들으니까 위로가 되네요. 잘될지는 모르지만 일단 시작하기로 마음먹었어요.",
+        "romanization": "geu mal deureunikka wiroga doeneyo. jaldoeljineun moreujiman ildan sijakhagiro maeumeogeosseoyo.",
+        "en": "Hearing that is reassuring. I don't know if it'll go well, but I've made up my mind to start at least.",
+        "grammarNote": "시작하기로 마음먹었어요: stronger form of 기로 하다 — literally 'ate the decision in my heart' — expressing firm resolve"
+      },
+      {
+        "speaker": "현우",
+        "ko": "응원할게요! 궁금한 것 있으면 언제든지 물어보세요.",
+        "romanization": "eungwonhalkkeyo! gunggeumhan geot isseumyeon eonjedeunji mureoboseyo.",
+        "en": "I'll cheer you on! If you have any questions, feel free to ask anytime.",
+        "grammarNote": "응원할게요: -(으)ㄹ게요 — an on-the-spot promise made TO Jieun right now, in this conversation. Note the contrast with 기로 했어요 used throughout the dialogue."
+      }
+    ]
+  },
+  "readingText": {
+    "type": "diary",
+    "title": "새로운 시작 (A New Beginning)",
+    "body": "오늘 드디어 회사에 사직서를 냈어요. 몇 달 전부터 생각해 오던 일이지만 막상 하고 나니 실감이 안 나요. 솔직히 수입이 없어질까 봐 몇 번이나 포기할 뻔했어요. 하지만 오래전부터 내 사업을 하기로 마음먹었던 게 맞는 것 같아서, 결국 사직서를 내기로 했어요. 친구 지수는 '잘 안될까 봐 걱정되지 않냐'고 물었는데, 솔직히 걱정은 돼요. 그래도 아무것도 안 하다 보면 평생 후회할 것 같아서요. 어쩌다 보니 이렇게 큰 결정을 하게 됐는데, 지금은 오히려 홀가분한 느낌이에요.",
+    "bodyTranslation": "Today I finally handed in my resignation at the company. It's something I'd been thinking about for months, but now that I've actually done it, it doesn't feel real. Honestly, I nearly gave up several times because I was afraid I'd lose my income. But since I'd long ago made up my mind to run my own business, I ultimately decided to hand in the resignation. My friend Jisu asked if I wasn't worried it might not go well — and honestly, I am worried. Still, I feel like if I just do nothing, I'll regret it for the rest of my life. Somehow I ended up making this big decision, and right now I actually feel strangely light.",
+    "comprehensionQuestions": [
+      {
+        "question": "What two things was the writer afraid might happen? (Find the -(으)ㄹ까 봐 phrases.)",
+        "answer": "수입이 없어질까 봐 (afraid of losing income) and 잘 안될까 봐 (afraid it won't go well)."
+      },
+      {
+        "question": "How does the writer describe making this big decision — did they plan it carefully or did it happen circumstantially? Which phrase tells you this?",
+        "answer": "어쩌다 보니 이렇게 큰 결정을 하게 됐는데 — 'Somehow I ended up making this big decision.' 하게 됐는데 (게 되다 form) frames the decision as something that came about through circumstances, even though the writer had been thinking about it for a long time."
+      },
+      {
+        "question": "Find all the -기로 하다 / 기로 마음먹다 forms in the text. What decision does each one refer to, and why is 기로 하다 (rather than -(으)ㄹ게요) used in each case?",
+        "answer": "내 사업을 하기로 마음먹었던 게: long-ago personal resolution to run a business — settled contract, not a live promise. 사직서를 내기로 했어요: the ultimate decision to actually resign — also already made before this diary entry. Neither is an on-the-spot promise to a listener, so -(으)ㄹ게요 would be wrong in both cases."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "-게 됐어요 — The Korean Art of Modest Success",
+    "body": "Korean culture values 겸손 (humility) highly, and -게 됐어요 is one of the key grammatical tools for expressing it. When Koreans announce good news — a new job, a promotion, passing an exam, even having a baby — they often say '하게 됐어요' (it came to be that I do this) rather than '했어요' (I did it). This is not dishonesty; it's social grace. Saying '그 회사에 취직했어요' (I got that job) can sound slightly boastful. Saying '그 회사에 취직하게 됐어요' frames your success as something you were led into by fortunate circumstances, deflecting too much personal credit. Foreign learners who skip this and just use plain verbs may unintentionally come across as self-congratulatory. Pay attention to how Koreans use 게 됐어요 in news announcements, wedding speeches, and even job interviews — it signals maturity and social awareness."
+  },
+  "inlineExercises": [
+    {
+      "type": "fillBlank",
+      "prompt": "저 내년에 유학 ___기로 했어요. (I decided to study abroad next year.)",
+      "options": [
+        "가",
+        "가기로 하",
+        "갈"
+      ],
+      "correct": "가",
+      "explanation": "The pattern is [verb stem] + 기로 했어요. 가다 → 가 + 기로 했어요 = 가기로 했어요. The blank is just the verb stem 가. '가기로 하기로 했어요' would be wrong (doubled), and '갈기로 했어요' doesn't exist as a form."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "비가 ___까 봐 우산을 가져왔어요. (I brought an umbrella because I was worried it might rain.)",
+      "options": [
+        "오를",
+        "올",
+        "왔을"
+      ],
+      "correct": "올",
+      "explanation": "오다 (to come/rain) has a vowel-ending stem 오-, so we add ㄹ: 올까 봐. '오를까 봐' is wrong — 를 is an object marker, not part of this pattern. '왔을까 봐' uses the past marker and would mean 'afraid that it had already rained' — different nuance, unnatural here."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "다음 문장에서 틀린 것을 고치세요: '저 그 회사에 일하기로 할게요.'",
+      "correct": "저 그 회사에서 일하기로 했어요.",
+      "explanation": "Two errors: (1) 기로 할게요 mixes two patterns — 기로 하다 announces a settled decision, but -(으)ㄹ게요 is an on-the-spot promise. The correct form is 기로 했어요 (past, decision already made). (2) 회사에 일하다 should be 회사에서 일하다 — working is an action, so the workplace takes 에서, not 에."
+    },
+    {
+      "type": "translate",
+      "prompt": "Translate: 'I came to understand Korean because I kept studying.'",
+      "correct": "계속 공부하다 보니까 한국어를 이해하게 됐어요.",
+      "hint": "Use 게 됐어요 — understanding came about through the circumstance of sustained study. 하다 보니까 = 'as I kept doing...'",
+      "explanation": "-다 보니까 describes a result that comes from continuing or repeatedly doing something. -게 됐어요 adds the change of state: you came to understand."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence correctly expresses 'I'm afraid I might be late for the meeting'?",
+      "options": [
+        "회의에 늦을까요? 걱정이에요.",
+        "회의에 늦을까 봐 걱정이에요.",
+        "회의에 늦어서 걱정이에요."
+      ],
+      "correct": "회의에 늦을까 봐 걱정이에요.",
+      "explanation": "Option 1 (늦을까요?) asks the listener 'Do you think I'll be late?' — a question, not a worry. Option 3 (늦어서) uses a causal connector for something that already happened — but the meeting hasn't started yet. Only option 2 correctly uses -(으)ㄹ까 봐 to express a feared future outcome as the reason for worry."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Your Korean friend asks why you moved to Seoul. Which answer gives a natural reason and uses -게 됐어요 well?",
+      "options": [
+        "제가 결정해서 서울로 이사했어요.",
+        "일 때문에 서울로 이사하게 됐어요.",
+        "서울로 이사하기로 했어요."
+      ],
+      "correct": "일 때문에 서울로 이사하게 됐어요.",
+      "explanation": "The friend asked why, so the best answer includes a reason: 일 때문에. -게 됐어요 then frames the move as a life circumstance that came about naturally. Option 1 over-emphasizes personal choice, and option 3 only says you decided to move, without answering the why."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "계속 공부하다 보니까 한국어를 이해하___ 됐어요. (As I kept studying, I came to understand Korean.)",
+      "options": [
+        "기로",
+        "게",
+        "ㄹ까 봐"
+      ],
+      "correct": "게",
+      "explanation": "This is a gradual result that came about through repeated effort — the grammar for that is -게 됐어요. 이해하게 됐어요 = 'came to understand.' 이해하기로 했어요 would mean 'decided to understand,' which is not natural, and 이해할까 봐 would mean being afraid you might understand."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "사업___ 시작하기로 했어요. (I decided to start a business.)",
+      "options": [
+        "을",
+        "이",
+        "에"
+      ],
+      "correct": "을",
+      "explanation": "시작하다 is an action verb, and 사업 is what you start, so it takes 을. 이 would make 사업 the subject and break the intended meaning."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "내년에 사업을 ___ . (시작하다 → decided to)",
+      "base": "시작하다",
+      "form": "decision",
+      "correct": "시작하기로 했어요",
+      "explanation": "-기로 했어요 states a decision or agreed plan. 시작하다 drops 다 and takes 기로 했어요."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'I brought an umbrella because I was worried it might rain.'",
+      "tokens": [
+        "비가 올까 봐",
+        "우산을 가져왔어요"
+      ],
+      "correct": "비가 올까 봐 우산을 가져왔어요",
+      "explanation": "-(으)ㄹ까 봐 gives the worry that motivated the action. The umbrella action follows because rain was the feared outcome."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "기로 했어요 = SIGNED CONTRACT: announcing a settled decision or mutual agreement — always points back to a decision already made",
+      "-(으)ㄹ까 봐 = WORST-CASE WINDOW: the feared bad outcome drives an action — 'I was afraid X would happen, so I did Y'",
+      "-게 됐어요 = CIRCUMSTANCES LED HERE: humble, natural way to describe how a situation came about — preferred in Korean for announcing life changes modestly"
+    ]
+  },
+  "writingTask": {
+    "prompt": "Write a few sentences about a work or money decision you made, explaining a worry behind it and how things ended up.",
+    "hint": "Use -기로 했어요 for the decision, -(으)ㄹ까 봐 for the worry, and -게 됐어요 for how it turned out.",
+    "model": "저는 작은 사업을 시작하기로 했어요. 돈을 다 잃을까 봐 조금 걱정했어요. 그래서 친구하고 같이 일하게 됐어요.",
+    "modelEn": "I decided to start a small business. I was a little worried in case I'd lose all my money. So I ended up working together with a friend."
+  },
+  "canDo": [
+    "Say I've decided or agreed to do something (-기로 하다)",
+    "Explain that I act because I'm afraid something might happen (-(으)ㄹ까 봐)",
+    "Show a situation came about by circumstance, not my own choice (-게 되다)",
+    "Talk through a work or money decision using 사업 · 결정하다 · 걱정 · 투자하다"
+  ]
+}

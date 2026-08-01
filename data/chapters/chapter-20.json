@@ -1,0 +1,504 @@
+{
+  "id": "chapter-20",
+  "hook": {
+    "situation": "Arranging a meeting time, counting items, reading dates, asking prices, and talking about age without mixing the two Korean number systems.",
+    "objectives": [
+      "Use native Korean numbers for hours and common counters: 한 시, 두 잔, 세 명.",
+      "Use Sino-Korean numbers for minutes, dates, prices, phone-style numbers, and floors: 십 분, 이월 삼일, 오천 원.",
+      "Recognize common number questions: 몇 시, 몇 분, 몇 잔, 얼마예요, 나이가 어떻게 되세요?"
+    ],
+    "whyItMatters": "Korean numbers are not random; the object being counted chooses the number family. Once learners know the common pairings, time, prices, dates, and simple shopping conversations become much more predictable."
+  },
+  "grammarNotes": [
+    {
+      "title": "Two number systems: native (하나·둘·셋) vs. Sino-Korean (일·이·삼)",
+      "func": "Korean has two full sets of numbers, and which one you use depends on what you're saying — not on which you like better. Native numbers count things, people, and the o'clock hour. Sino-Korean numbers handle money, minutes, dates, and phone numbers. The clock uses both at once: native for the hour, Sino for the minute.",
+      "formTable": [
+        {
+          "when": "Counting things, people, or animals (with a counter)",
+          "add": "Native 하나·둘·셋·넷, but 1–4 shorten before a counter → 한·두·세·네",
+          "ex": "사과 한 개 (one apple), 친구 두 명 (two friends)"
+        },
+        {
+          "when": "Saying the o'clock hour (시)",
+          "add": "Native number + 시 (1–4 shorten here too)",
+          "ex": "세 시 (3 o'clock), 네 시 (4 o'clock)"
+        },
+        {
+          "when": "Minutes, money, dates, phone numbers",
+          "add": "Sino-Korean 일·이·삼·사",
+          "ex": "삼십 분 (30 minutes), 오천 원 (5,000 won)"
+        },
+        {
+          "when": "Age",
+          "add": "Native + 살 in daily talk; Sino + 세 on official forms",
+          "ex": "스무 살 (20 years old, everyday), 이십 세 (on forms)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "물 한 병 주세요.",
+          "romanization": "mul han byeong juseyo.",
+          "en": "One bottle of water, please.",
+          "note": "Counting a thing, so native — and 하나 shortens to 한 before the counter 병."
+        },
+        {
+          "ko": "지금 세 시 삼십 분이에요.",
+          "romanization": "jigeum se si samsip bun-ieyo.",
+          "en": "It's 3:30 now.",
+          "note": "The hour 시 takes native 세, but the minute 분 takes Sino 삼십 — both systems in one time."
+        },
+        {
+          "ko": "이 책 오천 원이에요.",
+          "romanization": "i chaek ocheon won-ieyo.",
+          "en": "This book is 5,000 won.",
+          "note": "Money is always Sino (오천), never 다섯천."
+        },
+        {
+          "ko": "우리 반에 학생이 열 명 있어요.",
+          "romanization": "uri ban-e haksaeng-i yeol myeong isseoyo.",
+          "en": "There are ten students in our class.",
+          "note": "Counting people with 명, so native 열 — and 열 keeps its shape; only 한·두·세·네 and 스무 change."
+        }
+      ],
+      "keyPoint": {
+        "label": "The clock uses both systems",
+        "body": "The hour (시) is native: 한 시, 두 시, 세 시. The minute (분) is Sino: 일 분, 십 분, 삼십 분. So 3:20 is 세 시 이십 분 — native for the hour, Sino for the minute. If you can remember this one phrase, you've got the whole rule. (Which counter goes with which number is a later topic; for now just lock in hour vs. minute.)"
+      },
+      "pronunciation": "여섯 개 sounds like [여섣 깨] and 일곱 시 like [일곱 씨] — the counter's first consonant tenses after the number's final consonant. Also remember the short forms before a counter: 하나→한, 둘→두, 셋→세, 넷→네, 스물→스무.",
+      "drill": {
+        "instruction": "Say each one out loud, picking the right number system and the right form before the counter.",
+        "model": "사과 3개 → 사과 세 개",
+        "items": [
+          "친구 2명 → ?",
+          "지금 1시 30분 → ?",
+          "커피 4,500원 → ?"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "지금 삼 시예요.",
+        "right": "지금 세 시예요.",
+        "explanation": "In English one set of numbers does everything, so it's tempting to grab the more familiar Sino 삼 for '3 o'clock.' But the hour is always native: 세 시. The flip side of the same habit is reaching for native 다섯 to say money (다섯천 원) instead of Sino 오천 원. Quick check before you speak: am I counting things or hours (native), or saying money, minutes, or a date (Sino)?"
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "하나",
+      "romanization": "hana",
+      "english": "one (native number)",
+      "partOfSpeech": "number",
+      "exampleSentence": {
+        "ko": "사과 하나 주세요.",
+        "en": "Please give me one apple.",
+        "note": "Before many counters, 하나 becomes 한: 한 개, 한 명, 한 시."
+      },
+      "collocations": [
+        "한 개",
+        "한 시",
+        "한 명"
+      ]
+    },
+    {
+      "hangul": "둘",
+      "romanization": "dul",
+      "english": "two (native number)",
+      "partOfSpeech": "number",
+      "exampleSentence": {
+        "ko": "커피 두 잔 주세요.",
+        "en": "Please give me two cups of coffee.",
+        "note": "Before counters, 둘 becomes 두."
+      },
+      "collocations": [
+        "두 개",
+        "두 시",
+        "두 잔"
+      ]
+    },
+    {
+      "hangul": "셋",
+      "romanization": "set",
+      "english": "three (native number)",
+      "partOfSpeech": "number",
+      "exampleSentence": {
+        "ko": "세 시에 수업이 있어요.",
+        "en": "I have class at three o'clock.",
+        "note": "Before counters, 셋 becomes 세."
+      },
+      "collocations": [
+        "세 개",
+        "세 시",
+        "세 명"
+      ]
+    },
+    {
+      "hangul": "일",
+      "romanization": "il",
+      "english": "one (Sino-Korean number)",
+      "partOfSpeech": "number",
+      "exampleSentence": {
+        "ko": "일 분만 기다려 주세요.",
+        "en": "Please wait just one minute.",
+        "note": "Use 일 with minutes, dates, prices, floors, and phone-style numbers."
+      },
+      "collocations": [
+        "일 분",
+        "일월",
+        "일 층"
+      ]
+    },
+    {
+      "hangul": "이",
+      "romanization": "i",
+      "english": "two (Sino-Korean number)",
+      "partOfSpeech": "number",
+      "exampleSentence": {
+        "ko": "이월에 한국에 가요.",
+        "en": "I am going to Korea in February.",
+        "note": "Use 이 for Sino-Korean number settings such as months and prices."
+      },
+      "collocations": [
+        "이 분",
+        "이월",
+        "이 층"
+      ]
+    },
+    {
+      "hangul": "삼",
+      "romanization": "sam",
+      "english": "three (Sino-Korean number)",
+      "partOfSpeech": "number",
+      "exampleSentence": {
+        "ko": "삼천 원이에요.",
+        "en": "It is 3,000 won.",
+        "note": "Use 삼 in prices, dates, and minutes, but not for clock hour three."
+      },
+      "collocations": [
+        "삼 분",
+        "삼월",
+        "삼천 원"
+      ]
+    },
+    {
+      "hangul": "몇",
+      "romanization": "myeot",
+      "english": "how many; what number",
+      "partOfSpeech": "determiner",
+      "exampleSentence": {
+        "ko": "지금 몇 시예요?",
+        "en": "What time is it now?",
+        "note": "몇 combines with a counter or number unit: 몇 시, 몇 분, 몇 명, 몇 개."
+      },
+      "collocations": [
+        "몇 시",
+        "몇 분",
+        "몇 잔"
+      ]
+    },
+    {
+      "hangul": "시",
+      "romanization": "si",
+      "english": "o'clock; hour marker",
+      "partOfSpeech": "counter",
+      "exampleSentence": {
+        "ko": "두 시에 만나요.",
+        "en": "Let's meet at two o'clock.",
+        "note": "Clock hours use native numbers before 시."
+      },
+      "collocations": [
+        "한 시",
+        "두 시",
+        "몇 시"
+      ]
+    },
+    {
+      "hangul": "분",
+      "romanization": "bun",
+      "english": "minute",
+      "partOfSpeech": "counter",
+      "exampleSentence": {
+        "ko": "오 분만 기다려 주세요.",
+        "en": "Please wait just five minutes.",
+        "note": "Minutes use Sino-Korean numbers."
+      },
+      "collocations": [
+        "오 분",
+        "삼십 분",
+        "몇 분"
+      ]
+    },
+    {
+      "hangul": "시간",
+      "romanization": "sigan",
+      "english": "time; hour",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "오늘 시간이 있어요?",
+        "en": "Do you have time today?",
+        "note": "시간 can mean available time or duration, so context matters."
+      },
+      "collocations": [
+        "시간이 있어요",
+        "시간이 없어요",
+        "한 시간"
+      ]
+    },
+    {
+      "hangul": "원",
+      "romanization": "won",
+      "english": "won (Korean money unit)",
+      "partOfSpeech": "counter",
+      "exampleSentence": {
+        "ko": "이거 오천 원이에요.",
+        "en": "This is 5,000 won.",
+        "note": "Prices use Sino-Korean numbers before 원."
+      },
+      "collocations": [
+        "천 원",
+        "오천 원",
+        "만 원"
+      ]
+    },
+    {
+      "hangul": "가격",
+      "romanization": "gagyeok",
+      "english": "price",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "가격이 얼마예요?",
+        "en": "How much is the price?",
+        "note": "In shops, 이거 얼마예요? is often more natural than saying 가격 every time."
+      },
+      "collocations": [
+        "가격이 비싸요",
+        "가격을 물어봐요",
+        "가격을 깎아요"
+      ]
+    },
+    {
+      "hangul": "날짜",
+      "romanization": "naljja",
+      "english": "date",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "예약 날짜가 언제예요?",
+        "en": "What is the reservation date?",
+        "note": "Dates use Sino-Korean numbers with 월 and 일."
+      },
+      "collocations": [
+        "날짜가 언제예요?",
+        "날짜를 정해요",
+        "예약 날짜"
+      ]
+    },
+    {
+      "hangul": "생일",
+      "romanization": "saengil",
+      "english": "birthday",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "생일이 언제예요?",
+        "en": "When is your birthday?",
+        "note": "생일 questions often lead to month and day practice."
+      },
+      "collocations": [
+        "생일이 언제예요?",
+        "생일에",
+        "생일 축하해요"
+      ]
+    },
+    {
+      "hangul": "나이",
+      "romanization": "nai",
+      "english": "age",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "나이가 어떻게 되세요?",
+        "en": "May I ask how old you are?",
+        "note": "Use this polite formula with adults; actual age uses native numbers with 살."
+      },
+      "collocations": [
+        "나이가 어떻게 되세요?",
+        "나이가 많아요",
+        "나이가 같아요"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Friends arrange a meeting time and check prices before buying coffee and a birthday cake.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "우리 몇 시에 만날까요?",
+        "romanization": "uri myeot sie mannalkkayo?",
+        "en": "What time shall we meet?",
+        "grammarNote": "몇 시 asks for clock time."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "세 시 십 분에 지하철역 앞에서 만나요.",
+        "romanization": "se si sip bune jihacheoryeok apeseo mannayo.",
+        "en": "Let's meet at 3:10 in front of the subway station.",
+        "grammarNote": "세 is native for the hour; 십 is Sino-Korean for the minutes."
+      },
+      {
+        "speaker": "민서",
+        "ko": "커피는 몇 잔 살까요?",
+        "romanization": "keopineun myeot jan salkkayo?",
+        "en": "How many cups of coffee should we buy?",
+        "grammarNote": "잔 counts cups and glasses."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "두 잔이면 돼요. 한 잔에 이천오백 원이에요.",
+        "romanization": "du janimyeon dwaeyo. han jane icheonobaek wonieyo.",
+        "en": "Two cups are enough. One cup is 2,500 won.",
+        "grammarNote": "두 잔 uses a native number; 이천오백 원 uses Sino-Korean numbers."
+      },
+      {
+        "speaker": "민서",
+        "ko": "그럼 두 잔에 오천 원이네요.",
+        "romanization": "geureom du jane ocheon wonineyo.",
+        "en": "Then two cups are 5,000 won.",
+        "grammarNote": "Price totals use Sino-Korean numbers before 원."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "네. 생일 케이크는 만 이천 원이에요.",
+        "romanization": "ne. saengil keikeuneun man icheon wonieyo.",
+        "en": "Yes. The birthday cake is 12,000 won.",
+        "grammarNote": "만 이천 원 is 10,000 + 2,000 won."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "A birthday meet-up",
+    "body": "민서와 지훈은 토요일에 친구 생일을 준비해요. 두 사람은 세 시 십 분에 지하철역 앞에서 만나기로 했어요. 커피는 두 잔을 사고, 한 잔에 이천오백 원이라서 모두 오천 원이에요. 케이크는 만 이천 원이에요. 민서는 예약 날짜도 확인했어요. 생일은 이월 삼일이고, 케이크는 토요일 네 시 전에 찾을 수 있어요. 그래서 두 사람은 시간과 가격을 다시 확인하고 가게에 갔어요.",
+    "bodyTranslation": "Minseo and Jihoon prepare for a friend's birthday on Saturday. They plan to meet at 3:10, buy two coffees, check the cake price, confirm the birthday date, and pick up the cake before 4:00.",
+    "comprehensionQuestions": [
+      {
+        "question": "민서와 지훈은 몇 시 십 분에 만나기로 했어요?",
+        "answer": "세 시 십 분에 만나기로 했어요."
+      },
+      {
+        "question": "커피 두 잔은 모두 얼마예요?",
+        "answer": "오천 원이에요."
+      },
+      {
+        "question": "생일은 언제예요?",
+        "answer": "이월 삼일이에요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "Age and price both need register awareness",
+    "body": "Prices are easy to ask directly with 얼마예요? Age is more sensitive. With adults or people you do not know well, 나이가 어떻게 되세요? is safer than 몇 살이에요?, which can sound childish or too direct.",
+    "tip": "Use 얼마예요? freely for prices, but be careful with age questions unless the situation clearly calls for it."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which time expression is natural for 3:10?",
+      "options": [
+        "세 시 십 분",
+        "삼 시 세 분",
+        "셋 시 열 분"
+      ],
+      "correct": "세 시 십 분",
+      "explanation": "Hours use native Korean numbers; minutes use Sino-Korean numbers."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which counter fits coffee?",
+      "options": [
+        "두 잔",
+        "두 명",
+        "두 권"
+      ],
+      "correct": "두 잔",
+      "explanation": "잔 counts cups and glasses."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Write 1:05 in Korean.",
+      "explanation": "Use native 한 for the hour and Sino-Korean 오 for the minutes.",
+      "correct": "한 시 오 분"
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Write '3,000 won' in Korean.",
+      "explanation": "Prices use Sino-Korean numbers before 원.",
+      "correct": "삼천 원"
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the sentence: 삼 시 십 분에 만나요.",
+      "explanation": "Clock hour three is 세 시, not 삼 시.",
+      "correct": "세 시 십 분에 만나요."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the age sentence: 저는 이십 살이에요.",
+      "explanation": "Age uses native Korean numbers with 살; 스물 becomes 스무 before the counter.",
+      "correct": "저는 스무 살이에요."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "커피 두 잔___ 주세요. (Please give me two cups of coffee.)",
+      "options": [
+        "을",
+        "이",
+        "에"
+      ],
+      "correct": "을",
+      "explanation": "두 잔 is the counted object being requested, so 을 fits when the particle is shown. In casual ordering, Koreans often drop it, but 을 is the grammatical object marker."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'Let's meet at 3:10.'",
+      "tokens": [
+        "세 시 십 분에",
+        "만나요"
+      ],
+      "correct": "세 시 십 분에 만나요",
+      "explanation": "Hours use native Korean numbers, so 3 o’clock is 세 시. Minutes use Sino-Korean numbers, so 10 minutes is 십 분."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Write 'two cups' in Korean.",
+      "correct": "두 잔",
+      "explanation": "잔 is a cup/glass counter and takes native Korean numbers. Two cups is 두 잔, not 이 잔."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which price expression is natural for 3,000 won?",
+      "options": [
+        "삼천 원",
+        "세천 원",
+        "셋 원"
+      ],
+      "correct": "삼천 원",
+      "explanation": "Prices use Sino-Korean numbers, so 3,000 won is 삼천 원. 세 and 셋 are native forms and do not fit this price expression."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "Hours and common counters use native numbers: 한 시, 두 잔, 세 명.",
+      "Minutes, dates, and prices use Sino-Korean numbers: 십 분, 이월 삼일, 오천 원.",
+      "몇 attaches to the unit you need: 몇 시, 몇 분, 몇 잔, 몇 명.",
+      "Age is socially sensitive: use 나이가 어떻게 되세요? before jumping to 몇 살이에요?"
+    ]
+  },
+  "writingTask": {
+    "prompt": "Write 3 sentences telling a friend the time you'll meet, the price of a coffee, and how many people are coming.",
+    "hint": "Use Sino-Korean numbers for minutes/price (세 시 삼십 분, 사천 원) and native numbers for the hour and counting people (세 시, 네 명).",
+    "model": "우리 세 시 삼십 분에 만나요. 커피는 사천 원이에요. 친구 네 명이 와요.",
+    "modelEn": "Let's meet at 3:30. The coffee is 4,000 won. Four friends are coming."
+  },
+  "canDo": [
+    "Tell the o'clock hour with native numbers (세 시 · 네 시)",
+    "Say minutes and prices with Sino-Korean numbers (삼십 분 · 사천 원)",
+    "Count people and things with native numbers plus a counter (네 명)",
+    "Ask \"how many / how much\" with 몇 and 얼마 (몇 시 · 얼마예요?)"
+  ]
+}

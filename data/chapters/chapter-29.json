@@ -1,0 +1,583 @@
+{
+  "id": "chapter-29",
+  "hook": {
+    "situation": "A plan changes while you are on the way, eating, watching something, or already seated somewhere.",
+    "objectives": [
+      "Use V-다가 when an action is interrupted, paused, or changed mid-way.",
+      "Use V-아/어 있다 for a state that remains after an action or change.",
+      "Explain changed plans with practical words like 중간에, 바꾸다, 취소하다, 문자, and 갑자기."
+    ],
+    "whyItMatters": "English 'while' can hide the difference between two actions happening together and one action being interrupted. Korean -다가 clearly says the first action was in progress and then something changed. V-아/어 있다 then lets you describe the state after the change."
+  },
+  "grammarNotes": [
+    {
+      "title": "V-다가 — break off one action to do another",
+      "func": "V-다가 says you were in the middle of one action when you stopped partway and switched to (or got interrupted by) a second one. The first action does not finish — you break off from it. The same person does both actions.",
+      "formTable": [
+        {
+          "when": "Add straight to the plain verb stem (no vowel change, same after vowel or consonant)",
+          "add": "-다가",
+          "ex": "가다 → 가다가, 먹다 → 먹다가, 자다 → 자다가"
+        },
+        {
+          "when": "Often cut to just -다 in everyday speech",
+          "add": "-다",
+          "ex": "집에 가다가 → 집에 가다 (친구를 만났어요)"
+        },
+        {
+          "when": "Past stem -았/었다가 = first action was finished, then undone or reversed",
+          "add": "-았다가 / -었다가",
+          "ex": "앉다 → 앉았다가 (일어났어요), 사다 → 샀다가 (환불했어요)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "학교에 가다가 친구를 만났어요.",
+          "romanization": "hakgyoe gadaga chingureul mannasseoyo.",
+          "en": "I was on my way to school and ran into a friend.",
+          "note": "The going gets cut off partway by something you didn't plan."
+        },
+        {
+          "ko": "숙제를 하다가 잠이 들었어요.",
+          "romanization": "sukjereul hadaga jami deureosseoyo.",
+          "en": "I was doing my homework and fell asleep.",
+          "note": "You stop the homework because the second thing happens to you."
+        },
+        {
+          "ko": "밥을 먹다가 전화를 받았어요.",
+          "romanization": "babeul meokdaga jeonhwareul badasseoyo.",
+          "en": "I was eating and then took a phone call.",
+          "note": "Same person breaks off from eating to do the next thing."
+        },
+        {
+          "ko": "이 책을 샀다가 환불했어요.",
+          "romanization": "i chaegeul satdaga hwanbulhaesseoyo.",
+          "en": "I bought this book and then returned it.",
+          "note": "-았다가 shows the buying was finished, then reversed."
+        }
+      ],
+      "keyPoint": {
+        "label": "V-다가 vs. V-고 나서",
+        "body": "V-고 나서 means you finish the first thing all the way, then do the next (밥을 먹고 나서 = after you're done eating). V-다가 means the first thing gets cut off in the middle and you switch (밥을 먹다가 = you were still eating and then stopped to...). 다가 = broke off; 고 나서 = finished."
+      },
+      "pronunciation": "다가 is said plainly as [다가]. In -았다가/-었다가 the ㅆ makes the ㄷ tense, so 샀다가 sounds like [삳따가].",
+      "drill": {
+        "instruction": "Join the two actions into one sentence with V-다가, so the first action gets interrupted by the second.",
+        "model": "집에 가다 / 친구를 만나다 → 집에 가다가 친구를 만났어요.",
+        "items": [
+          "텔레비전을 보다 / 자다 → ___",
+          "음악을 듣다 / 친구한테서 전화가 오다 → ___",
+          "공부를 하다 / 배가 고프다 → ___"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "숙제를 하고 잠이 들었어요. (meant: I fell asleep WHILE doing homework)",
+        "right": "숙제를 하다가 잠이 들었어요.",
+        "explanation": "English \"and then\" hides whether action 1 finished. -고 just lists things in order and sounds like you finished the homework. To say you broke off in the middle of it, you need -다가."
+      }
+    },
+    {
+      "title": "V-아/어 있다 — a state that stays after the action",
+      "func": "V-아/어 있다 describes the state that is left over after an action is done. The action already happened, and the subject stays in that result (앉아 있다 = is sitting, having sat down). It goes with verbs that leave a state behind, like 앉다, 서다, 오다, 열리다.",
+      "formTable": [
+        {
+          "when": "Stem vowel is ㅏ or ㅗ",
+          "add": "-아 있다",
+          "ex": "앉다 → 앉아 있다, 오다 → 와 있다"
+        },
+        {
+          "when": "Any other stem vowel",
+          "add": "-어 있다",
+          "ex": "서다 → 서 있다, 열리다 → 열려 있다"
+        },
+        {
+          "when": "Passive / result verbs work too (the door opens, the light comes on)",
+          "add": "-아/어 있다",
+          "ex": "켜지다 → 켜져 있다, 쓰이다 → 쓰여 있다"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "친구가 의자에 앉아 있어요.",
+          "romanization": "chinguga uijae anja isseoyo.",
+          "en": "My friend is sitting on the chair.",
+          "note": "They sat down earlier and are still in the seated state now."
+        },
+        {
+          "ko": "문이 열려 있어요.",
+          "romanization": "muni yeollyeo isseoyo.",
+          "en": "The door is open.",
+          "note": "Someone opened it before and it stays open — a lasting result. Note 열리다 (opens), not 열다 (open it)."
+        },
+        {
+          "ko": "칠판에 이름이 쓰여 있어요.",
+          "romanization": "chilpane ireumi sseuyeo isseoyo.",
+          "en": "A name is written on the board.",
+          "note": "Someone wrote it earlier; the result (the name being there) stays. Use the passive 쓰이다 → 쓰여 있다."
+        },
+        {
+          "ko": "동생이 아직 학교에 가 있어요.",
+          "romanization": "dongsaengi ajik hakgyoe ga isseoyo.",
+          "en": "My younger sibling is still at school (went and is there).",
+          "note": "가 있다 = went and is staying there, not the act of going."
+        }
+      ],
+      "keyPoint": {
+        "label": "V-아/어 있다 vs. V-고 있다",
+        "body": "V-고 있다 = an action happening right now (앉고 있어요 = is in the middle of sitting down). V-아/어 있다 = the state after it's done (앉아 있어요 = is already seated and staying that way). Use -아/어 있다 for the leftover result, -고 있다 for the action in progress."
+      },
+      "pronunciation": "앉아 있어요 links across the words — the ㅈ carries over, so it sounds like [안자 이써요]. 열려 있어요 sounds like [열려 이써요].",
+      "drill": {
+        "instruction": "Answer that the subject is right now in the result state, using V-아/어 있다.",
+        "model": "의자에 앉다 → 의자에 앉아 있어요.",
+        "items": [
+          "창문이 열리다 → ___",
+          "친구가 집에 오다 → ___",
+          "학생들이 서다 → ___"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "문이 열고 있어요. (meant: The door is open)",
+        "right": "문이 열려 있어요.",
+        "explanation": "English \"is open\" looks like a -ing form, which tempts -고 있다. But -고 있다 means the action is happening now. A door just staying open is a result state, so you need -아/어 있다 — and with the intransitive 열리다 (opens), not 열다 (open it)."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "가다",
+      "romanization": "gada",
+      "english": "to go",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "학교에 가다가 전화를 받았어요.",
+        "en": "I got a call while going to school.",
+        "note": "가다가 is the core movement interruption frame."
+      },
+      "collocations": [
+        "가다가",
+        "가다가 중간에",
+        "집에 가다가"
+      ]
+    },
+    {
+      "hangul": "먹다",
+      "romanization": "meokda",
+      "english": "to eat",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "밥을 먹다가 전화가 왔어요.",
+        "en": "A call came while I was eating.",
+        "note": "The meal is not the completed first step."
+      },
+      "collocations": [
+        "먹다가",
+        "먹다가 멈추다",
+        "먹다가 나가다"
+      ]
+    },
+    {
+      "hangul": "보다",
+      "romanization": "boda",
+      "english": "to see; to watch",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "영화를 보다가 잠들었어요.",
+        "en": "I fell asleep while watching the movie.",
+        "note": "A common unintended switch."
+      },
+      "collocations": [
+        "보다가",
+        "영화를 보다가",
+        "보다가 잠들다"
+      ]
+    },
+    {
+      "hangul": "중간에",
+      "romanization": "junggane",
+      "english": "in the middle; midway",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "중간에 계획을 바꿨어요.",
+        "en": "I changed the plan midway.",
+        "note": "A direct plan-change phrase."
+      },
+      "collocations": [
+        "중간에 바꾸다",
+        "중간에 멈추다",
+        "중간에 쉬다"
+      ]
+    },
+    {
+      "hangul": "바꾸다",
+      "romanization": "bakkuda",
+      "english": "to change",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "계획을 바꿨어요.",
+        "en": "I changed the plan.",
+        "note": "The object being changed takes 을/를."
+      },
+      "collocations": [
+        "계획을 바꾸다",
+        "중간에 바꾸다",
+        "장소를 바꾸다"
+      ]
+    },
+    {
+      "hangul": "취소하다",
+      "romanization": "chwisohada",
+      "english": "to cancel",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "수업이 취소됐어요.",
+        "en": "The class was canceled.",
+        "note": "A common reason a plan changes mid-way."
+      },
+      "collocations": [
+        "수업을 취소하다",
+        "약속을 취소하다",
+        "취소 문자를 받다"
+      ]
+    },
+    {
+      "hangul": "문자",
+      "romanization": "munja",
+      "english": "text message",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "수업 취소 문자를 받았어요.",
+        "en": "I got a class cancellation text.",
+        "note": "The message interrupts the original plan."
+      },
+      "collocations": [
+        "문자를 받다",
+        "문자를 보내다",
+        "취소 문자"
+      ]
+    },
+    {
+      "hangul": "타다",
+      "romanization": "tada",
+      "english": "to ride; to take",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "지하철을 타고 있다가 문자를 받았어요.",
+        "en": "I got a text while riding the subway.",
+        "note": "-고 있다가 makes the ongoing ride explicit."
+      },
+      "collocations": [
+        "지하철을 타다",
+        "버스를 타다",
+        "타고 있다가"
+      ]
+    },
+    {
+      "hangul": "받다",
+      "romanization": "batda",
+      "english": "to receive",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "전화를 받았어요.",
+        "en": "I got a phone call.",
+        "note": "The incoming call can interrupt an action."
+      },
+      "collocations": [
+        "전화를 받다",
+        "문자를 받다",
+        "연락을 받다"
+      ]
+    },
+    {
+      "hangul": "앉다",
+      "romanization": "anjda",
+      "english": "to sit",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "카페에 앉아 있어요.",
+        "en": "I am sitting at the cafe.",
+        "note": "앉아 있다 is a result-state phrase."
+      },
+      "collocations": [
+        "앉아 있다",
+        "카페에 앉다",
+        "잠깐 앉다"
+      ]
+    },
+    {
+      "hangul": "서다",
+      "romanization": "seoda",
+      "english": "to stand",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "사람들이 줄을 서 있어요.",
+        "en": "People are standing in line.",
+        "note": "서 있다 describes a continuing posture or line state."
+      },
+      "collocations": [
+        "서 있다",
+        "줄을 서다",
+        "문 앞에 서다"
+      ]
+    },
+    {
+      "hangul": "열리다",
+      "romanization": "yeollida",
+      "english": "to open; to be opened",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "문이 열려 있어요.",
+        "en": "The door is open.",
+        "note": "The open state remains."
+      },
+      "collocations": [
+        "문이 열리다",
+        "문이 열려 있다",
+        "창문이 열려 있다"
+      ]
+    },
+    {
+      "hangul": "켜지다",
+      "romanization": "kyeojida",
+      "english": "to turn on; to be on",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "불이 켜져 있어요.",
+        "en": "The light is on.",
+        "note": "The on-state remains."
+      },
+      "collocations": [
+        "불이 켜지다",
+        "불이 켜져 있다",
+        "화면이 켜져 있다"
+      ]
+    },
+    {
+      "hangul": "상태",
+      "romanization": "sangtae",
+      "english": "state; condition",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "문이 열린 상태예요.",
+        "en": "The door is in an open state.",
+        "note": "Names the state directly."
+      },
+      "collocations": [
+        "상태가 좋다",
+        "열린 상태",
+        "켜진 상태"
+      ]
+    },
+    {
+      "hangul": "갑자기",
+      "romanization": "gapjagi",
+      "english": "suddenly; all of a sudden",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "가다가 갑자기 문자를 받았어요.",
+        "en": "I suddenly got a text while going.",
+        "note": "Signals the interruption was unexpected."
+      },
+      "collocations": [
+        "갑자기 전화가 오다",
+        "갑자기 멈추다",
+        "갑자기 바꾸다"
+      ]
+    },
+    {
+      "hangul": "쉬다",
+      "romanization": "swida",
+      "english": "to rest",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "조금 쉬다가 다시 갈 거예요.",
+        "en": "I will rest a little and then go again.",
+        "note": "A temporary pause before resuming."
+      },
+      "collocations": [
+        "쉬다가",
+        "잠깐 쉬다",
+        "쉬다가 다시 가다"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "A class is canceled while someone is already on the way.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "학교에 가다가 왜 돌아왔어요?",
+        "romanization": "hakgyoe gadaga wae dorawasseoyo?",
+        "en": "Why did you come back while going to school?",
+        "grammarNote": "-다가 shows the original movement was interrupted."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "지하철을 타고 있다가 수업 취소 문자를 받았어요.",
+        "romanization": "jihacheoreul tago itdaga sueop chwiso munjareul badasseoyo.",
+        "en": "While I was riding the subway, I got a class cancellation text.",
+        "grammarNote": "-고 있다가 makes the ongoing action very clear."
+      },
+      {
+        "speaker": "민서",
+        "ko": "그래서 중간에 계획을 바꿨어요?",
+        "romanization": "geuraeseo junggane gyehoegeul bakkwosseoyo?",
+        "en": "So did you change the plan midway?",
+        "grammarNote": "중간에 and 바꾸다 name the plan change."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "네, 지금 카페에 앉아 있어요.",
+        "romanization": "ne, jigeum kapee anja isseoyo.",
+        "en": "Yes, now I am sitting at a cafe.",
+        "grammarNote": "앉아 있어요 describes the current seated state."
+      },
+      {
+        "speaker": "민서",
+        "ko": "카페 문은 열려 있어요?",
+        "romanization": "kape muneun yeollyeo isseoyo?",
+        "en": "Is the cafe door open?",
+        "grammarNote": "열려 있어요 is a result-state question."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "네, 불도 켜져 있어요. 조금 쉬다가 다시 갈 거예요.",
+        "romanization": "ne, buldo kyeojyeo isseoyo. jogeum swidaga dasi gal geoyeyo.",
+        "en": "Yes, the light is on too. I will rest a little and then go again.",
+        "grammarNote": "켜져 있어요 is result state; 쉬다가 shows a temporary pause."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "A plan changes on the way",
+    "body": "지훈은 학교에 가다가 수업 취소 문자를 받았어요. 처음에는 그냥 학교까지 가려고 했지만, 지하철을 타고 있다가 문자를 보고 중간에 계획을 바꿨어요. 그래서 근처 카페로 갔어요. 카페 문이 열려 있었고 불도 켜져 있었어요. 지훈은 창가 자리에 앉아 있었어요. 조금 쉬다가 다시 집에 돌아가기로 했어요.",
+    "bodyTranslation": "Jihoon got a class cancellation text while going to school. At first he planned to keep going, but while riding the subway he saw the text and changed the plan midway. So he went to a nearby cafe. The cafe door was open and the light was on. Jihoon was sitting by the window. After resting a bit, he decided to go back home.",
+    "comprehensionQuestions": [
+      {
+        "question": "지훈은 무엇을 하다가 문자를 받았어요?",
+        "answer": "학교에 가다가 문자를 받았어요."
+      },
+      {
+        "question": "지훈은 왜 계획을 바꿨어요?",
+        "answer": "수업 취소 문자를 받았기 때문이에요."
+      },
+      {
+        "question": "카페는 어떤 상태였어요?",
+        "answer": "문이 열려 있었고 불도 켜져 있었어요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "Explaining changed plans",
+    "body": "When Korean speakers explain a changed plan, -다가 is very useful because it shows the original action was already underway. It sounds more natural than simply listing two past actions.",
+    "tip": "Use -다가 for the interrupted action, then give the new result: 학교에 가다가 문자를 받고 카페로 갔어요."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence shows a mid-action interruption?",
+      "options": [
+        "학교에 가다가 전화를 받았어요.",
+        "학교에 가고 나서 전화를 받았어요.",
+        "학교에 가자마자 전화를 받았어요."
+      ],
+      "correct": "학교에 가다가 전화를 받았어요.",
+      "explanation": "-다가 shows the phone call happened while the first action was underway."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence describes the continuing state after sitting?",
+      "options": [
+        "카페에 앉아 있어요.",
+        "카페에 앉고 있어요.",
+        "카페를 앉아 있어요."
+      ],
+      "correct": "카페에 앉아 있어요.",
+      "explanation": "앉아 있어요 means the person is seated. The place takes 에."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence means the door is already open?",
+      "options": [
+        "문이 열려 있어요.",
+        "문을 열고 있어요.",
+        "문을 열려 있어요."
+      ],
+      "correct": "문이 열려 있어요.",
+      "explanation": "Result state uses the thing as subject: 문이."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Complete: 밥을 먹___ 전화가 왔어요.",
+      "explanation": "먹다가 shows the call interrupted the meal.",
+      "correct": "다가"
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the sentence: 불을 켜져 있어요.",
+      "explanation": "For result state, the light is the subject with 이/가.",
+      "correct": "불이 켜져 있어요."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "문자___ 받다가 전화를 했어요. (I got a text, then switched to calling.)",
+      "options": [
+        "를",
+        "가",
+        "에서"
+      ],
+      "correct": "를",
+      "explanation": "문자를 받다 is the action phrase “receive a text.” 받다가 shows that action was interrupted or shifted."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "지금 자리에 ___ . (앉다 → remaining state)",
+      "base": "앉다",
+      "form": "resultState",
+      "correct": "앉아 있어요",
+      "explanation": "-아/어 있어요 describes a state that remains after an action. 앉다 becomes 앉아 있어요 for the state of being seated."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'I was going, then changed plans midway.'",
+      "tokens": [
+        "가다가",
+        "중간에",
+        "계획을 바꿨어요"
+      ],
+      "correct": "가다가 중간에 계획을 바꿨어요",
+      "explanation": "-다가 shows the original action was interrupted. 중간에 makes the mid-way change explicit."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Say: 'The door is open.'",
+      "correct": "문이 열려 있어요.",
+      "explanation": "열려 있어요 describes the resulting open state of the door. It is not about someone opening it right now."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the sentence: '문이 열고 있어요.'",
+      "correct": "문이 열려 있어요.",
+      "explanation": "문이 열고 있어요 makes the door sound like it is actively opening something. For the open state, use 열려 있어요."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "V-다가 shows an action was interrupted or changed mid-way: 학교에 가다가 전화를 받았어요.",
+      "V-아/어 있어요 describes a continuing result state: 카페에 앉아 있어요, 문이 열려 있어요.",
+      "Use -다가, not -고 나서, when the first action did not simply finish before the second.",
+      "Result-state sentences usually make the thing or person in the state the subject: 문이, 불이, 사람이."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Text a friend explaining that you were on your way but something interrupted, and describe where you're waiting now.",
+    "hint": "Use V-다가 to break off one action for another (가다가), and V-아/어 있다 for the leftover state (앉아 있어요).",
+    "model": "버스를 타고 가다가 문자를 받았어요. 그래서 중간에 내렸어요. 지금 카페에 앉아 있어요. 문도 열려 있어요.",
+    "modelEn": "I was going by bus when I got a text. So I got off midway. I'm sitting in a cafe now. The door is open too."
+  },
+  "canDo": [
+    "Break off one action to switch to another with V-다가 (가다가 받았어요)",
+    "Describe a state left after an action with V-아/어 있다 (앉아 있어요, 열려 있어요)",
+    "Explain a mid-action change with everyday words (중간에, 바꾸다, 취소하다)"
+  ]
+}
