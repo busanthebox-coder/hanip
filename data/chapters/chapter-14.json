@@ -409,7 +409,7 @@
       "exampleSentence": {
         "ko": "책임을 질까 봐 두려워요.",
         "en": "I'm afraid of having to take responsibility.",
-        "note": "지다 → 질까 봐: ㄹ irregular — 지다 adds ㄹ before 까 봐 since the stem ends in a vowel"
+        "note": "지다 → 질까 봐: 지다 is a regular vowel-final stem, so it takes ㄹ까 봐"
       },
       "collocations": [
         "책임을 지다",

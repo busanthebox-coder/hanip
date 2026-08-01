@@ -1,0 +1,45 @@
+{
+  "chapterId": "chapter-30",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 9,
+  "cardsReviewed": 30,
+  "findings": [
+    {
+      "biteId": "chapter-30-b3",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The guess card teaches the headword as \"고장나다\" and its visible nuance repeats \"고장나다\" and \"보일러가 고장났어요\". The chapter source also has \"버스가 고장나다\" and \"핸드폰이 고장나다\". The National Institute of Korean Language states that when 이 is omitted from 고장이 나다, the result is written with a space: \"고장 나다\"; the current Hanip source and the byte-identical parent chapter source therefore teach nonstandard spacing.",
+      "fix": "Changed the local headword and collocations to standard-spaced 고장 나다, covered the spaced contextual target with a regression, and confirmed the recompiled card uses 고장 나다 with target 고장 나.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-30-b3",
+      "cardIndex": 2,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The guess card for \"늦다\" displays pos \"adjective\" and says \"늦다 is a descriptive verb, so it behaves like an adjective\", while its lesson sense is being late to an appointment: the source collocation is \"약속에 늦다\" and the card sentence is \"늦어서 죄송해요.\" The same source entry mixes that verb sense with the adjective collocation \"답장이 늦다\". The National Institute of Korean Language lists the appointment/school sense 늦다¹ as a verb and gives \"약속에 늦다\" and \"학교에 늦다\" as examples; the parent chapter repeats the same mixed-sense entry, and the parent dictionary enrichment supplies the wrong adjective nuance.",
+      "fix": "Changed the local entry to the appointment-lateness verb sense, replaced the mixed adjective collocation, added a same-sense local nuance, and confirmed the recompiled card shows pos \"verb\" without the parent adjective explanation.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-30-b4",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The V-는 바람에 hunt card states: \"늦는 is read [난는] ... read 늦는 바람에 as [난는 바라메].\" The National Institute of Korean Language entry for the verb 늦다 explicitly gives 늦는[는는]. Both data/chapters/chapter-30.json and the byte-identical parent chapter source contain the incorrect [난는] pronunciation.",
+      "fix": "Corrected grammarNotes[1].pronunciation locally and confirmed the recompiled teaching card contains [는는] and no [난는].",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": [
+    "Full-card revalidation completed for all 9 bites and 30 cards, applying all five protocol defect classes.",
+    "Accepted findings were recompiled and inspected in src/lib/bites.json; 3 findings are observably fixed and no blocker remains.",
+    "Rejected the broad POS-aware extract-wordbook join recommendation: a local same-sense 늦다 correction plus local-nuance precedence is the smaller scoped fix and avoids changing enrichment for unrelated homographs.",
+    "Parent source edits suggested by the worker report were not made because the parent repository is read-only; equivalent local corrections were applied and verified."
+  ]
+}

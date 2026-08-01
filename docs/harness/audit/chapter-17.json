@@ -1,0 +1,11 @@
+{
+  "chapterId": "chapter-17",
+  "auditedAt": "2026-08-01",
+  "findings": [
+    { "biteId": "chapter-17-b1", "cardIndex": 0, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "어제/지난주/작년 친구를 만났어요 are all natural with the offered time options.", "fix": "Applied bans for 어제 against last week and last year.", "fixed": true },
+    { "biteId": "chapter-17-b1", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "지난주에/어제 부산에 갔어요 are both natural.", "fix": "Applied mutual ban for 지난주↔어제.", "fixed": true },
+    { "biteId": "chapter-17-b1", "cardIndex": 2, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "작년에/어제 한국에 왔어요 are both natural.", "fix": "Applied mutual ban for 작년↔어제.", "fixed": true },
+    { "biteId": "chapter-17-b1", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "어제 친구를 만났어요/봤어요 both mean a natural completed interaction with a friend.", "fix": "Applied mutual ban for 만나다↔보다.", "fixed": true },
+    { "biteId": "chapter-17-b6", "cardIndex": 0, "severity": "blocker", "class": "data-fact", "evidence": "The QA answer lists 왔어요 as a contracted past form, but the reading contains 올 때 and 오자마자, not 왔어요.", "fix": "Applied answer correction to the forms actually present: 만났어요, 갔고, 봤어요.", "fixed": true }
+  ]
+}

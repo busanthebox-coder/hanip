@@ -1,0 +1,134 @@
+{
+  "chapterId": "chapter-27",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 9,
+  "cardsReviewed": 30,
+  "findings": [
+    {
+      "biteId": "chapter-27-b1",
+      "cardIndex": 0,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card shows \"지금 뭐 하고 있어요?\" with the choices \"now\", \"still; yet\", and \"already\". Both 아직 뭐 하고 있어요? (still) and, in an early/surprised context, 벌써 뭐 하고 있어요? (already) are natural questions, so the highlighted sentence does not isolate \"now\".",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-27-b1",
+      "cardIndex": 5,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card shows \"지금 전화하는 중이에요.\" with \"to study\", \"to wait\", and \"to call by phone\". 지금 공부하는 중이에요 and 지금 기다리는 중이에요 are both fully natural status updates.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-27-b3",
+      "cardIndex": 2,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card shows \"아직 회의 중이에요.\" with \"still; yet\", \"now\", and \"already\". 지금 회의 중이에요 and 벌써 회의 중이에요 are both natural alternatives with different timing nuances.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-27-b3",
+      "cardIndex": 3,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card shows \"벌써 끝났어요?\" with \"already\" and \"now\" among its choices. 지금 끝났어요? is also a natural question meaning roughly \"Is it finished now?\".",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-27-b3",
+      "cardIndex": 4,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card shows \"계속 공부하고 있어요.\" with \"continuously; keep doing\", \"now\", and \"still; yet\". 지금 공부하고 있어요 and 아직 공부하고 있어요 are both natural in the same frame.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-27-b3",
+      "cardIndex": 5,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card shows \"잠깐 쉬고 있어요.\" with \"for a moment; briefly\", \"now\", and \"still; yet\". 지금 쉬고 있어요 and 아직 쉬고 있어요 are both natural status reports.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-27-b5",
+      "cardIndex": 0,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card shows \"지금 일하는 중이에요.\" with \"to work\", \"to study\", and \"to wait\". 지금 공부하는 중이에요 and 지금 기다리는 중이에요 are equally natural without further context.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-27-b5",
+      "cardIndex": 1,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card shows \"잠깐 쉬고 있어요.\" with \"to rest\", \"to study\", and \"to wait\". 잠깐 공부하고 있어요 and 잠깐 기다리고 있어요 are both natural.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-27-b5",
+      "cardIndex": 2,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card shows \"지금 밥 먹는 중이에요.\" with \"to eat\" and \"to wait\" among its choices. In ordinary particle-dropping speech, 지금 밥 기다리는 중이에요 naturally means \"I'm waiting for the food now\".",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-27-b3",
+      "cardIndex": 3,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The compiled 벌써 nuance says: \"don't pair 벌써 with the future\" and \"not 벌써 갈 거예요.\" That prohibition is false: 벌써 갈 거예요? is a normal surprised question meaning \"Are you leaving already?\".",
+      "fix": "Added a corrected local 벌써 nuance to chapter-27 data, made local chapter nuance take precedence over parent enrichment, and confirmed the recompiled reveal permits 벌써 갈 거예요?.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-27-b3",
+      "cardIndex": 4,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The compiled 계속 nuance says it means an action continues \"WITHOUT a break\" and categorically assigns repetitions with gaps to 자꾸. 계속 can also describe recurring events over a period, for example 계속 전화가 와요, so absence of gaps is not entailed.",
+      "fix": "Added a corrected local 계속 nuance to chapter-27 data, made local chapter nuance take precedence over parent enrichment, and confirmed the recompiled reveal no longer requires literal gaplessness.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-27-b4",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The teaching card says -는 중이에요 \"can't describe a lasting state\" and gives \"not 사는 중이에요\". Attested Korean includes sentences such as \"저는 현재 8년 넘게 한국에 사는 중이에요\"; with 살다, 중 can frame residence as a current phase, although 살고 있어요 is the neutral default.",
+      "fix": "Replaced the false impossibility claim locally with the bounded-activity default and the possible current-phase use 한국에 사는 중이에요, then confirmed the recompiled teaching text.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-27-b6",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The card says \"The main action happens over that same stretch of time\" and \"Use 동안 when one action runs the whole time another is going on.\" A main event can occupy only part of the interval, as in 회의하는 동안 전화가 왔어요; 동안 supplies the containing time span, not necessarily coextensive duration.",
+      "fix": "Corrected the local function and key point to allow a main event to fill all or part of the 동안 interval, then confirmed both corrected strings in the recompiled hunt card.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": [
+    "Full-card revalidation completed for all 9 bites and 30 cards, applying all five protocol defect classes.",
+    "Accepted findings were recompiled and inspected in src/lib/bites.json; 13 findings are observably fixed and no blocker remains.",
+    "Parent vocabulary and rich-chapter edits suggested by the worker report were not made because the parent repository is read-only; equivalent local source corrections were applied and verified."
+  ]
+}

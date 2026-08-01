@@ -27,7 +27,7 @@
         {
           "when": "Noun ending in a vowel",
           "add": "를 위해서",
-          "ex": "가족 → 가족을 위해서"
+          "ex": "친구 → 친구를 위해서"
         },
         {
           "when": "Shorter form (writing or quick speech)",
@@ -136,7 +136,7 @@
         "label": "동안 vs. 에 vs. 까지",
         "body": "N 동안 = how long something lasts (세 시간 동안 = for three hours). N 에 = a point in time (세 시에 = at three). N 까지 = a deadline (세 시까지 = by three). Use 동안 only for a stretch of time, never a single moment."
       },
-      "pronunciation": "동안 [동안]. In 일주일 동안 the final ㄹ links smoothly into the next word: [일쭈일 똥안].",
+      "pronunciation": "동안 is [동안]. 일주일 is [일쭈일]; in careful speech say [일쭈일 동안]. Some speakers may tense 동안 to [똥안] in connected speech, but this is not liaison of final ㄹ.",
       "drill": {
         "instruction": "Add the time noun + 동안 to finish each sentence.",
         "model": "(한 시간) ___ 친구를 기다렸어요. → 한 시간 동안 친구를 기다렸어요.",
@@ -174,7 +174,7 @@
         {
           "when": "Same subject (also fine)",
           "add": "V-는 동안 …",
-          "ex": "밥을 먹는 동안 전화가 왔어요"
+          "ex": "밥을 먹는 동안 텔레비전을 봤어요"
         }
       ],
       "examples": [
@@ -399,7 +399,8 @@
         "한국에 머물다",
         "세 달 동안 머물다",
         "머무는 동안"
-      ]
+      ],
+      "nuance": "머물다 is the shortened form of 머무르다. Use shortened-stem forms where licensed (머물고, 머물지, 머무는, 머뭅니다), while vowel-initial forms come from 르-irregular 머무르다: 머물러요 and 머물렀어요."
     },
     {
       "hangul": "방학",

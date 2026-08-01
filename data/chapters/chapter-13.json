@@ -370,7 +370,7 @@
       "exampleSentence": {
         "ko": "내일 교수님을 뵐 수 있을까요?",
         "en": "Would it be possible to see the professor tomorrow?",
-        "note": "뵙다 is the humble form of 만나다/보다 when you are meeting someone you respect. 뵈다 is the spoken short form: 뵐게요, 뵈었어요 → 봬어요."
+        "note": "뵙다 is the humble form of 만나다/보다 when you are meeting someone you respect. 뵈다 is also used in common conjugations: 뵈어요 → 봬요, 뵈었어요 → 뵀어요."
       },
       "collocations": [
         "교수님을 뵙다",
@@ -520,7 +520,7 @@
       },
       {
         "question": "Find all instances of -다고 하다, -냐고 물어보다, and -(으)라고 하다 in the text. Why does each one use the form it uses?",
-        "answer": "다고 하셨어 (×3): 없어진다고 (발표가 없어지다 = action verb, vowel stem → ㄴ다고), 미룬다고 (미루다 = action verb, vowel stem → ㄴ다고), 이해할 수 있다고 (있다 → 있다고, adjective/있다 rule). | 냐고 물어봤어: 없어지냐고 — relaying a question (original had a question mark) → -냐고. | 라고 하셨어 (×2): 제출하라고, 생각해 보라고 — both relay commands (imperatives) → -(으)라고. The ending matches the type of sentence being relayed: period → 다고, question mark → 냐고, command → (으)라고."
+        "answer": "다고 하셨어 (×3): 없어진다고 (발표가 없어지다 = action verb, vowel stem → ㄴ다고), 미룬다고 (미루다 = action verb, vowel stem → ㄴ다고), 봐야 한다고 (보다 + -아/어야 하다 → 봐야 하다, then + 다고). | 냐고 물어봤어: 없어지냐고 — relaying a question (original had a question mark) → -냐고. | 라고 하셨어 (×2): 제출하라고, 생각해 보라고 — both relay commands (imperatives) → -(으)라고. The ending matches the type of sentence being relayed: period → 다고, question mark → 냐고, command → (으)라고."
       }
     ]
   },

@@ -1,0 +1,161 @@
+{
+  "chapterId": "chapter-32",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 9,
+  "cardsReviewed": 33,
+  "findings": [
+    {
+      "biteId": "chapter-32-b2",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The bite teaches and is titled \"V-기로 했어요\" / \"decided to V\", but its compiled completion claim is \"Describe a change that came about from circumstances (-게 됐어요)\". BitePlayer displays that canDo string after the learner finishes, so this decision bite certifies the wrong skill.",
+      "fix": "Added a failing compileChapter mapping regression first, assigned canDo by woven skill pair, and confirmed the recompiled bite carries the matching source canDo claim.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-32-b4",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The bite teaches and is titled \"V-게 됐어요\" / \"ended up V-ing / came to V\", but its compiled completion claim is \"Announce a decision you made (운동하기로 했어요)\". This is the inverse of the skill the card actually teaches.",
+      "fix": "Added a failing compileChapter mapping regression first, assigned canDo by woven skill pair, and confirmed the recompiled bite carries the matching source canDo claim.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-32-b3",
+      "cardIndex": 6,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The 이사하다 reveal says, \"you never use 옮기다 for changing homes\", \"NOT 안 이사해요\", and \"옮기다 is only for moving objects\". Those absolutes are false: 집을 옮기다 and 거처를 옮기다 can mean changing residence, and 아직 안 이사했어요 is ordinary grammatical Korean. The valid warning is narrower: *집을 이사해요 is nonstandard; use 이사해요 or 집을 옮겨요.",
+      "fix": "Added a corrected local 이사하다 nuance to chapter-32 data, made local chapter nuance take precedence over parent enrichment, and confirmed the recompiled reveal distinguishes 이사하다, 집을 옮기다, and both short-negation orders.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-32-b6",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The A-아/어졌어요 rule table puts \"많다 → 많아졌어요\" in the row labeled \"Other stem vowels\", even though 많다 has ㅏ and the same source note explicitly says, \"the ㅏ stem takes 아졌어요\". The example contradicts both the preceding \"Stem vowel is ㅏ or ㅗ\" row and its own explanation.",
+      "fix": "Moved 많다 → 많아졌어요 into the ㅏ/ㅗ row locally and confirmed the recompiled form table no longer contradicts its own note.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-32-b7",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "Dialogue line 4 quotes Korean \"시작하기로\" but romanizes it as \"sijakagiro\" in \"ne, geongangi an joajyeoseo sijakagiro haesseoyo.\" The 하 syllable is missing; the chapter's own headword romanization is \"sijakhada\" and the correct phrase is \"sijakhagiro\".",
+      "fix": "Corrected the local romanization to sijakhagiro and confirmed the recompiled dialogue line retains the 하 syllable.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-32-b9",
+      "cardIndex": 2,
+      "severity": "blocker",
+      "class": "drill-multi",
+      "evidence": "The drill asks, \"Which sentence describes a state change?\" and marks only \"몸이 가벼워졌어요.\" correct, but it also offers and marks false \"몸이 가볍게 됐어요.\" The latter is grammatical and can also mean that the body came to be light/lighter, so the card rejects a defensible state-change answer.",
+      "fix": "Replaced the second defensible state-change option with 몸이 가벼웠어요, updated the explanation, and confirmed the recompiled drill has exactly one correct state-change answer.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-32-b1",
+      "cardIndex": 1,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card quotes \"아침마다 운동하기로 했어요\" and offers \"to start\" beside \"to exercise\". With an omitted activity, \"아침마다 시작하기로 했어요\" is also a natural decision, so the sentence does not uniquely identify 운동하다.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-32-b1",
+      "cardIndex": 3,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card quotes \"계획이 바뀌었어요\" while offering \"habit\" and \"health\" beside \"plan\". Both \"습관이 바뀌었어요\" and \"건강이 바뀌었어요\" are fully natural in the same frame.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-32-b1",
+      "cardIndex": 4,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card quotes \"운동하면서 습관이 바뀌었어요\" while offering \"plan\" and \"health\" beside \"habit\". Both \"운동하면서 계획이 바뀌었어요\" and \"운동하면서 건강이 바뀌었어요\" are natural alternatives.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-32-b1",
+      "cardIndex": 5,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card quotes \"건강이 좋아졌어요\" while offering \"plan\" and \"habit\" beside \"health\". \"계획이 좋아졌어요\" and \"습관이 좋아졌어요\" both naturally mean that the plan or habit improved.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-32-b3",
+      "cardIndex": 3,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The 늘다 card has the example \"한국어를 매일 쓰니까 실력이 늘었어요\" but compiles with \"target\": null. GuessCard therefore hides the example before the answer and highlights only the isolated lemma \"늘다\", removing the intended sentence-context clue.",
+      "fix": "Added a failing regression first, repaired guessTarget, and confirmed the recompiled target is 늘었; the associated distractor bans in data/overrides.json remove the reported alternatives.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-32-b3",
+      "cardIndex": 4,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The 줄다 card has the example \"운동을 시작하고 스트레스가 줄었어요\" but compiles with \"target\": null, so the learner sees only isolated \"줄다\" instead of the promised highlighted word in context.",
+      "fix": "Added a failing regression first, repaired guessTarget, and confirmed the recompiled target is 줄었; the associated distractor bans in data/overrides.json remove the reported alternatives.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-32-b3",
+      "cardIndex": 5,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The 살다 card has the example \"회사 일 때문에 한국에 살게 됐어요\" but compiles with \"target\": null. The pre-answer UI consequently shows only \"살다\" and discards the contextual distinction supplied by 살게 됐어요.",
+      "fix": "Added a failing regression first, repaired guessTarget, and confirmed the recompiled target is 살게; the associated distractor bans in data/overrides.json remove the reported alternatives.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-32-b3",
+      "cardIndex": 6,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card quotes \"회사 때문에 갑자기 이사하게 됐어요\" and offers both \"to decide\" and \"to exercise\" beside \"to move house\". \"회사 때문에 갑자기 결정하게 됐어요\" and \"회사 때문에 갑자기 운동하게 됐어요\" are both natural with omitted context.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-32-b5",
+      "cardIndex": 0,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The 맡다 card has the example \"새 일을 맡게 됐어요\" but compiles with \"target\": null, so GuessCard falls back to isolated \"맡다\". Once the context highlight is restored, the offered \"to decide\" is still defensible because \"새 일을 결정하게 됐어요\" can mean ending up deciding on a new task.",
+      "fix": "Added a failing regression first, repaired guessTarget, and confirmed the recompiled target is 맡게; the associated distractor bans in data/overrides.json remove the reported alternatives.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-32-b5",
+      "cardIndex": 2,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The 자다 card has the example \"오늘부터 일찍 자기로 했어요\" but compiles with \"target\": null, so the learner sees only isolated \"자다\". Once \"자기\" is highlighted, both offered alternatives remain natural: \"오늘부터 일찍 결정하기로 했어요\" and \"오늘부터 일찍 운동하기로 했어요\".",
+      "fix": "Added a failing regression first, repaired guessTarget, and confirmed the recompiled target is 자기; the associated distractor bans in data/overrides.json remove the reported alternatives.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": [
+    "Full-card revalidation completed for all 9 bites and 33 cards, applying all five protocol defect classes.",
+    "Accepted findings were recompiled and inspected in src/lib/bites.json; 16 findings are observably fixed and no blocker remains.",
+    "Parent rich-chapter and verb-source edits suggested by the worker report were not made because the parent repository is read-only; equivalent local corrections were applied and verified."
+  ]
+}

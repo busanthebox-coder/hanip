@@ -1,0 +1,11 @@
+{
+  "chapterId": "chapter-16",
+  "auditedAt": "2026-08-01",
+  "findings": [
+    { "biteId": "chapter-16-b1", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "연습할수록 실력/매력이 늘어요 are both natural.", "fix": "Applied mutual ban for 실력↔매력.", "fixed": true },
+    { "biteId": "chapter-16-b3", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "날씨가 맑더니 갑자기/결국 천둥이 쳤어요 are both plausible sequence adverbs.", "fix": "Applied mutual ban for 갑자기↔결국.", "fixed": true },
+    { "biteId": "chapter-16-b3", "cardIndex": 2, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "열심히 노력하더니 결국/갑자기 합격했어요 are both natural.", "fix": "Applied mutual ban for 결국↔갑자기.", "fixed": true },
+    { "biteId": "chapter-16-b5", "cardIndex": 0, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "성공 경험이 쌓일수록 자신감/실력이 높아져요 are both natural.", "fix": "Applied mutual ban for 자신감↔실력.", "fixed": true },
+    { "biteId": "chapter-16-b6", "cardIndex": 0, "severity": "blocker", "class": "data-fact", "evidence": "The rule says adjectives are not used with -는 바람에 but the verb row gives 늦다 → 늦는 바람에; 늦다 is taught as an adjective, so the card contradicts itself.", "fix": "Applied replacement with an unambiguous action-verb example 놓치다 → 놓치는 바람에.", "fixed": true }
+  ]
+}

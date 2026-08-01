@@ -1,0 +1,14 @@
+{
+  "chapterId": "chapter-26",
+  "auditedAt": "2026-08-01",
+  "findings": [
+    { "biteId": "chapter-26-b1", "cardIndex": 0, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "아마/곧/금방 조금 늦을 것 같아요 can all be natural timing/probability statements.", "fix": "Applied bans for 아마 against 곧 and 금방.", "fixed": true },
+    { "biteId": "chapter-26-b1", "cardIndex": 5, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "길이 막혀서 조금 늦을/피곤할 것 같아요 are both natural.", "fix": "Applied mutual ban for 늦다↔피곤하다.", "fixed": true },
+    { "biteId": "chapter-26-b3", "cardIndex": 0, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "답장이 없네요. 바쁜가/늦은가 봐요 are both plausible.", "fix": "Applied mutual ban for 바쁘다↔늦다.", "fixed": true },
+    { "biteId": "chapter-26-b3", "cardIndex": 5, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "단서로 추측할/모를 수 있어요 are both natural statements about what evidence permits.", "fix": "Applied mutual ban for 추측하다↔모르다.", "fixed": true },
+    { "biteId": "chapter-26-b5", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "곧/아마 비가 올 것 같아요 are both natural.", "fix": "Applied mutual ban for 곧↔아마.", "fixed": true },
+    { "biteId": "chapter-26-b5", "cardIndex": 2, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "비가 금방/아마 그칠지도 몰라요 are both natural.", "fix": "Applied mutual ban for 금방↔아마.", "fixed": true },
+    { "biteId": "chapter-26-b8", "cardIndex": 0, "severity": "blocker", "class": "data-fact", "evidence": "The reading attaches 라고 directly to polite endings twice without quotation marks: 오나 봐요라고 and 몰라요라고.", "fix": "Applied explicit quoted speech around both reported sentences and matching quotation in QA 2.", "fixed": true },
+    { "biteId": "chapter-26-b8", "cardIndex": 0, "severity": "blocker", "class": "data-fact", "evidence": "QA 3 says they entered because waiting outside was uncomfortable, but the reading only states that Su-jin's situation was uncertain.", "fix": "Applied answer correction to the stated uncertainty reason.", "fixed": true }
+  ]
+}

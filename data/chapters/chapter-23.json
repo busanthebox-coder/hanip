@@ -479,10 +479,10 @@
       "options": [
         "이 길로 쭉 가세요.",
         "이 길에 쭉 가세요.",
-        "이 길을 쭉 가세요."
+        "이 길이 쭉 가세요."
       ],
       "correct": "이 길로 쭉 가세요.",
-      "explanation": "-로 marks the route or direction."
+      "explanation": "-로 marks the route or direction here. 이 길을 쭉 가세요 is also natural because 을 can mark a traveled path, so it is not used as a distractor."
     },
     {
       "type": "multipleChoice",

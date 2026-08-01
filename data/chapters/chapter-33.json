@@ -139,9 +139,9 @@
       ],
       "keyPoint": {
         "label": "The listener, not the meaning, picks the ending",
-        "body": "합니다체 = formal/distant (work, strangers, announcements). 해요체 = polite all-purpose (the safe everyday choice). 반말 = casual, only with close friends, younger people, or family. When unsure, use 해요체 — it's polite and never rude."
+        "body": "합니다체 = formal/distant (work, strangers, announcements). 해요체 = polite all-purpose (the safe everyday choice). 반말 = casual, only with close friends, younger people, or family. When unsure in ordinary conversation, 해요체 is usually the safest polite default; wording, tone, and highly formal settings still matter."
       },
-      "pronunciation": "In 반말 questions, the rising pitch alone marks the question: 가? rises at the end, while the statement 가. falls. There's no -까? ending and no spelling change.",
+      "pronunciation": "For plain 반말 pairs such as 가./가?, spelling stays the same and rising pitch distinguishes the question. Other casual question endings, including -니? and -(으)ㄹ까?, also exist.",
       "drill": {
         "instruction": "Rewrite each 해요체 sentence in the style named in brackets (합니다체 = formal, 반말 = casual).",
         "model": "가요. [반말] → 가.",
@@ -541,7 +541,7 @@
     "comprehensionQuestions": [
       {
         "question": "민서는 발표 처음에 뭐라고 말할 거예요?",
-        "answer": "지금부터 발표를 시작하겠습니다라고 말할 거예요."
+        "answer": "“지금부터 발표를 시작하겠습니다”라고 말할 거예요."
       },
       {
         "question": "친구에게는 어떤 말투가 더 자연스러워요?",

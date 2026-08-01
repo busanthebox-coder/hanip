@@ -337,7 +337,7 @@
      "title": "단어 Words 3 · 많다~",
      "cards": [
       "guess:많다:많아:to hurt / be sick / be in pain|to be good / to like|to be a lot / many",
-      "guess:예약하다::to reserve / book|there is / have / exists (polite)|there isn't / don't have / absent (polite)",
+      "guess:예약하다:예약:to reserve / book|there is / have / exists (polite)|there isn't / don't have / absent (polite)",
       "guess:아프다::to hurt / be sick / be in pain|to be a lot / many|to be good / to like",
       "guess:좋다:좋아:to be a lot / many|to be good / to like|to hurt / be sick / be in pain"
      ]
@@ -405,8 +405,8 @@
      "title": "단어 Words 2 · 보다~",
      "cards": [
       "guess:보다:봐:to eat|to watch / to see|to drink",
-      "guess:운동하다:운동해:to exercise|to eat|to drink",
-      "guess:일하다::to eat|to work|to drink",
+      "guess:운동하다:운동해:to exercise|cooked rice / meal|coffee",
+      "guess:일하다::cooked rice / meal|to work|coffee",
       "guess:밥:밥:coffee|cooked rice / meal|water",
       "guess:커피:커피:cooked rice / meal|water|coffee",
       "guess:물:물:water|cooked rice / meal|coffee",
@@ -624,7 +624,7 @@
       "guess:포장:포장:please give me / please do|how much is it?|takeout / to go",
       "guess:추천:추천:card (credit/debit)|recommendation|cash",
       "guess:할인:할인:card (credit/debit)|discount|cash",
-      "guess:맵다::please give me / please do|to be spicy|how much is it?"
+      "guess:맵다:맵게:please give me / please do|to be spicy|how much is it?"
      ]
     },
     {
@@ -691,8 +691,8 @@
       "guess:괜찮다:괜찮:to be okay / fine / alright|spicy / hot (taste)|to be busy",
       "guess:알다:알아:to know|to eat|to drink",
       "guess:오다:올:to come|to eat|to drink",
-      "guess:쉬다:쉬고:to rest / take a break|to eat|to drink",
-      "guess:운동하다::to exercise|to eat|to drink",
+      "guess:쉬다:쉬고:to rest / take a break|spicy / hot (taste)|to be okay / fine / alright",
+      "guess:운동하다:운동:to exercise|spicy / hot (taste)|to be okay / fine / alright",
       "payoff:맵지:괜찮아요. 거기서 맵지 않은 것도 먹을 수 있어요."
      ]
     },
@@ -945,10 +945,11 @@
      "cards": [
       "guess:바쁘다::to be expensive|to be busy|to be cheap / inexpensive",
       "guess:아프다::to be expensive|to be cheap / inexpensive|to be sick / to hurt",
-      "guess:피곤하다:피곤해:to be tired|to be expensive|to be cheap / inexpensive",
-      "guess:늦다:늦어:to be late|to be tired|to be expensive",
+      "guess:피곤하다:피곤해:to be tired|to be okay / fine / alright|to contact / get in touch",
+      "guess:늦다:늦어:to be late|to be expensive|to be cheap / inexpensive",
       "guess:비싸다:비싸:to be expensive|to be busy|to be sick / to hurt",
-      "guess:싸다:싸고:to be cheap / inexpensive|to be busy|to be sick / to hurt"
+      "guess:싸다:싸고:to be cheap / inexpensive|to be busy|to be sick / to hurt",
+      "payoff:늦게:회사 일이 많아서 늦게까지 일해야 해요."
      ]
     },
     {

@@ -1,0 +1,18 @@
+{
+  "chapterId": "chapter-21",
+  "auditedAt": "2026-08-01",
+  "findings": [
+    { "biteId": "chapter-21-b1", "cardIndex": 0, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "예쁜/찾는/본 가방을 찾고 있어요 all form natural noun phrases.", "fix": "Applied bans for 예쁜 against 찾는 and 본.", "fixed": true },
+    { "biteId": "chapter-21-b1", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "큰/찾는/본 가방은 여행할 때 편해요 are all plausible.", "fix": "Applied bans for 큰 against 찾는 and 본.", "fixed": true },
+    { "biteId": "chapter-21-b1", "cardIndex": 2, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "작은/찾는/본 지갑을 찾고 있어요 are all plausible.", "fix": "Applied bans for 작은 against 찾는 and 본.", "fixed": true },
+    { "biteId": "chapter-21-b1", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "새로운/찾는/본 디자인이 마음에 들어요 are all natural.", "fix": "Applied bans for 새로운 against 찾는 and 본.", "fixed": true },
+    { "biteId": "chapter-21-b3", "cardIndex": 0, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "손님이 많이 찾는 예쁜/큰 모델이에요 are all natural.", "fix": "Applied bans for 찾는 against 예쁜 and 큰.", "fixed": true },
+    { "biteId": "chapter-21-b3", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "어제 본 예쁜/큰 가방이 아직 있어요? are all natural.", "fix": "Applied bans for 본 against 예쁜 and 큰.", "fixed": true },
+    { "biteId": "chapter-21-b3", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "면접 때 입는/예쁜 옷은 단정해야 해요 are both natural.", "fix": "Applied mutual ban for 입는↔예쁜.", "fixed": true },
+    { "biteId": "chapter-21-b5", "cardIndex": 0, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "조용한/찾는/본 카페에서 공부하고 싶어요 are all plausible.", "fix": "Applied bans for 조용한 against 찾는 and 본.", "fixed": true },
+    { "biteId": "chapter-21-b5", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "바쁜/찾는/본 사람에게는 짧게 말하는 게 좋아요 are all plausible.", "fix": "Applied bans for 바쁜 against 찾는 and 본.", "fixed": true },
+    { "biteId": "chapter-21-b5", "cardIndex": 2, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "친절한/찾는/본 직원이 설명해 줬어요 are all natural.", "fix": "Applied bans for 친절한 against 찾는 and 본.", "fixed": true },
+    { "biteId": "chapter-21-b5", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "필요한/찾는/본 물건만 살게요 are all natural.", "fix": "Applied bans for 필요한 against 찾는 and 본.", "fixed": true },
+    { "biteId": "chapter-21-b5", "cardIndex": 4, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "중요한/찾는/본 서류는 가방 안에 넣었어요 are all natural.", "fix": "Applied bans for 중요한 against 찾는 and 본.", "fixed": true }
+  ]
+}

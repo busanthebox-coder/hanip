@@ -1,0 +1,20 @@
+{
+  "chapterId": "chapter-25",
+  "auditedAt": "2026-08-01",
+  "findings": [
+    { "biteId": "chapter-25-b1", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "맛있어요. 하지만/그래도 비싸요 are both plausible pivots.", "fix": "Applied mutual ban for 하지만↔그래도.", "fixed": true },
+    { "biteId": "chapter-25-b1", "cardIndex": 2, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "조금 불편해요. 그렇지만/그래도 가능해요 are both natural.", "fix": "Applied mutual ban for 그렇지만↔그래도.", "fixed": true },
+    { "biteId": "chapter-25-b1", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "비싸요. 그래도/하지만/그런데 한번 가 볼까요? are all natural.", "fix": "Applied bans for 그래도 against 하지만 and 그런데.", "fixed": true },
+    { "biteId": "chapter-25-b1", "cardIndex": 4, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "비싸지만/싸지만 맛있어요 are both natural price-quality contrasts.", "fix": "Applied mutual ban for 비싸다↔싸다.", "fixed": true },
+    { "biteId": "chapter-25-b1", "cardIndex": 5, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "싸지만/비싸지만/어렵지만 품질이 좋아요 are all plausible.", "fix": "Applied bans for 싸다 against 비싸다 and 어렵다.", "fixed": true },
+    { "biteId": "chapter-25-b3", "cardIndex": 0, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "어렵지만/비싸지만/싸지만 재미있어요 are all natural.", "fix": "Applied bans for 어렵다 against 비싸다 and 싸다.", "fixed": true },
+    { "biteId": "chapter-25-b3", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "쉬워도/비싸도/싸도 실수할 수 있어요 are all possible.", "fix": "Applied bans for 쉽다 against 비싸다 and 싸다.", "fixed": true },
+    { "biteId": "chapter-25-b3", "cardIndex": 2, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "피곤해도/비싸도/싸도 계속할 거예요 are all possible concession statements.", "fix": "Applied bans for 피곤하다 against 비싸다 and 싸다.", "fixed": true },
+    { "biteId": "chapter-25-b3", "cardIndex": 4, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "문제/장점/단점이 있어도 괜찮아요 are all natural.", "fix": "Applied bans for 문제 against 장점 and 단점.", "fixed": true },
+    { "biteId": "chapter-25-b3", "cardIndex": 5, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "단점도 있지만 장점/문제가 더 많아요 are both natural.", "fix": "Applied mutual ban for 장점↔문제.", "fixed": true },
+    { "biteId": "chapter-25-b5", "cardIndex": 0, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "단점/문제/장점이 있어도 저는 괜찮아요 are all natural.", "fix": "Applied bans for 단점 against 문제 and 장점.", "fixed": true },
+    { "biteId": "chapter-25-b5", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "조금 불편해도 괜찮아요/비싸요/싸요 are all grammatical results.", "fix": "Applied bans for 괜찮다 against 비싸다 and 싸다.", "fixed": true },
+    { "biteId": "chapter-25-b5", "cardIndex": 2, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "조금 불편하지만/비싸지만/싸지만 가능해요 are all natural.", "fix": "Applied bans for 불편하다 against 비싸다 and 싸다.", "fixed": true },
+    { "biteId": "chapter-25-b5", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "어렵지만 가능해요/비싸요/싸요 are all natural.", "fix": "Applied bans for 가능하다 against 비싸다 and 싸다.", "fixed": true }
+  ]
+}

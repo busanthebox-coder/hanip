@@ -1,0 +1,95 @@
+{
+  "chapterId": "chapter-33",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 9,
+  "cardsReviewed": 31,
+  "findings": [
+    {
+      "biteId": "chapter-33-b1",
+      "cardIndex": 4,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card shows ‘발표에서는 말투를 조금 더 격식 있게 바꿔야 해요.’ with ‘way of speaking; speech tone’ and ‘presentation’. ‘For a presentation, you need to make the presentation a little more formal’ is also a natural interpretation.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-33-b3",
+      "cardIndex": 1,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card shows ‘면접에서는 존댓말로 또박또박 말해요.’ with ‘job interview’, ‘everyday polite speech style’, and ‘formal polite speech style’. Both ‘in everyday polite style, speak clearly in 존댓말’ and ‘in formal polite style, speak clearly in 존댓말’ are plausible instructional statements.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-33-b3",
+      "cardIndex": 5,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The compiled guess card contains the example ‘격식 있는 자리에서는 천천히 말합니다.’ but has target:null. GuessCard.svelte therefore displays only the dictionary form ‘말하다’, so the learner receives no sentence context for choosing among ‘to start’, ‘to speak; to say’, and ‘to end; to be over’. If the target is repaired, all three verbs also fit ‘격식 있는 자리에서는 천천히 ___’ naturally.",
+      "fix": "Added a failing regression first, repaired guessTarget, and confirmed the recompiled target is 말합; the associated distractor bans in data/overrides.json remove the reported alternatives.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-33-b5",
+      "cardIndex": 1,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card shows ‘발표 끝났어요.’ with ‘to end; to be over’ and ‘to start’. ‘발표 시작했어요’ is an equally natural sentence, so context cannot distinguish the offered opposite verbs.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-33-b4",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The key point says, ‘When unsure, use 해요체 — it's polite and never rude.’ This absolute contradicts the same chapter’s statements that a grammatically polite sentence can still sound cold or awkward and that setting, wording, and attitude affect appropriateness.",
+      "fix": "Qualified the local 해요체 guidance as the usual conversational default while preserving the role of wording, tone, and formal setting, then confirmed the recompiled teaching text.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-33-b4",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The pronunciation note says, ‘In 반말 questions, the rising pitch alone marks the question ... There's no -까? ending and no spelling change.’ This overgeneralizes one 가./가? pair: casual Korean also has overt question endings such as -니? and -(으)ㄹ까?.",
+      "fix": "Scoped the local intonation rule to unmarked pairs such as 가./가? and acknowledged -니? and -(으)ㄹ까?, then confirmed the recompiled pronunciation note.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-33-b8",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "QA 1 answers ‘지금부터 발표를 시작하겠습니다라고 말할 거예요.’ The polite sentence ending is attached directly to 라고 without direct-quotation marks; the reading itself correctly uses ‘“지금부터 발표를 시작하겠습니다”라고’.",
+      "fix": "Corrected the local QA answer to “지금부터 발표를 시작하겠습니다”라고 말할 거예요. and confirmed the recompiled reading card matches the quoted source sentence.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-33-b8",
+      "cardIndex": 0,
+      "severity": "polish",
+      "class": "data-fact",
+      "evidence": "The source has ‘“질문 있으십니까?”라고’, but the compiled read chunk contains ‘“질문 있으십니까? ”라고’ with an inserted space before the closing quotation mark. buildReadingBite splits at ? before consuming the closing quote and then joins the pieces with a space.",
+      "fix": "Added a failing reading-segmentation regression first, repaired buildReadingBite, and confirmed the recompiled chunk preserves “질문 있으십니까?”라고 without inserted whitespace.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": [
+    "Full-card revalidation completed for all 9 bites and 31 cards, applying all five protocol defect classes.",
+    "Accepted findings were recompiled and inspected in src/lib/bites.json; 8 findings are observably fixed and no blocker remains.",
+    "Rejected chapter-33-b1 card 0: replacing 해요체 in 해요체로 with 격식 yields ungrammatical 격식로, which requires 격식 있게.",
+    "Rejected chapter-33-b1 card 1: replacing 합쇼체가 with 격식 yields ungrammatical 격식가.",
+    "Rejected chapter-33-b1 card 3: replacing 존댓말로 with 격식 yields ungrammatical 격식로.",
+    "Rejected chapter-33-b1 card 5: replacing 격식 in 격식 있는 자리 with 해요체 or 합쇼체 yields a malformed noun modifier without 이/가.",
+    "Rejected chapter-33-b3 card 4: 해요체/합쇼체에 따라 말투가 달라져요 does not supply a varying condition comparable to 상황에 따라 and is not an equally natural reading of the card.",
+    "Rejected chapter-33-b5 card 2: 해요체/합쇼체 있으십니까? is not a natural alternative to the presentation question 질문 있으십니까? in the displayed context.",
+    "Parent rich-chapter edits suggested by the worker report were not made because the parent repository is read-only; the three factual corrections were applied locally and verified."
+  ]
+}

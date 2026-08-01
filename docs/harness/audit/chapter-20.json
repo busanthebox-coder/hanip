@@ -1,0 +1,11 @@
+{
+  "chapterId": "chapter-20",
+  "auditedAt": "2026-08-01",
+  "findings": [
+    { "biteId": "chapter-20-b1", "cardIndex": 5, "severity": "blocker", "class": "payoff-substring", "evidence": "The payoff highlights 이면 inside 두 잔이면 for the word 이 (Sino-Korean two), but 이면 is the copula conditional here, not the number two.", "fix": "Applied payoff ban for word 이 when the line contains 이면.", "fixed": true },
+    { "biteId": "chapter-20-b4", "cardIndex": 2, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "예약 날짜/시간이 언제예요? are both natural.", "fix": "Applied mutual ban for 날짜↔시간.", "fixed": true },
+    { "biteId": "chapter-20-b4", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "생일/시간이 언제예요? are both natural.", "fix": "Applied mutual ban for 생일↔시간.", "fixed": true },
+    { "biteId": "chapter-20-b4", "cardIndex": 4, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "나이/시간이 어떻게 되세요? are both established polite questions in context.", "fix": "Applied mutual ban for 나이↔시간.", "fixed": true },
+    { "biteId": "chapter-20-b6", "cardIndex": 0, "severity": "blocker", "class": "data-fact", "evidence": "The QA asks 몇 시 십 분에, hard-coding ‘ten minutes’ instead of asking the minute value; the natural question is 몇 시 몇 분에.", "fix": "Applied QA correction to 몇 시 몇 분에.", "fixed": true }
+  ]
+}

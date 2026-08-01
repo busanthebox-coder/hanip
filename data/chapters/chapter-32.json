@@ -149,12 +149,12 @@
         {
           "when": "Stem vowel is ㅏ or ㅗ",
           "add": "stem + 아졌어요",
-          "ex": "좋다 → 좋아졌어요 (got better)"
+          "ex": "좋다 → 좋아졌어요 (got better); 많다 → 많아졌어요 (became more)"
         },
         {
           "when": "Other stem vowels",
           "add": "stem + 어졌어요",
-          "ex": "많다 → 많아졌어요 (became more); 크다 → 커졌어요 (got bigger)"
+          "ex": "크다 → 커졌어요 (got bigger)"
         },
         {
           "when": "하다 adjectives",
@@ -432,7 +432,8 @@
         "이사하게 되다",
         "갑자기 이사하다",
         "다음 달에 이사하다"
-      ]
+      ],
+      "nuance": "이사하다 specifically means relocating your residence. 옮기다 is broader: 책상을 옮기다 moves furniture, while 집을 옮기다 or 거처를 옮기다 can also describe changing residence. Both 이사 안 해요 and 안 이사해요 are grammatical short negatives. Do not say 집을 이사해요; use 이사해요 or 집을 옮겨요."
     },
     {
       "hangul": "맡다",
@@ -542,7 +543,7 @@
       {
         "speaker": "지훈",
         "ko": "네, 건강이 안 좋아져서 시작하기로 했어요.",
-        "romanization": "ne, geongangi an joajyeoseo sijakagiro haesseoyo.",
+        "romanization": "ne, geongangi an joajyeoseo sijakhagiro haesseoyo.",
         "en": "Yes, my health got worse, so I decided to start.",
         "grammarNote": "좋아지다 in the negative gives a state-change reason."
       },
@@ -615,10 +616,10 @@
       "options": [
         "몸이 가벼워졌어요.",
         "몸이 가볍기로 했어요.",
-        "몸이 가볍게 됐어요."
+        "몸이 가벼웠어요."
       ],
       "correct": "몸이 가벼워졌어요.",
-      "explanation": "가볍다 becomes 가벼워지다 for a change of state."
+      "explanation": "가벼웠어요 reports a past state; 가벼워졌어요 reports a change into that state."
     },
     {
       "type": "fillBlank",

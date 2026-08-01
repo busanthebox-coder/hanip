@@ -1,0 +1,14 @@
+{
+  "chapterId": "chapter-24",
+  "auditedAt": "2026-08-01",
+  "findings": [
+    { "biteId": "chapter-24-b1", "cardIndex": 5, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "한번/천천히 입어 보세요 are both natural suggestions.", "fix": "Applied mutual ban for 한번↔천천히.", "fixed": true },
+    { "biteId": "chapter-24-b3", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "천천히/한번/같이 다시 말해 주세요 are all natural requests.", "fix": "Applied bans for 천천히 against 한번 and 같이.", "fixed": true },
+    { "biteId": "chapter-24-b3", "cardIndex": 4, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "같이/한번/천천히 갈까요? are all natural suggestions.", "fix": "Applied bans for 같이 against 한번 and 천천히.", "fixed": true },
+    { "biteId": "chapter-24-b3", "cardIndex": 5, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "먼저/한번/천천히 입어 보세요 are all natural.", "fix": "Applied bans for 먼저 against 한번 and 천천히.", "fixed": true },
+    { "biteId": "chapter-24-b3", "cardIndex": 6, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "다시/한번 보여 주세요 are both natural requests.", "fix": "Applied mutual ban for 다시↔한번.", "fixed": true },
+    { "biteId": "chapter-24-b5", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "이 옷/색 한번 입어 볼까요? are both natural in clothing context.", "fix": "Applied mutual ban for 옷↔색.", "fixed": true },
+    { "biteId": "chapter-24-b5", "cardIndex": 2, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "다른 색/옷도 추천해 주세요 are both natural.", "fix": "Applied mutual ban for 색↔옷.", "fixed": true },
+    { "biteId": "chapter-24-b9", "cardIndex": 0, "severity": "blocker", "class": "data-fact", "evidence": "직원은 먼저 입어 보세요라고 말했어요 lacks quotation marks and cannot attach 라고 directly to 보세요 as written.", "fix": "Applied indirect-report correction to 직원은 먼저 입어 보라고 말했어요.", "fixed": true }
+  ]
+}

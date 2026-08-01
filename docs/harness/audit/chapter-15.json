@@ -1,0 +1,11 @@
+{
+  "chapterId": "chapter-15",
+  "auditedAt": "2026-08-01",
+  "findings": [
+    { "biteId": "chapter-15-b1", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "합격 소식을 듣고 만족스러워서/감동적이어서 소리를 지를 뻔했어요 are both plausible emotional reactions.", "fix": "Applied mutual ban for 만족↔감동.", "fixed": true },
+    { "biteId": "chapter-15-b1", "cardIndex": 5, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "다들 조용해지는 걸 보니까 많이 존경하나/두려워하나 봐요 are both plausible.", "fix": "Applied mutual ban for 존경↔두려움.", "fixed": true },
+    { "biteId": "chapter-15-b3", "cardIndex": 0, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "그분 정말 성실한/정직한/신중한 것 같아요 are all natural personality judgments.", "fix": "Applied mutual bans among 성실하다, 정직하다, 신중하다.", "fixed": true },
+    { "biteId": "chapter-15-b3", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "냉정한/성실한/정직한 척했지만 사실 힘들었어요 all form plausible masking statements.", "fix": "Applied bans for 냉정하다 against 성실하다 and 정직하다.", "fixed": true },
+    { "biteId": "chapter-15-b5", "cardIndex": 0, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "걔가 눈치챈/감춘 것 같아서 아무것도 모르는 척했어요 are both plausible.", "fix": "Applied mutual ban for 눈치채다↔감추다.", "fixed": true }
+  ]
+}

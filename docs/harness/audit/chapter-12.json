@@ -1,0 +1,13 @@
+{
+  "chapterId": "chapter-12",
+  "auditedAt": "2026-08-01",
+  "findings": [
+    { "biteId": "chapter-12-b1", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "그 강의 진짜 지루한 것 같아요 also accepts the offered ‘slight disappointment’ meaning in the same review context.", "fix": "Applied mutual distractor ban for 지루하다↔아쉽다.", "fixed": true },
+    { "biteId": "chapter-12-b3", "cardIndex": 5, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "그 인물한테 공감하기/평가하기 어려운 것 같아요 are both natural with the offered options.", "fix": "Applied mutual distractor ban for 공감하다↔평가하다.", "fixed": true },
+    { "biteId": "chapter-12-b5", "cardIndex": 0, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "개인적으로는/솔직히는 이 영화가 좀 과대평가된 것 같아요 are both plausible hedges.", "fix": "Applied mutual distractor ban for 개인적으로↔솔직히.", "fixed": true },
+    { "biteId": "chapter-12-b5", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "솔직히/개인적으로 말하면 좀 실망했거든요 are both natural.", "fix": "Applied mutual distractor ban for 솔직히↔개인적으로.", "fixed": true },
+    { "biteId": "chapter-12-b5", "cardIndex": 2, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "사람마다 다르게 평가하는/공감하는/기대하는 것 같아요 are all grammatical and plausible without an explicit object.", "fix": "Applied distractor bans for 평가하다 against 공감하다 and 기대하다.", "fixed": true },
+    { "biteId": "chapter-12-b5", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "공감했는데/평가했는데/기대했는데 좀 아쉬웠거든요 all form natural reactions.", "fix": "Applied distractor bans for 기대하다 against 공감하다 and 평가하다.", "fixed": true },
+    { "biteId": "chapter-12-b5", "cardIndex": 4, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "이 드라마 추천할/평가할 만한 것 같아요 are both natural with offered meanings.", "fix": "Applied mutual distractor ban for 추천하다↔평가하다.", "fixed": true }
+  ]
+}

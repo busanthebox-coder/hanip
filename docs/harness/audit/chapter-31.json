@@ -1,0 +1,107 @@
+{
+  "chapterId": "chapter-31",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 9,
+  "cardsReviewed": 30,
+  "findings": [
+    {
+      "biteId": "chapter-31-b1",
+      "cardIndex": 1,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card shows \"한국어를 배우기 위해서 왔어요.\" with the correct option \"to learn\" and distractors \"to study\" and \"to practice\". Both 한국어를 공부하기 위해서 왔어요 and 한국어를 연습하기 위해서 왔어요 are natural statements in the same context.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-31-b1",
+      "cardIndex": 2,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card shows \"시험에 합격하기 위해서 공부해요.\" with \"to study\" marked correct and \"to practice\" offered as a distractor. 시험에 합격하기 위해서 연습해요 is equally grammatical and plausible.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-31-b1",
+      "cardIndex": 3,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card shows \"세 달 동안 매일 연습할 거예요.\" with \"to practice\" marked correct and \"to learn\" and \"to study\" as distractors. 세 달 동안 매일 배울 거예요 and 세 달 동안 매일 공부할 거예요 are both natural plans when the object is understood from context.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-31-b1",
+      "cardIndex": 4,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card shows \"취업을 위해서 한국어를 연습해요.\" with \"employment; getting a job\" marked correct and \"exam\" as a distractor. 시험을 위해서 한국어를 연습해요 is an equally natural purpose sentence.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-31-b2",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The rule row says \"Noun ending in a vowel\" + \"를 위해서\" but gives \"가족 → 가족을 위해서\". 가족 ends in the consonant ㄱ and therefore demonstrates 을, contradicting the row it is meant to teach.",
+      "fix": "Changed the vowel-final form-table example to 친구 → 친구를 위해서 and confirmed the recompiled pattern card shows the correct particle pairing.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-31-b3",
+      "cardIndex": 0,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card shows \"시험을 위해서 한 달 동안 준비했어요.\" with \"exam\" marked correct and \"employment; getting a job\" as a distractor. 취업을 위해서 한 달 동안 준비했어요 is equally natural.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-31-b3",
+      "cardIndex": 4,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The 머물다 nuance says it is a \"ㄹ-stem\" whose \"어-form irregularly doubles to 머물러요 / 머물렀어요\". The standard analysis is that 머물다 is the shortened form of 머무르다 and cannot itself take a vowel-initial ending; 머물러 and 머물렀어요 come from the full form 머무르다 by 르-irregular conjugation, not by doubling the ㄹ-stem 머물-.",
+      "fix": "Added a corrected local 머물다 nuance to chapter-31 data, made local chapter nuance take precedence over parent enrichment, and confirmed the recompiled reveal explains 머물다 as the shortened form of 머무르다.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-31-b4",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The pronunciation note says \"the final ㄹ links smoothly into the next word: [일쭈일 똥안]\". 일주일 and 동안 are separate words, so the ㄹ does not resyllabify into 동안; careful normative pronunciation keeps 동안's initial ㄷ lax, while [똥안] can occur as optional connected-speech tensification and should not be presented as the single required pronunciation.",
+      "fix": "Applied the integration-ready local data correction, recompiled src/lib/bites.json, and confirmed the quoted defect is no longer present in the affected card.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-31-b5",
+      "cardIndex": 0,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card shows \"한국에 있는 동안 여행도 하고 싶어요.\" with \"travel; trip\" marked correct and \"employment; getting a job\" as a distractor. 한국에 있는 동안 취업도 하고 싶어요 is also a natural statement.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-31-b6",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The form-table row labeled \"Same subject (also fine)\" gives \"밥을 먹는 동안 전화가 왔어요\". The understood eater and the grammatical subject 전화 are different, so the example contradicts its label.",
+      "fix": "Changed the local same-subject row to 밥을 먹는 동안 텔레비전을 봤어요 and confirmed the recompiled form table now matches its label.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": [
+    "Full-card revalidation completed for all 9 bites and 30 cards, applying all five protocol defect classes.",
+    "Accepted findings were recompiled and inspected in src/lib/bites.json; 10 findings are observably fixed and no blocker remains.",
+    "Parent rich-chapter and dictionary edits suggested by the worker report were not made because the parent repository is read-only; equivalent local corrections were applied and verified."
+  ]
+}

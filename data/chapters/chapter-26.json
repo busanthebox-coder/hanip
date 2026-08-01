@@ -524,7 +524,7 @@
   },
   "readingText": {
     "title": "Reading clues before a meeting",
-    "body": "민서는 약속 장소로 가는 길에 하늘이 갑자기 흐려지는 것을 봤어요. 그래서 곧 비가 올 것 같다고 생각했어요. 지하철역 앞에서는 사람들이 우산을 꺼내고 있었어요. 민서는 비가 조금 오나 봐요라고 말했어요. 그런데 친구 수진 씨는 아직 답장이 없었어요. 지훈은 수진 씨가 바쁜가 봐요, 조금 늦을지도 몰라요라고 했어요. 두 사람은 확실하지 않으니까 밖에서 기다리지 않고 카페 안으로 들어갔어요.",
+    "body": "민서는 약속 장소로 가는 길에 하늘이 갑자기 흐려지는 것을 봤어요. 그래서 곧 비가 올 것 같다고 생각했어요. 지하철역 앞에서는 사람들이 우산을 꺼내고 있었어요. 민서는 “비가 조금 오나 봐요”라고 말했어요. 그런데 친구 수진 씨는 아직 답장이 없었어요. 지훈은 “수진 씨가 바쁜가 봐요. 조금 늦을지도 몰라요”라고 했어요. 두 사람은 확실하지 않으니까 밖에서 기다리지 않고 카페 안으로 들어갔어요.",
     "bodyTranslation": "Minseo saw the sky suddenly getting cloudy on the way to the meeting place, so she thought it would rain soon. In front of the subway station, people were taking out umbrellas, so she inferred that it was raining. Their friend Su-jin had not replied yet, so Jihoon guessed she might be busy and a little late. Since they were not sure, they waited inside a cafe instead of outside.",
     "comprehensionQuestions": [
       {
@@ -533,11 +533,11 @@
       },
       {
         "question": "사람들이 우산을 꺼내는 것은 어떤 단서예요?",
-        "answer": "비가 조금 오나 봐요라고 추측할 수 있는 단서예요."
+        "answer": "“비가 조금 오나 봐요”라고 추측할 수 있는 단서예요."
       },
       {
         "question": "두 사람은 왜 카페 안으로 들어갔어요?",
-        "answer": "확실하지 않았고 밖에서 기다리기 불편해서 카페 안으로 들어갔어요."
+        "answer": "수진 씨가 바쁜지 늦는지 확실하지 않아서 카페 안으로 들어갔어요."
       }
     ]
   },

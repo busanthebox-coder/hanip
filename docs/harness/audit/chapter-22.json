@@ -1,0 +1,14 @@
+{
+  "chapterId": "chapter-22",
+  "auditedAt": "2026-08-01",
+  "findings": [
+    { "biteId": "chapter-22-b1", "cardIndex": 0, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "한국 음식을 좋아해요/싫어해요/비교해요 are all natural transitive statements.", "fix": "Applied bans for 좋아하다 against 싫어하다 and 비교하다.", "fixed": true },
+    { "biteId": "chapter-22-b1", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "너무 단 커피를 싫어해요/좋아해요/비교해요 are all natural.", "fix": "Applied bans for 싫어하다 against 좋아하다 and 비교하다.", "fixed": true },
+    { "biteId": "chapter-22-b1", "cardIndex": 2, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "차보다 커피를 더/제일 좋아해요 are both plausible, though the latter is redundant.", "fix": "Applied mutual ban for 더↔제일.", "fixed": true },
+    { "biteId": "chapter-22-b1", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "이 카페 커피를 제일/더 좋아해요 are both natural.", "fix": "Applied mutual ban for 제일↔더.", "fixed": true },
+    { "biteId": "chapter-22-b3", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "취미/취향이 뭐예요? are both natural.", "fix": "Applied mutual ban for 취미↔취향.", "fixed": true },
+    { "biteId": "chapter-22-b3", "cardIndex": 2, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "어떤 음식/취미를 제일 좋아해요? are both natural.", "fix": "Applied mutual ban for 음식↔취미.", "fixed": true },
+    { "biteId": "chapter-22-b5", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "친구만큼 운동/취미를 좋아해요 are both natural.", "fix": "Applied mutual ban for 운동↔취미.", "fixed": true },
+    { "biteId": "chapter-22-b5", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "저는 커피를 선택했어요/좋아했어요/싫어했어요 are all natural.", "fix": "Applied bans for 선택하다 against 좋아하다 and 싫어하다.", "fixed": true }
+  ]
+}

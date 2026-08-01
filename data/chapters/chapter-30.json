@@ -136,7 +136,7 @@
         "label": "-는 바람에 vs -아서/어서",
         "body": "-아서/어서 is neutral and works for any reason. -는 바람에 adds the feeling \"and this unexpected thing messed things up,\" so the result is almost always bad and in the past. Don't use 바람에 for a planned action or a good outcome: say 열심히 공부해서 합격했어요 (not 공부하는 바람에)."
       },
-      "pronunciation": "늦는 is read [난는]: the ㅈ batchim sounds like [ㄷ], then turns into [ㄴ] before the ㄴ of 는. So read 늦는 바람에 as [난는 바라메].",
+      "pronunciation": "늦는 is read [는는]: the ㅈ batchim is realized as [ㄷ] in coda position, then nasalizes to [ㄴ] before the ㄴ of 는. Read 늦는 바람에 as [는는 바라메].",
       "drill": {
         "instruction": "Connect the unexpected cause to its bad result with -는 바람에.",
         "model": "길이 막히다 / 약속에 늦었어요 → 길이 막히는 바람에 약속에 늦었어요.",
@@ -286,7 +286,7 @@
       "collocations": [
         "버스를 타다",
         "버스를 놓치다",
-        "버스가 고장나다"
+        "버스가 고장 나다"
       ]
     },
     {
@@ -322,7 +322,7 @@
       ]
     },
     {
-      "hangul": "고장나다",
+      "hangul": "고장 나다",
       "romanization": "gojangnada",
       "english": "to break down; to malfunction",
       "partOfSpeech": "verb",
@@ -332,8 +332,8 @@
         "note": "A strong 바람에 cause because the problem was not planned."
       },
       "collocations": [
-        "버스가 고장나다",
-        "핸드폰이 고장나다",
+        "버스가 고장 나다",
+        "핸드폰이 고장 나다",
         "고장 나는 바람에"
       ]
     },
@@ -357,7 +357,7 @@
       "hangul": "늦다",
       "romanization": "neutda",
       "english": "to be late",
-      "partOfSpeech": "adjective",
+      "partOfSpeech": "verb",
       "exampleSentence": {
         "ko": "늦어서 죄송해요.",
         "en": "I am sorry I am late.",
@@ -365,9 +365,10 @@
       },
       "collocations": [
         "약속에 늦다",
-        "답장이 늦다",
+        "수업에 늦다",
         "늦어서 죄송해요"
-      ]
+      ],
+      "nuance": "Here 늦다 is the action verb meaning to arrive after the expected time, as in 약속에 늦다 or 수업에 늦다. Keep it distinct from the descriptive sense in 답장이 늦다 ('the reply is late/slow')."
     },
     {
       "hangul": "취소하다",

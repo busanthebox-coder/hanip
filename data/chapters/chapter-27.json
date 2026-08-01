@@ -124,7 +124,7 @@
       ],
       "keyPoint": {
         "label": "-는 중이에요 vs. -고 있어요",
-        "body": "Both mean 'be doing,' but -는 중이에요 means you're smack in the middle of one specific action, so it can't describe a lasting state. You can say 한국에 살고 있어요 (I'm living in Korea), but not 사는 중이에요 — 중 needs a action that starts and stops, like eating or waiting."
+        "body": "Both mean 'be doing.' -는 중이에요 foregrounds an activity or situation as a current phase and is especially natural with bounded actions such as eating or waiting. 한국에 살고 있어요 is the neutral way to say 'I live in Korea'; 한국에 사는 중이에요 is also possible when the speaker deliberately frames living there as a current or temporary stage."
       },
       "pronunciation": "먹는 → ㄱ before ㄴ turns into [ㅇ] (nasal), so 먹는 sounds like [멍는]: [멍는 중이에요].",
       "drill": {
@@ -144,7 +144,7 @@
     },
     {
       "title": "V-는 동안 — while / during",
-      "func": "동안 means 'the whole time of.' Add -는 동안 to a verb stem to say 'while (someone) is doing something.' The main action happens over that same stretch of time.",
+      "func": "Add -는 동안 to a verb stem to present a time interval in which the main event occurs. The main event may fill all of that interval or occur at some point within it; context determines the amount of overlap.",
       "formTable": [
         {
           "when": "Verb stem + -는 동안 (vowel or consonant stem)",
@@ -190,7 +190,7 @@
       ],
       "keyPoint": {
         "label": "-는 동안 (always 는) vs. -(으)ㄹ 때",
-        "body": "-는 동안 always keeps -는, no matter the tense, because it marks a whole stretch of time. 때 ('when') points at one moment or occasion; 동안 covers the full length. Use 동안 when one action runs the whole time another is going on."
+        "body": "-는 동안 always keeps -는, no matter the tense, because it marks an interval. 때 ('when') can point to a moment or occasion, while 동안 foregrounds the containing stretch of time. The main event may fill the interval or happen at a point within it."
       },
       "pronunciation": "먹는 동안 → 먹는 nasalizes to [멍는] (ㄱ+ㄴ → ㅇ+ㄴ), so it's [멍는 동안].",
       "drill": {
@@ -368,7 +368,8 @@
         "벌써 끝나다",
         "벌써 왔어요",
         "벌써 다 했어요"
-      ]
+      ],
+      "nuance": "벌써 means 'already' and often signals that an event or state is earlier than expected. It commonly appears with completed events and present states, and it can also modify an imminent plan in a surprised question such as 벌써 갈 거예요? ('Are you leaving already?'). 곧 means 'soon' and is not a replacement for that use."
     },
     {
       "hangul": "계속",
@@ -384,7 +385,8 @@
         "계속 하다",
         "계속 기다리다",
         "계속 공부하다"
-      ]
+      ],
+      "nuance": "계속 presents an action, state, or series as continuing across a span; it does not guarantee that there are literally no gaps. 자꾸 foregrounds recurrence and often adds irritation or undesirability, while 계속 foregrounds continuation, so 계속 전화가 와요 and 자꾸 전화가 와요 can both be natural with different emphasis."
     },
     {
       "hangul": "잠깐",

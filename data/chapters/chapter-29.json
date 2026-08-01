@@ -12,7 +12,7 @@
   "grammarNotes": [
     {
       "title": "V-다가 — break off one action to do another",
-      "func": "V-다가 says you were in the middle of one action when you stopped partway and switched to (or got interrupted by) a second one. The first action does not finish — you break off from it. The same person does both actions.",
+      "func": "V-다가 says you were in the middle of one action when you stopped partway and switched to (or got interrupted by) a second one. The first action does not finish — you break off from it. When both clauses describe intentional actions, their subject is normally the same; an unplanned event can instead be the second-clause subject (밥을 먹다가 전화가 왔어요).",
       "formTable": [
         {
           "when": "Add straight to the plain verb stem (no vowel change, same after vowel or consonant)",
@@ -520,14 +520,14 @@
     },
     {
       "type": "particleChoice",
-      "prompt": "문자___ 받다가 전화를 했어요. (I got a text, then switched to calling.)",
+      "prompt": "문자___ 읽다가 전화를 했어요. (I was reading a text, then switched to calling.)",
       "options": [
         "를",
         "가",
         "에서"
       ],
       "correct": "를",
-      "explanation": "문자를 받다 is the action phrase “receive a text.” 받다가 shows that action was interrupted or shifted."
+      "explanation": "문자를 읽다 is the action phrase “read a text.” 읽다가 shows that reading was interrupted or shifted."
     },
     {
       "type": "conjugate",

@@ -1,0 +1,15 @@
+{
+  "chapterId": "chapter-19",
+  "auditedAt": "2026-08-01",
+  "findings": [
+    { "biteId": "chapter-19-b1", "cardIndex": 0, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "오늘 뭐/언제 해요? are both natural questions with an omitted activity.", "fix": "Applied mutual ban for 뭐↔언제.", "fixed": true },
+    { "biteId": "chapter-19-b1", "cardIndex": 4, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "한국어 단어를 어떻게/언제/어디(서) 외워요? all ask natural follow-ups; the location particle is commonly omitted in speech.", "fix": "Applied bans for 어떻게 against 어디 and 언제.", "fixed": true },
+    { "biteId": "chapter-19-b3", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "회사까지 얼마나/왜 걸려요? are both natural duration/reason questions.", "fix": "Applied mutual ban for 얼마나↔왜.", "fixed": true },
+    { "biteId": "chapter-19-b3", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "무슨/어느 음악을 좋아해요? are both natural, asking kind versus selection.", "fix": "Applied mutual ban for 무슨↔어느.", "fixed": true },
+    { "biteId": "chapter-19-b3", "cardIndex": 4, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "어느/무슨 카페에서 만날까요? are both natural.", "fix": "Applied mutual ban for 어느↔무슨.", "fixed": true },
+    { "biteId": "chapter-19-b4", "cardIndex": 0, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "질문/이유가 있으면 지금 물어보세요 are both natural.", "fix": "Applied mutual ban for 질문↔이유.", "fixed": true },
+    { "biteId": "chapter-19-b4", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "왜 대답/질문/이유가 없어요? are all natural.", "fix": "Applied bans for 대답 against 질문 and 이유.", "fixed": true },
+    { "biteId": "chapter-19-b4", "cardIndex": 2, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "그 이유/질문/대답이 뭐예요? are all natural.", "fix": "Applied bans for 이유 against 질문 and 대답.", "fixed": true },
+    { "biteId": "chapter-19-b4", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "좋은 방법/질문/대답이 있어요? are all natural.", "fix": "Applied bans for 방법 against 질문 and 대답.", "fixed": true }
+  ]
+}

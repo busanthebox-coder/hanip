@@ -1,0 +1,9 @@
+{
+  "chapterId": "chapter-18",
+  "auditedAt": "2026-08-01",
+  "findings": [
+    { "biteId": "chapter-18-b1", "cardIndex": 0, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "내일/주말 친구를 만날 거예요 are both natural future plans.", "fix": "Applied mutual ban for 내일↔주말.", "fixed": true },
+    { "biteId": "chapter-18-b1", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "이번 주말에/내일 카페에 갈 거예요 are both natural.", "fix": "Applied mutual ban for 주말↔내일.", "fixed": true },
+    { "biteId": "chapter-18-b1", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "친구를 만날/볼 거예요 are both natural with the offered meanings.", "fix": "Applied mutual ban for 만나다↔보다.", "fixed": true }
+  ]
+}

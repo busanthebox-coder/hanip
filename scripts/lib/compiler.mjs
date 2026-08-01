@@ -234,6 +234,10 @@ export function guessTarget(word, sentenceKo, { advanced = true } = {}) {
     let stem = rawKo;
     if (conjugates && rawKo.endsWith('다')) stem = rawKo.slice(0, -1);
     if (stem.length >= 2) plain.add(stem);
+    if (conjugates && rawKo.endsWith('하다')) {
+      const nounBase = rawKo.slice(0, -2);
+      if (nounBase.length >= 2) plain.add(nounBase);
+    }
     if (!conjugates) continue;
     const base = stem.slice(0, -1);
     const d = decomposeSyl(stem.at(-1));
@@ -243,7 +247,10 @@ export function guessTarget(word, sentenceKo, { advanced = true } = {}) {
       if (V_FUSE[d.V]) addFused(base + composeSyl(d.L, V_FUSE[d.V]));
       addFused(base + composeSyl(d.L, d.V, 'ㄹ'));             // future/promise 갈·올·릴
       if (advanced) addFused(base + composeSyl(d.L, d.V, 'ㄴ')); // modifier 간·본·큰
-      if (stem.at(-1) === '하') addFused(base + '해');
+      if (stem.at(-1) === '하') {
+        addFused(base + '해');
+        if (advanced) addFused(base + '합');
+      }
       if (advanced && stem.at(-1) === '르') {
         const before = decomposeSyl(base.at(-1));
         if (before) {
@@ -263,6 +270,9 @@ export function guessTarget(word, sentenceKo, { advanced = true } = {}) {
       addFused(irregular + '은');                              // 낫다→나은
     } else if (advanced && d.T === 'ㅎ' && H_FUSE[d.V]) {
       addFused(base + composeSyl(d.L, H_FUSE[d.V]));           // 그렇다→그래
+    }
+    if (advanced && d.T === 'ㄹ') {
+      addFused(base + composeSyl(d.L, d.V) + '는');             // 만들다→만드는, 머물다→머무는
     }
     if (stem.length === 1) for (const o of CONJ_OPENERS) plain.add(stem + o);
   }
@@ -285,7 +295,7 @@ export function guessTarget(word, sentenceKo, { advanced = true } = {}) {
 // substrings. A 1-char stem (먹-, 가-) only counts followed by a conjugation
 // opener, so 오다's 오 can never claim 오늘. Returns the matched span to
 // highlight, or null.
-const CONJ_OPENERS = ['아', '어', '여', '으', '고', '지', '면', '세', '요', '습', '을', '는'];
+const CONJ_OPENERS = ['아', '어', '여', '으', '고', '지', '면', '세', '요', '습', '을', '는', '게', '기', '았', '었'];
 function stemMatchIn(lineKo, word) {
   const stem = stemOf(word);
   if (stem.length >= 2) return lineKo.includes(stem) ? stem : null;
@@ -347,7 +357,13 @@ export function buildWordBites(chapter, overrides = {}) {
     if (!chunk.length) break;
     const cards = chunk.map((w) => ({
       kind: 'guess',
-      word: { ko: w.hangul, romanization: w.romanization, en: w.english, pos: w.partOfSpeech },
+      word: {
+        ko: w.hangul,
+        romanization: w.romanization,
+        en: w.english,
+        pos: w.partOfSpeech,
+        ...(w.nuance ? { nuance: w.nuance } : {}),
+      },
       sentence: w.exampleSentence ? { ko: w.exampleSentence.ko, en: w.exampleSentence.en } : null,
       target: w.exampleSentence ? guessTarget(w, w.exampleSentence.ko, { advanced: advancedTargets }) : null,
       options: guessOptions(w, words, overrides),
@@ -451,7 +467,7 @@ export function buildDialogueBite(chapter) {
 export function buildReadingBite(chapter) {
   const rt = chapter.readingText;
   if (!rt || !rt.body) return null;
-  const sentences = rt.body.match(/[^.!?]+[.!?]?/g)?.map((s) => s.trim()).filter(Boolean) || [rt.body];
+  const sentences = splitReadingSentences(rt.body);
   const half = Math.ceil(sentences.length / 2);
   const cards = [{
     kind: 'read',
@@ -461,6 +477,25 @@ export function buildReadingBite(chapter) {
     qas: (rt.comprehensionQuestions || []).map((q) => ({ q: q.question, a: q.answer })),
   }];
   return { kind: 'reading', title: '읽기 Reading · ' + (rt.title || ''), cards };
+}
+
+function splitReadingSentences(body) {
+  const sentences = [];
+  let start = 0;
+  for (let i = 0; i < body.length; i++) {
+    if (!'.!?'.includes(body[i])) continue;
+    let end = i + 1;
+    while (/[”"']/.test(body[end] || '')) end += 1;
+    if (end < body.length && !/\s/.test(body[end])) continue;
+    const sentence = body.slice(start, end).trim();
+    if (sentence) sentences.push(sentence);
+    while (/\s/.test(body[end] || '')) end += 1;
+    start = end;
+    i = end - 1;
+  }
+  const tail = body.slice(start).trim();
+  if (tail) sentences.push(tail);
+  return sentences.length ? sentences : [body];
 }
 
 const BOSS_TYPES = new Set(['multipleChoice', 'particleChoice', 'orderWords']);
@@ -488,20 +523,23 @@ export function buildBossBite(chapter) {
 export function compileChapter(chapter, number, overrides = {}) {
   const wordBites = buildWordBites(chapter, overrides);
   const patternBites = buildPatternBites(chapter, overrides);
+  const canDo = chapter.canDo || [];
   // interleave: words1, pattern1, words2, pattern2, …
   const woven = [];
   const max = Math.max(wordBites.length, patternBites.length);
   for (let i = 0; i < max; i++) {
-    if (wordBites[i]) woven.push(wordBites[i]);
-    if (patternBites[i]) woven.push(patternBites[i]);
+    const skill = canDo.length ? canDo[i % canDo.length] : '';
+    if (wordBites[i]) woven.push({ ...wordBites[i], canDo: skill });
+    if (patternBites[i]) woven.push({ ...patternBites[i], canDo: skill });
   }
-  const bites = [...woven, buildDialogueBite(chapter), buildReadingBite(chapter), buildBossBite(chapter)].filter(Boolean);
-  const canDo = chapter.canDo || [];
+  const tail = [buildDialogueBite(chapter), buildReadingBite(chapter), buildBossBite(chapter)]
+    .filter(Boolean)
+    .map((bite, i) => ({ ...bite, canDo: canDo.length ? canDo[i % canDo.length] : '' }));
+  const bites = [...woven, ...tail];
   bites.forEach((bite, i) => {
     bite.id = `${chapter.id}-b${i + 1}`;
     bite.chapterId = chapter.id;
     bite.index = i;
-    bite.canDo = canDo.length ? canDo[i % canDo.length] : '';
   });
   return {
     id: chapter.id,

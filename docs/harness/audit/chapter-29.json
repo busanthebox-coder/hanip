@@ -1,0 +1,72 @@
+{
+  "chapterId": "chapter-29",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 8,
+  "cardsReviewed": 28,
+  "findings": [
+    {
+      "biteId": "chapter-29-b2",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The V-다가 teaching card states, \"The same person does both actions.\" That absolute rule conflicts with the same compiled chapter's natural external-interruption example, \"밥을 먹다가 전화가 왔어요\" (chapter-29-b1 card 1), whose second-clause subject is 전화, not the person eating.",
+      "fix": "Corrected grammarNotes[0].func locally to distinguish the usual same-subject intentional sequence from an external interruption, then confirmed the recompiled teaching text includes 밥을 먹다가 전화가 왔어요 as the counterexample.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-29-b8",
+      "cardIndex": 3,
+      "severity": "blocker",
+      "class": "drill-multi",
+      "evidence": "The drill asks, \"문자___ 받다가 전화를 했어요. (I got a text, then switched to calling.)\" and explains, \"받다가 shows that action was interrupted or shifted.\" Receiving a text is presented by the English as a completed punctual event, so 받다가 does not express the claimed interrupted in-progress action in this example.",
+      "fix": "Replaced the local drill with 문자를 읽다가 and its matching English/explanation, then confirmed the recompiled card has one defensible particle answer and an interruptible action.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-29-b1",
+      "cardIndex": 3,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card uses \"중간에 계획을 바꿨어요\" but offers both \"in the middle; midway\" and \"suddenly; all of a sudden\"; 갑자기 계획을 바꿨어요 is equally natural in this context.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-29-b3",
+      "cardIndex": 3,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card uses \"카페에 앉아 있어요\" but offers both \"to sit\" and \"to go\"; 카페에 가 있어요 is a fully natural result-state sentence and is explicitly taught in this chapter's V-아/어 있다 source examples.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-29-b5",
+      "cardIndex": 2,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card uses \"가다가 갑자기 문자를 받았어요\" but offers both \"suddenly; all of a sudden\" and \"in the middle; midway\"; 가다가 중간에 문자를 받았어요 is also natural.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-29-b5",
+      "cardIndex": 3,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card uses \"조금 쉬다가 다시 갈 거예요\" but offers both \"to rest\" and \"to eat\"; 조금 먹다가 다시 갈 거예요 is an equally natural sentence.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": [
+    "Full-card revalidation completed for all 8 bites and 28 cards, applying all five protocol defect classes.",
+    "Accepted findings were recompiled and inspected in src/lib/bites.json; 6 findings are observably fixed and no blocker remains.",
+    "Rejected the chapter-29-b6 English-dialogue polish recommendation: “Why did you come back while going to school?” is awkward but not factually false, and Order 03 authorizes authored-data changes for factual corrections; the source translation remains unchanged.",
+    "Parent rich-chapter edits suggested by the worker report were not made because the parent repository is read-only; the two factual corrections were applied locally and verified."
+  ]
+}

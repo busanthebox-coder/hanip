@@ -1,0 +1,13 @@
+{
+  "chapterId": "chapter-14",
+  "auditedAt": "2026-08-01",
+  "findings": [
+    { "biteId": "chapter-14-b1", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "열심히 하다 보니까 성공하게/시작하게/실패하게 됐어요 can all describe an outcome.", "fix": "Applied bans for 성공하다 against 시작하다 and 실패하다.", "fixed": true },
+    { "biteId": "chapter-14-b3", "cardIndex": 0, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "한번 도전해/시작해 보기로 했어요 are equally natural.", "fix": "Applied mutual ban for 도전하다↔시작하다.", "fixed": true },
+    { "biteId": "chapter-14-b3", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "포기하지/실패하지/시작하지 않기로 했어요 are all natural decisions.", "fix": "Applied bans for 포기하다 against 실패하다 and 시작하다.", "fixed": true },
+    { "biteId": "chapter-14-b3", "cardIndex": 2, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "수입/사업이 줄어들까 봐 걱정이에요 are both plausible.", "fix": "Applied mutual ban for 수입↔사업.", "fixed": true },
+    { "biteId": "chapter-14-b3", "cardIndex": 4, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "내년에 퇴직하게/시작하게/실패하게 될 것 같아요 are all plausible without an object.", "fix": "Applied bans for 퇴직하다 against 시작하다 and 실패하다.", "fixed": true },
+    { "biteId": "chapter-14-b3", "cardIndex": 5, "severity": "blocker", "class": "data-fact", "evidence": "The note labels 지다 → 질까 봐 as ‘ㄹ irregular’; 지다 is a regular vowel-final stem that simply takes ㄹ까 봐.", "fix": "Applied note correction to the regular vowel-stem rule.", "fixed": true },
+    { "biteId": "chapter-14-b5", "cardIndex": 4, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "일을 하다 보니까 인맥/사업/걱정이 생기게 됐어요 are all natural outcomes.", "fix": "Applied bans for 인맥 against 사업 and 걱정.", "fixed": true }
+  ]
+}

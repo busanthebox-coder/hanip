@@ -7,6 +7,8 @@ import {
   guessTarget,
   buildWordBites,
   buildPatternBites,
+  buildReadingBite,
+  compileChapter,
 } from './compiler.mjs';
 
 describe('guessTarget', () => {
@@ -62,6 +64,26 @@ describe('guessTarget', () => {
   });
   it('matches the past ㅂ-irregular from chapter 17', () => {
     expect(guessTarget(w('춥다', 'adjective'), '어제 정말 추웠어요.')).toBe('추웠');
+  });
+  it('matches ㄹ-stem modifiers before -는', () => {
+    expect(guessTarget(w('만들다', 'verb'), '발표 자료를 만드는 중이에요.')).toBe('만드는');
+    expect(guessTarget(w('살다', 'verb'), '한국에 사는 동안 친구를 만났어요.')).toBe('사는');
+    expect(guessTarget(w('머물다', 'verb'), '한국에 머무는 동안 연습할 거예요.')).toBe('머무는');
+  });
+  it('matches a split 하다 noun and formal -ㅂ니다 fusion', () => {
+    expect(guessTarget(w('준비하다', 'verb'), '방학 동안 취업 준비를 할 거예요.')).toBe('준비');
+    expect(guessTarget(w('말하다', 'verb'), '격식 있는 자리에서는 천천히 말합니다.')).toBe('말합');
+  });
+  it('matches guarded one-syllable stems before 게, 기, and past 았/었', () => {
+    expect(guessTarget(w('늘다', 'verb'), '한국어를 매일 쓰니까 실력이 늘었어요.')).toBe('늘었');
+    expect(guessTarget(w('줄다', 'verb'), '운동을 시작하고 스트레스가 줄었어요.')).toBe('줄었');
+    expect(guessTarget(w('살다', 'verb'), '회사 일 때문에 한국에 살게 됐어요.')).toBe('살게');
+    expect(guessTarget(w('맡다', 'verb'), '새 일을 맡게 됐어요.')).toBe('맡게');
+    expect(guessTarget(w('자다', 'verb'), '오늘부터 일찍 자기로 했어요.')).toBe('자기');
+    expect(guessTarget(w('오다', 'verb'), '오늘 날씨가 좋아요.')).toBeNull();
+  });
+  it('matches a spaced compound verb', () => {
+    expect(guessTarget(w('고장 나다', 'verb'), '버스가 고장 나는 바람에 오래 기다렸어요.')).toBe('고장 나');
   });
 });
 
@@ -204,6 +226,12 @@ describe('buildWordBites', () => {
     // highlighted span is 먹어 — 오다's 오 can never claim 오늘 this way
     expect(payoff.hl).toBe('먹어');
   });
+  it('preserves a local source nuance for the compiled guess reveal', () => {
+    const chapter = structuredClone(fakeChapter);
+    chapter.extendedVocabulary[0].nuance = 'Local correction wins.';
+    const guess = buildWordBites(chapter)[0].cards.find((c) => c.kind === 'guess');
+    expect(guess.word.nuance).toBe('Local correction wins.');
+  });
 });
 
 describe('buildPatternBites', () => {
@@ -219,5 +247,45 @@ describe('buildPatternBites', () => {
   it('falls back to a teach card when no morpheme is extractable', () => {
     const [bite] = buildPatternBites({ grammarNotes: [{ title: '자음 (Consonants) — Shapes', formTable: [], examples: [] }] });
     expect(bite.cards[0].kind).toBe('teach');
+  });
+});
+
+describe('buildReadingBite', () => {
+  it('does not insert whitespace before a closing quotation mark', () => {
+    const bite = buildReadingBite({
+      readingText: {
+        body: '발표가 끝난 뒤에는 “질문 있으십니까?”라고 물을 수 있어요. 다음 문장입니다.',
+      },
+    });
+    const text = bite.cards[0].chunks.join(' ');
+    expect(text).toContain('“질문 있으십니까?”라고');
+    expect(text).not.toContain('“질문 있으십니까? ”라고');
+  });
+});
+
+describe('compileChapter', () => {
+  it('keeps each woven word/pattern pair on the same canDo skill', () => {
+    const chapter = {
+      id: 'chapter-99',
+      canDo: ['A', 'B', 'C'],
+      extendedVocabulary: Array.from({ length: 13 }, (_, i) => ({
+        hangul: `단어${i}`,
+        romanization: `word${i}`,
+        english: `word ${i}`,
+        partOfSpeech: 'noun',
+        exampleSentence: { ko: `단어${i} 예문이에요.`, en: `Example ${i}.` },
+      })),
+      grammarNotes: ['첫째', '둘째', '셋째'].map((name) => ({
+        title: `${name} 무늬`,
+        formTable: [],
+        examples: [{ ko: `${name} 예문이에요.`, en: `${name} example.` }],
+      })),
+      extendedDialogue: { lines: [{ speaker: 'A', ko: '대화예요.', en: 'Dialogue.' }] },
+      readingText: { body: '읽기예요.', comprehensionQuestions: [] },
+      inlineExercises: [{ type: 'multipleChoice', prompt: '고르세요.', options: ['가', '나'], correct: '가' }],
+    };
+    const compiled = compileChapter(chapter, 99);
+    expect(compiled.bites.slice(0, 6).map((bite) => bite.canDo)).toEqual(['A', 'A', 'B', 'B', 'C', 'C']);
+    expect(compiled.bites.slice(6).map((bite) => bite.canDo)).toEqual(['A', 'B', 'C']);
   });
 });

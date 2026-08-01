@@ -1,0 +1,14 @@
+{
+  "chapterId": "chapter-23",
+  "auditedAt": "2026-08-01",
+  "findings": [
+    { "biteId": "chapter-23-b1", "cardIndex": 0, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "지하철/버스/택시로 가는 게 빨라요 are all natural transport comparisons.", "fix": "Applied mutual bans among 지하철, 버스, 택시.", "fixed": true },
+    { "biteId": "chapter-23-b1", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "지하철/버스/택시로 가면 조금 오래 걸려요 are all natural.", "fix": "Applied mutual bans among 버스, 지하철, 택시.", "fixed": true },
+    { "biteId": "chapter-23-b1", "cardIndex": 2, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "시간이 없으면 택시/지하철/버스로 가세요 are all natural.", "fix": "Applied mutual bans among 택시, 지하철, 버스.", "fixed": true },
+    { "biteId": "chapter-23-b1", "cardIndex": 3, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "역/지하철에서 2호선으로 갈아타세요 are both plausible locations.", "fix": "Applied mutual ban for 역↔지하철.", "fixed": true },
+    { "biteId": "chapter-23-b1", "cardIndex": 4, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "버스 타러 정류장/지하철에 가요 are both natural destinations in casual usage.", "fix": "Applied mutual ban for 정류장↔지하철.", "fixed": true },
+    { "biteId": "chapter-23-b5", "cardIndex": 0, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "다음 정류장에서 내려요/갈아타요/타요 are all natural transit actions.", "fix": "Applied bans for 내리다 against 갈아타다 and 타다.", "fixed": true },
+    { "biteId": "chapter-23-b5", "cardIndex": 1, "severity": "bad-teaching", "class": "guess-ambiguous", "evidence": "역까지 걸어서/갈아타서/타서 십 분 걸려요 can all describe a ten-minute route.", "fix": "Applied bans for 걷다 against 갈아타다 and 타다.", "fixed": true },
+    { "biteId": "chapter-23-b8", "cardIndex": 0, "severity": "blocker", "class": "drill-multi", "evidence": "이 길을 쭉 가세요 is natural Korean for following/traveling this road, but the drill marks it false beside 이 길로 쭉 가세요.", "fix": "Applied replacement of the false option with 이 길이 쭉 가세요 and explanation that 을 can also mark a traveled path.", "fixed": true }
+  ]
+}

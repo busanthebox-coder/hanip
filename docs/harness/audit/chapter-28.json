@@ -1,0 +1,106 @@
+{
+  "chapterId": "chapter-28",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 8,
+  "cardsReviewed": 29,
+  "findings": [
+    {
+      "biteId": "chapter-28-b1",
+      "cardIndex": 0,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card quotes \"먼저 손을 씻어요.\" and offers \"then; after that\" and \"right away; immediately\" beside the answer \"first\"; both 그다음 손을 씻어요 and 바로 손을 씻어요 are equally natural in the same frame.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-28-b1",
+      "cardIndex": 1,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card quotes \"그다음 아침을 먹어요.\" and offers \"first\" and \"right away; immediately\" beside \"then; after that\"; 먼저 아침을 먹어요 and 바로 아침을 먹어요 are both natural alternatives.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-28-b1",
+      "cardIndex": 2,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card quotes \"준비하고 나서 바로 출발했어요.\" and offers \"first\" and \"then; after that\" beside \"right away; immediately\"; 준비하고 나서 먼저 출발했어요 and 준비하고 나서 그다음 출발했어요 are natural sequence statements.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-28-b1",
+      "cardIndex": 3,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card quotes \"방금 도착했어요.\" and offers \"first\" and \"then; after that\" beside \"just now\"; 먼저 도착했어요 and 그다음 도착했어요 are both ordinary Korean sentences.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-28-b1",
+      "cardIndex": 4,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card quotes \"이미 예약했어요.\" and offers \"first\" and \"then; after that\" beside \"already\"; 먼저 예약했어요 and 그다음 예약했어요 are both natural in the same frame.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-28-b3",
+      "cardIndex": 0,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card quotes \"아침을 먹고 나서 출발해요.\" and offers \"to prepare; to get ready\" beside \"to eat\"; 아침을 준비하고 나서 출발해요 is an equally natural reading.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-28-b3",
+      "cardIndex": 1,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The objectless frame \"준비하고 나서 바로 출발했어요.\" offers \"to wash\" and \"to eat\" beside \"to prepare; to get ready\"; 씻고 나서 바로 출발했어요 and 먹고 나서 바로 출발했어요 are both natural.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-28-b3",
+      "cardIndex": 2,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card quotes \"지갑을 챙기고 나서 출발했어요.\" and offers \"to wash\" and \"to eat\" beside \"to depart\"; 지갑을 챙기고 나서 씻었어요 and 지갑을 챙기고 나서 먹었어요 are both plausible next actions.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-28-b3",
+      "cardIndex": 3,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card quotes \"도착하자마자 전화해 주세요.\" and offers \"to wash\" and \"to eat\" beside \"to arrive\"; 씻자마자 전화해 주세요 and 먹자마자 전화해 주세요 are both fully natural requests.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-28-b3",
+      "cardIndex": 5,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The card quotes \"이미 예약했어요.\" and offers \"to wash\" and \"to eat\" beside \"to reserve; to book\"; 이미 씻었어요 and 이미 먹었어요 are both natural statements.",
+      "fix": "Applied the concrete mutual distractor bans in data/overrides.json and confirmed after recompilation that the quoted card no longer offers the reported alternative meanings.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": [
+    "Full-card revalidation completed for all 8 bites and 29 cards, applying all five protocol defect classes.",
+    "Accepted findings were recompiled and inspected in src/lib/bites.json; 10 findings are observably fixed and no blocker remains."
+  ]
+}

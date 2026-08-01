@@ -1,0 +1,35 @@
+{
+  "chapterId": "chapter-34",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 8,
+  "cardsReviewed": 25,
+  "findings": [
+    {
+      "biteId": "chapter-34-b3",
+      "cardIndex": 3,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The 부모님 guess card says, \"every verb around it must climb to its honorific tier: 있다→계시다, 주다→드리다\" and \"you must use 계세요 and 드렸어요/께.\" This is an incorrect absolute rule: the same chapter's 드리다 card correctly says, \"If the senior person gives to you, use 주시다 instead,\" and the N께 V-아/어 드리다 teach card says that 드리다 honors the recipient while -(으)시- honors the subject. If 부모님 are the giver/subject, 주다 must become 주시다/주세요, not 드리다; if they are the recipient of the learner's action, 께 and 드리다 apply. The card also treats 부모님이 있어요 and 부모님한테 as categorically invalid even though the former can mean 'I have parents' and the latter is possible in casual register.",
+      "fix": "Added a direction-sensitive local 부모님 nuance to chapter-34 data, made local chapter nuance take precedence over parent enrichment, and confirmed the recompiled reveal distinguishes subject honorification from recipient humility.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-34-b7",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "Reading QA 3 answers, \"선생님께서 말씀하셨어요라고 말해요.\" The reading body correctly presents the same report as \"“선생님께서 말씀하셨어요”라고 해요.\" Without quotation marks, 라고 is attached directly to the polite ending -어요, so the QA answer teaches malformed reported-speech syntax. The identical bad string exists in both data/chapters/chapter-34.json and ../korean-core-starter/scripts/rich-chapters/chapter-34.json.",
+      "fix": "Corrected the local QA answer to “선생님께서 말씀하셨어요”라고 말해요. and confirmed the recompiled reading card preserves the direct-quotation boundary.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": [
+    "Full-card revalidation completed for all 8 bites and 25 cards, applying all five protocol defect classes.",
+    "Accepted findings were recompiled and inspected in src/lib/bites.json; 2 findings are observably fixed and no blocker remains.",
+    "Parent rich-chapter and vocabulary-source edits suggested by the worker report were not made because the parent repository is read-only; equivalent local corrections were applied and verified."
+  ]
+}

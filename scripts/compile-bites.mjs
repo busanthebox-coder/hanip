@@ -29,7 +29,7 @@ if (existsSync(wordbookPath)) {
       for (const card of bite.cards) {
         if (card.kind !== 'guess') continue;
         const w = byKo.get(card.word.ko);
-        if (!w?.nuance) continue;
+        if (!w?.nuance || card.word.nuance) continue;
         card.word.nuance = w.nuance;
         nuanceAttached += 1;
       }

@@ -383,7 +383,8 @@
         "부모님께",
         "부모님께서",
         "부모님이 계시다"
-      ]
+      ],
+      "nuance": "부모님 includes the honorific suffix 님, but the surrounding form depends on grammatical role. Honor respected parents as the subject with forms such as 부모님께서 주세요 or 부모님이 계세요; honor them as the recipient with 부모님께 드렸어요. 부모님이 있어요 can mean 'I have parents,' and 한테/에게 may occur in casual speech, though 께 is the respectful choice."
     },
     {
       "hangul": "사장님",
@@ -480,7 +481,7 @@
       },
       {
         "question": "선생님이 말한 경우에는 어떻게 말해요?",
-        "answer": "선생님께서 말씀하셨어요라고 말해요."
+        "answer": "“선생님께서 말씀하셨어요”라고 말해요."
       }
     ]
   },
