@@ -14,15 +14,17 @@
   const FILTERS = [
     { id: 'all', label: '전체 All' },
     { id: 'learned', label: '배운 것 Learned' },
-    { id: 'nuance', label: '뉘앙스 Nuance' },
+    { id: 'nuance', label: '💡 헷갈리는 짝 Confusable' },
     { id: 'verb', label: '동사 Verb' },
     { id: 'noun', label: '명사 Noun' },
     { id: 'adj', label: '형용사 Adj' },
     { id: 'other', label: '기타 Other' }
   ];
 
-  // "does this word have more to say than its one-line gloss?"
-  const hasDepth = (w) => !!(w.nuance || w.commonMistakes?.length || w.forms || w.cluster);
+  // Nuance notes sit on 174 of 191 words, so badging those would mark almost
+  // every row — background, not signal. The rare, worth-hunting thing is a
+  // confusable twin (말하다 vs 이야기하다), so that gets the 💡.
+  const hasDepth = (w) => !!w.cluster;
 
   function openDetail(w) {
     selected = w;
@@ -82,7 +84,10 @@
 {:else}
 <section class="wordbook">
   <div class="cap">단어장 · Wordbook</div>
-  <p class="sub">{words.length} words · 배운 단어 {learnedCount}개 · 뉘앙스 {words.filter(hasDepth).length}개</p>
+  <p class="sub">
+    {words.length} words · 배운 단어 {learnedCount}개 · 💡 헷갈리는 짝 {words.filter(hasDepth).length}개
+  </p>
+  <p class="sub note">Tap any word for its nuance note, mistakes, and forms · 아무 단어나 누르면 뉘앙스·실수·활용형이 나와요</p>
 
   <input
     class="search"
@@ -133,7 +138,7 @@
                     <span class="learned-dot" title="배운 단어 · Learned">✓</span>
                   {/if}
                   {#if hasDepth(w)}
-                    <span class="depth-dot" title="뉘앙스 설명 있음 · Has nuance notes">뉘</span>
+                    <span class="depth-dot" title="헷갈리는 짝이 있어요 · Has a confusable twin" aria-label="헷갈리는 짝 있음">💡</span>
                   {/if}
                   <span class="en">{w.en}</span>
                 </button>
@@ -164,14 +169,16 @@
 
 <style>
   .wordbook { max-width: 480px; margin: 0 auto; padding: 30px 20px 40px; }
-  .depth-dot { flex: none; display: inline-grid; place-items: center; min-width: 20px; height: 20px; padding: 0 5px;
-    border-radius: 999px; background: var(--gold-soft); color: #8A6D12; font-size: 10.5px; font-weight: 850; }
+  /* The emoji carries its own colour, so it needs no pill behind it —
+     just enough size to read as a marker rather than punctuation. */
+  .depth-dot { flex: none; font-size: 13px; line-height: 1; }
   .full-link { margin-top: 10px; justify-self: start; padding: 8px 14px; border-radius: 999px;
     background: var(--wash); color: var(--accent-deep); font-size: 12.5px; font-weight: 850;
     transition: background .12s var(--ease); }
   .full-link:hover { background: var(--accent-soft); }
   .cap { font-size: 11.5px; font-weight: 850; letter-spacing: .2em; color: var(--accent); text-transform: uppercase; }
-  .sub { margin: 6px 0 16px; font-size: 13.5px; color: var(--ink-3); word-break: keep-all; }
+  .sub { margin: 6px 0 4px; font-size: 13.5px; color: var(--ink-3); word-break: keep-all; }
+  .sub.note { margin-bottom: 16px; font-size: 12px; line-height: 1.5; }
 
   .search {
     width: 100%; padding: 11px 15px; font: inherit; font-size: 14px; color: var(--ink);
