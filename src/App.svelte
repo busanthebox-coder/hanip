@@ -3,11 +3,19 @@
   import Home from './components/Home.svelte';
   import Shelf from './components/Shelf.svelte';
   import BitePlayer from './components/BitePlayer.svelte';
-  import HangulTab from './components/HangulTab.svelte';
-  import HanjaTab from './components/HanjaTab.svelte';
-  import GuideTab from './components/GuideTab.svelte';
-  import WordbookTab from './components/WordbookTab.svelte';
   import { markBiteDone, progress } from './lib/store.js';
+
+  // The reference tabs carry the heavy data — the wordbook's nuance layer alone
+  // is ~650kB — and none of it is needed to start today's bite. Load each on
+  // first visit and memoize the promise so switching back is instant.
+  const LAZY = {
+    hangul: () => import('./components/HangulTab.svelte'),
+    hanja: () => import('./components/HanjaTab.svelte'),
+    guide: () => import('./components/GuideTab.svelte'),
+    words: () => import('./components/WordbookTab.svelte'),
+  };
+  const loaded = {};
+  const loadTab = (key) => (loaded[key] ||= LAZY[key]());
 
   const chapters = bitesData.chapters;
 
@@ -67,17 +75,21 @@
       {#if showGuide}
         <div class="guide-wrap">
           <button class="back-shelf" on:click={() => { showGuide = false; window.scrollTo(0, 0); }}>← 책장 · Back to shelf</button>
-          <GuideTab />
+          {#await loadTab('guide')}
+            <p class="loading">불러오는 중 · Loading…</p>
+          {:then mod}
+            <svelte:component this={mod.default} />
+          {/await}
         </div>
       {:else}
         <Shelf {chapters} onPlay={play} onOpenGuide={() => { showGuide = true; window.scrollTo(0, 0); }} />
       {/if}
-    {:else if tab === 'hangul'}
-      <HangulTab />
-    {:else if tab === 'hanja'}
-      <HanjaTab />
-    {:else if tab === 'words'}
-      <WordbookTab />
+    {:else}
+      {#await loadTab(tab)}
+        <p class="loading">불러오는 중 · Loading…</p>
+      {:then mod}
+        <svelte:component this={mod.default} />
+      {/await}
     {/if}
   </main>
   <nav class="tabs">
@@ -105,4 +117,6 @@
   .back-shelf { margin: 18px 20px 0; padding: 8px 15px; border-radius: 999px; background: var(--card);
     border: 1px solid var(--line); color: var(--ink-2); font-size: 12.5px; font-weight: 800; }
   .back-shelf:hover { border-color: var(--ink-3); }
+  .loading { max-width: 480px; margin: 0 auto; padding: 40px 20px; color: var(--ink-3);
+    font-size: 13px; font-weight: 750; text-align: center; }
 </style>

@@ -1,4 +1,4 @@
-import { readdirSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { compileChapter } from './lib/compiler.mjs';
@@ -14,23 +14,31 @@ const chapters = files.map((f, i) => {
   return compileChapter(raw, i + 1, overrides);
 });
 
+// The moment a learner has just guessed a word is the moment its nuance
+// lands — attach it to the guess card so the reveal can teach, not just
+// confirm. (extract-wordbook.mjs must run first; npm scripts order it.)
+const wordbookPath = join(root, 'src', 'lib', 'wordbook.json');
+let nuanceAttached = 0;
+if (existsSync(wordbookPath)) {
+  const byKo = new Map();
+  for (const w of JSON.parse(readFileSync(wordbookPath, 'utf8')).words) {
+    if (!byKo.has(w.ko)) byKo.set(w.ko, w);
+  }
+  for (const chapter of chapters) {
+    for (const bite of chapter.bites) {
+      for (const card of bite.cards) {
+        if (card.kind !== 'guess') continue;
+        const w = byKo.get(card.word.ko);
+        if (!w?.nuance) continue;
+        card.word.nuance = w.nuance;
+        nuanceAttached += 1;
+      }
+    }
+  }
+}
+
 mkdirSync(dirname(outFile), { recursive: true });
 writeFileSync(outFile, JSON.stringify({ generatedFrom: files.length + ' chapters', chapters }, null, 1));
-
-// 단어장 — every word the course teaches, flat and searchable
-const wordbook = files.flatMap((f, i) => {
-  const raw = JSON.parse(readFileSync(join(srcDir, f), 'utf8'));
-  return (raw.extendedVocabulary || []).map((w) => ({
-    ko: w.hangul,
-    romanization: w.romanization,
-    en: w.english,
-    pos: w.partOfSpeech,
-    ex: w.exampleSentence ? { ko: w.exampleSentence.ko, en: w.exampleSentence.en } : null,
-    chapter: i + 1,
-  }));
-});
-writeFileSync(join(root, 'src', 'lib', 'wordbook.json'), JSON.stringify({ words: wordbook }, null, 1));
-console.log(`wordbook: ${wordbook.length} words`);
 
 const totals = chapters.reduce(
   (acc, ch) => {
@@ -40,4 +48,7 @@ const totals = chapters.reduce(
   },
   { bites: 0, cards: 0, kinds: {} }
 );
-console.log(`compiled ${chapters.length} chapters → ${totals.bites} bites, ${totals.cards} cards`, totals.kinds);
+console.log(
+  `compiled ${chapters.length} chapters → ${totals.bites} bites, ${totals.cards} cards (${nuanceAttached} guess cards carry nuance)`,
+  totals.kinds
+);

@@ -1,22 +1,37 @@
 <script>
   import wordbookData from '../lib/wordbook.json';
   import AudioDot from './cards/AudioDot.svelte';
+  import WordDetail from './WordDetail.svelte';
   import { progress } from '../lib/store.js';
 
   const words = wordbookData.words;
 
   let query = '';
-  let filter = 'all'; // 'all' | 'learned' | 'verb' | 'noun' | 'adj' | 'other'
+  let filter = 'all'; // 'all' | 'learned' | 'nuance' | 'verb' | 'noun' | 'adj' | 'other'
   let openKey = null;
+  let selected = null;   // a word → the full entry replaces this list
 
   const FILTERS = [
     { id: 'all', label: '전체 All' },
     { id: 'learned', label: '배운 것 Learned' },
+    { id: 'nuance', label: '뉘앙스 Nuance' },
     { id: 'verb', label: '동사 Verb' },
     { id: 'noun', label: '명사 Noun' },
     { id: 'adj', label: '형용사 Adj' },
     { id: 'other', label: '기타 Other' }
   ];
+
+  // "does this word have more to say than its one-line gloss?"
+  const hasDepth = (w) => !!(w.nuance || w.commonMistakes?.length || w.forms || w.cluster);
+
+  function openDetail(w) {
+    selected = w;
+    window.scrollTo(0, 0);
+  }
+  function closeDetail() {
+    selected = null;
+    window.scrollTo(0, 0);
+  }
 
   function bucket(pos) {
     if (pos.startsWith('verb')) return 'verb';
@@ -40,7 +55,8 @@
   $: q = query.trim().toLowerCase();
   $: visible = words.filter((w) => {
     if (filter === 'learned' && !learnedSet.has(w.ko)) return false;
-    if (filter !== 'all' && filter !== 'learned' && bucket(w.pos) !== filter) return false;
+    if (filter === 'nuance' && !hasDepth(w)) return false;
+    if (!['all', 'learned', 'nuance'].includes(filter) && bucket(w.pos) !== filter) return false;
     if (!q) return true;
     return (
       w.ko.toLowerCase().includes(q) ||
@@ -61,9 +77,12 @@
   })();
 </script>
 
+{#if selected}
+  <WordDetail word={selected} onBack={closeDetail} />
+{:else}
 <section class="wordbook">
   <div class="cap">단어장 · Wordbook</div>
-  <p class="sub">{words.length} words · 배운 단어 {learnedCount}개</p>
+  <p class="sub">{words.length} words · 배운 단어 {learnedCount}개 · 뉘앙스 {words.filter(hasDepth).length}개</p>
 
   <input
     class="search"
@@ -113,6 +132,9 @@
                   {#if learned}
                     <span class="learned-dot" title="배운 단어 · Learned">✓</span>
                   {/if}
+                  {#if hasDepth(w)}
+                    <span class="depth-dot" title="뉘앙스 설명 있음 · Has nuance notes">뉘</span>
+                  {/if}
                   <span class="en">{w.en}</span>
                 </button>
                 <AudioDot text={w.ko} size={26} />
@@ -126,6 +148,9 @@
                       <div class="ex-en">{w.ex.en}</div>
                     </div>
                   {/if}
+                  <button class="full-link" on:click={() => openDetail(w)}>
+                    {hasDepth(w) ? '뉘앙스 · 자세히 보기 →' : '자세히 보기 · Full entry →'}
+                  </button>
                 </div>
               {/if}
             </div>
@@ -135,9 +160,16 @@
     {/each}
   {/if}
 </section>
+{/if}
 
 <style>
   .wordbook { max-width: 480px; margin: 0 auto; padding: 30px 20px 40px; }
+  .depth-dot { flex: none; display: inline-grid; place-items: center; min-width: 20px; height: 20px; padding: 0 5px;
+    border-radius: 999px; background: var(--gold-soft); color: #8A6D12; font-size: 10.5px; font-weight: 850; }
+  .full-link { margin-top: 10px; justify-self: start; padding: 8px 14px; border-radius: 999px;
+    background: var(--wash); color: var(--accent-deep); font-size: 12.5px; font-weight: 850;
+    transition: background .12s var(--ease); }
+  .full-link:hover { background: var(--accent-soft); }
   .cap { font-size: 11.5px; font-weight: 850; letter-spacing: .2em; color: var(--accent); text-transform: uppercase; }
   .sub { margin: 6px 0 16px; font-size: 13.5px; color: var(--ink-3); word-break: keep-all; }
 

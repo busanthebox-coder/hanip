@@ -65,6 +65,11 @@
       <div class="note">{card.sentence.ko}{#if card.sentence.en} = {card.sentence.en}{/if}</div>
     {/if}
     {#if card.note}<div class="note sub">{card.note}</div>{/if}
+    {#if card.word.nuance}
+      <!-- The instant after a guess is when nuance actually lands, so the
+           reveal teaches the distinction instead of only confirming. -->
+      <div class="nuance"><span class="n-cap">뉘앙스 · Nuance</span>{card.word.nuance}</div>
+    {/if}
     {#if !romajaShown}
       <button class="romaja" on:click={() => { romajaShown = true; }}>발음 · Show romanization</button>
     {:else}
@@ -102,4 +107,8 @@
   .note.sub { color: var(--ink-3); font-size: 12.5px; }
   .romaja { margin-top: 8px; padding: 5px 12px; border-radius: 999px; background: var(--wash); color: var(--ink-3);
     font-size: 12px; font-weight: 800; }
+  .nuance { margin-top: 10px; padding: 10px 12px; border-radius: 10px; background: var(--gold-soft);
+    border-left: 3px solid var(--gold); font-size: 13px; line-height: 1.6; color: var(--ink); word-break: keep-all; }
+  .n-cap { display: block; margin-bottom: 3px; font-size: 10px; font-weight: 850; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--ink-3); }
 </style>
