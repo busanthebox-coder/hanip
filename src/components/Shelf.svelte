@@ -3,6 +3,7 @@
 
   export let chapters = [];
   export let onPlay = () => {};
+  export let onOpenGuide = () => {};
 
   let openId = null;
 
@@ -17,6 +18,15 @@
 <section class="shelf">
   <div class="cap">책장 · Bookshelf — the whole A1 course</div>
   <p class="sub">Open a chapter to see its bites — replay any of them anytime. · 챕터를 열면 한입 목록이 나와요.</p>
+
+  <button class="guide-card" on:click={onOpenGuide}>
+    <span class="g-ico">🧭</span>
+    <span class="g-main">
+      <strong>가이드북 · Korea guides</strong>
+      <span>Real-life survival guides — arrival, transport, food, emergencies · 실전 생활 가이드 20편</span>
+    </span>
+    <span class="g-chev">▸</span>
+  </button>
 
   <div class="rows">
     {#each chapters as ch}
@@ -54,6 +64,15 @@
   .shelf { max-width: 480px; margin: 0 auto; padding: 30px 20px 40px; }
   .cap { font-size: 11.5px; font-weight: 850; letter-spacing: .2em; color: var(--accent); text-transform: uppercase; }
   .sub { margin: 6px 0 18px; font-size: 13.5px; color: var(--ink-3); word-break: keep-all; }
+  .guide-card { width: 100%; display: flex; align-items: center; gap: 12px; margin-bottom: 14px; padding: 15px 16px;
+    border-radius: 18px; background: var(--card); border: 1px solid var(--line); box-shadow: var(--shadow-1);
+    text-align: left; transition: border-color .12s var(--ease); }
+  .guide-card:hover { border-color: var(--ink-3); }
+  .g-ico { font-size: 26px; flex: none; }
+  .g-main { flex: 1; min-width: 0; display: grid; gap: 1px; }
+  .g-main strong { font-size: 15px; font-weight: 850; }
+  .g-main span { font-size: 12px; color: var(--ink-3); line-height: 1.45; word-break: keep-all; }
+  .g-chev { color: var(--ink-3); flex: none; }
   .rows { display: grid; gap: 10px; }
   .ch { border: 1px solid var(--line); border-radius: 18px; background: var(--card); box-shadow: var(--shadow-1); overflow: hidden; }
   .head { width: 100%; display: flex; align-items: center; gap: 12px; padding: 14px 15px; text-align: left; }

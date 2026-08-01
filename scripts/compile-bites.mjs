@@ -17,6 +17,21 @@ const chapters = files.map((f, i) => {
 mkdirSync(dirname(outFile), { recursive: true });
 writeFileSync(outFile, JSON.stringify({ generatedFrom: files.length + ' chapters', chapters }, null, 1));
 
+// 단어장 — every word the course teaches, flat and searchable
+const wordbook = files.flatMap((f, i) => {
+  const raw = JSON.parse(readFileSync(join(srcDir, f), 'utf8'));
+  return (raw.extendedVocabulary || []).map((w) => ({
+    ko: w.hangul,
+    romanization: w.romanization,
+    en: w.english,
+    pos: w.partOfSpeech,
+    ex: w.exampleSentence ? { ko: w.exampleSentence.ko, en: w.exampleSentence.en } : null,
+    chapter: i + 1,
+  }));
+});
+writeFileSync(join(root, 'src', 'lib', 'wordbook.json'), JSON.stringify({ words: wordbook }, null, 1));
+console.log(`wordbook: ${wordbook.length} words`);
+
 const totals = chapters.reduce(
   (acc, ch) => {
     acc.bites += ch.biteCount;

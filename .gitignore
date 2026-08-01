@@ -1,3 +1,4 @@
 node_modules/
 dist/
 src/lib/bites.json
+src/lib/wordbook.json
