@@ -1,0 +1,22 @@
+{
+  "chapterId": "chapter-65",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 9,
+  "cardsReviewed": 27,
+  "findings": [
+    {
+      "biteId": "chapter-65-b1",
+      "cardIndex": 3,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The final production checklist taught 입자 as the Korean term for 은/는, 이/가, and 을/를, conflicting with the standard educational term 조사 and with the chapter's own final checklist.",
+      "fix": "Changed the vocabulary item, examples, dialogue, reading, questions, boss item, and summary bullet to 조사 and corrected romanization.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 9 bites and 27 cards were reviewed; the builder-less integrated production sections correctly remain teach cards, and no unfixed blocker remains."]
+}

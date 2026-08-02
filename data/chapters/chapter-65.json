@@ -1,0 +1,487 @@
+{
+  "id": "chapter-65",
+  "hook": {
+    "situation": "One day, four Korean tasks: answer an interview question, send a formal email, talk with coworkers, and reply to a friend on KakaoTalk. The grammar changes because the relationship changes.",
+    "objectives": [
+      "Run a production checklist before sending or saying Korean.",
+      "Revise the same idea across interview, email, coworker talk, and friend chat.",
+      "Catch mismatches in particles, tense, honorifics, connectors, and style."
+    ],
+    "whyItMatters": "The final skill is not knowing more patterns. It is choosing the right Korean surface for the situation and then checking every layer before the sentence leaves your mouth or screen."
+  },
+  "grammarNotes": [
+    {
+      "id": "gn-pattern-170",
+      "title": "Integrated production checklist",
+      "mentalModel": "Before producing Korean, ask: who is listening, what is the purpose, and what style does this channel require? Then check the grammar pieces.",
+      "formation": "Purpose -> listener -> channel -> style -> particles -> tense/aspect -> connectors -> closing.",
+      "examples": [
+        {
+          "ko": "면접 답변은 정중하게 말하고, 경험의 시제를 흔들리지 않게 맞춰야 해요.",
+          "romanization": "myeonjeop dapbyeoneun jeongjunghage malhago, gyeongheomui sijereul heundeulliji anke matchwoya haeyo.",
+          "en": "For an interview answer, speak courteously and keep the tense of your experience consistent.",
+          "note": "Interview Korean checks register and tense together."
+        },
+        {
+          "ko": "공식 이메일에서는 확인 부탁드립니다처럼 마무리를 격식 있게 써야 해요.",
+          "romanization": "gongsik imeireseoneun hwagin butakdeurimnidacheoreom mamurireul gyeoksik itge sseoya haeyo.",
+          "en": "In a formal email, the closing should be formal, like 확인 부탁드립니다.",
+          "note": "Email Korean needs closing phrases, not only correct grammar."
+        },
+        {
+          "ko": "친구 카톡에서는 편하게 써도 되지만 회사 메일에는 ㅋㅋ를 빼야 해요.",
+          "romanization": "chingu katogeseoneun pyeonhage sseodo doejiman hoesa meileneun kkreul ppaeya haeyo.",
+          "en": "You can write casually in a friend's KakaoTalk chat, but you must remove ㅋㅋ from a company email.",
+          "note": "Same feeling, different style."
+        }
+      ],
+      "exceptions": [
+        "Do not treat the checklist as a fixed word order. It is a review habit.",
+        "If one layer changes, recheck the others. Formalizing a sentence can change endings, vocabulary, connectors, and closing."
+      ]
+    },
+    {
+      "id": "gn-register-rewrite",
+      "title": "Rewrite by relationship, not by adding 요",
+      "mentalModel": "Politeness is a system. Adding 요 to slang or casual sentence shape does not make the whole sentence appropriate.",
+      "formation": "Casual idea -> polite neutral sentence -> formal written sentence.",
+      "examples": [
+        {
+          "ko": "친구: ㅇㅇ 확인했어. / 회사 메일: 네, 확인했습니다.",
+          "romanization": "chingu: ngng hwaginhaesseo. / hoesa meil: ne, hwaginhaetseumnida.",
+          "en": "Friend: Yep, I checked. / Company email: Yes, I have confirmed it.",
+          "note": "ㅇㅇ changes to 네, and the ending changes to -했습니다."
+        },
+        {
+          "ko": "친구: 그 영상 개웃겨. / 면접: 그 사례가 매우 인상적이었습니다.",
+          "romanization": "chingu: geu yeongsang gaeutgyeo. / myeonjeop: geu saryega maeu insangjeogieotseumnida.",
+          "en": "Friend: That video is hilarious. / Interview: That example was very impressive.",
+          "note": "The rough slang is rewritten, not decorated."
+        },
+        {
+          "ko": "친구: 늦어서 미안. / 공식 이메일: 답장이 늦어져 죄송합니다.",
+          "romanization": "chingu: neujeoseo mian. / gongsik imeil: dapjangi neujeojyeo joesonghamnida.",
+          "en": "Friend: Sorry I'm late. / Formal email: I apologize for the delayed reply.",
+          "note": "Formal email uses a different phrase and a different sentence shape."
+        }
+      ],
+      "exceptions": [
+        "요 can make a sentence polite, but it cannot make rough slang formal.",
+        "Some friendly workplace chats allow softer language, but official emails still need complete phrases."
+      ]
+    },
+    {
+      "id": "gn-particle-tense-connector",
+      "title": "The three quiet failure points",
+      "mentalModel": "Learners often notice vocabulary errors, but native readers feel particle, tense, and connector errors first because those pieces control the sentence relationship.",
+      "formation": "After the sentence sounds meaningful, check: noun role, event time, and sentence relationship.",
+      "examples": [
+        {
+          "ko": "이 문장은 뜻은 맞지만 조사가 어색해요.",
+          "romanization": "i munjangeun tteuseun matjiman josaga eosaekaeyo.",
+          "en": "The meaning of this sentence is right, but the particle is awkward.",
+          "note": "A common review comment."
+        },
+        {
+          "ko": "경험을 말할 때는 과거 시제를 안정적으로 유지해야 해요.",
+          "romanization": "gyeongheomeul malhal ttaeneun gwageo sijereul anjeongjeogeuro yujihaeya haeyo.",
+          "en": "When talking about experience, you need to keep the past tense stable.",
+          "note": "Interview answers often talk about past experience."
+        },
+        {
+          "ko": "공식 글에서는 그래서보다 따라서가 더 자연스러울 수 있어요.",
+          "romanization": "gongsik geureseoneun geuraeseoboda ttaraseoga deo jayeonseureoul su isseoyo.",
+          "en": "In formal writing, 따라서 can be more natural than 그래서.",
+          "note": "Connector choice depends on register and logic."
+        }
+      ],
+      "exceptions": [
+        "A short friend chat can omit pieces that a formal email cannot omit.",
+        "A connector is not decoration. It must match result, contrast, clarification, or summary."
+      ]
+    },
+    {
+      "id": "gn-four-versions",
+      "title": "One idea, four Korean versions",
+      "mentalModel": "A strong learner can keep the same message while changing the surface for each situation.",
+      "formation": "Message idea: I checked it and will revise it. Change the style by channel.",
+      "examples": [
+        {
+          "ko": "면접: 관련 경험을 검토했고, 필요한 부분을 개선하겠습니다.",
+          "romanization": "myeonjeop: gwallyeon gyeongheomeul geomtohaetgo, piryohan bubuneul gaeseonhagetseumnida.",
+          "en": "Interview: I have reviewed the related experience and will improve the necessary parts.",
+          "note": "Formal speech with -겠습니다."
+        },
+        {
+          "ko": "이메일: 자료 확인 후 수정해서 다시 보내드리겠습니다.",
+          "romanization": "imeil: jaryo hwagin hu sujeonghaeseo dasi bonaedeurigetseumnida.",
+          "en": "Email: After checking the materials, I will revise them and send them again.",
+          "note": "Formal email with 보내드리겠습니다."
+        },
+        {
+          "ko": "동료 대화: 자료 확인했고, 필요한 부분은 다시 고칠게요.",
+          "romanization": "dongnyo daehwa: jaryo hwaginhaetgo, piryohan bubuneun dasi gochilgeyo.",
+          "en": "Coworker talk: I checked the materials, and I'll fix the necessary parts.",
+          "note": "Polite but softer."
+        },
+        {
+          "ko": "친구 카톡: 봤어. 내가 다시 고칠게 ㅋㅋ.",
+          "romanization": "chingu katok: bwasseo. naega dasi gochilge kk.",
+          "en": "Friend KakaoTalk: Saw it. I'll fix it again lol.",
+          "note": "Casual, private, and relationship-dependent."
+        }
+      ],
+      "exceptions": [
+        "Do not use the friend version as the base for every context.",
+        "The safest production path is often to draft the formal version first, then relax it for casual settings."
+      ]
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "상황",
+      "romanization": "sanghwang",
+      "english": "situation; circumstances",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "먼저 상황과 상대방을 정해야 해요.",
+        "en": "First, you need to decide the situation and listener.",
+        "note": "The first step in production review."
+      },
+      "collocations": [
+        "상황에 맞다",
+        "상황을 정하다",
+        "상황이 공식적이다"
+      ]
+    },
+    {
+      "hangul": "상대방",
+      "romanization": "sangdaebang",
+      "english": "the other person; listener",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "상대방이 누구인지에 따라 문체가 달라져요.",
+        "en": "The style changes depending on who the listener is.",
+        "note": "Relationship decides register."
+      },
+      "collocations": [
+        "상대방을 정하다",
+        "상대방에게 맞추다",
+        "상대방이 누구인지"
+      ]
+    },
+    {
+      "hangul": "문체",
+      "romanization": "munche",
+      "english": "writing style; register style",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "공식 이메일에서는 문체를 끝까지 격식 있게 맞춰야 해요.",
+        "en": "In a formal email, the style should stay formal until the end.",
+        "note": "Style consistency is the final chapter's main habit."
+      },
+      "collocations": [
+        "문체를 맞추다",
+        "문체가 섞이다",
+        "문체가 자연스럽다"
+      ]
+    },
+    {
+      "hangul": "조사",
+      "romanization": "josa",
+      "english": "particle",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "마지막으로 조사 하나까지 다시 확인하겠습니다.",
+        "en": "Lastly, I will check every particle again.",
+        "note": "Particles are small but high-impact."
+      },
+      "collocations": [
+        "조사를 확인하다",
+        "조사가 맞다",
+        "조사를 바꾸다"
+      ]
+    },
+    {
+      "hangul": "시제",
+      "romanization": "sije",
+      "english": "tense",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "면접 답변에서는 시제를 안정적으로 유지해야 해요.",
+        "en": "In an interview answer, you need to keep the tense stable.",
+        "note": "Experience answers often fail when tense shifts."
+      },
+      "collocations": [
+        "시제를 확인하다",
+        "시제가 맞다",
+        "시제가 흔들리다"
+      ]
+    },
+    {
+      "hangul": "연결어",
+      "romanization": "yeongyeoreo",
+      "english": "connector; linking word",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "이메일에서는 연결어와 마무리를 같이 확인해야 해요.",
+        "en": "In an email, you need to check the connectors and the closing together.",
+        "note": "Formal writing needs logical links and a closing."
+      },
+      "collocations": [
+        "연결어를 고르다",
+        "연결어가 어색하다",
+        "연결어를 바꾸다"
+      ]
+    },
+    {
+      "hangul": "높임말",
+      "romanization": "nopimmal",
+      "english": "honorific or respectful language",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "면접 답변은 높임말부터 확인해야 해요.",
+        "en": "For an interview answer, you should check honorific language first.",
+        "note": "Respectful language belongs to relationship control."
+      },
+      "collocations": [
+        "높임말을 쓰다",
+        "높임말을 확인하다",
+        "높임말이 어색하다"
+      ]
+    },
+    {
+      "hangul": "확인 부탁드립니다",
+      "romanization": "hwagin butakdeurimnida",
+      "english": "Please check / kindly confirm",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "첨부 파일 확인 부탁드립니다.",
+        "en": "Please check the attached file.",
+        "note": "Formal email closing phrase."
+      },
+      "collocations": [
+        "첨부 파일 확인 부탁드립니다",
+        "내용 확인 부탁드립니다",
+        "일정 확인 부탁드립니다"
+      ]
+    },
+    {
+      "hangul": "답장",
+      "romanization": "dapjang",
+      "english": "reply",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "답장이 늦어져 죄송합니다.",
+        "en": "I apologize for the delayed reply.",
+        "note": "Formal email apology frame."
+      },
+      "collocations": [
+        "답장을 보내다",
+        "답장이 늦다",
+        "답장을 기다리다"
+      ]
+    },
+    {
+      "hangul": "정중하다",
+      "romanization": "jeongjunghada",
+      "english": "courteous; respectful",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "면접에서는 정중하게 대답하는 것이 좋아요.",
+        "en": "In an interview, it is good to answer courteously.",
+        "note": "Useful register adjective for speech style."
+      },
+      "collocations": [
+        "정중하게 말하다",
+        "정중하게 부탁하다",
+        "정중한 표현"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "A learner reviews four Korean outputs from the same day.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "오늘 면접 답변, 이메일, 카톡 답장을 한 번에 검수해 볼까요?",
+        "romanization": "oneul myeonjeop dapbyeon, imeil, katok dapjangeul han beone geomsuhae bolkkayo?",
+        "en": "Shall we review today's interview answer, email, and KakaoTalk reply together?",
+        "grammarNote": "The final chapter reviews production across channels."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "먼저 상황과 상대방을 정하고 문체를 맞춰야 해요.",
+        "romanization": "meonjeo sanghwanggwa sangdaebangeul jeonghago munchereul matchwoya haeyo.",
+        "en": "First, decide the situation and listener, then match the style.",
+        "grammarNote": "상황 and 상대방 come before grammar selection."
+      },
+      {
+        "speaker": "민서",
+        "ko": "면접 답변은 높임말과 시제를 확인하고, 이메일은 연결어와 마무리를 봐요.",
+        "romanization": "myeonjeop dapbyeoneun nopimmalgwa sijereul hwaginhago, imeireun yeongyeoreowa mamurireul bwayo.",
+        "en": "For the interview answer, check honorifics and tense; for the email, check connectors and the closing.",
+        "grammarNote": "Different channels require different review priorities."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "카톡에서는 편하게 써도 되지만 회사 메일에는 ㅋㅋ를 빼야 해요.",
+        "romanization": "katogeseoneun pyeonhage sseodo doejiman hoesa meileneun kkreul ppaeya haeyo.",
+        "en": "You can write casually in KakaoTalk, but in a company email you need to remove ㅋㅋ.",
+        "grammarNote": "Slang belongs to the relationship, not merely the app."
+      },
+      {
+        "speaker": "민서",
+        "ko": "마지막으로 조사 하나까지 다시 확인하겠습니다.",
+        "romanization": "majimageuro josa hanakkaji dasi hwaginhagetseumnida.",
+        "en": "Lastly, I will check every particle again.",
+        "grammarNote": "-겠습니다 makes the review commitment formal."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "하루 안에서 문체 바꾸기",
+    "body": "한국어를 잘 쓴다는 것은 단어를 많이 아는 것만으로 끝나지 않는다. 면접 답변에서는 정중한 문체와 안정적인 시제가 필요하고, 공식 이메일에서는 확인 부탁드립니다 같은 마무리 표현과 자연스러운 연결어가 필요하다. 반면에 친구 카톡에서는 짧고 편한 표현이 더 자연스러울 수 있다. 중요한 것은 같은 생각을 상황에 맞게 다시 쓰는 능력이다. 문장을 보내기 전에는 상대방, 목적, 문체, 조사, 시제, 연결어를 차례로 확인해야 한다.",
+    "bodyTranslation": "Writing Korean well is not just knowing many words. An interview answer needs a courteous style and stable tense, while a formal email needs closing phrases such as 확인 부탁드립니다 and natural connectors. By contrast, short and relaxed expressions may be more natural in a friend's KakaoTalk chat. What matters is the ability to rewrite the same idea for the situation. Before sending a sentence, check the listener, purpose, style, particles, tense, and connectors in order.",
+    "comprehensionQuestions": [
+      {
+        "question": "면접 답변에서 필요한 것은 무엇인가요?",
+        "answer": "정중한 문체와 안정적인 시제입니다."
+      },
+      {
+        "question": "공식 이메일에서는 무엇을 확인해야 하나요?",
+        "answer": "마무리 표현과 자연스러운 연결어를 확인해야 합니다."
+      },
+      {
+        "question": "문장을 보내기 전에 어떤 항목을 확인해야 하나요?",
+        "answer": "상대방, 목적, 문체, 조사, 시제, 연결어를 확인해야 합니다."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "Advanced Korean is register control",
+    "body": "A fluent Korean learner does not sound advanced because every sentence is long. They sound advanced because they know when to be brief, when to be warm, when to be formal, and when to remove slang completely. Register control is not extra polish; it is part of meaning.",
+    "tip": "If you are unsure, make the sentence complete and neutral first. Then relax it only when the relationship clearly allows it."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence fits a formal company email?",
+      "options": [
+        "첨부 파일 확인 부탁드립니다.",
+        "파일 봐 줘 ㅋㅋ.",
+        "ㅇㅇ 파일 봤어."
+      ],
+      "correct": "첨부 파일 확인 부탁드립니다.",
+      "explanation": "부탁드립니다 is a formal written request ending."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which item should you decide before choosing slang or honorifics?",
+      "options": [
+        "상대방과 상황",
+        "romanization",
+        "sentence length only"
+      ],
+      "correct": "상대방과 상황",
+      "explanation": "Relationship and situation determine register."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "따라서와 ㅋㅋ가 한 문단에 같이 있으면 무엇이 문제인가요?",
+      "options": [
+        "문체가 섞입니다.",
+        "시제가 없습니다.",
+        "조사가 너무 많습니다."
+      ],
+      "correct": "문체가 섞입니다.",
+      "explanation": "Formal connectors and casual chat reactions usually do not belong in the same paragraph."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which review layer checks 은/는, 이/가, 을/를?",
+      "options": [
+        "조사",
+        "시제",
+        "마무리"
+      ],
+      "correct": "조사",
+      "explanation": "은/는, 이/가, 을/를 are particles."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "친구 카톡: 봤어. 내가 다시 고칠게 ㅋㅋ. What should change for a formal email?",
+      "options": [
+        "자료 확인 후 수정해서 다시 보내드리겠습니다.",
+        "봤어요 ㅋㅋ.",
+        "고칠게요 ㄹㅇ."
+      ],
+      "correct": "자료 확인 후 수정해서 다시 보내드리겠습니다.",
+      "explanation": "The formal email version rewrites the sentence, removes slang, and uses a formal ending."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "답장___ 확인해 주시기 바랍니다. (Please check the reply.)",
+      "options": [
+        "을",
+        "이",
+        "에"
+      ],
+      "correct": "을",
+      "explanation": "확인하다 takes the thing checked as an object, so 답장을 fits. 이 would make the reply the subject."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build a formal email line: 'After checking, please reply.'",
+      "tokens": [
+        "확인 후",
+        "답장 부탁드립니다"
+      ],
+      "correct": "확인 후 답장 부탁드립니다",
+      "explanation": "확인 후 is concise written Korean for after checking. 부탁드립니다 keeps the email formal and courteous."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Friend chat: 'I saw it. I'll fix it again.'",
+      "correct": "봤어. 내가 다시 고칠게.",
+      "explanation": "반말 and -ㄹ게 fit a close friend chat. This would be too casual for a company email."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the formal email mismatch: '확인 부탁드립니다 ㅋㅋ.'",
+      "correct": "확인 부탁드립니다.",
+      "explanation": "ㅋㅋ breaks formal email register. The formal request should stay plain and courteous."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Before sending Korean, which review order is safest?",
+      "options": [
+        "상황과 상대방 → 문체 → 조사/시제/높임말",
+        "ㅋㅋ 추가 → 문체 무시 → 조사 확인",
+        "단어만 번역 → 바로 전송"
+      ],
+      "correct": "상황과 상대방 → 문체 → 조사/시제/높임말",
+      "explanation": "Relationship and situation decide the register first. Then you check grammar details like particles, tense, and honorifics."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "The final review starts with purpose, listener, and channel before grammar.",
+      "Check 문체, 조사, 시제, 높임말, 연결어, and closing phrases together.",
+      "Adding 요 does not make slang formal; rewrite the whole sentence when the relationship changes.",
+      "A strong learner can express the same idea as an interview answer, formal email, coworker chat, and friend KakaoTalk reply."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Write a 5-6 sentence message to a teacher you couldn't reach: greet politely, explain you missed today's class and why, say what you've decided to do, make a careful guess about the result, and close with a courteous request — keeping register, tense, and connectors consistent.",
+    "hint": "Combine course pieces: honorific 해요체 throughout, past -았/었어요, a decision V-기로 했어요, a soft guess -(으)ㄹ 것 같아요, a connector (그래서/하지만), and a polite closing (확인 부탁드립니다).",
+    "model": "선생님, 안녕하세요. 오늘은 몸이 아파서 수업에 못 갔어요. 그래서 집에서 혼자 공부하기로 했어요. 자료를 미리 확인했으면 좋았을 텐데, 늦어서 죄송합니다. 다음 시간에는 참석할 수 있을 것 같아요. 결과를 확인 부탁드립니다.",
+    "modelEn": "Hello, teacher. Today I was sick, so I couldn't go to class. So I decided to study at home by myself. I wish I had checked the materials in advance; I'm sorry for being late. I think I'll be able to attend next time. Please kindly check the result."
+  },
+  "canDo": [
+    "Build one coherent message that fits the situation and the listener (상황·상대방에 맞게)",
+    "Hold register, tense, and particles consistent across several sentences (문체·시제·조사)",
+    "Combine multiple grammar points — past tense, V-기로 했어요, soft guess, connectors — without breaking the flow",
+    "Close politely with honorific phrasing (확인 부탁드립니다 · 죄송합니다)"
+  ]
+}

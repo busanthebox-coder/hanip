@@ -184,6 +184,22 @@ describe('findAllPatterns', () => {
     const tokens = huntTokens('여섯 시까지 있어요. 학교까지 가요.', findAllPatterns('여섯 시까지 있어요. 학교까지 가요.', ['까지']));
     expect(tokens.filter((t) => t.hit).length).toBe(2);
   });
+
+  it('does not mistake the particle 에게 for the V-게 ending', () => {
+    const sentence = '선생님이 학생들에게 책을 읽게 했어요.';
+    const matches = findAllPatterns(sentence, ['게']);
+
+    expect(matches.map((match) => sentence.slice(match.start, match.end))).toEqual(['게']);
+    expect(huntTokens(sentence, matches).filter((token) => token.hit)).toHaveLength(1);
+  });
+
+  it('does not mistake standalone demonstrative 이 for the subject particle', () => {
+    const sentence = '이 사람이 제 선생님이에요.';
+    const matches = findAllPatterns(sentence, ['이']);
+
+    expect(huntTokens(sentence, matches).filter((token) => token.hit).map((token) => token.mid))
+      .toEqual(['이']);
+  });
 });
 
 describe('expandVariants', () => {
@@ -248,6 +264,15 @@ describe('expandVariants', () => {
   });
   it('extracts the stable soft-opinion phrase from chapter 12', () => {
     expect(expandVariants('-는 것 같다 — soft opinions')).toContain('것 같');
+  });
+  it('extracts both sides of an ellipsis-separated past counterfactual', () => {
+    const variants = expandVariants('V-았/었더라면 … -았/었을 거예요');
+
+    expect(variants).toEqual(expect.arrayContaining(['더라면', '을 거예요']));
+  });
+  it('strips an English descriptor after a colon from each contrast ending', () => {
+    expect(expandVariants('-군요 vs -네요: both react, but not the same way'))
+      .toEqual(expect.arrayContaining(['군요', '네요']));
   });
 });
 
@@ -361,6 +386,60 @@ describe('buildPatternBites', () => {
     });
 
     expect(bite.cards.some((card) => card.kind === 'drill')).toBe(false);
+  });
+  it('does not build a cloze when 서 is optional in V-기 위해(서)', () => {
+    const [bite] = buildPatternBites({
+      grammarNotes: [{
+        title: 'V-기 위해(서)',
+        formTable: [],
+        examples: [
+          { ko: '건강해지기 위해서 운동해요.' },
+          { ko: '일하기 위해 한국어를 배워요.' },
+          { ko: '합격하기 위해서 공부해요.' },
+        ],
+      }],
+    });
+
+    expect(bite.cards.some((card) => card.kind === 'drill')).toBe(false);
+  });
+  it('does not make 따라서 and 그러므로 mutually exclusive answers', () => {
+    const chapter = JSON.parse(readFileSync(join(root, 'data', 'chapters', 'chapter-63.json'), 'utf8'));
+    const overrides = JSON.parse(readFileSync(join(root, 'data', 'overrides.json'), 'utf8'));
+    const bite = buildPatternBites(chapter, overrides)
+      .find((candidate) => candidate.title.includes('따라서 / 그러므로'));
+
+    expect(bite.cards.some((card) => card.kind === 'drill')).toBe(false);
+  });
+  it('does not make -군요 and -네요 mutually exclusive in a natural reaction', () => {
+    const chapter = JSON.parse(readFileSync(join(root, 'data', 'chapters', 'chapter-61.json'), 'utf8'));
+    const overrides = JSON.parse(readFileSync(join(root, 'data', 'overrides.json'), 'utf8'));
+    const bite = buildPatternBites(chapter, overrides)
+      .find((candidate) => candidate.title.includes('-군요 vs -네요'));
+
+    expect(bite.cards.some((card) => card.kind === 'drill')).toBe(false);
+  });
+  it('does not offer a fused past ending beside its valid longer form', () => {
+    const chapter = JSON.parse(readFileSync(join(root, 'data', 'chapters', 'chapter-59.json'), 'utf8'));
+    const bite = buildPatternBites(chapter)
+      .find((candidate) => candidate.title.includes('-았/었더라면 …'));
+
+    expect(bite.cards.some((card) => card.kind === 'drill')).toBe(false);
+  });
+  it('highlights the condition and result in a past-counterfactual hunt', () => {
+    const [bite] = buildPatternBites({
+      grammarNotes: [{
+        title: 'V-았/었더라면 … -았/었을 거예요',
+        formTable: [],
+        examples: [
+          { ko: '일찍 도착했더라면 시험을 봤을 거예요.' },
+          { ko: '지도를 봤더라면 길을 안 잃었을 거예요.' },
+        ],
+      }],
+    });
+    const hunt = bite.cards.find((card) => card.kind === 'hunt');
+
+    expect(hunt.lines[0].tokens.filter((token) => token.hit).map((token) => token.mid))
+      .toEqual(['더라면', '을', '거예요']);
   });
 });
 

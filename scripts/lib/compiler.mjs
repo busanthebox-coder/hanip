@@ -22,7 +22,7 @@ export function expandVariants(title) {
   let head = String(title || '').split('—')[0].trim();
   head = head.replace(/\([A-Za-z][^)]*\)/g, '').trim(); // "(Consonants)" etc.
   if (!/[가-힣]/.test(head)) return [];
-  const groups = head.split(/\s+vs\.?\s+|\s*&\s*/i);
+  const groups = head.split(/\s+vs\.?\s+|\s*&\s*|\s*…\s*/i);
   const out = new Set();
   const structural = /[/\-+&(]|(^|\s)[NVA](?:[-가-힣(]|\s+[가-힣])|\svs\.?\s/u;
   for (const rawGroup of groups) {
@@ -32,7 +32,7 @@ export function expandVariants(title) {
     const group = rawGroup
       .replace(/(^|\s)[NVA](?=[-가-힣(]|\s+[가-힣])/gu, '$1') // pos markers: N을/N 동안 → 을/동안
       .replace(/^-\s*/, '')
-      .replace(/[+a-zA-Z?.!]+/g, ' ')             // "안 + verb" → "안"
+      .replace(/[+a-zA-Z?.!,:;"'“”‘’]+/g, ' ')    // "안 + verb" → "안"
       .replace(/\s+/g, ' ')
       .trim();
     if (!group) continue;
@@ -93,6 +93,9 @@ function syllableAlternates(text) {
     out.push(`${pre}${a}${tail}`);
     out.push(`${pre}${b}${tail}`);
   }
+  // Past markers fuse into the preceding stem (하다 → 했-, 보다 → 봤-), so
+  // their shared remainder is the stable surface learners can actually tap.
+  if ((a === '았' && b === '었') || (a === '었' && b === '았')) out.push(post || '');
   return out;
 }
 
@@ -135,6 +138,12 @@ export function findAllPatterns(ko, variants) {
     } else {
       for (const tok of tokenize(ko)) {
         const core = tok.text.replace(/[.,!?…"']+$/u, '');
+        // The V-게 ending is productive, but the identical final syllable in
+        // the dative particle 에게 is unrelated (학생들에게 is not a V-게 hit).
+        if (variant === '게' && core.endsWith('에게')) continue;
+        // One-syllable particles/endings cannot stand as their own eojeol.
+        // Keep the two productive negative adverbs as the deliberate exception.
+        if (variant.length === 1 && core === variant && !['안', '못'].includes(variant)) continue;
         if (core === variant || (core.endsWith(variant) && core.length > variant.length)) {
           const start = tok.start + core.length - variant.length;
           add({ variant, start, end: start + variant.length });
@@ -462,7 +471,9 @@ export function buildPatternBites(chapter, overrides = {}) {
       const spare = hits.find((h) => !huntPair.includes(h));
       const optionSet = [...new Set(hits.map((h) => h.match.variant))];
       const hasOptionalLongerVariant = optionSet.some((shorter) =>
-        optionSet.some((longer) => longer !== shorter && longer.startsWith(`${shorter} `))
+        optionSet.some((longer) => longer !== shorter
+          && (longer.startsWith(shorter)
+            || (/^[았었]/u.test(longer) && longer.endsWith(shorter))))
       );
       if (spare && optionSet.length >= 2 && !hasOptionalLongerVariant) {
         const cloze = spare.ex.ko.slice(0, spare.match.start) + '___' + spare.ex.ko.slice(spare.match.end);

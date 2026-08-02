@@ -1,0 +1,22 @@
+{
+  "chapterId": "chapter-57",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 9,
+  "cardsReviewed": 27,
+  "findings": [
+    {
+      "biteId": "chapter-57-b4",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "hunt-wrong",
+      "evidence": "The V-게 하다 hunt marked both the dative particle inside 학생들에게 and the actual ending in 읽게.",
+      "fix": "Added a compiler regression and excluded 에게 from single-syllable V-게 matching; the final line marks only 읽게.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 9 bites and 27 cards were reviewed and rechecked after compilation; the known causative teach fallback remains intentional and no unfixed blocker remains."]
+}

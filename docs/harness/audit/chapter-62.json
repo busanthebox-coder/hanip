@@ -1,0 +1,31 @@
+{
+  "chapterId": "chapter-62",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 11,
+  "cardsReviewed": 45,
+  "findings": [
+    {
+      "biteId": "chapter-62-b7",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "hunt-wrong",
+      "evidence": "The 이/가 hunt marked standalone demonstrative 이 as though it were a subject particle, as well as the actual particle in 사람이.",
+      "fix": "Added a compiler regression that keeps one-syllable particles/endings from matching a standalone eojeol while retaining standalone 안 and 못.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-62-b10",
+      "cardIndex": 0,
+      "severity": "bad-teaching",
+      "class": "data-fact",
+      "evidence": "The metalinguistic reading produced malformed sequences such as 그 친구는이 맞았다 and 평소에는과 오늘은은 because cited forms were not delimited.",
+      "fix": "Quoted every cited Korean form in the title, body, and question so the following particles are read as metalinguistic markers.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 11 bites and 45 cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}

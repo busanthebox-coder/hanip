@@ -1,0 +1,678 @@
+{
+  "id": "chapter-64",
+  "hook": {
+    "situation": "You are reading a friend group chat, a comment thread, and a live chat. The Korean is short, fast, and emotional, but every reaction still has a social boundary.",
+    "objectives": [
+      "Recognize Korean consonant reactions such as ㅋㅋ, ㅠㅠ, ㅇㅇ, ㄹㅇ, and ㅇㅈ.",
+      "Use colloquial intensifiers such as 완전, 진짜, 대박, 레전드, and 개웃겨 only in suitable informal settings.",
+      "Rewrite casual chat reactions into safer polite or formal Korean when the relationship changes."
+    ],
+    "whyItMatters": "Internet Korean is not a separate toy language. It is register-sensitive Korean. A sentence that feels perfect in a group chat can sound rude to a professor or careless on a company account."
+  },
+  "grammarNotes": [
+    {
+      "title": "Chat abbreviations: ㅋㅋ, ㅠㅠ, ㅇㅇ, ㄹㅇ, ㅇㅈ",
+      "func": "These are consonant-only shorthand 'reaction' tokens Koreans type in chat (KakaoTalk, comments, DMs). They're not words you pronounce out loud; they're typed signals, almost like emoji. ㅋㅋ shows laughter, ㅠㅠ shows crying/sadness, and ㅇㅇ / ㄹㅇ / ㅇㅈ are clipped one-shot replies (yeah / for real / agreed). They make a message feel casual and friendly, which is exactly why you use them with friends and peers, never with a boss, teacher, or stranger.",
+      "formTable": [
+        {
+          "when": "Something is funny; softening a message; showing you're amused",
+          "add": "ㅋㅋ (more ㅋ = harder laugh: ㅋㅋㅋㅋ)",
+          "ex": "아 진짜 웃겨 ㅋㅋㅋ (lol that's so funny)"
+        },
+        {
+          "when": "Crying, sad, disappointed, or begging cutely",
+          "add": "ㅠㅠ (also ㅜㅜ); pure emotion, no laugh",
+          "ex": "나 시험 망했어 ㅠㅠ (I bombed the test)"
+        },
+        {
+          "when": "A short 'yeah / yes / ok' reply between friends",
+          "add": "ㅇㅇ (= 응응, a casual yes)",
+          "ex": "ㅇㅇ 나도 갈게 (yeah, I'll go too)"
+        },
+        {
+          "when": "Stressing 'for real / seriously / no joke'",
+          "add": "ㄹㅇ (= 레알, from English 'real')",
+          "ex": "ㄹㅇ 그 카페 맛있어 (that cafe's legit good)"
+        },
+        {
+          "when": "Agreeing hard with what someone said",
+          "add": "ㅇㅈ (= 인정, 'I acknowledge it')",
+          "ex": "ㅇㅈ 그 영화 별로였음 (agreed, that movie was meh)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "ㅋㅋㅋ 너 진짜 웃긴다",
+          "romanization": "kkk neo jinjja utginda",
+          "en": "lololol you're so funny",
+          "note": "Repeating ㅋ = a bigger laugh; a single ㅋ can read as cold or sarcastic."
+        },
+        {
+          "ko": "비 와서 약속 취소됐어 ㅠㅠ",
+          "romanization": "bi waseo yaksok chwiso-dwaesseo",
+          "en": "It rained so the plan got cancelled",
+          "note": "ㅠㅠ carries the disappointment, so you don't need extra sad words."
+        },
+        {
+          "ko": "A: 내일 시간 돼? / B: ㅇㅇ",
+          "romanization": "naeil sigan dwae? / eung-eung",
+          "en": "A: free tomorrow? / B: yep",
+          "note": "ㅇㅇ is a full reply on its own; typing 네 here would feel oddly stiff with a close friend."
+        },
+        {
+          "ko": "ㄹㅇ ㅇㅈ 그 식당 줄 너무 길어",
+          "romanization": "ral injeong geu sikdang jul neomu gireo",
+          "en": "for real, agreed, that restaurant's line is way too long",
+          "note": "ㄹㅇ and ㅇㅈ often stack at the start of a message to pile on agreement."
+        }
+      ],
+      "keyPoint": {
+        "label": "Typed sound vs spoken word",
+        "body": "ㅋㅋ and ㅠㅠ are typed, not spoken — you don't say 'kuh-kuh' out loud. ㅇㅇ / ㄹㅇ / ㅇㅈ are clipped spellings of 응응 / 레알 / 인정, so reading them aloud means saying the full word, not naming the letters."
+      },
+      "drill": {
+        "instruction": "Pick the abbreviation that fits the reaction in brackets.",
+        "model": "[laughing] 사진 봤어? ___ → 사진 봤어? ㅋㅋㅋ",
+        "items": [
+          "[crying] 또 야근이야 ___",
+          "[casual yes] 우리 7시에 만나자 / ___",
+          "[strong agreement] 이 노래 진짜 좋다 / ___"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "ㅋㅋ 알겠습니다, 부장님.",
+        "right": "네, 알겠습니다, 부장님.",
+        "explanation": "English speakers treat 'haha/lol' as harmless filler, but dropping ㅋㅋ or ㅇㅇ into a message to a superior reads as flippant and too casual. Keep these for friends and peers only."
+      }
+    },
+    {
+      "title": "Colloquial intensifiers: 완전 / 진짜 / 너무 / 대박 / 레전드",
+      "func": "These are casual booster words meaning roughly 'so / totally / really / insanely (good)'. Speakers drop them in front of an adjective or verb, or use them alone as an exclamation, to crank up the feeling. 진짜 and 너무 are everyday-neutral; 완전 sounds breezy and young; 대박 and 레전드 are slangy hype words for something amazing or unforgettable. They live in speech, chat, and reviews, and they carry the emotion that flat, polite sentences leave out.",
+      "formTable": [
+        {
+          "when": "'so / totally' before an adjective; very common in casual talk",
+          "add": "완전 + adjective",
+          "ex": "이거 완전 맛있어 (this is so good)"
+        },
+        {
+          "when": "'really / seriously'; the most neutral, works almost anywhere",
+          "add": "진짜 + adjective/verb",
+          "ex": "진짜 피곤해 (I'm really tired)"
+        },
+        {
+          "when": "'so (much)'; in casual speech often just means 'very', not 'excessively'",
+          "add": "너무 + adjective",
+          "ex": "너무 좋아 (I love it / it's so nice)"
+        },
+        {
+          "when": "'awesome / no way!'; exclamation for shocking-good (or shocking-bad) news",
+          "add": "대박 (standalone or 대박이다)",
+          "ex": "헐 대박 (omg no way!)"
+        },
+        {
+          "when": "'legendary / epic'; calling something unforgettably great (or hilariously bad)",
+          "add": "레전드 (standalone or 레전드 + 이다)",
+          "ex": "어제 공연 레전드였어 (last night's show was legendary)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "이 카페 분위기 완전 좋아",
+          "romanization": "i kape bunwigi wanjeon joa",
+          "en": "This cafe's vibe is totally great",
+          "note": "완전 sounds young and upbeat; in formal writing you'd use 아주/매우 instead."
+        },
+        {
+          "ko": "나 진짜 배고파 죽겠어",
+          "romanization": "na jinjja baegopa jukgesseo",
+          "en": "I'm seriously starving",
+          "note": "진짜 is the safest intensifier — natural in chat and in spoken sentences alike."
+        },
+        {
+          "ko": "헐 대박, 그거 진짜야?",
+          "romanization": "heol daebak, geugeo jinjjaya?",
+          "en": "Whoa, no way — is that for real?",
+          "note": "대박 works as a one-word reaction to surprising news, good or bad."
+        },
+        {
+          "ko": "어제 경기 봤어? 완전 레전드였어 ㅋㅋ",
+          "romanization": "eoje gyeonggi bwasseo? wanjeon rejeondeu-yeosseo",
+          "en": "Did you watch the game? It was an absolute legend lol",
+          "note": "레전드 + 이다 turns the noun into 'was epic'; 완전 stacks on top for extra hype."
+        }
+      ],
+      "keyPoint": {
+        "label": "너무: textbook 'too much' vs real-life 'very'",
+        "body": "Textbooks teach 너무 = 'too (excessively)', but in everyday speech 너무 좋아 just means 'I love it', not 'I like it too much'. Context, not the word itself, decides whether it's negative."
+      },
+      "pronunciation": "대박 is often stretched as 대애박~ for emphasis, and 헐 frequently leads into it (헐 대박). 완전 is written 완전 but in fast speech can sound like a quick 완젼.",
+      "drill": {
+        "instruction": "Fill each blank with a natural intensifier (more than one answer can work).",
+        "model": "이 떡볶이 ___ 매워 → 이 떡볶이 진짜 매워",
+        "items": [
+          "와 ___! 너 1등이야?",
+          "어제 콘서트 ___였어, 잊지 못할 거야",
+          "오늘 날씨 ___ 추워서 안 나갈래"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "그 영화 매우 대박이었습니다.",
+        "right": "그 영화 완전 대박이었어. / 그 영화 정말 좋았습니다.",
+        "explanation": "Don't mix slang (대박, 완전) with formal endings (-습니다) or stiff adverbs (매우). Slang intensifiers belong with casual endings; when you need to sound polite or formal, switch to 정말/아주/매우 and drop the slang."
+      }
+    },
+    {
+      "title": "Platform verbs: 댓글 달다, 좋아요 누르다, 공유하다, 구독하다",
+      "func": "Every social-media action in Korean has a fixed noun + verb pairing you have to memorize rather than translate from English. You 'hang' a comment (댓글을 달다), 'press' a like (좋아요를 누르다), 'share' (공유하다), and 'subscribe' (구독하다). The object particle 을/를 is often dropped in casual chat (댓글 달았어), but the verb pairing is fixed — pick the wrong verb and it sounds off even when every word is technically correct.",
+      "formTable": [
+        {
+          "when": "Leaving / writing a comment on a post or video",
+          "add": "댓글(을) 달다 (lit. 'hang a comment')",
+          "ex": "영상에 댓글 달았어 (I left a comment on the video)"
+        },
+        {
+          "when": "Tapping the like button / heart",
+          "add": "좋아요(를) 누르다 (lit. 'press the like')",
+          "ex": "사진에 좋아요 눌러 줘 (hit like on the photo)"
+        },
+        {
+          "when": "Forwarding / reposting content to others",
+          "add": "공유하다 (share)",
+          "ex": "이 글 친구한테 공유했어 (I shared this post with a friend)"
+        },
+        {
+          "when": "Following a channel/creator to get new uploads",
+          "add": "구독하다 (subscribe)",
+          "ex": "그 채널 구독했어 (I subscribed to that channel)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "구독하고 좋아요 눌러 주세요!",
+          "romanization": "gudok-hago joayo nulleo juseyo!",
+          "en": "Please subscribe and hit like!",
+          "note": "The set phrase every Korean YouTuber says; note 좋아요 pairs with 누르다, never 하다."
+        },
+        {
+          "ko": "내 사진에 누가 댓글 달았어",
+          "romanization": "nae sajin-e nuga daetgeul darasseo",
+          "en": "Someone left a comment on my photo",
+          "note": "달다 conjugates to 달았어 (darasseo); the 을 is dropped, which is normal in casual speech."
+        },
+        {
+          "ko": "이 영상 진짜 웃겨, 단톡방에 공유할게",
+          "romanization": "i yeongsang jinjja utgyeo, dantokbang-e gongyu-halge",
+          "en": "This video is hilarious, I'll share it to the group chat",
+          "note": "공유하다 takes 에 for the destination (group chat) and 을/를 for the thing shared."
+        },
+        {
+          "ko": "좋아요 천 개 넘었어 대박",
+          "romanization": "joayo cheon gae neomeosseo daebak",
+          "en": "It passed a thousand likes, awesome",
+          "note": "Here 좋아요 is the noun 'like(s)' being counted with 개, not the verb action."
+        }
+      ],
+      "keyPoint": {
+        "label": "좋아요 누르다, not 좋아요 하다",
+        "body": "English 'like' is one word, so learners reach for 좋아요 하다 — but Korean fixes each action to its own verb: a like is pressed (누르다), a comment is hung (달다). Memorize the pair instead of translating the verb."
+      },
+      "drill": {
+        "instruction": "Complete each sentence with the right verb in the right form.",
+        "model": "그 채널 좋아서 ___ → 그 채널 좋아서 구독했어",
+        "items": [
+          "내 글이 웃겼나 봐, 사람들이 댓글 많이 ___",
+          "이 영상 좋으면 좋아요 ___ 주세요",
+          "친구가 보낸 영상을 단톡방에 ___"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "사진을 좋아요 했어요. / 댓글을 썼어요.",
+        "right": "사진에 좋아요 눌렀어요. / 댓글을 달았어요.",
+        "explanation": "Two traps: (1) 좋아요 takes 누르다, not 하다; (2) for posting a comment Koreans say 댓글을 달다, not the literal 댓글을 쓰다. 쓰다 is fine for 'writing' the text itself, but 달다 is the platform action of posting it."
+      }
+    },
+    {
+      "title": "Register: ㅇㅇ vs 네 / 알겠어요",
+      "func": "The same meaning ('yes / got it / agreed') wears very different clothes depending on who you're talking to. ㅇㅇ, 응, ㅇㅈ, and 반말 belong to text chat with close friends and peers. 네 / 알겠어요 / 알겠습니다 are what you say or type to anyone you respect — a teacher, a customer, an older person, a boss. Picking the wrong register isn't a grammar mistake; it's a social one. So before you reply, read the relationship: is this someone you'd speak 반말 to, or someone you owe 존댓말?",
+      "formTable": [
+        {
+          "when": "Close friend / peer, in chat — quick 'yeah'",
+          "add": "ㅇㅇ / 응",
+          "ex": "ㅇㅇ 거기서 보자 (yeah, see you there)"
+        },
+        {
+          "when": "Close friend / peer — strong 'agreed, true'",
+          "add": "ㅇㅈ / 인정",
+          "ex": "ㅇㅈ 그건 좀 너무했어 (agreed, that was a bit much)"
+        },
+        {
+          "when": "Anyone you respect — polite 'yes'",
+          "add": "네 (not ㅇㅇ)",
+          "ex": "네, 알겠어요 (yes, got it)"
+        },
+        {
+          "when": "Boss / teacher / customer — polite 'understood'",
+          "add": "알겠어요 / 알겠습니다",
+          "ex": "네, 알겠습니다 (yes, understood)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "A: 내일 회의 2시야 / B: ㅇㅇ 알았어",
+          "romanization": "naeil hoeui du-siya / eung-eung arasseo",
+          "en": "A: tomorrow's meeting is at 2 / B: yep, got it",
+          "note": "Friend-to-friend, so ㅇㅇ + 반말 (알았어) is natural and warm."
+        },
+        {
+          "ko": "네, 알겠습니다. 바로 처리할게요",
+          "romanization": "ne, algetseumnida. baro cheori-halgeyo",
+          "en": "Yes, understood. I'll take care of it right away",
+          "note": "To a boss or client; 네 + 알겠습니다 is the safe default at work."
+        },
+        {
+          "ko": "선생님, 네 알겠어요",
+          "romanization": "seonsaengnim, ne aragesseoyo",
+          "en": "Yes, I understand, teacher",
+          "note": "Even with a teacher you're close to, keep 네/알겠어요 — never ㅇㅇ."
+        },
+        {
+          "ko": "엄마가 ㅇㅇ라고 보냈길래 좀 웃었어",
+          "romanization": "eommaga eung-eung-rago bonaetgillae jom useosseo",
+          "en": "Mom texted back 'ㅇㅇ' so I laughed a little",
+          "note": "Shows ㅇㅇ as the casual marker — funny precisely because you don't expect it from a parent."
+        }
+      ],
+      "keyPoint": {
+        "label": "Register is a relationship choice, not a vocab choice",
+        "body": "ㅇㅇ and 네 mean the same thing; what differs is who you're allowed to say it to. When unsure, default to 네/알겠어요 — being slightly too polite is invisible, but being too casual is rude."
+      },
+      "drill": {
+        "instruction": "Choose ㅇㅇ or 네/알겠어요 for each reply based on who's speaking.",
+        "model": "(친구에게) 우리 카페 갈까? → ㅇㅇ 가자",
+        "items": [
+          "(부장님께) 이거 오늘까지 부탁해요 → ___",
+          "(친한 친구에게) 나 5분 늦어 → ___",
+          "(손님께) 영수증 드릴까요? → ___"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "(부장님께) ㅇㅇ 알겠어요.",
+        "right": "네, 알겠습니다.",
+        "explanation": "Learners who finally feel comfortable with chat slang start sprinkling ㅇㅇ everywhere, including replies to a boss or teacher. ㅇㅇ is 반말-level casual; to a superior it reads as curt and disrespectful. Match the register to the person: 존댓말 gets 네, not ㅇㅇ."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "ㅋㅋ",
+      "romanization": "kk",
+      "english": "haha; lol",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "이 댓글 완전 웃겨 ㅋㅋ.",
+        "en": "This comment is so funny lol.",
+        "note": "Casual digital laughter."
+      },
+      "collocations": [
+        "ㅋㅋ",
+        "ㅋㅋㅋ",
+        "ㅋㅋㅋ 개웃겨"
+      ]
+    },
+    {
+      "hangul": "ㅠㅠ",
+      "romanization": "yuyu",
+      "english": "crying; T_T",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "과제 제출 내일까지래 ㅠㅠ.",
+        "en": "They say the assignment is due tomorrow T_T.",
+        "note": "Sad, frustrated, or playfully distressed reaction."
+      },
+      "collocations": [
+        "ㅠㅠ 망했다",
+        "아 ㅠㅠ",
+        "너무 아쉽다 ㅠㅠ"
+      ],
+      "nuance": "ㅠㅠ is a visual crying marker used for real sadness or playful frustration. Both 취소됐어ㅠㅠ and 취소됐어 ㅠㅠ are common: no space feels tightly attached, while a space treats it more like an emoji. Keep it to casual messages rather than formal or work writing."
+    },
+    {
+      "hangul": "ㅇㅇ",
+      "romanization": "ngng",
+      "english": "yeah; yep",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "ㅇㅇ 알겠어.",
+        "en": "Yeah, got it.",
+        "note": "Quick casual yes to a close peer."
+      },
+      "collocations": [
+        "ㅇㅇ 알겠어",
+        "ㅇㅇ 봤어",
+        "ㅇㅇ 나중에"
+      ]
+    },
+    {
+      "hangul": "ㄹㅇ",
+      "romanization": "rieol",
+      "english": "for real; seriously",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "이 노래 ㄹㅇ 좋아.",
+        "en": "This song is seriously good.",
+        "note": "Truth/intensity marker from 리얼."
+      },
+      "collocations": [
+        "ㄹㅇ 좋다",
+        "ㄹㅇ ㅇㅈ",
+        "ㄹㅇ 대박"
+      ]
+    },
+    {
+      "hangul": "ㅇㅈ",
+      "romanization": "injeong",
+      "english": "agreed; true that",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "A: 이 댓글이 제일 웃겨. / B: ㅇㅈ.",
+        "en": "A: This comment is the funniest. / B: Agreed.",
+        "note": "Endorses an opinion or take."
+      },
+      "collocations": [
+        "ㅇㅈ",
+        "ㅇㅈㅇㅈ",
+        "ㄹㅇ ㅇㅈ"
+      ]
+    },
+    {
+      "hangul": "완전",
+      "romanization": "wanjeon",
+      "english": "totally; really",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "그 영상 완전 웃겨.",
+        "en": "That video is totally funny.",
+        "note": "Casual intensifier, not formal writing."
+      },
+      "collocations": [
+        "완전 웃겨",
+        "완전 별로야",
+        "완전 대박"
+      ]
+    },
+    {
+      "hangul": "레전드",
+      "romanization": "rejeondeu",
+      "english": "legendary; iconic",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "오늘 라이브 채팅 레전드였어.",
+        "en": "Today's live chat was legendary.",
+        "note": "Can be praise or ironic reaction."
+      },
+      "collocations": [
+        "레전드 댓글",
+        "오늘 방송 레전드",
+        "완전 레전드"
+      ]
+    },
+    {
+      "hangul": "개웃겨",
+      "romanization": "gaeutgyeo",
+      "english": "hilarious; so funny",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "이 댓글 개웃겨 ㅋㅋㅋ.",
+        "en": "This comment is hilarious lolol.",
+        "note": "Very casual and rougher than 진짜 웃겨."
+      },
+      "collocations": [
+        "개웃겨 ㅋㅋㅋ",
+        "진짜 개웃겨",
+        "이 댓글 개웃겨"
+      ]
+    },
+    {
+      "hangul": "댓글",
+      "romanization": "daetgeul",
+      "english": "online comment",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "그 게시물에 댓글 달았어.",
+        "en": "I left a comment on that post.",
+        "note": "댓글을 달다 is the standard collocation."
+      },
+      "collocations": [
+        "댓글을 달다",
+        "댓글이 올라오다",
+        "댓글 반응"
+      ]
+    },
+    {
+      "hangul": "좋아요",
+      "romanization": "joayo",
+      "english": "like button",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "방금 좋아요 눌렀어.",
+        "en": "I just hit like.",
+        "note": "The button is pressed, so use 누르다."
+      },
+      "collocations": [
+        "좋아요 누르다",
+        "좋아요 눌렀어",
+        "좋아요 눌러 주세요"
+      ]
+    },
+    {
+      "hangul": "공유하다",
+      "romanization": "gongyuhada",
+      "english": "to share",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "재미있어서 친구한테 공유했어.",
+        "en": "It was funny, so I shared it with a friend.",
+        "note": "The recipient takes 한테 or 에게."
+      },
+      "collocations": [
+        "친구한테 공유하다",
+        "스토리에 공유하다",
+        "링크를 공유하다"
+      ]
+    },
+    {
+      "hangul": "라이브 채팅",
+      "romanization": "raibeu chaeting",
+      "english": "live chat",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "라이브 채팅이 너무 빨라서 댓글을 다 못 읽었어.",
+        "en": "The live chat was so fast that I couldn't read all the comments.",
+        "note": "A natural place for short reactions."
+      },
+      "collocations": [
+        "라이브 채팅에 올라오다",
+        "라이브 채팅이 빠르다",
+        "라이브 채팅에 참여하다"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Friends react to a comment thread, then rewrite the same reaction for a formal setting.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "그 댓글 봤어? 완전 웃겨 ㅋㅋㅋ.",
+        "romanization": "geu daetgeul bwasseo? wanjeon utgyeo kkk.",
+        "en": "Did you see that comment? It's so funny lol.",
+        "grammarNote": "완전 and ㅋㅋ fit close-friend chat."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "ㅇㅇ 봤어. 헐, 좋아요 눌렀어?",
+        "romanization": "ngng bwasseo. heol, joayo nulleosseo?",
+        "en": "Yeah, I saw it. Whoa, did you hit like?",
+        "grammarNote": "ㅇㅇ is casual agreement; 좋아요 takes 누르다."
+      },
+      {
+        "speaker": "민서",
+        "ko": "응, 친구한테 공유했어. 댓글 반응도 레전드야.",
+        "romanization": "eung, chinguhante gongyuhaesseo. daetgeul baneungdo rejeondeuya.",
+        "en": "Yeah, I shared it with a friend. The comment reactions are legendary too.",
+        "grammarNote": "친구한테 marks who received the shared content."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "공식 글에는 ㅋㅋ 빼고 재미있었습니다처럼 써야 해.",
+        "romanization": "gongsik geureneneun kk ppaego jaemiisseotseumnidacheoreom sseoya hae.",
+        "en": "In an official post, you should leave out ㅋㅋ and write something like 'it was interesting.'",
+        "grammarNote": "The same reaction must be rewritten when the register changes."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "친구 단톡방과 공식 글 구분하기",
+    "body": "친구 단톡방에서는 이 댓글 완전 웃겨 ㅋㅋㅋ처럼 짧고 감정적인 표현이 자연스럽다. ㅇㅇ은 빠른 대답이고, ㄹㅇ ㅇㅈ은 상대의 의견에 강하게 동의하는 반응이다. 라이브 채팅에서는 이런 표현이 빠르게 올라오기 때문에 글이 문장보다 반응에 가깝다. 그러나 교수님께 보내는 메시지나 회사 계정의 공식 글에서는 같은 표현을 그대로 쓰면 가볍거나 무례하게 들릴 수 있다. 이때는 네, 확인했습니다, 정말 재미있었습니다, 저도 그렇게 생각합니다처럼 완전한 문장으로 바꾸는 것이 안전하다.",
+    "bodyTranslation": "In a friend group chat, short emotional lines like 'this comment is so funny lol' feel natural. ㅇㅇ is a quick answer, and ㄹㅇ ㅇㅈ strongly agrees with someone's opinion. In live chat, these forms appear quickly, so the writing feels more like reactions than full sentences. However, if you use the same expressions in a message to a professor or an official company post, they can sound too casual or rude. In those settings, it is safer to rewrite them as full sentences such as 'Yes, I have confirmed it,' 'It was really interesting,' or 'I also think so.'",
+    "comprehensionQuestions": [
+      {
+        "question": "친구 단톡방에서 자연스러운 표현은 무엇인가요?",
+        "answer": "이 댓글 완전 웃겨 ㅋㅋㅋ 같은 짧고 감정적인 표현입니다."
+      },
+      {
+        "question": "ㄹㅇ ㅇㅈ은 어떤 반응인가요?",
+        "answer": "상대의 의견에 강하게 동의하는 반응입니다."
+      },
+      {
+        "question": "공식 글에서는 왜 표현을 바꿔야 하나요?",
+        "answer": "그대로 쓰면 가볍거나 무례하게 들릴 수 있기 때문입니다."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "Slang depends on the relationship, not only the platform",
+    "body": "A KakaoTalk message is not automatically casual. A group chat with close friends allows ㅋㅋ, ㅇㅇ, and 개웃겨. A KakaoTalk message to a professor or workplace manager still needs 네, 확인했습니다, 감사합니다, and complete sentences. Korean digital language is fast, but hierarchy and relationship still matter.",
+    "tip": "Before using slang, ask two questions: Are we close? Is this channel private and informal?"
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "A close friend asks, 내일 7시에 볼까? Which reply fits casual chat?",
+      "options": [
+        "ㅇㅇ 알겠어.",
+        "네, 확인했습니다.",
+        "따라서 참석하겠습니다."
+      ],
+      "correct": "ㅇㅇ 알겠어.",
+      "explanation": "ㅇㅇ is natural only with close peers."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence is safest for a professor after a funny class video?",
+      "options": [
+        "정말 재미있었습니다.",
+        "개웃겨요 ㅋㅋ.",
+        "ㄹㅇ 레전드였어요."
+      ],
+      "correct": "정말 재미있었습니다.",
+      "explanation": "The polite/formal sentence keeps the reaction respectful."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which verb naturally goes with 좋아요?",
+      "options": [
+        "누르다",
+        "하다",
+        "치다"
+      ],
+      "correct": "누르다",
+      "explanation": "좋아요 is treated as a button, so Koreans press it."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which expression agrees with someone's opinion?",
+      "options": [
+        "ㅇㅈ",
+        "ㅠㅠ",
+        "ㅋㅋ"
+      ],
+      "correct": "ㅇㅈ",
+      "explanation": "ㅇㅈ comes from 인정 and means agreed or true that."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which expression is the roughest, most casual way to say something is hilarious?",
+      "options": [
+        "개웃겨",
+        "정말 재미있습니다",
+        "너무 웃겨요"
+      ],
+      "correct": "개웃겨",
+      "explanation": "개웃겨 is natural in close peer chat but too rough for formal settings."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "댓글___ 달았어요. (I left a comment.)",
+      "options": [
+        "을",
+        "이",
+        "에"
+      ],
+      "correct": "을",
+      "explanation": "댓글을 달다 is the natural verb phrase for leaving a comment. 이 would make the comment the subject."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build a close-friend chat reply: 'Yep, see you tomorrow.'",
+      "tokens": [
+        "ㅇㅇ",
+        "내일 봐"
+      ],
+      "correct": "ㅇㅇ 내일 봐",
+      "explanation": "ㅇㅇ is a casual yes/yeah used with close friends. It should not be used with teachers or formal contacts."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Rewrite ㅇㅇ politely.",
+      "correct": "네, 알겠어요.",
+      "explanation": "네, 알겠어요 is a safer polite reply. ㅇㅇ is too casual outside close chat."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix this professor reply: 'ㅇㅇ 레전드예요.'",
+      "correct": "네, 정말 인상적이었습니다.",
+      "explanation": "ㅇㅇ and 레전드 are too casual for a professor. 정말 인상적이었습니다 keeps the positive reaction but changes the register."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which abbreviation means “for real / seriously” in casual chat?",
+      "options": [
+        "ㄹㅇ",
+        "ㅠㅠ",
+        "ㅇㅈ"
+      ],
+      "correct": "ㄹㅇ",
+      "explanation": "ㄹㅇ is shorthand for real/seriously. ㅠㅠ shows crying, and ㅇㅈ means agreed."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "ㅋㅋ laughs, ㅠㅠ cries or complains, ㅇㅇ says quick yes, ㄹㅇ marks for real, and ㅇㅈ agrees with a take.",
+      "완전, 진짜, 대박, 레전드, and 개웃겨 add casual intensity; they do not automatically become formal with 요.",
+      "Platform actions need Korean verbs: 댓글을 달다, 좋아요를 누르다, 친구한테 공유하다.",
+      "A close friend chat, live chat, professor message, and company post require different surfaces even when the feeling is the same."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Reply to a friend's funny video in a casual KakaoTalk chat (2-3 lines): react with chat tokens and an intensifier, and mention a platform action.",
+    "hint": "Use chat tokens (ㅋㅋ, ㅇㅇ, ㄹㅇ) and intensifiers (완전/진짜/대박), plus a fixed platform phrase like 좋아요 누르다 or 공유하다.",
+    "model": "ㅋㅋㅋ 이거 완전 레전드 ㄹㅇ 개웃겨\n나도 방금 좋아요 눌렀어 ㅇㅇ\n친구한테 공유했어",
+    "modelEn": "Hahaha this is totally legendary, for real so funny. I just hit like too, yeah. I shared it with a friend."
+  },
+  "canDo": [
+    "Read and use chat tokens like ㅋㅋ, ㅠㅠ, ㅇㅇ, ㄹㅇ, ㅇㅈ in casual messages",
+    "Crank up the feeling with colloquial intensifiers (완전 / 진짜 / 대박 / 레전드)",
+    "Use fixed platform verb pairings (좋아요 누르다, 댓글 달다, 공유하다)",
+    "Switch register correctly — ㅇㅇ with friends vs 네 / 알겠어요 in formal replies"
+  ]
+}

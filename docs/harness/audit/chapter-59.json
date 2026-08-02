@@ -1,0 +1,40 @@
+{
+  "chapterId": "chapter-59",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 11,
+  "cardsReviewed": 35,
+  "findings": [
+    {
+      "biteId": "chapter-59-b1",
+      "cardIndex": 0,
+      "severity": "bad-teaching",
+      "class": "data-fact",
+      "evidence": "The inherited 알다 reveal called 안 알아요 universally wrong, although it is possible with recognition, refusal, or contrastive readings.",
+      "fix": "Added a local nuance that recommends 모르다 for neutral lack of knowledge without banning valid 안 알아요 contexts.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-59-b6",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "hunt-wrong",
+      "evidence": "The past-counterfactual hunt highlighted only the result ending and omitted the -더라면 condition because ellipsis-separated and fused variants were not extracted.",
+      "fix": "Added compiler regressions, split ellipsis-separated title segments, and emitted stable post-fusion surfaces so both condition and result are marked.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-59-b6",
+      "cardIndex": 1,
+      "severity": "blocker",
+      "class": "drill-multi",
+      "evidence": "The generated cloze after 봤 accepted both 더라면 and the longer 었더라면 as grammatical continuations.",
+      "fix": "Extended the optional-variant guard specifically to past-marker variants whose longer form ends with the shorter surface, removing the ambiguous drill without changing A1 output.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 11 bites and 35 final cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}

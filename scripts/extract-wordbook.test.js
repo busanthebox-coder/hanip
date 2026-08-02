@@ -41,7 +41,7 @@ describe('wordbook extraction artifacts', () => {
       }
     }
     const duplicateUnions = [...occurrences.values()].filter((chapters) => chapters.size > 1);
-    expect(duplicateUnions).toHaveLength(156);
+    expect(duplicateUnions).toHaveLength(185);
     for (const word of list) {
       expect(word.chapters).toEqual([...(occurrences.get(word.ko) || [])].sort((a, b) => a - b));
     }
@@ -104,8 +104,6 @@ describe('wordbook extraction artifacts', () => {
       }
     }
 
-    // Seven audited B1 entries now carry a chapter-local correction, so they
-    // intentionally bypass parent enrichment while every other reveal is kept.
-    expect(attachmentCount).toBe(839);
+    expect(attachmentCount).toBe(977);
   });
 });

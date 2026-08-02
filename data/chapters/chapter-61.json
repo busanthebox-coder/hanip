@@ -1,0 +1,824 @@
+{
+  "id": "chapter-61",
+  "hook": {
+    "situation": "You are reacting in real time: Korean feels more fun than expected, someone has already arrived, a friend may be late, and a missed plan still feels disappointing. The grammar is in the ending because the ending tells the listener how you are taking the information.",
+    "objectives": [
+      "Use -네요 for fresh realization from what you just noticed.",
+      "Use -군요/-구나 for stronger acknowledgement or exclamation.",
+      "Use -(으)ㄹ걸요 for a softened prediction and -았/었을 텐데요 for regret or unfulfilled expectation."
+    ],
+    "whyItMatters": "A plain statement reports information. These endings report your stance toward the information. 재미있어요, 재미있네요, and 재미있군요 can describe the same fact, but they do not sound like the same reaction."
+  },
+  "grammarNotes": [
+    {
+      "title": "A/V-네요: realizing or noticing something right now",
+      "func": "-네요 is the on-the-spot reaction ending. You attach it when you discover, see, hear, taste, or otherwise newly notice something at the moment of speaking. It carries a light feeling of mild surprise or fresh awareness: \"Oh, it's ...!\" Use it when the information just hit you, not when you are reporting a fact you already knew.",
+      "formTable": [
+        {
+          "when": "Verb stem (present)",
+          "add": "-네요",
+          "ex": "오다 -> 오네요 (Oh, it's coming/raining)"
+        },
+        {
+          "when": "Adjective stem",
+          "add": "-네요",
+          "ex": "맛있다 -> 맛있네요 (Wow, this is tasty)"
+        },
+        {
+          "when": "Past tense",
+          "add": "-았/었네요",
+          "ex": "끝나다 -> 끝났네요 (Oh, it's already over)"
+        },
+        {
+          "when": "ㄹ-stem (drop ㄹ)",
+          "add": "-네요",
+          "ex": "멀다 -> 머네요 (It's far, isn't it)"
+        },
+        {
+          "when": "Noun + 이다",
+          "add": "(이)네요",
+          "ex": "학생이네요 / 가수네요 (Oh, you're a student/singer)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "밖에 비가 오네요.",
+          "romanization": "bakke biga oneyo.",
+          "en": "Oh, it's raining outside.",
+          "note": "You just looked out and noticed the rain now -- that fresh discovery is exactly what -네요 marks."
+        },
+        {
+          "ko": "이 김치찌개 정말 맛있네요!",
+          "romanization": "i gimchijjigae jeongmal masinneyo!",
+          "en": "Wow, this kimchi stew is really delicious!",
+          "note": "Said after the first bite -- a reaction to something you are experiencing at this moment."
+        },
+        {
+          "ko": "벌써 6시네요. 시간 빠르네요.",
+          "romanization": "beolsseo yeoseot sineyo. sigan ppareuneyo.",
+          "en": "It's already 6. Time flies.",
+          "note": "Noticing the clock and the speed of time on the spot; 빠르네요 reacts to a realization, not a stored fact."
+        },
+        {
+          "ko": "한국어를 정말 잘하시네요.",
+          "romanization": "hangugeoreul jeongmal jalhasineyo.",
+          "en": "You really speak Korean well!",
+          "note": "A natural compliment -- you just heard them speak and are reacting, which is why -네요 sounds warm here."
+        }
+      ],
+      "keyPoint": {
+        "label": "-네요 = reacting to NEW information",
+        "body": "The core trigger is newness to the speaker. If you already knew the fact and are just stating it, use plain -아/어요. The moment of fresh noticing is what makes -네요 the right choice."
+      },
+      "pronunciation": "Past tense -았네요/-었네요 has the ㅅ assimilate to ㄴ: 끝났네요 sounds like [끈난네요], 갔네요 like [간네요]. Learners who pronounce a clear [ㅅ] here sound non-native.",
+      "drill": {
+        "instruction": "React in the moment using A/V-네요. Fill in the blank with the verb/adjective in parentheses.",
+        "model": "(예쁘다) -> 꽃이 예쁘네요!",
+        "items": [
+          "날씨가 정말 (춥다) -> 날씨가 정말 ____.",
+          "벌써 다 (먹다, past) -> 벌써 다 ____.",
+          "여기 사람이 많이 (있다) -> 여기 사람이 많이 ____."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "어제 비가 왔네요. (to report yesterday's weather you already knew)",
+        "right": "어제 비가 왔어요. / (noticing puddles now) 비가 왔네요.",
+        "explanation": "English speakers reach for -네요 whenever something feels noteworthy, but it must mark information that is new to you at the moment of speaking. Reporting a fact you already knew takes plain -아/어요; -네요 only fits when you are noticing it fresh."
+      }
+    },
+    {
+      "title": "A/V-군요 / -구나: \"I see, so that's how it is\"",
+      "func": "-군요 (polite) and -구나 (casual) express the moment of understanding: you take in new information and acknowledge it, often realizing the reason or background behind something. Where -네요 is a gut reaction to what you perceive, -군요/-구나 is the click of comprehension -- \"Ah, so THAT'S why / so it's like that.\"",
+      "formTable": [
+        {
+          "when": "Adjective stem",
+          "add": "-군요 / -구나",
+          "ex": "춥다 -> 춥군요 / 춥구나 (Ah, it's cold)"
+        },
+        {
+          "when": "Verb stem (present)",
+          "add": "-는군요 / -는구나",
+          "ex": "가다 -> 가는군요 / 가는구나 (I see, you're going)"
+        },
+        {
+          "when": "Past tense (verb & adj)",
+          "add": "-았/었군요 / -았/었구나",
+          "ex": "아프다 -> 아팠군요 / 아팠구나 (Ah, you were sick)"
+        },
+        {
+          "when": "Noun + 이다",
+          "add": "(이)군요 / (이)구나",
+          "ex": "동생이군요 / 동생이구나 (Oh, it's your younger sibling)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "아, 그래서 어제 못 왔군요.",
+          "romanization": "a, geuraeseo eoje mot watgunyo.",
+          "en": "Ah, so that's why you couldn't come yesterday.",
+          "note": "그래서 + -군요 is the classic pairing: you just grasped the reason behind something."
+        },
+        {
+          "ko": "이게 그 유명한 식당이군요.",
+          "romanization": "ige geu yumyeonghan sikdangigunyo.",
+          "en": "So THIS is that famous restaurant.",
+          "note": "You connect what you heard before with what you now see -- a moment of recognition, not just surprise."
+        },
+        {
+          "ko": "민수 씨가 요리를 잘하는군요.",
+          "romanization": "minsu ssiga yorireul jalhaneun-gunyo.",
+          "en": "I see, so Minsu is good at cooking.",
+          "note": "Verb 잘하다 takes -는군요 in the present; you are registering a newly learned fact about Minsu."
+        },
+        {
+          "ko": "벌써 졸업했구나. 시간 진짜 빠르다.",
+          "romanization": "beolsseo joreophaetguna. sigan jinjja ppareuda.",
+          "en": "Oh, you already graduated. Time really flies.",
+          "note": "Casual -구나 to a close friend; it shows you absorbing news and reflecting on it."
+        }
+      ],
+      "keyPoint": {
+        "label": "Verbs need -는군요 in the present",
+        "body": "Adjectives and nouns attach -군요 directly (춥군요, 학생이군요), but present-tense verbs insert -는-: 가는군요, 먹는군요. Past tense is uniform for both: -았/었군요. -구나 is simply the casual (반말) version."
+      },
+      "pronunciation": "-는군요 links the final ㄴ into the 요 in fast speech, sounding like [는군뇨]. The casual -구나 is often drawn out for feeling: 그렇구나~, signaling a thoughtful \"ahh, I see.\"",
+      "drill": {
+        "instruction": "Show that you just understood something using -군요 (polite) or -구나 (casual).",
+        "model": "(친구가 미국 사람이다) -> 미국 사람이군요!",
+        "items": [
+          "(그래서 전화를 안 받았다) -> 그래서 전화를 안 ____.",
+          "(이 노래를 직접 만들었다) -> 이 노래를 직접 ____.",
+          "(casual: 너도 이 영화 봤다) -> 너도 이 영화 ____."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "민수 씨가 요리를 잘하군요.",
+        "right": "민수 씨가 요리를 잘하는군요.",
+        "explanation": "English speakers attach -군요 straight to every stem because adjectives work that way (춥군요). But present-tense verbs require the inserted -는-: 잘하다 -> 잘하는군요, 먹다 -> 먹는군요. Forgetting -는- is the single most common mistake with this ending."
+      }
+    },
+    {
+      "title": "V/A-(으)ㄹ걸요: \"probably,\" a soft guess",
+      "func": "-(으)ㄹ걸요 offers a tentative guess based on your own reasoning or hunch, softened so it doesn't sound too sure. It means \"I think probably ...\" or \"it's likely that ...,\" and is common when answering someone gently without claiming certainty. (Written the same, -(으)ㄹ걸 그랬다 with a sighing tone means regret, \"I should have ...,\" but here we focus on the guessing use.)",
+      "formTable": [
+        {
+          "when": "Verb stem ending in vowel",
+          "add": "-ㄹ걸요",
+          "ex": "오다 -> 올걸요 (They'll probably come)"
+        },
+        {
+          "when": "Verb stem ending in consonant",
+          "add": "-을걸요",
+          "ex": "먹다 -> 먹을걸요 (He probably ate)"
+        },
+        {
+          "when": "Past tense (guessing about the past)",
+          "add": "-았/었을걸요",
+          "ex": "가다 -> 갔을걸요 (They probably already left)"
+        },
+        {
+          "when": "Adjective stem",
+          "add": "-(으)ㄹ걸요",
+          "ex": "비싸다 -> 비쌀걸요 / 좋다 -> 좋을걸요 (probably expensive/good)"
+        },
+        {
+          "when": "ㄹ-stem (drop ㄹ, add -걸요)",
+          "add": "-ㄹ걸요",
+          "ex": "멀다 -> 멀걸요 (It's probably far)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "지금 가게 문 닫았을걸요.",
+          "romanization": "jigeum gage mun dadasseulgeoryo.",
+          "en": "The shop is probably closed now.",
+          "note": "A soft prediction about a present situation; -았을걸요 guesses the door is already in a closed state."
+        },
+        {
+          "ko": "민지 씨는 매운 거 잘 먹을걸요.",
+          "romanization": "minji ssineun maeun geo jal meogeulgeoryo.",
+          "en": "Minji can probably handle spicy food well.",
+          "note": "You're guessing from what you know of her -- not stating a fact, just a confident-but-soft hunch."
+        },
+        {
+          "ko": "그 영화 벌써 끝났을걸요.",
+          "romanization": "geu yeonghwa beolsseo kkeunnasseulgeoryo.",
+          "en": "That movie has probably already ended.",
+          "note": "Past-guess -았을걸요 estimates about something completed; very natural in casual conversation."
+        },
+        {
+          "ko": "주말이라서 길이 많이 막힐걸요.",
+          "romanization": "jumariraseo giri mani makilgeoryo.",
+          "en": "Since it's the weekend, the roads will probably be jammed.",
+          "note": "Reasoning from a known cause (주말이라서) to a likely outcome -- the textbook use of a soft guess."
+        }
+      ],
+      "keyPoint": {
+        "label": "-(으)ㄹ걸요 = your guess, not shared knowledge",
+        "body": "Use -(으)ㄹ걸요 when the conclusion comes from your own inference and you want to stay humble about it. Compare -(으)ㄹ 거예요, which sounds more confident/declarative. -걸요 always softens, as if to say \"I'm fairly sure, but don't quote me.\""
+      },
+      "pronunciation": "The 걸 is tensed to [껄]: 올걸요 sounds like [올껄요], 먹을걸요 like [머글껄요]. The sentence also rises slightly at the end, giving it its tentative, musing feel.",
+      "drill": {
+        "instruction": "Answer with a soft guess using V/A-(으)ㄹ걸요.",
+        "model": "(은행이 지금 열었을까?) -> 지금 문 열었을걸요.",
+        "items": [
+          "(이 책 재미있다?) -> 그 책 아마 ____.",
+          "(민수가 집에 있다?) -> 지금 집에 ____.",
+          "(표가 비싸다?) -> 주말이라서 표가 ____."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "내일 비가 올 거예요. (when you only have a vague hunch, not real evidence)",
+        "right": "내일 비가 올걸요. (a soft, unsure guess) -- use 올 거예요 only when you're genuinely confident.",
+        "explanation": "English \"probably\" and \"will\" feel interchangeable, so learners default to -(으)ㄹ 거예요 even for hunches. But -(으)ㄹ 거예요 sounds like a confident claim, while -(으)ㄹ걸요 keeps it hedged. Match the ending to how sure you actually are. Also keep -(으)ㄹ걸요 (guess) separate from -(으)ㄹ걸 그랬다 (regret, \"I should have\")."
+      }
+    },
+    {
+      "title": "V-았/었을 텐데(요): \"it would have ..., but\"",
+      "func": "-았/었을 텐데(요) expresses a confident guess about an unrealized past -- what surely would have happened -- usually paired with a contrasting reality, regret, or concern. It looks back and supposes: \"It would have been ... (but it wasn't / but something got in the way).\" The 텐데 leaves the thought hanging, inviting sympathy or a soft follow-up rather than a blunt complaint.",
+      "formTable": [
+        {
+          "when": "Verb, past supposition",
+          "add": "-았/었을 텐데(요)",
+          "ex": "오다 -> 왔을 텐데요 (They would have come)"
+        },
+        {
+          "when": "Often after an unreal condition -았/었으면",
+          "add": "-았/었으면 ... -았/었을 텐데요",
+          "ex": "시간이 있었으면 갔을 텐데요 (If I'd had time, I'd have gone)"
+        },
+        {
+          "when": "Adjective, past supposition",
+          "add": "-았/었을 텐데(요)",
+          "ex": "쉽다 -> 쉬웠을 텐데요 (It would have been easy)"
+        },
+        {
+          "when": "Present/future concern (contrast)",
+          "add": "-(으)ㄹ 텐데(요)",
+          "ex": "바쁘다 -> 바쁠 텐데요 (They must be busy, though)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "어제 시간이 있었으면 같이 갔을 텐데요.",
+          "romanization": "eoje sigani isseosseumyeon gachi gasseul tendeyo.",
+          "en": "If I'd had time yesterday, I would have gone with you.",
+          "note": "The trip didn't happen; -았/었을 텐데요 keeps the regret soft instead of stating a flat \"I couldn't go.\""
+        },
+        {
+          "ko": "미리 알았으면 도와드렸을 텐데요.",
+          "romanization": "miri arasseumyeon dowadeuryeosseul tendeyo.",
+          "en": "If I'd known in advance, I would have helped.",
+          "note": "Polite regret after missing a chance to help -- 미리 알았으면 sets the unreal condition."
+        },
+        {
+          "ko": "조금만 일찍 왔으면 표를 살 수 있었을 텐데요.",
+          "romanization": "jogeumman iljjik wasseumyeon pyoreul sal su isseosseul tendeyo.",
+          "en": "If you'd come just a bit earlier, you could have bought a ticket.",
+          "note": "Gentle 'too bad' about a missed chance; the 텐데 trails off, softening it."
+        },
+        {
+          "ko": "버스를 탔으면 안 늦었을 텐데요.",
+          "romanization": "beoseureul tasseumyeon an neujeosseul tendeyo.",
+          "en": "If you'd taken the bus, you wouldn't have been late.",
+          "note": "Looking back at what would have avoided the problem -- sympathetic, not accusatory."
+        }
+      ],
+      "keyPoint": {
+        "label": "Past -았/었을 텐데 = unreal past; present -(으)ㄹ 텐데 = current concern",
+        "body": "Add the past -았/었- when you're supposing about something that did NOT happen (regret): 갔을 텐데요. Drop it for a present/future worry or contrast: 지금 바쁠 텐데요 (\"they must be busy right now, though\"). Mixing these changes the meaning from regret to ongoing concern."
+      },
+      "pronunciation": "텐데 is [텐데] with a clear, even tone, but the sentence-final 요 trails off and drops in pitch -- that falling, unfinished melody is what signals the lingering 'but...' feeling. Don't end it sharply.",
+      "drill": {
+        "instruction": "Express soft regret about an unreal past using -았/었으면 ... -았/었을 텐데요.",
+        "model": "(시간 / 같이 가다) -> 시간이 있었으면 같이 갔을 텐데요.",
+        "items": [
+          "(미리 알다 / 도와주다) -> 미리 ____ 도와드렸을 텐데요.",
+          "(일찍 출발하다 / 안 늦다) -> 일찍 출발했으면 ____.",
+          "(연습 많이 하다 / 쉽다) -> 연습을 많이 했으면 훨씬 ____."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "시간이 있으면 같이 갔을 텐데요. (present 있으면 with a past-regret result)",
+        "right": "시간이 있었으면 같이 갔을 텐데요.",
+        "explanation": "For regret about the past, the IF-clause must also be past-unreal: 있었으면, not 있으면. English \"if I had time\" hides the tense, so learners use present 있으면 and clash with the past 갔을 텐데요. Match both halves to the unreal past: 있었으면 ... 갔을 텐데요."
+      }
+    },
+    {
+      "title": "-군요 vs -네요: both react, but not the same way",
+      "func": "-네요 and -군요 both respond to new information, but with a different feel. -네요 is an immediate, conversational gut reaction to what you directly perceive right now (\"oh, look at that\"). -군요 is a slightly more composed acknowledgement -- you take in a fact or explanation and register it (\"I see, so that's the case\"). Knowing which one to reach for keeps your reactions sounding natural.",
+      "formTable": [
+        {
+          "when": "Fresh, direct noticing (see/hear/feel now)",
+          "add": "-네요",
+          "ex": "비가 오네요 (Oh, it's raining)"
+        },
+        {
+          "when": "Acknowledging a fact/explanation you just learned",
+          "add": "-군요 / -구나",
+          "ex": "아, 그렇군요 (Ah, I see)"
+        },
+        {
+          "when": "Verb present: -네요 (no 는) vs -는군요 (needs 는)",
+          "add": "-네요 / -는군요",
+          "ex": "가네요 / 가는군요",
+          "ex2": ""
+        },
+        {
+          "when": "Reacting to a reason (그래서 ...)",
+          "add": "often -군요",
+          "ex": "그래서 못 왔군요 (So that's why you couldn't come)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "어, 눈이 오네요!",
+          "romanization": "eo, nuni oneyo!",
+          "en": "Oh, it's snowing!",
+          "note": "-네요: a spontaneous reaction to what you see out the window this second."
+        },
+        {
+          "ko": "아, 그래서 늦으셨군요.",
+          "romanization": "a, geuraeseo neujeusyeotgunyo.",
+          "en": "Ah, so that's why you were late.",
+          "note": "-군요: you take in the explanation and acknowledge the reason -- calmer than a gut reaction."
+        },
+        {
+          "ko": "그렇군요. 제가 잘못 알고 있었네요.",
+          "romanization": "geureokunyo. jega jalmot algo isseonneyo.",
+          "en": "I see. I had it wrong.",
+          "note": "Both in one breath: 군요 accepts the new fact, 네요 marks your own fresh realization about yourself."
+        },
+        {
+          "ko": "이 집 커피가 진짜 맛있네요.",
+          "romanization": "i jip keopiga jinjja masinneyo.",
+          "en": "The coffee here is really good.",
+          "note": "-네요: a direct, in-the-moment reaction to taste -- 맛있군요 would sound oddly stiff here."
+        }
+      ],
+      "keyPoint": {
+        "label": "Perceiving now -> -네요; registering a fact -> -군요",
+        "body": "If you're reacting to something you directly sense at this moment (taste, weather, someone's arrival), -네요 sounds warm and natural. If you're acknowledging information or a reason that just clicked, -군요 fits. -군요 can sound stiff for simple sensory reactions, and -네요 can sound under-reactive for absorbing a full explanation."
+      },
+      "pronunciation": "그렇군요 is pronounced [그러쿠뇨] (ㅎ + ㄱ tenses/aspirates to ㅋ), and 그렇네요 is [그런네요] (ㅎ assimilates to ㄴ before ㄴ). Both are extremely common backchannels -- saying them clearly helps you sound like an engaged listener.",
+      "drill": {
+        "instruction": "Choose -네요 (direct noticing) or -군요 (acknowledging a fact/reason), then fill the blank.",
+        "model": "(친구 설명을 듣고) 아, 그래서 그랬____. -> 그랬군요.",
+        "items": [
+          "(창밖을 보며) 어, 비가 ____. [오다]",
+          "(이유를 듣고) 아, 그래서 못 ____. [오다, past]",
+          "(처음 먹어 보고) 이 떡볶이 진짜 ____! [맛있다]"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "(처음 맛보고) 와, 이거 맛있군요!",
+        "right": "(처음 맛보고) 와, 이거 맛있네요!",
+        "explanation": "For a direct, in-the-moment sensory reaction (taste, weather, a view), Korean prefers -네요; -군요 sounds too composed or bookish there. Learners over-use -군요 because it's taught as \"I see,\" but reserve it for acknowledging facts or reasons, not for spontaneous \"wow, this is good!\" reactions."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "재미있다",
+      "romanization": "jaemiitda",
+      "english": "to be fun, interesting",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "한국어가 생각보다 재미있네요.",
+        "en": "Korean is more fun than I expected.",
+        "note": "Fresh realization with -네요."
+      },
+      "collocations": [
+        "재미있네요",
+        "생각보다 재미있다",
+        "재미있군요"
+      ]
+    },
+    {
+      "hangul": "생각보다",
+      "romanization": "saenggakboda",
+      "english": "more/less than expected",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "생각보다 어렵지 않네요.",
+        "en": "It is not as hard as I thought.",
+        "note": "This word naturally triggers realization endings because expectation changed."
+      },
+      "collocations": [
+        "생각보다 재미있네요",
+        "생각보다 어렵지 않네요",
+        "생각보다 괜찮군요"
+      ]
+    },
+    {
+      "hangul": "어렵다",
+      "romanization": "eoryeopda",
+      "english": "to be difficult",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "처음에는 어려울 줄 알았는데 생각보다 괜찮군요.",
+        "en": "I thought it would be hard at first, but it is better than expected.",
+        "note": "어려울 줄 알았다 sets the old expectation."
+      },
+      "collocations": [
+        "어렵네요",
+        "어렵군요",
+        "어려울 줄 알다"
+      ]
+    },
+    {
+      "hangul": "벌써",
+      "romanization": "beolsseo",
+      "english": "already",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "벌써 도착하셨군요.",
+        "en": "Oh, they have already arrived.",
+        "note": "벌써 pairs well with surprise or realization."
+      },
+      "collocations": [
+        "벌써 왔네요",
+        "벌써 도착했군요",
+        "벌써 알고 있었구나"
+      ]
+    },
+    {
+      "hangul": "도착하다",
+      "romanization": "dochakada",
+      "english": "to arrive",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "그분은 벌써 도착하셨군요.",
+        "en": "Oh, they have already arrived.",
+        "note": "Past honorific 도착하셨군요 fits polite acknowledgement."
+      },
+      "collocations": [
+        "도착했네요",
+        "도착하셨군요",
+        "아직 도착 안 했을걸요"
+      ]
+    },
+    {
+      "hangul": "늦다",
+      "romanization": "neutda",
+      "english": "to be late",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "지금 출발하면 조금 늦을걸요.",
+        "en": "If you leave now, you will probably be a little late.",
+        "note": "늦을걸요 is a softened prediction."
+      },
+      "collocations": [
+        "조금 늦을걸요",
+        "늦었네요",
+        "늦지 않았을 텐데요"
+      ]
+    },
+    {
+      "hangul": "시간",
+      "romanization": "sigan",
+      "english": "time",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "시간이 있었으면 같이 갔을 텐데요.",
+        "en": "If I had had time, I would have gone with you.",
+        "note": "시간이 있었으면 creates the missed condition."
+      },
+      "collocations": [
+        "시간이 있다",
+        "시간이 있었으면",
+        "시간이 없었네요"
+      ]
+    },
+    {
+      "hangul": "같이",
+      "romanization": "gachi",
+      "english": "together",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "같이 갔을 텐데요.",
+        "en": "I would have gone together with you.",
+        "note": "같이 makes the regret relational, not just logistical."
+      },
+      "collocations": [
+        "같이 가다",
+        "같이 갔을 텐데요",
+        "같이 할걸 그랬어요"
+      ]
+    },
+    {
+      "hangul": "이미",
+      "romanization": "imi",
+      "english": "already",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "그분은 이미 알고 있을걸요.",
+        "en": "They probably already know.",
+        "note": "이미 often appears in hedged assertions."
+      },
+      "collocations": [
+        "이미 알다",
+        "이미 갔을걸요",
+        "이미 도착했네요"
+      ]
+    },
+    {
+      "hangul": "예상하다",
+      "romanization": "yesanghada",
+      "english": "to expect",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "예상보다 사람이 많네요.",
+        "en": "There are more people than expected.",
+        "note": "A changed expectation naturally takes -네요."
+      },
+      "collocations": [
+        "예상보다",
+        "예상했어요",
+        "예상이 맞았군요"
+      ]
+    },
+    {
+      "hangul": "확실하다",
+      "romanization": "hwaksilhada",
+      "english": "to be certain, sure",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "아직 확실하지는 않을걸요.",
+        "en": "It probably is not certain yet.",
+        "note": "-ㄹ걸요 softens a cautious assertion."
+      },
+      "collocations": [
+        "확실하네요",
+        "확실하지 않을걸요",
+        "확실했군요"
+      ]
+    },
+    {
+      "hangul": "분명히",
+      "romanization": "bunmyeonghi",
+      "english": "clearly, definitely",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "분명히 말했으면 오해가 없었을 텐데요.",
+        "en": "If I had said it clearly, there would have been no misunderstanding.",
+        "note": "분명히 sharpens the missed action in a regret sentence."
+      },
+      "collocations": [
+        "분명히 말하다",
+        "분명히 알다",
+        "분명히 했을 텐데"
+      ],
+      "nuance": "분명히 has two jobs: it can describe saying something clearly (분명히 말하다) or strengthen certainty (‘definitely’). In the certainty use it overlaps heavily with 확실히, so context and collocation are more reliable than a rigid subjective-versus-objective split."
+    },
+    {
+      "hangul": "당연하다",
+      "romanization": "dangyeonhada",
+      "english": "to be natural, obvious, no wonder",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "연습을 많이 했으니까 잘하는 게 당연하네요.",
+        "en": "Since you practiced a lot, no wonder you are good.",
+        "note": "-네요 makes the comment a realization, not a dismissive judgment."
+      },
+      "collocations": [
+        "당연하네요",
+        "당연하군요",
+        "당연히"
+      ]
+    },
+    {
+      "hangul": "힘들다",
+      "romanization": "himdeulda",
+      "english": "to be hard, tiring, tough",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "많이 힘들었군요.",
+        "en": "That must have been really hard for you.",
+        "note": "-군요 can acknowledge someone else's experience with empathy."
+      },
+      "collocations": [
+        "힘들었군요",
+        "힘들었겠네요",
+        "힘들 줄 알았어요"
+      ]
+    },
+    {
+      "hangul": "알다",
+      "romanization": "alda",
+      "english": "to know",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "그분은 이미 알고 있을걸요.",
+        "en": "They probably already know.",
+        "note": "알고 있을걸요 is a common hedged assertion."
+      },
+      "collocations": [
+        "알고 있네요",
+        "알고 있었군요",
+        "알고 있을걸요"
+      ],
+      "nuance": "For a neutral ‘I don't know,’ Korean normally uses 모르다: 몰라요 or the softer 잘 모르겠어요. 안 알아요 is not universally wrong; context can give it ‘I don't recognize/know,’ ‘I won't find out,’ or a contrastive denial, so do not treat it as an impossible form."
+    },
+    {
+      "hangul": "모르다",
+      "romanization": "moreuda",
+      "english": "to not know",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "그렇군요. 제가 모르고 있었네요.",
+        "en": "I see. I did not know that.",
+        "note": "군요 accepts the fact; 네요 marks the speaker's realization."
+      },
+      "collocations": [
+        "몰랐네요",
+        "모르고 있었군요",
+        "몰랐을걸요"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Friends react to a class, a late schedule, and a missed chance while choosing endings that match their stance.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "한국어가 생각보다 재미있네요.",
+        "romanization": "hangugeoga saenggakboda jaemiinneyo.",
+        "en": "Korean is more fun than I expected.",
+        "grammarNote": "-네요 marks a fresh realization."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "처음에는 어려울 줄 알았는데 생각보다 괜찮군요.",
+        "romanization": "cheoeumeneun eoryeoul jul aranneunde saenggakboda gwaenchanhgunyo.",
+        "en": "I thought it would be hard at first, but it is better than expected.",
+        "grammarNote": "-군요 gives a more deliberate acknowledgement."
+      },
+      {
+        "speaker": "민서",
+        "ko": "선생님은 벌써 도착하셨네요.",
+        "romanization": "seonsaengnimeun beolsseo dochakhasyeonneyo.",
+        "en": "Oh, the teacher has already arrived.",
+        "grammarNote": "-네요 works because Minseo is noticing the arrival."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "지금 출발하면 우리는 조금 늦을걸요.",
+        "romanization": "jigeum chulbalhamyeon urineun jogeum neujeulgeoryo.",
+        "en": "If we leave now, we will probably be a little late.",
+        "grammarNote": "-ㄹ걸요 makes the prediction softer."
+      },
+      {
+        "speaker": "민서",
+        "ko": "어제 시간이 있었으면 같이 갔을 텐데요.",
+        "romanization": "eoje sigani isseosseumyeon gachi gasseul tendeyo.",
+        "en": "If I had had time yesterday, I would have gone with you.",
+        "grammarNote": "-았/었을 텐데요 carries regret for an unreal past."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "연습을 많이 했으니까 잘하는 게 당연하네요.",
+        "romanization": "yeonseubeul mani haesseunikka jalhaneun ge dangyeonhaneyo.",
+        "en": "Since you practiced a lot, no wonder you are good.",
+        "grammarNote": "당연하네요 explains a realization without sounding blunt."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "끝 어미가 태도를 바꾼다",
+    "body": "민서는 첫 수업을 듣고 \"생각보다 재미있네요\"라고 말했다. 방금 느낀 놀라움이라서 -네요가 자연스러웠다. 지훈은 설명을 듣고 \"그렇군요\"라고 했다. 새 정보를 받아들이는 조금 더 차분한 반응이었다. 수업이 끝난 뒤 선생님이 이미 도착한 것을 보고 민서는 \"벌써 도착하셨네요\"라고 했고, 지훈은 시간을 보더니 \"지금 출발하면 늦을걸요\"라고 했다. 나중에 민서는 약속에 가지 못한 일을 떠올리며 \"시간이 있었으면 같이 갔을 텐데요\"라고 말했다. 같은 사실도 끝 어미가 달라지면 놀람, 인정, 예측, 아쉬움이 서로 다르게 들린다.",
+    "bodyTranslation": "After the first class, Minseo said, \"It is more fun than I expected.\" Because it was a surprise she had just felt, -네요 was natural. Jihoon listened to an explanation and said, \"I see.\" That was a calmer acknowledgement of new information. After class, Minseo saw that the teacher had already arrived and said, \"Oh, the teacher has already arrived.\" Jihoon looked at the time and said, \"If we leave now, we will probably be late.\" Later, Minseo remembered not being able to go to an appointment and said, \"If I had had time, I would have gone with you.\" Even with the same facts, the final ending changes whether the sentence sounds like surprise, acknowledgement, prediction, or regret.",
+    "comprehensionQuestions": [
+      {
+        "question": "민서는 첫 수업 뒤에 어떤 어미를 사용했어요?",
+        "answer": "-네요를 사용했어요."
+      },
+      {
+        "question": "지훈이 \"늦을걸요\"라고 한 이유는 무엇이에요?",
+        "answer": "지금 출발하면 늦을 것 같다고 부드럽게 예측했기 때문이에요."
+      },
+      {
+        "question": "-았/었을 텐데요는 어떤 느낌을 나타냈어요?",
+        "answer": "과거에 이루어지지 않은 일에 대한 아쉬움이나 후회를 나타냈어요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "끝 어미는 목소리의 표정",
+    "body": "In Korean, the final ending often carries the social expression that English might put in intonation. 재미있어요 reports a fact. 재미있네요 shares a fresh reaction. 재미있군요 sounds like a more formal acknowledgement. 늦을걸요 warns softly without sounding bossy. 갔을 텐데요 lets regret trail off instead of making a heavy complaint.",
+    "tip": "Before choosing the ending, ask: am I noticing, acknowledging, guessing, or regretting?"
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which ending fits a fresh realization after trying Korean class?",
+      "options": [
+        "생각보다 재미있네요.",
+        "생각보다 재미있기로 했어요.",
+        "생각보다 재미있을 수밖에 없었어요."
+      ],
+      "correct": "생각보다 재미있네요.",
+      "explanation": "-네요 marks fresh realization."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence is a softened prediction?",
+      "options": [
+        "지금 출발하면 조금 늦을걸요.",
+        "지금 출발하면 조금 늦었군요.",
+        "지금 출발하면 조금 늦었을 텐데요."
+      ],
+      "correct": "지금 출발하면 조금 늦을걸요.",
+      "explanation": "-ㄹ걸요 gives a hedged assertion or prediction."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence expresses regret about a missed past condition?",
+      "options": [
+        "시간이 있었으면 같이 갔을 텐데요.",
+        "시간이 있으면 같이 가네요.",
+        "시간이 있어서 같이 갈걸요."
+      ],
+      "correct": "시간이 있었으면 같이 갔을 텐데요.",
+      "explanation": "-았/었으면 ... -았/었을 텐데요 frames an unreal past."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Complete the acknowledgement: 아, 그런 이유였____. (use -군요)",
+      "explanation": "그런 이유였군요 politely acknowledges a newly understood reason.",
+      "correct": "군요"
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "생각___ 더 재미있네요. (It is more fun than I expected.)",
+      "options": [
+        "보다",
+        "에",
+        "를"
+      ],
+      "correct": "보다",
+      "explanation": "생각보다 means compared with what I thought or expected. -네요 then reacts to the fresh realization."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "이 문법이 생각보다 ___ . (어렵다 → fresh realization)",
+      "base": "어렵다",
+      "form": "freshRealization",
+      "correct": "어렵네요",
+      "explanation": "-네요 marks something you notice now. 어렵다 becomes 어렵네요."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'Oh, they already arrived.'",
+      "tokens": [
+        "아,",
+        "벌써 도착했군요"
+      ],
+      "correct": "아, 벌써 도착했군요",
+      "explanation": "-군요 acknowledges or takes in information with a stronger “I see” feeling. 벌써 adds the surprise that it already happened."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the regret: '같이 갔으면 좋겠어요.' (missed past plan)",
+      "correct": "같이 갔으면 좋았을 텐데요.",
+      "explanation": "For regret about a missed past plan, the result needs past hypothetical language. 좋았을 텐데요 expresses the unfulfilled expectation."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "You just tried the class and are surprised it is fun. Which fits?",
+      "options": [
+        "생각보다 재미있네요.",
+        "생각보다 재미있을걸요.",
+        "생각보다 재미있었을 텐데요."
+      ],
+      "correct": "생각보다 재미있네요.",
+      "explanation": "-네요 fits fresh realization from direct experience. -ㄹ걸요 is a guess, and -었을 텐데요 is regret/hypothetical."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Complete the soft guess: 지금 출발하면 아마 안 늦___. (use -(으)ㄹ걸요)",
+      "correct": "을걸요",
+      "explanation": "-(으)ㄹ걸요 gives a soft, unconfirmed guess. 늦다 ends in the consonant ㅈ, so it takes 을걸요: 안 늦을걸요."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "-네요 marks a fresh realization: 생각보다 재미있네요, 벌써 도착하셨네요.",
+      "-군요/-구나 marks stronger acknowledgement or exclamation: 그렇군요, 알고 있었구나.",
+      "-(으)ㄹ걸요 softens a prediction or assertion: 늦을걸요, 이미 알고 있을걸요.",
+      "-았/었을 텐데요 looks back at an unfulfilled past expectation: 같이 갔을 텐데요."
+    ]
+  },
+  "writingTask": {
+    "prompt": "A friend just arrived and you notice the time. Send a 3-line reaction: react to something you just noticed, show you now understand why, and add a soft guess.",
+    "hint": "Use A/V-네요 for an on-the-spot reaction, A/V-군요 for 'I see,' and -(으)ㄹ걸요 for a soft guess.",
+    "model": "벌써 도착했네요! 길이 안 막혔군요. 지금 가면 안 늦을걸요.",
+    "modelEn": "Oh, you've arrived already! I see, the road wasn't jammed. If we go now, we probably won't be late."
+  },
+  "canDo": [
+    "React to something noticed right now with A/V-네요 (벌써 도착했네요)",
+    "Acknowledge newly understood information with A/V-군요 / -구나 (안 막혔군요)",
+    "Offer a soft, reasoned guess with V/A-(으)ㄹ걸요 (안 늦을걸요)",
+    "Suppose about an unrealized past with V-았/었을 텐데(요) (늦었을 텐데요)"
+  ]
+}

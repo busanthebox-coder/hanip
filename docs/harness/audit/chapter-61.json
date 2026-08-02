@@ -1,0 +1,49 @@
+{
+  "chapterId": "chapter-61",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 11,
+  "cardsReviewed": 34,
+  "findings": [
+    {
+      "biteId": "chapter-61-b3",
+      "cardIndex": 5,
+      "severity": "bad-teaching",
+      "class": "data-fact",
+      "evidence": "The inherited 분명히 reveal reversed the same chapter's subjective/objective distinction for 분명히 and 확실히.",
+      "fix": "Replaced the rigid split with a local explanation of the two 분명히 uses and the expressions' substantial overlap.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-61-b5",
+      "cardIndex": 2,
+      "severity": "bad-teaching",
+      "class": "data-fact",
+      "evidence": "The inherited 알다 reveal called 안 알아요 universally wrong.",
+      "fix": "Added a local nuance that recommends 모르다 for neutral lack of knowledge while retaining possible 안 알아요 readings.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-61-b8",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "hunt-wrong",
+      "evidence": "Punctuation left after an English title descriptor prevented -네요 from being extracted, so the contrast hunt showed only -군요.",
+      "fix": "Added a compiler regression and stripped descriptor punctuation; the final hunt now contrasts one -네요 line with one -군요 line.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-61-b8",
+      "cardIndex": 1,
+      "severity": "blocker",
+      "class": "drill-multi",
+      "evidence": "A generated reaction cloze treated 그렇네요 as impossible beside 그렇군요 even though both can be natural with different stance.",
+      "fix": "Banned the two non-exclusive spare examples from cloze generation and added a production-data regression; the unambiguous two-line hunt remains.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 11 bites and 34 final cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}

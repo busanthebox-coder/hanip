@@ -1,0 +1,22 @@
+{
+  "chapterId": "chapter-63",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 10,
+  "cardsReviewed": 30,
+  "findings": [
+    {
+      "biteId": "chapter-63-b2",
+      "cardIndex": 1,
+      "severity": "blocker",
+      "class": "drill-multi",
+      "evidence": "A consequence cloze marked 따라서 correct and 그러므로 wrong even though both formal connectors fit the supplied premise and result.",
+      "fix": "Excluded both spare consequence examples from cloze generation, retained the two-connector hunt, and added a production-data regression.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 10 bites and 30 final cards were reviewed; the documented written-ending teach fallbacks remain intentional and no unfixed blocker remains."]
+}

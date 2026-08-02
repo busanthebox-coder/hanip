@@ -218,7 +218,7 @@
     "혹시": ["probably"],
     "메시지": ["opinion"]
   },
-  "huntExampleBans": ["물 좀 주세요"],
+  "huntExampleBans": ["물 좀 주세요", "그렇군요. 제가", "이 집 커피가", "조사 대상이 제한적이다.", "수요가 계속 줄고 있다."],
   "payoffBans": [
     { "word": "저기 / 저것", "contains": "저기요" },
     { "word": "저기", "contains": "저기요" },

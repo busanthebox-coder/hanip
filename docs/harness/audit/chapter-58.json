@@ -1,0 +1,22 @@
+{
+  "chapterId": "chapter-58",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 10,
+  "cardsReviewed": 34,
+  "findings": [
+    {
+      "biteId": "chapter-58-b3",
+      "cardIndex": 2,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The 손님 guess taught 손님께 바로 도와드리겠습니다, incorrectly marking the person being helped with 께.",
+      "fix": "Corrected the example to 손님을 바로 도와드리겠습니다 and recorded the parent-source error in DATA-CHANGES.md.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 10 bites and 34 cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}

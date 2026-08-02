@@ -4,9 +4,19 @@
   "auditComplete": true,
   "bitesReviewed": 14,
   "cardsReviewed": 42,
-  "findings": [],
+  "findings": [
+    {
+      "biteId": "chapter-42-b13",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "A later full-course terminology check found that the reading called Korean grammatical particles 입자 instead of the standard educational term 조사.",
+      "fix": "Changed the reading title and body to 조사 so the earlier particle chapter agrees with the final production checklist.",
+      "fixed": true
+    }
+  ],
   "suggestedOverrideEntries": [],
   "suggestedDataChanges": [],
   "suggestedCompilerTests": [],
-  "notes": ["All 14 bites and 42 cards were reviewed against the five audit classes; no actionable defect or unfixed blocker was found."]
+  "notes": ["All 14 bites and 42 cards were reviewed; the later full-course terminology check corrected 입자 to 조사, and no unfixed blocker remains."]
 }

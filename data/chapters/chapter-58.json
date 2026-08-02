@@ -1,0 +1,752 @@
+{
+  "id": "chapter-58",
+  "hook": {
+    "situation": "The same 겠 appears in three very different moments: a staff member makes a formal promise, a researcher infers from data, and a colleague declines politely. You need to hear which job 겠 is doing before you translate it.",
+    "objectives": [
+      "Use -겠습니다 for formal commitment and service speech.",
+      "Use -겠네요/-겠군요 for confident inference from evidence.",
+      "Separate 겠 from -(으)ㄹ 거예요 and -(으)ㄹ 것 같아요 in future, inference, and softened refusal."
+    ],
+    "whyItMatters": "English often reduces 겠 to 'will,' but Korean uses it for register and stance. 확인하겠습니다, 피곤하시겠네요, and 참석하기 어렵겠습니다 all contain 겠, but they do different social work."
+  },
+  "grammarNotes": [
+    {
+      "title": "V-겠어요 / V-겠습니다 — stating your own intention",
+      "func": "Attach 겠 to a verb stem to say what YOU are going to do, decided right now, as a will or promise. Because it carries the speaker's own will, it almost always has a first-person subject (저/제가). 겠어요 is polite-conversational; 겠습니다 is formal and sounds like a firm, clean promise — the kind you make to a boss, a teacher, or a customer.",
+      "formTable": [
+        {
+          "when": "Polite spoken intention",
+          "add": "verb stem + 겠어요",
+          "ex": "먹다 → 먹겠어요 (I'll eat / I'll have it)"
+        },
+        {
+          "when": "Formal commitment / announcement",
+          "add": "verb stem + 겠습니다",
+          "ex": "하다 → 하겠습니다 (I will do it)"
+        },
+        {
+          "when": "Set greeting phrases",
+          "add": "frozen 겠 forms",
+          "ex": "잘 먹겠습니다 / 처음 뵙겠습니다"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "제가 먼저 할게요. 제가 하겠습니다.",
+          "romanization": "je-ga meon-jeo hal-ge-yo. je-ga ha-get-sseum-ni-da.",
+          "en": "Let me do it first. I'll do it.",
+          "note": "First-person + 하겠습니다 = a firm offer to take something on; very common when volunteering."
+        },
+        {
+          "ko": "오늘은 제가 살게요. 제가 사겠습니다.",
+          "romanization": "o-neu-reun je-ga sal-ge-yo. je-ga sa-get-sseum-ni-da.",
+          "en": "Today it's on me — I'll pay.",
+          "note": "겠 here is a decision made on the spot, not a long-standing plan."
+        },
+        {
+          "ko": "잘 먹겠습니다.",
+          "romanization": "jal meok-kket-sseum-ni-da.",
+          "en": "Thank you for the food (lit. I'll eat well).",
+          "note": "A fixed mealtime phrase — 겠 signals you're about to start eating now."
+        },
+        {
+          "ko": "내일까지 끝내겠습니다.",
+          "romanization": "nae-il-kka-ji kkeun-nae-get-sseum-ni-da.",
+          "en": "I'll get it done by tomorrow.",
+          "note": "A promise to someone you answer to; 겠습니다 sounds more responsible than a plain future."
+        }
+      ],
+      "keyPoint": {
+        "label": "겠어요 vs 겠습니다",
+        "body": "Same intention meaning, different register. 겠어요 is everyday polite ('제가 할게요'/'먹겠어요'); 겠습니다 is formal and weightier, so it's the default for promises, service speech, and announcements. Don't use either for someone ELSE's plan — for that you need -(으)ㄹ 거예요 (친구가 올 거예요)."
+      },
+      "pronunciation": "겠 ends in a [ㄷ] sound, so before 습니다 the ㅅ tenses and the batchim drops in: 겠습니다 → [게씀니다]. 겠어요 links smoothly as [게써요].",
+      "drill": {
+        "instruction": "Turn each verb into a first-person intention using -겠습니다.",
+        "model": "돕다 → 제가 돕겠습니다.",
+        "items": [
+          "하다 → 제가 ___. (하겠습니다)",
+          "먼저 가다 → 제가 먼저 ___. (가겠습니다)",
+          "다시 연락하다 → 제가 다시 ___. (연락하겠습니다)"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "친구가 내일 오겠어요.",
+        "right": "친구가 내일 올 거예요.",
+        "explanation": "English 'will' covers both my own decision and a guess about other people, so learners stretch 겠 to a third person. But volitional 겠 belongs to the speaker's own will — for what a friend is going to do, use -(으)ㄹ 거예요."
+      }
+    },
+    {
+      "title": "A/V-겠네요 / A/V-겠군요 — 'that must be…' (inference from evidence)",
+      "func": "This is the other big job of 겠: drawing a confident conclusion from what you can see, hear, or have just been told. Add 겠 to a verb or adjective stem, then 네요/군요 to react out loud. It means 'must be / I bet / I can tell.' 겠네요 is the everyday reaction; 겠군요 sounds a touch more reflective ('Ah, so it must be…').",
+      "formTable": [
+        {
+          "when": "Reacting to fresh evidence (spoken)",
+          "add": "stem + 겠네요",
+          "ex": "춥다 → 춥겠네요 (It must be cold!)"
+        },
+        {
+          "when": "Realization / 'I see, so…'",
+          "add": "stem + 겠군요",
+          "ex": "맛있다 → 맛있겠군요 (That must be tasty)"
+        },
+        {
+          "when": "Inferring about the past",
+          "add": "-았/었 + 겠네요",
+          "ex": "힘들었겠네요 (That must have been hard)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "밖에 눈이 와요? 길이 막히겠네요.",
+          "romanization": "ba-kke nu-ni wa-yo? gi-ri ma-ki-get-ne-yo.",
+          "en": "It's snowing outside? Then the roads must be jammed.",
+          "note": "Conclusion drawn from the snow you just heard about — classic 겠네요."
+        },
+        {
+          "ko": "이 집 줄이 기네요. 진짜 맛있겠어요.",
+          "romanization": "i jip ju-ri gi-ne-yo. jin-jja ma-sit-kket-sseo-yo.",
+          "en": "The line at this place is long. It must be really good.",
+          "note": "The long line is the evidence; 겠 turns it into a guess about the food."
+        },
+        {
+          "ko": "하루 종일 일했어요? 정말 피곤하겠네요.",
+          "romanization": "ha-ru jong-il il-hae-sseo-yo? jeong-mal pi-gon-ha-get-ne-yo.",
+          "en": "You worked all day? You must be really tired.",
+          "note": "Empathetic inference — Koreans use 겠네요 a lot to show they get how you feel."
+        },
+        {
+          "ko": "시험에 합격했어요? 부모님이 좋아하셨겠어요.",
+          "romanization": "si-heo-me hap-kkyeo-kae-sseo-yo? bu-mo-ni-mi jo-a-ha-syeot-kket-sseo-yo.",
+          "en": "You passed the exam? Your parents must have been so happy.",
+          "note": "-셨겠어요 = past inference + honorific; 겠 works on past events too."
+        }
+      ],
+      "keyPoint": {
+        "label": "The two faces of 겠: will vs guess",
+        "body": "With a first-person action verb, 겠 = intention (먹겠어요 = I'll eat). With an adjective, or a third-person situation plus 네요/군요, 겠 = inference (맛있겠네요 = that must be tasty). Adjectives can't 'intend' anything, so 춥겠어요 can only mean 'it must be cold,' never 'I will be cold.'"
+      },
+      "pronunciation": "겠네요 → [겐네요] (the [ㄷ] of 겠 becomes ㄴ before ㄴ, by nasalization). 겠어요 links as [게써요], and 겠군요 → [겓꾼뇨] with the ㄱ tensing.",
+      "drill": {
+        "instruction": "React to each situation with an inference using -겠네요.",
+        "model": "하루 종일 굶었어요. → 배고프겠네요.",
+        "items": [
+          "다음 주에 시험이 세 개 있어요. → ___. (바쁘겠네요/힘들겠네요)",
+          "어제 다섯 시간밖에 못 잤어요. → ___. (피곤하겠네요)",
+          "열 명 요리를 혼자 했어요. → ___. (정말 힘들었겠네요)"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "맛있을 거예요. (reacting to food right in front of you)",
+        "right": "맛있겠어요.",
+        "explanation": "English 'it'll be delicious' and 'it must be delicious' look similar, but Korean splits them: -(으)ㄹ 거예요 is a neutral prediction, while 겠 is the on-the-spot reaction to evidence in front of you. Looking at a steaming dish, say 맛있겠어요, not 맛있을 거예요."
+      }
+    },
+    {
+      "title": "V-(으)ㄹ 거예요 — talking about a future plan",
+      "func": "Use -(으)ㄹ 거예요 to state a plan or prediction about the future — yours OR someone else's. Unlike volitional 겠, it doesn't sound like an on-the-spot vow; it just reports what is going to happen. It's the everyday way to say 'I'm going to…' / 'X is going to…'.",
+      "formTable": [
+        {
+          "when": "Stem ends in a vowel",
+          "add": "+ ㄹ 거예요",
+          "ex": "가다 → 갈 거예요 (I'm going to go)"
+        },
+        {
+          "when": "Stem ends in a consonant",
+          "add": "+ 을 거예요",
+          "ex": "먹다 → 먹을 거예요 (I'm going to eat)"
+        },
+        {
+          "when": "ㄹ-final stem",
+          "add": "+ 거예요 (ㄹ stays)",
+          "ex": "만들다 → 만들 거예요 (I'll make it)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "이번 주말에 부산에 갈 거예요.",
+          "romanization": "i-beon ju-ma-re bu-sa-ne gal kkeo-ye-yo.",
+          "en": "I'm going to Busan this weekend.",
+          "note": "A settled plan, not a spur-of-the-moment decision — that's the difference from 겠."
+        },
+        {
+          "ko": "민수 씨는 안 올 거예요. 바쁘대요.",
+          "romanization": "min-su ssi-neun an ol kkeo-ye-yo. ba-ppeu-dae-yo.",
+          "en": "Minsu isn't going to come. He says he's busy.",
+          "note": "Third-person plan — perfectly fine here, unlike volitional 겠."
+        },
+        {
+          "ko": "저녁은 집에서 먹을 거예요.",
+          "romanization": "jeo-nyeo-geun ji-be-seo meo-geul kkeo-ye-yo.",
+          "en": "I'm going to eat dinner at home.",
+          "note": "Stem 먹- ends in a consonant, so it takes 을 거예요."
+        },
+        {
+          "ko": "내일은 날씨가 맑을 거예요.",
+          "romanization": "nae-i-reun nal-ssi-ga mal-geul kkeo-ye-yo.",
+          "en": "The weather will be clear tomorrow.",
+          "note": "A neutral forecast — the typical 'prediction' use, where 겠 would sound oddly personal."
+        }
+      ],
+      "keyPoint": {
+        "label": "거예요 vs 겠",
+        "body": "Both reach into the future, but the feel differs. -(으)ㄹ 거예요 = a settled plan or neutral prediction, and works for anyone (저도, 친구도). 겠 = a will/promise made right now, almost always first-person (제가 하겠습니다). So a server taking your order says 주문하시겠어요? (your intention), while you describe your trip with 갈 거예요 (it's planned)."
+      },
+      "pronunciation": "Standard spelling is 거예요 (you'll also see 거에요, but 거예요 is correct). The ㄹ of the -(으)ㄹ form tenses the next sound: 갈 거예요 → [갈 꺼예요], 먹을 거예요 → [머글 꺼예요].",
+      "drill": {
+        "instruction": "Make a future-plan sentence with -(으)ㄹ 거예요.",
+        "model": "주말 / 쉬다 → 주말에 쉴 거예요.",
+        "items": [
+          "내년 / 한국어를 배우다 → ___. (내년에 한국어를 배울 거예요)",
+          "오후 / 친구를 만나다 → ___. (오후에 친구를 만날 거예요)",
+          "점심 / 김밥을 먹다 → ___. (점심에 김밥을 먹을 거예요)"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "제가 도와줄 거예요. (offering help on the spot)",
+        "right": "제가 도와드리겠습니다.",
+        "explanation": "For a fresh offer or promise ('I'll help you with that'), -(으)ㄹ 거예요 sounds like a plan you already had and can feel flat. The willing, on-the-spot commitment calls for 겠 — 도와드리겠습니다."
+      }
+    },
+    {
+      "title": "A/V-(으)ㄹ 것 같아요 — a soft, tentative guess",
+      "func": "-(으)ㄹ 것 같아요 means 'I think / it seems / probably.' It softens a statement into a guess about the future or about something uncertain, so it sounds modest and polite. It pairs with this 겠 chapter as the gentler cousin of inference: where 겠네요 is a confident 'must be,' -(으)ㄹ 것 같아요 is a hedged 'I think / probably.'",
+      "formTable": [
+        {
+          "when": "Verb, future guess",
+          "add": "+ -(으)ㄹ 것 같아요",
+          "ex": "오다 → 올 것 같아요 (I think it'll come/rain)"
+        },
+        {
+          "when": "Adjective, present guess",
+          "add": "+ -(으)ㄹ 것 같아요",
+          "ex": "비싸다 → 비쌀 것 같아요 (It looks expensive)"
+        },
+        {
+          "when": "Past guess (already happened)",
+          "add": "-(으)ㄴ 것 같아요",
+          "ex": "가다 → 간 것 같아요 (Seems they left)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "오늘 비가 올 것 같아요.",
+          "romanization": "o-neul bi-ga ol geot ga-ta-yo.",
+          "en": "I think it's going to rain today.",
+          "note": "A hedged forecast — softer and more natural in conversation than 비가 오겠어요."
+        },
+        {
+          "ko": "이 옷은 저한테 좀 클 것 같아요.",
+          "romanization": "i o-seun jeo-han-te jom keul geot ga-ta-yo.",
+          "en": "I think this shirt will be a bit big on me.",
+          "note": "Adjective 크다 + ㄹ 것 같아요; 좀 makes the guess even gentler."
+        },
+        {
+          "ko": "약속에 조금 늦을 것 같아요. 미안해요.",
+          "romanization": "yak-so-ge jo-geum neu-jeul geot ga-ta-yo. mi-an-hae-yo.",
+          "en": "I think I'll be a little late. Sorry.",
+          "note": "Used to soften bad news about yourself — much politer than a flat 늦어요."
+        },
+        {
+          "ko": "저 사람 한국 사람인 것 같아요.",
+          "romanization": "jeo sa-ram han-guk sa-ra-min geot ga-ta-yo.",
+          "en": "That person seems to be Korean.",
+          "note": "A guess about a present fact — gentler and less pushy than asserting it directly."
+        }
+      ],
+      "keyPoint": {
+        "label": "겠네요 vs (으)ㄹ 것 같아요",
+        "body": "Both are guesses, but the confidence differs. 겠네요 = a confident 'it must be…,' usually a quick reaction to evidence right there (춥겠네요). -(으)ㄹ 것 같아요 = a softer 'I think / probably' that leaves room for doubt (추울 것 같아요). When you want to sound modest or unsure, reach for -(으)ㄹ 것 같아요."
+      },
+      "pronunciation": "것 같아요 → [걷 까타요]: the ㄱ of 같- tenses to [까] after the [ㄷ] of 것, and 같아요 links as [가타요]. The ㄹ form tenses too: 올 것 → [올 껃].",
+      "drill": {
+        "instruction": "Soften each guess with -(으)ㄹ 것 같아요.",
+        "model": "비가 와요. → 비가 올 것 같아요.",
+        "items": [
+          "이 가방은 비싸요. → ___. (비쌀 것 같아요)",
+          "오늘은 좀 늦어요. → ___. (늦을 것 같아요)",
+          "저 영화는 재미있어요. → ___. (재미있을 것 같아요)"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "맛있을 것 같아요. (reacting to a dish steaming in front of you)",
+        "right": "맛있겠어요.",
+        "explanation": "When the evidence is right there and you're confident, -(으)ㄹ 것 같아요 sounds oddly hesitant — like you're unsure about food you can clearly see is good. Use the confident 겠어요/겠네요 for that on-the-spot reaction, and save -(으)ㄹ 것 같아요 for genuinely uncertain guesses."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "확인하다",
+      "romanization": "hwaginhada",
+      "english": "to check / confirm",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "주문은 제가 바로 확인하겠습니다.",
+        "en": "I will check the order right away.",
+        "note": "Linked to dictionary card word-verb-482."
+      },
+      "collocations": [
+        "주문을 확인하다",
+        "자료를 확인하다",
+        "바로 확인하겠습니다"
+      ]
+    },
+    {
+      "hangul": "처리하다",
+      "romanization": "cheorihada",
+      "english": "to handle / process",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "이 일은 제가 처리하겠습니다.",
+        "en": "I will handle this matter.",
+        "note": "Linked to dictionary card word-verb-046."
+      },
+      "collocations": [
+        "일을 처리하다",
+        "문제를 처리하다",
+        "제가 처리하겠습니다"
+      ]
+    },
+    {
+      "hangul": "도와드리다",
+      "romanization": "dowadeurida",
+      "english": "to help politely",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "손님을 도와드리겠습니다.",
+        "en": "I will help the customer.",
+        "note": "Linked to dictionary card word-verb-265."
+      },
+      "collocations": [
+        "도와드릴까요?",
+        "도와드리겠습니다",
+        "손님을 도와드리다"
+      ]
+    },
+    {
+      "hangul": "참석하다",
+      "romanization": "chamseokhada",
+      "english": "to attend",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "죄송하지만 오늘은 참석하기 어렵겠습니다.",
+        "en": "I'm sorry, but it will be difficult for me to attend today.",
+        "note": "Linked to dictionary card word-verb-494."
+      },
+      "collocations": [
+        "회의에 참석하다",
+        "참석하기 어렵다",
+        "참석 가능하다"
+      ]
+    },
+    {
+      "hangul": "거절하다",
+      "romanization": "geojeolhada",
+      "english": "to refuse / decline",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "정중하게 거절해야 할 때도 있어요.",
+        "en": "There are times when you have to decline politely.",
+        "note": "Linked to dictionary card word-verb-077."
+      },
+      "collocations": [
+        "정중하게 거절하다",
+        "부탁을 거절하다",
+        "거절하기 어렵다"
+      ]
+    },
+    {
+      "hangul": "정중하다",
+      "romanization": "jeongjunghada",
+      "english": "courteous / respectful",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "어렵겠습니다는 정중한 거절에 자주 쓰여요.",
+        "en": "Eoryeopgesseumnida is often used in courteous refusals.",
+        "note": "Linked to dictionary card word-ext-1792."
+      },
+      "collocations": [
+        "정중한 표현",
+        "정중하게 말하다",
+        "정중하게 거절하다"
+      ]
+    },
+    {
+      "hangul": "자료",
+      "romanization": "jaryo",
+      "english": "data / materials / documents",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "자료를 보니 결과가 달라지겠네요.",
+        "en": "Looking at the data, it looks like the result will change.",
+        "note": "Linked to dictionary card word-ext-ch35-jaryo."
+      },
+      "collocations": [
+        "자료를 보다",
+        "자료를 확인하다",
+        "추가 자료"
+      ]
+    },
+    {
+      "hangul": "결과",
+      "romanization": "gyeolgwa",
+      "english": "result / outcome",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "결과가 달라지겠네요.",
+        "en": "It looks like the result will change.",
+        "note": "Linked to dictionary card word-ext-1672."
+      },
+      "collocations": [
+        "결과가 나오다",
+        "결과가 달라지다",
+        "결과를 확인하다"
+      ]
+    },
+    {
+      "hangul": "손님",
+      "romanization": "sonnim",
+      "english": "customer / guest",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "손님을 바로 도와드리겠습니다.",
+        "en": "I will help the customer right away.",
+        "note": "Linked to dictionary card word-ext-140."
+      },
+      "collocations": [
+        "손님께",
+        "손님을 도와드리다",
+        "손님이 기다리다"
+      ]
+    },
+    {
+      "hangul": "바로",
+      "romanization": "baro",
+      "english": "right away",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "바로 확인하겠습니다.",
+        "en": "I will check right away.",
+        "note": "Linked to dictionary card word-ext-1293."
+      },
+      "collocations": [
+        "바로 확인하다",
+        "바로 처리하다",
+        "바로 연락하다"
+      ]
+    },
+    {
+      "hangul": "주문",
+      "romanization": "jumun",
+      "english": "order",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "주문은 제가 바로 확인하겠습니다.",
+        "en": "I will check the order right away.",
+        "note": "Linked to dictionary card word-ext-587."
+      },
+      "collocations": [
+        "주문을 확인하다",
+        "주문을 처리하다",
+        "주문이 들어오다"
+      ]
+    },
+    {
+      "hangul": "기다리다",
+      "romanization": "gidarida",
+      "english": "to wait",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "그럼 조금 기다리겠습니다.",
+        "en": "Then I will wait a little.",
+        "note": "Linked to dictionary card word-verb-018."
+      },
+      "collocations": [
+        "조금 기다리다",
+        "잠시 기다리다",
+        "기다리겠습니다"
+      ]
+    },
+    {
+      "hangul": "회의",
+      "romanization": "hoeui",
+      "english": "meeting",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "오늘 회의에서는 설명이 좀 어렵겠습니다.",
+        "en": "In today's meeting, explaining it may be a bit difficult.",
+        "note": "Linked to dictionary card word-ext-121."
+      },
+      "collocations": [
+        "회의에 참석하다",
+        "회의에서 설명하다",
+        "회의 자료"
+      ]
+    },
+    {
+      "hangul": "설명",
+      "romanization": "seolmyeong",
+      "english": "explanation",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "설명이 길어지면 이해하기 어렵겠네요.",
+        "en": "If the explanation gets long, it will be hard to understand.",
+        "note": "Linked to dictionary card word-ext-1461."
+      },
+      "collocations": [
+        "설명이 어렵다",
+        "설명을 듣다",
+        "설명하기 어렵다"
+      ]
+    },
+    {
+      "hangul": "조금",
+      "romanization": "jogeum",
+      "english": "a little / a bit",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "조금 기다리겠습니다.",
+        "en": "I will wait a little.",
+        "note": "Linked to dictionary card word-ext-1286."
+      },
+      "collocations": [
+        "조금 기다리다",
+        "조금 어렵다",
+        "조금 늦다"
+      ]
+    },
+    {
+      "hangul": "가능하다",
+      "romanization": "ganeunghada",
+      "english": "to be possible",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "이 방법이 가능할 것 같아요.",
+        "en": "I think this method might be possible.",
+        "note": "Linked to dictionary card word-ext-1255."
+      },
+      "collocations": [
+        "가능할 것 같아요",
+        "참석 가능하다",
+        "처리 가능하다"
+      ]
+    },
+    {
+      "hangul": "피곤하다",
+      "romanization": "pigonhada",
+      "english": "to be tired",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "표정을 보니 많이 피곤하시겠네요.",
+        "en": "Seeing your expression, you must be very tired.",
+        "note": "Linked to dictionary card word-ext-257."
+      },
+      "collocations": [
+        "피곤하시겠네요",
+        "너무 피곤하다",
+        "피곤해 보이다"
+      ]
+    },
+    {
+      "hangul": "어렵다",
+      "romanization": "eoryeopda",
+      "english": "to be difficult",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "오늘은 참석하기 어렵겠습니다.",
+        "en": "It will be difficult for me to attend today.",
+        "note": "Linked to dictionary card word-adjective-037."
+      },
+      "collocations": [
+        "참석하기 어렵다",
+        "설명하기 어렵다",
+        "어렵겠습니다"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "A workplace chat moves through service commitment, evidence-based inference, and polite refusal.",
+    "lines": [
+      {
+        "speaker": "직원",
+        "ko": "주문은 제가 바로 확인하겠습니다.",
+        "romanization": "jumuneun jega baro hwaginhagetseumnida.",
+        "en": "I will check the order right away.",
+        "grammarNote": "-겠습니다 is a formal commitment."
+      },
+      {
+        "speaker": "손님",
+        "ko": "감사합니다. 그럼 조금 기다리겠습니다.",
+        "romanization": "gamsahamnida. geureom jogeum gidarigetseumnida.",
+        "en": "Thank you. Then I will wait a little.",
+        "grammarNote": "The customer also uses formal speech, but the action is simple volition."
+      },
+      {
+        "speaker": "연구원",
+        "ko": "자료를 보니 결과가 달라지겠네요.",
+        "romanization": "jaryoreul boni gyeolgwa-ga dallajigenneyo.",
+        "en": "Looking at the data, it looks like the result will change.",
+        "grammarNote": "-겠네요 marks inference from evidence."
+      },
+      {
+        "speaker": "동료",
+        "ko": "그럼 오늘 회의에서는 설명이 좀 어렵겠습니다.",
+        "romanization": "geureom oneul hoeuieseo-neun seolmyeongi jom eoryeopgetseumnida.",
+        "en": "Then in today's meeting, explaining it may be a bit difficult.",
+        "grammarNote": "-겠습니다 softens a difficult statement."
+      },
+      {
+        "speaker": "민서",
+        "ko": "죄송하지만 오늘은 참석하기 어렵겠습니다.",
+        "romanization": "joesonghajiman oneureun chamseokhagi eoryeopgetseumnida.",
+        "en": "I'm sorry, but it will be difficult for me to attend today.",
+        "grammarNote": "Formal softened refusal."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "알겠습니다. 이 일은 제가 처리하겠습니다.",
+        "romanization": "algesseumnida. i ireun jega cheorihagetseumnida.",
+        "en": "Understood. I will handle this matter.",
+        "grammarNote": "알겠습니다 is fixed formal acknowledgment; 처리하겠습니다 is commitment."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "겠의 세 가지 얼굴",
+    "body": "겠은 단순히 미래를 말하는 표현이 아니에요. 직원이 손님에게 주문을 확인하겠습니다라고 말하면, 그냥 미래 계획이 아니라 지금 책임지고 처리하겠다는 약속처럼 들려요. 반대로 자료를 보니 결과가 달라지겠네요는 자료라는 근거를 보고 내린 추론이에요. 또 죄송하지만 참석하기 어렵겠습니다처럼 말하면 못 가요보다 훨씬 정중하고 부드러운 거절이 돼요. 그래서 겠을 볼 때는 먼저 상황을 봐야 해요. 내가 하겠다는 약속인지, 근거를 보고 추측하는지, 아니면 말을 부드럽게 만드는지 구분해야 자연스럽게 쓸 수 있어요.",
+    "bodyTranslation": "겠 is not simply a future marker. When a staff member says 'I will check the order,' it sounds like a responsible promise, not just a future plan. By contrast, 'Looking at the data, the result will change' is an inference from evidence. And saying 'I'm sorry, but it will be difficult for me to attend' is a much more courteous and softened refusal than simply saying 'I can't go.' So when you see 겠, look at the situation first. Is it a promise that I will do something, an inference from evidence, or a way to soften speech?",
+    "comprehensionQuestions": [
+      {
+        "question": "직원이 확인하겠습니다라고 말하면 어떤 느낌이에요?",
+        "answer": "책임지고 처리하겠다는 약속처럼 들려요."
+      },
+      {
+        "question": "자료를 보니 결과가 달라지겠네요는 어떤 겠이에요?",
+        "answer": "근거를 보고 내린 추론이에요."
+      },
+      {
+        "question": "참석하기 어렵겠습니다는 왜 써요?",
+        "answer": "거절을 정중하고 부드럽게 말하기 위해 써요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "서비스 말투의 책임감",
+    "body": "In Korean service and workplace settings, -겠습니다 often signals professionalism. 제가 확인하겠습니다, 바로 처리하겠습니다, 도와드리겠습니다 all tell the listener that the speaker is taking responsibility. In private plans, -(으)ㄹ 거예요 is more natural. In refusals, 어렵겠습니다 softens the message without sounding evasive.",
+    "tip": "If the sentence is about a promise to the listener, try -겠습니다. If it is a private plan, use -(으)ㄹ 거예요. If it is a cautious guess, use -(으)ㄹ 것 같아요."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence is a formal service commitment?",
+      "options": [
+        "주문은 제가 바로 확인하겠습니다.",
+        "주문은 제가 바로 확인할 것 같아요.",
+        "주문은 제가 바로 확인했겠네요."
+      ],
+      "correct": "주문은 제가 바로 확인하겠습니다.",
+      "explanation": "-겠습니다 marks a formal commitment controlled by the speaker."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence uses 겠 for inference from evidence?",
+      "options": [
+        "자료를 보니 결과가 달라지겠네요.",
+        "자료를 보니 제가 처리하겠습니다.",
+        "자료를 보니 참석하기 어렵겠습니다."
+      ],
+      "correct": "자료를 보니 결과가 달라지겠네요.",
+      "explanation": "The data gives evidence for the speaker's inference."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence is the most courteous formal refusal?",
+      "options": [
+        "죄송하지만 오늘은 참석하기 어렵겠습니다.",
+        "오늘 못 가요.",
+        "오늘 참석 안 할 거예요."
+      ],
+      "correct": "죄송하지만 오늘은 참석하기 어렵겠습니다.",
+      "explanation": "어렵겠습니다 softens the refusal in formal speech."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "자료___ 많겠네요. (The materials must be a lot.)",
+      "options": [
+        "가",
+        "를",
+        "에"
+      ],
+      "correct": "가",
+      "explanation": "많다 describes the amount of 자료, so 자료 takes 가. 겠네요 gives an inference from what you see or hear."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "제가 바로 ___ . (확인하다 → formal commitment)",
+      "base": "확인하다",
+      "form": "formalCommitment",
+      "correct": "확인하겠습니다",
+      "explanation": "-겠습니다 is a formal commitment in service or professional speech. 확인하다 becomes 확인하겠습니다."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'I will help you right away.'",
+      "tokens": [
+        "바로",
+        "도와드리겠습니다"
+      ],
+      "correct": "바로 도와드리겠습니다",
+      "explanation": "도와드리겠습니다 is formal and respectful. 바로 adds the service promise “right away.”"
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Say: 'That must be hard.'",
+      "correct": "힘드시겠네요.",
+      "explanation": "-겠네요 gives an inference or empathetic reaction from evidence. 힘드시겠네요 is polite and considerate."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the mixed formal future: '확인할 거겠습니다.'",
+      "correct": "확인하겠습니다.",
+      "explanation": "Do not stack -ㄹ 거예요 and -겠습니다. In formal service speech, use 확인하겠습니다."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence uses 겠 for inference, not a promise?",
+      "options": [
+        "자료가 많겠네요.",
+        "제가 처리하겠습니다.",
+        "제가 참석하겠습니다."
+      ],
+      "correct": "자료가 많겠네요.",
+      "explanation": "많겠네요 is an inference from evidence. 처리하겠습니다 and 참석하겠습니다 are formal commitments."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Write a courteous formal refusal: 'I think attending will be difficult.'",
+      "correct": "참석하기 어렵겠습니다.",
+      "explanation": "어렵겠습니다 softens a formal refusal. 참석하기 turns attending into the thing that is difficult."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "Commitment: 제가 확인하겠습니다, 제가 처리하겠습니다.",
+      "Inference: 자료를 보니 결과가 달라지겠네요, 많이 피곤하시겠네요.",
+      "Softened refusal: 참석하기 어렵겠습니다.",
+      "-(으)ㄹ 거예요 is an ordinary future plan; -(으)ㄹ 것 같아요 is a tentative guess."
+    ]
+  },
+  "writingTask": {
+    "prompt": "A customer emailed asking about their order. Reply: say you'll check it right away, then add a careful guess about when the result will come.",
+    "hint": "Use V-겠습니다/겠어요 for your own intention (확인하겠습니다), and A/V-겠네요 or -(으)ㄹ 것 같아요 for a soft guess.",
+    "model": "주문은 제가 바로 확인하겠습니다. 자료를 처리하고 결과를 알려 드리겠습니다. 오늘 안에 끝날 것 같아요.",
+    "modelEn": "I'll check your order right away. I'll process the materials and let you know the result. I think it'll be done within today."
+  },
+  "canDo": [
+    "State my own intention politely with V-겠습니다 / V-겠어요 (확인하겠습니다)",
+    "Make a careful inference from evidence with A/V-겠네요 (바쁘겠네요)",
+    "Talk about a future plan with V-(으)ㄹ 거예요 (기다릴 거예요)",
+    "Soften a statement into a tentative guess with -(으)ㄹ 것 같아요 (끝날 것 같아요)"
+  ]
+}

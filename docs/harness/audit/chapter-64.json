@@ -1,0 +1,22 @@
+{
+  "chapterId": "chapter-64",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 9,
+  "cardsReviewed": 30,
+  "findings": [
+    {
+      "biteId": "chapter-64-b1",
+      "cardIndex": 1,
+      "severity": "bad-teaching",
+      "class": "data-fact",
+      "evidence": "The inherited ㅠㅠ reveal required no space before the reaction and called the chapter's own spaced example wrong-looking.",
+      "fix": "Added a local nuance that recognizes both attached and spaced chat spellings while keeping the casual-register warning.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 9 bites and 30 cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}

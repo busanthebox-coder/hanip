@@ -1,0 +1,917 @@
+{
+  "id": "chapter-62",
+  "hook": {
+    "situation": "A friend calls, the topic shifts to that friend, then the speaker contrasts messages with calls and answers who acted first. This chapter is about how Korean particles manage the flow of information.",
+    "objectives": [
+      "Use 이/가 for new information, focused answers, and existence predicates.",
+      "Use 은/는 for topic continuity, contrast, and framing.",
+      "Build topic-plus-subject sentences such as 이 문제는 이유가 중요해요."
+    ],
+    "whyItMatters": "English often uses word order or stress for information flow. Korean marks that flow with particles. 친구가 전화했어요 and 친구는 전화했어요 do not simply mean the same thing with different decoration."
+  },
+  "grammarNotes": [
+    {
+      "title": "이/가 — a new or focused subject (new information)",
+      "func": "The subject marker 이/가 spotlights WHO or WHAT does or is something. Use it when the subject is new to the conversation, when it answers a 'who?'/'what?' question, or when you want the listener's attention on that exact element. It introduces; it does not assume.",
+      "formTable": [
+        {
+          "when": "subject noun ends in a consonant",
+          "add": "+ 이",
+          "ex": "선생님 → 선생님이"
+        },
+        {
+          "when": "subject noun ends in a vowel",
+          "add": "+ 가",
+          "ex": "친구 → 친구가"
+        },
+        {
+          "when": "answering 누가/뭐가 (who/what)",
+          "add": "marked noun = the answer",
+          "ex": "누가 왔어요? → 동생이 왔어요."
+        }
+      ],
+      "examples": [
+        {
+          "ko": "비가 와요.",
+          "romanization": "biga wayo.",
+          "en": "It's raining.",
+          "note": "비 is brand-new on the scene, so 가 (not 는) presents it as fresh news."
+        },
+        {
+          "ko": "누가 한국어를 가르쳐요?",
+          "romanization": "nuga hangugeoreul gareuchyeoyo?",
+          "en": "Who teaches Korean?",
+          "note": "The question word 누가 is the focus, so the subject naturally takes 가."
+        },
+        {
+          "ko": "제 친구가 부산에 살아요.",
+          "romanization": "je chinguga busane sarayo.",
+          "en": "My friend lives in Busan.",
+          "note": "Introducing the friend for the first time, so 가 presents the new subject."
+        },
+        {
+          "ko": "문제가 있어요.",
+          "romanization": "munjega isseoyo.",
+          "en": "There's a problem.",
+          "note": "Existence sentences with 있다/없다 present new info, so the thing takes 이/가."
+        }
+      ],
+      "keyPoint": {
+        "label": "이/가 = new and in focus",
+        "body": "Compare 누가 왔어요? — 친구가 왔어요 (NEW: 가) with 친구는 언제 와요? (already-known friend: 는). 이/가 answers 'who/what'; 은/는 talks ABOUT a known thing."
+      },
+      "pronunciation": "이 after a consonant links smoothly: 선생님이 sounds like 선생니미; 책이 like 채기. The final consonant slides onto 이.",
+      "drill": {
+        "instruction": "Fill the blank with 이 or 가 to mark the new/focused subject.",
+        "model": "누가 왔어요? → 동생___ 왔어요. → 동생이",
+        "items": [
+          "눈___ 와요. (눈 = snow) → 눈이",
+          "뭐가 맛있어요? → 김치___ 맛있어요. → 김치가",
+          "선생님___ 교실에 계세요. → 선생님이"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "비는 와요.",
+        "right": "비가 와요.",
+        "explanation": "English has no topic/subject split, so learners default to one marker for everything. Brand-new, on-the-scene information (weather, sudden events, answers to 'who/what') takes 이/가, not 은/는."
+      }
+    },
+    {
+      "title": "은/는 — topic continuity (an already-known topic)",
+      "func": "The topic marker 은/는 sets up what the sentence is ABOUT. Use it for something already known, already mentioned, or generally assumed — the shared starting point. It says 'as for X…' and then comments on it. It carries old information, not new.",
+      "formTable": [
+        {
+          "when": "topic noun ends in a consonant",
+          "add": "+ 은",
+          "ex": "선생님 → 선생님은"
+        },
+        {
+          "when": "topic noun ends in a vowel",
+          "add": "+ 는",
+          "ex": "저 → 저는"
+        },
+        {
+          "when": "stating a general fact",
+          "add": "topic + comment",
+          "ex": "강아지는 귀여워요. (Puppies are cute.)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "저는 학생이에요.",
+          "romanization": "jeoneun haksaengieyo.",
+          "en": "I'm a student.",
+          "note": "'I' is the obvious shared topic of self-introduction, so 는 frames it and the comment follows."
+        },
+        {
+          "ko": "그 영화는 정말 재미있었어요.",
+          "romanization": "geu yeonghwaneun jeongmal jaemiisseosseoyo.",
+          "en": "That movie was really fun.",
+          "note": "그 영화 is already known (we both know which movie), so 는 continues it as the topic."
+        },
+        {
+          "ko": "한국어는 발음이 어려워요.",
+          "romanization": "hangugeoneun bareumi eoryeowoyo.",
+          "en": "As for Korean, the pronunciation is hard.",
+          "note": "한국어 is the established topic; the new comment is about its 발음 (which itself takes 이)."
+        },
+        {
+          "ko": "오늘은 날씨가 좋아요.",
+          "romanization": "oneureun nalssiga joayo.",
+          "en": "The weather is nice today.",
+          "note": "오늘 is the assumed frame ('as for today'), so 는 sets the scene and 날씨가 carries the new subject."
+        }
+      ],
+      "keyPoint": {
+        "label": "은/는 = old, 이/가 = new",
+        "body": "First mention introduces with 이/가; once it's on the table, you keep talking about it with 은/는. 옛날에 한 남자가 살았어요. 그 남자는… (A man lived… The man…)."
+      },
+      "pronunciation": "은 after a consonant resyllabifies: 선생님은 → 선생니믄; 책은 → 채근. Keep 는 as a clear 'neun' with no vowel reduction.",
+      "drill": {
+        "instruction": "Add 은 or 는 to set the already-known topic.",
+        "model": "저___ 한국 사람이에요. → 저는",
+        "items": [
+          "그 책___ 재미있어요. (그 책 = the book we mentioned) → 그 책은",
+          "선생님___ 친절하세요. → 선생님은",
+          "오늘___ 좀 피곤해요. → 오늘은"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "저가 학생이에요.",
+        "right": "저는 학생이에요. (or focused: 제가 했어요.)",
+        "explanation": "For self-introduction the speaker is the assumed topic, so use 저는, not 저가. Also note 저 + 가 irregularly becomes 제가 when you DO need focus ('I' as the one who did it) — 저가 is never correct."
+      }
+    },
+    {
+      "title": "은/는 — contrast and limited scope",
+      "func": "Beyond topic-setting, 은/는 marks CONTRAST: 'X (but as for something else, it's different).' It quietly implies a comparison, even when the other side is unspoken. Use it to set one item against another, or to limit a statement to just that item.",
+      "formTable": [
+        {
+          "when": "contrasting two nouns",
+          "add": "both take 은/는",
+          "ex": "커피는 마셔요. 차는 안 마셔요."
+        },
+        {
+          "when": "attaching contrast to an object",
+          "add": "은/는 replaces 을/를",
+          "ex": "고기는 안 먹어요. (meat, at least, I don't eat)"
+        },
+        {
+          "when": "limiting / 'this one, at least' nuance",
+          "add": "noun + 는 with implied 'others differ'",
+          "ex": "이건 알아요. (this one I do know — others maybe not)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "형은 키가 커요. 저는 작아요.",
+          "romanization": "hyeongeun kiga keoyo. jeoneun jagayo.",
+          "en": "My older brother is tall. I'm short.",
+          "note": "Two 는 set the siblings in direct contrast — tall vs. short."
+        },
+        {
+          "ko": "커피는 좋아하는데 차는 안 좋아해요.",
+          "romanization": "keopineun joahaneunde chaneun an joahaeyo.",
+          "en": "I like coffee but not tea.",
+          "note": "는 on both objects (not 를) signals the explicit coffee-vs-tea contrast."
+        },
+        {
+          "ko": "한국어는 할 수 있어요.",
+          "romanization": "hangugeoneun hal su isseoyo.",
+          "en": "Korean, at least, I can speak.",
+          "note": "는 here limits the claim to Korean, implying 'other languages, maybe not.'"
+        },
+        {
+          "ko": "오늘은 안 바빠요.",
+          "romanization": "oneureun an bappayo.",
+          "en": "Today I'm not busy (other days, I am).",
+          "note": "는 on 오늘 contrasts today against the implied busy other days."
+        }
+      ],
+      "keyPoint": {
+        "label": "는 over 가/를 = contrast is intended",
+        "body": "커피를 마셔요 = plain 'I drink coffee.' 커피는 마셔요 = 'Coffee I drink (but something else, no).' Swapping 를→는 (or 가→는) adds an unspoken 'unlike the rest.'"
+      },
+      "pronunciation": "In the contrast reading, 는/은 often carries a slight emphatic stress: 저'는 작아요. That extra stress is what flags the contrast aloud.",
+      "drill": {
+        "instruction": "Replace the neutral marker with 은/는 to add a contrast nuance.",
+        "model": "고기를 안 먹어요. (contrast) → 고기는 안 먹어요.",
+        "items": [
+          "야채를 좋아해요. (contrast) → 야채___ 좋아해요. → 야채는",
+          "주말에 일해요. (but weekdays, no) → 주말___ 일해요. → 주말은",
+          "동생은 와요. (but I'm not coming) → 저___ 안 가요. → 저는"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "커피를 좋아하는데 차를 안 좋아해요.",
+        "right": "커피는 좋아하는데 차는 안 좋아해요.",
+        "explanation": "English shows contrast with 'but' and word order, so learners keep 을/를 on both objects. Korean signals the contrast on the noun itself by switching 을/를 to 는 — leaving 를 there flattens the intended comparison."
+      }
+    },
+    {
+      "title": "이/가 — 'this exact one' (exclusive identification)",
+      "func": "When you single out ONE item as the answer — 'it is THIS one, not the others' — the identified subject takes 이/가. This exclusive-focus use is why 이/가 (not 은/는) appears in answers, in 'who/what' replies, and in 'it's X that…' sentences. It pins down the exact one.",
+      "formTable": [
+        {
+          "when": "answering with the exact identity",
+          "add": "answer + 이/가",
+          "ex": "누가 반장이에요? → 민수가 반장이에요."
+        },
+        {
+          "when": "'it is X' exclusive focus",
+          "add": "X + 이/가 + verb",
+          "ex": "이 책이 제일 좋아요. (THIS book is the best.)"
+        },
+        {
+          "when": "picking one out of several",
+          "add": "chosen item + 이/가",
+          "ex": "이게 제 거예요. (THIS one is mine.)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "이 사람이 제 선생님이에요.",
+          "romanization": "i sarami je seonsaengnimieyo.",
+          "en": "THIS person is my teacher.",
+          "note": "이 사람 is singled out from others present, so 이 marks the exclusive identification."
+        },
+        {
+          "ko": "누가 했어요? — 제가 했어요.",
+          "romanization": "nuga haesseoyo? — jega haesseoyo.",
+          "en": "Who did it? — I did.",
+          "note": "Answering 'who' pins down the exact doer; 저+가 → 제가 carries that exclusive focus."
+        },
+        {
+          "ko": "어느 가방이 마음에 들어요?",
+          "romanization": "eoneu gabangi maeume deureoyo?",
+          "en": "Which bag do you like?",
+          "note": "어느 (which) forces a one-out-of-many choice, so the subject takes 이."
+        },
+        {
+          "ko": "바로 이게 정답이에요.",
+          "romanization": "baro ige jeongdabieyo.",
+          "en": "THIS is exactly the right answer.",
+          "note": "바로 + 이게 (이것이) drives home 'this exact one and no other' — classic 이/가 focus."
+        }
+      ],
+      "keyPoint": {
+        "label": "이/가 identifies, 은/는 describes",
+        "body": "이 사람이 김 선생님이에요 = 'THIS (one) is Mr. Kim' (picks him out). 이 사람은 김 선생님이에요 = 'As for this person, he's Mr. Kim' (just tells you about him). Use 이/가 to single out the exact one."
+      },
+      "pronunciation": "이것이 commonly contracts to 이게, 그것이 → 그게, 저것이 → 저게 in speech. Learn the contracted 이게/그게/저게 as the everyday spoken forms.",
+      "drill": {
+        "instruction": "Fill in 이 or 가 to single out the exact one being identified.",
+        "model": "누가 일등이에요? → 수진___ 일등이에요. → 수진이",
+        "items": [
+          "어느 게 더 싸요? → 이것___ 더 싸요. → 이것이 (이게)",
+          "누가 운전해요? → 제___ 운전해요. → 제가",
+          "이 가방___ 제일 예뻐요. → 이 가방이"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "누가 했어요? — 저는 했어요.",
+        "right": "누가 했어요? — 제가 했어요.",
+        "explanation": "Answering a 'who' question identifies the exact doer, which demands 이/가, but English speakers reach for the topic-like 저는. 저는 했어요 sounds like 'As for me, I did (but talk about others separately)' — not a clean answer to 'who.'"
+      }
+    },
+    {
+      "title": "N은/는 N이/가 … — topic + inner subject in one sentence",
+      "func": "Korean often uses BOTH markers in a single sentence: 은/는 names the big-picture topic, then 이/가 names the specific thing the comment is really about. Pattern: '[Topic]은/는 [inner subject]이/가 [adjective/verb].' This is the natural way to describe a part, trait, or condition of something — 'As for the elephant, its nose is long.'",
+      "formTable": [
+        {
+          "when": "describing a body part / trait",
+          "add": "Topic은/는 + part이/가 + adj",
+          "ex": "코끼리는 코가 길어요. (The elephant's nose is long.)"
+        },
+        {
+          "when": "saying what someone likes/has",
+          "add": "Person은/는 + thing이/가 + 좋다/있다",
+          "ex": "저는 강아지가 좋아요. (As for me, I like dogs.)"
+        },
+        {
+          "when": "stating an ability/condition",
+          "add": "Topic은/는 + thing이/가 + 어렵다/많다",
+          "ex": "한국어는 발음이 어려워요. (Korean — its pronunciation is hard.)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "코끼리는 코가 길어요.",
+          "romanization": "kokkiri-neun ko-ga gireoyo.",
+          "en": "An elephant's nose is long.",
+          "note": "코끼리 is the topic (은/는); 코 is the inner subject (이/가) that 길어요 actually describes."
+        },
+        {
+          "ko": "저는 시간이 없어요.",
+          "romanization": "jeoneun sigani eopseoyo.",
+          "en": "I don't have time.",
+          "note": "Literally 'As for me, time doesn't exist.' 저 = topic (는), 시간 = subject of 없다 (이)."
+        },
+        {
+          "ko": "우리 형은 키가 커요.",
+          "romanization": "uri hyeongeun kiga keoyo.",
+          "en": "My older brother is tall.",
+          "note": "형 is the topic; 키 (height) is the inner subject of 크다. You can't say 형은 커요 for 'tall.'"
+        },
+        {
+          "ko": "이 식당은 김치찌개가 맛있어요.",
+          "romanization": "i sikdangeun gimchijjigaega masisseoyo.",
+          "en": "This restaurant's kimchi stew is delicious.",
+          "note": "식당 = topic (은); 김치찌개 = inner subject (가). The comment is really about the dish."
+        }
+      ],
+      "keyPoint": {
+        "label": "One topic (은/는), one inner subject (이/가)",
+        "body": "Don't pile two 은/는 or two 이/가. The big thing you're talking about takes 은/는; the specific thing the predicate describes takes 이/가. 저는 머리가 아파요 = 'I have a headache' (me = topic, head = what hurts)."
+      },
+      "pronunciation": "코가 = ko-ga (smooth, no stop); 키가 = ki-ga; 시간이 = sigani (final ㄴ links onto 이). Keep both syllables of 이/가 light — the stress sits on the predicate (길어요, 커요).",
+      "drill": {
+        "instruction": "Build the sentence with 은/는 on the topic and 이/가 on the inner subject.",
+        "model": "나 / 머리 / 아프다 → 저는 머리가 아파요.",
+        "items": [
+          "기린 / 목 / 길다 → 기린은 목이 길어요.",
+          "저 / 동생 / 있다 → 저는 동생이 있어요.",
+          "이 커피 / 맛 / 좋다 → 이 커피는 맛이 좋아요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "코끼리가 코가 길어요. / 저는 시간은 없어요.",
+        "right": "코끼리는 코가 길어요. / 저는 시간이 없어요.",
+        "explanation": "English has one subject per clause, so learners either mark the whole thing with 이/가 (코끼리가 코가...) or repeat 은/는. Korean splits the roles: the overall topic gets 은/는, and the specific noun the predicate is about gets 이/가 — exactly one of each."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "친구",
+      "romanization": "chingu",
+      "english": "friend",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "친구가 전화했어요. 그 친구는 자주 전화하지 않아요.",
+        "en": "A friend called. That friend does not call often.",
+        "note": "First mention uses 가; continued topic uses 는."
+      },
+      "collocations": [
+        "친구가 전화하다",
+        "그 친구는",
+        "친구는 자주"
+      ]
+    },
+    {
+      "hangul": "전화",
+      "romanization": "jeonhwa",
+      "english": "phone call",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "메시지는 보내지만 전화는 잘 안 해요.",
+        "en": "I send messages, but I do not call much.",
+        "note": "전화는 contrasts calls with messages."
+      },
+      "collocations": [
+        "전화가 오다",
+        "전화는 안 하다",
+        "전화했어요"
+      ]
+    },
+    {
+      "hangul": "연락",
+      "romanization": "yeollak",
+      "english": "contact, getting in touch",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "누가 먼저 연락했어요? 제가 먼저 연락했어요.",
+        "en": "Who contacted first? I contacted first.",
+        "note": "제가 answers 누가 with focus."
+      },
+      "collocations": [
+        "연락이 오다",
+        "연락을 하다",
+        "먼저 연락하다"
+      ]
+    },
+    {
+      "hangul": "메시지",
+      "romanization": "mesiji",
+      "english": "message",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "메시지는 자주 보내지만 전화는 잘 안 해요.",
+        "en": "I send messages often, but I do not call much.",
+        "note": "은/는 makes the contrast visible."
+      },
+      "collocations": [
+        "메시지를 보내다",
+        "메시지는",
+        "메시지가 왔어요"
+      ]
+    },
+    {
+      "hangul": "문자",
+      "romanization": "munja",
+      "english": "text message",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "문자는 왔는데 전화는 안 왔어요.",
+        "en": "A text came, but no phone call came.",
+        "note": "문자는 and 전화는 contrast two channels."
+      },
+      "collocations": [
+        "문자가 오다",
+        "문자를 보내다",
+        "문자는 왔는데"
+      ]
+    },
+    {
+      "hangul": "누구",
+      "romanization": "nugu",
+      "english": "who",
+      "partOfSpeech": "questionWord",
+      "exampleSentence": {
+        "ko": "누가 먼저 연락했어요?",
+        "en": "Who contacted first?",
+        "note": "누구 + 가 contracts to 누가."
+      },
+      "collocations": [
+        "누가 했어요?",
+        "누구는",
+        "누구에게"
+      ]
+    },
+    {
+      "hangul": "먼저",
+      "romanization": "meonjeo",
+      "english": "first",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "오늘은 제가 먼저 연락했어요.",
+        "en": "Today, I contacted first.",
+        "note": "오늘은 contrasts today; 제가 identifies the actor."
+      },
+      "collocations": [
+        "먼저 연락하다",
+        "먼저 말하다",
+        "제가 먼저"
+      ]
+    },
+    {
+      "hangul": "자주",
+      "romanization": "jaju",
+      "english": "often",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "그 친구는 자주 전화해요?",
+        "en": "Does that friend call often?",
+        "note": "은/는 keeps the friend as the topic while asking about habit."
+      },
+      "collocations": [
+        "자주 전화하다",
+        "자주 보내다",
+        "자주 묻다"
+      ]
+    },
+    {
+      "hangul": "평소",
+      "romanization": "pyeongso",
+      "english": "usually, normally",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "평소에는 메시지를 보내는데 오늘은 전화했어요.",
+        "en": "Usually they send messages, but today they called.",
+        "note": "평소에는 contrasts the usual pattern with today."
+      },
+      "collocations": [
+        "평소에는",
+        "평소보다",
+        "평소와 다르다"
+      ]
+    },
+    {
+      "hangul": "오늘",
+      "romanization": "oneul",
+      "english": "today",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "오늘은 제가 먼저 연락했어요.",
+        "en": "Today, I contacted first.",
+        "note": "오늘은 contrasts today with other days."
+      },
+      "collocations": [
+        "오늘은",
+        "오늘이",
+        "오늘 연락하다"
+      ]
+    },
+    {
+      "hangul": "보내다",
+      "romanization": "bonaeda",
+      "english": "to send",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "메시지는 자주 보내지만 전화는 잘 안 해요.",
+        "en": "I send messages often, but I do not call much.",
+        "note": "The object 메시지 takes 를; the contrast uses 는."
+      },
+      "collocations": [
+        "메시지를 보내다",
+        "문자를 보내다",
+        "자주 보내다"
+      ]
+    },
+    {
+      "hangul": "질문",
+      "romanization": "jilmun",
+      "english": "question",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "질문은 쉬웠는데 대답이 어려웠어요.",
+        "en": "The question was easy, but the answer was difficult.",
+        "note": "질문은 is the contrastive topic."
+      },
+      "collocations": [
+        "질문이 있다",
+        "질문은 쉽다",
+        "질문을 하다"
+      ]
+    },
+    {
+      "hangul": "대답",
+      "romanization": "daedap",
+      "english": "answer, reply",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "대답이 어려웠어요.",
+        "en": "The answer was difficult.",
+        "note": "대답이 introduces the part that was difficult."
+      },
+      "collocations": [
+        "대답이 어렵다",
+        "대답을 하다",
+        "대답이 없다"
+      ]
+    },
+    {
+      "hangul": "의견",
+      "romanization": "uigyeon",
+      "english": "opinion",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "제 의견은 생각이 조금 달라요.",
+        "en": "As for my opinion, the thinking is a little different.",
+        "note": "의견은 frames the topic; 생각이 states what differs."
+      },
+      "collocations": [
+        "의견은 다르다",
+        "의견이 있다",
+        "의견을 말하다"
+      ]
+    },
+    {
+      "hangul": "생각",
+      "romanization": "saenggak",
+      "english": "thought, idea",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "그 생각은 좋은데 이유가 부족해요.",
+        "en": "That idea is good, but the reason is lacking.",
+        "note": "생각은 frames the idea; 이유가 introduces the problem."
+      },
+      "collocations": [
+        "생각은 좋다",
+        "생각이 나다",
+        "생각이 다르다"
+      ]
+    },
+    {
+      "hangul": "문제",
+      "romanization": "munje",
+      "english": "problem, issue",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "이 문제는 이유가 제일 중요해요.",
+        "en": "For this issue, the reason is the most important thing.",
+        "note": "문제는 sets the frame; 이유가 is the key subject."
+      },
+      "collocations": [
+        "문제가 있다",
+        "이 문제는",
+        "문제가 아니다"
+      ]
+    },
+    {
+      "hangul": "이유",
+      "romanization": "iyu",
+      "english": "reason",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "무엇이 중요해요? 이유가 중요해요.",
+        "en": "What is important? The reason is important.",
+        "note": "이유가 answers 무엇이."
+      },
+      "collocations": [
+        "이유가 있다",
+        "이유는",
+        "이유가 중요하다"
+      ]
+    },
+    {
+      "hangul": "차이",
+      "romanization": "chai",
+      "english": "difference",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "두 표현은 차이가 있어요.",
+        "en": "The two expressions have a difference.",
+        "note": "은/는 frames the two expressions; 차이가 states what exists."
+      },
+      "collocations": [
+        "차이가 있다",
+        "차이는 크다",
+        "차이를 모르다"
+      ]
+    },
+    {
+      "hangul": "상황",
+      "romanization": "sanghwang",
+      "english": "situation",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "이런 상황에서는 제가 먼저 말해야 해요.",
+        "en": "In this kind of situation, I should speak first.",
+        "note": "상황에서는 frames the condition; 제가 identifies the actor."
+      },
+      "collocations": [
+        "상황이 다르다",
+        "이런 상황에서는",
+        "상황은 어렵다"
+      ]
+    },
+    {
+      "hangul": "사실",
+      "romanization": "sasil",
+      "english": "fact, truth",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "사실은 제가 먼저 연락했어요.",
+        "en": "The truth is, I contacted first.",
+        "note": "사실은 frames the correction."
+      },
+      "collocations": [
+        "사실은",
+        "사실이 아니다",
+        "사실을 말하다"
+      ]
+    },
+    {
+      "hangul": "다르다",
+      "romanization": "dareuda",
+      "english": "to be different",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "두 사람은 의견이 달라요.",
+        "en": "As for the two people, their opinions are different.",
+        "note": "두 사람은 is the frame; 의견이 is the differing subject."
+      },
+      "collocations": [
+        "의견이 다르다",
+        "상황이 다르다",
+        "생각이 다르다"
+      ]
+    },
+    {
+      "hangul": "같다",
+      "romanization": "gatda",
+      "english": "to be the same",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "뜻은 같지만 느낌이 달라요.",
+        "en": "The meaning is the same, but the feeling is different.",
+        "note": "은/는 contrasts meaning and feeling."
+      },
+      "collocations": [
+        "뜻은 같다",
+        "같지 않다",
+        "거의 같다"
+      ]
+    },
+    {
+      "hangul": "쉽다",
+      "romanization": "swipda",
+      "english": "to be easy",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "질문은 쉬웠는데 대답이 어려웠어요.",
+        "en": "The question was easy, but the answer was difficult.",
+        "note": "쉬웠는데 sets up contrast."
+      },
+      "collocations": [
+        "질문은 쉽다",
+        "쉽지 않다",
+        "생각보다 쉽다"
+      ]
+    },
+    {
+      "hangul": "중요하다",
+      "romanization": "jungyohada",
+      "english": "to be important",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "이 문제는 이유가 제일 중요해요.",
+        "en": "For this issue, the reason is most important.",
+        "note": "중요하다 often appears with the focused subject marked by 이/가."
+      },
+      "collocations": [
+        "이유가 중요하다",
+        "문제는 중요하다",
+        "무엇이 중요해요?"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Two friends analyze a call and a message while the particles track new information, topic, contrast, and focus.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "어제 친구가 전화했어요.",
+        "romanization": "eoje chinguga jeonhwahaesseoyo.",
+        "en": "A friend called yesterday.",
+        "grammarNote": "친구가 introduces the caller as new information."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "그 친구는 자주 전화해요?",
+        "romanization": "geu chinguneun jaju jeonhwahaeyo?",
+        "en": "Does that friend call often?",
+        "grammarNote": "The friend is now the topic, so 그 친구는 is natural."
+      },
+      {
+        "speaker": "민서",
+        "ko": "아니요. 평소에는 메시지를 보내는데 오늘은 제가 먼저 연락했어요.",
+        "romanization": "aniyo. pyeongsoeneun mesijireul bonaeneunde oneureun jega meonjeo yeollakaesseoyo.",
+        "en": "No. Usually they send messages, but today I contacted them first.",
+        "grammarNote": "평소에는 and 오늘은 contrast time frames; 제가 focuses the actor."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "누가 먼저 연락했어요?",
+        "romanization": "nuga meonjeo yeollakaesseoyo?",
+        "en": "Who contacted first?",
+        "grammarNote": "누가 asks for the focused subject."
+      },
+      {
+        "speaker": "민서",
+        "ko": "제가 먼저 연락했어요. 질문은 쉬웠는데 대답이 어려웠어요.",
+        "romanization": "jega meonjeo yeollakaesseoyo. jilmuneun swiwonneunde daedabi eoryeowosseoyo.",
+        "en": "I contacted first. The question was easy, but the answer was difficult.",
+        "grammarNote": "제가 answers who; 질문은 contrasts with 대답이."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "그럼 이 문제는 이유가 제일 중요하네요.",
+        "romanization": "geureom i munjeneun iyuga jeil jungyohaneyo.",
+        "en": "Then for this issue, the reason is the most important thing.",
+        "grammarNote": "이 문제는 frames the topic; 이유가 is the important subject."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "‘친구가’에서 ‘그 친구는’으로",
+    "body": "어제 민서에게 친구가 전화했다. 처음 말할 때는 누가 전화했는지가 새 정보였기 때문에 ‘친구가’가 자연스러웠다. 그다음 지훈은 \"그 친구는 자주 전화해?\"라고 물었다. 이미 말한 친구를 다시 주제로 삼았기 때문에 ‘그 친구는’이 맞았다. 민서는 평소에는 메시지를 보내는데 오늘은 제가 먼저 연락했다고 설명했다. 여기서 ‘평소에는’과 ‘오늘은’은 서로 대비된다. 지훈이 \"누가 먼저 연락했어?\"라고 묻자 민서는 \"제가 먼저 연락했어\"라고 답했다. ‘제가’는 다른 사람이 아니라 바로 민서가 했다는 뜻이다. 마지막으로 \"이 문제는 이유가 중요해\"처럼 말하면, 문제는 이야기의 틀이고 이유가 그 안에서 중요한 새 정보가 된다.",
+    "bodyTranslation": "Yesterday, a friend called Minseo. On the first mention, who called was new information, so 친구가 was natural. Then Jihoon asked, \"Does that friend call often?\" Because the friend had already been mentioned and was now the topic, 그 친구는 was right. Minseo explained that usually the friend sends messages, but today she contacted first. Here 평소에는 and 오늘은 contrast with each other. When Jihoon asked, \"Who contacted first?\" Minseo answered, \"I contacted first.\" 제가 means it was specifically Minseo, not someone else. Finally, in a sentence like \"For this issue, the reason is important,\" 문제는 is the frame of the discussion and 이유가 is the important new information inside it.",
+    "comprehensionQuestions": [
+      {
+        "question": "처음에는 왜 친구가를 썼어요?",
+        "answer": "누가 전화했는지가 새 정보였기 때문이에요."
+      },
+      {
+        "question": "‘평소에는’과 ‘오늘은’은 어떤 역할을 해요?",
+        "answer": "평소와 오늘을 서로 대비해요."
+      },
+      {
+        "question": "이 문제는 이유가 중요해요에서 문제와 이유의 역할은 무엇이에요?",
+        "answer": "문제는 이야기의 틀이고, 이유가 그 안에서 중요한 새 정보예요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "조사는 대화의 카메라다",
+    "body": "Korean particles move the camera of the conversation. 이/가 zooms in on the subject that matters now. 은/는 sets the frame or contrasts one frame with another. This is why native speakers can hear a difference between 제가 했어요 and 저는 했어요 even when both contain I. 제가 answers who did it. 저는 often sounds like as for me, possibly contrasting with someone else.",
+    "tip": "Before choosing a particle, ask whether the noun is the new answer, the continuing topic, or one side of a contrast."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence introduces the caller as new information?",
+      "options": [
+        "친구가 전화했어요.",
+        "친구는 전화했어요.",
+        "친구에게 전화했어요."
+      ],
+      "correct": "친구가 전화했어요.",
+      "explanation": "친구가 answers who called."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence contrasts messages and calls?",
+      "options": [
+        "메시지는 자주 보내지만 전화는 잘 안 해요.",
+        "메시지가 자주 보내지만 전화가 잘 안 해요.",
+        "메시지에게 자주 보내지만 전화에게 안 해요."
+      ],
+      "correct": "메시지는 자주 보내지만 전화는 잘 안 해요.",
+      "explanation": "은/는 marks the two contrasted communication methods."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which answer fits 누가 먼저 연락했어요?",
+      "options": [
+        "제가 먼저 연락했어요.",
+        "저는 먼저 연락했어요.",
+        "저에게 먼저 연락했어요."
+      ],
+      "correct": "제가 먼저 연락했어요.",
+      "explanation": "제가 gives the focused who-answer."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which particles complete the topic-plus-subject sentence: 이 문제____ 이유____ 중요해요?",
+      "options": [
+        "는 / 가",
+        "가 / 는",
+        "에게 / 를"
+      ],
+      "correct": "는 / 가",
+      "explanation": "이 문제는 sets the frame; 이유가 is the important subject inside it."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "이 문제___ 이유___ 중요해요. (As for this problem, the reason is important.)",
+      "options": [
+        "는 / 가",
+        "가 / 는",
+        "를 / 이"
+      ],
+      "correct": "는 / 가",
+      "explanation": "The outer topic is 이 문제는, and the inner subject is 이유가. This topic-plus-subject structure is common in Korean."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'My friend called first.'",
+      "tokens": [
+        "친구가",
+        "먼저 전화했어요"
+      ],
+      "correct": "친구가 먼저 전화했어요",
+      "explanation": "When answering 누가 first acted, the focused subject takes 가. 먼저 tells who acted first."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Contrast messages and calls: 'I often send texts. I do not call much.'",
+      "correct": "문자는 자주 보내요. 전화는 잘 안 해요.",
+      "explanation": "은/는 marks contrast between texts and calls. The topic stays clear across the two sentences."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the focused answer to 누가 왔어요?: '친구는 왔어요.'",
+      "correct": "친구가 왔어요.",
+      "explanation": "A focused answer to 누가 uses 이/가. 친구는 would sound like contrast or topic continuation."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence introduces the caller as new information?",
+      "options": [
+        "친구가 전화했어요.",
+        "친구는 전화했어요.",
+        "친구를 전화했어요."
+      ],
+      "correct": "친구가 전화했어요.",
+      "explanation": "New or focused subject information uses 이/가. 은/는 would frame or contrast the friend."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Say: 'A message came.'",
+      "correct": "메시지가 왔어요.",
+      "explanation": "The new thing that arrived takes 가. 메시지는 would sound like you are contrasting messages with something else."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "이/가 introduces or focuses the subject: 친구가 전화했어요, 제가 먼저 연락했어요.",
+      "은/는 continues or frames the topic: 그 친구는 자주 전화해요?, 이 문제는...",
+      "은/는 also marks contrast: 평소에는..., 오늘은..., 메시지는..., 전화는...",
+      "A Korean sentence can have both: 이 문제는 이유가 중요해요."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Answer a friend who asks 'Who texted you first today?' Reply naming who it was, then add what you usually do — choosing 은/는 vs 이/가 by what's new vs known.",
+    "hint": "Use 이/가 to identify the new/focused subject (친구가 보냈어요), and 은/는 for the known topic or contrast (저는 …, 평소에는 …).",
+    "model": "오늘은 친구가 먼저 문자를 보냈어요. 저는 평소에 먼저 연락을 안 해요. 그 친구는 자주 메시지를 보내요.",
+    "modelEn": "Today my friend texted first. I usually don't reach out first. That friend often sends messages."
+  },
+  "canDo": [
+    "Spotlight a new or focused subject with 이/가 (친구가 보냈어요)",
+    "Set up an already-known topic with 은/는 (저는 …, 그 친구는 …)",
+    "Mark contrast or limited scope with 은/는 (평소에는 …)",
+    "Combine topic and inner subject in one sentence (N은/는 N이/가 …)"
+  ]
+}

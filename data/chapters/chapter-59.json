@@ -1,0 +1,844 @@
+{
+  "id": "chapter-59",
+  "hook": {
+    "situation": "You are looking back at a missed notice, a late arrival, and a conversation you should have handled differently. This chapter teaches the Korean frame for saying, \"If that had happened differently, the result would have changed.\"",
+    "objectives": [
+      "Build counterfactual sentences from a missed past condition.",
+      "Keep the result clause hypothetical with -았/었을 텐데, -았/었을 거예요, or -았/었을지도 몰라요.",
+      "Use regret vocabulary such as 미리, 놓치다, 후회하다, 결과, 달라지다, and 사과하다 in the same scenes as the grammar."
+    ],
+    "whyItMatters": "Without this frame, learners often say a plain past sentence and only add \"if\" in English. Korean needs the condition and the result to both show that you are imagining a different past."
+  },
+  "grammarNotes": [
+    {
+      "title": "V-았/었으면 좋겠어요 — a wish (\"I wish / I hope\")",
+      "func": "Expresses a wish that the present situation were different, or a hope for something to come true. The past-shaped -았/었- here is NOT real past tense; it sets the wish against current reality. English renders it as \"I wish...\" (reality is the opposite) or \"I hope...\" (still possible).",
+      "formTable": [
+        {
+          "when": "Stem ends in ㅏ/ㅗ",
+          "add": "-았으면 좋겠어요",
+          "ex": "오다 → 봄이 왔으면 좋겠어요 (I wish spring would come)"
+        },
+        {
+          "when": "Stem ends in any other vowel",
+          "add": "-었으면 좋겠어요",
+          "ex": "있다 → 시간이 있었으면 좋겠어요 (I wish I had time)"
+        },
+        {
+          "when": "하다 verbs/adjectives",
+          "add": "-했으면 좋겠어요",
+          "ex": "건강하다 → 건강했으면 좋겠어요 (I hope you stay healthy)"
+        },
+        {
+          "when": "Casual register (반말)",
+          "add": "-(았/었)으면 좋겠다",
+          "ex": "비가 그쳤으면 좋겠다 (I wish the rain would stop)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "주말에 날씨가 좋았으면 좋겠어요.",
+          "romanization": "jumare nalssiga joasseumyeon jokesseoyo.",
+          "en": "I hope the weather is nice this weekend.",
+          "note": "A future hope that is still possible; -았- does not mean past here."
+        },
+        {
+          "ko": "시험이 너무 어렵지 않았으면 좋겠어요.",
+          "romanization": "siheomi neomu eoryeopji anasseumyeon jokesseoyo.",
+          "en": "I hope the exam isn't too hard.",
+          "note": "Negative wish: 어렵지 않다 takes -았으면 just like any other stem."
+        },
+        {
+          "ko": "지금 친구가 옆에 있었으면 좋겠어요.",
+          "romanization": "jigeum chinguga yeope isseosseumyeon jokesseoyo.",
+          "en": "I wish a friend were here beside me right now.",
+          "note": "지금 makes it clearly contrary to present fact — a true 'I wish' reading."
+        },
+        {
+          "ko": "내일 일찍 일어났으면 좋겠어요.",
+          "romanization": "naeil iljjik ireonasseumyeon jokesseoyo.",
+          "en": "I hope I get up early tomorrow.",
+          "note": "The speaker's own hope/resolve; the wish points forward in time."
+        }
+      ],
+      "keyPoint": {
+        "label": "-았/었으면 좋겠어요 vs -(으)면 좋겠어요",
+        "body": "Both mean 'I wish/hope.' The -았/었- version is by far the more common, natural choice in everyday speech and leans toward wishing reality were currently otherwise. The plain -(으)면 좋겠어요 sounds a bit more like a neutral 'it would be good if...'. When in doubt, use -았/었으면 좋겠어요."
+      },
+      "pronunciation": "좋겠어요 is pronounced [조케써요]: the ㅎ of 좋 and the ㄱ of 겠 fuse into aspirated [ㅋ], and 겠어요 links smoothly as [게써요].",
+      "drill": {
+        "instruction": "Turn each plain wish into a full -았/었으면 좋겠어요 sentence.",
+        "model": "비가 오다 → 비가 왔으면 좋겠어요.",
+        "items": [
+          "주말이 길다 → 주말이 _______ 좋겠어요.",
+          "방이 조금 더 따뜻하다 → 방이 조금 더 _______ 좋겠어요.",
+          "내일 안 춥다 → 내일 _______ 좋겠어요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "시간이 있으면 원해요.",
+        "right": "시간이 있었으면 좋겠어요.",
+        "explanation": "English 'I wish' tempts learners to reach for 원하다 ('want'). Korean does not use 원하다 for wishing a situation were different. The fixed frame is -았/었으면 좋겠어요, literally 'it would be good if it had been (so).' Don't translate 'wish' as 원하다."
+      }
+    },
+    {
+      "title": "V-았/었으면 … -았/었을 텐데요 — a past counterfactual with regret",
+      "func": "States a counterfactual about the past: a condition that did NOT happen, and the result that therefore did NOT happen. -았/었으면 marks the unreal past condition; the result clause stays hypothetical with -았/었을 텐데요 ('would have...'). The 텐데 ending softens it into a wistful 'but it wasn't so.'",
+      "formTable": [
+        {
+          "when": "Condition: stem + 았/었 + 으면",
+          "add": "-았/었으면",
+          "ex": "알다 → 알았으면 (if I had known)"
+        },
+        {
+          "when": "Result: stem + 았/었 + 을 텐데요",
+          "add": "-았/었을 텐데요",
+          "ex": "가다 → 갔을 텐데요 (I would have gone)"
+        },
+        {
+          "when": "하다 verbs",
+          "add": "-했으면 / -했을 텐데요",
+          "ex": "공부했으면 합격했을 텐데요 (if I'd studied, I'd have passed)"
+        },
+        {
+          "when": "Whole frame",
+          "add": "A-았/었으면 B-았/었을 텐데요",
+          "ex": "일찍 출발했으면 안 늦었을 텐데요 (if I'd left early, I wouldn't have been late)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "미리 공지를 알았으면 시험 준비를 더 했을 텐데요.",
+          "romanization": "miri gongjireul arasseumyeon siheom junbireul deo haesseul tendeyo.",
+          "en": "If I had known about the notice in advance, I would have prepared more for the exam.",
+          "note": "미리 알다 from the chapter's regret vocabulary; the result also stays unreal with 했을 텐데요."
+        },
+        {
+          "ko": "조금만 더 일찍 일어났으면 버스를 탔을 텐데요.",
+          "romanization": "jogeumman deo iljjik ireonasseumyeon beoseureul tasseul tendeyo.",
+          "en": "If I had gotten up just a little earlier, I would have caught the bus.",
+          "note": "A typical regret scene: a small unmet condition with a clear missed result."
+        },
+        {
+          "ko": "우산을 가져갔으면 비를 안 맞았을 텐데요.",
+          "romanization": "usaneul gajyeogasseumyeon bireul an majasseul tendeyo.",
+          "en": "If I had taken an umbrella, I wouldn't have gotten rained on.",
+          "note": "가져갔으면 strongly implies the speaker did NOT take one."
+        },
+        {
+          "ko": "그때 바로 사과했으면 사이가 안 나빠졌을 텐데요.",
+          "romanization": "geuttae baro sagwahaesseumyeon saiga an nappajyeosseul tendeyo.",
+          "en": "If I had apologized right then, the relationship wouldn't have gone bad.",
+          "note": "사과하다 fits the regret vocabulary of the chapter; 달라지다/나빠지다 carry the changed outcome."
+        }
+      ],
+      "keyPoint": {
+        "label": "Keep the result clause hypothetical",
+        "body": "Whichever condition you use, the result must also be marked unreal: -았/었을 텐데요, -았/었을 거예요, or -았/었을지도 몰라요 ('might have'). Never finish a past counterfactual with a plain past or present verb — that cancels the 'would have' meaning. 텐데요 adds the softest, most wistful tone of the three."
+      },
+      "pronunciation": "텐데요 is [텐데요], no special change. Note 갔을 텐데요 → [가쓸 텐데요]: 갔 closes as [갇] and links into 을 as [가쓸].",
+      "drill": {
+        "instruction": "Complete each counterfactual so both the condition and the result stay past-hypothetical.",
+        "model": "약을 먹다 / 안 아프다 → 약을 먹었으면 안 아팠을 텐데요.",
+        "items": [
+          "전화하다 / 만나다 → 전화______ 우리가 만났을 텐데요.",
+          "표를 예매하다 / 자리가 있다 → 표를 예매______ 자리가 있었을 텐데요.",
+          "조심하다 / 안 다치다 → 조심______ 안 ______ 텐데요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "알았으면 전화해요.",
+        "right": "알았으면 전화했을 텐데요.",
+        "explanation": "Learners set up the 'if had' clause correctly but then drop into a plain present/future result ('I call' / 'I will call'). In Korean the result of a past counterfactual must itself be marked unreal: -았/었을 텐데요. A plain result clause cancels the 'would have' meaning."
+      }
+    },
+    {
+      "title": "V-았/었더라면 … -았/었을 거예요 — a stronger, more reflective counterfactual",
+      "func": "Replays a missed past from a reflective distance: 'if (only) it had happened, the result would have...'. -았/었더라면 marks the unreal past condition with a heavier, more regretful tone than -았/었으면; the result stays hypothetical with -았/었을 거예요 ('would have').",
+      "formTable": [
+        {
+          "when": "Condition: stem + 았/었 + 더라면",
+          "add": "-았/었더라면",
+          "ex": "도착하다 → 도착했더라면 (if I had arrived)"
+        },
+        {
+          "when": "Result: stem + 았/었 + 을 거예요",
+          "add": "-았/었을 거예요",
+          "ex": "보다 → 봤을 거예요 (I would have seen it)"
+        },
+        {
+          "when": "하다 verbs",
+          "add": "-했더라면",
+          "ex": "공부했더라면 (if I had studied)"
+        },
+        {
+          "when": "Whole frame",
+          "add": "A-았/었더라면 B-았/었을 거예요",
+          "ex": "조금만 일찍 도착했더라면 시험을 봤을 거예요 (if I'd arrived a bit earlier, I'd have taken the exam)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "조금만 일찍 도착했더라면 시험을 볼 수 있었을 거예요.",
+          "romanization": "jogeumman iljjik dochakaetdeoramyeon siheomeul bol su isseosseul geoyeyo.",
+          "en": "If I had arrived just a little earlier, I could have taken the exam.",
+          "note": "Arriving early didn't happen, so the result stays hypothetical too."
+        },
+        {
+          "ko": "지도를 미리 봤더라면 길을 안 잃었을 거예요.",
+          "romanization": "jidoreul miri bwatdeoramyeon gireul an ireosseul geoyeyo.",
+          "en": "If I had looked at the map in advance, I wouldn't have gotten lost.",
+          "note": "봤더라면 = the look-up that never happened; 안 잃었을 거예요 = the avoided result."
+        },
+        {
+          "ko": "그 소식을 들었더라면 바로 전화했을 거예요.",
+          "romanization": "geu sosigeul deureotdeoramyeon baro jeonhwahaesseul geoyeyo.",
+          "en": "If I had heard the news, I would have called right away.",
+          "note": "Both clauses carry past 았/었; the whole sentence is firmly counterfactual."
+        },
+        {
+          "ko": "그때 사과했더라면 결과가 달라졌을 거예요.",
+          "romanization": "geuttae sagwahaetdeoramyeon gyeolgwaga dallajyeosseul geoyeyo.",
+          "en": "If I had apologized then, the outcome would have been different.",
+          "note": "사과하다, 결과, 달라지다 are all the chapter's target regret words."
+        }
+      ],
+      "keyPoint": {
+        "label": "-았/었더라면 vs -았/었으면",
+        "body": "Both open a past counterfactual, but -았/었더라면 is heavier and more clearly regretful — it almost always implies 'and that's a shame, because it didn't happen.' -았/었으면 is more neutral and far more common in casual speech. In friendly chat 더라면 can sound dramatic, so friends often just use -았/었으면. The result clause stays hypothetical either way."
+      },
+      "pronunciation": "봤더라면 → [봗떠라면]: the ㅆ of 봤 closes to [ㄷ] before a consonant, and ㄷ of 더 tenses to [떠]. 들었더라면 → [드럳떠라면] follows the same tensing.",
+      "drill": {
+        "instruction": "Complete each -았/었더라면 … -았/었을 거예요 counterfactual.",
+        "model": "약을 먹다 / 안 아프다 → 약을 먹었더라면 안 아팠을 거예요.",
+        "items": [
+          "전화하다 / 만나다 → 전화______ 우리가 만났을 거예요.",
+          "표를 예매하다 / 자리가 있다 → 표를 예매______ 자리가 있었을 거예요.",
+          "조심하다 / 안 다치다 → 조심______ 안 ______ 거예요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "알았으면더라면 전화했을 거예요.",
+        "right": "알았더라면 전화했을 거예요.",
+        "explanation": "Learners sometimes try to stack -으면 and -더라면 together. They are two different conditional endings and cannot combine. Use one or the other directly on the past stem: 알았으면 OR 알았더라면, never 알았으면더라면."
+      }
+    },
+    {
+      "title": "V-지 않았더라면 — a negative counterfactual (\"if … hadn't …\")",
+      "func": "Forms the negative side of a past counterfactual: 'if (something) had NOT happened.' Because the event DID happen, a certain (often bad) result followed — and you imagine the opposite past. It pairs with a hypothetical result clause.",
+      "formTable": [
+        {
+          "when": "Long negation (standard)",
+          "add": "V-지 않았더라면",
+          "ex": "놓치다 → 놓치지 않았더라면 (if I hadn't missed it)"
+        },
+        {
+          "when": "Short negation 안",
+          "add": "안 + V-았/었더라면",
+          "ex": "안 갔더라면 (if I hadn't gone)"
+        },
+        {
+          "when": "Inability 못",
+          "add": "못 + V-았/었더라면",
+          "ex": "못 봤더라면 (if I hadn't been able to see it)"
+        },
+        {
+          "when": "Result clause",
+          "add": "-았/었을 거예요 / -았/었을 텐데요",
+          "ex": "포기하지 않았더라면 합격했을지도 몰라요 (if I hadn't given up, I might have passed)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "버스를 놓치지 않았더라면 면접에 늦지 않았을 텐데요.",
+          "romanization": "beoseureul nochiji anatdeoramyeon myeonjeobe neutji anasseul tendeyo.",
+          "en": "If I hadn't missed the bus, I wouldn't have been late for the interview.",
+          "note": "놓치다 (to miss) is the chapter's regret vocabulary; 놓치지 않았더라면 keeps the negative inside the condition."
+        },
+        {
+          "ko": "포기하지 않았더라면 합격했을지도 몰라요.",
+          "romanization": "pogihaji anatdeoramyeon hapgyeokaesseuljido mollayo.",
+          "en": "If I hadn't given up, I might have passed.",
+          "note": "-았/었을지도 몰라요 keeps the outcome uncertain but still unreal."
+        },
+        {
+          "ko": "그때 화를 내지 않았더라면 지금 후회하지 않았을 텐데요.",
+          "romanization": "geuttae hwareul naeji anatdeoramyeon jigeum huhoehaji anasseul tendeyo.",
+          "en": "If I hadn't gotten angry then, I wouldn't be regretting it now.",
+          "note": "후회하다 is a target word; the result uses 텐데요 for present regret."
+        },
+        {
+          "ko": "네가 도와주지 않았더라면 저는 실패했을 거예요.",
+          "romanization": "nega dowajuji anatdeoramyeon jeoneun silpaehaesseul geoyeyo.",
+          "en": "If you hadn't helped me, I would have failed.",
+          "note": "A common gratitude use: the negative counterfactual highlights how crucial the real help was."
+        }
+      ],
+      "keyPoint": {
+        "label": "-지 않았더라면 vs -았/었더라면",
+        "body": "Use affirmative -았/었더라면 to imagine an action you wish HAD happened ('if I had studied'). Use -지 않았더라면 to imagine an action you wish had NOT happened ('if I hadn't missed it'). The result clause works identically for both; only the polarity of the condition changes."
+      },
+      "pronunciation": "않았더라면 → [아낟떠라면]: the ㅎ of 않 is silent so 않았 reads [아낟] (the ㅆ closing to [ㄷ] before 더), and 더 tenses to [떠].",
+      "drill": {
+        "instruction": "Rewrite each affirmative idea as a negative counterfactual ('if … hadn't …').",
+        "model": "늦게 자다 → 늦게 자지 않았더라면",
+        "items": [
+          "버스를 놓치다 → 버스를 _______ 않았더라면",
+          "길을 잃다 → 길을 _______ 않았더라면",
+          "화를 내다 → 화를 _______ 않았더라면"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "안 비가 왔더라면 소풍을 갔을 거예요.",
+        "right": "비가 오지 않았더라면 소풍을 갔을 거예요.",
+        "explanation": "Learners often put 안 before the noun (안 비가). With this frame, the clean choice is long negation V-지 않았더라면. If you do use short 안, it goes directly before the verb (비가 안 왔더라면), never before the subject noun."
+      }
+    },
+    {
+      "title": "-(으)면 vs -았/었으면 — open condition vs missed condition",
+      "func": "Distinguishes a real, still-open condition from an unreal, already-missed one. Plain V-(으)면 leaves the door open ('if/when you have time'). Past-shaped V-았/었으면 usually looks backward at a condition that did NOT happen, setting up a counterfactual result.",
+      "formTable": [
+        {
+          "when": "Open if/when condition",
+          "add": "V-(으)면",
+          "ex": "시간이 있으면 같이 확인해요 (if you have time, let's check together)"
+        },
+        {
+          "when": "Missed/unreal past condition",
+          "add": "V-았/었으면",
+          "ex": "시간이 있었으면 같이 확인했을 텐데요 (if there had been time, we'd have checked)"
+        },
+        {
+          "when": "하다 verbs",
+          "add": "-하면 / -했으면",
+          "ex": "준비하면 덜 불안해요 / 준비했으면 안 늦었을 텐데요"
+        },
+        {
+          "when": "Reusable rule (always V-(으)면)",
+          "add": "V-(으)면",
+          "ex": "미리 준비하면 덜 불안해요 (if you prepare ahead, you feel less anxious)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "시간이 있으면 같이 확인해요.",
+          "romanization": "sigani isseumyeon gachi hwaginhaeyo.",
+          "en": "If you have time, let's check it together.",
+          "note": "An open condition — time may still be available, so the result is a real plan."
+        },
+        {
+          "ko": "시간이 있었으면 같이 확인했을 텐데요.",
+          "romanization": "sigani isseosseumyeon gachi hwaginhaesseul tendeyo.",
+          "en": "If there had been time, we would have checked it together.",
+          "note": "The past form turns the same idea into hindsight about a missed chance."
+        },
+        {
+          "ko": "미리 준비하면 덜 불안해요.",
+          "romanization": "miri junbihamyeon deol buranhaeyo.",
+          "en": "If you prepare in advance, you feel less anxious.",
+          "note": "A reusable rule, so plain V-(으)면 is correct — not counterfactual."
+        },
+        {
+          "ko": "그때 미리 알았으면 놓치지 않았을 거예요.",
+          "romanization": "geuttae miri arasseumyeon nochiji anasseul geoyeyo.",
+          "en": "If I had known in advance then, I wouldn't have missed it.",
+          "note": "그때 plus the unreal result shows this is a missed past, not an open rule."
+        }
+      ],
+      "keyPoint": {
+        "label": "Let context and the result decide the reading",
+        "body": "The past form alone doesn't always mean counterfactual — context and the result clause decide. A simple test: can the condition still happen? If yes, plain V-(으)면 with a real result is usually enough. If it's already too late, use V-았/었으면 and keep the result unreal (-았/었을 텐데요 / -았/었을 거예요)."
+      },
+      "pronunciation": "있었으면 → [이써쓰면]: 있 closes as [읻] then links into 었 as [이써], and 었으면 connects as [쓰면]. 있으면 (open) stays lighter as [이쓰면].",
+      "drill": {
+        "instruction": "Choose -(으)면 for an open condition or -았/었으면 for a missed one, then complete the sentence.",
+        "model": "시간이 있다 (open) → 시간이 있으면 같이 확인해요.",
+        "items": [
+          "내일 비가 안 오다 (open hope) → 내일 비가 안 ____ 좋겠어요.",
+          "그때 일찍 출발하다 (missed) → 그때 일찍 ______ 안 늦었을 텐데요.",
+          "주말에 날씨가 좋다 (still possible) → 주말에 날씨가 ____ 소풍을 가요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "어제 시간이 있으면 같이 봤을 거예요.",
+        "right": "어제 시간이 있었으면 같이 봤을 거예요.",
+        "explanation": "For a clearly past, missed condition (어제 'yesterday'), the plain present -(으)면 clashes with the past result 봤을 거예요. Match the condition to the timeframe: a missed past needs -았/었으면, not plain -(으)면."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "알다",
+      "romanization": "alda",
+      "english": "to know",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "미리 알았으면 준비를 더 했을 텐데요.",
+        "en": "If I had known in advance, I would have prepared more.",
+        "note": "알았으면 is one of the most common starting points for regret."
+      },
+      "collocations": [
+        "미리 알다",
+        "그때 알았으면",
+        "알았더라면"
+      ],
+      "nuance": "For a neutral ‘I don't know,’ Korean normally uses 모르다: 몰라요 or the softer 잘 모르겠어요. 안 알아요 is not universally wrong; context can give it ‘I don't recognize/know,’ ‘I won't find out,’ or a contrastive denial, so do not treat it as an impossible form."
+    },
+    {
+      "hangul": "미리",
+      "romanization": "miri",
+      "english": "in advance, beforehand",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "미리 말했더라면 문제가 커지지 않았을 거예요.",
+        "en": "If I had said it in advance, the problem would not have gotten bigger.",
+        "note": "미리 naturally pairs with 알다, 말하다, 준비하다, and 예약하다."
+      },
+      "collocations": [
+        "미리 알다",
+        "미리 말하다",
+        "미리 준비하다"
+      ]
+    },
+    {
+      "hangul": "준비하다",
+      "romanization": "junbihada",
+      "english": "to prepare",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "서류를 미리 준비했더라면 접수를 놓치지 않았을 텐데요.",
+        "en": "If I had prepared the documents in advance, I would not have missed the application.",
+        "note": "준비했더라면 turns a practical mistake into a counterfactual condition."
+      },
+      "collocations": [
+        "시험을 준비하다",
+        "서류를 준비하다",
+        "미리 준비했더라면"
+      ]
+    },
+    {
+      "hangul": "시험",
+      "romanization": "siheom",
+      "english": "exam",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "조금만 일찍 도착했더라면 시험을 볼 수 있었을 거예요.",
+        "en": "If I had arrived just a little earlier, I could have taken the exam.",
+        "note": "시험을 보다 is the fixed phrase for taking an exam."
+      },
+      "collocations": [
+        "시험을 보다",
+        "시험 준비",
+        "시험 결과"
+      ]
+    },
+    {
+      "hangul": "일찍",
+      "romanization": "iljjik",
+      "english": "early",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "조금만 일찍 나왔으면 버스를 놓치지 않았을 텐데요.",
+        "en": "If I had left just a little earlier, I would not have missed the bus.",
+        "note": "조금만 일찍 is a very natural regret chunk."
+      },
+      "collocations": [
+        "조금만 일찍",
+        "일찍 도착하다",
+        "일찍 나왔으면"
+      ]
+    },
+    {
+      "hangul": "도착하다",
+      "romanization": "dochakada",
+      "english": "to arrive",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "제시간에 도착했더라면 면접을 볼 수 있었을 거예요.",
+        "en": "If I had arrived on time, I could have had the interview.",
+        "note": "도착했더라면 is useful for exams, interviews, trains, and appointments."
+      },
+      "collocations": [
+        "제시간에 도착하다",
+        "늦게 도착하다",
+        "도착했더라면"
+      ]
+    },
+    {
+      "hangul": "놓치다",
+      "romanization": "nochida",
+      "english": "to miss",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "버스를 놓치지 않았더라면 늦지 않았을 텐데요.",
+        "en": "If I had not missed the bus, I would not have been late.",
+        "note": "Use 놓치다 for transport, chances, deadlines, and timing."
+      },
+      "collocations": [
+        "버스를 놓치다",
+        "기회를 놓치다",
+        "놓치지 않았더라면"
+      ]
+    },
+    {
+      "hangul": "버스",
+      "romanization": "beoseu",
+      "english": "bus",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "그 버스를 탔더라면 약속 시간에 맞췄을 거예요.",
+        "en": "If I had taken that bus, I would have made it on time for the appointment.",
+        "note": "Transport words make counterfactuals concrete: take it, miss it, arrive late."
+      },
+      "collocations": [
+        "버스를 타다",
+        "버스를 놓치다",
+        "그 버스를 탔더라면"
+      ]
+    },
+    {
+      "hangul": "후회하다",
+      "romanization": "huhoehada",
+      "english": "to regret",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "바로 사과했더라면 이렇게 후회하지 않았을 거예요.",
+        "en": "If I had apologized right away, I would not regret it like this.",
+        "note": "후회하다 often appears in the result clause."
+      },
+      "collocations": [
+        "후회하다",
+        "후회하지 않았을 텐데",
+        "나중에 후회하다"
+      ]
+    },
+    {
+      "hangul": "후회",
+      "romanization": "huhoe",
+      "english": "regret",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "그때 말하지 않은 게 아직도 후회예요.",
+        "en": "Not saying it back then is still a regret.",
+        "note": "Noun form 후회 works when the regret itself is the topic."
+      },
+      "collocations": [
+        "후회가 되다",
+        "후회 없이",
+        "아직도 후회예요"
+      ]
+    },
+    {
+      "hangul": "결과",
+      "romanization": "gyeolgwa",
+      "english": "result, outcome",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "마지막까지 포기하지 않았더라면 결과가 달라졌을지도 몰라요.",
+        "en": "If I had not given up until the end, the result might have changed.",
+        "note": "결과가 달라지다 is the key outcome phrase."
+      },
+      "collocations": [
+        "시험 결과",
+        "결과가 나오다",
+        "결과가 달라지다"
+      ]
+    },
+    {
+      "hangul": "달라지다",
+      "romanization": "dallajida",
+      "english": "to change, to become different",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "그때 선택을 바꿨더라면 지금 상황이 달라졌을 거예요.",
+        "en": "If I had changed my choice then, the situation would be different now.",
+        "note": "달라졌을 거예요 is a natural result clause for counterfactuals."
+      },
+      "collocations": [
+        "결과가 달라지다",
+        "상황이 달라지다",
+        "달라졌을 거예요"
+      ]
+    },
+    {
+      "hangul": "기회",
+      "romanization": "gihoe",
+      "english": "chance, opportunity",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "그 기회를 잡았더라면 다른 회사에 갔을지도 몰라요.",
+        "en": "If I had taken that opportunity, I might have gone to a different company.",
+        "note": "기회를 잡다 and 기회를 놓치다 are both useful in hindsight."
+      },
+      "collocations": [
+        "기회를 잡다",
+        "기회를 놓치다",
+        "좋은 기회였는데"
+      ]
+    },
+    {
+      "hangul": "말하다",
+      "romanization": "malhada",
+      "english": "to say, to speak",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "그때 솔직하게 말했더라면 오해가 풀렸을 거예요.",
+        "en": "If I had spoken honestly then, the misunderstanding would have cleared up.",
+        "note": "말하다 becomes powerful in regret scenes because one sentence could have changed the relationship."
+      },
+      "collocations": [
+        "바로 말하다",
+        "솔직하게 말하다",
+        "그때 말했더라면"
+      ]
+    },
+    {
+      "hangul": "사과하다",
+      "romanization": "sagwahada",
+      "english": "to apologize",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "먼저 사과했더라면 아직 어색하지 않았을 텐데요.",
+        "en": "If I had apologized first, it would not still be awkward.",
+        "note": "사과했더라면 fits relationship repair after the fact."
+      },
+      "collocations": [
+        "먼저 사과하다",
+        "바로 사과하다",
+        "사과했더라면"
+      ]
+    },
+    {
+      "hangul": "그때",
+      "romanization": "geuttae",
+      "english": "that time, back then",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "그때 멈췄더라면 일이 이렇게 커지지 않았을 거예요.",
+        "en": "If I had stopped back then, this would not have gotten this big.",
+        "note": "그때 anchors the regret in a specific past moment."
+      },
+      "collocations": [
+        "그때 알았으면",
+        "그때 말했더라면",
+        "그때로 돌아가다"
+      ]
+    },
+    {
+      "hangul": "포기하다",
+      "romanization": "pogihada",
+      "english": "to give up",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "포기하지 않았더라면 합격했을지도 몰라요.",
+        "en": "If I had not given up, I might have passed.",
+        "note": "포기하지 않았더라면 is a high-frequency negative counterfactual."
+      },
+      "collocations": [
+        "포기하다",
+        "포기하지 않다",
+        "포기하지 않았더라면"
+      ]
+    },
+    {
+      "hangul": "합격하다",
+      "romanization": "hapgyeokada",
+      "english": "to pass an exam",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "마지막 문제를 풀었더라면 합격했을 거예요.",
+        "en": "If I had solved the last question, I would have passed.",
+        "note": "합격하다 belongs naturally in exam-regret counterfactuals."
+      },
+      "collocations": [
+        "시험에 합격하다",
+        "합격했을 거예요",
+        "합격했을지도 몰라요"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Two friends compare three regrets after a hard week: a missed notice, a missed bus, and a message that should have been sent sooner.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "어제 공지를 미리 알았으면 시험 준비를 더 했을 텐데.",
+        "romanization": "eoje gongjireul miri arasseumyeon siheom junbireul deo haesseul tende.",
+        "en": "If I had known about the notice in advance yesterday, I would have prepared more for the exam.",
+        "grammarNote": "알았으면 sets up a missed information condition; 했을 텐데 gives the unreal result."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "그래도 포기하지 않았더라면 마지막 문제는 풀 수 있었을지도 몰라.",
+        "romanization": "geuraedo pogihaji anatdeoramyeon majimak munjeneun pul su isseosseuljido molla.",
+        "en": "Still, if you had not given up, you might have been able to solve the last question.",
+        "grammarNote": "The negative form is 포기하지 않았더라면, with the negation before -더라면."
+      },
+      {
+        "speaker": "민서",
+        "ko": "맞아. 결과가 조금은 달라졌을 것 같아.",
+        "romanization": "maja. gyeolgwaga jogeumeun dallajyeosseul geot gata.",
+        "en": "You're right. The result might have been a little different.",
+        "grammarNote": "달라졌을 것 같아 keeps the result hypothetical."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "나는 버스를 놓치지 않았더라면 면접에 늦지 않았을 텐데.",
+        "romanization": "naneun beoseureul notchiji anatdeoramyeon myeonjeobe neutji anatseul tende.",
+        "en": "If I had not missed the bus, I would not have been late for the interview.",
+        "grammarNote": "A practical transport regret: 놓치지 않았더라면 + 늦지 않았을 텐데."
+      },
+      {
+        "speaker": "민서",
+        "ko": "그때 다른 길로 갔으면 도착 시간이 달라졌을지도 몰라.",
+        "romanization": "geuttae dareun gillo gasseumyeon dochak sigani dallajyeosseuljido molla.",
+        "en": "If you had taken a different route then, the arrival time might have changed.",
+        "grammarNote": "-았/었으면 is lighter than -더라면 and works in casual reflection."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "그리고 친구한테 바로 사과했더라면 아직 이렇게 어색하지는 않았을 거야.",
+        "romanization": "geurigo chinguhante baro sagwahaetdeoramyeon ajik ireoke eosaekajineun anatseul geoya.",
+        "en": "And if I had apologized to my friend right away, it probably would not still be this awkward.",
+        "grammarNote": "사과했더라면 shows relationship hindsight, not only test or travel regret."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "그때 알았더라면",
+    "body": "민서는 시험 전날 공지가 바뀐 것을 늦게 알았다. 미리 알았으면 자료를 다시 확인했을 텐데, 그대로 시험장에 갔다. 지훈은 면접 날 버스를 놓쳤다. 조금만 일찍 나왔더라면 제시간에 도착했을 거라고 생각했다. 두 사람은 나중에 서로의 이야기를 듣고 같은 말을 했다. \"그때 바로 알았더라면 결과가 달라졌을지도 몰라.\" 하지만 마지막에는 후회만 반복하지 않기로 했다. 다음에는 중요한 공지를 미리 확인하고, 늦을 것 같으면 바로 연락하고, 마음에 걸리는 말은 빨리 사과하기로 했다.",
+    "bodyTranslation": "Minseo found out late that the notice had changed before the exam. If she had known in advance, she would have checked the materials again, but she went to the exam room as she was. Jihoon missed the bus on interview day. He thought that if he had left a little earlier, he would have arrived on time. Later, after hearing each other's stories, they said the same thing: \"If we had known right away back then, the result might have changed.\" In the end, they decided not to repeat only regret. Next time they would check important notices in advance, contact people right away if they might be late, and apologize quickly for words that bothered them.",
+    "comprehensionQuestions": [
+      {
+        "question": "민서는 무엇을 늦게 알았어요?",
+        "answer": "시험 전날 공지가 바뀐 것을 늦게 알았어요."
+      },
+      {
+        "question": "지훈은 왜 면접에 늦을 뻔했어요?",
+        "answer": "버스를 놓쳤기 때문이에요."
+      },
+      {
+        "question": "두 사람은 다음에 무엇을 하기로 했어요?",
+        "answer": "중요한 공지를 미리 확인하고, 늦을 것 같으면 바로 연락하고, 마음에 걸리는 말은 빨리 사과하기로 했어요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "후회 말하기는 자책보다 부드럽게",
+    "body": "In Korean, counterfactual regret is often softened with -을 텐데요, 아쉽다, or 그랬으면 좋았을 텐데요. This lets you acknowledge the mistake without sounding as if you are attacking yourself or blaming the listener. In a workplace or classroom, 미리 말씀드렸으면 좋았을 텐데요 is safer than a blunt 제가 잘못했어요 when you are reflecting, not formally apologizing.",
+    "tip": "Use -더라면 when you want a clear hindsight frame. Use -았/었으면 좋겠어요 when you are expressing a wish more than analyzing a result."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence correctly expresses regret about not knowing earlier?",
+      "options": [
+        "미리 알았으면 준비했을 텐데요.",
+        "미리 알면 준비했어요.",
+        "미리 알기로 준비했어요."
+      ],
+      "correct": "미리 알았으면 준비했을 텐데요.",
+      "explanation": "The condition is missed in the past, and the result is also hypothetical with -했을 텐데요."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Choose the correct negative counterfactual.",
+      "options": [
+        "놓치지 않았더라면 늦지 않았을 거예요.",
+        "놓치지 않으면더라면 늦지 않았어요.",
+        "놓치지 않았으면 늦지 않아요."
+      ],
+      "correct": "놓치지 않았더라면 늦지 않았을 거예요.",
+      "explanation": "The negative must be inside the past condition: -지 않았더라면."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which result clause stays hypothetical?",
+      "options": [
+        "결과가 달라졌을지도 몰라요.",
+        "결과가 달라져요.",
+        "결과가 달라지고 있어요."
+      ],
+      "correct": "결과가 달라졌을지도 몰라요.",
+      "explanation": "-았/었을지도 몰라요 marks an imagined different result."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Complete the regret: 바로 사과했더라면 이렇게 ____ 않았을 텐데요. (use 후회하다)",
+      "explanation": "후회하지 않았을 텐데요 means \"I would not regret it.\"",
+      "correct": "후회하지"
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "버스___ 놓쳤더라면 늦었을 거예요. (If I had missed the bus...)",
+      "options": [
+        "를",
+        "가",
+        "에"
+      ],
+      "correct": "를",
+      "explanation": "놓치다 takes the thing missed as an object, so 버스를 fits. The counterfactual ending shows this did not actually happen."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "미리 ___ 준비했을 거예요. (알다 → stronger past counterfactual)",
+      "base": "알다",
+      "form": "counterfactualPast",
+      "correct": "알았더라면",
+      "explanation": "-았/었더라면 makes a reflective past counterfactual. 알다 becomes 알았더라면."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'If I had known in advance, I would have prepared.'",
+      "tokens": [
+        "미리 알았더라면",
+        "준비했을 거예요"
+      ],
+      "correct": "미리 알았더라면 준비했을 거예요",
+      "explanation": "The condition is a missed past condition, so 알았더라면 fits. The result stays hypothetical with 했을 거예요."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Complete: 바로 사과했더라면 이렇게 ____ 않았을 텐데요. (use 되다)",
+      "correct": "되지",
+      "explanation": "되지 않았을 텐데요 keeps the result hypothetical and regretful. It means the situation would not have become like this."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the regret: '미리 알면 준비했을 텐데요.'",
+      "correct": "미리 알았으면 준비했을 텐데요.",
+      "explanation": "For a missed past condition, use 알았으면, not the open condition 알면. The result clause 했을 텐데요 stays hypothetical."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which condition is clearly about a missed past chance?",
+      "options": [
+        "일찍 도착했더라면 만났을 거예요.",
+        "일찍 도착하면 만나요.",
+        "일찍 도착해서 만났어요."
+      ],
+      "correct": "일찍 도착했더라면 만났을 거예요.",
+      "explanation": "-았/었더라면 points to a past condition that did not happen. The other choices are open condition or real past result."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "Use V-았/었으면 for a lighter missed condition and V-았/었더라면 for stronger hindsight.",
+      "After a counterfactual condition, keep the result unreal: -았/었을 텐데요, -았/었을 거예요, or -았/었을지도 몰라요.",
+      "For negative conditions, place the negation before -더라면: 포기하지 않았더라면, 놓치지 않았더라면.",
+      "The most useful vocabulary set is not random: 미리 알다, 일찍 도착하다, 버스를 놓치다, 결과가 달라지다, 후회하다, 사과하다."
+    ]
+  },
+  "writingTask": {
+    "prompt": "You missed the bus and were late for an exam. Write a short note regretting it: one wish, and one 'if I had... I would have...' counterfactual.",
+    "hint": "Use V-았/었으면 좋겠어요 for a wish, and V-았/었으면 … -았/었을 텐데요 (or -았/었더라면 … -았/었을 거예요) for the missed past.",
+    "model": "조금 더 일찍 일어났으면 좋겠어요. 미리 준비했더라면 버스를 놓치지 않았을 거예요. 일찍 도착했으면 시험을 잘 봤을 텐데요.",
+    "modelEn": "I wish I'd gotten up a little earlier. If I had prepared in advance, I wouldn't have missed the bus. If I'd arrived early, I would have done well on the exam."
+  },
+  "canDo": [
+    "Express a wish that things were different with V-았/었으면 좋겠어요 (일찍 일어났으면 좋겠어요)",
+    "Regret a missed past with V-았/었으면 … -았/었을 텐데요 (도착했으면 … 봤을 텐데요)",
+    "State a reflective counterfactual with V-았/었더라면 … -았/었을 거예요 (준비했더라면 … 놓치지 않았을 거예요)",
+    "Tell an open condition (-(으)면) from a missed one (-았/었으면)"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "chapterId": "chapter-60",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 12,
+  "cardsReviewed": 39,
+  "findings": [
+    {
+      "biteId": "chapter-60-b3",
+      "cardIndex": 3,
+      "severity": "bad-teaching",
+      "class": "data-fact",
+      "evidence": "The inherited 알다 reveal called 안 알아요 universally wrong, although it is possible with recognition, refusal, or contrastive readings.",
+      "fix": "Added the same scoped local nuance used in the other final-course 알다 cards.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-60-b7",
+      "cardIndex": 1,
+      "severity": "blocker",
+      "class": "drill-multi",
+      "evidence": "The V-기 위해(서) cloze marked 기 위해서 correct and 기 위해 wrong even though 서 is optional.",
+      "fix": "Added a compiler regression and generalized the prefix optional-variant guard, removing the ambiguous cloze while preserving the contrastive hunt.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 12 bites and 39 final cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}
