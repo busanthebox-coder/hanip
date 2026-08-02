@@ -12,15 +12,18 @@ function isDone(done, bite) {
   return Boolean(done && done[bite.id]);
 }
 
-export function buildShelfGroups(chapters, done) {
+export function buildShelfGroups(chapters, done, snacks = []) {
   return LEVEL_GROUPS.map((level) => {
     const groupedChapters = chapters.filter((chapter) => chapter.level === level.id);
     const bites = groupedChapters.flatMap((chapter) => chapter.bites);
+    const groupedSnacks = snacks.filter((snack) => snack.level === level.id);
     return {
       ...level,
       chapters: groupedChapters,
-      done: bites.filter((bite) => isDone(done, bite)).length,
-      total: bites.length,
+      snacks: groupedSnacks,
+      done: bites.filter((bite) => isDone(done, bite)).length
+        + groupedSnacks.filter((snack) => isDone(done, snack)).length,
+      total: bites.length + groupedSnacks.length,
     };
   });
 }
@@ -59,9 +62,10 @@ export function filterShelfGroups(groups, query) {
   const normalized = query.trim().toLocaleLowerCase();
   if (!normalized) return groups;
   return groups
-    .map((group) => ({
-      ...group,
-      chapters: group.chapters.filter((chapter) => chapterMatches(chapter, normalized)),
-    }))
+    .map((group) => {
+      const chapters = group.chapters.filter((chapter) => chapterMatches(chapter, normalized));
+      const numbers = new Set(chapters.map((chapter) => chapter.number));
+      return { ...group, chapters, snacks: group.snacks.filter((snack) => numbers.has(snack.afterChapter)) };
+    })
     .filter((group) => group.chapters.length > 0);
 }

@@ -3,7 +3,7 @@
   import Home from './components/Home.svelte';
   import Shelf from './components/Shelf.svelte';
   import BitePlayer from './components/BitePlayer.svelte';
-  import { createLatestRequest, loadChapterCards } from './lib/courseData.js';
+  import { createLatestRequest, loadChapterCards, loadSnackCards } from './lib/courseData.js';
   import { markBiteDone, progress } from './lib/store.js';
 
   // The reference tabs carry the heavy data — the wordbook's nuance layer alone
@@ -20,6 +20,7 @@
   const beginBiteRequest = createLatestRequest();
 
   const chapters = courseIndex.chapters;
+  const snacks = courseIndex.snacks || [];
 
   const TABS = [
     { key: 'today', ico: '🍚', ko: '오늘', en: 'Today' },
@@ -55,6 +56,27 @@
       if (!isLatest()) return;
       playing = null;
       loadError = '한입을 불러오지 못했어요. 다시 시도해 주세요. · Could not load this bite. Please try again.';
+      console.error(error);
+    } finally {
+      if (isLatest()) loadingBite = false;
+    }
+  }
+  async function playSnack(snack) {
+    const isLatest = beginBiteRequest();
+    loadingBite = true;
+    loadError = '';
+    try {
+      const cards = await loadSnackCards(snack.id);
+      if (!isLatest()) return;
+      playing = {
+        chapter: { id: snack.id, number: snack.afterChapter, biteCount: 1 },
+        bite: { ...snack, kind: 'snack', index: 0, cards },
+      };
+      window.scrollTo(0, 0);
+    } catch (error) {
+      if (!isLatest()) return;
+      playing = null;
+      loadError = '간식을 불러오지 못했어요. 다시 시도해 주세요. · Could not load this snack. Please try again.';
       console.error(error);
     } finally {
       if (isLatest()) loadingBite = false;
@@ -115,7 +137,7 @@
             {/await}
           </div>
         {:else}
-          <Shelf {chapters} onPlay={play} onOpenGuide={() => { showGuide = true; window.scrollTo(0, 0); }} />
+          <Shelf {chapters} {snacks} onPlay={play} onPlaySnack={playSnack} onOpenGuide={() => { showGuide = true; window.scrollTo(0, 0); }} />
         {/if}
       {:else}
         {#await loadTab(tab)}

@@ -12,14 +12,16 @@
   import ShelfLevelGroup from './ShelfLevelGroup.svelte';
 
   export let chapters = [];
+  export let snacks = [];
   export let onPlay = () => {};
+  export let onPlaySnack = () => {};
   export let onOpenGuide = () => {};
 
   let query = '';
   let openLevels = [];
 
   $: state = $progress;
-  $: groups = buildShelfGroups(chapters, state.done);
+  $: groups = buildShelfGroups(chapters, state.done, snacks);
   $: visibleGroups = filterShelfGroups(groups, query);
   $: searching = query.trim().length > 0;
 
@@ -76,10 +78,19 @@
           doneMap={state.done}
           onToggle={() => toggleLevel(group.id)}
           {onPlay}
+          {onPlaySnack}
         />
       {/each}
     </div>
   {/if}
+
+  <div class="readers-wrap">
+    {#await import('./ReadersShelf.svelte')}
+      <p class="readers-loading" role="status">읽을거리 불러오는 중 · Loading readers…</p>
+    {:then mod}
+      <svelte:component this={mod.default} />
+    {/await}
+  </div>
 </section>
 
 <style>
@@ -101,4 +112,7 @@
     background: var(--card); box-shadow: var(--shadow-1); text-align: center; word-break: keep-all; }
   .empty strong { font-size: 15px; }
   .empty span { color: var(--ink-3); font-size: 13px; }
+  .readers-wrap { margin-top: 24px; }
+  .readers-loading { margin: 0; padding: 24px 16px; border: 1px solid var(--line); border-radius: 18px;
+    color: var(--ink-3); font-size: 13px; text-align: center; }
 </style>

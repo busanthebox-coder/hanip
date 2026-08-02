@@ -1,6 +1,7 @@
 // 한입 bite compiler — turns a fixed chapter JSON (unchanged content) into
 // small tap-only rounds. Nothing is authored here: every card is a reordering
 // or a cloze of sentences that already exist in the chapter data.
+import { chapterLevel } from '../../src/lib/levels.js';
 
 const WORDS_PER_BITE = 6;
 const MAX_WORD_BITES = 3;
@@ -387,6 +388,38 @@ function guessOptions(word, pool, overrides = {}) {
   const options = [...picks];
   options.splice((word.hangul.length + word.english.length) % (picks.length + 1), 0, word.english);
   return options;
+}
+
+export function compileSnack(pack, overrides = {}) {
+  const words = pack.words || [];
+  const cards = words.map((word) => ({
+    kind: 'guess',
+    word: {
+      ko: word.hangul,
+      romanization: word.romanization,
+      en: word.english,
+      pos: word.partOfSpeech,
+    },
+    sentence: word.example ? { ko: word.example.ko, en: word.example.en } : null,
+    target: word.example?.ko
+      ? guessTarget(word, word.example.ko, { advanced: pack.afterChapter >= 12 })
+      : null,
+    options: guessOptions(word, words, overrides),
+    note: '',
+  }));
+  return {
+    id: `snack-${pack.id.replace(/^pack-/, '')}`,
+    packId: pack.id,
+    kind: 'snack',
+    title: pack.title,
+    shortTitle: pack.shortTitle,
+    afterChapter: pack.afterChapter,
+    level: chapterLevel(pack.afterChapter),
+    canDo: pack.goal,
+    index: 0,
+    cardCount: cards.length,
+    cards,
+  };
 }
 
 export function buildWordBites(chapter, overrides = {}) {

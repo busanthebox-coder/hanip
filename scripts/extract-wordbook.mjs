@@ -1,11 +1,12 @@
 // Rebuilds the eager wordbook list and the lazy detail payload from:
 //   1. chapter vocabulary (course placement and course examples)
 //   2. the parent course dictionary (nuance, forms, mistakes, and clusters)
-import { existsSync, mkdirSync, readdirSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readdirSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { gzipSync } from 'node:zlib';
 import { chapterLevel } from '../src/lib/levels.js';
+import { DEPTH_FIELDS, depthScore, loadDictionary } from './lib/parentData.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const chaptersDir = join(root, 'data', 'chapters');
@@ -13,63 +14,6 @@ const listFile = join(root, 'src', 'lib', 'wordbook.json');
 const depthFile = join(root, 'src', 'lib', 'wordbook-depth.json');
 const shardsDir = join(root, 'src', 'lib', 'wordbook-depth');
 const SHARD_GZIP_MAX = 210_000;
-const parentDir = process.env.HANIP_PARENT_DATA_DIR
-  || join(root, '..', 'korean-core-starter', 'public', 'data');
-
-if (!existsSync(parentDir)) {
-  throw new Error(`wordbook: required parent enrichment source not found: ${parentDir}`);
-}
-
-const DEPTH_FIELDS = [
-  'nuance',
-  'explanation',
-  'shortExplanation',
-  'commonMistakes',
-  'conjugationTips',
-  'usagePhrases',
-  'examples',
-  'forms',
-  'irregular',
-  'cluster',
-  'collocations',
-  'ex',
-];
-
-function depthScore(entry) {
-  return DEPTH_FIELDS.reduce((total, field) => total + JSON.stringify(entry[field] || '').length, 0);
-}
-
-function loadDictionary() {
-  const byHangul = new Map();
-  let clusters = [];
-  const sourceFiles = readdirSync(parentDir)
-    .filter((file) => file.startsWith('app-') && !file.includes('index') && !file.includes('manifest'))
-    .sort();
-
-  if (sourceFiles.length === 0) {
-    throw new Error(`wordbook: required parent enrichment files not found in: ${parentDir}`);
-  }
-
-  for (const file of sourceFiles) {
-    const json = JSON.parse(readFileSync(join(parentDir, file), 'utf8'));
-    if (Array.isArray(json.expressionClusters)) clusters = json.expressionClusters;
-    const lists = Array.isArray(json) ? [json] : Object.values(json);
-    for (const list of lists) {
-      if (!Array.isArray(list)) continue;
-      for (const entry of list) {
-        if (!entry || typeof entry !== 'object' || !entry.hangul) continue;
-        const previous = byHangul.get(entry.hangul);
-        if (!previous || depthScore(entry) > depthScore(previous)) byHangul.set(entry.hangul, entry);
-      }
-    }
-  }
-
-  if (byHangul.size === 0) {
-    throw new Error(`wordbook: parent enrichment source contains no dictionary entries: ${parentDir}`);
-  }
-  return { byHangul, clusters };
-}
-
 function lookupKeys(ko) {
   const keys = [ko];
   for (const part of ko.split('/').map((value) => value.trim())) if (part) keys.push(part);
@@ -83,7 +27,7 @@ function lookupKeys(ko) {
 
 const trim = (value) => (typeof value === 'string' ? value.trim() : value);
 const arr = (value) => (Array.isArray(value) ? value.filter(Boolean) : []);
-const { byHangul, clusters } = loadDictionary();
+const { byHangul, clusters } = loadDictionary({ root, label: 'wordbook' });
 
 const clusterOf = new Map();
 for (const cluster of clusters) {

@@ -1,0 +1,2034 @@
+{
+ "generatedFrom": "4 parent app data files",
+ "joinedMembers": 173,
+ "totalMembers": 173,
+ "packs": [
+  {
+   "id": "pack-survival-basics",
+   "title": "Survival Basics",
+   "shortTitle": "Survival",
+   "afterChapter": 1,
+   "order": 1,
+   "goal": "Get through the first day politely before you can build long sentences.",
+   "context": "These are ready-to-say chunks. Learn them as whole phrases first, then notice the grammar later.",
+   "words": [
+    {
+     "hangul": "안녕하세요",
+     "english": "Hello. / Hi.",
+     "romanization": "annyeonghaseyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 안녕하세요! / B: 네, 안녕하세요.",
+      "en": "A: Hello! / B: Yes, hello.",
+      "romanization": "A: annyeonghaseyo! / B: ne, annyeonghaseyo."
+     }
+    },
+    {
+     "hangul": "감사합니다",
+     "english": "Thank you.",
+     "romanization": "gamsahamnida",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "감사합니다.",
+      "en": "Thank you.",
+      "romanization": "gamsahamnida."
+     }
+    },
+    {
+     "hangul": "죄송합니다",
+     "english": "I'm sorry. / I apologize.",
+     "romanization": "joesonghamnida",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "죄송합니다.",
+      "en": "I'm sorry.",
+      "romanization": "joesonghamnida."
+     }
+    },
+    {
+     "hangul": "네",
+     "english": "Yes.",
+     "romanization": "ne",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "네.",
+      "en": "Yes.",
+      "romanization": "ne."
+     }
+    },
+    {
+     "hangul": "아니요",
+     "english": "No.",
+     "romanization": "aniyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "아니요.",
+      "en": "No.",
+      "romanization": "aniyo."
+     }
+    },
+    {
+     "hangul": "괜찮아요",
+     "english": "It's okay. / That's all right. / No, thank you.",
+     "romanization": "gwaenchanayo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 죄송해요. / B: 괜찮아요, 그럴 수도 있죠.",
+      "en": "A: I'm sorry. / B: It's okay, these things happen.",
+      "romanization": "A: joesonghaeyo. / B: gwaenchanayo, geureol sudo itjyo."
+     }
+    },
+    {
+     "hangul": "안녕히 가세요",
+     "english": "Goodbye (to someone who is leaving).",
+     "romanization": "annyeonghi gaseyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 이제 가 볼게요. / B: 네, 안녕히 가세요.",
+      "en": "A: I'll head off now. / B: Take care, goodbye.",
+      "romanization": "A: ije ga bolgeyo. / B: ne, annyeonghi gaseyo."
+     }
+    },
+    {
+     "hangul": "안녕히 계세요",
+     "english": "Goodbye (said by the person who is leaving).",
+     "romanization": "annyeonghi gyeseyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 먼저 가겠습니다. 안녕히 계세요. / B: 네, 안녕히 가세요.",
+      "en": "A: I'll be heading off now. Goodbye (stay well). / B: Take care, goodbye.",
+      "romanization": "A: meonjeo gagetseumnida. annyeonghi gyeseyo. / B: ne, annyeonghi gaseyo."
+     }
+    },
+    {
+     "hangul": "여기요",
+     "english": "Excuse me! (calling the server)",
+     "romanization": "yeogiyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "여기요!",
+      "en": "Excuse me!",
+      "romanization": "yeogiyo!"
+     }
+    },
+    {
+     "hangul": "잠깐만요",
+     "english": "Hold on a sec",
+     "romanization": "jamkkanmanyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "잠깐만요!",
+      "en": "Hold on a sec!",
+      "romanization": "jamkkanmanyo!"
+     }
+    },
+    {
+     "hangul": "실례합니다",
+     "english": "Excuse me.",
+     "romanization": "sillyehamnida",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "실례합니다, 화장실이 어디예요?",
+      "en": "Excuse me, where's the restroom?",
+      "romanization": "sillyehamnida, hwajangsiri eodiyeyo?"
+     }
+    },
+    {
+     "hangul": "맞아요",
+     "english": "That's right / You're right.",
+     "romanization": "majayo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 이 길로 가면 돼요? / B: 네, 맞아요.",
+      "en": "A: Do we go this way? / B: Yes, that's right.",
+      "romanization": "A: i gillo gamyeon dwaeyo? / B: ne, majayo."
+     }
+    }
+   ]
+  },
+  {
+   "id": "pack-survival-help",
+   "title": "Survival Help",
+   "shortTitle": "Help",
+   "afterChapter": 2,
+   "order": 2,
+   "goal": "Stay calm when you do not understand, need help, or need one practical sentence fast.",
+   "context": "These phrases keep the conversation alive when Korean gets too fast.",
+   "words": [
+    {
+     "hangul": "잘 모르겠어요",
+     "english": "I'm not sure / I don't really know.",
+     "romanization": "jal moreugesseoyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 이거 어디다 두면 돼요? / B: 저도 잘 모르겠어요. 사장님한테 물어봐야 할 것 같아요.",
+      "en": "A: Where should I put this? / B: I'm not sure either. I think we need to ask the boss.",
+      "romanization": "A: igeo eodida dumyeon dwaeyo? / B: jeodo jal moreugesseoyo. sajangnimhante mureobwaya hal geot gatayo."
+     }
+    },
+    {
+     "hangul": "한국어를 잘 못해요",
+     "english": "I'm not good at Korean.",
+     "romanization": "hangugeoreul jal motaeyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "죄송해요, 한국어를 잘 못해요.",
+      "en": "I'm sorry, I'm not good at Korean.",
+      "romanization": "joesonghaeyo, hangugeoreul jal motaeyo."
+     }
+    },
+    {
+     "hangul": "천천히 말해 주세요",
+     "english": "Please speak slowly",
+     "romanization": "cheoncheonhi malhae juseyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "죄송한데 천천히 말해 주세요.",
+      "en": "Sorry, please speak slowly.",
+      "romanization": "joesonghande cheoncheonhi malhae juseyo."
+     }
+    },
+    {
+     "hangul": "다시 말해 주세요",
+     "english": "Please say it again.",
+     "romanization": "dasi malhae juseyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "다시 말해 주세요.",
+      "en": "Please say it again.",
+      "romanization": "dasi malhae juseyo."
+     }
+    },
+    {
+     "hangul": "영어 할 수 있어요?",
+     "english": "Can you speak English?",
+     "romanization": "yeongeo hal su isseoyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "영어 할 수 있어요?",
+      "en": "Can you speak English?",
+      "romanization": "yeongeo hal su isseoyo?"
+     }
+    },
+    {
+     "hangul": "얼마예요?",
+     "english": "How much is it?",
+     "romanization": "eolmayeyo?",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 얼마예요? / B: 4,500원입니다.",
+      "en": "A: How much is it? / B: It's 4,500 won.",
+      "romanization": "A: eolmayeyo? / B: 4,500wonimnida."
+     }
+    },
+    {
+     "hangul": "이거 주세요",
+     "english": "I'll have this one, please",
+     "romanization": "igeo juseyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "이거 주세요.",
+      "en": "This one, please.",
+      "romanization": "igeo juseyo."
+     }
+    },
+    {
+     "hangul": "도와주세요",
+     "english": "Please help me.",
+     "romanization": "dowajuseyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "도와주세요.",
+      "en": "Please help me.",
+      "romanization": "dowajuseyo."
+     }
+    },
+    {
+     "hangul": "화장실이 어디예요?",
+     "english": "Where is the restroom?",
+     "romanization": "hwajangsiri eodiyeyo?",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "화장실이 어디예요?",
+      "en": "Where is the restroom?",
+      "romanization": "hwajangsiri eodiyeyo?"
+     }
+    },
+    {
+     "hangul": "잠시만요",
+     "english": "One moment, please.",
+     "romanization": "jamsimanyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "잠시만요.",
+      "en": "One moment, please.",
+      "romanization": "jamsimanyo."
+     }
+    }
+   ]
+  },
+  {
+   "id": "pack-numbers",
+   "title": "Numbers Starter",
+   "shortTitle": "Numbers",
+   "afterChapter": 3,
+   "goal": "Read prices, counts, simple dates, and clock-hour basics without waiting for a full number chapter.",
+   "context": "Native numbers handle people, things, age, and hours. Sino numbers handle dates, prices, minutes, phone numbers, and addresses.",
+   "words": [
+    {
+     "hangul": "하나",
+     "english": "one (native number)",
+     "romanization": "hana",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "하나, 둘, 셋!",
+      "en": "One, two, three!",
+      "romanization": "hana, dul, set!"
+     }
+    },
+    {
+     "hangul": "둘",
+     "english": "two (native number)",
+     "romanization": "dul",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "둘 중에 뭐가 더 좋아요?",
+      "en": "Which of the two do you like more?",
+      "romanization": "dul junge mwoga deo joayo?"
+     }
+    },
+    {
+     "hangul": "셋",
+     "english": "three (native number)",
+     "romanization": "set",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "셋까지 셀게요. 하나, 둘, 셋!",
+      "en": "I'll count to three. One, two, three!",
+      "romanization": "setkkaji selgeyo. hana, dul, set!"
+     }
+    },
+    {
+     "hangul": "넷",
+     "english": "four (native number)",
+     "romanization": "net",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "여기 의자가 넷 있어요.",
+      "en": "There are four chairs here.",
+      "romanization": "yeogi uijaga net isseoyo."
+     }
+    },
+    {
+     "hangul": "다섯",
+     "english": "five (native number)",
+     "romanization": "daseot",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "다섯까지 셀 수 있어요.",
+      "en": "I can count to five.",
+      "romanization": "daseotkkaji sel su isseoyo."
+     }
+    },
+    {
+     "hangul": "여섯",
+     "english": "six (native number)",
+     "romanization": "yeoseot",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "사탕이 여섯 개 있어요.",
+      "en": "There are six pieces of candy.",
+      "romanization": "satangi yeoseot gae isseoyo."
+     }
+    },
+    {
+     "hangul": "일곱",
+     "english": "seven (native number)",
+     "romanization": "ilgop",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "무지개는 색깔이 일곱 개예요.",
+      "en": "A rainbow has seven colors.",
+      "romanization": "mujigaeneun saekkkari ilgop gaeyeyo."
+     }
+    },
+    {
+     "hangul": "여덟",
+     "english": "eight (native number)",
+     "romanization": "yeodeolb",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "거미는 다리가 여덟 개예요.",
+      "en": "A spider has eight legs.",
+      "romanization": "geomineun dariga yeodeolb gaeyeyo."
+     }
+    },
+    {
+     "hangul": "아홉",
+     "english": "nine (native number)",
+     "romanization": "ahop",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "고양이가 아홉 마리 있어요.",
+      "en": "There are nine cats.",
+      "romanization": "goyangiga ahom mari isseoyo."
+     }
+    },
+    {
+     "hangul": "열",
+     "english": "ten (native number)",
+     "romanization": "yeol",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "열까지 세고 눈을 떠요.",
+      "en": "Count to ten and open your eyes.",
+      "romanization": "yeolkkaji sego nuneul tteoyo."
+     }
+    },
+    {
+     "hangul": "일",
+     "english": "one (Sino number)",
+     "romanization": "il",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "제 번호는 공일공이에요.",
+      "en": "My number starts with 010.",
+      "romanization": "je beonhoneun gongilgongieyo."
+     }
+    },
+    {
+     "hangul": "이",
+     "english": "two (Sino number)",
+     "romanization": "i",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "이 더하기 이는 사예요.",
+      "en": "Two plus two is four.",
+      "romanization": "i deohagi ineun sayeyo."
+     }
+    },
+    {
+     "hangul": "삼",
+     "english": "three (Sino number)",
+     "romanization": "sam",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "삼 곱하기 삼은 구예요.",
+      "en": "Three times three is nine.",
+      "romanization": "sam gopagi sameun guyeyo."
+     }
+    },
+    {
+     "hangul": "사",
+     "english": "four (Sino number)",
+     "romanization": "sa",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "사월에 벚꽃이 펴요.",
+      "en": "Cherry blossoms bloom in April.",
+      "romanization": "sawore beotkkochi pyeoyo."
+     }
+    },
+    {
+     "hangul": "오",
+     "english": "five (Sino number)",
+     "romanization": "o",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "오 더하기 오는 십이에요.",
+      "en": "Five plus five is ten.",
+      "romanization": "o deohagi oneun sibieyo."
+     }
+    },
+    {
+     "hangul": "육",
+     "english": "six (Sino number)",
+     "romanization": "yuk",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "육 곱하기 이는 십이예요.",
+      "en": "Six times two is twelve.",
+      "romanization": "yuk gopagi ineun sibiyeyo."
+     }
+    },
+    {
+     "hangul": "칠",
+     "english": "seven (Sino number)",
+     "romanization": "chil",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "칠 빼기 이는 오예요.",
+      "en": "Seven minus two is five.",
+      "romanization": "chil ppaegi ineun oyeyo."
+     }
+    },
+    {
+     "hangul": "팔",
+     "english": "eight (Sino number)",
+     "romanization": "pal",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "팔 더하기 이는 십이에요.",
+      "en": "Eight plus two is ten.",
+      "romanization": "pal deohagi ineun sibieyo."
+     }
+    },
+    {
+     "hangul": "구",
+     "english": "nine (Sino number)",
+     "romanization": "gu",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "구 더하기 일은 십이에요.",
+      "en": "Nine plus one is ten.",
+      "romanization": "gu deohagi ireun sibieyo."
+     }
+    },
+    {
+     "hangul": "십",
+     "english": "ten (Sino number)",
+     "romanization": "sip",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "십까지 세어 볼까요?",
+      "en": "Shall we count to ten?",
+      "romanization": "sipkkaji seeo bolkkayo?"
+     }
+    },
+    {
+     "hangul": "백",
+     "english": "(one) hundred (Sino number)",
+     "romanization": "baek",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "백 원짜리 동전 있어요?",
+      "en": "Do you have a 100-won coin?",
+      "romanization": "baek wonjjari dongjeon isseoyo?"
+     }
+    },
+    {
+     "hangul": "천",
+     "english": "(one) thousand (Sino number)",
+     "romanization": "cheon",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "천 원만 빌려줘.",
+      "en": "Lend me just a thousand won.",
+      "romanization": "cheon wonman billyeojwo."
+     }
+    },
+    {
+     "hangul": "만",
+     "english": "ten thousand (Sino number)",
+     "romanization": "man",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "이거 만 원이에요.",
+      "en": "This is ten thousand won.",
+      "romanization": "igeo man wonieyo."
+     }
+    }
+   ]
+  },
+  {
+   "id": "pack-family",
+   "title": "Family Words",
+   "shortTitle": "Family",
+   "afterChapter": 2,
+   "goal": "Name close people naturally when introducing yourself or asking about someone.",
+   "context": "Family words are common in real Korean because age and relationship shape how people address each other.",
+   "words": [
+    {
+     "hangul": "가족",
+     "english": "family",
+     "romanization": "gajok",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "우리 가족은 네 명이에요.",
+      "en": "My family has four people.",
+      "romanization": "uri gajogeun ne myeongieyo."
+     }
+    },
+    {
+     "hangul": "엄마",
+     "english": "mom",
+     "romanization": "eomma",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "우리 엄마는 요리를 잘해요.",
+      "en": "My mom cooks well.",
+      "romanization": "uri eommaneun yorireul jalhaeyo."
+     }
+    },
+    {
+     "hangul": "아빠",
+     "english": "dad",
+     "romanization": "appa",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "우리 아빠는 회사에 다녀요.",
+      "en": "My dad works at a company.",
+      "romanization": "uri appaneun hoesae danyeoyo."
+     }
+    },
+    {
+     "hangul": "어머니",
+     "english": "mother",
+     "romanization": "eomeoni",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "우리 어머니는 선생님이에요.",
+      "en": "My mother is a teacher.",
+      "romanization": "uri eomeonineun seonsaengnimieyo."
+     }
+    },
+    {
+     "hangul": "아버지",
+     "english": "father",
+     "romanization": "abeoji",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "우리 아버지는 회사원이에요.",
+      "en": "My father is an office worker.",
+      "romanization": "uri abeojineun hoesawonieyo."
+     }
+    },
+    {
+     "hangul": "언니",
+     "english": "older sister (female speaker)",
+     "romanization": "eonni",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 언니가 두 명 있어요.",
+      "en": "I have two older sisters.",
+      "romanization": "jeoneun eonniga du myeong isseoyo."
+     }
+    },
+    {
+     "hangul": "오빠",
+     "english": "older brother (female speaker)",
+     "romanization": "oppa",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 오빠가 한 명 있어요.",
+      "en": "I have one older brother.",
+      "romanization": "jeoneun oppaga han myeong isseoyo."
+     }
+    },
+    {
+     "hangul": "누나",
+     "english": "older sister (male speaker)",
+     "romanization": "nuna",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 누나가 두 명 있어요.",
+      "en": "I have two older sisters.",
+      "romanization": "jeoneun nunaga du myeong isseoyo."
+     }
+    },
+    {
+     "hangul": "형",
+     "english": "older brother (male speaker)",
+     "romanization": "hyeong",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 형이 한 명 있어요.",
+      "en": "I have one older brother.",
+      "romanization": "jeoneun hyeongi han myeong isseoyo."
+     }
+    },
+    {
+     "hangul": "동생",
+     "english": "younger sibling",
+     "romanization": "dongsaeng",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 동생이 한 명 있어요.",
+      "en": "I have one younger sibling.",
+      "romanization": "jeoneun dongsaengi han myeong isseoyo."
+     }
+    },
+    {
+     "hangul": "할머니",
+     "english": "grandmother",
+     "romanization": "halmeoni",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "할머니, 안녕히 주무세요.",
+      "en": "Grandmother, sleep well (good night).",
+      "romanization": "halmeoni, annyeonghi jumuseyo."
+     }
+    },
+    {
+     "hangul": "할아버지",
+     "english": "grandfather",
+     "romanization": "harabeoji",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "할아버지, 진지 드세요.",
+      "en": "Grandfather, please eat (your meal).",
+      "romanization": "harabeoji, jinji deuseyo."
+     }
+    },
+    {
+     "hangul": "아들",
+     "english": "son",
+     "romanization": "adeul",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 아들이 한 명 있어요.",
+      "en": "I have one son.",
+      "romanization": "jeoneun adeuri han myeong isseoyo."
+     }
+    },
+    {
+     "hangul": "딸",
+     "english": "daughter",
+     "romanization": "ttal",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 딸이 두 명 있어요.",
+      "en": "I have two daughters.",
+      "romanization": "jeoneun ttari du myeong isseoyo."
+     }
+    }
+   ]
+  },
+  {
+   "id": "pack-body",
+   "title": "Body Basics",
+   "shortTitle": "Body",
+   "afterChapter": 3,
+   "goal": "Say what hurts, describe people, and understand basic health phrases.",
+   "context": "Body words become practical when paired with 이/가 아파요, 괜찮아요?, and simple description.",
+   "words": [
+    {
+     "hangul": "몸",
+     "english": "body",
+     "romanization": "mom",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "오늘은 몸이 좀 피곤해요.",
+      "en": "I'm a bit tired today.",
+      "romanization": "oneureun momi jom pigonhaeyo."
+     }
+    },
+    {
+     "hangul": "머리",
+     "english": "head; also hair",
+     "romanization": "meori",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "머리가 아파요.",
+      "en": "My head hurts.",
+      "romanization": "meoriga apayo."
+     }
+    },
+    {
+     "hangul": "얼굴",
+     "english": "face",
+     "romanization": "eolgul",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "언니 얼굴이 정말 예뻐요.",
+      "en": "My older sister's face is really pretty.",
+      "romanization": "eonni eolguri jeongmal yeppeoyo."
+     }
+    },
+    {
+     "hangul": "눈",
+     "english": "eye",
+     "romanization": "nun",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "눈이 아파요.",
+      "en": "My eyes hurt.",
+      "romanization": "nuni apayo."
+     }
+    },
+    {
+     "hangul": "코",
+     "english": "nose",
+     "romanization": "ko",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "코가 막혀요.",
+      "en": "My nose is stuffy.",
+      "romanization": "koga makyeoyo."
+     }
+    },
+    {
+     "hangul": "입",
+     "english": "mouth",
+     "romanization": "ip",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "입을 크게 벌리세요.",
+      "en": "Open your mouth wide.",
+      "romanization": "ibeul keuge beolliseyo."
+     }
+    },
+    {
+     "hangul": "귀",
+     "english": "ear",
+     "romanization": "gwi",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "귀가 아파요.",
+      "en": "My ear hurts.",
+      "romanization": "gwiga apayo."
+     }
+    },
+    {
+     "hangul": "목",
+     "english": "neck; throat",
+     "romanization": "mok",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "목이 아파요.",
+      "en": "My throat hurts.",
+      "romanization": "mogi apayo."
+     }
+    },
+    {
+     "hangul": "어깨",
+     "english": "shoulder",
+     "romanization": "eokkae",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "오래 앉아 있어서 어깨가 아파요.",
+      "en": "I sat for a long time so my shoulder hurts.",
+      "romanization": "orae anja isseoseo eokkaega apayo."
+     }
+    },
+    {
+     "hangul": "팔",
+     "english": "arm",
+     "romanization": "pal",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "무거운 가방을 들어서 팔이 아파요.",
+      "en": "I carried a heavy bag so my arm hurts.",
+      "romanization": "mugeoun gabangeul deureoseo pari apayo."
+     }
+    },
+    {
+     "hangul": "손",
+     "english": "hand",
+     "romanization": "son",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "손을 씻어요.",
+      "en": "I wash my hands.",
+      "romanization": "soneul ssiseoyo."
+     }
+    },
+    {
+     "hangul": "손가락",
+     "english": "finger",
+     "romanization": "songarak",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "문에 손가락이 끼어서 아파요.",
+      "en": "My finger got caught in the door so it hurts.",
+      "romanization": "mune songaragi kkieoseo apayo."
+     }
+    },
+    {
+     "hangul": "배",
+     "english": "belly; stomach",
+     "romanization": "bae",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "배가 아파요.",
+      "en": "My stomach hurts.",
+      "romanization": "baega apayo."
+     }
+    },
+    {
+     "hangul": "다리",
+     "english": "leg",
+     "romanization": "dari",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "다리가 아파요.",
+      "en": "My leg hurts.",
+      "romanization": "dariga apayo."
+     }
+    },
+    {
+     "hangul": "무릎",
+     "english": "knee",
+     "romanization": "mureup",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "계단을 많이 올라서 무릎이 아파요.",
+      "en": "I climbed a lot of stairs so my knee hurts.",
+      "romanization": "gyedaneul mani ollaseo mureupi apayo."
+     }
+    },
+    {
+     "hangul": "발",
+     "english": "foot",
+     "romanization": "bal",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "발이 아파요.",
+      "en": "My foot hurts.",
+      "romanization": "bari apayo."
+     }
+    }
+   ]
+  },
+  {
+   "id": "pack-time",
+   "title": "Time And Days",
+   "shortTitle": "Time",
+   "afterChapter": 5,
+   "goal": "Understand today, tomorrow, weekdays, and simple appointment timing.",
+   "context": "Time words are often used without particles in speech, but 에 appears when you point to a specific time.",
+   "words": [
+    {
+     "hangul": "오늘",
+     "english": "today",
+     "romanization": "oneul",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "오늘은 학교에 가요.",
+      "en": "Today, I go to school.",
+      "romanization": "oneureun hakgyoe gayo."
+     }
+    },
+    {
+     "hangul": "어제",
+     "english": "yesterday",
+     "romanization": "eoje",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "어제 친구를 만났어요.",
+      "en": "I met a friend yesterday.",
+      "romanization": "eoje chingureul mannasseoyo."
+     }
+    },
+    {
+     "hangul": "내일",
+     "english": "tomorrow",
+     "romanization": "naeil",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "내일 봐요.",
+      "en": "See you tomorrow.",
+      "romanization": "naeil bwayo."
+     }
+    },
+    {
+     "hangul": "지금",
+     "english": "now",
+     "romanization": "jigeum",
+     "partOfSpeech": "adverb",
+     "example": {
+      "ko": "지금 가요.",
+      "en": "I am going now.",
+      "romanization": "jigeum gayo."
+     }
+    },
+    {
+     "hangul": "아침",
+     "english": "morning; also breakfast",
+     "romanization": "achim",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "아침에 커피를 마셔요.",
+      "en": "I drink coffee in the morning.",
+      "romanization": "achime keopireul masyeoyo."
+     }
+    },
+    {
+     "hangul": "점심",
+     "english": "lunch / noon",
+     "romanization": "jeomsim",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "점심 같이 먹어요.",
+      "en": "Let's have lunch together.",
+      "romanization": "jeomsim gachi meogeoyo."
+     }
+    },
+    {
+     "hangul": "저녁",
+     "english": "evening; also dinner",
+     "romanization": "jeonyeok",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저녁에 영화를 봐요.",
+      "en": "I watch a movie in the evening.",
+      "romanization": "jeonyeoge yeonghwareul bwayo."
+     }
+    },
+    {
+     "hangul": "밤",
+     "english": "night",
+     "romanization": "bam",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "밤에 책을 읽어요.",
+      "en": "I read books at night.",
+      "romanization": "bame chaegeul ilgeoyo."
+     }
+    },
+    {
+     "hangul": "주말",
+     "english": "weekend",
+     "romanization": "jumal",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "주말에 보통 쉬어요.",
+      "en": "I usually rest on the weekend.",
+      "romanization": "jumare botong swieoyo."
+     }
+    },
+    {
+     "hangul": "월요일",
+     "english": "Monday",
+     "romanization": "woryoil",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "오늘은 월요일이에요.",
+      "en": "Today is Monday.",
+      "romanization": "oneureun woryoirieyo."
+     }
+    },
+    {
+     "hangul": "화요일",
+     "english": "Tuesday",
+     "romanization": "hwayoil",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "내일은 화요일이에요.",
+      "en": "Tomorrow is Tuesday.",
+      "romanization": "naeireun hwayoirieyo."
+     }
+    },
+    {
+     "hangul": "수요일",
+     "english": "Wednesday",
+     "romanization": "suyoil",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "오늘이 수요일이에요?",
+      "en": "Is today Wednesday?",
+      "romanization": "oneuri suyoirieyo?"
+     }
+    },
+    {
+     "hangul": "목요일",
+     "english": "Thursday",
+     "romanization": "mogyoil",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "모레가 목요일이에요.",
+      "en": "The day after tomorrow is Thursday.",
+      "romanization": "morega mogyoirieyo."
+     }
+    },
+    {
+     "hangul": "금요일",
+     "english": "Friday",
+     "romanization": "geumyoil",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "오늘은 금요일이에요.",
+      "en": "Today is Friday.",
+      "romanization": "oneureun geumyoirieyo."
+     }
+    },
+    {
+     "hangul": "토요일",
+     "english": "Saturday",
+     "romanization": "toyoil",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "내일은 토요일이에요.",
+      "en": "Tomorrow is Saturday.",
+      "romanization": "naeireun toyoirieyo."
+     }
+    },
+    {
+     "hangul": "일요일",
+     "english": "Sunday",
+     "romanization": "iryoil",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "오늘이 일요일이에요?",
+      "en": "Is today Sunday?",
+      "romanization": "oneuri iryoirieyo?"
+     }
+    },
+    {
+     "hangul": "시간",
+     "english": "time",
+     "romanization": "sigan",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "시간이 있어요?",
+      "en": "Do you have time?",
+      "romanization": "sigani isseoyo?"
+     }
+    },
+    {
+     "hangul": "분",
+     "english": "minute",
+     "romanization": "bun",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "십 분 남았어요.",
+      "en": "Ten minutes are left.",
+      "romanization": "sip bun namasseoyo."
+     }
+    }
+   ]
+  },
+  {
+   "id": "pack-people-places",
+   "title": "People And Places",
+   "shortTitle": "People + Places",
+   "afterChapter": 4,
+   "goal": "Recognize the people and places that appear in first conversations and errands.",
+   "context": "These nouns support N이에요/예요, 에 가요, 에 있어요, and simple identity sentences.",
+   "words": [
+    {
+     "hangul": "한국",
+     "english": "Korea",
+     "romanization": "hanguk",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 한국 사람이에요.",
+      "en": "I am Korean.",
+      "romanization": "jeoneun hanguk saramieyo."
+     }
+    },
+    {
+     "hangul": "미국",
+     "english": "USA",
+     "romanization": "miguk",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 미국에서 왔어요.",
+      "en": "I came from the USA.",
+      "romanization": "jeoneun migugeseo wasseoyo."
+     }
+    },
+    {
+     "hangul": "중국",
+     "english": "China",
+     "romanization": "jungguk",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 중국에서 왔어요.",
+      "en": "I came from China.",
+      "romanization": "jeoneun junggugeseo wasseoyo."
+     }
+    },
+    {
+     "hangul": "일본",
+     "english": "Japan",
+     "romanization": "ilbon",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 일본 사람이에요.",
+      "en": "I am Japanese.",
+      "romanization": "jeoneun ilbon saramieyo."
+     }
+    },
+    {
+     "hangul": "사람",
+     "english": "person / people",
+     "romanization": "saram",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "사람이 많아요.",
+      "en": "There are many people.",
+      "romanization": "sarami manayo."
+     }
+    },
+    {
+     "hangul": "친구",
+     "english": "friend",
+     "romanization": "chingu",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "제 친구예요.",
+      "en": "This is my friend.",
+      "romanization": "je chinguyeyo."
+     }
+    },
+    {
+     "hangul": "학생",
+     "english": "student",
+     "romanization": "haksaeng",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 학생이에요.",
+      "en": "I am a student.",
+      "romanization": "jeoneun haksaengieyo."
+     }
+    },
+    {
+     "hangul": "선생님",
+     "english": "teacher",
+     "romanization": "seonsaengnim",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "우리 선생님이에요.",
+      "en": "This is our teacher.",
+      "romanization": "uri seonsaengnimieyo."
+     }
+    },
+    {
+     "hangul": "의사",
+     "english": "doctor",
+     "romanization": "uisa",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 의사예요.",
+      "en": "I am a doctor.",
+      "romanization": "jeoneun uisayeyo."
+     }
+    },
+    {
+     "hangul": "회사원",
+     "english": "office worker",
+     "romanization": "hoesawon",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 회사원이에요.",
+      "en": "I'm an office worker.",
+      "romanization": "jeoneun hoesawonieyo."
+     }
+    },
+    {
+     "hangul": "학교",
+     "english": "school",
+     "romanization": "hakgyo",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "학교에 가요.",
+      "en": "I go to school.",
+      "romanization": "hakgyoe gayo."
+     }
+    },
+    {
+     "hangul": "회사",
+     "english": "company / workplace",
+     "romanization": "hoesa",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "회사에 가요.",
+      "en": "I go to work.",
+      "romanization": "hoesae gayo."
+     }
+    },
+    {
+     "hangul": "병원",
+     "english": "hospital / clinic",
+     "romanization": "byeongwon",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "아파서 병원에 가요.",
+      "en": "I am sick, so I go to the hospital.",
+      "romanization": "apaseo byeongwone gayo."
+     }
+    },
+    {
+     "hangul": "식당",
+     "english": "restaurant; eatery; cafeteria",
+     "romanization": "sikdang",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "우리 이 식당에서 점심 먹어요.",
+      "en": "Let's eat lunch at this restaurant.",
+      "romanization": "uri i sikdangeseo jeomsim meogeoyo."
+     }
+    },
+    {
+     "hangul": "카페",
+     "english": "cafe",
+     "romanization": "kape",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "카페가 예뻐요.",
+      "en": "The cafe is pretty.",
+      "romanization": "kapega yeppeoyo."
+     }
+    },
+    {
+     "hangul": "화장실",
+     "english": "bathroom / restroom",
+     "romanization": "hwajangsil",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "화장실 어디예요?",
+      "en": "Where is the bathroom?",
+      "romanization": "hwajangsil eodiyeyo?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "pack-home-things",
+   "title": "Home And Things",
+   "shortTitle": "Home Things",
+   "afterChapter": 6,
+   "goal": "Talk about your room, belongings, and everyday objects around you.",
+   "context": "These words pair with 있어요/없어요, 주세요, 에, and simple adjective descriptions.",
+   "words": [
+    {
+     "hangul": "집",
+     "english": "home / house",
+     "romanization": "jip",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "집에 가요.",
+      "en": "I go home.",
+      "romanization": "jibe gayo."
+     }
+    },
+    {
+     "hangul": "방",
+     "english": "room",
+     "romanization": "bang",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "여기가 제 방이에요.",
+      "en": "This is my room.",
+      "romanization": "yeogiga je bangieyo."
+     }
+    },
+    {
+     "hangul": "문",
+     "english": "door",
+     "romanization": "mun",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "문 좀 닫아 주세요.",
+      "en": "Please close the door.",
+      "romanization": "mun jom dada juseyo."
+     }
+    },
+    {
+     "hangul": "창문",
+     "english": "window",
+     "romanization": "changmun",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "창문 좀 열어도 돼요?",
+      "en": "May I open the window?",
+      "romanization": "changmun jom yeoreodo dwaeyo?"
+     }
+    },
+    {
+     "hangul": "책상",
+     "english": "desk",
+     "romanization": "chaeksang",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "책상 위에 노트북이 있어요.",
+      "en": "There's a laptop on the desk.",
+      "romanization": "chaeksang wie noteubugi isseoyo."
+     }
+    },
+    {
+     "hangul": "의자",
+     "english": "chair",
+     "romanization": "uija",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "여기 의자에 앉으세요.",
+      "en": "Please have a seat on this chair.",
+      "romanization": "yeogi uijae anjeuseyo."
+     }
+    },
+    {
+     "hangul": "침대",
+     "english": "bed",
+     "romanization": "chimdae",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 침대에서 안 자고 바닥에서 자요.",
+      "en": "I don't sleep in a bed, I sleep on the floor.",
+      "romanization": "jeoneun chimdaeeseo an jago badageseo jayo."
+     }
+    },
+    {
+     "hangul": "옷",
+     "english": "clothes",
+     "romanization": "ot",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "오늘 뭐 입을까요?",
+      "en": "What should I wear today?",
+      "romanization": "oneul mwo ibeulkkayo?"
+     }
+    },
+    {
+     "hangul": "신발",
+     "english": "shoes",
+     "romanization": "sinbal",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "들어올 때 신발 벗어 주세요.",
+      "en": "Please take your shoes off when you come in.",
+      "romanization": "deureool ttae sinbal beoseo juseyo."
+     }
+    },
+    {
+     "hangul": "가방",
+     "english": "bag",
+     "romanization": "gabang",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "책을 가방에 넣었어요.",
+      "en": "I put the book into the bag.",
+      "romanization": "chaegeul gabange neoeosseoyo."
+     }
+    },
+    {
+     "hangul": "책",
+     "english": "book",
+     "romanization": "chaek",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "책을 읽어요.",
+      "en": "I read a book.",
+      "romanization": "chaegeul ilgeoyo."
+     }
+    },
+    {
+     "hangul": "펜",
+     "english": "pen",
+     "romanization": "pen",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "펜으로 이름을 써요.",
+      "en": "I write my name with a pen.",
+      "romanization": "peneuro ireumeul sseoyo."
+     }
+    },
+    {
+     "hangul": "휴대폰",
+     "english": "cellphone",
+     "romanization": "hyudaepon",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "휴대폰 배터리가 다 됐어요.",
+      "en": "My phone battery is dead.",
+      "romanization": "hyudaepon baeteoriga da dwaesseoyo."
+     }
+    },
+    {
+     "hangul": "컴퓨터",
+     "english": "computer",
+     "romanization": "keompyuteo",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "잠깐만요, 컴퓨터 좀 켤게요.",
+      "en": "One moment, let me turn on the computer.",
+      "romanization": "jamkkanmanyo, keompyuteo jom kyeolgeyo."
+     }
+    },
+    {
+     "hangul": "우산",
+     "english": "umbrella",
+     "romanization": "usan",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "비가 와요. 우산 있어요?",
+      "en": "It's raining. Do you have an umbrella?",
+      "romanization": "biga wayo. usan isseoyo?"
+     }
+    },
+    {
+     "hangul": "돈",
+     "english": "money",
+     "romanization": "don",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "돈이 있어요.",
+      "en": "I have money.",
+      "romanization": "doni isseoyo."
+     }
+    }
+   ]
+  },
+  {
+   "id": "pack-food-basic",
+   "title": "Food Basics",
+   "shortTitle": "Food",
+   "afterChapter": 7,
+   "goal": "Read menus and say simple food preferences or restrictions.",
+   "context": "Food words become useful immediately with 주세요, 먹어요, 마셔요, 맛있어요, and 못 먹어요.",
+   "words": [
+    {
+     "hangul": "밥",
+     "english": "cooked rice; a meal",
+     "romanization": "bap",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 아침에 밥을 먹어요.",
+      "en": "I eat rice in the morning.",
+      "romanization": "jeoneun achime babeul meogeoyo."
+     }
+    },
+    {
+     "hangul": "물",
+     "english": "water",
+     "romanization": "mul",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "물 주세요.",
+      "en": "Water, please.",
+      "romanization": "mul juseyo."
+     }
+    },
+    {
+     "hangul": "김치",
+     "english": "kimchi (fermented vegetable side dish)",
+     "romanization": "gimchi",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 김치를 정말 좋아해요.",
+      "en": "I really like kimchi.",
+      "romanization": "jeoneun gimchireul jeongmal joahaeyo."
+     }
+    },
+    {
+     "hangul": "고기",
+     "english": "meat (esp. pork or beef)",
+     "romanization": "gogi",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "오늘 저녁에 고기 먹고 싶어요.",
+      "en": "I want to eat meat tonight.",
+      "romanization": "oneul jeonyeoge gogi meokgo sipeoyo."
+     }
+    },
+    {
+     "hangul": "생선",
+     "english": "fish (as food)",
+     "romanization": "saengseon",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 생선을 자주 먹어요.",
+      "en": "I eat fish often.",
+      "romanization": "jeoneun saengseoneul jaju meogeoyo."
+     }
+    },
+    {
+     "hangul": "야채",
+     "english": "vegetables",
+     "romanization": "yachae",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 야채를 많이 먹어요.",
+      "en": "I eat a lot of vegetables.",
+      "romanization": "jeoneun yachaereul mani meogeoyo."
+     }
+    },
+    {
+     "hangul": "과일",
+     "english": "fruit",
+     "romanization": "gwail",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 과일을 매일 먹어요.",
+      "en": "I eat fruit every day.",
+      "romanization": "jeoneun gwaireul maeil meogeoyo."
+     }
+    },
+    {
+     "hangul": "빵",
+     "english": "bread (and baked goods generally)",
+     "romanization": "ppang",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 아침에 빵을 먹어요.",
+      "en": "I eat bread in the morning.",
+      "romanization": "jeoneun achime ppangeul meogeoyo."
+     }
+    },
+    {
+     "hangul": "우유",
+     "english": "milk (cow's milk)",
+     "romanization": "uyu",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 매일 우유를 마셔요.",
+      "en": "I drink milk every day.",
+      "romanization": "jeoneun maeil uyureul masyeoyo."
+     }
+    },
+    {
+     "hangul": "계란",
+     "english": "egg",
+     "romanization": "gyeran",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "계란 한 판에 얼마예요?",
+      "en": "How much is a tray of eggs?",
+      "romanization": "gyeran han pane eolmayeyo?"
+     }
+    },
+    {
+     "hangul": "커피",
+     "english": "coffee",
+     "romanization": "keopi",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "커피 주세요.",
+      "en": "Coffee, please.",
+      "romanization": "keopi juseyo."
+     }
+    },
+    {
+     "hangul": "차",
+     "english": "tea",
+     "romanization": "cha",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 아침에 차를 마셔요.",
+      "en": "I drink tea in the morning.",
+      "romanization": "jeoneun achime chareul masyeoyo."
+     }
+    },
+    {
+     "hangul": "맥주",
+     "english": "beer",
+     "romanization": "maekju",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "맥주 한 잔 어때요?",
+      "en": "How about a glass of beer?",
+      "romanization": "maekju han jan eottaeyo?"
+     }
+    },
+    {
+     "hangul": "소주",
+     "english": "soju",
+     "romanization": "soju",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "소주 한 병 주세요.",
+      "en": "One bottle of soju, please.",
+      "romanization": "soju han byeong juseyo."
+     }
+    },
+    {
+     "hangul": "음식",
+     "english": "food",
+     "romanization": "eumsik",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "한국 음식을 먹고 싶어요.",
+      "en": "I want to eat Korean food.",
+      "romanization": "hanguk eumsigeul meokgo sipeoyo."
+     }
+    },
+    {
+     "hangul": "음료수",
+     "english": "beverage",
+     "romanization": "eumnyosu",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "뭐 마실래요? 음료수 드릴까요?",
+      "en": "What would you like to drink? Shall I get you a drink?",
+      "romanization": "mwo masillaeyo? eumnyosu deurilkkayo?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "pack-colors",
+   "title": "Color Words",
+   "shortTitle": "Colors",
+   "afterChapter": 16,
+   "goal": "Describe objects by color in shopping, clothing, and everyday descriptions.",
+   "context": "Color nouns sit directly before the noun: 검은색 가방, 빨간색 우산. 까만색 is a vivid everyday synonym for black.",
+   "words": [
+    {
+     "hangul": "빨간색",
+     "english": "red",
+     "romanization": "ppalgansaek",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "이 사과는 빨간색이에요.",
+      "en": "This apple is red.",
+      "romanization": "i sagwaneun ppalgansaegieyo."
+     }
+    },
+    {
+     "hangul": "파란색",
+     "english": "blue",
+     "romanization": "paransaek",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "하늘이 파란색이에요.",
+      "en": "The sky is blue.",
+      "romanization": "haneuri paransaegieyo."
+     }
+    },
+    {
+     "hangul": "노란색",
+     "english": "yellow",
+     "romanization": "noransaek",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "이 꽃은 노란색이에요.",
+      "en": "This flower is yellow.",
+      "romanization": "i kkocheun noransaegieyo."
+     }
+    },
+    {
+     "hangul": "초록색",
+     "english": "green",
+     "romanization": "choroksaek",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 초록색을 좋아해요.",
+      "en": "I like green.",
+      "romanization": "jeoneun choroksaegeul joahaeyo."
+     }
+    },
+    {
+     "hangul": "검은색",
+     "english": "black",
+     "romanization": "geomeunsaek",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "이 가방은 검은색이에요.",
+      "en": "This bag is black.",
+      "romanization": "i gabangeun geomeunsaegieyo."
+     }
+    },
+    {
+     "hangul": "하얀색",
+     "english": "white",
+     "romanization": "hayansaek",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "겨울에 눈이 와서 세상이 하얀색이에요.",
+      "en": "It snowed in winter so the world is white.",
+      "romanization": "gyeoure nuni waseo sesangi hayansaegieyo."
+     }
+    },
+    {
+     "hangul": "갈색",
+     "english": "brown",
+     "romanization": "galsaek",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "머리를 갈색으로 염색했어요.",
+      "en": "I dyed my hair brown.",
+      "romanization": "meorireul galsaegeuro yeomsaekaesseoyo."
+     }
+    },
+    {
+     "hangul": "회색",
+     "english": "gray",
+     "romanization": "hoesaek",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "오늘 하늘이 회색이라 비 올 것 같아요.",
+      "en": "The sky is gray today, so it looks like it'll rain.",
+      "romanization": "oneul haneuri hoesaegira bi ol geot gatayo."
+     }
+    },
+    {
+     "hangul": "분홍색",
+     "english": "pink",
+     "romanization": "bunhongsaek",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "벚꽃이 분홍색이라서 진짜 예뻐요.",
+      "en": "The cherry blossoms are pink, so they're really pretty.",
+      "romanization": "beotkkochi bunhongsaegiraseo jinjja yeppeoyo."
+     }
+    },
+    {
+     "hangul": "보라색",
+     "english": "purple",
+     "romanization": "borasaek",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "저는 보라색을 제일 좋아해요.",
+      "en": "Purple is my favorite color.",
+      "romanization": "jeoneun borasaegeul jeil joahaeyo."
+     }
+    },
+    {
+     "hangul": "주황색",
+     "english": "orange (color)",
+     "romanization": "juhwangsaek",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "주황색 우산이 눈에 잘 띄어요.",
+      "en": "The orange umbrella stands out well.",
+      "romanization": "juhwangsaek usani nune jal ttuieoyo."
+     }
+    },
+    {
+     "hangul": "색깔",
+     "english": "color",
+     "romanization": "saekkkal",
+     "partOfSpeech": "noun",
+     "example": {
+      "ko": "무슨 색깔이에요?",
+      "en": "What color is it?",
+      "romanization": "museun saekkkarieyo?"
+     }
+    }
+   ]
+  },
+  {
+   "id": "pack-reactions-agree",
+   "title": "Agreeing & Understanding",
+   "shortTitle": "Agree",
+   "afterChapter": 2,
+   "order": 3,
+   "goal": "Show you're listening — half of a real conversation is reacting, not producing new sentences.",
+   "context": "These look interchangeable but are not: 맞아요 confirms a fact, 그러게요/그러니까요 agree with an opinion, 그렇군요 takes in something new.",
+   "words": [
+    {
+     "hangul": "맞아요",
+     "english": "That's right / You're right.",
+     "romanization": "majayo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 이 길로 가면 돼요? / B: 네, 맞아요.",
+      "en": "A: Do we go this way? / B: Yes, that's right.",
+      "romanization": "A: i gillo gamyeon dwaeyo? / B: ne, majayo."
+     }
+    },
+    {
+     "hangul": "그러게요",
+     "english": "Right? / exactly / I know, right — agreeing that you feel the same, often a bit helplessly.",
+     "romanization": "geureogeyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 오늘 진짜 덥다 / B: 그러게.",
+      "en": "A: It's really hot today / B: Right?",
+      "romanization": "A: oneul jinjja deopda / B: geureoge."
+     }
+    },
+    {
+     "hangul": "그러니까요",
+     "english": "Exactly / that's what I'm saying — emphatic agreement with someone's opinion or complaint.",
+     "romanization": "geureonikkayo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 요즘 배달비가 너무 비싸요 / B: 그러니까요. 음식값보다 더 나올 때도 있어요.",
+      "en": "A: Delivery fees are so expensive these days / B: Exactly. Sometimes it comes out higher than the food.",
+      "romanization": "A: yojeum baedalbiga neomu bissayo / B: geureonikkayo. eumsikgapsboda deo naol ttaedo isseoyo."
+     }
+    },
+    {
+     "hangul": "그렇군요",
+     "english": "I see / so that's how it is — calmly taking in information you've just been told.",
+     "romanization": "geureokunyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 이 건물은 주말엔 문을 닫아요 / B: 아, 그렇군요. 몰랐어요.",
+      "en": "A: This building closes on weekends / B: Ah, I see. I didn't know.",
+      "romanization": "A: i geonmureun jumaren muneul dadayo / B: a, geureokunyo. mollasseoyo."
+     }
+    },
+    {
+     "hangul": "저도요",
+     "english": "Me too / same here — saying that what they just said about themselves is true of you as well.",
+     "romanization": "jeodoyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 만나서 반가워요 / B: 저도요.",
+      "en": "A: Nice to meet you / B: You too.",
+      "romanization": "A: mannaseo bangawoyo / B: jeodoyo."
+     }
+    },
+    {
+     "hangul": "그런 것 같아요",
+     "english": "I think so / It seems that way.",
+     "romanization": "geureon geot gatayo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "오늘 비 올까요? — 그런 것 같아요. 아침부터 하늘이 어두웠거든요.",
+      "en": "Will it rain today? — Seems like it. The sky has been dark since morning.",
+      "romanization": "oneul bi olkkayo? — geureon geot gatayo. achimbuteo haneuri eoduwotgeodeunyo."
+     }
+    },
+    {
+     "hangul": "다행이네요",
+     "english": "Oh good / What a relief / I'm glad to hear that (relieved that things turned out okay)",
+     "romanization": "dahaengineyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 시험 통과했어요. B: 아, 다행이네요.",
+      "en": "A: I passed the exam. B: Oh, what a relief.",
+      "romanization": "A: siheom tonggwahaesseoyo. B: a, dahaengineyo."
+     }
+    },
+    {
+     "hangul": "잘됐네요",
+     "english": "Oh good, that worked out — reacting on the spot to a situation turning out well.",
+     "romanization": "jaldwaenneyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 다음 주에 재택근무 해도 된대요 / B: 잘됐네요! 출퇴근 시간 아끼겠어요.",
+      "en": "A: They said I can work from home next week / B: Oh, that's great! You'll save the commute.",
+      "romanization": "A: daeum jue jaetaekgeunmu haedo doendaeyo / B: jaldwaenneyo! chultoegeun sigan akkigesseoyo."
+     }
+    },
+    {
+     "hangul": "그렇죠",
+     "english": "That's right, isn't it / Exactly.",
+     "romanization": "geureochyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "요즘 진짜 피곤하죠? — 그렇죠, 요즘 일이 너무 많아요.",
+      "en": "It's really exhausting lately, right? — Exactly, there's just too much work.",
+      "romanization": "yojeum jinjja pigonhajyo? — geureochyo, yojeum iri neomu manayo."
+     }
+    },
+    {
+     "hangul": "알겠어요",
+     "english": "I understand / okay.",
+     "romanization": "algesseoyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "알겠어요.",
+      "en": "I understand.",
+      "romanization": "algesseoyo."
+     }
+    }
+   ]
+  },
+  {
+   "id": "pack-reactions-surprise",
+   "title": "Reacting & Surprise",
+   "shortTitle": "React",
+   "afterChapter": 7,
+   "order": 4,
+   "goal": "React like a person, not a textbook — the difference between a chat that dies and one that keeps going.",
+   "context": "진짜요? and 정말요? both mean 'really?' — 진짜요? is warmer, 정말요? is the safe neutral pick.",
+   "words": [
+    {
+     "hangul": "진짜요?",
+     "english": "Really?! / for real? — surprised, more colloquial and emotional than 정말요.",
+     "romanization": "jinjjayo?",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 나 로또 됐어 / B: 진짜?!",
+      "en": "A: I won the lottery / B: For real?!",
+      "romanization": "A: na rotto dwaesseo / B: jinjja?!"
+     }
+    },
+    {
+     "hangul": "정말요?",
+     "english": "Really? — a polite check that you heard right, mild surprise or interest.",
+     "romanization": "jeongmaryo?",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 나 합격했어 / B: 정말?!",
+      "en": "A: I passed / B: Really?!",
+      "romanization": "A: na hapgyeokaesseo / B: jeongmal?!"
+     }
+    },
+    {
+     "hangul": "아 그래요?",
+     "english": "Oh really? / is that so? — light surprise plus a nudge for the other person to tell you more.",
+     "romanization": "a geuraeyo?",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 저 그 영화 벌써 봤어요 / B: 아 그래요? 어땠어요?",
+      "en": "A: I already saw that movie / B: Oh really? How was it?",
+      "romanization": "A: jeo geu yeonghwa beolsseo bwasseoyo / B: a geuraeyo? eottaesseoyo?"
+     }
+    },
+    {
+     "hangul": "헐",
+     "english": "Whoa / OMG / no way — a gut reaction of shock, disbelief, or mild dismay.",
+     "romanization": "heol",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 나 폰 잃어버렸어 / B: 헐.",
+      "en": "A: I lost my phone / B: Whoa.",
+      "romanization": "A: na pon ireobeoryeosseo / B: heol."
+     }
+    },
+    {
+     "hangul": "대박",
+     "english": "Awesome! / wow / no way — a big reaction to something amazing, shocking, or extreme.",
+     "romanization": "daebak",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 나 승진했어 / B: 대박!",
+      "en": "A: I got promoted / B: Awesome!",
+      "romanization": "A: na seungjinhaesseo / B: daebak!"
+     }
+    },
+    {
+     "hangul": "설마",
+     "english": "surely not; no way",
+     "romanization": "seolma",
+     "partOfSpeech": "adverb",
+     "example": {
+      "ko": "설마 벌써 다 팔렸어요?",
+      "en": "No way, is it already sold out?",
+      "romanization": "seolma beolsseo da pallyeosseoyo?"
+     }
+    },
+    {
+     "hangul": "어머",
+     "english": "Oh my / oh! — a quick gasp of surprise, more neutral and usable than 헐.",
+     "romanization": "eomeo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: (컵을 떨어뜨림) / B: 어머!",
+      "en": "A: (drops a cup) / B: Oh!",
+      "romanization": "A: (keobeul tteoreotteurim) / B: eomeo!"
+     }
+    },
+    {
+     "hangul": "아 맞다",
+     "english": "Oh right! — the sound of a forgotten thing suddenly surfacing in your own memory.",
+     "romanization": "a matda",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 내일 몇 시에 만나요? / B: 아 맞다, 저 내일 병원 가야 돼요.",
+      "en": "A: What time should we meet tomorrow? / B: Oh right — I have to go to the hospital tomorrow.",
+      "romanization": "A: naeil myeot sie mannayo? / B: a matda, jeo naeil byeongwon gaya dwaeyo."
+     }
+    },
+    {
+     "hangul": "말도 안 돼",
+     "english": "No way / that's ridiculous / unbelievable — strong disbelief at something absurd or shocking.",
+     "romanization": "maldo an dwae",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 그 사람이 1등이래 / B: 말도 안 돼.",
+      "en": "A: They say that person came first / B: No way.",
+      "romanization": "A: geu sarami 1deungirae / B: maldo an dwae."
+     }
+    },
+    {
+     "hangul": "어떡해요",
+     "english": "Oh no, what do we do",
+     "romanization": "eotteokaeyo",
+     "partOfSpeech": "expression",
+     "example": {
+      "ko": "A: 지갑을 잃어버렸어요. / B: 어머, 어떡해요!",
+      "en": "A: I lost my wallet. / B: Oh my, that's awful!",
+      "romanization": "A: jigabeul ireobeoryeosseoyo. / B: eomeo, eotteokaeyo!"
+     }
+    }
+   ]
+  }
+ ]
+}

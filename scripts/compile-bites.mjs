@@ -1,7 +1,7 @@
 import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { compileChapter } from './lib/compiler.mjs';
+import { compileChapter, compileSnack } from './lib/compiler.mjs';
 import { chapterLevel } from '../src/lib/levels.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -9,6 +9,8 @@ const srcDir = join(root, 'data', 'chapters');
 const outFile = join(root, 'src', 'lib', 'bites.json');
 const indexFile = join(root, 'src', 'lib', 'bites-index.json');
 const chunksDir = join(root, 'src', 'lib', 'bites');
+const packsFile = join(root, 'data', 'packs.json');
+const snacksFile = join(root, 'src', 'lib', 'snacks.json');
 
 function firstWord(bite) {
   const guess = bite.cards.find((card) => card.kind === 'guess');
@@ -24,6 +26,8 @@ const chapters = files.map((f, i) => {
   const raw = JSON.parse(readFileSync(join(srcDir, f), 'utf8'));
   return compileChapter(raw, i + 1, overrides);
 });
+const packs = JSON.parse(readFileSync(packsFile, 'utf8')).packs;
+const snacks = packs.map((pack) => compileSnack(pack, overrides));
 
 // The moment a learner has just guessed a word is the moment its nuance
 // lands — attach it to the guess card so the reveal can teach, not just
@@ -44,6 +48,15 @@ if (existsSync(wordbookPath)) {
         card.word.nuance = w.nuance;
         nuanceAttached += 1;
       }
+    }
+  }
+  for (const snack of snacks) {
+    for (const card of snack.cards) {
+      if (card.kind !== 'guess') continue;
+      const w = byKo.get(card.word.ko);
+      if (!w?.nuance || card.word.nuance) continue;
+      card.word.nuance = w.nuance;
+      nuanceAttached += 1;
     }
   }
 }
@@ -67,7 +80,22 @@ const indexChapters = chapters.map((chapter) => ({
     firstWord: firstWord(bite),
   })),
 }));
-writeFileSync(indexFile, JSON.stringify({ generatedFrom: files.length + ' chapters', chapters: indexChapters }, null, 1));
+const indexSnacks = snacks.map((snack) => ({
+  id: snack.id,
+  packId: snack.packId,
+  title: snack.title,
+  shortTitle: snack.shortTitle,
+  afterChapter: snack.afterChapter,
+  level: snack.level,
+  cardCount: snack.cardCount,
+  canDo: snack.canDo,
+}));
+writeFileSync(indexFile, JSON.stringify({
+  generatedFrom: `${files.length} chapters + ${snacks.length} snacks`,
+  chapters: indexChapters,
+  snacks: indexSnacks,
+}, null, 1));
+writeFileSync(snacksFile, JSON.stringify({ generatedFrom: packs.length + ' packs', snacks }, null, 1));
 
 mkdirSync(chunksDir, { recursive: true });
 const chunkLevels = {

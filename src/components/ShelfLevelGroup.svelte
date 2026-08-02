@@ -5,6 +5,7 @@
   export let doneMap = {};
   export let onToggle = () => {};
   export let onPlay = () => {};
+  export let onPlaySnack = () => {};
   export let idPrefix = 'shelf';
 
   let openChapterId = null;
@@ -86,6 +87,16 @@
             </div>
           {/if}
         </div>
+        {#each group.snacks.filter((snack) => snack.afterChapter === chapter.number) as snack (snack.id)}
+          <button class="snack" data-snack-id={snack.id} on:click={() => onPlaySnack(snack)}>
+            <span class="snack-icon" aria-hidden="true">🍪</span>
+            <span class="snack-main">
+              <strong>간식 · Snack — {snack.title}</strong>
+              <span>{snack.cardCount}단어 · {snack.cardCount} words</span>
+            </span>
+            <span class="snack-state">{doneMap[snack.id] ? '완료 · Done' : '▸'}</span>
+          </button>
+        {/each}
       {/each}
     </div>
   {/if}
@@ -142,6 +153,16 @@
   .bite-title { flex: 1; min-width: 0; overflow: hidden; font-size: 13.5px; font-weight: 700;
     text-overflow: ellipsis; white-space: nowrap; }
   .bite-state { flex: none; color: var(--ink-3); font-size: 12px; font-weight: 800; }
+  .snack { width: 100%; min-height: 52px; display: flex; align-items: center; gap: 10px; padding: 10px 12px;
+    border: 1px dashed var(--line-2); border-radius: var(--r-chip); background: var(--gold-soft); text-align: left;
+    transition: border-color .15s var(--ease), transform .09s var(--ease); }
+  .snack:hover { border-color: var(--gold); }
+  .snack:active { transform: scale(.99); }
+  .snack-icon { flex: none; font-size: 20px; }
+  .snack-main { flex: 1; min-width: 0; display: grid; gap: 1px; }
+  .snack-main strong { font-size: 13.5px; font-weight: 850; word-break: keep-all; }
+  .snack-main span { color: var(--ink-3); font-size: 11.5px; }
+  .snack-state { flex: none; color: var(--ink-3); font-size: 11.5px; font-weight: 800; }
 
   @media (max-width: 420px) {
     .level-head { align-items: flex-start; }

@@ -1,5 +1,5 @@
 {
- "generatedFrom": "65 chapters",
+ "generatedFrom": "65 chapters + 12 snacks",
  "chapters": [
   {
    "id": "chapter-01",
@@ -5602,6 +5602,128 @@
      "firstWord": "다 걸어요"
     }
    ]
+  }
+ ],
+ "snacks": [
+  {
+   "id": "snack-survival-basics",
+   "packId": "pack-survival-basics",
+   "title": "Survival Basics",
+   "shortTitle": "Survival",
+   "afterChapter": 1,
+   "level": "A1",
+   "cardCount": 12,
+   "canDo": "Get through the first day politely before you can build long sentences."
+  },
+  {
+   "id": "snack-survival-help",
+   "packId": "pack-survival-help",
+   "title": "Survival Help",
+   "shortTitle": "Help",
+   "afterChapter": 2,
+   "level": "A1",
+   "cardCount": 10,
+   "canDo": "Stay calm when you do not understand, need help, or need one practical sentence fast."
+  },
+  {
+   "id": "snack-numbers",
+   "packId": "pack-numbers",
+   "title": "Numbers Starter",
+   "shortTitle": "Numbers",
+   "afterChapter": 3,
+   "level": "A1",
+   "cardCount": 23,
+   "canDo": "Read prices, counts, simple dates, and clock-hour basics without waiting for a full number chapter."
+  },
+  {
+   "id": "snack-family",
+   "packId": "pack-family",
+   "title": "Family Words",
+   "shortTitle": "Family",
+   "afterChapter": 2,
+   "level": "A1",
+   "cardCount": 14,
+   "canDo": "Name close people naturally when introducing yourself or asking about someone."
+  },
+  {
+   "id": "snack-body",
+   "packId": "pack-body",
+   "title": "Body Basics",
+   "shortTitle": "Body",
+   "afterChapter": 3,
+   "level": "A1",
+   "cardCount": 16,
+   "canDo": "Say what hurts, describe people, and understand basic health phrases."
+  },
+  {
+   "id": "snack-time",
+   "packId": "pack-time",
+   "title": "Time And Days",
+   "shortTitle": "Time",
+   "afterChapter": 5,
+   "level": "A1",
+   "cardCount": 18,
+   "canDo": "Understand today, tomorrow, weekdays, and simple appointment timing."
+  },
+  {
+   "id": "snack-people-places",
+   "packId": "pack-people-places",
+   "title": "People And Places",
+   "shortTitle": "People + Places",
+   "afterChapter": 4,
+   "level": "A1",
+   "cardCount": 16,
+   "canDo": "Recognize the people and places that appear in first conversations and errands."
+  },
+  {
+   "id": "snack-home-things",
+   "packId": "pack-home-things",
+   "title": "Home And Things",
+   "shortTitle": "Home Things",
+   "afterChapter": 6,
+   "level": "A1",
+   "cardCount": 16,
+   "canDo": "Talk about your room, belongings, and everyday objects around you."
+  },
+  {
+   "id": "snack-food-basic",
+   "packId": "pack-food-basic",
+   "title": "Food Basics",
+   "shortTitle": "Food",
+   "afterChapter": 7,
+   "level": "A1",
+   "cardCount": 16,
+   "canDo": "Read menus and say simple food preferences or restrictions."
+  },
+  {
+   "id": "snack-colors",
+   "packId": "pack-colors",
+   "title": "Color Words",
+   "shortTitle": "Colors",
+   "afterChapter": 16,
+   "level": "A2",
+   "cardCount": 12,
+   "canDo": "Describe objects by color in shopping, clothing, and everyday descriptions."
+  },
+  {
+   "id": "snack-reactions-agree",
+   "packId": "pack-reactions-agree",
+   "title": "Agreeing & Understanding",
+   "shortTitle": "Agree",
+   "afterChapter": 2,
+   "level": "A1",
+   "cardCount": 10,
+   "canDo": "Show you're listening — half of a real conversation is reacting, not producing new sentences."
+  },
+  {
+   "id": "snack-reactions-surprise",
+   "packId": "pack-reactions-surprise",
+   "title": "Reacting & Surprise",
+   "shortTitle": "React",
+   "afterChapter": 7,
+   "level": "A1",
+   "cardCount": 10,
+   "canDo": "React like a person, not a textbook — the difference between a chat that dies and one that keeps going."
   }
  ]
 }

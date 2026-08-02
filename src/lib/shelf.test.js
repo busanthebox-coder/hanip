@@ -71,6 +71,22 @@ describe('shelf level grouping', () => {
     ]);
   });
 
+  it('places snacks after their chapter and includes them in level progress', () => {
+    const snacks = [
+      { id: 'snack-survival', afterChapter: 1, level: 'A1', title: 'Survival', cardCount: 4 },
+      { id: 'snack-cafe', afterChapter: 12, level: 'A2', title: 'Cafe', cardCount: 5 },
+    ];
+    const groups = buildShelfGroups(chapters, { 'snack-survival': 1 }, snacks);
+    const a1 = groups.find((group) => group.id === 'A1');
+    const a2 = groups.find((group) => group.id === 'A2');
+
+    expect(a1.snacks).toEqual([snacks[0]]);
+    expect(a1.total).toBe(2);
+    expect(a1.done).toBe(1);
+    expect(a2.snacks).toEqual([snacks[1]]);
+    expect(a2.total).toBe(2);
+  });
+
   it('opens only the level containing the next unfinished bite by default', () => {
     expect(defaultOpenLevels(chapters, {})).toEqual(['A1']);
     expect(defaultOpenLevels(chapters, { 'chapter-01-b1': 1 })).toEqual(['A2']);
