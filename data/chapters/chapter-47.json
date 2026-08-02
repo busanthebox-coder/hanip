@@ -1,0 +1,747 @@
+{
+  "id": "chapter-47",
+  "hook": {
+    "situation": "You are introducing your family to someone outside the family and then talking about parents, grandparents, and siblings without sounding too blunt or using the wrong sibling word.",
+    "objectives": [
+      "Describe family size with 저희 가족은 ~ 명이에요.",
+      "Choose 형, 오빠, 누나, and 언니 from the speaker's point of view.",
+      "Use 께서 with honorific verb forms when parents, grandparents, teachers, or elders are the subject."
+    ],
+    "whyItMatters": "Family vocabulary in Korean is not just a list of relatives. The word you choose tells the listener your relationship, your gendered point of view, and your level of respect. That is why the vocabulary must be tied to real family-introduction scenes."
+  },
+  "grammarNotes": [
+    {
+      "title": "저희 가족은 ~ 명이에요 — Saying How Many People Are in Your Family",
+      "func": "To tell someone how big your family is, politely. 저희 is the humble form of 우리 (\"our\"), used to be modest in front of a listener, and 명 is the counter for people. You name the group (저희 가족은 = \"my family\"), then give the count with a native-Korean number + 명 + 이에요.",
+      "formTable": [
+        {
+          "when": "Counting people, use a native-Korean number + 명",
+          "add": "한/두/세/네/다섯… + 명",
+          "ex": "네 명 (four people), 다섯 명 (five people)"
+        },
+        {
+          "when": "Numbers 1–4 change shape right before a counter",
+          "add": "하나→한, 둘→두, 셋→세, 넷→네",
+          "ex": "두 명, 세 명, 네 명 (NOT 둘 명 / 셋 명)"
+        },
+        {
+          "when": "Closing the sentence after 명",
+          "add": "명 + 이에요 (명 ends in a consonant, so 이에요)",
+          "ex": "저희 가족은 네 명이에요."
+        }
+      ],
+      "examples": [
+        {
+          "ko": "저희 가족은 네 명이에요.",
+          "romanization": "jeohui gajogeun ne myeong-ieyo.",
+          "en": "There are four people in my family.",
+          "note": "저희 (humble \"our\") + 명 is the standard polite way to give family size; the native number 네 is used before 명."
+        },
+        {
+          "ko": "저희 가족은 다섯 명이에요. 부모님, 형, 누나, 그리고 저요.",
+          "romanization": "jeohui gajogeun daseot myeong-ieyo. bumonim, hyeong, nuna, geurigo jeoyo.",
+          "en": "There are five people in my family: my parents, older brother, older sister, and me.",
+          "note": "Shows how to break the number down into members; 저요 (\"and me\") naturally closes the list."
+        },
+        {
+          "ko": "우리 가족은 세 명이에요.",
+          "romanization": "uri gajogeun se myeong-ieyo.",
+          "en": "There are three people in my family.",
+          "note": "우리 (plain \"our\") is fine with friends; 저희 is the more polite choice with strangers or elders."
+        },
+        {
+          "ko": "가족이 몇 명이에요?",
+          "romanization": "gajogi myeot myeong-ieyo?",
+          "en": "How many people are in your family?",
+          "note": "몇 명 (\"how many people?\") is the question your answer responds to."
+        }
+      ],
+      "keyPoint": {
+        "label": "명 vs. 분 for counting people",
+        "body": "명 is the neutral people-counter and is correct for your own family: 저희 가족은 네 명이에요. When you respectfully count other people (elders, guests), use 분 instead: 손님 세 분 (three guests). You always count your OWN family with 명, never 분, because you don't elevate your own in-group when speaking to others."
+      },
+      "pronunciation": "가족은 links across the 받침: 가족 + 은 → [가조근]. The same happens in 가족이 → [가조기]. The final ㄱ of 가족 slides onto the following vowel.",
+      "drill": {
+        "instruction": "Say your family size. Fill in the native number that matches the count in parentheses, keeping 명이에요.",
+        "model": "(3) → 저희 가족은 세 명이에요.",
+        "items": [
+          "(4) 저희 가족은 ___ 명이에요.",
+          "(2) 저희 가족은 ___ 명이에요.",
+          "(5) 저희 가족은 ___ 명이에요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "저희 가족은 넷 명이에요.",
+        "right": "저희 가족은 네 명이에요.",
+        "explanation": "Native numbers 1–4 take a special shortened shape before a counter: 하나→한, 둘→두, 셋→세, 넷→네. English speakers tend to keep the standalone form (넷) and say 넷 명, but before 명 it must become 네 명."
+      }
+    },
+    {
+      "title": "형 / 오빠 / 누나 / 언니 — Older-Sibling Words That Depend on YOUR Gender",
+      "func": "To name an older brother or older sister. Korean has no single word for \"older brother\" or \"older sister\" — the word you pick depends on whether YOU (the speaker) are male or female. A man and a woman use completely different words for the very same person.",
+      "formTable": [
+        {
+          "when": "A male speaker's older brother",
+          "add": "형",
+          "ex": "(남자가) 우리 형 (my older brother)"
+        },
+        {
+          "when": "A female speaker's older brother",
+          "add": "오빠",
+          "ex": "(여자가) 우리 오빠 (my older brother)"
+        },
+        {
+          "when": "A male speaker's older sister",
+          "add": "누나",
+          "ex": "(남자가) 우리 누나 (my older sister)"
+        },
+        {
+          "when": "A female speaker's older sister",
+          "add": "언니",
+          "ex": "(여자가) 우리 언니 (my older sister)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "(남자) 우리 형은 회사에 다녀요.",
+          "romanization": "(namja) uri hyeong-eun hoesa-e danyeoyo.",
+          "en": "(male speaker) My older brother works at a company.",
+          "note": "A boy calls his older brother 형; 오빠 would be wrong here for a male speaker."
+        },
+        {
+          "ko": "(여자) 우리 오빠는 키가 커요.",
+          "romanization": "(yeoja) uri oppa-neun kiga keoyo.",
+          "en": "(female speaker) My older brother is tall.",
+          "note": "A girl calls her older brother 오빠 — same person, different word from a boy's 형."
+        },
+        {
+          "ko": "(남자) 누나가 두 명 있어요.",
+          "romanization": "(namja) nuna-ga du myeong isseoyo.",
+          "en": "(male speaker) I have two older sisters.",
+          "note": "A boy's older sister is 누나; the counter 명 is used, with 두 (not 둘) before it."
+        },
+        {
+          "ko": "(여자) 언니랑 같이 살아요.",
+          "romanization": "(yeoja) eonni-rang gachi sarayo.",
+          "en": "(female speaker) I live with my older sister.",
+          "note": "A girl's older sister is 언니; ~랑 (\"with\") is common in casual talk about family."
+        }
+      ],
+      "keyPoint": {
+        "label": "The word encodes the SPEAKER's gender, not the sibling's",
+        "body": "Picture a 2×2 grid. Older brother: 형 (said by a male) vs. 오빠 (said by a female). Older sister: 누나 (said by a male) vs. 언니 (said by a female). The same older brother is 형 to his younger brother and 오빠 to his younger sister at the same time. Younger siblings have no gendered split — they are just 동생 (남동생 = younger brother, 여동생 = younger sister)."
+      },
+      "pronunciation": "오빠's ㅃ is a tense, slightly held stop. 언니 → [언니] keeps both ㄴ sounds clear. 형은 → [형은], with the ㅇ (ng) carrying over softly; no tensing here.",
+      "drill": {
+        "instruction": "Choose the correct older-sibling word for the speaker's gender given in parentheses.",
+        "model": "(female, older brother) → 오빠",
+        "items": [
+          "(male, older brother) → 우리 ___은/는 의사예요.",
+          "(female, older sister) → 우리 ___이/가 요리해요.",
+          "(male, older sister) → 우리 ___은/는 학생이에요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "(a male speaker) 우리 오빠는 키가 커요.",
+        "right": "(a male speaker) 우리 형은 키가 커요.",
+        "explanation": "English has one word, \"older brother,\" so learners grab whichever Korean word they heard first — often 오빠 from K-pop. But 오빠 is only for FEMALE speakers. A male speaker must say 형. Always ask first: who is talking, a man or a woman?"
+      }
+    },
+    {
+      "title": "부모님 / 아버지 / 어머니 — Respectful Words for Parents",
+      "func": "To talk about your parents respectfully. These are the polite nouns for family elders. 부모님 = \"parents\" (with the honorific suffix ~님), 아버지 = \"father,\" 어머니 = \"mother.\" They contrast with the casual 아빠 (dad) and 엄마 (mom) that children use at home.",
+      "formTable": [
+        {
+          "when": "Both parents together, respectfully",
+          "add": "부모 + 님 (honorific suffix)",
+          "ex": "부모님 (one's parents)"
+        },
+        {
+          "when": "Father — respectful vs. casual",
+          "add": "아버지 (respectful) / 아빠 (casual)",
+          "ex": "저희 아버지 vs. 우리 아빠"
+        },
+        {
+          "when": "Mother — respectful vs. casual",
+          "add": "어머니 (respectful) / 엄마 (casual)",
+          "ex": "저희 어머니 vs. 우리 엄마"
+        },
+        {
+          "when": "Someone else's parents (extra polite)",
+          "add": "아버님 / 어머님 (add ~님)",
+          "ex": "친구 어머님 (a friend's mother)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "저희 부모님은 부산에 사세요.",
+          "romanization": "jeohui bumonim-eun busan-e saseyo.",
+          "en": "My parents live in Busan.",
+          "note": "부모님 + the honorific verb 사세요 (from 살다) elevate the parents — the natural pairing for elders."
+        },
+        {
+          "ko": "저희 아버지는 선생님이세요.",
+          "romanization": "jeohui abeoji-neun seonsaengnim-iseyo.",
+          "en": "My father is a teacher.",
+          "note": "아버지 (not 아빠) is the respectful choice when speaking to people outside the family; ~세요 honors him."
+        },
+        {
+          "ko": "어머니께서 김치를 만드세요.",
+          "romanization": "eomeoni-kkeseo gimchi-reul mandeuseyo.",
+          "en": "My mother makes kimchi.",
+          "note": "어머니 pairs naturally with the honorific subject marker 께서 and 만드세요 (from 만들다)."
+        },
+        {
+          "ko": "아빠, 우리 어디 가요?",
+          "romanization": "appa, uri eodi gayo?",
+          "en": "Dad, where are we going?",
+          "note": "A child speaking straight to their own father at home uses casual 아빠 — natural in-family address, unlike the formal 아버지."
+        }
+      ],
+      "keyPoint": {
+        "label": "아버지/어머니 (respectful) vs. 아빠/엄마 (casual)",
+        "body": "Use 아버지/어머니 when you describe your parents TO other people, in writing, or in any polite setting — they show respect. Use 아빠/엄마 to ADDRESS your own parents at home or among close family, like English \"Dad/Mom\" vs. \"father/mother.\" 부모님 always carries ~님 and has no casual short form."
+      },
+      "pronunciation": "부모님은 links the 받침: 부모님 + 은 → [부모니믄], the ㅁ carrying onto 은. 선생님이세요 → [선생니미세요] in the same way.",
+      "drill": {
+        "instruction": "Replace the casual word with the respectful word to make each sentence polite for outsiders.",
+        "model": "우리 아빠는 회사원이에요. → 저희 아버지는 회사원이세요.",
+        "items": [
+          "우리 엄마는 간호사예요. → 저희 ___는 간호사세요.",
+          "우리 아빠는 운동을 좋아해요. → 저희 ___는 운동을 좋아하세요.",
+          "우리 엄마 아빠는 집에 있어요. → 저희 ___은 집에 계세요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "저희 엄마는 의사예요. (in a polite self-introduction)",
+        "right": "저희 어머니는 의사세요.",
+        "explanation": "English uses \"my mom\" comfortably even in semi-formal speech, so learners say 엄마 everywhere. In Korean, 엄마/아빠 sound childish when you introduce your family to strangers or elders. Switch to 어머니/아버지 (and 부모님 with ~님) to be polite."
+      }
+    },
+    {
+      "title": "N께서 V-(으)시- — Honoring a Family Elder Who Does the Action",
+      "func": "To honor the person doing the action — usually a family elder like a parent or grandparent. Two pieces work together: 께서 replaces the subject marker 이/가 (or 은/는) to lift up the subject, and the verb takes the honorific infix ~(으)시~, which surfaces as ~세요/~으세요 in polite speech.",
+      "formTable": [
+        {
+          "when": "Marking an honored subject",
+          "add": "이/가 → 께서 (은/는 → 께서는)",
+          "ex": "아버지가 → 아버지께서"
+        },
+        {
+          "when": "Verb stem ends in a vowel + honorific",
+          "add": "stem + ~세요",
+          "ex": "가다 → 가세요, 오다 → 오세요"
+        },
+        {
+          "when": "Verb stem ends in a consonant + honorific",
+          "add": "stem + ~으세요",
+          "ex": "읽다 → 읽으세요, 앉다 → 앉으세요"
+        },
+        {
+          "when": "Special honorific verbs (must be memorized)",
+          "add": "있다→계시다, 먹다→드시다/잡수시다, 자다→주무시다",
+          "ex": "할머니께서 주무세요 (Grandma is sleeping)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "할아버지께서 신문을 읽으세요.",
+          "romanization": "harabeoji-kkeseo sinmun-eul ilgeuseyo.",
+          "en": "My grandfather reads the newspaper.",
+          "note": "할아버지께서 marks the honored subject; 읽다 (consonant stem) → 읽으세요 with the ~으세요 form."
+        },
+        {
+          "ko": "어머니께서 방에 계세요.",
+          "romanization": "eomeoni-kkeseo bang-e gyeseyo.",
+          "en": "My mother is in the room.",
+          "note": "있다 has the special honorific 계시다, not 있으세요 — use 계세요 for an elder's location/presence."
+        },
+        {
+          "ko": "아버지께서 저녁을 드세요.",
+          "romanization": "abeoji-kkeseo jeonyeok-eul deuseyo.",
+          "en": "My father is eating dinner.",
+          "note": "드시다 → 드세요 is the conventional lexical honorific of 먹다. 먹으세요 also contains the honorific -(으)시-, but 드세요 is the more respectful default in this family context."
+        },
+        {
+          "ko": "할머니께서 일찍 주무세요.",
+          "romanization": "halmeoni-kkeseo iljjik jumuseyo.",
+          "en": "My grandmother goes to bed early.",
+          "note": "자다 becomes the honorific 주무시다 → 주무세요; a fully irregular special form to memorize."
+        }
+      ],
+      "keyPoint": {
+        "label": "Honor the subject in the verb",
+        "body": "The verb ending ~(으)시~ is the core way to honor the person doing the action. The honorific subject marker 께서 often accompanies it in careful speech, while ordinary 이/가 can also appear with an honorific verb depending on context. You can be humble about yourself with 저희 while honoring an elder: 저희 어머니가 만드세요 and 저희 어머니께서 만드세요 are both possible."
+      },
+      "pronunciation": "읽으세요 → [일그세요]: the ㄺ cluster splits, ㄱ moving onto the 으. 계세요 → [게세요] in casual speech (the ㅖ often flattens to ㅔ). 께서 keeps its tense ㄲ at the start.",
+      "drill": {
+        "instruction": "Rewrite each plain sentence to honor the elder: change 이/가 to 께서 and put the verb in the honorific ~(으)세요 form (watch for special verbs).",
+        "model": "아버지가 신문을 읽어요. → 아버지께서 신문을 읽으세요.",
+        "items": [
+          "어머니가 방에 있어요. → 어머니___ 방에 ___.",
+          "할아버지가 저녁을 먹어요. → 할아버지___ 저녁을 ___.",
+          "할머니가 일찍 자요. → 할머니___ 일찍 ___."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "아버지께서 저녁을 먹어요.",
+        "right": "아버지께서 저녁을 드세요.",
+        "explanation": "Learners may add 께서 but leave the verb plain. The verb should honor the elder too, and conventional lexical honorifics such as 드시다, 계시다, and 주무시다 are the natural choices in careful family descriptions."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "저희",
+      "romanization": "jeohui",
+      "english": "our / my (humble, polite)",
+      "partOfSpeech": "pronoun",
+      "exampleSentence": {
+        "ko": "저희 가족은 네 명이에요.",
+        "en": "There are four people in my family.",
+        "note": "Core word for polite family introductions."
+      },
+      "collocations": [
+        "저희 가족",
+        "저희 부모님",
+        "저희 집"
+      ]
+    },
+    {
+      "hangul": "가족",
+      "romanization": "gajok",
+      "english": "family",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "가족이 몇 명이에요?",
+        "en": "How many people are in your family?",
+        "note": "Pairs with 명 for family size."
+      },
+      "collocations": [
+        "저희 가족",
+        "가족이 몇 명",
+        "가족 사진"
+      ]
+    },
+    {
+      "hangul": "명",
+      "romanization": "myeong",
+      "english": "counter for people",
+      "partOfSpeech": "counter",
+      "exampleSentence": {
+        "ko": "저희 가족은 다섯 명이에요.",
+        "en": "There are five people in my family.",
+        "note": "People take 명, not 개."
+      },
+      "nuance": "명 is the neutral people counter. In everyday family counts use native-number forms such as 한 명, 두 명, 세 명, and 네 명; use 분 when respectfully counting other people in an appropriate context.",
+      "collocations": [
+        "한 명",
+        "네 명",
+        "몇 명"
+      ]
+    },
+    {
+      "hangul": "부모님",
+      "romanization": "bumonim",
+      "english": "parents",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "부모님께서도 결혼식에 오세요.",
+        "en": "My parents are coming to the wedding too.",
+        "note": "Respected family noun plus 께서."
+      },
+      "collocations": [
+        "저희 부모님",
+        "부모님께서",
+        "부모님하고"
+      ]
+    },
+    {
+      "hangul": "아버지",
+      "romanization": "abeoji",
+      "english": "father",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "아버지께서도 오세요.",
+        "en": "My father is coming too.",
+        "note": "Use 아버지 in polite introductions."
+      },
+      "collocations": [
+        "아버지께서",
+        "아버지는",
+        "저희 아버지"
+      ]
+    },
+    {
+      "hangul": "어머니",
+      "romanization": "eomeoni",
+      "english": "mother",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "어머니께서 오셨어요.",
+        "en": "My mother came.",
+        "note": "Use 어머니 in polite introductions."
+      },
+      "collocations": [
+        "어머니께서",
+        "어머니는",
+        "저희 어머니"
+      ]
+    },
+    {
+      "hangul": "형",
+      "romanization": "hyeong",
+      "english": "older brother (male speaker)",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "저는 형이 한 명 있어요.",
+        "en": "I have one older brother.",
+        "note": "Used by a male speaker."
+      },
+      "collocations": [
+        "형이 있어요",
+        "우리 형",
+        "형이라고 해요"
+      ]
+    },
+    {
+      "hangul": "오빠",
+      "romanization": "oppa",
+      "english": "older brother (female speaker)",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "저는 오빠가 한 명 있어요.",
+        "en": "I have one older brother.",
+        "note": "Used by a female speaker."
+      },
+      "collocations": [
+        "오빠가 있어요",
+        "우리 오빠",
+        "오빠라고 해요"
+      ]
+    },
+    {
+      "hangul": "누나",
+      "romanization": "nuna",
+      "english": "older sister (male speaker)",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "저는 누나가 한 명 있어요.",
+        "en": "I have one older sister.",
+        "note": "Used by a male speaker."
+      },
+      "collocations": [
+        "누나가 있어요",
+        "우리 누나",
+        "누나라고 해요"
+      ]
+    },
+    {
+      "hangul": "언니",
+      "romanization": "eonni",
+      "english": "older sister (female speaker)",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "저는 언니가 한 명 있어요.",
+        "en": "I have one older sister.",
+        "note": "Used by a female speaker."
+      },
+      "collocations": [
+        "언니가 있어요",
+        "우리 언니",
+        "언니라고 해요"
+      ]
+    },
+    {
+      "hangul": "동생",
+      "romanization": "dongsaeng",
+      "english": "younger sibling",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "저는 동생이 한 명 있어요.",
+        "en": "I have one younger sibling.",
+        "note": "Works regardless of the speaker's gender."
+      },
+      "collocations": [
+        "동생이 있어요",
+        "남동생",
+        "여동생"
+      ]
+    },
+    {
+      "hangul": "할아버지",
+      "romanization": "harabeoji",
+      "english": "grandfather",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "할아버지께서 오세요.",
+        "en": "My grandfather is coming.",
+        "note": "Good noun for practicing 께서."
+      },
+      "collocations": [
+        "할아버지께서",
+        "할아버지께",
+        "저희 할아버지"
+      ]
+    },
+    {
+      "hangul": "할머니",
+      "romanization": "halmeoni",
+      "english": "grandmother",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "할머니께 안부를 전해 주세요.",
+        "en": "Please send my regards to your grandmother.",
+        "note": "께 marks a respected receiver; 께서 marks a respected subject."
+      },
+      "collocations": [
+        "할머니께서",
+        "할머니께",
+        "할머니 안부"
+      ]
+    },
+    {
+      "hangul": "결혼식",
+      "romanization": "gyeolhonsik",
+      "english": "wedding ceremony",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "부모님께서도 결혼식에 오세요.",
+        "en": "My parents are coming to the wedding too.",
+        "note": "A natural event where family members are introduced politely."
+      },
+      "collocations": [
+        "친구 결혼식",
+        "결혼식에 오다",
+        "결혼식에서 인사하다"
+      ]
+    },
+    {
+      "hangul": "오다",
+      "romanization": "oda",
+      "english": "to come",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "어머니께서 오셨어요.",
+        "en": "My mother came.",
+        "note": "오다 becomes 오세요/오셨어요 when honoring the subject."
+      },
+      "collocations": [
+        "오세요",
+        "오셨어요",
+        "결혼식에 오세요"
+      ]
+    },
+    {
+      "hangul": "전화하다",
+      "romanization": "jeonhwahada",
+      "english": "to call by phone",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "부모님께 자주 전화해요.",
+        "en": "I often call my parents.",
+        "note": "Useful family-contact verb; 전화드려요 is the more respectful version."
+      },
+      "collocations": [
+        "전화해요",
+        "부모님께 전화하다",
+        "자주 전화하다"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "A learner introduces family and checks sibling terms before a friend's wedding.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "가족이 몇 명이에요?",
+        "romanization": "gajogi myeot myeongieyo?",
+        "en": "How many people are in your family?",
+        "grammarNote": "몇 명 asks about people, not objects."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "저희 가족은 다섯 명이에요. 부모님하고 형, 동생이 있어요.",
+        "romanization": "jeohui gajogeun daseot myeongieyo. bumonimhago hyeong, dongsaengi isseoyo.",
+        "en": "There are five people in my family. I have my parents, an older brother, and a younger sibling.",
+        "grammarNote": "저희 sounds polite because 민서 is outside the family group."
+      },
+      {
+        "speaker": "민서",
+        "ko": "형은 남자가 쓰는 말이죠?",
+        "romanization": "hyeongeun namjaga sseuneun marijyo?",
+        "en": "Hyeong is the word a male speaker uses, right?",
+        "grammarNote": "형 is chosen from the speaker's perspective."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "네. 여자가 부르면 오빠라고 해요. 누나와 언니도 달라요.",
+        "romanization": "ne. yeojaga bureumyeon opparago haeyo. nuna-wa eonnido dallayo.",
+        "en": "Yes. If a female speaker says it, she says oppa. Nuna and eonni are different too.",
+        "grammarNote": "오빠/형 and 언니/누나 divide by speaker gender."
+      },
+      {
+        "speaker": "민서",
+        "ko": "부모님께서도 결혼식에 오세요?",
+        "romanization": "bumonimkkeseodo gyeolhonsige oseyo?",
+        "en": "Are your parents coming to the wedding too?",
+        "grammarNote": "께서도 honors the parents as subject and adds also."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "네, 어머니께서 오시고 아버지께서도 오세요.",
+        "romanization": "ne, eomeonikkeseo osigo abeojikkeseodo oseyo.",
+        "en": "Yes, my mother is coming, and my father is coming too.",
+        "grammarNote": "오시고/오세요 are honorific forms of 오다."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "저희 가족은 다섯 명이에요",
+    "body": "지훈은 회사 동료에게 가족을 소개했어요. '저희 가족은 다섯 명이에요. 부모님하고 형, 동생이 있어요.'라고 말했어요. 지훈은 남자라서 자기보다 나이 많은 남자 형제를 형이라고 불러요. 여자가 같은 사람을 부르면 오빠가 돼요. 나이 많은 여자 형제도 남자가 말하면 누나, 여자가 말하면 언니예요. 친구 결혼식 이야기를 할 때는 '어머니께서 오시고 아버지께서도 오세요'라고 말했어요. 가족 이야기는 단어 선택과 높임 선택이 같이 가야 자연스러워요.",
+    "bodyTranslation": "Jihun introduced his family to a coworker: 'There are five people in my family. I have my parents, an older brother, and a younger sibling.' Because Jihun is male, he calls an older male sibling hyeong. If a female speaker refers to the same person, the word becomes oppa. For an older female sibling, a male speaker says nuna and a female speaker says eonni. When talking about a friend's wedding, he says, 'My mother is coming, and my father is coming too' with honorific subject language. Family talk sounds natural when word choice and respect level work together.",
+    "comprehensionQuestions": [
+      {
+        "question": "지훈의 가족은 몇 명이에요?",
+        "answer": "다섯 명이에요."
+      },
+      {
+        "question": "남자가 나이 많은 남자 형제를 부를 때 어떤 말을 써요?",
+        "answer": "형이라고 해요."
+      },
+      {
+        "question": "지훈은 부모님에 대해 어떤 높임 표현을 썼어요?",
+        "answer": "어머니께서 오시고 아버지께서도 오세요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "Family words are social words",
+    "body": "Korean family terms often travel outside the literal family. 형, 오빠, 누나, and 언니 can be friendly terms for slightly older people, but they are not automatic. In a class, workplace, or first meeting, use names, titles, or neutral polite speech until the relationship is clear.",
+    "tip": "For polite introductions, start with 저희 가족 and 부모님. Save 엄마, 아빠, 형, 오빠, 누나, and 언니 for contexts where the relationship is close enough."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence describes family size naturally?",
+      "options": [
+        "저희 가족은 네 명이에요.",
+        "저희 가족은 네 개예요.",
+        "저희 가족은 네 잔이에요."
+      ],
+      "correct": "저희 가족은 네 명이에요.",
+      "explanation": "명 counts people. 개 counts things, and 잔 counts cups or glasses."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "A male speaker is talking about his older brother. Which word fits?",
+      "options": [
+        "형",
+        "오빠",
+        "언니"
+      ],
+      "correct": "형",
+      "explanation": "A male speaker calls an older brother 형. A female speaker calls an older brother 오빠."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "A female speaker is talking about her older sister. Which word fits?",
+      "options": [
+        "언니",
+        "누나",
+        "형"
+      ],
+      "correct": "언니",
+      "explanation": "A female speaker calls an older sister 언니. A male speaker calls an older sister 누나."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence honors the mother as the subject?",
+      "options": [
+        "어머니께서 오셨어요.",
+        "어머니께 오셨어요.",
+        "어머니가 왔어요."
+      ],
+      "correct": "어머니께서 오셨어요.",
+      "explanation": "께서 marks the respected subject, and 오셨어요 is the honorific past of 오다."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence uses 께 as a respected receiver, not a subject?",
+      "options": [
+        "할머니께 안부를 전해 주세요.",
+        "할머니께서 안부를 전해 주세요.",
+        "할머니가께 안부를 전해 주세요."
+      ],
+      "correct": "할머니께 안부를 전해 주세요.",
+      "explanation": "께 means to a respected person. 께서 means the respected person is the subject."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "어머니___ 오셨어요. (My mother came.)",
+      "options": [
+        "께서",
+        "께",
+        "를"
+      ],
+      "correct": "께서",
+      "explanation": "어머니 is the respected subject, so use 께서. 께 marks a respected receiver instead."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'My family has four people.'",
+      "tokens": [
+        "저희 가족은",
+        "네 명이에요"
+      ],
+      "correct": "저희 가족은 네 명이에요",
+      "explanation": "저희 가족은 politely sets the family as the topic. People are counted with 명, and four before a counter is 네."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "A female speaker says “older sister”: ___.",
+      "correct": "언니",
+      "explanation": "A female speaker calls an older sister 언니. 누나 is used by a male speaker."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "A male speaker is talking about his older sister. Which word fits?",
+      "options": [
+        "누나",
+        "언니",
+        "오빠"
+      ],
+      "correct": "누나",
+      "explanation": "Male speakers use 누나 for older sister. 언니 is from a female speaker’s point of view."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "아버지가 지금 ___ . (주무시다 → polite present)",
+      "base": "주무시다",
+      "form": "honorificPresent",
+      "correct": "주무세요",
+      "explanation": "주무시다 is the honorific verb for sleep. In polite present it becomes 주무세요."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "Family size: 저희 가족은 네 명이에요. Use 명 for people, not 개.",
+      "Polite self-side: 저희 가족 and 저희 부모님 are natural when speaking to someone outside the family.",
+      "Sibling terms: male speaker uses 형/누나; female speaker uses 오빠/언니.",
+      "Honorific subject: 부모님께서 오세요, 어머니께서 오셨어요.",
+      "Particle boundary: 께서 is subject; 께 is receiver."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Write a short message to a new classmate introducing your family (how many people, an older sibling, and one thing a parent does).",
+    "hint": "Use 저희 가족은 ~ 명이에요 for the size, the right older-sibling word (형/오빠/누나/언니) for your gender, and N께서 V-(으)시- to honor a parent.",
+    "model": "저희 가족은 네 명이에요. 저는 누나가 한 명 있어요. 아버지께서는 요리를 잘하세요.",
+    "modelEn": "There are four people in my family. I have one older sister. My father cooks well."
+  },
+  "canDo": [
+    "Say how big my family is politely (저희 가족은 ~ 명이에요)",
+    "Pick the right older-sibling word for my own gender (형 · 오빠 · 누나 · 언니)",
+    "Refer to my parents respectfully (부모님 · 아버지 · 어머니)",
+    "Honor a family elder who does the action (아버지께서 ~하세요)"
+  ]
+}

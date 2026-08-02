@@ -1,0 +1,58 @@
+{
+  "chapterId": "chapter-56",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 12,
+  "cardsReviewed": 35,
+  "findings": [
+    {
+      "biteId": "chapter-56-b3",
+      "cardIndex": 1,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The inherited 후배 reveal categorically called 후배님 unnatural, although it is possible as a respectful address in some workplaces and unfamiliar relationships.",
+      "fix": "Added a local nuance that makes address choice depend on the relationship, role, and workplace custom.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-56-b8",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The V/A-(으)니까 table illustrated its vowel-stem row with noun+copula 집들이니까 and its consonant-stem row with vowel-stem 계시다.",
+      "fix": "Replaced the rows with 바쁘다→바쁘니까 and 많다→많으니까 while preserving the separate noun+이다 row.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-56-b9",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The -지만 note claimed there are no sound changes, contradicting the actual tensing in forms such as 봤지만 [봗찌만].",
+      "fix": "Qualified the pronunciation note with the coda-triggered tensing and retained the correct 어렵지만 consonant behavior.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-56-b10",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The dialogue asked whether similar ages permit saying 동갑, but 동갑 requires the same age, not merely a similar age.",
+      "fix": "Changed the Korean and English dialogue line to the exact same-age condition.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-56-b12",
+      "cardIndex": 0,
+      "severity": "bad-teaching",
+      "class": "assessment-ambiguous",
+      "evidence": "The housewarming-custom boss item accepted 잖아요 but also offered a grammatical 더라고요 sentence while asking only which sentence naturally explains the custom.",
+      "fix": "Scoped the prompt to reminding a listener of a familiar custom, which uniquely tests 잖아요.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 12 bites and 35 cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}

@@ -1,0 +1,889 @@
+{
+  "id": "chapter-41",
+  "hook": {
+    "situation": "A learner can read dictionary forms like 춥다, 듣다, 모르다, and 빨갛다, but the real spoken forms are 추워요, 들어요, 몰라요, and 빨개요. This chapter turns those shape changes into usable habits.",
+    "objectives": [
+      "Match high-frequency dictionary forms with their real polite forms.",
+      "Separate true irregular stems from regular lookalikes such as 닫다 and 웃다.",
+      "Use irregular forms inside natural sentences about weather, food, health, walking, listening, knowing, and colors."
+    ],
+    "whyItMatters": "If a learner says 춥어요 or 듣어요, the meaning may be understandable, but the sentence immediately sounds broken. Irregulars are not rare grammar trivia; they appear in the first hundred everyday sentences a learner wants to say."
+  },
+  "grammarNotes": [
+    {
+      "title": "ㅂ Irregular: 춥다 → 추워요",
+      "func": "A lot of describing words (and a few action words) whose stem ends in ㅂ change that ㅂ to 우 when a vowel ending comes next. That's why 춥다 (to be cold) becomes 추워요, not 춥어요.",
+      "formTable": [
+        {
+          "when": "Stem ends in ㅂ, before a vowel ending (-아/어요, -았/었-, -으니까)",
+          "add": "ㅂ → 우, then add 어요 (우+어 = 워)",
+          "ex": "춥다 → 추+우+어요 → 추워요"
+        },
+        {
+          "when": "Stem ends in ㅂ, before a consonant ending (-고, -지만, -습니다)",
+          "add": "no change, ㅂ stays",
+          "ex": "춥다 → 춥고, 춥지만"
+        },
+        {
+          "when": "돕다 / 곱다 only",
+          "add": "ㅂ → 오 (오+아 = 와)",
+          "ex": "돕다 → 도+오+아요 → 도와요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "오늘 날씨가 너무 추워요.",
+          "romanization": "oneul nalssiga neomu chuwoyo.",
+          "en": "The weather is so cold today.",
+          "note": "춥다 + 아/어요: ㅂ turns to 우, then 우+어 joins into 워."
+        },
+        {
+          "ko": "이 가방은 정말 가벼워요.",
+          "romanization": "i gabangeun jeongmal gabyeowoyo.",
+          "en": "This bag is really light.",
+          "note": "가볍다 follows the same ㅂ → 우 → 워 pattern."
+        },
+        {
+          "ko": "친구가 제 일을 도와줬어요.",
+          "romanization": "chinguga je ireul dowajwosseoyo.",
+          "en": "My friend helped me with my work.",
+          "note": "돕다 is special: ㅂ → 오, so 도+오+아 = 도와요/도와줬어요."
+        },
+        {
+          "ko": "한국어 공부는 어렵지만 재미있어요.",
+          "romanization": "hangugeo gongbuneun eoryeopjiman jaemiisseoyo.",
+          "en": "Studying Korean is hard but fun.",
+          "note": "Before a consonant ending (-지만), ㅂ does NOT change: 어렵지만."
+        }
+      ],
+      "keyPoint": {
+        "label": "Vowel ending vs consonant ending",
+        "body": "The ㅂ only changes before a vowel: 춥다 → 추워요 (vowel) but 춥다 → 춥고 (consonant). Almost all ㅂ-irregular words use 우; only 돕다 and 곱다 use 오. For now, just learn 추워요 as a set phrase and you'll see the pattern."
+      },
+      "pronunciation": "추워요 is said smoothly as [추워요]. The 우+어 → 워 is a real spelling change, not just a sound, so you actually write 워.",
+      "drill": {
+        "instruction": "Change each ㅂ-irregular dictionary form to the polite -아/어요 form.",
+        "model": "춥다 → 추워요",
+        "items": [
+          "덥다 → ____ (be hot → 더워요)",
+          "맵다 → ____ (be spicy → 매워요)",
+          "돕다 → ____ (help → 도와요)"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "날씨가 춥어요.",
+        "right": "날씨가 추워요.",
+        "explanation": "It feels natural to just add the ending and say 춥어요, but ㅂ-irregular stems change the ㅂ to 우 before a vowel, giving 추워요."
+      }
+    },
+    {
+      "title": "ㄷ Irregular: 듣다 → 들어요",
+      "func": "A small group of action words whose stem ends in ㄷ change that ㄷ to ㄹ when a vowel ending follows. So 듣다 (to hear/listen) becomes 들어요, not 듣어요.",
+      "formTable": [
+        {
+          "when": "ㄷ-irregular stem + vowel ending (-아/어요, -았/었-, -으면)",
+          "add": "ㄷ → ㄹ, then add 어요",
+          "ex": "듣다 → 들+어요 → 들어요"
+        },
+        {
+          "when": "ㄷ-irregular stem + consonant ending (-고, -지만, -습니다)",
+          "add": "no change, ㄷ stays",
+          "ex": "듣다 → 듣고, 듣습니다"
+        },
+        {
+          "when": "Regular ㄷ verbs (받다, 닫다, 믿다)",
+          "add": "ㄷ never changes",
+          "ex": "받다 → 받아요 (not 발아요)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "저는 음악을 자주 들어요.",
+          "romanization": "jeoneun eumageul jaju deureoyo.",
+          "en": "I listen to music a lot.",
+          "note": "듣다 + 아/어요: ㄷ becomes ㄹ before the vowel, so 들어요."
+        },
+        {
+          "ko": "매일 학교까지 걸어요.",
+          "romanization": "maeil hakgyokkaji georeoyo.",
+          "en": "I walk to school every day.",
+          "note": "걷다 (to walk) is ㄷ-irregular: 걷 → 걸 → 걸어요."
+        },
+        {
+          "ko": "선생님한테 질문을 물어봤어요.",
+          "romanization": "seonsaengnimhante jilmuneul mureobwasseoyo.",
+          "en": "I asked the teacher a question.",
+          "note": "묻다 (to ask) → 물어봤어요; ㄷ → ㄹ before the past-tense vowel."
+        },
+        {
+          "ko": "친구한테서 선물을 받았어요.",
+          "romanization": "chinguhanteseo seonmureul badasseoyo.",
+          "en": "I got a present from my friend.",
+          "note": "받다 is a REGULAR ㄷ verb, so ㄷ stays: 받았어요, never 발았어요."
+        }
+      ],
+      "keyPoint": {
+        "label": "Not every ㄷ verb is irregular",
+        "body": "Only a few verbs change (듣다, 걷다, 묻다 'ask', 싣다 'load'). Everyday verbs like 받다 (get), 닫다 (close), 믿다 (believe) keep their ㄷ: 받아요, 닫아요, 믿어요. You just have to remember which ones are irregular."
+      },
+      "pronunciation": "들어요 links as [드러요] — the ㄹ slides into the next syllable. Don't worry about the rule mid-conversation; learn 들어요 as a chunk.",
+      "drill": {
+        "instruction": "Conjugate these ㄷ-irregular verbs into the -아/어요 form.",
+        "model": "듣다 → 들어요",
+        "items": [
+          "걷다 → ____ (walk → 걸어요)",
+          "묻다 → ____ (ask → 물어요)",
+          "싣다 → ____ (load → 실어요)"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "음악을 듣어요.",
+        "right": "음악을 들어요.",
+        "explanation": "It's tempting to keep the ㄷ and say 듣어요, but ㄷ-irregular verbs change ㄷ to ㄹ before a vowel ending, giving 들어요."
+      }
+    },
+    {
+      "title": "ㅅ Irregular: 낫다 → 나아요",
+      "func": "Some action/describing words whose stem ends in ㅅ drop the ㅅ before a vowel ending — but unlike ㄷ and ㅂ, the two vowels do NOT join up. So 낫다 (to get better) becomes 나아요, keeping both vowels.",
+      "formTable": [
+        {
+          "when": "ㅅ-irregular stem + vowel ending (-아/어요, -았/었-, -으면)",
+          "add": "ㅅ drops; vowels stay separate (no joining)",
+          "ex": "낫다 → 나+아요 → 나아요"
+        },
+        {
+          "when": "ㅅ-irregular stem + consonant ending (-고, -지만, -습니다)",
+          "add": "no change, ㅅ stays",
+          "ex": "낫다 → 낫고, 낫습니다"
+        },
+        {
+          "when": "Regular ㅅ verbs (웃다, 씻다, 벗다)",
+          "add": "ㅅ never drops",
+          "ex": "웃다 → 웃어요 (not 우어요)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "감기가 다 나았어요.",
+          "romanization": "gamgiga da naasseoyo.",
+          "en": "My cold is all better now.",
+          "note": "낫다 → 나았어요; ㅅ drops but 나+았 stays as two parts, no joining."
+        },
+        {
+          "ko": "이 식당이 저 식당보다 나아요.",
+          "romanization": "i sikdangi jeo sikdangboda naayo.",
+          "en": "This restaurant is better than that one.",
+          "note": "낫다 'be better' → 나아요; the two ㅏ's stay separate, written 나아."
+        },
+        {
+          "ko": "물을 컵에 부어 주세요.",
+          "romanization": "mureul keobe bueo juseyo.",
+          "en": "Please pour the water into the cup.",
+          "note": "붓다 (to pour) → 부어 주세요; ㅅ drops, vowels do not merge."
+        },
+        {
+          "ko": "아이가 크게 웃어요.",
+          "romanization": "aiga keuge useoyo.",
+          "en": "The child laughs loudly.",
+          "note": "웃다 is a REGULAR ㅅ verb, so ㅅ stays: 웃어요, never 우어요."
+        }
+      ],
+      "keyPoint": {
+        "label": "ㅅ drops but the vowels stay apart",
+        "body": "Unlike 추워요 or 들어요, the ㅅ-irregular leaves the two vowels apart: 낫다 → 나아요 (not 나요). Compare regular 웃다 → 웃어요, where the ㅅ stays. The irregular ones to know: 낫다, 붓다, 젓다, 짓다."
+      },
+      "pronunciation": "나아요 keeps two clear ㅏ sounds [나아요]; don't shorten it to [나요]. That held, two-beat vowel is the giveaway of the ㅅ-irregular.",
+      "drill": {
+        "instruction": "Conjugate these ㅅ-irregular verbs into the -아/어요 form (keep the vowels separate).",
+        "model": "낫다 → 나아요",
+        "items": [
+          "붓다 → ____ (pour → 부어요)",
+          "젓다 → ____ (stir → 저어요)",
+          "짓다 → ____ (build → 지어요)"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "감기가 다 나요.",
+        "right": "감기가 다 나았어요.",
+        "explanation": "Learners drop the ㅅ and then wrongly squeeze the vowels into 나요. The ㅅ-irregular keeps both vowels: present 나아요, past 나았어요."
+      }
+    },
+    {
+      "title": "르 Irregular: 모르다 → 몰라요",
+      "func": "Words ending in 르 add an extra ㄹ to the syllable before 르 and drop the ㅡ before -아/어. So 모르다 (to not know) becomes 몰라요, with a doubled ㄹ.",
+      "formTable": [
+        {
+          "when": "르 stem + vowel ending, when the syllable before 르 has ㅏ or ㅗ",
+          "add": "drop ㅡ, add ㄹ to the syllable before, then 라",
+          "ex": "모르다 → 몰ㄹ + 아 → 몰라요"
+        },
+        {
+          "when": "르 stem + vowel ending, when the syllable before 르 has any other vowel",
+          "add": "drop ㅡ, add ㄹ to the syllable before, then 러",
+          "ex": "부르다 → 불ㄹ + 어 → 불러요"
+        },
+        {
+          "when": "르 stem + consonant ending (-고, -지만)",
+          "add": "no change",
+          "ex": "모르다 → 모르고, 모르지만"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "그 사람 이름을 잘 몰라요.",
+          "romanization": "geu saram ireumeul jal mollayo.",
+          "en": "I don't really know that person's name.",
+          "note": "모르다 → 몰라요; 모 before 르 has ㅗ, so the ending is 라."
+        },
+        {
+          "ko": "친구가 노래를 불렀어요.",
+          "romanization": "chinguga noraereul bulleosseoyo.",
+          "en": "My friend sang a song.",
+          "note": "부르다 → 불렀어요; 부 has ㅜ (not ㅏ/ㅗ), so the ending is 러/렀."
+        },
+        {
+          "ko": "택시를 빨리 불러 주세요.",
+          "romanization": "taeksireul ppalli bulleo juseyo.",
+          "en": "Please call a taxi quickly.",
+          "note": "부르다 'call' → 불러; same doubled-ㄹ rule with 러."
+        },
+        {
+          "ko": "시간이 너무 빨라요.",
+          "romanization": "sigani neomu ppallayo.",
+          "en": "Time goes by so fast.",
+          "note": "빠르다 → 빨라요; 빠 has ㅏ, so it takes 라."
+        }
+      ],
+      "keyPoint": {
+        "label": "라 vs 러 depends on the vowel before 르",
+        "body": "If the syllable before 르 has ㅏ or ㅗ, use 라 (모르다 → 몰라요, 빠르다 → 빨라요). Otherwise use 러 (부르다 → 불러요, 누르다 → 눌러요). It's the same ㅏ/ㅗ vs everything-else choice as -아요/-어요."
+      },
+      "pronunciation": "몰라요 has a strong doubled ㄹ [몰라요] — the first ㄹ closes 몰 and the second opens 라.",
+      "drill": {
+        "instruction": "Conjugate these 르-irregular words into the -아/어요 form (watch 라 vs 러).",
+        "model": "모르다 → 몰라요",
+        "items": [
+          "부르다 → ____ (call/sing → 불러요)",
+          "빠르다 → ____ (be fast → 빨라요)",
+          "다르다 → ____ (be different → 달라요)"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "그 사람을 몰라요 → 모르아요",
+        "right": "그 사람을 몰라요.",
+        "explanation": "Learners try to add the ending straight onto 모르 and get 모르아요. The 르-irregular drops the ㅡ and doubles the ㄹ, so it's 몰라요."
+      }
+    },
+    {
+      "title": "ㅡ Irregular: 바쁘다 → 바빠요",
+      "func": "When a stem ends in ㅡ (like 쓰다, 바쁘다), the ㅡ drops out before -아/어. Then the syllable before it decides whether you add 아 or 어. So 바쁘다 (to be busy) becomes 바빠요.",
+      "formTable": [
+        {
+          "when": "ㅡ stem + vowel ending, when the syllable before ㅡ has ㅏ or ㅗ",
+          "add": "drop ㅡ, add 아 → 빠",
+          "ex": "바쁘다 → 바ㅃ + 아 → 바빠요"
+        },
+        {
+          "when": "ㅡ stem + vowel ending, other vowel (or no syllable before, like 쓰다)",
+          "add": "drop ㅡ, add 어 → 써/뻐",
+          "ex": "쓰다 → ㅆ + 어 → 써요"
+        },
+        {
+          "when": "ㅡ stem + consonant ending (-고, -지만)",
+          "add": "no change, ㅡ stays",
+          "ex": "바쁘다 → 바쁘고, 바쁘지만"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "요즘 일이 너무 바빠요.",
+          "romanization": "yojeum iri neomu bappayo.",
+          "en": "I'm so busy these days.",
+          "note": "바쁘다 → 바빠요; 바 has ㅏ, so the dropped ㅡ takes 아 → 빠."
+        },
+        {
+          "ko": "지금 편지를 써요.",
+          "romanization": "jigeum pyeonjireul sseoyo.",
+          "en": "I'm writing a letter right now.",
+          "note": "쓰다 → 써요; nothing before ㅡ, so it defaults to 어 → 써."
+        },
+        {
+          "ko": "동생이 정말 예뻐요.",
+          "romanization": "dongsaengi jeongmal yeppeoyo.",
+          "en": "My younger sibling is really pretty.",
+          "note": "예쁘다 → 예뻐요; 예 is not ㅏ/ㅗ, so it takes 어 → 뻐."
+        },
+        {
+          "ko": "머리가 조금 아파요.",
+          "romanization": "meoriga jogeum apayo.",
+          "en": "My head hurts a little.",
+          "note": "아프다 → 아파요; 아 has ㅏ, so the dropped ㅡ takes 아 → 파."
+        }
+      ],
+      "keyPoint": {
+        "label": "Drop the ㅡ, then pick 아 or 어",
+        "body": "The ㅡ always disappears before -아/어. To choose, look at the syllable before it: ㅏ/ㅗ → 아 (바빠요, 아파요), anything else (or nothing) → 어 (써요, 예뻐요). This is the same vowel-harmony idea as regular -아요/-어요."
+      },
+      "pronunciation": "바빠요 has a tense ㅃ [바빠요], and 써요 starts with a tense ㅆ [써요]. The dropped ㅡ leaves a strong, double consonant sound.",
+      "drill": {
+        "instruction": "Conjugate these ㅡ-irregular words into the -아/어요 form (watch 아 vs 어).",
+        "model": "바쁘다 → 바빠요",
+        "items": [
+          "크다 → ____ (be big → 커요)",
+          "아프다 → ____ (hurt → 아파요)",
+          "슬프다 → ____ (be sad → 슬퍼요)"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "요즘 너무 바쁘어요.",
+        "right": "요즘 너무 바빠요.",
+        "explanation": "It feels natural to keep the ㅡ and add the ending, giving 바쁘어요. But ㅡ-stems drop the ㅡ first, so it's 바빠요 (and 쓰다 → 써요, not 쓰어요)."
+      }
+    },
+    {
+      "title": "ㅎ Irregular: 빨갛다 → 빨개요",
+      "func": "Most color words and a few pointing words (그렇다, 어떻다) end in ㅎ. Before -아/어, the ㅎ drops AND the vowel changes to ㅐ. So 빨갛다 (to be red) becomes 빨개요. Note: 좋다 is regular — 좋아요.",
+      "formTable": [
+        {
+          "when": "ㅎ-irregular stem + -아/어요",
+          "add": "drop ㅎ, vowel becomes ㅐ, add 요",
+          "ex": "빨갛다 → 빨가 → 빨개요"
+        },
+        {
+          "when": "ㅎ-irregular stem + 어떻다 / 이렇다 etc.",
+          "add": "same: drop ㅎ, vowel → ㅐ",
+          "ex": "어떻다 → 어때요 / 이렇다 → 이래요"
+        },
+        {
+          "when": "ㅎ-irregular stem + consonant ending (-고, -지만)",
+          "add": "no change, ㅎ stays",
+          "ex": "빨갛다 → 빨갛고, 빨갛지만"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "사과가 정말 빨개요.",
+          "romanization": "sagwaga jeongmal ppalgaeyo.",
+          "en": "The apple is really red.",
+          "note": "빨갛다 → 빨개요; ㅎ drops and the vowel turns into ㅐ."
+        },
+        {
+          "ko": "하늘이 너무 파래요.",
+          "romanization": "haneuri neomu paraeyo.",
+          "en": "The sky is so blue.",
+          "note": "파랗다 → 파래요; same ㅎ-drop with the vowel becoming ㅐ."
+        },
+        {
+          "ko": "저도 그래요.",
+          "romanization": "jeodo geuraeyo.",
+          "en": "Me too / Same here.",
+          "note": "그렇다 → 그래요; a super common one to just memorize."
+        },
+        {
+          "ko": "날씨가 어때요?",
+          "romanization": "nalssiga eottaeyo?",
+          "en": "How's the weather?",
+          "note": "어떻다 → 어때요; you'll hear 어때요 constantly, so learn it as a set phrase."
+        }
+      ],
+      "keyPoint": {
+        "label": "ㅎ drops and the vowel turns into ㅐ",
+        "body": "With ㅎ-irregulars, two things happen at once before -아/어: the ㅎ disappears and the vowel becomes ㅐ (빨갛다 → 빨개요, 그렇다 → 그래요). Watch out: 좋다 (be good) is NOT irregular — it's just 좋아요. Learn 그래요 and 어때요 as ready-made phrases first."
+      },
+      "pronunciation": "빨개요 is said [빨개요] with the ㅐ vowel; 그래요 is [그래요]. Don't try to keep the ㅎ sound — it's gone before the ending.",
+      "drill": {
+        "instruction": "Conjugate these ㅎ-irregular words into the -아/어요 form (ㅎ drops, vowel → ㅐ).",
+        "model": "빨갛다 → 빨개요",
+        "items": [
+          "노랗다 → ____ (be yellow → 노래요)",
+          "어떻다 → ____ (be how → 어때요)",
+          "그렇다 → ____ (be so → 그래요)"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "사과가 빨갛아요.",
+        "right": "사과가 빨개요.",
+        "explanation": "It seems logical to keep the ㅎ and add 아요, giving 빨갛아요. But ㅎ-irregulars drop the ㅎ and change the vowel to ㅐ, so it's 빨개요. (And don't overcorrect 좋다 — that one really is 좋아요.)"
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "춥다",
+      "romanization": "chupda",
+      "english": "cold (weather)",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "오늘 너무 추워요.",
+        "en": "It is so cold today.",
+        "note": "Linked to dictionary card word-ext-266."
+      },
+      "collocations": [
+        "날씨가 춥다",
+        "추워요",
+        "추운 날"
+      ]
+    },
+    {
+      "hangul": "덥다",
+      "romanization": "deopda",
+      "english": "hot (weather)",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "어제는 정말 더웠어요.",
+        "en": "Yesterday was really hot.",
+        "note": "Linked to dictionary card word-ext-265."
+      },
+      "collocations": [
+        "날씨가 덥다",
+        "더워요",
+        "더웠어요"
+      ]
+    },
+    {
+      "hangul": "맵다",
+      "romanization": "maepda",
+      "english": "to be spicy",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "이 떡볶이는 많이 매워요.",
+        "en": "This tteokbokki is very spicy.",
+        "note": "Linked to dictionary card word-adjective-035."
+      },
+      "collocations": [
+        "매워요",
+        "매운 음식",
+        "맵지 않아요"
+      ]
+    },
+    {
+      "hangul": "어렵다",
+      "romanization": "eoryeopda",
+      "english": "to be difficult",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "이 문제는 너무 어려워요.",
+        "en": "This problem is too difficult.",
+        "note": "Linked to dictionary card word-adjective-037."
+      },
+      "collocations": [
+        "어려워요",
+        "어려운 문제",
+        "어렵지 않아요"
+      ]
+    },
+    {
+      "hangul": "쉽다",
+      "romanization": "swipda",
+      "english": "to be easy",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "생각보다 쉬워요.",
+        "en": "It is easier than I thought.",
+        "note": "Linked to dictionary card word-adjective-036."
+      },
+      "collocations": [
+        "쉬워요",
+        "쉬운 문제",
+        "쉽지 않아요"
+      ]
+    },
+    {
+      "hangul": "듣다",
+      "romanization": "deutda",
+      "english": "to listen",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "저는 아침마다 음악을 들어요.",
+        "en": "I listen to music every morning.",
+        "note": "Linked to dictionary card word-verb-013."
+      },
+      "collocations": [
+        "음악을 듣다",
+        "들어요",
+        "들었어요"
+      ]
+    },
+    {
+      "hangul": "걷다",
+      "romanization": "geotda",
+      "english": "to walk",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "퇴근하고 공원을 걸어요.",
+        "en": "I walk in the park after work.",
+        "note": "Linked to dictionary card word-verb-400."
+      },
+      "collocations": [
+        "공원을 걷다",
+        "걸어요",
+        "걸었어요"
+      ]
+    },
+    {
+      "hangul": "묻다",
+      "romanization": "mutda",
+      "english": "to ask",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "모르면 선생님께 물어봐요.",
+        "en": "If you do not know, ask the teacher.",
+        "note": "Linked to dictionary card word-verb-353."
+      },
+      "collocations": [
+        "선생님께 묻다",
+        "길을 묻다",
+        "물어봐요",
+        "물어봤어요"
+      ]
+    },
+    {
+      "hangul": "낫다",
+      "romanization": "natda",
+      "english": "to heal; to get better",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "감기가 다 나았어요.",
+        "en": "My cold got completely better.",
+        "note": "Linked to dictionary card word-verb-053."
+      },
+      "collocations": [
+        "빨리 낫다",
+        "나았어요",
+        "나으면 좋겠어요"
+      ]
+    },
+    {
+      "hangul": "모르다",
+      "romanization": "moreuda",
+      "english": "to not know",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "저는 그 사람 이름을 몰라요.",
+        "en": "I do not know that person's name.",
+        "note": "Linked to dictionary card word-verb-345."
+      },
+      "collocations": [
+        "몰라요",
+        "잘 모르겠어요",
+        "모르면 물어봐요"
+      ]
+    },
+    {
+      "hangul": "다르다",
+      "romanization": "dareuda",
+      "english": "to be different",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "두 색깔이 조금 달라요.",
+        "en": "The two colors are a little different.",
+        "note": "Linked to dictionary card word-ext-1244."
+      },
+      "collocations": [
+        "달라요",
+        "다른 의견",
+        "생각이 다르다"
+      ]
+    },
+    {
+      "hangul": "부르다",
+      "romanization": "bureuda",
+      "english": "to call",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "제 이름을 불러 주세요.",
+        "en": "Please call my name.",
+        "note": "Linked to dictionary card word-verb-477."
+      },
+      "collocations": [
+        "이름을 부르다",
+        "불러 주세요",
+        "불렀어요"
+      ]
+    },
+    {
+      "hangul": "빨갛다",
+      "romanization": "ppalgata",
+      "english": "to be red",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "얼굴이 빨개요.",
+        "en": "Your face is red.",
+        "note": "Linked to dictionary card word-ext-1207."
+      },
+      "collocations": [
+        "빨개요",
+        "빨간 사과",
+        "얼굴이 빨개지다"
+      ]
+    },
+    {
+      "hangul": "파랗다",
+      "romanization": "parata",
+      "english": "to be blue",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "오늘 하늘이 파래요.",
+        "en": "The sky is blue today.",
+        "note": "Linked to dictionary card word-ext-1208."
+      },
+      "collocations": [
+        "파래요",
+        "파란 하늘",
+        "파랗게 보이다"
+      ]
+    },
+    {
+      "hangul": "노랗다",
+      "romanization": "norata",
+      "english": "to be yellow",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "바나나가 노래요.",
+        "en": "The banana is yellow.",
+        "note": "Linked to dictionary card word-ext-1209."
+      },
+      "collocations": [
+        "노래요",
+        "노란 우산",
+        "노랗게 익다"
+      ]
+    },
+    {
+      "hangul": "어떻다",
+      "romanization": "eotteota",
+      "english": "to be how",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "이 방법은 어때요?",
+        "en": "How is this method?",
+        "note": "Linked to dictionary card word-ext-1218."
+      },
+      "collocations": [
+        "어때요?",
+        "어떤 방법",
+        "어떻게 해요?"
+      ]
+    },
+    {
+      "hangul": "알다",
+      "romanization": "alda",
+      "english": "to know",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "이 단어를 아세요?",
+        "en": "Do you know this word?",
+        "note": "Linked to dictionary card word-verb-344."
+      },
+      "collocations": [
+        "알아요",
+        "아세요?",
+        "압니다"
+      ]
+    },
+    {
+      "hangul": "살다",
+      "romanization": "salda",
+      "english": "to live",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "어디 사세요?",
+        "en": "Where do you live?",
+        "note": "Linked to dictionary card word-verb-346."
+      },
+      "collocations": [
+        "살아요",
+        "사세요?",
+        "삽니다"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "A learner asks why common words change shape in polite speech.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "오늘 너무 추워요. 그런데 왜 '춥어요'가 아니에요?",
+        "romanization": "oneul neomu chuwoyo. geureonde wae 'chupeoyo'ga anieyo?",
+        "en": "It is so cold today. But why isn't it '춥어요'?",
+        "grammarNote": "춥다 follows the ㅂ irregular, so the natural form is 추워요."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "춥다처럼 ㅂ으로 끝나는 말은 추워요, 더워요처럼 바뀌어요.",
+        "romanization": "chupdacheoreom bieubeuro kkeutnaneun mareun chuwoyo, deowoyo-cheoreom bakkwieoyo.",
+        "en": "Words ending in ㅂ, like 춥다, change to forms like 추워요 and 더워요.",
+        "grammarNote": "The pair is more useful than the label: 춥다/추워요, 덥다/더워요."
+      },
+      {
+        "speaker": "민서",
+        "ko": "그럼 듣다는 들어요, 걷다는 걸어요가 맞죠?",
+        "romanization": "geureom deutdaneun deureoyo, geotdaneun georeoyoga matjyo?",
+        "en": "Then 듣다 becomes 들어요, and 걷다 becomes 걸어요, right?",
+        "grammarNote": "ㄷ changes to ㄹ in common verbs like 듣다 and 걷다."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "맞아요. 모르다는 몰라요, 빨갛다는 빨개요처럼 익히면 돼요.",
+        "romanization": "majayo. moreudaneun mollayo, ppalgataneun ppalgaeyo-cheoreom ikhimyeon dwaeyo.",
+        "en": "Right. Learn them as pairs, like 모르다 to 몰라요 and 빨갛다 to 빨개요.",
+        "grammarNote": "르 and ㅎ irregulars are easier when memorized through common pairs."
+      },
+      {
+        "speaker": "민서",
+        "ko": "알겠어요. 자주 쓰는 단어부터 외울게요.",
+        "romanization": "algesseoyo. jaju sseuneun daneobuteo oeulgeyo.",
+        "en": "Got it. I will memorize the high-frequency words first.",
+        "grammarNote": "알다 keeps ㄹ in 알아요, but drops it in forms like 아세요 and 압니다."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "사전형과 말할 때의 모양",
+    "body": "한국어 사전에는 춥다, 듣다, 모르다처럼 기본형이 나오지만, 실제 대화에서는 추워요, 들어요, 몰라요처럼 바뀐 모양을 더 자주 들어요. 그래서 불규칙 활용은 시험용 표가 아니라 일상 발음과 문장을 바로잡는 도구예요. '오늘 추워요', '음악을 들어요', '저는 잘 몰라요', '이 방법은 어때요?' 같은 문장을 먼저 익히면 규칙 이름도 자연스럽게 따라와요. 단, 비슷하게 생겼다고 모두 바뀌지는 않아요. 듣다는 들어요지만 닫다는 닫아요이고, 낫다는 나아요지만 웃다는 웃어요예요.",
+    "bodyTranslation": "Korean dictionaries show base forms such as 춥다, 듣다, and 모르다, but real conversation uses changed forms such as 추워요, 들어요, and 몰라요. Irregular conjugation is not just a test table; it repairs everyday pronunciation and sentences. Learn useful sentences first, then attach the rule names. Also remember that lookalikes are not always irregular: 듣다 changes to 들어요, but 닫다 stays 닫아요; 낫다 changes to 나아요, but 웃다 stays 웃어요.",
+    "comprehensionQuestions": [
+      {
+        "question": "사전에는 어떤 모양이 나오지만 실제 대화에서는 어떤 모양을 더 자주 들어요?",
+        "answer": "사전에는 춥다, 듣다, 모르다 같은 기본형이 나오지만 실제 대화에서는 추워요, 들어요, 몰라요 같은 활용형을 더 자주 들어요."
+      },
+      {
+        "question": "듣다와 닫다는 어떻게 달라요?",
+        "answer": "듣다는 들어요로 바뀌지만 닫다는 닫아요로 그대로 활용해요."
+      },
+      {
+        "question": "불규칙 활용은 왜 일상 대화에 중요해요?",
+        "answer": "추워요, 들어요, 몰라요 같은 매우 자주 쓰는 문장에 바로 들어가기 때문이에요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "Learn the spoken form, not only the dictionary form",
+    "body": "Korean learners often study dictionary forms first because that is how apps and dictionaries organize words. Native conversation, however, usually gives you the conjugated shape. If you only memorize 춥다 and 듣다, you may hesitate when you need 추워요 and 들어요. Treat each high-frequency irregular as a pair: dictionary form plus the first sentence you would actually say.",
+    "tip": "For each new irregular, memorize one real chunk: 추워요, 들어요, 나았어요, 몰라요, 어때요, 아세요."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which form correctly conjugates 춥다 in polite present speech?",
+      "options": [
+        "추워요",
+        "춥어요",
+        "춥아요"
+      ],
+      "correct": "추워요",
+      "explanation": "춥다 follows the ㅂ irregular: ㅂ changes to 우 before 어요."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which pair shows the ㄷ irregular?",
+      "options": [
+        "듣다 → 들어요",
+        "닫다 → 달아요",
+        "받다 → 발아요"
+      ],
+      "correct": "듣다 → 들어요",
+      "explanation": "듣다 changes ㄷ to ㄹ. 닫다 and 받다 are regular."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "낫다 + 았어요 = 감기가 다 ____.",
+      "options": [
+        "나았어요",
+        "낫았어요",
+        "낫었어요"
+      ],
+      "correct": "나았어요",
+      "explanation": "ㅅ drops in 낫다 before a vowel-starting ending."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence uses 르 irregular correctly?",
+      "options": [
+        "저는 그 이름을 몰라요.",
+        "저는 그 이름을 모르어요.",
+        "저는 그 이름을 모라요."
+      ],
+      "correct": "저는 그 이름을 몰라요.",
+      "explanation": "모르다 becomes 몰라요: ㄹ doubles onto the previous syllable."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which form is natural for 어떻다?",
+      "options": [
+        "어때요?",
+        "어떻어요?",
+        "어떻게요?"
+      ],
+      "correct": "어때요?",
+      "explanation": "어떻다 is a ㅎ irregular adjective: 어떻다 + 어요 → 어때요."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence shows ㄹ deletion before -세요?",
+      "options": [
+        "이 단어를 아세요?",
+        "이 단어를 알세요?",
+        "이 단어를 알아세요?"
+      ],
+      "correct": "이 단어를 아세요?",
+      "explanation": "알다 keeps ㄹ in 알아요 but drops ㄹ before -세요: 아세요."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "날씨___ 추워요. (The weather is cold.)",
+      "options": [
+        "가",
+        "를",
+        "에"
+      ],
+      "correct": "가",
+      "explanation": "춥다 describes the weather, so 날씨 takes 가. 를 would make weather an object, which does not fit an adjective sentence."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "오늘은 많이 ___ . (춥다 → polite present)",
+      "base": "춥다",
+      "form": "politePresent",
+      "correct": "추워요",
+      "explanation": "춥다 is a ㅂ irregular, so ㅂ changes to 워 before 어요. The natural spoken form is 추워요."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'I don't know well.'",
+      "tokens": [
+        "잘",
+        "몰라요"
+      ],
+      "correct": "잘 몰라요",
+      "explanation": "모르다 is a 르 irregular and becomes 몰라요. 잘 softens it to “I do not know well.”"
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "걷다 + 어요 = ___",
+      "correct": "걸어요",
+      "explanation": "걷다 is a ㄷ irregular, so ㄷ changes to ㄹ before 어요. 닫다 is a regular lookalike, but 걷다 becomes 걸어요."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "ㅂ irregular: 춥다→추워요, 덥다→더워요, 어렵다→어려워요.",
+      "ㄷ irregular: 듣다→들어요, 걷다→걸어요, but 닫다→닫아요.",
+      "ㅅ irregular: 낫다→나아요, 짓다→지어요, but 웃다→웃어요.",
+      "르 irregular: 모르다→몰라요, 다르다→달라요, 부르다→불러요.",
+      "ㅎ irregular: 빨갛다→빨개요, 어떻다→어때요, but 좋다→좋아요.",
+      "ㄹ deletion: 알다→알아요, but 아세요/압니다/아는."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Write 3-4 sentences about today's weather and how you feel, using describing words that are irregular verbs.",
+    "hint": "Conjugate irregulars into 해요체: ㅂ (춥다→추워요, 덥다→더워요, 맵다→매워요), ㄷ (듣다→들어요), ㅡ (바쁘다→바빠요), 르 (모르다→몰라요, 다르다→달라요).",
+    "model": "오늘은 날씨가 추워요. 요즘 저는 너무 바빠요. 그래서 음악을 들어요. 한국어가 어려워도 답을 몰라도 괜찮아요.",
+    "modelEn": "Today the weather is cold. These days I'm very busy. So I listen to music. Even if Korean is hard and I don't know the answer, it's okay."
+  },
+  "canDo": [
+    "Conjugate ㅂ-irregular adjectives correctly (춥다→추워요 · 어렵다→어려워요)",
+    "Conjugate ㄷ-irregular verbs correctly (듣다→들어요 · 걷다→걸어요)",
+    "Conjugate 르-irregular and ㅡ-irregular words (모르다→몰라요 · 바쁘다→바빠요)"
+  ]
+}

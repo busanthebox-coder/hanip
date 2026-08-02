@@ -1,0 +1,843 @@
+{
+  "id": "chapter-35",
+  "hook": {
+    "situation": "Your meeting is starting, but your materials are not ready. You need to bring it up, give background, and push the conversation forward without sounding abrupt or defensive.",
+    "objectives": [
+      "Open a sensitive topic with 사실은 and sentence-final -는데요.",
+      "Separate new background with -거든요 from shared information with -잖아요.",
+      "Use 그런데/근데 to shift or push back while keeping the conversation cooperative."
+    ],
+    "whyItMatters": "A direct translation of 'but' or 'because' often sounds too flat in Korean. These markers show whether the listener already knows the reason, whether you are adding new context, and how much room you are leaving for the other person to respond."
+  },
+  "grammarNotes": [
+    {
+      "title": "V/A-(으)ㄴ/는데 — Giving Background Before Your Point",
+      "func": "Use -(으)ㄴ/는데 to give a piece of background first, then say what you really mean (a question, a suggestion, or a request) in the next clause. It loosely links two ideas, a bit like English \"so...\" or \"and...\".",
+      "formTable": [
+        {
+          "when": "Action verb stem",
+          "add": "-는데",
+          "ex": "먹다 → 먹는데, 가다 → 가는데"
+        },
+        {
+          "when": "Adjective stem ending in a vowel/ㄹ",
+          "add": "-ㄴ데",
+          "ex": "바쁘다 → 바쁜데, 멀다 → 먼데 (ㄹ drops)"
+        },
+        {
+          "when": "Adjective stem ending in a consonant",
+          "add": "-은데",
+          "ex": "작다 → 작은데, 좋다 → 좋은데"
+        },
+        {
+          "when": "Noun + 이다 / past tense",
+          "add": "인데 / -았/었는데",
+          "ex": "학생이다 → 학생인데, 먹다 → 먹었는데"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "시간이 없는데 택시 탈까요?",
+          "romanization": "sigani eomneunde taeksi talkkayo?",
+          "en": "We don't have time, so should we take a taxi?",
+          "note": "The background (no time) sets up the suggestion that follows."
+        },
+        {
+          "ko": "이 책이 좀 어려운데 같이 읽어요.",
+          "romanization": "i chaegi jom eoryeounde gachi ilgeoyo.",
+          "en": "This book is a bit hard, so let's read it together.",
+          "note": "어렵다 has an irregular ㅂ, so it becomes 어려운데, not 어렵은데."
+        },
+        {
+          "ko": "지금 밥 먹는데 이따가 전화할게요.",
+          "romanization": "jigeum bap meongneunde ittaga jeonhwahalgeyo.",
+          "en": "I'm eating right now, so I'll call you later.",
+          "note": "Action verb 먹다 takes -는데 no matter the final sound."
+        },
+        {
+          "ko": "제 친구가 학생인데 한국어를 정말 잘해요.",
+          "romanization": "je chinguga haksaeginde hangugeoreul jeongmal jalhaeyo.",
+          "en": "My friend is a student, and she speaks Korean really well.",
+          "note": "Noun + 이다 becomes 인데; here it just adds info, not contrast."
+        }
+      ],
+      "keyPoint": {
+        "label": "-는데 vs. -아서/어서",
+        "body": "-아서/어서 ties a clause as a tight cause ('because A, B'). -(으)ㄴ/는데 just sets the scene ('A, and now...') and feels softer. Only -는데 can lead naturally into a -ㄹ까요? or -ㄹ래요? question. The full contrast use of -는데 comes later."
+      },
+      "pronunciation": "는데 sounds like [는데] with no change, but after a ㄷ/ㅅ/ㅈ-final stem like 받다, 받는데 becomes [반는데] (the ㄷ turns into ㄴ before 는).",
+      "drill": {
+        "instruction": "Attach -(으)ㄴ/는데 to the cue verb to give background, then read the whole sentence aloud.",
+        "model": "(시간이 없다) → 시간이 없는데 택시 탈까요?",
+        "items": [
+          "(돈이 없다) ___ 다음에 살게요.",
+          "(이 영화 재미있다) ___ 같이 볼래요?",
+          "(지금 집에 가다) ___ 내일 만나요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "시간이 없어서 택시 탈까요?",
+        "right": "시간이 없는데 택시 탈까요?",
+        "explanation": "English speakers grab -아서/어서 ('because') to lead into a suggestion, but -아서/어서 can't come before a -ㄹ까요?/-ㄹ래요? ending. Use -는데 to set up the background first."
+      }
+    },
+    {
+      "title": "V/A-잖아요 — Reminding Someone of What You Both Know",
+      "func": "Use -잖아요 to remind the listener of something you both already know, or to point out something obvious as your reason. It carries the feeling of \"you know...\" or \"remember...\".",
+      "formTable": [
+        {
+          "when": "Any verb/adjective stem (present)",
+          "add": "-잖아요",
+          "ex": "비싸다 → 비싸잖아요, 가다 → 가잖아요"
+        },
+        {
+          "when": "Past tense",
+          "add": "-았/었잖아요",
+          "ex": "먹다 → 먹었잖아요, 보다 → 봤잖아요"
+        },
+        {
+          "when": "Noun + 이다",
+          "add": "-(이)잖아요",
+          "ex": "일요일이다 → 일요일이잖아요, 친구다 → 친구잖아요"
+        },
+        {
+          "when": "Casual (반말)",
+          "add": "-잖아",
+          "ex": "비싸잖아, 먹었잖아"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "그 식당은 비싸잖아요. 다른 데 가요.",
+          "romanization": "geu sikdangeun bissajanayo. dareun de gayo.",
+          "en": "That restaurant is expensive, you know. Let's go somewhere else.",
+          "note": "Reminds the listener of a shared fact (it's expensive) as the reason."
+        },
+        {
+          "ko": "오늘 일요일이잖아요. 학교 안 가요.",
+          "romanization": "oneul iryoirijanayo. hakgyo an gayo.",
+          "en": "It's Sunday today, remember? We don't have school.",
+          "note": "Noun + 이다 → 일요일이잖아요; pointing out an obvious fact."
+        },
+        {
+          "ko": "어제 같이 밥 먹었잖아요. 벌써 잊었어요?",
+          "romanization": "eoje gachi bap meogeotjanayo. beolsseo ijeosseoyo?",
+          "en": "We ate together yesterday, remember? Did you forget already?",
+          "note": "Past tense -었잖아요 brings back a shared experience."
+        },
+        {
+          "ko": "민수 씨가 한국어 잘하잖아요. 민수 씨한테 물어봐요.",
+          "romanization": "minsu ssiga hangugeo jalhajanayo. minsu ssihante mureobwayo.",
+          "en": "Minsu is good at Korean, you know. Ask him.",
+          "note": "Uses a known fact about Minsu to back up the suggestion."
+        }
+      ],
+      "keyPoint": {
+        "label": "-잖아요 vs. -거든요",
+        "body": "-잖아요 points to OLD information the listener already knows ('you know that...'). -거든요 gives NEW information they don't know yet. Using -잖아요 for brand-new facts sounds odd, like 'you should have known this already'."
+      },
+      "pronunciation": "잖아요 links across the syllable and sounds like [자나요], with the ㅈ and ㅇ flowing together. Don't break it into [잗-아요].",
+      "drill": {
+        "instruction": "Turn each known fact into a reminder with -잖아요.",
+        "model": "(그 식당은 비싸다) → 그 식당은 비싸잖아요.",
+        "items": [
+          "(오늘은 토요일이다) → ___",
+          "(우리 어제 그 영화 봤다) → ___",
+          "(지금 비가 오다) → ___"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "저 처음 보죠? 제 이름은 민수잖아요.",
+        "right": "저 처음 보죠? 제 이름은 민수거든요.",
+        "explanation": "Don't use -잖아요 for information that's new to the listener — it sounds like you're saying they should already know it, which can feel like a scolding. For brand-new info, use -거든요."
+      }
+    },
+    {
+      "title": "V/A-지요/죠 — Checking Shared Understanding",
+      "func": "Use -지요? or its spoken contraction -죠? when you think you already know the answer and want the listener to confirm or agree. It is softer than a plain information question because it sounds like \"right?\" or \"you know, don't you?\" In everyday speech, -죠 is more common than the full -지요.",
+      "formTable": [
+        {
+          "when": "Verb/adjective stem",
+          "add": "-지요? / -죠?",
+          "ex": "덥다 → 덥지요? / 덥죠?, 재미있다 → 재미있죠?"
+        },
+        {
+          "when": "Past tense",
+          "add": "-았/었지요? / -았/었죠?",
+          "ex": "봤다 → 봤지요? / 봤죠?, 먹었다 → 먹었죠?"
+        },
+        {
+          "when": "Noun + 이다",
+          "add": "-(이)지요? / -(이)죠?",
+          "ex": "학생이다 → 학생이지요? / 학생이죠?, 친구다 → 친구죠?"
+        },
+        {
+          "when": "Casual",
+          "add": "-지?",
+          "ex": "덥지?, 맞지?"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "오늘 정말 덥죠?",
+          "romanization": "oneul jeongmal deopjyo?",
+          "en": "It's really hot today, isn't it?",
+          "note": "Weather small talk: the speaker expects agreement, not new information."
+        },
+        {
+          "ko": "민수 씨는 학생이지요?",
+          "romanization": "minsu ssineun haksaengijiyo?",
+          "en": "Minsu is a student, right?",
+          "note": "Noun + 이다 becomes 학생이지요; the speaker is confirming something they think is true."
+        },
+        {
+          "ko": "한국어는 재미있죠.",
+          "romanization": "hangugeoneun jaemiitjyo.",
+          "en": "Korean is fun, you know.",
+          "note": "As a statement, -죠 invites agreement and creates a shared feeling."
+        },
+        {
+          "ko": "내일 시험이죠? 맞죠?",
+          "romanization": "naeil siheomijyo? matjyo?",
+          "en": "The test is tomorrow, right? That's right, isn't it?",
+          "note": "A gentle self-check; 맞죠? is a common quick confirmation."
+        }
+      ],
+      "keyPoint": {
+        "label": "-아요? asks; -지요?/죠? confirms",
+        "body": "Use -아요? when you do not know and need information. Use -지요?/죠? when you already have an idea and want confirmation, agreement, or shared footing. If you truly have no idea, plain -아요? is safer."
+      },
+      "pronunciation": "The contracted 죠 is one quick syllable. After a stop consonant like the ㅂ in 덥죠, the ㅈ is always pronounced tense, so 덥죠 sounds like [덥쬬] at any speed — but keep the spelling 덥죠, not 덥쬬.",
+      "drill": {
+        "instruction": "Change each plain question into a confirmation question with -죠?",
+        "model": "오늘 추워요? → 오늘 춥죠?",
+        "items": [
+          "내일 시간 있어요? → ____",
+          "이 영화 재미있어요? → ____",
+          "민수 씨는 선생님이에요? → ____"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "이름이 뭐죠? (when you truly do not know and are asking a stranger)",
+        "right": "이름이 뭐예요? / 성함이 어떻게 되세요?",
+        "explanation": "English tag questions are flexible, so learners overuse -죠 for ordinary questions. But -죠 suggests you expected or half-knew the answer. For new information, use a normal question; save -죠 for confirmation or shared facts."
+      }
+    },
+    {
+      "title": "V/A-거든요 — Adding a Reason They Didn't Know",
+      "func": "Use -거든요 to give the listener new information — usually a reason or background fact they didn't know — often answering a spoken or silent \"why?\". It feels like \"...you see\" at the end.",
+      "formTable": [
+        {
+          "when": "Any verb/adjective stem (present)",
+          "add": "-거든요",
+          "ex": "바쁘다 → 바쁘거든요, 가다 → 가거든요"
+        },
+        {
+          "when": "Past tense",
+          "add": "-았/었거든요",
+          "ex": "먹다 → 먹었거든요, 자다 → 잤거든요"
+        },
+        {
+          "when": "Noun + 이다",
+          "add": "-(이)거든요",
+          "ex": "학생이다 → 학생이거든요, 친구다 → 친구거든요"
+        },
+        {
+          "when": "Casual (반말)",
+          "add": "-거든",
+          "ex": "바쁘거든, 먹었거든"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "오늘은 못 만나요. 할 일이 많거든요.",
+          "romanization": "oneureun mot mannayo. hal iri mankeodeunyo.",
+          "en": "I can't meet today. I have a lot to do, you see.",
+          "note": "Gives a reason the listener didn't know."
+        },
+        {
+          "ko": "저 요즘 한국어 배워요. 한국 친구가 많거든요.",
+          "romanization": "jeo yojeum hangugeo baewoyo. hanguk chinguga mankeodeunyo.",
+          "en": "I'm learning Korean these days. I have a lot of Korean friends, you see.",
+          "note": "Adds fresh background that explains the first sentence."
+        },
+        {
+          "ko": "어제 일찍 잤어요. 너무 피곤했거든요.",
+          "romanization": "eoje iljjik jasseoyo. neomu pigonhaetgeodeunyo.",
+          "en": "I went to bed early yesterday. I was so tired, you see.",
+          "note": "Past tense -었거든요 gives the reason for a past action."
+        },
+        {
+          "ko": "오늘 우산 가져왔어요. 비가 온다고 했거든요.",
+          "romanization": "oneul usan gajyeowasseoyo. biga ondago haetgeodeunyo.",
+          "en": "I brought an umbrella today. They said it would rain, you see.",
+          "note": "Introduces a new fact that explains the action."
+        }
+      ],
+      "keyPoint": {
+        "label": "-거든요 vs. -아서/어서",
+        "body": "Both can give a reason, but -아서/어서 joins two clauses inside one sentence ('A여서 B'). -거든요 ends the sentence and tacks the reason on afterward as a fresh follow-up — it signals 'here's something you didn't know'. -아서/어서 doesn't carry that 'news' feeling."
+      },
+      "pronunciation": "거든요 keeps each syllable clear: [거든뇨] in fast speech as the ㄴ and ㅛ glide together. Don't soften it to [거더요].",
+      "drill": {
+        "instruction": "Add a reason the listener doesn't know yet, using -거든요.",
+        "model": "(못 만나요 / 할 일이 많다) → 못 만나요. 할 일이 많거든요.",
+        "items": [
+          "(오늘 집에 일찍 가요 / 부모님이 오시다) → ___",
+          "(물을 많이 마셔요 / 날씨가 덥다) → ___",
+          "(그 영화 봤어요 / 친구가 추천했다) → ___"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "일이 많거든요 못 만나요.",
+        "right": "오늘은 못 만나요. 일이 많거든요.",
+        "explanation": "-거든요 goes at the END of a sentence, not in the middle like English 'because'. Say your main point first, then add the reason as a separate sentence ending in -거든요."
+      }
+    },
+    {
+      "title": "V/A-는데요 — A Soft, Trailing Ending",
+      "func": "Use sentence-final -는데요 to leave your statement gently open, inviting the other person to react or softening a reply. It often hints at an unspoken 'but...', which makes answers and mild objections sound polite instead of blunt.",
+      "formTable": [
+        {
+          "when": "Action verb (present)",
+          "add": "-는데요",
+          "ex": "가다 → 가는데요, 먹다 → 먹는데요"
+        },
+        {
+          "when": "Adjective (present)",
+          "add": "-(으)ㄴ데요",
+          "ex": "바쁘다 → 바쁜데요, 작다 → 작은데요"
+        },
+        {
+          "when": "Past tense",
+          "add": "-았/었는데요",
+          "ex": "가다 → 갔는데요, 좋다 → 좋았는데요"
+        },
+        {
+          "when": "Noun + 이다",
+          "add": "인데요",
+          "ex": "학생이다 → 학생인데요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "지금 좀 바쁜데요.",
+          "romanization": "jigeum jom bappeunde-yo.",
+          "en": "I'm a little busy right now... (so maybe later?)",
+          "note": "Trails off softly instead of a flat 'no', leaving room for the other person."
+        },
+        {
+          "ko": "그건 잘 모르는데요.",
+          "romanization": "geugeon jal moreunde-yo.",
+          "en": "Hmm, I don't really know that...",
+          "note": "A gentle way to admit you don't know, softer than 몰라요."
+        },
+        {
+          "ko": "저는 벌써 다 먹었는데요.",
+          "romanization": "jeoneun beolsseo da meogeonneunde-yo.",
+          "en": "But I already finished eating...",
+          "note": "Past tense -었는데요 here carries a mild 'but', a soft pushback."
+        },
+        {
+          "ko": "여기 자리 있는데요.",
+          "romanization": "yeogi jari inneunde-yo.",
+          "en": "Um, someone's sitting here...",
+          "note": "Softly tells someone a seat is taken without sounding harsh."
+        }
+      ],
+      "keyPoint": {
+        "label": "-는데 vs. -는데요",
+        "body": "-는데 in the middle of a sentence sets up background for a following clause. -는데요 stands at the very END as a soft, open finish. Same shape, but here it's a complete reply that trails off, not a connector. The honorific 요 is what makes it a polite stand-alone ending."
+      },
+      "pronunciation": "는데요 sounds like [는데요]; after a ㄷ/ㅅ/ㅈ-final stem the ㄴ-change still applies (먹었는데요 → [머건는데요]). Let the final 요 drift up slightly to keep the soft, open feel.",
+      "drill": {
+        "instruction": "Answer each prompt with a soft, trailing -는데요 ending.",
+        "model": "(지금 바쁘다) → 지금 좀 바쁜데요.",
+        "items": [
+          "(그건 잘 모르다) → ___",
+          "(저는 벌써 먹었다) → ___",
+          "(여기 자리 있다) → ___"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "지금 바빠요. (flat, can sound blunt when declining)",
+        "right": "지금 좀 바쁜데요.",
+        "explanation": "English speakers end a refusal with a plain -아요/어요, which can land too direct in Korean. Adding -는데요 leaves the sentence softly open, so a 'no' feels gentler and more polite."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "사실은",
+      "romanization": "sasireun",
+      "english": "actually; to be honest",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "사실은 오늘 자료가 아직 안 끝났는데요.",
+        "en": "Actually, today's materials are not finished yet.",
+        "note": "Opens a sensitive update softly."
+      },
+      "collocations": [
+        "사실은 아직",
+        "사실은 제가",
+        "사실은 ...거든요"
+      ]
+    },
+    {
+      "hangul": "그런데",
+      "romanization": "geureonde",
+      "english": "but; by the way",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "알겠어요. 그런데 발표 전에 자료는 보내 줄 수 있어요?",
+        "en": "I understand. But can you send the materials before the presentation?",
+        "note": "Shifts from accepting the situation to asking for the next action."
+      },
+      "collocations": [
+        "그런데요",
+        "그런데 말이에요",
+        "알겠어요. 그런데..."
+      ]
+    },
+    {
+      "hangul": "근데",
+      "romanization": "geunde",
+      "english": "but; by the way (casual)",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "근데 그건 조금 어려운데요.",
+        "en": "But that is a little difficult, though.",
+        "note": "Casual version of 그런데 for spoken conversation."
+      },
+      "collocations": [
+        "근데 있잖아",
+        "근데 오늘",
+        "근데 그건"
+      ]
+    },
+    {
+      "hangul": "그러니까",
+      "romanization": "geureonikka",
+      "english": "so; what you mean is",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "그러니까 먼저 회의를 시작해도 된다는 말이죠?",
+        "en": "So you mean we can start the meeting first, right?",
+        "note": "Checks the implied meaning before moving on."
+      },
+      "collocations": [
+        "그러니까 제 말은",
+        "그러니까 먼저",
+        "그러니까 ...라는 말이죠?"
+      ]
+    },
+    {
+      "hangul": "잖아요",
+      "romanization": "janhayo",
+      "english": "you know; as you know",
+      "partOfSpeech": "ending",
+      "exampleSentence": {
+        "ko": "회의 시간이 짧잖아요.",
+        "en": "The meeting time is short, you know.",
+        "note": "Use when the listener already knows the reason."
+      },
+      "collocations": [
+        "바쁘잖아요",
+        "말했잖아요",
+        "주말이잖아요"
+      ]
+    },
+    {
+      "hangul": "거든요",
+      "romanization": "geodeunyo",
+      "english": "you see; the thing is",
+      "partOfSpeech": "ending",
+      "exampleSentence": {
+        "ko": "어제 갑자기 일이 생겼거든요.",
+        "en": "Something suddenly came up yesterday, you see.",
+        "note": "Use when the listener does not know the background yet."
+      },
+      "collocations": [
+        "늦거든요",
+        "바쁘거든요",
+        "일이 생겼거든요"
+      ]
+    },
+    {
+      "hangul": "는데요",
+      "romanization": "neundeyo",
+      "english": "though; soft trailing ending",
+      "partOfSpeech": "ending",
+      "exampleSentence": {
+        "ko": "자료가 아직 안 끝났는데요.",
+        "en": "The materials are not finished yet, though.",
+        "note": "Leaves space for the listener to respond."
+      },
+      "collocations": [
+        "바쁜데요",
+        "괜찮은데요",
+        "모르겠는데요"
+      ]
+    },
+    {
+      "hangul": "자료",
+      "romanization": "jaryo",
+      "english": "materials; data; documents",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "회의 전에 자료를 보내 줄게요.",
+        "en": "I will send the materials before the meeting.",
+        "note": "The actual file, handout, slide deck, or reference material."
+      },
+      "collocations": [
+        "발표 자료",
+        "회의 자료",
+        "자료를 보내다"
+      ]
+    },
+    {
+      "hangul": "배경",
+      "romanization": "baegyeong",
+      "english": "background; context",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "제가 먼저 배경을 설명할게요.",
+        "en": "I will explain the background first.",
+        "note": "Context that helps the listener understand the situation."
+      },
+      "collocations": [
+        "배경을 설명하다",
+        "이런 배경",
+        "문제의 배경"
+      ]
+    },
+    {
+      "hangul": "상대방",
+      "romanization": "sangdaebang",
+      "english": "the other person; conversation partner",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "상대방이 모르는 내용이면 거든요가 더 자연스러워요.",
+        "en": "If the other person does not know it, 거든요 is more natural.",
+        "note": "The listener's knowledge decides the marker."
+      },
+      "collocations": [
+        "상대방이 알다",
+        "상대방이 모르다",
+        "상대방 기분"
+      ]
+    },
+    {
+      "hangul": "부드럽게",
+      "romanization": "budeureopge",
+      "english": "softly; gently; smoothly",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "그 의견에는 부드럽게 반대하는 게 좋아요.",
+        "en": "It is better to disagree with that opinion gently.",
+        "note": "Names the tone this chapter is practicing."
+      },
+      "collocations": [
+        "부드럽게 말하다",
+        "부드럽게 거절하다",
+        "부드럽게 반대하다"
+      ]
+    },
+    {
+      "hangul": "말을 꺼내다",
+      "romanization": "mareul kkeonaeda",
+      "english": "to bring up a topic",
+      "partOfSpeech": "phrase",
+      "exampleSentence": {
+        "ko": "자료가 늦어진 이야기는 제가 먼저 말을 꺼낼게요.",
+        "en": "I will bring up the delayed materials first.",
+        "note": "말 means words or speech here."
+      },
+      "collocations": [
+        "먼저 말을 꺼내다",
+        "조심스럽게 말을 꺼내다",
+        "어려운 말을 꺼내다"
+      ]
+    },
+    {
+      "hangul": "설명하다",
+      "romanization": "seolmyeonghada",
+      "english": "to explain",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "제가 배경을 설명할게요.",
+        "en": "I will explain the background.",
+        "note": "A practical verb for giving context."
+      },
+      "collocations": [
+        "배경을 설명하다",
+        "이유를 설명하다",
+        "상황을 설명하다"
+      ]
+    },
+    {
+      "hangul": "동의하다",
+      "romanization": "donguihada",
+      "english": "to agree",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "저도 그 의견에 동의해요.",
+        "en": "I agree with that opinion too.",
+        "note": "Pairs with 의견 and polite discussion."
+      },
+      "collocations": [
+        "의견에 동의하다",
+        "완전히 동의하다",
+        "동의하기 어렵다"
+      ]
+    },
+    {
+      "hangul": "반대하다",
+      "romanization": "bandaehada",
+      "english": "to oppose; to disagree",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "그 의견에는 조금 반대하는데요.",
+        "en": "I disagree with that opinion a little, though.",
+        "note": "Use -는데요 to make disagreement less abrupt."
+      },
+      "collocations": [
+        "의견에 반대하다",
+        "부드럽게 반대하다",
+        "반대하는 이유"
+      ]
+    },
+    {
+      "hangul": "분위기",
+      "romanization": "bunwigi",
+      "english": "atmosphere; mood",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "그렇게 말하면 분위기가 조금 딱딱해져요.",
+        "en": "If you say it like that, the mood becomes a little stiff.",
+        "note": "Discourse markers affect the mood of a conversation."
+      },
+      "collocations": [
+        "분위기가 좋다",
+        "분위기가 딱딱하다",
+        "분위기를 부드럽게 만들다"
+      ]
+    },
+    {
+      "hangul": "상황",
+      "romanization": "sanghwang",
+      "english": "situation; circumstances",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "상황을 먼저 설명하면 상대방이 이해하기 쉬워요.",
+        "en": "If you explain the situation first, it is easier for the other person to understand.",
+        "note": "The larger situation tells you which marker fits."
+      },
+      "collocations": [
+        "상황을 설명하다",
+        "이런 상황",
+        "상황이 바뀌다"
+      ]
+    },
+    {
+      "hangul": "의견",
+      "romanization": "uigyeon",
+      "english": "opinion",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "그 의견도 좋은데 시간이 부족해요.",
+        "en": "That opinion is good too, but we are short on time.",
+        "note": "Natural noun for agreeing, disagreeing, or softening pushback."
+      },
+      "collocations": [
+        "의견을 말하다",
+        "의견에 동의하다",
+        "의견에 반대하다"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "A team member brings up unfinished materials before a meeting starts.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "사실은 오늘 자료가 아직 다 안 끝났는데요.",
+        "romanization": "sasireun oneul jaryoga ajik da an kkeunnanneundeyo.",
+        "en": "Actually, today's materials are not finished yet.",
+        "grammarNote": "사실은 plus -는데요 opens bad news without sounding too sudden."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "그러니까 먼저 회의를 시작해도 된다는 말이죠?",
+        "romanization": "geureonikka meonjeo hoeuireul sijakaedo doendaneun marijyo?",
+        "en": "So you mean we can start the meeting first, right?",
+        "grammarNote": "그러니까 checks the implied meaning instead of assuming."
+      },
+      {
+        "speaker": "민서",
+        "ko": "네. 어제 갑자기 일이 생겼거든요.",
+        "romanization": "ne. eoje gapjagi iri saenggyeotgeodeunyo.",
+        "en": "Yes. Something suddenly came up yesterday, you see.",
+        "grammarNote": "-거든요 gives new background the listener did not have."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "알겠어요. 그런데 발표 전에 자료는 보내 줄 수 있어요?",
+        "romanization": "algesseoyo. geureonde balpyo jeone jaryoneun bonae jul su isseoyo?",
+        "en": "I understand. But can you send the materials before the presentation?",
+        "grammarNote": "그런데 shifts to the next practical concern."
+      },
+      {
+        "speaker": "민서",
+        "ko": "네, 그건 가능해요. 회의 시간이 짧잖아요.",
+        "romanization": "ne, geugeon ganeunghaeyo. hoeui sigani jjaljanhayo.",
+        "en": "Yes, that is possible. The meeting time is short, you know.",
+        "grammarNote": "-잖아요 treats the short meeting time as shared information."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "그럼 제가 먼저 배경을 설명할게요.",
+        "romanization": "geureom jega meonjeo baegyeongeul seolmyeonghalgeyo.",
+        "en": "Then I will explain the background first.",
+        "grammarNote": "배경 keeps the reason organized instead of sounding like an excuse."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "자료가 아직 안 끝났는데요",
+    "body": "팀 회의에서 자료가 늦어졌다면 바로 '못 했어요'라고만 말하면 조금 딱딱하게 들릴 수 있어요. 먼저 '사실은'으로 말을 꺼내고, '자료가 아직 안 끝났는데요'처럼 상황을 부드럽게 열어 주세요. 상대방이 모르는 이유를 설명할 때는 '어제 갑자기 일이 생겼거든요'가 자연스럽고, 이미 같이 아는 사실을 다시 짚을 때는 '회의 시간이 짧잖아요'가 자연스러워요. 그다음에는 '그런데 발표 전에 자료는 보내 줄 수 있어요?'처럼 다음 행동을 확인하면 대화가 멈추지 않아요.",
+    "bodyTranslation": "If the materials are late in a team meeting, simply saying 'I did not do it' can sound stiff. Open the topic with 사실은, soften the situation with -는데요, use -거든요 for new background, and use -잖아요 for shared information. Then move the conversation to the next action.",
+    "comprehensionQuestions": [
+      {
+        "question": "자료가 늦어졌을 때 먼저 어떤 표현으로 말을 꺼낼 수 있어요?",
+        "answer": "사실은으로 말을 꺼낼 수 있어요."
+      },
+      {
+        "question": "상대방이 모르는 이유를 설명할 때 어떤 표현이 자연스러워요?",
+        "answer": "거든요가 자연스러워요."
+      },
+      {
+        "question": "이미 같이 아는 사실을 다시 짚을 때는 어떤 표현이 자연스러워요?",
+        "answer": "잖아요가 자연스러워요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "Soft does not mean unclear",
+    "body": "In Korean, softening a sentence often means preparing the listener for the point, not avoiding the point. A good update still says what happened, why it happened, and what can happen next.",
+    "tip": "Before choosing 잖아요 or 거든요, ask one question: does the listener already know this reason?"
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "The listener does not know why the materials are late. Which ending fits best?",
+      "options": [
+        "어제 갑자기 일이 생겼거든요.",
+        "어제 갑자기 일이 생겼잖아요.",
+        "어제 갑자기 일이 생겼네요."
+      ],
+      "correct": "어제 갑자기 일이 생겼거든요.",
+      "explanation": "Use -거든요 for new background the listener does not know yet."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Everyone knows the meeting time is short. Which sentence uses that shared fact naturally?",
+      "options": [
+        "회의 시간이 짧잖아요.",
+        "회의 시간이 짧거든요.",
+        "회의 시간이 짧네요."
+      ],
+      "correct": "회의 시간이 짧잖아요.",
+      "explanation": "Use -잖아요 when the reason is shared, visible, or already mentioned."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence brings up bad news most softly?",
+      "options": [
+        "사실은 자료가 아직 안 끝났는데요.",
+        "자료 안 끝났습니다. 끝.",
+        "자료가 안 끝났잖아요, 왜 몰라요?"
+      ],
+      "correct": "사실은 자료가 아직 안 끝났는데요.",
+      "explanation": "사실은 opens the topic and -는데요 leaves room for the next step."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "자료___ 아직 안 왔거든요. (The thing is, the materials have not arrived yet.)",
+      "options": [
+        "가",
+        "를",
+        "에"
+      ],
+      "correct": "가",
+      "explanation": "자료 is the subject of not arriving, so it takes 가. 거든요 adds new background the listener may not know."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "자료가 아직 안 ___ . (오다 → soft trailing background)",
+      "base": "오다",
+      "form": "softBackground",
+      "correct": "왔는데요",
+      "explanation": "-는데요 opens background and leaves room for the listener to respond. 오다 in past becomes 왔는데요."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'Actually, the materials are late, you see.'",
+      "tokens": [
+        "사실은",
+        "자료가 늦었거든요"
+      ],
+      "correct": "사실은 자료가 늦었거든요",
+      "explanation": "사실은 prepares the listener for sensitive background. -거든요 explains new information rather than reminding them of something shared."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Say: 'We do not have much time, you know.'",
+      "correct": "시간이 별로 없잖아요.",
+      "explanation": "-잖아요 reminds the listener of shared information. It fits when both people already know time is short."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the sentence if the listener already knows: '시간이 별로 없거든요.'",
+      "correct": "시간이 별로 없잖아요.",
+      "explanation": "If the listener already knows the fact, 잖아요 is more natural. 거든요 presents it as new background."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "You need to bring up bad news softly. Which opener is best?",
+      "options": [
+        "사실은 문제가 좀 있는데요.",
+        "문제 있어요.",
+        "문제입니다."
+      ],
+      "correct": "사실은 문제가 좀 있는데요.",
+      "explanation": "사실은 and -는데요 soften the approach. The shorter alternatives can sound abrupt in a sensitive conversation."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Say: 'But I have one question.'",
+      "correct": "근데 질문이 하나 있어요.",
+      "explanation": "근데 shifts the conversation without sounding too formal. 질문이 하나 있어요 is a natural way to bring in one question."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "사실은 + -는데요 is useful for opening a sensitive update softly.",
+      "-거든요 gives new background; -잖아요 points to shared information.",
+      "그런데 and 근데 shift the conversation, but 근데 is more casual.",
+      "A soft marker should still lead to a clear next action."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Text a coworker to ask if you can borrow their notes, but first explain the background (you were absent yesterday) before you make the request.",
+    "hint": "Open with background using -(으)ㄴ/는데 (어제 못 왔는데), give a reason the other person didn't know with -거든요 (감기에 걸렸거든요), and remind them of a shared fact with -잖아요 (내일 시험이 있잖아요).",
+    "model": "어제 학교에 못 왔는데, 혹시 자료 좀 빌려줄 수 있어요? 사실은 감기에 걸렸거든요. 내일 시험이 있잖아요. 그래서 좀 부탁드려요.",
+    "modelEn": "I couldn't come to school yesterday, so could you maybe lend me your materials? Actually, the thing is I caught a cold. We have the exam tomorrow, you know. So I'd appreciate it."
+  },
+  "canDo": [
+    "Lead with background before my real point using -(으)ㄴ/는데 (어제 못 왔는데...)",
+    "Remind someone of something we both know with -잖아요 (시험이 있잖아요)",
+    "Add a reason they didn't know with -거든요 (감기에 걸렸거든요)",
+    "Soften a reply and leave room to react with trailing -는데요"
+  ]
+}

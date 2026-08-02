@@ -1,0 +1,22 @@
+{
+  "chapterId": "chapter-38",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 9,
+  "cardsReviewed": 28,
+  "findings": [
+    {
+      "biteId": "chapter-38-b1",
+      "cardIndex": 0,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "올라온 공지, 변경된 일정, and 제출할 보고서 were offered together in 확인하다/검토하다 frames where more than one full noun phrase is natural.",
+      "fix": "Added mutual distractor bans for the three document/schedule phrases and recompiled.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 9 bites and 28 cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}

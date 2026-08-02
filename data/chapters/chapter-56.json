@@ -1,0 +1,885 @@
+{
+  "id": "chapter-56",
+  "hook": {
+    "situation": "You are going to a Korean coworker's 집들이. You need to choose a practical gift, use a safe title, read the room, offer help politely, and thank people without sounding too casual.",
+    "objectives": [
+      "Choose and explain housewarming gifts with 집들이, 선물, 휴지, and 세제.",
+      "Handle age and titles with 나이, 동갑, 선배/후배, 호칭, and 어르신.",
+      "Use 눈치, 도와드리다, 챙기다, 수고하셨습니다, and 덕분에 in socially careful sentences."
+    ],
+    "whyItMatters": "Korean social customs are not just facts about culture. They show up as sentence choices: what gift you bring, what title you use, when you offer help, and how you thank someone afterward."
+  },
+  "grammarNotes": [
+    {
+      "title": "V/A-잖아요 — \"you know (we both know this)\"",
+      "func": "Reminds the listener of something you assume you both already know, or gently corrects them with a fact they should remember. It softens a reminder by framing it as shared knowledge rather than news — very common when explaining everyday manners and customs.",
+      "formTable": [
+        {
+          "when": "Verb or Adjective stem (present)",
+          "add": "-잖아요",
+          "ex": "한국에서는 신발을 벗잖아요 (You take your shoes off in Korea, you know)"
+        },
+        {
+          "when": "Past tense (V & A)",
+          "add": "-았/었잖아요",
+          "ex": "지난번에 제가 말했잖아요 (I told you last time, remember)"
+        },
+        {
+          "when": "Noun + 이다",
+          "add": "(이)잖아요",
+          "ex": "오늘 어버이날이잖아요 (It's Parents' Day today, you know)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "윗사람한테는 두 손으로 드리잖아요.",
+          "romanization": "witsaram-hante-neun du soneuro deurijanhayo.",
+          "en": "You hand things to elders with both hands, you know.",
+          "note": "Frames a manners rule as shared knowledge, so it sounds like a friendly reminder, not a lecture."
+        },
+        {
+          "ko": "집들이에는 보통 휴지나 세제를 사 가잖아요.",
+          "romanization": "jipdeurie-neun botong hyujina sejereul sa gajanhayo.",
+          "en": "You usually bring toilet paper or detergent to a housewarming, you know.",
+          "note": "Explains a custom the speaker assumes is familiar to both people."
+        },
+        {
+          "ko": "어제 같이 봤잖아요, 기억 안 나요?",
+          "romanization": "eoje gachi bwatjanhayo, gieok an nayo?",
+          "en": "We saw it together yesterday, remember? Don't you recall?",
+          "note": "Past form gently corrects the listener about a shared experience."
+        },
+        {
+          "ko": "지하철에서는 노약자석을 비워 두잖아요.",
+          "romanization": "jihacheoreseo-neun noyakjaseogeul biwo dujanhayo.",
+          "en": "You leave the priority seats empty on the subway, you know.",
+          "note": "Appeals to a publicly known norm to back up the speaker's point."
+        }
+      ],
+      "keyPoint": {
+        "label": "-잖아요 vs. -거든요",
+        "body": "Use -잖아요 when you think the listener ALREADY knows it ('as you know'). Use -거든요 when it's NEW background the listener does not know yet ('the thing is…'). Same slot, opposite assumption about the listener."
+      },
+      "pronunciation": "-잖아요 is carefully [자나요]; the ㅎ-like sound is very light, and in fast speech it can flatten to [자아요]. Stick with [자나요].",
+      "drill": {
+        "instruction": "Complete each sentence with -잖아요 to remind the listener of a shared fact.",
+        "model": "한국에서는 어른이 먼저 드시잖아요. (Elders eat first in Korea, you know.)",
+        "items": [
+          "설날에는 어른들께 세배를 ___ (드리다)",
+          "어제 제가 이미 ___ (말하다, past)",
+          "그 식당은 일요일에 문을 ___ (닫다)"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "한국에서는 신발을 벗어요, 잖아요.",
+        "right": "한국에서는 신발을 벗잖아요.",
+        "explanation": "-잖아요 is a sentence ending attached straight to the stem (벗 + 잖아요). It is not a tag word you stick after a finished -아요/-어요 sentence the way English adds 'right?' at the end."
+      }
+    },
+    {
+      "title": "V/A-거든요 — \"the thing is… (here's the background)\"",
+      "func": "Gives a reason or piece of background the listener does not yet know, often answering a real or expected 'why?'. It signals 'the thing is…' and is a soft, polite way to explain yourself in conversation.",
+      "formTable": [
+        {
+          "when": "Verb or Adjective stem (present)",
+          "add": "-거든요",
+          "ex": "제가 매운 걸 못 먹거든요 (The thing is, I can't eat spicy food)"
+        },
+        {
+          "when": "Past tense (V & A)",
+          "add": "-았/었거든요",
+          "ex": "어제 늦게 잤거든요 (I went to bed late yesterday, you see)"
+        },
+        {
+          "when": "Noun + 이다",
+          "add": "(이)거든요",
+          "ex": "오늘이 제 생일이거든요 (Today's my birthday, you see)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "오늘은 일찍 가 볼게요. 시댁에 가야 하거든요.",
+          "romanization": "oneureun iljjik ga bolgeyo. sidaege gaya hageodeunyo.",
+          "en": "I'll head off early today. The thing is, I have to visit my in-laws.",
+          "note": "Gives an unknown reason for leaving early, softening the abruptness."
+        },
+        {
+          "ko": "꽃을 사 왔어요. 오늘 처음 인사 드리는 거거든요.",
+          "romanization": "kkocheul sa wasseoyo. oneul cheoeum insa deurineun geogeodeunyo.",
+          "en": "I brought flowers. It's the first time I'm greeting you properly, you see.",
+          "note": "Explains the gift by giving social context the host didn't know."
+        },
+        {
+          "ko": "술은 안 마실게요. 제가 운전해야 하거든요.",
+          "romanization": "sureun an masilgeyo. jega unjeonhaeya hageodeunyo.",
+          "en": "I won't drink. The thing is, I have to drive.",
+          "note": "Declines politely by offering a reason, which is socially expected."
+        },
+        {
+          "ko": "연락 못 드려서 죄송해요. 핸드폰이 고장 났거든요.",
+          "romanization": "yeollak mot deuryeoseo joesonghaeyo. haendeuponi gojang natgeodeunyo.",
+          "en": "Sorry I couldn't reach you. My phone broke, you see.",
+          "note": "Past form gives the unknown cause behind an apology."
+        }
+      ],
+      "keyPoint": {
+        "label": "-거든요 vs. -아서/어서",
+        "body": "Both give reasons. -아서/어서 joins the reason to a clause in the SAME sentence ('Because A, B'). -거든요 ends its own sentence and offers the reason as new information the listener didn't have, so it usually stands alone as a reply."
+      },
+      "pronunciation": "-거든요 is [거드뇨] in quick speech, but the careful form is [거든뇨]→[거든요]. Keep the 든 clear.",
+      "drill": {
+        "instruction": "Finish each reply with -거든요 to give the listener new background.",
+        "model": "저는 안 갈래요. 그날 약속이 있거든요. (I won't go — I have plans that day, you see.)",
+        "items": [
+          "선물을 준비했어요. 오늘이 집들이 ___ (이다)",
+          "고기를 안 먹어요. 제가 채식을 ___ (하다)",
+          "조금 늦었어요. 길이 많이 ___ (막히다, past)"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "왜 안 가요? — 약속이 있어서요.",
+        "right": "왜 안 가요? — 약속이 있거든요.",
+        "explanation": "English speakers reach for -아서/어서 to answer 'why', but as a stand-alone reply -아서요 sounds clipped, while -거든요 is the natural, conversational choice. Don't force the reason into the same clause as the result."
+      }
+    },
+    {
+      "title": "V/A-는데요 — \"soften a careful statement or question\"",
+      "func": "Ends a turn on an open, non-final note that leaves room for the listener to react. It softens statements, eases into careful questions, and sets up background before a request — essential for polite, indirect social talk.",
+      "formTable": [
+        {
+          "when": "Verb stem (present)",
+          "add": "-는데요",
+          "ex": "지금 가는데요 (Well, I'm going now…)"
+        },
+        {
+          "when": "Adjective stem (present)",
+          "add": "-(으)ㄴ데요",
+          "ex": "좀 비싼데요 (It's a bit pricey, though…)"
+        },
+        {
+          "when": "Past tense (V & A)",
+          "add": "-았/었는데요",
+          "ex": "벌써 끝났는데요 (It's already finished, though…)"
+        },
+        {
+          "when": "Noun + 이다",
+          "add": "인데요",
+          "ex": "저는 처음인데요 (It's my first time, you see…)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "이거 집들이 선물로 드리려고 하는데요, 괜찮을까요?",
+          "romanization": "igeo jipdeuri seonmullo deuriryeogo haneundeyo, gwaenchaneulkkayo?",
+          "en": "I was thinking of giving this as a housewarming gift… would that be okay?",
+          "note": "Sets up the situation softly before a careful yes/no question."
+        },
+        {
+          "ko": "옷차림이 좀 캐주얼한데요, 그래도 괜찮아요?",
+          "romanization": "otcharimi jom kejueolhandeyo, geuraedo gwaenchanayo?",
+          "en": "My outfit is a bit casual, though… is that still all right?",
+          "note": "Adjective form softens a worry instead of stating it bluntly."
+        },
+        {
+          "ko": "호칭을 잘 모르는데요, 뭐라고 부르면 될까요?",
+          "romanization": "hochingeul jal moreuneundeyo, mworago bureumyeon doelkkayo?",
+          "en": "I'm not really sure what to call you… what should I say?",
+          "note": "Trails off so the request for help feels hesitant, not pushy."
+        },
+        {
+          "ko": "예약은 했는데요, 시간이 좀 늦을 것 같아요.",
+          "romanization": "yeyageun haetneundeyo, sigani jom neujeul geot gatayo.",
+          "en": "I did make a reservation, but… we might be a little late.",
+          "note": "Past -는데요 concedes one point before adding a softer caveat."
+        }
+      ],
+      "keyPoint": {
+        "label": "Adjective -(으)ㄴ데요 vs. Verb -는데요",
+        "body": "Verbs always take -는데요 (가는데요, 먹는데요). Adjectives take -(으)ㄴ데요 (비싼데요, 좋은데요). 있다/없다 act like verbs: 있는데요, 없는데요. Sorting verb from adjective is the part learners trip on most."
+      },
+      "pronunciation": "-는데요 is [는데요]. After ㄹ-final verb stems the ㄹ drops: 살다 → 사는데요 (not 살는데요).",
+      "drill": {
+        "instruction": "Add -는데요 / -(으)ㄴ데요 to soften each opener, then trail off.",
+        "model": "이 자리 제 자린데요… (Um, this is my seat, though…)",
+        "items": [
+          "지금 좀 ___, 나중에 전화드릴게요. (바쁘다, adjective)",
+          "예약을 ___, 확인 좀 부탁드려요. (하다, past verb)",
+          "여기 사진 ___, 한 장만 부탁드려도 될까요? (찍다, verb)"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "좀 비싸는데요.",
+        "right": "좀 비싼데요.",
+        "explanation": "Learners over-apply the verb pattern -는데요 to adjectives. Adjectives (비싸다, 좋다, 크다) must use -(으)ㄴ데요, so it's 비싼데요, not 비싸는데요."
+      }
+    },
+    {
+      "title": "V/A-(으)ㄴ/는 편이다 — \"I tend to / I'm rather …\"",
+      "func": "Describes a general tendency rather than a hard fact — 'on the … side', 'tends to be …'. It hedges a judgment, which sounds modest and natural when you comment on people, habits, or customs without being too absolute.",
+      "formTable": [
+        {
+          "when": "Verb stem (present habit)",
+          "add": "-는 편이다",
+          "ex": "저는 일찍 가는 편이에요 (I tend to arrive early)"
+        },
+        {
+          "when": "Adjective stem (present)",
+          "add": "-(으)ㄴ 편이다",
+          "ex": "한국 사람들은 정이 많은 편이에요 (Koreans tend to be warm-hearted)"
+        },
+        {
+          "when": "Past verb (one-time result)",
+          "add": "-(으)ㄴ 편이다",
+          "ex": "선물을 많이 받은 편이에요 (I got rather a lot of gifts)"
+        },
+        {
+          "when": "Negative (verb)",
+          "add": "안/잘 안 …-는 편이다",
+          "ex": "술을 잘 안 마시는 편이에요 (I tend not to drink much)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "저는 처음엔 호칭을 조심하는 편이에요.",
+          "romanization": "jeoneun cheoeumen hochingeul josimhaneun pyeonieyo.",
+          "en": "At first I tend to be careful with how I address people.",
+          "note": "Hedges a self-description so it sounds modest, not absolute."
+        },
+        {
+          "ko": "요즘 젊은 사람들은 명절에 한복을 잘 안 입는 편이에요.",
+          "romanization": "yojeum jeolmeun saramdeureun myeongjeore hanbogeul jal an imneun pyeonieyo.",
+          "en": "These days young people tend not to wear hanbok on the holidays.",
+          "note": "A soft generalization about a changing custom, leaving room for exceptions."
+        },
+        {
+          "ko": "그 선배님은 후배들을 잘 챙기는 편이에요.",
+          "romanization": "geu seonbaenimeun hubaedeureul jal chaenggineun pyeonieyo.",
+          "en": "That senior tends to look out for the juniors.",
+          "note": "Comments on someone's habit without stating it as a fixed rule."
+        },
+        {
+          "ko": "저는 분위기가 어색하면 먼저 말을 거는 편이에요.",
+          "romanization": "jeoneun bunwigiga eosaekamyeon meonjeo mareul geoneun pyeonieyo.",
+          "en": "When the mood is awkward, I tend to be the one who speaks up first.",
+          "note": "Describes a personal habit in a social setting, softly."
+        }
+      ],
+      "keyPoint": {
+        "label": "Verb 는 편 vs. Adjective (으)ㄴ 편",
+        "body": "With a verb, use -는 편이다 for a habit (가는 편, 챙기는 편). With an adjective, use -(으)ㄴ 편이다 for a quality (많은 편, 비싼 편). 편이다 means 'leans that way', so never use it for a one-time event like '오늘 갔어요'."
+      },
+      "pronunciation": "편이에요 is [펴니에요]; the ㄴ links into the next syllable. Keep 편 short, not 'pyeon-i'.",
+      "drill": {
+        "instruction": "Turn each fact into a softer tendency with -는/-(으)ㄴ 편이에요.",
+        "model": "저는 / 일찍 자다 → 저는 일찍 자는 편이에요. (I tend to sleep early.)",
+        "items": [
+          "저는 / 선물을 미리 챙기다 (verb habit)",
+          "우리 가족은 / 정이 많다 (adjective)",
+          "저는 / 술을 잘 안 마시다 (negative verb)"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "한국 사람들은 정이 많는 편이에요.",
+        "right": "한국 사람들은 정이 많은 편이에요.",
+        "explanation": "많다 is an adjective, so it takes -(으)ㄴ 편이다 → 많은 편이에요, not the verb ending -는 편. Check whether the word is a verb or an adjective before you pick 는 or (으)ㄴ."
+      }
+    },
+    {
+      "title": "V/A-(으)니까 — \"since (so here's what to do)\"",
+      "func": "Gives a reason that leads into advice, a request, or a decision: 'since X, (let's / please / I'll) …'. Unlike -아서/어서, it's the natural choice when the second clause is a suggestion or command — very common when explaining the reason behind a social custom.",
+      "formTable": [
+        {
+          "when": "Verb/Adjective stem ending in a vowel",
+          "add": "-니까",
+          "ex": "바쁘다 → 바쁘니까 미리 챙기세요 (Since you're busy, prepare it in advance)"
+        },
+        {
+          "when": "Verb/Adjective stem ending in a consonant",
+          "add": "-으니까",
+          "ex": "많다 → 사람이 많으니까 조심하세요 (Since there are many people, be careful)"
+        },
+        {
+          "when": "Past tense (V & A)",
+          "add": "-았/었으니까",
+          "ex": "덕분에 잘 됐으니까 감사 인사를 하세요 (Since it went well thanks to them, say thank you)"
+        },
+        {
+          "when": "Noun + 이다",
+          "add": "(이)니까",
+          "ex": "오늘이 첫날이니까 일찍 가요 (Since today's the first day, let's go early)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "집들이니까 작은 선물이라도 챙겨 가세요.",
+          "romanization": "jipdeurinikka jageun seonmurirado chaenggyeo gaseyo.",
+          "en": "Since it's a housewarming, take at least a small gift.",
+          "note": "Reason leading straight into advice — the classic -(으)니까 use."
+        },
+        {
+          "ko": "어르신도 계시니까 말투를 조심해요.",
+          "romanization": "eoreusindo gyesinikka maltureul josimhaeyo.",
+          "en": "Since there are elders there too, be careful with your tone.",
+          "note": "계시다 keeps it respectful; -(으)니까 ties the reason to the action."
+        },
+        {
+          "ko": "아직 잘 모르니까 호칭을 먼저 여쭤볼게요.",
+          "romanization": "ajik jal moreunikka hochingeul meonjeo yeojjwobolgeyo.",
+          "en": "Since I'm not sure yet, I'll ask first how to address them.",
+          "note": "Reason + the speaker's own decision (-ㄹ게요)."
+        },
+        {
+          "ko": "분위기가 좀 어색하니까 제가 먼저 말을 걸어 볼게요.",
+          "romanization": "bunwigiga jom eosaekanikka jega meonjeo mareul georeo bolgeyo.",
+          "en": "Since the mood is a bit awkward, I'll be the one to break the ice.",
+          "note": "-(으)니까 supports a decision to act."
+        }
+      ],
+      "keyPoint": {
+        "label": "-(으)니까 vs. -아서/어서",
+        "body": "Both mean 'because', but only -(으)니까 can lead into a command or suggestion: 늦었으니까 빨리 가세요 (O), 늦어서 빨리 가세요 (X). Use -아서/어서 for plain cause-and-result, -(으)니까 when you're telling someone what to do because of the reason."
+      },
+      "pronunciation": "-(으)니까 is [(으)니까] with a tense 까. Don't soften it to '니가'; the double ㄲ stays strong.",
+      "drill": {
+        "instruction": "Join the reason and the advice with -(으)니까.",
+        "model": "집들이다 + 선물을 챙기세요 → 집들이니까 선물을 챙기세요.",
+        "items": [
+          "어르신도 계시다 + 호칭을 조심하세요",
+          "처음 만나다 + 존댓말을 쓰세요",
+          "길이 막히다 (past) + 일찍 출발해요"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "늦어서 빨리 가세요.",
+        "right": "늦었으니까 빨리 가세요.",
+        "explanation": "When the second clause is a command or suggestion (가세요, 합시다, -ㄹ게요), Korean needs -(으)니까, not -아서/어서. -아서/어서 only works before a plain statement, so 'Since we're late, please hurry' must use 늦었으니까."
+      }
+    },
+    {
+      "title": "A/V-지만 — \"… but (I'll still do the polite thing)\"",
+      "func": "Admits one fact, then turns to a contrasting choice: 'A, but B'. In social situations the second clause usually shows the careful or considerate option, so it's handy for explaining why you act politely even when you don't strictly have to.",
+      "formTable": [
+        {
+          "when": "Verb or Adjective stem",
+          "add": "-지만",
+          "ex": "바쁘지만 갈게요 (I'm busy, but I'll go)"
+        },
+        {
+          "when": "Past tense (V & A)",
+          "add": "-았/었지만",
+          "ex": "늦었지만 인사는 드렸어요 (I was late, but I did greet them)"
+        },
+        {
+          "when": "Noun + 이다",
+          "add": "(이)지만",
+          "ex": "동갑이지만 존댓말을 써요 (We're the same age, but I use polite speech)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "동갑이지만 처음엔 존댓말을 써요.",
+          "romanization": "donggabijiman cheoeumen jondaenmareul sseoyo.",
+          "en": "We're the same age, but at first I use polite speech.",
+          "note": "Being the same age doesn't automatically mean casual speech."
+        },
+        {
+          "ko": "조금 어색하지만 제가 먼저 인사할게요.",
+          "romanization": "jogeum eosaekajiman jega meonjeo insahalgeyo.",
+          "en": "It's a little awkward, but I'll greet them first.",
+          "note": "Discomfort first, then the considerate action."
+        },
+        {
+          "ko": "바쁘지만 집들이 선물은 미리 챙겼어요.",
+          "romanization": "bappeujiman jipdeuri seonmureun miri chaenggyeosseoyo.",
+          "en": "I'm busy, but I prepared the housewarming gift ahead of time.",
+          "note": "Effort despite being busy shows consideration."
+        },
+        {
+          "ko": "친하지 않지만 선배님이라고 부르는 게 안전해요.",
+          "romanization": "chinhaji anchiman seonbaenimirago bureuneun ge anjeonhaeyo.",
+          "en": "We're not close, but calling them seonbaenim is the safe choice.",
+          "note": "Title before closeness — the careful option."
+        }
+      ],
+      "keyPoint": {
+        "label": "-지만 vs. 그렇지만 / 그런데",
+        "body": "-지만 joins the two clauses inside one sentence (바쁘지만 갈게요). 그렇지만 / 그런데 do the same job but start a new sentence: 바빠요. 그렇지만 갈게요. Use -지만 to keep it as one smooth sentence."
+      },
+      "pronunciation": "-지만 itself is [지만], but a preceding final obstruent can tense its ㅈ: 봤지만 is pronounced [봗찌만]. With 어렵지만, the ㅂ stays because -지만 begins with a consonant.",
+      "drill": {
+        "instruction": "Connect the two ideas with -지만, putting the polite choice second.",
+        "model": "동갑이다 + 존댓말을 써요 → 동갑이지만 존댓말을 써요.",
+        "items": [
+          "바쁘다 + 집들이에 갔어요",
+          "어색하다 + 먼저 도와드렸어요 (past)",
+          "친하지 않다 + 선배님이라고 불러요"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "동갑이에요지만 존댓말을 써요.",
+        "right": "동갑이지만 존댓말을 써요.",
+        "explanation": "-지만 attaches to the plain stem, not to a finished 해요/예요 form. With a noun it's 동갑 + 이지만 → 동갑이지만, never 동갑이에요 + 지만."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "집들이",
+      "romanization": "jipdeuri",
+      "english": "housewarming party",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "주말에 회사 선배 집들이에 가요.",
+        "en": "I am going to a senior coworker's housewarming this weekend.",
+        "note": "Linked to dictionary card word-ext-1109."
+      },
+      "collocations": [
+        "집들이에 가다",
+        "집들이를 하다",
+        "집들이 선물"
+      ]
+    },
+    {
+      "hangul": "선물",
+      "romanization": "seonmul",
+      "english": "gift",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "집들이 선물로 세제를 가져가도 괜찮아요.",
+        "en": "It is okay to bring detergent as a housewarming gift.",
+        "note": "Linked to dictionary card word-ext-ch42-seonmul."
+      },
+      "collocations": [
+        "집들이 선물",
+        "선물을 챙기다",
+        "선물로 가져가다"
+      ]
+    },
+    {
+      "hangul": "휴지",
+      "romanization": "hyuji",
+      "english": "toilet paper / tissue",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "휴지는 집들이 선물로 많이 가져가잖아요.",
+        "en": "People often bring toilet paper as a housewarming gift, you know.",
+        "note": "Linked to dictionary card word-ext-378."
+      },
+      "collocations": [
+        "휴지를 사다",
+        "휴지를 가져가다",
+        "휴지 선물"
+      ]
+    },
+    {
+      "hangul": "세제",
+      "romanization": "seje",
+      "english": "detergent",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "집들이 선물로 세제를 샀거든요.",
+        "en": "I bought detergent as the housewarming gift, you see.",
+        "note": "Chapter card word-ext-ch56-seje."
+      },
+      "collocations": [
+        "세제를 사다",
+        "세제를 가져가다",
+        "휴지나 세제"
+      ]
+    },
+    {
+      "hangul": "나이",
+      "romanization": "nai",
+      "english": "age",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "나이가 비슷하면 동갑일 수도 있어요.",
+        "en": "If your ages are similar, you might be the same age.",
+        "note": "Linked to dictionary card word-ext-1329."
+      },
+      "collocations": [
+        "나이를 묻다",
+        "나이가 비슷하다",
+        "나이가 많다"
+      ]
+    },
+    {
+      "hangul": "동갑",
+      "romanization": "donggap",
+      "english": "same age",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "동갑이지만 처음엔 존댓말을 써요.",
+        "en": "We are the same age, but at first I use polite speech.",
+        "note": "Chapter card word-ext-ch56-donggap."
+      },
+      "collocations": [
+        "우리 동갑이에요",
+        "동갑 친구",
+        "동갑이면"
+      ]
+    },
+    {
+      "hangul": "선배",
+      "romanization": "seonbae",
+      "english": "senior colleague or schoolmate",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "처음엔 선배님이라고 부르는 편이에요.",
+        "en": "At first, I tend to call them seonbaenim.",
+        "note": "Linked to dictionary card word-ext-1624."
+      },
+      "collocations": [
+        "회사 선배",
+        "선배님",
+        "선배 앞에서"
+      ]
+    },
+    {
+      "hangul": "후배",
+      "romanization": "hubae",
+      "english": "junior colleague or schoolmate",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "후배라도 처음엔 존댓말을 쓰면 좋아요.",
+        "en": "Even with a junior, it is good to use polite speech at first.",
+        "note": "Linked to dictionary card word-ext-1625."
+      },
+      "nuance": "후배 means someone who entered the same school, company, or field later than you. 후배님 is possible as a respectful address in some workplaces or unfamiliar relationships; names, roles, and local workplace custom also affect the best form of address.",
+      "collocations": [
+        "회사 후배",
+        "후배한테",
+        "선배와 후배"
+      ]
+    },
+    {
+      "hangul": "호칭",
+      "romanization": "hoching",
+      "english": "form of address / title",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "어떤 호칭을 쓰면 될까요?",
+        "en": "What title should I use?",
+        "note": "Chapter card word-ext-ch56-hoching."
+      },
+      "collocations": [
+        "호칭을 쓰다",
+        "호칭을 정하다",
+        "호칭을 조심하다"
+      ]
+    },
+    {
+      "hangul": "어르신",
+      "romanization": "eoreusin",
+      "english": "elder; older person respectfully",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "어르신도 계시면 말투를 조심하세요.",
+        "en": "If elders are there too, be careful with your tone.",
+        "note": "Chapter card word-ext-ch56-eoreusin."
+      },
+      "collocations": [
+        "어르신이 계시다",
+        "어르신께",
+        "어르신 앞에서"
+      ]
+    },
+    {
+      "hangul": "눈치",
+      "romanization": "nunchi",
+      "english": "social awareness / reading the room",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "눈치 있게 챙기면 분위기가 덜 어색해요.",
+        "en": "If you take care of things tactfully, the mood is less awkward.",
+        "note": "Linked to dictionary card word-ext-797."
+      },
+      "collocations": [
+        "눈치가 빠르다",
+        "눈치를 보다",
+        "눈치 있게"
+      ]
+    },
+    {
+      "hangul": "분위기",
+      "romanization": "bunwigi",
+      "english": "atmosphere; mood",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "분위기가 어색하면 먼저 물어보세요.",
+        "en": "If the atmosphere is awkward, ask first.",
+        "note": "Linked to dictionary card word-ext-1692."
+      },
+      "collocations": [
+        "분위기가 좋다",
+        "분위기가 어색하다",
+        "분위기를 보다"
+      ]
+    },
+    {
+      "hangul": "어색하다",
+      "romanization": "eosaekada",
+      "english": "to be awkward",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "처음 만난 자리라서 조금 어색해요.",
+        "en": "It is a little awkward because it is the first meeting.",
+        "note": "Linked to dictionary card word-ext-1265."
+      },
+      "collocations": [
+        "조금 어색하다",
+        "분위기가 어색하다",
+        "어색하지 않게"
+      ]
+    },
+    {
+      "hangul": "도와드리다",
+      "romanization": "dowadeurida",
+      "english": "to help politely",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "도와드릴까요? 하고 먼저 물어보세요.",
+        "en": "Ask first, 'May I help?'",
+        "note": "Linked to verb card word-verb-265."
+      },
+      "collocations": [
+        "도와드릴까요?",
+        "도와드리고 싶어요",
+        "어르신을 도와드리다"
+      ]
+    },
+    {
+      "hangul": "챙기다",
+      "romanization": "chaenggida",
+      "english": "to prepare / take care of",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "집들이 선물을 챙겼어요.",
+        "en": "I prepared a housewarming gift.",
+        "note": "Linked to verb card word-verb-262."
+      },
+      "collocations": [
+        "선물을 챙기다",
+        "사람을 챙기다",
+        "미리 챙기다"
+      ]
+    },
+    {
+      "hangul": "수고하셨습니다",
+      "romanization": "sugohasyeotseumnida",
+      "english": "thank you for your hard work",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "오늘 초대해 주셔서 감사합니다. 수고하셨습니다.",
+        "en": "Thank you for inviting me today. Thank you for your hard work.",
+        "note": "Linked to expression card expr-125."
+      },
+      "collocations": [
+        "수고하셨습니다",
+        "수고 많으셨어요",
+        "오늘 수고하셨어요"
+      ]
+    },
+    {
+      "hangul": "덕분에",
+      "romanization": "deokbune",
+      "english": "thanks to",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "선배님 덕분에 분위기가 편해졌어요.",
+        "en": "Thanks to you, the atmosphere became comfortable.",
+        "note": "Chapter card word-ext-ch56-deokbune."
+      },
+      "collocations": [
+        "선배님 덕분에",
+        "덕분에 잘 됐어요",
+        "덕분에 편했어요"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Minseo asks how to behave at a coworker's housewarming.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "집들이에 갈 때 휴지랑 세제 중에 뭐가 나아요?",
+        "romanization": "jipdeurie gal ttae hyujirang seje junge mwoga naayo?",
+        "en": "When going to a housewarming, which is better, toilet paper or detergent?",
+        "grammarNote": "V(으)ㄹ 때 sets the social situation."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "둘 다 괜찮아요. 집들이 선물로 많이 가져가잖아요.",
+        "romanization": "dul da gwaenchanayo. jipdeuri seonmullo manhi gajyeogajanhayo.",
+        "en": "Both are fine. People often bring them as housewarming gifts, you know.",
+        "grammarNote": "잖아요 treats the custom as shared knowledge."
+      },
+      {
+        "speaker": "민서",
+        "ko": "나이가 같으면 동갑이라고 말해도 돼요?",
+        "romanization": "naiga biseutamyeon donggabirago malhaedo dwaeyo?",
+        "en": "If we are the same age, can I say that we are donggap?",
+        "grammarNote": "V면 asks about a condition."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "그래도 처음엔 선배님 같은 호칭을 쓰는 편이에요.",
+        "romanization": "geuraedo cheoeumen seonbaenim gateun hochingeul sseuneun pyeonieyo.",
+        "en": "Even so, at first people tend to use a title like seonbaenim.",
+        "grammarNote": "편이에요 softens the social habit."
+      },
+      {
+        "speaker": "민서",
+        "ko": "어르신도 계시면 도와드릴까요? 하고 물어볼게요.",
+        "romanization": "eoreusindo gyesimyeon dowadeurilkkayo? hago mureobolgeyo.",
+        "en": "If elders are there too, I will ask, 'May I help?'",
+        "grammarNote": "계시다 and 도와드리다 keep the respectful tone."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "좋아요. 눈치 있게 챙기면 분위기가 덜 어색해요.",
+        "romanization": "joayo. nunchi itge chaenggimyeon bunwigiga deol eosaekaeyo.",
+        "en": "Good. If you take care of things tactfully, the mood is less awkward.",
+        "grammarNote": "눈치 becomes action through 챙기다."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "집들이에서 호칭과 눈치 챙기기",
+    "body": "민서는 회사 선배 집들이에 가려고 해요. 집들이 선물로 휴지와 세제 중에서 고민하다가, 실용적인 세제를 사기로 했어요. 처음 만나는 사람들이 있을 수 있으니까 나이와 호칭도 조심하려고 해요. 나이가 비슷해 보여도 바로 반말하지 않고, 처음에는 선배님 같은 호칭을 쓰는 편이에요. 어르신도 계시면 먼저 도와드릴까요? 하고 물어볼 거예요. 분위기가 어색하면 눈치 있게 선물을 건네고, 마지막에는 초대해 주셔서 감사합니다, 덕분에 편했어요라고 말하려고 해요.",
+    "bodyTranslation": "Minseo is going to a senior coworker's housewarming. After thinking between toilet paper and detergent as a housewarming gift, Minseo decided to buy practical detergent. Since there may be people Minseo is meeting for the first time, Minseo plans to be careful with age and titles too. Even if someone seems close in age, Minseo will not switch to casual speech right away and tends to use a title like seonbaenim at first. If elders are there, Minseo will ask first, 'May I help?' If the atmosphere feels awkward, Minseo will give the gift tactfully and at the end say, 'Thank you for inviting me. I felt comfortable thanks to you.'",
+    "comprehensionQuestions": [
+      {
+        "question": "민서는 집들이 선물로 무엇을 사기로 했어요?",
+        "answer": "세제를 사기로 했어요."
+      },
+      {
+        "question": "나이가 비슷해 보여도 처음에는 어떻게 해요?",
+        "answer": "바로 반말하지 않고 선배님 같은 호칭을 쓰는 편이에요."
+      },
+      {
+        "question": "마지막에 어떤 감사 표현을 하려고 해요?",
+        "answer": "초대해 주셔서 감사합니다, 덕분에 편했어요라고 말하려고 해요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "눈치는 말보다 타이밍",
+    "body": "눈치 is often translated as reading the room, but at a gathering it becomes timing: when to ask, when to help, when to stay quiet, and when to thank someone. At a 집들이, the safe pattern is simple. Bring a practical 선물, use a respectful 호칭 until the relationship is clear, ask before helping, and close with a warm 감사 expression such as 덕분에 편했어요.",
+    "tip": "If you are unsure, combine a soft sentence ending with a respectful verb: 호칭을 잘 모르는데요, 어떻게 부르면 될까요?"
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence reminds the listener of a familiar housewarming gift custom?",
+      "options": [
+        "집들이 선물로 휴지나 세제를 많이 가져가잖아요.",
+        "집들이 선물이 휴지나 세제를 많이 가져가잖아요.",
+        "집들이 선물로 휴지나 세제를 많이 가져가더라고요."
+      ],
+      "correct": "집들이 선물로 휴지나 세제를 많이 가져가잖아요.",
+      "explanation": "선물로 marks the role, and 잖아요 points to a familiar custom."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence is safest when you do not know the title?",
+      "options": [
+        "어떤 호칭을 쓰면 될까요?",
+        "너 이름 뭐야?",
+        "동갑이니까 바로 반말할게요."
+      ],
+      "correct": "어떤 호칭을 쓰면 될까요?",
+      "explanation": "Asking about 호칭 is safer than guessing too casually."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence thanks someone with a positive cause?",
+      "options": [
+        "선배님 덕분에 분위기가 편해졌어요.",
+        "선배님 때문에 분위기가 편해졌어요.",
+        "선배님한테 분위기가 편해졌어요."
+      ],
+      "correct": "선배님 덕분에 분위기가 편해졌어요.",
+      "explanation": "덕분에 is the warm positive-cause expression for gratitude."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "어르신___ 도와드렸어요. (I helped the elder.)",
+      "options": [
+        "을",
+        "이",
+        "에"
+      ],
+      "correct": "을",
+      "explanation": "도와드리다 still takes the person helped as an object. 드리다 adds respect toward the person receiving help."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "제가 좀 ___ . (도와주다 → respectful help)",
+      "base": "도와주다",
+      "form": "honorificService",
+      "correct": "도와드릴게요",
+      "explanation": "도와드리다 is the respectful form when helping someone senior or socially respected. -ㄹ게요 makes it your offered action."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'Thanks to you, I had a good time.'",
+      "tokens": [
+        "덕분에",
+        "좋은 시간 보냈어요"
+      ],
+      "correct": "덕분에 좋은 시간 보냈어요",
+      "explanation": "덕분에 credits the other person as the positive reason. 좋은 시간 보냈어요 is a natural thanks-after-visit phrase."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Say: 'I am bringing tissue as a housewarming gift.'",
+      "correct": "집들이 선물로 휴지를 가져가요.",
+      "explanation": "선물로 marks the role of the item as a gift. 휴지 is a common practical 집들이 gift."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the phrase for a senior host: '수고했어.'",
+      "correct": "수고하셨습니다.",
+      "explanation": "수고했어 is casual and too low for a senior host. 수고하셨습니다 is safer and respectful."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "You do not know the safest title. Which strategy fits?",
+      "options": [
+        "정중하게 여쭤봐요.",
+        "무조건 반말을 써요.",
+        "이름만 불러요."
+      ],
+      "correct": "정중하게 여쭤봐요.",
+      "explanation": "When title is unclear, asking politely is safer than guessing casually. Korean social titles matter in first meetings."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Say: 'If we are the same age, we are 동갑.'",
+      "correct": "나이가 같으면 동갑이에요.",
+      "explanation": "동갑 means the same age. -으면 sets the condition for using that word."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "Housewarming set: 집들이, 선물, 휴지, 세제, 챙기다.",
+      "Title set: 나이, 동갑, 선배/후배, 호칭, 어르신.",
+      "Room-reading set: 눈치, 분위기, 어색하다, 도와드리다, 수고하셨습니다.",
+      "Gratitude set: 덕분에 is for positive causes; 때문에 can sound like blame."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Advise a foreign friend on what gift to bring to a Korean housewarming and how to address people there.",
+    "hint": "Use V/A-잖아요 for shared knowledge, V/A-거든요 to explain background, V/A-는데요 to soften, V/A-(으)ㄴ/는 편이다 for a tendency, and V/A-(으)니까 for a reason leading to advice.",
+    "model": "집들이에는 보통 휴지나 세제를 선물하잖아요. 그게 좋은 뜻이 있거든요. 그리고 선배는 나이가 많은 편이니까 호칭을 조심하는 게 좋은데요.",
+    "modelEn": "For a housewarming, people usually give toilet paper or detergent, you know. It carries a good meaning, you see. And since seniors tend to be older, it's good to be careful with how you address them."
+  },
+  "canDo": [
+    "Remind someone of shared knowledge (선물하잖아요)",
+    "Explain background or a reason (좋은 뜻이 있거든요)",
+    "Soften a statement or careful question (조심하는 게 좋은데요)",
+    "Describe a tendency modestly (나이가 많은 편이에요)",
+    "Give a reason that leads into advice (선배니까 호칭을 조심하세요)"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "chapterId": "chapter-47",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 10,
+  "cardsReviewed": 34,
+  "findings": [
+    {
+      "biteId": "chapter-47-b7",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The honorific key point said 께서 and an honorific verb must always occur together and that marking only one is broken. Ordinary 이/가 can accompany an honorific verb depending on discourse, and 먹으세요 itself contains subject honorification even though 드세요 is the conventional lexical honorific.",
+      "fix": "Made verb honorification the core rule, scoped 께서 to careful speech, and described 드세요 as the conventional respectful default rather than the only grammatical form.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-47-b1",
+      "cardIndex": 2,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The inherited 명 reveal generalized native-number use to all counters and presented the convention without register or context limits.",
+      "fix": "Added a local 명 nuance scoped to everyday family counts and respectful 분 usage.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 10 bites and 34 cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}

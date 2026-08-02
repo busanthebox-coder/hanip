@@ -1,0 +1,40 @@
+{
+  "chapterId": "chapter-51",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 11,
+  "cardsReviewed": 38,
+  "findings": [
+    {
+      "biteId": "chapter-51-b8",
+      "cardIndex": 1,
+      "severity": "blocker",
+      "class": "assessment-ambiguous",
+      "evidence": "The generated comparison drill marked 보다 더 false in ‘이 바지가 저 바지___ 짧아요,’ although both 저 바지보다 짧아요 and 저 바지보다 더 짧아요 are grammatical and equivalent for the task.",
+      "fix": "Added a failing regression and changed the compiler to omit cloze drills when one offered variant is an optional longer form of another; the invalid drill is absent after recompilation.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-51-b6",
+      "cardIndex": 0,
+      "severity": "bad-teaching",
+      "class": "data-fact",
+      "evidence": "The lesson labeled appearance -아/어 보이다 as A/V even though its rows and examples teach descriptive adjectives; ordinary action verbs require a different construction for this meaning.",
+      "fix": "Renamed the local pattern and lesson hint to A-아/어 보이다 and recompiled.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-51-b11",
+      "cardIndex": 1,
+      "severity": "bad-teaching",
+      "class": "assessment-ambiguous",
+      "evidence": "The boss prompt asked which sentence is polite while both 보여 주세요 and 보여 주시겠어요? are polite requests.",
+      "fix": "Changed the prompt to ask for the most deferential request and explicitly explained that both forms are polite.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 11 bites and the resulting 38 cards were reviewed after the ambiguous generated drill was removed; no unfixed blocker remains."]
+}

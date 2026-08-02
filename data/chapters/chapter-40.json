@@ -1,0 +1,915 @@
+{
+  "id": "chapter-40",
+  "hook": {
+    "situation": "A teammate is not sure whether a manager is still in a meeting, already left work, or can still reply. The goal is not to sound vague; it is to say your guess, condition, hope, or opinion at the right strength.",
+    "objectives": [
+      "Use -ㄹ걸요 for a soft but fairly confident guess.",
+      "Use -다면 to open a hypothetical path before giving the next step.",
+      "Use 좋겠어요 and 것 같아요 to make wishes, suggestions, and opinions less blunt."
+    ],
+    "whyItMatters": "English learners often use one all-purpose 'I think...' for every uncertain sentence. Korean splits that work across several endings, so the listener can feel whether you are guessing, imagining a condition, hoping for an outcome, or politely softening your own opinion."
+  },
+  "grammarNotes": [
+    {
+      "title": "-(으)ㄹ걸요 — A Soft but Confident Guess",
+      "func": "Use -(으)ㄹ걸요 when you make a guess you're fairly sure about, but want to sound gentle instead of flat-out telling someone. It feels like \"I'd say...\" or \"probably...\" based on what you know.",
+      "formTable": [
+        {
+          "when": "Verb/adjective stem ends in a vowel",
+          "add": "-ㄹ걸요",
+          "ex": "가다 → 갈걸요; 비싸다 → 비쌀걸요"
+        },
+        {
+          "when": "Verb/adjective stem ends in a consonant",
+          "add": "-을걸요",
+          "ex": "먹다 → 먹을걸요; 작다 → 작을걸요"
+        },
+        {
+          "when": "Stem ends in ㄹ",
+          "add": "drop ㄹ, then add -ㄹ걸요",
+          "ex": "살다 → 살걸요; 멀다 → 멀걸요"
+        },
+        {
+          "when": "Past (any stem)",
+          "add": "-았/었을걸요",
+          "ex": "가다 → 갔을걸요; 먹다 → 먹었을걸요"
+        },
+        {
+          "when": "Noun (guess about a fact)",
+          "add": "N일걸요",
+          "ex": "학생 → 학생일걸요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "친구는 지금 집에 있을걸요.",
+          "romanization": "chinguneun jigeum jibe isseulgeolyo.",
+          "en": "My friend is probably home right now.",
+          "note": "A guess you're fairly sure of, softened so it doesn't sound like a flat claim."
+        },
+        {
+          "ko": "그 영화 재미있을걸요.",
+          "romanization": "geu yeonghwa jaemiisseulgeolyo.",
+          "en": "That movie's probably good.",
+          "note": "있다 ends in a consonant, so it takes -을걸요."
+        },
+        {
+          "ko": "이 책은 좀 비쌀걸요.",
+          "romanization": "i chaegeun jom bissalgeolyo.",
+          "en": "This book's probably a bit pricey.",
+          "note": "비싸- ends in a vowel, so it takes -ㄹ걸요."
+        },
+        {
+          "ko": "부모님은 벌써 주무실걸요.",
+          "romanization": "bumonimeun beolsseo jumusilgeolyo.",
+          "en": "My parents are probably asleep already.",
+          "note": "Uses the honorific 주무시다 (to sleep) for parents, while still keeping the guessing feel."
+        }
+      ],
+      "keyPoint": {
+        "label": "-(으)ㄹ걸요 vs. -(으)ㄹ 거예요",
+        "body": "Both say something is likely. -(으)ㄹ 거예요 sounds like a plain prediction; -(으)ㄹ걸요 adds a softer \"I'd guess\" feeling, often when the other person might be thinking otherwise. Save the finer back-vowel rules for later — just match vowel vs. consonant stems for now."
+      },
+      "pronunciation": "걸요 sounds like [거료], so 갈걸요 comes out [갈꺼료] — the ㄱ tenses and the ㄹ links smoothly into 요.",
+      "drill": {
+        "instruction": "Answer each question with a soft guess using -(으)ㄹ걸요.",
+        "model": "친구 지금 뭐 해요? → 아마 자고 있을걸요.",
+        "items": [
+          "그 식당 지금 문 열었어요? → 아마 ___.",
+          "이 옷 비싸요? → 글쎄요, ___.",
+          "선생님 지금 학교에 계세요? → 아마 ___."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "내일 비가 올 거 같을걸요.",
+        "right": "내일 비가 올걸요.",
+        "explanation": "English speakers stack \"probably\" on top of another guess word. -(으)ㄹ걸요 already means \"probably,\" so don't combine it with -(으)ㄹ 것 같다. Attach it straight to the plain stem: 올걸요."
+      }
+    },
+    {
+      "title": "-(으)면 좋겠어요 — A Hope or Gentle Wish",
+      "func": "Use -(으)면 좋겠어요 to say \"I hope...\" or \"I wish...\". It literally means \"it'd be nice if...,\" and it's the everyday way to say what you'd like to happen.",
+      "formTable": [
+        {
+          "when": "Stem ends in a vowel",
+          "add": "-면 좋겠어요",
+          "ex": "오다 → 오면 좋겠어요; 싸다 → 싸면 좋겠어요"
+        },
+        {
+          "when": "Stem ends in a consonant",
+          "add": "-으면 좋겠어요",
+          "ex": "먹다 → 먹으면 좋겠어요; 많다 → 많으면 좋겠어요"
+        },
+        {
+          "when": "Stem ends in ㄹ",
+          "add": "-면 좋겠어요 (keep ㄹ)",
+          "ex": "살다 → 살면 좋겠어요"
+        },
+        {
+          "when": "Wish about now / something not true",
+          "add": "-았/었으면 좋겠어요",
+          "ex": "오다 → 왔으면 좋겠어요; 있다 → 있었으면 좋겠어요"
+        },
+        {
+          "when": "Noun",
+          "add": "N(이)면 좋겠어요",
+          "ex": "주말 → 주말이면 좋겠어요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "내일 날씨가 좋으면 좋겠어요.",
+          "romanization": "naeil nalssiga joeumyeon jokesseoyo.",
+          "en": "I hope the weather's nice tomorrow.",
+          "note": "A simple hope about the future; 좋다 ends in a consonant, so -으면."
+        },
+        {
+          "ko": "시간이 좀 더 있으면 좋겠어요.",
+          "romanization": "sigani jom deo isseumyeon jokesseoyo.",
+          "en": "I wish I had a little more time.",
+          "note": "Everyday wish; 있다 takes -으면 좋겠어요."
+        },
+        {
+          "ko": "이번 시험이 쉬웠으면 좋겠어요.",
+          "romanization": "ibeon siheomi swiwosseumyeon jokesseoyo.",
+          "en": "I hope this test is easy.",
+          "note": "The -었으면 form here makes the hope feel stronger, even though the test hasn't happened yet."
+        },
+        {
+          "ko": "우리 집이 학교에서 가까웠으면 좋겠어요.",
+          "romanization": "uri jibi hakgyoeseo gakkawosseumyeon jokesseoyo.",
+          "en": "I wish our place were closer to school.",
+          "note": "A wish about how things are now; 가깝다 is ㅂ-irregular, so 가까웠으면."
+        }
+      ],
+      "keyPoint": {
+        "label": "-(으)면 좋겠어요 vs. -고 싶어요",
+        "body": "-고 싶어요 means \"I want to (do it myself).\" -(으)면 좋겠어요 means \"I hope (it happens),\" so it can be about other people, the weather, or things you don't control. The contrary-to-fact nuance of the -았/었으면 form gets fuller treatment in a later chapter."
+      },
+      "pronunciation": "좋겠어요 sounds like [조케써요]: ㅎ + ㄱ blend into an aspirated [ㅋ], and 겠 tenses the next ㅅ into [써].",
+      "drill": {
+        "instruction": "Turn each situation into a wish using -(으)면 좋겠어요.",
+        "model": "비가 와요. (싫어요) → 비가 안 오면 좋겠어요.",
+        "items": [
+          "돈이 없어요. → 돈이 좀 ___.",
+          "주말이 짧아요. → 주말이 ___.",
+          "친구가 한국에 안 와요. → 친구가 ___."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "한국에 가고 싶으면 좋겠어요.",
+        "right": "한국에 가면 좋겠어요.",
+        "explanation": "Don't slip 싶다 in. \"I hope I go to Korea\" is just 가면 좋겠어요. Adding 싶다 doubles the wanting and sounds off. Keep 가고 싶어요 for a plain \"I want to go.\""
+      }
+    },
+    {
+      "title": "-겠- — Intention, a Good Guess, or a Set Polite Phrase",
+      "func": "-겠- does three everyday jobs: stating your own plan (\"I'll...\"), making a guess about a situation (\"that must be...\"), and forming a few set polite phrases. You read which one it is from the context and the subject.",
+      "formTable": [
+        {
+          "when": "Intention (your own plan, \"I\")",
+          "add": "stem + -겠-",
+          "ex": "하다 → 하겠어요; 먹다 → 먹겠습니다"
+        },
+        {
+          "when": "Guess (about something you can see/know)",
+          "add": "stem + -겠-",
+          "ex": "맛있다 → 맛있겠어요; 춥다 → 춥겠어요"
+        },
+        {
+          "when": "Guess about the past",
+          "add": "-았/었겠-",
+          "ex": "힘들다 → 힘들었겠어요"
+        },
+        {
+          "when": "Set polite phrases",
+          "add": "fixed forms",
+          "ex": "알겠어요 (got it); 모르겠어요 (I don't know); 잘 먹겠습니다"
+        },
+        {
+          "when": "Noun + guess",
+          "add": "N(이)겠-",
+          "ex": "학생 → 학생이겠어요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "제가 내일 다시 오겠습니다.",
+          "romanization": "jega naeil dasi ogesseumnida.",
+          "en": "I'll come back tomorrow.",
+          "note": "Your own plan; -겠습니다 sounds firm and polite, common when serving someone or in formal speech."
+        },
+        {
+          "ko": "이 음식 정말 맛있겠어요!",
+          "romanization": "i eumsik jeongmal masitgesseoyo!",
+          "en": "This food looks so good!",
+          "note": "A guess from what you see — you haven't tasted it yet, but you can tell it must be good."
+        },
+        {
+          "ko": "숙제가 많아서 힘들었겠어요.",
+          "romanization": "sukjega manaseo himdeureotgesseoyo.",
+          "en": "That must have been rough with so much homework.",
+          "note": "-었겠어요 guesses about someone else's past and shows you feel for them."
+        },
+        {
+          "ko": "무슨 말인지 잘 모르겠어요.",
+          "romanization": "museun marinji jal moreugesseoyo.",
+          "en": "I don't really get what you mean.",
+          "note": "모르겠어요 is a set, softened way to say it; plain 몰라요 can sound more blunt."
+        }
+      ],
+      "keyPoint": {
+        "label": "Intention -겠- vs. Guess -겠-",
+        "body": "With \"I\" as the subject and an action verb, -겠- usually means a plan (\"I'll\"). With someone else, or with an adjective describing a situation, it means a guess (\"must be / looks like\"). The subject and the kind of verb tell you which. The polite \"future\" feel of -겠- in set phrases comes later."
+      },
+      "pronunciation": "-겠- tenses the next consonant: 먹겠어요 → [먹께써요], 맛있겠어요 → [마싣께써요].",
+      "drill": {
+        "instruction": "Decide if it's a plan or a guess, then finish it with -겠-.",
+        "model": "(친구가 밤새 일했어요) → 정말 피곤하겠어요.",
+        "items": [
+          "(내 차례예요) 제가 먼저 ___ (하다).",
+          "(친구가 시험에 떨어졌어요) 많이 ___ (속상하다).",
+          "(처음 듣는 설명이에요) 잘 ___ (모르다)."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "그 사람 학생이에요? — said as 그 사람 학생이겠어요?",
+        "right": "그 사람 학생이에요?",
+        "explanation": "Don't use -겠- for a plain yes/no question. -겠- adds \"must be / I'm guessing,\" so 학생이겠어요? asks \"I suppose he's a student?\" To simply ask whether someone is a student, use 학생이에요?"
+      }
+    },
+    {
+      "title": "-다면 / N(이)라면 — If That Were the Case",
+      "func": "Use -다면 / N(이)라면 to set up a \"what if\" — an imagined or supposed situation, often one you don't really expect or that isn't true right now: \"if (let's say)...\".",
+      "formTable": [
+        {
+          "when": "Verb stem",
+          "add": "-ㄴ/는다면",
+          "ex": "가다 → 간다면; 먹다 → 먹는다면"
+        },
+        {
+          "when": "Adjective stem",
+          "add": "-다면",
+          "ex": "바쁘다 → 바쁘다면; 많다 → 많다면"
+        },
+        {
+          "when": "Past (any stem)",
+          "add": "-았/었다면",
+          "ex": "왔다면; 먹었다면"
+        },
+        {
+          "when": "Noun ending in a consonant",
+          "add": "N이라면",
+          "ex": "학생 → 학생이라면"
+        },
+        {
+          "when": "Noun ending in a vowel",
+          "add": "N라면",
+          "ex": "부자 → 부자라면; 의사 → 의사라면"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "돈이 많다면 큰 집을 사고 싶어요.",
+          "romanization": "doni mantamyeon keun jibeul sago sipeoyo.",
+          "en": "If I had a lot of money, I'd want to buy a big house.",
+          "note": "A \"what if\" the speaker doesn't really expect; 많다 is an adjective, so -다면."
+        },
+        {
+          "ko": "내가 너라면 그 사람한테 전화할 거예요.",
+          "romanization": "naega neoramyeon geu saramhante jeonhwahal geoyeyo.",
+          "en": "If I were you, I'd call him.",
+          "note": "Noun + 라면 sets up an imagined \"if I were\" situation."
+        },
+        {
+          "ko": "시간이 있다면 같이 영화 봐요.",
+          "romanization": "sigani ittamyeon gachi yeonghwa bwayo.",
+          "en": "If you happen to have time, let's catch a movie.",
+          "note": "있다 takes -다면; here it frames a supposed condition before a suggestion."
+        },
+        {
+          "ko": "그때 일찍 출발했다면 안 늦었을 거예요.",
+          "romanization": "geuttae iljjik chulbalhaetdamyeon an neujeosseul geoyeyo.",
+          "en": "If we'd left early back then, we wouldn't have been late.",
+          "note": "-았/었다면 looks back at something that didn't happen — a regret about the past."
+        }
+      ],
+      "keyPoint": {
+        "label": "-다면 vs. -(으)면",
+        "body": "-(으)면 is the all-purpose \"if/when,\" fine for real, likely things (밥 먹으면 = when/if I eat). -다면 puts more weight on \"just supposing,\" so it suits imagined or unlikely cases. For everyday real conditions, -(으)면 is still your default. The full -았/었다면 \"would have\" pattern is explored more later."
+      },
+      "pronunciation": "많다면 sounds like [만타면]: the ㅎ in 많 blends with the following ㄷ into an aspirated [ㅌ].",
+      "drill": {
+        "instruction": "Make a \"what if\" sentence using -다면 / N(이)라면.",
+        "model": "(복권 당첨) 복권에 당첨된다면 여행을 갈 거예요.",
+        "items": [
+          "(내가 새라면) ___ 하늘을 날고 싶어요.",
+          "(시간이 많다) ___ 책을 더 읽을 거예요.",
+          "(다시 태어난다) ___ 뭘 하고 싶어요?"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "학생다면 할인을 받아요.",
+        "right": "학생이라면 할인을 받아요.",
+        "explanation": "After a noun, you can't just add -다면. Nouns use (이)라면: 학생이라면 (if you're a student), 부자라면 (if you're rich). Only verb and adjective stems take -다면 directly."
+      }
+    },
+    {
+      "title": "-(으)ㄴ/는데요 — Softening and Leaving Room",
+      "func": "Ending a sentence with -(으)ㄴ/는데요 softens it. Instead of a hard statement, it sets something up and leaves the door open — for the other person to react, for a \"but...,\" or for a gentle pushback. It's one of the most common ways Koreans avoid sounding too direct.",
+      "formTable": [
+        {
+          "when": "Action verb (present)",
+          "add": "-는데요",
+          "ex": "가다 → 가는데요; 먹다 → 먹는데요"
+        },
+        {
+          "when": "Adjective, vowel stem (present)",
+          "add": "-ㄴ데요",
+          "ex": "바쁘다 → 바쁜데요; 크다 → 큰데요"
+        },
+        {
+          "when": "Adjective, consonant stem (present)",
+          "add": "-은데요",
+          "ex": "좋다 → 좋은데요; 작다 → 작은데요"
+        },
+        {
+          "when": "Past (any stem)",
+          "add": "-았/었는데요",
+          "ex": "가다 → 갔는데요; 먹다 → 먹었는데요"
+        },
+        {
+          "when": "Noun (present)",
+          "add": "N인데요",
+          "ex": "학생 → 학생인데요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "지금 좀 바쁜데요.",
+          "romanization": "jigeum jom bappeundeyo.",
+          "en": "I'm kind of busy right now... (so maybe later?)",
+          "note": "A soft \"no\" — it states the situation and lets the other person draw the conclusion, instead of flatly refusing."
+        },
+        {
+          "ko": "이거 제 자린데요.",
+          "romanization": "igeo je jarindeyo.",
+          "en": "Um, this is my seat... (could you move?)",
+          "note": "Noun + 인데요 makes a gentle correction without sounding harsh."
+        },
+        {
+          "ko": "저는 매운 거 잘 못 먹는데요.",
+          "romanization": "jeoneun maeun geo jal mot meongneundeyo.",
+          "en": "I'm not so good with spicy food, actually...",
+          "note": "-는데요 softly raises a concern and leaves room for the other person to respond."
+        },
+        {
+          "ko": "어제는 비가 왔는데요.",
+          "romanization": "eojeneun biga watneundeyo.",
+          "en": "It rained yesterday, though...",
+          "note": "Past -았/었는데요 gently offers a fact, often hinting at a \"but\" the listener can pick up on."
+        }
+      ],
+      "keyPoint": {
+        "label": "-(으)ㄴ/는데요 vs. a plain -아/어요 ending",
+        "body": "좀 바빠요 just states \"I'm busy.\" 좀 바쁜데요 says the same thing but trails off, inviting the other person to fill in the rest — softer and less final. Use it to hedge, hint, or set up a contrast. Its longer use for connecting two clauses (\"~는데, …\") comes in a separate point."
+      },
+      "pronunciation": "In 먹는데요, the ㄱ before ㄴ turns nasal: it sounds like [멍는데요]. 좋은데요 sounds like [조은데요], with the ㅎ dropping out.",
+      "drill": {
+        "instruction": "Soften each blunt sentence by re-ending it with -(으)ㄴ/는데요.",
+        "model": "지금 바빠요. → 지금 좀 바쁜데요.",
+        "items": [
+          "그건 제 책이에요. → 그건 제 ___.",
+          "저는 그 영화 별로예요. → 저는 그 영화 ___.",
+          "어제 거기 갔어요. → 어제 거기 ___."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "저 지금 바쁜데요 그래서 못 가요.",
+        "right": "저 지금 바쁜데요. (and let the meaning land on its own)",
+        "explanation": "English speakers spell out the whole \"so I can't go.\" The point of -(으)ㄴ/는데요 is to leave that part unsaid and let the listener get it. Tacking on the blunt conclusion undoes the softening the ending is there to create."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "걸요",
+      "romanization": "geolyo",
+      "english": "probably; I think...",
+      "partOfSpeech": "sentence ending",
+      "exampleSentence": {
+        "ko": "그분은 아직 회의 중일걸요.",
+        "en": "They are probably still in a meeting.",
+        "note": "Linked to word-ext-ch40-geolyo."
+      },
+      "collocations": [
+        "아직 회의 중일걸요",
+        "이미 퇴근했을걸요",
+        "아마 알걸요"
+      ]
+    },
+    {
+      "hangul": "좋겠어요",
+      "romanization": "jokesseoyo",
+      "english": "I hope; it would be good if...",
+      "partOfSpeech": "wish expression",
+      "exampleSentence": {
+        "ko": "메시지를 남겨 두면 좋겠어요.",
+        "en": "It would be good to leave a message.",
+        "note": "Linked to word-ext-ch40-jokesseoyo."
+      },
+      "collocations": [
+        "답장이 오면 좋겠어요",
+        "먼저 물어보면 좋겠어요",
+        "시간이 더 있었으면 좋겠어요"
+      ]
+    },
+    {
+      "hangul": "다면",
+      "romanization": "damyeon",
+      "english": "if; supposing that",
+      "partOfSpeech": "conditional ending",
+      "exampleSentence": {
+        "ko": "혹시 이미 나갔다면 메시지를 남겨 두면 좋겠어요.",
+        "en": "If they already left, it would be good to leave a message.",
+        "note": "Linked to word-ext-ch40-damyeon."
+      },
+      "collocations": [
+        "이미 나갔다면",
+        "제가 담당자라면",
+        "시간이 더 있다면"
+      ]
+    },
+    {
+      "hangul": "것 같아요",
+      "romanization": "geot gatayo",
+      "english": "I think; it seems like",
+      "partOfSpeech": "hedging expression",
+      "exampleSentence": {
+        "ko": "제 생각에는 먼저 물어보는 게 좋을 것 같아요.",
+        "en": "In my opinion, I think it would be good to ask first.",
+        "note": "Linked to word-ext-ch40-geot-gatayo."
+      },
+      "collocations": [
+        "좋은 것 같아요",
+        "간 것 같아요",
+        "올 것 같아요"
+      ]
+    },
+    {
+      "hangul": "겠",
+      "romanization": "get",
+      "english": "inference or intention marker",
+      "partOfSpeech": "modal marker",
+      "exampleSentence": {
+        "ko": "제가 조심스럽게 물어보겠습니다.",
+        "en": "I will ask carefully.",
+        "note": "Linked to word-ext-ch40-get."
+      },
+      "collocations": [
+        "알겠어요",
+        "피곤하시겠어요",
+        "확인하겠습니다"
+      ]
+    },
+    {
+      "hangul": "조심스럽게",
+      "romanization": "josimseureopge",
+      "english": "carefully; cautiously",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "확실하지 않으니까 조심스럽게 물어볼게요.",
+        "en": "Since I am not sure, I will ask carefully.",
+        "note": "Linked to word-ext-ch40-josimseureopge."
+      },
+      "collocations": [
+        "조심스럽게 물어보다",
+        "조심스럽게 말하다",
+        "조심스럽게 의견을 내다"
+      ]
+    },
+    {
+      "hangul": "아마",
+      "romanization": "ama",
+      "english": "probably",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "아마 담당자가 알걸요.",
+        "en": "The person in charge probably knows.",
+        "note": "Linked to dictionary card word-ext-1242."
+      },
+      "collocations": [
+        "아마 맞을걸요",
+        "아마 아직일 거예요",
+        "아마 어려울 것 같아요"
+      ]
+    },
+    {
+      "hangul": "글쎄요",
+      "romanization": "geulsseyo",
+      "english": "Hmm, I'm not sure",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "글쎄요, 이미 퇴근했을 수도 있어요.",
+        "en": "Hmm, they may have already left work.",
+        "note": "Linked to dictionary card expr-327."
+      },
+      "collocations": [
+        "글쎄요, 잘 모르겠어요",
+        "글쎄요, 확인해 볼게요",
+        "글쎄요, 아닐 수도 있어요"
+      ]
+    },
+    {
+      "hangul": "제 생각에는",
+      "romanization": "je saenggageneun",
+      "english": "in my opinion; I think",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "제 생각에는 먼저 물어보는 게 좋을 것 같아요.",
+        "en": "In my opinion, I think it would be good to ask first.",
+        "note": "Linked to dictionary card expr-567."
+      },
+      "collocations": [
+        "제 생각에는 괜찮은 것 같아요",
+        "제 생각에는 먼저 확인해야 해요",
+        "제 생각에는 조금 부담스러워요"
+      ]
+    },
+    {
+      "hangul": "의견",
+      "romanization": "uigyeon",
+      "english": "opinion",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "의견을 조심스럽게 말하는 게 좋겠어요.",
+        "en": "It would be good to state the opinion carefully.",
+        "note": "Linked to dictionary card word-ext-2048."
+      },
+      "collocations": [
+        "의견을 말하다",
+        "의견을 내다",
+        "의견이 다르다"
+      ]
+    },
+    {
+      "hangul": "확실하다",
+      "romanization": "hwaksilhada",
+      "english": "to be certain; sure",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "확실하지 않으니까 조심스럽게 물어볼게요.",
+        "en": "Since I am not sure, I will ask carefully.",
+        "note": "Linked to dictionary card word-ext-1254."
+      },
+      "collocations": [
+        "확실하지 않다",
+        "확실한 정보",
+        "확실하게 말하다"
+      ]
+    },
+    {
+      "hangul": "부담",
+      "romanization": "budam",
+      "english": "burden; pressure",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "이렇게 말하면 좀 부담스러운 것 같아요.",
+        "en": "If we say it this way, I think it feels a bit pressuring.",
+        "note": "Linked to dictionary card word-ext-733."
+      },
+      "collocations": [
+        "부담이 되다",
+        "부담스럽다",
+        "부담을 주다"
+      ]
+    },
+    {
+      "hangul": "혹시",
+      "romanization": "hoksi",
+      "english": "by any chance",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "혹시 이미 나갔다면 메시지를 남겨 두면 좋겠어요.",
+        "en": "If they already left, it would be good to leave a message.",
+        "note": "Linked to dictionary card word-ext-646."
+      },
+      "collocations": [
+        "혹시 모르니까",
+        "혹시 가능하면",
+        "혹시 이미 나갔다면"
+      ]
+    },
+    {
+      "hangul": "이미",
+      "romanization": "imi",
+      "english": "already",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "이미 퇴근했을 수도 있어요.",
+        "en": "They may have already left work.",
+        "note": "Linked to dictionary card word-ext-983."
+      },
+      "collocations": [
+        "이미 끝났어요",
+        "이미 나갔어요",
+        "이미 확인했어요"
+      ]
+    },
+    {
+      "hangul": "아직",
+      "romanization": "ajik",
+      "english": "still; yet",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "그분은 아직 회의 중일걸요.",
+        "en": "They are probably still in a meeting.",
+        "note": "Linked to dictionary card word-ext-285."
+      },
+      "collocations": [
+        "아직 회의 중",
+        "아직 몰라요",
+        "아직 답장이 없어요"
+      ]
+    },
+    {
+      "hangul": "회의",
+      "romanization": "hoeui",
+      "english": "meeting",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "아직 회의 중일걸요.",
+        "en": "They are probably still in a meeting.",
+        "note": "Linked to dictionary card word-ext-121."
+      },
+      "collocations": [
+        "회의 중",
+        "회의가 끝나다",
+        "회의에 들어가다"
+      ]
+    },
+    {
+      "hangul": "메시지",
+      "romanization": "mesiji",
+      "english": "message",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "메시지를 남겨 두면 좋겠어요.",
+        "en": "It would be good to leave a message.",
+        "note": "Linked to dictionary card word-ext-167."
+      },
+      "collocations": [
+        "메시지를 남기다",
+        "메시지를 보내다",
+        "메시지를 확인하다"
+      ]
+    },
+    {
+      "hangul": "퇴근하다",
+      "romanization": "toegeunhada",
+      "english": "to leave work",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "이미 퇴근했을 수도 있어요.",
+        "en": "They may have already left work.",
+        "note": "Linked to dictionary card word-verb-485."
+      },
+      "collocations": [
+        "퇴근했을 수도 있어요",
+        "퇴근한 것 같아요",
+        "퇴근 시간이 지나다"
+      ]
+    },
+    {
+      "hangul": "물어보다",
+      "romanization": "mureoboda",
+      "english": "to ask; to ask and find out",
+      "partOfSpeech": "verb phrase",
+      "exampleSentence": {
+        "ko": "확실하지 않으니까 조심스럽게 물어볼게요.",
+        "en": "Since I am not sure, I will ask carefully.",
+        "note": "Linked to dictionary card word-ext-ch37-mureoboda."
+      },
+      "collocations": [
+        "먼저 물어보다",
+        "조심스럽게 물어보다",
+        "담당자에게 물어보다"
+      ]
+    },
+    {
+      "hangul": "가능성",
+      "romanization": "ganeungseong",
+      "english": "possibility; chance",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "그럴 가능성도 있는 것 같아요.",
+        "en": "I think there is also a possibility of that.",
+        "note": "Linked to dictionary card word-ext-ch26-ganeungseong."
+      },
+      "collocations": [
+        "가능성이 있다",
+        "가능성이 높다",
+        "가능성을 생각하다"
+      ]
+    },
+    {
+      "hangul": "추측하다",
+      "romanization": "chucheukhada",
+      "english": "to guess; to infer",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "확실하지 않을 때는 너무 단정하지 말고 조심스럽게 추측해요.",
+        "en": "When you are not sure, do not state it too firmly; guess carefully.",
+        "note": "Linked to dictionary card word-ext-ch26-chucheukhada."
+      },
+      "collocations": [
+        "조심스럽게 추측하다",
+        "상황을 보고 추측하다",
+        "확실하지 않게 추측하다"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Two coworkers need to contact someone, but they are not sure whether that person is still available.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "그분은 아직 회의 중일걸요.",
+        "romanization": "geubuneun ajik hoeui jungilgeolyo.",
+        "en": "They are probably still in a meeting.",
+        "grammarNote": "-ㄹ걸요 gives a soft but fairly confident guess."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "글쎄요, 이미 퇴근했을 수도 있어요.",
+        "romanization": "geulsseyo, imi toegeunhaesseul sudo isseoyo.",
+        "en": "Hmm, they may have already left work.",
+        "grammarNote": "글쎄요 and 수도 있어요 keep the uncertainty open."
+      },
+      {
+        "speaker": "민서",
+        "ko": "혹시 이미 나갔다면 메시지를 남겨 두면 좋겠어요.",
+        "romanization": "hoksi imi nagatdamyeon mesijireul namgyeo dumyeon jokesseoyo.",
+        "en": "If they already left, it would be good to leave a message.",
+        "grammarNote": "-다면 opens the hypothetical; -으면 좋겠어요 gives a gentle next step."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "네, 확실하지 않으니까 조심스럽게 물어볼게요.",
+        "romanization": "ne, hwaksilhaji aneunikka josimseureopge mureobolgeyo.",
+        "en": "Yes, since I am not sure, I will ask carefully.",
+        "grammarNote": "조심스럽게 controls tone, not just grammar."
+      },
+      {
+        "speaker": "민서",
+        "ko": "제 생각에는 먼저 물어보는 게 좋을 것 같아요.",
+        "romanization": "je saenggageneun meonjeo mureoboneun ge joeul geot gatayo.",
+        "en": "In my opinion, I think it would be good to ask first.",
+        "grammarNote": "제 생각에는 plus 것 같아요 softens the opinion."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "확실하지 않을 때 말하는 법",
+    "body": "회사 단톡방에서 누가 아직 회의 중인지, 이미 퇴근했는지 모를 때가 있어요. 이때 한국어는 한 가지 'I think'만 쓰지 않아요. 기억이나 상황을 보고 짐작하면 '아직 회의 중일걸요'라고 말할 수 있고, 가능성을 열어 두고 싶으면 '이미 나갔다면 메시지를 남겨 두면 좋겠어요'처럼 말해요. 내 의견을 조심스럽게 말할 때는 '제 생각에는 먼저 물어보는 게 좋을 것 같아요'가 자연스러워요. 중요한 건 약하게 말하는 것이 아니라, 내가 아는 정도에 맞게 문장을 고르는 거예요.",
+    "bodyTranslation": "In a work chat, you may not know whether someone is still in a meeting or already left work. Korean does not use one single 'I think' for every case. Use -ㄹ걸요 for a hunch, -다면 for a hypothetical, 좋겠어요 for a hoped-for or gentle next step, and 것 같아요 to soften your own opinion. The point is not to be weak; it is to match the sentence to how much you actually know.",
+    "comprehensionQuestions": [
+      {
+        "question": "회의 중인지 확실하지 않을 때 어떤 표현을 쓸 수 있어요?",
+        "answer": "아직 회의 중일걸요."
+      },
+      {
+        "question": "이미 나갔을 가능성을 열어 둘 때 어떤 연결을 썼어요?",
+        "answer": "이미 나갔다면"
+      },
+      {
+        "question": "내 의견을 조심스럽게 말할 때 왜 것 같아요를 써요?",
+        "answer": "의견을 너무 단정적으로 들리지 않게 부드럽게 만들기 위해서예요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "Soft does not mean unclear",
+    "body": "Korean hedging is often about social accuracy. If you are guessing, your ending should sound like a guess. If you are giving advice, the sentence should leave room for the listener. This is why 아마, 글쎄요, 혹시, 제 생각에는, -ㄹ걸요, -다면, 좋겠어요, and 것 같아요 often appear together in workplace chats, group projects, and polite disagreement.",
+    "tip": "Before speaking, ask: am I guessing, imagining a condition, hoping for a result, or giving an opinion? Then choose the ending that matches that job."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence gives a soft but fairly confident guess?",
+      "options": [
+        "아직 회의 중일걸요.",
+        "아직 회의 중이라면요.",
+        "아직 회의 중이면 좋겠어요."
+      ],
+      "correct": "아직 회의 중일걸요.",
+      "explanation": "-ㄹ걸요 marks a careful guess based on what the speaker thinks."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence opens a hypothetical before suggesting the next step?",
+      "options": [
+        "이미 나갔다면 메시지를 남겨 두면 좋겠어요.",
+        "이미 나갔을걸요 메시지를 남겨요.",
+        "이미 나간 것 같아요 회의 중이에요."
+      ],
+      "correct": "이미 나갔다면 메시지를 남겨 두면 좋겠어요.",
+      "explanation": "-다면 sets up the condition, and -으면 좋겠어요 gives a gentle suggestion."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Soften this opinion: 제 생각에는 먼저 물어보는 게 좋을 ____.",
+      "options": [
+        "것 같아요",
+        "같아요",
+        "걸요"
+      ],
+      "correct": "것 같아요",
+      "explanation": "좋을 것 같아요 softens the whole opinion. 같아요 alone would not attach correctly here."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which reply is the standard, fixed way to say you understood a request?",
+      "options": [
+        "네, 알겠어요.",
+        "네, 알 것 같아요.",
+        "네, 알걸요."
+      ],
+      "correct": "네, 알겠어요.",
+      "explanation": "알겠어요 is a set response meaning 'I understand / okay.'"
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "제 생각___ 먼저 물어보는 게 좋아요. (In my opinion...)",
+      "options": [
+        "에는",
+        "을",
+        "에서"
+      ],
+      "correct": "에는",
+      "explanation": "제 생각에는 frames the statement as your opinion. 을 and 에서 do not make the opinion-frame expression."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "회의 자료는 아직 회의실에 ___ . (있다 → soft confident guess)",
+      "base": "있다",
+      "form": "softGuess",
+      "correct": "있을걸요",
+      "explanation": "-(으)ㄹ걸요 gives a soft but fairly confident guess. 있다 becomes 있을걸요."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'If that is the case, let's ask first.'",
+      "tokens": [
+        "그렇다면",
+        "먼저 물어봐요"
+      ],
+      "correct": "그렇다면 먼저 물어봐요",
+      "explanation": "그렇다면 opens a hypothetical path from the previous idea. 먼저 물어봐요 gives the suggested next step."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Say: 'I hope it goes well.'",
+      "correct": "잘되면 좋겠어요.",
+      "explanation": "-면 좋겠어요 expresses a hope or gentle wish. 잘되면 sets the hoped-for condition."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the sentence if you mean a wish: '잘될걸요.'",
+      "correct": "잘되면 좋겠어요.",
+      "explanation": "잘될걸요 is a guess that it will probably go well. 잘되면 좋겠어요 is the wish: I hope it goes well."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which response is the cautious “Hmm, I am not sure”?",
+      "options": [
+        "글쎄요.",
+        "좋겠어요.",
+        "그렇다면요."
+      ],
+      "correct": "글쎄요.",
+      "explanation": "글쎄요 is the natural cautious hesitation. 좋겠어요 is a wish, and 그렇다면요 depends on a hypothetical."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "-ㄹ걸요: a hunch or careful guess, as in 아직 회의 중일걸요.",
+      "-다면: a hypothetical condition, as in 이미 나갔다면.",
+      "좋겠어요: a hoped-for result or gentle suggestion, as in 메시지를 남겨 두면 좋겠어요.",
+      "것 같아요: a softened impression or opinion, not 같다 meaning 'same.'",
+      "-겠-: context decides the meaning: 알겠어요, 물어보겠습니다, 피곤하시겠어요."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Answer a coworker who asks whether the boss will approve the plan: give a soft, confident guess, then add what you'd personally hope happens.",
+    "hint": "Make a gentle guess with -(으)ㄹ걸요 (괜찮을걸요) and -겠- or 것 같아요, express a wish with -(으)면 좋겠어요 (괜찮으면 좋겠어요), and soften the whole reply with trailing -(으)ㄴ/는데요.",
+    "model": "글쎄요, 아마 부장님이 괜찮다고 하실걸요. 제 생각에는 큰 문제는 없을 것 같은데요. 그래도 다들 부담 없이 받아들이면 좋겠어요. 내일이면 확실히 알 수 있겠죠.",
+    "modelEn": "Hmm, the manager will probably say it's fine, I'd guess. In my opinion there shouldn't be a big problem, though. Still, I hope everyone takes it without feeling pressured. By tomorrow we'll surely know for sure."
+  },
+  "canDo": [
+    "Offer a soft but confident guess with -(으)ㄹ걸요 (괜찮을걸요)",
+    "Express a hope or wish with -(으)면 좋겠어요 (괜찮으면 좋겠어요)",
+    "Read -겠- as intention, a guess, or a set phrase (알 수 있겠죠)",
+    "Hedge and leave room with trailing -(으)ㄴ/는데요 and 아마 / 글쎄요"
+  ]
+}

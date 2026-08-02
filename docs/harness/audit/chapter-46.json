@@ -1,0 +1,22 @@
+{
+  "chapterId": "chapter-46",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 10,
+  "cardsReviewed": 33,
+  "findings": [
+    {
+      "biteId": "chapter-46-b1",
+      "cardIndex": 3,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The inherited 작년 reveal said it crucially and normally takes 에 and treated omission as a learner error, although both 작년에 만났어요 and particle-less 작년 만났어요 occur depending on syntax and emphasis.",
+      "fix": "Added a local nuance that teaches 에 as a useful time marker without claiming it is obligatory, then recompiled.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 10 bites and 33 cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}

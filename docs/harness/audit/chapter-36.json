@@ -1,0 +1,40 @@
+{
+  "chapterId": "chapter-36",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 8,
+  "cardsReviewed": 28,
+  "findings": [
+    {
+      "biteId": "chapter-36-b3",
+      "cardIndex": 0,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "처음에는, 예전에는, and 요즘은 were offered together in generic temporal frames where the alternatives can all produce natural statements.",
+      "fix": "Added mutual temporal-expression distractor bans and recompiled.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-36-b3",
+      "cardIndex": 4,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "금방 and 생각보다 both fit the change sentence without enough context to identify one English meaning.",
+      "fix": "Added mutual 금방↔생각보다 distractor bans and recompiled.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-36-b5",
+      "cardIndex": 0,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "달라지다, 늘다, and 줄다 were competing in generic 사람이/시간이 많이 frames where multiple change verbs remain semantically possible.",
+      "fix": "Added mutual change-verb distractor bans and recompiled.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 8 bites and 28 cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}

@@ -1,0 +1,40 @@
+{
+  "chapterId": "chapter-35",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 11,
+  "cardsReviewed": 34,
+  "findings": [
+    {
+      "biteId": "chapter-35-b1",
+      "cardIndex": 0,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "The 사실은, 그런데, and 근데 cards offered one another as distractors in sentence openings where more than one discourse marker remains natural.",
+      "fix": "Added the concrete 사실은↔그런데/근데 distractor bans and recompiled the cards.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-35-b3",
+      "cardIndex": 2,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "자료, 배경, 상황, and 의견 were offered against one another in frames such as 설명하다 and 말하다 where the alternative nouns are also plausible.",
+      "fix": "Added mutual distractor bans for the concrete noun pairs and recompiled.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-35-b5",
+      "cardIndex": 1,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "동의하다 and 반대하다 both fit the displayed 의견에 frame, so context could not distinguish the offered opposites.",
+      "fix": "Added mutual 동의하다↔반대하다 distractor bans and recompiled.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 11 bites and 34 cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}

@@ -1,0 +1,22 @@
+{
+  "chapterId": "chapter-41",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 12,
+  "cardsReviewed": 36,
+  "findings": [
+    {
+      "biteId": "chapter-41-b1",
+      "cardIndex": 6,
+      "severity": "blocker",
+      "class": "compiler-selection",
+      "evidence": "The payoff compiler selected the deliberately wrong quoted form 춥어요 in ‘왜 ‘춥어요’가 아니에요?’ and highlighted 춥어 as if it were a successful form of 춥다.",
+      "fix": "Added a failing production-data regression, introduced the exact payoff ban for 춥다 inside 춥어요, and confirmed the recompiled chapter contains no 춥어 payoff.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 12 bites and the resulting 36 cards were reviewed after the invalid payoff was removed; no unfixed blocker remains."]
+}

@@ -1,0 +1,638 @@
+{
+  "id": "chapter-38",
+  "hook": {
+    "situation": "You are reading a notice, product description, or short news paragraph where Korean packs actions into noun phrases and often hides the actor with passive forms.",
+    "objectives": [
+      "Unpack long noun phrases such as 어제 올라온 공지 and 변경된 일정.",
+      "Recognize when Korean emphasizes the result with passive verbs such as 닫히다, 팔리다, 잡히다, and 보이다.",
+      "Compare base, passive, and causative verb pairs without translating word-for-word from English."
+    ],
+    "whyItMatters": "Real Korean notices and articles rarely stay at short beginner sentences. This chapter teaches learners to read compressed information: what was posted, what was changed, what was sold out, and who was made to do something."
+  },
+  "grammarNotes": [
+    {
+      "title": "Stacked Noun Modifiers: Packing a Clause Before a Noun",
+      "func": "In Korean a whole clause can describe a noun, but it always comes BEFORE the noun, and the verb changes into a modifier form ending in -ㄴ/-은/-는/-(으)ㄹ. So \"the book my friend gave me yesterday\" becomes 어제 친구가 준 책 — everything piles up in front of 책.",
+      "formTable": [
+        {
+          "when": "Past action (verb)",
+          "add": "-(으)ㄴ",
+          "ex": "읽다 → 읽은 (책) / 주다 → 친구가 준 (선물)"
+        },
+        {
+          "when": "Present / ongoing (verb)",
+          "add": "-는",
+          "ex": "먹다 → 먹는 (사람) / 보다 → 내가 보는 (영화)"
+        },
+        {
+          "when": "Future / not-yet (verb)",
+          "add": "-(으)ㄹ",
+          "ex": "가다 → 갈 (곳) / 만나다 → 내일 만날 (친구)"
+        },
+        {
+          "when": "Adjective describing a noun",
+          "add": "-(으)ㄴ",
+          "ex": "예쁘다 → 예쁜 (꽃) / 비싸다 → 비싼 (가방)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "어제 친구가 준 책을 다 읽었어요.",
+          "romanization": "eoje chinguga jun chaegeul da ilgeosseoyo.",
+          "en": "I finished reading the book my friend gave me yesterday.",
+          "note": "준 (past modifier of 주다) packs \"my friend gave\" in front of 책."
+        },
+        {
+          "ko": "제가 자주 가는 카페가 문을 닫았어요.",
+          "romanization": "jega jaju ganeun kapega muneul dadasseoyo.",
+          "en": "The cafe I often go to closed down.",
+          "note": "가는 (present modifier of 가다) shows an ongoing, habitual action before 카페. 문을 닫다 = to close down."
+        },
+        {
+          "ko": "내일 만날 사람한테 전화했어요.",
+          "romanization": "naeil mannal saramhante jeonhwahaesseoyo.",
+          "en": "I called the person I'm going to meet tomorrow.",
+          "note": "만날 (future modifier of 만나다) marks an action that hasn't happened yet."
+        },
+        {
+          "ko": "한국어를 배우는 학생이 많아요.",
+          "romanization": "hangugeoreul baeuneun haksaengi manayo.",
+          "en": "There are a lot of students who study Korean.",
+          "note": "배우는 (present modifier of 배우다) turns a whole clause into one big descriptor for 학생."
+        }
+      ],
+      "keyPoint": {
+        "label": "Past vs. present vs. future modifier",
+        "body": "The modifier ending carries the TIME, so the final verb of the sentence can stay simple: 친구가 준 책 (already gave), 친구가 주는 책 (is giving), 친구가 줄 책 (will give). Pick the wrong one and the meaning of the whole noun phrase changes."
+      },
+      "pronunciation": "읽은 sounds like [일근] — the ㄺ cluster splits and ㄱ links to 은. 많아요 sounds like [마나요], with the ㅎ in ㄶ dropping out.",
+      "drill": {
+        "instruction": "Combine the two ideas into one noun phrase using the correct past/present/future modifier, then finish the sentence.",
+        "model": "친구가 책을 줬어요 + 그 책 → 친구가 준 책을 읽었어요.",
+        "items": [
+          "제가 영화를 봐요 + 그 영화 → 제가 ___ 영화가 재미있어요.",
+          "어제 밥을 먹었어요 + 그 식당 → 어제 ___ 식당이 좋았어요.",
+          "내일 학교에 가요 + 그 친구 → 내일 학교에서 ___ 친구를 만나요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "책 친구가 어제 준",
+        "right": "어제 친구가 준 책",
+        "explanation": "English puts the describing clause AFTER the noun (\"the book that my friend gave\"), so learners often leave 책 first. In Korean the whole clause comes before the noun, and the verb must take a modifier ending — never a sentence-ending form like 줬어요 right in front of the noun."
+      }
+    },
+    {
+      "title": "Passive Verbs (이/히/리/기): Focusing on What Happens, Not the Doer",
+      "func": "Passive verbs describe what HAPPENS to something without saying who did it — the focus moves to the result or the affected thing. You build them by adding -이-, -히-, -리-, or -기- inside certain action verbs: 열다 (to open) → 열리다 (to be opened / to open on its own).",
+      "formTable": [
+        {
+          "when": "add -이-",
+          "add": "보다→보이다, 놓다→놓이다, 쌓다→쌓이다",
+          "ex": "산이 보여요. (You can see the mountain.)"
+        },
+        {
+          "when": "add -히-",
+          "add": "닫다→닫히다, 막다→막히다, 잡다→잡히다",
+          "ex": "문이 닫혔어요. (The door got closed.)"
+        },
+        {
+          "when": "add -리-",
+          "add": "열다→열리다, 듣다→들리다, 팔다→팔리다",
+          "ex": "음악이 들려요. (You can hear music.)"
+        },
+        {
+          "when": "add -기-",
+          "add": "끊다→끊기다, 쫓다→쫓기다, 안다→안기다",
+          "ex": "전화가 끊겼어요. (The call got cut off.)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "문이 갑자기 닫혔어요.",
+          "romanization": "muni gapjagi dachyeosseoyo.",
+          "en": "The door suddenly closed.",
+          "note": "닫히다 (passive of 닫다) — nobody is named as the one closing it; we just see the result."
+        },
+        {
+          "ko": "여기에서 바다가 잘 보여요.",
+          "romanization": "yeogieseo badaga jal boyeoyo.",
+          "en": "You can see the sea well from here.",
+          "note": "보이다 (passive of 보다) means \"is visible,\" focusing on what shows up, not who looks."
+        },
+        {
+          "ko": "옆방에서 음악이 들려요.",
+          "romanization": "yeopbangeseo eumagi deullyeoyo.",
+          "en": "I can hear music from the next room.",
+          "note": "들리다 (passive of 듣다) = \"is heard\"; the sound reaches you on its own."
+        },
+        {
+          "ko": "이 책이 요즘 많이 팔려요.",
+          "romanization": "i chaegi yojeum mani pallyeoyo.",
+          "en": "This book is selling a lot these days.",
+          "note": "팔리다 (passive of 팔다) puts the book, not the seller, in the subject spot."
+        }
+      ],
+      "keyPoint": {
+        "label": "Active vs. passive subject marking",
+        "body": "In an active sentence the doer takes 이/가 and the thing takes 을/를: 제가 문을 열었어요. In the passive, the affected thing becomes the 이/가 subject and the doer usually drops out: 문이 열렸어요. If you do keep the doer, it takes 에 or 한테/에게: 문이 바람에 열렸어요 (The door opened from the wind)."
+      },
+      "pronunciation": "닫히다 sounds like [다치다] — ㄷ and ㅎ blend into ㅊ. 막히다 sounds like [마키다], where ㄱ and ㅎ blend into ㅋ.",
+      "drill": {
+        "instruction": "Rewrite each active sentence as a passive one: drop the doer and move the thing into subject position.",
+        "model": "제가 문을 열었어요. → 문이 열렸어요.",
+        "items": [
+          "제가 창문을 닫았어요. → 창문이 ___.",
+          "사람들이 그 책을 많이 사요. → 그 책이 많이 ___.",
+          "제가 산을 봐요. → 여기에서 산이 ___."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "문이 닫아졌어요 (over-using -아/어지다 for everything)",
+        "right": "문이 닫혔어요",
+        "explanation": "English has one passive (\"be + past participle\"), so learners reach for -아/어지다 every time. But verbs in the 이/히/리/기 group already have their own passive form, and that is the natural choice. Save -아/어지다 mainly for verbs that don't have such a form."
+      }
+    },
+    {
+      "title": "Causative Verbs (이/히/리/기/우): Making or Helping Someone Do Something",
+      "func": "Causative verbs say that the subject CAUSES another person or thing to do or undergo the action. You build them by adding -이-, -히-, -리-, -기-, or -우- inside the verb: 먹다 (to eat) → 먹이다 (to feed = make someone eat).",
+      "formTable": [
+        {
+          "when": "add -이-",
+          "add": "먹다→먹이다, 보다→보이다, 죽다→죽이다",
+          "ex": "아기에게 밥을 먹여요. (I feed the baby rice.)"
+        },
+        {
+          "when": "add -히-",
+          "add": "입다→입히다, 앉다→앉히다, 읽다→읽히다",
+          "ex": "아이에게 옷을 입혀요. (I dress the child.)"
+        },
+        {
+          "when": "add -리-",
+          "add": "울다→울리다, 살다→살리다, 알다→알리다",
+          "ex": "동생을 울렸어요. (I made my sibling cry.)"
+        },
+        {
+          "when": "add -기-/-우-",
+          "add": "웃다→웃기다, 자다→재우다, 타다→태우다",
+          "ex": "아기를 재웠어요. (I put the baby to sleep.)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "엄마가 아기에게 밥을 먹여요.",
+          "romanization": "eommaga agiege babeul meogyeoyo.",
+          "en": "The mom feeds the baby rice.",
+          "note": "먹이다 (causative of 먹다) = make the baby eat; the eater takes 에게/한테."
+        },
+        {
+          "ko": "아이에게 따뜻한 옷을 입혔어요.",
+          "romanization": "aiege ttatteutan oseul iphyeosseoyo.",
+          "en": "I dressed the child in warm clothes.",
+          "note": "입히다 (causative of 입다) — the parent makes the child wear the clothes."
+        },
+        {
+          "ko": "동생을 울려서 엄마한테 혼났어요.",
+          "romanization": "dongsaengeul ullyeoseo eommahante honnasseoyo.",
+          "en": "I made my little brother cry, so Mom scolded me.",
+          "note": "울리다 (causative of 울다) = make cry; the one crying becomes the 을/를 object."
+        },
+        {
+          "ko": "아기를 일찍 재웠어요.",
+          "romanization": "agireul iljjik jaewosseoyo.",
+          "en": "I put the baby to sleep early.",
+          "note": "재우다 (causative of 자다, with -우-) = make sleep; very common in daily life."
+        }
+      ],
+      "keyPoint": {
+        "label": "Causative vs. plain verb — who acts",
+        "body": "Plain 자다 means the subject sleeps (아기가 자요 = the baby sleeps). Causative 재우다 means the subject makes someone else sleep (엄마가 아기를 재워요 = Mom puts the baby to sleep). The original doer (the baby) moves from the 이/가 subject to a 을/를 (or 에게) slot — the new subject is the cause."
+      },
+      "pronunciation": "입히다 sounds like [이피다] — ㅂ and ㅎ blend into ㅍ. 읽히다 sounds like [일키다], where the ㄱ in the ㄺ cluster joins ㅎ to make ㅋ.",
+      "drill": {
+        "instruction": "Turn the plain action into a causative — \"someone makes the subject do it\" — and complete the sentence.",
+        "model": "아기가 자요. (엄마) → 엄마가 아기를 재워요.",
+        "items": [
+          "아기가 밥을 먹어요. (엄마) → 엄마가 아기에게 밥을 ___.",
+          "아이가 옷을 입어요. (아빠) → 아빠가 아이에게 옷을 ___.",
+          "동생이 울어요. (내가) → 내가 동생을 ___."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "엄마가 아기를 먹게 해요 (always using -게 하다)",
+        "right": "엄마가 아기에게 밥을 먹여요",
+        "explanation": "English forces \"make/let someone do\" with a separate verb, so learners default to -게 하다 for everything. When a verb HAS a built-in causative (먹이다, 입히다, 재우다), that one-word form sounds far more natural for concrete, physical actions like feeding, dressing, and putting to sleep."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "올라온 공지",
+      "romanization": "ollaon gongji",
+      "english": "a notice that was posted",
+      "partOfSpeech": "noun phrase",
+      "exampleSentence": {
+        "ko": "어제 올라온 공지를 확인했어요.",
+        "en": "I checked the notice that was posted yesterday.",
+        "note": "A compact noun phrase: 올라온 tells you which 공지."
+      },
+      "collocations": [
+        "오늘 올라온 공지",
+        "공지에 올라오다",
+        "공지 확인하다"
+      ]
+    },
+    {
+      "hangul": "변경된 일정",
+      "romanization": "byeongyeongdoen iljeong",
+      "english": "a changed schedule",
+      "partOfSpeech": "noun phrase",
+      "exampleSentence": {
+        "ko": "변경된 일정이 공지에 나왔어요.",
+        "en": "The changed schedule appeared in the notice.",
+        "note": "변경된 focuses on the resulting state."
+      },
+      "collocations": [
+        "일정이 변경되다",
+        "변경된 시간",
+        "변경 사항"
+      ]
+    },
+    {
+      "hangul": "제출할 보고서",
+      "romanization": "jechulhal bogoseo",
+      "english": "a report to submit",
+      "partOfSpeech": "noun phrase",
+      "exampleSentence": {
+        "ko": "내일 제출할 보고서를 다시 검토했어요.",
+        "en": "I reviewed the report I will submit tomorrow.",
+        "note": "제출할 marks a future action attached to 보고서."
+      },
+      "collocations": [
+        "보고서를 제출하다",
+        "보고서를 검토하다",
+        "제출할 자료"
+      ]
+    },
+    {
+      "hangul": "읽히다",
+      "romanization": "ilkida",
+      "english": "to be read / to make someone read",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "이 책은 초급 수업에서 자주 읽혀요.",
+        "en": "This book is often read in beginner classes.",
+        "note": "Passive reading: the book is the subject."
+      },
+      "collocations": [
+        "책이 읽히다",
+        "많이 읽히다",
+        "학생에게 읽히다"
+      ]
+    },
+    {
+      "hangul": "보이다",
+      "romanization": "boida",
+      "english": "to be seen / to be visible",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "멀리서 바다가 보여요.",
+        "en": "The sea is visible from far away.",
+        "note": "The thing visible becomes the subject."
+      },
+      "collocations": [
+        "바다가 보이다",
+        "잘 보이다",
+        "눈에 보이다"
+      ]
+    },
+    {
+      "hangul": "팔리다",
+      "romanization": "pallida",
+      "english": "to be sold",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "인기 상품이 하루 만에 다 팔렸어요.",
+        "en": "The popular item sold out in one day.",
+        "note": "The product is the subject; the seller is not important."
+      },
+      "collocations": [
+        "상품이 팔리다",
+        "다 팔리다",
+        "잘 팔리다"
+      ]
+    },
+    {
+      "hangul": "잡히다",
+      "romanization": "japida",
+      "english": "to be caught / to be set",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "회의 일정이 다음 주로 잡혔어요.",
+        "en": "The meeting schedule was set for next week.",
+        "note": "For schedules, 잡히다 means it has been fixed/set."
+      },
+      "collocations": [
+        "일정이 잡히다",
+        "약속이 잡히다",
+        "손에 잡히다"
+      ]
+    },
+    {
+      "hangul": "닫히다",
+      "romanization": "datida",
+      "english": "to be closed",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "문이 자동으로 닫혔어요.",
+        "en": "The door closed automatically.",
+        "note": "The door is the subject; the closing result is highlighted."
+      },
+      "collocations": [
+        "문이 닫히다",
+        "가게가 닫히다",
+        "자동으로 닫히다"
+      ]
+    },
+    {
+      "hangul": "먹이다",
+      "romanization": "meogida",
+      "english": "to feed / make someone eat",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "엄마가 아이에게 약을 먹였어요.",
+        "en": "The mother made the child take medicine.",
+        "note": "Causative: someone causes another person to eat/take something."
+      },
+      "collocations": [
+        "아이에게 밥을 먹이다",
+        "약을 먹이다",
+        "강아지에게 사료를 먹이다"
+      ]
+    },
+    {
+      "hangul": "앉히다",
+      "romanization": "anjhida",
+      "english": "to seat someone",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "직원이 손님을 창가 자리에 앉혔어요.",
+        "en": "The employee seated the guest by the window.",
+        "note": "Causative: someone makes/lets another person sit."
+      },
+      "collocations": [
+        "손님을 앉히다",
+        "앞자리에 앉히다",
+        "의자에 앉히다"
+      ]
+    },
+    {
+      "hangul": "입히다",
+      "romanization": "ipida",
+      "english": "to dress someone / put clothes on someone",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "아버지가 아기에게 코트를 입혔어요.",
+        "en": "The father put a coat on the baby.",
+        "note": "Causative pair with 입다."
+      },
+      "collocations": [
+        "옷을 입히다",
+        "코트를 입히다",
+        "아이에게 입히다"
+      ]
+    },
+    {
+      "hangul": "알리다",
+      "romanization": "allida",
+      "english": "to inform / let know",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "안내 문자가 변경 사항을 알려 줬어요.",
+        "en": "The 안내 text message informed me of the changes.",
+        "note": "Causative-like lexical verb: make information known."
+      },
+      "collocations": [
+        "소식을 알리다",
+        "변경 사항을 알리다",
+        "미리 알리다"
+      ]
+    },
+    {
+      "hangul": "문장",
+      "romanization": "munjang",
+      "english": "sentence",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "긴 문장은 먼저 명사구를 찾아서 읽어요.",
+        "en": "For long sentences, first find the noun phrases.",
+        "note": "This chapter is about unpacking compressed sentence structure."
+      },
+      "collocations": [
+        "긴 문장",
+        "문장을 분석하다",
+        "문장을 읽다"
+      ]
+    },
+    {
+      "hangul": "기사",
+      "romanization": "gisa",
+      "english": "news article / report",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "기사에는 변경된 일정과 새 규칙이 함께 나왔어요.",
+        "en": "The article included the changed schedule and the new rule together.",
+        "note": "News prose often uses noun modification and passive/result forms."
+      },
+      "collocations": [
+        "기사를 읽다",
+        "기사에 나오다",
+        "뉴스 기사"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Minseo reads a school portal notice and explains the changed presentation schedule to Jihoon.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "어제 올라온 공지 봤어요?",
+        "romanization": "eoje ollaon gongji bwasseoyo?",
+        "en": "Did you see the notice posted yesterday?",
+        "grammarNote": "올라온 공지 is a compressed noun phrase describing which notice."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "네, 발표 시간이 다음 주로 잡혔더라고요.",
+        "romanization": "ne, balpyo sigani daeum juro japhyeotdeoragoyo.",
+        "en": "Yes, the presentation time was set for next week.",
+        "grammarNote": "잡히다 focuses on the schedule being set, not on who set it."
+      },
+      {
+        "speaker": "민서",
+        "ko": "변경된 일정이 표 아래에 작게 쓰여 있었어요.",
+        "romanization": "byeongyeongdoen iljeongi pyo araee jakge sseuyeo isseosseoyo.",
+        "en": "The changed schedule was written in small print below the table.",
+        "grammarNote": "변경된 일정 is a result-state noun phrase."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "저는 그 문장이 처음에 잘 안 읽혔어요.",
+        "romanization": "jeoneun geu munjangi cheoeume jal an ilkhyeosseoyo.",
+        "en": "At first, that sentence did not read clearly to me.",
+        "grammarNote": "읽히다 can describe how a text is read or understood."
+      },
+      {
+        "speaker": "민서",
+        "ko": "담당자가 학생들을 앞자리에 앉힌다는 내용도 있었어요.",
+        "romanization": "damdangjaga haksaengdeureul apjarie anjhindaneun naeyongdo isseosseoyo.",
+        "en": "It also said the staff would seat students in the front rows.",
+        "grammarNote": "앉히다 adds a causer who makes someone sit."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "이런 공지는 누가 했는지보다 뭐가 바뀌었는지가 중요하네요.",
+        "romanization": "ireon gongjineun nuga haenneunjiboda mwoga bakkwieonneunjiga jungyohaneyo.",
+        "en": "For notices like this, what changed matters more than who did it.",
+        "grammarNote": "This is why passive and result forms are common in notices."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "어제 올라온 공지에서 변경된 일정 보기",
+    "body": "학교나 회사 공지는 짧아 보여도 정보가 압축되어 있는 경우가 많아요. '어제 올라온 공지'는 '공지가 어제 올라왔어요'라는 문장을 명사 앞에 붙인 표현이고, '변경된 일정'은 이미 바뀐 결과를 일정 앞에 붙인 표현이에요. 이런 문장을 읽을 때는 끝에 있는 명사를 먼저 찾으세요. 공지인지, 일정인지, 문장인지, 내용인지 확인한 다음 앞에 붙은 말을 풀어 보면 훨씬 잘 읽혀요. 또 '발표 시간이 다음 주로 잡혔어요'처럼 피동형이 쓰이면 누가 정했는지보다 결과가 중요하다는 뜻으로 읽으면 됩니다.",
+    "bodyTranslation": "Notices often compress information into noun phrases. First find the final noun, then unpack the words before it. Passive/result forms like 잡히다 focus on the result, not on who caused it.",
+    "comprehensionQuestions": [
+      {
+        "question": "긴 명사구를 읽을 때 무엇을 먼저 찾아야 해요?",
+        "answer": "끝에 있는 명사를 먼저 찾아야 해요."
+      },
+      {
+        "question": "변경된 일정은 어떤 뜻이에요?",
+        "answer": "이미 바뀐 일정이라는 뜻이에요."
+      },
+      {
+        "question": "잡혔어요 같은 피동형은 무엇을 더 강조해요?",
+        "answer": "누가 했는지보다 결과를 더 강조해요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "Notices prefer result-focused wording",
+    "body": "Korean notices often care more about what changed than who changed it. That is why forms like 변경된 일정, 시간이 잡혔어요, and 문이 닫힙니다 feel natural in official or informational writing.",
+    "tip": "When a sentence feels dense, ask: what is the final noun, and what result is being emphasized?"
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which phrase means “the notice posted yesterday”?",
+      "options": [
+        "어제 올라온 공지",
+        "어제 올리는 공지",
+        "어제 올라갈 공지"
+      ],
+      "correct": "어제 올라온 공지",
+      "explanation": "올라온 is a completed-action modifier attached to 공지."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence focuses on the schedule being set, not who set it?",
+      "options": [
+        "발표 시간이 다음 주로 잡혔어요.",
+        "발표 시간이 다음 주를 잡았어요.",
+        "발표 시간을 다음 주가 잡았어요."
+      ],
+      "correct": "발표 시간이 다음 주로 잡혔어요.",
+      "explanation": "잡히다 makes the schedule the subject and highlights the result."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence uses a causative verb naturally?",
+      "options": [
+        "직원이 손님을 창가 자리에 앉혔어요.",
+        "직원이 손님이 창가 자리에 앉았어요.",
+        "직원이 손님을 창가 자리에 앉았어요."
+      ],
+      "correct": "직원이 손님을 창가 자리에 앉혔어요.",
+      "explanation": "앉히다 means someone causes another person to sit."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "공지___ 올라왔어요. (The notice was posted.)",
+      "options": [
+        "가",
+        "를",
+        "에"
+      ],
+      "correct": "가",
+      "explanation": "올라오다 describes the notice appearing or being posted, so 공지 is the subject. 를 would make it an object of someone else’s action."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "___ 일정이 있어요. (변경되다 → noun modifier)",
+      "base": "변경되다",
+      "form": "nounModifier",
+      "correct": "변경된",
+      "explanation": "A completed passive/change before a noun uses -ㄴ/은. 변경되다 becomes 변경된 before 일정."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'the schedule changed today' as a noun phrase",
+      "tokens": [
+        "오늘",
+        "변경된",
+        "일정"
+      ],
+      "correct": "오늘 변경된 일정",
+      "explanation": "Korean packs the description before the noun. 변경된 comes before 일정 to make one noun phrase."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Say: 'The door is closed.'",
+      "correct": "문이 닫혀 있어요.",
+      "explanation": "닫혀 있어요 focuses on the resulting closed state. It does not need to mention who closed the door."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the passive sentence: '일정을 잡혔어요.'",
+      "correct": "일정이 잡혔어요.",
+      "explanation": "잡히다 is passive, so 일정 is the subject and takes 이. 일정을 would fit an active verb like 잡았어요."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence uses a causative verb naturally?",
+      "options": [
+        "직원이 손님을 자리에 앉혔어요.",
+        "손님이 자리에 앉혔어요.",
+        "자리가 손님을 앉았어요."
+      ],
+      "correct": "직원이 손님을 자리에 앉혔어요.",
+      "explanation": "앉히다 means to seat someone or make/help someone sit. 손님 is the person being seated."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Say: 'the report to submit'",
+      "correct": "제출할 보고서",
+      "explanation": "제출할 is the future/required action modifier before 보고서. It means the report that is to be submitted."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "Find the final noun first: 공지, 일정, 보고서, 문장, 내용.",
+      "Read modifiers before the noun as compressed information: 어제 올라온 공지, 변경된 일정, 제출할 보고서.",
+      "Passive/result verbs like 잡히다, 닫히다, 팔리다, 보이다 focus on the result or visible state.",
+      "Causatives like 먹이다, 앉히다, 입히다 add someone who causes another person to act or enter a state."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Write a short note to a roommate about a club notice: describe the notice using a clause before the noun, and mention what got changed and what you have to do.",
+    "hint": "Stack a modifying clause before a noun (어제 올라온 공지), use a passive verb (일정이 바뀌었어요 / 변경됐어요, 문이 닫혔어요), and a causative if it fits (사람들에게 알리다 → 알렸어요).",
+    "model": "어제 게시판에 올라온 공지를 봤는데, 모임 일정이 바뀌었어요. 변경된 시간은 토요일 2시예요. 그래서 친구들한테도 그 소식을 알렸어요. 그날은 일찍 문이 닫히니까 늦지 마세요.",
+    "modelEn": "I saw the notice that was posted on the board yesterday, and the meeting schedule changed. The changed time is Saturday at 2. So I let our friends know the news too. The door closes early that day, so don't be late."
+  },
+  "canDo": [
+    "Pack a whole clause before a noun to describe it (어제 올라온 공지, 변경된 일정)",
+    "Describe what happens to something with passive verbs (바뀌다, 닫히다, 팔리다)",
+    "Say someone makes/lets another do something with causatives (알리다, 먹이다)",
+    "Build longer, more precise noun phrases for notices and schedules"
+  ]
+}

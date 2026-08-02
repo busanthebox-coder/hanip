@@ -208,9 +208,9 @@ function stemOf(word) {
 // 반갑+어→반가워요), so a plain indexOf on the stem misses — or worse, hits the
 // wrong word (오다's 오 inside 오늘). Try the fused forms, longest first;
 // return null when the word genuinely isn't in the sentence.
-const V_FUSE = { 'ㅣ': 'ㅕ', 'ㅗ': 'ㅘ', 'ㅜ': 'ㅝ', 'ㅡ': 'ㅓ' };
-const H_FUSE = { 'ㅓ': 'ㅐ', 'ㅑ': 'ㅒ' };
-const D_IRREGULAR_LEMMAS = new Set(['걷다', '듣다']);
+const V_FUSE = { 'ㅣ': 'ㅕ', 'ㅗ': 'ㅘ', 'ㅚ': 'ㅙ', 'ㅜ': 'ㅝ', 'ㅡ': 'ㅓ' };
+const H_FUSE = { 'ㅏ': 'ㅐ', 'ㅓ': 'ㅐ', 'ㅑ': 'ㅒ' };
+const D_IRREGULAR_LEMMAS = new Set(['걷다', '듣다', '묻다']);
 export function guessTarget(word, sentenceKo, { advanced = true } = {}) {
   const pos = String(word.partOfSpeech || '').toLowerCase();
   const conjugates = pos.startsWith('verb') || pos.startsWith('adj');
@@ -233,18 +233,48 @@ export function guessTarget(word, sentenceKo, { advanced = true } = {}) {
   for (const rawKo of String(word.hangul).split('/').map((s) => s.trim()).filter(Boolean)) {
     let stem = rawKo;
     if (conjugates && rawKo.endsWith('다')) stem = rawKo.slice(0, -1);
+    if (advanced && conjugates && rawKo.length >= 2) plain.add(rawKo);
     if (stem.length >= 2) plain.add(stem);
     if (conjugates && rawKo.endsWith('하다')) {
       const nounBase = rawKo.slice(0, -2);
       if (nounBase.length >= 2) plain.add(nounBase);
     }
-    if (!conjugates) continue;
+    if (!conjugates) {
+      if (advanced) {
+        for (const token of rawKo.split(/\s+/)) {
+          if (token.length >= 2) plain.add(token);
+        }
+        if (rawKo.endsWith('이다')) {
+          const noun = rawKo.slice(0, -2);
+          for (const ending of ['이', '인', '일', '였']) addFused(noun + ending);
+        }
+        if (rawKo === '는지') {
+          for (const form of ['인지', '은지', 'ㄴ지']) plain.add(form);
+        }
+        const pieces = rawKo.split(/\s+/);
+        if (pieces.length > 1) {
+          const tail = pieces.at(-1);
+          const prefix = rawKo.slice(0, -tail.length);
+          const tailMatch = guessTarget(
+            { hangul: tail, partOfSpeech: 'verb' },
+            sentenceKo,
+            { advanced },
+          );
+          if (tailMatch && sentenceKo.includes(prefix + tailMatch)) {
+            plain.add(prefix + tailMatch);
+          }
+        }
+      }
+      continue;
+    }
     const base = stem.slice(0, -1);
     const d = decomposeSyl(stem.at(-1));
     if (!d) continue;
     if (!d.T) {
       if (advanced) addPast(stem);                             // 가→갔 without accepting bare 가
-      if (V_FUSE[d.V]) addFused(base + composeSyl(d.L, V_FUSE[d.V]));
+      if (V_FUSE[d.V] && (advanced || d.V !== 'ㅚ')) {
+        addFused(base + composeSyl(d.L, V_FUSE[d.V]));
+      }
       addFused(base + composeSyl(d.L, d.V, 'ㄹ'));             // future/promise 갈·올·릴
       if (advanced) addFused(base + composeSyl(d.L, d.V, 'ㄴ')); // modifier 간·본·큰
       if (stem.at(-1) === '하') {
@@ -270,9 +300,17 @@ export function guessTarget(word, sentenceKo, { advanced = true } = {}) {
       addFused(irregular + '은');                              // 낫다→나은
     } else if (advanced && d.T === 'ㅎ' && H_FUSE[d.V]) {
       addFused(base + composeSyl(d.L, H_FUSE[d.V]));           // 그렇다→그래
+    } else if (advanced) {
+      addFused(stem + (['ㅏ', 'ㅗ'].includes(d.V) ? '아' : '어'));
     }
     if (advanced && d.T === 'ㄹ') {
       addFused(base + composeSyl(d.L, d.V) + '는');             // 만들다→만드는, 머물다→머무는
+      addFused(base + composeSyl(d.L, d.V) + '세');             // 알다→아세요, 살다→사세요
+    } else if (advanced && d.T) {
+      addFused(stem + '은');                                   // 싫다→싫은
+    }
+    if (advanced && !d.T) {
+      addFused(stem + '셔');                                   // 오다→오셔·오셨
     }
     if (stem.length === 1) for (const o of CONJ_OPENERS) plain.add(stem + o);
   }
@@ -423,7 +461,10 @@ export function buildPatternBites(chapter, overrides = {}) {
       // drill: cloze an example the learner hasn't just tapped
       const spare = hits.find((h) => !huntPair.includes(h));
       const optionSet = [...new Set(hits.map((h) => h.match.variant))];
-      if (spare && optionSet.length >= 2) {
+      const hasOptionalLongerVariant = optionSet.some((shorter) =>
+        optionSet.some((longer) => longer !== shorter && longer.startsWith(`${shorter} `))
+      );
+      if (spare && optionSet.length >= 2 && !hasOptionalLongerVariant) {
         const cloze = spare.ex.ko.slice(0, spare.match.start) + '___' + spare.ex.ko.slice(spare.match.end);
         cards.push({
           kind: 'drill',

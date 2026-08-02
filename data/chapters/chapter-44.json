@@ -1,0 +1,677 @@
+{
+  "id": "chapter-44",
+  "hook": {
+    "situation": "A learner can read Hangul blocks, but native speech connects and changes the sounds: 먹어요 sounds like [머거요], 학교 like [학꾜], 국민 like [궁민], and 좋다 like [조타].",
+    "objectives": [
+      "Map written Korean to spoken Korean using four high-frequency rules.",
+      "Practice each rule with everyday words instead of isolated sound names.",
+      "Explain why a block-by-block reading can sound unnatural even when the spelling is correct."
+    ],
+    "whyItMatters": "Korean spelling is systematic, but actual pronunciation is connected. Learners who pronounce every block separately often sound choppy and may be hard to understand. These rules help the ear catch what native speakers are already doing automatically."
+  },
+  "grammarNotes": [
+    {
+      "title": "연음 (Linking): A Final Consonant Slides onto the Next Vowel",
+      "func": "When a syllable ends in a 받침 (final consonant) and the next syllable starts with ㅇ (a silent placeholder before a vowel), the 받침 jumps over and is pronounced as the first sound of that next syllable. The spelling never changes — only the sound. This is why 한국어 is said [한구거]: the ㄱ of 국 links onto the 어.",
+      "formTable": [
+        {
+          "when": "받침 + a vowel starting with ㅇ",
+          "add": "the 받침 moves into the empty ㅇ slot",
+          "ex": "한국어 → [한구거]"
+        },
+        {
+          "when": "a single 받침 (ㄱ/ㄴ/ㄹ/ㅁ/ㅂ/ㅅ etc.) before a vowel",
+          "add": "that consonant becomes the next syllable's onset",
+          "ex": "음악 → [으막], 옷이 → [오시]"
+        },
+        {
+          "when": "a double 받침 (겹받침) before a vowel",
+          "add": "the first consonant stays, the second links over",
+          "ex": "읽어요 → [일거요], 앉아요 → [안자요]"
+        },
+        {
+          "when": "받침 ㅇ before a vowel",
+          "add": "no linking; ㅇ [ŋ] stays where it is",
+          "ex": "고양이 → [고양이] (the ㅇ does not move)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "한국어 발음이 어려워요.",
+          "romanization": "han-gu-geo ba-reu-mi eo-ryeo-wo-yo",
+          "en": "Korean pronunciation is hard.",
+          "note": "한국어 → [한구거] (국's ㄱ links to 어); 발음이 → [바르미] (음's ㅁ links to 이)."
+        },
+        {
+          "ko": "이 단어를 읽어 보세요.",
+          "romanization": "i da-neo-reul il-geo bo-se-yo",
+          "en": "Try reading this word.",
+          "note": "단어 → [다너] (단's ㄴ links to 어); 읽어 → [일거] (겹받침 ㄺ splits: ㄹ stays, ㄱ links)."
+        },
+        {
+          "ko": "제 이름이 뭐예요?",
+          "romanization": "je i-reu-mi mwo-ye-yo",
+          "en": "What is my name? (lit.)",
+          "note": "이름이 → [이르미]: 름's ㅁ links onto 이. Compare 이름 alone, said [이름]."
+        },
+        {
+          "ko": "옷이 정말 예뻐요.",
+          "romanization": "o-si jeong-mal ye-ppeo-yo",
+          "en": "The clothes are really pretty.",
+          "note": "옷이 → [오시]: the ㅅ 받침 links onto 이 and is pronounced as a clear ㅅ, not [옫이]."
+        }
+      ],
+      "keyPoint": {
+        "label": "Spelling vs. sound",
+        "body": "Linking changes only the sound, never the spelling. You always write 한국어, but you say [한구거]. Reading each syllable as written (han-guk-eo) sounds robotic; native speakers link automatically."
+      },
+      "pronunciation": "한국어 is [한구거], not [한국어]. Listen for the 받침 sliding right: 옷이 [오시], 꽃이 [꼬치], 밥을 [바블].",
+      "drill": {
+        "instruction": "Say each phrase aloud, then write the linked pronunciation in brackets.",
+        "model": "음악을 들어요 → [으마글 드러요]",
+        "items": [
+          "옷이 예뻐요 → [____]",
+          "책을 읽어요 → [____]",
+          "이름이 뭐예요 → [____]"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "han-guk · eo (a hard stop between the syllables)",
+        "right": "han-gu-geo (the ㄱ glides into the next syllable)",
+        "explanation": "English speakers tend to pronounce every syllable as written and insert a small gap before a vowel. In Korean the 받침 must flow onto the following vowel with no break, so 한국어 sounds like [한구거]."
+      }
+    },
+    {
+      "title": "경음화 (Tensing): A Plain Consonant Tenses After a Stop",
+      "func": "When a 받침 pronounced as a stop [ㄱ/ㄷ/ㅂ] is immediately followed by a plain consonant ㄱ, ㄷ, ㅂ, ㅅ, or ㅈ, that following consonant becomes its tense (된소리) version: ㄱ→ㄲ, ㄷ→ㄸ, ㅂ→ㅃ, ㅅ→ㅆ, ㅈ→ㅉ. This is why 학교 is said [학꾜].",
+      "formTable": [
+        {
+          "when": "[ㄱ] 받침 + ㄱ/ㄷ/ㅂ/ㅅ/ㅈ",
+          "add": "the following consonant tenses",
+          "ex": "학교 → [학꾜], 책상 → [책쌍]"
+        },
+        {
+          "when": "[ㄷ] 받침 (ㄷ,ㅅ,ㅈ,ㅊ,ㅌ all sound [ㄷ]) + a plain consonant",
+          "add": "the following consonant tenses",
+          "ex": "숟가락 → [숟까락], 듣고 → [듣꼬]"
+        },
+        {
+          "when": "[ㅂ] 받침 (ㅂ,ㅍ sound [ㅂ]) + a plain consonant",
+          "add": "the following consonant tenses",
+          "ex": "입국 → [입꾹], 잡지 → [잡찌]"
+        },
+        {
+          "when": "a plain consonant after ㄴ/ㄹ/ㅁ/ㅇ",
+          "add": "usually NO tensing (those are not stops)",
+          "ex": "안경 → [안경] (stays plain)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "학교에서 한국어를 배워요.",
+          "romanization": "hak-kkyo-e-seo han-gu-geo-reul bae-wo-yo",
+          "en": "I learn Korean at school.",
+          "note": "학교 → [학꾜]: the [ㄱ] of 학 tenses the following ㄱ into ㄲ."
+        },
+        {
+          "ko": "책상 위에 책이 있어요.",
+          "romanization": "chaek-ssang wi-e chae-gi i-sseo-yo",
+          "en": "There is a book on the desk.",
+          "note": "책상 → [책쌍]: the [ㄱ] 받침 tenses ㅅ to ㅆ. (책이 → [채기] is linking, a separate rule.)"
+        },
+        {
+          "ko": "식당에서 같이 먹어요.",
+          "romanization": "sik-ttang-e-seo ga-chi meo-geo-yo",
+          "en": "Let's eat together at the restaurant.",
+          "note": "식당 → [식땅]: the [ㄱ] 받침 tenses ㄷ to ㄸ."
+        },
+        {
+          "ko": "이 발음을 잡지 못했어요.",
+          "romanization": "i ba-reu-meul jap-jji mo-tae-sseo-yo",
+          "en": "I couldn't catch this pronunciation.",
+          "note": "잡지 → [잡찌]: the [ㅂ] 받침 tenses ㅈ to ㅉ."
+        }
+      ],
+      "keyPoint": {
+        "label": "Tense only after a stop",
+        "body": "Tensing happens after the three stop sounds [ㄱ][ㄷ][ㅂ], not after the sonorants ㄴ/ㄹ/ㅁ/ㅇ. Compare 학교 [학꾜] (tensing) with 안경 [안경] (no tensing) — the 받침 in 안경 is ㄴ, which is not a stop."
+      },
+      "pronunciation": "학교 is [학꾜], not [학교]. The ㄲ is the same tense sound as in 꼬리/꽃 — tighten the throat, no puff of air.",
+      "drill": {
+        "instruction": "Read each word and write the tensed pronunciation in brackets.",
+        "model": "학생 → [학쌩]",
+        "items": [
+          "식당 → [____]",
+          "입구 → [____]",
+          "듣고 → [____]"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "hak-gyo (a soft, voiced 'g' after the k)",
+        "right": "hak-kkyo (a sharp, tense ㄲ)",
+        "explanation": "English speakers often voice the consonant after a stop, turning ㄱ into a soft 'g'. Korean does the opposite: the consonant tenses to ㄲ. So 학교 is [학꾜], with a tight, unaspirated ㄲ, never a relaxed 'g'."
+      }
+    },
+    {
+      "title": "비음화 (Nasalization): A Stop Becomes Nasal Before ㄴ/ㅁ",
+      "func": "When a 받침 pronounced as a stop [ㄱ/ㄷ/ㅂ] is followed by the nasal consonant ㄴ or ㅁ, the stop changes into the matching nasal: ㄱ→ㅇ[ŋ], ㄷ→ㄴ, ㅂ→ㅁ. The mouth assimilates to the nasal that follows. This is why 한국말 is said [한궁말].",
+      "formTable": [
+        {
+          "when": "[ㄱ] 받침 + ㄴ/ㅁ",
+          "add": "ㄱ → ㅇ [ŋ]",
+          "ex": "한국말 → [한궁말], 작년 → [장년]"
+        },
+        {
+          "when": "[ㄷ] 받침 + ㄴ/ㅁ",
+          "add": "ㄷ → ㄴ",
+          "ex": "듣는 → [든는], 끝나다 → [끈나다]"
+        },
+        {
+          "when": "[ㅂ] 받침 + ㄴ/ㅁ",
+          "add": "ㅂ → ㅁ",
+          "ex": "입니다 → [임니다], 감사합니다 → [감사함니다]"
+        },
+        {
+          "when": "a stop + a non-nasal consonant",
+          "add": "no nasalization (a different rule applies)",
+          "ex": "학교 → [학꾜] (tensing, not nasal)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "한국말 발음이 자연스러워요.",
+          "romanization": "han-gung-mal ba-reu-mi ja-yeon-seu-reo-wo-yo",
+          "en": "Your Korean pronunciation is natural.",
+          "note": "한국말 → [한궁말]: the [ㄱ] of 국 becomes ㅇ before ㅁ."
+        },
+        {
+          "ko": "감사합니다.",
+          "romanization": "gam-sa-ham-ni-da",
+          "en": "Thank you.",
+          "note": "합니다 → [함니다]: the [ㅂ] of 합 becomes ㅁ before ㄴ — the single most common nasalization learners hear."
+        },
+        {
+          "ko": "저는 학생입니다.",
+          "romanization": "jeo-neun hak-ssaeng-im-ni-da",
+          "en": "I am a student.",
+          "note": "입니다 → [임니다]: [ㅂ] → ㅁ before ㄴ; this is how every formal '-입니다' ending is actually said. (학생 → [학쌩] is tensing.)"
+        },
+        {
+          "ko": "지금 노래를 듣는 중이에요.",
+          "romanization": "ji-geum no-rae-reul deun-neun jung-i-e-yo",
+          "en": "I'm listening to a song right now.",
+          "note": "듣는 → [든는]: the [ㄷ] of 듣 becomes ㄴ before ㄴ."
+        }
+      ],
+      "keyPoint": {
+        "label": "-입니다 / -습니다",
+        "body": "The polite formal endings -ㅂ니다 / -습니다 are ALWAYS nasalized in speech: 입니다 [임니다], 습니다 [슴니다]. Saying [입니다] with a real ㅂ sounds unnatural — the ㅂ always becomes ㅁ before the ㄴ."
+      },
+      "pronunciation": "한국말 is [한궁말]: the ㄱ disappears into a nasal ㅇ. Hum it — the air should go through your nose on the 궁.",
+      "drill": {
+        "instruction": "Read each word and write its nasalized pronunciation in brackets.",
+        "model": "국물 → [궁물]",
+        "items": [
+          "감사합니다 → [____]",
+          "끝나요 → [____]",
+          "작년 → [____]"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "hap-ni-da (a hard 'p' before the n)",
+        "right": "ham-ni-da (the ㅂ turns into ㅁ)",
+        "explanation": "English keeps the stop and nasal separate ('hap-nip'). Korean blends them: a stop before ㄴ/ㅁ assimilates into the matching nasal. So 합니다 is [함니다] and 한국말 is [한궁말], never with the original stop intact."
+      }
+    },
+    {
+      "title": "격음화 (Aspiration): ㅎ Merges with a Plain Stop into an Aspirate",
+      "func": "When ㅎ meets a plain consonant ㄱ, ㄷ, ㅂ, or ㅈ (in either order — ㅎ before the consonant, or a [ㄱ/ㄷ/ㅂ] 받침 before ㅎ), the two merge into a single aspirated consonant: ㄱ→ㅋ, ㄷ→ㅌ, ㅂ→ㅍ, ㅈ→ㅊ. This is why 좋다 is said [조타].",
+      "formTable": [
+        {
+          "when": "ㅎ 받침 + ㄱ/ㄷ/ㅈ",
+          "add": "merge into ㅋ/ㅌ/ㅊ",
+          "ex": "좋다 → [조타], 좋고 → [조코], 좋지 → [조치]"
+        },
+        {
+          "when": "[ㄱ] 받침 + ㅎ",
+          "add": "ㄱ + ㅎ → ㅋ",
+          "ex": "축하 → [추카], 백화점 → [배콰점]"
+        },
+        {
+          "when": "[ㄷ] 받침 + ㅎ",
+          "add": "ㄷ + ㅎ → ㅌ",
+          "ex": "맏형 → [마텽]"
+        },
+        {
+          "when": "[ㅂ] 받침 + ㅎ",
+          "add": "ㅂ + ㅎ → ㅍ",
+          "ex": "입학 → [이팍], 잡화 → [자퐈]"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "발음이 좋다고 들었어요.",
+          "romanization": "ba-reu-mi jo-ta-go deu-reo-sseo-yo",
+          "en": "I heard your pronunciation is good.",
+          "note": "좋다 → [조타]: ㅎ 받침 + ㄷ merge into the aspirate ㅌ."
+        },
+        {
+          "ko": "입학을 축하해요!",
+          "romanization": "i-pa-geul chu-ka-hae-yo",
+          "en": "Congratulations on starting school!",
+          "note": "입학 → [이팍]: [ㅂ] + ㅎ → ㅍ; 축하 → [추카]: [ㄱ] + ㅎ → ㅋ. Two aspirations in one sentence."
+        },
+        {
+          "ko": "이 단어를 어떻게 읽어요?",
+          "romanization": "i da-neo-reul eo-tteo-ke il-geo-yo",
+          "en": "How do you read this word?",
+          "note": "어떻게 → [어떠케]: ㅎ 받침 + ㄱ → ㅋ. (읽어요 → [일거요] is separate linking.)"
+        },
+        {
+          "ko": "발음이 정말 좋고 자연스러워요.",
+          "romanization": "ba-reu-mi jeong-mal jo-ko ja-yeon-seu-reo-wo-yo",
+          "en": "The pronunciation is really good and natural.",
+          "note": "좋고 → [조코]: ㅎ 받침 + ㄱ merge into the aspirate ㅋ."
+        }
+      ],
+      "keyPoint": {
+        "label": "Aspiration vs. tensing",
+        "body": "Both reshape a plain stop, but the trigger differs. ㅎ + ㄱ/ㄷ/ㅂ/ㅈ gives an ASPIRATED consonant (ㅋ/ㅌ/ㅍ/ㅊ, with a puff of air): 좋다 [조타]. A stop + plain consonant gives a TENSE consonant (ㄲ/ㄸ/ㅃ, no air): 학교 [학꾜]. Hold your hand to your mouth — aspiration puffs, tensing doesn't."
+      },
+      "pronunciation": "좋다 is [조타], not [졷다] or [조따]. The ㅌ is aspirated like the ㅌ in 타요 — release a clear puff of air, not a tense ㄸ.",
+      "drill": {
+        "instruction": "Read each word and write the aspirated pronunciation in brackets.",
+        "model": "좋다 → [조타]",
+        "items": [
+          "축하 → [____]",
+          "입학 → [____]",
+          "어떻게 → [____]"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "jot-da (keeping the ㅎ and ㄷ as two separate hard sounds)",
+        "right": "jo-ta (the ㅎ and ㄷ merge into one aspirated ㅌ)",
+        "explanation": "English speakers try to pronounce both the ㅎ and the following stop, or drop the ㅎ entirely as a tense [조따]. In Korean the two fuse into a single aspirated consonant with a puff of air, so 좋다 is [조타] and 축하 is [추카]."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "먹다",
+      "romanization": "meokda",
+      "english": "to eat",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "먹어요는 [머거요]처럼 이어져요.",
+        "en": "먹어요 links and sounds like [머거요].",
+        "note": "Linked to dictionary card word-verb-001."
+      },
+      "collocations": [
+        "먹어요 → [머거요]",
+        "먹고 → [먹꼬]",
+        "먹는 → [멍는]"
+      ]
+    },
+    {
+      "hangul": "한국어",
+      "romanization": "hangugeo",
+      "english": "Korean language",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "한국어는 [한구거]처럼 이어져요.",
+        "en": "한국어 links and sounds like [한구거].",
+        "note": "Linked to dictionary card word-ext-ch03-hangugeo."
+      },
+      "collocations": [
+        "한국어 → [한구거]",
+        "한국어 공부",
+        "한국어를 배우다"
+      ]
+    },
+    {
+      "hangul": "앉다",
+      "romanization": "antda",
+      "english": "to sit",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "앉아요는 [안자요]처럼 들려요.",
+        "en": "앉아요 sounds like [안자요].",
+        "note": "Linked to dictionary card word-verb-010."
+      },
+      "collocations": [
+        "앉아요 → [안자요]",
+        "앉고",
+        "앉는"
+      ]
+    },
+    {
+      "hangul": "읽다",
+      "romanization": "ikda",
+      "english": "to read",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "읽어요는 [일거요]처럼 들려요.",
+        "en": "읽어요 sounds like [일거요].",
+        "note": "Linked to dictionary card word-verb-011."
+      },
+      "collocations": [
+        "읽어요 → [일거요]",
+        "읽고",
+        "책을 읽다"
+      ]
+    },
+    {
+      "hangul": "학교",
+      "romanization": "hakgyo",
+      "english": "school",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "학교는 [학꾜]처럼 들려요.",
+        "en": "학교 sounds like [학꾜].",
+        "note": "Linked to dictionary card word-noun-006."
+      },
+      "collocations": [
+        "학교 → [학꾜]",
+        "학교에 가다",
+        "학교에서 공부하다"
+      ]
+    },
+    {
+      "hangul": "국밥",
+      "romanization": "gukbap",
+      "english": "gukbap; soup with rice",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "국밥은 [국빱]처럼 들려요.",
+        "en": "국밥 sounds like [국빱].",
+        "note": "Linked to dictionary card word-ext-707."
+      },
+      "collocations": [
+        "국밥 → [국빱]",
+        "국밥 한 그릇",
+        "국밥을 먹다"
+      ]
+    },
+    {
+      "hangul": "국민",
+      "romanization": "gungmin",
+      "english": "citizens; the people of a nation",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "국민은 [궁민]처럼 들려요.",
+        "en": "국민 sounds like [궁민].",
+        "note": "Linked to dictionary card word-ext-1818."
+      },
+      "collocations": [
+        "국민 → [궁민]",
+        "전 국민",
+        "국민의 권리"
+      ]
+    },
+    {
+      "hangul": "닫다",
+      "romanization": "datda",
+      "english": "to close",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "닫다는 [닫따]처럼 들려요.",
+        "en": "닫다 sounds like [닫따].",
+        "note": "Linked to dictionary card word-verb-025."
+      },
+      "collocations": [
+        "닫다 → [닫따]",
+        "닫는 → [단는]",
+        "문을 닫다"
+      ]
+    },
+    {
+      "hangul": "좋다",
+      "romanization": "jota",
+      "english": "to be good; to like",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "좋다는 [조타]처럼 들려요.",
+        "en": "좋다 sounds like [조타].",
+        "note": "Linked to dictionary card word-adjective-027."
+      },
+      "collocations": [
+        "좋다 → [조타]",
+        "좋아요",
+        "날씨가 좋다"
+      ]
+    },
+    {
+      "hangul": "입학하다",
+      "romanization": "iphakada",
+      "english": "to enroll in school",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "입학은 [이팍]처럼 들려요.",
+        "en": "입학 sounds like [이팍].",
+        "note": "Linked to dictionary card word-verb-487."
+      },
+      "collocations": [
+        "입학 → [이팍]",
+        "입학하다",
+        "학교에 입학하다"
+      ]
+    },
+    {
+      "hangul": "축하해요",
+      "romanization": "chukahaeyo",
+      "english": "Congratulations.",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "축하해요는 [추카해요]처럼 들려요.",
+        "en": "축하해요 sounds like [추카해요].",
+        "note": "Linked to dictionary card expr-123."
+      },
+      "collocations": [
+        "축하해요 → [추카해요]",
+        "생일 축하해요",
+        "정말 축하해요"
+      ]
+    },
+    {
+      "hangul": "한국어를 잘 못해요",
+      "romanization": "hangugeoreul jal motaeyo",
+      "english": "I'm not good at Korean.",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "못해요는 [모태요]처럼 들려요.",
+        "en": "못해요 sounds like [모태요].",
+        "note": "Linked to dictionary card expr-394."
+      },
+      "collocations": [
+        "못해요 → [모태요]",
+        "잘 못해요",
+        "한국어를 잘 못해요"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "A learner compares written Hangul with actual pronunciation.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "먹어요는 [먹-어-요]가 아니라 [머거요]처럼 이어져요.",
+        "romanization": "meogeoyoneun [meok-eo-yo]ga anira [meogeoyo]cheoreom ieojyeoyo.",
+        "en": "먹어요 is not [meok-eo-yo]; it links and sounds like [머거요].",
+        "grammarNote": "연음 links the final ㄱ to the following vowel."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "학교랑 국밥은 왜 [학꾜], [국빱]처럼 들려요?",
+        "romanization": "hakgyorang gukbabeun wae [hakkkyo], [gukppap]cheoreom deullyeoyo?",
+        "en": "Why do 학교 and 국밥 sound like [학꾜] and [국빱]?",
+        "grammarNote": "경음화 makes the next consonant tense after certain final consonants."
+      },
+      {
+        "speaker": "민서",
+        "ko": "받침 뒤에서 된소리가 나서 그래요.",
+        "romanization": "batchim dwieseo doensoriga naseo geuraeyo.",
+        "en": "It is because a tense sound appears after the final consonant.",
+        "grammarNote": "This explains the tense consonant in 학교 and 국밥."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "그럼 국민은 [궁민], 먹는은 [멍는]처럼 들리죠?",
+        "romanization": "geureom gungmineun [gungmin], meongneuneun [meongneun]cheoreom deullijyo?",
+        "en": "Then 국민 sounds like [궁민], and 먹는 sounds like [멍는], right?",
+        "grammarNote": "비음화 changes stop sounds before ㄴ or ㅁ."
+      },
+      {
+        "speaker": "민서",
+        "ko": "맞아요. 좋다와 입학은 [조타], [이팍]처럼 ㅎ 때문에 세게 나요.",
+        "romanization": "majayo. jotdawa iphak-eun [jota], [ipak]cheoreom hieut ttaemune sege nayo.",
+        "en": "Right. 좋다 and 입학 become stronger sounds like [조타] and [이팍] because of ㅎ.",
+        "grammarNote": "격음화 creates aspirated sounds like ㅌ and ㅍ."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "글자대로 읽는 것과 실제로 들리는 소리",
+    "body": "한글은 규칙적인 문자지만, 실제 말소리는 글자 블록을 하나씩 끊어 읽지 않아요. 먹어요는 [먹-어-요]가 아니라 [머거요]처럼 이어지고, 한국어도 [한구거]처럼 들려요. 반대로 학교와 국밥은 뒤 음절이 세져서 [학꾜], [국빱]처럼 들려요. 또 국민과 먹는처럼 ㄴ이나 ㅁ 앞에서는 받침 소리가 코소리로 바뀌고, 좋다와 입학처럼 ㅎ을 만나면 [조타], [이팍]처럼 거센소리가 나요. 철자는 그대로 외우되, 말할 때는 실제 소리 지도를 함께 익혀야 자연스럽게 들립니다.",
+    "bodyTranslation": "Hangul spelling is regular, but speech does not read each block separately. 먹어요 links to [머거요], 한국어 sounds like [한구거], 학교 and 국밥 gain tense sounds, 국민 and 먹는 nasalize before ㄴ or ㅁ, and 좋다 and 입학 aspirate because of ㅎ. Keep the spelling, but learn the spoken map too.",
+    "comprehensionQuestions": [
+      {
+        "question": "먹어요는 실제로 어떻게 이어져 들려요?",
+        "answer": "[머거요]처럼 들려요."
+      },
+      {
+        "question": "학교와 국밥에서 어떤 변화가 일어나요?",
+        "answer": "뒤 음절이 된소리로 세져서 [학꾜], [국빱]처럼 들려요."
+      },
+      {
+        "question": "좋다와 입학은 왜 [조타], [이팍]처럼 들려요?",
+        "answer": "ㅎ을 만나서 거센소리가 나기 때문이에요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "Do not rewrite the spelling as the sound",
+    "body": "Native speakers hear [머거요] when they read 먹어요, but they still write 먹어요. Korean pronunciation rules are not alternate spellings; they are the bridge between correct spelling and natural speech. For learners, the best practice is to keep the written word in Hangul and add the spoken form in brackets during practice.",
+    "tip": "Practice in pairs: write 먹어요, say [머거요]; write 학교, say [학꾜]; write 국민, say [궁민]; write 좋다, say [조타]."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "먹어요 is naturally pronounced closer to:",
+      "options": [
+        "[머거요]",
+        "[먹어 요]",
+        "[먹꼬요]"
+      ],
+      "correct": "[머거요]",
+      "explanation": "연음 links ㄱ into the following vowel."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "학교 often sounds like [학꾜] because of:",
+      "options": [
+        "경음화",
+        "비음화",
+        "격음화"
+      ],
+      "correct": "경음화",
+      "explanation": "The following ㄱ becomes tense after the final consonant."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which word shows nasalization?",
+      "options": [
+        "국민 → [궁민]",
+        "국밥 → [국빱]",
+        "좋다 → [조타]"
+      ],
+      "correct": "국민 → [궁민]",
+      "explanation": "ㄱ becomes ㅇ before ㅁ."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which pair shows aspiration caused by ㅎ?",
+      "options": [
+        "입학 → [이팍]",
+        "한국어 → [한구거]",
+        "먹는 → [멍는]"
+      ],
+      "correct": "입학 → [이팍]",
+      "explanation": "ㅂ and ㅎ combine into ㅍ in speech."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "한국어 is heard closer to ____.",
+      "options": [
+        "[한구거]",
+        "[한국어]",
+        "[한꾹어]"
+      ],
+      "correct": "[한구거]",
+      "explanation": "The ㄱ links into the following vowel."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "먹어요 is heard closer to ___.",
+      "correct": "머거요",
+      "explanation": "With 연음, the final ㄱ slides onto the following vowel. So 먹어요 is heard closer to 머거요."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "국민 is naturally heard closer to:",
+      "options": [
+        "궁민",
+        "국민 그대로",
+        "군민"
+      ],
+      "correct": "궁민",
+      "explanation": "Before ㄴ or ㅁ, a stop sound can nasalize. ㄱ before ㅁ is heard closer to ㅇ, giving 궁민."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the pronunciation note: '좋다 sounds like [조다].'",
+      "correct": "좋다 sounds like [조타].",
+      "explanation": "ㅎ combines with ㄷ and makes the aspirated ㅌ sound. That is why 좋다 is heard as [조타]."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'Read Korean slowly.'",
+      "tokens": [
+        "한국어를",
+        "천천히 읽어요"
+      ],
+      "correct": "한국어를 천천히 읽어요",
+      "explanation": "This sentence keeps pronunciation practice inside a real action phrase. 한국어를 is the object and 천천히 tells how to read."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "학교___ 가요. (I go to school.)",
+      "options": [
+        "에",
+        "에서",
+        "가"
+      ],
+      "correct": "에",
+      "explanation": "가요 takes 에 for the destination. 에서 marks an action place, and 가 would make 학교 the subject of going. The pronunciation of 학교 may tense in speech, but the written particle is still 에."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "연음: final consonant links to a following vowel, as in 먹어요 [머거요].",
+      "경음화: a following plain consonant becomes tense, as in 학교 [학꾜] and 국밥 [국빱].",
+      "비음화: ㄱ/ㄷ/ㅂ become nasal before ㄴ or ㅁ, as in 국민 [궁민].",
+      "격음화: ㅎ creates aspirated sounds, as in 좋다 [조타] and 입학 [이팍].",
+      "Do not rewrite spelling as sound. Keep 먹어요, but practice saying [머거요]."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Write 3-4 short sentences using everyday words whose spelling and sound differ, and note in English how one of them is pronounced.",
+    "hint": "Use words with sound changes: 연음 (한국어 → [한구거]), 경음화 (학교 → [학꾜]), 비음화 (국민 → [궁민]), 격음화 (좋다 → [조타]). Write the words normally; spelling stays the same.",
+    "model": "저는 한국어를 공부해요. 학교에서 밥을 먹어요. 김치는 좋아요. 그런데 한국어를 잘 못해요.",
+    "modelEn": "I study Korean. I eat at school. Kimchi is good. But I'm not good at Korean. (한국어 is written han-gug-eo but pronounced [han-gu-geo]: the final ㄱ links onto the next vowel.)"
+  },
+  "canDo": [
+    "Read a 받침 linking onto the next vowel (한국어 → [한구거], 연음)",
+    "Hear a plain consonant tense after a stop (학교 → [학꾜], 경음화)",
+    "Recognize nasalization and aspiration in speech (국민 → [궁민]; 좋다 → [조타])"
+  ]
+}

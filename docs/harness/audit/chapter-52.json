@@ -1,0 +1,22 @@
+{
+  "chapterId": "chapter-52",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 11,
+  "cardsReviewed": 33,
+  "findings": [
+    {
+      "biteId": "chapter-52-b5",
+      "cardIndex": 2,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The inherited 국물 reveal said broth must be 마시다 and not 먹다, although both 국물을 먹다 and 국물을 마시다 are natural with a viewpoint difference.",
+      "fix": "Added a local nuance distinguishing eating broth as part of a meal from focusing on drinking the liquid.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 11 bites and 33 cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}

@@ -1,0 +1,31 @@
+{
+  "chapterId": "chapter-55",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 12,
+  "cardsReviewed": 36,
+  "findings": [
+    {
+      "biteId": "chapter-55-b2",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The consonant row of the N(으)로 table contained a meta-comment with question marks instead of a valid example, leaving the core 으로 rule without a learnable model.",
+      "fix": "Replaced it with the valid directional example 오른쪽→오른쪽으로 and recompiled.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-55-b7",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The pronunciation note used 놓치면 as an example of the consonant-stem buffer 으 even though 놓치다 has a vowel-ending stem and takes -면 directly.",
+      "fix": "Used 먹으면 for the consonant-stem explanation and explicitly classified 놓치다 as vowel-final.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 12 bites and 36 cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}

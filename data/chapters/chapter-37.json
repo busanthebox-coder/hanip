@@ -1,0 +1,627 @@
+{
+  "id": "chapter-37",
+  "hook": {
+    "situation": "After class, a friend asks what the teacher said. You need to pass along a statement, a question, and an instruction without mixing the endings.",
+    "objectives": [
+      "Report statements with -다고 했어요 and recognize the spoken contraction -대요.",
+      "Report questions with -냐고 물어봤어요.",
+      "Use -는지 when a question is embedded inside 알다, 모르다, 확인하다, or 궁금하다."
+    ],
+    "whyItMatters": "Reported speech is not one pattern. Korean changes the ending depending on what the original sentence was: a statement, a question, or an instruction."
+  },
+  "grammarNotes": [
+    {
+      "title": "V/A-다고 했어요 — Reporting what someone said",
+      "func": "Use -다고 했어요 to report a statement someone made, like English \"said that …\". You report the meaning, not the exact words, so you drop the original ending (요/-어) and attach -다고 to the plain stem.",
+      "formTable": [
+        {
+          "when": "Action verb, present — stem ends in a vowel",
+          "add": "-ㄴ다고 했어요",
+          "ex": "가다 → 간다고 했어요"
+        },
+        {
+          "when": "Action verb, present — stem ends in a 받침",
+          "add": "-는다고 했어요",
+          "ex": "먹다 → 먹는다고 했어요"
+        },
+        {
+          "when": "Adjective, present",
+          "add": "-다고 했어요",
+          "ex": "바쁘다 → 바쁘다고 했어요 / 좋다 → 좋다고 했어요"
+        },
+        {
+          "when": "Any verb/adjective, past",
+          "add": "-았/었다고 했어요",
+          "ex": "먹었다 → 먹었다고 했어요 / 갔다 → 갔다고 했어요"
+        },
+        {
+          "when": "Noun + 이다",
+          "add": "N(이)라고 했어요",
+          "ex": "학생 → 학생이라고 했어요 / 친구 → 친구라고 했어요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "친구가 내일 학교에 안 온다고 했어요.",
+          "romanization": "chinguga naeil hakgyoe an ondago haesseoyo.",
+          "en": "My friend said he won't come to school tomorrow.",
+          "note": "오다 is an action verb, so present is 온다고, not 오다고."
+        },
+        {
+          "ko": "엄마가 밥을 다 먹었다고 했어요.",
+          "romanization": "eommaga babeul da meogeottago haesseoyo.",
+          "en": "Mom said she finished eating.",
+          "note": "Past tense: keep 먹었- and add -다고. The past never takes -ㄴ다고/-는다고."
+        },
+        {
+          "ko": "선생님이 한국어가 안 어렵다고 했어요.",
+          "romanization": "seonsaengnimi hangugeoga an eoryeoptago haesseoyo.",
+          "en": "The teacher said Korean isn't hard.",
+          "note": "어렵다 is an adjective, so just -다고 — no -ㄴ-/-는-."
+        },
+        {
+          "ko": "그 사람이 제 친구라고 했어요.",
+          "romanization": "geu sarami je chingurago haesseoyo.",
+          "en": "He said he's my friend.",
+          "note": "Noun + 이다 becomes (이)라고. 친구 ends in a vowel, so 친구라고."
+        }
+      ],
+      "keyPoint": {
+        "label": "Verbs vs. adjectives in the present",
+        "body": "Only action verbs add -ㄴ다고/-는다고 (간다고, 먹는다고). Adjectives, and all past forms, just add -다고 (바쁘다고, 먹었다고). The common slips are 먹다고 (should be 먹는다고) and 바쁜다고 (should be 바쁘다고)."
+      },
+      "pronunciation": "In 먹는다고 the ㄱ before ㄴ turns into an ㅇ sound, so it comes out [멍는다고].",
+      "drill": {
+        "instruction": "Report what each person said using -다고 했어요. Watch verb vs. adjective and tense.",
+        "model": "민수: \"시간이 없어요.\" → 민수가 시간이 없다고 했어요.",
+        "items": [
+          "수지: \"집에 가요.\" → 수지가 ___ .",
+          "아빠: \"어제 영화를 봤어요.\" → 아빠가 ___ .",
+          "친구: \"이 책이 재미있어요.\" → 친구가 ___ ."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "친구가 학교에 안 오다고 했어요.",
+        "right": "친구가 학교에 안 온다고 했어요.",
+        "explanation": "In English you just add \"that,\" so it's tempting to glue -다고 onto the dictionary form 오다. But present-tense action verbs need -ㄴ다고/-는다고: 오다 → 온다고."
+      }
+    },
+    {
+      "title": "V/A-냐고 물어봤어요 — Reporting a question",
+      "func": "Use -냐고 물어봤어요 (or 물었어요) to report a question someone asked — \"someone asked whether/what …\". The reported part ends in -냐고 no matter how polite the original question was.",
+      "formTable": [
+        {
+          "when": "Verb or adjective, present",
+          "add": "-냐고 물어봤어요",
+          "ex": "가다 → 가냐고 / 좋다 → 좋냐고 물어봤어요"
+        },
+        {
+          "when": "Any verb/adjective, past",
+          "add": "-았/었냐고 물어봤어요",
+          "ex": "먹었다 → 먹었냐고 / 갔다 → 갔냐고 물어봤어요"
+        },
+        {
+          "when": "Noun + 이다",
+          "add": "N(이)냐고 물어봤어요",
+          "ex": "학생 → 학생이냐고 / 친구 → 친구냐고 물어봤어요"
+        },
+        {
+          "when": "With a question word (누구/언제/어디 …)",
+          "add": "keep the question word + -냐고",
+          "ex": "어디 가다 → 어디 가냐고 물어봤어요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "친구가 저한테 밥 먹었냐고 물어봤어요.",
+          "romanization": "chinguga jeohante bap meogeonnyago mureobwasseoyo.",
+          "en": "My friend asked me whether I'd eaten.",
+          "note": "Past yes/no question → -었냐고. 한테 marks the person who was asked."
+        },
+        {
+          "ko": "선생님이 학생들한테 시간이 있냐고 물어봤어요.",
+          "romanization": "seonsaengnimi haksaengdeulhante sigani innyago mureobwasseoyo.",
+          "en": "The teacher asked the students whether they had time.",
+          "note": "있다 → 있냐고. A yes/no question with no question word."
+        },
+        {
+          "ko": "엄마가 어디 가냐고 물어봤어요.",
+          "romanization": "eommaga eodi ganyago mureobwasseoyo.",
+          "en": "Mom asked where I was going.",
+          "note": "The question word 어디 stays where it is — Korean doesn't move it to the front."
+        },
+        {
+          "ko": "그 사람이 제가 한국 사람이냐고 물어봤어요.",
+          "romanization": "geu sarami jega hanguk saraminyago mureobwasseoyo.",
+          "en": "That person asked whether I was Korean.",
+          "note": "Noun + 이다 → 이냐고. The subject inside the quote takes 가/이 (제가), not 는."
+        }
+      ],
+      "keyPoint": {
+        "label": "-다고 vs. -냐고",
+        "body": "Statements use -다고 했어요; questions use -냐고 물어봤어요. The following verb is your clue: 했어요/말했어요 (said) for statements, 물어봤어요/물었어요 (asked) for questions."
+      },
+      "pronunciation": "In 먹었냐고 the ㅆ받침 before ㄴ becomes an ㄴ sound, so it links as [머건냐고].",
+      "drill": {
+        "instruction": "Report each question with -냐고 물어봤어요. Keep any question word in place.",
+        "model": "엄마: \"숙제 다 했어?\" → 엄마가 숙제 다 했냐고 물어봤어요.",
+        "items": [
+          "친구: \"내일 시간 있어?\" → 친구가 ___ .",
+          "선생님: \"어디 살아요?\" → 선생님이 ___ .",
+          "동생: \"이거 누구 책이야?\" → 동생이 ___ ."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "친구가 밥 먹었다고 물어봤어요.",
+        "right": "친구가 밥 먹었냐고 물어봤어요.",
+        "explanation": "Learners reuse the statement ending -다고 with 물어봤어요. But a reported question has to end in -냐고; -다고 only goes with 했어요/말했어요."
+      }
+    },
+    {
+      "title": "V-는지 / A-(으)ㄴ지 / N인지 — \"whether / what / where …\" inside a sentence",
+      "func": "Use -는지/-(으)ㄴ지/-인지 to tuck a question inside a bigger sentence — \"I don't know whether/what/where …\", \"Do you know if …?\". It turns the question into a clause that then connects to verbs like 알다, 모르다, 궁금하다.",
+      "formTable": [
+        {
+          "when": "Action verb, present",
+          "add": "-는지",
+          "ex": "가다 → 가는지 / 먹다 → 먹는지 모르겠어요"
+        },
+        {
+          "when": "Adjective, present",
+          "add": "-(으)ㄴ지",
+          "ex": "좋다 → 좋은지 / 바쁘다 → 바쁜지 모르겠어요"
+        },
+        {
+          "when": "Any verb/adjective, past",
+          "add": "-았/었는지",
+          "ex": "먹었다 → 먹었는지 / 갔다 → 갔는지 모르겠어요"
+        },
+        {
+          "when": "Noun + 이다",
+          "add": "N인지",
+          "ex": "학생 → 학생인지 / 누구 → 누구인지 모르겠어요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "친구가 어디 사는지 몰라요.",
+          "romanization": "chinguga eodi saneunji mollayo.",
+          "en": "I don't know where my friend lives.",
+          "note": "살다 drops the ㄹ before -는지 → 사는지. 어디 stays inside the clause."
+        },
+        {
+          "ko": "이 영화가 재미있는지 궁금해요.",
+          "romanization": "i yeonghwaga jaemiinneunji gunggumhaeyo.",
+          "en": "I wonder whether this movie is good.",
+          "note": "재미있다 takes -는지 (not -(으)ㄴ지) because of the 있다 part."
+        },
+        {
+          "ko": "밥을 다 먹었는지 모르겠어요.",
+          "romanization": "babeul da meogeonneunji moreugesseoyo.",
+          "en": "I'm not sure whether he finished eating.",
+          "note": "Past → -었는지. 모르겠어요 sounds softer than 몰라요, more like \"I'm not sure.\""
+        },
+        {
+          "ko": "저 사람이 누구인지 아세요?",
+          "romanization": "jeo sarami nuguinji aseyo?",
+          "en": "Do you know who that person is?",
+          "note": "누구 + 이다 → 누구인지. It pairs naturally with 알다/아세요."
+        }
+      ],
+      "keyPoint": {
+        "label": "Adjective -(으)ㄴ지 vs. verb -는지",
+        "body": "In the present, adjectives take -(으)ㄴ지 (좋은지, 바쁜지) and action verbs take -는지 (가는지, 먹는지). In the past, both use -았/었는지 (좋았는지, 갔는지), so the split only matters in the present."
+      },
+      "pronunciation": "먹는지 comes out [멍는지] (ㄱ → ㅇ before ㄴ); in 좋은지 the ㅎ drops, so it sounds like [조은지].",
+      "drill": {
+        "instruction": "Finish each sentence with -는지/-(으)ㄴ지/-인지. Watch verb vs. adjective and tense.",
+        "model": "(친구가 오다) 친구가 ___ 모르겠어요. → 친구가 오는지 모르겠어요.",
+        "items": [
+          "(이 책이 좋다) 이 책이 ___ 모르겠어요.",
+          "(어제 비가 오다) 어제 비가 ___ 모르겠어요.",
+          "(저분이 선생님이다) 저분이 ___ 아세요?"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "이 영화가 재미있은지 궁금해요.",
+        "right": "이 영화가 재미있는지 궁금해요.",
+        "explanation": "재미있다/맛있다/없다 look like adjectives, but the 있/없 part acts like a verb and takes -는지, not -(으)ㄴ지. So it's 재미있는지, 맛있는지, 없는지."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "다고 했어요",
+      "romanization": "dago haesseoyo",
+      "english": "said that...",
+      "partOfSpeech": "reported-speech ending",
+      "exampleSentence": {
+        "ko": "선생님이 금요일에 본다고 하셨어요.",
+        "en": "The teacher said we will take it on Friday.",
+        "note": "Reports a statement."
+      },
+      "collocations": [
+        "온다고 했어요",
+        "바쁘다고 했어요",
+        "학생이라고 했어요"
+      ]
+    },
+    {
+      "hangul": "냐고 물어봤어요",
+      "romanization": "nyago mureobwasseoyo",
+      "english": "asked whether/if...",
+      "partOfSpeech": "reported-question ending",
+      "exampleSentence": {
+        "ko": "친구가 몇 시에 만나냐고 물어봤어요.",
+        "en": "My friend asked what time we are meeting.",
+        "note": "Reports a question."
+      },
+      "collocations": [
+        "언제 오냐고 물어봤어요",
+        "뭐 하냐고 물어봤어요",
+        "끝났냐고 물어봤어요"
+      ]
+    },
+    {
+      "hangul": "는지",
+      "romanization": "neunji",
+      "english": "whether; what/when/where... inside a sentence",
+      "partOfSpeech": "embedded-question ending",
+      "exampleSentence": {
+        "ko": "시험이 언제인지 알아요?",
+        "en": "Do you know when the exam is?",
+        "note": "Embeds a question inside 알다."
+      },
+      "collocations": [
+        "언제인지 알다",
+        "어디 있는지 모르다",
+        "몇 시에 만나는지 확인하다"
+      ]
+    },
+    {
+      "hangul": "라고 하다",
+      "romanization": "rago hada",
+      "english": "to tell someone to...",
+      "partOfSpeech": "reported-command ending",
+      "exampleSentence": {
+        "ko": "선생님이 숙제를 제출하라고 하셨어요.",
+        "en": "The teacher told us to submit the homework.",
+        "note": "Reports an instruction."
+      },
+      "collocations": [
+        "제출하라고 하다",
+        "확인하라고 하다",
+        "조용히 하라고 하다"
+      ]
+    },
+    {
+      "hangul": "대요",
+      "romanization": "daeyo",
+      "english": "they say; I heard that",
+      "partOfSpeech": "contracted reported ending",
+      "exampleSentence": {
+        "ko": "선생님이 시험은 금요일에 본대요.",
+        "en": "The teacher says the exam is on Friday.",
+        "note": "Spoken contraction of 본다고 해요."
+      },
+      "collocations": [
+        "온대요",
+        "바쁘대요",
+        "학생이래요"
+      ]
+    },
+    {
+      "hangul": "물어보다",
+      "romanization": "mureoboda",
+      "english": "to ask; to ask and find out",
+      "partOfSpeech": "verb phrase",
+      "exampleSentence": {
+        "ko": "친구한테 시험이 언제인지 물어봤어요.",
+        "en": "I asked my friend when the exam is.",
+        "note": "Everyday spoken verb for asking."
+      },
+      "collocations": [
+        "친구한테 물어보다",
+        "선생님께 물어보다",
+        "몇 시인지 물어보다"
+      ]
+    },
+    {
+      "hangul": "다시 말하다",
+      "romanization": "dasi malhada",
+      "english": "to say again; to repeat",
+      "partOfSpeech": "verb phrase",
+      "exampleSentence": {
+        "ko": "잘 못 들었으면 다시 말해 달라고 해요.",
+        "en": "If you did not hear it well, ask them to say it again.",
+        "note": "Useful repair phrase when reported information is unclear."
+      },
+      "collocations": [
+        "다시 말해 주세요",
+        "다시 말하면",
+        "다시 말해 달라고 하다"
+      ]
+    },
+    {
+      "hangul": "숙제",
+      "romanization": "sukje",
+      "english": "homework",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "내일까지 숙제를 제출하라고 하셨어요.",
+        "en": "They told us to submit the homework by tomorrow.",
+        "note": "Classroom reporting content."
+      },
+      "collocations": [
+        "숙제를 하다",
+        "숙제를 제출하다",
+        "숙제를 내다"
+      ]
+    },
+    {
+      "hangul": "시험",
+      "romanization": "siheom",
+      "english": "exam",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "시험이 언제인지 알아요?",
+        "en": "Do you know when the exam is?",
+        "note": "Natural embedded question noun."
+      },
+      "collocations": [
+        "시험을 보다",
+        "시험 날짜",
+        "시험이 언제인지"
+      ]
+    },
+    {
+      "hangul": "제출하다",
+      "romanization": "jechulhada",
+      "english": "to submit",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "숙제를 제출했냐고 물어봤어요.",
+        "en": "They asked whether I submitted the homework.",
+        "note": "A practical school/work verb for reported questions."
+      },
+      "collocations": [
+        "숙제를 제출하다",
+        "과제를 제출하다",
+        "내일까지 제출하다"
+      ]
+    },
+    {
+      "hangul": "확인하다",
+      "romanization": "hwaginhada",
+      "english": "to check",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "몇 시에 만나는지 확인해 주세요.",
+        "en": "Please check what time we are meeting.",
+        "note": "Often follows an embedded question."
+      },
+      "collocations": [
+        "내용을 확인하다",
+        "시간을 확인하다",
+        "메시지를 확인하다"
+      ]
+    },
+    {
+      "hangul": "내용",
+      "romanization": "naeyong",
+      "english": "content; details",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "메시지 내용을 확인했어요.",
+        "en": "I checked the message content.",
+        "note": "What was said or written."
+      },
+      "collocations": [
+        "메시지 내용",
+        "수업 내용",
+        "내용을 전하다"
+      ]
+    },
+    {
+      "hangul": "전하다",
+      "romanization": "jeonhada",
+      "english": "to convey; to pass on",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "제가 친구한테 내용을 전할게요.",
+        "en": "I will pass the details on to my friend.",
+        "note": "The communication job of reported speech."
+      },
+      "collocations": [
+        "소식을 전하다",
+        "내용을 전하다",
+        "메시지를 전하다"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "A classmate passes along what the teacher said after class.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "선생님이 뭐라고 하셨어요?",
+        "romanization": "seonsaengnimi mworago hasyeosseoyo?",
+        "en": "What did the teacher say?",
+        "grammarNote": "뭐라고 asks for the content of what was said."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "내일까지 숙제를 제출하라고 하셨어요.",
+        "romanization": "naeilkkaji sukjereul jechulharago hasyeosseoyo.",
+        "en": "The teacher told us to submit the homework by tomorrow.",
+        "grammarNote": "-라고 하셨어요 reports an instruction."
+      },
+      {
+        "speaker": "민서",
+        "ko": "시험이 언제인지도 말씀하셨어요?",
+        "romanization": "siheomi eonjeinjido malsseumhasyeosseoyo?",
+        "en": "Did the teacher also say when the exam is?",
+        "grammarNote": "-인지 embeds the question 'when is the exam?'"
+      },
+      {
+        "speaker": "지훈",
+        "ko": "네, 금요일에 본다고 하셨어요.",
+        "romanization": "ne, geumyoire bondago hasyeosseoyo.",
+        "en": "Yes, the teacher said we will take it on Friday.",
+        "grammarNote": "-다고 하셨어요 reports a statement."
+      },
+      {
+        "speaker": "민서",
+        "ko": "친구는 뭐라고 물어봤어요?",
+        "romanization": "chinguneun mworago mureobwasseoyo?",
+        "en": "What did your friend ask?",
+        "grammarNote": "물어보다 is the natural spoken verb for asking."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "몇 시에 만나냐고 물어봤어요.",
+        "romanization": "myeot sie mannanyago mureobwasseoyo.",
+        "en": "They asked what time we are meeting.",
+        "grammarNote": "-냐고 물어봤어요 reports a question."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "선생님이 뭐라고 하셨어요?",
+    "body": "수업이 끝난 뒤 친구에게 내용을 전할 때는 원래 문장이 어떤 종류였는지 먼저 봐야 해요. 선생님이 '금요일에 시험을 봐요'라고 말한 내용은 '금요일에 본다고 하셨어요'로 전할 수 있어요. 질문을 전할 때는 '-냐고'를 써요. 그래서 '몇 시에 만나요?'는 '몇 시에 만나냐고 물어봤어요'가 돼요. 하지만 누가 질문한 것이 아니라 내가 답을 알고 싶은 상황이면 '-는지'가 자연스러워요. '시험이 언제인지 알아요?'처럼 큰 문장 안에 질문을 넣는 거예요.",
+    "bodyTranslation": "When passing along class information, first identify the original sentence type. Statements use -다고 했어요, questions use -냐고 물어봤어요, and embedded questions use -는지 inside verbs like know, not know, or check.",
+    "comprehensionQuestions": [
+      {
+        "question": "원래 문장이 statement이면 어떤 표현을 써요?",
+        "answer": "-다고 했어요를 써요."
+      },
+      {
+        "question": "질문을 전할 때는 어떤 표현을 써요?",
+        "answer": "-냐고 물어봤어요를 써요."
+      },
+      {
+        "question": "큰 문장 안에 질문을 넣을 때는 어떤 표현을 써요?",
+        "answer": "-는지를 써요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "The ending carries the original sentence type",
+    "body": "In Korean, the listener can often tell whether the original was a statement, question, or instruction from the reported ending itself. That is why choosing -다고, -냐고, or -(으)라고 matters.",
+    "tip": "Before reporting someone else's words, label the source sentence: statement, question, or instruction."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "The teacher said, '금요일에 시험을 봐요.' Which report is correct?",
+      "options": [
+        "금요일에 본다고 하셨어요.",
+        "금요일에 보냐고 하셨어요.",
+        "금요일에 보라고 하셨어요."
+      ],
+      "correct": "금요일에 본다고 하셨어요.",
+      "explanation": "The original is a statement, so use -다고 하셨어요."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Your friend asked, '몇 시에 만나요?' Which report is correct?",
+      "options": [
+        "몇 시에 만나냐고 물어봤어요.",
+        "몇 시에 만난다고 물어봤어요.",
+        "몇 시에 만나라고 물어봤어요."
+      ],
+      "correct": "몇 시에 만나냐고 물어봤어요.",
+      "explanation": "The original is a question, so use -냐고 물어봤어요."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Choose the embedded question form.",
+      "options": [
+        "시험이 언제인지 알아요?",
+        "시험이 언제냐고 알아요?",
+        "시험이 언제라고 알아요?"
+      ],
+      "correct": "시험이 언제인지 알아요?",
+      "explanation": "알다 takes the embedded question form -는지/-인지."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "선생님___ 숙제를 제출하라고 하셨어요. (The teacher told us to submit homework.)",
+      "options": [
+        "께서",
+        "께",
+        "를"
+      ],
+      "correct": "께서",
+      "explanation": "선생님 is the respected subject who gave the instruction, so use 께서. 께 would mark a recipient instead."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "친구가 영화를 ___ . (보다 → reported statement)",
+      "base": "보다",
+      "form": "reportedStatement",
+      "correct": "본다고 했어요",
+      "explanation": "Action verbs use -ㄴ/는다고 for reported statements. 보다 becomes 본다고 했어요 in this sentence."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'My friend asked what time we meet.'",
+      "tokens": [
+        "친구가",
+        "몇 시에 만나냐고",
+        "물어봤어요"
+      ],
+      "correct": "친구가 몇 시에 만나냐고 물어봤어요",
+      "explanation": "Reported questions use -냐고 물어봤어요. The embedded question keeps 몇 시에 inside the reported content."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Say: 'Please check whether there is homework.'",
+      "correct": "숙제가 있는지 확인해 주세요.",
+      "explanation": "-는지 embeds the question inside 확인하다. 숙제가 있는지 means whether homework exists."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the report: '친구가 몇 시에 만나다고 물어봤어요.'",
+      "correct": "친구가 몇 시에 만나냐고 물어봤어요.",
+      "explanation": "A reported question needs -냐고, not -다고. -다고 reports a statement."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which is the spoken short form of 선생님이 내일 시험이 있다고 했어요?",
+      "options": [
+        "내일 시험이 있대요.",
+        "내일 시험이 있냐고요.",
+        "내일 시험이 있으라고요."
+      ],
+      "correct": "내일 시험이 있대요.",
+      "explanation": "-대요 is the common spoken contraction for “they say that.” 있냐고요 would report or repeat a question."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Say: 'I don't know whether there is an exam.'",
+      "correct": "시험이 있는지 몰라요.",
+      "explanation": "-는지 works inside 모르다 for an embedded question. 시험이 있는지 means whether there is an exam."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "Statements: -다고 했어요 / -대요.",
+      "Questions: -냐고 물어봤어요.",
+      "Instructions: -(으)라고 했어요.",
+      "Embedded questions: -는지 with 알다, 모르다, 확인하다, 궁금하다."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Message a classmate to relay what the teacher announced today: what the teacher said about the homework, and what a classmate asked you about it.",
+    "hint": "Report a statement with -다고 했어요 (제출하라고 했어요 / 어렵다고 했어요), report a question with -냐고 물어봤어요, and embed a question with -는지 (언제까지인지 몰라서).",
+    "model": "선생님이 오늘 숙제를 금요일까지 제출하라고 했어요. 그리고 시험이 어렵다고 했어요. 민수 씨가 저한테 숙제가 언제까지냐고 물어봤는데, 저도 정확히 언제까지인지 몰라서 다시 확인했어요.",
+    "modelEn": "The teacher said today to submit the homework by Friday. And said the exam is hard. Minsu asked me when the homework is due, but I didn't know exactly when it was due either, so I checked again."
+  },
+  "canDo": [
+    "Pass along what someone said with -다고 했어요 (어렵다고 했어요)",
+    "Relay an order with -(으)라고 하다 (제출하라고 했어요)",
+    "Report a question someone asked with -냐고 물어봤어요",
+    "Tuck a question inside a sentence with -는지/-(으)ㄴ지 (언제까지인지 몰라요)"
+  ]
+}

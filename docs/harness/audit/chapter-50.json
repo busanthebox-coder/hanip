@@ -1,0 +1,22 @@
+{
+  "chapterId": "chapter-50",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 11,
+  "cardsReviewed": 36,
+  "findings": [
+    {
+      "biteId": "chapter-50-b1",
+      "cardIndex": 5,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The inherited 눈 reveal claimed the snow/eye homonyms are split by pitch. Modern Seoul speech does not reliably preserve such a lexical pitch distinction, and traditional dictionary vowel length is also often merged.",
+      "fix": "Added a local nuance that relies on context and accurately qualifies the traditional vowel-length distinction.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 11 bites and 36 cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}

@@ -1,0 +1,22 @@
+{
+  "chapterId": "chapter-37",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 9,
+  "cardsReviewed": 28,
+  "findings": [
+    {
+      "biteId": "chapter-37-b3",
+      "cardIndex": 4,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "숙제를 제출했냐고 and 숙제를 확인했냐고 are both natural, so 제출하다 and 확인하다 cannot test one another in that frame.",
+      "fix": "Added mutual 제출하다↔확인하다 distractor bans and recompiled.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 9 bites and 28 cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}

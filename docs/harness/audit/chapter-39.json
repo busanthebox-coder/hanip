@@ -1,0 +1,40 @@
+{
+  "chapterId": "chapter-39",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 9,
+  "cardsReviewed": 28,
+  "findings": [
+    {
+      "biteId": "chapter-39-b3",
+      "cardIndex": 0,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "야근하다 and 포기하다 can both naturally complete 오늘은 ___할 수밖에 없어요 without further context.",
+      "fix": "Added mutual 야근하다↔포기하다 distractor bans and recompiled.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-39-b3",
+      "cardIndex": 3,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "가능하다 and 불가능하다 were offered as opposites in a bare 오늘 안에 ___해요? question where either answer is meaningful.",
+      "fix": "Added mutual 가능하다↔불가능하다 distractor bans and recompiled.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-39-b5",
+      "cardIndex": 1,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "자료, 방법, and 설명 can all be described as wrong or rewritten in the displayed generic frames.",
+      "fix": "Extended the existing concrete noun distractor bans and recompiled.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 9 bites and 28 cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}

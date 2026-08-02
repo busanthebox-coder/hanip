@@ -1,0 +1,733 @@
+{
+  "id": "chapter-45",
+  "hook": {
+    "situation": "A friend says they cannot come, cannot eat meat, or do not want something. Korean needs different negative forms depending on whether the issue is choice, ability, absence, or careful clarification.",
+    "objectives": [
+      "Choose 안 for simple choice or ordinary negation.",
+      "Choose 못 when something blocks the action: schedule, ability, rule, or health.",
+      "Use 없다 for absence and -지 않아요 for careful or more formal negation."
+    ],
+    "whyItMatters": "English 'not' hides several different Korean meanings. 안 가요 can sound like you are choosing not to go, while 못 가요 says you cannot go because something blocks you. That difference matters when declining invitations or explaining food restrictions."
+  },
+  "grammarNotes": [
+    {
+      "title": "안 + verb/adjective — simple negation",
+      "func": "Put 안 directly in front of a verb or adjective to make it negative. This is the everyday spoken negation: \"I don't / it isn't.\" It states a choice or a plain fact, with no sense of being blocked or unable.",
+      "formTable": [
+        {
+          "when": "Most verbs and adjectives",
+          "add": "안 in front of the word",
+          "ex": "가요 → 안 가요 (don't go)"
+        },
+        {
+          "when": "Adjective",
+          "add": "안 in front",
+          "ex": "바빠요 → 안 바빠요 (not busy)"
+        },
+        {
+          "when": "하다 action verbs (공부하다 등)",
+          "add": "안 splits IN: noun + 안 + 해요",
+          "ex": "공부해요 → 공부 안 해요 (don't study)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "저는 술을 안 마셔요.",
+          "romanization": "jeoneun sureul an masyeoyo.",
+          "en": "I don't drink alcohol.",
+          "note": "안 sits right before 마셔요; a stated habit, not an inability. Pronounced [an ma.syeo.yo], no tensing."
+        },
+        {
+          "ko": "오늘은 학교에 안 가요.",
+          "romanization": "oneureun hakgyoe an gayo.",
+          "en": "I'm not going to school today.",
+          "note": "A simple choice or plan; 안 negates 가요 directly."
+        },
+        {
+          "ko": "이 영화는 안 무서워요.",
+          "romanization": "i yeonghwaneun an museowoyo.",
+          "en": "This movie isn't scary.",
+          "note": "안 also negates adjectives (무섭다 = scary), describing a plain quality."
+        },
+        {
+          "ko": "저는 운동 안 해요.",
+          "romanization": "jeoneun undong an haeyo.",
+          "en": "I don't exercise.",
+          "note": "With 운동하다, 안 goes BETWEEN the noun and 해요: 운동 안 해요, not 안 운동해요."
+        }
+      ],
+      "keyPoint": {
+        "label": "안 vs 못",
+        "body": "안 = don't or won't, by choice or as a plain fact (안 가요, I'm not going). 못 = can't, blocked by an outside obstacle (못 가요, I can't go). If you simply chose not to, use 안; if something stops you, use 못."
+      },
+      "pronunciation": "안 is pronounced [an] and, unlike 못, it does NOT tense the next sound. 안 가요 stays [an ga.yo], 안 봐요 stays [an bwa.yo]. Before a verb starting with ㅁ/ㄴ the nasal flows smoothly: 안 마셔요 → [an ma.syeo.yo]. No double-consonant tensing anywhere.",
+      "drill": {
+        "instruction": "Make each sentence negative using 안. Watch the 하다 verbs, where 안 goes between the noun and 해요.",
+        "model": "매워요 (spicy) → 안 매워요",
+        "items": [
+          "커피를 마셔요 → ____",
+          "요리해요 → ____",
+          "집에 가요 → ____"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "안 공부해요",
+        "right": "공부 안 해요",
+        "explanation": "English speakers treat 공부하다 as one block and put 안 in front of the whole thing. But noun + 하다 verbs split: the noun stays, then 안, then 해요. So it's 공부 안 해요, 운동 안 해요, 요리 안 해요."
+      }
+    },
+    {
+      "title": "못 + verb — cannot, because something blocks you",
+      "func": "Put 못 in front of a verb to say you CANNOT do it — not because you don't want to, but because something blocks or prevents you (no time, no skill, no permission, an obstacle). 못 is used with action verbs, not with descriptive adjectives.",
+      "formTable": [
+        {
+          "when": "Most action verbs",
+          "add": "못 in front of the verb",
+          "ex": "가요 → 못 가요 (can't go)"
+        },
+        {
+          "when": "하다 action verbs",
+          "add": "못 splits IN: noun + 못 + 해요",
+          "ex": "수영해요 → 수영 못 해요 (can't swim)"
+        },
+        {
+          "when": "NOT with plain adjectives",
+          "add": "use 안 instead",
+          "ex": "안 바빠요 (○) / 못 바빠요 (✗)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "오늘 너무 바빠서 못 가요.",
+          "romanization": "oneul neomu bappaseo mot gayo.",
+          "en": "I can't go today because I'm too busy.",
+          "note": "못 = blocked by an outside reason (being busy), not a choice. Pronounced [몯 까요]."
+        },
+        {
+          "ko": "저는 매운 음식을 못 먹어요.",
+          "romanization": "jeoneun maeun eumsigeul mot meogeoyo.",
+          "en": "I can't eat spicy food.",
+          "note": "My body can't handle it — an inability, so 못, not 안."
+        },
+        {
+          "ko": "저는 수영 못 해요.",
+          "romanization": "jeoneun suyeong mot haeyo.",
+          "en": "I can't swim.",
+          "note": "하다 verb: 못 goes between 수영 and 해요. It's a lack of skill, hence 못."
+        },
+        {
+          "ko": "시끄러워서 잠을 못 잤어요.",
+          "romanization": "sikkeureowoseo jameul mot jasseoyo.",
+          "en": "I couldn't sleep because it was noisy.",
+          "note": "An external obstacle (noise) prevented the action — a classic 못 situation, here in the past."
+        }
+      ],
+      "keyPoint": {
+        "label": "못 + verb only (never adjectives)",
+        "body": "못 means 'unable to DO an action,' so it attaches to action verbs (못 가요, 못 먹어요). You can't be 'unable to be tall' or 'unable to be busy' — for adjectives use 안 (안 커요, 안 바빠요). 못 바빠요 is wrong."
+      },
+      "pronunciation": "못 is written with final ㅅ but pronounced [몯]. Before a vowel it links: 못 와요 → [모 돠요]. Before ㄱ/ㄷ/ㅂ/ㅈ it TENSES the next sound: 못 가요 → [몯 까요], 못 봐요 → [몯 빠요]. That tensing is the audible signal of 못 — and the clearest way to tell it apart from 안.",
+      "drill": {
+        "instruction": "Rewrite using 못 to mean 'cannot.' For 하다 verbs, put 못 between the noun and 해요.",
+        "model": "가요 → 못 가요",
+        "items": [
+          "매운 거를 먹어요 → ____",
+          "운전해요 → ____",
+          "피아노를 쳐요 → ____"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "저는 안 수영해요 (when you mean you literally can't swim)",
+        "right": "저는 수영 못 해요",
+        "explanation": "English 'I don't swim' and 'I can't swim' look similar, so learners default to 안. But when an ability or obstacle is involved, Korean wants 못. 안 수영해요 means you choose not to; 수영 못 해요 means you're unable."
+      }
+    },
+    {
+      "title": "-지 않아요 — the longer / written negation",
+      "func": "Attach -지 않아요 to a verb or adjective stem for the 'long form' of negation. It means the same as 안, but is a little more formal and is common in writing, careful speech, and longer sentences. It works smoothly with every verb and adjective, including 하다 verbs (no splitting).",
+      "formTable": [
+        {
+          "when": "Verb or adjective stem",
+          "add": "stem + -지 않아요",
+          "ex": "가다 → 가지 않아요 (don't go)"
+        },
+        {
+          "when": "Adjective",
+          "add": "stem + -지 않아요",
+          "ex": "바쁘다 → 바쁘지 않아요 (not busy)"
+        },
+        {
+          "when": "하다 verbs (no splitting!)",
+          "add": "공부하 + -지 않아요",
+          "ex": "공부하다 → 공부하지 않아요 (don't study)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "저는 고기를 먹지 않아요.",
+          "romanization": "jeoneun gogireul meokji anayo.",
+          "en": "I don't eat meat.",
+          "note": "먹다 → 먹지 않아요; same meaning as 안 먹어요 but sounds a touch more formal or written."
+        },
+        {
+          "ko": "그 가게는 비싸지 않아요.",
+          "romanization": "geu gageneun bissaji anayo.",
+          "en": "That shop isn't expensive.",
+          "note": "Works with adjectives too: 비싸다 → 비싸지 않아요 (= 안 비싸요)."
+        },
+        {
+          "ko": "저는 담배를 피우지 않아요.",
+          "romanization": "jeoneun dambaereul piuji anayo.",
+          "en": "I don't smoke.",
+          "note": "A clean way to state a habit you don't do; common on forms and in polite explanations."
+        },
+        {
+          "ko": "요즘 운동하지 않아요.",
+          "romanization": "yojeum undonghaji anayo.",
+          "en": "I don't exercise these days.",
+          "note": "With 하다 verbs there is NO split: 운동하 + 지 않아요. Compare the spoken 운동 안 해요."
+        }
+      ],
+      "keyPoint": {
+        "label": "안 vs -지 않아요",
+        "body": "They mean the same thing. 안 먹어요 = 먹지 않아요 (I don't eat). 안 is short and spoken; -지 않아요 is longer and slightly more formal or written. Bonus: 하다 verbs DON'T split with -지 않아요 (운동하지 않아요), unlike 운동 안 해요."
+      },
+      "pronunciation": "않아요 is pronounced [아나요] — the ㅎ in 않 is silent and the ㄴ links into the following vowel: 가지 않아요 → [가지 아나요]. The ㅎ never makes its own sound here.",
+      "drill": {
+        "instruction": "Convert each verb or adjective to the long negative with -지 않아요.",
+        "model": "가다 → 가지 않아요",
+        "items": [
+          "먹다 (eat) → ____",
+          "바쁘다 (busy) → ____",
+          "청소하다 (clean) → ____"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "먹지 안 아요 / 먹지 않어요",
+        "right": "먹지 않아요",
+        "explanation": "Two errors are common: splitting 안 out as a separate word, and misspelling the ending. The fixed ending is one unit, -지 않아요 [지 아나요]. Don't insert 안 separately, and don't write 않어요."
+      }
+    },
+    {
+      "title": "N이/가 없어요 — absence / \"don't have\"",
+      "func": "없어요 is the verb for 'there isn't / I don't have.' It is the opposite of 있어요 (there is / have). The noun takes the subject marker 이/가, and 없어요 covers both 'don't possess' and 'isn't present / doesn't exist.'",
+      "formTable": [
+        {
+          "when": "Noun ends in a consonant",
+          "add": "noun + 이 없어요",
+          "ex": "시간 → 시간이 없어요 (no time)"
+        },
+        {
+          "when": "Noun ends in a vowel",
+          "add": "noun + 가 없어요",
+          "ex": "차 → 차가 없어요 (no car)"
+        },
+        {
+          "when": "Opposite (positive)",
+          "add": "있어요",
+          "ex": "시간이 있어요 (have time)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "지금 시간이 없어요.",
+          "romanization": "jigeum sigani eopseoyo.",
+          "en": "I don't have time right now.",
+          "note": "시간 ends in a consonant, so 시간이; 없어요 = don't have. Pronounced [시가니 업써요]."
+        },
+        {
+          "ko": "저는 차가 없어요.",
+          "romanization": "jeoneun chaga eopseoyo.",
+          "en": "I don't have a car.",
+          "note": "차 ends in a vowel, so the marker is 가. 없어요 here means 'don't possess.'"
+        },
+        {
+          "ko": "냉장고에 우유가 없어요.",
+          "romanization": "naengjanggoe uyuga eopseoyo.",
+          "en": "There's no milk in the fridge.",
+          "note": "Same 없어요 also means 'isn't there / doesn't exist' — the absence of a thing in a place. 우유 ends in a vowel → 우유가."
+        },
+        {
+          "ko": "오늘은 약속이 없어요.",
+          "romanization": "oneureun yaksogi eopseoyo.",
+          "en": "I don't have any plans today.",
+          "note": "없어요 negates having something (약속 = plans/an appointment); 약속 ends in a consonant → 약속이."
+        }
+      ],
+      "keyPoint": {
+        "label": "없어요 vs 안 + verb",
+        "body": "For NOT HAVING or NOT EXISTING, use 없어요, never 안 있어요. 안 있어요 is wrong. So 'no time' = 시간이 없어요 (○), not 시간이 안 있어요 (✗). 안 negates actions and qualities; 없어요 negates existence and possession."
+      },
+      "pronunciation": "없어요 is pronounced [업써요]: the ㅂㅅ cluster keeps the ㅂ [p] sound, and the ㅅ links to the next vowel as a tense [ss]. So 시간이 없어요 → [시가니 업써요].",
+      "drill": {
+        "instruction": "Say you don't have each thing using 이/가 없어요. Choose the right marker by the noun's last sound.",
+        "model": "시간 → 시간이 없어요",
+        "items": [
+          "돈 (money) → ____",
+          "우산 (umbrella) → ____",
+          "친구 (friend) → ____"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "시간이 안 있어요",
+        "right": "시간이 없어요",
+        "explanation": "English 'I don't have time' tempts learners to negate 있어요 with 안. Korean has a dedicated negative verb 없어요 for this; 안 있어요 sounds wrong to native ears. Memorize 있어요 ↔ 없어요 as a pair."
+      }
+    },
+    {
+      "title": "Boundary check — 안 vs 못 vs 아니에요 vs 싫어요",
+      "func": "Korean splits the English word 'not' across several forms, and choosing the wrong one sounds off. This note sorts them: 안 = don't/won't (choice or fact), 못 = can't (blocked), 아니에요 = 'it's not [a noun]' (identity), 싫어요 = 'I don't like it / I don't want to' (dislike or refusal). Match the form to the meaning, not to the English word.",
+      "formTable": [
+        {
+          "when": "Choice / plain fact about an action or quality",
+          "add": "안 + verb/adjective",
+          "ex": "안 가요 (I'm not going)"
+        },
+        {
+          "when": "Inability / outside obstacle",
+          "add": "못 + verb",
+          "ex": "못 가요 (I can't go)"
+        },
+        {
+          "when": "'It is NOT [a noun]' (identity)",
+          "add": "noun + 이/가 아니에요",
+          "ex": "학생이 아니에요 (not a student)"
+        },
+        {
+          "when": "Dislike / 'I don't want to'",
+          "add": "싫어요 (or 안 좋아요)",
+          "ex": "숙제가 싫어요 (I hate homework)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "오늘은 안 가요.",
+          "romanization": "oneureun an gayo.",
+          "en": "I'm not going today.",
+          "note": "A choice or plan — plain negation of the action, so 안."
+        },
+        {
+          "ko": "바빠서 오늘은 못 가요.",
+          "romanization": "bappaseo oneureun mot gayo.",
+          "en": "I can't go today because I'm busy.",
+          "note": "Something blocks the action (being busy), so 못, not 안."
+        },
+        {
+          "ko": "이건 제 가방이 아니에요.",
+          "romanization": "igeon je gabangi anieyo.",
+          "en": "This isn't my bag.",
+          "note": "Saying a noun is NOT something uses 아니에요, never 안 — 안 가방이에요 is wrong."
+        },
+        {
+          "ko": "저는 매운 음식이 싫어요.",
+          "romanization": "jeoneun maeun eumsigi sireoyo.",
+          "en": "I don't like spicy food.",
+          "note": "Dislike, not inability: 싫어요. (못 먹어요 would mean 'I can't eat it.')"
+        }
+      ],
+      "keyPoint": {
+        "label": "One English 'not,' four Korean choices",
+        "body": "Ask what kind of 'not' it is. Action by choice → 안. Action blocked → 못. 'It's not [a noun]' → 아니에요. 'I don't like / don't want' → 싫어요. Picking by feeling, not by the English word, is the whole skill of this chapter."
+      },
+      "pronunciation": "아니에요 → [아니에요], four clear syllables, no linking trick. 싫어요 → [시러요]: the ㅎ in 싫 is silent and the ㄹ links into the vowel, so it sounds like [시러요], not [실허요].",
+      "drill": {
+        "instruction": "Choose 안, 못, 아니에요, or 싫어요 for each meaning.",
+        "model": "'I can't swim' → 수영 못 해요",
+        "items": [
+          "'I'm not going today (I just won't)' → 오늘은 ____ 가요",
+          "'This isn't my phone' → 이건 제 폰이 ____",
+          "'I don't like vegetables' → 저는 채소가 ____"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "이건 제 가방 안 이에요 / 저는 그게 안 좋아요 (meaning 'I hate it')",
+        "right": "이건 제 가방이 아니에요 / 저는 그게 싫어요",
+        "explanation": "Two traps: (1) you can't negate 이에요/예요 with 안 — to say a noun is NOT something, use 아니에요. (2) For strong dislike or refusal, 싫어요 is the natural word; 안 좋아요 just means 'not good,' which is milder and can sound evasive."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "가다",
+      "romanization": "gada",
+      "english": "to go",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "안 가는 거예요, 아니면 못 가는 거예요?",
+        "en": "Are you choosing not to go, or are you unable to go?",
+        "note": "Linked to dictionary card word-verb-003."
+      },
+      "collocations": [
+        "안 가요",
+        "못 가요",
+        "가지 않아요"
+      ]
+    },
+    {
+      "hangul": "먹다",
+      "romanization": "meokda",
+      "english": "to eat",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "알레르기가 있어서 고기를 못 먹어요.",
+        "en": "I cannot eat meat because I have an allergy.",
+        "note": "Linked to dictionary card word-verb-001."
+      },
+      "collocations": [
+        "안 먹어요",
+        "못 먹어요",
+        "먹지 않아요"
+      ]
+    },
+    {
+      "hangul": "하다",
+      "romanization": "hada",
+      "english": "to do",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "요즘 운동 안 해요.",
+        "en": "I do not exercise these days.",
+        "note": "Linked to dictionary card word-verb-007."
+      },
+      "collocations": [
+        "안 해요",
+        "못 해요",
+        "하지 않아요"
+      ]
+    },
+    {
+      "hangul": "시간",
+      "romanization": "sigan",
+      "english": "time",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "시간이 없어서 못 가요.",
+        "en": "I cannot go because I do not have time.",
+        "note": "Linked to dictionary card word-noun-009."
+      },
+      "collocations": [
+        "시간이 없어요",
+        "시간이 없어서",
+        "시간이 없어서 못 가요"
+      ]
+    },
+    {
+      "hangul": "야근",
+      "romanization": "yageun",
+      "english": "working overtime",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "야근 때문에 못 가요.",
+        "en": "I cannot go because of overtime.",
+        "note": "Linked to dictionary card word-ext-548."
+      },
+      "collocations": [
+        "야근 때문에",
+        "야근이 있어요",
+        "야근 때문에 못 가요"
+      ]
+    },
+    {
+      "hangul": "고기",
+      "romanization": "gogi",
+      "english": "meat",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "고기는 안 먹어요?",
+        "en": "Do you not eat meat?",
+        "note": "Linked to dictionary card word-ext-040."
+      },
+      "collocations": [
+        "고기를 안 먹다",
+        "고기를 못 먹다",
+        "고기를 먹지 않다"
+      ]
+    },
+    {
+      "hangul": "알레르기",
+      "romanization": "allereugi",
+      "english": "allergy",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "알레르기가 있어서 못 먹어요.",
+        "en": "I cannot eat it because I have an allergy.",
+        "note": "Linked to dictionary card word-ext-ch45-allergy."
+      },
+      "collocations": [
+        "알레르기가 있어요",
+        "알레르기가 없어요",
+        "알레르기 때문에 못 먹어요"
+      ]
+    },
+    {
+      "hangul": "싫다",
+      "romanization": "silta",
+      "english": "to dislike; to be undesirable",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "가기 싫은 건 아니에요.",
+        "en": "It is not that I do not want to go.",
+        "note": "Linked to dictionary card word-adjective-028."
+      },
+      "collocations": [
+        "가기 싫다",
+        "싫지 않아요",
+        "싫어서 안 하다"
+      ]
+    },
+    {
+      "hangul": "어렵다",
+      "romanization": "eoryeopda",
+      "english": "to be difficult",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "어렵지 않게 다른 메뉴로 예약할게요.",
+        "en": "I will reserve a different menu so it is not difficult.",
+        "note": "Linked to dictionary card word-adjective-037."
+      },
+      "collocations": [
+        "어렵지 않아요",
+        "어렵지 않게",
+        "좀 어려울 것 같아요"
+      ]
+    },
+    {
+      "hangul": "공부",
+      "romanization": "gongbu",
+      "english": "study; studying",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "오늘은 공부 못 해요.",
+        "en": "I cannot study today.",
+        "note": "Linked to dictionary card word-ext-1560."
+      },
+      "collocations": [
+        "공부 안 해요",
+        "공부 못 해요",
+        "공부하지 않아요"
+      ]
+    },
+    {
+      "hangul": "운동",
+      "romanization": "undong",
+      "english": "exercise",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "요즘 운동 안 해요.",
+        "en": "I do not exercise these days.",
+        "note": "Linked to dictionary card word-ext-301."
+      },
+      "collocations": [
+        "운동 안 해요",
+        "운동 못 해요",
+        "운동하지 않아요"
+      ]
+    },
+    {
+      "hangul": "전화",
+      "romanization": "jeonhwa",
+      "english": "phone call",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "지금은 전화 못 해요.",
+        "en": "I cannot call right now.",
+        "note": "Linked to dictionary card word-noun-024."
+      },
+      "collocations": [
+        "전화 안 해요",
+        "전화 못 해요",
+        "전화하지 않아요"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "A friend clarifies whether a refusal is about choice, schedule, or a real restriction.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "오늘 모임에는 못 가요. 시간이 없어요.",
+        "romanization": "oneul moimeneun mot gayo. sigani eopseoyo.",
+        "en": "I cannot go to the gathering today. I do not have time.",
+        "grammarNote": "못 marks the blocked action; 시간이 없어요 gives the absent resource."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "안 가는 거예요, 아니면 정말 못 가는 거예요?",
+        "romanization": "an ganeun geoyeyo, animyeon jeongmal mot ganeun geoyeyo?",
+        "en": "Are you choosing not to go, or are you really unable to go?",
+        "grammarNote": "This line directly contrasts 안 and 못."
+      },
+      {
+        "speaker": "민서",
+        "ko": "가기 싫은 건 아니에요. 야근 때문에 못 가요.",
+        "romanization": "gagi silheun geon anieyo. yageun ttaemune mot gayo.",
+        "en": "It is not that I do not want to go. I cannot go because of overtime.",
+        "grammarNote": "아니에요 rejects the claim; 못 gives the real reason."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "그럼 회식에서 고기는 안 먹어요?",
+        "romanization": "geureom hoesigeseo gogineun an meogeoyo?",
+        "en": "Then at the company dinner, do you not eat meat?",
+        "grammarNote": "안 먹어요 asks about habit, choice, or preference."
+      },
+      {
+        "speaker": "민서",
+        "ko": "싫어서 안 먹는 게 아니라 알레르기가 있어서 못 먹어요.",
+        "romanization": "silheoseo an meongneun ge anira allereugiga isseoseo mot meogeoyo.",
+        "en": "It is not that I avoid it because I dislike it; I cannot eat it because I have an allergy.",
+        "grammarNote": "알레르기 makes 못 the right choice."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "그럼 어렵지 않게 다른 메뉴로 예약할게요.",
+        "romanization": "geureom eoryeopji anke dareun menyuro yeyakhalgeyo.",
+        "en": "Then I will reserve a different menu so it is not difficult.",
+        "grammarNote": "-지 않게 gives a careful adjective negation."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "안 가요와 못 가요는 같은 말이 아니에요",
+    "body": "친구의 초대를 거절할 때 '안 가요'와 '못 가요'는 느낌이 달라요. '안 가요'는 내가 가지 않기로 한 선택처럼 들릴 수 있고, '못 가요'는 시간, 일, 건강 같은 이유 때문에 갈 수 없다는 뜻이에요. 그래서 '시간이 없어서 못 가요'라고 말하면 오해가 줄어요. 음식도 마찬가지예요. '고기는 안 먹어요'는 취향이나 습관처럼 들릴 수 있지만, '알레르기가 있어서 못 먹어요'는 몸의 제한을 설명해요. 더 조심스럽게 말하고 싶을 때는 '싫지 않아요', '어렵지 않아요', '먹지 않아요'처럼 -지 않아요를 쓸 수 있어요.",
+    "bodyTranslation": "When declining an invitation, 안 가요 and 못 가요 do not feel the same. 안 가요 can sound like a choice, while 못 가요 says you cannot go because of time, work, health, or another limit. Food works similarly: 고기는 안 먹어요 may sound like preference or habit, but 알레르기가 있어서 못 먹어요 explains a physical restriction. For careful clarification, use -지 않아요.",
+    "comprehensionQuestions": [
+      {
+        "question": "안 가요는 어떤 느낌으로 들릴 수 있어요?",
+        "answer": "내가 가지 않기로 한 선택처럼 들릴 수 있어요."
+      },
+      {
+        "question": "알레르기가 있을 때 왜 못 먹어요가 자연스러워요?",
+        "answer": "취향이 아니라 몸의 제한 때문에 먹을 수 없다는 뜻이기 때문이에요."
+      },
+      {
+        "question": "조심스럽게 부정하거나 설명할 때 어떤 형태를 쓸 수 있어요?",
+        "answer": "-지 않아요를 쓸 수 있어요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "Soft refusals often hide the exact negative",
+    "body": "Korean speakers often soften refusals with phrases like 오늘은 좀 어려울 것 같아요 instead of a blunt 안 가요 or 못 가요. That phrase may mean 'I cannot make it' without naming the full reason. Still, when you do give a reason, choosing 안, 못, 없다, or -지 않다 correctly prevents misunderstanding.",
+    "tip": "If the listener might think you simply do not want to, add the reason: 시간이 없어서 못 가요, 알레르기가 있어서 못 먹어요."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence says circumstances make it impossible to go?",
+      "options": [
+        "오늘은 못 가요.",
+        "오늘은 안 가요.",
+        "오늘은 가기 싫어요."
+      ],
+      "correct": "오늘은 못 가요.",
+      "explanation": "못 marks inability or a blocked situation."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence best explains a medical food restriction?",
+      "options": [
+        "알레르기가 있어서 못 먹어요.",
+        "싫어서 안 먹어요.",
+        "먹기 싫지 않아요."
+      ],
+      "correct": "알레르기가 있어서 못 먹어요.",
+      "explanation": "알레르기 is an outside restriction, so 못 먹어요 is natural."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence uses absence as the reason?",
+      "options": [
+        "시간이 없어서 못 가요.",
+        "시간을 안 가요.",
+        "시간이 못 있어요."
+      ],
+      "correct": "시간이 없어서 못 가요.",
+      "explanation": "없어요 negates the existence/possession of time."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Careful adjective negation: 이 일은 어렵____ 않아요.",
+      "options": [
+        "지",
+        "못",
+        "안"
+      ],
+      "correct": "지",
+      "explanation": "Adjective stem + -지 않아요: 어렵지 않아요."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which pair correctly contrasts choice and inability?",
+      "options": [
+        "안 가요 / 못 가요",
+        "못 가요 / 시간이 없어요",
+        "없어요 / 아니에요"
+      ],
+      "correct": "안 가요 / 못 가요",
+      "explanation": "안 often marks not doing or choosing not to; 못 marks inability or blocked action."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "시간___ 없어요. (I do not have time.)",
+      "options": [
+        "이",
+        "을",
+        "에"
+      ],
+      "correct": "이",
+      "explanation": "없어요 uses 이/가 for the thing that is absent. 시간 is not an object of an action here."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "오늘은 회의가 있어서 ___ . (가다 → cannot)",
+      "base": "가다",
+      "form": "cannot",
+      "correct": "못 가요",
+      "explanation": "못 marks that something blocks the action. A meeting is the blocker, so 못 가요 is more natural than 안 가요."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'I cannot eat meat because of an allergy.'",
+      "tokens": [
+        "알레르기 때문에",
+        "고기를 못 먹어요"
+      ],
+      "correct": "알레르기 때문에 고기를 못 먹어요",
+      "explanation": "때문에 gives the medical reason, and 못 marks inability. 고기 is what cannot be eaten, so 고기를 is the object."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Say carefully: 'This work is not difficult.'",
+      "correct": "이 일은 어렵지 않아요.",
+      "explanation": "-지 않아요 is the longer, careful negative. It often sounds more measured than a short 안 negative."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the sentence: '고기가 못 먹어요.'",
+      "correct": "고기를 못 먹어요.",
+      "explanation": "The meat is the thing you cannot eat, so it takes 를. 가 would make meat the subject, which changes the structure."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "안: simple negative or choice, as in 오늘은 안 가요.",
+      "못: blocked action or inability, as in 시간이 없어서 못 가요.",
+      "-지 않아요: careful or written negation, as in 어렵지 않아요.",
+      "없어요: absence or not having, as in 시간이 없어요.",
+      "Do not translate every English 'not' the same way. Decide what is being denied."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Write a short reply explaining why you can't join an outing today, using different negatives correctly.",
+    "hint": "Use 안 (don't/won't, a choice), 못 (can't, blocked), -지 않아요 (longer negation), and N이/가 없어요 (don't have): e.g. 시간이 없어요, 못 가요.",
+    "model": "오늘은 시간이 없어요. 그래서 못 가요. 저는 고기를 안 먹어요. 운동도 별로 좋아하지 않아요.",
+    "modelEn": "I don't have time today. So I can't go. I don't eat meat. I don't really like exercise either."
+  },
+  "canDo": [
+    "Negate by choice or fact with 안 (안 먹어요)",
+    "Say you can't because something blocks you with 못 (시간이 없어서 못 가요)",
+    "Use the longer written negation -지 않아요 (좋아하지 않아요)",
+    "Express absence or 'don't have' with N이/가 없어요 (시간이 없어요)"
+  ]
+}

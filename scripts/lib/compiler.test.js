@@ -146,6 +146,35 @@ describe('guessTarget', () => {
   it('matches a spaced compound verb', () => {
     expect(guessTarget(w('고장 나다', 'verb'), '버스가 고장 나는 바람에 오래 기다렸어요.')).toBe('고장 나');
   });
+  it.each([
+    ['말을 꺼내다', 'phrase', '자료가 늦어진 이야기는 제가 먼저 말을 꺼낼게요.', '말을 꺼낼'],
+    ['알게 되다', 'phrase', '직접 가 보니까 왜 유명한지 알게 됐어요.', '알게 됐'],
+    ['다고 했어요', 'reported-speech ending', '선생님이 금요일에 본다고 하셨어요.', '다고'],
+    ['는지', 'embedded-question ending', '시험이 언제인지 알아요?', '인지'],
+    ['라고 하다', 'reported-command ending', '선생님이 숙제를 제출하라고 하셨어요.', '라고 하셨'],
+    ['수밖에 없다', 'bound expression', '마감이 오늘이라서 야근할 수밖에 없어요.', '수밖에 없어'],
+    ['리가 없다', 'bound expression', '지금 포기할 리가 없어요.', '리가 없어'],
+    ['뿐이다', 'bound expression', '남은 건 이 방법뿐이에요.', '뿐이'],
+    ['묻다', 'verb', '모르면 선생님께 물어봐요.', '물어'],
+    ['빨갛다', 'adjective', '얼굴이 빨개요.', '빨개'],
+    ['파랗다', 'adjective', '오늘 하늘이 파래요.', '파래'],
+    ['노랗다', 'adjective', '바나나가 노래요.', '노래'],
+    ['알다', 'verb', '이 단어를 아세요?', '아세'],
+    ['살다', 'verb', '어디 사세요?', '사세'],
+    ['닫다', 'verb', '닫다는 [닫따]처럼 들려요.', '닫다'],
+    ['좋다', 'adjective', '좋다는 [조타]처럼 들려요.', '좋다'],
+    ['한국어를 잘 못해요', 'expression', '못해요는 [모태요]처럼 들려요.', '못해요'],
+    ['싫다', 'adjective', '가기 싫은 건 아니에요.', '싫은'],
+    ['오다', 'verb', '어머니께서 오셨어요.', '오셨'],
+    ['포함되다', 'verb', '인터넷이 관리비에 포함돼 있어요.', '포함돼'],
+  ])('highlights B1 surface form %s in its sentence', (hangul, pos, sentence, target) => {
+    expect(guessTarget(w(hangul, pos), sentence)).toBe(target);
+  });
+  it('keeps B1-only surface expansions behind the advanced-target boundary', () => {
+    expect(guessTarget(w('시간이 있다', 'phrase'), '시간이 있어요.', { advanced: false })).toBeNull();
+    expect(guessTarget(w('먹을 수 있다', 'verb'), '김치를 먹을 수 있어요.', { advanced: false })).toBe('먹을 수 있');
+    expect(guessTarget(w('괜찮다', 'adjective'), '매워도 괜찮아요.', { advanced: false })).toBe('괜찮');
+  });
 });
 
 describe('findAllPatterns', () => {
@@ -293,6 +322,15 @@ describe('buildWordBites', () => {
     const guess = buildWordBites(chapter)[0].cards.find((c) => c.kind === 'guess');
     expect(guess.word.nuance).toBe('Local correction wins.');
   });
+  it('does not turn a deliberately wrong conjugation into a payoff highlight', () => {
+    const chapter = JSON.parse(readFileSync(join(root, 'data', 'chapters', 'chapter-41.json'), 'utf8'));
+    const overrides = JSON.parse(readFileSync(join(root, 'data', 'overrides.json'), 'utf8'));
+    const wrongPayoffs = buildWordBites(chapter, overrides)
+      .flatMap((bite) => bite.cards)
+      .filter((card) => card.kind === 'payoff' && card.hl === '춥어');
+
+    expect(wrongPayoffs).toEqual([]);
+  });
 });
 
 describe('buildPatternBites', () => {
@@ -308,6 +346,21 @@ describe('buildPatternBites', () => {
   it('falls back to a teach card when no morpheme is extractable', () => {
     const [bite] = buildPatternBites({ grammarNotes: [{ title: '자음 (Consonants) — Shapes', formTable: [], examples: [] }] });
     expect(bite.cards[0].kind).toBe('teach');
+  });
+  it('does not build a cloze whose optional longer variant is also correct', () => {
+    const [bite] = buildPatternBites({
+      grammarNotes: [{
+        title: 'N보다 (더)',
+        formTable: [],
+        examples: [
+          { ko: '이 치마가 저 치마보다 길어요.', en: 'This skirt is longer.' },
+          { ko: '이 신발이 저 신발보다 더 편해요.', en: 'These shoes are more comfortable.' },
+          { ko: '이 바지가 저 바지보다 짧아요.', en: 'These pants are shorter.' },
+        ],
+      }],
+    });
+
+    expect(bite.cards.some((card) => card.kind === 'drill')).toBe(false);
   });
 });
 

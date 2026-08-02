@@ -1,0 +1,582 @@
+{
+  "id": "chapter-36",
+  "hook": {
+    "situation": "You tried a new restaurant, class, cafe, or event and want to tell a friend what you noticed. The point is not just that something happened, but that you personally saw the result or watched it change.",
+    "objectives": [
+      "Use 가 보니까 and -더라고요 to report firsthand observations.",
+      "Use -더니 to connect an observed earlier state to a later change.",
+      "Keep -더니 separate from -았/었더니, which is used for your own action leading to a result."
+    ],
+    "whyItMatters": "Korean often marks the source of your information. -더라고요 tells the listener, 'I noticed this myself,' while -더니 tells a small before-and-after story that you watched unfold."
+  },
+  "grammarNotes": [
+    {
+      "title": "V/A-더라고요 — reporting what I noticed firsthand",
+      "func": "Use -더라고요 to report something you personally saw, heard, or felt in the past, usually with a touch of mild surprise or fresh discovery. It means \"I noticed / it turned out that...\" — the information comes from your own direct experience, not from what someone else told you.",
+      "formTable": [
+        {
+          "when": "Verb stem (any ending)",
+          "add": "-더라고요",
+          "ex": "가다 → 가더라고요 / 먹다 → 먹더라고요"
+        },
+        {
+          "when": "Adjective stem (any ending)",
+          "add": "-더라고요",
+          "ex": "춥다 → 춥더라고요 / 좋다 → 좋더라고요"
+        },
+        {
+          "when": "Noun + 이다 / 아니다",
+          "add": "-더라고요",
+          "ex": "학생이다 → 학생이더라고요 / 아니다 → 아니더라고요"
+        },
+        {
+          "when": "Past tense (-았/었-)",
+          "add": "-더라고요",
+          "ex": "갔다 → 갔더라고요 / 끝났다 → 끝났더라고요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "그 영화 정말 재미있더라고요.",
+          "romanization": "geu yeonghwa jeongmal jaemiitdeoragoyo.",
+          "en": "That movie was really fun (I saw for myself).",
+          "note": "You watched it yourself, so you report your own impression with -더라고요."
+        },
+        {
+          "ko": "어제 밖에 나갔는데 생각보다 춥더라고요.",
+          "romanization": "eoje bakke nagannneunde saenggakboda chupdeoragoyo.",
+          "en": "I went outside yesterday, and it was colder than I thought.",
+          "note": "-더라고요 carries the 'I felt it firsthand' nuance — perfect for weather you experienced."
+        },
+        {
+          "ko": "민수 씨가 한국어를 정말 잘하더라고요.",
+          "romanization": "minsu ssiga hangugeoreul jeongmal jalhadeoragoyo.",
+          "en": "Minsu speaks Korean really well (I noticed).",
+          "note": "You observed his ability directly, so the slight surprise is built in."
+        },
+        {
+          "ko": "그 식당에 가 봤는데 사람이 정말 많더라고요.",
+          "romanization": "geu sikdange ga bwanneunde sarami jeongmal mandeoragoyo.",
+          "en": "I tried that restaurant, and there were a lot of people.",
+          "note": "Reporting a scene you saw with your own eyes — a classic -더라고요 use."
+        }
+      ],
+      "keyPoint": {
+        "label": "-더라고요 vs. plain -았/었어요",
+        "body": "Both talk about the past, but -았/었어요 just states a fact, while -더라고요 frames it as something YOU personally witnessed and are now reporting, often with mild surprise. '비가 왔어요' = it rained (fact); '비가 오더라고요' = I saw that it was raining."
+      },
+      "pronunciation": "In casual speech -더라고요 is often said as -더라구요, but -더라고요 is the standard spelling. 많더라고요 sounds like [만더라고요].",
+      "drill": {
+        "instruction": "Report something you personally noticed, using -더라고요.",
+        "model": "그 카페 / 조용하다 → 그 카페가 조용하더라고요.",
+        "items": [
+          "친구 집 / 멀다 → ____",
+          "그 책 / 어렵다 → ____",
+          "오늘 날씨 / 좋다 → ____"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "제가 어제 피곤하더라고요.",
+        "right": "제가 어제 피곤했어요. / (친구를 보고) 친구가 피곤해 보이더라고요.",
+        "explanation": "-더라고요 usually reports what you observe about OTHER people or the outside world, not your own feeling as you have it. For your own past feelings, use plain -았/었어요. (Your own feelings take -더라고요 only when you look back and 'notice' them as a discovery.)"
+      }
+    },
+    {
+      "title": "V/A-더니 — I saw X happen, and then Y followed",
+      "func": "Use -더니 to link two things you personally watched: 'I noticed X (in the past), and then Y happened.' The second part is often a change, a result, or a contrast that grows out of the first. The subject of the first part is usually someone else, not you.",
+      "formTable": [
+        {
+          "when": "Verb stem (any ending)",
+          "add": "-더니",
+          "ex": "울다 → 울더니 / 먹다 → 먹더니"
+        },
+        {
+          "when": "Adjective stem (any ending)",
+          "add": "-더니",
+          "ex": "덥다 → 덥더니 / 좋다 → 좋더니"
+        },
+        {
+          "when": "Noun + 이다",
+          "add": "-더니",
+          "ex": "학생이다 → 학생이더니"
+        },
+        {
+          "when": "After a completed first action (-았/었-), often I-subject",
+          "add": "-더니",
+          "ex": "먹었다 → 먹었더니 / 갔다 → 갔더니"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "동생이 아까 울더니 지금은 잘 놀아요.",
+          "romanization": "dongsaengi akka uldeoni jigeumeun jal norayo.",
+          "en": "My little brother was crying earlier, and now he's playing happily.",
+          "note": "You watched the change yourself; -더니 links 'was crying' to the new state 'now playing.'"
+        },
+        {
+          "ko": "아침에는 비가 오더니 오후에는 날씨가 좋아요.",
+          "romanization": "achimeneun biga odeoni ohueneun nalssiga joayo.",
+          "en": "It was raining in the morning, but in the afternoon the weather is nice.",
+          "note": "Here -더니 marks a contrast between two states you saw one after the other."
+        },
+        {
+          "ko": "친구가 밥을 너무 많이 먹더니 배가 아프대요.",
+          "romanization": "chinguga babeul neomu mani meokdeoni baega apeudaeyo.",
+          "en": "My friend ate way too much, and now says his stomach hurts.",
+          "note": "The watched first part causes the second — a natural cause and effect with -더니."
+        },
+        {
+          "ko": "동생이 열심히 공부하더니 시험을 잘 봤어요.",
+          "romanization": "dongsaengi yeolsimhi gongbuhadeoni siheomeul jal bwasseoyo.",
+          "en": "My brother studied hard, and so he did well on the test.",
+          "note": "-더니 shows the result naturally following the effort you witnessed."
+        }
+      ],
+      "keyPoint": {
+        "label": "-더니 vs. -았/었더니",
+        "body": "Plain -더니 reports what you watched someone else (or the world) do, then a follow-up. -았/었더니 usually has 'I' as the subject who finished an action, leading to a result you then found: '제가 밥을 먹었더니 졸려요' (I ate, and now I'm sleepy). Rule of thumb: 더니 → 'they...', 았/었더니 → 'I did..., and then...'."
+      },
+      "pronunciation": "In -더니 the 더 is said clearly as [더], with no blending into the next part. With past -었더니, 었더 sounds like [얻떠] with a light tense ㄷ.",
+      "drill": {
+        "instruction": "Link a first event you watched to its result, using -더니.",
+        "model": "비가 오다 / 길이 막히다 → 비가 오더니 길이 막혀요.",
+        "items": [
+          "동생이 많이 먹다 / 배가 아프다 → ____",
+          "친구가 매일 운동하다 / 건강해지다 → ____",
+          "아까는 덥다 / 지금은 시원하다 → ____"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "제가 친구를 만나더니 기분이 좋았어요.",
+        "right": "제가 친구를 만났더니 기분이 좋았어요. / 친구가 저를 만나더니 반가워했어요.",
+        "explanation": "When 'I' am the one who finished the first action, use -았/었더니, not plain -더니. Plain -더니 is for watching someone else (or the world), so its first subject is usually NOT 'I.'"
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "보니까",
+      "romanization": "bonikka",
+      "english": "when I saw/tried/checked",
+      "partOfSpeech": "expression",
+      "exampleSentence": {
+        "ko": "가 보니까 생각보다 괜찮더라고요.",
+        "en": "When I tried going, it was better than I expected.",
+        "note": "Experience leads into a firsthand observation."
+      },
+      "collocations": [
+        "가 보니까",
+        "먹어 보니까",
+        "확인해 보니까"
+      ]
+    },
+    {
+      "hangul": "더라고요",
+      "romanization": "deoragoyo",
+      "english": "I noticed; it turned out",
+      "partOfSpeech": "ending",
+      "exampleSentence": {
+        "ko": "생각보다 사람이 많더라고요.",
+        "en": "There were more people than I expected, I noticed.",
+        "note": "Reports what the speaker personally saw."
+      },
+      "collocations": [
+        "좋더라고요",
+        "많더라고요",
+        "괜찮더라고요"
+      ]
+    },
+    {
+      "hangul": "더니",
+      "romanization": "deoni",
+      "english": "I observed X, and then Y happened",
+      "partOfSpeech": "ending",
+      "exampleSentence": {
+        "ko": "처음에는 조용하더니 금방 붐비더라고요.",
+        "en": "It was quiet at first, and then it quickly got crowded, I noticed.",
+        "note": "Observed before-and-after change."
+      },
+      "collocations": [
+        "조용하더니",
+        "기침하더니",
+        "비가 오더니"
+      ]
+    },
+    {
+      "hangul": "생각보다",
+      "romanization": "saenggakboda",
+      "english": "more/less than expected",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "음식이 생각보다 빨리 나오더라고요.",
+        "en": "The food came out faster than expected, I noticed.",
+        "note": "Expectation compared with real experience."
+      },
+      "collocations": [
+        "생각보다 좋다",
+        "생각보다 빨리",
+        "생각보다 사람이 많다"
+      ]
+    },
+    {
+      "hangul": "처음에는",
+      "romanization": "cheoeumeneun",
+      "english": "at first",
+      "partOfSpeech": "adverbial phrase",
+      "exampleSentence": {
+        "ko": "처음에는 조용하더니 금방 사람이 많아졌어요.",
+        "en": "It was quiet at first, and then there were quickly more people.",
+        "note": "Sets the first stage before a change."
+      },
+      "collocations": [
+        "처음에는 조용하다",
+        "처음에는 어렵다",
+        "처음에는 몰랐다"
+      ]
+    },
+    {
+      "hangul": "예전에는",
+      "romanization": "yejeoneneun",
+      "english": "in the past; before",
+      "partOfSpeech": "adverbial phrase",
+      "exampleSentence": {
+        "ko": "예전에는 사람이 적었다고 들었어요.",
+        "en": "I heard there used to be fewer people.",
+        "note": "Sets up an earlier state."
+      },
+      "collocations": [
+        "예전에는 조용했다",
+        "예전에는 사람이 적었다",
+        "예전에는 달랐다"
+      ]
+    },
+    {
+      "hangul": "요즘은",
+      "romanization": "yojeumeun",
+      "english": "these days; nowadays",
+      "partOfSpeech": "adverbial phrase",
+      "exampleSentence": {
+        "ko": "요즘은 분위기가 많이 달라졌더라고요.",
+        "en": "These days, the atmosphere has changed a lot, I noticed.",
+        "note": "Current state after a change."
+      },
+      "collocations": [
+        "요즘은 사람이 많다",
+        "요즘은 분위기가 다르다",
+        "요즘은 자주 가다"
+      ]
+    },
+    {
+      "hangul": "붐비다",
+      "romanization": "bumbida",
+      "english": "to be crowded",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "점심시간이 되니까 식당이 붐비더라고요.",
+        "en": "When it became lunchtime, the restaurant got crowded, I noticed.",
+        "note": "Place-focused crowding."
+      },
+      "collocations": [
+        "식당이 붐비다",
+        "길이 붐비다",
+        "금방 붐비다"
+      ]
+    },
+    {
+      "hangul": "조용하다",
+      "romanization": "joyonghada",
+      "english": "quiet",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "처음에는 식당이 조용하더라고요.",
+        "en": "At first, the restaurant was quiet, I noticed.",
+        "note": "Good first state before -더니."
+      },
+      "collocations": [
+        "조용한 식당",
+        "조용하더니",
+        "생각보다 조용하다"
+      ]
+    },
+    {
+      "hangul": "금방",
+      "romanization": "geumbang",
+      "english": "soon; quickly; in a moment",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "처음에는 조용하더니 금방 사람이 많아졌어요.",
+        "en": "It was quiet at first, and then there were quickly more people.",
+        "note": "Marks a fast change."
+      },
+      "collocations": [
+        "금방 끝나다",
+        "금방 오다",
+        "금방 붐비다"
+      ]
+    },
+    {
+      "hangul": "달라지다",
+      "romanization": "dallajida",
+      "english": "to become different; to change",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "요즘은 분위기가 많이 달라졌더라고요.",
+        "en": "These days, the atmosphere has changed a lot, I noticed.",
+        "note": "Useful for before-now observations."
+      },
+      "collocations": [
+        "분위기가 달라지다",
+        "많이 달라지다",
+        "예전과 달라지다"
+      ]
+    },
+    {
+      "hangul": "늘다",
+      "romanization": "neulda",
+      "english": "to increase",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "요즘은 사람이 많이 늘었더라고요.",
+        "en": "These days, the number of people has increased a lot, I noticed.",
+        "note": "A natural observed-change verb."
+      },
+      "collocations": [
+        "사람이 늘다",
+        "손님이 늘다",
+        "많이 늘다"
+      ]
+    },
+    {
+      "hangul": "줄다",
+      "romanization": "julda",
+      "english": "to decrease",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "요즘은 기다리는 시간이 줄었더라고요.",
+        "en": "These days, the waiting time has decreased, I noticed.",
+        "note": "Opposite of 늘다 for observed change."
+      },
+      "collocations": [
+        "사람이 줄다",
+        "시간이 줄다",
+        "기다림이 줄다"
+      ]
+    },
+    {
+      "hangul": "알게 되다",
+      "romanization": "alge doeda",
+      "english": "to come to know; to find out",
+      "partOfSpeech": "phrase",
+      "exampleSentence": {
+        "ko": "직접 가 보니까 왜 유명한지 알게 됐어요.",
+        "en": "After going there myself, I found out why it is famous.",
+        "note": "Discovery through experience."
+      },
+      "collocations": [
+        "나중에 알게 되다",
+        "직접 알게 되다",
+        "경험하면서 알게 되다"
+      ]
+    },
+    {
+      "hangul": "관찰하다",
+      "romanization": "gwanchalhada",
+      "english": "to observe",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "일주일 동안 분위기가 어떻게 변하는지 관찰했어요.",
+        "en": "I observed how the atmosphere changed over a week.",
+        "note": "More deliberate than casually noticing."
+      },
+      "collocations": [
+        "변화를 관찰하다",
+        "반응을 관찰하다",
+        "상황을 관찰하다"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "A friend asks about a new restaurant after someone visited it.",
+    "lines": [
+      {
+        "speaker": "민서",
+        "ko": "어제 새 식당에 가 보니까 어땠어요?",
+        "romanization": "eoje sae sikdange ga bonikka eottaesseoyo?",
+        "en": "How was it when you tried going to the new restaurant yesterday?",
+        "grammarNote": "가 보니까 asks for a report based on actual experience."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "처음에는 조용하더니 금방 붐비더라고요.",
+        "romanization": "cheoeumeneun joyonghadeoni geumbang bumbideoragoyo.",
+        "en": "It was quiet at first, and then it quickly got crowded, I noticed.",
+        "grammarNote": "-더니 connects the observed first state to the later change."
+      },
+      {
+        "speaker": "민서",
+        "ko": "음식은 어땠어요?",
+        "romanization": "eumsigeun eottaesseoyo?",
+        "en": "How was the food?",
+        "grammarNote": "The question invites another observation."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "생각보다 빨리 나오고 맛도 괜찮더라고요.",
+        "romanization": "saenggakboda ppalli naogo matdo gwaenchandeoragoyo.",
+        "en": "It came out faster than expected, and the taste was good too.",
+        "grammarNote": "생각보다 plus -더라고요 compares expectation with firsthand experience."
+      },
+      {
+        "speaker": "민서",
+        "ko": "예전에는 사람이 적었다고 들었는데요.",
+        "romanization": "yejeoneneun sarami jeogeotdago deureonneundeyo.",
+        "en": "I heard there used to be fewer people.",
+        "grammarNote": "예전에는 sets up the past state."
+      },
+      {
+        "speaker": "지훈",
+        "ko": "맞아요. 요즘은 분위기가 많이 달라졌더라고요.",
+        "romanization": "majayo. yojeumeun bunwigiga mani dallajyeotdeoragoyo.",
+        "en": "Right. These days, the atmosphere has changed a lot, I noticed.",
+        "grammarNote": "요즘은 and -더라고요 report the current state the speaker noticed."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "가 보니까 생각보다 괜찮더라고요",
+    "body": "새 식당이나 카페에 다녀온 뒤에는 그냥 '좋았어요'라고 말할 수도 있지만, 직접 보고 느낀 느낌을 살리려면 '-더라고요'가 훨씬 자연스러워요. '가 보니까 생각보다 조용하더라고요'라고 하면 내가 직접 가서 알게 된 정보라는 느낌이 들어요. 시간이 지나면서 변한 모습을 말할 때는 '-더니'가 좋아요. 예를 들어 '처음에는 조용하더니 금방 붐비더라고요'라고 하면 처음 상태와 나중 상태가 한 장면처럼 이어져요. 하지만 내 행동 때문에 생긴 결과라면 '많이 먹었더니 졸렸어요'처럼 '-았/었더니'를 써야 해요.",
+    "bodyTranslation": "After visiting a restaurant or cafe, -더라고요 lets you report what you personally noticed. -더니 links an observed first state to a later change. For the result of your own action, use -았/었더니 instead.",
+    "comprehensionQuestions": [
+      {
+        "question": "직접 보고 느낀 내용을 말할 때 어떤 표현이 자연스러워요?",
+        "answer": "-더라고요가 자연스러워요."
+      },
+      {
+        "question": "처음 상태와 나중 상태를 이어 말할 때 어떤 표현이 좋아요?",
+        "answer": "-더니가 좋아요."
+      },
+      {
+        "question": "내 행동 때문에 생긴 결과에는 어떤 형태를 써야 해요?",
+        "answer": "-았/었더니를 써야 해요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "Korean marks how you know",
+    "body": "A Korean review often hints at the evidence source. -더라고요 tells the listener this came from your own experience, not just a rumor or general fact.",
+    "tip": "Before using -더라고요, ask: did I personally see, hear, feel, try, or realize this?"
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "You visited the restaurant yourself and noticed it was crowded. Which sentence fits best?",
+      "options": [
+        "사람이 많더라고요.",
+        "사람이 많대요.",
+        "사람이 많기로 했어요."
+      ],
+      "correct": "사람이 많더라고요.",
+      "explanation": "-더라고요 reports a firsthand observation."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence shows an observed change over time?",
+      "options": [
+        "처음에는 조용하더니 금방 붐비더라고요.",
+        "처음에는 조용하기 위해 금방 붐볐어요.",
+        "처음에는 조용할 뿐이더라고요."
+      ],
+      "correct": "처음에는 조용하더니 금방 붐비더라고요.",
+      "explanation": "-더니 connects the observed first state with the later change."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "You ate a lot, so you became sleepy. Which form is correct?",
+      "options": [
+        "많이 먹었더니 졸렸어요.",
+        "많이 먹더니 졸렸어요.",
+        "많이 먹더라고요 졸렸어요."
+      ],
+      "correct": "많이 먹었더니 졸렸어요.",
+      "explanation": "Use -았/었더니 for your own action leading to a result."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "그 식당___ 가 보니까 생각보다 조용하더라고요. (When I tried going to that restaurant...)",
+      "options": [
+        "에",
+        "에서",
+        "를"
+      ],
+      "correct": "에",
+      "explanation": "가 보다 is movement/trying a place, so the destination takes 에. 에서 would mark an action happening at the place."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "그 카페가 많이 ___ . (붐비다 → firsthand notice)",
+      "base": "붐비다",
+      "form": "firsthandNotice",
+      "correct": "붐비더라고요",
+      "explanation": "-더라고요 reports what you personally noticed. 붐비다 becomes 붐비더라고요."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'When I tried going there, it was quieter than expected.'",
+      "tokens": [
+        "가 보니까",
+        "생각보다 조용하더라고요"
+      ],
+      "correct": "가 보니까 생각보다 조용하더라고요",
+      "explanation": "가 보니까 sets up what you learned by trying it yourself. -더라고요 reports the firsthand observation."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Say: 'At first it was quiet, and then it quickly got crowded.'",
+      "correct": "처음에는 조용하더니 금방 붐볐어요.",
+      "explanation": "-더니 connects an observed earlier state to a later change. 금방 makes the change feel quick."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the sentence about your own action result: '제가 많이 먹더니 졸렸어요.'",
+      "correct": "제가 많이 먹었더니 졸렸어요.",
+      "explanation": "For your own action leading to a result, use -았/었더니. Plain -더니 is better for something you observed in others or outside yourself."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "You saw a shop get crowded over time. Which sentence fits?",
+      "options": [
+        "처음에는 조용하더니 금방 사람이 많아졌어요.",
+        "제가 조용하더니 사람이 많아졌어요.",
+        "조용할 리가 없어요."
+      ],
+      "correct": "처음에는 조용하더니 금방 사람이 많아졌어요.",
+      "explanation": "-더니 fits the observed change from quiet to crowded. The other choices either misuse the subject or switch to a different grammar."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Say: 'These days it turned out to be crowded.'",
+      "correct": "요즘은 붐비더라고요.",
+      "explanation": "요즘은 sets the current period. -더라고요 makes it sound like something you noticed yourself."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "-더라고요 reports what you personally noticed or realized.",
+      "-더니 connects an observed earlier state/action with a later change.",
+      "가 보니까, 생각보다, 처음에는, 예전에는, and 요즘은 make the observation scene clearer.",
+      "Use -았/었더니, not plain -더니, for your own action causing a result."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Tell a friend about a cafe you went to recently: report what you noticed when you got there, and how it had changed from before.",
+    "hint": "Report what you saw firsthand with -더라고요 (조용하더라고요), and link 'I noticed X, and then Y' with -더니 (사람이 늘더니 붐비더라고요). Use 예전에는 / 요즘은 for the before-and-after.",
+    "model": "어제 그 카페에 가 봤는데, 생각보다 사람이 많더라고요. 예전에는 조용했는데 요즘은 손님이 늘더니 정말 붐비더라고요. 그래도 커피는 맛있더라고요.",
+    "modelEn": "I went to that cafe yesterday, and there were more people than I expected. It used to be quiet, but these days the customers increased and then it got really crowded. Still, the coffee was good (I found)."
+  },
+  "canDo": [
+    "Report something I personally saw or felt, with mild surprise, using -더라고요 (붐비더라고요)",
+    "Link 'I noticed X, and then Y followed' with -더니 (늘더니 붐비더라고요)",
+    "Contrast before and after with 예전에는 / 요즘은",
+    "Describe a place changing over time (조용하다 → 붐비다, 달라지다)"
+  ]
+}

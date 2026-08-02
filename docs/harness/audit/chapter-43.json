@@ -1,0 +1,22 @@
+{
+  "chapterId": "chapter-43",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 12,
+  "cardsReviewed": 37,
+  "findings": [
+    {
+      "biteId": "chapter-43-b2",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The counter key point categorically said a learner cannot say 사과 셋 and the inherited counter reveals described native-number use as universal. Counter omission is possible in short or elliptical contexts, and formal numbering conventions are broader than that absolute claim.",
+      "fix": "Scoped the chapter to the reliable full beginner pattern and added local, non-absolute nuances for 개 and 명 before recompilation.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 12 bites and 37 cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}

@@ -1,0 +1,22 @@
+{
+  "chapterId": "chapter-49",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 13,
+  "cardsReviewed": 37,
+  "findings": [
+    {
+      "biteId": "chapter-49-b10",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The (으)로 table put 부산→부산으로 under the row for vowel or ㄹ endings and used 서울→서울로 under the generic consonant row, reversing the examples learners need to distinguish.",
+      "fix": "Moved 부산으로 to the consonant rule and used 제주로/서울로 for the vowel-or-ㄹ rule, then recompiled.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 13 bites and 37 cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}

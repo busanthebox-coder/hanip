@@ -1,0 +1,31 @@
+{
+  "chapterId": "chapter-40",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 11,
+  "cardsReviewed": 39,
+  "findings": [
+    {
+      "biteId": "chapter-40-b3",
+      "cardIndex": 0,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "글쎄요 and 아마 can both introduce the displayed uncertain퇴근 inference, while 혹시 and 아마 can both introduce the conditional question frame.",
+      "fix": "Added the concrete uncertainty-marker distractor bans and recompiled.",
+      "fixed": true
+    },
+    {
+      "biteId": "chapter-40-b5",
+      "cardIndex": 2,
+      "severity": "bad-teaching",
+      "class": "guess-ambiguous",
+      "evidence": "메시지를 남기다 and 의견을 남기다 are both natural, so message and opinion were not distinguishable in that card.",
+      "fix": "Added mutual 메시지↔의견 distractor bans and recompiled.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 11 bites and 39 cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}

@@ -1,0 +1,22 @@
+{
+  "chapterId": "chapter-48",
+  "auditedAt": "2026-08-02",
+  "auditComplete": true,
+  "bitesReviewed": 13,
+  "cardsReviewed": 37,
+  "findings": [
+    {
+      "biteId": "chapter-48-b9",
+      "cardIndex": 0,
+      "severity": "blocker",
+      "class": "data-fact",
+      "evidence": "The form table labeled 콧물 as vowel-final while the same row acknowledged its ㄹ coda, and the explanation categorically denied presence expressions even though 열이 있어요 is possible.",
+      "fix": "Replaced the vowel-final row with 재채기→재채기가 나요 and scoped 나다 as the common symptom pattern without excluding 열이 있어요.",
+      "fixed": true
+    }
+  ],
+  "suggestedOverrideEntries": [],
+  "suggestedDataChanges": [],
+  "suggestedCompilerTests": [],
+  "notes": ["All 13 bites and 37 cards were reviewed and rechecked after compilation; no unfixed blocker remains."]
+}
