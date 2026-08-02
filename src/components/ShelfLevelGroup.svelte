@@ -10,7 +10,7 @@
 
   let openChapterId = null;
 
-  const KIND_KO = { words: '단어', pattern: '무늬', dialogue: '대화', reading: '읽기', boss: '보스' };
+  const KIND_KO = { words: '단어', pattern: '문법', dialogue: '대화', reading: '읽기', boss: '보스' };
 
   $: triggerId = `${idPrefix}-${group.id}-trigger`;
   $: contentId = `${idPrefix}-${group.id}-content`;

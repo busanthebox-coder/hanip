@@ -512,7 +512,7 @@ export function buildPatternBites(chapter, overrides = {}) {
         const cloze = spare.ex.ko.slice(0, spare.match.start) + '___' + spare.ex.ko.slice(spare.match.end);
         cards.push({
           kind: 'drill',
-          prompt: spare.ex.en ? `${spare.ex.en}` : '빈칸에 들어갈 무늬는?',
+          prompt: spare.ex.en ? `${spare.ex.en}` : '빈칸에 들어갈 문법 형태는?',
           sentence: cloze,
           options: optionSet.slice(0, 3).map((v) => ({ text: v, ok: v === spare.match.variant })),
           explanation: spare.ex.note || '',
@@ -528,7 +528,7 @@ export function buildPatternBites(chapter, overrides = {}) {
         more,
       });
     }
-    return { kind: 'pattern', title: `무늬 Pattern · ${name}`, cards };
+    return { kind: 'pattern', title: `문법 Grammar · ${name}`, cards };
   });
 }
 

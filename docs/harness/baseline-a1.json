@@ -22,7 +22,7 @@
     {
      "id": "chapter-01-b2",
      "kind": "pattern",
-     "title": "무늬 Pattern · 자음 (Consonants)",
+     "title": "문법 Grammar · 자음 (Consonants)",
      "cards": [
       "teach:자음 (Consonants):4ex"
      ]
@@ -43,7 +43,7 @@
     {
      "id": "chapter-01-b4",
      "kind": "pattern",
-     "title": "무늬 Pattern · 모음 (Vowels)",
+     "title": "문법 Grammar · 모음 (Vowels)",
      "cards": [
       "teach:모음 (Vowels):4ex"
      ]
@@ -117,7 +117,7 @@
     {
      "id": "chapter-02-b2",
      "kind": "pattern",
-     "title": "무늬 Pattern · N은/는",
+     "title": "문법 Grammar · N은/는",
      "cards": [
       "hunt:N은/는:는;은",
       "drill:Today I'm busy.:는|은*"
@@ -140,7 +140,7 @@
     {
      "id": "chapter-02-b4",
      "kind": "pattern",
-     "title": "무늬 Pattern · N이에요/예요",
+     "title": "문법 Grammar · N이에요/예요",
      "cards": [
       "hunt:N이에요/예요:이에요;예요",
       "drill:This person is a teacher.:이에요*|예요"
@@ -210,7 +210,7 @@
     {
      "id": "chapter-03-b2",
      "kind": "pattern",
-     "title": "무늬 Pattern · N이에요/예요",
+     "title": "문법 Grammar · N이에요/예요",
      "cards": [
       "hunt:N이에요/예요:이에요;예요",
       "drill:This is water.:이에요*|예요"
@@ -233,7 +233,7 @@
     {
      "id": "chapter-03-b4",
      "kind": "pattern",
-     "title": "무늬 Pattern · N은/는",
+     "title": "문법 Grammar · N은/는",
      "cards": [
       "hunt:N은/는:는;은",
       "drill:The teacher is Korean.:는|은*"
@@ -302,7 +302,7 @@
     {
      "id": "chapter-04-b2",
      "kind": "pattern",
-     "title": "무늬 Pattern · 있어요/없어요",
+     "title": "문법 Grammar · 있어요/없어요",
      "cards": [
       "hunt:있어요/없어요:있어요;없어요",
       "drill:Do you have time?:있어요*|없어요"
@@ -325,7 +325,7 @@
     {
      "id": "chapter-04-b4",
      "kind": "pattern",
-     "title": "무늬 Pattern · N이/가",
+     "title": "문법 Grammar · N이/가",
      "cards": [
       "hunt:N이/가:가;이",
       "drill:Who is a student?:가*|이"
@@ -393,7 +393,7 @@
     {
      "id": "chapter-05-b2",
      "kind": "pattern",
-     "title": "무늬 Pattern · N을/를",
+     "title": "문법 Grammar · N을/를",
      "cards": [
       "hunt:N을/를:을;를",
       "drill:I drink water.:을*|를"
@@ -416,7 +416,7 @@
     {
      "id": "chapter-05-b4",
      "kind": "pattern",
-     "title": "무늬 Pattern · 안 + verb",
+     "title": "문법 Grammar · 안 + verb",
      "cards": [
       "hunt:안 + verb:안;안"
      ]
@@ -437,7 +437,7 @@
     {
      "id": "chapter-05-b6",
      "kind": "pattern",
-     "title": "무늬 Pattern · 자연스럽게 말하기",
+     "title": "문법 Grammar · 자연스럽게 말하기",
      "cards": [
       "teach:자연스럽게 말하기:2ex"
      ]
@@ -494,7 +494,7 @@
     {
      "id": "chapter-06-b2",
      "kind": "pattern",
-     "title": "무늬 Pattern · N에",
+     "title": "문법 Grammar · N에",
      "cards": [
       "hunt:N에:에;에"
      ]
@@ -517,7 +517,7 @@
     {
      "id": "chapter-06-b4",
      "kind": "pattern",
-     "title": "무늬 Pattern · N에서",
+     "title": "문법 Grammar · N에서",
      "cards": [
       "hunt:N에서:에서;에서"
      ]
@@ -586,7 +586,7 @@
     {
      "id": "chapter-07-b2",
      "kind": "pattern",
-     "title": "무늬 Pattern · 도 vs 만",
+     "title": "문법 Grammar · 도 vs 만",
      "cards": [
       "hunt:도 vs 만:도;만",
       "drill:My friend is coming too.:도*|만"
@@ -609,7 +609,7 @@
     {
      "id": "chapter-07-b4",
      "kind": "pattern",
-     "title": "무늬 Pattern · (으)로",
+     "title": "문법 Grammar · (으)로",
      "cards": [
       "hunt:(으)로:로;으로",
       "drill:Please speak in Korean.:로*|으로"
@@ -677,7 +677,7 @@
     {
      "id": "chapter-08-b2",
      "kind": "pattern",
-     "title": "무늬 Pattern · -고 싶어요",
+     "title": "문법 Grammar · -고 싶어요",
      "cards": [
       "hunt:-고 싶어요:고,싶어요;고,싶어요"
      ]
@@ -699,7 +699,7 @@
     {
      "id": "chapter-08-b4",
      "kind": "pattern",
-     "title": "무늬 Pattern · -(으)ㄹ 수 있어요 / 없어요",
+     "title": "문법 Grammar · -(으)ㄹ 수 있어요 / 없어요",
      "cards": [
       "hunt:-(으)ㄹ 수 있어요 / 없어요:수,있어요;없어요",
       "drill:I can make kimchi.:수 있어요*|없어요"
@@ -768,7 +768,7 @@
     {
      "id": "chapter-09-b2",
      "kind": "pattern",
-     "title": "무늬 Pattern · V아/어 주세요 vs V아/어도 돼요?",
+     "title": "문법 Grammar · V아/어 주세요 vs V아/어도 돼요?",
      "cards": [
       "hunt:V아/어 주세요 vs V아/어도 돼요?:주세요;아도,돼요",
       "drill:Can I take a photo?:주세요|아도 돼요|어도 돼요*"
@@ -790,7 +790,7 @@
     {
      "id": "chapter-09-b4",
      "kind": "pattern",
-     "title": "무늬 Pattern · V지 마세요 & V아/어야 돼요",
+     "title": "문법 Grammar · V지 마세요 & V아/어야 돼요",
      "cards": [
       "hunt:V지 마세요 & V아/어야 돼요:지,마세요;돼요",
       "drill:Please don't take photos.:지 마세요*|돼요|어야 돼요"
@@ -861,7 +861,7 @@
     {
      "id": "chapter-10-b2",
      "kind": "pattern",
-     "title": "무늬 Pattern · N부터 / N까지",
+     "title": "문법 Grammar · N부터 / N까지",
      "cards": [
       "hunt:N부터 / N까지:부터,까지;까지",
       "drill:It's far from home to school.:부터*|까지"
@@ -885,7 +885,7 @@
     {
      "id": "chapter-10-b4",
      "kind": "pattern",
-     "title": "무늬 Pattern · V아/어 주세요",
+     "title": "문법 Grammar · V아/어 주세요",
      "cards": [
       "hunt:V아/어 주세요:주세요;어,주세요",
       "drill:Please speak slowly.:주세요*|어 주세요"
@@ -955,7 +955,7 @@
     {
      "id": "chapter-11-b2",
      "kind": "pattern",
-     "title": "무늬 Pattern · -아서/어서",
+     "title": "문법 Grammar · -아서/어서",
      "cards": [
       "teach:-아서/어서:2ex"
      ]
@@ -977,7 +977,7 @@
     {
      "id": "chapter-11-b4",
      "kind": "pattern",
-     "title": "무늬 Pattern · -고 / -(으)면 / -(으)ㄹ게요",
+     "title": "문법 Grammar · -고 / -(으)면 / -(으)ㄹ게요",
      "cards": [
       "teach:-고 / -(으)면 / -(으)ㄹ게요:2ex"
      ]

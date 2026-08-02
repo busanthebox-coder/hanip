@@ -23,7 +23,7 @@
   function hookLine(next) {
     const kindMap = {
       words: 'Meet new words by guessing first — 새 단어를 추측으로',
-      pattern: 'Find the repeating pattern yourself — 무늬를 직접 찾아요',
+      pattern: 'Spot the grammar pattern yourself — 문법 규칙을 직접 찾아요',
       dialogue: 'Read a real conversation line by line — 진짜 대화',
       reading: 'Read a short passage — 짧은 글 한 편',
       boss: 'Everything from this chapter — 이번 과 전부',

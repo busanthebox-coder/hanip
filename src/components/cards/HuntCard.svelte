@@ -30,8 +30,8 @@
   }
 </script>
 
-<div class="step-label">문법 · Pattern hunt</div>
-<div class="q">두 문장에서 반복되는 무늬를 탭하세요 <span class="q-en">Tap the piece that repeats in both sentences</span></div>
+<div class="step-label">문법 · Grammar hunt</div>
+<div class="q">두 문장에서 반복되는 문법 표현을 탭하세요 <span class="q-en">Tap the grammar piece that repeats in both sentences</span></div>
 
 <div class="hunt">
   {#each card.lines as line, li}

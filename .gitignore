@@ -1,5 +1,6 @@
 node_modules/
 dist/
+.DS_Store
 src/lib/bites.json
 src/lib/bites/
 src/lib/wordbook.json

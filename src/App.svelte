@@ -18,7 +18,9 @@
   };
   const loaded = {};
   const loadTab = (key) => (loaded[key] ||= LAZY[key]());
+  const loadShowcase = () => import('./components/DesignShowcase.svelte');
   const beginBiteRequest = createLatestRequest();
+  const showcase = new URLSearchParams(window.location.search).get('showcase') === 'shelf';
 
   const chapters = courseIndex.chapters;
   const snacks = courseIndex.snacks || [];
@@ -111,7 +113,13 @@
   }
 </script>
 
-{#if playing}
+{#if showcase}
+  {#await loadShowcase()}
+    <p class="loading">컴포넌트 불러오는 중 · Loading showcase…</p>
+  {:then mod}
+    <svelte:component this={mod.default} />
+  {/await}
+{:else if playing}
   <!-- keyed so 한 입 더 rebuilds the player from scratch for the next bite -->
   {#key playing.bite.id}
     <BitePlayer

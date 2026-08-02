@@ -361,6 +361,7 @@ describe('buildWordBites', () => {
 describe('buildPatternBites', () => {
   it('produces a contrasting hunt pair plus a cloze drill from the spare example', () => {
     const [bite] = buildPatternBites(fakeChapter);
+    expect(bite.title).toBe('문법 Grammar · N을/를');
     const hunt = bite.cards.find((c) => c.kind === 'hunt');
     const variants = hunt.lines.map((l) => l.tokens.find((t) => t.hit).mid);
     expect(new Set(variants).size).toBe(2); // 을 and 를, not 을 twice

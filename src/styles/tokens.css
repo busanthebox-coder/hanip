@@ -23,6 +23,11 @@
   --good-soft: #E2EFE6;
   --bad: #C4452E;
 
+  --on-accent: #FFF6EF;
+  --chat-canvas: #EFE6D4;
+  --chat-self: #FCE879;
+  --progress-track: #EFE4CD;
+
   --r-card: 20px;
   --r-chip: 16px;
 
@@ -30,6 +35,27 @@
   --shadow-2: 0 3px 8px rgba(38, 34, 28, 0.06), 0 20px 44px -20px rgba(38, 34, 28, 0.26);
 
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --duration-press: 90ms;
+  --duration-micro: 150ms;
+  --duration-standard: 240ms;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  --type-overline: 11px;
+  --type-caption: 12px;
+  --type-small: 12.5px;
+  --type-body-sm: 13.5px;
+  --type-body: 15px;
+  --type-title-sm: 15.5px;
+  --type-title: 18px;
+  --type-heading: 22px;
   --sans: 'Pretendard Variable', Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
 }
 
