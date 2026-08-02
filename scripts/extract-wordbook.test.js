@@ -74,6 +74,34 @@ describe('wordbook extraction artifacts', () => {
     expect(gzipSync(JSON.stringify(list)).length).toBeLessThan(80_000);
   });
 
+  it('applies local detail patches without changing protected word fields', () => {
+    const depth = readJson('../src/lib/wordbook-depth.json');
+    const patch = readJson('../data/wordbook-patches/a2-batch02.json');
+    const allowedFields = [
+      'commonMistakes',
+      'conjugationTips',
+      'examples',
+      'explanation',
+      'nuance',
+      'shortExplanation',
+      'usagePhrases',
+    ];
+
+    expect(Object.keys(patch)).toHaveLength(38);
+    for (const [ko, fields] of Object.entries(patch)) {
+      expect(Object.keys(fields).sort()).toEqual(expect.arrayContaining([
+        'commonMistakes',
+        'examples',
+        'explanation',
+        'nuance',
+        'shortExplanation',
+        'usagePhrases',
+      ]));
+      expect(Object.keys(fields).every((field) => allowedFields.includes(field))).toBe(true);
+      expect(depth[ko]).toMatchObject(fields);
+    }
+  });
+
   it('keeps every lazy depth shard inside the global runtime asset budget', () => {
     const directory = new URL('../src/lib/wordbook-depth/', import.meta.url);
     const shardFiles = readdirSync(directory).filter((file) => file.endsWith('.json'));
@@ -120,6 +148,6 @@ describe('wordbook extraction artifacts', () => {
       }
     }
 
-    expect(attachmentCount).toBe(977);
+    expect(attachmentCount).toBe(1015);
   });
 });

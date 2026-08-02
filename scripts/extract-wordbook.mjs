@@ -1,7 +1,7 @@
 // Rebuilds the eager wordbook list and the lazy detail payload from:
 //   1. chapter vocabulary (course placement and course examples)
 //   2. the parent course dictionary (nuance, forms, mistakes, and clusters)
-import { mkdirSync, readdirSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { gzipSync } from 'node:zlib';
@@ -14,7 +14,17 @@ const listFile = join(root, 'src', 'lib', 'wordbook.json');
 const depthFile = join(root, 'src', 'lib', 'wordbook-depth.json');
 const clustersFile = join(root, 'src', 'lib', 'clusters.json');
 const shardsDir = join(root, 'src', 'lib', 'wordbook-depth');
+const patchesDir = join(root, 'data', 'wordbook-patches');
 const SHARD_GZIP_MAX = 210_000;
+const PATCH_FIELDS = new Set([
+  'nuance',
+  'explanation',
+  'shortExplanation',
+  'commonMistakes',
+  'conjugationTips',
+  'usagePhrases',
+  'examples',
+]);
 function lookupKeys(ko) {
   const keys = [ko];
   for (const part of ko.split('/').map((value) => value.trim())) if (part) keys.push(part);
@@ -28,7 +38,31 @@ function lookupKeys(ko) {
 
 const trim = (value) => (typeof value === 'string' ? value.trim() : value);
 const arr = (value) => (Array.isArray(value) ? value.filter(Boolean) : []);
+const isBlank = (value) => value == null || value === ''
+  || (Array.isArray(value) && value.length === 0)
+  || (typeof value === 'object' && !Array.isArray(value) && Object.keys(value).length === 0);
 const { byHangul, clusters } = loadDictionary({ root, label: 'wordbook' });
+
+const localPatches = new Map();
+if (existsSync(patchesDir)) {
+  const patchFiles = readdirSync(patchesDir).filter((file) => file.endsWith('.json')).sort();
+  for (const file of patchFiles) {
+    const patch = JSON.parse(readFileSync(join(patchesDir, file), 'utf8'));
+    if (!patch || Array.isArray(patch) || typeof patch !== 'object') {
+      throw new Error(`wordbook patch must be an object: ${file}`);
+    }
+    for (const [ko, fields] of Object.entries(patch)) {
+      if (localPatches.has(ko)) throw new Error(`duplicate wordbook patch: ${ko}`);
+      if (!fields || Array.isArray(fields) || typeof fields !== 'object') {
+        throw new Error(`wordbook patch entry must be an object: ${file}/${ko}`);
+      }
+      const unknown = Object.keys(fields).filter((field) => !PATCH_FIELDS.has(field));
+      if (unknown.length) throw new Error(`wordbook patch has unsupported fields: ${file}/${ko}/${unknown.join(',')}`);
+      localPatches.set(ko, { file, fields });
+    }
+  }
+}
+const appliedPatches = new Set();
 
 const normalizedClusters = clusters.map((cluster) => ({
   title: cluster.title,
@@ -120,6 +154,17 @@ for (const [ko, group] of grouped) {
   const representative = group.candidates.reduce((best, candidate) =>
     depthScore(candidate) > depthScore(best) ? candidate : best
   );
+  const localPatch = localPatches.get(ko);
+  if (localPatch) {
+    for (const [field, value] of Object.entries(localPatch.fields)) {
+      if (!isBlank(representative[field])) {
+        throw new Error(`wordbook patch refuses to overwrite content: ${localPatch.file}/${ko}/${field}`);
+      }
+      if (isBlank(value)) throw new Error(`wordbook patch cannot write blank content: ${localPatch.file}/${ko}/${field}`);
+      representative[field] = value;
+    }
+    appliedPatches.add(ko);
+  }
   const chapter = chapters.join('·');
   const complete = { ...representative, chapter, chapters };
   const hasDepth = DEPTH_FIELDS.some((field) => field !== 'cluster' && field !== 'ex'
@@ -142,6 +187,11 @@ for (const [ko, group] of grouped) {
   const level = chapterLevel(representative.chapter).toLowerCase();
   if (!detailByLevel.has(level)) detailByLevel.set(level, []);
   detailByLevel.get(level).push({ listWord, complete });
+}
+
+const unappliedPatches = [...localPatches.keys()].filter((ko) => !appliedPatches.has(ko));
+if (unappliedPatches.length) {
+  throw new Error(`wordbook patch targets are missing from chapter vocabulary: ${unappliedPatches.join(', ')}`);
 }
 
 mkdirSync(dirname(listFile), { recursive: true });
@@ -184,5 +234,5 @@ const withDepth = words.filter((word) => word.hasDepth).length;
 const withCluster = words.filter((word) => word.hasCluster).length;
 console.log(
   `wordbook: ${words.length} unique words from ${files.length} chapters · ${withDepth} with detail · `
-  + `${withCluster} in a contrast set · ${shardCount} lazy depth shards`,
+  + `${withCluster} in a contrast set · ${appliedPatches.size} local patches · ${shardCount} lazy depth shards`,
 );
