@@ -24,6 +24,8 @@
   let detailError = '';
   let detailRequest = 0;
   let selected = null;
+  let showClusters = false;
+  let clusterBrowserModule = null;
 
   const FILTERS = [
     { id: 'all', label: '전체 All' },
@@ -62,6 +64,17 @@
     loadingKey = null;
     detailError = '';
     selected = null;
+    window.scrollTo(0, 0);
+  }
+
+  function openClusterBrowser() {
+    clusterBrowserModule ||= import('./ClusterBrowser.svelte');
+    showClusters = true;
+    window.scrollTo(0, 0);
+  }
+
+  function closeClusterBrowser() {
+    showClusters = false;
     window.scrollTo(0, 0);
   }
 
@@ -114,7 +127,13 @@
   })();
 </script>
 
-{#if selected}
+{#if showClusters}
+  {#await clusterBrowserModule}
+    <p class="cluster-loading" role="status">전집 불러오는 중 · Loading all sets…</p>
+  {:then mod}
+    <svelte:component this={mod.default} onBack={closeClusterBrowser} />
+  {/await}
+{:else if selected}
   <WordDetail word={selected} onBack={closeDetail} />
 {:else}
 <section class="wordbook">
@@ -123,6 +142,11 @@
     {words.length} words · 배운 단어 {learnedCount}개 · 💡 헷갈리는 짝 {words.filter((word) => word.hasCluster).length}개
   </p>
   <p class="sub note">Tap any word for its nuance note, mistakes, and forms · 아무 단어나 누르면 뉘앙스·실수·활용형이 나와요</p>
+
+  <button class="cluster-entry" on:click={openClusterBrowser}>
+    <strong>💡 헷갈리는 짝 전집 · All confusable sets (32)</strong>
+    <span>표현 클러스터 32세트를 모두 비교해 보세요. · Browse every expression cluster.</span>
+  </button>
 
   <input
     class="search"
@@ -198,6 +222,13 @@
   .cap { font-size: 11.5px; font-weight: 850; letter-spacing: .2em; color: var(--accent); text-transform: uppercase; }
   .sub { margin: 6px 0 4px; font-size: 13.5px; color: var(--ink-3); word-break: keep-all; }
   .sub.note { margin-bottom: 16px; font-size: 12px; line-height: 1.5; }
+
+  .cluster-entry { display: grid; gap: 4px; width: 100%; min-height: 44px; margin-bottom: 14px; padding: 14px 15px;
+    text-align: left; background: var(--accent-soft); border: 1px solid var(--line-2); border-radius: 16px; }
+  .cluster-entry strong { font-size: 14px; line-height: 1.45; color: var(--accent-deep); word-break: keep-all; }
+  .cluster-entry span { font-size: 12px; line-height: 1.45; color: var(--ink-2); word-break: keep-all; }
+  .cluster-entry:hover { border-color: var(--accent); }
+  .cluster-loading { max-width: 480px; margin: 0 auto; padding: 40px 20px; text-align: center; color: var(--ink-3); }
 
   .search {
     width: 100%; padding: 11px 15px; font: inherit; font-size: 14px; color: var(--ink);

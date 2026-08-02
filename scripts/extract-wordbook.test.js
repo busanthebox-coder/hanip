@@ -1,4 +1,4 @@
-import { readdirSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { gzipSync } from 'node:zlib';
@@ -9,6 +9,22 @@ const readJson = (path) => JSON.parse(readFileSync(new URL(path, import.meta.url
 
 describe('wordbook extraction artifacts', () => {
   const list = readJson('../src/lib/wordbook.json').words;
+
+  it('emits all normalized expression clusters without a member self marker', () => {
+    const file = new URL('../src/lib/clusters.json', import.meta.url);
+    expect(existsSync(file)).toBe(true);
+    if (!existsSync(file)) return;
+
+    const clusters = readJson('../src/lib/clusters.json').clusters;
+    const allowedFields = ['en', 'example', 'hint', 'ko', 'romanization', 'when'];
+
+    expect(clusters).toHaveLength(32);
+    expect(clusters.every((cluster) => cluster.title && Array.isArray(cluster.members) && cluster.members.length > 1)).toBe(true);
+    expect(clusters.flatMap((cluster) => cluster.members).every((member) => (
+      JSON.stringify(Object.keys(member).sort()) === JSON.stringify(allowedFields)
+      && !Object.hasOwn(member, 'self')
+    ))).toBe(true);
+  });
 
   it('emits one slim list row per Korean form', () => {
     const allowedFields = [

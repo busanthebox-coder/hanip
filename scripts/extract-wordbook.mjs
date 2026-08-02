@@ -12,6 +12,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const chaptersDir = join(root, 'data', 'chapters');
 const listFile = join(root, 'src', 'lib', 'wordbook.json');
 const depthFile = join(root, 'src', 'lib', 'wordbook-depth.json');
+const clustersFile = join(root, 'src', 'lib', 'clusters.json');
 const shardsDir = join(root, 'src', 'lib', 'wordbook-depth');
 const SHARD_GZIP_MAX = 210_000;
 function lookupKeys(ko) {
@@ -29,22 +30,26 @@ const trim = (value) => (typeof value === 'string' ? value.trim() : value);
 const arr = (value) => (Array.isArray(value) ? value.filter(Boolean) : []);
 const { byHangul, clusters } = loadDictionary({ root, label: 'wordbook' });
 
+const normalizedClusters = clusters.map((cluster) => ({
+  title: cluster.title,
+  rule: cluster.rule,
+  members: (cluster.members || []).map((candidate) => ({
+    ko: candidate.hangul,
+    en: candidate.entryEnglish || '',
+    romanization: candidate.entryRomanization || '',
+    when: candidate.when || '',
+    hint: candidate.hint || '',
+    example: candidate.example || null,
+  })),
+}));
 const clusterOf = new Map();
-for (const cluster of clusters) {
-  for (const member of cluster.members || []) {
-    if (!member.hangul || clusterOf.has(member.hangul)) continue;
-    clusterOf.set(member.hangul, {
+for (const cluster of normalizedClusters) {
+  for (const member of cluster.members) {
+    if (!member.ko || clusterOf.has(member.ko)) continue;
+    clusterOf.set(member.ko, {
       title: cluster.title,
       rule: cluster.rule,
-      members: (cluster.members || []).map((candidate) => ({
-        ko: candidate.hangul,
-        en: candidate.entryEnglish || '',
-        romanization: candidate.entryRomanization || '',
-        when: candidate.when || '',
-        hint: candidate.hint || '',
-        example: candidate.example || null,
-        self: candidate.hangul === member.hangul,
-      })),
+      members: cluster.members.map((candidate) => ({ ...candidate, self: candidate.ko === member.ko })),
     });
   }
 }
@@ -173,6 +178,7 @@ for (const [level, details] of detailByLevel) {
 }
 writeFileSync(listFile, JSON.stringify({ words }, null, 1));
 writeFileSync(depthFile, JSON.stringify(depth, null, 1));
+writeFileSync(clustersFile, JSON.stringify({ clusters: normalizedClusters }, null, 1));
 
 const withDepth = words.filter((word) => word.hasDepth).length;
 const withCluster = words.filter((word) => word.hasCluster).length;
