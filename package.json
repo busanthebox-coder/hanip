@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "compile": "node scripts/extract-wordbook.mjs && node scripts/compile-bites.mjs",
     "validate": "node scripts/validate-bites.mjs",
-    "test": "vitest run",
+    "test": "npm run compile && vitest run",
     "baseline": "node scripts/baseline.mjs",
     "guard": "npm run compile && node scripts/validate-bites.mjs && node scripts/baseline.mjs && vitest run",
     "guard:full": "npm run guard && vite build && node scripts/check-budget.mjs",

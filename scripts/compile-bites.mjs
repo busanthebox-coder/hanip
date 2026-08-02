@@ -28,11 +28,11 @@ const chapters = files.map((f, i) => {
 // The moment a learner has just guessed a word is the moment its nuance
 // lands — attach it to the guess card so the reveal can teach, not just
 // confirm. (extract-wordbook.mjs must run first; npm scripts order it.)
-const wordbookPath = join(root, 'src', 'lib', 'wordbook.json');
+const wordbookPath = join(root, 'src', 'lib', 'wordbook-depth.json');
 let nuanceAttached = 0;
 if (existsSync(wordbookPath)) {
   const byKo = new Map();
-  for (const w of JSON.parse(readFileSync(wordbookPath, 'utf8')).words) {
+  for (const w of Object.values(JSON.parse(readFileSync(wordbookPath, 'utf8')))) {
     if (!byKo.has(w.ko)) byKo.set(w.ko, w);
   }
   for (const chapter of chapters) {
