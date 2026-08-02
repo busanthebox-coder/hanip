@@ -4,6 +4,7 @@
   import Shelf from './components/Shelf.svelte';
   import BitePlayer from './components/BitePlayer.svelte';
   import { createLatestRequest, loadChapterCards, loadSnackCards } from './lib/courseData.js';
+  import { findNext } from './lib/nextBite.js';
   import { markBiteDone, progress } from './lib/store.js';
 
   // The reference tabs carry the heavy data — the wordbook's nuance layer alone
@@ -35,6 +36,7 @@
   let playing = null;          // { chapter, bite }
   let loadingBite = false;
   let loadError = '';
+  let skippedSnacks = new Set();
 
   function cancelBiteRequest() {
     beginBiteRequest();
@@ -82,20 +84,21 @@
       if (isLatest()) loadingBite = false;
     }
   }
+  async function playItem(item) {
+    if (!item) return;
+    if (item.type === 'snack') await playSnack(item.snack);
+    else await play(item.chapter, item.bite);
+  }
+  function skipSnack(snackId) {
+    skippedSnacks = new Set([...skippedSnacks, snackId]);
+  }
   async function exitBite(finished, wantMore) {
     if (finished) markBiteDone(playing.bite);
     if (finished && wantMore) {
-      // roll straight into the next unfinished bite
-      const state = { done: doneMap() };
-      for (const ch of chapters) {
-        for (const bite of ch.bites) {
-          if (!state.done[bite.id]) {
-            playing = null;
-            await play(ch, bite);
-            return;
-          }
-        }
-      }
+      const next = findNext({ index: courseIndex, done: doneMap(), skippedSnacks });
+      playing = null;
+      await playItem(next);
+      return;
     }
     playing = null;
     window.scrollTo(0, 0);
@@ -125,7 +128,7 @@
     {:else}
       {#if loadError}<p class="load-error" role="alert">{loadError}</p>{/if}
       {#if tab === 'today'}
-        <Home {chapters} onStart={play} />
+        <Home index={courseIndex} {skippedSnacks} onStart={playItem} onSkipSnack={skipSnack} />
       {:else if tab === 'shelf'}
         {#if showGuide}
           <div class="guide-wrap">

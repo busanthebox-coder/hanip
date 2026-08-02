@@ -5,9 +5,14 @@ const KEY = 'hanip.v1';
 function load() {
   try {
     const raw = JSON.parse(localStorage.getItem(KEY) || '{}');
-    return { done: raw.done || {}, learned: raw.learned || [], bowls: raw.bowls || {} };
+    return {
+      done: raw.done || {},
+      learned: raw.learned || [],
+      bowls: raw.bowls || {},
+      lastPlayed: raw.lastPlayed || null,
+    };
   } catch {
-    return { done: {}, learned: [], bowls: {} };
+    return { done: {}, learned: [], bowls: {}, lastPlayed: null };
   }
 }
 
@@ -30,8 +35,12 @@ export function markBiteDone(bite) {
       .filter((c) => c.kind === 'guess')
       .filter((c) => !state.learned.some((l) => l.word.ko === c.word.ko));
     const learned = [...state.learned, ...fresh].slice(-200);
-    return { done, learned, bowls };
+    return { ...state, done, learned, bowls };
   });
+}
+
+export function markLastPlayed(biteOrSnackId, at = Date.now()) {
+  progress.update((state) => ({ ...state, lastPlayed: { biteOrSnackId, at } }));
 }
 
 // up to 2 recall cards from earlier bites, excluding this bite's own words

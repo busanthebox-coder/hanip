@@ -1,26 +1,24 @@
 <script>
   import { progress, todayKey, weekBowls } from '../lib/store.js';
+  import { findById, findNext } from '../lib/nextBite.js';
 
-  export let chapters = [];
+  export let index = { chapters: [], snacks: [] };
+  export let skippedSnacks = new Set();
   export let onStart = () => {};
+  export let onSkipSnack = () => {};
 
   $: state = $progress;
-  $: nextBite = findNext(state);
+  $: nextItem = findNext({ index, done: state.done, skippedSnacks });
+  $: continueItem = state.lastPlayed && !state.done[state.lastPlayed.biteOrSnackId]
+    ? findById({ index, id: state.lastPlayed.biteOrSnackId })
+    : null;
   $: bitesToday = state.bowls[todayKey()] || 0;
   $: bowls = weekBowls(state);
   $: doneTotal = Object.keys(state.done).length;
 
-  function findNext(s) {
-    for (const ch of chapters) {
-      for (const bite of ch.bites) {
-        if (!s.done[bite.id]) return { chapter: ch, bite };
-      }
-    }
-    return null;
-  }
-
-  function headWord(bite) {
-    return bite.firstWord || bite.title.split('·').pop().trim();
+  function headWord(item) {
+    if (item.type === 'snack') return item.title;
+    return item.bite.firstWord || item.bite.title.split('·').pop().trim();
   }
   function hookLine(next) {
     const kindMap = {
@@ -35,15 +33,25 @@
 </script>
 
 <section class="home">
-  <div class="kicker">오늘의 한 입 · Today's bite {#if nextBite}· Ch. {nextBite.chapter.number}{/if}</div>
+  <div class="kicker">오늘의 한 입 · Today's bite</div>
 
-  {#if nextBite}
-    <h1 class="word">{headWord(nextBite.bite)}</h1>
-    <p class="hook">{hookLine(nextBite)}</p>
-    <p class="hook sub">{nextBite.bite.title}</p>
+  {#if nextItem}
+    <div class="level-chip">{nextItem.level} · {nextItem.type === 'snack' ? nextItem.afterChapter : nextItem.chapterNumber}과</div>
+    {#if continueItem}
+      <button class="continue" on:click={() => onStart(continueItem)}>이어서 · Continue — {continueItem.title}</button>
+    {/if}
+    {#if nextItem.type === 'snack'}
+      <p class="snack-prompt">간식 · Snack — 잠깐 단 것 먼저?</p>
+      <h1 class="word snack-word">{headWord(nextItem)}</h1>
+      <p class="hook">{nextItem.snack.cardCount}단어 · {nextItem.snack.cardCount} words</p>
+    {:else}
+      <h1 class="word">{headWord(nextItem)}</h1>
+      <p class="hook">{hookLine(nextItem)}</p>
+      <p class="hook sub">{nextItem.bite.title}</p>
+    {/if}
   {:else}
     <h1 class="word">다 먹었어요!</h1>
-    <p class="hook">All done — you finished every bite in A1. Re-chew any bite from the bookshelf. · 책장에서 아무 한입이나 다시 씹어보세요.</p>
+    <p class="hook">All done — you finished every bite. Re-chew any bite from the bookshelf. · 책장에서 아무 한입이나 다시 씹어보세요.</p>
   {/if}
 
   <div class="bowl-row">
@@ -61,8 +69,13 @@
     </div>
   </div>
 
-  {#if nextBite}
-    <button class="start" on:click={() => onStart(nextBite.chapter, nextBite.bite)}>시작 · Start →</button>
+  {#if nextItem}
+    <div class="start-actions">
+      <button class="start" on:click={() => onStart(nextItem)}>시작 · Start →</button>
+      {#if nextItem.type === 'snack'}
+        <button class="skip" on:click={() => onSkipSnack(nextItem.snackId)}>괜찮아요, 다음 과로 · Skip to next chapter</button>
+      {/if}
+    </div>
   {/if}
 </section>
 
@@ -70,16 +83,25 @@
   .home { min-height: calc(100dvh - 64px); max-width: 480px; margin: 0 auto; padding: 34px 24px 24px;
     display: flex; flex-direction: column; }
   .kicker { font-size: 11.5px; font-weight: 850; letter-spacing: .2em; color: var(--accent); text-transform: uppercase; }
+  .level-chip { align-self: flex-start; margin-top: 14px; padding: 5px 10px; border-radius: 999px;
+    background: var(--accent-soft); color: var(--accent-deep); font-size: 12px; font-weight: 850; }
+  .continue { align-self: flex-start; max-width: 100%; margin-top: 10px; padding: 7px 11px; border: 1px solid var(--line);
+    border-radius: 999px; background: var(--card); color: var(--ink-2); font-size: 12px; font-weight: 800;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .snack-prompt { margin: 66px 0 0; color: var(--accent); font-size: 15px; font-weight: 850; word-break: keep-all; }
   .word { margin: 90px 0 0; font-size: clamp(56px, 17vw, 76px); font-weight: 900; letter-spacing: -.02em; line-height: 1.05;
     word-break: keep-all; text-wrap: balance; }
+  .word.snack-word { margin-top: 12px; font-size: clamp(38px, 12vw, 56px); }
   .hook { margin: 12px 0 0; font-size: 15.5px; color: var(--ink-2); font-weight: 650; word-break: keep-all; text-wrap: pretty; }
   .hook.sub { margin-top: 4px; font-size: 12.5px; color: var(--ink-3); font-weight: 700; }
   .bowl-row { margin-top: 28px; display: flex; align-items: center; gap: 12px; }
   .bowl { width: 46px; height: 46px; flex: none; }
   .bowl-cap { display: grid; font-size: 12.5px; color: var(--ink-3); font-weight: 700; }
   .bowl-cap b { color: var(--ink); font-size: 13.5px; }
-  .start { margin-top: auto; padding: 18px; border-radius: 18px; background: var(--accent); color: #FFF6EF;
+  .start-actions { margin-top: auto; display: grid; gap: 10px; }
+  .start { padding: 18px; border-radius: 18px; background: var(--accent); color: #FFF6EF;
     font-size: 19px; font-weight: 900; box-shadow: 0 5px 0 var(--accent-deep);
     transition: transform .09s var(--ease), box-shadow .09s var(--ease); }
   .start:active { transform: translateY(4px); box-shadow: 0 1px 0 var(--accent-deep); }
+  .skip { min-height: 44px; padding: 11px; color: var(--ink-3); font-size: 13px; font-weight: 800; }
 </style>

@@ -7,7 +7,7 @@
   import ChatCard from './cards/ChatCard.svelte';
   import ReadCard from './cards/ReadCard.svelte';
   import PayoffCard from './cards/PayoffCard.svelte';
-  import { warmupCards } from '../lib/store.js';
+  import { markLastPlayed, warmupCards } from '../lib/store.js';
 
   export let bite;
   export let biteNumber = 1;   // 1-based position in its chapter
@@ -15,6 +15,7 @@
   export let onExit = () => {};      // (finished: boolean, wantMore: boolean)
 
   let cards = [...warmupCards(bite), ...bite.cards];
+  markLastPlayed(bite.id);
   let i = 0;
   let resolved = false;
   let finished = false;
