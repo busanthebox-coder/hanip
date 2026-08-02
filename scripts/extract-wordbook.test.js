@@ -76,7 +76,11 @@ describe('wordbook extraction artifacts', () => {
 
   it('applies local detail patches without changing protected word fields', () => {
     const depth = readJson('../src/lib/wordbook-depth.json');
-    const patch = readJson('../data/wordbook-patches/a2-batch02.json');
+    const patchFiles = readdirSync(new URL('../data/wordbook-patches/', import.meta.url))
+      .filter((file) => file.endsWith('.json'))
+      .sort();
+    const patches = patchFiles.map((file) => readJson(`../data/wordbook-patches/${file}`));
+    const patchEntries = patches.flatMap((patch) => Object.entries(patch));
     const allowedFields = [
       'commonMistakes',
       'conjugationTips',
@@ -87,8 +91,10 @@ describe('wordbook extraction artifacts', () => {
       'usagePhrases',
     ];
 
-    expect(Object.keys(patch)).toHaveLength(38);
-    for (const [ko, fields] of Object.entries(patch)) {
+    expect(patchFiles).toEqual(['a2-batch02.json', 'c1-josa-batch02.json']);
+    expect(patchEntries).toHaveLength(39);
+    expect(new Set(patchEntries.map(([ko]) => ko)).size).toBe(patchEntries.length);
+    for (const [ko, fields] of patchEntries) {
       expect(Object.keys(fields).sort()).toEqual(expect.arrayContaining([
         'commonMistakes',
         'examples',
@@ -148,6 +154,6 @@ describe('wordbook extraction artifacts', () => {
       }
     }
 
-    expect(attachmentCount).toBe(1015);
+    expect(attachmentCount).toBe(1016);
   });
 });

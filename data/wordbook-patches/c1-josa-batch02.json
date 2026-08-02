@@ -1,0 +1,66 @@
+{
+  "조사": {
+    "nuance": "Here 조사 means the grammatical particle 助詞 ('helping word'), not 조사 調査 ('survey/investigation'). Korean particles attach to the end of a noun or noun phrase and do more than label subject, object, or location: they also manage topic, contrast, inclusion, limitation, and the speaker's focus. That is why 은/는 and 이/가 cannot be swapped mechanically, and why 에/에서 depends on the Korean predicate rather than on one English preposition. At C1, particle choice is part of information design. 제가 맡겠습니다 selects 'me' as the person who will take the task, while 저는 맡겠습니다 sets 'me' as the topic and may contrast the speaker with others. Spoken Korean can omit predictable particles, but omission is not random: a short message may say 자료 확인했습니다, while a complex or potentially ambiguous sentence often needs 자료를 확인했습니다. Particles can also stack in a fixed order—회의에서도, 이 사안에 대해서는—so a single syllable can alter both grammar and stance without changing the vocabulary.",
+    "explanation": "조사 (josa) means \"grammatical particle.\" It follows a noun phrase and signals how that phrase connects to the predicate or to the surrounding discourse. Review particles in three passes: (1) grammatical role—이/가, 을/를, 에/에서, 에게/께; (2) focus and scope—은/는, 도, 만, 까지; and (3) omission and stacking—에는, 에서도, 까지만. Do not choose a particle from an English translation alone. First identify the Korean predicate and the relationship it requires, then ask what the listener should treat as topic, new information, contrast, or addition. In final editing, two particles may both produce grammatical sentences while creating different emphasis, so 'correct' includes meaning, focus, clarity, and register.",
+    "shortExplanation": "조사 is a post-noun marker that controls grammatical role, focus, contrast, scope, and clarity in Korean.",
+    "commonMistakes": [
+      "Treating 은/는 and 이/가 as interchangeable subject markers. 제가 수정하겠습니다 selects the person who will do it; 저는 수정하겠습니다 sets or contrasts the speaker as the topic.",
+      "Mapping English 'at/to/from' directly onto 에 or 에서. Static location or destination usually takes 에, while the place where an action happens takes 에서: 회의실에 있습니다 / 회의실에서 회의합니다.",
+      "Using 을/를 with a verb that requires a recipient or counterpart, such as 고객님을 연락하다. Say 고객님께 연락드리다 or 친구에게/한테 연락하다.",
+      "Deleting particles simply because conversational Korean often omits them. Omit only when the grammatical role is recoverable; restore the particle when a formal or complex sentence could be misread.",
+      "Stacking particles in the wrong order, such as 회의도에서. The base relation comes first and the focus particle follows: 회의에서도, 이 사안에 대해서는."
+    ],
+    "usagePhrases": [
+      {
+        "ko": "조사를 확인하다",
+        "romanization": "josareul hwaginhada",
+        "en": "to check the particles",
+        "note": "A final-editing action: check both grammatical role and intended focus."
+      },
+      {
+        "ko": "조사를 바꾸다",
+        "romanization": "josareul bakkuda",
+        "en": "to change a particle",
+        "note": "Changing one particle can change contrast, scope, or the information focus."
+      },
+      {
+        "ko": "조사를 생략하다",
+        "romanization": "josareul saengnyakhada",
+        "en": "to omit a particle",
+        "note": "Natural only when the missing role is clear from context."
+      },
+      {
+        "ko": "조사 하나로 초점이 달라지다",
+        "romanization": "josa hanaro chojeomi dallajida",
+        "en": "the focus changes with a single particle",
+        "note": "A useful reminder that particles carry discourse meaning, not just grammar labels."
+      }
+    ],
+    "examples": [
+      {
+        "ko": "‘제가 이 부분을 수정하겠습니다’는 담당자를 특정하고, ‘저는 이 부분을 수정하겠습니다’는 다른 사람과 대비하는 느낌을 줄 수 있어요.",
+        "romanization": "‘jega i bubuneul sujeonghagetseumnida’neun damdangjareul teukjeonghago, ‘jeoneun i bubuneul sujeonghagetseumnida’neun dareun saramgwa daebihaneun neukkimeul jul su isseoyo.",
+        "en": "‘제가 이 부분을 수정하겠습니다’ identifies who will handle the task, while ‘저는 이 부분을 수정하겠습니다’ can contrast the speaker with other people.",
+        "note": "이/가 can focus or select the subject; 은/는 frames it as topic or contrast."
+      },
+      {
+        "ko": "회의실에 있습니다. 회의실에서 회의합니다.",
+        "romanization": "hoeuisire itseumnida. hoeuisireseo hoeuihamnida.",
+        "en": "I am in the meeting room. We hold the meeting in the meeting room.",
+        "note": "에 marks static location with 있다; 에서 marks the place where the action 회의하다 happens."
+      },
+      {
+        "ko": "짧은 메시지에서는 ‘자료 확인했습니다’도 자연스럽지만, 대상이 여러 개면 ‘첨부 자료를 확인했습니다’처럼 조사를 밝혀 쓰는 편이 안전해요.",
+        "romanization": "jjalbeun mesijieseoneun ‘jaryo hwaginhaetseumnida’do jayeonseureopjiman, daesangi yeoreo gaemyeon ‘cheombu jaryoreul hwaginhaetseumnida’cheoreom josareul balkhyeo sseuneun pyeoni anjeonhaeyo.",
+        "en": "In a short message, ‘자료 확인했습니다’ can be natural, but when several possible objects exist, it is safer to state the particle explicitly, as in ‘첨부 자료를 확인했습니다.’",
+        "note": "Particle omission depends on recoverability, not on politeness alone."
+      },
+      {
+        "ko": "이 사안에 대해서는 다음 회의에서도 계속 논의하겠습니다.",
+        "romanization": "i saane daehaeseoneun daeum hoeuieseo-do gyesok nonuihagetseumnida.",
+        "en": "As for this issue, we will continue discussing it at the next meeting as well.",
+        "note": "에 대해서는 frames the issue as the topic, and 에서도 adds ‘also’ to the action location."
+      }
+    ]
+  }
+}
