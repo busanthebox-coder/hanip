@@ -1,8 +1,9 @@
 <script>
-  import bitesData from './lib/bites.json';
+  import courseIndex from './lib/bites-index.json';
   import Home from './components/Home.svelte';
   import Shelf from './components/Shelf.svelte';
   import BitePlayer from './components/BitePlayer.svelte';
+  import { createLatestRequest, loadChapterCards } from './lib/courseData.js';
   import { markBiteDone, progress } from './lib/store.js';
 
   // The reference tabs carry the heavy data — the wordbook's nuance layer alone
@@ -16,8 +17,9 @@
   };
   const loaded = {};
   const loadTab = (key) => (loaded[key] ||= LAZY[key]());
+  const beginBiteRequest = createLatestRequest();
 
-  const chapters = bitesData.chapters;
+  const chapters = courseIndex.chapters;
 
   const TABS = [
     { key: 'today', ico: '🍚', ko: '오늘', en: 'Today' },
@@ -30,19 +32,46 @@
   let tab = 'today';           // TABS key
   let showGuide = false;       // guidebooks live on the shelf
   let playing = null;          // { chapter, bite }
+  let loadingBite = false;
+  let loadError = '';
 
-  function play(chapter, bite) {
-    playing = { chapter, bite };
-    window.scrollTo(0, 0);
+  function cancelBiteRequest() {
+    beginBiteRequest();
+    loadingBite = false;
   }
-  function exitBite(finished, wantMore) {
+
+  async function play(chapter, bite) {
+    const isLatest = beginBiteRequest();
+    loadingBite = true;
+    loadError = '';
+    try {
+      const bites = await loadChapterCards(chapter.id);
+      const fullBite = bites.find((item) => item.id === bite.id);
+      if (!fullBite) throw new Error(`Missing bite: ${bite.id}`);
+      if (!isLatest()) return;
+      playing = { chapter, bite: fullBite };
+      window.scrollTo(0, 0);
+    } catch (error) {
+      if (!isLatest()) return;
+      playing = null;
+      loadError = '한입을 불러오지 못했어요. 다시 시도해 주세요. · Could not load this bite. Please try again.';
+      console.error(error);
+    } finally {
+      if (isLatest()) loadingBite = false;
+    }
+  }
+  async function exitBite(finished, wantMore) {
     if (finished) markBiteDone(playing.bite);
     if (finished && wantMore) {
       // roll straight into the next unfinished bite
       const state = { done: doneMap() };
       for (const ch of chapters) {
         for (const bite of ch.bites) {
-          if (!state.done[bite.id]) { playing = { chapter: ch, bite }; window.scrollTo(0, 0); return; }
+          if (!state.done[bite.id]) {
+            playing = null;
+            await play(ch, bite);
+            return;
+          }
         }
       }
     }
@@ -69,32 +98,37 @@
   {/key}
 {:else}
   <main>
-    {#if tab === 'today'}
-      <Home {chapters} onStart={play} />
-    {:else if tab === 'shelf'}
-      {#if showGuide}
-        <div class="guide-wrap">
-          <button class="back-shelf" on:click={() => { showGuide = false; window.scrollTo(0, 0); }}>← 책장 · Back to shelf</button>
-          {#await loadTab('guide')}
-            <p class="loading">불러오는 중 · Loading…</p>
-          {:then mod}
-            <svelte:component this={mod.default} />
-          {/await}
-        </div>
-      {:else}
-        <Shelf {chapters} onPlay={play} onOpenGuide={() => { showGuide = true; window.scrollTo(0, 0); }} />
-      {/if}
+    {#if loadingBite}
+      <p class="loading" role="status">한입 불러오는 중 · Loading bite…</p>
     {:else}
-      {#await loadTab(tab)}
-        <p class="loading">불러오는 중 · Loading…</p>
-      {:then mod}
-        <svelte:component this={mod.default} />
-      {/await}
+      {#if loadError}<p class="load-error" role="alert">{loadError}</p>{/if}
+      {#if tab === 'today'}
+        <Home {chapters} onStart={play} />
+      {:else if tab === 'shelf'}
+        {#if showGuide}
+          <div class="guide-wrap">
+            <button class="back-shelf" on:click={() => { showGuide = false; window.scrollTo(0, 0); }}>← 책장 · Back to shelf</button>
+            {#await loadTab('guide')}
+              <p class="loading">불러오는 중 · Loading…</p>
+            {:then mod}
+              <svelte:component this={mod.default} />
+            {/await}
+          </div>
+        {:else}
+          <Shelf {chapters} onPlay={play} onOpenGuide={() => { showGuide = true; window.scrollTo(0, 0); }} />
+        {/if}
+      {:else}
+        {#await loadTab(tab)}
+          <p class="loading">불러오는 중 · Loading…</p>
+        {:then mod}
+          <svelte:component this={mod.default} />
+        {/await}
+      {/if}
     {/if}
   </main>
   <nav class="tabs">
     {#each TABS as t}
-      <button class:on={tab === t.key} on:click={() => { tab = t.key; showGuide = false; window.scrollTo(0, 0); }}>
+      <button class:on={tab === t.key} on:click={() => { cancelBiteRequest(); tab = t.key; showGuide = false; window.scrollTo(0, 0); }}>
         <span class="ico">{t.ico}</span>
         <span class="t-ko">{t.ko}</span>
         <span class="t-en">{t.en}</span>
@@ -119,4 +153,7 @@
   .back-shelf:hover { border-color: var(--ink-3); }
   .loading { max-width: 480px; margin: 0 auto; padding: 40px 20px; color: var(--ink-3);
     font-size: 13px; font-weight: 750; text-align: center; }
+  .load-error { max-width: 440px; margin: 16px auto 0; padding: 12px 16px; border: 1px solid var(--line);
+    border-radius: var(--r-chip); background: var(--card); color: var(--ink-2); font-size: 13px; font-weight: 750;
+    text-align: center; word-break: keep-all; }
 </style>

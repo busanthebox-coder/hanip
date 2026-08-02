@@ -1,3 +1,6 @@
+import { readFileSync } from 'node:fs';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
 import {
   expandVariants,
@@ -10,6 +13,64 @@ import {
   buildReadingBite,
   compileChapter,
 } from './compiler.mjs';
+import { chapterLevel } from '../../src/lib/levels.js';
+
+const root = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
+
+describe('compiled course data split', () => {
+  it('partitions every compiled chapter at the level boundaries without changing card data', async () => {
+    expect([1, 11, 12, 34, 35, 56, 57, 63, 64, 65].map(chapterLevel)).toEqual([
+      'A1', 'A1', 'A2', 'A2', 'B1', 'B1', 'B2', 'B2', 'C1', 'C1',
+    ]);
+
+    const monolithic = JSON.parse(readFileSync(join(root, 'src', 'lib', 'bites.json'), 'utf8'));
+    const index = JSON.parse(readFileSync(join(root, 'src', 'lib', 'bites-index.json'), 'utf8'));
+    expect(index.chapters).toHaveLength(monolithic.chapters.length);
+    for (const [i, chapter] of index.chapters.entries()) {
+      expect(chapter.level).toBe(chapterLevel(chapter.number));
+      expect(chapter.id).toBe(monolithic.chapters[i].id);
+      expect(chapter).not.toHaveProperty('cards');
+      expect(chapter.bites).toHaveLength(chapter.biteCount);
+      for (const bite of chapter.bites) {
+        expect(bite).not.toHaveProperty('cards');
+        expect(bite.cardCount).toBeGreaterThan(0);
+      }
+    }
+
+    const chunkLevels = { a1: ['A1'], a2: ['A2'], b1: ['B1'], b2c1: ['B2', 'C1'] };
+    const partition = [];
+    for (const [chunkName, levels] of Object.entries(chunkLevels)) {
+      const chunk = JSON.parse(readFileSync(join(root, 'src', 'lib', 'bites', `${chunkName}.json`), 'utf8'));
+      for (const chapter of chunk.chapters) {
+        expect(levels).toContain(chapterLevel(chapter.number));
+        expect(chapter.bites.every((bite) => Array.isArray(bite.cards) && bite.cards.length > 0)).toBe(true);
+      }
+      partition.push(...chunk.chapters);
+    }
+    expect(partition).toEqual(monolithic.chapters);
+    expect(new Set(partition.map((chapter) => chapter.id)).size).toBe(monolithic.chapters.length);
+
+    const { loadChapterCards } = await import('../../src/lib/courseData.js');
+    const [a1First, a1Again, a2First] = await Promise.all([
+      loadChapterCards('chapter-01'),
+      loadChapterCards('chapter-01'),
+      loadChapterCards('chapter-12'),
+    ]);
+    expect(a1Again).toBe(a1First);
+    expect(a1First[0].cards.length).toBe(index.chapters[0].bites[0].cardCount);
+    expect(a2First[0].cards.length).toBe(index.chapters[11].bites[0].cardCount);
+  });
+
+  it('invalidates an older async selection when a newer one begins', async () => {
+    const { createLatestRequest } = await import('../../src/lib/courseData.js');
+    const beginRequest = createLatestRequest();
+    const first = beginRequest();
+    const second = beginRequest();
+
+    expect(first()).toBe(false);
+    expect(second()).toBe(true);
+  });
+});
 
 describe('guessTarget', () => {
   const w = (hangul, pos) => ({ hangul, partOfSpeech: pos, english: 'x' });

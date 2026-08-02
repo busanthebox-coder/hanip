@@ -50,7 +50,7 @@
               <button class="bite" on:click={() => onPlay(ch, bite)}>
                 <span class="b-kind">{KIND_KO[bite.kind] || bite.kind}</span>
                 <span class="b-title">{bite.title}</span>
-                <span class="b-state">{state.done[bite.id] ? '✓' : `${bite.cards.length}장`}</span>
+                <span class="b-state">{state.done[bite.id] ? '✓' : `${bite.cardCount}장`}</span>
               </button>
             {/each}
           </div>

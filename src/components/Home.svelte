@@ -20,11 +20,7 @@
   }
 
   function headWord(bite) {
-    const guess = bite.cards.find((c) => c.kind === 'guess');
-    if (guess) return guess.word.ko;
-    const hunt = bite.cards.find((c) => c.kind === 'hunt' || c.kind === 'teach');
-    if (hunt) return hunt.name;
-    return bite.title.split('·').pop().trim();
+    return bite.firstWord || bite.title.split('·').pop().trim();
   }
   function hookLine(next) {
     const kindMap = {

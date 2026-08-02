@@ -2,10 +2,21 @@ import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync } from 
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { compileChapter } from './lib/compiler.mjs';
+import { chapterLevel } from '../src/lib/levels.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const srcDir = join(root, 'data', 'chapters');
 const outFile = join(root, 'src', 'lib', 'bites.json');
+const indexFile = join(root, 'src', 'lib', 'bites-index.json');
+const chunksDir = join(root, 'src', 'lib', 'bites');
+
+function firstWord(bite) {
+  const guess = bite.cards.find((card) => card.kind === 'guess');
+  if (guess) return guess.word.ko;
+  const named = bite.cards.find((card) => card.kind === 'hunt' || card.kind === 'teach');
+  if (named?.name) return named.name;
+  return bite.title.split('·').pop().trim();
+}
 
 const overrides = JSON.parse(readFileSync(join(root, 'data', 'overrides.json'), 'utf8'));
 const files = readdirSync(srcDir).filter((f) => f.endsWith('.json')).sort();
@@ -39,6 +50,39 @@ if (existsSync(wordbookPath)) {
 
 mkdirSync(dirname(outFile), { recursive: true });
 writeFileSync(outFile, JSON.stringify({ generatedFrom: files.length + ' chapters', chapters }, null, 1));
+
+const indexChapters = chapters.map((chapter) => ({
+  id: chapter.id,
+  number: chapter.number,
+  title: chapter.title,
+  goal: chapter.goal,
+  level: chapterLevel(chapter.number),
+  biteCount: chapter.biteCount,
+  bites: chapter.bites.map((bite) => ({
+    id: bite.id,
+    kind: bite.kind,
+    title: bite.title,
+    cardCount: bite.cards.length,
+    canDo: bite.canDo,
+    firstWord: firstWord(bite),
+  })),
+}));
+writeFileSync(indexFile, JSON.stringify({ generatedFrom: files.length + ' chapters', chapters: indexChapters }, null, 1));
+
+mkdirSync(chunksDir, { recursive: true });
+const chunkLevels = {
+  a1: ['A1'],
+  a2: ['A2'],
+  b1: ['B1'],
+  b2c1: ['B2', 'C1'],
+};
+for (const [name, levels] of Object.entries(chunkLevels)) {
+  const chunkChapters = chapters.filter((chapter) => levels.includes(chapterLevel(chapter.number)));
+  writeFileSync(
+    join(chunksDir, `${name}.json`),
+    JSON.stringify({ generatedFrom: files.length + ' chapters', chapters: chunkChapters }, null, 1),
+  );
+}
 
 const totals = chapters.reduce(
   (acc, ch) => {
