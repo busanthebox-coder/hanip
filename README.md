@@ -3,7 +3,7 @@
 **하루 한 입, 3분.** Korean in bites, not chapters.
 
 A phone-first Korean course that reslices [Korean Core Starter](https://github.com/busanthebox-coder/korean-core-starter)'s
-A1 material into ~3-minute tap-only rounds. Same content, inverted order:
+65-chapter A1–C1 course into ~3-minute tap-only rounds. Same content, inverted order:
 **you guess before you're told.**
 
 ## The idea
@@ -50,9 +50,18 @@ npm install
 npm run dev        # compiles bites, then serves
 npm test           # compiler unit tests
 npm run build      # compile → validate → bundle
+npm run guard:full # compile → validate → baseline → tests → bundle budget
+npm run smoke:stats
 ```
 
 ## Status
 
-A1 only — 11 chapters, 89 bites, 334 cards. Bilingual UI (한국어 · English).
-Progress, learned-word pool, and daily bowls live in localStorage.
+65 chapters across A1–C1 compile to 619 chapter bites and 2,039 chapter cards. The shelf also carries
+12 snack bites (173 cards), 20 short readers, and all 32 confusable expression sets. The bilingual
+wordbook contains 718 course words with lazy-loaded nuance, mistakes, forms, examples, and contrast cards.
+
+Home recommends the next chapter bite or boundary snack from one shared calculator, shows the current
+level, and restores an unfinished item through Continue. Progress, learned-word pool, daily bowls, and
+the last-played item live in localStorage; snack skips last only for the current session.
+
+Migration evidence and known extraction limits are recorded in [`docs/harness/RELEASE.md`](docs/harness/RELEASE.md).

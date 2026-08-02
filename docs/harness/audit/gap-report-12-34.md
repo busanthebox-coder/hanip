@@ -7,7 +7,7 @@
 - Pattern bites: 59
 - hunt: 37
 - teach fallback: 22
-- Guess cards with a sentence and null target: 36
+- Guess cards with a sentence and null target: 15
 
 ## Pattern bites
 
@@ -18,7 +18,7 @@
 | 13 | chapter-13-b2 | teach fallback | -(ㄴ/는)다고 하다 |
 | 13 | chapter-13-b4 | hunt | -냐고 하다 |
 | 14 | chapter-14-b2 | hunt | -기로 하다 |
-| 14 | chapter-14-b4 | hunt | -(으)ㄹ까 봐 |
+| 14 | chapter-14-b4 | teach fallback | -(으)ㄹ까 봐 |
 | 14 | chapter-14-b6 | teach fallback | -게 되다 |
 | 15 | chapter-15-b2 | hunt | -는 척하다 |
 | 15 | chapter-15-b4 | teach fallback | -(으)ㄹ 뻔하다 |
@@ -28,7 +28,7 @@
 | 16 | chapter-16-b6 | hunt | -는 바람에 |
 | 16 | chapter-16-b7 | teach fallback | -(으)ㄹ수록 |
 | 16 | chapter-16-b8 | hunt | -기 위해서 |
-| 17 | chapter-17-b2 | teach fallback | V았/었어요 |
+| 17 | chapter-17-b2 | hunt | V았/었어요 |
 | 18 | chapter-18-b2 | hunt | V-(으)ㄹ 거예요 |
 | 19 | chapter-19-b2 | teach fallback | Question words (누구, 뭐, 어디, 언제, 왜, 어떻게, 몇, 얼마) |
 | 20 | chapter-20-b2 | teach fallback | Two number systems: native (하나·둘·셋) vs. Sino-Korean (일·이·삼) |
@@ -80,36 +80,15 @@
 | 12 | chapter-12-b3 | 아쉽다 | 끝이 좀 아쉬운 것 같아요.<br>I think the end was a bit unsatisfying. |
 | 13 | chapter-13-b3 | 계시다 | 사장님이 지금 자리에 안 계세요.<br>The boss isn't at his desk right now. |
 | 13 | chapter-13-b5 | 뵙다 | 내일 교수님을 뵐 수 있을까요?<br>Would it be possible to see the professor tomorrow? |
-| 14 | chapter-14-b5 | 알게 되다 | 나중에 그 사실을 알게 됐어요.<br>I found out that fact later (it came to me). |
 | 15 | chapter-15-b1 | 두려움 | 그 사람 표정을 보니까 많이 두려워하나 봐요.<br>From that person's expression, I guess they're really afraid. |
 | 15 | chapter-15-b1 | 분노 | 팀장님 말투가 그러는 걸 보니까 화나신 건가 봐요.<br>The way the team leader is talking, I'm guessing they're angry. |
 | 15 | chapter-15-b3 | 까다롭다 | 심사 기준이 까다로운가 봐요. 다들 탈락했네요.<br>I guess the judging criteria are strict — everyone got eliminated. |
 | 15 | chapter-15-b5 | 티나다 | 자는 척했는데 티가 났나 봐요.<br>I pretended to be asleep but I guess it was obvious. |
-| 16 | chapter-16-b1 | 취소되다 | 비가 오는 바람에 행사가 취소됐어요.<br>The event got cancelled because of the rain. |
-| 16 | chapter-16-b3 | 폐지되다 | 시청률이 낮더니 드라마가 폐지됐어요.<br>The ratings were low, and in the end the drama was cancelled. |
-| 17 | chapter-17-b1 | 먹다 | 식당에서 저녁을 먹었어요.<br>I ate dinner at a restaurant. |
 | 20 | chapter-20-b1 | 둘 | 커피 두 잔 주세요.<br>Please give me two cups of coffee. |
 | 20 | chapter-20-b1 | 셋 | 세 시에 수업이 있어요.<br>I have class at three o'clock. |
 | 21 | chapter-21-b1 | 큰 | 큰 가방은 여행할 때 편해요.<br>A big bag is convenient when traveling. |
 | 23 | chapter-23-b3 | 타다 | 버스를 타러 정류장에 가요.<br>I go to the bus stop to take the bus. |
-| 24 | chapter-24-b5 | 부탁하다 | 작은 부탁 하나 해도 될까요?<br>May I ask one small favor? |
-| 27 | chapter-27-b5 | 만들다 | 발표 자료를 만드는 중이에요.<br>I am making presentation materials. |
-| 29 | chapter-29-b1 | 가다 | 학교에 가다가 전화를 받았어요.<br>I got a call while going to school. |
-| 29 | chapter-29-b1 | 먹다 | 밥을 먹다가 전화가 왔어요.<br>A call came while I was eating. |
-| 29 | chapter-29-b1 | 보다 | 영화를 보다가 잠들었어요.<br>I fell asleep while watching the movie. |
-| 29 | chapter-29-b1 | 취소하다 | 수업이 취소됐어요.<br>The class was canceled. |
-| 29 | chapter-29-b3 | 받다 | 전화를 받았어요.<br>I got a phone call. |
 | 29 | chapter-29-b3 | 서다 | 사람들이 줄을 서 있어요.<br>People are standing in line. |
-| 29 | chapter-29-b5 | 쉬다 | 조금 쉬다가 다시 갈 거예요.<br>I will rest a little and then go again. |
-| 30 | chapter-30-b3 | 고장나다 | 버스가 고장 나는 바람에 오래 기다렸어요.<br>The bus broke down, so I waited for a long time. |
-| 31 | chapter-31-b3 | 준비하다 | 방학 동안 취업 준비를 할 거예요.<br>I will prepare for employment during vacation. |
-| 31 | chapter-31-b3 | 머물다 | 한국에 머무는 동안 많이 연습할 거예요.<br>While I stay in Korea, I will practice a lot. |
-| 32 | chapter-32-b3 | 늘다 | 한국어를 매일 쓰니까 실력이 늘었어요.<br>Because I use Korean every day, my skill improved. |
-| 32 | chapter-32-b3 | 줄다 | 운동을 시작하고 스트레스가 줄었어요.<br>After I started exercising, my stress decreased. |
-| 32 | chapter-32-b3 | 살다 | 회사 일 때문에 한국에 살게 됐어요.<br>Because of work, I ended up living in Korea. |
-| 32 | chapter-32-b5 | 맡다 | 새 일을 맡게 됐어요.<br>I ended up taking charge of a new task. |
-| 32 | chapter-32-b5 | 자다 | 오늘부터 일찍 자기로 했어요.<br>I decided to sleep early starting today. |
-| 33 | chapter-33-b3 | 말하다 | 격식 있는 자리에서는 천천히 말합니다.<br>In a formal setting, I speak slowly. |
 | 34 | chapter-34-b1 | 계시다 | 사장님은 지금 안 계세요.<br>The boss is not here right now. |
 | 34 | chapter-34-b1 | 드시다 | 선생님이 커피를 드세요.<br>The teacher drinks coffee. |
 | 34 | chapter-34-b1 | 주무시다 | 부모님은 일찍 주무세요.<br>My parents sleep early. |

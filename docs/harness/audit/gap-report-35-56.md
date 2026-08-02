@@ -5,9 +5,9 @@
 - Chapters: 22
 - Bites: 242
 - Pattern bites: 113
-- hunt: 67
-- teach fallback: 46
-- Guess cards with a sentence and null target: 20
+- hunt: 65
+- teach fallback: 48
+- Guess cards with a sentence and null target: 0
 
 ## Pattern bites
 
@@ -90,10 +90,10 @@
 | 50 | chapter-50-b4 | hunt | V/A-(으)ㄹ 텐데 |
 | 50 | chapter-50-b6 | hunt | A/V-(으)면 |
 | 50 | chapter-50-b7 | hunt | N 때문에 |
-| 50 | chapter-50-b8 | hunt | V/A-(으)ㄹ 때 |
+| 50 | chapter-50-b8 | teach fallback | V/A-(으)ㄹ 때 |
 | 51 | chapter-51-b2 | hunt | V-아/어 보세요 |
 | 51 | chapter-51-b4 | hunt | V-아/어 주시겠어요? |
-| 51 | chapter-51-b6 | teach fallback | A/V-아/어 보이다 |
+| 51 | chapter-51-b6 | teach fallback | A-아/어 보이다 |
 | 51 | chapter-51-b7 | teach fallback | A-(으)ㄴ N |
 | 51 | chapter-51-b8 | hunt | N보다 (더) |
 | 52 | chapter-52-b2 | hunt | N 주세요 |
@@ -119,7 +119,7 @@
 | 55 | chapter-55-b6 | hunt | V-(으)려고 해요 |
 | 55 | chapter-55-b7 | hunt | A/V-(으)면 |
 | 55 | chapter-55-b8 | hunt | N 때문에 |
-| 55 | chapter-55-b9 | hunt | V-(으)ㄹ 때 |
+| 55 | chapter-55-b9 | teach fallback | V-(으)ㄹ 때 |
 | 56 | chapter-56-b2 | hunt | V/A-잖아요 |
 | 56 | chapter-56-b4 | hunt | V/A-거든요 |
 | 56 | chapter-56-b6 | hunt | V/A-는데요 |
@@ -129,25 +129,4 @@
 
 ## Guess cards with a sentence and null target
 
-| Chapter | Bite | Word | Example |
-|---:|---|---|---|
-| 35 | chapter-35-b3 | 말을 꺼내다 | 자료가 늦어진 이야기는 제가 먼저 말을 꺼낼게요.<br>I will bring up the delayed materials first. |
-| 36 | chapter-36-b5 | 알게 되다 | 직접 가 보니까 왜 유명한지 알게 됐어요.<br>After going there myself, I found out why it is famous. |
-| 37 | chapter-37-b1 | 다고 했어요 | 선생님이 금요일에 본다고 하셨어요.<br>The teacher said we will take it on Friday. |
-| 37 | chapter-37-b1 | 는지 | 시험이 언제인지 알아요?<br>Do you know when the exam is? |
-| 37 | chapter-37-b1 | 라고 하다 | 선생님이 숙제를 제출하라고 하셨어요.<br>The teacher told us to submit the homework. |
-| 39 | chapter-39-b1 | 수밖에 없다 | 마감이 오늘이라서 야근할 수밖에 없어요.<br>The deadline is today, so we have no choice but to work late. |
-| 39 | chapter-39-b1 | 리가 없다 | 지금 포기할 리가 없어요.<br>There is no way we would give up now. |
-| 39 | chapter-39-b1 | 뿐이다 | 남은 건 이 방법뿐이에요.<br>The only thing left is this method. |
-| 41 | chapter-41-b3 | 묻다 | 모르면 선생님께 물어봐요.<br>If you do not know, ask the teacher. |
-| 41 | chapter-41-b5 | 빨갛다 | 얼굴이 빨개요.<br>Your face is red. |
-| 41 | chapter-41-b5 | 파랗다 | 오늘 하늘이 파래요.<br>The sky is blue today. |
-| 41 | chapter-41-b5 | 노랗다 | 바나나가 노래요.<br>The banana is yellow. |
-| 41 | chapter-41-b5 | 알다 | 이 단어를 아세요?<br>Do you know this word? |
-| 41 | chapter-41-b5 | 살다 | 어디 사세요?<br>Where do you live? |
-| 44 | chapter-44-b3 | 닫다 | 닫다는 [닫따]처럼 들려요.<br>닫다 sounds like [닫따]. |
-| 44 | chapter-44-b3 | 좋다 | 좋다는 [조타]처럼 들려요.<br>좋다 sounds like [조타]. |
-| 44 | chapter-44-b3 | 한국어를 잘 못해요 | 못해요는 [모태요]처럼 들려요.<br>못해요 sounds like [모태요]. |
-| 45 | chapter-45-b3 | 싫다 | 가기 싫은 건 아니에요.<br>It is not that I do not want to go. |
-| 47 | chapter-47-b5 | 오다 | 어머니께서 오셨어요.<br>My mother came. |
-| 49 | chapter-49-b3 | 포함되다 | 인터넷이 관리비에 포함돼 있어요.<br>Internet is included in the maintenance fee. |
+None.
