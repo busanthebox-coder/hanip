@@ -435,118 +435,6 @@
    1
   ]
  },
- "읽다": {
-  "ko": "읽다",
-  "romanization": "ikda",
-  "en": "to read",
-  "pos": "verb",
-  "chapter": "1·5",
-  "ex": {
-   "ko": "한글을 천천히 읽어요.",
-   "en": "I read Hangul slowly.",
-   "note": "Focus on reading the Hangul shape before checking romanization."
-  },
-  "collocations": [
-   "한글을 읽다",
-   "글자를 읽다",
-   "천천히 읽다"
-  ],
-  "nuance": "읽다 has pronunciation changes, but beginners can first memorize 읽어요 as the practical polite form.",
-  "explanation": "\"to read\" in Korean is 읽다 (ikda). In real conversation you will lean on the polite form 읽어요, so make that your default and leave the bare dictionary form 읽다 for study notes. Grow outward from one concrete line — 책을 읽어요 (\"read a book.\") — then reshape the same stem into 읽고 싶어요 (desire), 읽을 수 있어요 (ability), and 못 읽어요 (a real limit) as the moment needs. The stem stays put; only the ending moves.",
-  "shortExplanation": "읽다 means \"to read\" and is practiced through polite conversation forms.",
-  "commonMistakes": [
-   "Do not use the dictionary form 읽다 as a complete polite sentence.",
-   "Use 읽어요 as the default until you know the relationship is casual."
-  ],
-  "conjugationTips": [
-   {
-    "title": "ㄹ / 을 — can & will",
-    "body": "To say \"can\" or the future, attach ㄹ/을 to the stem: a vowel-final stem takes ㄹ and a consonant-final stem takes 을. 읽다 becomes 읽을 수 있어요 (\"can\") and 읽을 거예요 (\"will\"). That is why 가다 → 갈 수 있어요 (not 가을), while 먹다 → 먹을 수 있어요. The same ㄹ/을 choice drives 거예요 and the noun-describing form."
-   }
-  ],
-  "usagePhrases": [
-   {
-    "ko": "읽어요",
-    "romanization": "ilgeoyo",
-    "en": "I read.",
-    "note": "Safe polite present form."
-   },
-   {
-    "ko": "안 읽어요",
-    "romanization": "an ilgeoyo",
-    "en": "I do not read.",
-    "note": "Short everyday negative."
-   },
-   {
-    "ko": "읽고 싶어요",
-    "romanization": "ilkgo sipeoyo",
-    "en": "I want to read.",
-    "note": "Useful for choices and plans."
-   },
-   {
-    "ko": "읽을 수 있어요",
-    "romanization": "ilgeul su isseoyo",
-    "en": "I can read.",
-    "note": "Ability or possibility."
-   },
-   {
-    "ko": "읽어야 해요",
-    "romanization": "ilgeoya haeyo",
-    "en": "I have to read.",
-    "note": "Requirement or obligation."
-   },
-   {
-    "ko": "책을 읽어요",
-    "romanization": "chaegeul ilgeoyo",
-    "en": "read a book.",
-    "note": "Object marker 을."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "책을 읽어요.",
-    "romanization": "chaegeul ilgeoyo.",
-    "en": "I read a book.",
-    "note": "Common object."
-   },
-   {
-    "ko": "이 문장을 읽어 주세요.",
-    "romanization": "i munjangeul ilgeo juseyo.",
-    "en": "Please read this sentence.",
-    "note": "Classroom."
-   },
-   {
-    "ko": "한글을 읽을 수 있어요.",
-    "romanization": "hangeureul ilgeul su isseoyo.",
-    "en": "I can read Hangul.",
-    "note": "Ability."
-   }
-  ],
-  "forms": {
-   "dictionary": "읽다",
-   "casualPresent": "읽어",
-   "politePresent": "읽어요",
-   "formalPresent": "읽습니다",
-   "negative": "안 읽어요",
-   "past": "읽었어요",
-   "future": "읽을 거예요",
-   "want": "읽고 싶어요",
-   "can": "읽을 수 있어요",
-   "cannot": "못 읽어요",
-   "must": "읽어야 해요",
-   "dontHaveTo": "안 읽어도 돼요",
-   "pleaseDo": "읽어 주세요",
-   "pleaseDont": "읽지 마세요",
-   "shallWe": "읽을까요?"
-  },
-  "irregular": null,
-  "level": "A1",
-  "cluster": null,
-  "chapters": [
-   1,
-   5
-  ]
- },
  "쓰다": {
   "ko": "쓰다",
   "romanization": "sseuda",
@@ -657,267 +545,6 @@
   "chapters": [
    1,
    5
-  ]
- },
- "듣다": {
-  "ko": "듣다",
-  "romanization": "deutda",
-  "en": "to listen",
-  "pos": "verb",
-  "chapter": "1·5",
-  "ex": {
-   "ko": "소리를 듣고 따라 해요.",
-   "en": "I listen to the sound and repeat it.",
-   "note": "Useful first-lesson action; the irregular form 들어요 is learned later."
-  },
-  "collocations": [
-   "소리를 듣다",
-   "다시 듣다",
-   "듣고 따라 하다"
-  ],
-  "nuance": "듣다 is ㄷ irregular: 듣다 becomes 들어요 in polite speech.",
-  "explanation": "듣다 (deutda) means \"to listen\". Start from the polite form 들어요 — it is safe with almost anyone, so use it before the dictionary form 듣다. A strong first sentence is 음악을 들어요 (\"listen to music.\"); once that feels natural, swap the noun, place, or time and reuse the verb everywhere. Korean changes the ending rather than the word, so the same 듣다 also becomes 듣고 싶어요 (want), 들을 수 있어요 (can), and 못 들어요 (cannot). Say one true sentence about classroom communication, study plans, and asking for repetition or help, then bend it.",
-  "shortExplanation": "듣다 means \"to listen\" and is practiced through polite conversation forms.",
-  "commonMistakes": [
-   "Do not use the dictionary form 듣다 as a complete polite sentence.",
-   "Use 들어요 as the default until you know the relationship is casual.",
-   "듣다 changes to 들어요, not 듣어요."
-  ],
-  "conjugationTips": [
-   {
-    "title": "ㄹ / 을 — can & will",
-    "body": "To say \"can\" or the future, attach ㄹ/을 to the stem: a vowel-final stem takes ㄹ and a consonant-final stem takes 을. 듣다 becomes 들을 수 있어요 (\"can\") and 들을 거예요 (\"will\"). That is why 가다 → 갈 수 있어요 (not 가을), while 먹다 → 먹을 수 있어요. The same ㄹ/을 choice drives 거예요 and the noun-describing form."
-   },
-   {
-    "title": "Irregular stem: ㄷ → ㄹ",
-    "body": "듣다 is a ㄷ-irregular verb. The final ㄷ becomes ㄹ before a vowel ending, so it conjugates to 들어요, never the literal ㄷ + 어요. The ㄷ stays ㄷ before a consonant ending (듣고, 듣습니다)."
-   }
-  ],
-  "usagePhrases": [
-   {
-    "ko": "들어요",
-    "romanization": "deureoyo",
-    "en": "I listen.",
-    "note": "Safe polite present form."
-   },
-   {
-    "ko": "안 들어요",
-    "romanization": "an deureoyo",
-    "en": "I do not listen.",
-    "note": "Short everyday negative."
-   },
-   {
-    "ko": "듣고 싶어요",
-    "romanization": "deutgo sipeoyo",
-    "en": "I want to listen.",
-    "note": "Useful for choices and plans."
-   },
-   {
-    "ko": "들을 수 있어요",
-    "romanization": "deureul su isseoyo",
-    "en": "I can listen.",
-    "note": "Ability or possibility."
-   },
-   {
-    "ko": "들어야 해요",
-    "romanization": "deureoya haeyo",
-    "en": "I have to listen.",
-    "note": "Requirement or obligation."
-   },
-   {
-    "ko": "음악을 들어요",
-    "romanization": "eumageul deureoyo",
-    "en": "listen to music.",
-    "note": "Common object."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "음악을 들어요.",
-    "romanization": "eumageul deureoyo.",
-    "en": "I listen to music.",
-    "note": "Common use."
-   },
-   {
-    "ko": "다시 들어도 돼요?",
-    "romanization": "dasi deureodo dwaeyo?",
-    "en": "May I listen again?",
-    "note": "Permission."
-   },
-   {
-    "ko": "소리가 잘 안 들려요.",
-    "romanization": "soriga jal an deullyeoyo.",
-    "en": "I cannot hear the sound well.",
-    "note": "Related expression."
-   }
-  ],
-  "forms": {
-   "dictionary": "듣다",
-   "casualPresent": "들어",
-   "politePresent": "들어요",
-   "formalPresent": "듣습니다",
-   "negative": "안 들어요",
-   "past": "들었어요",
-   "future": "들을 거예요",
-   "want": "듣고 싶어요",
-   "can": "들을 수 있어요",
-   "cannot": "못 들어요",
-   "must": "들어야 해요",
-   "dontHaveTo": "안 들어도 돼요",
-   "pleaseDo": "들어 주세요",
-   "pleaseDont": "듣지 마세요",
-   "shallWe": "들을까요?"
-  },
-  "irregular": "ㄷ irregular",
-  "level": "A1",
-  "cluster": null,
-  "chapters": [
-   1,
-   5
-  ]
- },
- "말하다": {
-  "ko": "말하다",
-  "romanization": "malhada",
-  "en": "to speak / to say",
-  "pos": "verb",
-  "chapter": "1·8·9·33",
-  "ex": {
-   "ko": "한국어로 말할 수 있어요.",
-   "en": "I can speak in Korean.",
-   "note": "말하다 → stem 말하 + ㄹ 수 있어요 → 말할 수 있어요; often used to express language ability"
-  },
-  "collocations": [
-   "말하고 싶어요",
-   "말할 수 있어요",
-   "못 말해요",
-   "천천히 말해요"
-  ],
-  "nuance": "Use 로 for language: 한국어로 말해요, 영어로 말해요. 말하다 can mean both “speak” and “say,” so the object or quote decides the English translation.",
-  "explanation": "\"to speak / say\" in Korean is 말하다 (malhada). In real conversation you will lean on the polite form 말해요, so make that your default and leave the bare dictionary form 말하다 for study notes. Grow outward from one concrete line — 천천히 말해요 (\"speak slowly.\") — then reshape the same stem into 말하고 싶어요 (desire), 말할 수 있어요 (ability), and 말 못 해요 (a real limit) as the moment needs. The stem stays put; only the ending moves.",
-  "shortExplanation": "말하다 means \"to speak / say\" and is practiced through polite conversation forms.",
-  "commonMistakes": [
-   "Do not use the dictionary form 말하다 as a complete polite sentence.",
-   "Use 말해요 as the default until you know the relationship is casual."
-  ],
-  "conjugationTips": [
-   {
-    "title": "ㄹ / 을 — can & will",
-    "body": "To say \"can\" or the future, attach ㄹ/을 to the stem: a vowel-final stem takes ㄹ and a consonant-final stem takes 을. 말하다 becomes 말할 수 있어요 (\"can\") and 말할 거예요 (\"will\"). That is why 가다 → 갈 수 있어요 (not 가을), while 먹다 → 먹을 수 있어요. The same ㄹ/을 choice drives 거예요 and the noun-describing form."
-   }
-  ],
-  "usagePhrases": [
-   {
-    "ko": "말해요",
-    "romanization": "malhaeyo",
-    "en": "I speak / say.",
-    "note": "Safe polite present form."
-   },
-   {
-    "ko": "말 안 해요",
-    "romanization": "mal an haeyo",
-    "en": "I do not speak / say.",
-    "note": "Short everyday negative."
-   },
-   {
-    "ko": "말하고 싶어요",
-    "romanization": "malhago sipeoyo",
-    "en": "I want to speak / say.",
-    "note": "Useful for choices and plans."
-   },
-   {
-    "ko": "말할 수 있어요",
-    "romanization": "malhal su isseoyo",
-    "en": "I can speak / say.",
-    "note": "Ability or possibility."
-   },
-   {
-    "ko": "말해야 해요",
-    "romanization": "malhaeya haeyo",
-    "en": "I have to speak / say.",
-    "note": "Requirement or obligation."
-   },
-   {
-    "ko": "천천히 말해요",
-    "romanization": "cheoncheonhi malhaeyo",
-    "en": "speak slowly.",
-    "note": "Useful request frame."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "한국어로 말해요.",
-    "romanization": "hangugeoro malhaeyo.",
-    "en": "I speak in Korean.",
-    "note": "Language marker 로."
-   },
-   {
-    "ko": "천천히 말해 주세요.",
-    "romanization": "cheoncheonhi malhae juseyo.",
-    "en": "Please speak slowly.",
-    "note": "Request."
-   },
-   {
-    "ko": "지금 말해도 돼요?",
-    "romanization": "jigeum malhaedo dwaeyo?",
-    "en": "May I speak now?",
-    "note": "Permission."
-   }
-  ],
-  "forms": {
-   "dictionary": "말하다",
-   "casualPresent": "말해",
-   "politePresent": "말해요",
-   "formalPresent": "말합니다",
-   "negative": "말 안 해요",
-   "past": "말했어요",
-   "future": "말할 거예요",
-   "want": "말하고 싶어요",
-   "can": "말할 수 있어요",
-   "cannot": "말 못 해요",
-   "must": "말해야 해요",
-   "dontHaveTo": "말 안 해도 돼요",
-   "pleaseDo": "말해 주세요",
-   "pleaseDont": "말하지 마세요",
-   "shallWe": "말할까요?"
-  },
-  "irregular": null,
-  "level": "A1",
-  "cluster": {
-   "title": "말하다 vs 이야기하다",
-   "rule": "Use 말하다 for producing words — saying one thing, or speaking a language. Use 이야기하다 when there's a back-and-forth or a story being told: chatting with someone, usually marked with 와/과 or 하고.",
-   "members": [
-    {
-     "ko": "말하다",
-     "en": "to speak / say",
-     "romanization": "malhada",
-     "when": "saying something, naming a language",
-     "hint": "the plain \"say it\" verb",
-     "example": {
-      "ko": "천천히 말해 주세요.",
-      "en": "Please speak slowly."
-     },
-     "self": true
-    },
-    {
-     "ko": "이야기하다",
-     "en": "to talk",
-     "romanization": "iyagihada",
-     "when": "chatting or telling about something",
-     "hint": "the two-way chat verb, with 하고/와",
-     "example": {
-      "ko": "친구하고 이야기해요.",
-      "en": "I'm chatting with a friend."
-     },
-     "self": false
-    }
-   ]
-  },
-  "chapters": [
-   1,
-   8,
-   9,
-   33
   ]
  },
  "따라 하다": {
@@ -2544,7 +2171,7 @@
   "romanization": "haksaeng",
   "en": "student",
   "pos": "noun",
-  "chapter": "2·3",
+  "chapter": "2·3·43·46",
   "ex": {
    "ko": "저는 한국어 학생이에요.",
    "en": "I am a Korean language student.",
@@ -2615,7 +2242,9 @@
   "cluster": null,
   "chapters": [
    2,
-   3
+   3,
+   43,
+   46
   ]
  },
  "선생님": {
@@ -2623,7 +2252,7 @@
   "romanization": "seonsaengnim",
   "en": "teacher / instructor",
   "pos": "noun",
-  "chapter": "2·3·33·34",
+  "chapter": "2·3·33·34·42",
   "ex": {
    "ko": "선생님, 안녕하세요!",
    "en": "Hello, teacher!",
@@ -2696,7 +2325,8 @@
    2,
    3,
    33,
-   34
+   34,
+   42
   ]
  },
  "처음": {
@@ -2917,166 +2547,6 @@
   "cluster": null,
   "chapters": [
    2,
-   3
-  ]
- },
- "의사": {
-  "ko": "의사",
-  "romanization": "uisa",
-  "en": "doctor",
-  "pos": "noun",
-  "chapter": "3",
-  "ex": {
-   "ko": "제 친구는 의사예요.",
-   "en": "My friend is a doctor.",
-   "note": "의사 ends in vowel ㅏ → 예요; 제 is the possessive form of 저 (my)"
-  },
-  "collocations": [
-   "의사예요",
-   "의사 선생님",
-   "병원 의사"
-  ],
-  "nuance": "의사 is Sino-Korean 醫師 ('medicine' 醫 + 'master/teacher' 師), so the word literally frames a doctor as a master of medicine — which is why Koreans almost reflexively append 선생님 (의사 선생님) when addressing or referring to one, the way English keeps 'Doctor' as a title. Saying bare 의사 to or about a specific physician can sound flat or even slightly disrespectful, like calling them 'the doc'. Distinguish 의사 (the licensed physician) from 의자 'chair', which differs by a single vowel and trips up beginners constantly, and from 환자 'patient' and 간호사 'nurse', the other people in the room. The natural verb is 환자를 보다 ('see patients') or 진료를 보다/받다, never the English-style '의사를 하다'; a doctor 의사가 되다 ('becomes' a doctor), with the goal marked by 가, not 을.",
-  "explanation": "의사 (uisa) means \"doctor\". Learn it inside a frame, not as a bare word: a useful first chunk is 의사 선생님 (\"doctor (polite address)\"). In Korean the particle or ending next to 의사 signals its job — topic, subject, object, place, time, method, or description — so read the examples for the small piece beside it. Start with one real sentence about talking about work, schedules, tasks, and obligations, then change a single part.",
-  "shortExplanation": "의사 means \"doctor\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Saying 의사님 by analogy with other -님 titles; Koreans actually say 의사 선생님, treating 선생님 itself as the honorific.",
-   "Writing 의사를 되고 싶어요 with 를; the thing you become takes 가/이, so it must be 의사가 되고 싶어요.",
-   "Confusing 의사 'doctor' with the near-identical 의자 'chair' — one wrong vowel changes the whole sentence."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "의사 선생님",
-    "romanization": "uisa seonsaengnim",
-    "en": "doctor (polite address)",
-    "note": "add 선생님 when speaking to or about a doctor respectfully"
-   },
-   {
-    "ko": "의사한테 진료를 받다",
-    "romanization": "uisahante jillyoreul batda",
-    "en": "get examined by a doctor",
-    "note": "받다 'receive' is the verb that pairs with 진료, not 하다"
-   },
-   {
-    "ko": "의사가 되다",
-    "romanization": "uisaga doeda",
-    "en": "become a doctor",
-    "note": "goal/result takes 가/이, never 을/를"
-   },
-   {
-    "ko": "병원에서 일하다",
-    "romanization": "byeongwoneseo ilhada",
-    "en": "work at a hospital",
-    "note": "에서 marks the place where an action happens"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "저는 의사예요.",
-    "romanization": "jeoneun uisayeyo.",
-    "en": "I am a doctor.",
-    "note": "plain self-introduction; 예요 attaches after the vowel-final 의사"
-   },
-   {
-    "ko": "감기에 걸리면 의사한테 가요.",
-    "romanization": "gamgie geollimyeon uisahante gayo.",
-    "en": "If you catch a cold, you go to the doctor.",
-    "note": "한테 = casual 'to (a person)'; note 감기에 걸리다 'be caught by a cold'"
-   },
-   {
-    "ko": "할머니께서는 마을에서 오래 환자를 보신 의사세요.",
-    "romanization": "halmeonikkeseoneun maeureseo orae hwanjareul bosin uisaseyo.",
-    "en": "Grandmother is a doctor who long looked after patients in the village.",
-    "note": "환자를 보다 'see patients' is the idiom for a doctor practicing"
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A1",
-  "cluster": null,
-  "chapters": [
-   3
-  ]
- },
- "회사원": {
-  "ko": "회사원",
-  "romanization": "hoesawon",
-  "en": "office worker",
-  "pos": "noun",
-  "chapter": "3",
-  "ex": {
-   "ko": "저는 회사원이에요.",
-   "en": "I am an office worker.",
-   "note": "회사원 ends in consonant 받침 ㄴ → 이에요; 회사(company) + 원(member/worker)"
-  },
-  "collocations": [
-   "회사원이에요",
-   "저는 회사원이에요",
-   "직장인"
-  ],
-  "nuance": "회사원 is 會社員 ('company-member'), literally a member of a company, and it is the neutral catch-all a salaried employee of a private firm gives when asked 무슨 일 하세요? Contrast it with 직장인, which means 'a working person' in general (anyone with a paid job, including teachers or nurses): every 회사원 is a 직장인, but not every 직장인 is a 회사원. Also separate it from 사업가, the owner who runs the business — a 회사원 is employed by someone else. The pitfall for English speakers is twofold: 회사원 ends in a consonant so the copula is 회사원이에요, never 'office worker'-style 회사원예요; and don't translate 'I work at a company' as a job title — to name the job you simply say 회사원이에요 rather than literally rendering the English sentence.",
-  "explanation": "\"office worker\" is 회사원 (hoesawon). The word itself is easy; what matters is the company it keeps, like 저는 회사원이에요. (\"I am an office worker.\"). Watch the particle attached to 회사원 in each example — that little marker, not the word, tells you whether it is the topic, the subject, the object, or a place. Copy one full sentence about talking about work, schedules, tasks, and obligations first, then vary one word.",
-  "shortExplanation": "회사원 means \"office worker\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Saying 회사원예요 — wrong, because 원 ends in a consonant you must use 이에요: 회사원이에요.",
-   "Using 회사원 for a self-employed shop owner — that person is 자영업자 or 사장님; 회사원 is specifically a salaried employee of someone else's company.",
-   "Calling any working adult 회사원 — a nurse or teacher is a 직장인 but not a 회사원; 회사원 implies a typical office/company job."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "저는 회사원이에요.",
-    "romanization": "jeoneun hoesawonieyo.",
-    "en": "I am an office worker.",
-    "note": "이에요 after a final consonant (원)"
-   },
-   {
-    "ko": "회사원이 많아요.",
-    "romanization": "hoesawoni manayo.",
-    "en": "There are many office workers.",
-    "note": "subject 이 after consonant"
-   },
-   {
-    "ko": "평범한 회사원",
-    "romanization": "pyeongbeomhan hoesawon",
-    "en": "an ordinary office worker",
-    "note": "평범하다 = ordinary, a very common pairing"
-   },
-   {
-    "ko": "회사원이 되고 싶어요.",
-    "romanization": "hoesawoni doego sipeoyo.",
-    "en": "I want to become an office worker.",
-    "note": "되다 takes 이/가, not 을/를"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "저는 회사원이에요.",
-    "romanization": "jeoneun hoesawonieyo.",
-    "en": "I'm an office worker.",
-    "note": "the default polite way to state your job"
-   },
-   {
-    "ko": "우리 형은 은행에서 일하는 회사원이에요.",
-    "romanization": "uri hyeongeun eunhaengeseo ilhaneun hoesawonieyo.",
-    "en": "My older brother is an office worker at a bank.",
-    "note": "에서 marks the workplace where the action happens"
-   },
-   {
-    "ko": "회사원들은 보통 아침 아홉 시까지 출근해요.",
-    "romanization": "hoesawondeureun botong achim ahop sikkaji chulgeunhaeyo.",
-    "en": "Office workers usually clock in by nine in the morning.",
-    "note": "출근하다 'go to work' is the verb that lives with 회사원"
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A1",
-  "cluster": null,
-  "chapters": [
    3
   ]
  },
@@ -3522,7 +2992,7 @@
   "romanization": "hangugeo",
   "en": "Korean language",
   "pos": "noun",
-  "chapter": "3·31",
+  "chapter": "3·31·44",
   "ex": {
    "ko": "이건 한국어예요.",
    "en": "This is Korean (the language).",
@@ -3569,7 +3039,8 @@
   "cluster": null,
   "chapters": [
    3,
-   31
+   31,
+   44
   ]
  },
  "영어": {
@@ -3738,88 +3209,6 @@
    19
   ]
  },
- "시간": {
-  "ko": "시간",
-  "romanization": "sigan",
-  "en": "time",
-  "pos": "noun",
-  "chapter": "4·6·11·20",
-  "ex": {
-   "ko": "지금 시간이 있어요?",
-   "en": "Do you have time right now?",
-   "note": "시간 ends in consonant ㄴ → 시간이. The presence lamp: is time available?"
-  },
-  "collocations": [
-   "시간이 있다",
-   "시간이 없다",
-   "시간이 많다",
-   "시간이 없어요 (I'm busy)"
-  ],
-  "nuance": "시간 works with 있어요/없어요 and is essential for scheduling.",
-  "explanation": "시간 (sigan) = \"time\". Treat it as a building block that needs a frame: 시간이 있어요 (\"I have time.\") shows how it actually behaves. The grammar lives in the particle or ending beside 시간, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about basic everyday communication and swap just one element to make it yours.",
-  "shortExplanation": "시간 means \"time\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Do not use 시간을 있어요 for “have time”; say 시간이 있어요."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "시간이 있어요",
-    "romanization": "sigani isseoyo",
-    "en": "I have time.",
-    "note": "Existence/possession."
-   },
-   {
-    "ko": "시간이 없어요",
-    "romanization": "sigani eopseoyo",
-    "en": "I do not have time.",
-    "note": "Absence."
-   },
-   {
-    "ko": "시간이 있으면",
-    "romanization": "sigani isseumyeon",
-    "en": "if you have time.",
-    "note": "Condition."
-   },
-   {
-    "ko": "몇 시예요?",
-    "romanization": "myeot siyeyo?",
-    "en": "What time is it?",
-    "note": "Related question."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "시간이 있어요?",
-    "romanization": "sigani isseoyo?",
-    "en": "Do you have time?",
-    "note": "Question."
-   },
-   {
-    "ko": "오늘은 시간이 없어요.",
-    "romanization": "oneureun sigani eopseoyo.",
-    "en": "I do not have time today.",
-    "note": "Topic + subject."
-   },
-   {
-    "ko": "시간이 있으면 전화해 주세요.",
-    "romanization": "sigani isseumyeon jeonhwahae juseyo.",
-    "en": "If you have time, please call.",
-    "note": "Condition."
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A1",
-  "cluster": null,
-  "chapters": [
-   4,
-   6,
-   11,
-   20
-  ]
- },
  "예약": {
   "ko": "예약",
   "romanization": "yeyak",
@@ -3886,7 +3275,7 @@
   "romanization": "don",
   "en": "money",
   "pos": "noun",
-  "chapter": "4",
+  "chapter": "4·42",
   "ex": {
    "ko": "지금 돈이 없어요.",
    "en": "I don't have money right now.",
@@ -3957,89 +3346,8 @@
   "level": "A1",
   "cluster": null,
   "chapters": [
-   4
-  ]
- },
- "문제": {
-  "ko": "문제",
-  "romanization": "munje",
-  "en": "problem / issue",
-  "pos": "noun",
-  "chapter": "4·25·30",
-  "ex": {
-   "ko": "문제가 없어요.",
-   "en": "There is no problem.",
-   "note": "문제 ends in vowel 에 → 문제가. A very common reassurance phrase."
-  },
-  "collocations": [
-   "문제가 있다",
-   "문제가 없다",
-   "문제가 생기다 (a problem arises)"
-  ],
-  "nuance": "문제(問題, 'ask + topic') has two everyday senses English keeps apart: a trouble or difficulty ('we have a problem') AND a question on a test or exercise ('problem 3'). Crucially, both are solved with the same verb 풀다 (literally 'to untie/loosen') — 문제를 풀다 works for a math item and for a real-life difficulty alike, where English would switch to 'answer' vs 'solve.' Other key partners: 문제가 생기다 (a problem arises), 문제가 되다 (to become an issue), and the handy one-word 문제없어요 ('no problem'). Contrast 문제 with 질문 (a question you ASK someone to get information) — a test 문제 is a problem to solve, but raising your hand to ask is 질문하다, not 문제하다. The English-speaker pitfall is the subject/object split: existence and arising take 이 (문제가 있다/생기다), but solving takes 를 (문제를 풀다) — learners often say 문제가 풀어요.",
-  "explanation": "문제 (munje) = \"problem\". Treat it as a building block that needs a frame: 문제가 있어요 (\"there is a problem\") shows how it actually behaves. The grammar lives in the particle or ending beside 문제, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about basic everyday communication and swap just one element to make it yours.",
-  "shortExplanation": "문제 means \"problem\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Saying 문제가 풀어요. Solving is transitive — the problem is the object → 문제를 풀어요.",
-   "Using 문제 for a question you ask. To ask someone something is 질문(을) 하다; 문제 is a problem/test item, not an inquiry.",
-   "Saying 문제를 있어요. 있다 marks existence with the subject — it must be 문제가 있어요."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "문제가 있어요",
-    "romanization": "munjega isseoyo",
-    "en": "there is a problem",
-    "note": "있다 = exist; subject 이"
-   },
-   {
-    "ko": "문제를 풀어요",
-    "romanization": "munjereul pureoyo",
-    "en": "I solve the problem",
-    "note": "풀다 = solve/untie; object 를"
-   },
-   {
-    "ko": "문제가 생겨요",
-    "romanization": "munjega saenggyeoyo",
-    "en": "a problem arises",
-    "note": "생기다 = come into being; subject 이"
-   },
-   {
-    "ko": "문제없어요",
-    "romanization": "munjeeopseoyo",
-    "en": "no problem / it's fine",
-    "note": "one-word reassurance, very common"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "여기 작은 문제가 하나 있어요.",
-    "romanization": "yeogi jageun munjega hana isseoyo.",
-    "en": "There's one small problem here.",
-    "note": "Simple: 문제가 있다 — a problem exists (subject 이)."
-   },
-   {
-    "ko": "수학 문제를 다 풀었어요.",
-    "romanization": "suhang munjereul da pureosseoyo.",
-    "en": "I solved all the math problems.",
-    "note": "Everyday: 문제를 풀다 also covers test questions; object 를."
-   },
-   {
-    "ko": "그건 전혀 문제가 안 돼요.",
-    "romanization": "geugeon jeonhyeo munjega an dwaeyo.",
-    "en": "That's not a problem at all.",
-    "note": "Real situation: 문제가 되다 / 안 되다 = (not) become an issue."
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A2",
-  "cluster": null,
-  "chapters": [
    4,
-   25,
-   30
+   42
   ]
  },
  "화장실": {
@@ -4047,7 +3355,7 @@
   "romanization": "hwajangsil",
   "en": "bathroom / restroom",
   "pos": "noun",
-  "chapter": "4·10",
+  "chapter": "4·10·49",
   "ex": {
    "ko": "여기 화장실이 있어요?",
    "en": "Is there a bathroom here?",
@@ -4118,7 +3426,8 @@
   "cluster": null,
   "chapters": [
    4,
-   10
+   10,
+   49
   ]
  },
  "친구": {
@@ -4126,7 +3435,7 @@
   "romanization": "chingu",
   "en": "friend",
   "pos": "noun",
-  "chapter": "4·17·18·33",
+  "chapter": "4·17·18·33·42·62",
   "ex": {
    "ko": "여기에 친구가 있어요.",
    "en": "My friend is here.",
@@ -4199,7 +3508,9 @@
    4,
    17,
    18,
-   33
+   33,
+   42,
+   62
   ]
  },
  "방": {
@@ -4367,7 +3678,7 @@
   "romanization": "mul",
   "en": "water",
   "pos": "noun",
-  "chapter": "4·5",
+  "chapter": "4·5·42",
   "ex": {
    "ko": "물이 없어요.",
    "en": "There is no water.",
@@ -4438,7 +3749,8 @@
   "cluster": null,
   "chapters": [
    4,
-   5
+   5,
+   42
   ]
  },
  "시간이 있다": {
@@ -4922,7 +4234,7 @@
   "romanization": "jota",
   "en": "to be good / to like",
   "pos": "adjective",
-  "chapter": "4",
+  "chapter": "4·44",
   "ex": {
    "ko": "커피가 좋아요.",
    "en": "I like coffee. / Coffee is good.",
@@ -4997,7 +4309,8 @@
   "level": "A1",
   "cluster": null,
   "chapters": [
-   4
+   4,
+   44
   ]
  },
  "먹다": {
@@ -5005,7 +4318,7 @@
   "romanization": "meokda",
   "en": "to eat",
   "pos": "verb",
-  "chapter": "5·6·8·17·18·27·28·29",
+  "chapter": "5·6·8·17·18·27·28·29·44·45·57·60",
   "ex": {
    "ko": "맵지 않은 것을 먹고 싶어요.",
    "en": "I want to eat something that isn't spicy.",
@@ -5116,7 +4429,11 @@
    18,
    27,
    28,
-   29
+   29,
+   44,
+   45,
+   57,
+   60
   ]
  },
  "마시다": {
@@ -5237,7 +4554,7 @@
   "romanization": "undonghada",
   "en": "to exercise",
   "pos": "verb",
-  "chapter": "5·8·31·32",
+  "chapter": "5·8·31·32·60",
   "ex": {
    "ko": "요즘 바빠서 운동 못 해요.",
    "en": "Lately I'm busy so I can't exercise.",
@@ -5347,7 +4664,8 @@
    5,
    8,
    31,
-   32
+   32,
+   60
   ]
  },
  "일하다": {
@@ -5543,84 +4861,6 @@
    5
   ]
  },
- "책": {
-  "ko": "책",
-  "romanization": "chaek",
-  "en": "book",
-  "pos": "noun",
-  "chapter": "5",
-  "ex": {
-   "ko": "책을 읽어요.",
-   "en": "I read a book.",
-   "note": "책 ends in consonant ㄱ → 을; reading is directed at the book."
-  },
-  "collocations": [
-   "책을 읽다",
-   "책을 안 읽다",
-   "한국어 책을 읽다"
-  ],
-  "nuance": "책 is useful with 읽다, 사다, 있다, and 없다. It also helps beginners practice object marker 을 because 책 ends in a consonant.",
-  "explanation": "책 (chaek) means \"book\". Learn it inside a frame, not as a bare word: a useful first chunk is 책을 읽어요 (\"I read a book.\"). In Korean the particle or ending next to 책 signals its job — topic, subject, object, place, time, method, or description — so read the examples for the small piece beside it. Start with one real sentence about classroom communication, study plans, and asking for repetition or help, then change a single part.",
-  "shortExplanation": "책 means \"book\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Use 책을 읽어요 for reading a book, not 책을 봐요 as your first beginner frame."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "책을 읽어요",
-    "romanization": "chaegeul ilgeoyo",
-    "en": "I read a book.",
-    "note": "Object."
-   },
-   {
-    "ko": "책이 있어요",
-    "romanization": "chaegi isseoyo",
-    "en": "There is a book.",
-    "note": "Subject."
-   },
-   {
-    "ko": "한국어 책",
-    "romanization": "hangugeo chaek",
-    "en": "Korean book.",
-    "note": "Noun phrase."
-   },
-   {
-    "ko": "책을 사요",
-    "romanization": "chaegeul sayo",
-    "en": "I buy a book.",
-    "note": "Shopping."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "책을 읽어요.",
-    "romanization": "chaegeul ilgeoyo.",
-    "en": "I read a book.",
-    "note": "Object."
-   },
-   {
-    "ko": "한국어 책이 있어요.",
-    "romanization": "hangugeo chaegi isseoyo.",
-    "en": "There is a Korean book.",
-    "note": "Subject."
-   },
-   {
-    "ko": "이 책을 사고 싶어요.",
-    "romanization": "i chaegeul sago sipeoyo.",
-    "en": "I want to buy this book.",
-    "note": "Desire."
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A1",
-  "cluster": null,
-  "chapters": [
-   5
-  ]
- },
  "매일": {
   "ko": "매일",
   "romanization": "maeil",
@@ -5779,164 +5019,6 @@
   "cluster": null,
   "chapters": [
    5
-  ]
- },
- "학교": {
-  "ko": "학교",
-  "romanization": "hakgyo",
-  "en": "school",
-  "pos": "noun",
-  "chapter": "6",
-  "ex": {
-   "ko": "학교에서 한국어를 공부해요.",
-   "en": "I study Korean at school.",
-   "note": "에서 — studying is an action"
-  },
-  "collocations": [
-   "학교에 가다",
-   "학교에서 공부하다",
-   "학교에 있다"
-  ],
-  "nuance": "학교 is one of the clearest words for practicing 에 vs 에서.",
-  "explanation": "학교 (hakgyo) = \"school\". Treat it as a building block that needs a frame: 학교에 가요 (\"I go to school.\") shows how it actually behaves. The grammar lives in the particle or ending beside 학교, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about classroom communication, study plans, and asking for repetition or help and swap just one element to make it yours.",
-  "shortExplanation": "학교 means \"school\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Say 학교에 가요 for destination, not 학교에서 가요."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "학교에 가요",
-    "romanization": "hakgyoe gayo",
-    "en": "I go to school.",
-    "note": "Destination."
-   },
-   {
-    "ko": "학교에서 공부해요",
-    "romanization": "hakgyoeseo gongbuhaeyo",
-    "en": "I study at school.",
-    "note": "Action place."
-   },
-   {
-    "ko": "학교예요",
-    "romanization": "hakgyoyeyo",
-    "en": "It is a school.",
-    "note": "Noun sentence."
-   },
-   {
-    "ko": "학교에 있어요",
-    "romanization": "hakgyoe isseoyo",
-    "en": "I am at school.",
-    "note": "Existence place."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "학교에 가요.",
-    "romanization": "hakgyoe gayo.",
-    "en": "I go to school.",
-    "note": "Destination."
-   },
-   {
-    "ko": "학교에서 한국어를 공부해요.",
-    "romanization": "hakgyoeseo hangugeoreul gongbuhaeyo.",
-    "en": "I study Korean at school.",
-    "note": "Action place."
-   },
-   {
-    "ko": "지금 학교에 있어요.",
-    "romanization": "jigeum hakgyoe isseoyo.",
-    "en": "I am at school now.",
-    "note": "Location."
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A1",
-  "cluster": null,
-  "chapters": [
-   6
-  ]
- },
- "도서관": {
-  "ko": "도서관",
-  "romanization": "doseogwan",
-  "en": "library",
-  "pos": "noun",
-  "chapter": "6",
-  "ex": {
-   "ko": "도서관에서 책을 읽어요.",
-   "en": "I read books at the library.",
-   "note": "에서 — reading is an active action"
-  },
-  "collocations": [
-   "도서관에 가다",
-   "도서관에서 공부하다",
-   "도서관에서 읽다"
-  ],
-  "nuance": "도서관 is Sino-Korean 圖書館, literally 'pictures-books-building' (圖 picture + 書 writing/book + 館 hall), a public place to read, study, and borrow books where quiet is expected. The sharp contrast learners must hold is 도서관 vs 서점: a 도서관 is a LIBRARY where you borrow (빌리다) for free, while a 서점 is a BOOKSTORE where you buy (사다) — English 'library' and Spanish/French false friends like 'librería' push learners to mix these up. Note also 도서관 (the building) vs 도서 (books as items/collection). Register is neutral. Natural collocations: 도서관에서 공부하다, 책을 빌리다/반납하다, 도서관에 자리가 없다. The English-speaker pitfall, beyond the library/bookstore mix-up, is the particle split: study or read AT a library is 에서 (도서관에서), but going TO it is 에 (도서관에 가다).",
-  "explanation": "도서관 (doseogwan) = \"library\". Treat it as a building block that needs a frame: 조용한 도서관 (\"quiet library\") shows how it actually behaves. The grammar lives in the particle or ending beside 도서관, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about getting around, reservations, directions, photos, and emergency help and swap just one element to make it yours.",
-  "shortExplanation": "도서관 means \"library\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Using 도서관 when you mean a place that sells books. A bookstore is a 서점; 도서관 is strictly for borrowing, not buying.",
-   "Saying 도서관에서 가요 for 'I go to the library.' Motion verb 가다 needs 에 (도서관에 가요); use 에서 only for studying/reading done there.",
-   "Pairing 도서관 with 사다 (buy) for the books inside. At a 도서관 you 빌리다 (borrow) and 반납하다 (return), you do not 사다."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "조용한 도서관",
-    "romanization": "joyonghan doseogwan",
-    "en": "quiet library",
-    "note": "조용한 is the modifier form of 조용하다"
-   },
-   {
-    "ko": "도서관에 가요",
-    "romanization": "doseogwane gayo",
-    "en": "I go to the library",
-    "note": "에 marks the destination of 가다"
-   },
-   {
-    "ko": "도서관에서 공부해요",
-    "romanization": "doseogwaneseo gongbuhaeyo",
-    "en": "I study at the library",
-    "note": "에서 marks where the studying happens"
-   },
-   {
-    "ko": "책을 빌려요",
-    "romanization": "chaegeul billyeoyo",
-    "en": "I borrow a book",
-    "note": "빌리다 = borrow; the verb that pairs with 도서관"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "도서관이 조용해요.",
-    "romanization": "doseogwani joyonghaeyo.",
-    "en": "The library is quiet.",
-    "note": "Simple description; subject 이 + adjective 조용해요."
-   },
-   {
-    "ko": "도서관에서 책을 빌렸어요.",
-    "romanization": "doseogwaneseo chaegeul billyeosseoyo.",
-    "en": "I borrowed a book at the library.",
-    "note": "에서 marks the place of the action 빌리다."
-   },
-   {
-    "ko": "시험 기간이라 도서관에 자리가 하나도 없더라고요.",
-    "romanization": "siheom giganira doseogwane jariga hanado eopsdeoragoyo.",
-    "en": "It's exam season, so there wasn't a single open seat at the library.",
-    "note": "Real situation: -(이)라 'because it is' + retrospective -더라고요."
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A2",
-  "cluster": null,
-  "chapters": [
-   6
   ]
  },
  "카페": {
@@ -6343,7 +5425,7 @@
   "romanization": "gada",
   "en": "to go",
   "pos": "verb",
-  "chapter": "6·8·17·18·29",
+  "chapter": "6·8·17·18·29·45",
   "ex": {
    "ko": "오늘은 못 가요. 내일 갈 수 있어요.",
    "en": "I can't go today. I can go tomorrow.",
@@ -6451,7 +5533,8 @@
    8,
    17,
    18,
-   29
+   29,
+   45
   ]
  },
  "오다": {
@@ -6459,7 +5542,7 @@
   "romanization": "oda",
   "en": "to come",
   "pos": "verb",
-  "chapter": "6·8·17",
+  "chapter": "6·8·17·47·50",
   "ex": {
    "ko": "오늘 파티에 올 수 있어요?",
    "en": "Can you come to the party today?",
@@ -6565,7 +5648,9 @@
   "chapters": [
    6,
    8,
-   17
+   17,
+   47,
+   50
   ]
  },
  "있다": {
@@ -6604,7 +5689,7 @@
   "romanization": "gidarida",
   "en": "to wait",
   "pos": "verb",
-  "chapter": "6·9·27",
+  "chapter": "6·9·27·58",
   "ex": {
    "ko": "잠깐 기다려 주세요.",
    "en": "Please wait a moment.",
@@ -6738,87 +5823,8 @@
   "chapters": [
    6,
    9,
-   27
-  ]
- },
- "아침": {
-  "ko": "아침",
-  "romanization": "achim",
-  "en": "morning",
-  "pos": "noun",
-  "chapter": "6",
-  "ex": {
-   "ko": "아침에 학교에 가요.",
-   "en": "I go to school in the morning.",
-   "note": "아침에 sets the time; 학교에 marks the destination"
-  },
-  "collocations": [
-   "아침에",
-   "아침 시간",
-   "아침에 가다"
-  ],
-  "nuance": "아침 is a native Korean word that does double duty: the early part of the day (roughly sunrise to mid-morning) and the breakfast meal — the same way English 'morning' differs from the meal but Korean merges the breakfast sense into the time word. The grammar disambiguates: with 에 (아침에) it's the time, with 을 (아침을 먹다) it's the food. Contrast 아침 vs 오전: 아침 is the felt, lived early morning, while 오전 午前 is the neutral clock-AM you put on timetables — so 아침에 일어나요 (waking life) but 오전 9시 회의 (a scheduled item). Habitual partners: 아침에 일어나다/운동하다, 아침을 먹다/거르다 ('skip breakfast'), 아침 일찍, 매일 아침. The big English-speaker pitfall is using 오전 for the breakfast meal — 오전 is only the clock period and can never name food, so 'eat breakfast' must be 아침을 먹다, never 오전을 먹다. Also don't force 에 onto the meal sense: you eat 아침을, you don't 'eat at morning'.",
-  "explanation": "아침 (achim) = \"morning; also breakfast\". Treat it as a building block that needs a frame: 아침에 (\"in the morning\") shows how it actually behaves. The grammar lives in the particle or ending beside 아침, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about basic everyday communication and swap just one element to make it yours.",
-  "shortExplanation": "아침 means \"morning; also breakfast\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Saying 오전을 먹어요 for 'eat breakfast' — 오전 is only the clock-AM span; the meal is 아침, so it must be 아침을 먹어요.",
-   "Marking the breakfast meal with 에 (아침에 먹어요 meaning the food) — as a meal-object it needs 을: 아침을 먹어요. 아침에 먹어요 only means 'eat (something) in the morning'.",
-   "Assuming 아침 always equals clock-morning like 오전 — on schedules and tickets Koreans switch to 오전 9시; 아침 is the lived, informal morning."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "아침에",
-    "romanization": "achime",
-    "en": "in the morning",
-    "note": "time + 에 for the time-when reading"
-   },
-   {
-    "ko": "아침을 먹어요",
-    "romanization": "achimeul meogeoyo",
-    "en": "eat breakfast",
-    "note": "here 아침 is the meal, so it takes object 을"
-   },
-   {
-    "ko": "매일 아침",
-    "romanization": "maeil achim",
-    "en": "every morning",
-    "note": "매일 + 아침 = habitual time phrase"
-   },
-   {
-    "ko": "아침 일찍",
-    "romanization": "achim iljjik",
-    "en": "early in the morning",
-    "note": "아침 + adverb 일찍, a set collocation"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "아침에 커피를 마셔요.",
-    "romanization": "achime keopireul masyeoyo.",
-    "en": "I drink coffee in the morning.",
-    "note": "basic: 아침에 = the time slot"
-   },
-   {
-    "ko": "저는 아침을 안 먹어요.",
-    "romanization": "jeoneun achimeul an meogeoyo.",
-    "en": "I don't eat breakfast.",
-    "note": "everyday: 아침 + 을 shows it's the MEAL, object of 먹다"
-   },
-   {
-    "ko": "아침 일찍 출발하면 길이 안 막혀요.",
-    "romanization": "achim iljjik chulbalhamyeon giri an makyeoyo.",
-    "en": "If we leave early in the morning, traffic won't be jammed.",
-    "note": "real-situation: 아침 일찍 set phrase + conditional 면"
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A1",
-  "cluster": null,
-  "chapters": [
-   6
+   27,
+   58
   ]
  },
  "오후": {
@@ -6971,84 +5977,6 @@
     "romanization": "oneul jeonyeoge sigan gwaenchaneumyeon gachi siksahaeyo.",
     "en": "If you're free this evening, let's eat together.",
     "note": "real-situation: 저녁에 (time) + polite invitation 식사하다"
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A1",
-  "cluster": null,
-  "chapters": [
-   6
-  ]
- },
- "병원": {
-  "ko": "병원",
-  "romanization": "byeongwon",
-  "en": "hospital / clinic",
-  "pos": "noun",
-  "chapter": "6",
-  "ex": {
-   "ko": "병원에 가요.",
-   "en": "I go to the hospital.",
-   "note": "가다 is movement, so 병원 takes 에 as the destination"
-  },
-  "collocations": [
-   "병원에 가다",
-   "병원에서 기다리다",
-   "병원에 있다"
-  ],
-  "nuance": "병원 can mean hospital or clinic in everyday Korean.",
-  "explanation": "\"hospital / clinic\" is 병원 (byeongwon). The word itself is easy; what matters is the company it keeps, like 병원에 가요 (\"I go to the hospital/clinic.\"). Watch the particle attached to 병원 in each example — that little marker, not the word, tells you whether it is the topic, the subject, the object, or a place. Copy one full sentence about saying what hurts, asking for rest, and explaining basic health needs first, then vary one word.",
-  "shortExplanation": "병원 means \"hospital / clinic\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Use 병원에 가요 for going to the clinic; the place of an action uses 병원에서."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "병원에 가요",
-    "romanization": "byeongwone gayo",
-    "en": "I go to the hospital/clinic.",
-    "note": "Destination."
-   },
-   {
-    "ko": "병원에 가야 해요",
-    "romanization": "byeongwone gaya haeyo",
-    "en": "I have to go to the hospital.",
-    "note": "Obligation."
-   },
-   {
-    "ko": "병원이 어디예요?",
-    "romanization": "byeongwoni eodiyeyo?",
-    "en": "Where is the hospital?",
-    "note": "Question."
-   },
-   {
-    "ko": "병원에서 기다려요",
-    "romanization": "byeongwoneseo gidaryeoyo",
-    "en": "I wait at the hospital.",
-    "note": "Action place."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "아파서 병원에 가요.",
-    "romanization": "apaseo byeongwone gayo.",
-    "en": "I am sick, so I go to the hospital.",
-    "note": "Reason."
-   },
-   {
-    "ko": "내일 병원에 가야 해요.",
-    "romanization": "naeil byeongwone gaya haeyo.",
-    "en": "I have to go to the clinic tomorrow.",
-    "note": "Schedule."
-   },
-   {
-    "ko": "병원이 어디예요?",
-    "romanization": "byeongwoni eodiyeyo?",
-    "en": "Where is the hospital?",
-    "note": "Question."
    }
   ],
   "forms": null,
@@ -8040,92 +6968,12 @@
    7
   ]
  },
- "할인": {
-  "ko": "할인",
-  "romanization": "halin",
-  "en": "discount",
-  "pos": "noun",
-  "chapter": "7",
-  "ex": {
-   "ko": "학생 할인 돼요?",
-   "en": "Is there a student discount?",
-   "note": "할인 + 돼요? is the pattern to ask about discounts; 학생 할인, 앱 할인, 포인트 할인 all work the same way"
-  },
-  "collocations": [
-   "할인 돼요?",
-   "할인 받다",
-   "할인 카드"
-  ],
-  "nuance": "할인(割引) is Sino-Korean — 割 'cut' + 引 'pull (down)' — literally 'cut and pull down', i.e. knock money off a price. The key contrast for learners is 할인 vs 세일: 할인 is the abstract act/amount of reducing a price on an item ('10% off', a discount), while 세일 (from English 'sale') names a store-wide selling event (백화점 세일 a department-store sale). So a 세일 contains many 할인s. Watch the voice carefully: from the price's point of view you say 할인이 되다/할인되다 ('it gets discounted'); from your point of view as buyer you say 할인을 받다 ('I receive a discount'); and to actively ask for one you say 할인해 주세요 ('please discount it for me'). The English-speaker pitfall is firing 할인해요 at a clerk hoping it means 'give me a discount' — bare 할인해요 just states 'someone discounts', so it lands as a flat description, not a request. Add 주세요/돼요 to make it work. Common partners: 할인되다, 할인받다, 할인 행사 (discount event), 할인 쿠폰.",
-  "explanation": "\"discount\" is 할인 (harin). The word itself is easy; what matters is the company it keeps, like 할인이 돼요 (\"a discount applies\"). Watch the particle attached to 할인 in each example — that little marker, not the word, tells you whether it is the topic, the subject, the object, or a place. Copy one full sentence about buying things, checking prices, quantities, and payment options first, then vary one word.",
-  "shortExplanation": "할인 means \"discount\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Saying 할인해요 to a clerk to mean 'please give me a discount'. Without 주세요 it is just a statement; the request form is 할인해 주세요 or the softer 좀 깎아 주세요.",
-   "Mixing up the receiver: customers say 할인을 받다 (receive a discount), shops say 할인을 해 주다 (give a discount). Saying 할인을 줘요 about yourself ('I give a discount') reverses the roles.",
-   "Using 세일 when you mean a discount on one item. 'This bag is 30% off' is 이 가방은 30퍼센트 할인이에요, not 세일이에요 — 세일 is the whole event, not the single markdown."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "할인이 돼요",
-    "romanization": "harini dwaeyo",
-    "en": "a discount applies",
-    "note": "할인 + 되다 'gets done'; the price-side passive, 'it is discounted'"
-   },
-   {
-    "ko": "할인을 받아요",
-    "romanization": "harineul badayo",
-    "en": "I get a discount",
-    "note": "받다 'receive' — you, the customer, are the receiver"
-   },
-   {
-    "ko": "할인해 주세요",
-    "romanization": "harinhae juseyo",
-    "en": "please give me a discount",
-    "note": "할인하다 + 주다; what you actually say to bargain"
-   },
-   {
-    "ko": "할인 받을 수 있어요?",
-    "romanization": "harin badeul su isseoyo?",
-    "en": "can I get a discount?",
-    "note": "-(으)ㄹ 수 있다 'be able to' for asking if it's possible"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "오늘 이거 할인돼요?",
-    "romanization": "oneul igeo harindwaeyo?",
-    "en": "Is this discounted today?",
-    "note": "simple: 할인되다 as one verb, 'get discounted'"
-   },
-   {
-    "ko": "학생은 할인을 받을 수 있어요?",
-    "romanization": "haksaengeun harineul badeul su isseoyo?",
-    "en": "Can students get a discount?",
-    "note": "everyday: 받다 puts the customer as receiver of the discount"
-   },
-   {
-    "ko": "회원이면 10퍼센트 할인해 드릴게요.",
-    "romanization": "hoewonimyeon 10peosenteu harinhae deurilgeyo.",
-    "en": "If you're a member, I'll give you 10 percent off.",
-    "note": "real situation: a clerk speaking up, using 해 드리다 (humble 'do for you')"
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A2",
-  "cluster": null,
-  "chapters": [
-   7
-  ]
- },
  "맵다": {
   "ko": "맵다",
   "romanization": "maepda",
   "en": "spicy / hot (taste)",
   "pos": "adjective",
-  "chapter": "7·8",
+  "chapter": "7·8·41·52",
   "ex": {
    "ko": "이 음식은 너무 매워서 못 먹어요.",
    "en": "This food is too spicy so I can't eat it.",
@@ -8206,7 +7054,9 @@
   "cluster": null,
   "chapters": [
    7,
-   8
+   8,
+   41,
+   52
   ]
  },
  "하다": {
@@ -8214,7 +7064,7 @@
   "romanization": "hada",
   "en": "to do",
   "pos": "verb",
-  "chapter": "8·17·18",
+  "chapter": "8·17·18·45",
   "ex": {
    "ko": "한국어를 잘하고 싶어요.",
    "en": "I want to get better at Korean.",
@@ -8320,7 +7170,8 @@
   "chapters": [
    8,
    17,
-   18
+   18,
+   45
   ]
  },
  "먹을 수 있다": {
@@ -8417,7 +7268,7 @@
   "romanization": "alda",
   "en": "to know",
   "pos": "verb",
-  "chapter": "8",
+  "chapter": "8·41·59·60·61",
   "ex": {
    "ko": "한국어를 조금 알아요.",
    "en": "I know a little Korean.",
@@ -8569,7 +7420,11 @@
    ]
   },
   "chapters": [
-   8
+   8,
+   41,
+   59,
+   60,
+   61
   ]
  },
  "쉬다": {
@@ -8577,7 +7432,7 @@
   "romanization": "swida",
   "en": "to rest / take a break",
   "pos": "verb",
-  "chapter": "8·27·29",
+  "chapter": "8·27·29·48·60",
   "ex": {
    "ko": "오늘은 좀 쉬고 싶어요.",
    "en": "I want to rest a bit today.",
@@ -8683,7 +7538,9 @@
   "chapters": [
    8,
    27,
-   29
+   29,
+   48,
+   60
   ]
  },
  "바쁘다": {
@@ -9088,84 +7945,6 @@
    24
   ]
  },
- "사진": {
-  "ko": "사진",
-  "romanization": "sajin",
-  "en": "photo / picture",
-  "pos": "noun",
-  "chapter": "9",
-  "ex": {
-   "ko": "사진 찍어도 돼요?",
-   "en": "May I take a photo?",
-   "note": "사진 as object — permission asked using 도 돼요?"
-  },
-  "collocations": [
-   "사진 찍다",
-   "사진 찍어 주세요",
-   "사진 찍지 마세요"
-  ],
-  "nuance": "사진 is usually paired with 찍다 for taking photos.",
-  "explanation": "\"photo\" is 사진 (sajin). The word itself is easy; what matters is the company it keeps, like 사진을 찍어요 (\"I take a photo.\"). Watch the particle attached to 사진 in each example — that little marker, not the word, tells you whether it is the topic, the subject, the object, or a place. Copy one full sentence about getting around, reservations, directions, photos, and emergency help first, then vary one word.",
-  "shortExplanation": "사진 means \"photo\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Use 사진 찍다 for “take a photo,” not 사진을 하다."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "사진을 찍어요",
-    "romanization": "sajineul jjigeoyo",
-    "en": "I take a photo.",
-    "note": "Object."
-   },
-   {
-    "ko": "사진 찍어도 돼요?",
-    "romanization": "sajin jjigeodo dwaeyo?",
-    "en": "May I take a photo?",
-    "note": "Permission."
-   },
-   {
-    "ko": "사진 찍어 주세요",
-    "romanization": "sajin jjigeo juseyo",
-    "en": "Please take a photo.",
-    "note": "Request."
-   },
-   {
-    "ko": "사진을 봐요",
-    "romanization": "sajineul bwayo",
-    "en": "I look at a photo.",
-    "note": "Object."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "사진 찍어도 돼요?",
-    "romanization": "sajin jjigeodo dwaeyo?",
-    "en": "May I take a photo?",
-    "note": "Permission."
-   },
-   {
-    "ko": "사진 찍어 주세요.",
-    "romanization": "sajin jjigeo juseyo.",
-    "en": "Please take a photo.",
-    "note": "Request."
-   },
-   {
-    "ko": "여기서 사진 찍지 마세요.",
-    "romanization": "yeogiseo sajin jjikji maseyo.",
-    "en": "Please do not take photos here.",
-    "note": "Rule."
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A1",
-  "cluster": null,
-  "chapters": [
-   9
-  ]
- },
  "찍다": {
   "ko": "찍다",
   "romanization": "jjikda",
@@ -9195,118 +7974,6 @@
   "cluster": null,
   "chapters": [
    9
-  ]
- },
- "앉다": {
-  "ko": "앉다",
-  "romanization": "anda",
-  "en": "to sit",
-  "pos": "verb",
-  "chapter": "9·29",
-  "ex": {
-   "ko": "여기 앉아도 돼요?",
-   "en": "May I sit here?",
-   "note": "앉아도 돼요? — vowel ending stem: 앉 + 아도 돼요?"
-  },
-  "collocations": [
-   "앉아도 돼요?",
-   "여기 앉으세요",
-   "앉지 마세요"
-  ],
-  "nuance": "앉아 주세요 is a polite request; 앉으세요 is also common and a little more direct.",
-  "explanation": "앉다 (anjda) means \"to sit\". Start from the polite form 앉아요 — it is safe with almost anyone, so use it before the dictionary form 앉다. A strong first sentence is 여기 앉아요 (\"sit here.\"); once that feels natural, swap the noun, place, or time and reuse the verb everywhere. Korean changes the ending rather than the word, so the same 앉다 also becomes 앉고 싶어요 (want), 앉을 수 있어요 (can), and 못 앉아요 (cannot). Say one true sentence about basic everyday communication, then bend it.",
-  "shortExplanation": "앉다 means \"to sit\" and is practiced through polite conversation forms.",
-  "commonMistakes": [
-   "Do not use the dictionary form 앉다 as a complete polite sentence.",
-   "Use 앉아요 as the default until you know the relationship is casual."
-  ],
-  "conjugationTips": [
-   {
-    "title": "ㄹ / 을 — can & will",
-    "body": "To say \"can\" or the future, attach ㄹ/을 to the stem: a vowel-final stem takes ㄹ and a consonant-final stem takes 을. 앉다 becomes 앉을 수 있어요 (\"can\") and 앉을 거예요 (\"will\"). That is why 가다 → 갈 수 있어요 (not 가을), while 먹다 → 먹을 수 있어요. The same ㄹ/을 choice drives 거예요 and the noun-describing form."
-   }
-  ],
-  "usagePhrases": [
-   {
-    "ko": "앉아요",
-    "romanization": "anjayo",
-    "en": "I sit.",
-    "note": "Safe polite present form."
-   },
-   {
-    "ko": "안 앉아요",
-    "romanization": "an anjayo",
-    "en": "I do not sit.",
-    "note": "Short everyday negative."
-   },
-   {
-    "ko": "앉고 싶어요",
-    "romanization": "anjgo sipeoyo",
-    "en": "I want to sit.",
-    "note": "Useful for choices and plans."
-   },
-   {
-    "ko": "앉을 수 있어요",
-    "romanization": "anjeul su isseoyo",
-    "en": "I can sit.",
-    "note": "Ability or possibility."
-   },
-   {
-    "ko": "앉아야 해요",
-    "romanization": "anjaya haeyo",
-    "en": "I have to sit.",
-    "note": "Requirement or obligation."
-   },
-   {
-    "ko": "여기 앉아요",
-    "romanization": "yeogi anjayo",
-    "en": "sit here.",
-    "note": "Common location phrase."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "여기 앉아도 돼요?",
-    "romanization": "yeogi anjado dwaeyo?",
-    "en": "May I sit here?",
-    "note": "Permission."
-   },
-   {
-    "ko": "잠깐 앉아 주세요.",
-    "romanization": "jamkkan anja juseyo.",
-    "en": "Please sit for a moment.",
-    "note": "Request."
-   },
-   {
-    "ko": "저는 바닥에 못 앉아요.",
-    "romanization": "jeoneun badage mot anjayo.",
-    "en": "I cannot sit on the floor.",
-    "note": "Ability."
-   }
-  ],
-  "forms": {
-   "dictionary": "앉다",
-   "casualPresent": "앉아",
-   "politePresent": "앉아요",
-   "formalPresent": "앉습니다",
-   "negative": "안 앉아요",
-   "past": "앉았어요",
-   "future": "앉을 거예요",
-   "want": "앉고 싶어요",
-   "can": "앉을 수 있어요",
-   "cannot": "못 앉아요",
-   "must": "앉아야 해요",
-   "dontHaveTo": "안 앉아도 돼요",
-   "pleaseDo": "앉아 주세요",
-   "pleaseDont": "앉지 마세요",
-   "shallWe": "앉을까요?"
-  },
-  "irregular": null,
-  "level": "A1",
-  "cluster": null,
-  "chapters": [
-   9,
-   29
   ]
  },
  "들어가다": {
@@ -9543,7 +8210,7 @@
   "romanization": "datda",
   "en": "to close",
   "pos": "verb",
-  "chapter": "9·28",
+  "chapter": "9·28·44",
   "ex": {
    "ko": "문 닫아 주세요.",
    "en": "Please close the door.",
@@ -9647,7 +8314,8 @@
   "cluster": null,
   "chapters": [
    9,
-   28
+   28,
+   44
   ]
  },
  "뛰다": {
@@ -10501,7 +9169,7 @@
   "romanization": "moreuda",
   "en": "to not know",
   "pos": "verb",
-  "chapter": "10·26",
+  "chapter": "10·26·41·61",
   "ex": {
    "ko": "잘 모르겠어요.",
    "en": "I'm not quite sure.",
@@ -10612,7 +9280,9 @@
   "cluster": null,
   "chapters": [
    10,
-   26
+   26,
+   41,
+   61
   ]
  },
  "걸리다": {
@@ -11359,121 +10029,6 @@
    11
   ]
  },
- "도착하다": {
-  "ko": "도착하다",
-  "romanization": "dochakada",
-  "en": "to arrive",
-  "pos": "verb",
-  "chapter": "11·28",
-  "ex": {
-   "ko": "도착하면 문자 보낼게요.",
-   "en": "When I arrive, I'll send a text.",
-   "note": "하다 verb + 면 (condition): 도착하 + 면 = 도착하면; paired with ㄹ게요 promise"
-  },
-  "collocations": [
-   "도착하면 연락해요",
-   "이미 도착했어요",
-   "곧 도착할게요"
-  ],
-  "nuance": "도착하다 is Sino-Korean 到着(도착: 到 reach + 着 attach/touch down) plus 하다 — the moment of REACHING and touching a destination. Its mirror is 출발하다(depart), and the key is the particle: you arrive AT a place with 에 (호텔에 도착해요), whereas 출발하다 leaves FROM a place with 에서. Don't confuse it with 들어가다/들어오다(enter): 도착하다 is reaching the destination's threshold, not stepping inside a building. As a 하다 verb, 하 + 아 fuses to 해 (도착해요) and the short negative and inability split the noun off: 도착 안 해요, 도착 못 해요. The classic English-speaker error is copying 'arrive at' as 에서 — 'at' here is the static endpoint 에, so 공항에 도착해요, and 공항에서 도착해요 is wrong.",
-  "explanation": "도착하다 (dochakada) = \"to arrive\". Don't try to memorize all fifteen forms at once; anchor on 도착해요 plus one useful sentence like 공항에 도착해요 (\"I arrive at the airport.\"). After that the endings carry the meaning — 도착하고 싶어요 for what you want, 도착할 수 있어요 for what you can, 도착 못 해요 for what you can't. Keep the stem, change the ending, and one verb gives you a dozen sentences about getting around, reservations, directions, photos, and emergency help.",
-  "shortExplanation": "도착하다 means \"to arrive\" and is practiced through polite conversation forms.",
-  "commonMistakes": [
-   "Do not use the dictionary form 도착하다 as a complete polite sentence.",
-   "Use 도착해요 as the default until you know the relationship is casual.",
-   "Using 에서 for the arrival point (공항에서 도착했어요) by mapping English 'arrive at'. The destination reached takes 에; 에서 marks a source, which belongs to 출발/떠나다.",
-   "Mixing it up with 들어가다 (enter) — 도착하다 means you've reached the place, not that you've walked inside. To go in through the door, use 들어가다.",
-   "Forming inability as 못 도착해요 in this set — the natural split-negative for the 하다 verb is 도착 못 해요, keeping 못 right before 해요."
-  ],
-  "conjugationTips": [
-   {
-    "title": "ㄹ / 을 — can & will",
-    "body": "To say \"can\" or the future, attach ㄹ/을 to the stem: a vowel-final stem takes ㄹ and a consonant-final stem takes 을. 도착하다 becomes 도착할 수 있어요 (\"can\") and 도착할 거예요 (\"will\"). That is why 가다 → 갈 수 있어요 (not 가을), while 먹다 → 먹을 수 있어요. The same ㄹ/을 choice drives 거예요 and the noun-describing form."
-   }
-  ],
-  "usagePhrases": [
-   {
-    "ko": "도착해요",
-    "romanization": "dochakaeyo",
-    "en": "I arrive.",
-    "note": "Safe polite present form."
-   },
-   {
-    "ko": "도착 안 해요",
-    "romanization": "dochak an haeyo",
-    "en": "I do not arrive.",
-    "note": "Short everyday negative."
-   },
-   {
-    "ko": "도착하고 싶어요",
-    "romanization": "dochakago sipeoyo",
-    "en": "I want to arrive.",
-    "note": "Useful for choices and plans."
-   },
-   {
-    "ko": "도착할 수 있어요",
-    "romanization": "dochakal su isseoyo",
-    "en": "I can arrive.",
-    "note": "Ability or possibility."
-   },
-   {
-    "ko": "도착해야 해요",
-    "romanization": "dochakaeya haeyo",
-    "en": "I have to arrive.",
-    "note": "Requirement or obligation."
-   },
-   {
-    "ko": "공항에 도착해요",
-    "romanization": "gonghange dochakaeyo",
-    "en": "I arrive at the airport.",
-    "note": "Arrival point takes 에, never 에서"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "방금 역에 도착했어요.",
-    "romanization": "banggeum yeoge dochakaesseoyo.",
-    "en": "I just got to the station.",
-    "note": "Arrival point 역 takes 에; 도착 + 하 + 았 → 도착했어요."
-   },
-   {
-    "ko": "역에 도착하면 전화해 주세요.",
-    "romanization": "yeoge dochakamyeon jeonhwahae juseyo.",
-    "en": "Call me once you arrive at the station.",
-    "note": "면 = when/once; 주세요 makes it a polite request."
-   },
-   {
-    "ko": "길이 막혀서 제시간에 도착 못 해요.",
-    "romanization": "giri makyeoseo jesigane dochang mo taeyo.",
-    "en": "Traffic's bad, so I can't make it on time.",
-    "note": "Inability splits as 도착 못 해요 around the noun."
-   }
-  ],
-  "forms": {
-   "dictionary": "도착하다",
-   "casualPresent": "도착해",
-   "politePresent": "도착해요",
-   "formalPresent": "도착합니다",
-   "negative": "도착 안 해요",
-   "past": "도착했어요",
-   "future": "도착할 거예요",
-   "want": "도착하고 싶어요",
-   "can": "도착할 수 있어요",
-   "cannot": "도착 못 해요",
-   "must": "도착해야 해요",
-   "dontHaveTo": "도착 안 해도 돼요",
-   "pleaseDo": "도착해 주세요",
-   "pleaseDont": "도착하지 마세요",
-   "shallWe": "도착할까요?"
-  },
-  "irregular": null,
-  "level": "A2",
-  "cluster": null,
-  "chapters": [
-   11,
-   28
-  ]
- },
  "약속": {
   "ko": "약속",
   "romanization": "yakssok",
@@ -11682,7 +10237,7 @@
   "romanization": "meonjeo",
   "en": "first / ahead",
   "pos": "adverb",
-  "chapter": "11·24·28",
+  "chapter": "11·24·28·62",
   "ex": {
    "ko": "저는 먼저 갈게요.",
    "en": "I'll go first.",
@@ -11797,7 +10352,8 @@
   "chapters": [
    11,
    24,
-   28
+   28,
+   62
   ]
  },
  "그럼": {
@@ -11836,7 +10392,7 @@
   "romanization": "munja",
   "en": "text message",
   "pos": "noun",
-  "chapter": "11·29",
+  "chapter": "11·29·62",
   "ex": {
    "ko": "전화 못 하면 문자 보낼게요.",
    "en": "If I can't call, I'll send a text.",
@@ -11909,7 +10465,8 @@
   "cluster": null,
   "chapters": [
    11,
-   29
+   29,
+   62
   ]
  },
  "설명하다": {
@@ -11917,7 +10474,7 @@
   "romanization": "seolmyeonghada",
   "en": "to explain",
   "pos": "verb",
-  "chapter": "11",
+  "chapter": "11·35",
   "ex": {
    "ko": "나중에 만나면 제가 설명할게요.",
    "en": "If we meet later, I'll explain it.",
@@ -12023,7 +10580,8 @@
   "level": "B1",
   "cluster": null,
   "chapters": [
-   11
+   11,
+   35
   ]
  }
 }
