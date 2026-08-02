@@ -5,3 +5,5 @@ src/lib/bites/
 src/lib/wordbook.json
 src/lib/wordbook-depth.json
 src/lib/wordbook-depth/
+.omo/
+.playwright-cli/
