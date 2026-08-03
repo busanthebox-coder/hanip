@@ -1,6 +1,6 @@
 import { get } from 'svelte/store';
 import { beforeEach, describe, expect, it } from 'vitest';
-import { markLastPlayed, progress, resetProgress } from './store.js';
+import { markLastPlayed, progress, resetProgress, warmupCards } from './store.js';
 
 describe('last played progress', () => {
   beforeEach(() => {
@@ -33,5 +33,11 @@ describe('last played progress', () => {
       bowls: {},
       lastPlayed: { biteOrSnackId: 'chapter-01-b2', at: 456 },
     });
+  });
+
+  it('returns no warmups when a learner starts above A1 with an empty recall pool', () => {
+    expect(warmupCards({
+      cards: [{ kind: 'guess', word: { ko: '부탁하다' } }],
+    })).toEqual([]);
   });
 });

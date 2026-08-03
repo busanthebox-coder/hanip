@@ -5,6 +5,7 @@
 
   export let open = false;
   export let onClose = () => {};
+  export let onChangeStart = () => {};
 
   let sheet;
   let closeButton;
@@ -148,6 +149,11 @@
         </div>
       </div>
 
+      <button class="change-start" on:click={() => { onClose(); onChangeStart(); }}>
+        <span>시작점 다시 고르기 · Change starting point</span>
+        <small>1과·2과·12과 중 다시 선택해요. · Choose Chapter 1, 2, or 12 again.</small>
+      </button>
+
       <section class="danger" aria-labelledby="danger-title">
         <div class="danger-cap" id="danger-title">위험 구역 · Danger zone</div>
         {#if resetArmed}
@@ -198,6 +204,10 @@
   .segments button { min-height: 44px; padding: 6px 5px; border-radius: 9px; color: var(--ink-3); font-size: 11.5px; font-weight: 800;
     line-height: 1.25; transition: background var(--duration-micro) var(--ease), color var(--duration-micro) var(--ease); }
   .segments button.on { background: var(--card); color: var(--accent-deep); box-shadow: var(--shadow-1); }
+  .change-start { width: 100%; min-height: 58px; display: grid; gap: 3px; margin-top: var(--space-4); padding: var(--space-3);
+    border: 1px solid var(--line); border-radius: var(--r-chip); background: var(--card); text-align: left; }
+  .change-start span { color: var(--ink); font-size: var(--type-body-sm); font-weight: 850; }
+  .change-start small { color: var(--ink-3); font-size: var(--type-caption); line-height: 1.45; word-break: keep-all; }
   .danger { margin-top: var(--space-6); padding-top: var(--space-4); border-top: 1px solid var(--line); }
   .danger-cap { color: var(--bad); }
   .danger p { margin: var(--space-2) 0 0; color: var(--ink-2); font-size: var(--type-caption); line-height: 1.55; word-break: keep-all; }

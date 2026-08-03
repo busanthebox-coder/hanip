@@ -34,6 +34,8 @@ describe('preferences', () => {
       haptics: true,
       theme: 'auto',
       dailyGoal: 1,
+      startChapter: 1,
+      onboardingDone: false,
     });
   });
 
@@ -47,8 +49,17 @@ describe('preferences', () => {
   it('rejects unknown keys and values outside the preference contract', () => {
     setPref('dailyGoal', 4);
     setPref('theme', 'sepia');
+    setPref('startChapter', 3);
     setPref('unknown', true);
 
     expect(get(prefs)).toEqual(DEFAULT_PREFS);
+  });
+
+  it('persists the selected starting chapter and onboarding completion', () => {
+    setPref('startChapter', 12);
+    setPref('onboardingDone', true);
+
+    expect(get(prefs)).toMatchObject({ startChapter: 12, onboardingDone: true });
+    expect(JSON.parse(localStorage.getItem(PREFS_KEY))).toMatchObject({ startChapter: 12, onboardingDone: true });
   });
 });

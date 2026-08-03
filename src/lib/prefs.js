@@ -8,6 +8,8 @@ export const DEFAULT_PREFS = Object.freeze({
   haptics: true,
   theme: 'auto',
   dailyGoal: 1,
+  startChapter: 1,
+  onboardingDone: false,
 });
 
 const VALID_VALUES = {
@@ -17,6 +19,8 @@ const VALID_VALUES = {
   haptics: new Set([true, false]),
   theme: new Set(['auto', 'light', 'dark']),
   dailyGoal: new Set([1, 2, 3]),
+  startChapter: new Set([1, 2, 12]),
+  onboardingDone: new Set([true, false]),
 };
 
 function valid(key, value) {

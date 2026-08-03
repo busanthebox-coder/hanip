@@ -1,5 +1,6 @@
 <script>
   import SettingsSheet from './SettingsSheet.svelte';
+  import { prefs } from '../lib/prefs.js';
   import { progress, todayKey, weekBowls } from '../lib/store.js';
   import { findById, findNext } from '../lib/nextBite.js';
 
@@ -7,11 +8,12 @@
   export let skippedSnacks = new Set();
   export let onStart = () => {};
   export let onSkipSnack = () => {};
+  export let onChangeStart = () => {};
 
   let settingsOpen = false;
 
   $: state = $progress;
-  $: nextItem = findNext({ index, done: state.done, skippedSnacks });
+  $: nextItem = findNext({ index, done: state.done, skippedSnacks, startChapter: $prefs.startChapter });
   $: continueItem = state.lastPlayed && !state.done[state.lastPlayed.biteOrSnackId]
     ? findById({ index, id: state.lastPlayed.biteOrSnackId })
     : null;
@@ -84,7 +86,7 @@
     </div>
   {/if}
 
-  <SettingsSheet open={settingsOpen} onClose={() => { settingsOpen = false; }} />
+  <SettingsSheet open={settingsOpen} onClose={() => { settingsOpen = false; }} {onChangeStart} />
 </section>
 
 <style>

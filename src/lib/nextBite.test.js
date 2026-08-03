@@ -25,6 +25,19 @@ const index = {
   ],
 };
 
+const indexWithA2 = {
+  ...index,
+  chapters: [
+    ...index.chapters,
+    {
+      id: 'chapter-12',
+      number: 12,
+      level: 'A2',
+      bites: [{ id: 'chapter-12-b1', title: 'A2 first bite' }],
+    },
+  ],
+};
+
 describe('findNext', () => {
   it('returns the first unfinished bite in chapter order', () => {
     expect(findNext({ index, done: {}, skippedSnacks: new Set() })).toMatchObject({
@@ -68,5 +81,25 @@ describe('findNext', () => {
       'snack-two': 1,
     };
     expect(findNext({ index, done, skippedSnacks: new Set() })).toBeNull();
+  });
+
+  it('starts a new learner at the selected chapter', () => {
+    expect(findNext({ index: indexWithA2, done: {}, startChapter: 12 })).toMatchObject({
+      type: 'bite',
+      chapterId: 'chapter-12',
+      biteId: 'chapter-12-b1',
+    });
+  });
+
+  it('ignores the selected starting chapter after progress exists', () => {
+    expect(findNext({
+      index: indexWithA2,
+      done: { 'chapter-01-b1': 1 },
+      startChapter: 12,
+    })).toMatchObject({
+      type: 'bite',
+      chapterId: 'chapter-01',
+      biteId: 'chapter-01-b2',
+    });
   });
 });

@@ -3,8 +3,10 @@
   import Home from './components/Home.svelte';
   import Shelf from './components/Shelf.svelte';
   import BitePlayer from './components/BitePlayer.svelte';
+  import Onboarding from './components/Onboarding.svelte';
   import { createLatestRequest, loadChapterCards, loadSnackCards } from './lib/courseData.js';
   import { findNext } from './lib/nextBite.js';
+  import { prefs } from './lib/prefs.js';
   import { markBiteDone, progress } from './lib/store.js';
 
   // The reference tabs carry the heavy data — the wordbook's nuance layer alone
@@ -39,6 +41,10 @@
   let loadingBite = false;
   let loadError = '';
   let skippedSnacks = new Set();
+  let onboardingRequested = false;
+
+  $: showOnboarding = onboardingRequested
+    || (Object.keys($progress.done).length === 0 && !$prefs.onboardingDone);
 
   function cancelBiteRequest() {
     beginBiteRequest();
@@ -97,7 +103,7 @@
   async function exitBite(finished, wantMore) {
     if (finished) markBiteDone(playing.bite);
     if (finished && wantMore) {
-      const next = findNext({ index: courseIndex, done: doneMap(), skippedSnacks });
+      const next = findNext({ index: courseIndex, done: doneMap(), skippedSnacks, startChapter: $prefs.startChapter });
       playing = null;
       await playItem(next);
       return;
@@ -119,6 +125,8 @@
   {:then mod}
     <svelte:component this={mod.default} />
   {/await}
+{:else if showOnboarding}
+  <Onboarding onComplete={() => { onboardingRequested = false; }} />
 {:else if playing}
   <!-- keyed so 한 입 더 rebuilds the player from scratch for the next bite -->
   {#key playing.bite.id}
@@ -136,7 +144,13 @@
     {:else}
       {#if loadError}<p class="load-error" role="alert">{loadError}</p>{/if}
       {#if tab === 'today'}
-        <Home index={courseIndex} {skippedSnacks} onStart={playItem} onSkipSnack={skipSnack} />
+        <Home
+          index={courseIndex}
+          {skippedSnacks}
+          onStart={playItem}
+          onSkipSnack={skipSnack}
+          onChangeStart={() => { onboardingRequested = true; }}
+        />
       {:else if tab === 'shelf'}
         {#if showGuide}
           <div class="guide-wrap">

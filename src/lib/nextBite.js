@@ -31,8 +31,12 @@ export function findById({ index, id }) {
   return snack ? snackItem(snack) : null;
 }
 
-export function findNext({ index, done = {}, skippedSnacks = new Set() }) {
-  const chapters = index.chapters || [];
+export function findNext({ index, done = {}, skippedSnacks = new Set(), startChapter = 1 }) {
+  const allChapters = index.chapters || [];
+  const selectedIndex = Object.keys(done).length === 0
+    ? allChapters.findIndex((chapter) => chapter.number === startChapter)
+    : -1;
+  const chapters = selectedIndex > 0 ? allChapters.slice(selectedIndex) : allChapters;
   const skipped = skippedSnacks instanceof Set ? skippedSnacks : new Set(skippedSnacks || []);
   const firstUnfinishedChapter = chapters.findIndex((chapter) => (
     chapter.bites.some((bite) => !done[bite.id])
