@@ -156,15 +156,15 @@
 <style>
   .bp { min-height: 100dvh; max-width: 480px; margin: 0 auto; padding: 20px 20px 24px; display: flex; flex-direction: column;
     background:
-      repeating-linear-gradient(rgba(140, 127, 107, 0.045) 0 1px, transparent 1px 30px),
-      repeating-linear-gradient(90deg, rgba(140, 127, 107, 0.045) 0 1px, transparent 1px 30px),
+      repeating-linear-gradient(var(--study-grid) 0 1px, transparent 1px 30px),
+      repeating-linear-gradient(90deg, var(--study-grid) 0 1px, transparent 1px 30px),
       var(--bg); }
   .top { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
   .x { width: 34px; height: 34px; flex: none; border-radius: 999px; background: var(--card); border: 1px solid var(--line);
     color: var(--ink-3); font-size: 17px; font-weight: 700; display: grid; place-items: center; }
   .x:hover { border-color: var(--ink-3); }
   .dots { flex: 1; display: flex; gap: 5px; }
-  .dot { height: 7px; flex: 1; border-radius: 999px; background: #EFE4CD; transition: background .2s var(--ease); }
+  .dot { height: 7px; flex: 1; border-radius: 999px; background: var(--progress-track); transition: background .2s var(--ease); }
   .dot.done { background: var(--gold); }
   .dot.now { background: var(--accent); }
   .count { flex: none; font-size: 12px; font-weight: 800; color: var(--ink-3); font-variant-numeric: tabular-nums; }
@@ -176,7 +176,7 @@
   @keyframes deal { from { opacity: 0; transform: translateY(12px) rotate(.4deg); } to { opacity: 1; transform: none; } }
   .nav { margin-top: auto; padding-top: 18px; position: sticky; bottom: 0;
     background: linear-gradient(to top, var(--bg) 75%, transparent); padding-bottom: 4px; }
-  .go { width: 100%; padding: 16px; border-radius: 16px; background: var(--accent); color: #FFF6EF;
+  .go { width: 100%; padding: 16px; border-radius: 16px; background: var(--accent); color: var(--on-accent);
     font-size: 17px; font-weight: 850; box-shadow: 0 4px 0 var(--accent-deep);
     transition: transform .09s var(--ease), box-shadow .09s var(--ease), opacity .15s var(--ease); }
   .go:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--accent-deep); }

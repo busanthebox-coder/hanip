@@ -95,7 +95,7 @@
     background: var(--card); font-size: 13px; font-weight: 800; color: var(--ink-2);
     transition: background-color .15s var(--ease), border-color .15s var(--ease), color .15s var(--ease); }
   .chip:hover { background: var(--wash); }
-  .chip.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .chip.on { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
 
   .rows { display: grid; gap: 10px; }
   .root { background: var(--card); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow-1); overflow: hidden; }

@@ -87,7 +87,7 @@
   .tile:active { transform: scale(.97); }
   .tile.picked { border-color: var(--gold); background: var(--gold-soft); }
   .check { margin-top: 14px; justify-self: start; padding: 12px 26px; border-radius: 999px; background: var(--accent);
-    color: #FFF6EF; font-size: 15px; font-weight: 850; box-shadow: 0 3px 0 var(--accent-deep); }
+    color: var(--on-accent); font-size: 15px; font-weight: 850; box-shadow: 0 3px 0 var(--accent-deep); }
   .check:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--accent-deep); }
   .why { margin-top: 12px; padding: 12px 14px; border-radius: 14px; font-size: 13.5px; line-height: 1.6; word-break: keep-all; }
   .good-note { background: var(--good-soft); color: var(--good-deep); font-weight: 700; }

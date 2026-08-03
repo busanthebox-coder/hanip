@@ -1,4 +1,5 @@
 <script>
+  import { onDestroy } from 'svelte';
   import courseIndex from './lib/bites-index.json';
   import Home from './components/Home.svelte';
   import Shelf from './components/Shelf.svelte';
@@ -8,6 +9,7 @@
   import { createLatestRequest, loadChapterCards, loadSnackCards } from './lib/courseData.js';
   import { findNext } from './lib/nextBite.js';
   import { prefs } from './lib/prefs.js';
+  import { applyTheme } from './lib/theme.js';
   import { markBiteDone, progress } from './lib/store.js';
 
   // The reference tabs carry the heavy data — the wordbook's nuance layer alone
@@ -43,6 +45,18 @@
   let loadError = '';
   let skippedSnacks = new Set();
   let onboardingRequested = false;
+
+  const colorScheme = typeof window === 'undefined' ? null : window.matchMedia?.('(prefers-color-scheme: dark)');
+  let systemDark = colorScheme?.matches || false;
+  const colorSchemeChanged = (event) => { systemDark = event.matches; };
+  if (colorScheme?.addEventListener) colorScheme.addEventListener('change', colorSchemeChanged);
+  else colorScheme?.addListener?.(colorSchemeChanged);
+  onDestroy(() => {
+    if (colorScheme?.removeEventListener) colorScheme.removeEventListener('change', colorSchemeChanged);
+    else colorScheme?.removeListener?.(colorSchemeChanged);
+  });
+
+  $: applyTheme($prefs.theme, systemDark);
 
   $: showOnboarding = onboardingRequested
     || (Object.keys($progress.done).length === 0 && !$prefs.onboardingDone);

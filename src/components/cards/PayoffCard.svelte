@@ -35,11 +35,11 @@
   .step-label { font-size: 11px; font-weight: 850; letter-spacing: .16em; color: var(--accent); text-transform: uppercase; }
   .q { margin-top: 6px; font-size: 18px; font-weight: 800; word-break: keep-all; }
   .q-en { display: block; font-size: 12.5px; font-weight: 650; color: var(--ink-3); }
-  .chatwrap { margin-top: 18px; background: #EFE6D4; border-radius: 18px; padding: 16px 14px; display: grid; gap: 8px; justify-items: start; }
+  .chatwrap { margin-top: 18px; background: var(--chat-canvas); border-radius: 18px; padding: 16px 14px; display: grid; gap: 8px; justify-items: start; }
   .name { font-size: 11.5px; font-weight: 800; color: var(--ink-3); margin-left: 4px; }
   .bub { max-width: 92%; background: var(--card); border-radius: 4px 18px 18px 18px; padding: 13px 15px;
     font-size: 19px; font-weight: 750; line-height: 1.55; text-align: left; word-break: keep-all;
-    box-shadow: 0 2px 8px -4px rgba(38, 34, 28, 0.2); }
+    box-shadow: var(--chat-shadow); }
   .hl { background: var(--gold-soft); border-bottom: 2.5px solid var(--gold); padding: 0 1px; }
   .en { display: block; margin-top: 6px; font-size: 13px; color: var(--ink-2); font-weight: 600; }
   .rom { display: block; margin-top: 5px; color: var(--ink-3); font-size: 12.5px; font-weight: 650; letter-spacing: .01em; }

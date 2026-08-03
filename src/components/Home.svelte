@@ -138,7 +138,7 @@
   .bowl-cap { display: grid; font-size: 12.5px; color: var(--ink-3); font-weight: 700; }
   .bowl-cap b { color: var(--ink); font-size: 13.5px; }
   .start-actions { margin-top: auto; display: grid; gap: 10px; }
-  .start { padding: 18px; border-radius: 18px; background: var(--accent); color: #FFF6EF;
+  .start { padding: 18px; border-radius: 18px; background: var(--accent); color: var(--on-accent);
     font-size: 19px; font-weight: 900; box-shadow: 0 5px 0 var(--accent-deep);
     transition: transform .09s var(--ease), box-shadow .09s var(--ease); }
   .start:active { transform: translateY(4px); box-shadow: 0 1px 0 var(--accent-deep); }

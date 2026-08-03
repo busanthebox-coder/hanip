@@ -229,8 +229,8 @@
   .chip:hover { background: var(--wash); }
   .chip:active { transform: translateY(1px); }
   .chip.none { font-size: 12.5px; font-weight: 750; color: var(--ink-2); }
-  .chip.on { background: var(--accent); border-color: var(--accent-deep); color: #fff; }
-  .chip.none.on { color: #fff; }
+  .chip.on { background: var(--accent); border-color: var(--accent-deep); color: var(--on-accent); }
+  .chip.none.on { color: var(--on-accent); }
 
   .result { margin-top: 18px; padding: 18px 14px 16px; background: var(--wash);
     border: 1px solid var(--line); border-radius: var(--r-chip); text-align: center; }

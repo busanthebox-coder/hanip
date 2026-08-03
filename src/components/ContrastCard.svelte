@@ -208,7 +208,7 @@
   .chip.anchor {
     background: var(--accent);
     border-color: var(--accent);
-    color: #fff;
+    color: var(--on-accent);
     font-weight: 800;
     letter-spacing: .01em;
   }

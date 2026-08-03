@@ -1,6 +1,7 @@
 <script>
   import SearchField from './SearchField.svelte';
   import ShelfLevelGroup from './ShelfLevelGroup.svelte';
+  import { prefs, setPref } from '../lib/prefs.js';
 
   let query = '';
 
@@ -37,6 +38,11 @@
   <div class="cap">한입 primitive showcase</div>
   <h1>책장 검색과 레벨 그룹</h1>
   <p class="sub">Default, open, complete, focus, and empty states.</p>
+  <div class="theme-switch" role="group" aria-label="쇼케이스 테마 · Showcase theme">
+    {#each [['auto', '자동'], ['light', '밝게'], ['dark', '어둡게']] as option}
+      <button class:on={$prefs.theme === option[0]} aria-pressed={$prefs.theme === option[0]} on:click={() => setPref('theme', option[0])}>{option[1]}</button>
+    {/each}
+  </div>
 
   <section class="sample">
     <div class="label">검색 · Search field</div>
@@ -57,6 +63,9 @@
   .cap, .label { color: var(--accent); font-size: var(--type-overline); font-weight: 850; letter-spacing: .16em; text-transform: uppercase; }
   h1 { margin: var(--space-2) 0 0; font-size: var(--type-heading); line-height: 1.35; }
   .sub { margin: var(--space-1) 0 0; color: var(--ink-3); font-size: var(--type-body-sm); }
+  .theme-switch { margin-top: var(--space-4); display: inline-flex; gap: 2px; padding: 3px; border-radius: 12px; background: var(--wash); }
+  .theme-switch button { min-height: 36px; padding: 6px 12px; border-radius: 9px; color: var(--ink-3); font-size: var(--type-caption); font-weight: 800; }
+  .theme-switch button.on { background: var(--card); color: var(--accent-deep); box-shadow: var(--shadow-1); }
   .sample { margin-top: var(--space-8); }
   .sample > :global(.search) { margin-top: var(--space-2); }
   .groups { display: grid; gap: var(--space-2); }
