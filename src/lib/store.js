@@ -1,4 +1,5 @@
 import { writable, get } from 'svelte/store';
+import { dueCards, prepareReviewCards, resetSrs } from './srs.js';
 
 const KEY = 'hanip.v1';
 
@@ -50,6 +51,7 @@ export function markLastPlayed(biteOrSnackId, at = Date.now()) {
 
 export function resetProgress() {
   progress.update((state) => ({ ...state, done: {}, learned: [], bowls: {}, collected: [], starred: [] }));
+  resetSrs();
 }
 
 export function toggleStarred(word) {
@@ -78,11 +80,19 @@ export function migrateCollected(index) {
 }
 
 // up to 2 recall cards from earlier bites, excluding this bite's own words
-export function warmupCards(bite, count = 2) {
+export function warmupCards(bite, count = 2, now = Date.now()) {
   const { learned, done } = get(progress);
   if (Object.keys(done).length === 0) return [];
   const current = new Set(bite.cards.filter((c) => c.kind === 'guess').map((c) => c.word.ko));
   const pool = learned.filter((c) => !current.has(c.word.ko));
+  const byWord = new Map(pool.map((card) => [card.word.ko, card]));
+  const scheduled = dueCards(now)
+    .map((entry) => byWord.get(entry.ko))
+    .filter(Boolean)
+    .slice(0, count);
+  if (scheduled.length) {
+    return prepareReviewCards(scheduled, pool).map((card) => ({ ...card, warmup: true }));
+  }
   const picks = [];
   const used = new Set();
   while (picks.length < Math.min(count, pool.length) && used.size < pool.length) {
@@ -91,7 +101,7 @@ export function warmupCards(bite, count = 2) {
     used.add(at);
     picks.push({ ...pool[at], warmup: true });
   }
-  return picks;
+  return prepareReviewCards(picks, pool).map((card) => ({ ...card, warmup: true }));
 }
 
 // this week's bowls: how many of the last 7 days had at least one bite

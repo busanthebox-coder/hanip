@@ -5,6 +5,7 @@
   import { installPrompt, promptInstall, shouldOfferInstall } from '../lib/pwa.js';
   import { progress, todayKey } from '../lib/store.js';
   import { streak, weekActivity } from '../lib/stats.js';
+  import { learnedDueEntries, srs } from '../lib/srs.js';
   import { findById, findNext } from '../lib/nextBite.js';
 
   export let index = { chapters: [], snacks: [] };
@@ -12,6 +13,7 @@
   export let onStart = () => {};
   export let onSkipSnack = () => {};
   export let onChangeStart = () => {};
+  export let onStartReview = () => {};
 
   let settingsOpen = false;
   let dayToast = '';
@@ -30,6 +32,7 @@
   $: bowls = week.filter((day) => day.count > 0).length;
   $: todayPending = bitesToday === 0;
   $: doneTotal = Object.keys(state.done).length;
+  $: dueCount = learnedDueEntries(state.learned, $srs).length;
   $: showInstall = shouldOfferInstall({
     installEvent: $installPrompt,
     prefsState: $prefs,
@@ -89,7 +92,15 @@
     {/if}
   {:else}
     <h1 class="word">다 먹었어요!</h1>
-    <p class="hook">All done — you finished every bite. Re-chew any bite from the bookshelf. · 책장에서 아무 한입이나 다시 씹어보세요.</p>
+    <p class="hook">All new bites are done · 새 한입을 모두 마쳤어요. 복습 잔량 {dueCount}장 · {dueCount} reviews due.</p>
+  {/if}
+
+  {#if dueCount >= 6}
+    <button class="review-card" class:primary={!nextItem} on:click={onStartReview}>
+      <span>복습 한 입 · Review bite</span>
+      <strong>{Math.min(dueCount, 8)}장 · 2분</strong>
+      <i>오래 기다린 단어부터 · Oldest due first →</i>
+    </button>
   {/if}
 
   <div class="bowl-row">
@@ -160,6 +171,12 @@
   .word.snack-word { margin-top: 12px; font-size: clamp(38px, 12vw, 56px); }
   .hook { margin: 12px 0 0; font-size: 15.5px; color: var(--ink-2); font-weight: 650; word-break: keep-all; text-wrap: pretty; }
   .hook.sub { margin-top: 4px; font-size: 12.5px; color: var(--ink-3); font-weight: 700; }
+  .review-card { margin-top: 18px; padding: 13px 15px; display: grid; grid-template-columns: 1fr auto; gap: 1px 10px;
+    border: 1px solid var(--line); border-radius: 16px; background: var(--card); text-align: left; box-shadow: var(--shadow-1); }
+  .review-card.primary { padding: 17px; border-color: var(--gold); background: var(--gold-soft); }
+  .review-card span { color: var(--accent-deep); font-size: 13px; font-weight: 850; }
+  .review-card strong { color: var(--ink); font-size: 13px; }
+  .review-card i { grid-column: 1 / -1; color: var(--ink-3); font-size: 11.5px; font-style: normal; font-weight: 700; }
   .bowl-row { margin-top: 28px; display: flex; align-items: center; gap: 12px; }
   .bowl { width: 46px; height: 46px; flex: none; }
   .bowl-cap { display: grid; font-size: 12.5px; color: var(--ink-3); font-weight: 700; }

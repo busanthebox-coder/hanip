@@ -17,6 +17,8 @@
     ? splitOnce(card.sentence.ko, card.target)
     : null;
   $: starred = ($progress.starred || []).includes(card.word.ko);
+  $: direction = card.direction || 'ko→en';
+  $: correctOption = direction === 'en→ko' ? card.word.ko : card.word.en;
 
   function splitOnce(text, needle) {
     const at = text.indexOf(needle);
@@ -28,7 +30,7 @@
     if (revealed) return;
     picked = opt;
     revealed = true;
-    onResolve(opt === card.word.en);
+    onResolve(opt === correctOption);
     showReveal();
   }
   function giveUp() {
@@ -43,21 +45,24 @@
   }
 </script>
 
-<div class="step-label">{card.warmup ? '복습 · Do you remember?' : '단어 · Guess first'}</div>
+<div class="step-label">{card.warmup || card.review ? '복습 · Review' : '단어 · Guess first'}</div>
 
-{#if parts}
+{#if direction === 'en→ko'}
+  <div class="sent"><span class="target">{card.word.en}</span></div>
+  <div class="q">어떤 한국어 단어일까요? <span class="q-en">Which Korean word matches this meaning?</span></div>
+{:else if parts}
   <div class="sent">{parts.pre}<span class="target">{parts.mid}</span>{parts.post}</div>
 {:else}
   <div class="sent"><span class="target">{card.word.ko}</span></div>
 {/if}
-<div class="q">무슨 뜻일까요? <span class="q-en">What does the highlighted word mean?</span></div>
+{#if direction !== 'en→ko'}<div class="q">무슨 뜻일까요? <span class="q-en">What does the highlighted word mean?</span></div>{/if}
 
 <div class="chips">
   {#each card.options as opt}
     <button
       class="chip"
-      class:good={revealed && opt === card.word.en}
-      class:bad={revealed && picked === opt && opt !== card.word.en}
+      class:good={revealed && opt === correctOption}
+      class:bad={revealed && picked === opt && opt !== correctOption}
       on:click={() => pick(opt)}
     >{opt}</button>
   {/each}

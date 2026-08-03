@@ -1,5 +1,5 @@
 import { get } from 'svelte/store';
-import { beforeEach, describe, expect, it } from 'vitest';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
 import {
   markBiteDone,
   markLastPlayed,
@@ -9,10 +9,12 @@ import {
   toggleStarred,
   warmupCards,
 } from './store.js';
+import { srs } from './srs.js';
 
 describe('last played progress', () => {
   beforeEach(() => {
     progress.set({ done: {}, learned: [], bowls: {}, lastPlayed: null, collected: [], starred: [] });
+    srs.set({});
   });
 
   it('records the bite or snack id and timestamp without changing completion state', () => {
@@ -36,6 +38,7 @@ describe('last played progress', () => {
       collected: ['chapter-01-b2'],
       starred: ['한글'],
     });
+    srs.set({ 한글: { interval: 3, due: 123 } });
 
     resetProgress();
 
@@ -47,6 +50,7 @@ describe('last played progress', () => {
       collected: [],
       starred: [],
     });
+    expect(get(srs)).toEqual({});
   });
 
   it('returns no warmups when a learner starts above A1 with an empty recall pool', () => {
@@ -79,5 +83,46 @@ describe('last played progress', () => {
     });
 
     expect(get(progress).collected).toEqual(['chapter-02-b2']);
+  });
+
+  it('uses the oldest due words for warmups and alternates card direction', () => {
+    const learned = ['가다', '먹다', '보다'].map((ko, index) => ({
+      kind: 'guess',
+      word: { ko, en: ['to go', 'to eat', 'to see'][index], pos: 'verb' },
+      options: ['to go', 'to eat', 'to see'],
+    }));
+    progress.set({
+      done: { earlier: 1 }, learned, bowls: {}, lastPlayed: null, collected: [], starred: [],
+    });
+    srs.set({
+      가다: { interval: 1, due: 200 },
+      먹다: { interval: 1, due: 100 },
+      보다: { interval: 1, due: 300 },
+    });
+
+    const cards = warmupCards({ cards: [] }, 2, 400);
+    expect(cards.map((card) => card.word.ko)).toEqual(['먹다', '가다']);
+    expect(cards.map((card) => card.direction)).toEqual(['ko→en', 'en→ko']);
+  });
+
+  it('falls back to the learned pool when no scheduled word is due', () => {
+    const learned = [{
+      kind: 'guess', word: { ko: '가다', en: 'to go', pos: 'verb' }, options: ['to go', 'to eat', 'to see'],
+    }];
+    progress.set({
+      done: { earlier: 1 }, learned, bowls: {}, lastPlayed: null, collected: [], starred: [],
+    });
+    srs.set({ 가다: { interval: 1, due: 1_000 } });
+    vi.spyOn(Math, 'random').mockReturnValueOnce(0);
+
+    expect(warmupCards({ cards: [] }, 1, 500)[0].word.ko).toBe('가다');
+    vi.restoreAllMocks();
+  });
+
+  it('counts a completed runtime review bite as a bowl', () => {
+    markBiteDone({ id: 'review-today', kind: 'review', cards: [] });
+
+    expect(get(progress).done['review-today']).toBeTypeOf('number');
+    expect(get(progress).bowls[Object.keys(get(progress).bowls)[0]]).toBe(1);
   });
 });

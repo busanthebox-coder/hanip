@@ -10,6 +10,7 @@
   import PayoffCard from './cards/PayoffCard.svelte';
   import { buzz, fanfare, thud, tick } from '../lib/feedback.js';
   import { prefs } from '../lib/prefs.js';
+  import { record } from '../lib/srs.js';
   import { markLastPlayed, progress, todayKey, warmupCards } from '../lib/store.js';
   import { streak } from '../lib/stats.js';
   import { speak } from '../lib/tts.js';
@@ -19,8 +20,9 @@
   export let biteTotal = 1;
   export let onExit = () => {};      // (finished: boolean, wantMore: boolean)
   export let onOpenWord = () => {};
+  export let withWarmup = true;
 
-  let cards = [...warmupCards(bite), ...bite.cards];
+  let cards = [...(withWarmup ? warmupCards(bite) : []), ...bite.cards];
   markLastPlayed(bite.id);
   let i = 0;
   let resolved = false;
@@ -74,7 +76,14 @@
       tick();
       buzz(15);
     }
-    if (cur.kind === 'guess') speakSoon(cur.word?.ko);
+    if (cur.kind === 'guess') {
+      // A same-session retry confirms the earlier reset; it must not jump
+      // straight from a miss to the three-day rung.
+      if (!cur.requeued || !correct) {
+        record(cur.word?.ko, correct, Date.now(), ($progress.starred || []).includes(cur.word?.ko));
+      }
+      speakSoon(cur.word?.ko);
+    }
     if (cur.kind === 'payoff') speakSoon(cur.line?.ko);
   }
   function speakSoon(text) {

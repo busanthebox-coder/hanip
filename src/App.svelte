@@ -9,8 +9,9 @@
   import { createLatestRequest, loadChapterCards, loadSnackCards } from './lib/courseData.js';
   import { findNext } from './lib/nextBite.js';
   import { prefs } from './lib/prefs.js';
+  import { buildDueReviewCards, migrateLearnedSchedules, srs } from './lib/srs.js';
   import { applyTheme } from './lib/theme.js';
-  import { markBiteDone, migrateCollected, progress } from './lib/store.js';
+  import { markBiteDone, migrateCollected, progress, todayKey } from './lib/store.js';
 
   // The reference tabs carry the heavy data — the wordbook's nuance layer alone
   // is ~650kB — and none of it is needed to start today's bite. Load each on
@@ -59,6 +60,7 @@
   });
 
   $: applyTheme($prefs.theme, systemDark);
+  $: migrateLearnedSchedules($progress.learned);
 
   $: showOnboarding = onboardingRequested
     || (Object.keys($progress.done).length === 0 && !$prefs.onboardingDone);
@@ -68,7 +70,7 @@
     loadingBite = false;
   }
 
-  async function play(chapter, bite) {
+  async function play(chapter, bite, { withWarmup = true } = {}) {
     const isLatest = beginBiteRequest();
     loadingBite = true;
     loadError = '';
@@ -77,7 +79,7 @@
       const fullBite = bites.find((item) => item.id === bite.id);
       if (!fullBite) throw new Error(`Missing bite: ${bite.id}`);
       if (!isLatest()) return;
-      playing = { chapter, bite: fullBite };
+      playing = { chapter, bite: fullBite, withWarmup };
       window.scrollTo(0, 0);
     } catch (error) {
       if (!isLatest()) return;
@@ -88,7 +90,7 @@
       if (isLatest()) loadingBite = false;
     }
   }
-  async function playSnack(snack) {
+  async function playSnack(snack, { withWarmup = true } = {}) {
     const isLatest = beginBiteRequest();
     loadingBite = true;
     loadError = '';
@@ -98,6 +100,7 @@
       playing = {
         chapter: { id: snack.id, number: snack.afterChapter, biteCount: 1 },
         bite: { ...snack, kind: 'snack', index: 0, cards },
+        withWarmup,
       };
       window.scrollTo(0, 0);
     } catch (error) {
@@ -123,6 +126,23 @@
     showGuide = false;
     wordbookTarget = word;
     tab = 'words';
+    window.scrollTo(0, 0);
+  }
+  function startReview() {
+    const cards = buildDueReviewCards($progress.learned, $srs, Date.now(), 8);
+    if (!cards.length) return;
+    playing = {
+      chapter: { id: 'review', number: 0, biteCount: 1 },
+      bite: {
+        id: `review-${todayKey()}`,
+        kind: 'review',
+        index: 0,
+        title: '복습 한 입 · Review bite',
+        canDo: 'Review the words that are due today · 오늘 복습할 단어를 다시 확인해요',
+        cards,
+      },
+      withWarmup: false,
+    };
     window.scrollTo(0, 0);
   }
   async function exitBite(finished, wantMore) {
@@ -161,6 +181,7 @@
       biteTotal={playing.chapter.biteCount}
       onExit={exitBite}
       onOpenWord={openWordbook}
+      withWarmup={playing.withWarmup}
     />
   {/key}
 {:else}
@@ -176,6 +197,7 @@
           onStart={playItem}
           onSkipSnack={skipSnack}
           onChangeStart={() => { onboardingRequested = true; }}
+          onStartReview={startReview}
         />
       {:else if tab === 'shelf'}
         {#if showGuide}
@@ -188,7 +210,13 @@
             {/await}
           </div>
         {:else}
-          <Shelf {chapters} {snacks} onPlay={play} onPlaySnack={playSnack} onOpenGuide={() => { showGuide = true; window.scrollTo(0, 0); }} />
+          <Shelf
+            {chapters}
+            {snacks}
+            onPlay={(chapter, bite) => play(chapter, bite, { withWarmup: false })}
+            onPlaySnack={(snack) => playSnack(snack, { withWarmup: false })}
+            onOpenGuide={() => { showGuide = true; window.scrollTo(0, 0); }}
+          />
         {/if}
       {:else}
         {#await loadTab(tab)}
