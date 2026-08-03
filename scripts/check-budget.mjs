@@ -16,18 +16,26 @@ const CHUNK_MAX = 220_000;
 const TOTAL_MAX = 2_500_000;
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const assets = join(root, 'dist', 'assets');
+const dist = join(root, 'dist');
+const ENTRY_EXCLUDE = /^(?:sw\.js|icons\/)/;
+
+function walk(dir, prefix = '') {
+  return readdirSync(dir, { withFileTypes: true }).flatMap((item) => {
+    const name = prefix ? `${prefix}/${item.name}` : item.name;
+    return item.isDirectory() ? walk(join(dir, item.name), name) : [name];
+  });
+}
 
 let entry = 0, total = 0;
 const offenders = [];
 const rows = [];
-for (const file of readdirSync(assets)) {
-  const gz = gzipSync(readFileSync(join(assets, file))).length;
+for (const file of walk(dist)) {
+  const gz = gzipSync(readFileSync(join(dist, file))).length;
   total += gz;
-  const isEntry = /^index-/.test(file);
+  const isEntry = /^assets\/index-/.test(file) && !ENTRY_EXCLUDE.test(file);
   if (isEntry) entry += gz;
   rows.push({ file, gz, isEntry });
-  if (!isEntry && gz > CHUNK_MAX) offenders.push(`${file}: ${(gz / 1024).toFixed(0)}kB gzip > chunk budget ${(CHUNK_MAX / 1024).toFixed(0)}kB`);
+  if (file.startsWith('assets/') && !isEntry && gz > CHUNK_MAX) offenders.push(`${file}: ${(gz / 1024).toFixed(0)}kB gzip > chunk budget ${(CHUNK_MAX / 1024).toFixed(0)}kB`);
 }
 rows.sort((a, b) => b.gz - a.gz);
 for (const r of rows) console.log(`  ${(r.gz / 1024).toFixed(1).padStart(7)} kB gz  ${r.isEntry ? '[entry] ' : ''}${r.file}`);

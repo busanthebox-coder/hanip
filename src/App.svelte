@@ -4,6 +4,7 @@
   import Shelf from './components/Shelf.svelte';
   import BitePlayer from './components/BitePlayer.svelte';
   import Onboarding from './components/Onboarding.svelte';
+  import PwaUpdateToast from './components/PwaUpdateToast.svelte';
   import { createLatestRequest, loadChapterCards, loadSnackCards } from './lib/courseData.js';
   import { findNext } from './lib/nextBite.js';
   import { prefs } from './lib/prefs.js';
@@ -183,6 +184,8 @@
     {/each}
   </nav>
 {/if}
+
+<PwaUpdateToast />
 
 <style>
   main { padding-bottom: 78px; }

@@ -1,6 +1,7 @@
 <script>
   import SettingsSheet from './SettingsSheet.svelte';
-  import { prefs } from '../lib/prefs.js';
+  import { prefs, setPref } from '../lib/prefs.js';
+  import { installPrompt, promptInstall, shouldOfferInstall } from '../lib/pwa.js';
   import { progress, todayKey, weekBowls } from '../lib/store.js';
   import { findById, findNext } from '../lib/nextBite.js';
 
@@ -20,6 +21,20 @@
   $: bitesToday = state.bowls[todayKey()] || 0;
   $: bowls = weekBowls(state);
   $: doneTotal = Object.keys(state.done).length;
+  $: showInstall = shouldOfferInstall({
+    installEvent: $installPrompt,
+    prefsState: $prefs,
+    progressState: state,
+  });
+
+  async function installApp() {
+    setPref('installPromptDismissed', true);
+    await promptInstall();
+  }
+
+  function dismissInstall() {
+    setPref('installPromptDismissed', true);
+  }
 
   function headWord(item) {
     if (item.type === 'snack') return item.title;
@@ -86,6 +101,16 @@
     </div>
   {/if}
 
+  {#if showInstall}
+    <aside class="install-banner" aria-label="앱 설치 안내 · App installation">
+      <button class="install-main" type="button" on:click={installApp}>
+        <strong>홈 화면에 추가 · Add to home screen</strong>
+        <span>지하철에서도 바로 열어보세요 · Open Hanip offline</span>
+      </button>
+      <button class="install-close" type="button" aria-label="설치 안내 닫기 · Dismiss install offer" on:click={dismissInstall}>×</button>
+    </aside>
+  {/if}
+
   <SettingsSheet open={settingsOpen} onClose={() => { settingsOpen = false; }} {onChangeStart} />
 </section>
 
@@ -118,4 +143,10 @@
     transition: transform .09s var(--ease), box-shadow .09s var(--ease); }
   .start:active { transform: translateY(4px); box-shadow: 0 1px 0 var(--accent-deep); }
   .skip { min-height: 44px; padding: 11px; color: var(--ink-3); font-size: 13px; font-weight: 800; }
+  .install-banner { margin-top: 14px; padding: 12px 12px 12px 15px; display: flex; align-items: center; gap: 8px;
+    border: 1px solid var(--line); border-radius: var(--r-chip); background: var(--card); box-shadow: var(--shadow-1); }
+  .install-main { min-width: 0; flex: 1; display: grid; text-align: left; }
+  .install-main strong { color: var(--ink); font-size: 13.5px; }
+  .install-main span { color: var(--ink-3); font-size: 11px; font-weight: 700; }
+  .install-close { width: 44px; height: 44px; flex: none; border-radius: 999px; color: var(--ink-3); font-size: 24px; }
 </style>

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "npm run compile && vite",
-    "build": "npm run compile && node scripts/validate-bites.mjs && vite build",
+    "build": "npm run compile && node scripts/validate-bites.mjs && vite build && node scripts/finalize-pwa.mjs",
     "preview": "vite preview",
     "compile": "node scripts/extract-wordbook.mjs && node scripts/extract-extras.mjs && node scripts/compile-bites.mjs",
     "extract:extras": "node scripts/extract-extras.mjs",
@@ -13,13 +13,15 @@
     "test": "npm run compile && vitest run",
     "baseline": "node scripts/baseline.mjs",
     "guard": "npm run compile && node scripts/validate-bites.mjs && node scripts/baseline.mjs && vitest run",
-    "guard:full": "npm run guard && vite build && node scripts/check-budget.mjs",
+    "guard:full": "npm run guard && vite build && node scripts/finalize-pwa.mjs && node scripts/check-budget.mjs",
+    "icons": "node scripts/make-icons.mjs",
     "smoke:stats": "node scripts/smoke-stats.mjs",
     "deploy": "npm run guard:full && gh-pages -d dist"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.1.2",
     "gh-pages": "^6.3.0",
+    "sharp": "^0.35.3",
     "svelte": "^4.2.19",
     "vite": "^5.4.0",
     "vitest": "^2.1.9"

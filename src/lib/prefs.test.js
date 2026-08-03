@@ -1,6 +1,6 @@
 import { get } from 'svelte/store';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { DEFAULT_PREFS, PREFS_KEY, prefs, setPref } from './prefs.js';
+import { DEFAULT_PREFS, PREFS_KEY, prefs, recordPwaVisit, setPref } from './prefs.js';
 
 class MemoryStorage {
   constructor() {
@@ -36,6 +36,8 @@ describe('preferences', () => {
       dailyGoal: 1,
       startChapter: 1,
       onboardingDone: false,
+      pwaVisitCount: 0,
+      installPromptDismissed: false,
     });
   });
 
@@ -61,5 +63,15 @@ describe('preferences', () => {
 
     expect(get(prefs)).toMatchObject({ startChapter: 12, onboardingDone: true });
     expect(JSON.parse(localStorage.getItem(PREFS_KEY))).toMatchObject({ startChapter: 12, onboardingDone: true });
+  });
+
+  it('records at most two production visits for the one-time install offer', () => {
+    recordPwaVisit();
+    recordPwaVisit();
+    recordPwaVisit();
+    setPref('installPromptDismissed', true);
+
+    expect(get(prefs)).toMatchObject({ pwaVisitCount: 2, installPromptDismissed: true });
+    expect(JSON.parse(localStorage.getItem(PREFS_KEY))).toMatchObject({ pwaVisitCount: 2, installPromptDismissed: true });
   });
 });

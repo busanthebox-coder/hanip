@@ -1,4 +1,4 @@
-import { writable } from 'svelte/store';
+import { get, writable } from 'svelte/store';
 
 export const PREFS_KEY = 'hanip.prefs-v1';
 export const DEFAULT_PREFS = Object.freeze({
@@ -10,6 +10,8 @@ export const DEFAULT_PREFS = Object.freeze({
   dailyGoal: 1,
   startChapter: 1,
   onboardingDone: false,
+  pwaVisitCount: 0,
+  installPromptDismissed: false,
 });
 
 const VALID_VALUES = {
@@ -21,6 +23,8 @@ const VALID_VALUES = {
   dailyGoal: new Set([1, 2, 3]),
   startChapter: new Set([1, 2, 12]),
   onboardingDone: new Set([true, false]),
+  pwaVisitCount: new Set([0, 1, 2]),
+  installPromptDismissed: new Set([true, false]),
 };
 
 function valid(key, value) {
@@ -52,4 +56,9 @@ prefs.subscribe((state) => {
 export function setPref(key, value) {
   if (!valid(key, value)) return;
   prefs.update((state) => ({ ...state, [key]: value }));
+}
+
+export function recordPwaVisit() {
+  const count = get(prefs).pwaVisitCount;
+  setPref('pwaVisitCount', Math.min(2, count + 1));
 }
