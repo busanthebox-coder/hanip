@@ -10,6 +10,7 @@
   } from '../lib/shelf.js';
   import SearchField from './SearchField.svelte';
   import ShelfLevelGroup from './ShelfLevelGroup.svelte';
+  import GrammarCollection from './GrammarCollection.svelte';
 
   export let chapters = [];
   export let snacks = [];
@@ -19,11 +20,15 @@
 
   let query = '';
   let openLevels = [];
+  let showCollection = false;
 
   $: state = $progress;
   $: groups = buildShelfGroups(chapters, state.done, snacks);
   $: visibleGroups = filterShelfGroups(groups, query);
   $: searching = query.trim().length > 0;
+  $: grammarBites = chapters.flatMap((chapter) => chapter.bites || []).filter((bite) => bite.kind === 'pattern');
+  $: grammarTotal = grammarBites.length;
+  $: grammarCollected = grammarBites.filter((bite) => (state.collected || []).includes(bite.id)).length;
 
   onMount(() => {
     const fallback = defaultOpenLevels(chapters, state.done);
@@ -42,6 +47,14 @@
   }
 </script>
 
+{#if showCollection}
+  <GrammarCollection
+    {chapters}
+    collected={state.collected || []}
+    onBack={() => { showCollection = false; window.scrollTo(0, 0); }}
+    onPlay={(chapter, bite) => { showCollection = false; onPlay(chapter, bite); }}
+  />
+{:else}
 <section class="shelf">
   <div class="cap">책장 · Bookshelf</div>
   <p class="sub">65개 챕터를 레벨별로 열어 보세요. · Browse all 65 chapters by level.</p>
@@ -52,6 +65,12 @@
       <strong>가이드북 · Korea guides</strong>
       <span>Real-life survival guides — arrival, transport, food, emergencies · 실전 생활 가이드 20편</span>
     </span>
+    <span class="g-chev">▸</span>
+  </button>
+
+  <button class="grammar-entry" on:click={() => { showCollection = true; window.scrollTo(0, 0); }}>
+    <span>📜</span>
+    <strong>모은 문법 {grammarCollected}/{grammarTotal} · Grammar collection</strong>
     <span class="g-chev">▸</span>
   </button>
 
@@ -92,6 +111,7 @@
     {/await}
   </div>
 </section>
+{/if}
 
 <style>
   .shelf { max-width: 480px; margin: 0 auto; padding: 30px 20px 40px; }
@@ -101,6 +121,9 @@
     border-radius: 18px; background: var(--card); border: 1px solid var(--line); box-shadow: var(--shadow-1);
     text-align: left; transition: border-color .12s var(--ease); }
   .guide-card:hover { border-color: var(--ink-3); }
+  .grammar-entry { width: 100%; min-height: 52px; margin: -4px 0 14px; padding: 11px 15px; display: flex; align-items: center;
+    gap: 10px; border: 1px solid var(--line); border-radius: 16px; background: var(--wash); text-align: left; }
+  .grammar-entry strong { min-width: 0; flex: 1; color: var(--ink-2); font-size: 13px; }
   .g-ico { font-size: 26px; flex: none; }
   .g-main { flex: 1; min-width: 0; display: grid; gap: 1px; }
   .g-main strong { font-size: 15px; font-weight: 850; }

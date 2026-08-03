@@ -16,8 +16,11 @@
   const loadDepth = createDepthLoader(depthModules, depthRetryUrls);
   const levels = [...new Set(words.flatMap((word) => word.chapters.map(chapterLevel)))];
 
+  export let targetWord = '';
+  export let onTargetHandled = () => {};
+
   let query = '';
-  let filter = 'all'; // 'all' | 'learned' | 'nuance' | 'verb' | 'noun' | 'adj' | 'other'
+  let filter = 'all'; // 'all' | 'learned' | 'starred' | 'nuance' | part-of-speech buckets
   let levelFilter = 'all';
   let openKey = null;
   let loadingKey = null;
@@ -26,10 +29,12 @@
   let selected = null;
   let showClusters = false;
   let clusterBrowserModule = null;
+  let handledTarget = '';
 
   const FILTERS = [
     { id: 'all', label: '전체 All' },
     { id: 'learned', label: '배운 것 Learned' },
+    { id: 'starred', label: '⭐ 저장한 단어 Starred' },
     { id: 'nuance', label: '💡 헷갈리는 짝 Confusable' },
     { id: 'verb', label: '동사 Verb' },
     { id: 'noun', label: '명사 Noun' },
@@ -58,6 +63,13 @@
     } finally {
       if (request === detailRequest) loadingKey = null;
     }
+  }
+
+  async function openTarget(word) {
+    handledTarget = word;
+    const match = words.find((item) => item.ko === word);
+    if (match) await openDetail(match);
+    onTargetHandled();
   }
   function closeDetail() {
     detailRequest += 1;
@@ -98,14 +110,18 @@
   }
 
   $: learnedSet = new Set($progress.learned.map((c) => c.word.ko));
+  $: starredSet = new Set($progress.starred || []);
   $: learnedCount = words.filter((w) => learnedSet.has(w.ko)).length;
+  $: if (!targetWord) handledTarget = '';
+  $: if (targetWord && targetWord !== handledTarget) openTarget(targetWord);
 
   $: q = query.trim().toLowerCase();
   $: visible = words.filter((w) => {
     if (levelFilter !== 'all' && !w.chapters.some((chapter) => chapterLevel(chapter) === levelFilter)) return false;
     if (filter === 'learned' && !learnedSet.has(w.ko)) return false;
+    if (filter === 'starred' && !starredSet.has(w.ko)) return false;
     if (filter === 'nuance' && !w.hasCluster) return false;
-    if (!['all', 'learned', 'nuance'].includes(filter) && bucket(w.pos) !== filter) return false;
+    if (!['all', 'learned', 'starred', 'nuance'].includes(filter) && bucket(w.pos) !== filter) return false;
     if (!q) return true;
     return (
       w.ko.toLowerCase().includes(q) ||
@@ -139,7 +155,7 @@
 <section class="wordbook">
   <div class="cap">단어장 · Wordbook</div>
   <p class="sub">
-    {words.length} words · 배운 단어 {learnedCount}개 · 💡 헷갈리는 짝 {words.filter((word) => word.hasCluster).length}개
+    {words.length} words · 배운 단어 {learnedCount}개 · ⭐ 저장 {starredSet.size}개 · 💡 헷갈리는 짝 {words.filter((word) => word.hasCluster).length}개
   </p>
   <p class="sub note">Tap any word for its nuance note, mistakes, and forms · 아무 단어나 누르면 뉘앙스·실수·활용형이 나와요</p>
 
@@ -189,6 +205,9 @@
       {#if filter === 'learned' && !q}
         <p class="e-main">아직 배운 단어가 없어요</p>
         <p class="e-sub">Nothing learned yet — finish a bite and it lands here.</p>
+      {:else if filter === 'starred' && !q}
+        <p class="e-main">아직 저장한 단어가 없어요</p>
+        <p class="e-sub">Star a word after a guess to keep it here.</p>
       {:else}
         <p class="e-main">검색 결과가 없어요</p>
         <p class="e-sub">No matches — try the Korean or the English.</p>
@@ -203,6 +222,7 @@
             <WordbookRow
               word={w}
               learned={learnedSet.has(w.ko)}
+              starred={starredSet.has(w.ko)}
               open={openKey === rowKey(w)}
               loading={loadingKey === rowKey(w)}
               error={openKey === rowKey(w) ? detailError : ''}

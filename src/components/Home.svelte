@@ -1,8 +1,10 @@
 <script>
+  import { onDestroy } from 'svelte';
   import SettingsSheet from './SettingsSheet.svelte';
   import { prefs, setPref } from '../lib/prefs.js';
   import { installPrompt, promptInstall, shouldOfferInstall } from '../lib/pwa.js';
-  import { progress, todayKey, weekBowls } from '../lib/store.js';
+  import { progress, todayKey } from '../lib/store.js';
+  import { streak, weekActivity } from '../lib/stats.js';
   import { findById, findNext } from '../lib/nextBite.js';
 
   export let index = { chapters: [], snacks: [] };
@@ -12,6 +14,10 @@
   export let onChangeStart = () => {};
 
   let settingsOpen = false;
+  let dayToast = '';
+  let toastTimer;
+
+  onDestroy(() => clearTimeout(toastTimer));
 
   $: state = $progress;
   $: nextItem = findNext({ index, done: state.done, skippedSnacks, startChapter: $prefs.startChapter });
@@ -19,7 +25,10 @@
     ? findById({ index, id: state.lastPlayed.biteOrSnackId })
     : null;
   $: bitesToday = state.bowls[todayKey()] || 0;
-  $: bowls = weekBowls(state);
+  $: currentStreak = streak(state.bowls);
+  $: week = weekActivity(state.bowls, $prefs.dailyGoal);
+  $: bowls = week.filter((day) => day.count > 0).length;
+  $: todayPending = bitesToday === 0;
   $: doneTotal = Object.keys(state.done).length;
   $: showInstall = shouldOfferInstall({
     installEvent: $installPrompt,
@@ -34,6 +43,12 @@
 
   function dismissInstall() {
     setPref('installPromptDismissed', true);
+  }
+
+  function showDay(day) {
+    dayToast = `${day.key} · ${day.count}입 · ${day.count} bite${day.count === 1 ? '' : 's'}`;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => { dayToast = ''; }, 2200);
   }
 
   function headWord(item) {
@@ -89,8 +104,20 @@
     <div class="bowl-cap">
       <b>이번 주 {bowls}그릇 · {bowls} bowl{bowls === 1 ? '' : 's'} this week</b>
       <span>{bitesToday > 0 ? `today ${bitesToday} bite${bitesToday === 1 ? '' : 's'} · 오늘 ${bitesToday}입` : "today's bowl is empty · 오늘 그릇이 비어 있어요"} · total {doneTotal}</span>
+      <strong class="streak">🔥 {currentStreak}일 · {currentStreak}-day streak</strong>
     </div>
   </div>
+
+  {#if todayPending}<p class="streak-next">오늘 한 입이면 {currentStreak + 1}일 · One bite today makes it {currentStreak + 1}</p>{/if}
+  <div class="week" aria-label="이번 주 학습 · This week">
+    {#each week as day (day.key)}
+      <button class="day" class:today={day.today} on:click={() => showDay(day)} aria-label={`${day.key}, ${day.count}입`}>
+        <span>{day.label}</span>
+        <i class:partial={day.state === 'partial'} class:full={day.state === 'full'}></i>
+      </button>
+    {/each}
+  </div>
+  {#if dayToast}<div class="day-toast" role="status">{dayToast}</div>{/if}
 
   {#if nextItem}
     <div class="start-actions">
@@ -137,6 +164,17 @@
   .bowl { width: 46px; height: 46px; flex: none; }
   .bowl-cap { display: grid; font-size: 12.5px; color: var(--ink-3); font-weight: 700; }
   .bowl-cap b { color: var(--ink); font-size: 13.5px; }
+  .streak { color: var(--accent-deep); font-size: 12px; }
+  .streak-next { margin: 7px 0 0 58px; color: var(--ink-3); font-size: 11.5px; font-weight: 750; }
+  .week { margin-top: 13px; display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+  .day { min-width: 0; padding: 5px 3px; display: grid; justify-items: center; gap: 4px; border: 1px solid transparent; border-radius: 10px; }
+  .day.today { border-color: var(--accent); }
+  .day span { color: var(--ink-3); font-size: 10.5px; font-weight: 800; }
+  .day i { width: 25px; height: 20px; border: 1.5px solid var(--line-2); border-radius: 4px 4px 10px 10px; background: var(--wash); }
+  .day i.partial { background: linear-gradient(to top, var(--gold) 50%, var(--wash) 50%); }
+  .day i.full { border-color: var(--gold); background: var(--gold); }
+  .day-toast { margin-top: 8px; padding: 7px 10px; border-radius: 10px; background: var(--card); border: 1px solid var(--line);
+    color: var(--ink-2); font-size: 11.5px; font-weight: 750; text-align: center; }
   .start-actions { margin-top: auto; display: grid; gap: 10px; }
   .start { padding: 18px; border-radius: 18px; background: var(--accent); color: var(--on-accent);
     font-size: 19px; font-weight: 900; box-shadow: 0 5px 0 var(--accent-deep);

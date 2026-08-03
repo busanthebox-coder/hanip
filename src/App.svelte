@@ -10,7 +10,7 @@
   import { findNext } from './lib/nextBite.js';
   import { prefs } from './lib/prefs.js';
   import { applyTheme } from './lib/theme.js';
-  import { markBiteDone, progress } from './lib/store.js';
+  import { markBiteDone, migrateCollected, progress } from './lib/store.js';
 
   // The reference tabs carry the heavy data — the wordbook's nuance layer alone
   // is ~650kB — and none of it is needed to start today's bite. Load each on
@@ -29,6 +29,7 @@
 
   const chapters = courseIndex.chapters;
   const snacks = courseIndex.snacks || [];
+  migrateCollected(courseIndex);
 
   const TABS = [
     { key: 'today', ico: '🍚', ko: '오늘', en: 'Today' },
@@ -45,6 +46,7 @@
   let loadError = '';
   let skippedSnacks = new Set();
   let onboardingRequested = false;
+  let wordbookTarget = '';
 
   const colorScheme = typeof window === 'undefined' ? null : window.matchMedia?.('(prefers-color-scheme: dark)');
   let systemDark = colorScheme?.matches || false;
@@ -115,6 +117,14 @@
   function skipSnack(snackId) {
     skippedSnacks = new Set([...skippedSnacks, snackId]);
   }
+  function openWordbook(word) {
+    cancelBiteRequest();
+    playing = null;
+    showGuide = false;
+    wordbookTarget = word;
+    tab = 'words';
+    window.scrollTo(0, 0);
+  }
   async function exitBite(finished, wantMore) {
     if (finished) markBiteDone(playing.bite);
     if (finished && wantMore) {
@@ -150,6 +160,7 @@
       biteNumber={playing.bite.index + 1}
       biteTotal={playing.chapter.biteCount}
       onExit={exitBite}
+      onOpenWord={openWordbook}
     />
   {/key}
 {:else}
@@ -183,7 +194,11 @@
         {#await loadTab(tab)}
           <p class="loading">불러오는 중 · Loading…</p>
         {:then mod}
-          <svelte:component this={mod.default} />
+          {#if tab === 'words'}
+            <svelte:component this={mod.default} targetWord={wordbookTarget} onTargetHandled={() => { wordbookTarget = ''; }} />
+          {:else}
+            <svelte:component this={mod.default} />
+          {/if}
         {/await}
       {/if}
     {/if}

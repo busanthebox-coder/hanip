@@ -157,7 +157,7 @@
       <section class="danger" aria-labelledby="danger-title">
         <div class="danger-cap" id="danger-title">위험 구역 · Danger zone</div>
         {#if resetArmed}
-          <p>완료 기록, 배운 단어, 그릇 기록을 지울까요? 설정은 유지됩니다. · Delete completions, learned words, and bowls? Settings will stay.</p>
+          <p>완료·배운 단어·수집·저장 단어·그릇 기록을 지울까요? 설정은 유지됩니다. · Delete completions, learned words, collections, saved words, and bowls? Settings will stay.</p>
           <div class="danger-actions">
             <button class="reset confirm" on:click={confirmReset}>정말 초기화 · Confirm reset</button>
             <button class="cancel" on:click={() => { resetArmed = false; }}>취소 · Cancel</button>

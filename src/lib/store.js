@@ -10,9 +10,11 @@ function load() {
       learned: raw.learned || [],
       bowls: raw.bowls || {},
       lastPlayed: raw.lastPlayed || null,
+      collected: Array.isArray(raw.collected) ? [...new Set(raw.collected.filter((id) => typeof id === 'string'))] : [],
+      starred: Array.isArray(raw.starred) ? [...new Set(raw.starred.filter((word) => typeof word === 'string'))] : [],
     };
   } catch {
-    return { done: {}, learned: [], bowls: {}, lastPlayed: null };
+    return { done: {}, learned: [], bowls: {}, lastPlayed: null, collected: [], starred: [] };
   }
 }
 
@@ -35,7 +37,10 @@ export function markBiteDone(bite) {
       .filter((c) => c.kind === 'guess')
       .filter((c) => !state.learned.some((l) => l.word.ko === c.word.ko));
     const learned = [...state.learned, ...fresh].slice(-200);
-    return { ...state, done, learned, bowls };
+    const collected = bite.kind === 'pattern'
+      ? [...new Set([...(state.collected || []), bite.id])]
+      : (state.collected || []);
+    return { ...state, done, learned, bowls, collected, starred: state.starred || [] };
   });
 }
 
@@ -44,7 +49,32 @@ export function markLastPlayed(biteOrSnackId, at = Date.now()) {
 }
 
 export function resetProgress() {
-  progress.update((state) => ({ ...state, done: {}, learned: [], bowls: {} }));
+  progress.update((state) => ({ ...state, done: {}, learned: [], bowls: {}, collected: [], starred: [] }));
+}
+
+export function toggleStarred(word) {
+  if (!word) return;
+  progress.update((state) => {
+    const current = state.starred || [];
+    const starred = current.includes(word) ? current.filter((item) => item !== word) : [...current, word];
+    return { ...state, starred };
+  });
+}
+
+export function migrateCollected(index) {
+  const patternIds = new Set((index?.chapters || [])
+    .flatMap((chapter) => chapter.bites || [])
+    .filter((bite) => bite.kind === 'pattern')
+    .map((bite) => bite.id));
+  progress.update((state) => {
+    const collected = [...new Set([
+      ...(state.collected || []).filter((id) => patternIds.has(id)),
+      ...Object.keys(state.done || {}).filter((id) => patternIds.has(id)),
+    ])];
+    const current = state.collected || [];
+    if (collected.length === current.length && collected.every((id, index) => id === current[index])) return state;
+    return { ...state, collected };
+  });
 }
 
 // up to 2 recall cards from earlier bites, excluding this bite's own words

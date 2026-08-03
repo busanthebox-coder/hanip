@@ -3,6 +3,7 @@
 
   export let word;
   export let learned = false;
+  export let starred = false;
   export let open = false;
   export let loading = false;
   export let error = '';
@@ -24,6 +25,7 @@
       {#if learned}
         <span class="learned-dot" title="배운 단어 · Learned">✓</span>
       {/if}
+      {#if starred}<span class="starred-dot" title="저장한 단어 · Starred">★</span>{/if}
       {#if word.hasCluster}
         <span class="depth-dot" title="헷갈리는 짝이 있어요 · Has a confusable twin" aria-label="헷갈리는 짝 있음">💡</span>
       {/if}
@@ -68,6 +70,7 @@
     font-size: 10px; font-weight: 850; line-height: 1;
   }
   .depth-dot { flex: none; font-size: 13px; line-height: 1; }
+  .starred-dot { flex: none; color: var(--gold); font-size: 13px; line-height: 1; }
   .chapter { flex: none; font-size: 10.5px; font-weight: 800; color: var(--ink-3); white-space: nowrap; }
   .en {
     flex: 1; min-width: 0; margin-left: auto; text-align: right;

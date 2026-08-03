@@ -10,13 +10,15 @@
   import PayoffCard from './cards/PayoffCard.svelte';
   import { buzz, fanfare, thud, tick } from '../lib/feedback.js';
   import { prefs } from '../lib/prefs.js';
-  import { markLastPlayed, warmupCards } from '../lib/store.js';
+  import { markLastPlayed, progress, todayKey, warmupCards } from '../lib/store.js';
+  import { streak } from '../lib/stats.js';
   import { speak } from '../lib/tts.js';
 
   export let bite;
   export let biteNumber = 1;   // 1-based position in its chapter
   export let biteTotal = 1;
   export let onExit = () => {};      // (finished: boolean, wantMore: boolean)
+  export let onOpenWord = () => {};
 
   let cards = [...warmupCards(bite), ...bite.cards];
   markLastPlayed(bite.id);
@@ -34,6 +36,10 @@
   onDestroy(() => clearTimeout(speechTimer));
 
   $: cur = cards[i] || null;
+  $: projectedBowls = finished
+    ? { ...$progress.bowls, [todayKey()]: ($progress.bowls[todayKey()] || 0) + 1 }
+    : $progress.bowls;
+  $: winStreak = streak(projectedBowls);
 
   function resolve(correct, meta = {}) {
     if (resolved) return;
@@ -110,7 +116,7 @@
     {#key i}
       <div class="card-area">
         {#if cur.requeued}<div class="again-chip">다시 · Again</div>{/if}
-        {#if cur.kind === 'guess'}<GuessCard card={cur} onResolve={resolve} />
+        {#if cur.kind === 'guess'}<GuessCard card={cur} onResolve={resolve} {onOpenWord} />
         {:else if cur.kind === 'hunt'}<HuntCard card={cur} onResolve={resolve} />
         {:else if cur.kind === 'teach'}<TeachCard card={cur} onResolve={resolve} />
         {:else if cur.kind === 'drill'}<DrillCard card={cur} onResolve={resolve} />
@@ -144,6 +150,8 @@
       {#if answeredCount}
         <div class="score">{correctCount} of {answeredCount} on your own · {answeredCount}문제 중 {correctCount}개</div>
       {/if}
+      <div class="win-stat">🔥 {winStreak}일째 · {winStreak}-day streak</div>
+      {#if bite.kind === 'pattern'}<div class="win-stat grammar">📜 문법 카드 획득! · Grammar card collected!</div>{/if}
       {#if bite.canDo}<div class="cando">☑ {bite.canDo}</div>{/if}
       <div class="actions">
         <button class="go" on:click={() => onExit(true, true)}>한 입 더 · One more bite →</button>
@@ -188,6 +196,8 @@
   .win h2 { margin: 14px 0 0; font-size: 27px; font-weight: 900; }
   .h-en { display: block; font-size: 14px; font-weight: 800; color: var(--ink-3); }
   .score { margin-top: 6px; font-size: 13.5px; color: var(--ink-2); font-weight: 700; }
+  .win-stat { margin-top: 7px; color: var(--ink-2); font-size: 13px; font-weight: 800; }
+  .win-stat.grammar { color: var(--bad); }
   .cando { margin-top: 12px; padding: 11px 16px; border-radius: 14px; background: var(--good-soft); color: var(--good-deep);
     font-size: 14px; font-weight: 750; word-break: keep-all; }
   .actions { margin-top: 26px; align-self: stretch; display: grid; gap: 10px; }

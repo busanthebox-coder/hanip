@@ -2,9 +2,11 @@
   import { tick as afterUpdate } from 'svelte';
   import AudioDot from './AudioDot.svelte';
   import { prefs } from '../../lib/prefs.js';
+  import { progress, toggleStarred } from '../../lib/store.js';
 
   export let card;
   export let onResolve = () => {};
+  export let onOpenWord = () => {};
 
   let picked = null;      // option text the learner tapped
   let revealed = false;
@@ -14,6 +16,7 @@
   $: parts = card.sentence && card.target
     ? splitOnce(card.sentence.ko, card.target)
     : null;
+  $: starred = ($progress.starred || []).includes(card.word.ko);
 
   function splitOnce(text, needle) {
     const at = text.indexOf(needle);
@@ -68,6 +71,7 @@
     <div class="reveal-head">
       <span class="big">{card.word.ko}</span>
       <AudioDot text={card.word.ko} />
+      <button class="star" class:on={starred} aria-pressed={starred} aria-label={`${card.word.ko} ${starred ? '저장 해제 · Remove saved word' : '저장 · Save word'}`} on:click={() => toggleStarred(card.word.ko)}>{starred ? '★' : '☆'}</button>
     </div>
     <div class="mean">{card.word.en}{#if card.word.pos}<span class="pos"> · {card.word.pos}</span>{/if}</div>
     {#if card.sentence}
@@ -84,6 +88,7 @@
     {:else}
       <button class="romaja" on:click={() => { romajaShown = true; }}>발음 · Show romanization</button>
     {/if}
+    <button class="wordbook-link" on:click={() => onOpenWord(card.word.ko)}>단어장에서 자세히 · See in wordbook →</button>
   </div>
 {/if}
 
@@ -109,6 +114,9 @@
     box-shadow: var(--shadow-1); animation: rise .25s var(--ease); }
   @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
   .reveal-head { display: flex; align-items: center; gap: 10px; }
+  .star { width: 44px; height: 44px; flex: none; margin-left: auto; display: grid; place-items: center; border-radius: 999px;
+    color: var(--ink-3); font-size: 28px; line-height: 1; }
+  .star.on { color: var(--gold); }
   .big { font-size: 34px; font-weight: 850; letter-spacing: -.01em; }
   .mean { margin-top: 2px; font-size: 16.5px; font-weight: 750; }
   .pos { color: var(--ink-3); font-weight: 650; font-size: 13px; }
@@ -120,4 +128,5 @@
     border-left: 3px solid var(--gold); font-size: 13px; line-height: 1.6; color: var(--ink); word-break: keep-all; }
   .n-cap { display: block; margin-bottom: 3px; font-size: 10px; font-weight: 850; letter-spacing: .1em;
     text-transform: uppercase; color: var(--ink-3); }
+  .wordbook-link { min-height: 44px; margin-top: 10px; color: var(--accent-deep); font-size: 12.5px; font-weight: 850; }
 </style>
