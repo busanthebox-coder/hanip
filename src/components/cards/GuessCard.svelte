@@ -1,4 +1,5 @@
 <script>
+  import { tick as afterUpdate } from 'svelte';
   import AudioDot from './AudioDot.svelte';
   import { prefs } from '../../lib/prefs.js';
 
@@ -8,6 +9,7 @@
   let picked = null;      // option text the learner tapped
   let revealed = false;
   let romajaShown = false;
+  let revealElement;
 
   $: parts = card.sentence && card.target
     ? splitOnce(card.sentence.ko, card.target)
@@ -24,11 +26,17 @@
     picked = opt;
     revealed = true;
     onResolve(opt === card.word.en);
+    showReveal();
   }
   function giveUp() {
     if (revealed) return;
     revealed = true;
     onResolve(false, { skipped: true });
+    showReveal();
+  }
+  async function showReveal() {
+    await afterUpdate();
+    revealElement?.scrollIntoView?.({ block: 'nearest' });
   }
 </script>
 
@@ -56,7 +64,7 @@
 {/if}
 
 {#if revealed}
-  <div class="reveal">
+  <div class="reveal" bind:this={revealElement}>
     <div class="reveal-head">
       <span class="big">{card.word.ko}</span>
       <AudioDot text={card.word.ko} />

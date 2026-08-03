@@ -1,4 +1,5 @@
 <script>
+  import { tick as afterUpdate } from 'svelte';
   export let card;
   export let onResolve = () => {};
 
@@ -12,17 +13,18 @@
   let picked = [];
   let bank = [...bank0];
   let state = ''; // '', 'right', 'wrong'
+  let revealElement;
 
   const normal = (s) => String(s).replace(/[^가-힣a-zA-Z0-9]/g, '');
 
   function take(i) {
-    if (state === 'right') return;
+    if (state) return;
     picked = [...picked, bank[i]];
     bank = bank.filter((_, at) => at !== i);
     state = '';
   }
   function untake(i) {
-    if (state === 'right') return;
+    if (state) return;
     bank = [...bank, picked[i]];
     picked = picked.filter((_, at) => at !== i);
     state = '';
@@ -33,7 +35,13 @@
       onResolve(true);
     } else {
       state = 'wrong';
+      onResolve(false);
     }
+    showReveal();
+  }
+  async function showReveal() {
+    await afterUpdate();
+    revealElement?.scrollIntoView?.({ block: 'nearest' });
   }
 </script>
 
@@ -54,9 +62,9 @@
 </div>
 
 {#if state === 'right'}
-  <div class="why good-note">{card.correct}{#if card.explanation} — {card.explanation}{/if}</div>
+  <div class="why good-note" bind:this={revealElement}>{card.correct}{#if card.explanation} — {card.explanation}{/if}</div>
 {:else if state === 'wrong'}
-  <div class="why bad-note">순서를 다시 만져보세요 · Not quite — tap a tile to send it back and retry.</div>
+  <div class="why bad-note" bind:this={revealElement}>정답: {card.correct} · Not quite — review the answer, then try it again later.</div>
 {/if}
 
 {#if bank.length === 0 && state !== 'right'}

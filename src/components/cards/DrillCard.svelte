@@ -1,15 +1,22 @@
 <script>
+  import { tick as afterUpdate } from 'svelte';
   export let card;
   export let onResolve = () => {};
 
   let picked = null;
   let revealed = false;
+  let revealElement;
 
   function pick(opt) {
     if (revealed) return;
     picked = opt;
     revealed = true;
     onResolve(!!opt.ok);
+    showReveal();
+  }
+  async function showReveal() {
+    await afterUpdate();
+    revealElement?.scrollIntoView?.({ block: 'nearest' });
   }
 </script>
 
@@ -29,7 +36,7 @@
 </div>
 
 {#if revealed && card.explanation}
-  <div class="why">{card.explanation}</div>
+  <div class="why" bind:this={revealElement}>{card.explanation}</div>
 {/if}
 
 <style>

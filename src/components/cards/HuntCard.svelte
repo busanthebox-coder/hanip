@@ -1,4 +1,5 @@
 <script>
+  import { tick as afterUpdate } from 'svelte';
   import AudioDot from './AudioDot.svelte';
   import { prefs } from '../../lib/prefs.js';
 
@@ -9,6 +10,7 @@
   let ruleShown = false;
   let moreShown = false;
   let hitLines = card.lines.map(() => false);
+  let revealElement;
 
   function tap(lineIdx, token) {
     if (ruleShown) return;
@@ -20,8 +22,13 @@
       if (found >= card.lines.length) {
         ruleShown = true;
         onResolve(true);
+        showReveal();
       }
     }
+  }
+  async function showReveal() {
+    await afterUpdate();
+    revealElement?.scrollIntoView?.({ block: 'nearest' });
   }
   function shakeWrong(e) {
     const el = e.currentTarget;
@@ -56,7 +63,7 @@
 </div>
 
 {#if ruleShown}
-  <div class="rule">
+  <div class="rule" bind:this={revealElement}>
     <div class="rule-cap">발견한 규칙 · You found the rule — {card.rule.name}{#if card.sub} · {card.sub}{/if}</div>
     <div class="fork">
       {#each card.rule.rows as row}

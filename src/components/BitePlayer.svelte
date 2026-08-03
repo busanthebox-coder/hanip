@@ -1,4 +1,5 @@
 <script>
+  import { onDestroy } from 'svelte';
   import GuessCard from './cards/GuessCard.svelte';
   import HuntCard from './cards/HuntCard.svelte';
   import TeachCard from './cards/TeachCard.svelte';
@@ -7,7 +8,10 @@
   import ChatCard from './cards/ChatCard.svelte';
   import ReadCard from './cards/ReadCard.svelte';
   import PayoffCard from './cards/PayoffCard.svelte';
+  import { buzz, fanfare, thud, tick } from '../lib/feedback.js';
+  import { prefs } from '../lib/prefs.js';
   import { markLastPlayed, warmupCards } from '../lib/store.js';
+  import { speak } from '../lib/tts.js';
 
   export let bite;
   export let biteNumber = 1;   // 1-based position in its chapter
@@ -22,13 +26,30 @@
   let requeuedIds = new Set();
   let correctCount = 0;
   let answeredCount = 0;
+  let resolutionCorrect = null;
+  let speechTimer = null;
+
+  const ACTIVE_KINDS = new Set(['guess', 'drill', 'order']);
+
+  onDestroy(() => clearTimeout(speechTimer));
 
   $: cur = cards[i] || null;
 
   function resolve(correct, meta = {}) {
     if (resolved) return;
     resolved = true;
-    if (cur.kind === 'guess' || cur.kind === 'drill' || cur.kind === 'order') {
+    resolutionCorrect = correct;
+    if (ACTIVE_KINDS.has(cur.kind)) {
+      // "몰라요" is a neutral reveal, not a wrong-answer penalty.
+      if (!meta.skipped) {
+        if (correct) {
+          tick();
+          buzz(15);
+        } else {
+          thud();
+          buzz([30, 40, 30]);
+        }
+      }
       // 몰라요 is a no-penalty escape: the card comes back for another look,
       // but it never counts against the learner's score
       if (!meta.skipped) {
@@ -43,7 +64,19 @@
         const at = Math.min(i + 3, cards.length);
         cards = [...cards.slice(0, at), clone, ...cards.slice(at)];
       }
+    } else if (cur.kind === 'hunt' && correct) {
+      tick();
+      buzz(15);
     }
+    if (cur.kind === 'guess') speakSoon(cur.word?.ko);
+    if (cur.kind === 'payoff') speakSoon(cur.line?.ko);
+  }
+  function speakSoon(text) {
+    if (!$prefs.autoSpeak || !text) return;
+    clearTimeout(speechTimer);
+    speechTimer = setTimeout(() => {
+      if ($prefs.autoSpeak) speak(text);
+    }, 60);
   }
   function cardKey(card) {
     return card.kind + ':' + (card.word?.ko || card.prompt || card.name || '');
@@ -52,10 +85,12 @@
     if (i < cards.length - 1) {
       i += 1;
       resolved = false;
+      resolutionCorrect = null;
       document.querySelector('.bp')?.scrollTo?.(0, 0);
       window.scrollTo(0, 0);
     } else {
       finished = true;
+      fanfare();
     }
   }
 </script>
@@ -74,6 +109,7 @@
 
     {#key i}
       <div class="card-area">
+        {#if cur.requeued}<div class="again-chip">다시 · Again</div>{/if}
         {#if cur.kind === 'guess'}<GuessCard card={cur} onResolve={resolve} />
         {:else if cur.kind === 'hunt'}<HuntCard card={cur} onResolve={resolve} />
         {:else if cur.kind === 'teach'}<TeachCard card={cur} onResolve={resolve} />
@@ -82,6 +118,9 @@
         {:else if cur.kind === 'chat'}<ChatCard card={cur} onResolve={resolve} />
         {:else if cur.kind === 'read'}<ReadCard card={cur} onResolve={resolve} />
         {:else if cur.kind === 'payoff'}<PayoffCard card={cur} onResolve={resolve} />
+        {/if}
+        {#if resolved && resolutionCorrect === false && ACTIVE_KINDS.has(cur.kind)}
+          <div class="retry-chip">3장 뒤에 다시 나와요 · You'll see this again</div>
         {/if}
       </div>
     {/key}
@@ -130,6 +169,10 @@
   .dot.now { background: var(--accent); }
   .count { flex: none; font-size: 12px; font-weight: 800; color: var(--ink-3); font-variant-numeric: tabular-nums; }
   .card-area { display: grid; align-content: start; animation: deal .28s var(--ease); }
+  .again-chip { justify-self: start; margin-bottom: 9px; padding: 4px 10px; border-radius: 999px; background: var(--gold-soft);
+    color: var(--ink-2); font-size: 11px; font-weight: 850; letter-spacing: .06em; }
+  .retry-chip { justify-self: start; margin-top: 12px; padding: 6px 11px; border-radius: 999px; background: var(--accent-soft);
+    color: var(--accent-deep); font-size: 12px; font-weight: 800; }
   @keyframes deal { from { opacity: 0; transform: translateY(12px) rotate(.4deg); } to { opacity: 1; transform: none; } }
   .nav { margin-top: auto; padding-top: 18px; position: sticky; bottom: 0;
     background: linear-gradient(to top, var(--bg) 75%, transparent); padding-bottom: 4px; }
