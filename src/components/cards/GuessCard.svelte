@@ -1,5 +1,6 @@
 <script>
   import AudioDot from './AudioDot.svelte';
+  import { prefs } from '../../lib/prefs.js';
 
   export let card;
   export let onResolve = () => {};
@@ -70,10 +71,10 @@
            reveal teaches the distinction instead of only confirming. -->
       <div class="nuance"><span class="n-cap">뉘앙스 · Nuance</span>{card.word.nuance}</div>
     {/if}
-    {#if !romajaShown}
-      <button class="romaja" on:click={() => { romajaShown = true; }}>발음 · Show romanization</button>
-    {:else}
+    {#if $prefs.romaja === 'shown' || romajaShown}
       <div class="note sub">{card.word.romanization}</div>
+    {:else}
+      <button class="romaja" on:click={() => { romajaShown = true; }}>발음 · Show romanization</button>
     {/if}
   </div>
 {/if}

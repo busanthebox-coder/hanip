@@ -43,6 +43,10 @@ export function markLastPlayed(biteOrSnackId, at = Date.now()) {
   progress.update((state) => ({ ...state, lastPlayed: { biteOrSnackId, at } }));
 }
 
+export function resetProgress() {
+  progress.update((state) => ({ ...state, done: {}, learned: [], bowls: {} }));
+}
+
 // up to 2 recall cards from earlier bites, excluding this bite's own words
 export function warmupCards(bite, count = 2) {
   const { learned, done } = get(progress);

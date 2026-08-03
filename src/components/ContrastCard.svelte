@@ -1,5 +1,6 @@
 <script>
   import AudioDot from './cards/AudioDot.svelte';
+  import { prefs } from '../lib/prefs.js';
 
   export let cluster = null;
   export let compact = false;
@@ -67,7 +68,7 @@
               </div>
             {/if}
 
-            {#if rom && !compact}
+            {#if rom && (!compact || $prefs.romaja === 'shown')}
               <div class="m-rom">{rom}</div>
             {/if}
 

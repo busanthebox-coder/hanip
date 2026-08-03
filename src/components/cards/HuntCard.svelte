@@ -1,5 +1,6 @@
 <script>
   import AudioDot from './AudioDot.svelte';
+  import { prefs } from '../../lib/prefs.js';
 
   export let card;
   export let onResolve = () => {};
@@ -48,6 +49,7 @@
         {/each}
         <AudioDot text={line.ko} size={26} />
       </div>
+      {#if $prefs.romaja === 'shown' && line.romanization}<div class="line-rom">{line.romanization}</div>{/if}
       {#if ruleShown && line.en}<div class="line-en">{line.en}</div>{/if}
     </div>
   {/each}
@@ -94,6 +96,7 @@
   :global(.tok.miss) { animation: shake .28s ease; }
   @keyframes shake { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
   .line-en { margin-top: 4px; font-size: 13px; color: var(--ink-3); }
+  .line-rom { margin-top: 4px; font-size: 12.5px; color: var(--ink-3); letter-spacing: .01em; }
   .rule { margin-top: 16px; padding: 17px; border-radius: 18px; background: var(--card); border: 1px solid var(--line);
     box-shadow: var(--shadow-1); animation: rise .3s var(--ease); }
   @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }

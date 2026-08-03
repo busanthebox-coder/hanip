@@ -1,5 +1,6 @@
 <script>
   import AudioDot from './AudioDot.svelte';
+  import { prefs } from '../../lib/prefs.js';
 
   export let card;
   export let onResolve = () => {};
@@ -23,6 +24,7 @@
   <div class="name">{card.line.speaker}</div>
   <button class="bub" on:click={() => { enShown = !enShown; }}>
     {#if parts}{parts.pre}<span class="hl">{parts.mid}</span>{parts.post}{:else}{card.line.ko}{/if}
+    {#if $prefs.romaja === 'shown' && card.line.romanization}<span class="rom">{card.line.romanization}</span>{/if}
     {#if enShown && card.line.en}<span class="en">{card.line.en}</span>{/if}
   </button>
   <div class="tools"><AudioDot text={card.line.ko} size={28} /></div>
@@ -40,6 +42,7 @@
     box-shadow: 0 2px 8px -4px rgba(38, 34, 28, 0.2); }
   .hl { background: var(--gold-soft); border-bottom: 2.5px solid var(--gold); padding: 0 1px; }
   .en { display: block; margin-top: 6px; font-size: 13px; color: var(--ink-2); font-weight: 600; }
+  .rom { display: block; margin-top: 5px; color: var(--ink-3); font-size: 12.5px; font-weight: 650; letter-spacing: .01em; }
   .tools { margin-left: 4px; }
   .hint { justify-self: center; font-size: 12px; color: var(--ink-3); }
 </style>

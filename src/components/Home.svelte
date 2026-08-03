@@ -1,4 +1,5 @@
 <script>
+  import SettingsSheet from './SettingsSheet.svelte';
   import { progress, todayKey, weekBowls } from '../lib/store.js';
   import { findById, findNext } from '../lib/nextBite.js';
 
@@ -6,6 +7,8 @@
   export let skippedSnacks = new Set();
   export let onStart = () => {};
   export let onSkipSnack = () => {};
+
+  let settingsOpen = false;
 
   $: state = $progress;
   $: nextItem = findNext({ index, done: state.done, skippedSnacks });
@@ -33,7 +36,10 @@
 </script>
 
 <section class="home">
-  <div class="kicker">오늘의 한 입 · Today's bite</div>
+  <div class="home-head">
+    <div class="kicker">오늘의 한 입 · Today's bite</div>
+    <button class="settings-button" aria-label="설정 열기 · Open settings" on:click={() => { settingsOpen = true; }}>⚙</button>
+  </div>
 
   {#if nextItem}
     <div class="level-chip">{nextItem.level} · {nextItem.type === 'snack' ? nextItem.afterChapter : nextItem.chapterNumber}과</div>
@@ -77,12 +83,18 @@
       {/if}
     </div>
   {/if}
+
+  <SettingsSheet open={settingsOpen} onClose={() => { settingsOpen = false; }} />
 </section>
 
 <style>
   .home { min-height: calc(100dvh - 64px); max-width: 480px; margin: 0 auto; padding: 34px 24px 24px;
     display: flex; flex-direction: column; }
+  .home-head { min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
   .kicker { font-size: 11.5px; font-weight: 850; letter-spacing: .2em; color: var(--accent); text-transform: uppercase; }
+  .settings-button { width: 44px; height: 44px; flex: none; display: grid; place-items: center; border: 1px solid var(--line);
+    border-radius: 999px; background: var(--card); color: var(--ink-2); font-size: 20px; box-shadow: var(--shadow-1); }
+  .settings-button:hover { border-color: var(--line-2); color: var(--accent-deep); }
   .level-chip { align-self: flex-start; margin-top: 14px; padding: 5px 10px; border-radius: 999px;
     background: var(--accent-soft); color: var(--accent-deep); font-size: 12px; font-weight: 850; }
   .continue { align-self: flex-start; max-width: 100%; margin-top: 10px; padding: 7px 11px; border: 1px solid var(--line);

@@ -11,6 +11,7 @@ const LOAD_SNACKS = () => import('./snacks.json');
 
 const chapterLevels = new Map(courseIndex.chapters.map((chapter) => [chapter.id, chapter.level]));
 const levelPromises = {};
+const hydratedChapters = new Map();
 let snackPromise;
 
 export function createLatestRequest() {
@@ -19,6 +20,30 @@ export function createLatestRequest() {
     const request = ++latest;
     return () => request === latest;
   };
+}
+
+export function hydrateChapterRomanization(bites) {
+  const romanizationByLine = new Map();
+  for (const card of bites.flatMap((bite) => bite.cards || [])) {
+    if (card.kind !== 'chat') continue;
+    for (const line of card.lines || []) {
+      if (line.ko && line.romanization && !romanizationByLine.has(line.ko)) {
+        romanizationByLine.set(line.ko, line.romanization);
+      }
+    }
+  }
+
+  return bites.map((bite) => {
+    let changed = false;
+    const cards = (bite.cards || []).map((card) => {
+      if (card.kind !== 'payoff' || card.line?.romanization) return card;
+      const romanization = romanizationByLine.get(card.line?.ko);
+      if (!romanization) return card;
+      changed = true;
+      return { ...card, line: { ...card.line, romanization } };
+    });
+    return changed ? { ...bite, cards } : bite;
+  });
 }
 
 function loadLevel(level) {
@@ -40,7 +65,10 @@ export async function loadChapterCards(chapterId) {
   const data = await loadLevel(level);
   const chapter = data.chapters.find((item) => item.id === chapterId);
   if (!chapter) throw new Error(`Chapter ${chapterId} is missing from the ${level} course chunk`);
-  return chapter.bites;
+  if (!hydratedChapters.has(chapterId)) {
+    hydratedChapters.set(chapterId, hydrateChapterRomanization(chapter.bites));
+  }
+  return hydratedChapters.get(chapterId);
 }
 
 export async function loadSnackCards(snackId) {

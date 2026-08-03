@@ -1,4 +1,6 @@
 <script>
+  import { prefs } from '../lib/prefs.js';
+
   export let reader;
   export let onBack = () => {};
 
@@ -8,6 +10,15 @@
 
   function toggleAnswer(index) {
     answers = { ...answers, [index]: !answers[index] };
+  }
+
+  function paragraphText(paragraph) {
+    return typeof paragraph === 'string' ? paragraph : paragraph?.ko || '';
+  }
+
+  function paragraphRomanization(paragraph, index) {
+    if (paragraph && typeof paragraph === 'object') return paragraph.romanization || '';
+    return reader.bodyRomanization?.[index] || '';
   }
 </script>
 
@@ -19,7 +30,10 @@
   <div class="body">
     {#each reader.body.slice(0, shown) as paragraph, index}
       <section class="paragraph">
-        <p lang="ko">{paragraph}</p>
+        <p lang="ko">{paragraphText(paragraph)}</p>
+        {#if $prefs.romaja === 'shown' && paragraphRomanization(paragraph, index)}
+          <p class="romanization">{paragraphRomanization(paragraph, index)}</p>
+        {/if}
         {#if translationOpen}<p class="translation">{reader.bodyTranslation[index]}</p>{/if}
       </section>
     {/each}
@@ -58,6 +72,7 @@
   .body { display: grid; gap: 12px; }
   .paragraph { padding: 16px; border: 1px solid var(--line); border-radius: 18px; background: var(--card); box-shadow: var(--shadow-1); }
   p { margin: 0; font-size: 16px; line-height: 1.9; word-break: keep-all; }
+  .romanization { margin-top: 7px; color: var(--ink-3); font-size: 12.5px; line-height: 1.65; letter-spacing: .01em; }
   .translation { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line); color: var(--ink-2); font-size: 13.5px; line-height: 1.65; }
   .actions { display: grid; gap: 8px; }
   .action { min-height: 46px; padding: 10px 14px; border-radius: var(--r-chip); background: var(--accent); color: var(--card);
