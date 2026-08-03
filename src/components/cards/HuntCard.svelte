@@ -38,8 +38,8 @@
   }
 </script>
 
-<div class="step-label">문법 · Grammar hunt</div>
-<div class="q">두 문장에서 반복되는 문법 표현을 탭하세요 <span class="q-en">Tap the grammar piece that repeats in both sentences</span></div>
+<div class="step-label">Grammar check · 문법 확인</div>
+<div class="q">Tap today’s grammar form in each sentence <span class="q-en">각 문장에서 오늘 배운 문법 부분을 탭하세요</span></div>
 
 <div class="hunt">
   {#each card.lines as line, li}

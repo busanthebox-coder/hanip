@@ -71,9 +71,9 @@
         ]
       },
       "englishSpeakerPitfall": {
-        "wrong": "나는 한국어를 좋아하고 있어요.",
-        "right": "나는 한국어를 좋아해요.",
-        "explanation": "English can say 'I'm liking it,' but Korean feeling/state verbs like 좋아하다, 알다, 사랑하다 don't take -고 있다 for a current state. Just use the plain present. Save -고 있다 for actions you can actually watch happening."
+        "wrong": "Feeling and knowledge verbs can never take -고 있다.",
+        "right": "한국어를 좋아해요. / 그 사실을 알고 있어요.",
+        "explanation": "For a stable preference, the plain present is usually the natural default: 한국어를 좋아해요. But -고 있다 is not banned with state-like verbs. 알고 있어요 is extremely common, and 좋아하고 있어요 or 사랑하고 있어요 can describe a continuing or developing state when the context calls for it. Choose by meaning, not by a blanket rule."
       }
     },
     {

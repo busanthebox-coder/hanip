@@ -71,9 +71,9 @@
         ]
       },
       "englishSpeakerPitfall": {
-        "wrong": "봐 보세요 (for \"try looking\")",
-        "right": "보세요 / 한번 보세요",
-        "explanation": "Here 보다 is already the main verb (\"to look\"), so you don't tack the helper 보다 on top of it. Doubling it — 봐 보세요 — sounds odd. Just say 보세요, or 한번 보세요 for the \"give it a look\" feel. The helper 보다 attaches to OTHER verbs (먹어 보세요, 읽어 보세요), not to 보다 itself."
+        "wrong": "봐 보세요 is ungrammatical because 보다 appears twice.",
+        "right": "한번 봐 보세요. / 한번 보세요.",
+        "explanation": "봐 보세요 is grammatical: the first 보다 is the main verb 'look/watch,' and the second 보다 is the helper 'try and see.' Because the repetition can sound heavy, 한번 보세요 is often simpler, while 한번 봐 보세요 clearly emphasizes trying it for yourself."
       }
     },
     {

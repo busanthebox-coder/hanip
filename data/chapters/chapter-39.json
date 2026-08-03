@@ -204,8 +204,8 @@
         }
       ],
       "keyPoint": {
-        "label": "-(으)ㄹ 뿐이다 vs. N뿐이다 (and 만)",
-        "body": "After a verb or adjective, use the -(으)ㄹ form: 기다릴 뿐이에요. After a noun, drop -(으)ㄹ and stick 뿐 right on: 물뿐이에요. Compare 만 ('only'): 만 picks one out of several options (물만 마셔요 = I drink only water), while N뿐이다 says that noun is all there is (물뿐이에요 = water is all there is)."
+        "label": "-(으)ㄹ 뿐이다, N뿐이다, and N일 뿐이다",
+        "body": "After a verb or adjective, use the -(으)ㄹ form: 기다릴 뿐이에요. N뿐이다 means 'only N / N is all there is': 물뿐이에요. N일 뿐이다 is also grammatical, but it classifies or plays down the noun: 물일 뿐이에요 = 'it is merely water.' The two noun patterns answer different questions, so do not treat either one as universally wrong."
       },
       "pronunciation": "뿐이에요 links smoothly as [뿌니에요]: the ㄴ of 뿐 slides onto 이. With a noun like 물, 물뿐이에요 sounds like [물뿌니에요].",
       "drill": {
@@ -218,9 +218,9 @@
         ]
       },
       "englishSpeakerPitfall": {
-        "wrong": "물일 뿐이에요. (meaning: there's only water)",
-        "right": "물뿐이에요.",
-        "explanation": "After a noun, 뿐 attaches directly with no -(으)ㄹ: 물뿐이에요, 저뿐이에요. The -(으)ㄹ 뿐이다 form is only for verbs and adjectives (기다릴 뿐이에요). English speakers tend to glue an extra ending on before 뿐 with nouns, but the noun just takes 뿐 by itself."
+        "wrong": "물뿐이에요 and 물일 뿐이에요 always mean exactly the same thing.",
+        "right": "냉장고에는 물뿐이에요. (Only water is there.) / 이건 물일 뿐이에요. (This is merely water.)",
+        "explanation": "N뿐이다 limits what exists or is available. N일 뿐이다 says that something is merely N and nothing more. Both are grammatical; choose the structure that matches the intended message."
       }
     }
   ],

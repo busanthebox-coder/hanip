@@ -8,3 +8,4 @@ src/lib/wordbook-depth.json
 src/lib/wordbook-depth/
 .omo/
 .playwright-cli/
+/output/

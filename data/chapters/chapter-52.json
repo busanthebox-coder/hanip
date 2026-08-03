@@ -209,7 +209,7 @@
       },
       "pronunciation": "After a stem ending in ㄱ, like 먹다, 먹고 is pronounced [먹꼬] — the 고 tenses to 꼬. Likewise 씻고 [씯꼬]. The 고 itself never changes spelling.",
       "drill": {
-        "instruction": "Join the two actions with V-고. Keep tense on the second verb only.",
+        "instruction": "Join the two actions with V-고. For a simple sequence, tense on the final verb is enough.",
         "model": "손을 씻다 / 밥을 먹다 → 손을 씻고 밥을 먹어요.",
         "items": [
           "커피를 마시다 / 신문을 읽다 → ____",
@@ -218,9 +218,9 @@
         ]
       },
       "englishSpeakerPitfall": {
-        "wrong": "밥을 먹었고 커피를 마셨어요.",
-        "right": "밥을 먹고 커피를 마셨어요.",
-        "explanation": "English marks tense on both verbs (\"ate and drank\"), so learners add -었- to the first verb. In Korean, tense appears ONLY on the final verb; the first stays plain (먹고)."
+        "wrong": "Past tense may appear only on the final verb with -고.",
+        "right": "밥을 먹고 커피를 마셨어요. / 밥을 먹었고 커피도 마셨어요.",
+        "explanation": "Both are grammatical. In a simple sequence, the final past ending can set the time for both actions, so 먹고 … 마셨어요 is concise and common. When listing completed facts separately or emphasizing each event, 먹었고 … 마셨어요 is also natural."
       }
     },
     {

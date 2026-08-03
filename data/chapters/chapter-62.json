@@ -311,7 +311,7 @@
           "ko": "우리 형은 키가 커요.",
           "romanization": "uri hyeongeun kiga keoyo.",
           "en": "My older brother is tall.",
-          "note": "형 is the topic; 키 (height) is the inner subject of 크다. You can't say 형은 커요 for 'tall.'"
+          "note": "형 is the topic; 키 (height) is the inner subject of 크다, so 키가 커요 states 'tall' unambiguously. 형은 커요 can also be grammatical, but without context it may mean that he is big rather than specifically tall."
         },
         {
           "ko": "이 식당은 김치찌개가 맛있어요.",
@@ -321,8 +321,8 @@
         }
       ],
       "keyPoint": {
-        "label": "One topic (은/는), one inner subject (이/가)",
-        "body": "Don't pile two 은/는 or two 이/가. The big thing you're talking about takes 은/는; the specific thing the predicate describes takes 이/가. 저는 머리가 아파요 = 'I have a headache' (me = topic, head = what hurts)."
+        "label": "The clearest beginner frame: topic + inner subject",
+        "body": "For a neutral description, mark the big topic with 은/는 and the specific part or condition with 이/가: 저는 머리가 아파요. Korean can also use repeated 이/가 in double-subject constructions or repeated 은/는 for contrast, so this is a reliable default pattern rather than an absolute ban on other combinations."
       },
       "pronunciation": "코가 = ko-ga (smooth, no stop); 키가 = ki-ga; 시간이 = sigani (final ㄴ links onto 이). Keep both syllables of 이/가 light — the stress sits on the predicate (길어요, 커요).",
       "drill": {
@@ -335,13 +335,29 @@
         ]
       },
       "englishSpeakerPitfall": {
-        "wrong": "코끼리가 코가 길어요. / 저는 시간은 없어요.",
-        "right": "코끼리는 코가 길어요. / 저는 시간이 없어요.",
-        "explanation": "English has one subject per clause, so learners either mark the whole thing with 이/가 (코끼리가 코가...) or repeat 은/는. Korean splits the roles: the overall topic gets 은/는, and the specific noun the predicate is about gets 이/가 — exactly one of each."
+        "wrong": "코끼리가 코가 길어요 and 저는 시간은 없어요 are always ungrammatical.",
+        "right": "코끼리는 코가 길어요. / 저는 시간이 없어요. (neutral defaults)",
+        "explanation": "The right-hand sentences are the safest neutral forms for beginners. 코끼리가 코가 길어요 can occur as a double-subject construction, and 저는 시간은 없어요 can contrast time with something else ('I don't have time, at least'). Do not mark those forms wrong without context; teach the difference in focus."
       }
     }
   ],
   "extendedVocabulary": [
+    {
+      "hangul": "조사",
+      "romanization": "josa",
+      "english": "grammatical particle",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "은/는과 이/가는 대표적인 조사예요.",
+        "en": "은/는 and 이/가 are representative Korean particles.",
+        "note": "Here 조사 means a grammatical particle, not a survey or investigation."
+      },
+      "collocations": [
+        "조사를 고르다",
+        "조사를 생략하다",
+        "조사가 달라지다"
+      ]
+    },
     {
       "hangul": "친구",
       "romanization": "chingu",

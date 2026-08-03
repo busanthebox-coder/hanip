@@ -426,9 +426,9 @@
         ]
       },
       "englishSpeakerPitfall": {
-        "wrong": "저는 열이 있어요.",
-        "right": "열이 나요.",
-        "explanation": "English 'I have a fever' tempts you into 열이 있어요 ('a fever exists'), which sounds off for an active symptom. Koreans say 열이 나요 — the fever 'comes out.' Use 나다, not 있다, for fever, cough, and runny nose."
+        "wrong": "열이 있어요 is always wrong.",
+        "right": "열이 나요. / 열도 있어요?",
+        "explanation": "열이 나요 is the most useful default when reporting that a fever has developed. 열이 있어요 or 열도 있어요? can naturally describe or ask about the presence of a fever, especially during a medical check. Teach the preferred symptom pairing without banning the presence expression."
       }
     },
     {

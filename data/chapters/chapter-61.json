@@ -169,7 +169,7 @@
         {
           "when": "Verb stem ending in consonant",
           "add": "-을걸요",
-          "ex": "먹다 -> 먹을걸요 (He probably ate)"
+          "ex": "먹다 -> 먹을걸요 (They'll probably eat / they probably do eat)"
         },
         {
           "when": "Past tense (guessing about the past)",

@@ -25,8 +25,11 @@
   const loaded = {};
   const loadTab = (key) => (loaded[key] ||= LAZY[key]());
   const loadShowcase = () => import('./components/DesignShowcase.svelte');
+  const loadGrammarShowcase = () => import('./components/GrammarLessonShowcase.svelte');
+  let grammarDataPromise;
+  const loadGrammarData = () => (grammarDataPromise ||= import('./lib/grammarData.js'));
   const beginBiteRequest = createLatestRequest();
-  const showcase = new URLSearchParams(window.location.search).get('showcase') === 'shelf';
+  const showcaseName = new URLSearchParams(window.location.search).get('showcase');
 
   const chapters = courseIndex.chapters;
   const snacks = courseIndex.snacks || [];
@@ -78,8 +81,17 @@
       const bites = await loadChapterCards(chapter.id);
       const fullBite = bites.find((item) => item.id === bite.id);
       if (!fullBite) throw new Error(`Missing bite: ${bite.id}`);
+      let lessonCards = null;
+      if (fullBite.kind === 'pattern') {
+        try {
+          const grammarData = await loadGrammarData();
+          lessonCards = await grammarData.loadGrammarCards(chapter.id, fullBite.title, fullBite.cards);
+        } catch (grammarError) {
+          console.warn('Could not expand grammar lesson; using compact cards.', grammarError);
+        }
+      }
       if (!isLatest()) return;
-      playing = { chapter, bite: fullBite, withWarmup };
+      playing = { chapter, bite: lessonCards ? { ...fullBite, lessonCards } : fullBite, withWarmup };
       window.scrollTo(0, 0);
     } catch (error) {
       if (!isLatest()) return;
@@ -164,7 +176,13 @@
   }
 </script>
 
-{#if showcase}
+{#if showcaseName === 'grammar'}
+  {#await loadGrammarShowcase()}
+    <p class="loading">문법 미리보기 불러오는 중 · Loading grammar preview…</p>
+  {:then mod}
+    <svelte:component this={mod.default} />
+  {/await}
+{:else if showcaseName === 'shelf'}
   {#await loadShowcase()}
     <p class="loading">컴포넌트 불러오는 중 · Loading showcase…</p>
   {:then mod}

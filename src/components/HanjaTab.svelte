@@ -1,8 +1,10 @@
 <script>
   import hanjaData from '../../data/hanja.json';
+  import coreHanja80 from '../../data/hanja-core-80.json';
+  import expansionHanja80 from '../../data/hanja-expansion-80.json';
   import AudioDot from './cards/AudioDot.svelte';
 
-  const roots = hanjaData.roots;
+  const roots = [...hanjaData.roots, ...coreHanja80.roots, ...expansionHanja80.roots];
   const levels = [...new Set(roots.map((r) => r.level))].sort();
 
   let level = 'all';

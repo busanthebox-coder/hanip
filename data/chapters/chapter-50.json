@@ -134,7 +134,7 @@
       ],
       "keyPoint": {
         "label": "-(으)ㄹ 텐데 vs. -(으)ㄹ 것 같아요",
-        "body": "Both predict, but -(으)ㄹ 것 같아요 just states the guess and stops (비가 올 것 같아요 = I think it'll rain). -(으)ㄹ 텐데 predicts and then leans into a consequence — concern or advice — so it almost always has a second clause: 비가 올 텐데 우산을 가져가세요 (it'll rain, so take an umbrella)."
+        "body": "Both can present an expectation. -(으)ㄹ 것 같아요 comfortably ends after the guess: 비가 올 것 같아요. -(으)ㄹ 텐데 often leads into a consequence, concern, or advice: 비가 올 텐데 우산을 가져가세요. In real conversation it can also end the turn by itself when the missing thought is obvious, such as 비가 올 텐데… ('But it may rain…')."
       },
       "pronunciation": "올 텐데 links smoothly into one breath group — \"ol-ten-de,\" no pause — so the forecast flows straight into the advice. 텐데 itself is read [텐데] as written.",
       "drill": {
@@ -147,9 +147,9 @@
         ]
       },
       "englishSpeakerPitfall": {
-        "wrong": "비가 올 텐데. (and then nothing)",
-        "right": "비가 올 텐데 우산을 가져가세요.",
-        "explanation": "English speakers treat -(으)ㄹ 텐데 as a complete sentence (\"it'll probably rain.\"). But 텐데 ends in -ㄴ데, which dangles — it expects a following clause. Left alone it sounds unfinished, as if you trailed off."
+        "wrong": "Sentence-final -(으)ㄹ 텐데 is always incomplete and wrong.",
+        "right": "비가 올 텐데 우산을 가져가세요. / 비가 올 텐데…",
+        "explanation": "Include the following clause when you need to state the advice clearly. In conversation, a final 텐데 can deliberately leave concern, hesitation, or disagreement unstated because the listener can infer it. The trailing form is a real conversational tool, not a grammar error."
       }
     },
     {
@@ -218,9 +218,9 @@
         ]
       },
       "englishSpeakerPitfall": {
-        "wrong": "비가 올 거면 집에 있을 거예요.",
-        "right": "비가 오면 집에 있을 거예요.",
-        "explanation": "English speakers add a future marker inside the if-clause (\"if it WILL rain\"). Korean keeps the -(으)면 clause plain present — 비가 오면, not 비가 올 거면. Only the result clause carries the future (있을 거예요)."
+        "wrong": "비가 오면 and 비가 올 거면 are interchangeable in every context.",
+        "right": "비가 오면 집에 있을 거예요. (neutral condition) / 비가 올 거면 일정을 바꿔요. (if rain is what is expected)",
+        "explanation": "Plain V-(으)면 is the neutral everyday conditional. V-(으)ㄹ 거면 is also grammatical and sets up an expected plan or premise: 'if it is going to V / if that is what will happen.' Use it when that future premise itself matters."
       }
     },
     {

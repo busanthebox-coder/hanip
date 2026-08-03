@@ -403,11 +403,11 @@ describe('buildPatternBites', () => {
 
     expect(bite.cards.some((card) => card.kind === 'drill')).toBe(false);
   });
-  it('does not make 따라서 and 그러므로 mutually exclusive answers', () => {
-    const chapter = JSON.parse(readFileSync(join(root, 'data', 'chapters', 'chapter-63.json'), 'utf8'));
+  it('does not make -아/어 놓다 and -아/어 두다 mutually exclusive answers', () => {
+    const chapter = JSON.parse(readFileSync(join(root, 'data', 'chapters', 'chapter-65.json'), 'utf8'));
     const overrides = JSON.parse(readFileSync(join(root, 'data', 'overrides.json'), 'utf8'));
     const bite = buildPatternBites(chapter, overrides)
-      .find((candidate) => candidate.title.includes('따라서 / 그러므로'));
+      .find((candidate) => candidate.title.includes('V-아/어 놓다 / V-아/어 두다'));
 
     expect(bite.cards.some((card) => card.kind === 'drill')).toBe(false);
   });

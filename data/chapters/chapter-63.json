@@ -1,717 +1,666 @@
 {
   "id": "chapter-63",
   "hook": {
-    "situation": "You are revising a report or short essay. The Korean must show how one sentence follows from another: evidence leads to a conclusion, a contrast limits the claim, and a final sentence synthesizes the argument.",
+    "situation": "A normal day in Korea can bring four short messages: a delivery driver asks where to leave a package, a pharmacist asks about symptoms, your building posts an inspection notice, and the subway announces a delay. You do not need to produce a long answer, but you do need to understand what happened and what action is expected.",
     "objectives": [
-      "Choose formal connectors according to sentence relationship, not English translation.",
-      "Use report vocabulary such as 근거, 결론, 핵심, 논리, 사례, and 반론 as one argument set.",
-      "Keep written connectors and written-register endings consistent in the same paragraph."
+      "Read common delivery requests and confirmations without translating word by word.",
+      "Recognize the questions and dosage instructions used at clinics and pharmacies.",
+      "Find the time, restriction, and required action in housing and transit notices."
     ],
-    "whyItMatters": "A learner can know every word in a paragraph and still sound weak if the connectors do not match the logic. This chapter teaches the glue that makes formal Korean writing read like an argument instead of a list of sentences."
+    "whyItMatters": "These messages are short, but missing one ending can change the required action. This chapter trains you to identify status, request, restriction, and next step in the notices you actually meet while living in Korea."
   },
   "grammarNotes": [
     {
-      "title": "따라서 / 그러므로 — Therefore (evidence to conclusion)",
-      "func": "These are the written-register connectors for drawing a logical conclusion from what you just said. They mark the jump from a reason or premise to its result, the way English uses 'therefore.' In conversation Koreans say 그래서, but in essays, reports, and articles they switch to 따라서 or 그러므로. Both open a new sentence.",
+      "title": "V-아/어 주세요 / V-(으)면 연락 주세요 — delivery requests and updates",
+      "func": "Delivery messages usually contain one concrete request and one condition. V-아/어 주세요 asks someone to do an action, while V-(으)면 marks the condition that triggers the next action: 도착하면 연락 주세요 means 'Please contact me when you arrive.' Look for the action closest to 주세요 to find what the sender wants.",
       "formTable": [
         {
-          "when": "Evidence stated, you give the result (most neutral, the everyday choice in reports and essays)",
-          "add": "따라서",
-          "ex": "근거가 부족하다. 따라서 결론을 다시 검토해야 한다."
+          "when": "A direct but polite delivery request",
+          "add": "verb stem + -아/어 주세요",
+          "ex": "놓다 → 문 앞에 놓아 주세요 (Please leave it at the door.)"
         },
         {
-          "when": "A more deductive 'thus, it follows that'; slightly weightier, common in arguments",
-          "add": "그러므로",
-          "ex": "누구나 실수를 한다. 그러므로 검토가 필요하다."
+          "when": "A condition followed by a request",
+          "add": "verb stem + -(으)면 + request",
+          "ex": "도착하다 → 도착하면 연락 주세요 (Please contact me when you arrive.)"
         },
         {
-          "when": "The casual spoken version you REPLACE in formal writing (shown for contrast)",
-          "add": "그래서 (avoid in essays)",
-          "ex": "비가 와서 안 갔어 → 비가 왔다. 따라서 가지 않았다."
+          "when": "A more careful request to the driver",
+          "add": "V-아/어 주실 수 있을까요?",
+          "ex": "보내다 → 사진을 보내 주실 수 있을까요?"
+        },
+        {
+          "when": "A completed delivery update",
+          "add": "V-았/었습니다 / V-아/어 두었습니다",
+          "ex": "배송했습니다 / 문 앞에 두었습니다"
         }
       ],
       "examples": [
         {
-          "ko": "이 보고서는 근거가 부족하다. 따라서 결론을 다시 검토해야 한다.",
-          "romanization": "i bogoseoneun geungeoga bujokhada. ttaraseo gyeolloneul dasi geomtohaeya handa.",
-          "en": "This report lacks evidence. Therefore the conclusion must be reviewed again.",
-          "note": "따라서 opens the sentence and draws the result straight from the stated problem."
+          "ko": "문 앞에 놓아 주세요.",
+          "romanization": "mun ape noa juseyo.",
+          "en": "Please leave it at the door.",
+          "note": "문 앞 is the location; 놓아 주세요 is the requested action. 놓아 is often shortened to 놔 in casual messages."
         },
         {
-          "ko": "자료의 출처가 분명하지 않다. 그러므로 핵심 근거로 쓰기 어렵다.",
-          "romanization": "jaryoui chulcheoga bunmyeonghaji anta. geureomeuro haeksim geungeoro sseugi eoryeopda.",
-          "en": "The source of the material is unclear. Thus it is hard to use as key evidence.",
-          "note": "그러므로 signals a firm 'it follows that,' suiting an argument."
+          "ko": "도착하면 전화하지 말고 문자 주세요.",
+          "romanization": "dochakamyeon jeonhwahaji malgo munja juseyo.",
+          "en": "When you arrive, please text instead of calling.",
+          "note": "-지 말고 replaces one action with another: not a call, but a text."
         },
         {
-          "ko": "조사 대상이 제한적이다. 따라서 결과를 일반화하기 어렵다.",
-          "romanization": "josa daesangi jehanjeogida. ttaraseo gyeolgwareul ilbanhwahagi eoryeopda.",
-          "en": "The sample is limited. Therefore the result is hard to generalize.",
-          "note": "The limitation comes first, then 따라서 introduces the warranted conclusion."
+          "ko": "택배를 경비실에 맡겨 두었습니다.",
+          "romanization": "taekbaereul gyeongbisire matgyeo dueotseumnida.",
+          "en": "Your parcel has been left with the security office.",
+          "note": "맡겨 두었습니다 reports that the parcel was placed there and remains available for pickup."
         },
         {
-          "ko": "수요가 계속 줄고 있다. 그러므로 생산을 늘릴 이유가 없다.",
-          "romanization": "suyoga gyesok julgo itda. geureomeuro saengsaneul nullil iyuga eopda.",
-          "en": "Demand keeps falling. Thus there is no reason to raise production.",
-          "note": "그러므로 ties a firm conclusion to the trend just described."
+          "ko": "배송 완료 사진을 보내 주실 수 있을까요?",
+          "romanization": "baesong wallyo sajineul bonae jusil su isseulkkayo?",
+          "en": "Could you send me a delivery-completion photo?",
+          "note": "-주실 수 있을까요? is useful when asking a driver for an extra action without sounding demanding."
         }
       ],
       "keyPoint": {
-        "label": "따라서 vs 그러므로",
-        "body": "Both mean 'therefore' and both are formal. 따라서 is the everyday workhorse of reports and essays — neutral and safe. 그러므로 feels a notch more deductive ('it necessarily follows'), so it shines in arguments and reasoning. In ordinary expository writing, default to 따라서; reach for 그러므로 when you want the logic to feel airtight."
+        "label": "Find location, trigger, and requested action",
+        "body": "In 문 앞에 놓아 주세요, the location is 문 앞 and the action is 놓다. In 도착하면 문자 주세요, the trigger is 도착하면 and the requested action is 문자 주세요. Reading these parts separately lets you understand the message even when particles are omitted."
       },
-      "pronunciation": "따라서 starts with a tense ㄸ: [tta-ra-seo]. 그러므로 is four light, even syllables [geu-reo-meu-ro] with no tense consonants — don't stress it like English 'therefore.'",
+      "pronunciation": "놓아 주세요 is carefully [노아 주세요] and is often contracted to 놔 주세요 [놔 주세요] in speech. 맡겨 is pronounced [맏껴], with the following ㄱ becoming tense.",
       "drill": {
-        "instruction": "Replace the casual 그래서 with a formal connector (따라서 or 그러므로) to fit an essay.",
-        "model": "비가 왔다. ___ 행사를 취소했다. → 따라서",
+        "instruction": "Read the message and identify the required action.",
+        "model": "도착하면 문자 주세요. → Action: send a text after arrival.",
         "items": [
-          "예산이 부족하다. ___ 사업을 미루기로 했다.",
-          "모든 조건이 같다. ___ 결과도 같아야 한다.",
-          "참가자가 늘었다. ___ 더 큰 장소가 필요하다."
+          "문 앞에 놓아 주세요. → Where should the parcel go?",
+          "전화하지 말고 문자 주세요. → Which action should be avoided?",
+          "경비실에 맡겨 두었습니다. → Where is the parcel now?"
         ]
       },
       "englishSpeakerPitfall": {
-        "wrong": "근거가 부족하다, 따라서 결론을 검토했다.",
-        "right": "근거가 부족하다. 따라서 결론을 검토했다.",
-        "explanation": "English writers tend to splice 'therefore' on with a comma in the middle of a sentence. In formal Korean, 따라서/그러므로 normally start a NEW sentence after a full stop. Hooking it onto the previous clause with a comma reads as a run-on."
+        "wrong": "도착하면 연락해요. = a clear request to the driver",
+        "right": "도착하면 연락 주세요. / 도착하면 연락해 주세요.",
+        "explanation": "A plain -해요 sentence can sound like a statement about what normally happens. In a delivery instruction, 주세요 or 해 주세요 makes the requested action explicit."
       }
     },
     {
-      "title": "그러나 / 반면에 / 한편 — three kinds of contrast",
-      "func": "Formal writing splits into three the contrast that casual 하지만 lumps together. 그러나 directly reverses or limits what you just said ('however'). 반면에 sets two things side by side as opposites ('by contrast, whereas'). 한편 moves to a separate, co-occurring point ('meanwhile, for its part') without contradicting. Picking the right one is a mark of polished writing.",
+      "title": "N도 있으세요? / V-(으)세요 — clinic questions and medicine instructions",
+      "func": "At a clinic or pharmacy, staff often ask whether an additional symptom is present with N도 있으세요? and ask about your condition with 어디가 불편하세요? Instructions usually end in -(으)세요: 식후에 드세요 means 'Take it after meals.' The ending is polite, but the message may be a question, an instruction, or a recommendation depending on intonation and context.",
       "formTable": [
         {
-          "when": "Direct reversal or limitation of the previous claim — the strong written 'however'",
-          "add": "그러나",
-          "ex": "핵심 주장은 분명하다. 그러나 근거가 부족하다."
+          "when": "Asking whether another symptom is present",
+          "add": "symptom + 도 있으세요?",
+          "ex": "열도 있으세요? (Do you also have a fever?)"
         },
         {
-          "when": "Comparing two items as contrasting opposites; often after stating side A",
-          "add": "반면(에)",
-          "ex": "첫 사례는 적절하다. 반면에 두 번째 사례는 약하다."
+          "when": "Asking which body part feels wrong",
+          "add": "어디가 + 불편하세요/아프세요?",
+          "ex": "어디가 제일 아프세요?"
         },
         {
-          "when": "Adding a separate, co-occurring angle or new actor — not a contradiction",
-          "add": "한편",
-          "ex": "보고서는 비용을 강조한다. 한편 안전 검토는 부족하다."
+          "when": "Giving a medicine instruction",
+          "add": "verb stem + -(으)세요",
+          "ex": "먹다 → 식후에 드세요 (Take it after meals.)"
+        },
+        {
+          "when": "Giving frequency",
+          "add": "하루에 + number + 번",
+          "ex": "하루에 세 번 드세요 (Take it three times a day.)"
         }
       ],
       "examples": [
         {
-          "ko": "핵심 주장은 분명하다. 그러나 이를 뒷받침할 근거가 부족하다.",
-          "romanization": "haeksim jujangeun bunmyeonghada. geureona ireul dwitbatchimhal geungeoga bujokhada.",
-          "en": "The main claim is clear. However, the evidence to support it is insufficient.",
-          "note": "그러나 directly limits the positive first sentence."
+          "ko": "기침 말고 열도 있으세요?",
+          "romanization": "gichim malgo yeoldo isseuseyo?",
+          "en": "Besides the cough, do you also have a fever?",
+          "note": "말고 means 'apart from / instead of.' 도 asks about an additional symptom."
         },
         {
-          "ko": "첫 번째 사례는 적절하다. 반면에 두 번째 사례는 관련성이 약하다.",
-          "romanization": "cheot beonjjae saryeneun jeokjeolhada. banmyeone du beonjjae saryeneun gwallyeonseongi yakada.",
-          "en": "The first case is fitting. By contrast, the second case is weakly relevant.",
-          "note": "반면에 lines up two comparable cases as opposites."
+          "ko": "어디가 제일 불편하세요?",
+          "romanization": "eodiga jeil bulpyeonhaseyo?",
+          "en": "Where are you feeling the most discomfort?",
+          "note": "불편하다 can cover pain, irritation, and general discomfort, so it is broader than 아프다."
         },
         {
-          "ko": "보고서는 비용 문제를 강조한다. 한편 안전 문제 검토는 충분하지 않다.",
-          "romanization": "bogoseoneun biyong munjereul gangjohanda. hanpyeon anjeon munje geomtoneun chungbunhaji anta.",
-          "en": "The report stresses the cost issue. Meanwhile, the review of safety is not sufficient.",
-          "note": "한편 shifts to a separate line of discussion, not a flat contradiction."
+          "ko": "이 약은 하루에 세 번 식후에 드세요.",
+          "romanization": "i yageun harue se beon sikhue deuseyo.",
+          "en": "Take this medicine three times a day after meals.",
+          "note": "Read the frequency and timing separately: 하루에 세 번 + 식후에."
         },
         {
-          "ko": "이론은 단순하다. 그러나 적용은 결코 쉽지 않다.",
-          "romanization": "ironeun dansunhada. geureona jeogyongeun gyeolko swipji anta.",
-          "en": "The theory is simple. However, applying it is by no means easy.",
-          "note": "그러나 flags a sharp 'but in reality' reversal, stronger than 하지만."
+          "ko": "졸릴 수 있으니까 운전하지 마세요.",
+          "romanization": "jollil su isseunikka unjeonhaji maseyo.",
+          "en": "It may make you drowsy, so do not drive.",
+          "note": "The first clause gives a possible side effect; -지 마세요 gives the restriction."
         }
       ],
       "keyPoint": {
-        "label": "그러나 vs 반면에 vs 한편",
-        "body": "Test by relationship: if B cancels or limits A, use 그러나 (however). If B is the mirror-opposite of A, weighed against it, use 반면에 (by contrast). If B is just a separate development from another side, use 한편 (meanwhile). A common error is using 한편 where 반면에 is needed — 한편 does NOT mean 'in contrast,' it means 'from another quarter, at the same time.'"
+        "label": "Separate symptom, frequency, timing, and warning",
+        "body": "A medicine message can contain four different facts: what symptom it treats, how often to take it, when to take it, and what to avoid. In 하루에 세 번 식후에 드세요, 세 번 is frequency and 식후에 is timing. Never treat the whole line as one memorized block."
       },
-      "pronunciation": "반면에 is [ban-myeo-ne] — the ㄴ of 면 links into 에, so it flows as one word, not 반/면/에 chopped apart. 한편 is [han-pyeon].",
+      "pronunciation": "식후 is pronounced [시쿠] because ㄱ and ㅎ combine into ㅋ. 드세요 is [드세요]; it is the honorific everyday form used instead of 먹으세요 for medicine and food.",
       "drill": {
-        "instruction": "Choose 그러나, 반면에, or 한편 for the contrast type shown in brackets.",
-        "model": "가격은 올랐다. ___ 판매량은 그대로다. [two opposites compared] → 반면에",
+        "instruction": "Extract the practical information from each clinic or pharmacy line.",
+        "model": "하루에 두 번 드세요. → Frequency: twice a day.",
         "items": [
-          "모두 찬성할 줄 알았다. ___ 반대가 거셌다. [direct reversal]",
-          "서울은 비가 왔다. ___ 부산은 맑았다. [two opposites compared]",
-          "연구진은 실험을 이어갔다. ___ 학계는 논쟁을 벌였다. [separate co-occurring angle]"
+          "식후 30분에 드세요. → When should it be taken?",
+          "열도 있으세요? → What additional symptom is being checked?",
+          "운전하지 마세요. → What must the patient avoid?"
         ]
       },
       "englishSpeakerPitfall": {
-        "wrong": "한편, 이 방법은 비싸다. (intending 'however, this method is expensive')",
-        "right": "그러나 이 방법은 비싸다.",
-        "explanation": "Learners map 한편 to 'however' because dictionaries gloss it as 'on the other hand.' But 한편 means 'meanwhile, from another side,' not rebuttal. To overturn a claim use 그러나; to weigh two opposites use 반면에. Using 한편 for a flat contradiction confuses Korean readers."
+        "wrong": "열이 나요 is the only possible way to mention a fever.",
+        "right": "열이 나요. (reporting the symptom) / 열도 있으세요? (checking its presence)",
+        "explanation": "나다 is the most useful pairing when you report that a fever developed. 있다 is also natural when a medical worker checks whether the fever is present. The surrounding task changes the preferred verb."
       }
     },
     {
-      "title": "즉 / 다시 말해서 — that is, in other words (restate, don't add)",
-      "func": "These connectors signal that what follows is a RESTATEMENT or clarification of what you just said — not new information. 즉 is a compact written 'namely, that is,' used to pin down a precise equivalent or definition. 다시 말해서 ('to put it again, in other words') reframes the whole idea in plainer words. Both tell the reader: same point, said more clearly.",
+      "title": "V-아/어야 해요 / V-지 마세요 — housing notices and building rules",
+      "func": "Apartment and management-office notices tell you what is required, prohibited, or temporarily unavailable. V-아/어야 해요 marks an obligation, V-지 마세요 marks a prohibition, and N 중 marks an activity currently in progress. First find the date and time, then find the action ending.",
       "formTable": [
         {
-          "when": "Pinpointing an exact equivalent or narrower meaning — terse, very written 'namely, that is'",
-          "add": "즉",
-          "ex": "핵심 변수, 즉 가격이 결과를 좌우한다."
+          "when": "A required resident action",
+          "add": "verb stem + -아/어야 해요",
+          "ex": "버리다 → 화요일에 버려야 해요"
         },
         {
-          "when": "Rephrasing the whole idea in plainer words for the reader",
-          "add": "다시 말해서",
-          "ex": "수요가 공급을 넘었다. 다시 말해서, 물건이 부족하다."
+          "when": "A prohibited action",
+          "add": "verb stem + -지 마세요",
+          "ex": "이용하다 → 이용하지 마세요"
         },
         {
-          "when": "Shorter written variant of 다시 말해서, often before a clause",
-          "add": "다시 말해",
-          "ex": "비용이 효용을 넘는다. 다시 말해 손해다."
+          "when": "A facility is being checked or repaired",
+          "add": "noun + 중 / V-는 중",
+          "ex": "점검 중 / 수리 중"
+        },
+        {
+          "when": "A service stops temporarily",
+          "add": "N이/가 중단돼요 / 단수예요",
+          "ex": "오전 10시부터 수도 공급이 중단돼요"
         }
       ],
       "examples": [
         {
-          "ko": "문제는 결론 자체가 아니다. 즉, 근거와 논리의 연결이 약하다는 점이다.",
-          "romanization": "munjeneun gyeollon jachega anida. jeuk, geungeowa nolliui yeongyeori yakadaneun jeomida.",
-          "en": "The problem is not the conclusion itself. That is, the link between evidence and reasoning is weak.",
-          "note": "즉 restates the diagnosis in a more precise form, adding no new fact."
+          "ko": "내일 오전 10시부터 두 시간 동안 단수예요.",
+          "romanization": "naeil ojeon yeol sibuteo du sigan dongan dansuyeyo.",
+          "en": "The water will be shut off for two hours starting at 10 a.m. tomorrow.",
+          "note": "부터 gives the start; 두 시간 동안 gives the duration; 단수 gives the service interruption."
         },
         {
-          "ko": "이 문장은 너무 추상적이다. 다시 말해서, 독자가 떠올릴 사례가 없다.",
-          "romanization": "i munjangeun neomu chusangjeogida. dasi malhaeseo, dokjaga tteoolril saryega eopda.",
-          "en": "This sentence is too abstract. In other words, there is no example the reader can picture.",
-          "note": "다시 말해서 reframes the abstract point in concrete, plainer terms."
+          "ko": "점검 중에는 엘리베이터를 이용하지 마세요.",
+          "romanization": "jeomgeom jungeneun ellibeiteoreul iyonghaji maseyo.",
+          "en": "Do not use the elevator during the inspection.",
+          "note": "중에는 defines the restricted period; -지 마세요 states the prohibited action."
         },
         {
-          "ko": "가장 중요한 요소, 즉 신뢰가 무너졌다.",
-          "romanization": "gajang jungyohan yoso, jeuk silloega muneojyeotda.",
-          "en": "The most important element — namely, trust — collapsed.",
-          "note": "즉 equates the abstract 'most important element' with the concrete word 신뢰; it sits inside the sentence."
+          "ko": "재활용품은 화요일 저녁에 버려야 해요.",
+          "romanization": "jaehwaryongpumeun hwayoil jeonyeoge beoryeoya haeyo.",
+          "en": "Recyclables must be put out on Tuesday evening.",
+          "note": "The topic is 재활용품; the required time is 화요일 저녁."
         },
         {
-          "ko": "지출이 수입을 넘었다. 다시 말해, 적자가 났다.",
-          "romanization": "jichuri suibeul neomeotda. dasi malhae, jeokjaga natda.",
-          "en": "Spending exceeded income. In other words, there was a deficit.",
-          "note": "다시 말해 (the shorter form) restates the situation with its plain name."
+          "ko": "불편 사항은 관리실로 연락해 주세요.",
+          "romanization": "bulpyeon sahangeun gwallisillo yeollakhae juseyo.",
+          "en": "Please contact the management office about any problems.",
+          "note": "관리실로 marks the contact destination; 불편 사항 means an issue or inconvenience to report."
         }
       ],
       "keyPoint": {
-        "label": "즉 vs 다시 말해서",
-        "body": "즉 is for a tight, near-mathematical equivalence ('X, namely Y') and often sits INSIDE a sentence right after the term it defines. 다시 말해서 is for rephrasing a whole idea more accessibly and usually starts a fresh sentence. Rule of thumb: 즉 swaps in a precise synonym; 다시 말해서 explains the same point again in different words. Neither one introduces new evidence — for that, use 또한 or 예를 들어."
+        "label": "Read notices in this order: when → what changes → what you must do",
+        "body": "내일 오전 10시부터 / 단수 / 물을 미리 받아 두세요 means: start time / service change / preparation. Korean notices often omit a personal subject, so focus on time words and the final action ending rather than looking for 'you.'"
       },
-      "pronunciation": "즉 is one tight syllable [jeuk], ending in a hard ㄱ stop. 다시 말해서 is [da-si mal-hae-seo], even and unstressed.",
+      "pronunciation": "단수예요 is pronounced [단수예요]. 점검 is [점검], and 관리실로 links as [괄리실로] in standard pronunciation because ㄴ before ㄹ becomes ㄹ.",
       "drill": {
-        "instruction": "Insert 즉 or 다시 말해서 so the second sentence restates (not adds to) the first.",
-        "model": "이 글은 사례가 없다. ___ 추상적이다. → 다시 말해서",
+        "instruction": "Read each notice and state what the resident must do.",
+        "model": "점검 중에는 이용하지 마세요. → Do not use it during inspection.",
         "items": [
-          "문제는 결론이 아니다. ___ 근거가 약하다는 점이다.",
-          "가장 큰 요소, ___ 신뢰가 무너졌다.",
-          "매출은 늘었지만 이익은 줄었다. ___ 효율이 떨어졌다."
+          "오전 10시부터 단수예요. → When does the water stop?",
+          "물을 미리 받아 두세요. → What preparation is requested?",
+          "화요일 저녁에 버려야 해요. → When should it be put out?"
         ]
       },
       "englishSpeakerPitfall": {
-        "wrong": "근거가 약하다. 즉, 새로운 사례를 하나 더 들 수 있다.",
-        "right": "근거가 약하다. 즉, 주장을 뒷받침하기 어렵다.",
-        "explanation": "Learners use 즉 like a loose English 'so' and then add a brand-new point. But 즉 only RESTATES what was already said in a clearer form. If you are adding new evidence, use 또한 or 예를 들어; if a result follows, use 따라서."
+        "wrong": "단수예요 means the building has no water permanently.",
+        "right": "단수예요 means the water supply is temporarily shut off; check the stated start and duration.",
+        "explanation": "Housing notices normally pair 단수 with a time range. Missing 부터, 까지, or 동안 can make you misunderstand a temporary interruption as a permanent condition."
       }
     },
     {
-      "title": "결국 / 궁극적으로 — final synthesis (what it all comes to)",
-      "func": "These pull a chain of reasoning together and name the final point. 결국 means 'in the end, ultimately' — the result or conclusion reached after a process. 궁극적으로 is 'ultimately, fundamentally,' a touch more abstract and principle-like. They are not just 'finally' (which only marks the last item in time); they answer what everything has been leading to.",
+      "title": "N부터 N까지 / N 동안 — finding time ranges in notices",
+      "func": "Notices often place the time before the main event. 부터 marks the starting point, 까지 marks the endpoint, and 동안 marks the duration. First find these time markers, then read what service changes or what action is required.",
       "formTable": [
         {
-          "when": "Summing up the result after a process or chain of points",
-          "add": "결국",
-          "ex": "여러 자료를 검토했지만 결국 같은 결론에 도달했다."
+          "when": "Starting point",
+          "add": "time + 부터",
+          "ex": "오전 10시부터"
         },
         {
-          "when": "Stating the deepest, most general principle behind it all",
-          "add": "궁극적으로",
-          "ex": "궁극적으로 좋은 글은 주장과 근거가 연결되어야 한다."
+          "when": "Endpoint or deadline",
+          "add": "time + 까지",
+          "ex": "오후 1시까지"
         },
         {
-          "when": "Marking an awaited event that finally happens (NOT synthesis — contrast only)",
-          "add": "드디어 (different meaning)",
-          "ex": "드디어 보고서를 제출했다. (at last — not a conclusion)"
+          "when": "Complete time range",
+          "add": "start + 부터 + end + 까지",
+          "ex": "오전 10시부터 오후 1시까지"
+        },
+        {
+          "when": "Length of time",
+          "add": "duration + 동안",
+          "ex": "세 시간 동안"
         }
       ],
       "examples": [
         {
-          "ko": "결국 이 보고서의 핵심은 결론을 바꾸는 것이 아니라 근거를 보완하는 것이다.",
-          "romanization": "gyeolguk i bogoseoui haeksimeun gyeolloneul bakkuneun geosi anira geungeoreul bowanhaneun geosida.",
-          "en": "Ultimately, the key point of this report is not to change the conclusion but to strengthen the evidence.",
-          "note": "결국 gathers the whole discussion and names the real takeaway."
+          "ko": "오전 10시부터 오후 1시까지 단수예요.",
+          "romanization": "ojeon yeol sibuteo ohu han sikkaji dansuyeyo.",
+          "en": "The water will be shut off from 10 a.m. to 1 p.m.",
+          "note": "The 부터…까지 frame gives the full service-interruption window."
         },
         {
-          "ko": "궁극적으로 좋은 글은 주장, 근거, 반론이 서로 연결되어야 한다.",
-          "romanization": "gunggeukjeogeuro joeun geureun jujang, geungeo, balloni seoro yeongyeoldoeeoya handa.",
-          "en": "Ultimately, good writing requires the claim, evidence, and counterargument to connect.",
-          "note": "궁극적으로 sounds broader and more principle-like than 결국."
+          "ko": "점검은 세 시간 동안 진행됩니다.",
+          "romanization": "jeomgeomeun se sigan dongan jinhaengdoemnida.",
+          "en": "The inspection will continue for three hours.",
+          "note": "동안 gives the duration, not the finishing clock time."
         },
         {
-          "ko": "여러 자료를 검토했지만 결국 같은 결론에 도달했다.",
-          "romanization": "yeoreo jaryoreul geomtohaetjiman gyeolguk gateun gyeollone dochakhaetda.",
-          "en": "Several sources were reviewed, but in the end they reached the same conclusion.",
-          "note": "결국 marks the final result after the process of reviewing."
+          "ko": "오늘 오후 10시까지 택배를 찾아가세요.",
+          "romanization": "oneul ohu yeol sikkaji taekbaereul chajagaseyo.",
+          "en": "Please pick up the parcel by 10 p.m. today.",
+          "note": "With one time followed by 까지, the time is usually a deadline."
         },
         {
-          "ko": "논의는 길었다. 그러나 결국 핵심은 하나였다.",
-          "romanization": "nonuineun gireotda. geureona gyeolguk haeksimeun hanayeotda.",
-          "en": "The discussion was long. However, in the end the key point was just one.",
-          "note": "결국 closes a long buildup by naming the single point it all reduces to."
+          "ko": "월요일부터 금요일까지 정상 운행합니다.",
+          "romanization": "woryoilbuteo geumyoilkkaji jeongsang unhaenghamnida.",
+          "en": "Normal service operates from Monday through Friday.",
+          "note": "부터 and 까지 can mark days as well as clock times."
         }
       ],
       "keyPoint": {
-        "label": "결국 vs 궁극적으로 vs 드디어",
-        "body": "결국 names the result a process arrives at ('in the end'). 궁극적으로 names the deepest principle behind everything ('fundamentally, ultimately'), so it fits broad closing statements. Neither is 드디어, which only means an awaited event 'finally' happened — a time word, not a synthesis. Save 결국/궁극적으로 for a real summary; don't open every paragraph with them."
+        "label": "Range and duration answer different questions",
+        "body": "오전 10시부터 오후 1시까지 answers 'from when until when?' 세 시간 동안 answers 'for how long?' A notice may show both, but either one can be enough to plan what to do."
       },
-      "pronunciation": "결국 is [gyeol-guk], two syllables both ending in a hard stop. 궁극적으로 is [gung-geuk-jeo-geu-ro], five even syllables — keep it steady, don't rush the middle.",
+      "pronunciation": "부터 is [부터]. 시간 동안 is pronounced as written, [시간 동안], with each word kept clear. 까지 is [까지] with a tense ㄲ.",
       "drill": {
-        "instruction": "Fill the blank with 결국 or 드디어 by meaning: synthesis-of-a-process vs awaited-event-at-last.",
-        "model": "오래 기다린 끝에 ___ 결과가 나왔다. → 드디어",
+        "instruction": "Decide whether the highlighted time marks a start, deadline, full range, or duration.",
+        "model": "오후 6시까지 → Deadline.",
         "items": [
-          "여러 안을 비교했지만 ___ 첫 안으로 돌아왔다.",
-          "수정에 수정을 거쳐 ___ 보고서를 제출했다.",
-          "논의가 길었지만 ___ 핵심은 근거 보완이었다."
+          "내일부터 → Start.",
+          "오전 9시부터 11시까지 → Full range.",
+          "두 시간 동안 → Duration."
         ]
       },
       "englishSpeakerPitfall": {
-        "wrong": "오래 준비한 발표를 결국 끝냈다. (intending 'I finally finished it!')",
-        "right": "오래 준비한 발표를 드디어 끝냈다.",
-        "explanation": "English 'finally' covers both 'at long last' and 'in conclusion,' so learners reach for 결국 for an awaited relief. But 결국 carries a result-of-a-process nuance (often a slightly resigned 'in the end'). For the happy 'at last' sense, use 드디어."
+        "wrong": "두 시간까지 점검해요. = The inspection lasts for two hours.",
+        "right": "두 시간 동안 점검해요. = The inspection lasts for two hours.",
+        "explanation": "까지 marks an endpoint or limit. To state how long an event continues, use 동안. Use 까지 only when 'up to two hours' or a deadline is the intended meaning."
       }
     },
     {
-      "title": "Written endings — -다 / -ㄴ다·-는다 / -이다",
-      "func": "Formal connectors need formal endings around them. If a paragraph uses 따라서 but then ends every sentence in -해요, the logic sounds written but the voice sounds conversational. In expository Korean (essays, reports, articles) you use the plain written style: adjectives and the copula in -다, action verbs in -ㄴ다/-는다, and noun statements in -이다. This is the register that pairs with the connectors in this chapter.",
+      "title": "N이/가 지연되다 / V-는 중이다 — transit delays and transfers",
+      "func": "Transit announcements describe current status before giving the next action. 지연되다 means 'be delayed,' 운행이 중단되다 means service has stopped, and 운행 중이다 means service is operating. Transfer instructions use N으로 갈아타세요 and exit instructions use N번 출구로 나가세요.",
       "formTable": [
         {
-          "when": "Adjective or descriptive verb (the plain dictionary -다 carries the written meaning)",
-          "add": "-다",
-          "ex": "이 글은 사례가 부족하다."
+          "when": "A train or bus is delayed",
+          "add": "N이/가 지연되고 있습니다",
+          "ex": "2호선 열차가 지연되고 있습니다"
         },
         {
-          "when": "Action verb in expository prose — vowel stem +-ㄴ다, consonant stem +-는다",
-          "add": "-ㄴ다 / -는다",
-          "ex": "필자는 비용 문제를 강조한다. / 자료를 충분히 다루지 않는다."
+          "when": "An operation is currently in progress",
+          "add": "N 중입니다 / V-는 중입니다",
+          "ex": "운행 중입니다 / 출발 준비 중입니다"
         },
         {
-          "when": "Noun or pronoun statement (copula)",
-          "add": "-이다",
-          "ex": "핵심은 자료의 양이 아니라 관련성이다."
+          "when": "Changing to another line",
+          "add": "line + (으)로 갈아타세요",
+          "ex": "다음 역에서 3호선으로 갈아타세요"
+        },
+        {
+          "when": "Leaving through an exit",
+          "add": "number + 번 출구로 나가세요",
+          "ex": "5번 출구로 나가세요"
         }
       ],
       "examples": [
         {
-          "ko": "이 글은 사례가 부족하다. 따라서 설득력이 약하다.",
-          "romanization": "i geureun saryega bujokhada. ttaraseo seoldeungnyeogi yakada.",
-          "en": "This piece lacks examples. Therefore it is not very persuasive.",
-          "note": "Both sentences keep the plain written -다 on adjectives."
+          "ko": "현재 2호선 열차가 지연되고 있습니다.",
+          "romanization": "hyeonjae ihoseon yeolchaga jiyeondoego itseumnida.",
+          "en": "Line 2 trains are currently delayed.",
+          "note": "현재 marks the current status; 지연되고 있습니다 is a formal announcement style."
         },
         {
-          "ko": "필자는 비용 문제를 강조한다. 그러나 안전 문제는 충분히 다루지 않는다.",
-          "romanization": "piljaneun biyong munjereul gangjohanda. geureona anjeon munjeneun chungbunhi daruji anneunda.",
-          "en": "The writer stresses cost. However, the safety issue is not treated sufficiently.",
-          "note": "Action verbs in formal writing take -ㄴ다/-는다, not -해요."
+          "ko": "다음 역에서 3호선으로 갈아타세요.",
+          "romanization": "daeum yeogeseo samhoseoneuro garataseyo.",
+          "en": "Transfer to Line 3 at the next station.",
+          "note": "에서 marks the transfer location; 으로 marks the new line."
         },
         {
-          "ko": "핵심은 자료의 양이 아니라 관련성이다.",
-          "romanization": "haeksimeun jaryoui yangi anira gwallyeonseongida.",
-          "en": "The key point is not the amount of material but its relevance.",
-          "note": "Noun conclusions take -이다."
+          "ko": "사고로 인해 일부 구간의 운행이 중단됐습니다.",
+          "romanization": "sagoro inhae ilbu guganeui unhaengi jungdandwaetseumnida.",
+          "en": "Service has been suspended on part of the route due to an accident.",
+          "note": "일부 구간 means only part of the route, not the entire system."
         },
         {
-          "ko": "결국 좋은 글은 근거와 사례가 연결되어야 한다.",
-          "romanization": "gyeolguk joeun geureun geungeowa saryega yeongyeoldoeeoya handa.",
-          "en": "Ultimately, good writing requires evidence and cases to connect.",
-          "note": "-아야 한다 keeps the obligation in plain written style, matching 결국."
+          "ko": "버스 운행은 곧 재개될 예정입니다.",
+          "romanization": "beoseu unhaengeun got jaegaedoel yejeongimnida.",
+          "en": "Bus service is expected to resume shortly.",
+          "note": "재개되다 means resume; -(으)ㄹ 예정입니다 reports the announced plan."
         }
       ],
       "keyPoint": {
-        "label": "One register per paragraph",
-        "body": "Decide the register first, then keep it. Expository writing uses the plain written style: adjectives/copula in -다·-이다 and action verbs in -ㄴ다/-는다. -습니다 is also formal and fits presentations and polite reports — but pick one. Mixing -해요 with academic connectors like 따라서 and 즉 makes a single paragraph feel stylistically uneven, even when every word is correct."
+        "label": "Status first, action second",
+        "body": "현재 열차가 지연되고 있습니다 only reports status. 다른 교통편을 이용해 주세요 adds the action expected from passengers. Do not assume every delay announcement means service has stopped; distinguish 지연, 중단, and 재개."
       },
-      "pronunciation": "-ㄴ다/-는다 endings end on a clean -다 [da]; don't soften them toward the spoken -다아. -이다 is [i-da], the 이 fully voiced after a consonant.",
+      "pronunciation": "지연 is [지연]. 갈아타세요 is pronounced [가라타세요] as the final ㄹ of 갈 links to 아. 중단됐습니다 is commonly heard as [중단됟씀니다].",
       "drill": {
-        "instruction": "Rewrite each -해요 sentence in plain written style (adjective/noun → -다/-이다, action verb → -ㄴ다/-는다).",
-        "model": "근거가 부족해요. → 근거가 부족하다.",
+        "instruction": "Classify each announcement as delay, suspension, resumption, or transfer.",
+        "model": "열차가 지연되고 있습니다. → Delay.",
         "items": [
-          "필자는 비용 문제를 강조해요.",
-          "핵심은 안전 문제예요.",
-          "따라서 결론을 다시 검토해야 해요."
+          "운행이 중단됐습니다. → Which status?",
+          "곧 재개될 예정입니다. → Which status?",
+          "3호선으로 갈아타세요. → What action is required?"
         ]
       },
       "englishSpeakerPitfall": {
-        "wrong": "따라서 결론을 다시 검토해야 해요.",
-        "right": "따라서 결론을 다시 검토해야 한다.",
-        "explanation": "Learners default to the safe spoken -해요 even after a written connector like 따라서. In an essay or report this clashes: the connector says 'formal writing,' the ending says 'conversation.' Match the ending to the register — use -다/-ㄴ다/-는다/-이다 throughout the paragraph."
+        "wrong": "지연되다 and 중단되다 both mean the service has completely stopped.",
+        "right": "지연되다 = be delayed / 중단되다 = be suspended or stopped",
+        "explanation": "A delayed train may still arrive and operate. 중단 signals that service is not operating on the stated section. This distinction changes whether you wait or find another route."
       }
     }
   ],
   "extendedVocabulary": [
     {
-      "hangul": "근거",
-      "romanization": "geungeo",
-      "english": "evidence; grounds; basis",
+      "hangul": "공동현관",
+      "romanization": "gongdonghyeongwan",
+      "english": "shared building entrance",
       "partOfSpeech": "noun",
       "exampleSentence": {
-        "ko": "주장을 뒷받침할 근거를 제시해야 한다.",
-        "en": "Evidence that supports the claim must be presented.",
-        "note": "Use 근거 when a claim needs support, not merely a reason."
+        "ko": "공동현관 앞에서 연락 주세요.",
+        "en": "Please contact me from the shared building entrance.",
+        "note": "Common in apartment delivery instructions."
       },
-      "collocations": [
-        "근거가 부족하다",
-        "근거를 제시하다",
-        "근거로 사용하다"
-      ]
+      "collocations": ["공동현관 비밀번호", "공동현관 앞", "공동현관 출입"]
     },
     {
-      "hangul": "결론",
-      "romanization": "gyeollon",
-      "english": "conclusion",
+      "hangul": "경비실",
+      "romanization": "gyeongbisil",
+      "english": "security office; guard station",
       "partOfSpeech": "noun",
       "exampleSentence": {
-        "ko": "근거가 약하면 결론도 설득력을 잃는다.",
-        "en": "If the evidence is weak, the conclusion also loses persuasiveness.",
-        "note": "결론 is the endpoint of reasoning, not a story ending."
+        "ko": "택배는 경비실에 맡겨 주세요.",
+        "en": "Please leave the parcel with the security office.",
+        "note": "맡기다 is used when leaving something in another person's care."
       },
-      "collocations": [
-        "결론을 내리다",
-        "결론을 검토하다",
-        "결론에 도달하다"
-      ]
+      "collocations": ["경비실에 맡기다", "경비실에 문의하다", "경비실에서 찾다"]
     },
     {
-      "hangul": "핵심",
-      "romanization": "haeksim",
-      "english": "core; key point",
+      "hangul": "식후",
+      "romanization": "sikhu",
+      "english": "after a meal",
       "partOfSpeech": "noun",
       "exampleSentence": {
-        "ko": "이 글의 핵심은 비용 문제가 아니라 안전 문제이다.",
-        "en": "The key point of this piece is not cost but safety.",
-        "note": "핵심 narrows attention to the central issue."
+        "ko": "이 약은 식후에 드세요.",
+        "en": "Take this medicine after meals.",
+        "note": "Often paired with a number of minutes."
       },
-      "collocations": [
-        "핵심 주장",
-        "핵심 내용",
-        "핵심은 ...이다"
-      ]
+      "collocations": ["식후 30분", "식후에 먹다", "식후에 복용하다"]
     },
     {
-      "hangul": "논리",
-      "romanization": "nolli",
-      "english": "logic; reasoning",
+      "hangul": "복용",
+      "romanization": "bogyong",
+      "english": "taking medicine; dosage use",
       "partOfSpeech": "noun",
       "exampleSentence": {
-        "ko": "주장은 분명하지만 논리에 비약이 있다.",
-        "en": "The claim is clear, but there is a leap in the reasoning.",
-        "note": "Say 논리에 비약이 있다, not 논리가 비약하다."
+        "ko": "복용 방법을 확인하세요.",
+        "en": "Check the directions for taking the medicine.",
+        "note": "A label word seen on medicine packages."
       },
-      "collocations": [
-        "논리가 부족하다",
-        "논리에 비약이 있다",
-        "논리를 보완하다"
-      ]
+      "collocations": ["복용 방법", "복용 시간", "복용하다"]
     },
     {
-      "hangul": "사례",
-      "romanization": "sarye",
-      "english": "case; example",
+      "hangul": "관리실",
+      "romanization": "gwallisil",
+      "english": "building management office",
       "partOfSpeech": "noun",
       "exampleSentence": {
-        "ko": "주장을 뒷받침하려면 구체적인 사례를 제시해야 한다.",
-        "en": "To support a claim, concrete cases must be presented.",
-        "note": "사례 is more formal and analytical than 예."
+        "ko": "문제가 있으면 관리실로 연락하세요.",
+        "en": "Contact the management office if there is a problem.",
+        "note": "Used in apartments and office buildings."
       },
-      "collocations": [
-        "사례를 제시하다",
-        "사례 분석",
-        "국내외 사례"
-      ]
+      "collocations": ["관리실 공지", "관리실에 문의하다", "관리실로 연락하다"]
     },
     {
-      "hangul": "반론",
-      "romanization": "ballon",
-      "english": "counterargument; objection",
+      "hangul": "단수",
+      "romanization": "dansu",
+      "english": "water shutoff",
       "partOfSpeech": "noun",
       "exampleSentence": {
-        "ko": "그러나 예상되는 반론도 검토해야 한다.",
-        "en": "However, expected counterarguments must also be reviewed.",
-        "note": "A strong formal paragraph anticipates objections."
+        "ko": "배관 공사로 두 시간 동안 단수예요.",
+        "en": "The water will be shut off for two hours due to plumbing work.",
+        "note": "Check the time range that follows."
       },
-      "collocations": [
-        "반론을 제기하다",
-        "반론을 검토하다",
-        "반론을 예상하다"
-      ]
+      "collocations": ["단수 안내", "단수 시간", "단수되다"]
     },
     {
-      "hangul": "따라서",
-      "romanization": "ttaraseo",
-      "english": "therefore; accordingly",
-      "partOfSpeech": "adverb",
+      "hangul": "점검",
+      "romanization": "jeomgeom",
+      "english": "inspection; maintenance check",
+      "partOfSpeech": "noun",
       "exampleSentence": {
-        "ko": "자료의 출처가 분명하지 않다. 따라서 핵심 근거로 사용하기 어렵다.",
-        "en": "The source of the material is unclear. Therefore, it is difficult to use as key evidence.",
-        "note": "따라서 connects evidence to a formal consequence."
+        "ko": "엘리베이터 정기 점검이 있습니다.",
+        "en": "There will be a regular elevator inspection.",
+        "note": "정기 means regularly scheduled."
       },
-      "collocations": [
-        "따라서 ...해야 한다",
-        "따라서 ...라고 볼 수 있다",
-        "따라서 ...에 한계가 있다"
-      ]
+      "collocations": ["정기 점검", "점검 중", "시설을 점검하다"]
     },
     {
-      "hangul": "그러나",
-      "romanization": "geureona",
-      "english": "however; but",
-      "partOfSpeech": "adverb",
+      "hangul": "지연",
+      "romanization": "jiyeon",
+      "english": "delay",
+      "partOfSpeech": "noun",
       "exampleSentence": {
-        "ko": "핵심 주장은 분명하다. 그러나 근거가 부족하다.",
-        "en": "The main claim is clear. However, the evidence is insufficient.",
-        "note": "그러나 gives a direct formal contrast."
+        "ko": "열차 지연 안내가 나왔어요.",
+        "en": "A train-delay notice was announced.",
+        "note": "Often appears with 운행 or 열차."
       },
-      "collocations": [
-        "그러나 ...은 부족하다",
-        "그러나 ...는 다르다",
-        "그러나 ...할 필요가 있다"
-      ]
+      "collocations": ["열차 지연", "운행 지연", "지연되다"]
     },
     {
-      "hangul": "반면에",
-      "romanization": "banmyeone",
-      "english": "by contrast; whereas",
-      "partOfSpeech": "adverb",
+      "hangul": "환승",
+      "romanization": "hwanseung",
+      "english": "transfer between transit lines",
+      "partOfSpeech": "noun",
       "exampleSentence": {
-        "ko": "첫 번째 사례는 적절하다. 반면에 두 번째 사례는 관련성이 약하다.",
-        "en": "The first case is appropriate. By contrast, the second case is weakly relevant.",
-        "note": "반면에 compares two sides."
+        "ko": "이 역에서 버스로 환승하세요.",
+        "en": "Transfer to a bus at this station.",
+        "note": "환승하다 and 갈아타다 express the same practical action."
       },
-      "collocations": [
-        "A는 ...하다. 반면에 B는 ...하다",
-        "-ㄴ 반면에",
-        "장점이 있다. 반면에 한계도 있다"
-      ]
+      "collocations": ["환승역", "무료 환승", "버스로 환승하다"]
     },
     {
-      "hangul": "즉",
-      "romanization": "jeuk",
-      "english": "that is; in other words",
-      "partOfSpeech": "adverb",
+      "hangul": "재개",
+      "romanization": "jaegae",
+      "english": "resumption; restart",
+      "partOfSpeech": "noun",
       "exampleSentence": {
-        "ko": "문제는 결론 자체가 아니다. 즉, 근거와 논리의 연결이 약하다는 점이다.",
-        "en": "The problem is not the conclusion itself. In other words, the link between evidence and reasoning is weak.",
-        "note": "즉 clarifies the same point in a narrower form."
+        "ko": "운행이 오후에 재개될 예정입니다.",
+        "en": "Service is scheduled to resume in the afternoon.",
+        "note": "The opposite status is 중단."
       },
-      "collocations": [
-        "즉, ...라는 뜻이다",
-        "즉, ...라는 점이다",
-        "즉, ...라고 볼 수 있다"
-      ]
-    },
-    {
-      "hangul": "결국",
-      "romanization": "gyeolguk",
-      "english": "ultimately; in the end",
-      "partOfSpeech": "adverb",
-      "exampleSentence": {
-        "ko": "결국 좋은 보고서는 주장, 근거, 사례가 서로 연결되어야 한다.",
-        "en": "Ultimately, a good report requires its claim, evidence, and cases to be connected.",
-        "note": "결국 summarizes what the whole discussion leads to."
-      },
-      "collocations": [
-        "결국 ...이다",
-        "결국 ...해야 한다",
-        "결국 같은 결론에 도달하다"
-      ]
+      "collocations": ["운행 재개", "서비스 재개", "재개되다"]
     }
   ],
   "extendedDialogue": {
-    "setting": "Two classmates are revising a Korean report draft before submission.",
+    "setting": "Alex is handling four ordinary messages during one day in Seoul and checks the important details with a Korean friend.",
     "lines": [
       {
-        "speaker": "민서",
-        "ko": "이 보고서는 근거가 부족합니다.",
-        "romanization": "i bogoseoneun geungeoga bujokhamnida.",
-        "en": "This report lacks evidence.",
-        "grammarNote": "근거가 부족하다 is the diagnosis."
+        "speaker": "택배 기사",
+        "ko": "공동현관 앞입니다. 어디에 놓아 드릴까요?",
+        "romanization": "gongdonghyeongwan apimnida. eodie noa deurilkkayo?",
+        "en": "I'm at the building entrance. Where should I leave it?",
+        "grammarNote": "-아/어 드릴까요? offers an action for the recipient."
       },
       {
-        "speaker": "지훈",
-        "ko": "따라서 결론을 다시 검토해야 합니다.",
-        "romanization": "ttaraseo gyeolloneul dasi geomtohaeya hamnida.",
-        "en": "Therefore, the conclusion must be reviewed again.",
-        "grammarNote": "따라서 links the diagnosis to the required action."
+        "speaker": "알렉스",
+        "ko": "문 앞에 놓아 주시고 사진도 보내 주세요.",
+        "romanization": "mun ape noa jusigo sajindo bonae juseyo.",
+        "en": "Please leave it at my door and send a photo too.",
+        "grammarNote": "-고 connects two requested actions."
       },
       {
-        "speaker": "민서",
-        "ko": "그러나 핵심 주장은 유지할 수 있습니다.",
-        "romanization": "geureona haeksim jujangeun yujihal su itseumnida.",
-        "en": "However, the main claim can be maintained.",
-        "grammarNote": "그러나 limits the criticism so the whole argument is not rejected."
+        "speaker": "약사",
+        "ko": "기침 말고 열도 있으세요?",
+        "romanization": "gichim malgo yeoldo isseuseyo?",
+        "en": "Besides the cough, do you also have a fever?",
+        "grammarNote": "도 asks about an additional symptom."
       },
       {
-        "speaker": "지훈",
-        "ko": "반면에 사례 분석은 보완이 필요합니다.",
-        "romanization": "banmyeone sarye bunseogeun bowani piryohamnida.",
-        "en": "By contrast, the case analysis needs strengthening.",
-        "grammarNote": "반면에 compares one part of the report with another."
+        "speaker": "알렉스",
+        "ko": "네, 어젯밤부터 열이 조금 나요.",
+        "romanization": "ne, eojetbambuteo yeori jogeum nayo.",
+        "en": "Yes, I've had a slight fever since last night.",
+        "grammarNote": "부터 identifies when the symptom began."
       },
       {
-        "speaker": "민서",
-        "ko": "한편 예상되는 반론도 따로 검토해야 합니다.",
-        "romanization": "hanpyeon yesangdoeneun ballondo ttaro geomtohaeya hamnida.",
-        "en": "Meanwhile, the expected counterarguments also need to be reviewed separately.",
-        "grammarNote": "한편 opens a related but parallel issue."
+        "speaker": "친구",
+        "ko": "관리실 공지 봤어요? 내일 오전에 단수래요.",
+        "romanization": "gwallisil gongji bwasseoyo? naeil ojeone dansuraeyo.",
+        "en": "Did you see the management-office notice? They say the water will be off tomorrow morning.",
+        "grammarNote": "-래요 reports the notice in casual speech."
       },
       {
-        "speaker": "지훈",
-        "ko": "즉, 결론보다 근거와 논리를 보완해야 합니다.",
-        "romanization": "jeuk, gyeollonboda geungeowa nollireul bowanhaeya hamnida.",
-        "en": "In other words, the evidence and reasoning need more work than the conclusion.",
-        "grammarNote": "즉 restates the revision target more clearly."
+        "speaker": "알렉스",
+        "ko": "네, 물을 미리 받아 두려고요.",
+        "romanization": "ne, mureul miri bada duryeogoyo.",
+        "en": "Yes, I'm planning to store some water in advance.",
+        "grammarNote": "-아/어 두다 keeps the prepared result available."
       },
       {
-        "speaker": "민서",
-        "ko": "결국 보고서는 주장, 근거, 사례가 서로 연결되어야 합니다.",
-        "romanization": "gyeolguk bogoseoneun jujang, geungeo, saryega seoro yeongyeoldoeeoya hamnida.",
-        "en": "Ultimately, a report's claim, evidence, and cases must be connected.",
-        "grammarNote": "결국 gives the final synthesis."
+        "speaker": "안내 방송",
+        "ko": "2호선 운행이 지연되고 있으니 다른 교통편을 이용해 주세요.",
+        "romanization": "ihoseon unhaengi jiyeondoego isseuni dareun gyotongpyeoneul iyonghae juseyo.",
+        "en": "Line 2 service is delayed, so please use another form of transportation.",
+        "grammarNote": "The first part gives status; the final part gives the passenger action."
       }
     ]
   },
   "readingText": {
-    "title": "근거가 부족한 보고서 고치기",
-    "body": "초안 보고서는 결론이 분명했으나 근거가 부족했다. 따라서 결론을 유지하되 사례 분석을 보완해야 한다. 그러나 모든 내용을 새로 쓸 필요는 없다. 핵심 주장은 유지할 수 있다. 반면에 반론 검토는 아직 약하다. 즉, 문제는 결론 자체가 아니라 근거와 논리의 연결이다. 결국 좋은 보고서는 주장, 근거, 사례, 반론이 서로 연결될 때 설득력을 가진다.",
-    "bodyTranslation": "The draft report had a clear conclusion, but the evidence was insufficient. Therefore, the conclusion can remain, but the case analysis needs to be strengthened. However, not all content needs to be rewritten. The main claim can be kept. By contrast, the counterargument review is still weak. In other words, the problem is not the conclusion itself but the link between evidence and reasoning. Ultimately, a good report is persuasive when claim, evidence, cases, and counterarguments are connected.",
+    "title": "오늘 받은 생활 안내 네 개",
+    "body": "[배달] 고객님, 문 앞에 택배를 두었습니다. 배송 완료 사진을 확인해 주세요.\n[약국] 이 약은 하루에 세 번 식후에 드세요. 졸릴 수 있으니 운전하지 마세요.\n[관리실] 내일 오전 10시부터 12시까지 배관 점검으로 단수됩니다. 사용할 물을 미리 받아 두세요.\n[교통] 현재 2호선 열차가 지연되고 있습니다. 시청역에서 1호선으로 환승해 주세요.",
+    "bodyTranslation": "[Delivery] Your parcel has been left at your door. Please check the delivery-completion photo. [Pharmacy] Take this medicine three times a day after meals. It may make you drowsy, so do not drive. [Management office] The water will be shut off tomorrow from 10 a.m. to noon for plumbing inspection. Store the water you need in advance. [Transit] Line 2 trains are currently delayed. Please transfer to Line 1 at City Hall Station.",
     "comprehensionQuestions": [
       {
-        "question": "초안 보고서의 가장 큰 문제는 무엇인가요?",
-        "answer": "결론 자체가 아니라 근거와 논리의 연결이 약한 것입니다."
+        "question": "택배는 어디에 있나요?",
+        "answer": "문 앞에 있습니다."
       },
       {
-        "question": "왜 따라서가 쓰였나요?",
-        "answer": "근거가 부족하다는 진단에서 사례 분석을 보완해야 한다는 결론이 이어지기 때문입니다."
+        "question": "약을 먹은 뒤에 피해야 하는 행동은 무엇인가요?",
+        "answer": "졸릴 수 있으므로 운전을 피해야 합니다."
       },
       {
-        "question": "글의 마지막 문장에서 결국은 어떤 역할을 하나요?",
-        "answer": "앞의 수정 방향을 모아 좋은 보고서의 조건으로 정리합니다."
+        "question": "단수는 언제이고 무엇을 준비해야 하나요?",
+        "answer": "내일 오전 10시부터 12시까지이고, 사용할 물을 미리 받아 두어야 합니다."
+      },
+      {
+        "question": "열차가 지연될 때 어느 노선으로 환승해야 하나요?",
+        "answer": "시청역에서 1호선으로 환승해야 합니다."
       }
     ]
   },
   "culturalNote": {
-    "title": "Formal Korean writing is relationship logic",
-    "body": "Korean essays and reports often sound polished because each connector tells the reader exactly how to process the next sentence. 그러나 does not merely mean 'but'; it tells the reader to revise the previous claim. 즉 does not merely mean 'so'; it tells the reader to reinterpret the same point more precisely.",
-    "tip": "Before choosing a connector, name the relationship in Korean: 결론, 대조, 비교, 보충, 재진술, or 종합."
+    "title": "Korean notices often omit 'you'",
+    "body": "Delivery texts, medicine labels, apartment notices, and transit announcements rarely repeat a personal subject. The time phrase and final ending carry the practical information: 오전 10시부터, -지 마세요, -아/어 주세요, -될 예정입니다. Reading those anchors is faster and safer than searching for a full English-style sentence.",
+    "tip": "On every notice, mark three things: time, current status, and required action. If one of the three is absent, check whether the message is only an update rather than an instruction."
   },
   "inlineExercises": [
     {
       "type": "multipleChoice",
-      "prompt": "근거가 부족하다. ___ 결론을 다시 검토해야 한다.",
-      "options": [
-        "따라서",
-        "한편",
-        "즉"
-      ],
-      "correct": "따라서",
-      "explanation": "The second sentence is a consequence of the first."
+      "prompt": "도착하면 전화하지 말고 문자 주세요. What should you do?",
+      "options": ["Send a text", "Make a call", "Leave immediately"],
+      "correct": "Send a text",
+      "explanation": "-지 말고 rejects the call and replaces it with 문자 주세요."
     },
     {
       "type": "multipleChoice",
-      "prompt": "첫 번째 사례는 적절하다. ___ 두 번째 사례는 관련성이 약하다.",
-      "options": [
-        "반면에",
-        "따라서",
-        "결국"
-      ],
-      "correct": "반면에",
-      "explanation": "Two comparable sides are being contrasted."
+      "prompt": "택배를 경비실에 맡겨 두었습니다. Where is the parcel?",
+      "options": ["At the security office", "Inside the elevator", "At the pharmacy"],
+      "correct": "At the security office",
+      "explanation": "경비실에 gives the current parcel location."
     },
     {
       "type": "multipleChoice",
-      "prompt": "문제는 결론이 아니다. ___ 근거와 논리의 연결이 약하다는 점이다.",
-      "options": [
-        "즉",
-        "그러나",
-        "한편"
-      ],
-      "correct": "즉",
-      "explanation": "The second sentence restates the diagnosis more precisely."
+      "prompt": "이 약은 식후에 드세요. When should you take it?",
+      "options": ["After meals", "Before sleeping", "On an empty stomach"],
+      "correct": "After meals",
+      "explanation": "식후 means after a meal."
     },
     {
       "type": "multipleChoice",
-      "prompt": "Which sentence keeps written register most consistently?",
-      "options": [
-        "결국 좋은 글은 근거와 사례가 연결되어야 한다.",
-        "결국 좋은 글은 근거랑 사례가 연결돼요.",
-        "결국 좋은 글은 근거랑 사례, 이런 게 중요해요."
-      ],
-      "correct": "결국 좋은 글은 근거와 사례가 연결되어야 한다.",
-      "explanation": "결국 plus -다 style keeps the paragraph formal and written."
-    },
-    {
-      "type": "particleChoice",
-      "prompt": "근거___ 부족하다. (The evidence is insufficient.)",
-      "options": [
-        "가",
-        "를",
-        "에"
-      ],
-      "correct": "가",
-      "explanation": "부족하다 describes the evidence, so 근거 takes 가. 를 would make evidence an object, which does not fit this adjective."
-    },
-    {
-      "type": "orderWords",
-      "prompt": "Build: 'The evidence is weak. Therefore, the conclusion must be reviewed.'",
-      "tokens": [
-        "근거가 약하다.",
-        "따라서 결론을 다시 검토해야 한다."
-      ],
-      "correct": "근거가 약하다. 따라서 결론을 다시 검토해야 한다.",
-      "explanation": "따라서 connects evidence to a conclusion or required action. The written ending -다 keeps the register consistent."
-    },
-    {
-      "type": "fillBlank",
-      "prompt": "Restate with “that is”: 문제는 결론이 아니다. ___ 근거와 논리의 연결이다.",
-      "correct": "즉",
-      "explanation": "즉 restates or clarifies the same point. It should not introduce an unrelated new contrast."
-    },
-    {
-      "type": "errorCorrect",
-      "prompt": "Fix the written-register mismatch: '근거가 약하다 ㅋㅋ 따라서 다시 검토해야 한다.'",
-      "correct": "근거가 약하다. 따라서 다시 검토해야 한다.",
-      "explanation": "ㅋㅋ belongs to casual chat, not a formal written paragraph. Removing it keeps the report register consistent."
+      "prompt": "Which question checks for an additional fever?",
+      "options": ["열도 있으세요?", "열을 버리세요?", "열로 갈아타세요?"],
+      "correct": "열도 있으세요?",
+      "explanation": "도 adds fever to symptoms already mentioned."
     },
     {
       "type": "multipleChoice",
-      "prompt": "Which connector best contrasts two cases?",
-      "options": [
-        "반면에",
-        "즉",
-        "따라서"
-      ],
-      "correct": "반면에",
-      "explanation": "반면에 contrasts two sides or cases. 즉 restates, and 따라서 draws a conclusion."
+      "prompt": "오전 10시부터 두 시간 동안 단수예요. When does it start?",
+      "options": ["10 a.m.", "Noon", "Two days later"],
+      "correct": "10 a.m.",
+      "explanation": "부터 marks the starting point."
     },
     {
-      "type": "fillBlank",
-      "prompt": "Say: 'Ultimately, the core is logic.'",
-      "correct": "궁극적으로 핵심은 논리이다.",
-      "explanation": "궁극적으로 gives final synthesis. -이다 keeps the written-register ending consistent."
+      "type": "multipleChoice",
+      "prompt": "점검 중에는 이용하지 마세요. What does the notice prohibit?",
+      "options": ["Using it during inspection", "Calling the office", "Reading the notice"],
+      "correct": "Using it during inspection",
+      "explanation": "-지 마세요 marks the prohibited action."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "열차가 지연되고 있습니다. What is the status?",
+      "options": ["Delayed", "Completely cancelled forever", "Already resumed"],
+      "correct": "Delayed",
+      "explanation": "지연 means delay, not full suspension."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "3호선으로 갈아타세요. What action is required?",
+      "options": ["Transfer to Line 3", "Exit through Gate 3", "Wait three hours"],
+      "correct": "Transfer to Line 3",
+      "explanation": "갈아타다 means transfer to another vehicle or line."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which word means service will start again?",
+      "options": ["재개", "중단", "단수"],
+      "correct": "재개",
+      "explanation": "재개 is resumption; 중단 is suspension."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which reading order is most useful for a practical notice?",
+      "options": ["Time → status → required action", "Romanization → punctuation → font", "Subject → article → plural"],
+      "correct": "Time → status → required action",
+      "explanation": "These three anchors reveal what changed and what you must do."
     }
   ],
   "summaryCard": {
     "bullets": [
-      "따라서: evidence or condition leads to a conclusion.",
-      "그러나: direct limitation or reversal. 반면에: two-sided comparison. 한편: related parallel development.",
-      "즉: restatement or clarification, not new evidence.",
-      "결국: final synthesis after a chain of reasoning.",
-      "근거, 결론, 핵심, 논리, 사례, 반론 belong together in report and essay revision."
+      "Delivery: find the location, arrival condition, and action closest to 주세요.",
+      "Clinic and pharmacy: separate symptom, frequency, timing, and warning.",
+      "Housing notices: read the time range before 단수, 점검 중, -아/어야 해요, or -지 마세요.",
+      "Transit: distinguish 지연 (delay), 중단 (suspension), 재개 (resumption), and 환승 (transfer).",
+      "Korean notices often omit the subject; time, status, and final ending carry the message."
     ]
   },
   "writingTask": {
-    "prompt": "Write a short expository paragraph (3-4 sentences) arguing a point, using formal written connectors and consistent written endings.",
-    "hint": "Use 따라서/그러므로 for the conclusion, 그러나/반면에 for contrast, 즉/다시 말해서 to restate, and written endings -다 / -ㄴ다·-는다 / -이다 throughout (not 해요).",
-    "model": "운동은 건강에 중요하다. 그러나 시간이 없는 사람이 많다. 따라서 짧게라도 매일 걷는 것이 좋다. 즉, 운동은 길이보다 꾸준함이 핵심이다.",
-    "modelEn": "Exercise is important for health. However, many people have no time. Therefore, it is good to walk every day, even briefly. That is, for exercise, consistency rather than length is the key."
+    "prompt": "Read four short notices and write one English action line for each. Do not translate every word; state only what you need to know or do.",
+    "hint": "For each notice, identify time, current status, and requested or prohibited action.",
+    "model": "문 앞에 두었습니다. → The parcel is at my door; check it. / 식후에 드세요. → Take it after meals.",
+    "modelEn": "This is a reading-comprehension task: reduce each Korean notice to one practical action in English."
   },
   "canDo": [
-    "Draw a conclusion in formal writing with 따라서 / 그러므로 (따라서 …다)",
-    "Distinguish three kinds of contrast with 그러나 / 반면에 / 한편",
-    "Restate without adding new information using 즉 / 다시 말해서 (즉, …이다)",
-    "Keep a consistent written register with -다 / -ㄴ다·-는다 / -이다 endings (and 결국/궁극적으로 to synthesize)"
+    "Understand delivery requests and locate a parcel from a driver message",
+    "Read symptom questions and medicine frequency, timing, and warnings",
+    "Find the time and required action in a building-management notice",
+    "Distinguish a transit delay, suspension, resumption, and transfer instruction"
   ]
 }

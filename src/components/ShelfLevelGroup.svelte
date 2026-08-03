@@ -81,7 +81,7 @@
                 <button class="bite" on:click={() => onPlay(chapter, bite)}>
                   <span class="bite-kind">{KIND_KO[bite.kind] || bite.kind}</span>
                   <span class="bite-title">{bite.title}</span>
-                  <span class="bite-state">{doneMap[bite.id] ? '완료' : `${bite.cardCount}장`}</span>
+                  <span class="bite-state">{doneMap[bite.id] ? '완료' : bite.kind === 'pattern' ? '수업 · Lesson' : `${bite.cardCount}장`}</span>
                 </button>
               {/each}
             </div>

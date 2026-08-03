@@ -57,7 +57,7 @@ describe('wordbook extraction artifacts', () => {
       }
     }
     const duplicateUnions = [...occurrences.values()].filter((chapters) => chapters.size > 1);
-    expect(duplicateUnions).toHaveLength(185);
+    expect(duplicateUnions).toHaveLength(183);
     for (const word of list) {
       expect(word.chapters).toEqual([...(occurrences.get(word.ko) || [])].sort((a, b) => a - b));
     }
@@ -154,6 +154,6 @@ describe('wordbook extraction artifacts', () => {
       }
     }
 
-    expect(attachmentCount).toBe(1016);
+    expect(attachmentCount).toBe(1003);
   });
 });

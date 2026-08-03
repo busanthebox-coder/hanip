@@ -26,7 +26,7 @@
         },
         {
           "when": "Stem ends in ㄹ (ㄹ drops)",
-          "add": "ㄹ + -시-",
+          "add": "drop ㄹ + -시-",
           "ex": "살다 → 사시다 → 사세요"
         },
         {

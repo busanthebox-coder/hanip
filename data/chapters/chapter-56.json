@@ -60,7 +60,7 @@
         "label": "-잖아요 vs. -거든요",
         "body": "Use -잖아요 when you think the listener ALREADY knows it ('as you know'). Use -거든요 when it's NEW background the listener does not know yet ('the thing is…'). Same slot, opposite assumption about the listener."
       },
-      "pronunciation": "-잖아요 is carefully [자나요]; the ㅎ-like sound is very light, and in fast speech it can flatten to [자아요]. Stick with [자나요].",
+      "pronunciation": "-잖아요 is pronounced [자나요]. The spelling keeps ㄶ, but the ㅎ is not heard before ㄴ; keep the ㄴ sound and use three clear syllables: 자-나-요.",
       "drill": {
         "instruction": "Complete each sentence with -잖아요 to remind the listener of a shared fact.",
         "model": "한국에서는 어른이 먼저 드시잖아요. (Elders eat first in Korea, you know.)",
@@ -137,9 +137,9 @@
         ]
       },
       "englishSpeakerPitfall": {
-        "wrong": "왜 안 가요? — 약속이 있어서요.",
-        "right": "왜 안 가요? — 약속이 있거든요.",
-        "explanation": "English speakers reach for -아서/어서 to answer 'why', but as a stand-alone reply -아서요 sounds clipped, while -거든요 is the natural, conversational choice. Don't force the reason into the same clause as the result."
+        "wrong": "A stand-alone -아서요 reason is unnatural or incomplete.",
+        "right": "왜 안 가요? — 약속이 있어서요. / 약속이 있거든요.",
+        "explanation": "Both replies are natural. -아서요 gives a direct, polite reason and is extremely common in everyday answers. -거든요 presents the reason as background the listener may not know and can sound a little more explanatory. Choose the nuance instead of treating -아서요 as an error."
       }
     },
     {

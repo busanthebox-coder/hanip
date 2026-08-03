@@ -225,6 +225,11 @@
           "ex": "먹다 → 먹을수록 · 읽다 → 읽을수록"
         },
         {
+          "when": "Stem already ends in ㄹ",
+          "add": "+ 수록 (do not add 을 or another ㄹ)",
+          "ex": "살다 → 살수록 · 알다 → 알수록 · 길다 → 길수록"
+        },
+        {
           "when": "Often doubled with the same verb + -(으)면",
           "add": "V-(으)면 V-(으)ㄹ수록",
           "ex": "보면 볼수록 · 알면 알수록"

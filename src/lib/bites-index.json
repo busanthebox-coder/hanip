@@ -5262,10 +5262,10 @@
     {
      "id": "chapter-62-b1",
      "kind": "words",
-     "title": "단어 Words 1 · 친구~",
-     "cardCount": 9,
+     "title": "단어 Words 1 · 조사~",
+     "cardCount": 10,
      "canDo": "Spotlight a new or focused subject with 이/가 (친구가 보냈어요)",
-     "firstWord": "친구"
+     "firstWord": "조사"
     },
     {
      "id": "chapter-62-b2",
@@ -5279,7 +5279,7 @@
      "id": "chapter-62-b3",
      "kind": "words",
      "title": "단어 Words 2 · 평소~",
-     "cardCount": 9,
+     "cardCount": 10,
      "canDo": "Set up an already-known topic with 은/는 (저는 …, 그 친구는 …)",
      "firstWord": "평소"
     },
@@ -5294,10 +5294,10 @@
     {
      "id": "chapter-62-b5",
      "kind": "words",
-     "title": "단어 Words 3 · 이유~",
-     "cardCount": 9,
+     "title": "단어 Words 3 · 차이~",
+     "cardCount": 8,
      "canDo": "Mark contrast or limited scope with 은/는 (평소에는 …)",
-     "firstWord": "이유"
+     "firstWord": "차이"
     },
     {
      "id": "chapter-62-b6",
@@ -5352,89 +5352,89 @@
   {
    "id": "chapter-63",
    "number": 63,
-   "title": "따라서 / 그러므로 · 그러나 / 반면에 / 한편",
-   "goal": "Choose formal connectors according to sentence relationship, not English translation.",
+   "title": "V-아/어 주세요 / V-(으)면 연락 주세요 · N도 있으세요? / V-(으)세요",
+   "goal": "Read common delivery requests and confirmations without translating word by word.",
    "level": "B2",
    "biteCount": 10,
    "bites": [
     {
      "id": "chapter-63-b1",
      "kind": "words",
-     "title": "단어 Words 1 · 근거~",
-     "cardCount": 7,
-     "canDo": "Draw a conclusion in formal writing with 따라서 / 그러므로 (따라서 …다)",
-     "firstWord": "근거"
+     "title": "단어 Words 1 · 공동현관~",
+     "cardCount": 6,
+     "canDo": "Understand delivery requests and locate a parcel from a driver message",
+     "firstWord": "공동현관"
     },
     {
      "id": "chapter-63-b2",
      "kind": "pattern",
-     "title": "문법 Grammar · 따라서 / 그러므로",
+     "title": "문법 Grammar · V-아/어 주세요 / V-(으)면 연락 주세요",
      "cardCount": 1,
-     "canDo": "Draw a conclusion in formal writing with 따라서 / 그러므로 (따라서 …다)",
-     "firstWord": "따라서 / 그러므로"
+     "canDo": "Understand delivery requests and locate a parcel from a driver message",
+     "firstWord": "V-아/어 주세요 / V-(으)면 연락 주세요"
     },
     {
      "id": "chapter-63-b3",
      "kind": "words",
-     "title": "단어 Words 2 · 따라서~",
+     "title": "단어 Words 2 · 단수~",
      "cardCount": 6,
-     "canDo": "Distinguish three kinds of contrast with 그러나 / 반면에 / 한편",
-     "firstWord": "따라서"
+     "canDo": "Read symptom questions and medicine frequency, timing, and warnings",
+     "firstWord": "단수"
     },
     {
      "id": "chapter-63-b4",
      "kind": "pattern",
-     "title": "문법 Grammar · 그러나 / 반면에 / 한편",
+     "title": "문법 Grammar · N도 있으세요? / V-(으)세요",
      "cardCount": 2,
-     "canDo": "Distinguish three kinds of contrast with 그러나 / 반면에 / 한편",
-     "firstWord": "그러나 / 반면에 / 한편"
+     "canDo": "Read symptom questions and medicine frequency, timing, and warnings",
+     "firstWord": "N도 있으세요? / V-(으)세요"
     },
     {
      "id": "chapter-63-b5",
      "kind": "pattern",
-     "title": "문법 Grammar · 즉 / 다시 말해서",
+     "title": "문법 Grammar · V-아/어야 해요 / V-지 마세요",
      "cardCount": 1,
-     "canDo": "Restate without adding new information using 즉 / 다시 말해서 (즉, …이다)",
-     "firstWord": "즉 / 다시 말해서"
+     "canDo": "Find the time and required action in a building-management notice",
+     "firstWord": "V-아/어야 해요 / V-지 마세요"
     },
     {
      "id": "chapter-63-b6",
      "kind": "pattern",
-     "title": "문법 Grammar · 결국 / 궁극적으로",
-     "cardCount": 2,
-     "canDo": "Keep a consistent written register with -다 / -ㄴ다·-는다 / -이다 endings (and 결국/궁극적으로 to synthesize)",
-     "firstWord": "결국 / 궁극적으로"
+     "title": "문법 Grammar · N부터 N까지 / N 동안",
+     "cardCount": 1,
+     "canDo": "Distinguish a transit delay, suspension, resumption, and transfer instruction",
+     "firstWord": "N부터 N까지 / N 동안"
     },
     {
      "id": "chapter-63-b7",
      "kind": "pattern",
-     "title": "문법 Grammar · Written endings",
+     "title": "문법 Grammar · N이/가 지연되다 / V-는 중이다",
      "cardCount": 1,
-     "canDo": "Draw a conclusion in formal writing with 따라서 / 그러므로 (따라서 …다)",
-     "firstWord": "Written endings"
+     "canDo": "Understand delivery requests and locate a parcel from a driver message",
+     "firstWord": "N이/가 지연되다 / V-는 중이다"
     },
     {
      "id": "chapter-63-b8",
      "kind": "dialogue",
      "title": "대화 Dialogue · 진짜 한국어",
-     "cardCount": 2,
-     "canDo": "Draw a conclusion in formal writing with 따라서 / 그러므로 (따라서 …다)",
+     "cardCount": 1,
+     "canDo": "Understand delivery requests and locate a parcel from a driver message",
      "firstWord": "진짜 한국어"
     },
     {
      "id": "chapter-63-b9",
      "kind": "reading",
-     "title": "읽기 Reading · 근거가 부족한 보고서 고치기",
+     "title": "읽기 Reading · 오늘 받은 생활 안내 네 개",
      "cardCount": 1,
-     "canDo": "Distinguish three kinds of contrast with 그러나 / 반면에 / 한편",
-     "firstWord": "근거가 부족한 보고서 고치기"
+     "canDo": "Read symptom questions and medicine frequency, timing, and warnings",
+     "firstWord": "오늘 받은 생활 안내 네 개"
     },
     {
      "id": "chapter-63-b10",
      "kind": "boss",
      "title": "보스 Boss bite · 다 걸어요",
-     "cardCount": 7,
-     "canDo": "Restate without adding new information using 즉 / 다시 말해서 (즉, …이다)",
+     "cardCount": 10,
+     "canDo": "Find the time and required action in a building-management notice",
      "firstWord": "다 걸어요"
     }
    ]
@@ -5524,81 +5524,81 @@
   {
    "id": "chapter-65",
    "number": 65,
-   "title": "Integrated production checklist · Rewrite by relationship, not by adding 요",
-   "goal": "Run a production checklist before sending or saying Korean.",
+   "title": "아직 있나요? / 거래 가능할까요? · V-아/어 놓다 / V-아/어 두다",
+   "goal": "Understand availability, condition, price, and pickup details in secondhand-market chats.",
    "level": "C1",
    "biteCount": 9,
    "bites": [
     {
      "id": "chapter-65-b1",
      "kind": "words",
-     "title": "단어 Words 1 · 상황~",
+     "title": "단어 Words 1 · 판매 중~",
      "cardCount": 6,
-     "canDo": "Build one coherent message that fits the situation and the listener (상황·상대방에 맞게)",
-     "firstWord": "상황"
+     "canDo": "Understand whether a secondhand item is available, reserved, defective, or negotiable",
+     "firstWord": "판매 중"
     },
     {
      "id": "chapter-65-b2",
      "kind": "pattern",
-     "title": "문법 Grammar · Integrated production checklist",
+     "title": "문법 Grammar · 아직 있나요? / 거래 가능할까요?",
      "cardCount": 1,
-     "canDo": "Build one coherent message that fits the situation and the listener (상황·상대방에 맞게)",
-     "firstWord": "Integrated production checklist"
+     "canDo": "Understand whether a secondhand item is available, reserved, defective, or negotiable",
+     "firstWord": "아직 있나요? / 거래 가능할까요?"
     },
     {
      "id": "chapter-65-b3",
      "kind": "words",
-     "title": "단어 Words 2 · 연결어~",
+     "title": "단어 Words 2 · 가격 조정~",
      "cardCount": 6,
-     "canDo": "Hold register, tense, and particles consistent across several sentences (문체·시제·조사)",
-     "firstWord": "연결어"
+     "canDo": "Locate a parcel and identify a failed delivery or pickup deadline",
+     "firstWord": "가격 조정"
     },
     {
      "id": "chapter-65-b4",
      "kind": "pattern",
-     "title": "문법 Grammar · Rewrite by relationship, not by adding 요",
+     "title": "문법 Grammar · V-아/어 놓다 / V-아/어 두다",
      "cardCount": 1,
-     "canDo": "Hold register, tense, and particles consistent across several sentences (문체·시제·조사)",
-     "firstWord": "Rewrite by relationship, not by adding 요"
+     "canDo": "Locate a parcel and identify a failed delivery or pickup deadline",
+     "firstWord": "V-아/어 놓다 / V-아/어 두다"
     },
     {
      "id": "chapter-65-b5",
      "kind": "pattern",
-     "title": "문법 Grammar · The three quiet failure points",
-     "cardCount": 1,
-     "canDo": "Combine multiple grammar points — past tense, V-기로 했어요, soft guess, connectors — without breaking the flow",
-     "firstWord": "The three quiet failure points"
+     "title": "문법 Grammar · 혹시 / 좀 / 괜찮으면",
+     "cardCount": 2,
+     "canDo": "Recognize how 혹시, 좀, and 괜찮으면 soften a chat request",
+     "firstWord": "혹시 / 좀 / 괜찮으면"
     },
     {
      "id": "chapter-65-b6",
      "kind": "pattern",
-     "title": "문법 Grammar · One idea, four Korean versions",
+     "title": "문법 Grammar · V-기는 어려울 것 같아요 / V-기 힘들 것 같아요",
      "cardCount": 1,
-     "canDo": "Close politely with honorific phrasing (확인 부탁드립니다 · 죄송합니다)",
-     "firstWord": "One idea, four Korean versions"
+     "canDo": "Distinguish a vague social closing from a refusal that offers a concrete alternative",
+     "firstWord": "V-기는 어려울 것 같아요 / V-기 힘들 것 같아요"
     },
     {
      "id": "chapter-65-b7",
      "kind": "dialogue",
      "title": "대화 Dialogue · 진짜 한국어",
-     "cardCount": 2,
-     "canDo": "Build one coherent message that fits the situation and the listener (상황·상대방에 맞게)",
+     "cardCount": 1,
+     "canDo": "Understand whether a secondhand item is available, reserved, defective, or negotiable",
      "firstWord": "진짜 한국어"
     },
     {
      "id": "chapter-65-b8",
      "kind": "reading",
-     "title": "읽기 Reading · 하루 안에서 문체 바꾸기",
+     "title": "읽기 Reading · 세 가지 메시지에서 필요한 정보 찾기",
      "cardCount": 1,
-     "canDo": "Hold register, tense, and particles consistent across several sentences (문체·시제·조사)",
-     "firstWord": "하루 안에서 문체 바꾸기"
+     "canDo": "Locate a parcel and identify a failed delivery or pickup deadline",
+     "firstWord": "세 가지 메시지에서 필요한 정보 찾기"
     },
     {
      "id": "chapter-65-b9",
      "kind": "boss",
      "title": "보스 Boss bite · 다 걸어요",
-     "cardCount": 8,
-     "canDo": "Combine multiple grammar points — past tense, V-기로 했어요, soft guess, connectors — without breaking the flow",
+     "cardCount": 10,
+     "canDo": "Recognize how 혹시, 좀, and 괜찮으면 soften a chat request",
      "firstWord": "다 걸어요"
     }
    ]

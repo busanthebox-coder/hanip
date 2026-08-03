@@ -8,6 +8,7 @@
   import ChatCard from './cards/ChatCard.svelte';
   import ReadCard from './cards/ReadCard.svelte';
   import PayoffCard from './cards/PayoffCard.svelte';
+  import GrammarLessonCard from './cards/GrammarLessonCard.svelte';
   import { buzz, fanfare, thud, tick } from '../lib/feedback.js';
   import { prefs } from '../lib/prefs.js';
   import { record } from '../lib/srs.js';
@@ -22,7 +23,8 @@
   export let onOpenWord = () => {};
   export let withWarmup = true;
 
-  let cards = [...(withWarmup ? warmupCards(bite) : []), ...bite.cards];
+  const studyCards = bite.lessonCards?.length ? bite.lessonCards : bite.cards;
+  let cards = [...(withWarmup ? warmupCards(bite) : []), ...studyCards];
   markLastPlayed(bite.id);
   let i = 0;
   let resolved = false;
@@ -33,7 +35,7 @@
   let resolutionCorrect = null;
   let speechTimer = null;
 
-  const ACTIVE_KINDS = new Set(['guess', 'drill', 'order']);
+  const ACTIVE_KINDS = new Set(['guess', 'drill', 'order', 'grammar-check']);
 
   onDestroy(() => clearTimeout(speechTimer));
 
@@ -133,6 +135,7 @@
         {:else if cur.kind === 'chat'}<ChatCard card={cur} onResolve={resolve} />
         {:else if cur.kind === 'read'}<ReadCard card={cur} onResolve={resolve} />
         {:else if cur.kind === 'payoff'}<PayoffCard card={cur} onResolve={resolve} />
+        {:else if cur.kind === 'grammar-lesson' || cur.kind === 'grammar-check'}<GrammarLessonCard card={cur} onResolve={resolve} />
         {/if}
         {#if resolved && resolutionCorrect === false && ACTIVE_KINDS.has(cur.kind)}
           <div class="retry-chip">3장 뒤에 다시 나와요 · You'll see this again</div>

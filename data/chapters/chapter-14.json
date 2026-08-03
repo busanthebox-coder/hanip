@@ -218,9 +218,9 @@
         ]
       },
       "englishSpeakerPitfall": {
-        "wrong": "부산에서 살기로 됐어요.",
-        "right": "부산에서 살게 됐어요.",
-        "explanation": "-기로 하다 (decide to) and -게 되다 (end up) get mixed up. If circumstances decided it for you, use -게 됐어요; -기로 했어요 means you yourself chose it. Don't blend them into 살기로 됐어요."
+        "wrong": "부산에서 살기로 됐어요. = exactly the same as 부산에서 살게 됐어요.",
+        "right": "부산에서 살게 됐어요. (circumstances led to it) / 부산에서 살기로 됐어요. (it was decided or arranged)",
+        "explanation": "Both forms are grammatical, but they frame the cause differently. -게 되다 presents a change or outcome that came about through circumstances. -기로 되다 presents a decision or arrangement, often one made jointly or by someone else. If YOU made the decision, 부산에서 살기로 했어요 is the clearest form."
       }
     }
   ],

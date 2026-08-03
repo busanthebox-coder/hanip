@@ -1,487 +1,591 @@
 {
   "id": "chapter-65",
   "hook": {
-    "situation": "One day, four Korean tasks: answer an interview question, send a formal email, talk with coworkers, and reply to a friend on KakaoTalk. The grammar changes because the relationship changes.",
+    "situation": "You find a used item online, receive a parcel-status message, and then need to turn down a friend's plan without sounding cold. Korean chat is short, but words such as 혹시, 좀, 가능할까요, and 어려울 것 같아요 tell you how careful, flexible, or final the message is.",
     "objectives": [
-      "Run a production checklist before sending or saying Korean.",
-      "Revise the same idea across interview, email, coworker talk, and friend chat.",
-      "Catch mismatches in particles, tense, honorifics, connectors, and style."
+      "Understand availability, condition, price, and pickup details in secondhand-market chats.",
+      "Read parcel arrival, failed-delivery, storage, and pickup messages.",
+      "Recognize soft requests and indirect refusals in friend messages."
     ],
-    "whyItMatters": "The final skill is not knowing more patterns. It is choosing the right Korean surface for the situation and then checking every layer before the sentence leaves your mouth or screen."
+    "whyItMatters": "Daily chat rarely uses complete textbook sentences. You need to recognize what is being asked, how certain the plan is, and whether a refusal includes an alternative. This chapter teaches those signals through messages you are likely to read in Korea."
   },
   "grammarNotes": [
     {
-      "id": "gn-pattern-170",
-      "title": "Integrated production checklist",
-      "mentalModel": "Before producing Korean, ask: who is listening, what is the purpose, and what style does this channel require? Then check the grammar pieces.",
-      "formation": "Purpose -> listener -> channel -> style -> particles -> tense/aspect -> connectors -> closing.",
-      "examples": [
+      "title": "아직 있나요? / 거래 가능할까요? — checking a secondhand listing",
+      "func": "A secondhand-market chat usually begins by checking whether the item is still available, then asks about time, place, price, or condition. 아직 있나요? is direct and neutral. N 가능할까요? asks whether an arrangement is possible and sounds more considerate than a flat 가능해요? when contacting a stranger.",
+      "formTable": [
         {
-          "ko": "면접 답변은 정중하게 말하고, 경험의 시제를 흔들리지 않게 맞춰야 해요.",
-          "romanization": "myeonjeop dapbyeoneun jeongjunghage malhago, gyeongheomui sijereul heundeulliji anke matchwoya haeyo.",
-          "en": "For an interview answer, speak courteously and keep the tense of your experience consistent.",
-          "note": "Interview Korean checks register and tense together."
+          "when": "Checking whether the item is still available",
+          "add": "아직 + 있나요? / 판매 중인가요?",
+          "ex": "이 책 아직 있나요?"
         },
         {
-          "ko": "공식 이메일에서는 확인 부탁드립니다처럼 마무리를 격식 있게 써야 해요.",
-          "romanization": "gongsik imeireseoneun hwagin butakdeurimnidacheoreom mamurireul gyeoksik itge sseoya haeyo.",
-          "en": "In a formal email, the closing should be formal, like 확인 부탁드립니다.",
-          "note": "Email Korean needs closing phrases, not only correct grammar."
+          "when": "Checking whether an arrangement is possible",
+          "add": "noun/action + 가능할까요?",
+          "ex": "오늘 저녁에 직거래 가능할까요?"
         },
         {
-          "ko": "친구 카톡에서는 편하게 써도 되지만 회사 메일에는 ㅋㅋ를 빼야 해요.",
-          "romanization": "chingu katogeseoneun pyeonhage sseodo doejiman hoesa meileneun kkreul ppaeya haeyo.",
-          "en": "You can write casually in a friend's KakaoTalk chat, but you must remove ㅋㅋ from a company email.",
-          "note": "Same feeling, different style."
+          "when": "Asking carefully about condition",
+          "add": "N은/는 어떤가요? / N이/가 있나요?",
+          "ex": "상태는 어떤가요? / 하자가 있나요?"
+        },
+        {
+          "when": "Asking whether price adjustment is possible",
+          "add": "가격 조정 + 가능할까요?",
+          "ex": "가격 조금 조정 가능할까요?"
         }
       ],
-      "exceptions": [
-        "Do not treat the checklist as a fixed word order. It is a review habit.",
-        "If one layer changes, recheck the others. Formalizing a sentence can change endings, vocabulary, connectors, and closing."
-      ]
+      "examples": [
+        {
+          "ko": "안녕하세요. 이 의자 아직 있나요?",
+          "romanization": "annyeonghaseyo. i uija ajik innayo?",
+          "en": "Hello. Is this chair still available?",
+          "note": "A greeting plus 아직 있나요? is a safe first message to a stranger."
+        },
+        {
+          "ko": "오늘 저녁 7시에 직거래 가능할까요?",
+          "romanization": "oneul jeonyeok ilgopsie jikgeorae ganeunghalkkayo?",
+          "en": "Would an in-person exchange at 7 this evening be possible?",
+          "note": "The message proposes both time and method, so the seller can answer clearly."
+        },
+        {
+          "ko": "사용감은 있지만 큰 하자는 없어요.",
+          "romanization": "sayonggameun itjiman keun hajaneun eopseoyo.",
+          "en": "It shows signs of use, but there are no major defects.",
+          "note": "사용감 means visible wear from normal use; 하자 means a defect or problem."
+        },
+        {
+          "ko": "죄송하지만 지금은 예약 중이에요.",
+          "romanization": "joesonghajiman jigeumeun yeyak jungieyo.",
+          "en": "Sorry, but it is currently reserved.",
+          "note": "예약 중 means another buyer has arranged the transaction but it may not be completed yet."
+        }
+      ],
+      "keyPoint": {
+        "label": "Availability, condition, and arrangement are separate questions",
+        "body": "아직 있나요? checks availability. 상태는 어떤가요? checks condition. 직거래 가능할까요? checks the arrangement. Asking one clear question at a time makes a short marketplace chat easier to understand and answer."
+      },
+      "pronunciation": "있나요 is pronounced [인나요] because ㅆ before ㄴ becomes [ㄴ]. 가능할까요 has a tense ㄲ: [가능할까요].",
+      "drill": {
+        "instruction": "Identify what information the buyer is checking.",
+        "model": "아직 있나요? → Availability.",
+        "items": [
+          "하자가 있나요? → Which information?",
+          "오늘 직거래 가능할까요? → Which information?",
+          "가격 조정 가능할까요? → Which information?"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "이거 있어요? 얼마?",
+        "right": "안녕하세요. 아직 판매 중인가요? 가격은 얼마인가요?",
+        "explanation": "The clipped version can sound abrupt when contacting a stranger. A short greeting and one complete availability question keep the message polite without making it formal or wordy."
+      }
     },
     {
-      "id": "gn-register-rewrite",
-      "title": "Rewrite by relationship, not by adding 요",
-      "mentalModel": "Politeness is a system. Adding 요 to slang or casual sentence shape does not make the whole sentence appropriate.",
-      "formation": "Casual idea -> polite neutral sentence -> formal written sentence.",
-      "examples": [
+      "title": "V-아/어 놓다 / V-아/어 두다 — parcel storage and pickup status",
+      "func": "Parcel messages often describe an action whose result remains: a package was placed in a locker, left at the door, or stored at a pickup point. V-아/어 놓다 highlights the completed result you can now see or use. V-아/어 두다 highlights leaving something prepared or stored for later. In many delivery messages they overlap, but the practical result is the same: the item is waiting at the stated location.",
+      "formTable": [
         {
-          "ko": "친구: ㅇㅇ 확인했어. / 회사 메일: 네, 확인했습니다.",
-          "romanization": "chingu: ngng hwaginhaesseo. / hoesa meil: ne, hwaginhaetseumnida.",
-          "en": "Friend: Yep, I checked. / Company email: Yes, I have confirmed it.",
-          "note": "ㅇㅇ changes to 네, and the ending changes to -했습니다."
+          "when": "A completed placement whose result remains",
+          "add": "verb stem + -아/어 놓다",
+          "ex": "찍다 → 사진을 찍어 놓다 / 넣다 → 택배함에 넣어 놓다"
         },
         {
-          "ko": "친구: 그 영상 개웃겨. / 면접: 그 사례가 매우 인상적이었습니다.",
-          "romanization": "chingu: geu yeongsang gaeutgyeo. / myeonjeop: geu saryega maeu insangjeogieotseumnida.",
-          "en": "Friend: That video is hilarious. / Interview: That example was very impressive.",
-          "note": "The rough slang is rewritten, not decorated."
+          "when": "Something is stored or prepared for later",
+          "add": "verb stem + -아/어 두다",
+          "ex": "보관하다 → 경비실에 보관해 두다"
         },
         {
-          "ko": "친구: 늦어서 미안. / 공식 이메일: 답장이 늦어져 죄송합니다.",
-          "romanization": "chingu: neujeoseo mian. / gongsik imeil: dapjangi neujeojyeo joesonghamnida.",
-          "en": "Friend: Sorry I'm late. / Formal email: I apologize for the delayed reply.",
-          "note": "Formal email uses a different phrase and a different sentence shape."
+          "when": "Formal completed delivery update",
+          "add": "-아/어 놓았습니다 / -아/어 두었습니다",
+          "ex": "택배함에 넣어 두었습니다"
+        },
+        {
+          "when": "Current storage status",
+          "add": "N에 보관 중입니다",
+          "ex": "편의점에 보관 중입니다"
         }
       ],
-      "exceptions": [
-        "요 can make a sentence polite, but it cannot make rough slang formal.",
-        "Some friendly workplace chats allow softer language, but official emails still need complete phrases."
-      ]
+      "examples": [
+        {
+          "ko": "택배를 무인 택배함에 넣어 두었습니다.",
+          "romanization": "taekbaereul muin taekbaehame neoeo dueotseumnida.",
+          "en": "The parcel has been placed in the unmanned parcel locker.",
+          "note": "넣어 두었습니다 tells you the action is complete and the parcel remains there."
+        },
+        {
+          "ko": "부재중이라 경비실에 보관해 놓았습니다.",
+          "romanization": "bujaejungira gyeongbisire bogwanhae noasseumnida.",
+          "en": "Because you were away, it has been stored at the security office.",
+          "note": "부재중 gives the reason; 경비실 gives the pickup location."
+        },
+        {
+          "ko": "수령 가능 시간은 오후 2시부터 10시까지입니다.",
+          "romanization": "suryeong ganeung siganeun ohu du sibuteo yeol sikkajiimnida.",
+          "en": "Pickup is available from 2 p.m. to 10 p.m.",
+          "note": "수령 means receiving or picking up; 부터…까지 gives the full time window."
+        },
+        {
+          "ko": "주소 불명으로 배송하지 못했습니다.",
+          "romanization": "juso bulmyeongeuro baesonghaji motaetseumnida.",
+          "en": "Delivery could not be completed because the address was unclear.",
+          "note": "-지 못했습니다 reports a failed action; the noun before (으)로 gives the cause."
+        }
+      ],
+      "keyPoint": {
+        "label": "Find the current location before worrying about the grammar label",
+        "body": "넣어 두었습니다, 보관해 놓았습니다, and 보관 중입니다 all tell you that the parcel is currently waiting somewhere. The location phrase marked by 에 is the most important information: 택배함에, 경비실에, 편의점에."
+      },
+      "pronunciation": "In 놓았습니다, the ㅎ is not heard before the vowel-initial ending. 넣어 is [너어], and 수령 is pronounced [수령].",
+      "drill": {
+        "instruction": "Read the parcel message and identify location, status, or pickup time.",
+        "model": "경비실에 보관 중입니다. → Location: security office; status: stored there now.",
+        "items": [
+          "택배함에 넣어 두었습니다. → Where is it?",
+          "배송하지 못했습니다. → Was delivery completed?",
+          "오후 2시부터 수령 가능합니다. → When can pickup begin?"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "보관 중입니다 means someone is putting the parcel away right now.",
+        "right": "보관 중입니다 usually means the parcel is currently being kept at that location.",
+        "explanation": "N 중 can describe an ongoing status, not only an action happening at this second. In a parcel notice, it usually tells you where the item remains available for pickup."
+      }
     },
     {
-      "id": "gn-particle-tense-connector",
-      "title": "The three quiet failure points",
-      "mentalModel": "Learners often notice vocabulary errors, but native readers feel particle, tense, and connector errors first because those pieces control the sentence relationship.",
-      "formation": "After the sentence sounds meaningful, check: noun role, event time, and sentence relationship.",
-      "examples": [
+      "title": "혹시 / 좀 / 괜찮으면 — softening a request in chat",
+      "func": "Korean chat often softens a request before the main grammar appears. 혹시 signals that the speaker is checking a possibility, 좀 makes the request less blunt, and 괜찮으면 means 'if it is okay with you.' These words do not change the core action, but they show that the listener has room to say no.",
+      "formTable": [
         {
-          "ko": "이 문장은 뜻은 맞지만 조사가 어색해요.",
-          "romanization": "i munjangeun tteuseun matjiman josaga eosaekaeyo.",
-          "en": "The meaning of this sentence is right, but the particle is awkward.",
-          "note": "A common review comment."
+          "when": "Checking a possibility carefully",
+          "add": "혹시 + question",
+          "ex": "혹시 오늘 시간 돼요?"
         },
         {
-          "ko": "경험을 말할 때는 과거 시제를 안정적으로 유지해야 해요.",
-          "romanization": "gyeongheomeul malhal ttaeneun gwageo sijereul anjeongjeogeuro yujihaeya haeyo.",
-          "en": "When talking about experience, you need to keep the past tense stable.",
-          "note": "Interview answers often talk about past experience."
+          "when": "Making a request less blunt",
+          "add": "object/action + 좀 + request",
+          "ex": "사진 좀 보내 줄래요?"
         },
         {
-          "ko": "공식 글에서는 그래서보다 따라서가 더 자연스러울 수 있어요.",
-          "romanization": "gongsik geureseoneun geuraeseoboda ttaraseoga deo jayeonseureoul su isseoyo.",
-          "en": "In formal writing, 따라서 can be more natural than 그래서.",
-          "note": "Connector choice depends on register and logic."
+          "when": "Leaving the choice open",
+          "add": "괜찮으면 + suggestion/request",
+          "ex": "괜찮으면 같이 먹어요"
+        },
+        {
+          "when": "Combining softeners naturally",
+          "add": "혹시 + time/condition + 좀 + request",
+          "ex": "혹시 시간 되면 이것 좀 봐 줄래요?"
         }
       ],
-      "exceptions": [
-        "A short friend chat can omit pieces that a formal email cannot omit.",
-        "A connector is not decoration. It must match result, contrast, clarification, or summary."
-      ]
+      "examples": [
+        {
+          "ko": "혹시 오늘 저녁에 시간 돼요?",
+          "romanization": "hoksi oneul jeonyeoge sigan dwaeyo?",
+          "en": "Do you happen to have time this evening?",
+          "note": "혹시 prepares the listener for a request without assuming availability."
+        },
+        {
+          "ko": "시간 되면 이 메시지 좀 봐 줄래요?",
+          "romanization": "sigan doemyeon i mesiji jom bwa jullaeyo?",
+          "en": "If you have time, could you take a look at this message?",
+          "note": "시간 되면 gives an exit; 좀 softens the requested action."
+        },
+        {
+          "ko": "괜찮으면 역 앞에서 만날까요?",
+          "romanization": "gwaenchanheumyeon yeok apeseo mannalkkayo?",
+          "en": "If that works for you, shall we meet in front of the station?",
+          "note": "괜찮으면 checks whether the proposed location suits the other person."
+        },
+        {
+          "ko": "혹시 택배 받으면 알려 줄 수 있어요?",
+          "romanization": "hoksi taekbae badeumyeon allyeo jul su isseoyo?",
+          "en": "Could you let me know if you receive the parcel?",
+          "note": "-아/어 줄 수 있어요? asks whether the listener can do the favor."
+        }
+      ],
+      "keyPoint": {
+        "label": "Soften the assumption, not the important detail",
+        "body": "혹시 and 괜찮으면 leave room for refusal, while 좀 softens the size or force of the request. Keep the practical detail clear: when, where, and what action. A vague request is not automatically polite."
+      },
+      "pronunciation": "괜찮으면 is pronounced [괜차느면]: ㅎ is not heard before the vowel-initial ending, and the final consonant links forward. 혹시 is [혹씨] with a tense ㅆ.",
+      "drill": {
+        "instruction": "Identify which word softens the possibility, the request, or the condition.",
+        "model": "혹시 오늘 시간 돼요? → 혹시 softens the possibility check.",
+        "items": [
+          "이것 좀 봐 줄래요? → Which word softens the request?",
+          "괜찮으면 내일 만나요. → What condition is offered?",
+          "혹시 시간 되면 연락 주세요. → Which two softening steps appear?"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "혹시 means 'by any chance,' so it must appear in every polite request.",
+        "right": "Use 혹시 when you genuinely check a possibility; use 좀 or a polite ending when the possibility itself is not in question.",
+        "explanation": "혹시 is useful but not a universal politeness marker. Overusing it can make a simple message hesitant. Match the softener to what you are actually leaving open."
+      }
     },
     {
-      "id": "gn-four-versions",
-      "title": "One idea, four Korean versions",
-      "mentalModel": "A strong learner can keep the same message while changing the surface for each situation.",
-      "formation": "Message idea: I checked it and will revise it. Change the style by channel.",
-      "examples": [
+      "title": "V-기는 어려울 것 같아요 / V-기 힘들 것 같아요 — a soft refusal with an alternative",
+      "func": "Korean often turns down a plan by describing difficulty rather than saying a flat 싫어요 or 안 돼요. V-기는 어려울 것 같아요 means 'I don't think it will be easy/possible to V.' V-기 힘들 것 같아요 is slightly more conversational. A considerate refusal usually adds a short reason or a workable alternative.",
+      "formTable": [
         {
-          "ko": "면접: 관련 경험을 검토했고, 필요한 부분을 개선하겠습니다.",
-          "romanization": "myeonjeop: gwallyeon gyeongheomeul geomtohaetgo, piryohan bubuneul gaeseonhagetseumnida.",
-          "en": "Interview: I have reviewed the related experience and will improve the necessary parts.",
-          "note": "Formal speech with -겠습니다."
+          "when": "A careful, neutral refusal",
+          "add": "verb stem + -기는 어려울 것 같아요",
+          "ex": "만나다 → 오늘 만나기는 어려울 것 같아요"
         },
         {
-          "ko": "이메일: 자료 확인 후 수정해서 다시 보내드리겠습니다.",
-          "romanization": "imeil: jaryo hwagin hu sujeonghaeseo dasi bonaedeurigetseumnida.",
-          "en": "Email: After checking the materials, I will revise them and send them again.",
-          "note": "Formal email with 보내드리겠습니다."
+          "when": "A conversational difficulty statement",
+          "add": "verb stem + -기 힘들 것 같아요",
+          "ex": "가다 → 이번 주에는 가기 힘들 것 같아요"
         },
         {
-          "ko": "동료 대화: 자료 확인했고, 필요한 부분은 다시 고칠게요.",
-          "romanization": "dongnyo daehwa: jaryo hwaginhaetgo, piryohan bubuneun dasi gochilgeyo.",
-          "en": "Coworker talk: I checked the materials, and I'll fix the necessary parts.",
-          "note": "Polite but softer."
+          "when": "Soft apology before refusal",
+          "add": "미안하지만 / 죄송하지만 + refusal",
+          "ex": "미안하지만 오늘은 못 갈 것 같아요"
         },
         {
-          "ko": "친구 카톡: 봤어. 내가 다시 고칠게 ㅋㅋ.",
-          "romanization": "chingu katok: bwasseo. naega dasi gochilge kk.",
-          "en": "Friend KakaoTalk: Saw it. I'll fix it again lol.",
-          "note": "Casual, private, and relationship-dependent."
+          "when": "Offering a practical alternative",
+          "add": "refusal + 대신 / 다음에 / N은 어때요?",
+          "ex": "오늘은 어렵고 내일 저녁은 어때요?"
         }
       ],
-      "exceptions": [
-        "Do not use the friend version as the base for every context.",
-        "The safest production path is often to draft the formal version first, then relax it for casual settings."
-      ]
+      "examples": [
+        {
+          "ko": "미안하지만 오늘 만나기는 어려울 것 같아요.",
+          "romanization": "mianhajiman oneul mannagineun eoryeoul geot gatayo.",
+          "en": "I'm sorry, but I don't think I can meet today.",
+          "note": "-기는 highlights the proposed action; 어려울 것 같아요 softens the refusal."
+        },
+        {
+          "ko": "이번 주는 시간이 안 될 것 같아요. 다음 주는 어때요?",
+          "romanization": "ibeon juneun sigani an doel geot gatayo. daeum juneun eottaeyo?",
+          "en": "I don't think this week will work. How about next week?",
+          "note": "The alternative makes the answer useful instead of merely vague."
+        },
+        {
+          "ko": "그 가격에는 판매하기 어려울 것 같아요.",
+          "romanization": "geu gagyeogeneun panmaehagi eoryeoul geot gatayo.",
+          "en": "I don't think I can sell it at that price.",
+          "note": "A marketplace refusal can be polite and still state the non-negotiable point clearly."
+        },
+        {
+          "ko": "오늘은 못 가지만 주말에는 괜찮아요.",
+          "romanization": "oneureun mot gajiman jumareneun gwaenchanayo.",
+          "en": "I can't go today, but the weekend works for me.",
+          "note": "-지만 contrasts the unavailable time with a possible alternative."
+        }
+      ],
+      "keyPoint": {
+        "label": "A soft refusal still needs a clear answer",
+        "body": "어려울 것 같아요 lowers the force, but the listener still needs to know whether the plan is possible. Add 오늘은, 그 가격에는, or 이번 주에는 to show exactly what is difficult. If you want the relationship to continue, add a real alternative rather than an empty 다음에 봐요."
+      },
+      "pronunciation": "어려울 것 같아요 is commonly heard as [어려울 걷 까타요]. The final ㅅ of 것 becomes [ㄷ], and the following ㄱ becomes tense.",
+      "drill": {
+        "instruction": "Find the refusal and the alternative in each reply.",
+        "model": "오늘은 어렵고 내일은 어때요? → Refusal: today; alternative: tomorrow.",
+        "items": [
+          "이번 주에는 가기 힘들 것 같아요. 다음 주는 괜찮아요. → What is the alternative?",
+          "그 가격에는 판매하기 어려워요. → What condition is refused?",
+          "오늘은 못 가지만 주말에는 갈 수 있어요. → What remains possible?"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "다음에 봐요 always promises a specific future meeting.",
+        "right": "다음 주 토요일은 어때요? gives a real alternative; 다음에 봐요 may simply close the conversation politely.",
+        "explanation": "A vague 다음에 can be sincere or can be a soft social closing. If you need an actual plan, look for or propose a concrete day, time, or place."
+      }
     }
   ],
   "extendedVocabulary": [
     {
-      "hangul": "상황",
-      "romanization": "sanghwang",
-      "english": "situation; circumstances",
+      "hangul": "판매 중",
+      "romanization": "panmae jung",
+      "english": "currently for sale",
+      "partOfSpeech": "phrase",
+      "exampleSentence": {
+        "ko": "네, 아직 판매 중이에요.",
+        "en": "Yes, it is still for sale.",
+        "note": "The opposite status may be 예약 중 or 판매 완료."
+      },
+      "collocations": ["판매 중이다", "판매 완료", "판매 글"]
+    },
+    {
+      "hangul": "직거래",
+      "romanization": "jikgeorae",
+      "english": "in-person transaction",
       "partOfSpeech": "noun",
       "exampleSentence": {
-        "ko": "먼저 상황과 상대방을 정해야 해요.",
-        "en": "First, you need to decide the situation and listener.",
-        "note": "The first step in production review."
+        "ko": "역 앞에서 직거래하고 싶어요.",
+        "en": "I'd like to meet in front of the station for the exchange.",
+        "note": "Confirm both time and public meeting place."
       },
-      "collocations": [
-        "상황에 맞다",
-        "상황을 정하다",
-        "상황이 공식적이다"
-      ]
+      "collocations": ["직거래 가능", "직거래 장소", "직거래하다"]
     },
     {
-      "hangul": "상대방",
-      "romanization": "sangdaebang",
-      "english": "the other person; listener",
+      "hangul": "예약 중",
+      "romanization": "yeyak jung",
+      "english": "currently reserved",
+      "partOfSpeech": "phrase",
+      "exampleSentence": {
+        "ko": "지금은 다른 분이 예약 중이에요.",
+        "en": "It is currently reserved by another person.",
+        "note": "The sale may not yet be complete."
+      },
+      "collocations": ["예약 중이다", "예약하다", "예약을 취소하다"]
+    },
+    {
+      "hangul": "사용감",
+      "romanization": "sayonggam",
+      "english": "signs of use; wear",
       "partOfSpeech": "noun",
       "exampleSentence": {
-        "ko": "상대방이 누구인지에 따라 문체가 달라져요.",
-        "en": "The style changes depending on who the listener is.",
-        "note": "Relationship decides register."
+        "ko": "사용감은 조금 있지만 깨끗해요.",
+        "en": "It shows a little wear, but it is clean.",
+        "note": "A common condition word in used-item listings."
       },
-      "collocations": [
-        "상대방을 정하다",
-        "상대방에게 맞추다",
-        "상대방이 누구인지"
-      ]
+      "collocations": ["사용감이 있다", "사용감이 적다", "사용감이 많다"]
     },
     {
-      "hangul": "문체",
-      "romanization": "munche",
-      "english": "writing style; register style",
+      "hangul": "하자",
+      "romanization": "haja",
+      "english": "defect; flaw",
       "partOfSpeech": "noun",
       "exampleSentence": {
-        "ko": "공식 이메일에서는 문체를 끝까지 격식 있게 맞춰야 해요.",
-        "en": "In a formal email, the style should stay formal until the end.",
-        "note": "Style consistency is the final chapter's main habit."
+        "ko": "작동에는 하자가 없어요.",
+        "en": "There is no defect in how it works.",
+        "note": "Ask whether the defect affects appearance or function."
       },
-      "collocations": [
-        "문체를 맞추다",
-        "문체가 섞이다",
-        "문체가 자연스럽다"
-      ]
+      "collocations": ["하자가 있다", "큰 하자", "제품 하자"]
     },
     {
-      "hangul": "조사",
-      "romanization": "josa",
-      "english": "particle",
+      "hangul": "가격 조정",
+      "romanization": "gagyeok jojeong",
+      "english": "price adjustment; negotiation",
       "partOfSpeech": "noun",
       "exampleSentence": {
-        "ko": "마지막으로 조사 하나까지 다시 확인하겠습니다.",
-        "en": "Lastly, I will check every particle again.",
-        "note": "Particles are small but high-impact."
+        "ko": "가격 조정은 조금 어려워요.",
+        "en": "It is a little difficult to adjust the price.",
+        "note": "A polite way to refuse bargaining."
       },
-      "collocations": [
-        "조사를 확인하다",
-        "조사가 맞다",
-        "조사를 바꾸다"
-      ]
+      "collocations": ["가격 조정 가능", "가격을 조정하다", "가격 조정이 어렵다"]
     },
     {
-      "hangul": "시제",
-      "romanization": "sije",
-      "english": "tense",
+      "hangul": "무인 택배함",
+      "romanization": "muin taekbaeham",
+      "english": "unmanned parcel locker",
       "partOfSpeech": "noun",
       "exampleSentence": {
-        "ko": "면접 답변에서는 시제를 안정적으로 유지해야 해요.",
-        "en": "In an interview answer, you need to keep the tense stable.",
-        "note": "Experience answers often fail when tense shifts."
+        "ko": "택배는 무인 택배함에 있습니다.",
+        "en": "The parcel is in the unmanned parcel locker.",
+        "note": "Often found in apartment buildings."
       },
-      "collocations": [
-        "시제를 확인하다",
-        "시제가 맞다",
-        "시제가 흔들리다"
-      ]
+      "collocations": ["택배함에 넣다", "택배함 비밀번호", "택배함에서 찾다"]
     },
     {
-      "hangul": "연결어",
-      "romanization": "yeongyeoreo",
-      "english": "connector; linking word",
+      "hangul": "수령",
+      "romanization": "suryeong",
+      "english": "receipt; pickup",
       "partOfSpeech": "noun",
       "exampleSentence": {
-        "ko": "이메일에서는 연결어와 마무리를 같이 확인해야 해요.",
-        "en": "In an email, you need to check the connectors and the closing together.",
-        "note": "Formal writing needs logical links and a closing."
+        "ko": "오늘 안에 수령해 주세요.",
+        "en": "Please pick it up by the end of today.",
+        "note": "Common in parcel and store-pickup messages."
       },
-      "collocations": [
-        "연결어를 고르다",
-        "연결어가 어색하다",
-        "연결어를 바꾸다"
-      ]
+      "collocations": ["수령 가능", "직접 수령", "수령하다"]
     },
     {
-      "hangul": "높임말",
-      "romanization": "nopimmal",
-      "english": "honorific or respectful language",
+      "hangul": "부재중",
+      "romanization": "bujaejung",
+      "english": "away; no one present",
       "partOfSpeech": "noun",
       "exampleSentence": {
-        "ko": "면접 답변은 높임말부터 확인해야 해요.",
-        "en": "For an interview answer, you should check honorific language first.",
-        "note": "Respectful language belongs to relationship control."
+        "ko": "부재중이라 배송하지 못했습니다.",
+        "en": "Delivery could not be completed because no one was present.",
+        "note": "Often followed by a redelivery or pickup instruction."
       },
-      "collocations": [
-        "높임말을 쓰다",
-        "높임말을 확인하다",
-        "높임말이 어색하다"
-      ]
+      "collocations": ["부재중 안내", "부재중 연락", "수취인 부재중"]
     },
     {
-      "hangul": "확인 부탁드립니다",
-      "romanization": "hwagin butakdeurimnida",
-      "english": "Please check / kindly confirm",
-      "partOfSpeech": "expression",
+      "hangul": "완곡한 거절",
+      "romanization": "wangokhan geojeol",
+      "english": "softened; indirect refusal",
+      "partOfSpeech": "noun phrase",
       "exampleSentence": {
-        "ko": "첨부 파일 확인 부탁드립니다.",
-        "en": "Please check the attached file.",
-        "note": "Formal email closing phrase."
+        "ko": "어려울 것 같아요는 완곡한 거절에 자주 쓰여요.",
+        "en": "어려울 것 같아요 is often used for a softened refusal.",
+        "note": "The refusal becomes clearer when paired with a specific condition."
       },
-      "collocations": [
-        "첨부 파일 확인 부탁드립니다",
-        "내용 확인 부탁드립니다",
-        "일정 확인 부탁드립니다"
-      ]
-    },
-    {
-      "hangul": "답장",
-      "romanization": "dapjang",
-      "english": "reply",
-      "partOfSpeech": "noun",
-      "exampleSentence": {
-        "ko": "답장이 늦어져 죄송합니다.",
-        "en": "I apologize for the delayed reply.",
-        "note": "Formal email apology frame."
-      },
-      "collocations": [
-        "답장을 보내다",
-        "답장이 늦다",
-        "답장을 기다리다"
-      ]
-    },
-    {
-      "hangul": "정중하다",
-      "romanization": "jeongjunghada",
-      "english": "courteous; respectful",
-      "partOfSpeech": "adjective",
-      "exampleSentence": {
-        "ko": "면접에서는 정중하게 대답하는 것이 좋아요.",
-        "en": "In an interview, it is good to answer courteously.",
-        "note": "Useful register adjective for speech style."
-      },
-      "collocations": [
-        "정중하게 말하다",
-        "정중하게 부탁하다",
-        "정중한 표현"
-      ]
+      "collocations": ["완곡하게 거절하다", "거절 표현", "대안을 제시하다"]
     }
   ],
   "extendedDialogue": {
-    "setting": "A learner reviews four Korean outputs from the same day.",
+    "setting": "Alex buys a used lamp, checks the parcel message, and then answers a friend's invitation.",
     "lines": [
       {
-        "speaker": "민서",
-        "ko": "오늘 면접 답변, 이메일, 카톡 답장을 한 번에 검수해 볼까요?",
-        "romanization": "oneul myeonjeop dapbyeon, imeil, katok dapjangeul han beone geomsuhae bolkkayo?",
-        "en": "Shall we review today's interview answer, email, and KakaoTalk reply together?",
-        "grammarNote": "The final chapter reviews production across channels."
+        "speaker": "알렉스",
+        "ko": "안녕하세요. 이 조명 아직 판매 중인가요?",
+        "romanization": "annyeonghaseyo. i jomyeong ajik panmae jungingayo?",
+        "en": "Hello. Is this lamp still for sale?",
+        "grammarNote": "A polite availability check opens the transaction."
       },
       {
-        "speaker": "지훈",
-        "ko": "먼저 상황과 상대방을 정하고 문체를 맞춰야 해요.",
-        "romanization": "meonjeo sanghwanggwa sangdaebangeul jeonghago munchereul matchwoya haeyo.",
-        "en": "First, decide the situation and listener, then match the style.",
-        "grammarNote": "상황 and 상대방 come before grammar selection."
+        "speaker": "판매자",
+        "ko": "네, 아직 있어요. 사용감은 조금 있지만 하자는 없어요.",
+        "romanization": "ne, ajik isseoyo. sayonggameun jogeum itjiman hajaneun eopseoyo.",
+        "en": "Yes, it is. It shows a little wear, but it has no defects.",
+        "grammarNote": "-지만 contrasts wear with the lack of defects."
       },
       {
-        "speaker": "민서",
-        "ko": "면접 답변은 높임말과 시제를 확인하고, 이메일은 연결어와 마무리를 봐요.",
-        "romanization": "myeonjeop dapbyeoneun nopimmalgwa sijereul hwaginhago, imeireun yeongyeoreowa mamurireul bwayo.",
-        "en": "For the interview answer, check honorifics and tense; for the email, check connectors and the closing.",
-        "grammarNote": "Different channels require different review priorities."
+        "speaker": "알렉스",
+        "ko": "오늘 저녁에 역 앞에서 직거래 가능할까요?",
+        "romanization": "oneul jeonyeoge yeok apeseo jikgeorae ganeunghalkkayo?",
+        "en": "Would an in-person exchange in front of the station this evening be possible?",
+        "grammarNote": "The buyer proposes time, place, and method together."
       },
       {
-        "speaker": "지훈",
-        "ko": "카톡에서는 편하게 써도 되지만 회사 메일에는 ㅋㅋ를 빼야 해요.",
-        "romanization": "katogeseoneun pyeonhage sseodo doejiman hoesa meileneun kkreul ppaeya haeyo.",
-        "en": "You can write casually in KakaoTalk, but in a company email you need to remove ㅋㅋ.",
-        "grammarNote": "Slang belongs to the relationship, not merely the app."
+        "speaker": "판매자",
+        "ko": "오늘은 어렵고 내일 7시는 괜찮아요.",
+        "romanization": "oneureun eoryeopgo naeil ilgopsineun gwaenchanayo.",
+        "en": "Today is difficult, but tomorrow at 7 works.",
+        "grammarNote": "The refusal includes a concrete alternative."
       },
       {
-        "speaker": "민서",
-        "ko": "마지막으로 조사 하나까지 다시 확인하겠습니다.",
-        "romanization": "majimageuro josa hanakkaji dasi hwaginhagetseumnida.",
-        "en": "Lastly, I will check every particle again.",
-        "grammarNote": "-겠습니다 makes the review commitment formal."
+        "speaker": "택배 알림",
+        "ko": "주문하신 상품을 무인 택배함에 넣어 두었습니다.",
+        "romanization": "jumunhasin sangpumeul muin taekbaehame neoeo dueotseumnida.",
+        "en": "Your ordered item has been placed in the unmanned parcel locker.",
+        "grammarNote": "-아/어 두다 reports a completed action with a result that remains."
+      },
+      {
+        "speaker": "친구",
+        "ko": "혹시 오늘 저녁에 같이 영화 볼래요?",
+        "romanization": "hoksi oneul jeonyeoge gachi yeonghwa bollaeyo?",
+        "en": "Would you happen to want to watch a movie together tonight?",
+        "grammarNote": "혹시 softens the invitation by checking availability."
+      },
+      {
+        "speaker": "알렉스",
+        "ko": "미안하지만 오늘은 가기 힘들 것 같아요. 토요일은 어때요?",
+        "romanization": "mianhajiman oneureun gagi himdeul geot gatayo. toyoireun eottaeyo?",
+        "en": "I'm sorry, but I don't think I can go today. How about Saturday?",
+        "grammarNote": "A soft refusal plus a real alternative keeps the plan alive."
       }
     ]
   },
   "readingText": {
-    "title": "하루 안에서 문체 바꾸기",
-    "body": "한국어를 잘 쓴다는 것은 단어를 많이 아는 것만으로 끝나지 않는다. 면접 답변에서는 정중한 문체와 안정적인 시제가 필요하고, 공식 이메일에서는 확인 부탁드립니다 같은 마무리 표현과 자연스러운 연결어가 필요하다. 반면에 친구 카톡에서는 짧고 편한 표현이 더 자연스러울 수 있다. 중요한 것은 같은 생각을 상황에 맞게 다시 쓰는 능력이다. 문장을 보내기 전에는 상대방, 목적, 문체, 조사, 시제, 연결어를 차례로 확인해야 한다.",
-    "bodyTranslation": "Writing Korean well is not just knowing many words. An interview answer needs a courteous style and stable tense, while a formal email needs closing phrases such as 확인 부탁드립니다 and natural connectors. By contrast, short and relaxed expressions may be more natural in a friend's KakaoTalk chat. What matters is the ability to rewrite the same idea for the situation. Before sending a sentence, check the listener, purpose, style, particles, tense, and connectors in order.",
+    "title": "세 가지 메시지에서 필요한 정보 찾기",
+    "body": "[중고 거래] 안녕하세요. 자전거 아직 판매 중인가요? 상태가 괜찮으면 이번 주 토요일에 직거래하고 싶어요. 가격 조정도 조금 가능할까요?\n[택배] 고객님이 부재중이어서 상품을 경비실에 보관해 놓았습니다. 오늘 오후 10시 전까지 수령해 주세요.\n[친구 카톡] 오늘 만나기는 조금 어려울 것 같아요. 미안해요. 대신 토요일 오후에는 시간이 되는데 그때는 어때요?",
+    "bodyTranslation": "[Secondhand transaction] Hello. Is the bicycle still for sale? If its condition is good, I'd like to meet for an in-person exchange this Saturday. Would a small price adjustment also be possible? [Parcel] Because you were away, your item has been stored at the security office. Please pick it up before 10 p.m. today. [Friend chat] I don't think I can meet today. Sorry. I am free Saturday afternoon instead; would that work?",
     "comprehensionQuestions": [
       {
-        "question": "면접 답변에서 필요한 것은 무엇인가요?",
-        "answer": "정중한 문체와 안정적인 시제입니다."
+        "question": "구매자는 물건에 대해 어떤 세 가지를 확인하나요?",
+        "answer": "판매 여부, 상태, 가격 조정 가능 여부를 확인합니다."
       },
       {
-        "question": "공식 이메일에서는 무엇을 확인해야 하나요?",
-        "answer": "마무리 표현과 자연스러운 연결어를 확인해야 합니다."
+        "question": "택배는 어디에 있고 언제까지 찾아야 하나요?",
+        "answer": "경비실에 있고 오늘 오후 10시 전까지 찾아야 합니다."
       },
       {
-        "question": "문장을 보내기 전에 어떤 항목을 확인해야 하나요?",
-        "answer": "상대방, 목적, 문체, 조사, 시제, 연결어를 확인해야 합니다."
+        "question": "친구 메시지는 완전한 거절인가요, 다른 제안이 있나요?",
+        "answer": "오늘 만나는 것은 거절하지만 토요일 오후라는 다른 제안을 합니다."
       }
     ]
   },
   "culturalNote": {
-    "title": "Advanced Korean is register control",
-    "body": "A fluent Korean learner does not sound advanced because every sentence is long. They sound advanced because they know when to be brief, when to be warm, when to be formal, and when to remove slang completely. Register control is not extra polish; it is part of meaning.",
-    "tip": "If you are unsure, make the sentence complete and neutral first. Then relax it only when the relationship clearly allows it."
+    "title": "Short Korean chat still carries relationship signals",
+    "body": "A short message can be polite without being formal. 안녕하세요, 혹시, 좀, 가능할까요, and 미안하지만 show care toward a stranger or friend. On the other hand, a long explanation does not automatically make a refusal kinder. A clear condition and a realistic alternative are often more helpful.",
+    "tip": "When reading a chat, separate the factual answer from the social cushioning. 아직 있어요 is the answer; 안녕하세요 and 가능할까요 manage the relationship. 어려울 것 같아요 is the refusal; 토요일은 어때요? is the alternative."
   },
   "inlineExercises": [
     {
       "type": "multipleChoice",
-      "prompt": "Which sentence fits a formal company email?",
-      "options": [
-        "첨부 파일 확인 부탁드립니다.",
-        "파일 봐 줘 ㅋㅋ.",
-        "ㅇㅇ 파일 봤어."
-      ],
-      "correct": "첨부 파일 확인 부탁드립니다.",
-      "explanation": "부탁드립니다 is a formal written request ending."
+      "prompt": "Which opening is best for checking a stranger's listing?",
+      "options": ["안녕하세요. 아직 판매 중인가요?", "이거 줘.", "얼마? 빨리 답해."],
+      "correct": "안녕하세요. 아직 판매 중인가요?",
+      "explanation": "It is brief, complete, and appropriately polite."
     },
     {
       "type": "multipleChoice",
-      "prompt": "Which item should you decide before choosing slang or honorifics?",
-      "options": [
-        "상대방과 상황",
-        "romanization",
-        "sentence length only"
-      ],
-      "correct": "상대방과 상황",
-      "explanation": "Relationship and situation determine register."
+      "prompt": "사용감은 있지만 하자는 없어요. What does this mean?",
+      "options": ["It shows wear but has no defects", "It is brand new and sealed", "It cannot be used"],
+      "correct": "It shows wear but has no defects",
+      "explanation": "사용감 is wear; 하자 is a defect."
     },
     {
       "type": "multipleChoice",
-      "prompt": "따라서와 ㅋㅋ가 한 문단에 같이 있으면 무엇이 문제인가요?",
-      "options": [
-        "문체가 섞입니다.",
-        "시제가 없습니다.",
-        "조사가 너무 많습니다."
-      ],
-      "correct": "문체가 섞입니다.",
-      "explanation": "Formal connectors and casual chat reactions usually do not belong in the same paragraph."
+      "prompt": "예약 중이에요. What is the likely status?",
+      "options": ["Another buyer has reserved it", "It has never been listed", "Delivery failed"],
+      "correct": "Another buyer has reserved it",
+      "explanation": "예약 중 means a transaction has been arranged but may not be complete."
     },
     {
       "type": "multipleChoice",
-      "prompt": "Which review layer checks 은/는, 이/가, 을/를?",
-      "options": [
-        "조사",
-        "시제",
-        "마무리"
-      ],
-      "correct": "조사",
-      "explanation": "은/는, 이/가, 을/를 are particles."
+      "prompt": "택배함에 넣어 두었습니다. Where is the parcel now?",
+      "options": ["In the parcel locker", "Still on the truck", "At the subway station"],
+      "correct": "In the parcel locker",
+      "explanation": "-아/어 두었습니다 tells you the completed result remains."
     },
     {
       "type": "multipleChoice",
-      "prompt": "친구 카톡: 봤어. 내가 다시 고칠게 ㅋㅋ. What should change for a formal email?",
-      "options": [
-        "자료 확인 후 수정해서 다시 보내드리겠습니다.",
-        "봤어요 ㅋㅋ.",
-        "고칠게요 ㄹㅇ."
-      ],
-      "correct": "자료 확인 후 수정해서 다시 보내드리겠습니다.",
-      "explanation": "The formal email version rewrites the sentence, removes slang, and uses a formal ending."
-    },
-    {
-      "type": "particleChoice",
-      "prompt": "답장___ 확인해 주시기 바랍니다. (Please check the reply.)",
-      "options": [
-        "을",
-        "이",
-        "에"
-      ],
-      "correct": "을",
-      "explanation": "확인하다 takes the thing checked as an object, so 답장을 fits. 이 would make the reply the subject."
-    },
-    {
-      "type": "orderWords",
-      "prompt": "Build a formal email line: 'After checking, please reply.'",
-      "tokens": [
-        "확인 후",
-        "답장 부탁드립니다"
-      ],
-      "correct": "확인 후 답장 부탁드립니다",
-      "explanation": "확인 후 is concise written Korean for after checking. 부탁드립니다 keeps the email formal and courteous."
-    },
-    {
-      "type": "fillBlank",
-      "prompt": "Friend chat: 'I saw it. I'll fix it again.'",
-      "correct": "봤어. 내가 다시 고칠게.",
-      "explanation": "반말 and -ㄹ게 fit a close friend chat. This would be too casual for a company email."
-    },
-    {
-      "type": "errorCorrect",
-      "prompt": "Fix the formal email mismatch: '확인 부탁드립니다 ㅋㅋ.'",
-      "correct": "확인 부탁드립니다.",
-      "explanation": "ㅋㅋ breaks formal email register. The formal request should stay plain and courteous."
+      "prompt": "배송하지 못했습니다. Was delivery completed?",
+      "options": ["No", "Yes", "The message does not concern delivery"],
+      "correct": "No",
+      "explanation": "-지 못했습니다 means the action could not be completed."
     },
     {
       "type": "multipleChoice",
-      "prompt": "Before sending Korean, which review order is safest?",
-      "options": [
-        "상황과 상대방 → 문체 → 조사/시제/높임말",
-        "ㅋㅋ 추가 → 문체 무시 → 조사 확인",
-        "단어만 번역 → 바로 전송"
-      ],
-      "correct": "상황과 상대방 → 문체 → 조사/시제/높임말",
-      "explanation": "Relationship and situation decide the register first. Then you check grammar details like particles, tense, and honorifics."
+      "prompt": "혹시 오늘 시간 돼요? What does 혹시 do?",
+      "options": ["Checks a possibility carefully", "Makes the sentence past tense", "Cancels the invitation"],
+      "correct": "Checks a possibility carefully",
+      "explanation": "혹시 leaves room for the listener not to be available."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "이것 좀 봐 줄래요? What does 좀 do here?",
+      "options": ["Softens the request", "Means the object is broken", "Marks a future schedule"],
+      "correct": "Softens the request",
+      "explanation": "좀 often lowers the force of an everyday request."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "오늘은 어렵고 내일은 어때요? What is the alternative?",
+      "options": ["Tomorrow", "Today", "No future meeting"],
+      "correct": "Tomorrow",
+      "explanation": "The message refuses today and proposes tomorrow."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "그 가격에는 판매하기 어려울 것 같아요. What is being refused?",
+      "options": ["Selling at that price", "Selling the item at all", "Meeting on Saturday"],
+      "correct": "Selling at that price",
+      "explanation": "그 가격에는 limits the refusal to the proposed price."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which reply gives a real alternative?",
+      "options": ["오늘은 못 가요. 토요일 오후는 어때요?", "싫어요.", "언젠가요."],
+      "correct": "오늘은 못 가요. 토요일 오후는 어때요?",
+      "explanation": "It clearly refuses today and proposes a concrete new time."
     }
   ],
   "summaryCard": {
     "bullets": [
-      "The final review starts with purpose, listener, and channel before grammar.",
-      "Check 문체, 조사, 시제, 높임말, 연결어, and closing phrases together.",
-      "Adding 요 does not make slang formal; rewrite the whole sentence when the relationship changes.",
-      "A strong learner can express the same idea as an interview answer, formal email, coworker chat, and friend KakaoTalk reply."
+      "Secondhand chat: check availability, condition, arrangement, and price separately.",
+      "Parcel messages: find the current location, completion status, and pickup deadline.",
+      "혹시 checks a possibility, 좀 softens a request, and 괜찮으면 leaves the choice open.",
+      "-기는 어려울 것 같아요 gives a soft refusal; a concrete alternative makes the answer useful.",
+      "In short chat, separate the factual answer from the words that manage the relationship."
     ]
   },
   "writingTask": {
-    "prompt": "Write a 5-6 sentence message to a teacher you couldn't reach: greet politely, explain you missed today's class and why, say what you've decided to do, make a careful guess about the result, and close with a courteous request — keeping register, tense, and connectors consistent.",
-    "hint": "Combine course pieces: honorific 해요체 throughout, past -았/었어요, a decision V-기로 했어요, a soft guess -(으)ㄹ 것 같아요, a connector (그래서/하지만), and a polite closing (확인 부탁드립니다).",
-    "model": "선생님, 안녕하세요. 오늘은 몸이 아파서 수업에 못 갔어요. 그래서 집에서 혼자 공부하기로 했어요. 자료를 미리 확인했으면 좋았을 텐데, 늦어서 죄송합니다. 다음 시간에는 참석할 수 있을 것 같아요. 결과를 확인 부탁드립니다.",
-    "modelEn": "Hello, teacher. Today I was sick, so I couldn't go to class. So I decided to study at home by myself. I wish I had checked the materials in advance; I'm sorry for being late. I think I'll be able to attend next time. Please kindly check the result."
+    "prompt": "Read the marketplace, parcel, and friend messages. For each one, write a one-line English summary containing only the decision or required action.",
+    "hint": "Marketplace: status and arrangement. Parcel: location and deadline. Friend chat: refused time and alternative.",
+    "model": "예약 중이에요. → The item is currently reserved. / 토요일은 어때요? → Today is not possible; Saturday is the alternative.",
+    "modelEn": "This task checks message comprehension, not Korean composition."
   },
   "canDo": [
-    "Build one coherent message that fits the situation and the listener (상황·상대방에 맞게)",
-    "Hold register, tense, and particles consistent across several sentences (문체·시제·조사)",
-    "Combine multiple grammar points — past tense, V-기로 했어요, soft guess, connectors — without breaking the flow",
-    "Close politely with honorific phrasing (확인 부탁드립니다 · 죄송합니다)"
+    "Understand whether a secondhand item is available, reserved, defective, or negotiable",
+    "Locate a parcel and identify a failed delivery or pickup deadline",
+    "Recognize how 혹시, 좀, and 괜찮으면 soften a chat request",
+    "Distinguish a vague social closing from a refusal that offers a concrete alternative"
   ]
 }

@@ -1,0 +1,868 @@
+{
+  "roots": [
+    {
+      "id": "root-il-one", "hanja": "一", "reading": "일", "gloss": "one · first",
+      "note": "一 = one. It appears in dates, floors, route numbers, and portions that use Sino-Korean numbers.", "level": "A2",
+      "members": [
+        {"hangul":"일월","breakdown":"一 one + 月 month","english":"January","romanization":"irwol"},
+        {"hangul":"일층","breakdown":"一 one + 層 floor","english":"first floor","romanization":"ilcheung"},
+        {"hangul":"일번","breakdown":"一 one + 番 number","english":"number one","romanization":"ilbeon"},
+        {"hangul":"일인분","breakdown":"一 one + 人 person + 分 portion","english":"one serving","romanization":"irinbun"}
+      ]
+    },
+    {
+      "id": "root-i-two", "hanja": "二", "reading": "이", "gloss": "two · second",
+      "note": "二 = two. Look for 이 in months, floors, subway lines, and measured portions.", "level": "A2",
+      "members": [
+        {"hangul":"이월","breakdown":"二 two + 月 month","english":"February","romanization":"iwol"},
+        {"hangul":"이층","breakdown":"二 two + 層 floor","english":"second floor","romanization":"icheung"},
+        {"hangul":"이인분","breakdown":"二 two + 人 person + 分 portion","english":"two servings","romanization":"iinbun"},
+        {"hangul":"이호선","breakdown":"二 two + 號 line number + 線 line","english":"Line 2","romanization":"ihoseon"}
+      ]
+    },
+    {
+      "id": "root-sam-three", "hanja": "三", "reading": "삼", "gloss": "three · third",
+      "note": "三 = three. It is the Sino-Korean three used for dates, floors, lines, and portions.", "level": "A2",
+      "members": [
+        {"hangul":"삼월","breakdown":"三 three + 月 month","english":"March","romanization":"samwol"},
+        {"hangul":"삼층","breakdown":"三 three + 層 floor","english":"third floor","romanization":"samcheung"},
+        {"hangul":"삼인분","breakdown":"三 three + 人 person + 分 portion","english":"three servings","romanization":"saminbun"},
+        {"hangul":"삼호선","breakdown":"三 three + 號 line number + 線 line","english":"Line 3","romanization":"samhoseon"}
+      ]
+    },
+    {
+      "id": "root-sa-four", "hanja": "四", "reading": "사", "gloss": "four · fourth",
+      "note": "四 = four. This 사 is a number, not the 사 in 회사 or 의사.", "level": "A2",
+      "members": [
+        {"hangul":"사월","breakdown":"四 four + 月 month","english":"April","romanization":"sawol"},
+        {"hangul":"사층","breakdown":"四 four + 層 floor","english":"fourth floor","romanization":"sacheung"},
+        {"hangul":"사인분","breakdown":"四 four + 人 person + 分 portion","english":"four servings","romanization":"sainbun"},
+        {"hangul":"사거리","breakdown":"四 four + 거리 streets","english":"four-way intersection","romanization":"sageori"}
+      ]
+    },
+    {
+      "id": "root-o-five", "hanja": "五", "reading": "오", "gloss": "five · fifth",
+      "note": "五 = five. It helps decode months, floors, subway lines, and quantities.", "level": "A2",
+      "members": [
+        {"hangul":"오월","breakdown":"五 five + 月 month","english":"May","romanization":"owol"},
+        {"hangul":"오층","breakdown":"五 five + 層 floor","english":"fifth floor","romanization":"ocheung"},
+        {"hangul":"오인분","breakdown":"五 five + 人 person + 分 portion","english":"five servings","romanization":"oinbun"},
+        {"hangul":"오호선","breakdown":"五 five + 號 line number + 線 line","english":"Line 5","romanization":"ohoseon"}
+      ]
+    },
+    {
+      "id": "root-yuk-six", "hanja": "六", "reading": "육", "gloss": "six · sixth",
+      "note": "六 = six. Its regular reading is 육, but 六月 is the fixed exception 유월 (June).", "level": "A2",
+      "members": [
+        {"hangul":"육십","breakdown":"六 six + 十 ten","english":"sixty","romanization":"yuksip"},
+        {"hangul":"육층","breakdown":"六 six + 層 floor","english":"sixth floor","romanization":"yukcheung"},
+        {"hangul":"육인분","breakdown":"六 six + 人 person + 分 portion","english":"six servings","romanization":"yuginbun"},
+        {"hangul":"유월","breakdown":"六 six + 月 month; special reading 유월","english":"June","romanization":"yuwol"}
+      ]
+    },
+    {
+      "id": "root-chil-seven", "hanja": "七", "reading": "칠", "gloss": "seven · seventh",
+      "note": "七 = seven. It appears in July, floor numbers, route numbers, and larger counts.", "level": "A2",
+      "members": [
+        {"hangul":"칠월","breakdown":"七 seven + 月 month","english":"July","romanization":"chirwol"},
+        {"hangul":"칠층","breakdown":"七 seven + 層 floor","english":"seventh floor","romanization":"chilcheung"},
+        {"hangul":"칠호선","breakdown":"七 seven + 號 line number + 線 line","english":"Line 7","romanization":"chilhoseon"},
+        {"hangul":"칠십","breakdown":"七 seven + 十 ten","english":"seventy","romanization":"chilsip"}
+      ]
+    },
+    {
+      "id": "root-pal-eight", "hanja": "八", "reading": "팔", "gloss": "eight · eighth",
+      "note": "八 = eight. It is common in dates, floors, transit lines, and prices.", "level": "A2",
+      "members": [
+        {"hangul":"팔월","breakdown":"八 eight + 月 month","english":"August","romanization":"parwol"},
+        {"hangul":"팔층","breakdown":"八 eight + 層 floor","english":"eighth floor","romanization":"palcheung"},
+        {"hangul":"팔호선","breakdown":"八 eight + 號 line number + 線 line","english":"Line 8","romanization":"palhoseon"},
+        {"hangul":"팔십","breakdown":"八 eight + 十 ten","english":"eighty","romanization":"palsip"}
+      ]
+    },
+    {
+      "id": "root-gu-nine", "hanja": "九", "reading": "구", "gloss": "nine · ninth",
+      "note": "九 = nine. This 구 is the number used in September, ninth-floor signs, and Line 9.", "level": "A2",
+      "members": [
+        {"hangul":"구월","breakdown":"九 nine + 月 month","english":"September","romanization":"guwol"},
+        {"hangul":"구층","breakdown":"九 nine + 層 floor","english":"ninth floor","romanization":"gucheung"},
+        {"hangul":"구호선","breakdown":"九 nine + 號 line number + 線 line","english":"Line 9","romanization":"guhoseon"},
+        {"hangul":"구십","breakdown":"九 nine + 十 ten","english":"ninety","romanization":"gusip"}
+      ]
+    },
+    {
+      "id": "root-sip-ten", "hanja": "十", "reading": "십", "gloss": "ten · tenth",
+      "note": "十 = ten. Its regular reading is 십, but 十月 is the fixed exception 시월 (October).", "level": "A2",
+      "members": [
+        {"hangul":"십층","breakdown":"十 ten + 層 floor","english":"tenth floor","romanization":"sipcheung"},
+        {"hangul":"십분","breakdown":"十 ten + 分 minute","english":"ten minutes","romanization":"sipbun"},
+        {"hangul":"십인분","breakdown":"十 ten + 人 person + 分 portion","english":"ten servings","romanization":"sibinbun"},
+        {"hangul":"시월","breakdown":"十 ten + 月 month; special reading 시월","english":"October","romanization":"siwol"}
+      ]
+    },
+    {
+      "id": "root-bun-part", "hanja": "分", "reading": "분", "gloss": "part · division · minute",
+      "note": "分 = divide or part. It appears in clock minutes, portions, categories, and separated items.", "level": "A2",
+      "members": [
+        {"hangul":"분","breakdown":"分 divided unit of time","english":"minute","romanization":"bun"},
+        {"hangul":"부분","breakdown":"部 section + 分 part","english":"part; section","romanization":"bubun"},
+        {"hangul":"구분","breakdown":"區 section + 分 divide","english":"distinction; classification","romanization":"gubun"},
+        {"hangul":"분리","breakdown":"分 divide + 離 separate","english":"separation; sorting","romanization":"bulli"},
+        {"hangul":"분량","breakdown":"分 portion + 量 amount","english":"quantity; assigned amount","romanization":"bullyang"}
+      ]
+    },
+    {
+      "id": "root-ban-half", "hanja": "半", "reading": "반", "gloss": "half · middle",
+      "note": "半 = half. It marks halves of time, events, quantities, and prices.", "level": "A2",
+      "members": [
+        {"hangul":"반","breakdown":"半 half","english":"half","romanization":"ban"},
+        {"hangul":"절반","breakdown":"折 split + 半 half","english":"one half","romanization":"jeolban"},
+        {"hangul":"전반","breakdown":"前 front + 半 half","english":"first half; overall","romanization":"jeonban"},
+        {"hangul":"후반","breakdown":"後 back + 半 half","english":"second half","romanization":"huban"},
+        {"hangul":"반값","breakdown":"半 half + 값 price","english":"half price","romanization":"bangap"}
+      ]
+    },
+    {
+      "id": "root-jeon-before", "hanja": "前", "reading": "전", "gloss": "before · front",
+      "note": "前 = before or front. Use it to recognize earlier times, front gates, and the first half of something.", "level": "A2",
+      "members": [
+        {"hangul":"오전","breakdown":"午 noon + 前 before","english":"a.m.; morning","romanization":"ojeon"},
+        {"hangul":"이전","breakdown":"以 기준 + 前 before","english":"before; previously","romanization":"ijeon"},
+        {"hangul":"전날","breakdown":"前 previous + 날 day","english":"the previous day","romanization":"jeonnal"},
+        {"hangul":"사전","breakdown":"事 event + 前 before","english":"in advance; beforehand","romanization":"sajeon"},
+        {"hangul":"전반","breakdown":"前 front + 半 half","english":"first half; overall","romanization":"jeonban"}
+      ]
+    },
+    {
+      "id": "root-hu-after", "hanja": "後", "reading": "후", "gloss": "after · back",
+      "note": "後 = after or back. It is common in time labels, medicine directions, rear gates, and later stages.", "level": "A2",
+      "members": [
+        {"hangul":"오후","breakdown":"午 noon + 後 after","english":"p.m.; afternoon","romanization":"ohu"},
+        {"hangul":"이후","breakdown":"以 기준 + 後 after","english":"after; from then on","romanization":"ihu"},
+        {"hangul":"후문","breakdown":"後 back + 門 gate","english":"rear gate","romanization":"humun"},
+        {"hangul":"식후","breakdown":"食 meal + 後 after","english":"after a meal","romanization":"sikhu"},
+        {"hangul":"후반","breakdown":"後 back + 半 half","english":"second half","romanization":"huban"}
+      ]
+    },
+    {
+      "id": "root-jwa-left", "hanja": "左", "reading": "좌", "gloss": "left",
+      "note": "左 = left. It is the formal direction word used on road signs, maps, and public instructions.", "level": "A2",
+      "members": [
+        {"hangul":"좌측","breakdown":"左 left + 側 side","english":"left side","romanization":"jwacheuk"},
+        {"hangul":"좌회전","breakdown":"左 left + 回 turn + 轉 rotate","english":"left turn","romanization":"jwahoejeon"},
+        {"hangul":"좌우","breakdown":"左 left + 右 right","english":"left and right","romanization":"jwau"},
+        {"hangul":"좌측통행","breakdown":"左 left + 側 side + 通行 passage","english":"keep left","romanization":"jwacheuk tonghaeng"}
+      ]
+    },
+    {
+      "id": "root-u-right", "hanja": "右", "reading": "우", "gloss": "right",
+      "note": "右 = right. It appears in formal directions on roads, station signs, and walking lanes.", "level": "A2",
+      "members": [
+        {"hangul":"우측","breakdown":"右 right + 側 side","english":"right side","romanization":"ucheuk"},
+        {"hangul":"우회전","breakdown":"右 right + 回 turn + 轉 rotate","english":"right turn","romanization":"uhoejeon"},
+        {"hangul":"좌우","breakdown":"左 left + 右 right","english":"left and right","romanization":"jwau"},
+        {"hangul":"우측통행","breakdown":"右 right + 側 side + 通行 passage","english":"keep right","romanization":"ucheuk tonghaeng"}
+      ]
+    },
+    {
+      "id": "root-dong-east", "hanja": "東", "reading": "동", "gloss": "east",
+      "note": "東 = east. It helps decode districts, coasts, station exits, and gate names.", "level": "A2",
+      "members": [
+        {"hangul":"동쪽","breakdown":"東 east + 쪽 side","english":"east; east side","romanization":"dongjjok"},
+        {"hangul":"동부","breakdown":"東 east + 部 section","english":"eastern region","romanization":"dongbu"},
+        {"hangul":"동해","breakdown":"東 east + 海 sea","english":"East Sea; east coast","romanization":"donghae"},
+        {"hangul":"동대문","breakdown":"東 east + 大 great + 門 gate","english":"Dongdaemun; Great East Gate","romanization":"dongdaemun"}
+      ]
+    },
+    {
+      "id": "root-seo-west", "hanja": "西", "reading": "서", "gloss": "west",
+      "note": "西 = west. It appears in regional names, coasts, districts, and historic gates.", "level": "A2",
+      "members": [
+        {"hangul":"서쪽","breakdown":"西 west + 쪽 side","english":"west; west side","romanization":"seojjok"},
+        {"hangul":"서부","breakdown":"西 west + 部 section","english":"western region","romanization":"seobu"},
+        {"hangul":"서해","breakdown":"西 west + 海 sea","english":"West Sea; west coast","romanization":"seohae"},
+        {"hangul":"서대문","breakdown":"西 west + 大 great + 門 gate","english":"Seodaemun; Great West Gate","romanization":"seodaemun"}
+      ]
+    },
+    {
+      "id": "root-nam-south", "hanja": "南", "reading": "남", "gloss": "south",
+      "note": "南 = south. It is common in place names, regional notices, and directions.", "level": "A2",
+      "members": [
+        {"hangul":"남쪽","breakdown":"南 south + 쪽 side","english":"south; south side","romanization":"namjjok"},
+        {"hangul":"남부","breakdown":"南 south + 部 section","english":"southern region","romanization":"nambu"},
+        {"hangul":"남해","breakdown":"南 south + 海 sea","english":"South Sea; southern coast","romanization":"namhae"},
+        {"hangul":"남대문","breakdown":"南 south + 大 great + 門 gate","english":"Namdaemun; Great South Gate","romanization":"namdaemun"}
+      ]
+    },
+    {
+      "id": "root-buk-north", "hanja": "北", "reading": "북", "gloss": "north",
+      "note": "北 = north. It appears in place names, regional weather, and directions.", "level": "A2",
+      "members": [
+        {"hangul":"북쪽","breakdown":"北 north + 쪽 side","english":"north; north side","romanization":"bukjjok"},
+        {"hangul":"북부","breakdown":"北 north + 部 section","english":"northern region","romanization":"bukbu"},
+        {"hangul":"북한","breakdown":"北 north + 韓 Korea","english":"North Korea","romanization":"bukhan"},
+        {"hangul":"강북","breakdown":"江 river + 北 north","english":"north of the Han River; Gangbuk","romanization":"gangbuk"}
+      ]
+    },
+    {
+      "id": "root-ip-enter", "hanja": "入", "reading": "입", "gloss": "enter · put in",
+      "note": "入 = enter. It is one of the most useful sign roots: entrances, admission, hospitalization, immigration, and input.", "level": "A2",
+      "members": [
+        {"hangul":"입구","breakdown":"入 enter + 口 opening","english":"entrance","romanization":"ipgu"},
+        {"hangul":"입장","breakdown":"入 enter + 場 place","english":"entry; admission","romanization":"ipjang"},
+        {"hangul":"입원","breakdown":"入 enter + 院 institution","english":"hospitalization","romanization":"ibwon"},
+        {"hangul":"입국","breakdown":"入 enter + 國 country","english":"entry into a country","romanization":"ipguk"},
+        {"hangul":"입력","breakdown":"入 put in + 力 power","english":"input; data entry","romanization":"imnyeok"}
+      ]
+    },
+    {
+      "id": "root-chul-exit", "hanja": "出", "reading": "출", "gloss": "exit · go out",
+      "note": "出 = go out. It unlocks exit signs, departures, access, commuting, and output.", "level": "A2",
+      "members": [
+        {"hangul":"출구","breakdown":"出 exit + 口 opening","english":"exit","romanization":"chulgu"},
+        {"hangul":"출발","breakdown":"出 go out + 發 start","english":"departure","romanization":"chulbal"},
+        {"hangul":"출입","breakdown":"出 exit + 入 enter","english":"entry and exit; access","romanization":"churip"},
+        {"hangul":"출근","breakdown":"出 go out + 勤 work","english":"going to work","romanization":"chulgeun"},
+        {"hangul":"출력","breakdown":"出 put out + 力 power","english":"output; printing","romanization":"chullyeok"}
+      ]
+    },
+    {
+      "id": "root-gu-opening", "hanja": "口", "reading": "구", "gloss": "mouth · opening",
+      "note": "口 = mouth or opening. In daily signs it often means an entrance, exit, counter, or population count.", "level": "A2",
+      "members": [
+        {"hangul":"입구","breakdown":"入 enter + 口 opening","english":"entrance","romanization":"ipgu"},
+        {"hangul":"출구","breakdown":"出 exit + 口 opening","english":"exit","romanization":"chulgu"},
+        {"hangul":"창구","breakdown":"窓 window + 口 opening","english":"service counter; teller window","romanization":"changgu"},
+        {"hangul":"인구","breakdown":"人 people + 口 mouths","english":"population","romanization":"ingu"},
+        {"hangul":"구강","breakdown":"口 mouth + 腔 cavity","english":"oral cavity; mouth","romanization":"gugang"}
+      ]
+    },
+    {
+      "id": "root-ro-route", "hanja": "路", "reading": "로", "gloss": "road · route · path",
+      "note": "路 = route or path. Inside words it is usually 로; at the start of a word it can become 노, as in 노선.", "level": "A2",
+      "members": [
+        {"hangul":"도로","breakdown":"道 way + 路 road","english":"road","romanization":"doro"},
+        {"hangul":"통로","breakdown":"通 pass + 路 path","english":"passage; aisle","romanization":"tongno"},
+        {"hangul":"경로","breakdown":"經 pass through + 路 route","english":"route; path","romanization":"gyeongno"},
+        {"hangul":"진로","breakdown":"進 advance + 路 path","english":"career path; direction","romanization":"jillo"},
+        {"hangul":"선로","breakdown":"線 line + 路 track","english":"railway track","romanization":"seollo"}
+      ]
+    },
+    {
+      "id": "root-do-way", "hanja": "道", "reading": "도", "gloss": "way · road",
+      "note": "道 = way or road. It appears in road types and transport routes rather than naming one specific street.", "level": "A2",
+      "members": [
+        {"hangul":"도로","breakdown":"道 way + 路 road","english":"road","romanization":"doro"},
+        {"hangul":"차도","breakdown":"車 car + 道 road","english":"roadway for vehicles","romanization":"chado"},
+        {"hangul":"인도","breakdown":"人 person + 道 way","english":"sidewalk","romanization":"indo"},
+        {"hangul":"철도","breakdown":"鐵 iron + 道 way","english":"railway","romanization":"cheoldo"},
+        {"hangul":"고속도로","breakdown":"高速 high speed + 道路 road","english":"expressway; highway","romanization":"gosokdoro"}
+      ]
+    },
+    {
+      "id": "root-yeok-station", "hanja": "驛", "reading": "역", "gloss": "rail station",
+      "note": "驛 = train or subway station. It is different from 정류장, which is a bus stop.", "level": "A2",
+      "members": [
+        {"hangul":"역","breakdown":"驛 rail station","english":"station","romanization":"yeok"},
+        {"hangul":"지하철역","breakdown":"地下鐵 subway + 驛 station","english":"subway station","romanization":"jihacheollyeok"},
+        {"hangul":"서울역","breakdown":"서울 Seoul + 驛 station","english":"Seoul Station","romanization":"seoullyeok"},
+        {"hangul":"환승역","breakdown":"換乘 transfer + 驛 station","english":"transfer station","romanization":"hwanseungnyeok"},
+        {"hangul":"역세권","breakdown":"驛 station + 勢 influence + 圈 area","english":"area near a station","romanization":"yeoksegwon"}
+      ]
+    },
+    {
+      "id": "root-seon-line", "hanja": "線", "reading": "선", "gloss": "line · wire",
+      "note": "線 = line. It connects subway routes, transit routes, tracks, wires, and drawn lines.", "level": "A2",
+      "members": [
+        {"hangul":"노선","breakdown":"路 route + 線 line","english":"route; transit line","romanization":"noseon"},
+        {"hangul":"호선","breakdown":"號 number + 線 line","english":"numbered subway line","romanization":"hoseon"},
+        {"hangul":"전선","breakdown":"電 electricity + 線 wire","english":"electric wire","romanization":"jeonseon"},
+        {"hangul":"선로","breakdown":"線 line + 路 track","english":"railway track","romanization":"seollo"},
+        {"hangul":"곡선","breakdown":"曲 bent + 線 line","english":"curve; curved line","romanization":"gokseon"}
+      ]
+    },
+    {
+      "id": "root-gyo-connect", "hanja": "交", "reading": "교", "gloss": "cross · exchange",
+      "note": "交 = cross or exchange. It is common in transportation, intersections, exchanges, and changing shifts.", "level": "A2",
+      "members": [
+        {"hangul":"교통","breakdown":"交 cross + 通 pass","english":"transportation; traffic","romanization":"gyotong"},
+        {"hangul":"교차로","breakdown":"交 cross + 叉 fork + 路 road","english":"intersection","romanization":"gyocharo"},
+        {"hangul":"교환","breakdown":"交 exchange + 換 change","english":"exchange; replacement","romanization":"gyohwan"},
+        {"hangul":"교대","breakdown":"交 alternate + 代 replace","english":"shift change; taking turns","romanization":"gyodae"},
+        {"hangul":"교류","breakdown":"交 exchange + 流 flow","english":"exchange; interaction","romanization":"gyoryu"}
+      ]
+    },
+    {
+      "id": "root-tong-pass", "hanja": "通", "reading": "통", "gloss": "pass · connect · communicate",
+      "note": "通 = pass through or connect. It appears in traffic, phone calls, passage, ordinary status, and bankbooks.", "level": "A2",
+      "members": [
+        {"hangul":"교통","breakdown":"交 cross + 通 pass","english":"transportation; traffic","romanization":"gyotong"},
+        {"hangul":"통화","breakdown":"通 connect + 話 talk","english":"phone call","romanization":"tonghwa"},
+        {"hangul":"통행","breakdown":"通 pass + 行 go","english":"passage; traffic","romanization":"tonghaeng"},
+        {"hangul":"보통","breakdown":"普 general + 通 common","english":"usually; ordinary","romanization":"botong"},
+        {"hangul":"통장","breakdown":"通 record + 帳 book","english":"bankbook","romanization":"tongjang"}
+      ]
+    },
+    {
+      "id": "root-un-move", "hanja": "運", "reading": "운", "gloss": "move · carry · operate",
+      "note": "運 = move or carry. It is central to driving, transit operation, shipping, exercise, and luck.", "level": "A2",
+      "members": [
+        {"hangul":"운전","breakdown":"運 move + 轉 turn","english":"driving","romanization":"unjeon"},
+        {"hangul":"운행","breakdown":"運 operate + 行 go","english":"service operation; running","romanization":"unhaeng"},
+        {"hangul":"운송","breakdown":"運 carry + 送 send","english":"transportation; shipping","romanization":"unsong"},
+        {"hangul":"운동","breakdown":"運 move + 動 movement","english":"exercise","romanization":"undong"},
+        {"hangul":"행운","breakdown":"幸 fortunate + 運 fortune","english":"good luck","romanization":"haengun"}
+      ]
+    },
+    {
+      "id": "root-haeng-go", "hanja": "行", "reading": "행", "gloss": "go · carry out",
+      "note": "行 = go or carry out. This 행 appears in banks, travel, transit operation, passage, and walking.", "level": "A2",
+      "members": [
+        {"hangul":"은행","breakdown":"銀 silver + 行 institution","english":"bank","romanization":"eunhaeng"},
+        {"hangul":"여행","breakdown":"旅 journey + 行 go","english":"travel; trip","romanization":"yeohaeng"},
+        {"hangul":"운행","breakdown":"運 operate + 行 go","english":"service operation; running","romanization":"unhaeng"},
+        {"hangul":"통행","breakdown":"通 pass + 行 go","english":"passage; traffic","romanization":"tonghaeng"},
+        {"hangul":"보행","breakdown":"步 step + 行 go","english":"walking; pedestrian movement","romanization":"bohaeng"}
+      ]
+    },
+    {
+      "id": "root-ho-number", "hanja": "號", "reading": "호", "gloss": "number · signal · designation",
+      "note": "號 = assigned number or signal. It is used for rooms, phone numbers, signals, and numbered subway lines.", "level": "A2",
+      "members": [
+        {"hangul":"번호","breakdown":"番 order + 號 number","english":"number","romanization":"beonho"},
+        {"hangul":"신호","breakdown":"信 message + 號 signal","english":"signal; traffic light","romanization":"sinho"},
+        {"hangul":"호선","breakdown":"號 number + 線 line","english":"numbered subway line","romanization":"hoseon"},
+        {"hangul":"전화번호","breakdown":"電話 telephone + 番號 number","english":"phone number","romanization":"jeonhwabeonho"},
+        {"hangul":"병실 번호","breakdown":"病室 hospital room + 番號 number","english":"hospital room number","romanization":"byeongsil beonho"}
+      ]
+    },
+    {
+      "id": "root-cheung-floor", "hanja": "層", "reading": "층", "gloss": "floor · layer",
+      "note": "層 = floor or layer. It is essential for elevators, apartment notices, and building descriptions.", "level": "A2",
+      "members": [
+        {"hangul":"일층","breakdown":"一 one + 層 floor","english":"first floor","romanization":"ilcheung"},
+        {"hangul":"고층","breakdown":"高 high + 層 floor","english":"high floor; high-rise","romanization":"gocheung"},
+        {"hangul":"저층","breakdown":"低 low + 層 floor","english":"low floor; low-rise","romanization":"jeocheung"},
+        {"hangul":"층간소음","breakdown":"層 floor + 間 between + 騷音 noise","english":"noise between floors","romanization":"cheunggansoeum"},
+        {"hangul":"층수","breakdown":"層 floor + 數 number","english":"number of floors","romanization":"cheungsu"}
+      ]
+    },
+    {
+      "id": "root-ga-family", "hanja": "家", "reading": "가", "gloss": "family · home · specialist",
+      "note": "家 = household, home, or a person skilled in a field. Context tells which meaning is active.", "level": "A2",
+      "members": [
+        {"hangul":"가족","breakdown":"家 family + 族 group","english":"family","romanization":"gajok"},
+        {"hangul":"가정","breakdown":"家 home + 庭 household","english":"home; household","romanization":"gajeong"},
+        {"hangul":"가구","breakdown":"家 home + 具 equipment","english":"furniture","romanization":"gagu"},
+        {"hangul":"국가","breakdown":"國 country + 家 entity","english":"nation; state","romanization":"gukga"},
+        {"hangul":"전문가","breakdown":"專門 specialty + 家 expert","english":"specialist; expert","romanization":"jeonmunga"}
+      ]
+    },
+    {
+      "id": "root-ju-live", "hanja": "住", "reading": "주", "gloss": "live · reside",
+      "note": "住 = reside. It appears throughout addresses, resident services, housing, and registration forms.", "level": "A2",
+      "members": [
+        {"hangul":"주소","breakdown":"住 reside + 所 place","english":"address","romanization":"juso"},
+        {"hangul":"주민","breakdown":"住 reside + 民 people","english":"resident","romanization":"jumin"},
+        {"hangul":"주택","breakdown":"住 reside + 宅 house","english":"housing; residence","romanization":"jutaek"},
+        {"hangul":"주거","breakdown":"住 live + 居 dwell","english":"housing; residence","romanization":"jugeo"},
+        {"hangul":"거주","breakdown":"居 dwell + 住 live","english":"residence; residing","romanization":"geoju"}
+      ]
+    },
+    {
+      "id": "root-geo-dwell", "hanja": "居", "reading": "거", "gloss": "dwell · residence",
+      "note": "居 = dwell. It helps decode residence, living space, cohabitation, and address-related terms.", "level": "A2",
+      "members": [
+        {"hangul":"거주","breakdown":"居 dwell + 住 live","english":"residence; residing","romanization":"geoju"},
+        {"hangul":"주거","breakdown":"住 live + 居 dwell","english":"housing; residence","romanization":"jugeo"},
+        {"hangul":"거실","breakdown":"居 dwell + 室 room","english":"living room","romanization":"geosil"},
+        {"hangul":"동거","breakdown":"同 together + 居 dwell","english":"living together; cohabitation","romanization":"donggeo"},
+        {"hangul":"거주지","breakdown":"居住 residence + 地 place","english":"place of residence","romanization":"geojuji"}
+      ]
+    },
+    {
+      "id": "root-so-place", "hanja": "所", "reading": "소", "gloss": "place · office",
+      "note": "所 = place or office. It appears in addresses, service offices, research centers, and police boxes.", "level": "A2",
+      "members": [
+        {"hangul":"장소","breakdown":"場 place + 所 location","english":"place; location","romanization":"jangso"},
+        {"hangul":"주소","breakdown":"住 reside + 所 place","english":"address","romanization":"juso"},
+        {"hangul":"사무소","breakdown":"事務 work + 所 office","english":"office","romanization":"samuso"},
+        {"hangul":"연구소","breakdown":"硏究 research + 所 place","english":"research institute","romanization":"yeonguso"},
+        {"hangul":"파출소","breakdown":"派出 dispatch + 所 office","english":"local police box","romanization":"pachulso"}
+      ]
+    },
+    {
+      "id": "root-gwan-manage", "hanja": "管", "reading": "관", "gloss": "manage · control · pipe",
+      "note": "管 = manage or tube. It connects building management, storage, jurisdiction, and water pipes.", "level": "B1",
+      "members": [
+        {"hangul":"관리","breakdown":"管 manage + 理 handle","english":"management; maintenance","romanization":"gwalli"},
+        {"hangul":"관리실","breakdown":"管理 management + 室 room","english":"building management office","romanization":"gwallisil"},
+        {"hangul":"보관","breakdown":"保 keep + 管 manage","english":"storage; safekeeping","romanization":"bogwan"},
+        {"hangul":"관할","breakdown":"管 control + 轄 govern","english":"jurisdiction","romanization":"gwanhal"},
+        {"hangul":"수도관","breakdown":"水道 water supply + 管 pipe","english":"water pipe","romanization":"sudogwan"}
+      ]
+    },
+    {
+      "id": "root-ri-manage", "hanja": "理", "reading": "리", "gloss": "order · reason · manage",
+      "note": "理 = put in order or make sense of something. It appears in management, cooking, organizing, repair, and processing.", "level": "B1",
+      "members": [
+        {"hangul":"관리","breakdown":"管 manage + 理 handle","english":"management; maintenance","romanization":"gwalli"},
+        {"hangul":"요리","breakdown":"料 material + 理 manage","english":"cooking; cuisine","romanization":"yori"},
+        {"hangul":"정리","breakdown":"整 arrange + 理 order","english":"organizing; tidying","romanization":"jeongni"},
+        {"hangul":"수리","breakdown":"修 fix + 理 put right","english":"repair","romanization":"suri"},
+        {"hangul":"처리","breakdown":"處 handle + 理 manage","english":"handling; processing","romanization":"cheori"}
+      ]
+    },
+    {
+      "id": "root-gong-public", "hanja": "公", "reading": "공", "gloss": "public · official",
+      "note": "公 = public or official. It is common in parks, public services, official forms, and public holidays.", "level": "B1",
+      "members": [
+        {"hangul":"공공","breakdown":"公 public + 共 shared","english":"public; public sector","romanization":"gonggong"},
+        {"hangul":"공원","breakdown":"公 public + 園 garden","english":"park","romanization":"gongwon"},
+        {"hangul":"공식","breakdown":"公 official + 式 form","english":"official; formula","romanization":"gongsik"},
+        {"hangul":"공무원","breakdown":"公 public + 務 work + 員 member","english":"public official","romanization":"gongmuwon"},
+        {"hangul":"공휴일","breakdown":"公 public + 休日 holiday","english":"public holiday","romanization":"gonghyuil"}
+      ]
+    },
+    {
+      "id": "root-gong-shared", "hanja": "共", "reading": "공", "gloss": "together · shared",
+      "note": "共 = together or shared. It appears in shared spaces, common features, and public-use facilities.", "level": "B1",
+      "members": [
+        {"hangul":"공동","breakdown":"共 together + 同 same","english":"joint; shared","romanization":"gongdong"},
+        {"hangul":"공공","breakdown":"公 public + 共 shared","english":"public; public sector","romanization":"gonggong"},
+        {"hangul":"공통","breakdown":"共 shared + 通 common","english":"common; shared feature","romanization":"gongtong"},
+        {"hangul":"공유","breakdown":"共 share + 有 have","english":"sharing; shared ownership","romanization":"gongyu"},
+        {"hangul":"공용","breakdown":"共 shared + 用 use","english":"communal; for shared use","romanization":"gongyong"}
+      ]
+    },
+    {
+      "id": "root-an-safe", "hanja": "安", "reading": "안", "gloss": "safe · calm",
+      "note": "安 = safe or calm. It connects safety notices with relief, security, anxiety, and stability.", "level": "A2",
+      "members": [
+        {"hangul":"안전","breakdown":"安 safe + 全 whole","english":"safety","romanization":"anjeon"},
+        {"hangul":"안심","breakdown":"安 calm + 心 mind","english":"relief; peace of mind","romanization":"ansim"},
+        {"hangul":"불안","breakdown":"不 not + 安 calm","english":"anxiety; uneasiness","romanization":"buran"},
+        {"hangul":"보안","breakdown":"保 protect + 安 safe","english":"security","romanization":"boan"},
+        {"hangul":"안정","breakdown":"安 stable + 定 settle","english":"stability","romanization":"anjeong"}
+      ]
+    },
+    {
+      "id": "root-jeon-whole", "hanja": "全", "reading": "전", "gloss": "whole · all · complete",
+      "note": "全 = whole or complete. It appears in safety, totals, nationwide notices, and complete states.", "level": "A2",
+      "members": [
+        {"hangul":"안전","breakdown":"安 safe + 全 whole","english":"safety","romanization":"anjeon"},
+        {"hangul":"전체","breakdown":"全 whole + 體 body","english":"the whole; entirety","romanization":"jeonche"},
+        {"hangul":"전국","breakdown":"全 all + 國 country","english":"nationwide; the whole country","romanization":"jeonguk"},
+        {"hangul":"완전","breakdown":"完 complete + 全 whole","english":"complete; completely","romanization":"wanjeon"},
+        {"hangul":"전부","breakdown":"全 all + 部 section","english":"all; everything","romanization":"jeonbu"}
+      ]
+    },
+    {
+      "id": "root-wi-danger", "hanja": "危", "reading": "위", "gloss": "danger · critical",
+      "note": "危 = danger. It marks hazards, crises, urgent conditions, and dangerous materials.", "level": "B1",
+      "members": [
+        {"hangul":"위험","breakdown":"危 danger + 險 risk","english":"danger; risk","romanization":"wiheom"},
+        {"hangul":"위기","breakdown":"危 danger + 機 moment","english":"crisis","romanization":"wigi"},
+        {"hangul":"위급","breakdown":"危 danger + 急 urgent","english":"emergency; critical condition","romanization":"wigeup"},
+        {"hangul":"위험물","breakdown":"危險 danger + 物 object","english":"hazardous material","romanization":"wiheommul"},
+        {"hangul":"위험하다","breakdown":"危險 danger + 하다","english":"to be dangerous","romanization":"wiheomhada"}
+      ]
+    },
+    {
+      "id": "root-heom-risk", "hanja": "險", "reading": "험", "gloss": "risk · danger · steep",
+      "note": "險 = danger or risk. It appears in warnings, insurance, adventures, and descriptions of rough conditions.", "level": "B1",
+      "members": [
+        {"hangul":"위험","breakdown":"危 danger + 險 risk","english":"danger; risk","romanization":"wiheom"},
+        {"hangul":"보험","breakdown":"保 protect + 險 risk","english":"insurance","romanization":"boheom"},
+        {"hangul":"모험","breakdown":"冒 brave + 險 danger","english":"adventure","romanization":"moheom"},
+        {"hangul":"험하다","breakdown":"險 rough + 하다","english":"to be rough; steep; harsh","romanization":"heomhada"},
+        {"hangul":"위험성","breakdown":"危險 risk + 性 quality","english":"risk potential; dangerousness","romanization":"wiheomseong"}
+      ]
+    },
+    {
+      "id": "root-geum-forbid", "hanja": "禁", "reading": "금", "gloss": "forbid · prohibit",
+      "note": "禁 = forbid. It is one of the clearest roots on public signs: no entry, no smoking, and prohibited areas.", "level": "A2",
+      "members": [
+        {"hangul":"금지","breakdown":"禁 forbid + 止 stop","english":"prohibition; prohibited","romanization":"geumji"},
+        {"hangul":"금연","breakdown":"禁 forbid + 煙 smoke","english":"no smoking","romanization":"geumyeon"},
+        {"hangul":"금주","breakdown":"禁 forbid + 酒 alcohol","english":"no alcohol; abstinence","romanization":"geumju"},
+        {"hangul":"출입 금지","breakdown":"出入 access + 禁止 prohibited","english":"no entry","romanization":"churip geumji"},
+        {"hangul":"금지 구역","breakdown":"禁止 prohibited + 區域 zone","english":"restricted area","romanization":"geumji guyeok"}
+      ]
+    },
+    {
+      "id": "root-ji-stop", "hanja": "止", "reading": "지", "gloss": "stop · prevent",
+      "note": "止 = stop. It appears on prohibition, stop, suspension, and prevention notices.", "level": "A2",
+      "members": [
+        {"hangul":"금지","breakdown":"禁 forbid + 止 stop","english":"prohibition; prohibited","romanization":"geumji"},
+        {"hangul":"정지","breakdown":"停 halt + 止 stop","english":"stop; suspension","romanization":"jeongji"},
+        {"hangul":"중지","breakdown":"中 middle + 止 stop","english":"suspension; stopping","romanization":"jungji"},
+        {"hangul":"방지","breakdown":"防 block + 止 prevent","english":"prevention","romanization":"bangji"},
+        {"hangul":"일시 정지","breakdown":"一時 temporary + 停止 stop","english":"temporary stop; pause","romanization":"ilsi jeongji"}
+      ]
+    },
+    {
+      "id": "root-ju-note", "hanja": "注", "reading": "주", "gloss": "pour · focus · note",
+      "note": "注 = pour in or focus on. It links warnings, injections, orders, and input into a container or system.", "level": "B1",
+      "members": [
+        {"hangul":"주의","breakdown":"注 focus + 意 mind","english":"caution; attention","romanization":"juui"},
+        {"hangul":"주사","breakdown":"注 inject + 射 shoot","english":"injection; shot","romanization":"jusa"},
+        {"hangul":"주문","breakdown":"注 specify + 文 writing","english":"order; ordering","romanization":"jumun"},
+        {"hangul":"주입","breakdown":"注 pour + 入 enter","english":"injection; input","romanization":"juip"},
+        {"hangul":"주의사항","breakdown":"注意 caution + 事項 items","english":"precautions; important notes","romanization":"juuisahang"}
+      ]
+    },
+    {
+      "id": "root-ui-meaning", "hanja": "意", "reading": "의", "gloss": "meaning · thought · intention",
+      "note": "意 = thought or intention. It helps separate attention, meaning, opinions, intentions, and agreement.", "level": "B1",
+      "members": [
+        {"hangul":"주의","breakdown":"注 focus + 意 mind","english":"caution; attention","romanization":"juui"},
+        {"hangul":"의미","breakdown":"意 meaning + 味 sense","english":"meaning","romanization":"uimi"},
+        {"hangul":"의견","breakdown":"意 thought + 見 view","english":"opinion","romanization":"uigyeon"},
+        {"hangul":"의사","breakdown":"意 intention + 思 thought","english":"intention; willingness","romanization":"uisa"},
+        {"hangul":"동의","breakdown":"同 same + 意 thought","english":"agreement; consent","romanization":"dongui"}
+      ]
+    },
+    {
+      "id": "root-gae-open", "hanja": "開", "reading": "개", "gloss": "open · begin",
+      "note": "開 = open. It appears in opening hours, new service, unsealing packages, and public release.", "level": "A2",
+      "members": [
+        {"hangul":"개방","breakdown":"開 open + 放 release","english":"opening; open access","romanization":"gaebang"},
+        {"hangul":"개점","breakdown":"開 open + 店 shop","english":"store opening","romanization":"gaejeom"},
+        {"hangul":"개통","breakdown":"開 open + 通 pass","english":"opening of a route or service","romanization":"gaetong"},
+        {"hangul":"개봉","breakdown":"開 open + 封 seal","english":"opening a package; release","romanization":"gaebong"},
+        {"hangul":"공개","breakdown":"公 public + 開 open","english":"public release; disclosure","romanization":"gonggae"}
+      ]
+    },
+    {
+      "id": "root-pye-close", "hanja": "閉", "reading": "폐", "gloss": "close · shut",
+      "note": "閉 = close. It appears in closures, businesses shutting down, and sealed spaces.", "level": "A2",
+      "members": [
+        {"hangul":"폐쇄","breakdown":"閉 close + 鎖 lock","english":"closure; shutdown","romanization":"pyeswae"},
+        {"hangul":"폐점","breakdown":"閉 close + 店 shop","english":"store closing; closed store","romanization":"pyejeom"},
+        {"hangul":"폐업","breakdown":"閉 close + 業 business","english":"business closure","romanization":"pyeeop"},
+        {"hangul":"개폐","breakdown":"開 open + 閉 close","english":"opening and closing","romanization":"gaepye"},
+        {"hangul":"밀폐","breakdown":"密 tight + 閉 close","english":"airtight sealing","romanization":"milpye"}
+      ]
+    },
+    {
+      "id": "root-hyu-rest", "hanja": "休", "reading": "휴", "gloss": "rest · off duty",
+      "note": "休 = rest. It is common on holiday notices, closed-day signs, rest areas, and business breaks.", "level": "A2",
+      "members": [
+        {"hangul":"휴일","breakdown":"休 rest + 日 day","english":"holiday; day off","romanization":"hyuil"},
+        {"hangul":"휴게","breakdown":"休 rest + 憩 rest","english":"rest; break","romanization":"hyuge"},
+        {"hangul":"휴무","breakdown":"休 rest + 務 duty","english":"closed for the day; off duty","romanization":"hyumu"},
+        {"hangul":"휴식","breakdown":"休 rest + 息 breathe","english":"rest; break","romanization":"hyusik"},
+        {"hangul":"휴업","breakdown":"休 rest + 業 business","english":"temporary business closure","romanization":"hyueop"}
+      ]
+    },
+    {
+      "id": "root-jeong-set", "hanja": "定", "reading": "정", "gloss": "set · decide · fixed",
+      "note": "定 = set or decide. It appears in schedules, decisions, regular service, designated places, and confirmations.", "level": "B1",
+      "members": [
+        {"hangul":"예정","breakdown":"豫 beforehand + 定 set","english":"schedule; plan","romanization":"yejeong"},
+        {"hangul":"결정","breakdown":"決 decide + 定 settle","english":"decision","romanization":"gyeoljeong"},
+        {"hangul":"정기","breakdown":"定 fixed + 期 period","english":"regular; periodic","romanization":"jeonggi"},
+        {"hangul":"지정","breakdown":"指 point + 定 set","english":"designation; assigned","romanization":"jijeong"},
+        {"hangul":"확정","breakdown":"確 certain + 定 set","english":"confirmation; finalization","romanization":"hwakjeong"}
+      ]
+    },
+    {
+      "id": "root-jeom-shop", "hanja": "店", "reading": "점", "gloss": "shop · branch",
+      "note": "店 = shop or branch. It helps with store signs, staff labels, opening, closing, and branch names.", "level": "A2",
+      "members": [
+        {"hangul":"상점","breakdown":"商 commerce + 店 shop","english":"shop; store","romanization":"sangjeom"},
+        {"hangul":"점원","breakdown":"店 shop + 員 worker","english":"store clerk","romanization":"jeomwon"},
+        {"hangul":"개점","breakdown":"開 open + 店 shop","english":"store opening","romanization":"gaejeom"},
+        {"hangul":"폐점","breakdown":"閉 close + 店 shop","english":"store closing","romanization":"pyejeom"},
+        {"hangul":"본점","breakdown":"本 main + 店 branch","english":"main branch; flagship store","romanization":"bonjeom"}
+      ]
+    },
+    {
+      "id": "root-si-city", "hanja": "市", "reading": "시", "gloss": "city · market",
+      "note": "市 = city or market. It appears in city centers, local government, residents, and traditional markets.", "level": "A2",
+      "members": [
+        {"hangul":"시장","breakdown":"市 market + 場 place","english":"market","romanization":"sijang"},
+        {"hangul":"시내","breakdown":"市 city + 內 inside","english":"downtown; in the city","romanization":"sinae"},
+        {"hangul":"도시","breakdown":"都 capital + 市 city","english":"city; urban area","romanization":"dosi"},
+        {"hangul":"시민","breakdown":"市 city + 民 people","english":"citizen; city resident","romanization":"simin"},
+        {"hangul":"시청","breakdown":"市 city + 廳 office","english":"city hall","romanization":"sicheong"}
+      ]
+    },
+    {
+      "id": "root-bi-cost", "hanja": "費", "reading": "비", "gloss": "cost · expense",
+      "note": "費 = expense. It appears in bills for transport, food, housing management, and memberships.", "level": "B1",
+      "members": [
+        {"hangul":"비용","breakdown":"費 cost + 用 use","english":"cost; expense","romanization":"biyong"},
+        {"hangul":"교통비","breakdown":"交通 transport + 費 cost","english":"transportation cost","romanization":"gyotongbi"},
+        {"hangul":"식비","breakdown":"食 food + 費 cost","english":"food expenses","romanization":"sikbi"},
+        {"hangul":"관리비","breakdown":"管理 management + 費 cost","english":"building maintenance fee","romanization":"gwallibi"},
+        {"hangul":"회비","breakdown":"會 group + 費 fee","english":"membership fee; dues","romanization":"hoebi"}
+      ]
+    },
+    {
+      "id": "root-ga-price", "hanja": "價", "reading": "가", "gloss": "price · value",
+      "note": "價 = price or value. It connects prices with fixed, low, and high price labels.", "level": "B1",
+      "members": [
+        {"hangul":"가격","breakdown":"價 price + 格 standard","english":"price","romanization":"gagyeok"},
+        {"hangul":"물가","breakdown":"物 goods + 價 prices","english":"cost of living; prices","romanization":"mulga"},
+        {"hangul":"정가","breakdown":"定 fixed + 價 price","english":"list price; fixed price","romanization":"jeongga"},
+        {"hangul":"저가","breakdown":"低 low + 價 price","english":"low-priced; budget","romanization":"jeoga"},
+        {"hangul":"고가","breakdown":"高 high + 價 price","english":"high-priced; expensive","romanization":"goga"}
+      ]
+    },
+    {
+      "id": "root-pum-goods", "hanja": "品", "reading": "품", "gloss": "goods · product · quality",
+      "note": "品 = goods or product. It is useful on shopping, food, parcel, and sold-out notices.", "level": "B1",
+      "members": [
+        {"hangul":"상품","breakdown":"商 commerce + 品 goods","english":"product; merchandise","romanization":"sangpum"},
+        {"hangul":"제품","breakdown":"製 make + 品 product","english":"manufactured product","romanization":"jepum"},
+        {"hangul":"식품","breakdown":"食 food + 品 item","english":"food product","romanization":"sikpum"},
+        {"hangul":"물품","breakdown":"物 object + 品 goods","english":"goods; articles","romanization":"mulpum"},
+        {"hangul":"품절","breakdown":"品 product + 切 cut off","english":"sold out","romanization":"pumjeol"}
+      ]
+    },
+    {
+      "id": "root-mae-buy", "hanja": "買", "reading": "매", "gloss": "buy · purchase",
+      "note": "買 = buy. It appears in purchase buttons, buyer labels, stock intake, and buying-and-selling terms.", "level": "B1",
+      "members": [
+        {"hangul":"구매","breakdown":"購 obtain + 買 buy","english":"purchase","romanization":"gumae"},
+        {"hangul":"매입","breakdown":"買 buy + 入 bring in","english":"purchase; buying in","romanization":"maeip"},
+        {"hangul":"매매","breakdown":"賣 sell + 買 buy","english":"buying and selling; trade","romanization":"maemae"},
+        {"hangul":"구매자","breakdown":"購買 purchase + 者 person","english":"buyer; purchaser","romanization":"gumaeja"},
+        {"hangul":"구매하다","breakdown":"購買 purchase + 하다","english":"to purchase","romanization":"gumaehada"}
+      ]
+    },
+    {
+      "id": "root-mae-sell", "hanja": "賣", "reading": "매", "gloss": "sell · sales",
+      "note": "賣 = sell. It appears in listings, stores, sales figures, and transaction language.", "level": "B1",
+      "members": [
+        {"hangul":"판매","breakdown":"販 trade + 賣 sell","english":"sale; selling","romanization":"panmae"},
+        {"hangul":"매출","breakdown":"賣 sell + 出 out","english":"sales revenue","romanization":"maechul"},
+        {"hangul":"매장","breakdown":"賣 sell + 場 place","english":"store; sales floor","romanization":"maejang"},
+        {"hangul":"매매","breakdown":"賣 sell + 買 buy","english":"buying and selling; trade","romanization":"maemae"},
+        {"hangul":"판매자","breakdown":"販賣 selling + 者 person","english":"seller","romanization":"panmaeja"}
+      ]
+    },
+    {
+      "id": "root-yong-use", "hanja": "用", "reading": "용", "gloss": "use · purpose",
+      "note": "用 = use or purpose. It appears in using services, practical use, costs, and shared facilities.", "level": "A2",
+      "members": [
+        {"hangul":"이용","breakdown":"利 benefit + 用 use","english":"use of a service or facility","romanization":"iyong"},
+        {"hangul":"사용","breakdown":"使 make + 用 use","english":"use; usage","romanization":"sayong"},
+        {"hangul":"용도","breakdown":"用 use + 途 purpose","english":"purpose; intended use","romanization":"yongdo"},
+        {"hangul":"비용","breakdown":"費 cost + 用 use","english":"cost; expense","romanization":"biyong"},
+        {"hangul":"공용","breakdown":"共 shared + 用 use","english":"communal; for shared use","romanization":"gongyong"}
+      ]
+    },
+    {
+      "id": "root-mu-none", "hanja": "無", "reading": "무", "gloss": "none · without",
+      "note": "無 = none or without. It appears in free services, unmanned facilities, wireless access, and no-condition labels.", "level": "A2",
+      "members": [
+        {"hangul":"무료","breakdown":"無 none + 料 fee","english":"free of charge","romanization":"muryo"},
+        {"hangul":"무인","breakdown":"無 no + 人 person","english":"unmanned; self-service","romanization":"muin"},
+        {"hangul":"무선","breakdown":"無 no + 線 wire","english":"wireless","romanization":"museon"},
+        {"hangul":"무관","breakdown":"無 no + 關 relation","english":"unrelated; regardless of","romanization":"mugwan"},
+        {"hangul":"무조건","breakdown":"無 no + 條件 condition","english":"unconditionally; no matter what","romanization":"mujogeon"}
+      ]
+    },
+    {
+      "id": "root-yu-have", "hanja": "有", "reading": "유", "gloss": "have · exist",
+      "note": "有 = have or exist. It appears in paid services, validity, ownership, holdings, and being well-known.", "level": "A2",
+      "members": [
+        {"hangul":"유명","breakdown":"有 have + 名 name","english":"famous; well-known","romanization":"yumyeong"},
+        {"hangul":"유료","breakdown":"有 have + 料 fee","english":"paid; fee-charging","romanization":"yuryo"},
+        {"hangul":"유효","breakdown":"有 have + 效 effect","english":"valid; effective","romanization":"yuhyo"},
+        {"hangul":"소유","breakdown":"所 that which + 有 have","english":"ownership; possession","romanization":"soyu"},
+        {"hangul":"보유","breakdown":"保 keep + 有 have","english":"holding; possession","romanization":"boyu"}
+      ]
+    },
+    {
+      "id": "root-ga-possible", "hanja": "可", "reading": "가", "gloss": "possible · permitted",
+      "note": "可 = possible or permitted. It is extremely useful on reservation, parking, entry, and service-availability notices.", "level": "A2",
+      "members": [
+        {"hangul":"가능","breakdown":"可 possible + 能 ability","english":"possibility; available","romanization":"ganeung"},
+        {"hangul":"불가능","breakdown":"不 not + 可能 possible","english":"impossible; unavailable","romanization":"bulganeung"},
+        {"hangul":"불가","breakdown":"不 not + 可 permitted","english":"not allowed; unavailable","romanization":"bulga"},
+        {"hangul":"허가","breakdown":"許 allow + 可 permit","english":"permission; permit","romanization":"heoga"},
+        {"hangul":"주차 가능","breakdown":"駐車 parking + 可能 available","english":"parking available","romanization":"jucha ganeung"}
+      ]
+    },
+    {
+      "id": "root-neung-ability", "hanja": "能", "reading": "능", "gloss": "ability · function",
+      "note": "能 = ability. It appears in possibility, skills, device functions, performance, and competence.", "level": "B1",
+      "members": [
+        {"hangul":"가능","breakdown":"可 possible + 能 ability","english":"possibility; available","romanization":"ganeung"},
+        {"hangul":"능력","breakdown":"能 ability + 力 power","english":"ability; skill","romanization":"neungnyeok"},
+        {"hangul":"기능","breakdown":"機 device + 能 function","english":"function; feature","romanization":"gineung"},
+        {"hangul":"성능","breakdown":"性 quality + 能 ability","english":"performance; capability","romanization":"seongneung"},
+        {"hangul":"유능","breakdown":"有 have + 能 ability","english":"competent; capable","romanization":"yuneung"}
+      ]
+    },
+    {
+      "id": "root-ui-medical", "hanja": "醫", "reading": "의", "gloss": "medicine · doctor",
+      "note": "醫 = medicine or doctor. This 의 is the medical root in doctors, clinics, treatment, and pharmaceuticals.", "level": "A2",
+      "members": [
+        {"hangul":"의사","breakdown":"醫 medicine + 師 professional","english":"doctor","romanization":"uisa"},
+        {"hangul":"의료","breakdown":"醫 medicine + 療 treatment","english":"medical care","romanization":"uiryo"},
+        {"hangul":"의원","breakdown":"醫 medicine + 院 clinic","english":"clinic; medical office","romanization":"uiwon"},
+        {"hangul":"의약품","breakdown":"醫 medicine + 藥 drug + 品 product","english":"medication; pharmaceutical product","romanization":"uiyakpum"},
+        {"hangul":"의학","breakdown":"醫 medicine + 學 study","english":"medical science; medicine","romanization":"uihak"}
+      ]
+    },
+    {
+      "id": "root-won-institution", "hanja": "院", "reading": "원", "gloss": "institution · clinic",
+      "note": "院 = institution or enclosed facility. It appears in hospitals, clinics, admission, discharge, and academies.", "level": "A2",
+      "members": [
+        {"hangul":"병원","breakdown":"病 illness + 院 institution","english":"hospital","romanization":"byeongwon"},
+        {"hangul":"의원","breakdown":"醫 medicine + 院 clinic","english":"clinic; medical office","romanization":"uiwon"},
+        {"hangul":"입원","breakdown":"入 enter + 院 institution","english":"hospitalization","romanization":"ibwon"},
+        {"hangul":"퇴원","breakdown":"退 leave + 院 institution","english":"hospital discharge","romanization":"toewon"},
+        {"hangul":"학원","breakdown":"學 study + 院 institution","english":"private academy","romanization":"hagwon"}
+      ]
+    },
+    {
+      "id": "root-jeung-symptom", "hanja": "症", "reading": "증", "gloss": "symptom · condition",
+      "note": "症 = symptom or medical condition. It appears in intake questions, pain descriptions, and aftereffects.", "level": "B1",
+      "members": [
+        {"hangul":"증상","breakdown":"症 symptom + 狀 state","english":"symptom","romanization":"jeungsang"},
+        {"hangul":"증세","breakdown":"症 condition + 勢 state","english":"symptoms; condition","romanization":"jeungse"},
+        {"hangul":"통증","breakdown":"痛 pain + 症 symptom","english":"pain","romanization":"tongjeung"},
+        {"hangul":"후유증","breakdown":"後 after + 遺 remain + 症 condition","english":"aftereffect; complication","romanization":"huyujeung"},
+        {"hangul":"알레르기 증상","breakdown":"알레르기 allergy + 症狀 symptoms","english":"allergy symptoms","romanization":"allereugi jeungsang"}
+      ]
+    },
+    {
+      "id": "root-yeol-heat", "hanja": "熱", "reading": "열", "gloss": "heat · fever",
+      "note": "熱 = heat or fever. It helps with symptom questions, temperature warnings, and fever medicine.", "level": "A2",
+      "members": [
+        {"hangul":"열","breakdown":"熱 body heat","english":"fever; heat","romanization":"yeol"},
+        {"hangul":"발열","breakdown":"發 produce + 熱 heat","english":"fever; heat generation","romanization":"baryeol"},
+        {"hangul":"해열제","breakdown":"解 remove + 熱 fever + 劑 medicine","english":"fever reducer","romanization":"haeyeolje"},
+        {"hangul":"고열","breakdown":"高 high + 熱 fever","english":"high fever","romanization":"goyeol"},
+        {"hangul":"열이 나다","breakdown":"熱 fever + 이 나다 arise","english":"to have a fever","romanization":"yeori nada"}
+      ]
+    },
+    {
+      "id": "root-hyeol-blood", "hanja": "血", "reading": "혈", "gloss": "blood",
+      "note": "血 = blood. It is common in health checks, test results, bleeding, blood sugar, and anemia.", "level": "B1",
+      "members": [
+        {"hangul":"혈압","breakdown":"血 blood + 壓 pressure","english":"blood pressure","romanization":"hyeorap"},
+        {"hangul":"혈액","breakdown":"血 blood + 液 liquid","english":"blood","romanization":"hyeoraek"},
+        {"hangul":"출혈","breakdown":"出 out + 血 blood","english":"bleeding","romanization":"chulhyeol"},
+        {"hangul":"혈당","breakdown":"血 blood + 糖 sugar","english":"blood sugar","romanization":"hyeoldang"},
+        {"hangul":"빈혈","breakdown":"貧 lacking + 血 blood","english":"anemia","romanization":"binhyeol"}
+      ]
+    },
+    {
+      "id": "root-gi-energy", "hanja": "氣", "reading": "기", "gloss": "air · energy · condition",
+      "note": "氣 = air, energy, or condition. It connects mood, air, electricity, outdoor temperature, and colds.", "level": "B1",
+      "members": [
+        {"hangul":"기분","breakdown":"氣 condition + 分 state","english":"mood; feeling","romanization":"gibun"},
+        {"hangul":"공기","breakdown":"空 empty + 氣 air","english":"air","romanization":"gonggi"},
+        {"hangul":"전기","breakdown":"電 electric + 氣 energy","english":"electricity","romanization":"jeongi"},
+        {"hangul":"기온","breakdown":"氣 air + 溫 temperature","english":"air temperature","romanization":"gion"},
+        {"hangul":"감기","breakdown":"感 catch + 氣 condition","english":"a cold","romanization":"gamgi"}
+      ]
+    },
+    {
+      "id": "root-geon-health", "hanja": "健", "reading": "건", "gloss": "healthy · strong",
+      "note": "健 = healthy or strong. It appears in health, public health, checkups, and sound or wholesome conditions.", "level": "B1",
+      "members": [
+        {"hangul":"건강","breakdown":"健 strong + 康 well","english":"health","romanization":"geongang"},
+        {"hangul":"보건","breakdown":"保 protect + 健 health","english":"public health; health care","romanization":"bogeon"},
+        {"hangul":"건전","breakdown":"健 sound + 全 whole","english":"sound; wholesome","romanization":"geonjeon"},
+        {"hangul":"건강검진","breakdown":"健康 health + 檢診 examination","english":"health checkup","romanization":"geongang geomjin"},
+        {"hangul":"건강하다","breakdown":"健康 health + 하다","english":"to be healthy","romanization":"geonganghada"}
+      ]
+    },
+    {
+      "id": "root-jin-examine", "hanja": "診", "reading": "진", "gloss": "examine · diagnose",
+      "note": "診 = medically examine. It unlocks treatment, diagnosis, checkups, intake questions, and examinations.", "level": "B1",
+      "members": [
+        {"hangul":"진료","breakdown":"診 examine + 療 treat","english":"medical treatment; consultation","romanization":"jillyo"},
+        {"hangul":"진단","breakdown":"診 examine + 斷 decide","english":"diagnosis","romanization":"jindan"},
+        {"hangul":"검진","breakdown":"檢 inspect + 診 examine","english":"medical checkup","romanization":"geomjin"},
+        {"hangul":"문진","breakdown":"問 ask + 診 examine","english":"medical history interview","romanization":"munjin"},
+        {"hangul":"진찰","breakdown":"診 examine + 察 inspect","english":"medical examination","romanization":"jinchal"}
+      ]
+    },
+    {
+      "id": "root-u-rain", "hanja": "雨", "reading": "우", "gloss": "rain",
+      "note": "雨 = rain. It appears in umbrellas, rain notices, rainfall totals, heavy rain, and weather alerts.", "level": "A2",
+      "members": [
+        {"hangul":"우산","breakdown":"雨 rain + 傘 umbrella","english":"umbrella","romanization":"usan"},
+        {"hangul":"우천","breakdown":"雨 rain + 天 sky","english":"rainy weather","romanization":"ucheon"},
+        {"hangul":"강우","breakdown":"降 fall + 雨 rain","english":"rainfall","romanization":"gangu"},
+        {"hangul":"폭우","breakdown":"暴 violent + 雨 rain","english":"torrential rain","romanization":"pogu"},
+        {"hangul":"호우","breakdown":"豪 great + 雨 rain","english":"heavy rain","romanization":"hou"}
+      ]
+    },
+    {
+      "id": "root-seol-snow", "hanja": "雪", "reading": "설", "gloss": "snow",
+      "note": "雪 = snow. It is used in heavy-snow alerts, accumulation reports, and snow-removal notices.", "level": "A2",
+      "members": [
+        {"hangul":"폭설","breakdown":"暴 violent + 雪 snow","english":"heavy snowfall","romanization":"pokseol"},
+        {"hangul":"대설","breakdown":"大 great + 雪 snow","english":"heavy snow; heavy-snow warning","romanization":"daeseol"},
+        {"hangul":"적설","breakdown":"積 pile + 雪 snow","english":"snow accumulation","romanization":"jeokseol"},
+        {"hangul":"제설","breakdown":"除 remove + 雪 snow","english":"snow removal","romanization":"jeseol"},
+        {"hangul":"설경","breakdown":"雪 snow + 景 view","english":"snowy scenery","romanization":"seolgyeong"}
+      ]
+    },
+    {
+      "id": "root-pung-wind", "hanja": "風", "reading": "풍", "gloss": "wind · air",
+      "note": "風 = wind. It appears in typhoons, strong-wind alerts, wind speed, ventilation, and scenery.", "level": "A2",
+      "members": [
+        {"hangul":"태풍","breakdown":"颱 great storm + 風 wind","english":"typhoon","romanization":"taepung"},
+        {"hangul":"강풍","breakdown":"強 strong + 風 wind","english":"strong wind","romanization":"gangpung"},
+        {"hangul":"풍속","breakdown":"風 wind + 速 speed","english":"wind speed","romanization":"pungsok"},
+        {"hangul":"통풍","breakdown":"通 pass + 風 air","english":"ventilation","romanization":"tongpung"},
+        {"hangul":"풍경","breakdown":"風 atmosphere + 景 view","english":"scenery; view","romanization":"punggyeong"}
+      ]
+    },
+    {
+      "id": "root-on-warm", "hanja": "溫", "reading": "온", "gloss": "warm · temperature",
+      "note": "溫 = warm or temperature. It appears on weather reports, thermostats, medical checks, and hot-water controls.", "level": "A2",
+      "members": [
+        {"hangul":"온도","breakdown":"溫 warm + 度 degree","english":"temperature","romanization":"ondo"},
+        {"hangul":"기온","breakdown":"氣 air + 溫 temperature","english":"air temperature","romanization":"gion"},
+        {"hangul":"체온","breakdown":"體 body + 溫 temperature","english":"body temperature","romanization":"cheon"},
+        {"hangul":"온수","breakdown":"溫 warm + 水 water","english":"hot water","romanization":"onsu"},
+        {"hangul":"보온","breakdown":"保 keep + 溫 warmth","english":"heat retention; keeping warm","romanization":"boon"}
+      ]
+    },
+    {
+      "id": "root-bae-distribute", "hanja": "配", "reading": "배", "gloss": "distribute · assign · deliver",
+      "note": "配 = distribute or assign. It appears in deliveries, shipping, placement, handouts, and assigned times or rooms.", "level": "B1",
+      "members": [
+        {"hangul":"배달","breakdown":"配 distribute + 達 reach","english":"delivery","romanization":"baedal"},
+        {"hangul":"배송","breakdown":"配 distribute + 送 send","english":"shipping; delivery","romanization":"baesong"},
+        {"hangul":"배치","breakdown":"配 assign + 置 place","english":"placement; arrangement","romanization":"baechi"},
+        {"hangul":"배부","breakdown":"配 distribute + 付 hand over","english":"distribution; handout","romanization":"baebu"},
+        {"hangul":"배정","breakdown":"配 assign + 定 set","english":"assignment; allocation","romanization":"baejeong"}
+      ]
+    },
+    {
+      "id": "root-song-send", "hanja": "送", "reading": "송", "gloss": "send · transport",
+      "note": "送 = send. It connects parcel delivery, transportation, money transfers, data transfer, and broadcasting.", "level": "B1",
+      "members": [
+        {"hangul":"배송","breakdown":"配 distribute + 送 send","english":"shipping; delivery","romanization":"baesong"},
+        {"hangul":"운송","breakdown":"運 carry + 送 send","english":"transportation; shipping","romanization":"unsong"},
+        {"hangul":"송금","breakdown":"送 send + 金 money","english":"money transfer","romanization":"songgeum"},
+        {"hangul":"전송","breakdown":"傳 transmit + 送 send","english":"transmission; sending data","romanization":"jeonsong"},
+        {"hangul":"방송","breakdown":"放 release + 送 send","english":"broadcast","romanization":"bangsong"}
+      ]
+    },
+    {
+      "id": "root-chin-close", "hanja": "親", "reading": "친", "gloss": "close · familiar · relative",
+      "note": "親 = close or related. It appears in friends, kindness, relatives, familiarity, and being close to someone.", "level": "A2",
+      "members": [
+        {"hangul":"친구","breakdown":"親 close + 舊 old","english":"friend","romanization":"chingu"},
+        {"hangul":"친절","breakdown":"親 kind + 切 sincere","english":"kindness; kind","romanization":"chinjeol"},
+        {"hangul":"친척","breakdown":"親 family + 戚 relative","english":"relative","romanization":"chincheok"},
+        {"hangul":"친근","breakdown":"親 close + 近 near","english":"familiar; approachable","romanization":"chingeun"},
+        {"hangul":"친하다","breakdown":"親 close + 하다","english":"to be close; friendly","romanization":"chinhada"}
+      ]
+    }
+  ]
+}
