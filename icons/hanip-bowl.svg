@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">한입 밥그릇</title>
+  <desc id="desc">크림색 바탕 위에 금색 밥그릇과 흰 쌀밥</desc>
+  <rect width="1024" height="1024" fill="#FAF6EE"/>
+  <circle cx="512" cy="512" r="366" fill="#F2E9DA"/>
+  <path d="M290 520c0-138 99-250 222-250s222 112 222 250" fill="#FFFFFF" stroke="#26221C" stroke-width="28" stroke-linecap="round"/>
+  <path d="M246 510h532c13 0 23 11 21 24-25 167-133 252-287 252S250 701 225 534c-2-13 8-24 21-24Z" fill="#C9A227" stroke="#26221C" stroke-width="28" stroke-linejoin="round"/>
+  <path d="M314 570h396" fill="none" stroke="#FAF6EE" stroke-width="24" stroke-linecap="round" opacity=".78"/>
+  <path d="M406 370c23-20 47-20 71 0M548 352c23-20 47-20 71 0" fill="none" stroke="#E5DCC8" stroke-width="18" stroke-linecap="round"/>
+</svg>
