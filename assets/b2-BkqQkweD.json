@@ -1187,87 +1187,6 @@
    59
   ]
  },
- "결국": {
-  "ko": "결국",
-  "romanization": "gyeolguk",
-  "en": "ultimately; in the end",
-  "pos": "adverb",
-  "chapter": "16·63",
-  "ex": {
-   "ko": "결국 좋은 보고서는 주장, 근거, 사례가 서로 연결되어야 한다.",
-   "en": "Ultimately, a good report requires its claim, evidence, and cases to be connected.",
-   "note": "결국 summarizes what the whole discussion leads to."
-  },
-  "collocations": [
-   "결국 ...이다",
-   "결국 ...해야 한다",
-   "결국 같은 결론에 도달하다"
-  ],
-  "nuance": "결국 means 'in the end / eventually / after all' and sums up the FINAL outcome reached after a process, delay, or struggle. It is Sino-Korean, 결 (結, 'to conclude/tie up') + 국 (局, 'situation/end stage'), literally 'the concluding stage' — so it inherently looks back over a whole drawn-out affair to its settling point. The dividing line from near-synonym 드디어 is important: 드디어 celebrates a happy, long-awaited result with relief and excitement ('finally, at last!'), whereas 결국 is emotionally NEUTRAL and frequently tinged with resignation or a sense that the outcome was inevitable ('it came to this after all'). A second contrast English speakers stumble on: 결국 is NOT the 'finally/lastly' that orders items in a list — that ordinal sense ('firstly... finally...') is 마지막으로. 결국 is about how a story RESOLVED, not where an item sits in a sequence. It commonly follows a lead-in clause with -지만 or -는데 sketching the struggle, and the variant 결국엔 (with topic 은) adds extra weight to the final beat.",
-  "explanation": "\"in the end, eventually, after all\" is 결국 (gyeolguk). The word itself is easy; what matters is the company it keeps, like 결국 못 갔어요 (\"In the end, I couldn't go\"). Watch the particle attached to 결국 in each example — that little marker, not the word, tells you whether it is the topic, the subject, the object, or a place. Copy one full sentence about basic everyday communication first, then vary one word.",
-  "shortExplanation": "결국 means \"in the end, eventually, after all\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Swapping it for 드디어; 결국 is neutral or resigned ('after all'), while 드디어 carries relief and celebration ('finally, at last!')",
-   "Using it for ordinal 'finally/lastly' in a list; that sequencing sense is 마지막으로, not 결국",
-   "Expecting it to mean a positive result; 결국 often hints the outcome was inevitable or disappointing, so pair it with context that fits"
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "결국 못 갔어요",
-    "romanization": "gyeolgung mot gasseoyo",
-    "en": "In the end, I couldn't go",
-    "note": "Reporting how things finally turned out"
-   },
-   {
-    "ko": "결국 이렇게 됐어요",
-    "romanization": "gyeolguk ireoke dwaesseoyo",
-    "en": "It ended up like this after all",
-    "note": "Summing up a drawn-out outcome"
-   },
-   {
-    "ko": "결국엔 다 잘될 거예요",
-    "romanization": "gyeolgugen da jaldoel geoyeyo",
-    "en": "In the end it'll all work out",
-    "note": "결국엔 adds 은 to stress the final outcome"
-   },
-   {
-    "ko": "결국 포기했어요",
-    "romanization": "gyeolguk pogihaesseoyo",
-    "en": "I eventually gave up",
-    "note": "A final result reached after a struggle"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "고민하다가 결국 안 샀어요.",
-    "romanization": "gominhadaga gyeolguk an sasseoyo.",
-    "en": "I kept hesitating and in the end didn't buy it.",
-    "note": "Simple: marks the final decision after wavering"
-   },
-   {
-    "ko": "며칠을 버텼지만 결국 병원에 갔어요.",
-    "romanization": "myeochireul beotyeotjiman gyeolguk byeongwone gasseoyo.",
-    "en": "I held out for days, but I eventually went to the hospital.",
-    "note": "Outcome reached after resistance; note the lead-in -지만"
-   },
-   {
-    "ko": "다들 말렸는데 결국 제 뜻대로 했어요.",
-    "romanization": "dadeul mallyeonneunde gyeolguk je tteutdaero haesseoyo.",
-    "en": "Everyone tried to stop me, but in the end I did it my way.",
-    "note": "Stresses the eventual result despite opposition, with -는데"
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A2",
-  "cluster": null,
-  "chapters": [
-   16,
-   63
-  ]
- },
  "운동": {
   "ko": "운동",
   "romanization": "undong",
@@ -3704,6 +3623,63 @@
    62
   ]
  },
+ "식후": {
+  "ko": "식후",
+  "romanization": "sikhu",
+  "en": "after a meal",
+  "pos": "noun",
+  "chapter": "48·63",
+  "ex": {
+   "ko": "이 약은 식후에 드세요.",
+   "en": "Take this medicine after meals.",
+   "note": "Often paired with a number of minutes."
+  },
+  "collocations": [
+   "식후 30분",
+   "식후에 먹다",
+   "식후에 복용하다"
+  ],
+  "nuance": "식후 is concise and label-like. In casual speech you can also say 밥 먹고, but at a clinic or pharmacy 식후 is the expected word. 식후 usually pairs with 에 or a time amount: 식후에, 식후 30분.",
+  "explanation": "\"after meals\" is 식후 (siku). The word itself is easy; what matters is the company it keeps, like 식후에 드세요. (\"Take it after meals.\"). Watch the particle attached to 식후 in each example — that little marker, not the word, tells you whether it is the topic, the subject, the object, or a place. Copy one full sentence about saying what hurts, asking for rest, and explaining basic health needs first, then vary one word.",
+  "shortExplanation": "식후 means \"after meals\" and is learned through practical beginner sentence frames.",
+  "commonMistakes": [
+   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
+   "Using 식후 for any after-action meaning. It specifically means after meals.",
+   "Confusing 식후 with 식전. 식후 is after meals; 식전 is before meals.",
+   "Forgetting 에 in speech: 식후에 드세요 is smoother than just 식후 드세요."
+  ],
+  "conjugationTips": [],
+  "usagePhrases": [
+   {
+    "ko": "식후에 드세요.",
+    "romanization": "sikue deuseyo.",
+    "en": "Take it after meals.",
+    "note": "Common pharmacy instruction."
+   },
+   {
+    "ko": "하루 세 번, 식후에 드셔야 해요.",
+    "romanization": "haru se beon, sikue deusyeoya haeyo.",
+    "en": "You have to take it three times a day after meals.",
+    "note": "Combines frequency and timing."
+   }
+  ],
+  "examples": [
+   {
+    "ko": "약은 식후에 하루 세 번 드세요.",
+    "romanization": "yageun sikue haru se beon deuseyo.",
+    "en": "Take the medicine three times a day after meals.",
+    "note": "약 + 식후 + 하루 세 번 is the core pharmacy frame."
+   }
+  ],
+  "forms": null,
+  "irregular": null,
+  "level": "B1",
+  "cluster": null,
+  "chapters": [
+   48,
+   63
+  ]
+ },
  "재우다": {
   "ko": "재우다",
   "romanization": "jaeuda",
@@ -4546,7 +4522,7 @@
   "romanization": "jeongjunghada",
   "en": "courteous / respectful",
   "pos": "adjective",
-  "chapter": "58·65",
+  "chapter": "58",
   "ex": {
    "ko": "어렵겠습니다는 정중한 거절에 자주 쓰여요.",
    "en": "Eoryeopgesseumnida is often used in courteous refusals.",
@@ -4618,8 +4594,7 @@
   "level": "A2",
   "cluster": null,
   "chapters": [
-   58,
-   65
+   58
   ]
  },
  "결과": {
@@ -6368,6 +6343,93 @@
    61
   ]
  },
+ "조사": {
+  "ko": "조사",
+  "romanization": "josa",
+  "en": "grammatical particle",
+  "pos": "noun",
+  "chapter": "62",
+  "ex": {
+   "ko": "은/는과 이/가는 대표적인 조사예요.",
+   "en": "은/는 and 이/가 are representative Korean particles.",
+   "note": "Here 조사 means a grammatical particle, not a survey or investigation."
+  },
+  "collocations": [
+   "조사를 고르다",
+   "조사를 생략하다",
+   "조사가 달라지다"
+  ],
+  "nuance": "Here 조사 means the grammatical particle 助詞 ('helping word'), not 조사 調査 ('survey/investigation'). Korean particles attach to the end of a noun or noun phrase and do more than label subject, object, or location: they also manage topic, contrast, inclusion, limitation, and the speaker's focus. That is why 은/는 and 이/가 cannot be swapped mechanically, and why 에/에서 depends on the Korean predicate rather than on one English preposition. At C1, particle choice is part of information design. 제가 맡겠습니다 selects 'me' as the person who will take the task, while 저는 맡겠습니다 sets 'me' as the topic and may contrast the speaker with others. Spoken Korean can omit predictable particles, but omission is not random: a short message may say 자료 확인했습니다, while a complex or potentially ambiguous sentence often needs 자료를 확인했습니다. Particles can also stack in a fixed order—회의에서도, 이 사안에 대해서는—so a single syllable can alter both grammar and stance without changing the vocabulary.",
+  "explanation": "조사 (josa) means \"grammatical particle.\" It follows a noun phrase and signals how that phrase connects to the predicate or to the surrounding discourse. Review particles in three passes: (1) grammatical role—이/가, 을/를, 에/에서, 에게/께; (2) focus and scope—은/는, 도, 만, 까지; and (3) omission and stacking—에는, 에서도, 까지만. Do not choose a particle from an English translation alone. First identify the Korean predicate and the relationship it requires, then ask what the listener should treat as topic, new information, contrast, or addition. In final editing, two particles may both produce grammatical sentences while creating different emphasis, so 'correct' includes meaning, focus, clarity, and register.",
+  "shortExplanation": "조사 is a post-noun marker that controls grammatical role, focus, contrast, scope, and clarity in Korean.",
+  "commonMistakes": [
+   "Treating 은/는 and 이/가 as interchangeable subject markers. 제가 수정하겠습니다 selects the person who will do it; 저는 수정하겠습니다 sets or contrasts the speaker as the topic.",
+   "Mapping English 'at/to/from' directly onto 에 or 에서. Static location or destination usually takes 에, while the place where an action happens takes 에서: 회의실에 있습니다 / 회의실에서 회의합니다.",
+   "Using 을/를 with a verb that requires a recipient or counterpart, such as 고객님을 연락하다. Say 고객님께 연락드리다 or 친구에게/한테 연락하다.",
+   "Deleting particles simply because conversational Korean often omits them. Omit only when the grammatical role is recoverable; restore the particle when a formal or complex sentence could be misread.",
+   "Stacking particles in the wrong order, such as 회의도에서. The base relation comes first and the focus particle follows: 회의에서도, 이 사안에 대해서는."
+  ],
+  "conjugationTips": [],
+  "usagePhrases": [
+   {
+    "ko": "조사를 확인하다",
+    "romanization": "josareul hwaginhada",
+    "en": "to check the particles",
+    "note": "A final-editing action: check both grammatical role and intended focus."
+   },
+   {
+    "ko": "조사를 바꾸다",
+    "romanization": "josareul bakkuda",
+    "en": "to change a particle",
+    "note": "Changing one particle can change contrast, scope, or the information focus."
+   },
+   {
+    "ko": "조사를 생략하다",
+    "romanization": "josareul saengnyakhada",
+    "en": "to omit a particle",
+    "note": "Natural only when the missing role is clear from context."
+   },
+   {
+    "ko": "조사 하나로 초점이 달라지다",
+    "romanization": "josa hanaro chojeomi dallajida",
+    "en": "the focus changes with a single particle",
+    "note": "A useful reminder that particles carry discourse meaning, not just grammar labels."
+   }
+  ],
+  "examples": [
+   {
+    "ko": "‘제가 이 부분을 수정하겠습니다’는 담당자를 특정하고, ‘저는 이 부분을 수정하겠습니다’는 다른 사람과 대비하는 느낌을 줄 수 있어요.",
+    "romanization": "‘jega i bubuneul sujeonghagetseumnida’neun damdangjareul teukjeonghago, ‘jeoneun i bubuneul sujeonghagetseumnida’neun dareun saramgwa daebihaneun neukkimeul jul su isseoyo.",
+    "en": "‘제가 이 부분을 수정하겠습니다’ identifies who will handle the task, while ‘저는 이 부분을 수정하겠습니다’ can contrast the speaker with other people.",
+    "note": "이/가 can focus or select the subject; 은/는 frames it as topic or contrast."
+   },
+   {
+    "ko": "회의실에 있습니다. 회의실에서 회의합니다.",
+    "romanization": "hoeuisire itseumnida. hoeuisireseo hoeuihamnida.",
+    "en": "I am in the meeting room. We hold the meeting in the meeting room.",
+    "note": "에 marks static location with 있다; 에서 marks the place where the action 회의하다 happens."
+   },
+   {
+    "ko": "짧은 메시지에서는 ‘자료 확인했습니다’도 자연스럽지만, 대상이 여러 개면 ‘첨부 자료를 확인했습니다’처럼 조사를 밝혀 쓰는 편이 안전해요.",
+    "romanization": "jjalbeun mesijieseoneun ‘jaryo hwaginhaetseumnida’do jayeonseureopjiman, daesangi yeoreo gaemyeon ‘cheombu jaryoreul hwaginhaetseumnida’cheoreom josareul balkhyeo sseuneun pyeoni anjeonhaeyo.",
+    "en": "In a short message, ‘자료 확인했습니다’ can be natural, but when several possible objects exist, it is safer to state the particle explicitly, as in ‘첨부 자료를 확인했습니다.’",
+    "note": "Particle omission depends on recoverability, not on politeness alone."
+   },
+   {
+    "ko": "이 사안에 대해서는 다음 회의에서도 계속 논의하겠습니다.",
+    "romanization": "i saane daehaeseoneun daeum hoeuieseo-do gyesok nonuihagetseumnida.",
+    "en": "As for this issue, we will continue discussing it at the next meeting as well.",
+    "note": "에 대해서는 frames the issue as the topic, and 에서도 adds ‘also’ to the action location."
+   }
+  ],
+  "forms": null,
+  "irregular": null,
+  "level": "B2",
+  "cluster": null,
+  "chapters": [
+   62
+  ]
+ },
  "연락": {
   "ko": "연락",
   "romanization": "yeollak",
@@ -7149,723 +7211,218 @@
    62
   ]
  },
- "근거": {
-  "ko": "근거",
-  "romanization": "geungeo",
-  "en": "evidence; grounds; basis",
+ "공동현관": {
+  "ko": "공동현관",
+  "romanization": "gongdonghyeongwan",
+  "en": "shared building entrance",
   "pos": "noun",
   "chapter": "63",
   "ex": {
-   "ko": "주장을 뒷받침할 근거를 제시해야 한다.",
-   "en": "Evidence that supports the claim must be presented.",
-   "note": "Use 근거 when a claim needs support, not merely a reason."
+   "ko": "공동현관 앞에서 연락 주세요.",
+   "en": "Please contact me from the shared building entrance.",
+   "note": "Common in apartment delivery instructions."
   },
   "collocations": [
-   "근거가 부족하다",
-   "근거를 제시하다",
-   "근거로 사용하다"
+   "공동현관 비밀번호",
+   "공동현관 앞",
+   "공동현관 출입"
   ],
-  "nuance": "근거 is broader than 증거; 증거 often means proof/evidence, while 근거 can mean the basis for reasoning.",
-  "explanation": "\"evidence; grounds; basis\" is 근거 (geungeo). The word itself is easy; what matters is the company it keeps, like 근거가 부족하다 (\"the evidence is insufficient\"). Watch the particle attached to 근거 in each example — that little marker, not the word, tells you whether it is the topic, the subject, the object, or a place. Copy one full sentence about basic everyday communication first, then vary one word.",
-  "shortExplanation": "근거 means \"evidence; grounds; basis\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Using 이유 when the writing needs evidence. 이유 is a reason; 근거 is supporting basis.",
-   "Saying 근거를 부족하다. The noun is subject: 근거가 부족하다."
-  ],
+  "nuance": "",
+  "explanation": "",
+  "shortExplanation": "",
+  "commonMistakes": [],
   "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "근거가 부족하다",
-    "romanization": "geungeoga bujokada",
-    "en": "the evidence is insufficient",
-    "note": "Formal evaluation phrase."
-   },
-   {
-    "ko": "근거를 제시하다",
-    "romanization": "geungeoreul jesihada",
-    "en": "to present evidence",
-    "note": "Essay and report collocation."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "이 보고서는 근거가 부족합니다.",
-    "romanization": "i bogoseoneun geungeoga bujokamnida.",
-    "en": "This report lacks evidence.",
-    "note": "Formal written 평가."
-   },
-   {
-    "ko": "주장을 뒷받침할 근거를 제시해야 한다.",
-    "romanization": "jujangeul dwitbatchimhal geungeoreul jesihaeya handa.",
-    "en": "Evidence that supports the claim must be presented.",
-    "note": "근거를 제시하다 is the basic formal writing frame."
-   },
-   {
-    "ko": "자료의 출처가 분명해야 근거로 사용할 수 있다.",
-    "romanization": "jaryoui chulcheoga bunmyeonghaeya geungeoro sayonghal su itda.",
-    "en": "The source of the material must be clear for it to be used as evidence.",
-    "note": "근거로 사용하다 marks the role of the material with 로."
-   }
-  ],
+  "usagePhrases": [],
+  "examples": [],
   "forms": null,
   "irregular": null,
-  "level": "C1",
+  "level": "B2",
   "cluster": null,
   "chapters": [
    63
   ]
  },
- "결론": {
-  "ko": "결론",
-  "romanization": "gyeollon",
-  "en": "conclusion",
+ "경비실": {
+  "ko": "경비실",
+  "romanization": "gyeongbisil",
+  "en": "security office; guard station",
   "pos": "noun",
   "chapter": "63",
   "ex": {
-   "ko": "근거가 약하면 결론도 설득력을 잃는다.",
-   "en": "If the evidence is weak, the conclusion also loses persuasiveness.",
-   "note": "결론 is the endpoint of reasoning, not a story ending."
+   "ko": "택배는 경비실에 맡겨 주세요.",
+   "en": "Please leave the parcel with the security office.",
+   "note": "맡기다 is used when leaving something in another person's care."
   },
   "collocations": [
-   "결론을 내리다",
-   "결론을 검토하다",
-   "결론에 도달하다"
+   "경비실에 맡기다",
+   "경비실에 문의하다",
+   "경비실에서 찾다"
   ],
-  "nuance": "결론 is the end point of reasoning, not simply the ending of a story.",
-  "explanation": "결론 (gyeollon) = \"conclusion\". Treat it as a building block that needs a frame: 결론을 내리다 (\"to draw a conclusion\") shows how it actually behaves. The grammar lives in the particle or ending beside 결론, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about basic everyday communication and swap just one element to make it yours.",
-  "shortExplanation": "결론 means \"conclusion\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Using 결말 for essays. 결말 is a story ending; 결론 is an argument conclusion.",
-   "Forgetting object marking in 결론을 내리다."
-  ],
+  "nuance": "",
+  "explanation": "",
+  "shortExplanation": "",
+  "commonMistakes": [],
   "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "결론을 내리다",
-    "romanization": "gyeolloneul naerida",
-    "en": "to draw a conclusion",
-    "note": "Standard academic phrase."
-   },
-   {
-    "ko": "결론을 검토하다",
-    "romanization": "gyeolloneul geomtohada",
-    "en": "to review the conclusion",
-    "note": "Useful in revisions."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "따라서 결론을 다시 검토해야 합니다.",
-    "romanization": "ttaraseo gyeolloneul dasi geomtohaeya hamnida.",
-    "en": "Therefore, the conclusion must be reviewed again.",
-    "note": "따라서 links evidence to action."
-   },
-   {
-    "ko": "자료를 분석한 뒤 결론을 내렸다.",
-    "romanization": "jaryoreul bunseokan dwi gyeolloneul naeryeotda.",
-    "en": "After analyzing the material, a conclusion was drawn.",
-    "note": "결론을 내리다 is the standard verb phrase."
-   },
-   {
-    "ko": "근거가 약하면 결론도 설득력을 잃는다.",
-    "romanization": "geungeoga yakamyeon gyeollondo seoldeungnyeogeul ilhneunda.",
-    "en": "If the evidence is weak, the conclusion also loses persuasiveness.",
-    "note": "Shows why 결론 depends on 근거 in argument writing."
-   }
-  ],
+  "usagePhrases": [],
+  "examples": [],
   "forms": null,
   "irregular": null,
-  "level": "C1",
+  "level": "B2",
   "cluster": null,
   "chapters": [
    63
   ]
  },
- "핵심": {
-  "ko": "핵심",
-  "romanization": "haeksim",
-  "en": "core; key point",
+ "복용": {
+  "ko": "복용",
+  "romanization": "bogyong",
+  "en": "taking medicine; dosage use",
   "pos": "noun",
   "chapter": "63",
   "ex": {
-   "ko": "이 글의 핵심은 비용 문제가 아니라 안전 문제이다.",
-   "en": "The key point of this piece is not cost but safety.",
-   "note": "핵심 narrows attention to the central issue."
+   "ko": "복용 방법을 확인하세요.",
+   "en": "Check the directions for taking the medicine.",
+   "note": "A label word seen on medicine packages."
   },
   "collocations": [
-   "핵심 주장",
-   "핵심 내용",
-   "핵심은 ...이다"
+   "복용 방법",
+   "복용 시간",
+   "복용하다"
   ],
-  "nuance": "핵심 is more formal and analytical than 중요한 부분.",
-  "explanation": "핵심 (haeksim) means \"core; key point\". Learn it inside a frame, not as a bare word: a useful first chunk is 핵심 주장 (\"main claim\"). In Korean the particle or ending next to 핵심 signals its job — topic, subject, object, place, time, method, or description — so read the examples for the small piece beside it. Start with one real sentence about basic everyday communication, then change a single part.",
-  "shortExplanation": "핵심 means \"core; key point\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Using 핵심 for any detail. It should be central, not incidental.",
-   "Mixing 핵심 내용 and 핵심 주장 without deciding whether you mean content or claim."
-  ],
+  "nuance": "",
+  "explanation": "",
+  "shortExplanation": "",
+  "commonMistakes": [],
   "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "핵심 주장",
-    "romanization": "haeksim jujang",
-    "en": "main claim",
-    "note": "Common essay phrase."
-   },
-   {
-    "ko": "핵심은 ...이다",
-    "romanization": "haeksimeun ...ida",
-    "en": "the key point is ...",
-    "note": "Formal summary frame."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "그러나 핵심 주장은 유지할 수 있습니다.",
-    "romanization": "geureona haeksim jujangeun yujihal su itseumnida.",
-    "en": "However, the main claim can be maintained.",
-    "note": "그러나 marks contrast while 핵심 narrows the scope."
-   },
-   {
-    "ko": "이 글의 핵심은 비용 문제가 아니라 안전 문제이다.",
-    "romanization": "i geurui haeksimeun biyong munjega anira anjeon munjeida.",
-    "en": "The key point of this piece is not cost but safety.",
-    "note": "핵심은 A가 아니라 B이다 is a useful written contrast frame."
-   },
-   {
-    "ko": "핵심 내용을 먼저 정리한 뒤 사례를 붙인다.",
-    "romanization": "haeksim naeyongeul meonjeo jeongnihan dwi saryereul buchinda.",
-    "en": "First organize the key content, then attach examples.",
-    "note": "핵심 내용 naturally pairs with summary and outline work."
-   }
-  ],
+  "usagePhrases": [],
+  "examples": [],
   "forms": null,
   "irregular": null,
-  "level": "C1",
+  "level": "B2",
   "cluster": null,
   "chapters": [
    63
   ]
  },
- "논리": {
-  "ko": "논리",
-  "romanization": "nolli",
-  "en": "logic; reasoning",
+ "관리실": {
+  "ko": "관리실",
+  "romanization": "gwallisil",
+  "en": "building management office",
   "pos": "noun",
   "chapter": "63",
   "ex": {
-   "ko": "주장은 분명하지만 논리에 비약이 있다.",
-   "en": "The claim is clear, but there is a leap in the reasoning.",
-   "note": "Say 논리에 비약이 있다, not 논리가 비약하다."
+   "ko": "문제가 있으면 관리실로 연락하세요.",
+   "en": "Contact the management office if there is a problem.",
+   "note": "Used in apartments and office buildings."
   },
   "collocations": [
-   "논리가 부족하다",
-   "논리에 비약이 있다",
-   "논리를 보완하다"
+   "관리실 공지",
+   "관리실에 문의하다",
+   "관리실로 연락하다"
   ],
-  "nuance": "논리 is the structure of reasoning, not simply an opinion.",
-  "explanation": "\"logic; reasoning\" is 논리 (nolli). The word itself is easy; what matters is the company it keeps, like 논리가 부족하다 (\"the reasoning is insufficient\"). Watch the particle attached to 논리 in each example — that little marker, not the word, tells you whether it is the topic, the subject, the object, or a place. Copy one full sentence about basic everyday communication first, then vary one word.",
-  "shortExplanation": "논리 means \"logic; reasoning\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Using 논리 as a vague synonym for 생각. 생각 is thought; 논리 is reasoning.",
-   "Forgetting that 논리가 비약하다 is unnatural; say 논리에 비약이 있다."
-  ],
+  "nuance": "",
+  "explanation": "",
+  "shortExplanation": "",
+  "commonMistakes": [],
   "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "논리가 부족하다",
-    "romanization": "nolliga bujokada",
-    "en": "the reasoning is insufficient",
-    "note": "Critical writing phrase."
-   },
-   {
-    "ko": "논리를 보완하다",
-    "romanization": "nollireul bowanhada",
-    "en": "to strengthen the reasoning",
-    "note": "Revision phrase."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "결국 보고서의 핵심은 근거와 논리입니다.",
-    "romanization": "gyeolguk bogoseoui haeksimeun geungeowa nolliimnida.",
-    "en": "Ultimately, the core of the report is evidence and reasoning.",
-    "note": "결국 sums up the argument."
-   },
-   {
-    "ko": "주장은 분명하지만 논리에 비약이 있다.",
-    "romanization": "jujangeun bunmyeonghajiman nollie biyagi itda.",
-    "en": "The claim is clear, but there is a leap in the reasoning.",
-    "note": "논리에 비약이 있다 is the natural critique, not 논리가 비약하다."
-   },
-   {
-    "ko": "두 문장 사이의 논리를 더 분명히 해야 한다.",
-    "romanization": "du munjang saiui nollireul deo bunmyeonghi haeya handa.",
-    "en": "The reasoning between the two sentences needs to be made clearer.",
-    "note": "Useful when revising paragraph flow."
-   }
-  ],
+  "usagePhrases": [],
+  "examples": [],
   "forms": null,
   "irregular": null,
-  "level": "C1",
+  "level": "B2",
   "cluster": null,
   "chapters": [
    63
   ]
  },
- "사례": {
-  "ko": "사례",
-  "romanization": "sarye",
-  "en": "case; example",
+ "단수": {
+  "ko": "단수",
+  "romanization": "dansu",
+  "en": "water shutoff",
   "pos": "noun",
   "chapter": "63",
   "ex": {
-   "ko": "주장을 뒷받침하려면 구체적인 사례를 제시해야 한다.",
-   "en": "To support a claim, concrete cases must be presented.",
-   "note": "사례 is more formal and analytical than 예."
+   "ko": "배관 공사로 두 시간 동안 단수예요.",
+   "en": "The water will be shut off for two hours due to plumbing work.",
+   "note": "Check the time range that follows."
   },
   "collocations": [
-   "사례를 제시하다",
-   "사례 분석",
-   "국내외 사례"
+   "단수 안내",
+   "단수 시간",
+   "단수되다"
   ],
-  "nuance": "사례 is more formal than 예 and often implies a real case or representative example.",
-  "explanation": "사례 (sarye) = \"case; example\". Treat it as a building block that needs a frame: 사례를 제시하다 (\"to present a case/example\") shows how it actually behaves. The grammar lives in the particle or ending beside 사례, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about basic everyday communication and swap just one element to make it yours.",
-  "shortExplanation": "사례 means \"case; example\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Using 예 only in formal reports when 사례 would sound more analytical.",
-   "Forgetting object marking in 사례를 제시하다."
-  ],
+  "nuance": "",
+  "explanation": "",
+  "shortExplanation": "",
+  "commonMistakes": [],
   "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "사례를 제시하다",
-    "romanization": "saryereul jesihada",
-    "en": "to present a case/example",
-    "note": "Formal support phrase."
-   },
-   {
-    "ko": "사례 분석",
-    "romanization": "sarye bunseok",
-    "en": "case analysis",
-    "note": "Report heading phrase."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "반면에 사례 분석은 보완이 필요합니다.",
-    "romanization": "banmyeone sarye bunseogeun bowani piryohamnida.",
-    "en": "In contrast, the case analysis needs supplementation.",
-    "note": "반면에 contrasts one part of a report with another."
-   },
-   {
-    "ko": "주장을 뒷받침하려면 구체적인 사례를 제시해야 한다.",
-    "romanization": "jujangeul dwitbatchimharyeomyeon guchejeogin saryereul jesihaeya handa.",
-    "en": "To support a claim, concrete cases must be presented.",
-    "note": "사례를 제시하다 is the report-writing counterpart to giving examples."
-   },
-   {
-    "ko": "해외 사례와 국내 사례를 비교했다.",
-    "romanization": "haeoe saryewa gungnae saryereul bigyohaetda.",
-    "en": "Foreign cases and domestic cases were compared.",
-    "note": "사례 works well with comparative analysis."
-   }
-  ],
+  "usagePhrases": [],
+  "examples": [],
   "forms": null,
   "irregular": null,
-  "level": "C1",
+  "level": "B2",
   "cluster": null,
   "chapters": [
    63
   ]
  },
- "반론": {
-  "ko": "반론",
-  "romanization": "ballon",
-  "en": "counterargument; objection",
+ "점검": {
+  "ko": "점검",
+  "romanization": "jeomgeom",
+  "en": "inspection; maintenance check",
   "pos": "noun",
   "chapter": "63",
   "ex": {
-   "ko": "그러나 예상되는 반론도 검토해야 한다.",
-   "en": "However, expected counterarguments must also be reviewed.",
-   "note": "A strong formal paragraph anticipates objections."
+   "ko": "엘리베이터 정기 점검이 있습니다.",
+   "en": "There will be a regular elevator inspection.",
+   "note": "정기 means regularly scheduled."
   },
   "collocations": [
-   "반론을 제기하다",
-   "반론을 검토하다",
-   "반론을 예상하다"
+   "정기 점검",
+   "점검 중",
+   "시설을 점검하다"
   ],
-  "nuance": "반론 is an argument against a claim; 반대 is broader opposition.",
-  "explanation": "반론 (ballon) = \"counterargument; objection\". Treat it as a building block that needs a frame: 반론을 제기하다 (\"to raise a counterargument\") shows how it actually behaves. The grammar lives in the particle or ending beside 반론, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about basic everyday communication and swap just one element to make it yours.",
-  "shortExplanation": "반론 means \"counterargument; objection\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Using 반대 when the text specifically needs a counterargument.",
-   "Forgetting the object marker in 반론을 제기하다."
-  ],
+  "nuance": "",
+  "explanation": "",
+  "shortExplanation": "",
+  "commonMistakes": [],
   "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "반론을 제기하다",
-    "romanization": "balloneul jegihada",
-    "en": "to raise a counterargument",
-    "note": "Formal debate phrase."
-   },
-   {
-    "ko": "반론을 검토하다",
-    "romanization": "balloneul geomtohada",
-    "en": "to review a counterargument",
-    "note": "Essay revision phrase."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "그러나 예상되는 반론도 검토해야 한다.",
-    "romanization": "geureona yesangdoeneun ballondo geomtohaeya handa.",
-    "en": "However, expected counterarguments must also be reviewed.",
-    "note": "그러나 introduces contrast in written prose."
-   },
-   {
-    "ko": "반론을 예상하지 않으면 글의 설득력이 약해진다.",
-    "romanization": "balloneul yesanghaji aneumyeon geurui seoldeungnyeogi yakaejinda.",
-    "en": "If counterarguments are not anticipated, the writing becomes less persuasive.",
-    "note": "Good argument writing handles objections before the reader raises them."
-   },
-   {
-    "ko": "학생들은 서로의 주장에 대해 반론을 제기했다.",
-    "romanization": "haksaengdeureun seoroui jujange daehae balloneul jegihaetda.",
-    "en": "The students raised counterarguments against each other's claims.",
-    "note": "반론을 제기하다 is the standard formal verb phrase."
-   }
-  ],
+  "usagePhrases": [],
+  "examples": [],
   "forms": null,
   "irregular": null,
-  "level": "C1",
+  "level": "B2",
   "cluster": null,
   "chapters": [
    63
   ]
  },
- "따라서": {
-  "ko": "따라서",
-  "romanization": "ttaraseo",
-  "en": "therefore; accordingly",
-  "pos": "adverb",
+ "재개": {
+  "ko": "재개",
+  "romanization": "jaegae",
+  "en": "resumption; restart",
+  "pos": "noun",
   "chapter": "63",
   "ex": {
-   "ko": "자료의 출처가 분명하지 않다. 따라서 핵심 근거로 사용하기 어렵다.",
-   "en": "The source of the material is unclear. Therefore, it is difficult to use as key evidence.",
-   "note": "따라서 connects evidence to a formal consequence."
+   "ko": "운행이 오후에 재개될 예정입니다.",
+   "en": "Service is scheduled to resume in the afternoon.",
+   "note": "The opposite status is 중단."
   },
   "collocations": [
-   "따라서 ...해야 한다",
-   "따라서 ...라고 볼 수 있다",
-   "따라서 ...에 한계가 있다"
+   "운행 재개",
+   "서비스 재개",
+   "재개되다"
   ],
-  "nuance": "따라서 means 'therefore / accordingly / thus' and is the formal, logical 'so' of reports, public notices, instructions, contracts, and academic writing. It states a conclusion that follows STRICTLY and objectively from the prior statement, with a more official, impersonal tone than either 그래서 (plain spoken 'so') or 그러니까 (reasoning/urging 'so'). The dividing line: 그래서 and 그러니까 belong to everyday speech and can carry personal feeling or persuasion, whereas 따라서 is detached and rule-like, so in casual conversation it sounds like you're reading a press release. It pairs naturally with the formal -ㅂ니다 ending and with 다음과 같이 ('as follows'). The classic English-speaker trap is mixing this connector up with the homograph verb form 따라서 from 따르다 ('to follow') — as in 규칙을 따라서 ('following the rule'). The connector stands ALONE at the head of a sentence with no object; the verb form has something being followed in front of it.",
-  "explanation": "따라서 (ttaraseo) means \"therefore, accordingly, thus (formal)\". Learn it inside a frame, not as a bare word: a useful first chunk is 따라서 결론은 (\"Therefore, the conclusion is\"). In Korean the particle or ending next to 따라서 signals its job — topic, subject, object, place, time, method, or description — so read the examples for the small piece beside it. Start with one real sentence about basic everyday communication, then change a single part.",
-  "shortExplanation": "따라서 means \"therefore, accordingly, thus (formal)\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Using it in casual chat where it sounds like an official notice; in speech use 그래서 or 그러니까 instead",
-   "Confusing it with the verb 따르다 ('to follow'): the connector 따라서 stands alone sentence-initially, while 규칙을 따라서 means 'following the rule'",
-   "Pairing it with the casual 요-ending; 따라서 belongs to the formal -ㅂ니다 register (따라서 주의가 필요합니다)"
-  ],
+  "nuance": "",
+  "explanation": "",
+  "shortExplanation": "",
+  "commonMistakes": [],
   "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "따라서 결론은",
-    "romanization": "ttaraseo gyeolloneun",
-    "en": "Therefore, the conclusion is",
-    "note": "Leads into a formal conclusion"
-   },
-   {
-    "ko": "따라서 주의가 필요합니다",
-    "romanization": "ttaraseo juuiga piryohamnida",
-    "en": "Therefore, caution is required",
-    "note": "Draws a formal consequence in a notice (with -ㅂ니다)"
-   },
-   {
-    "ko": "따라서 다음과 같이 결정했습니다",
-    "romanization": "ttaraseo daeumgwa gachi gyeoljeonghaetseumnida",
-    "en": "Accordingly, we decided as follows",
-    "note": "Common in official announcements"
-   },
-   {
-    "ko": "따라서 변경될 수 있습니다",
-    "romanization": "ttaraseo byeongyeongdoel su itseumnida",
-    "en": "Therefore, it may be subject to change",
-    "note": "Notice-style logical follow-up"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "오늘은 휴일입니다. 따라서 은행은 문을 닫습니다.",
-    "romanization": "oneureun hyuirimnida. ttaraseo eunhaengeun muneul datseumnida.",
-    "en": "Today is a holiday. Therefore the bank is closed.",
-    "note": "Simple formal cause-effect, paired with -ㅂ니다 style"
-   },
-   {
-    "ko": "서류가 미비합니다. 따라서 접수가 어렵습니다.",
-    "romanization": "seoryuga mibihamnida. ttaraseo jeopsuga eoryeopseumnida.",
-    "en": "The documents are incomplete. Accordingly, we cannot accept the application.",
-    "note": "Administrative, official register"
-   },
-   {
-    "ko": "규정이 바뀌었습니다. 따라서 모두 다시 신청하셔야 합니다.",
-    "romanization": "gyujeongi bakkwieotseumnida. ttaraseo modu dasi sincheonghasyeoya hamnida.",
-    "en": "The rules have changed. Therefore, everyone must reapply.",
-    "note": "Announcing a required consequence in a notice"
-   }
-  ],
+  "usagePhrases": [],
+  "examples": [],
   "forms": null,
   "irregular": null,
-  "level": "A2",
-  "cluster": null,
-  "chapters": [
-   63
-  ]
- },
- "그러나": {
-  "ko": "그러나",
-  "romanization": "geureona",
-  "en": "however; but",
-  "pos": "adverb",
-  "chapter": "63",
-  "ex": {
-   "ko": "핵심 주장은 분명하다. 그러나 근거가 부족하다.",
-   "en": "The main claim is clear. However, the evidence is insufficient.",
-   "note": "그러나 gives a direct formal contrast."
-  },
-  "collocations": [
-   "그러나 ...은 부족하다",
-   "그러나 ...는 다르다",
-   "그러나 ...할 필요가 있다"
-  ],
-  "nuance": "그러나 means 'however' and is the formal, written-register cousin of 하지만 and 그렇지만. Its dividing line from those: 하지만 is the neutral all-purpose 'but' that works in speech and writing, while 그러나 feels distinctly literary and shows up in news articles, reports, essays, editorials, and official notices; in casual chat it sounds stiff, where 근데 or 하지만 fit far better. A second crucial point for English speakers: 그러나 almost always STARTS a fresh sentence and does not glue two clauses together inside one sentence. English 'but' can sit mid-sentence ('I tried, but I failed'), so learners wrongly write 시도했어요 그러나 실패했어요; correct Korean either puts 그러나 after a full stop or uses the clause-internal ending -지만 (시도했지만 실패했어요). Treat 그러나 as a heading-level pivot, not an inline conjunction.",
-  "explanation": "그러나 (geureona) = \"however, but (formal/written)\". Treat it as a building block that needs a frame: 그러나 문제가 있어요 (\"However, there is a problem\") shows how it actually behaves. The grammar lives in the particle or ending beside 그러나, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about basic everyday communication and swap just one element to make it yours.",
-  "shortExplanation": "그러나 means \"however, but (formal/written)\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Using it in casual speech where it sounds bookish; with friends say 근데 or 하지만 instead of 그러나",
-   "Gluing two clauses with it mid-sentence (시도했어요 그러나 실패했어요); 그러나 must start a new sentence, while -지만 attaches inside one (시도했지만 실패했어요)",
-   "Pairing it with the casual 요-ending in formal writing; 그러나 normally goes with the plain -다 style (그러나 결과는 달랐다)"
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "그러나 문제가 있어요",
-    "romanization": "geureona munjega isseoyo",
-    "en": "However, there is a problem",
-    "note": "Sentence-initial contrast, more formal than 하지만"
-   },
-   {
-    "ko": "그러나 결과는 달랐다",
-    "romanization": "geureona gyeolgwaneun dallatda",
-    "en": "However, the result was different",
-    "note": "Pairs naturally with the plain written ending -다 in reports"
-   },
-   {
-    "ko": "그러나 포기할 수 없었다",
-    "romanization": "geureona pogihal su eopseotda",
-    "en": "However, I couldn't give up",
-    "note": "Dramatic reversal in essays and narration"
-   },
-   {
-    "ko": "그러나 아무도 몰랐다",
-    "romanization": "geureona amudo mollatda",
-    "en": "However, no one knew",
-    "note": "Marks an unexpected turn in a written account"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "좋은 생각이에요. 그러나 돈이 없어요.",
-    "romanization": "joeun saenggagieyo. geureona doni eopseoyo.",
-    "en": "It's a good idea. However, there's no money.",
-    "note": "Simple two-sentence flip; 그러나 always opens the second sentence"
-   },
-   {
-    "ko": "회사는 빠르게 성장했어요. 그러나 직원들은 더 힘들어졌어요.",
-    "romanization": "hoesaneun ppareuge seongjanghaesseoyo. geureona jigwondeureun deo himdeureojyeosseoyo.",
-    "en": "The company grew fast. However, the employees had it harder.",
-    "note": "Report or news-style contrast between two facts"
-   },
-   {
-    "ko": "여러 번 시도했지만 모두 실패했다. 그러나 그는 멈추지 않았다.",
-    "romanization": "yeoreo beon sidohaetjiman modu silpaehaetda. geureona geuneun meomchuji anatda.",
-    "en": "He tried many times but failed every time. However, he did not stop.",
-    "note": "Narrative register: note the bookish -다 ending matching 그러나's tone"
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A2",
-  "cluster": null,
-  "chapters": [
-   63
-  ]
- },
- "반면에": {
-  "ko": "반면에",
-  "romanization": "banmyeone",
-  "en": "by contrast; whereas",
-  "pos": "adverb",
-  "chapter": "63",
-  "ex": {
-   "ko": "첫 번째 사례는 적절하다. 반면에 두 번째 사례는 관련성이 약하다.",
-   "en": "The first case is appropriate. By contrast, the second case is weakly relevant.",
-   "note": "반면에 compares two sides."
-  },
-  "collocations": [
-   "A는 ...하다. 반면에 B는 ...하다",
-   "-ㄴ 반면에",
-   "장점이 있다. 반면에 한계도 있다"
-  ],
-  "nuance": "반면에 means 'on the other hand / whereas / by contrast' and explicitly sets two distinct sides, options, or qualities against each other. It comes from the Sino-Korean noun 반면 (反面, literally 'opposite + face/side,' i.e. 'the reverse side') plus the location particle 에 — so its very composition is 'on the opposite side,' which is why it demands a clear A and a clear B to weigh. This is its dividing line from 그런데/근데: those handle a single-topic surprise or twist ('I went out, but it was closed'), whereas 반면에 is analytical and comparative, ideal for pros-and-cons and 'A is X, B is Y' contrasts. It also differs from 한편 in being a sharper head-to-head contrast rather than a loose scene-shift. Note it has two shapes: as a free adverb starting a sentence (반면에 단점도 있어요) and as a bound clause ending -는/은 반면에 attached to the previous verb/adjective (비싼 반면에 'while it's expensive'). The English-speaker pitfall is dropping it onto a one-sided remark where there's no real B to contrast — without two sides, 반면에 has nothing to balance and sounds incomplete.",
-  "explanation": "\"on the other hand, whereas, by contrast\" is 반면에 (banmyeone). The word itself is easy; what matters is the company it keeps, like 반면에 단점도 있어요 (\"On the other hand, there are downsides too\"). Watch the particle attached to 반면에 in each example — that little marker, not the word, tells you whether it is the topic, the subject, the object, or a place. Copy one full sentence about basic everyday communication first, then vary one word.",
-  "shortExplanation": "반면에 means \"on the other hand, whereas, by contrast\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Using it for a single-situation surprise; that twist needs 그런데/근데, while 반면에 specifically compares two separate sides",
-   "Stating only one side; 반면에 needs a clear A and B, or the contrast has nothing to balance",
-   "Confusing the two forms; the standalone adverb is 반면에 (new sentence), but inside one sentence it attaches as -는/은 반면에 (비싼 반면에)"
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "반면에 단점도 있어요",
-    "romanization": "banmyeone danjeomdo isseoyo",
-    "en": "On the other hand, there are downsides too",
-    "note": "Introducing the opposite side of a point"
-   },
-   {
-    "ko": "반면에 가격은 비싸요",
-    "romanization": "banmyeone gagyeogeun bissayo",
-    "en": "By contrast, the price is high",
-    "note": "Weighing a drawback against an upside"
-   },
-   {
-    "ko": "반면에 시골은 조용해요",
-    "romanization": "banmyeone sigoreun joyonghaeyo",
-    "en": "Whereas the countryside is quiet",
-    "note": "Contrasting two places or options"
-   },
-   {
-    "ko": "비싼 반면에",
-    "romanization": "bissan banmyeone",
-    "en": "while it's expensive (but...)",
-    "note": "As a clause ending -는/은 반면에, attached directly to a verb/adjective"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "형은 키가 커요. 반면에 저는 작아요.",
-    "romanization": "hyeongeun kiga keoyo. banmyeone jeoneun jagayo.",
-    "en": "My older brother is tall. By contrast, I'm short.",
-    "note": "Simple A-vs-B contrast of two clearly stated sides"
-   },
-   {
-    "ko": "도시는 편리해요. 반면에 집값이 너무 비싸요.",
-    "romanization": "dosineun pyeollihaeyo. banmyeone jipgapsi neomu bissayo.",
-    "en": "Cities are convenient. On the other hand, housing is way too expensive.",
-    "note": "Balancing one pro against one con"
-   },
-   {
-    "ko": "월급은 늘어난 반면에 일은 훨씬 많아졌어요.",
-    "romanization": "wolgeubeun neureonan banmyeone ireun hwolssin manajyeosseoyo.",
-    "en": "While the salary went up, the workload grew much more.",
-    "note": "Shows the bound form -ㄴ 반면에 joining the two sides in one sentence"
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A2",
-  "cluster": null,
-  "chapters": [
-   63
-  ]
- },
- "즉": {
-  "ko": "즉",
-  "romanization": "jeuk",
-  "en": "that is; in other words",
-  "pos": "adverb",
-  "chapter": "63",
-  "ex": {
-   "ko": "문제는 결론 자체가 아니다. 즉, 근거와 논리의 연결이 약하다는 점이다.",
-   "en": "The problem is not the conclusion itself. In other words, the link between evidence and reasoning is weak.",
-   "note": "즉 clarifies the same point in a narrower form."
-  },
-  "collocations": [
-   "즉, ...라는 뜻이다",
-   "즉, ...라는 점이다",
-   "즉, ...라고 볼 수 있다"
-  ],
-  "nuance": "즉 means 'that is / in other words / namely' and introduces a RESTATEMENT or precise clarification of what you just said — never new information, only the same point re-expressed more sharply or simply. It is a single Sino-Korean syllable from the hanja 卽 ('namely, that is to say'), and that one-syllable crispness gives it a slightly formal, definitional ring that suits writing, explanations, legal/technical text, and definitions. The contrast to watch: do not confuse 즉 with 그리고 ('and'), which ADDS a separate item; 즉 re-explains, so if what follows is genuinely new content, 즉 is wrong. It overlaps heavily with 다시 말해 ('in other words'), but 즉 is terser and more bookish while 다시 말해 feels more conversational. Punctuation-wise it almost always takes a comma right after it (즉,) and pairs naturally with the nominalizing tails ...라는 거예요 / ...뜻이에요. In very casual chat it can feel clipped, where 그러니까 or 말하자면 sound friendlier.",
-  "explanation": "즉 (jeuk) = \"that is, in other words, namely\". Treat it as a building block that needs a frame: 즉, 다시 말하면 (\"That is, to put it another way\") shows how it actually behaves. The grammar lives in the particle or ending beside 즉, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about basic everyday communication and swap just one element to make it yours.",
-  "shortExplanation": "즉 means \"that is, in other words, namely\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Using it to add new information; 즉 only re-explains the same point, so anything genuinely new needs 그리고 instead",
-   "Overusing it in very casual speech; in chat 그러니까 or 말하자면 sound more natural than the bookish 즉",
-   "Dropping the comma; standard style writes 즉, with a comma before the restatement"
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "즉, 다시 말하면",
-    "romanization": "jeuk, dasi malhamyeon",
-    "en": "That is, to put it another way",
-    "note": "Signals a restatement is coming"
-   },
-   {
-    "ko": "즉 무료라는 거예요",
-    "romanization": "jeung muryoraneun geoyeyo",
-    "en": "In other words, it means it's free",
-    "note": "즉 ...라는 거예요 spells out what something amounts to"
-   },
-   {
-    "ko": "즉, 결론은 이거예요",
-    "romanization": "jeuk, gyeolloneun igeoyeyo",
-    "en": "Namely, the conclusion is this",
-    "note": "Cutting straight to the core point"
-   },
-   {
-    "ko": "즉 안 된다는 뜻이에요",
-    "romanization": "jeuk an doendaneun tteusieyo",
-    "en": "That is, it means no",
-    "note": "즉 ...뜻이에요 states the real meaning"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "이건 보증금이에요. 즉, 나중에 돌려받는 돈이에요.",
-    "romanization": "igeon bojeunggeumieyo. jeuk, najunge dollyeobanneun donieyo.",
-    "en": "This is a deposit. That is, money you get back later.",
-    "note": "Restates a term in plainer words; note the comma after 즉"
-   },
-   {
-    "ko": "오늘은 공휴일이에요. 즉, 관공서는 다 쉬어요.",
-    "romanization": "oneureun gonghyuirieyo. jeuk, gwangongseoneun da swieoyo.",
-    "en": "Today is a public holiday. In other words, all government offices are closed.",
-    "note": "Draws the practical implication of a fact"
-   },
-   {
-    "ko": "계약이 끝났어요. 즉, 이제 다른 집을 구해야 한다는 거죠.",
-    "romanization": "gyeyagi kkeunnasseoyo. jeuk, ije dareun jibeul guhaeya handaneun geojyo.",
-    "en": "The contract ended. That is, it means I now have to find another place.",
-    "note": "즉 ...라는 거죠 reframing a fact as its real consequence"
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A2",
+  "level": "B2",
   "cluster": null,
   "chapters": [
    63

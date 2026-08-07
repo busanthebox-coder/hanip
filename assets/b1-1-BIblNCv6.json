@@ -1301,7 +1301,7 @@
   "romanization": "hwanseung",
   "en": "transfer",
   "pos": "noun",
-  "chapter": "23·55",
+  "chapter": "23·55·63",
   "ex": {
    "ko": "서울역에 가려면 어디서 환승해요?",
    "en": "Where do I transfer if I want to get to Seoul Station?",
@@ -1372,7 +1372,8 @@
   "cluster": null,
   "chapters": [
    23,
-   55
+   55,
+   63
   ]
  },
  "갈아타다": {
@@ -2861,7 +2862,7 @@
   "romanization": "sanghwang",
   "en": "situation; circumstances",
   "pos": "noun",
-  "chapter": "33·35·39·62·65",
+  "chapter": "33·35·39·62",
   "ex": {
    "ko": "상황을 먼저 설명하면 상대방이 이해하기 쉬워요.",
    "en": "If you explain the situation first, it is easier for the other person to understand.",
@@ -2936,8 +2937,7 @@
    33,
    35,
    39,
-   62,
-   65
+   62
   ]
  },
  "부모님": {
@@ -3436,7 +3436,7 @@
   "romanization": "sangdaebang",
   "en": "the other person; conversation partner",
   "pos": "noun",
-  "chapter": "35·65",
+  "chapter": "35",
   "ex": {
    "ko": "상대방이 모르는 내용이면 거든요가 더 자연스러워요.",
    "en": "If the other person does not know it, 거든요 is more natural.",
@@ -3483,8 +3483,7 @@
   "level": "B1",
   "cluster": null,
   "chapters": [
-   35,
-   65
+   35
   ]
  },
  "부드럽게": {
@@ -11828,62 +11827,6 @@
    48
   ]
  },
- "식후": {
-  "ko": "식후",
-  "romanization": "sikhu",
-  "en": "after meals",
-  "pos": "noun",
-  "chapter": "48",
-  "ex": {
-   "ko": "하루 세 번 식후에 드세요.",
-   "en": "Take it three times a day after meals.",
-   "note": "Medicine timing word."
-  },
-  "collocations": [
-   "식후에",
-   "식후 30분",
-   "하루 세 번 식후"
-  ],
-  "nuance": "식후 is concise and label-like. In casual speech you can also say 밥 먹고, but at a clinic or pharmacy 식후 is the expected word. 식후 usually pairs with 에 or a time amount: 식후에, 식후 30분.",
-  "explanation": "\"after meals\" is 식후 (siku). The word itself is easy; what matters is the company it keeps, like 식후에 드세요. (\"Take it after meals.\"). Watch the particle attached to 식후 in each example — that little marker, not the word, tells you whether it is the topic, the subject, the object, or a place. Copy one full sentence about saying what hurts, asking for rest, and explaining basic health needs first, then vary one word.",
-  "shortExplanation": "식후 means \"after meals\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Using 식후 for any after-action meaning. It specifically means after meals.",
-   "Confusing 식후 with 식전. 식후 is after meals; 식전 is before meals.",
-   "Forgetting 에 in speech: 식후에 드세요 is smoother than just 식후 드세요."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "식후에 드세요.",
-    "romanization": "sikue deuseyo.",
-    "en": "Take it after meals.",
-    "note": "Common pharmacy instruction."
-   },
-   {
-    "ko": "하루 세 번, 식후에 드셔야 해요.",
-    "romanization": "haru se beon, sikue deusyeoya haeyo.",
-    "en": "You have to take it three times a day after meals.",
-    "note": "Combines frequency and timing."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "약은 식후에 하루 세 번 드세요.",
-    "romanization": "yageun sikue haru se beon deuseyo.",
-    "en": "Take the medicine three times a day after meals.",
-    "note": "약 + 식후 + 하루 세 번 is the core pharmacy frame."
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "B1",
-  "cluster": null,
-  "chapters": [
-   48
-  ]
- },
  "하루": {
   "ko": "하루",
   "romanization": "haru",
@@ -18735,7 +18678,7 @@
   "romanization": "jiyeon",
   "en": "delay",
   "pos": "noun",
-  "chapter": "55",
+  "chapter": "55·63",
   "ex": {
    "ko": "버스 지연 때문에 약속에 늦었어요.",
    "en": "I was late to the appointment because of a bus delay.",
@@ -18776,6 +18719,63 @@
     "romanization": "beoseu jiyeon ttaemune yaksoge neujeosseoyo.",
     "en": "I was late to the appointment because of a bus delay.",
     "note": "N 때문에 names the cause."
+   }
+  ],
+  "forms": null,
+  "irregular": null,
+  "level": "B1",
+  "cluster": null,
+  "chapters": [
+   55,
+   63
+  ]
+ },
+ "배차 간격": {
+  "ko": "배차 간격",
+  "romanization": "baecha gangyeok",
+  "en": "service interval",
+  "pos": "noun",
+  "chapter": "55",
+  "ex": {
+   "ko": "이 노선은 배차 간격이 길어서 택시로 갈게요.",
+   "en": "This route has a long service interval, so I will go by taxi.",
+   "note": "Chapter card word-ext-ch55-baecha-gangyeok."
+  },
+  "collocations": [
+   "배차 간격이 길다",
+   "배차 간격을 확인하다",
+   "배차 간격 때문에"
+  ],
+  "nuance": "배차 간격 is not the travel time. It is the gap between one bus or train and the next one.",
+  "explanation": "배차 간격 (baecha gangyeok) means \"interval between buses or trains\". Learn it inside a frame, not as a bare word: a useful first chunk is 배차 간격이 길어요. (\"The interval between buses or trains is long.\"). In Korean the particle or ending next to 배차 간격 signals its job — topic, subject, object, place, time, method, or description — so read the examples for the small piece beside it. Start with one real sentence about using buses, subways, taxis, and asking where to get on or off, then change a single part.",
+  "shortExplanation": "배차 간격 means \"interval between buses or trains\" and is learned through practical beginner sentence frames.",
+  "commonMistakes": [
+   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
+   "Confusing 배차 간격 with 소요 시간. 소요 시간 is how long the trip takes.",
+   "Using it for one delayed vehicle. 지연 is delay; 배차 간격 is the normal interval.",
+   "Forgetting 이/가 with the measured interval: 배차 간격이 길어요."
+  ],
+  "conjugationTips": [],
+  "usagePhrases": [
+   {
+    "ko": "배차 간격이 길어요.",
+    "romanization": "baecha gangyeogi gireoyo.",
+    "en": "The interval between buses or trains is long.",
+    "note": "Long interval means more waiting."
+   },
+   {
+    "ko": "배차 간격을 확인하다",
+    "romanization": "baecha gangyeogeul hwaginhada",
+    "en": "to check the service interval",
+    "note": "Useful with transit apps."
+   }
+  ],
+  "examples": [
+   {
+    "ko": "이 노선은 배차 간격이 길어서 택시로 갈게요.",
+    "romanization": "i noseoneun baecha gangyeogi gireoseo taeksiro galgeyo.",
+    "en": "This route has a long service interval, so I will go by taxi.",
+    "note": "Connects route information to a transport choice."
    }
   ],
   "forms": null,

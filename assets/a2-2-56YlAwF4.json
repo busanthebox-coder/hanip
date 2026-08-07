@@ -1,4 +1,117 @@
 {
+ "맡다": {
+  "ko": "맡다",
+  "romanization": "matda",
+  "en": "to take charge of; to be assigned",
+  "pos": "verb",
+  "chapter": "32",
+  "ex": {
+   "ko": "새 일을 맡게 됐어요.",
+   "en": "I ended up taking charge of a new task.",
+   "note": "Good for work or school responsibilities."
+  },
+  "collocations": [
+   "일을 맡다",
+   "프로젝트를 맡다",
+   "맡게 되다"
+  ],
+  "nuance": "맡다 is the everyday native-Korean verb for taking on a role or responsibility — a task, a project, a part, even a saved seat. It feels more personal and active than the Sino-Korean 담당하다: where 담당하다 is the official 'assigned to me' on an org chart, 맡다 is the warm, often-volunteered 'I'll take this', so 제가 맡을게요 sounds team-friendly and proactive in a meeting. Crucial spelling and conjugation point: the stem ends in ㅌ, and it is a plain regular verb, NOT a ㄷ-irregular — so it stays 맡아요 / 맡았어요 / 맡을게요, and learners who mistakenly 'soften' the ㅌ to ㄹ (마라요, 마랐어요) are simply wrong. Its causative partner 맡기다 ('to entrust/hand over') flips the direction: you 맡다 a job yourself, but you 맡기다 it to someone else (저한테 맡기세요). Habitual collocations: 역할을 맡다, 책임을 맡다, 업무를 맡다, 자리를 맡다.",
+  "explanation": "맡다 (matda) means \"to take charge of (be assigned)\". Start from the polite form 맡아요 — it is safe with almost anyone, so use it before the dictionary form 맡다. A strong first sentence is 역할을 맡다 (\"to take on a role\"); once that feels natural, swap the noun, place, or time and reuse the verb everywhere. Korean changes the ending rather than the word, so the same 맡다 also becomes 맡고 싶어요 (want), 맡을 수 있어요 (can), and 맡을 수 없어요 (cannot). Say one true sentence about talking about work, schedules, tasks, and obligations, then bend it.",
+  "shortExplanation": "맡다 means \"to take charge of (be assigned)\" and is practiced through polite conversation forms.",
+  "commonMistakes": [
+   "Do not use the dictionary form 맡다 as a complete polite sentence.",
+   "Use 맡아요 as the default until you know the relationship is casual.",
+   "Not a ㄷ-irregular: the stem is 맡- (ㅌ), so it conjugates 맡아요 / 맡았어요, never 마라요 / 마랐어요. Don't soften the ㅌ.",
+   "Don't confuse 맡다 (you take the task on) with its causative 맡기다 (you hand the task to someone else): 제가 맡을게요 vs. 저한테 맡기세요 are opposite directions."
+  ],
+  "conjugationTips": [
+   {
+    "title": "ㄹ / 을 — can & will",
+    "body": "To say \"can\" or the future, attach ㄹ/을 to the stem: a vowel-final stem takes ㄹ and a consonant-final stem takes 을. 맡다 becomes 맡을 수 있어요 (\"can\") and 맡을 거예요 (\"will\"). That is why 가다 → 갈 수 있어요 (not 가을), while 먹다 → 먹을 수 있어요. The same ㄹ/을 choice drives 거예요 and the noun-describing form."
+   }
+  ],
+  "usagePhrases": [
+   {
+    "ko": "맡아요",
+    "romanization": "matayo",
+    "en": "I take charge of (be assigned).",
+    "note": "Safe polite present form."
+   },
+   {
+    "ko": "맡지 않아요",
+    "romanization": "matji anayo",
+    "en": "I do not take charge of (be assigned).",
+    "note": "Short everyday negative."
+   },
+   {
+    "ko": "맡고 싶어요",
+    "romanization": "matgo sipeoyo",
+    "en": "I want to take charge of (be assigned).",
+    "note": "Useful for choices and plans."
+   },
+   {
+    "ko": "맡을 수 있어요",
+    "romanization": "mateul su isseoyo",
+    "en": "I can take charge of (be assigned).",
+    "note": "Ability or possibility."
+   },
+   {
+    "ko": "맡아야 해요",
+    "romanization": "mataya haeyo",
+    "en": "I have to take charge of (be assigned).",
+    "note": "Requirement or obligation."
+   },
+   {
+    "ko": "역할을 맡다",
+    "romanization": "yeokareul matda",
+    "en": "to take on a role",
+    "note": "역할(役割) 'role'; 맡다 collocates with roles, parts, and duties you personally accept."
+   }
+  ],
+  "examples": [
+   {
+    "ko": "그 일은 제가 맡을게요.",
+    "romanization": "geu ireun jega mateulgeyo.",
+    "en": "I'll take that on.",
+    "note": "-(으)ㄹ게요 = a willing commitment to the listener; sounds proactive and reliable."
+   },
+   {
+    "ko": "이번 행사는 김 대리가 맡았어요.",
+    "romanization": "ibeon haengsaneun gim daeriga matasseoyo.",
+    "en": "Assistant Manager Kim took charge of this event.",
+    "note": "Past 맡았어요 (stem ㅌ + 아) reports who got the assignment — note it is NOT 마랐어요."
+   },
+   {
+    "ko": "부장님이 저한테 그 프로젝트를 맡기셨어요.",
+    "romanization": "bujangnimi jeohante geu peurojekteureul matgisyeosseoyo.",
+    "en": "The department head entrusted me with that project.",
+    "note": "맡기다 = causative 'hand over/entrust'; 저한테 marks the receiver — contrast with plain 맡다."
+   }
+  ],
+  "forms": {
+   "dictionary": "맡다",
+   "casualPresent": "맡아",
+   "politePresent": "맡아요",
+   "formalPresent": "맡습니다",
+   "negative": "맡지 않아요",
+   "past": "맡았어요",
+   "future": "맡을 거예요",
+   "want": "맡고 싶어요",
+   "can": "맡을 수 있어요",
+   "cannot": "맡을 수 없어요",
+   "must": "맡아야 해요",
+   "dontHaveTo": "맡지 않아도 돼요",
+   "pleaseDo": "맡아 주세요",
+   "pleaseDont": "맡지 마세요",
+   "shallWe": "맡을까요?"
+  },
+  "irregular": null,
+  "level": "A2",
+  "cluster": null,
+  "chapters": [
+   32
+  ]
+ },
  "몸": {
   "ko": "몸",
   "romanization": "mom",
@@ -708,6 +821,61 @@
   },
   "chapters": [
    33
+  ]
+ },
+ "높임말": {
+  "ko": "높임말",
+  "romanization": "nopimmal",
+  "en": "honorific language",
+  "pos": "noun",
+  "chapter": "34",
+  "ex": {
+   "ko": "선생님에 대해 말할 때는 높임말을 써요.",
+   "en": "When talking about a teacher, I use honorific language.",
+   "note": "The honored person can be the person being discussed."
+  },
+  "collocations": [
+   "높임말을 쓰다",
+   "높임말로 말하다",
+   "높임 표현"
+  ],
+  "nuance": "높임말 is not only being polite to the listener. It can honor a third person, such as a teacher or parent.",
+  "explanation": "높임말 (nopimmal) = \"honorific or respectful language\". Treat it as a building block that needs a frame: 높임말을 쓰다 (\"to use honorific language\") shows how it actually behaves. The grammar lives in the particle or ending beside 높임말, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about basic everyday communication and swap just one element to make it yours.",
+  "shortExplanation": "높임말 means \"honorific or respectful language\" and is learned through practical beginner sentence frames.",
+  "commonMistakes": [
+   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
+   "Using -(으)시- for yourself. Do not say 제가 가세요.",
+   "Thinking 존댓말 and 높임말 are always the same. They overlap, but they answer different social questions."
+  ],
+  "conjugationTips": [],
+  "usagePhrases": [
+   {
+    "ko": "높임말을 쓰다",
+    "romanization": "nopimmareul sseuda",
+    "en": "to use honorific language",
+    "note": "General phrase."
+   },
+   {
+    "ko": "높임말로 말하다",
+    "romanization": "nopimmallo malhada",
+    "en": "to speak respectfully",
+    "note": "Focuses on manner of speaking."
+   }
+  ],
+  "examples": [
+   {
+    "ko": "선생님에 대해 말할 때는 높임말을 써요.",
+    "romanization": "seonsaengnime daehae malhal ttaeneun nopimmareul sseoyo.",
+    "en": "When talking about a teacher, I use honorific language.",
+    "note": "The honored person is the topic of the sentence."
+   }
+  ],
+  "forms": null,
+  "irregular": null,
+  "level": "B1",
+  "cluster": null,
+  "chapters": [
+   34
   ]
  },
  "께서": {

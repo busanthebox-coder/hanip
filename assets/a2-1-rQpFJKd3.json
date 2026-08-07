@@ -6501,6 +6501,86 @@
    30
   ]
  },
+ "결국": {
+  "ko": "결국",
+  "romanization": "gyeolguk",
+  "en": "in the end / ultimately / eventually",
+  "pos": "adverb",
+  "chapter": "16",
+  "ex": {
+   "ko": "열심히 노력하더니 결국 합격했어요.",
+   "en": "They kept working hard, and in the end they passed.",
+   "note": "결국 often appears in the result clause of -더니 sentences, marking the endpoint of the observed sequence"
+  },
+  "collocations": [
+   "결국 성공하다",
+   "결국 실패하다",
+   "결국 포기하다"
+  ],
+  "nuance": "결국 means 'in the end / eventually / after all' and sums up the FINAL outcome reached after a process, delay, or struggle. It is Sino-Korean, 결 (結, 'to conclude/tie up') + 국 (局, 'situation/end stage'), literally 'the concluding stage' — so it inherently looks back over a whole drawn-out affair to its settling point. The dividing line from near-synonym 드디어 is important: 드디어 celebrates a happy, long-awaited result with relief and excitement ('finally, at last!'), whereas 결국 is emotionally NEUTRAL and frequently tinged with resignation or a sense that the outcome was inevitable ('it came to this after all'). A second contrast English speakers stumble on: 결국 is NOT the 'finally/lastly' that orders items in a list — that ordinal sense ('firstly... finally...') is 마지막으로. 결국 is about how a story RESOLVED, not where an item sits in a sequence. It commonly follows a lead-in clause with -지만 or -는데 sketching the struggle, and the variant 결국엔 (with topic 은) adds extra weight to the final beat.",
+  "explanation": "\"in the end, eventually, after all\" is 결국 (gyeolguk). The word itself is easy; what matters is the company it keeps, like 결국 못 갔어요 (\"In the end, I couldn't go\"). Watch the particle attached to 결국 in each example — that little marker, not the word, tells you whether it is the topic, the subject, the object, or a place. Copy one full sentence about basic everyday communication first, then vary one word.",
+  "shortExplanation": "결국 means \"in the end, eventually, after all\" and is learned through practical beginner sentence frames.",
+  "commonMistakes": [
+   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
+   "Swapping it for 드디어; 결국 is neutral or resigned ('after all'), while 드디어 carries relief and celebration ('finally, at last!')",
+   "Using it for ordinal 'finally/lastly' in a list; that sequencing sense is 마지막으로, not 결국",
+   "Expecting it to mean a positive result; 결국 often hints the outcome was inevitable or disappointing, so pair it with context that fits"
+  ],
+  "conjugationTips": [],
+  "usagePhrases": [
+   {
+    "ko": "결국 못 갔어요",
+    "romanization": "gyeolgung mot gasseoyo",
+    "en": "In the end, I couldn't go",
+    "note": "Reporting how things finally turned out"
+   },
+   {
+    "ko": "결국 이렇게 됐어요",
+    "romanization": "gyeolguk ireoke dwaesseoyo",
+    "en": "It ended up like this after all",
+    "note": "Summing up a drawn-out outcome"
+   },
+   {
+    "ko": "결국엔 다 잘될 거예요",
+    "romanization": "gyeolgugen da jaldoel geoyeyo",
+    "en": "In the end it'll all work out",
+    "note": "결국엔 adds 은 to stress the final outcome"
+   },
+   {
+    "ko": "결국 포기했어요",
+    "romanization": "gyeolguk pogihaesseoyo",
+    "en": "I eventually gave up",
+    "note": "A final result reached after a struggle"
+   }
+  ],
+  "examples": [
+   {
+    "ko": "고민하다가 결국 안 샀어요.",
+    "romanization": "gominhadaga gyeolguk an sasseoyo.",
+    "en": "I kept hesitating and in the end didn't buy it.",
+    "note": "Simple: marks the final decision after wavering"
+   },
+   {
+    "ko": "며칠을 버텼지만 결국 병원에 갔어요.",
+    "romanization": "myeochireul beotyeotjiman gyeolguk byeongwone gasseoyo.",
+    "en": "I held out for days, but I eventually went to the hospital.",
+    "note": "Outcome reached after resistance; note the lead-in -지만"
+   },
+   {
+    "ko": "다들 말렸는데 결국 제 뜻대로 했어요.",
+    "romanization": "dadeul mallyeonneunde gyeolguk je tteutdaero haesseoyo.",
+    "en": "Everyone tried to stop me, but in the end I did it my way.",
+    "note": "Stresses the eventual result despite opposition, with -는데"
+   }
+  ],
+  "forms": null,
+  "irregular": null,
+  "level": "A2",
+  "cluster": null,
+  "chapters": [
+   16
+  ]
+ },
  "쌓이다": {
   "ko": "쌓이다",
   "romanization": "ssahida",
@@ -17921,119 +18001,6 @@
   "chapters": [
    32,
    49
-  ]
- },
- "맡다": {
-  "ko": "맡다",
-  "romanization": "matda",
-  "en": "to take charge of; to be assigned",
-  "pos": "verb",
-  "chapter": "32",
-  "ex": {
-   "ko": "새 일을 맡게 됐어요.",
-   "en": "I ended up taking charge of a new task.",
-   "note": "Good for work or school responsibilities."
-  },
-  "collocations": [
-   "일을 맡다",
-   "프로젝트를 맡다",
-   "맡게 되다"
-  ],
-  "nuance": "맡다 is the everyday native-Korean verb for taking on a role or responsibility — a task, a project, a part, even a saved seat. It feels more personal and active than the Sino-Korean 담당하다: where 담당하다 is the official 'assigned to me' on an org chart, 맡다 is the warm, often-volunteered 'I'll take this', so 제가 맡을게요 sounds team-friendly and proactive in a meeting. Crucial spelling and conjugation point: the stem ends in ㅌ, and it is a plain regular verb, NOT a ㄷ-irregular — so it stays 맡아요 / 맡았어요 / 맡을게요, and learners who mistakenly 'soften' the ㅌ to ㄹ (마라요, 마랐어요) are simply wrong. Its causative partner 맡기다 ('to entrust/hand over') flips the direction: you 맡다 a job yourself, but you 맡기다 it to someone else (저한테 맡기세요). Habitual collocations: 역할을 맡다, 책임을 맡다, 업무를 맡다, 자리를 맡다.",
-  "explanation": "맡다 (matda) means \"to take charge of (be assigned)\". Start from the polite form 맡아요 — it is safe with almost anyone, so use it before the dictionary form 맡다. A strong first sentence is 역할을 맡다 (\"to take on a role\"); once that feels natural, swap the noun, place, or time and reuse the verb everywhere. Korean changes the ending rather than the word, so the same 맡다 also becomes 맡고 싶어요 (want), 맡을 수 있어요 (can), and 맡을 수 없어요 (cannot). Say one true sentence about talking about work, schedules, tasks, and obligations, then bend it.",
-  "shortExplanation": "맡다 means \"to take charge of (be assigned)\" and is practiced through polite conversation forms.",
-  "commonMistakes": [
-   "Do not use the dictionary form 맡다 as a complete polite sentence.",
-   "Use 맡아요 as the default until you know the relationship is casual.",
-   "Not a ㄷ-irregular: the stem is 맡- (ㅌ), so it conjugates 맡아요 / 맡았어요, never 마라요 / 마랐어요. Don't soften the ㅌ.",
-   "Don't confuse 맡다 (you take the task on) with its causative 맡기다 (you hand the task to someone else): 제가 맡을게요 vs. 저한테 맡기세요 are opposite directions."
-  ],
-  "conjugationTips": [
-   {
-    "title": "ㄹ / 을 — can & will",
-    "body": "To say \"can\" or the future, attach ㄹ/을 to the stem: a vowel-final stem takes ㄹ and a consonant-final stem takes 을. 맡다 becomes 맡을 수 있어요 (\"can\") and 맡을 거예요 (\"will\"). That is why 가다 → 갈 수 있어요 (not 가을), while 먹다 → 먹을 수 있어요. The same ㄹ/을 choice drives 거예요 and the noun-describing form."
-   }
-  ],
-  "usagePhrases": [
-   {
-    "ko": "맡아요",
-    "romanization": "matayo",
-    "en": "I take charge of (be assigned).",
-    "note": "Safe polite present form."
-   },
-   {
-    "ko": "맡지 않아요",
-    "romanization": "matji anayo",
-    "en": "I do not take charge of (be assigned).",
-    "note": "Short everyday negative."
-   },
-   {
-    "ko": "맡고 싶어요",
-    "romanization": "matgo sipeoyo",
-    "en": "I want to take charge of (be assigned).",
-    "note": "Useful for choices and plans."
-   },
-   {
-    "ko": "맡을 수 있어요",
-    "romanization": "mateul su isseoyo",
-    "en": "I can take charge of (be assigned).",
-    "note": "Ability or possibility."
-   },
-   {
-    "ko": "맡아야 해요",
-    "romanization": "mataya haeyo",
-    "en": "I have to take charge of (be assigned).",
-    "note": "Requirement or obligation."
-   },
-   {
-    "ko": "역할을 맡다",
-    "romanization": "yeokareul matda",
-    "en": "to take on a role",
-    "note": "역할(役割) 'role'; 맡다 collocates with roles, parts, and duties you personally accept."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "그 일은 제가 맡을게요.",
-    "romanization": "geu ireun jega mateulgeyo.",
-    "en": "I'll take that on.",
-    "note": "-(으)ㄹ게요 = a willing commitment to the listener; sounds proactive and reliable."
-   },
-   {
-    "ko": "이번 행사는 김 대리가 맡았어요.",
-    "romanization": "ibeon haengsaneun gim daeriga matasseoyo.",
-    "en": "Assistant Manager Kim took charge of this event.",
-    "note": "Past 맡았어요 (stem ㅌ + 아) reports who got the assignment — note it is NOT 마랐어요."
-   },
-   {
-    "ko": "부장님이 저한테 그 프로젝트를 맡기셨어요.",
-    "romanization": "bujangnimi jeohante geu peurojekteureul matgisyeosseoyo.",
-    "en": "The department head entrusted me with that project.",
-    "note": "맡기다 = causative 'hand over/entrust'; 저한테 marks the receiver — contrast with plain 맡다."
-   }
-  ],
-  "forms": {
-   "dictionary": "맡다",
-   "casualPresent": "맡아",
-   "politePresent": "맡아요",
-   "formalPresent": "맡습니다",
-   "negative": "맡지 않아요",
-   "past": "맡았어요",
-   "future": "맡을 거예요",
-   "want": "맡고 싶어요",
-   "can": "맡을 수 있어요",
-   "cannot": "맡을 수 없어요",
-   "must": "맡아야 해요",
-   "dontHaveTo": "맡지 않아도 돼요",
-   "pleaseDo": "맡아 주세요",
-   "pleaseDont": "맡지 마세요",
-   "shallWe": "맡을까요?"
-  },
-  "irregular": null,
-  "level": "A2",
-  "cluster": null,
-  "chapters": [
-   32
   ]
  }
 }
