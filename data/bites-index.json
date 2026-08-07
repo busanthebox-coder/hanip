@@ -1,5 +1,5 @@
 {
- "generatedFrom": "65 chapters + 12 snacks",
+ "generatedFrom": "65 chapters + 18 snacks",
  "chapters": [
   {
    "id": "chapter-01",
@@ -5724,6 +5724,66 @@
    "level": "A1",
    "cardCount": 10,
    "canDo": "React like a person, not a textbook — the difference between a chat that dies and one that keeps going."
+  },
+  {
+   "id": "snack-transport",
+   "packId": "pack-transport",
+   "title": "교통 표현 · Getting Around",
+   "shortTitle": "교통 Transport",
+   "afterChapter": 23,
+   "level": "A2",
+   "cardCount": 14,
+   "canDo": "Ask the way, ride, transfer, and get off where you meant to."
+  },
+  {
+   "id": "snack-restaurant",
+   "packId": "pack-restaurant",
+   "title": "식당·카페 주문 · Ordering Food & Drinks",
+   "shortTitle": "주문 Ordering",
+   "afterChapter": 52,
+   "level": "B1",
+   "cardCount": 14,
+   "canDo": "Order, pay, and answer the counter questions without switching to English."
+  },
+  {
+   "id": "snack-shopping",
+   "packId": "pack-shopping",
+   "title": "쇼핑 표현 · Shopping Talk",
+   "shortTitle": "쇼핑 Shopping",
+   "afterChapter": 51,
+   "level": "B1",
+   "cardCount": 14,
+   "canDo": "Pay, keep the receipt, and get a refund or exchange when something is wrong."
+  },
+  {
+   "id": "snack-clinic",
+   "packId": "pack-clinic",
+   "title": "병원·약국 · At the Clinic",
+   "shortTitle": "병원 Clinic",
+   "afterChapter": 48,
+   "level": "B1",
+   "cardCount": 14,
+   "canDo": "Say what hurts and follow what the clinic and pharmacy tell you."
+  },
+  {
+   "id": "snack-work",
+   "packId": "pack-work",
+   "title": "직장 표현 · Office Korean",
+   "shortTitle": "직장 Work",
+   "afterChapter": 40,
+   "level": "B1",
+   "cardCount": 14,
+   "canDo": "Write the mail, ask for the review, and settle a meeting time politely."
+  },
+  {
+   "id": "snack-admin",
+   "packId": "pack-admin",
+   "title": "은행·행정 · Bank & Paperwork",
+   "shortTitle": "행정 Admin",
+   "afterChapter": 58,
+   "level": "B2",
+   "cardCount": 14,
+   "canDo": "Open an account, move money, and handle the counter questions."
   }
  ]
 }
