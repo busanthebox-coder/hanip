@@ -9,6 +9,7 @@
   import ReadCard from './cards/ReadCard.svelte';
   import PayoffCard from './cards/PayoffCard.svelte';
   import GrammarLessonCard from './cards/GrammarLessonCard.svelte';
+  import GrammarRefSheet from './GrammarRefSheet.svelte';
   import { buzz, fanfare, thud, tick } from '../lib/feedback.js';
   import { prefs } from '../lib/prefs.js';
   import { record } from '../lib/srs.js';
@@ -34,6 +35,20 @@
   let answeredCount = 0;
   let resolutionCorrect = null;
   let speechTimer = null;
+  let showRefSheet = false;
+
+  // replay from the rule sheet: same bite from the top, no warmups (it's review)
+  function replayBite() {
+    showRefSheet = false;
+    cards = [...studyCards];
+    i = 0;
+    resolved = false;
+    resolutionCorrect = null;
+    finished = false;
+    requeuedIds = new Set();
+    correctCount = 0;
+    answeredCount = 0;
+  }
 
   const ACTIVE_KINDS = new Set(['guess', 'drill', 'order', 'grammar-check']);
 
@@ -163,13 +178,26 @@
         <div class="score">{correctCount} of {answeredCount} on your own · {answeredCount}문제 중 {correctCount}개</div>
       {/if}
       <div class="win-stat">🔥 {winStreak}일째 · {winStreak}-day streak</div>
-      {#if bite.kind === 'pattern'}<div class="win-stat grammar">📜 문법 카드 획득! · Grammar card collected!</div>{/if}
+      {#if bite.kind === 'pattern'}
+        <button class="win-stat grammar" on:click={() => { showRefSheet = true; }}>
+          📜 문법 카드 획득! · Grammar card collected! <span class="peek">규칙 보기 · View rule ▸</span>
+        </button>
+      {/if}
       {#if bite.canDo}<div class="cando">☑ {bite.canDo}</div>{/if}
       <div class="actions">
         <button class="go" on:click={() => onExit(true, true)}>한 입 더 · One more bite →</button>
         <button class="ghost" on:click={() => onExit(true, false)}>오늘은 여기까지 · Done for today</button>
       </div>
     </div>
+  {/if}
+
+  {#if bite.kind === 'pattern'}
+    <GrammarRefSheet
+      open={showRefSheet}
+      {bite}
+      onReplay={replayBite}
+      onClose={() => { showRefSheet = false; }}
+    />
   {/if}
 </section>
 
@@ -210,6 +238,8 @@
   .score { margin-top: 6px; font-size: 13.5px; color: var(--ink-2); font-weight: 700; }
   .win-stat { margin-top: 7px; color: var(--ink-2); font-size: 13px; font-weight: 800; }
   .win-stat.grammar { color: var(--bad); }
+  button.win-stat.grammar { padding: 8px 14px; border: 1px dashed var(--bad); border-radius: 12px; background: transparent; }
+  .peek { display: block; margin-top: 2px; color: var(--ink-3); font-size: 11.5px; font-weight: 800; }
   .cando { margin-top: 12px; padding: 11px 16px; border-radius: 14px; background: var(--good-soft); color: var(--good-deep);
     font-size: 14px; font-weight: 750; word-break: keep-all; }
   .actions { margin-top: 26px; align-self: stretch; display: grid; gap: 10px; }

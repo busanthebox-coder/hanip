@@ -11,6 +11,8 @@
   import SearchField from './SearchField.svelte';
   import ShelfLevelGroup from './ShelfLevelGroup.svelte';
   import GrammarCollection from './GrammarCollection.svelte';
+  import GrammarRefSheet from './GrammarRefSheet.svelte';
+  import { createLatestRequest, loadChapterCards } from '../lib/courseData.js';
 
   export let chapters = [];
   export let snacks = [];
@@ -21,6 +23,38 @@
   let query = '';
   let openLevels = [];
   let showCollection = false;
+
+  // order 24: tapping a collection card opens the static rule sheet
+  let refOpen = false;
+  let refBite = null;        // full bite (with cards) once its chunk loads
+  let refIndexItem = null;   // { chapter, bite } from the index grid
+  let refCollected = true;
+  let refLoading = false;
+  const beginRefRequest = createLatestRequest();
+
+  async function openRefSheet(chapter, bite, isCollected) {
+    refOpen = true;
+    refLoading = true;
+    refBite = null;
+    refIndexItem = { chapter, bite };
+    refCollected = isCollected;
+    const isLatest = beginRefRequest();
+    try {
+      const bites = await loadChapterCards(chapter.id);
+      if (!isLatest()) return;
+      refBite = bites.find((item) => item.id === bite.id) || null;
+    } catch {
+      if (isLatest()) refBite = null;
+    } finally {
+      if (isLatest()) refLoading = false;
+    }
+  }
+
+  function closeRefSheet() {
+    refOpen = false;
+    refBite = null;
+    refIndexItem = null;
+  }
 
   $: state = $progress;
   $: groups = buildShelfGroups(chapters, state.done, snacks);
@@ -52,7 +86,21 @@
     {chapters}
     collected={state.collected || []}
     onBack={() => { showCollection = false; window.scrollTo(0, 0); }}
-    onPlay={(chapter, bite) => { showCollection = false; onPlay(chapter, bite); }}
+    onOpen={openRefSheet}
+  />
+  <GrammarRefSheet
+    open={refOpen}
+    bite={refBite}
+    loading={refLoading}
+    notLearned={!refCollected}
+    meta={refIndexItem ? { level: refIndexItem.chapter.level, chapterNumber: refIndexItem.chapter.number } : null}
+    onReplay={() => {
+      const item = refIndexItem;
+      closeRefSheet();
+      showCollection = false;
+      if (item) onPlay(item.chapter, item.bite);
+    }}
+    onClose={closeRefSheet}
   />
 {:else}
 <section class="shelf">

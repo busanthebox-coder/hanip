@@ -2,7 +2,7 @@
   export let chapters = [];
   export let collected = [];
   export let onBack = () => {};
-  export let onPlay = () => {};
+  export let onOpen = () => {};   // (chapter, bite, isCollected) → open the reference sheet
 
   $: collectedSet = new Set(collected);
   $: cards = chapters.flatMap((chapter) => (chapter.bites || [])
@@ -15,15 +15,14 @@
   <button class="back" on:click={onBack}>← 책장 · Back to shelf</button>
   <div class="cap">모은 문법 · Grammar collection</div>
   <h1>📜 {collectedCount}/{cards.length}</h1>
-  <p class="sub">완료한 문법 카드는 도장이 찍혀요. 카드를 누르면 다시 학습할 수 있어요. · Completed grammar cards receive a seal. Tap one to review.</p>
+  <p class="sub">완료한 문법 카드는 도장이 찍혀요. 카드를 누르면 규칙 시트가 열려요. · Completed grammar cards receive a seal. Tap one to open its rule sheet.</p>
 
   <div class="grid">
     {#each cards as item (item.bite.id)}
       <button
         class="grammar-card"
         class:collected={collectedSet.has(item.bite.id)}
-        disabled={!collectedSet.has(item.bite.id)}
-        on:click={() => onPlay(item.chapter, item.bite)}
+        on:click={() => onOpen(item.chapter, item.bite, collectedSet.has(item.bite.id))}
       >
         <span class="meta">{item.chapter.level} · {item.chapter.number}과</span>
         <strong>{item.bite.firstWord || item.bite.title}</strong>
@@ -43,7 +42,7 @@
   .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   .grammar-card { position: relative; min-height: 126px; padding: 14px; display: grid; align-content: start; gap: 8px;
     overflow: hidden; text-align: left; border: 1px dashed var(--line-2); border-radius: 16px; background: var(--wash);
-    color: var(--ink-3); opacity: .48; }
+    color: var(--ink-3); opacity: .62; }
   .grammar-card.collected { border-style: solid; background: var(--card); color: var(--ink); opacity: 1; box-shadow: var(--shadow-1); }
   .meta { font-size: 10.5px; font-weight: 800; color: var(--ink-3); }
   strong { padding-right: 28px; font-size: 15px; line-height: 1.4; word-break: keep-all; }
