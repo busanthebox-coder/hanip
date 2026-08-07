@@ -4,6 +4,8 @@
 //
 //   node scripts/baseline.mjs --write   snapshot current A1 output as the baseline
 //   node scripts/baseline.mjs           compare current output against it (exit 1 on drift)
+//   node scripts/baseline.mjs --all     snapshot ALL 65 chapters → snapshot-all.json
+//                                       (the additive guard's reference; see check-additive.mjs)
 //
 // The snapshot is structural (bite/card/kind/hunt counts + per-card kind+key
 // sequence), not byte-for-byte, so cosmetic JSON reordering can't false-alarm
@@ -11,36 +13,30 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { snapshotChapters } from './lib/cardKey.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const bitesFile = join(root, 'src', 'lib', 'bites.json');
 const baselineFile = join(root, 'docs', 'harness', 'baseline-a1.json');
+const allFile = join(root, 'docs', 'harness', 'snapshot-all.json');
 
 const A1 = new Set(Array.from({ length: 11 }, (_, i) => `chapter-${String(i + 1).padStart(2, '0')}`));
 
-function cardKey(card) {
-  switch (card.kind) {
-    case 'guess': return `guess:${card.word.ko}:${card.target ?? ''}:${card.options.join('|')}`;
-    case 'hunt': return `hunt:${card.name}:${card.lines.map((l) => l.tokens.filter((t) => t.hit).map((t) => t.mid).join(',')).join(';')}`;
-    case 'teach': return `teach:${card.name}:${(card.examples || []).length}ex`;
-    case 'drill': return `drill:${card.prompt}:${card.options.map((o) => o.text + (o.ok ? '*' : '')).join('|')}`;
-    case 'order': return `order:${card.correct}`;
-    case 'chat': return `chat:${card.lines.length}`;
-    case 'read': return `read:${card.chunks.length}:${card.qas.length}qa`;
-    case 'payoff': return `payoff:${card.hl}:${card.line.ko}`;
-    default: return card.kind;
-  }
+function snapshot() {
+  const chapters = snapshotChapters({ root, filter: (ch) => A1.has(ch.id) });
+  if (chapters.length !== 11) throw new Error(`expected 11 A1 chapters in bites.json, found ${chapters.length}`);
+  return chapters;
 }
 
-function snapshot() {
-  const { chapters } = JSON.parse(readFileSync(bitesFile, 'utf8'));
-  const a1 = chapters.filter((ch) => A1.has(ch.id));
-  if (a1.length !== 11) throw new Error(`expected 11 A1 chapters in bites.json, found ${a1.length}`);
-  return a1.map((ch) => ({
-    id: ch.id,
-    biteCount: ch.biteCount,
-    bites: ch.bites.map((b) => ({ id: b.id, kind: b.kind, title: b.title, cards: b.cards.map(cardKey) })),
-  }));
+// --all writes the whole-course reference the additive guard compares against.
+// It is a separate file from baseline-a1.json on purpose: baseline answers
+// "did the live A1 course change?", snapshot-all answers "did any existing
+// card anywhere change or disappear?".
+if (process.argv.includes('--all')) {
+  const chapters = snapshotChapters({ root });
+  writeFileSync(allFile, JSON.stringify({ writtenFor: 'all chapters', chapters }, null, 1));
+  const cards = chapters.reduce((n, ch) => n + ch.bites.reduce((m, b) => m + b.cards.length, 0), 0);
+  console.log(`baseline: wrote ${chapters.length} chapters / ${cards} cards → docs/harness/snapshot-all.json`);
+  process.exit(0);
 }
 
 const current = snapshot();

@@ -1,0 +1,4 @@
+{
+  "_comment": "Intended card removals during the thickness phase (orders 20-23). check-additive.mjs excuses exactly these and fails on any other missing card. Key format: '<biteId>#<cardKey>' — the same card key baseline.mjs and check-additive.mjs share via scripts/lib/cardKey.mjs. A stale entry (card is actually still present) is also a failure, so this file cannot rot.",
+  "removed": []
+}

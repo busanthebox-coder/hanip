@@ -13,6 +13,8 @@
     "test": "npm run compile && vitest run",
     "baseline": "node scripts/baseline.mjs",
     "guard": "npm run compile && node scripts/validate-bites.mjs && node scripts/baseline.mjs && vitest run",
+    "guard:thin": "npm run compile && node scripts/validate-bites.mjs && node scripts/check-additive.mjs && vitest run",
+    "density": "node scripts/report-density.mjs",
     "guard:full": "npm run guard && vite build && node scripts/finalize-pwa.mjs && node scripts/check-budget.mjs",
     "icons": "node scripts/make-icons.mjs",
     "smoke:stats": "node scripts/smoke-stats.mjs",
