@@ -24,7 +24,10 @@
      "kind": "pattern",
      "title": "문법 Grammar · 자음 (Consonants)",
      "cards": [
-      "teach:자음 (Consonants):4ex"
+      "teach:자음 (Consonants):4ex",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:이 is close to English 'ee' but shorter and unrounded — and only approximately. The real fix is to listen to a native speaker and imitate, not to map to English sounds.*|Reading 이 as 'ee' (as in 'see') — exactly like English",
+      "drill:어떻게 읽어요? · How do you read it?:na|ga*|ma",
+      "drill:어떻게 읽어요? · How do you read it?:ga|na*|ma"
      ]
     },
     {
@@ -45,7 +48,10 @@
      "kind": "pattern",
      "title": "문법 Grammar · 모음 (Vowels)",
      "cards": [
-      "teach:모음 (Vowels):4ex"
+      "teach:모음 (Vowels):4ex",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:Pronouncing 으 (ㅡ) as 'oo' or 'u' based on romanization 'eu'|으 has no English equivalent — it is a central unrounded vowel. Keep your lips flat (no rounding) and the tongue in the middle of the mouth.*",
+      "drill:어떻게 읽어요? · How do you read it?:o|a*|eu",
+      "drill:어떻게 읽어요? · How do you read it?:o*|a|eu"
      ]
     },
     {
@@ -67,7 +73,9 @@
      "title": "대화 Dialogue · 진짜 한국어",
      "cards": [
       "chat:8",
-      "order:천천히 말해 주세요"
+      "order:천천히 말해 주세요",
+      "drill:누가 한 말일까요? · Who said this?:민준|지연*",
+      "drill:무엇이 들어갈까요? · \"I'm Minjun. Hangul is new for me.\":자음|모음|한글*"
      ]
     },
     {
@@ -75,7 +83,9 @@
      "kind": "reading",
      "title": "읽기 Reading · 민준의 첫 한글 공부 (Minjun's First Hangul Study)",
      "cards": [
-      "read:2:3qa"
+      "read:2:3qa",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:소리|받침|한글*",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:소리|읽다|자음*"
      ]
     },
     {
@@ -90,7 +100,6 @@
       "drill:A learner sees ㅎ + ㅏ + ㄴ. Which block should they read?:한*|하|나|헌",
       "drill:Where does a TALL vowel like ㅏ, ㅓ, or ㅣ appear in a syllable block?:Below the consonant|To the right of the consonant*|Above the consonant|It can go anywhere",
       "drill:What does 알겠어요 most naturally mean in a classroom context?:I don't understand.|Please say it again.|I understand / I see / Okay.*|Is that right?",
-      "order:천천히 말해 주세요",
       "drill:Which block starts with a vowel sound and uses ㅇ as the silent placeholder?:아*|나|한"
      ]
     }
@@ -120,7 +129,10 @@
      "title": "문법 Grammar · N은/는",
      "cards": [
       "hunt:N은/는:는;은",
-      "drill:Today I'm busy.:는|은*"
+      "drill:Today I'm busy.:는|은*",
+      "drill:My friend is Korean.:은|는*|예요",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:저는 마이클이에요.*|나는 이름 마이클이에요.",
+      "drill:빈칸을 채우세요 · Complete the form — Noun ends in a consonant (받침):은*|는"
      ]
     },
     {
@@ -143,7 +155,10 @@
      "title": "문법 Grammar · N이에요/예요",
      "cards": [
       "hunt:N이에요/예요:이에요;예요",
-      "drill:This person is a teacher.:이에요*|예요"
+      "drill:This person is a teacher.:이에요*|예요",
+      "drill:This is water.:예요|은|이에요*",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:저는 학생이에요.*|저는 학생예요.",
+      "drill:빈칸을 채우세요 · Complete the form — Noun ends in a consonant (받침):이에요*|예요"
      ]
     },
     {
@@ -165,7 +180,9 @@
      "title": "대화 Dialogue · 진짜 한국어",
      "cards": [
       "chat:8",
-      "order:저는 학생이에요"
+      "order:저는 학생이에요",
+      "drill:누가 한 말일까요? · Who said this?:엠마|민준*",
+      "drill:무엇이 들어갈까요? · \"Hello! Is this your first time here?\":안녕히 계세요|감사합니다|안녕하세요*"
      ]
     },
     {
@@ -173,7 +190,9 @@
      "kind": "reading",
      "title": "읽기 Reading · 첫 언어 교환 후 메시지 (Text messages after the first language exchange)",
      "cards": [
-      "read:2:3qa"
+      "read:2:3qa",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:안녕하세요|안녕히 계세요|만나서 반가워요*",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:학생|이름*|선생님"
      ]
     },
     {
@@ -183,8 +202,7 @@
      "cards": [
       "drill:Someone asks you 이름이 뭐예요? How do you answer if your name is 지수?:저는 미국이에요.|저는 지수예요.*|나는 지수 이름이에요.",
       "drill:You bump into someone accidentally and want to apologize. Which do you use in this situation?:감사합니다|죄송합니다*|만나서 반가워요",
-      "drill:저___ 학생이에요. (As for me, I am a student.):는*|가|를",
-      "order:저는 학생이에요"
+      "drill:저___ 학생이에요. (As for me, I am a student.):는*|가|를"
      ]
     }
    ]
@@ -213,7 +231,10 @@
      "title": "문법 Grammar · N이에요/예요",
      "cards": [
       "hunt:N이에요/예요:이에요;예요",
-      "drill:This is water.:이에요*|예요"
+      "drill:This is water.:이에요*|예요",
+      "order:이분은 제 친구예요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:친구이에요 / 학생예요|친구예요 / 학생이에요*",
+      "drill:빈칸을 채우세요 · Complete the form — Noun ends in a consonant (받침):예요|이에요*|이 아니에요"
      ]
     },
     {
@@ -236,7 +257,10 @@
      "title": "문법 Grammar · N은/는",
      "cards": [
       "hunt:N은/는:는;은",
-      "drill:The teacher is Korean.:는|은*"
+      "drill:The teacher is Korean.:는|은*",
+      "drill:I'm a student. My friend is a doctor.:은|는*|이에요요",
+      "order:저는 한국어 학생이에요.",
+      "order:이 책은 한국어 책이에요."
      ]
     },
     {
@@ -258,7 +282,9 @@
      "title": "대화 Dialogue · 진짜 한국어",
      "cards": [
       "chat:8",
-      "order:이건 커피예요"
+      "order:이건 커피예요",
+      "drill:누가 한 말일까요? · Who said this?:민호*|지연",
+      "drill:무엇이 들어갈까요? · \"Minho, what country are you from?\":이름|학생|나라*"
      ]
     },
     {
@@ -266,7 +292,9 @@
      "kind": "reading",
      "title": "읽기 Reading · 새 친구 소개 (Introducing a New Friend)",
      "cards": [
-      "read:2:3qa"
+      "read:2:3qa",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:이름*|의사|회사원",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:의사|회사원|학생*"
      ]
     },
     {
@@ -275,8 +303,7 @@
      "title": "보스 Boss bite · 다 걸어요",
      "cards": [
       "drill:You want to say 'I am not Japanese.' Which sentence is correct?:저는 일본 사람이에요.|저는 일본 사람이 아니에요.*|저는 일본 사람이에요 아니에요.",
-      "drill:저___ 민준이에요. (As for me, I am Minjun.):는*|를|가",
-      "order:이건 커피예요"
+      "drill:저___ 민준이에요. (As for me, I am Minjun.):는*|를|가"
      ]
     }
    ]
@@ -305,7 +332,10 @@
      "title": "문법 Grammar · 있어요/없어요",
      "cards": [
       "hunt:있어요/없어요:있어요;없어요",
-      "drill:Do you have time?:있어요*|없어요"
+      "drill:Do you have time?:있어요*|없어요",
+      "drill:There are a lot of books at home.:있어요*|없어요|가",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:친구가 있어요.*|저는 친구예요. (meaning \"I have a friend.\")",
+      "drill:빈칸을 채우세요 · Complete the form — Something exists / is present:가 있어요*|이 없어요"
      ]
     },
     {
@@ -328,7 +358,10 @@
      "title": "문법 Grammar · N이/가",
      "cards": [
       "hunt:N이/가:가;이",
-      "drill:Who is a student?:가*|이"
+      "drill:Who is a student?:가*|이",
+      "drill:I'm Korean. (answering 'who?'):가*|있어요|없어요",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:저가 한국 사람이에요.|제가 한국 사람이에요.*",
+      "drill:빈칸을 채우세요 · Complete the form — Noun ends in a consonant (받침):가|이*"
      ]
     },
     {
@@ -348,7 +381,9 @@
      "title": "대화 Dialogue · 진짜 한국어",
      "cards": [
       "chat:8",
-      "order:시간이 없어요"
+      "order:시간이 없어요",
+      "drill:누가 한 말일까요? · Who said this?:직원|준호*",
+      "drill:무엇이 들어갈까요? · \"Welcome. Do you have a reservation?\":시간|예약*|돈"
      ]
     },
     {
@@ -356,7 +391,9 @@
      "kind": "reading",
      "title": "읽기 Reading · 호텔 예약 문자 (Hotel Booking Text Exchange)",
      "cards": [
-      "read:2:3qa"
+      "read:2:3qa",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:있어요*|예약하다|화장실",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:예약하다|화장실|없어요*"
      ]
     },
     {
@@ -366,8 +403,7 @@
      "cards": [
       "drill:You want to say 'I like coffee.' Which is correct?:커피를 좋아요.|커피가 좋아요.*|커피는 좋아요.",
       "drill:The hotel receptionist has found your reservation. Which sentence would they say?:예약이 없어요.|예약을 있어요.|예약이 있어요.*",
-      "drill:예약___ 있어요? (Do you have a reservation?):이*|을|에서",
-      "order:시간이 없어요"
+      "drill:예약___ 있어요? (Do you have a reservation?):이*|을|에서"
      ]
     }
    ]
@@ -396,7 +432,10 @@
      "title": "문법 Grammar · N을/를",
      "cards": [
       "hunt:N을/를:을;를",
-      "drill:I drink water.:을*|를"
+      "drill:I drink water.:을*|를",
+      "drill:I read a book.:를|안|을*",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:저는 밥 먹어요 treated as the 'correct, complete' textbook form|저는 밥을 먹어요.*",
+      "drill:빈칸을 채우세요 · Complete the form — Noun ends in a consonant (받침):를|을*"
      ]
     },
     {
@@ -418,7 +457,11 @@
      "kind": "pattern",
      "title": "문법 Grammar · 안 + verb",
      "cards": [
-      "hunt:안 + verb:안;안"
+      "hunt:안 + verb:안;안",
+      "drill:My friend doesn't read books.:를|안*",
+      "drill:Today I don't study Korean.:안*|을",
+      "order:저는 밥을 안 먹어요.",
+      "order:물을 안 마셔요."
      ]
     },
     {
@@ -439,7 +482,9 @@
      "kind": "pattern",
      "title": "문법 Grammar · 자연스럽게 말하기",
      "cards": [
-      "teach:자연스럽게 말하기:2ex"
+      "teach:자연스럽게 말하기:2ex",
+      "order:전 커피를 마셔요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:전 학생이에요. · 좋은 거 같아요. · 이거 주세요.*|Avoiding 전 / 거 같아요 / 이거 because they look like slang or 반말"
      ]
     },
     {
@@ -448,7 +493,9 @@
      "title": "대화 Dialogue · 진짜 한국어",
      "cards": [
       "chat:8",
-      "order:매일 아침 커피를 마셔요"
+      "order:매일 아침 커피를 마셔요",
+      "drill:누가 한 말일까요? · Who said this?:민호*|지희",
+      "drill:무엇이 들어갈까요? · \"Minho, do you eat breakfast every day?\":먹다|마시다|매일*"
      ]
     },
     {
@@ -456,7 +503,9 @@
      "kind": "reading",
      "title": "읽기 Reading · 수빈의 하루 일과 (Subin's Daily Routine)",
      "cards": [
-      "read:2:3qa"
+      "read:2:3qa",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:먹다|매일*|마시다",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:물|영화|커피*"
      ]
     },
     {
@@ -466,8 +515,7 @@
      "cards": [
       "drill:Which sentence correctly says 'I don't study' using the 안 negative?:안 공부해요.|공부 안 해요.*|공부를 않아요.|안 공부를 해요.",
       "drill:Your friend says '책을 읽어요.' What is the role of 을 in this sentence?:It marks 책 as the subject doing the reading.|It marks 책 as the object receiving the action of reading.*|It marks 책 as a topic being discussed.|It is a verb ending attached to 책.",
-      "drill:책___ 읽어요. (I read a book.):을*|이|에",
-      "order:매일 아침 커피를 마셔요"
+      "drill:책___ 읽어요. (I read a book.):을*|이|에"
      ]
     }
    ]
@@ -496,7 +544,11 @@
      "kind": "pattern",
      "title": "문법 Grammar · N에",
      "cards": [
-      "hunt:N에:에;에"
+      "hunt:N에:에;에",
+      "order:저는 학교에 가요.",
+      "order:친구가 집에 있어요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:오늘에 학교에 가요.|오늘 학교에 가요.*",
+      "drill:빈칸을 채우세요 · Complete the form — Destination (with 가다/오다):에 있어요|에 가요*"
      ]
     },
     {
@@ -519,7 +571,11 @@
      "kind": "pattern",
      "title": "문법 Grammar · N에서",
      "cards": [
-      "hunt:N에서:에서;에서"
+      "hunt:N에서:에서;에서",
+      "order:집에서 밥을 먹어요.",
+      "order:학교에서 한국어를 공부해요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:학교에 한국어를 공부해요.|학교에서 한국어를 공부해요.*",
+      "drill:빈칸을 채우세요 · Complete the form — Where an action happens (with \"doing\" verbs):에서 왔어요|에서 먹어요*"
      ]
     },
     {
@@ -542,7 +598,9 @@
      "title": "대화 Dialogue · 진짜 한국어",
      "cards": [
       "chat:8",
-      "order:학교에 가요"
+      "order:학교에 가요",
+      "drill:누가 한 말일까요? · Who said this?:소라|지훈*",
+      "drill:무엇이 들어갈까요? · \"I'm at the office. Why?\":학교|도서관|회사*"
      ]
     },
     {
@@ -550,7 +608,9 @@
      "kind": "reading",
      "title": "읽기 Reading · 수진의 하루 (Sujin's Day)",
      "cards": [
-      "read:2:3qa"
+      "read:2:3qa",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:카페|아침*|회사",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:카페|학교*|회사"
      ]
     },
     {
@@ -559,8 +619,7 @@
      "title": "보스 Boss bite · 다 걸어요",
      "cards": [
       "drill:Your friend asks '어디에서 왔어요?' You want to say 'I came from England.' Which is correct?:영국에 왔어요.|영국에서 왔어요.*|영국을 왔어요.",
-      "drill:카페___ 만나요. (We meet at a cafe.):에서*|에|를",
-      "order:학교에 가요"
+      "drill:카페___ 만나요. (We meet at a cafe.):에서*|에|를"
      ]
     }
    ]
@@ -589,7 +648,10 @@
      "title": "문법 Grammar · 도 vs 만",
      "cards": [
       "hunt:도 vs 만:도;만",
-      "drill:My friend is coming too.:도*|만"
+      "drill:My friend is coming too.:도*|만",
+      "drill:I only eat rice.:도|으로|만*",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:저는도 학생이에요. / 밥을만 먹어요.|저도 학생이에요. / 밥만 먹어요.*",
+      "drill:빈칸을 채우세요 · Complete the form — Any noun (받침 or not) + 도:도, 물 → 물도, 친구 → 친구도*|만, 밥 → 밥만, 학생 → 학생만"
      ]
     },
     {
@@ -612,7 +674,10 @@
      "title": "문법 Grammar · (으)로",
      "cards": [
       "hunt:(으)로:로;으로",
-      "drill:Please speak in Korean.:로*|으로"
+      "drill:Please speak in Korean.:로*|으로",
+      "drill:I'm heading home.:도|만|으로*",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:지하철으로 가요. / 카드으로 계산해요.|지하철로 가요. / 카드로 계산해요.*",
+      "drill:빈칸을 채우세요 · Complete the form — Noun ends in a vowel:으로, 젓가락 → 젓가락으로, 현금 → 현금으로|로, 연필 → 연필로|로, 버스 → 버스로, 한국어 → 한국어로*"
      ]
     },
     {
@@ -633,7 +698,9 @@
      "title": "대화 Dialogue · 진짜 한국어",
      "cards": [
       "chat:8",
-      "order:물도 주세요"
+      "order:물도 주세요",
+      "drill:누가 한 말일까요? · Who said this?:직원*|민준",
+      "drill:무엇이 들어갈까요? · \"One Americano, please.\":얼마예요|주세요*|카드"
      ]
     },
     {
@@ -641,7 +708,9 @@
      "kind": "reading",
      "title": "읽기 Reading · 편의점에서 (At the Convenience Store)",
      "cards": [
-      "read:2:3qa"
+      "read:2:3qa",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:주세요|결제하다|하나*",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:얼마예요*|주세요|결제하다"
      ]
     },
     {
@@ -650,8 +719,7 @@
      "title": "보스 Boss bite · 다 걸어요",
      "cards": [
       "drill:The staff asks how you want to pay. You want to ask 'Is it okay if I pay by card?' Which is the most natural?:카드에 결제해도 돼요?|카드로 결제해도 돼요?*|카드를 결제해도 돼요?",
-      "drill:카드___ 결제할게요. (I will pay by card.):로*|도|만",
-      "order:물도 주세요"
+      "drill:카드___ 결제할게요. (I will pay by card.):로*|도|만"
      ]
     }
    ]
@@ -679,7 +747,10 @@
      "kind": "pattern",
      "title": "문법 Grammar · -고 싶어요",
      "cards": [
-      "hunt:-고 싶어요:고,싶어요;고,싶어요"
+      "hunt:-고 싶어요:고,싶어요;고,싶어요",
+      "order:저는 물을 마시고 싶어요.",
+      "order:오늘 친구를 만나고 싶어요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:저는 행복해지고 싶어요. / 행복하면 좋겠어요.*|저는 행복하고 싶어요."
      ]
     },
     {
@@ -702,7 +773,9 @@
      "title": "문법 Grammar · -(으)ㄹ 수 있어요 / 없어요",
      "cards": [
       "hunt:-(으)ㄹ 수 있어요 / 없어요:수,있어요;없어요",
-      "drill:I can make kimchi.:수 있어요*|없어요"
+      "drill:I can make kimchi.:수 있어요*|없어요",
+      "order:저는 한국어를 조금 할 수 있어요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:저는 수영을 안 할 수 있어요.|저는 수영을 못 해요. / 수영을 할 수 없어요.*"
      ]
     },
     {
@@ -723,7 +796,8 @@
      "title": "대화 Dialogue · 진짜 한국어",
      "cards": [
       "chat:8",
-      "order:매운 음식을 못 먹어요"
+      "order:매운 음식을 못 먹어요",
+      "drill:누가 한 말일까요? · Who said this?:민수|지혜*"
      ]
     },
     {
@@ -731,7 +805,8 @@
      "kind": "reading",
      "title": "읽기 Reading · 단체 채팅방 — 이번 주말에 뭐 할 수 있어요? (Group Chat — What can everyone do this weekend?)",
      "cards": [
-      "read:2:3qa"
+      "read:2:3qa",
+      "order:이번 주말에 같이 한강에 가고 싶어요."
      ]
     },
     {
@@ -741,8 +816,7 @@
      "cards": [
       "drill:You want to say 'I can speak a little Korean.' Which is correct?:한국어를 조금 말하고 싶어요.|한국어로 조금 말할 수 있어요.*|한국어를 조금 못 말해요.",
       "drill:Your Korean friend says '술 마시고 싶어요?' You can't drink alcohol. What's the most natural reply?:아니요, 술을 마시고 싶지 않아요.|아니요, 저는 술을 못 마셔요.*|아니요, 술을 마실 수 없어요.",
-      "drill:한국어___ 조금 말할 수 있어요. (I can speak a little Korean.):를*|가|에",
-      "order:매운 음식을 못 먹어요"
+      "drill:한국어___ 조금 말할 수 있어요. (I can speak a little Korean.):를*|가|에"
      ]
     }
    ]
@@ -771,7 +845,10 @@
      "title": "문법 Grammar · V아/어 주세요 vs V아/어도 돼요?",
      "cards": [
       "hunt:V아/어 주세요 vs V아/어도 돼요?:주세요;아도,돼요",
-      "drill:Can I take a photo?:주세요|아도 돼요|어도 돼요*"
+      "drill:Can I take a photo?:주세요|아도 돼요|어도 돼요*",
+      "order:천천히 말해 주세요.",
+      "order:여기 앉아도 돼요?",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:여기 앉아도 돼요?*|여기 앉아 주세요? (when you mean 'May I sit here?')"
      ]
     },
     {
@@ -793,7 +870,10 @@
      "title": "문법 Grammar · V지 마세요 & V아/어야 돼요",
      "cards": [
       "hunt:V지 마세요 & V아/어야 돼요:지,마세요;돼요",
-      "drill:Please don't take photos.:지 마세요*|돼요|어야 돼요"
+      "drill:Please don't take photos.:지 마세요*|돼요|어야 돼요",
+      "drill:I have to take the medicine.:어야 돼요*|지 마세요",
+      "order:여기에서 담배를 피우지 마세요.",
+      "order:내일 일찍 일어나야 돼요."
      ]
     },
     {
@@ -815,7 +895,9 @@
      "title": "대화 Dialogue · 진짜 한국어",
      "cards": [
       "chat:8",
-      "order:이것을 만지지 마세요"
+      "order:이것을 만지지 마세요",
+      "drill:누가 한 말일까요? · Who said this?:지훈|직원*",
+      "drill:무엇이 들어갈까요? · \"Sora, may I take a photo?\":입장권|음식|사진*"
      ]
     },
     {
@@ -823,7 +905,9 @@
      "kind": "reading",
      "title": "읽기 Reading · 국립 한국 문화 박물관 관람 안내 (National Korean Culture Museum Visitor Guide)",
      "cards": [
-      "read:2:3qa"
+      "read:2:3qa",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:입장권|사진*|도와주다",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:입장권|도와주다|음식*"
      ]
     },
     {
@@ -833,8 +917,7 @@
      "cards": [
       "drill:A museum staff member walks up and says something. Which sentence means 'Please do not run in the hallway'?:복도에서 뛰어도 돼요?|복도에서 뛰지 마세요.*|복도에서 뛰어야 해요.",
       "drill:Your friend says '가지 마세요!' and you reply that you must go. What do you say?:네, 가지 않아도 돼요.|미안해요, 가야 해요.*|미안해요, 가지 마세요.",
-      "drill:사진___ 찍어도 돼요? (May I take a photo?):을*|이|에",
-      "order:이것을 만지지 마세요"
+      "drill:사진___ 찍어도 돼요? (May I take a photo?):을*|이|에"
      ]
     }
    ]
@@ -864,7 +947,10 @@
      "title": "문법 Grammar · N부터 / N까지",
      "cards": [
       "hunt:N부터 / N까지:부터,까지;까지",
-      "drill:It's far from home to school.:부터*|까지"
+      "drill:It's far from home to school.:부터*|까지",
+      "drill:From what time is the movie?:까지|주세요|부터*",
+      "order:아홉 시부터 여섯 시까지 일해요.",
+      "order:내일까지 책을 읽어요."
      ]
     },
     {
@@ -888,7 +974,10 @@
      "title": "문법 Grammar · V아/어 주세요",
      "cards": [
       "hunt:V아/어 주세요:주세요;어,주세요",
-      "drill:Please speak slowly.:주세요*|어 주세요"
+      "drill:Please speak slowly.:주세요*|어 주세요",
+      "order:다시 말해 주세요.",
+      "order:이 책을 읽어 주세요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:다시 말해 주세요 / 천천히 말해 주세요*|다시 말하 주세요 / 천천히 말하세요 (meaning \"please say it again for me\")"
      ]
     },
     {
@@ -910,7 +999,9 @@
      "title": "대화 Dialogue · 진짜 한국어",
      "cards": [
       "chat:8",
-      "order:다시 말해 주세요"
+      "order:다시 말해 주세요",
+      "drill:누가 한 말일까요? · Who said this?:지민|민준*",
+      "drill:무엇이 들어갈까요? · \"Excuse me, where is the bathroom?\":화장실*|지하철역|출구"
      ]
     },
     {
@@ -918,7 +1009,9 @@
      "kind": "reading",
      "title": "읽기 Reading · 서울역에서 온 문자 (Text messages from Seoul Station)",
      "cards": [
-      "read:2:3qa"
+      "read:2:3qa",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:지하철역|오른쪽|2호선*",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:지하철역|오른쪽|출구*"
      ]
     },
     {
@@ -928,8 +1021,7 @@
      "cards": [
       "drill:A local just gave you fast directions. You didn't catch everything. What do you say?:잘 모르겠어요.|천천히 말해 주세요.*|다시 한 번 주세요.|네, 알겠어요.",
       "drill:안내소는 오전 9시___ 오후 6시___ 열어요. Which pair of particles fits?:에 / 에|부터 / 까지*|에서 / 까지|부터 / 에",
-      "drill:9시___ 6시까지 일해요. (I work from 9 to 6.):부터*|에|를",
-      "order:다시 말해 주세요"
+      "drill:9시___ 6시까지 일해요. (I work from 9 to 6.):부터*|에|를"
      ]
     }
    ]
@@ -957,7 +1049,10 @@
      "kind": "pattern",
      "title": "문법 Grammar · -아서/어서",
      "cards": [
-      "teach:-아서/어서:2ex"
+      "teach:-아서/어서:2ex",
+      "order:배가 고파서 밥을 먹었어요.",
+      "order:시간이 없어서 영화를 못 봤어요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:늦어서 미안해요.*|늦었어서 미안해요."
      ]
     },
     {
@@ -979,7 +1074,10 @@
      "kind": "pattern",
      "title": "문법 Grammar · -고 / -(으)면 / -(으)ㄹ게요",
      "cards": [
-      "teach:-고 / -(으)면 / -(으)ㄹ게요:2ex"
+      "teach:-고 / -(으)면 / -(으)ㄹ게요:2ex",
+      "order:밥을 먹고 학교에 가요.",
+      "order:시간이 있으면 영화를 봐요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:내일 비가 올 거예요.*|내일 비가 올게요."
      ]
     },
     {
@@ -1001,7 +1099,9 @@
      "title": "대화 Dialogue · 진짜 한국어",
      "cards": [
       "chat:8",
-      "order:바빠서 못 가요"
+      "order:바빠서 못 가요",
+      "drill:누가 한 말일까요? · Who said this?:유나|민준*",
+      "drill:무엇이 들어갈까요? · \"Understood. Then let's eat together next time.\":그럼*|바쁘다|아프다"
      ]
     },
     {
@@ -1009,7 +1109,9 @@
      "kind": "reading",
      "title": "읽기 Reading · 지연 씨의 문자 대화 (Jiyeon's Text Exchange)",
      "cards": [
-      "read:2:3qa"
+      "read:2:3qa",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:문자|약속*|바쁘다",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:바쁘다|아프다|그럼*"
      ]
     },
     {
@@ -1019,8 +1121,7 @@
      "cards": [
       "drill:Your friend says she'll treat you. You want to respond 'Then I'll choose the restaurant!' Which is correct?:그럼 제가 식당을 고를게요.*|그럼 제가 식당을 고릴게요.|그럼 제가 식당을 고를 거예요.",
       "drill:You want to say 'I'm tired, so I'm going to rest.' Which connector is correct?:피곤하면 쉴게요.|피곤해서 쉴게요.*|피곤하고 쉴게요.",
-      "drill:이유___ 있어요? (Is there a reason?):가*|를|에서",
-      "order:바빠서 못 가요"
+      "drill:이유___ 있어요? (Is there a reason?):가*|를|에서"
      ]
     }
    ]

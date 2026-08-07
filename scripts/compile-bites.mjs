@@ -98,14 +98,17 @@ writeFileSync(indexFile, JSON.stringify({
 writeFileSync(snacksFile, JSON.stringify({ generatedFrom: packs.length + ' packs', snacks }, null, 1));
 
 mkdirSync(chunksDir, { recursive: true });
-const chunkLevels = {
-  a1: ['A1'],
-  a2: ['A2'],
-  b1: ['B1'],
-  b2c1: ['B2', 'C1'],
+// B1 is the largest level (22 chapters) — as one lazy chunk it blew the
+// 220kB chunk budget after the thickness phase, so it ships in two halves.
+const chunkPick = {
+  a1: (n) => chapterLevel(n) === 'A1',
+  a2: (n) => chapterLevel(n) === 'A2',
+  b1a: (n) => chapterLevel(n) === 'B1' && n <= 45,
+  b1b: (n) => chapterLevel(n) === 'B1' && n > 45,
+  b2c1: (n) => ['B2', 'C1'].includes(chapterLevel(n)),
 };
-for (const [name, levels] of Object.entries(chunkLevels)) {
-  const chunkChapters = chapters.filter((chapter) => levels.includes(chapterLevel(chapter.number)));
+for (const [name, picks] of Object.entries(chunkPick)) {
+  const chunkChapters = chapters.filter((chapter) => picks(chapter.number));
   writeFileSync(
     join(chunksDir, `${name}.json`),
     JSON.stringify({ generatedFrom: files.length + ' chapters', chapters: chunkChapters }, null, 1),

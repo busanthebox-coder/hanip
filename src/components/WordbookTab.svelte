@@ -7,13 +7,13 @@
   import { createDepthLoader } from '../lib/wordbookData.js';
 
   const words = wordbookData.words;
-  const depthModules = import.meta.glob('../lib/wordbook-depth/*.json', { import: 'default' });
-  const depthRetryUrls = import.meta.glob('../lib/wordbook-depth/*.json', {
+  // single-copy shards: `?url` emits each JSON as one hashed asset, no JS twin
+  const depthUrls = import.meta.glob('../lib/wordbook-depth/*.json', {
     eager: true,
     query: '?url',
     import: 'default',
   });
-  const loadDepth = createDepthLoader(depthModules, depthRetryUrls);
+  const loadDepth = createDepthLoader(depthUrls);
   const levels = [...new Set(words.flatMap((word) => word.chapters.map(chapterLevel)))];
 
   export let targetWord = '';

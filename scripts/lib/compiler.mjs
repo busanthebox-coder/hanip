@@ -506,6 +506,19 @@ function placeOptions(correct, distractors, seed) {
 }
 
 const normalizeOrderText = (text) => String(text).replace(/\s+/g, ' ').trim();
+
+// Korean lets adverbials float: 주말에 영화를 봐요 ≡ 영화를 주말에 봐요. A tile
+// exercise only accepts one order, so when a movable chunk could legitimately
+// sit elsewhere we pin the opening word in the prompt (the chapter-54 fix).
+const MOVABLE_CHUNK = /(에|에는|에서|에서는|마다|부터|까지|에게|한테|께|같이|하고|이랑|랑)$/;
+const bareToken = (token) => String(token).replace(/[.,!?…'"’”」』)]+$/u, '');
+function orderStartHint(tokens) {
+  const heads = tokens.slice(0, -1).map(bareToken);
+  if (heads.length < 2) return '';
+  if (!heads.some((t) => MOVABLE_CHUNK.test(t))) return '';
+  const first = bareToken(tokens[0]);
+  return ` (${first} 시작 · Start with ${first}.)`;
+}
 const seedOfText = (text) => [...String(text)].reduce((sum, ch) => sum + ch.codePointAt(0), 0);
 
 // A chapter word that literally appears in a piece of text (nouns/adverbs do;
@@ -532,11 +545,16 @@ function koDistractors(target, pool, { overrides = {}, forbidText = '', count = 
   const blocked = (cand) =>
     bannedFor(target).some((ban) => cand.english.toLowerCase().includes(ban.toLowerCase()))
     || bannedFor(cand).some((ban) => target.english.toLowerCase().includes(ban.toLowerCase()));
+  // a distractor that contains the answer (셔츠 ⊂ 티셔츠) — or sits inside it —
+  // names the same thing; a learner can defensibly pick it, so it never plays
+  const targetHead = String(target.hangul || '').split('/')[0].trim();
+  const headOf = (cand) => String(cand.hangul || '').split('/')[0].trim();
   const usable = (pool || []).filter((cand) =>
     cand !== target
     && cand.hangul !== target.hangul
     && cand.english !== target.english
     && !forbidText.includes(cand.hangul)
+    && !(headOf(cand).includes(targetHead) || targetHead.includes(headOf(cand)))
     && !blocked(cand));
   const same = usable.filter((cand) => cand.partOfSpeech === target.partOfSpeech);
   const rest = usable.filter((cand) => !same.includes(cand));
@@ -545,8 +563,10 @@ function koDistractors(target, pool, { overrides = {}, forbidText = '', count = 
   for (const cand of [...same, ...rest]) {
     if (picks.length >= count) break;
     if (seen.has(cand.english)) continue;
+    const head = headOf(cand);
+    if (picks.some((p) => p.includes(head) || head.includes(p))) continue;
     seen.add(cand.english);
-    picks.push(cand.hangul.split('/')[0].trim());
+    picks.push(head);
   }
   return picks;
 }
@@ -673,6 +693,8 @@ export function buildPatternBites(chapter, overrides = {}) {
           if (h.ex.ko.includes(cand)) continue;
           if (clash(correct, cand)) continue;
           if (cand.includes(' ') !== correct.includes(' ')) continue;
+          // two distractors that contain each other (으면/면) are one distractor
+          if (distractors.some((d) => clash(d, cand))) continue;
           distractors.push(cand);
         }
         if (!distractors.length) continue;
@@ -703,9 +725,9 @@ export function buildPatternBites(chapter, overrides = {}) {
       usedTileCorrects.add(normalized);
       cards.push({
         kind: 'order',
-        prompt: ex.en
+        prompt: (ex.en
           ? `방금 본 문장을 다시 조립하세요 · Rebuild: "${ex.en}"`
-          : '방금 본 문장을 다시 조립하세요 · Rebuild the sentence',
+          : '방금 본 문장을 다시 조립하세요 · Rebuild the sentence') + orderStartHint(tokens),
         tokens,
         correct,
         explanation: '',
@@ -737,10 +759,15 @@ export function buildPatternBites(chapter, overrides = {}) {
     if (rowPairs.length >= 2) {
       for (const { row, pair } of rowPairs.slice(0, 2)) {
         if (!room()) break;
-        const distractors = rowPairs
-          .filter((other) => other.pair.suffix !== pair.suffix && !clash(pair.suffix, other.pair.suffix))
-          .map((other) => other.pair.suffix)
-          .slice(0, 2);
+        const distractors = [];
+        for (const other of rowPairs) {
+          if (distractors.length >= 2) break;
+          const cand = other.pair.suffix;
+          if (cand === pair.suffix || clash(pair.suffix, cand)) continue;
+          // allomorph rows (으면/면) count as one wrong answer, not two
+          if (distractors.some((d) => clash(d, cand))) continue;
+          distractors.push(cand);
+        }
         if (!distractors.length) continue;
         cards.push({
           kind: 'drill',
@@ -891,7 +918,7 @@ export function buildReadingBite(chapter, overrides = {}) {
       if (tokens.length < 3 || tokens.length > 6) continue;
       cards.push({
         kind: 'order',
-        prompt: '지문 문장을 다시 조립하세요 · Rebuild a line from the passage',
+        prompt: '지문 문장을 다시 조립하세요 · Rebuild a line from the passage' + orderStartHint(tokens),
         tokens,
         correct: line,
         explanation: '',

@@ -126,3 +126,12 @@ describe('last played progress', () => {
     expect(get(progress).bowls[Object.keys(get(progress).bowls)[0]]).toBe(1);
   });
 });
+
+describe('order 23 — warmup ratio', () => {
+  it('gives thin bites one warmup and full bites two', async () => {
+    const { warmupCountFor } = await import('./store.js');
+    expect(warmupCountFor({ cards: [{}, {}, {}] })).toBe(1);
+    expect(warmupCountFor({ cards: [{}, {}, {}, {}] })).toBe(2);
+    expect(warmupCountFor({ cards: [] })).toBe(1);
+  });
+});

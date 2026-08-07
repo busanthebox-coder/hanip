@@ -1,15 +1,20 @@
 import courseIndex from './bites-index.json';
 
-const LEVEL_CHUNK = { A1: 'a1', A2: 'a2', B1: 'b1', B2: 'b2c1', C1: 'b2c1' };
+const LEVEL_CHUNK = { A1: 'a1', A2: 'a2', B2: 'b2c1', C1: 'b2c1' };
 const LOAD_CHUNK = {
   a1: () => import('./bites/a1.json'),
   a2: () => import('./bites/a2.json'),
-  b1: () => import('./bites/b1.json'),
+  b1a: () => import('./bites/b1a.json'),
+  b1b: () => import('./bites/b1b.json'),
   b2c1: () => import('./bites/b2c1.json'),
 };
 const LOAD_SNACKS = () => import('./snacks.json');
 
-const chapterLevels = new Map(courseIndex.chapters.map((chapter) => [chapter.id, chapter.level]));
+// B1 ships as two half-chunks (chapters 35-45 / 46-56) to stay under the
+// per-chunk download budget; every other level maps straight from its name
+const chunkOf = (chapter) =>
+  chapter.level === 'B1' ? (chapter.number <= 45 ? 'b1a' : 'b1b') : LEVEL_CHUNK[chapter.level];
+const chapterChunks = new Map(courseIndex.chapters.map((chapter) => [chapter.id, chunkOf(chapter)]));
 const levelPromises = {};
 const hydratedChapters = new Map();
 let snackPromise;
@@ -46,8 +51,7 @@ export function hydrateChapterRomanization(bites) {
   });
 }
 
-function loadLevel(level) {
-  const chunk = LEVEL_CHUNK[level];
+function loadChunk(chunk) {
   if (!levelPromises[chunk]) {
     const promise = LOAD_CHUNK[chunk]().then((module) => module.default);
     levelPromises[chunk] = promise;
@@ -59,12 +63,12 @@ function loadLevel(level) {
 }
 
 export async function loadChapterCards(chapterId) {
-  const level = chapterLevels.get(chapterId);
-  if (!level) throw new Error(`Unknown chapter: ${chapterId}`);
+  const chunk = chapterChunks.get(chapterId);
+  if (!chunk) throw new Error(`Unknown chapter: ${chapterId}`);
 
-  const data = await loadLevel(level);
+  const data = await loadChunk(chunk);
   const chapter = data.chapters.find((item) => item.id === chapterId);
-  if (!chapter) throw new Error(`Chapter ${chapterId} is missing from the ${level} course chunk`);
+  if (!chapter) throw new Error(`Chapter ${chapterId} is missing from the ${chunk} course chunk`);
   if (!hydratedChapters.has(chapterId)) {
     hydratedChapters.set(chapterId, hydrateChapterRomanization(chapter.bites));
   }

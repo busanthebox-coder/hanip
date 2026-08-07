@@ -39,12 +39,20 @@ describe('compiled course data split', () => {
       }
     }
 
-    const chunkLevels = { a1: ['A1'], a2: ['A2'], b1: ['B1'], b2c1: ['B2', 'C1'] };
+    // B1 ships split in two halves so no single lazy chunk exceeds the budget
+    const chunkRules = {
+      a1: (n) => chapterLevel(n) === 'A1',
+      a2: (n) => chapterLevel(n) === 'A2',
+      b1a: (n) => chapterLevel(n) === 'B1' && n <= 45,
+      b1b: (n) => chapterLevel(n) === 'B1' && n > 45,
+      b2c1: (n) => ['B2', 'C1'].includes(chapterLevel(n)),
+    };
     const partition = [];
-    for (const [chunkName, levels] of Object.entries(chunkLevels)) {
+    for (const [chunkName, allowed] of Object.entries(chunkRules)) {
       const chunk = JSON.parse(readFileSync(join(root, 'src', 'lib', 'bites', `${chunkName}.json`), 'utf8'));
+      expect(chunk.chapters.length).toBeGreaterThan(0);
       for (const chapter of chunk.chapters) {
-        expect(levels).toContain(chapterLevel(chapter.number));
+        expect(allowed(chapter.number)).toBe(true);
         expect(chapter.bites.every((bite) => Array.isArray(bite.cards) && bite.cards.length > 0)).toBe(true);
       }
       partition.push(...chunk.chapters);
@@ -825,5 +833,157 @@ describe('order 22 — reading fallback', () => {
     expect(order).toBeTruthy();
     expect(order.correct.startsWith('지은')).toBe(false); // speaker prefix stripped
     expect(order.tokens.length).toBeGreaterThanOrEqual(3);
+  });
+});
+
+/* ---------------- order 23: distractor hygiene on generated questions ---------------- */
+
+describe('order 23 — no redundant or mutually-inclusive distractors', () => {
+  const mutualSubstring = (card) => {
+    const texts = (card.options || []).map((o) => o.text);
+    return texts.some((a) => texts.some((b) => a !== b && (a.includes(b) || b.includes(a))));
+  };
+
+  it('form-table cloze never offers two allomorphs of the same ending together', () => {
+    const chapter = {
+      id: 'chapter-92',
+      inlineExercises: [],
+      grammarNotes: [{
+        title: 'V-지만 — but',
+        func: 'Contrast.',
+        formTable: [
+          { when: 'contrast', add: '지만', ex: '먹 → 먹지만' },
+          { when: 'vowel stem', add: '면', ex: '가 → 가면' },
+          { when: 'consonant stem', add: '으면', ex: '먹 → 먹으면' },
+        ],
+        examples: [{ ko: '먹지만 좋아요.', en: 'I eat it but like it.' }],
+      }],
+    };
+    const [bite] = buildPatternBites(chapter);
+    const formClozes = bite.cards.filter((c) => c.kind === 'drill' && c.prompt.startsWith('빈칸을 채우세요'));
+    expect(formClozes.length).toBeGreaterThanOrEqual(1);
+    for (const card of formClozes) expect(mutualSubstring(card)).toBe(false);
+  });
+
+  it('widened cloze never picks two table suffixes that contain each other', () => {
+    const chapter = {
+      id: 'chapter-91',
+      inlineExercises: [],
+      grammarNotes: [
+        {
+          title: 'N도 — also',
+          func: 'Adds "also".',
+          formTable: [
+            { when: 'vowel', add: '로', ex: '학교 → 학교로' },
+            { when: 'consonant', add: '으로', ex: '집 → 집으로' },
+          ],
+          examples: [
+            { ko: '물도 주세요.', en: 'Water too, please.' },
+            { ko: '저도 가요.', en: 'I go too.' },
+            { ko: '빵도 먹어요.', en: 'I eat bread too.' },
+          ],
+        },
+        {
+          title: 'N만 — only',
+          func: 'Limits to only.',
+          formTable: [],
+          examples: [{ ko: '물만 마셔요.', en: 'I only drink water.' }],
+        },
+      ],
+    };
+    const bites = buildPatternBites(chapter);
+    for (const bite of bites) {
+      for (const card of bite.cards) {
+        if (card.kind !== 'drill' || !card.sentence?.includes('___')) continue;
+        expect(mutualSubstring(card)).toBe(false);
+      }
+    }
+  });
+
+  it('vocab clozes refuse distractors that contain (or sit inside) the answer', () => {
+    const chapter = {
+      id: 'chapter-90',
+      extendedVocabulary: [
+        { hangul: '셔츠', romanization: 'syeocheu', english: 'shirt', partOfSpeech: 'noun', exampleSentence: { ko: '이 셔츠 입어 봐도 돼요?', en: 'May I try on this shirt?' } },
+        { hangul: '티셔츠', romanization: 'tisyeocheu', english: 't-shirt', partOfSpeech: 'noun', exampleSentence: { ko: '티셔츠를 샀어요.', en: 'I bought a t-shirt.' } },
+        { hangul: '바지', romanization: 'baji', english: 'pants', partOfSpeech: 'noun', exampleSentence: { ko: '바지가 길어요.', en: 'The pants are long.' } },
+        { hangul: '모자', romanization: 'moja', english: 'hat', partOfSpeech: 'noun', exampleSentence: { ko: '모자를 써요.', en: 'I wear a hat.' } },
+      ],
+      extendedDialogue: {
+        setting: 'shop',
+        lines: [
+          { speaker: '손님', ko: '저기요, 안녕하세요.', en: 'Excuse me, hello.' },
+          { speaker: '점원', ko: '네, 어서 오세요. 천천히 둘러보세요, 손님.', en: 'Yes, welcome. Take your time looking around.' },
+          { speaker: '손님', ko: '이 셔츠 입어 봐도 돼요?', en: 'May I try on this shirt?' },
+        ],
+      },
+      inlineExercises: [],
+    };
+    const bite = buildDialogueBite(chapter, {});
+    const cloze = bite.cards.find((c) => c.kind === 'drill' && c.sentence?.includes('___'));
+    expect(cloze).toBeTruthy();
+    expect(cloze.options.find((o) => o.ok).text).toBe('셔츠');
+    expect(cloze.options.some((o) => o.text === '티셔츠')).toBe(false);
+    expect(cloze.options.length).toBeGreaterThanOrEqual(3);
+  });
+});
+
+describe('order 23 — free-word-order tiles carry a start hint', () => {
+  it('adds "(X 시작)" when a movable adverbial makes other orders valid, and stays quiet otherwise', () => {
+    const chapter = {
+      id: 'chapter-89',
+      inlineExercises: [],
+      grammarNotes: [{
+        title: 'N에 — time/place',
+        func: 'Marks time.',
+        formTable: [],
+        examples: [
+          { ko: '주말에 영화를 봐요.', en: 'I watch a movie on the weekend.' },
+          { ko: '아침에 커피를 마셔요.', en: 'I drink coffee in the morning.' },
+          { ko: '저녁에 책을 읽어요.', en: 'I read a book in the evening.' },
+        ],
+      }, {
+        title: 'N을/를 — object',
+        func: 'Marks the object.',
+        formTable: [],
+        examples: [
+          { ko: '저는 사과를 먹어요.', en: 'I eat an apple.' },
+          { ko: '저는 물을 마셔요.', en: 'I drink water.' },
+          { ko: '저는 책을 읽어요.', en: 'I read a book.' },
+        ],
+      }],
+    };
+    const bites = buildPatternBites(chapter);
+    const tiles = bites.flatMap((b) => b.cards).filter((c) => c.kind === 'order');
+    expect(tiles.length).toBeGreaterThanOrEqual(2);
+    for (const tile of tiles) {
+      if (/(에|에서|마다)$/.test(tile.tokens[0].replace(/[.,!?]+$/u, '')) && tile.tokens.length >= 3) {
+        expect(tile.prompt).toContain('시작 · Start with');
+        expect(tile.prompt).toContain(tile.tokens[0].replace(/[.,!?]+$/u, ''));
+      }
+    }
+    const plain = tiles.find((c) => c.correct.startsWith('저는'));
+    expect(plain).toBeTruthy();
+    expect(plain.prompt).not.toContain('Start with');
+  });
+
+  it('reading-passage fallback tiles get the same hint when needed', () => {
+    const chapter = {
+      id: 'chapter-88',
+      extendedVocabulary: [
+        { hangul: '걷다', romanization: 'geotda', english: 'to walk', partOfSpeech: 'verb', exampleSentence: { ko: '공원에서 걸어요.', en: 'I walk in the park.' } },
+      ],
+      inlineExercises: [],
+      readingText: {
+        title: '산책',
+        body: '아침에 공원에서 천천히 걸어요.',
+        bodyTranslation: 'In the morning I walk slowly in the park.',
+        comprehensionQuestions: [],
+      },
+    };
+    const bite = buildReadingBite(chapter, {});
+    const tile = bite.cards.find((c) => c.kind === 'order');
+    expect(tile).toBeTruthy();
+    expect(tile.prompt).toContain('아침에 시작 · Start with 아침에');
   });
 });

@@ -80,7 +80,13 @@ export function migrateCollected(index) {
 }
 
 // up to 2 recall cards from earlier bites, excluding this bite's own words
-export function warmupCards(bite, count = 2, now = Date.now()) {
+// order 23: warmups scale with the lesson. A thin bite (under 4 study cards)
+// gets one recall, not two — review must never outweigh the lesson itself.
+export function warmupCountFor(bite) {
+  return (bite?.cards?.length ?? 0) < 4 ? 1 : 2;
+}
+
+export function warmupCards(bite, count = warmupCountFor(bite), now = Date.now()) {
   const { learned, done } = get(progress);
   if (Object.keys(done).length === 0) return [];
   const current = new Set(bite.cards.filter((c) => c.kind === 'guess').map((c) => c.word.ko));

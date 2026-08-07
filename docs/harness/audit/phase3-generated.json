@@ -1,0 +1,34 @@
+{
+  "scope": "orders 21-22 generated cards (snapshot-all diff)",
+  "date": "2026-08-07",
+  "generated": {
+    "total": 1028,
+    "drill": 610,
+    "order": 418
+  },
+  "screens": [
+    "exactly one correct option; no duplicate options",
+    "distractor-vs-distractor containment and interchangeable pairs (pitfall picks exempt: minimal pairs are the lesson)",
+    "correct-vs-distractor containment (EN-anchored grammar contrasts accepted as minors; vocab clozes and unanchored cases are blockers)",
+    "cloze distractor must not already appear in the completed line",
+    "order tiles rebuild exactly; free-word-order tiles must pin the start (ch-54 pattern)",
+    "who-said-it has two distinct speakers; pitfall wrong ≠ right"
+  ],
+  "fixesThisOrder": [
+    "compiler: two distractors that contain each other (으면/면, 으로/로, 으ㄹ게요/ㄹ게요) collapse to one — widened cloze + form-table cloze",
+    "compiler: vocab-cloze distractor pool refuses candidates in containment with the answer (셔츠/티셔츠) — dialogue line cloze + reading recall",
+    "compiler: generated tiles with a movable adverbial chunk pin the opening word: \"(X 시작 · Start with X.)\""
+  ],
+  "blockers": [],
+  "minors": [
+    {
+      "at": "chapter-44-b9 :: drill:학교___ 가요. (I go to school.):에*|에서|가",
+      "why": "containment pair kept — EN anchor disambiguates (에 vs 에서)"
+    }
+  ],
+  "humanSample": {
+    "rule": "every 37th generated drill",
+    "size": 17,
+    "verdict": "read in-session; recall distractors weak-but-safe, grammar choices decidable by stem or EN gloss"
+  }
+}

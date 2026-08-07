@@ -56,9 +56,14 @@ npm run smoke:stats
 
 ## Status
 
-65 chapters across A1–C1 compile to 619 chapter bites and 2,039 chapter cards. The shelf also carries
-12 snack bites (173 cards), 20 short readers, and all 32 confusable expression sets. The bilingual
-wordbook contains 718 course words with lazy-loaded nuance, mistakes, forms, examples, and contrast cards.
+65 chapters across A1–C1 compile to 619 chapter bites and 2,977 chapter cards — after the thickness
+phase, every grammar bite ends in at least two questions, no bite is a single card, and the median
+bite is 5 cards. The shelf also carries 12 snack bites (173 cards), 20 short readers, and all 32
+confusable expression sets. The bilingual wordbook contains 718 course words with lazy-loaded
+nuance, mistakes, forms, examples, and contrast cards. Warmup recall scales with the lesson:
+2 cards before a full bite, 1 before a thin one, none on direct shelf entry.
+(`guard:thin` in `package.json` is the thickness-phase gate that skips the baseline check — it
+stays for the next additive phase; day-to-day gates are `guard` and `guard:full`.)
 
 Home recommends the next chapter bite or boundary snack from one shared calculator, shows the current
 level, and restores an unfinished item through Continue. Progress, learned-word pool, daily bowls, and
