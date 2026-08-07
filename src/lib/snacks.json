@@ -1,5 +1,5 @@
 {
- "generatedFrom": "12 packs",
+ "generatedFrom": "12 vocab packs + 6 expression packs",
  "snacks": [
   {
    "id": "snack-survival-basics",
@@ -3635,6 +3635,1854 @@
       "Oh no, what do we do",
       "Really?! / for real? — surprised, more colloquial and emotional than 정말요.",
       "Really? — a polite check that you heard right, mild surprise or interest."
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "snack-transport",
+   "packId": "pack-transport",
+   "kind": "snack",
+   "title": "교통 표현 · Getting Around",
+   "shortTitle": "교통 Transport",
+   "afterChapter": 23,
+   "level": "A2",
+   "canDo": "Ask the way, ride, transfer, and get off where you meant to.",
+   "index": 0,
+   "cardCount": 14,
+   "cards": [
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "길 좀 여쭤볼게요",
+      "romanization": "gil jom yeojjwobolgeyo",
+      "en": "May I ask you for directions?",
+      "pos": "expression",
+      "nuance": "직역하면 '길을 좀 여쭤볼게요' is 'I will ask you for the road a bit' — but the real function is a courteous opener before asking directions of a stranger. 여쭤보다 is the humble form of 물어보다: it lowers the speaker and elevates the listener, which is exactly right when you're asking a favor of someone you don't know. Speech level matters: with a friend or someone younger drop to the plain 물어볼게 (반말), and in a very formal setting with an elder say 말씀 좀 여쭤보겠습니다 (격식). The nearest alternative expression is 저기요, 말씀 좀 묻겠습니다, but 묻다 is neutral while 여쭤보다 actively honors the person — that humility is the real dividing line. Variant scale: 여쭤볼게요 (standard polite) → 여쭤봐도 될까요? (extra courteous, seeking permission) → 여쭤보겠습니다 (격식). The classic English-speaker mistake is launching straight into 'Where is...?' with no opener, which feels abrupt or rude; Koreans almost always cushion the question with an opener first."
+     },
+     "sentence": {
+      "ko": "저기요, 길 좀 여쭤볼게요. 서울역이 어느 쪽이에요?",
+      "en": "Excuse me, may I ask for directions? Which way is Seoul Station?"
+     },
+     "target": "길 좀 여쭤볼게요",
+     "options": [
+      "Is it far from here?",
+      "Can I get there on foot?",
+      "May I ask you for directions?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "여기 어떻게 가요?",
+      "romanization": "yeogi eotteoke gayo?",
+      "en": "How do I get here?",
+      "pos": "expression",
+      "nuance": "직역하면 'Here — how do (I/you) go?' — the real function is asking the route to a destination you're pointing at on your phone map or a written address. The key insight: 여기 ('here') works because you're showing the destination visually — it refers to the spot on your screen, not where you're physically standing, so the target becomes 'here' for both speakers. Politeness lives entirely in the ending: 가요? is the everyday polite for strangers, 가? is 반말 for friends. The closest alternative expression is 여기 어떻게 찾아가요? ('how do I find my way there'), which carries the nuance of tracking down a hard-to-find spot; plain 어떻게 가요? just asks the route. Variant scale: 가요? (polite) → 가? (반말) → 가야 돼요? (polite + worried) → 가려면 어떻게 해요? (purpose-first, at info desks). The big English-speaker mistake is translating 'How can I go?' as 어떻게 갈 수 있어요?, which asks whether it is POSSIBLE or PERMITTED — for directions, use 어떻게 가요? (how, by what route)."
+     },
+     "sentence": {
+      "ko": "여기 어떻게 가요?",
+      "en": "How do I get here?"
+     },
+     "target": "여기 어떻게 가요?",
+     "options": [
+      "Which exit number do I go out?",
+      "How do I get here?",
+      "Does this go to City Hall?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "여기서 멀어요?",
+      "romanization": "yeogiseo meoreoyo?",
+      "en": "Is it far from here?",
+      "pos": "expression",
+      "nuance": "직역하면 'From here, is it far?' — said to a stranger or staff right after they tell you where something is, so you can decide whether to walk or take transit. 여기서 is the contracted 여기에서 marking the starting point ('from here') — the 에서 is non-negotiable because distance is measured FROM a point, not AT it. Speech level is the ending only: 멀어요? (존댓말, stranger), 멀어? (반말, friend). The near alternative expression is 여기서 가까워요?, but it is not just a synonym — 가까워요? carries a hopeful tone ('please tell me it's nearby'), while 멀어요? braces for inconvenience; that emotional lean is the true dividing line. Variant scale: 멀어요? (neutral polite) → 많이 멀어요? (worried emphasis) → 걸어서 멀어요? (mode-specific). The English-speaker error is adding an explicit subject like 그것은 멀어요? or 그 장소는 멀어요? — Korean drops the subject entirely; the bare 여기서 멀어요? is complete and natural."
+     },
+     "sentence": {
+      "ko": "여기서 멀어요?",
+      "en": "Is it far from here?"
+     },
+     "target": "여기서 멀어요?",
+     "options": [
+      "May I ask you for directions?",
+      "Is it far from here?",
+      "Can I get there on foot?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "걸어서 갈 수 있어요?",
+      "romanization": "georeoseo gal su isseoyo?",
+      "en": "Can I get there on foot?",
+      "pos": "expression",
+      "nuance": "직역하면 'By walking, is it possible to go?' — said to a passerby or staff when deciding whether to walk instead of taking transit. 걸어서 is formed from 걷다 (walk) + 어서, the manner connector meaning 'by means of', so the phrase asks 'is going by walking possible?' Speech level is the ending: 갈 수 있어요? (존댓말), 갈 수 있어? (반말). The three close variants have different focuses: 갈 수 있어요? (can I / is it possible), 걸어가도 돼요? (is it okay, advisable), 갈 만해요? (is it worth the walk, a quality judgment) — 걸어가도 돼요? is the nearest alternative expression and is very commonly heard. Variant scale: 걸어서 갈 수 있어요? → 걸어가도 돼요? → 걸어서 갈 만해요? The English-speaker trap is saying 걸을 수 있어요?, which asks whether your legs work or whether you are physically capable of walking — you need the directional compound 걸어서 가다 ('walk THERE') to ask about the route. A second mistake: 걸어서 갈게요 is a statement of intent ('I'll walk'), not a question."
+     },
+     "sentence": {
+      "ko": "걸어서 갈 수 있어요?",
+      "en": "Can I get there on foot?"
+     },
+     "target": "걸어서 갈 수 있어요?",
+     "options": [
+      "Can I get there on foot?",
+      "May I ask you for directions?",
+      "Is it far from here?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "얼마나 걸려요?",
+      "romanization": "eolmana geollyeoyo?",
+      "en": "How long does it take?",
+      "pos": "expression",
+      "nuance": "직역하면 'How much does it take?' — the verb 걸리다 has three unrelated senses (hang, catch a disease, take time), but in a transport conversation the time sense is automatic. Speech level is the ending alone: 걸려요? (존댓말), 걸려? (반말). The nearest alternative expression is 시간이 얼마나 들어요?, which uses 들다 ('go into', 'cost') and leans toward effort or resources; 걸리다 is the default for clock duration. To remove any ambiguity, add 시간이 at the front: 시간이 얼마나 걸려요? Variant scale: 걸려요? (standard polite) → 얼마나 오래 걸려요? (emphasizing expected length) → 시간이 얼마나 걸려요? (explicit, formal). Combine with a mode — 지하철로, 걸어서, 버스로 — to specify exactly what kind of time you're asking about. The frequent English-speaker error is asking 얼마예요? — that means 'how much does it cost', not 'how long'; for duration the question must be 얼마나 걸려요?. Also critical: bare 얼마 걸려요? (dropping 나) sounds truncated and unnatural."
+     },
+     "sentence": {
+      "ko": "얼마나 걸려요?",
+      "en": "How long does it take?"
+     },
+     "target": "얼마나 걸려요?",
+     "options": [
+      "How long does it take?",
+      "May I ask you for directions?",
+      "Is it far from here?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "몇 번 출구로 나가요?",
+      "romanization": "myeot beon chulguro nagayo?",
+      "en": "Which exit number do I go out?",
+      "pos": "expression",
+      "nuance": "직역하면 'By what number exit do I go out?' — used at subway or train stations where each exit is labelled with a number. Speech level is the ending: 나가요? (존댓말), 나가? (반말). The nearest alternative expression is 몇 번 출구로 나오면 돼요? ('which exit do I come out of?'), heard constantly from local Seoulites; the dividing line between it and 나가요? is subtle — 나가다 focuses on the act of going out, while 나오다 focuses on arriving at the street-level result. Variant scale: 몇 번 출구로 나가요? → 몇 번 출구로 나가야 돼요? (urgent) → 몇 번 출구예요? (quickest, just the number). Combine with a destination: [장소] 가려면 몇 번 출구로 나가요? The English-speaker mistake is asking 어느 출구로 나가요? by analogy with 'which exit' — but because Seoul exits are numbered, Koreans ask 몇 번 ('what number'), not 어느 ('which of an unspecified few'). Also never use 출구에서 나가요? — the direction particle is 로, not 에서."
+     },
+     "sentence": {
+      "ko": "몇 번 출구로 나가요?",
+      "en": "Which exit do I go out?"
+     },
+     "target": "몇 번 출구로 나가요?",
+     "options": [
+      "Which exit number do I go out?",
+      "May I ask you for directions?",
+      "How do I get here?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "이거 시청 가요?",
+      "romanization": "igeo sicheong gayo?",
+      "en": "Does this go to City Hall?",
+      "pos": "expression",
+      "nuance": "직역하면 'This one — City Hall — does it go?' — a rapid boarding check fired at a bus driver or fellow passenger as you step on or approach. 이거 ('this one') points at the exact vehicle; the destination particle 에 is dropped in casual transit speech. Speech level: address the driver as 기사님 + 이거 시청 가요? (존댓말); between friends use 이거 시청 가? (반말). The near alternative expression is 이거 시청 쪽으로 가요?, which asks for general direction ('does it head toward City Hall?') rather than 'does it actually stop there' — use it when you only need to be in that area, not at the exact stop. Variant scale: 이거 시청 가요? → 이 버스 시청 가요? (specifying the vehicle) → 이거 시청 쪽으로 가요? (direction only). The English-speaker trap is over-formalizing: 이것은 시청에 갑니까? is grammatically correct but textbook-stiff and far too slow for a doorway. A crucial wrong form is 이거 시청 와요? — from the passenger's perspective the bus 가다 ('goes') there, not 오다 ('comes')."
+     },
+     "sentence": {
+      "ko": "기사님, 이거 시청 가요?",
+      "en": "Driver, does this go to City Hall?"
+     },
+     "target": "이거 시청 가요?",
+     "options": [
+      "May I ask you for directions?",
+      "How do I get here?",
+      "Does this go to City Hall?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "어디서 갈아타요?",
+      "romanization": "eodiseo garatayo?",
+      "en": "Where do I transfer?",
+      "pos": "expression",
+      "nuance": "직역하면 'At where do I change-and-ride?' — asked of station staff or a knowledgeable rider when your route requires a transfer. 갈아타다 is a compound verb formed from 갈다 ('replace/change') + 타다 ('ride'); it is far more natural than the clumsy paraphrase 버스를 바꿔서 타요. The transfer happens AT a station, so the location takes 에서 (contracted to 서 in 어디서): that 에서 is non-negotiable. Speech level is the ending: 갈아타요? (존댓말), 갈아타? (반말). The nearest alternative expression is 몇 호선으로 갈아타요?, which asks which LINE to switch to (note 으로, direction toward the line), versus 어디서 갈아타요? which asks the station — pick by what information you're missing. Variant scale: 어디서 갈아타요? → 어디서 갈아타야 돼요? (urgent) → 어디서 몇 호선으로 갈아타요? (asking both). The English-speaker pitfall is building 'transfer' from two English ideas: 버스를 바꿔서 타요 sounds like you're exchanging a physical ticket; the single idiomatic verb 갈아타다 is always the right choice."
+     },
+     "sentence": {
+      "ko": "어디서 갈아타요?",
+      "en": "Where do I transfer?"
+     },
+     "target": "어디서 갈아타요?",
+     "options": [
+      "May I ask you for directions?",
+      "How do I get here?",
+      "Where do I transfer?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "여기서 내려요",
+      "romanization": "yeogiseo naeryeoyo",
+      "en": "I get off here.",
+      "pos": "expression",
+      "nuance": "직역하면 'From here I get down' — 내리다 is the verb for alighting from any vehicle (bus, subway, taxi), and 여기서 (= 여기에서) marks the location of the alighting. The 에서 is non-negotiable: 내리다 takes the FROM/AT particle 에서, never the destination particle 에. Speech level shapes the nuance: 내릴게요 (using the 게 'I'll do it' ending) is the gentlest, warning fellow passengers to make room; 내려요 is a neutral polite statement; 내려 is casual (반말). The nearest alternative expression is 세워 주세요 ('please stop the vehicle'), which is directed at the driver — the dividing line is 내려요 announces YOUR own action while 세워 주세요 commands the driver's action; you often need both together. Variant scale: 내릴게요 (heads-up) → 내려요 (polite statement) → 내려 (반말) → 내려야 돼요 (urgent/forced). The English-speaker error is saying 여기서 나가요 for 'get out' — 나가다 is for exiting a building or room on foot; leaving a vehicle is always 내리다."
+     },
+     "sentence": {
+      "ko": "A: 다음에서 내려요? / B: 아니요, 여기서 내려요. 지금이에요.",
+      "en": "A: Are we getting off at the next stop? / B: No, we get off here — this is it."
+     },
+     "target": "여기서 내려요",
+     "options": [
+      "May I ask you for directions?",
+      "I get off here.",
+      "How long does it take?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "다음 역이 어디예요?",
+      "romanization": "daeum yeogi eodiyeyo?",
+      "en": "What's the next station?",
+      "pos": "expression",
+      "nuance": "직역하면 'The next station — where is it?' — asked of a fellow passenger when you've drifted or lost track of the stops. The crucial vocabulary: 역 means a train or subway station; on a bus the word is 정류장. Speech level is the ending: 어디예요? (존댓말, stranger or adult), 어디야? (반말, friend). The subject particle 이 is natural (다음 역이) but freely dropped in fast speech (다음 역 어디예요?). The nearest alternative expression is 다음이 무슨 역이에요?, which specifically asks for the station NAME (matches your map), whereas 어디예요? accepts either a name or a count ('two more stops') — the dividing line is precision of identity. Variant scale: 다음 역이 어디예요? → 다음이 무슨 역이에요? (name required) → 시청역 몇 정거장 남았어요? (count). English speakers sometimes ask 다음 역은 무엇입니까? — bookish and odd, because 무엇 fits objects, not places; use 어디 or 무슨 역 for station identity."
+     },
+     "sentence": {
+      "ko": "저기요, 다음 역이 어디예요? 제가 깜빡 졸았어요.",
+      "en": "Excuse me, what's the next station? I dozed off."
+     },
+     "target": "다음 역이 어디예요?",
+     "options": [
+      "May I ask you for directions?",
+      "How do I get here?",
+      "What's the next station?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "지하철이 빨라요",
+      "romanization": "jihacheori ppallayo",
+      "en": "The subway is faster.",
+      "pos": "expression",
+      "nuance": "직역하면 'The subway is fast/faster' — practical travel advice when someone is weighing transit options. 빠르다 is a 르-irregular adjective: before 아/어, the stem doubles the ㄹ to give 빨라요 (not 빠르어요). Speech level is the ending: 빨라요 (존댓말), 빨라 (반말). To set up the comparison explicitly, put the slower option + 보다 ('than') before the subject: 버스보다 지하철이 빨라요. The near alternative expression is 지하철이 더 나아요 ('the subway's better overall'), which folds in cost and comfort as well; 빨라요 specifically means speed only — choose it when time is what matters. Variant scale: 빨라요 → 더 빨라요 → 훨씬 빨라요 ('much faster') → 이 시간엔 빨라요 (situational). English speakers sometimes confuse 빠르다 (fast, of speed or earliness) with 이르다 (early, of time) — for an early arrival use 일찍 왔어요, not 빨라요. Also watch the particle order: 지하철은 버스가 빨라요 is garbled; put 보다 on the slower item."
+     },
+     "sentence": {
+      "ko": "버스보다 지하철이 빨라요. 지금 길이 많이 막혀요.",
+      "en": "The subway is faster than the bus — traffic's really backed up."
+     },
+     "target": "지하철이 빨라요",
+     "options": [
+      "May I ask you for directions?",
+      "How do I get here?",
+      "The subway is faster."
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "버스 정류장 어디예요?",
+      "romanization": "beoseu jeongnyujang eodiyeyo?",
+      "en": "Where's the bus stop?",
+      "pos": "expression",
+      "nuance": "직역하면 'Bus stop — where is it?' — a high-frequency question to a passerby when you need to find where buses load. Key vocabulary: 정류장 is 'bus stop'; 역 is a railway or subway station — they are not interchangeable, and 버스 역 is simply wrong. Speech level is the ending: 어디예요? (존댓말, stranger), 어디야? (반말, friend). In fast speech the subject particle is usually dropped: 버스 정류장 어디예요? rather than 버스 정류장이 어디예요? The nearest alternative expression is 정류장이 어디 있어요?: 어디예요? assumes the stop exists and asks its location, while 어디 있어요? foregrounds existence and fits when you're not sure there's a stop in this neighborhood — that is the true dividing line. Variant scale: 버스 정류장 어디예요? → 가까운 버스 정류장 어디예요? (nearest) → 정류장이 어디 있어요? (existence check). The English-speaker mistake is using the loanword 버스 스탑 or saying 버스 역 — neither is idiomatic; say 버스 정류장 or just 정류장."
+     },
+     "sentence": {
+      "ko": "저기요, 가까운 버스 정류장 어디예요?",
+      "en": "Excuse me, where's the nearest bus stop?"
+     },
+     "target": "버스 정류장 어디예요?",
+     "options": [
+      "Where's the bus stop?",
+      "May I ask you for directions?",
+      "How do I get here?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "길을 잃었어요",
+      "romanization": "gireul ireosseoyo",
+      "en": "I'm lost.",
+      "pos": "expression",
+      "nuance": "직역하면 'The road [I] have lost' — 길을 잃다 is the set idiomatic phrase for being lost, with 길 taking the object particle 을 (required, not optional). The past tense 잃었어요 is correct even though English says present 'I AM lost', because Korean treats the losing as a completed event that resulted in your current state. Speech level: 잃었어요 (존댓말), 잃었어 (반말). The nearest alternative expression is 여기가 어딘지 모르겠어요 ('I don't know where I am'), which is softer and indirect and frequently preferred — the dividing line is that 길을 잃었어요 names the predicament while 어딘지 모르겠어요 describes your inner confusion. Variant scale: 길을 잃었어요 (standard) → 길을 잃어버렸어요 (emphatic, panicked) → 완전히 길을 잃어버렸어요 (completely lost). The big English-speaker mistake is using the present tense 길을 잃어요, which sounds habitual ('I lose my way regularly'); always use the past 잃었어요 for being lost right now. A second trap: confusing 잃다 (lose) with 잊다 (forget) — 길을 잊었어요 means 'I forgot the route', not that you're lost."
+     },
+     "sentence": {
+      "ko": "저기요, 길을 잃었어요. 시청역이 어느 쪽이에요?",
+      "en": "Excuse me, I'm lost. Which way is City Hall Station?"
+     },
+     "target": "길을 잃었어요",
+     "options": [
+      "May I ask you for directions?",
+      "I'm lost.",
+      "How do I get here?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "이 근처예요?",
+      "romanization": "i geuncheoyeyo?",
+      "en": "Is it around here?",
+      "pos": "expression",
+      "nuance": "직역하면 'Is it this vicinity?' — used to confirm a guess that your destination is in the immediate area. 근처 is a noun meaning 'vicinity/nearby area', and 이 근처 ('this vicinity') points to where you both physically stand. Speech level is the ending: 이 근처예요? (존댓말), 이 근처야? (반말). The nearest alternative expression is 이 근처에 있어요? — 이 근처예요? asks identity ('is [the place] around here?') while 이 근처에 있어요? asks existence ('is there one here?'), and that grammar split is the true dividing line. Variant scale: 이 근처예요? → 이 근처 맞아요? (confirming a strong guess) → 이 근처에 있어요? (existence check) → 이쪽이에요? (even more casual, directional). The English-speaker error is using the adverb 가까이 as a noun — 이 가까이예요? is ungrammatical; the noun for the nearby area is 근처. A second trap: dropping 에 when asking existence — 이 근처 있어요? should be 이 근처에 있어요?; the 에 marking location of existence is required."
+     },
+     "sentence": {
+      "ko": "이 근처예요? 지도에는 여기쯤 나오는데요.",
+      "en": "Is it around here? The map shows it somewhere around here."
+     },
+     "target": "이 근처예요?",
+     "options": [
+      "May I ask you for directions?",
+      "Is it around here?",
+      "Can I get there on foot?"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "snack-restaurant",
+   "packId": "pack-restaurant",
+   "kind": "snack",
+   "title": "식당·카페 주문 · Ordering Food & Drinks",
+   "shortTitle": "주문 Ordering",
+   "afterChapter": 52,
+   "level": "B1",
+   "canDo": "Order, pay, and answer the counter questions without switching to English.",
+   "index": 0,
+   "cardCount": 14,
+   "cards": [
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "물 주세요",
+      "romanization": "mul juseyo",
+      "en": "Water, please.",
+      "pos": "expression",
+      "nuance": "좀 softens a request. 물 좀 주세요 sounds natural and polite enough in restaurants."
+     },
+     "sentence": {
+      "ko": "물 주세요.",
+      "en": "Water, please."
+     },
+     "target": "물 주세요",
+     "options": [
+      "I will eat well (said before eating).",
+      "Water, please.",
+      "I ate well (said after eating)."
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "계산해 주세요",
+      "romanization": "gyesanhae juseyo",
+      "en": "Check, please.",
+      "pos": "expression",
+      "nuance": "계산하다 means calculate or pay/check out. In restaurants it means paying the bill."
+     },
+     "sentence": {
+      "ko": "계산해 주세요.",
+      "en": "Check, please."
+     },
+     "target": "계산해 주세요",
+     "options": [
+      "Check, please.",
+      "I will eat well (said before eating).",
+      "I ate well (said after eating)."
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "잘 먹겠습니다",
+      "romanization": "jal meokgesseumnida",
+      "en": "I will eat well (said before eating).",
+      "pos": "expression",
+      "nuance": "잘 먹겠습니다 is the fixed courtesy phrase said JUST BEFORE eating, particularly when someone has cooked for you or is treating you to a meal. Structure: 잘 'well' + 먹다 'to eat' + the forward-looking intention marker -겠- ('I shall / I intend to') + formal -습니다, so literally 'I shall eat well'. This is Korea's table-side 'thank you for the food' — functionally equivalent to itadakimasu in Japanese. The critical contrast is tense: -겠- looks forward, so 잘 먹겠습니다 is always PRE-meal; after finishing you switch to the past 잘 먹었습니다. Mixing these up (saying 먹겠습니다 after eating, or 먹었습니다 before) is the single most common learner error with this phrase pair. Register descends from formal 잘 먹겠습니다 → polite 잘 먹을게요 → casual 잘 먹을게 → very casual 잘 먹자 (proposing eating together). A warmer variant is 맛있게 먹겠습니다, which compliments the food or cook in advance. The English-speaker pitfall is taking it literally — it is NOT a boast about one's appetite, and you say it even for a tiny snack or a single bite someone offers you."
+     },
+     "sentence": {
+      "ko": "A: 다 됐어요, 어서 드세요. / B: 잘 먹겠습니다!",
+      "en": "A: It's ready, please eat. / B: Thank you for the food!"
+     },
+     "target": "잘 먹겠습니다",
+     "options": [
+      "Water, please.",
+      "Check, please.",
+      "I will eat well (said before eating)."
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "잘 먹었습니다",
+      "romanization": "jal meogeosseumnida",
+      "en": "I ate well (said after eating).",
+      "pos": "expression",
+      "nuance": "잘 먹었습니다 is the POST-meal thank-you, said as you finish, to whoever cooked or paid — functionally Korea's after-table 'that was a wonderful meal, thank you'. The only structural change from the pre-meal version is tense: 먹다 + past -었- + polite -습니다 = 'I ate well', versus the forward-looking 먹겠습니다. These two form an inseparable pair — 잘 먹겠습니다 at the start, 잘 먹었습니다 at the end — and learners who know only one half of the pair are conspicuously incomplete. Vowel note: 먹 + 었 → 먹었 (pronounced roughly '머거씀니다' due to linking); 먹었었 (double past) is grammatically possible but implies the eating is a discontinued past habit, which sounds unnatural here. Register: 잘 먹었습니다 (formal) → 잘 먹었어요 (polite-casual) → 잘 먹었어 (close friends). The English-speaker pitfall is treating it as a neutral factual report ('I have eaten') and therefore saying it to no one in particular, or just standing up and leaving — in Korean culture, always direct it to the host or treater, and the social expectation after being treated is to follow with 다음엔 제가 살게요 / 대접할게요 to signal future reciprocity."
+     },
+     "sentence": {
+      "ko": "A: 어떠셨어요? / B: 정말 맛있었어요. 잘 먹었습니다.",
+      "en": "A: How was it? / B: It was really delicious. Thank you for the meal."
+     },
+     "target": "잘 먹었습니다",
+     "options": [
+      "Water, please.",
+      "Check, please.",
+      "I ate well (said after eating)."
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "맛있게 드세요",
+      "romanization": "masitge deuseyo",
+      "en": "Enjoy your meal",
+      "pos": "expression",
+      "nuance": "맛있게 드세요 literally stacks 맛있게 'deliciously' + 드세요, the honorific imperative of 들다/먹다 'to eat', so it means 'please eat (this) deliciously' — a warm wish aimed at the other person, never a comment on your own food. The adverb 맛있게 is what distinguishes it from plain 드세요 ('please eat'): removing it strips the warmth entirely and leaves a bare instruction. Honorific 드세요 is required for guests, elders, and customers; the casual equivalent for close friends or children is 맛있게 먹어. Common collocates: 많이 드세요 (eat a lot), 천천히 드세요 (no rush), 따뜻할 때 드세요 (while it's warm). English speakers most often make the register error of dropping the honorific (먹으세요) or, worse, saying 맛있게 드세요 before their own meal — but the phrase cannot be aimed at yourself; say 잘 먹겠습니다 instead when you are the one sitting down to eat."
+     },
+     "sentence": {
+      "ko": "맛있게 드세요.",
+      "en": "Enjoy your meal."
+     },
+     "target": "맛있게 드세요",
+     "options": [
+      "Water, please.",
+      "Enjoy your meal",
+      "Check, please."
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "따뜻한 걸로 주세요",
+      "romanization": "ttatteutan geollo juseyo",
+      "en": "I'll have it hot, please",
+      "pos": "expression",
+      "nuance": "따뜻한 걸로 주세요 is the standard answer when a barista asks 따뜻한 거요 아이스요? (hot or iced?) or when you order a hot drink unprompted. The particle -(으)로 attaches to the thing you're selecting and means 'I'll go with the ~'; 걸로 is simply 거(것) + 로 in spoken contraction, so '따뜻한 걸로' = 'the warm one.' Register is plain polite -요, which is correct for all café and store staff — never drop to 반말 (따뜻한 거 줘) with someone you don't know personally. The closest loanword alternative is 핫으로 주세요, understood by most younger baristas but 따뜻한 걸로 is the natural native default and carries no ambiguity. The critical English-speaker error is confusing 따뜻한 with 뜨거운: 뜨거운 describes something dangerously, painfully hot (a 뜨거운 냄비 = scorching pot), while 따뜻한 means pleasantly warm — using 뜨거운 걸로 at a café is technically intelligible but sounds as if you want to scald yourself."
+     },
+     "sentence": {
+      "ko": "A: 따뜻한 거 드릴까요, 아이스요? / B: 따뜻한 걸로 주세요.",
+      "en": "A: Shall I make it hot, or iced? / B: Hot, please."
+     },
+     "target": "따뜻한 걸로 주세요",
+     "options": [
+      "I will eat well (said before eating).",
+      "I'll have it hot, please",
+      "I ate well (said after eating)."
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "아이스로 주세요",
+      "romanization": "aiseuro juseyo",
+      "en": "Iced, please",
+      "pos": "expression",
+      "nuance": "아이스로 주세요 is how you order any cold drink at a Korean café — 아이스 is the English word 'ice' borrowed as an adjective and is far more commonly heard than the native 차가운 거. The particle -로 marks your selection ('I'm going with iced'). The pairing opponent is 따뜻한 걸로. The practical difference between 아이스로 and 차가운 걸로: 아이스로 is the default café lingo, while 차가운 걸로 sounds a touch older or is used in a convenience store for bottled drinks. Register is plain polite -요 for all staff; 반말 아이스로 줘 is friends-only. The English-speaker pitfall is ordering 얼음 주세요 ('give me ice') thinking that means 'iced drink' — it literally requests a cup of ice cubes; the temperature selection is 아이스로, and 얼음 is used only to adjust ice quantity (얼음 많이요 / 얼음 빼고요)."
+     },
+     "sentence": {
+      "ko": "A: 따뜻한 거요, 아이스요? / B: 아이스로 주세요.",
+      "en": "A: Hot or iced? / B: Iced, please."
+     },
+     "target": "아이스로 주세요",
+     "options": [
+      "I will eat well (said before eating).",
+      "I ate well (said after eating).",
+      "Iced, please"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "사이즈 어떻게 드릴까요?",
+      "romanization": "saijeu eotteoke deurilkkayo?",
+      "en": "What size would you like?",
+      "pos": "expression",
+      "nuance": "This is a staff-to-customer line, so a learner mostly needs to recognize it fast and reply confidently. 어떻게 드릴까요? literally means 'how shall I give it to you?' — 드리다 is the humble form of 주다 ('give'), and -ㄹ까요? offers a service; together they are the polite service-formula heard in cafés, restaurants, and convenience stores everywhere. You reply with a size + 걸로: 작은 걸로요 / 큰 걸로요, or chain-store English sizes 톨/그란데/벤티. A slightly more formal staff variant is 어떤 사이즈로 하시겠어요? — same meaning, a notch stiffer. The English-speaker pitfall is hearing 드릴까요 and mentally translating every word: just catch 사이즈 and respond with your size choice. A second trap is answering '미디엄' — many Korean cafés do not use a medium tier; they offer 작은/큰 or the Starbucks trio, so always listen for the options they name before deciding."
+     },
+     "sentence": {
+      "ko": "A: 사이즈 어떻게 드릴까요? / B: 작은 거로 주세요.",
+      "en": "A: What size? / B: A small, please."
+     },
+     "target": "사이즈 어떻게 드릴까요?",
+     "options": [
+      "Water, please.",
+      "Check, please.",
+      "What size would you like?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "적립해 주세요",
+      "romanization": "jeongnipae juseyo",
+      "en": "Please add my points",
+      "pos": "expression",
+      "nuance": "적립 (積立) means 'accumulating/saving up,' and 적립해 주세요 asks the cashier to credit loyalty points or stamps to your account — via phone number, an app barcode, or a membership card. This is customer-to-staff, plain polite -요; 반말 (적립해 줘) is friends-only. Say it before payment, because most POS systems cannot retroactively add points. The nearest alternatives are 적립 부탁드려요 (more deferential, very polite) and the ultra-casual 적립이요 while showing your barcode — all mean the same thing, divided only by politeness level. A frequent English-speaker mistake is 포인트 모아 주세요 ('gather points') — Koreans do not phrase it that way; the correct verb is 적립하다. Also critical: 적립 is earning points; spending them is entirely different — you would say 포인트로 결제할게요 or 포인트 쓸게요 to redeem."
+     },
+     "sentence": {
+      "ko": "A: 적립해 드릴까요? / B: 네, 적립해 주세요.",
+      "en": "A: Shall I add your points? / B: Yes, please."
+     },
+     "target": "적립해 주세요",
+     "options": [
+      "Please add my points",
+      "I will eat well (said before eating).",
+      "I ate well (said after eating)."
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "봉투 드릴까요?",
+      "romanization": "bongtu deurilkkayo?",
+      "en": "Would you like a bag?",
+      "pos": "expression",
+      "nuance": "Since Korea mandates charges for single-use plastic bags, the cashier almost always asks 봉투 드릴까요? or 봉투 필요하세요? and will add a small fee (typically 20–50원). This phrase is staff-to-customer 존댓말 (드리다 humble 'give' + offer -ㄹ까요?); your job is just to answer. Accept with 네, 주세요 or 네, 하나 주세요; decline with 아니요, 괜찮아요 or 그냥 주세요. The near-synonym is 봉지 드릴까요? — 봉투 and 봉지 both mean 'bag' and are interchangeable in this context; the only difference is slight regional/speaker preference. The critical English-speaker trap is responding 괜찮아요 meaning 'okay yes I want one' — in Korean 괜찮아요 here means 'it's fine/no thanks,' so you would end up refusing the bag you actually wanted; say 네, 주세요 to accept."
+     },
+     "sentence": {
+      "ko": "A: 봉투 드릴까요? / B: 네, 주세요.",
+      "en": "A: Would you like a bag? / B: Yes, please."
+     },
+     "target": "봉투 드릴까요?",
+     "options": [
+      "Water, please.",
+      "Check, please.",
+      "Would you like a bag?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "봉투 주세요",
+      "romanization": "bongtu juseyo",
+      "en": "A bag, please",
+      "pos": "expression",
+      "nuance": "봉투 주세요 is the customer-initiated request for a bag when staff did not first offer one. Plain polite -요 covers all store contexts; 반말 봉투 줘 is friends-only. To soften the request add 주시겠어요 (봉투 하나 주시겠어요?); to specify count or size tack them on (봉투 하나 / 큰 걸로). Remember bags are paid items, so saying 봉투 주세요 means you accept the small charge; don't be surprised when it appears on your total. The nearest alternative 봉지 주세요 is fully interchangeable. The classic English-speaker error is asking for 가방 — 가방 is a wearable bag like a backpack or purse, not a store shopping bag; the checkout carry-bag is 봉투 or 봉지. A secondary slip is responding to staff's 봉투 드릴까요? with a redundant full sentence 봉투 주세요; the natural accept is a simple 네, 주세요."
+     },
+     "sentence": {
+      "ko": "봉투 주세요.",
+      "en": "A bag, please."
+     },
+     "target": "봉투 주세요",
+     "options": [
+      "I will eat well (said before eating).",
+      "A bag, please",
+      "I ate well (said after eating)."
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "데워 드릴까요?",
+      "romanization": "dewo deurilkkayo?",
+      "en": "Shall I heat it up for you?",
+      "pos": "expression",
+      "nuance": "At 편의점 (convenience stores) and some cafés, staff offer 데워 드릴까요? for ready-to-eat microwavable items — 도시락 lunchboxes, 삼각김밥 rice triangles, 컵라면 additions, 붕어빵-style pastries. 데우다 specifically means 'to warm up/reheat (food)' — it is the right verb for reheating in a microwave or warmer, distinct from 끓이다 (boil a liquid) or 굽다 (grill/bake). This phrase is staff 존댓말; you accept with 데워 주세요 or decline with 그냥 주세요 / 아니요, 괜찮아요. The near alternative is 따뜻하게 해 드릴까요? ('shall I make it warm for you?'), used loosely the same way; the dividing line is that 데우다 is specifically about reheating a pre-cooked food item, whereas 따뜻하게 하다 is vaguer. The English-speaker mistake is responding 뜨겁게 해 주세요 ('make it scalding hot') or 요리해 주세요 ('cook it') — both are wrong registers; the only natural answer for reheating is 데워 주세요."
+     },
+     "sentence": {
+      "ko": "A: 데워 드릴까요? / B: 네, 데워 주세요.",
+      "en": "A: Shall I heat it up? / B: Yes, please."
+     },
+     "target": "데워 드릴까요?",
+     "options": [
+      "Water, please.",
+      "Check, please.",
+      "Shall I heat it up for you?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "일회용 컵에 주세요",
+      "romanization": "ilhoeyong keobe juseyo",
+      "en": "In a disposable cup, please",
+      "pos": "expression",
+      "nuance": "일회용 (一回用) means 'single-use', and 일회용 컵 is a disposable paper or plastic cup. You need this phrase in Korea because cafés are legally required to serve dine-in customers in real mugs or glasses — if you want a to-go cup even while sitting, you must ask explicitly. Customer-to-staff plain polite -요; 반말 with friends only. The everyday alternative is 테이크아웃 컵에 주세요 — fully interchangeable and understood at all chains; 종이컵에 주세요 is more specific if it is definitely a paper cup. The particle -에 is critical: it marks destination or container ('into the ~') — not -로 (which would change meaning). The English-speaker mistake is either saying 일회용 잔 (잔 is glassware: wine glass, mug) or omitting the particle and saying just 일회용 컵 주세요, which sounds like you want the cup handed to you empty rather than your drink poured into it."
+     },
+     "sentence": {
+      "ko": "A: 머그잔에 드릴까요? / B: 아니요, 일회용 컵에 주세요.",
+      "en": "A: In a mug? / B: No, a disposable cup please."
+     },
+     "target": "일회용 컵에 주세요",
+     "options": [
+      "I will eat well (said before eating).",
+      "In a disposable cup, please",
+      "I ate well (said after eating)."
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "텀블러에 담아 주세요",
+      "romanization": "teombeulleoe dama juseyo",
+      "en": "Please put it in my tumbler",
+      "pos": "expression",
+      "nuance": "텀블러 (tumbler) is a reusable personal cup, and 텀블러에 담아 주세요 hands it to the barista with a request to fill it. 담다 ('to pour/fill into a container') is the precise verb here — it emphasizes putting liquid into the vessel, making it more natural than the generic 넣어 주세요. The destination particle -에 marks where the drink goes (텀블러에 = 'into the tumbler'); using -로 instead (텀블러로 주세요) shifts meaning to 'give me a tumbler as the item,' which is wrong. Bringing a tumbler typically earns a discount (텀블러 할인) at Korean café chains, so announce it early. The loose spoken alternative is 텀블러에 해 주세요. A refill situation calls for 채워 주세요 ('fill it up'), but for a fresh drink 담아 주세요 is the correct natural form."
+     },
+     "sentence": {
+      "ko": "A: 텀블러에 담아 주세요. / B: 네, 할인 들어가세요.",
+      "en": "A: In my tumbler, please. / B: Sure, your discount will be applied."
+     },
+     "target": "텀블러에 담아 주세요",
+     "options": [
+      "I will eat well (said before eating).",
+      "I ate well (said after eating).",
+      "Please put it in my tumbler"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "snack-shopping",
+   "packId": "pack-shopping",
+   "kind": "snack",
+   "title": "쇼핑 표현 · Shopping Talk",
+   "shortTitle": "쇼핑 Shopping",
+   "afterChapter": 51,
+   "level": "B1",
+   "canDo": "Pay, keep the receipt, and get a refund or exchange when something is wrong.",
+   "index": 0,
+   "cardCount": 14,
+   "cards": [
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "카드 돼요?",
+      "romanization": "kadeu dwaeyo",
+      "en": "Can I pay by card?",
+      "pos": "expression",
+      "nuance": "카드 돼요? is casual but common in stores. 카드 결제 돼요? is clearer and more polite."
+     },
+     "sentence": {
+      "ko": "카드 돼요?",
+      "en": "Can I pay by card?"
+     },
+     "target": "카드 돼요?",
+     "options": [
+      "Can I pay by card?",
+      "Please come again",
+      "Here it is"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "다음에 또 오세요",
+      "romanization": "daeume tto oseyo",
+      "en": "Please come again",
+      "pos": "expression",
+      "nuance": "다음에 ('next time') + 또 ('again') + 오세요 (honorific imperative of 오다 'to come') = 'please come again next time' — the standard warm send-off from staff or hosts to departing guests. The direction of the verb is crucial: the host uses 오다 (come toward me) because from their perspective the customer returns toward them; 가다 (go away from me) would be a directional error. The word 또 ('again, also') does the 'come back' work; 다시 ('again, redo') sounds like you're asking for a repeat of something that went wrong, so 다시 오세요 can inadvertently imply the visit wasn't good enough. One-way flow: this is the host's line, not the guest's — a customer should not say 다음에 또 오세요 to the shop; instead, reply with 잘 먹었습니다 or 감사합니다. Casual short form: 또 오세요 alone is friendly and common; 다음에 또 오세요 adds the 'next time' warmth. Mutual farewell between friends uses 다음에 봐요 ('see you next time') or 다음에 또 봐 (반말), not 오세요."
+     },
+     "sentence": {
+      "ko": "A: 잘 먹었습니다. / B: 맛있게 드셨어요? 다음에 또 오세요.",
+      "en": "A: That was a great meal. / B: Did you enjoy it? Please come again."
+     },
+     "target": "다음에 또 오세요",
+     "options": [
+      "Can I pay by card?",
+      "Here it is",
+      "Please come again"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "여기 있어요",
+      "romanization": "yeogi isseoyo",
+      "en": "Here it is",
+      "pos": "expression",
+      "nuance": "여기 있어요 = 여기 ('here, this place') + 있어요, the polite form of 있다 'to exist / to be located' — literally 'it is here', used the moment you physically hand or present something, like English 'here you go / here it is'. 있다 is the existence-and-location verb (opposite of 없다); do not substitute 이다 'to be (identifying)', so 'here it is' is 여기 있어요, never 여기 이에요. A critical distinction: the clipped 여기요 is the standard call for a server in a restaurant ('excuse me, over here!') — the same root word but a completely different function, distinguished by whether you are holding something out (여기 있어요) or signaling for attention (여기요). The negative is 여기 없어요 ('it's not here'), using 없다, not 안 있어요. The formal version 여기 있습니다 is used in polished service settings. In fast daily exchange, Koreans may also just say 여기요 while extending an item to a familiar person, but this risks ambiguity with the server-call; adding 있어요 removes all ambiguity."
+     },
+     "sentence": {
+      "ko": "여기 있어요.",
+      "en": "Here you go."
+     },
+     "target": "여기 있어요",
+     "options": [
+      "Can I pay by card?",
+      "Here it is",
+      "Please come again"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "이거 뭐예요?",
+      "romanization": "igeo mwoyeyo?",
+      "en": "What is this?",
+      "pos": "expression",
+      "nuance": "이거 뭐예요? = 이거 (casual contraction of 이것 'this thing') + 뭐 (colloquial contraction of 무엇 'what') + 예요 (polite copula) — the everyday 'what is this?' spoken while pointing. Three contraction layers are standard in speech: 이것 → 이거, 이것이 → 이게 (with subject particle), 무엇이에요 → 뭐예요. 이거 뭐예요? and 이게 뭐예요? mean the same thing; the latter adds the subject particle for a marginally more deliberate delivery. Distance vocabulary: 이거 (near speaker) / 그거 (near listener) / 저거 (far from both) — match the word to where the object actually is. A crucial social rule: 뭐 (what) is for THINGS; asking about PEOPLE with 뭐예요 ('what are you?') is rude and grammatically wrong — 누구예요? ('who is this/are you?') is required. For function rather than identity, add 뭐 하는 거예요? or 어디에 써요? ('what's it used for?'). The copula fuses: write 뭐예요, not 뭐 이에요."
+     },
+     "sentence": {
+      "ko": "이거 뭐예요?",
+      "en": "What is this?"
+     },
+     "target": "이거 뭐예요?",
+     "options": [
+      "Can I pay by card?",
+      "Please come again",
+      "What is this?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "영수증 여기 있어요",
+      "romanization": "yeongsujeung yeogi isseoyo",
+      "en": "Here's the receipt",
+      "pos": "expression",
+      "nuance": "영수증 여기 있어요 is 영수증 ('receipt', Sino-Korean 領收證) + 여기 있어요 ('it is here / here it is'). 여기 있어요 is the natural Korean phrase for 'here you go / here it is' when presenting an object — it literally says 'it exists here', and the offering sense comes from context and gesture. Keep the receipt, because almost every Korean store requires 영수증 for a refund or exchange; without it you may only get 교환 (store exchange) or be refused entirely. The nearest near-synonym is 영수증 드릴게요 ('I'll give it to you'), which actively announces you're handing it over and feels slightly more deferential; 여기 있어요 simply presents it — both are natural, but 여기 있어요 is the everyday default. Stronger/softer variants: 영수증 여기 있습니다 (formal), 여기 있어 (반말). The English-speaker trap is translating 'here you go' word-for-word as 여기 가요, which means 'here I go / I'm going here' — the correct presenting phrase is 여기 있어요 (존재동사 있다, not 가다). A second common confusion: 영수증 (receipt, proof of payment already made) vs 계산서 (the bill/statement, often before paying) — for a return you need 영수증."
+     },
+     "sentence": {
+      "ko": "영수증 여기 있어요.",
+      "en": "Here's the receipt."
+     },
+     "target": "영수증 여기 있어요",
+     "options": [
+      "Can I pay by card?",
+      "Here's the receipt",
+      "Please come again"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "이거 환불돼요?",
+      "romanization": "igeo hwanbuldwaeyo?",
+      "en": "Can I get a refund on this?",
+      "pos": "expression",
+      "nuance": "이거 환불돼요? is 이거 ('this') + 환불 ('refund', Sino-Korean 還拂) + 되다 ('to be done/possible') in polite question form — 'is a refund possible for this?'. The 되다 frames it as checking feasibility, which is exactly right as your opening move: you ask IF a refund is possible before you ask them to actually carry it out. Once they confirm it can be done, you follow with the request 환불해 주세요. Distinguish three near-synonyms by scope: 이거 환불돼요? is about one item right now; 환불 규정이 어떻게 돼요? asks about the store's general policy; 환불해 주세요 is the actual request to do it. Also keep clear the meaning trio: 환불 (money back) vs 교환 (different item) vs 반품 (physically returning the goods). The English-speaker error is over-translating 'can I' as a permission/ability question: 제가 환불할 수 있어요? sounds like YOU are asking whether you have the ability to issue a refund — backwards. The passive feasibility form 되다 is idiomatic: 환불돼요?. Another trap is the particle: 이거를 환불돼요? is wrong because 되다 here is intransitive — no object particle on 이거."
+     },
+     "sentence": {
+      "ko": "이거 환불돼요?",
+      "en": "Can I get a refund on this?"
+     },
+     "target": "이거 환불돼요?",
+     "options": [
+      "Please come again",
+      "Here it is",
+      "Can I get a refund on this?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "환불해 주세요",
+      "romanization": "hwanbulhae juseyo",
+      "en": "Please give me a refund",
+      "pos": "expression",
+      "nuance": "환불해 주세요 is 환불 ('refund') + 해 주세요 ('please do for me', from 해 주다, the favor-verb pattern). The 해 주다 is what turns it into a courteous request for the staff's help rather than a flat command: bare 환불하세요 would be an order ('you refund!'), which sounds bossy and rude. Use this AFTER you've confirmed a refund is possible with 환불돼요?; if you jump straight to 환불해 주세요 without the preamble, it can seem aggressive. 환불 is a 하다-noun — it needs the verb 하다, so you cannot say 환불 주세요 ('please give a refund') as though 환불 is a physical object you can hand over. To de-escalate when staff resist, soften to 환불해 주시겠어요? or 환불 부탁드려요. Korean law requires card purchases to be refunded back to the same card (카드 취소), not in cash — always mention 카드로 결제했어요 so staff process it correctly. The English-speaker error is the missing favor verb (환불하세요, too blunt) or the ungrammatical 환불 주세요. Another pitfall is register mismatch: 환불 부탁드립니다 in a casual market stall sounds oddly stiff, while plain 환불 in a department store sounds rude — default to 환불해 주세요 and calibrate."
+     },
+     "sentence": {
+      "ko": "환불해 주세요.",
+      "en": "Please give me a refund."
+     },
+     "target": "환불해 주세요",
+     "options": [
+      "Please give me a refund",
+      "Can I pay by card?",
+      "Here it is"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "교환하고 싶어요",
+      "romanization": "gyohwanhago sipeoyo",
+      "en": "I'd like to exchange this",
+      "pos": "expression",
+      "nuance": "교환하고 싶어요 is 교환 ('exchange', Sino-Korean 交換) + 하고 싶어요 ('want to do'), 'I want to exchange (this)'. Unlike ordering food — where 먹고 싶어요 can sound bluntly desire-focused — for returns and exchanges 하고 싶어요 is perfectly polite, because you're stating your purpose to staff who'll then guide you. Many Korean learners soften this further to 교환하고 싶은데요… (trailing -ㄴ데요) to invite the staff's response. The crucial distinction: 교환돼요? checks IF an exchange is possible; 교환하고 싶어요 declares that you WANT one — always check first if unsure. Know the three-way split: 교환 (swap for another item) vs 환불 (money back) vs 반품 (physically sending back the goods). When naming the replacement, use -로/-으로: 큰 사이즈로 교환, 다른 색으로 교환. The English-speaker error is confusing 교환 with 변경 ('change/alter', used for reservations, plans, or settings) — you 교환 a product but 변경 a booking. Forgetting -로/-으로 on the replacement target makes the request vague: 큰 거 교환 is incomplete; 큰 걸로 교환 is correct."
+     },
+     "sentence": {
+      "ko": "이거 교환하고 싶어요.",
+      "en": "I'd like to exchange this."
+     },
+     "target": "교환하고 싶어요",
+     "options": [
+      "I'd like to exchange this",
+      "Can I pay by card?",
+      "Please come again"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "다른 걸로 바꿔 주세요",
+      "romanization": "dareun geollo bakkwo juseyo",
+      "en": "Please swap it for a different one",
+      "pos": "expression",
+      "nuance": "다른 걸로 바꿔 주세요 is 다른 ('different/other') + 걸로 (걸 = 거 'thing' + -로 'into/for') + 바꿔 주세요 ('please change it for me'). 바꾸다 is the native Korean verb 'to change/swap', warmer and more everyday than the Sino-Korean 교환하다 — both work at a counter, but 바꿔 주세요 is what most people say naturally. The -로 on 다른 걸로 is essential: it marks the target you're swapping INTO ('for a different one'); drop it and 다른 거 바꿔 주세요 sounds incomplete. The dividing line from 환불해 주세요 is outcome: 바꿔 주세요 gets you a replacement item; 환불해 주세요 gets you your money back. Specify what's wrong or what you want (다른 색으로, 큰 사이즈로, 새 걸로) so staff know whether it's a defect swap or a preference swap. The English-speaker error is saying 다른 거 주세요 ('give me a different one') without the exchange framing — that sounds like you're starting a fresh purchase, not swapping the item you hold. Another pitfall: 바꾸다 works for physical items; don't use it for changing a reservation (use 변경하다) or changing money (use 환전하다)."
+     },
+     "sentence": {
+      "ko": "이거 다른 걸로 바꿔 주세요.",
+      "en": "Please swap this for a different one."
+     },
+     "target": "다른 걸로 바꿔 주세요",
+     "options": [
+      "Can I pay by card?",
+      "Please swap it for a different one",
+      "Here it is"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "이거 불량인데요",
+      "romanization": "igeo bullyangindeyo",
+      "en": "This one's defective",
+      "pos": "expression",
+      "nuance": "이거 불량인데요 is 이거 ('this') + 불량 ('defect/defective', Sino-Korean 不良) + 인데요 (copula 이다 + soft ender -ㄴ데요). 불량 means the product is functionally faulty from the maker — a manufacturing defect — and 불량품 is the noun form 'a defective item'. The -ㄴ데요 ender is the politeness engine: it raises the problem as 'here's the situation…' and invites the staff to respond, so it's far gentler than a flat 이거 불량이에요, which can sound like an accusation. The dividing line from 하자 ('flaw/blemish', Sino-Korean 瑕疵) is function vs condition: 불량 implies it doesn't work right (functional fault), while 하자 is a visible blemish — a scratch, crack, or tear. For electronics that won't turn on, 불량 fits; for a visible blemish on packaging, 하자 있어요 is more precise. The English-speaker error is reaching for 'broken' and saying 고장났어요 for a brand-new item — 고장 implies it broke down after some use, whereas a product faulty out of the box is 불량. Note: 불량 is also slang for a 'delinquent person' (불량 학생), but with a product it unambiguously means defective."
+     },
+     "sentence": {
+      "ko": "이거 불량인데요.",
+      "en": "This one's defective."
+     },
+     "target": "이거 불량인데요",
+     "options": [
+      "Can I pay by card?",
+      "This one's defective",
+      "Please come again"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "여기 하자 있어요",
+      "romanization": "yeogi haja isseoyo",
+      "en": "There's a flaw here",
+      "pos": "expression",
+      "nuance": "여기 하자 있어요 is 여기 ('here') + 하자 ('flaw/blemish', Sino-Korean 瑕疵) + 있어요 ('there is'). 하자 is the precise term for a defect in condition — a scratch, crack, tear, stain, or other blemish — as opposed to 불량, which leans toward a functional fault (it doesn't work). Pointing with 여기 ('here') as you say it makes the complaint concrete and helps staff see exactly what you mean. For an everyday surface mark, the native 흠집 ('scratch/nick') is even more specific: 여기 흠집 났어요. The dividing line: 하자 있어요 is calm and somewhat formal (it's the word used in warranties and consumer-protection law), 흠집 났어요 is plainer and very visual, while 불량이에요 says the thing fails to function. The English-speaker error is using 'have' literally and saying 이거 하자를 가지고 있어요 — Korean expresses 'there is a flaw' with the existence verb 있다, not 가지다; say 하자 있어요. Another pitfall is the particle: 하자 있어요 (or 하자가 있어요), never 하자를 있어요 — 있다 takes 이/가, not 을/를. Pair it with a defect word (터지다 'burst', 깨지다 'cracked', 찢어지다 'torn') to be unambiguous."
+     },
+     "sentence": {
+      "ko": "여기 하자 있어요.",
+      "en": "There's a flaw here."
+     },
+     "target": "여기 하자 있어요",
+     "options": [
+      "Can I pay by card?",
+      "There's a flaw here",
+      "Please come again"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "이거 고장 났어요",
+      "romanization": "igeo gojang nasseoyo",
+      "en": "This is broken",
+      "pos": "expression",
+      "nuance": "이거 고장 났어요 is 이거 ('this') + 고장 ('breakdown/malfunction', Sino-Korean 故障) + 났어요 (past of 나다, here 'to occur/arise'). The fixed collocation is 고장이 나다 — literally 'a breakdown occurs' — so 'it's broken' comes out as 고장 났어요, NOT 고장했어요 (고장 is not a 하다-verb) or 고장됐어요. This phrasing is for machines, devices, and appliances that stop working. The dividing line from 불량 is timing/cause: 고장 means it broke down, usually after some use, while 불량 means it was faulty from the factory; a phone that worked for a week and then died can use either depending on emphasis, but a never-worked item leans 불량. Don't apply 고장 to non-mechanical 'broken': a cracked screen is 깨졌어요; a torn bag is 찢어졌어요; a snapped cable is 끊어졌어요; a broken zipper is 지퍼가 고장 났어요 or 지퍼가 안 잠겨요. The English-speaker error is the wrong verb pairing: 고장했어요 or 고장됐어요 are not standard; the correct pairing is 고장 + 나다. Another pitfall is using 고장 for a torn or shattered item — those use different Korean verbs."
+     },
+     "sentence": {
+      "ko": "이거 고장 났어요.",
+      "en": "This is broken."
+     },
+     "target": "이거 고장 났어요",
+     "options": [
+      "Can I pay by card?",
+      "Please come again",
+      "This is broken"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "환불 규정이 어떻게 돼요?",
+      "romanization": "hwanbul gyujeongi eotteoke dwaeyo?",
+      "en": "What's the refund policy?",
+      "pos": "expression",
+      "nuance": "환불 규정이 어떻게 돼요? is 환불 ('refund') + 규정 ('regulation/policy', Sino-Korean 規定) + 이 어떻게 돼요? ('how does it go / what is it?'). The set frame …이/가 어떻게 돼요? is the natural Korean way to ask 'what is X / how does X work' for policies, fees, schedules, and personal details — it's softer and more conversational than a blunt 뭐예요?. This question asks the store to explain its full return rules: time limits, receipt requirements, sale-item exclusions. The dividing line from 환불돼요? is scope: 환불돼요? is about one specific item right now; 환불 규정이 어떻게 돼요? asks for the store's general policy. 규정 and 정책 are interchangeable here, with 규정 sounding slightly more like 'the official rules'. The English-speaker error is translating 'what is the policy' as 환불 규정이 뭐예요? — grammatically possible but blunt and survey-like; natives prefer the 어떻게 돼요? frame. The particle trap: 규정이 어떻게 돼요 (subject particle 이), never 규정을 어떻게 돼요. Mastering 어떻게 돼요? unlocks many polite info questions: 가격이 어떻게 돼요? (price), 영업시간이 어떻게 돼요? (hours)."
+     },
+     "sentence": {
+      "ko": "환불 규정이 어떻게 돼요?",
+      "en": "What's the refund policy?"
+     },
+     "target": "환불 규정이 어떻게 돼요?",
+     "options": [
+      "What's the refund policy?",
+      "Can I pay by card?",
+      "Please come again"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "며칠 안에 환불해야 돼요?",
+      "romanization": "myeochil ane hwanbulhaeya dwaeyo?",
+      "en": "By how many days do I have to get a refund?",
+      "pos": "expression",
+      "nuance": "며칠 안에 환불해야 돼요? is 며칠 ('how many days') + 안에 ('within') + 환불하다 ('to refund') + -아야 되다 ('have to / must'). The core grammar -아/어야 되다 expresses obligation or a deadline: 'within how many days must the refund be done?'. 안에 ('within') takes a time noun directly: 일주일 안에, 14일 안에, 한 달 안에. Korean stores typically allow returns within 7 or 14 days (7일/14일 이내), so knowing this is genuinely practical. The dividing line from 환불 기간이 며칠이에요? ('how long is the refund period?') is angle: 며칠 안에 …해야 돼요? frames it as your obligation/deadline, while 환불 기간 asks for the policy window as a plain fact — both yield the same answer. Two spelling traps for English speakers: 며칠 ('how many days', one word) is often misspelled 몇 일 even by native speakers; the correct spelling is 며칠 — write it as one word. Second: 안에 ('within') and 안 ('not') look similar but are entirely different — 며칠 안에 = 'within how many days'; 안 would negate a verb. The obligation ending is 돼요 (from 되다), not 해요, so 환불해야 돼요?, not 환불해야 해요? (though -아야 하다 is also used in formal contexts)."
+     },
+     "sentence": {
+      "ko": "이거 며칠 안에 환불해야 돼요?",
+      "en": "By how many days do I have to get this refunded?"
+     },
+     "target": "며칠 안에 환불해야 돼요?",
+     "options": [
+      "By how many days do I have to get a refund?",
+      "Can I pay by card?",
+      "Please come again"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "snack-clinic",
+   "packId": "pack-clinic",
+   "kind": "snack",
+   "title": "병원·약국 · At the Clinic",
+   "shortTitle": "병원 Clinic",
+   "afterChapter": 48,
+   "level": "B1",
+   "canDo": "Say what hurts and follow what the clinic and pharmacy tell you.",
+   "index": 0,
+   "cardCount": 14,
+   "cards": [
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "아파요",
+      "romanization": "apayo",
+      "en": "It hurts / I am sick.",
+      "pos": "expression",
+      "nuance": "Use body part + 이/가 아파요: 머리가 아파요, 배가 아파요."
+     },
+     "sentence": {
+      "ko": "아파요.",
+      "en": "I am sick / it hurts."
+     },
+     "target": "아파요",
+     "options": [
+      "It hurts / I am sick.",
+      "Where does it hurt?",
+      "I have a fever"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "어디가 아프세요?",
+      "romanization": "eodiga apeuseyo?",
+      "en": "Where does it hurt?",
+      "pos": "expression",
+      "nuance": "어디가 아프세요? is the doctor's or nurse's standard polite question to a patient: 어디가 'where (as subject)' + 아프다 'to hurt/be sick' + honorific -세요. The patient never says this to the doctor; the patient answers with a body-part subject — 목이 아파요, 배가 아파요. The critical grammar axis: 아프다 is a descriptive verb (adjective-verb), so the hurting place is the SUBJECT and takes the subject particle 가 — never 어디를 아프세요? (object particle 를 is wrong because nothing is being done to a target). Softer alternatives shift register: 어디가 아파? is 반말 for a parent with a child, 어디가 불편하세요? is a gentler front-desk variant that sounds more considerate. Note 아프다 covers both 'it hurts' and 'I am sick', so this one question opens virtually every clinic visit. English learners often calque 'what's wrong?' as 뭐가 틀렸어요? — 틀리다 means 'incorrect', not 'ill'; use 어디가 아프세요? or 어디가 불편하세요? instead."
+     },
+     "sentence": {
+      "ko": "A: 어디가 아프세요? / B: 목이 아파요.",
+      "en": "A: Where does it hurt? / B: My throat hurts."
+     },
+     "target": "어디가 아프세요?",
+     "options": [
+      "It hurts / I am sick.",
+      "Where does it hurt?",
+      "I have a fever"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "열이 나요",
+      "romanization": "yeori nayo",
+      "en": "I have a fever",
+      "pos": "expression",
+      "nuance": "열이 나요 is how you report a fever to anyone — literally 'heat arises' (열이 나다). Korean treats the fever as something that 'comes out', so the natural verb is 나다 (arise), not 있다 (exist) or 하다 (do). 열이 있어요 is also correct but sounds milder and more detached ('there is some heat'), whereas 열이 나요 is the everyday 'I am running a fever'. The particle is 이 (subject), never 열을 나요 — 나다 is intransitive and 열 is its subject. Register shifts by conjugation only: 열이 나 (반말), 열이 나요 (존댓말), 열이 납니다 (격식). The biggest English-speaker trap is calquing 'I have a fever' as 열을 가지고 있어요 — Korean bodies don't 'possess' symptoms; bodily phenomena 'arise' (나다) or 'exist' (있다). Partner words doctors ask about: 오한 (chills), 근육통 (muscle aches), 두통 (headache)."
+     },
+     "sentence": {
+      "ko": "A: 어디가 아프세요? / B: 열이 나요. 어제부터요.",
+      "en": "A: Where does it hurt? / B: I have a fever. Since yesterday."
+     },
+     "target": "열이 나요",
+     "options": [
+      "It hurts / I am sick.",
+      "I have a fever",
+      "Where does it hurt?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "머리가 아파요",
+      "romanization": "meoriga apayo",
+      "en": "I have a headache",
+      "pos": "expression",
+      "nuance": "머리가 아파요 is the everyday Korean 'I have a headache': body-part + subject particle 가 + 아파요. The subject particle 가 is mandatory because 아프다 is a descriptive verb — the head is 'the thing that is hurting', its grammatical subject, never 머리를. This frame builds all symptom sentences: 배가 아파요, 목이 아파요, 이가 아파요. Register shifts by ending only — 머리가 아파 (반말), 아파요 (존댓말), 아픕니다 (격식). One practical ambiguity: 머리 can mean 'head' (the body part) or 'hair' — in a pain context 아파요 removes all doubt. English speakers often reach for the Sino-Korean noun 두통 and produce 두통이 있어요 — that is grammatically correct and sounds more clinical (두통 = 頭痛), but in everyday speech 머리가 아파요 is far more natural; 두통 surfaces in pharmacy requests like 두통약 주세요 (give me headache medicine). Vivid intensity variants: 머리가 지끈지끈 아파요 (throbbing), 머리가 깨질 것 같아요 (splitting), 머리가 띵해요 (dull, foggy)."
+     },
+     "sentence": {
+      "ko": "A: 어디가 아프세요? / B: 머리가 아파요. 어제 저녁부터요.",
+      "en": "A: Where does it hurt? / B: I have a headache. Since last night."
+     },
+     "target": "머리가 아파요",
+     "options": [
+      "I have a headache",
+      "Where does it hurt?",
+      "I caught a cold"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "배가 아파요",
+      "romanization": "baega apayo",
+      "en": "I have a stomachache",
+      "pos": "expression",
+      "nuance": "배가 아파요 covers stomachache, bellyache, and cramps — 배 is the whole belly/abdomen, not the stomach organ alone. The grammar is the same as all 아프다 symptoms: subject particle 가, never 배를. To pinpoint, add 윗배 (upper abdomen) or 아랫배 (lower abdomen). One important cultural note: 배가 아프다 has an idiomatic second meaning of 'to be envious' — 사촌이 땅을 사면 배가 아프다 ('when a cousin buys land, your belly hurts') is a classic proverb about envy. At a clinic the medical meaning is obvious, but if a friend says 야, 배 아프다 upon hearing good news, they mean jealousy, not illness. The English-speaker error is reaching for 위가 아파요 (胃, the stomach organ) for a general bellyache — 위가 아파요 is narrower and more clinical; for ordinary abdominal pain always use 배가 아파요. Doctors may ask about 메스껍다 (nausea), 설사 (diarrhea), or 복통 (腹痛, the clinical noun) as follow-up."
+     },
+     "sentence": {
+      "ko": "A: 배가 아파요. / B: 설사도 하세요?",
+      "en": "A: My stomach hurts. / B: Do you also have diarrhea?"
+     },
+     "target": "배가 아파요",
+     "options": [
+      "Where does it hurt?",
+      "I caught a cold",
+      "I have a stomachache"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "감기에 걸렸어요",
+      "romanization": "gamgie geollyeosseoyo",
+      "en": "I caught a cold",
+      "pos": "expression",
+      "nuance": "감기에 걸렸어요 means 'I caught a cold': 감기 (cold) + particle 에 + 걸리다 (to get caught/snagged) in the past tense. The particle is always 에, not 를 — you get 'caught IN' the cold like something hooking you; 감기에 걸리다 is a fixed collocation and 감기를 걸리다 is ungrammatical. Tense is a key axis: 걸렸어요 (past) conveys the resulting state 'I have a cold right now', because you got caught and are still caught. 감기에 걸려요 (present) would sound like a general tendency ('I catch colds easily') — not what you want when sick. The critical vocabulary divide: 감기 is a common cold, 독감 (毒感) is influenza — a more serious illness with a distinct test; calling the flu 감기 at a clinic seriously downplays it. For the very first hints say 감기 기운이 있어요 ('there's a hint/energy of a cold'). 옮다 ('to be infected from someone') pairs naturally: 감기를 옮았어요."
+     },
+     "sentence": {
+      "ko": "A: 오늘 왜 못 왔어요? / B: 감기에 걸렸어요.",
+      "en": "A: Why couldn't you come today? / B: I caught a cold."
+     },
+     "target": "감기에 걸렸어요",
+     "options": [
+      "It hurts / I am sick.",
+      "Where does it hurt?",
+      "I caught a cold"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "기침이 나요",
+      "romanization": "gichimi nayo",
+      "en": "I have a cough",
+      "pos": "expression",
+      "nuance": "기침이 나요 reports a cough using the same 나다 ('to come out/arise') + subject particle 이 pattern as 열이 나요 and 콧물이 나요 — bodily phenomena 'arise' in Korean. You can also say 기침을 해요 ('I cough', cough + 하다), but these have a subtle difference: 기침이 나요 = 'a cough is happening to me (a symptom I have)', while 기침을 해요 = 'I am coughing (an action I'm doing)'. Both are fine at a clinic. The English-speaker traps are consistent across this file: (1) possession calque 기침을 가지고 있어요 is wrong — use 나다; (2) wrong particle — 기침을 나요 treats 나다 as transitive, but it is intransitive: always 기침이 나요. Pair-words the doctor asks next: 가래 (phlegm you cough up), 콧물 (runny nose), 호흡 곤란 (breathing difficulty). Common partner phrase from the pharmacy: 기침에 좋은 약 있어요? ('Do you have medicine good for coughs?')."
+     },
+     "sentence": {
+      "ko": "A: 기침이 나요. / B: 가래도 있어요?",
+      "en": "A: I have a cough. / B: Any phlegm too?"
+     },
+     "target": "기침이 나요",
+     "options": [
+      "It hurts / I am sick.",
+      "Where does it hurt?",
+      "I have a cough"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "콧물이 나요",
+      "romanization": "konmuri nayo",
+      "en": "I have a runny nose",
+      "pos": "expression",
+      "nuance": "콧물이 나요 means 'my nose is running' — 콧물 is literally 'nose-water' (코 nose + 물 water, with the linking consonant ㅅ inserted to give 콧물), and it 'arises' using nasal particle 이 + 나다. The key contrast pair a doctor will always ask: 콧물이 나요? (runny, wet) versus 코가 막혔어요? (blocked, stuffy) — opposite problems requiring different treatments, so never confuse them. In casual speech the particle drops (콧물 나), but with medical staff say the full 콧물이 나요. The English-speaker structural trap is treating 'runny nose' as an adjective phrase and not knowing how to say it; Korean makes 콧물 (the mucus) the subject that 'comes out', so the logic is 'nose-water comes out'. Related terms to know: 재채기 (sneeze), 가래 (phlegm), 비염 (鼻炎, rhinitis — the clinical term if chronic). For allergic rhinitis a doctor may say 알레르기성 비염이에요."
+     },
+     "sentence": {
+      "ko": "A: 콧물이 나요. / B: 코도 막혔어요?",
+      "en": "A: My nose is running. / B: Is it stuffy too?"
+     },
+     "target": "콧물이 나요",
+     "options": [
+      "It hurts / I am sick.",
+      "I have a runny nose",
+      "Where does it hurt?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "어지러워요",
+      "romanization": "eojireowoyo",
+      "en": "I feel dizzy",
+      "pos": "expression",
+      "nuance": "어지러워요 means 'I feel dizzy/light-headed'. The base adjective-verb is 어지럽다, which is a ㅂ-irregular: the final ㅂ changes to 우/워 before vowel endings, so 어지럽다 → 어지러워요 (NOT 어지럽어요). This is one of the most commonly misspelled medical words. As a descriptive verb of state, 어지러워요 stands alone — no body-part subject is needed (unlike 머리가 아파요). The near-synonym 현기증이 나요 ('I have vertigo / dizziness', 현기증 = 眩氣症) is more clinical and noun-based (the symptom 'arises' with 나다); the divide is: everyday conversational 어지러워요 vs. chart/report 현기증이 나요. When dizzy from spinning, Koreans add 핑 돌아요 for the wheeling sensation. English speakers trip on two things: (1) the ㅂ-irregular (writing 어지럽어요), and (2) reaching for 미쳐요 ('going crazy') from 'my head is spinning' — 미치다 means losing one's mind, nothing to do with physical faintness."
+     },
+     "sentence": {
+      "ko": "A: 어지러워요. / B: 일단 여기 앉으세요.",
+      "en": "A: I feel dizzy. / B: First, please sit down here."
+     },
+     "target": "어지러워요",
+     "options": [
+      "It hurts / I am sick.",
+      "Where does it hurt?",
+      "I feel dizzy"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "처방전 주세요",
+      "romanization": "cheobangjeon juseyo",
+      "en": "Please give me the prescription",
+      "pos": "expression",
+      "nuance": "처방전 주세요 asks for the prescription slip: 처방전 (處方箋, 'prescription document') + 주세요 'please give me'. Korea uses a split dispensing system: the doctor (at the 병원/의원) writes the 처방전, and you take it separately to a 약국 (pharmacy) to receive the actual medicine. So saying 처방전 주세요 is specifically addressed to the doctor or clinic staff — never the pharmacist. At the pharmacy you HAND the slip over, then say 약 지어 주세요 to have it filled. The vocabulary distinctions matter: 처방전 (the slip/document) vs 처방 (the act of prescribing) vs 약 (the medicine itself). For politeness, 좀 주시겠어요? is softer than 주세요; 주실 수 있어요? is even more indirect. English speakers often bypass this system and ask for 약 at the clinic, not realizing the receipt of a slip is the intermediate step. Saying 처방전 주세요 to the pharmacist is a common foreigner mistake — at the 약국 you hand them the slip, you don't receive it."
+     },
+     "sentence": {
+      "ko": "A: 처방전 주세요. / B: 여기 있습니다.",
+      "en": "A: The prescription, please. / B: Here you are."
+     },
+     "target": "처방전 주세요",
+     "options": [
+      "It hurts / I am sick.",
+      "Where does it hurt?",
+      "Please give me the prescription"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "약 좀 지어 주세요",
+      "romanization": "yak jom jieo juseyo",
+      "en": "Could you fill this prescription / make up the medicine?",
+      "pos": "expression",
+      "nuance": "약 좀 지어 주세요 is what you say at the pharmacy counter: 약 'medicine' + 짓다 'to make/compose' + 주세요 'please (for me)'. The verb 짓다 is a rich cultural axis — it is the same verb as 밥을 짓다 (cook rice) and 집을 짓다 (build a house), reflecting the traditional pharmacy where the 한의사 or 약사 literally measured and compounded doses for you. 짓다 is a ㅅ-irregular: the ㅅ drops before vowel endings — 짓다 → 지어 (NOT 짓어). So it's always 약 지어 주세요, never 약 짓어 주세요. The softener 좀 transforms a bare command into a polite request — drop it and 약 지어 주세요 starts to sound curt. The dividing line from 약 주세요 ('hand me the medicine') is that 지어 주세요 implies preparation/compounding from a prescription or for described symptoms, while 주세요 is for a ready-made product off the shelf. The English-speaker trap is calquing 'fill a prescription' with 채우다 ('fill a container') — completely wrong; 약을 짓다 is the fixed idiom."
+     },
+     "sentence": {
+      "ko": "A: 약 좀 지어 주세요. / B: 처방전 주시겠어요?",
+      "en": "A: Could you fill this? / B: May I have the prescription?"
+     },
+     "target": "약 좀 지어 주세요",
+     "options": [
+      "Could you fill this prescription / make up the medicine?",
+      "It hurts / I am sick.",
+      "Where does it hurt?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "하루 세 번 드세요",
+      "romanization": "haru se beon deuseyo",
+      "en": "Take it three times a day",
+      "pos": "expression",
+      "nuance": "하루 세 번 드세요 is the dosing instruction heard at every pharmacy: 하루 'per day' + 세 번 'three times' + 드세요, the honorific imperative of 먹다. The number system axis is critical: 번 (times/occurrences) takes NATIVE Korean numerals, not Sino-Korean — 한 번, 두 번, 세 번, 네 번, not 일 번, 이 번, 삼 번. English speakers routinely say 삼 번 by analogy with other counting, but 번 always demands native numbers. Word order is also reversed from English: Korean says 하루 세 번 (day-first), not 세 번 하루. The verb for the patient is 드세요 (honorific, to a patient/elder) or the clinical 복용하세요; the plain 먹어 is 반말 for a child. Essential dosing vocabulary to pair: 식전 (before meals), 식후 (after meals), 식간 (between meals), 취침 전 (before bed), 한 알씩 (one tablet at a time). If you don't understand the dosing, ask: 하루에 몇 번 먹어요? ('How many times a day do I take it?')."
+     },
+     "sentence": {
+      "ko": "A: 하루 세 번 드세요. / B: 네, 알겠습니다. 언제 먹으면 돼요?",
+      "en": "A: Take it three times a day. / B: Okay. When should I take it?"
+     },
+     "target": "하루 세 번 드세요",
+     "options": [
+      "It hurts / I am sick.",
+      "Where does it hurt?",
+      "Take it three times a day"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "식후 삼십 분에 드세요",
+      "romanization": "siku samsip bune deuseyo",
+      "en": "Take it thirty minutes after meals",
+      "pos": "expression",
+      "nuance": "식후 삼십 분에 드세요 — 식후 (食後, 'after-meal') + 삼십 분 (30 minutes) + 에 (at/on) + 드세요(take) — is printed on almost every Korean prescription bag (약봉투). The number system here is the opposite of 번: time durations with minutes use SINO-Korean numbers, so '30 minutes' is 삼십 분, not native 서른 분. The particle 에 marks a specific point in time (시간점) and must not be dropped — 식후 삼십 분 드세요 without 에 sounds incomplete. Learn the full set of timing labels found on bags: 식전 (食前, before meals), 식후 (食後, after meals), 식간 (食間, between meals, rare), 취침 전 (before bed). The medical reality: 식후 drugs taken on an empty stomach can cause 속 쓰림 (gastric burning), so the distinction from 식전 is clinically important, not just vocabulary. English speakers mix number systems (세십 분 = native+Sino hybrid) and drop 에; both errors corrupt the instruction."
+     },
+     "sentence": {
+      "ko": "A: 이 약은 어떻게 먹어요? / B: 식후 삼십 분에 드세요.",
+      "en": "A: How do I take this medicine? / B: Take it thirty minutes after meals."
+     },
+     "target": "식후 삼십 분에 드세요",
+     "options": [
+      "It hurts / I am sick.",
+      "Take it thirty minutes after meals",
+      "Where does it hurt?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "진통제 있어요?",
+      "romanization": "jintongje isseoyo?",
+      "en": "Do you have painkillers?",
+      "pos": "expression",
+      "nuance": "진통제 있어요? asks a pharmacist whether they stock painkillers — 진통제 (鎭痛劑, 'pain-suppressing agent') + 있어요? ('is there? / do you have?'). 있어요? is the natural Korean way to ask about product availability in any shop; it's far more natural than the beginner calque 가지고 있어요? ('do you personally hold?'), which sounds like you're asking whether the pharmacist has it in their pocket. Painkillers like ibuprofen and acetaminophen are sold over the counter (일반의약품) without a prescription at Korean pharmacies, so this question is practically very useful. Good vocabulary to build from the same pattern: 소화제 있어요? (digestive aid?), 해열제 있어요? (fever reducer?), 파스 있어요? (pain-relief patch?). The pharmacist will typically ask 어떤 통증이세요? ('what kind of pain?') to suggest the right product — have the answer ready: 두통 (headache), 생리통 (period pain), 근육통 (muscle ache), 치통 (toothache)."
+     },
+     "sentence": {
+      "ko": "A: 진통제 있어요? / B: 네, 어떤 통증이세요?",
+      "en": "A: Do you have painkillers? / B: Yes — what kind of pain is it?"
+     },
+     "target": "진통제 있어요?",
+     "options": [
+      "It hurts / I am sick.",
+      "Where does it hurt?",
+      "Do you have painkillers?"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "snack-work",
+   "packId": "pack-work",
+   "kind": "snack",
+   "title": "직장 표현 · Office Korean",
+   "shortTitle": "직장 Work",
+   "afterChapter": 40,
+   "level": "B1",
+   "canDo": "Write the mail, ask for the review, and settle a meeting time politely.",
+   "index": 0,
+   "cardCount": 14,
+   "cards": [
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "처음 뵙겠습니다",
+      "romanization": "cheoeum boepgesseumnida",
+      "en": "How do you do (formal first meeting).",
+      "pos": "expression",
+      "nuance": "처음 뵙겠습니다 is the high-formality, humble greeting for meeting someone for the very FIRST time, reserved primarily for business, institutional, or high-respect personal encounters. Breaking it down: 처음 = 'first time / for the first time'; 뵙다 (also written 뵈다) is the HUMBLE SUPPLETIVE verb for 'to see/meet someone of higher status', the deferent counterpart of plain 만나다/보다 — by using 뵙다 you lower yourself before the other person. The 겠 here is not the future tense but a formal-softening modal that adds a sense of 'I shall / I am so honored to' — equivalent to 'I shall respectfully meet you (for the first time)'. Contrast with 만나서 반가워요: that phrase expresses your personal emotion (glad), while 처음 뵙겠습니다 expresses deference and institutional formality — they are often combined in sequence (처음 뵙겠습니다 → 반갑습니다). The English-speaker pitfall is using it with peers or friends, where it sounds absurdly stiff or even sarcastic ('oh, HOW do you do'). Save it strictly for clients, executives, in-laws at first meeting, or any high-stakes formal introduction. It almost always links to 잘 부탁드리겠습니다 / 잘 부탁드립니다 to close the introduction."
+     },
+     "sentence": {
+      "ko": "A: 처음 뵙겠습니다. 한국 팀의 이소연입니다. / B: 네, 반갑습니다. 잘 부탁드립니다.",
+      "en": "A: How do you do. I'm Soyeon Lee from the Korean team. / B: Pleased to meet you. Looking forward to working together."
+     },
+     "target": "처음 뵙겠습니다",
+     "options": [
+      "How do you do (formal first meeting).",
+      "Please take note / for your reference",
+      "I've attached it (please find attached)"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "참고 부탁드립니다",
+      "romanization": "chamgo butakdeurimnida",
+      "en": "Please take note / for your reference",
+      "pos": "expression",
+      "nuance": "참고 부탁드립니다 is 참고 ('reference/consultation', Sino-Korean 參考) + 부탁드립니다 ('I humbly request'), meaning 'please keep this in mind / for your reference'. It is a soft, information-sharing closer: you are not demanding action, just asking the reader to be AWARE of something. The crucial contrast with 참조 (參照): in email, 참조 is the CC field (참조: 박과장님) — it names who is copied — whereas 참고 means 'for your information'. English speakers confuse these because both translate loosely as 'reference'; writing 참조 부탁드립니다 to mean 'please note this' reads as 'please CC this'. A second contrast: 참고하세요 (plain imperative) is fine to juniors or peers but can sound directive to a superior; 참고 부탁드립니다 with humble 부탁드리다 is safer upward. 참고 is a 하다-noun, so to make it a verb you need 참고하다 — never 참고 주세요 (you cannot 'give' a reference). The softer 참고하시기 바랍니다 or 참고만 해 주세요 (FYI-only, no action) are useful variants."
+     },
+     "sentence": {
+      "ko": "아래 내용 참고 부탁드립니다.",
+      "en": "Please take note of the content below."
+     },
+     "target": "참고 부탁드립니다",
+     "options": [
+      "How do you do (formal first meeting).",
+      "Please take note / for your reference",
+      "I'd be grateful if you could check and reply"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "첨부했습니다",
+      "romanization": "cheombuhaetseumnida",
+      "en": "I've attached it (please find attached)",
+      "pos": "expression",
+      "nuance": "첨부했습니다 is 첨부 ('attachment', Sino-Korean 添附) + 하다 in formal past: 'I have attached'. It is the standard line for 'please find attached'. The everyday options are 첨부했습니다 (I attached), 첨부합니다 (I'm attaching), and the warmer 첨부해 드립니다 / 첨부드립니다, where 드리다 ('to do for someone, humbly') signals you are doing the reader a service — common and polite upward. The key contrast: 첨부 (添附) is electronically attaching a FILE to an email, while 동봉 (同封) is physically enclosing something in a paper envelope — do not write 동봉했습니다 for an emailed PDF. A frequent English-speaker pitfall is the over-literal 'please find attached' rendered as 첨부된 것을 찾아 주세요 ('please go look for the attached thing'), which sounds like the file is missing; simply state 첨부했습니다. Watch the particle: it is 파일을 첨부했습니다 (object 을/를), not 파일에 첨부. And 첨부 is a 하다-noun: to ask THEM to attach something, use the verb: 첨부해 주세요, never 첨부 주세요."
+     },
+     "sentence": {
+      "ko": "요청하신 자료 첨부했습니다.",
+      "en": "I've attached the materials you requested."
+     },
+     "target": "첨부했습니다",
+     "options": [
+      "I've attached it (please find attached)",
+      "How do you do (formal first meeting).",
+      "I'd be grateful if you could check and reply"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "확인 부탁드립니다",
+      "romanization": "hwagin butakdeurimnida",
+      "en": "Please check / kindly confirm",
+      "pos": "expression",
+      "nuance": "확인 부탁드립니다 is 확인 ('confirmation/checking', Sino-Korean 確認) + 부탁드립니다 ('I humbly ask'), the single most common closing request in Korean work email. 확인 covers both 'verify it is correct' and 'acknowledge you have seen it', so it is wonderfully versatile. The politeness lives in 부탁드리다 (humble 'to request'), making this safe upward to bosses and clients. The near-synonym contrast: 검토 (檢討) means a deeper REVIEW — reading critically, forming a judgment — while 확인 is a lighter 'check/confirm'. Asking a senior to 확인 a number is fine; if you want their considered opinion, use 검토 부탁드립니다. The English-speaker pitfall is reaching for the loanword 체크 (체크 부탁드립니다) — understandable but casual Konglish; professional mail uses 확인. Another trap is the plain imperative 확인하세요, which can sound curt or bossy upward; 확인 부탁드립니다 frames the same request as a humble ask. 확인 is a 하다-noun; if you want the full verb form, it is 확인해 주세요, never 확인 주세요."
+     },
+     "sentence": {
+      "ko": "아래 금액에 이상 없는지 확인 부탁드립니다.",
+      "en": "Please confirm the amounts below are correct."
+     },
+     "target": "확인 부탁드립니다",
+     "options": [
+      "How do you do (formal first meeting).",
+      "I think we'll need to coordinate the schedule",
+      "Please check / kindly confirm"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "회신 부탁드립니다",
+      "romanization": "hoesin butakdeurimnida",
+      "en": "Please reply / awaiting your response",
+      "pos": "expression",
+      "nuance": "회신 부탁드립니다 is 회신 ('reply/response', Sino-Korean 回信) + 부탁드립니다, asking the reader to write back — the formal email staple for 'please respond'. 회신 is the crisp, businesslike word slightly more formal than the everyday 답장 ('a letter/message back'); both are correct, but 회신 dominates in professional mail and 답장 feels a touch more personal or casual. The contrast to watch: 회신 (the act of replying, general) vs. 답변 (答辯, the ANSWER itself to a specific question). If you posed a concrete question and want that answer, 답변 부탁드립니다 fits; for a general 'please get back to me', use 회신. The English-speaker pitfall is over-literal 'reply to me' as 저에게 회신해 주세요 — 저에게 ('to me') is redundant and heavy; 회신 부탁드립니다 already implies the direction. Another trap is treating 'respond' as 반응 (反應, a physical or emotional reaction) — 반응 부탁드립니다 sounds like asking for a like or reaction, not an email reply."
+     },
+     "sentence": {
+      "ko": "검토 후 회신 부탁드립니다.",
+      "en": "Please reply after reviewing."
+     },
+     "target": "회신 부탁드립니다",
+     "options": [
+      "How do you do (formal first meeting).",
+      "Please reply / awaiting your response",
+      "I think we'll need to coordinate the schedule"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "검토 부탁드립니다",
+      "romanization": "geomto butakdeurimnida",
+      "en": "Please review (and give feedback)",
+      "pos": "expression",
+      "nuance": "검토 부탁드립니다 is 검토 ('review/examination', Sino-Korean 檢討) + 부탁드립니다, asking the reader to read something critically and weigh in. Unlike the lighter 확인 ('just check/confirm'), 검토 implies real scrutiny — reading a proposal, catching problems, forming an opinion — so it is sent to someone whose judgment you want, often a senior, and implicitly invites feedback or approval. That is the key contrast English speakers blur: 확인 부탁드립니다 = 'please confirm/glance', 검토 부탁드립니다 = 'please examine and judge'. Asking a boss to merely 확인 a strategy doc undersells what you need; 검토 is right. The register is humble (부탁드리다), fully appropriate upward. The English-speaker pitfall is the loanword 리뷰 (리뷰 부탁드립니다) — acceptable in casual startup culture but reads as Konglish in formal mail; use 검토. Another trap: confusing 검토 with 검사 (檢査, an INSPECTION or test — medical or quality) — 검사 부탁드립니다 sounds like requesting a lab test. 검토 is a 하다-noun: 검토하다, so 검토해 주세요 or 검토 부탁드립니다, never 검토 주세요."
+     },
+     "sentence": {
+      "ko": "기획안 검토 부탁드립니다.",
+      "en": "Please review the proposal."
+     },
+     "target": "검토 부탁드립니다",
+     "options": [
+      "Please review (and give feedback)",
+      "How do you do (formal first meeting).",
+      "I'd be grateful if you could check and reply"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "확인 후 회신 주시면 감사하겠습니다",
+      "romanization": "hwagin hu hoesin jusimyeon gamsahagetseumnida",
+      "en": "I'd be grateful if you could check and reply",
+      "pos": "expression",
+      "nuance": "확인 후 회신 주시면 감사하겠습니다 stacks 확인 ('check') + 후 ('after') + 회신 ('reply') + 주시면 ('if you would give/do') + 감사하겠습니다 ('I would be grateful'). The -(으)면 감사하겠습니다 frame is the gold-standard polite request in Korean business writing: it phrases your need as a conditional favor and thanks them in advance. This is gentler than a direct 부탁드립니다 and fits situations where maximum deference helps — clients, senior executives, first-contact emails. The contrast: 회신 부탁드립니다 is direct-polite ('please reply'), while 주시면 감사하겠습니다 is indirect-polite ('I'd be thankful if…') — the latter is a notch more formal and deferential. The English-speaker pitfall is mistranslating 'I would be grateful' as 저는 감사할 것입니다 (a flat future 'I will thank') — Korean uses the -겠- conjecture/intention form 감사하겠습니다, paired with the conditional 주시면. Dropping 주시면 (회신 감사하겠습니다) breaks the logic: it reads 'I'll be thankful for the reply' prematurely, as if they have already replied. Keep the 주시면 … 감사하겠습니다 pair intact."
+     },
+     "sentence": {
+      "ko": "견적서 확인 후 회신 주시면 감사하겠습니다.",
+      "en": "I'd appreciate it if you'd review the quote and get back to me."
+     },
+     "target": "확인 후 회신 주시면 감사하겠습니다",
+     "options": [
+      "I'd be grateful if you could check and reply",
+      "How do you do (formal first meeting).",
+      "Please take note / for your reference"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "일정 조율이 필요할 것 같습니다",
+      "romanization": "iljeong joyuri piryohal geot gatseumnida",
+      "en": "I think we'll need to coordinate the schedule",
+      "pos": "expression",
+      "nuance": "일정 조율이 필요할 것 같습니다 is 일정 ('schedule', Sino-Korean 日程) + 조율 ('tuning/coordination', Sino-Korean 調律, originally 'tuning an instrument') + 이 필요하다 ('is needed') + -ㄹ 것 같다 ('seems/I think'). 조율 is the precise business word for negotiating and aligning times or terms among multiple parties — richer than just 'scheduling'. The -ㄹ 것 같습니다 ('it seems / I think') is doing important politeness work: Korean business culture prefers hedged, indirect phrasing. A flat 필요합니다 sounds blunt and presumptuous; 필요할 것 같습니다 ('I think it will be needed') is softer and collaborative. The contrast: 조율 (coordinating among parties, give-and-take) vs. 조정 (調整, adjusting or modifying a plan more unilaterally by one party) — for 'let's find a time that works for everyone', 조율 is natural. The English-speaker pitfall is treating 'coordinate' as 협력하다 ('to cooperate', general teamwork) — that misses the time-alignment meaning entirely. Another trap: the particle — 일정 조율'이' 필요하다 (subject marker 이/가 on what is needed), not 일정 조율을 필요하다. The loanword 스케줄 is fine casually but 일정 is the professional term."
+     },
+     "sentence": {
+      "ko": "담당자분들 시간이 달라서 일정 조율이 필요할 것 같습니다. 가능한 시간 알려 주세요.",
+      "en": "Everyone's times differ, so I think we'll need to coordinate. Please share your availability."
+     },
+     "target": "일정 조율이 필요할 것 같습니다",
+     "options": [
+      "How do you do (formal first meeting).",
+      "Please take note / for your reference",
+      "I think we'll need to coordinate the schedule"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "언제 시간 괜찮으세요?",
+      "romanization": "eonje sigan gwaenchaneuseyo?",
+      "en": "When would be a good time for you?",
+      "pos": "expression",
+      "nuance": "언제 시간 괜찮으세요? is 언제 ('when') + 시간 ('time') + 괜찮으세요 (honorific '괜찮다', 'is it okay for you?'). It is the polite, natural way to ask someone's availability when arranging a meeting — literally 'when is your time okay?'. The honorific -으세요 on 괜찮다 directs the respect to the listener, so this is safe upward and to clients. A close variant is 언제가 편하세요? ('when is convenient?'), using 편하다 — slightly warmer and more considerate, stressing their comfort rather than just their schedule. The contrast: asking about THEIR availability (괜찮으세요 / 편하세요, honorific) vs. stating YOUR own availability (저는 ~ 괜찮아요 / 가능합니다) — keep the honorific form only for the other person. The English-speaker pitfall is the word 자유롭다 for 'free': 언제 자유로워요? means 'when are you free (as in liberated)?', not available — the correct words are 시간 괜찮다 / 시간 되다 / 한가하다. Another trap is dropping the honorific to a senior: 언제 시간 괜찮아? is 반말 and inappropriate in any work context."
+     },
+     "sentence": {
+      "ko": "미팅 잡으려고 하는데 언제 시간 괜찮으세요?",
+      "en": "I'd like to set up a meeting — when are you free?"
+     },
+     "target": "언제 시간 괜찮으세요?",
+     "options": [
+      "How do you do (formal first meeting).",
+      "When would be a good time for you?",
+      "Please take note / for your reference"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "회의 일정을 잡고 싶습니다",
+      "romanization": "hoeui iljeongeul japgo sipseumnida",
+      "en": "I'd like to set up a meeting",
+      "pos": "expression",
+      "nuance": "회의 일정을 잡고 싶습니다 is 회의 ('meeting', Sino-Korean 會議) + 일정 ('schedule') + 을 잡다 ('to set/fix') + -고 싶습니다 ('I would like to'). The verb 잡다 ('to catch/grab') is the idiomatic word for fixing or setting an appointment in Korean — 일정을 잡다, 약속을 잡다, 미팅을 잡다 — and English speakers rarely guess it. The -고 싶습니다 ('I'd like to') keeps it as a polite proposal rather than a command. The contrast: 회의 (a formal meeting, often internal, decision-making) vs. 미팅 (the loanword, often an external or more relaxed business meet-up) — both are common, but 회의 sounds more official/internal and 미팅 more flexible. The English-speaker pitfall is translating 'set up' as 설치하다 ('to install') or 준비하다 ('to prepare') — 회의를 설치하다 is wrong (that is for installing equipment), and while 회의를 준비하다 ('prepare a meeting') is possible, the standard scheduling verb is 잡다. Watch the particle — 일정'을' 잡다 (object 을/를), not 일정에 잡다. Also -고 싶습니다 marks YOUR desire; to ask if they would like to meet, say 회의 잡으실까요? or 시간 되실까요?."
+     },
+     "sentence": {
+      "ko": "이 건으로 회의 일정을 잡고 싶습니다. 언제 시간 괜찮으세요?",
+      "en": "I'd like to set up a meeting about this matter. When are you free?"
+     },
+     "target": "회의 일정을 잡고 싶습니다",
+     "options": [
+      "I'd like to set up a meeting",
+      "Please take note / for your reference",
+      "I've attached it (please find attached)"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "일정이 변경되었습니다",
+      "romanization": "iljeongi byeongyeongdoeeotseumnida",
+      "en": "The schedule has changed",
+      "pos": "expression",
+      "nuance": "일정이 변경되었습니다 is 일정 ('schedule') + 이 (subject marker) + 변경되다 ('to be changed', Sino-Korean 變更 + passive 되다) in formal past. The passive 변경되었습니다 ('has been changed') is deliberate: it states the change as a neutral fact without pointing a finger at who caused it, which Korean business culture favors for delivering inconvenient news. If you say 일정을 변경했습니다 (active, 'I changed the schedule'), you take direct ownership — sometimes appropriate but the passive is safer. The contrast: 변경 (變更, formally changing/altering a plan) vs. 바꾸다 (the plain native 'to change/swap', casual) — in business email you write 변경되었습니다, not the casual 바꿨어요. The English-speaker pitfall is the particle and voice: 일정'이' 변경되었습니다 needs the subject marker 이/가 with the passive; the object marker 을/를 goes with the active voice (일정'을' 변경했습니다). Mixing them — 일정을 변경되었습니다 — is a classic grammar error. Always pair a schedule change with 양해 부탁드립니다 ('please understand') for courtesy."
+     },
+     "sentence": {
+      "ko": "내부 사정으로 회의 일정이 변경되었습니다. 변경된 시간 확인 부탁드립니다.",
+      "en": "Due to internal circumstances, the meeting schedule has changed. Please check the updated time."
+     },
+     "target": "일정이 변경되었습니다",
+     "options": [
+      "How do you do (formal first meeting).",
+      "Please take note / for your reference",
+      "The schedule has changed"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "보고드리겠습니다",
+      "romanization": "bogodeurigetseumnida",
+      "en": "I will report to you",
+      "pos": "expression",
+      "nuance": "보고드리겠습니다 is 보고 ('report', Sino-Korean 報告) + 드리다 (the HUMBLE form of 주다 'to give', used when the recipient is senior) + -겠습니다 ('I will'). The 드리다 is the heart of it: it lowers YOU relative to the person you are reporting to, so 보고드리다 inherently means reporting UPWARD to a boss, client, or senior — you would never use it to a junior. The contrast: 보고드리다 (humble, upward) vs. plain 보고하다 (neutral 'to report', describing the act or used horizontally) vs. 알리다 ('to inform/notify', more horizontal). The English-speaker pitfall is using 보고하다 flatly to a boss (보고합니다 / 보고할게요) — not wrong, but the humble 보고드립니다 / 보고드리겠습니다 is the expected register upward in hierarchical Korean offices, and missing 드리다 can feel under-polite. Another trap: 보고 is a 하다/드리다-noun, so you say 보고드리다 or 보고하다, written as one word — never 보고를 드리다 split apart. Also note that 보고 (報告, report) differs entirely from the connective 보고 in 보고 싶다 ('want to see') — same romanization, different origin."
+     },
+     "sentence": {
+      "ko": "말씀하신 건 확인해서 내일 오전 중으로 보고드리겠습니다.",
+      "en": "I'll check the matter you mentioned and report by tomorrow morning."
+     },
+     "target": "보고드리겠습니다",
+     "options": [
+      "How do you do (formal first meeting).",
+      "I will report to you",
+      "Please take note / for your reference"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "확인 후 다시 연락드리겠습니다",
+      "romanization": "hwagin hu dasi yeollakdeurigetseumnida",
+      "en": "I'll check and get back to you",
+      "pos": "expression",
+      "nuance": "확인 후 다시 연락드리겠습니다 is 확인 ('check') + 후 ('after') + 다시 ('again') + 연락 ('contact', Sino-Korean 連絡) + 드리다 (humble 'give/do for a senior') + -겠습니다 ('I will'). It is the courteous, professional way to say 'let me look into this and get back to you' — invaluable when you cannot answer on the spot. The humble 연락드리다 (vs. plain 연락하다) lowers you toward the client or senior, which is the expected register outward and upward. The contrast: 연락드리다 ('I'll contact you', humble, you reaching out first) vs. 회신드리다 ('I'll reply', responding specifically to their message) — both work, but 연락 is broader ('get in touch') while 회신 is 'a reply to your email'. The English-speaker pitfall is the calque 'get back to you' rendered as 돌아오겠습니다 ('I will physically return') — that sounds like coming back to a location, not following up; the idiom is 다시 연락드리겠습니다. Another trap is dropping 드리다 to a client (다시 연락하겠습니다) — understandable but less polite; 연락드리겠습니다 is the safe default. A bare 다시 연락드리겠습니다 with no timeframe can feel vague — add 오늘 중으로 / 내일까지 / 확인되는 대로 to make the promise concrete."
+     },
+     "sentence": {
+      "ko": "지금 바로 답변드리기 어려워서, 확인 후 다시 연락드리겠습니다.",
+      "en": "It's hard to answer right now, so I'll check and contact you again."
+     },
+     "target": "확인 후 다시 연락드리겠습니다",
+     "options": [
+      "How do you do (formal first meeting).",
+      "I'll check and get back to you",
+      "Please take note / for your reference"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "확인 부탁드린 건 어떻게 되었을까요?",
+      "romanization": "hwagin butakdeurin geon eotteoke doeeosseulkkayo?",
+      "en": "May I ask how the matter I requested is going?",
+      "pos": "expression",
+      "nuance": "확인 부탁드린 건 어떻게 되었을까요? is 확인 부탁드린 ('that I asked you to check', relative clause) + 건 (contraction of 것은, 'the matter') + 어떻게 ('how') + 되었을까요 ('I wonder how it has come along', the speculative -을까요 form). This is the diplomatic way to CHASE a pending request without sounding pushy — the soft -을까요 ('I wonder if…') and the indirect 어떻게 되었- ('how has it gone') let you nudge while preserving the reader's face, which is essential in hierarchical Korean offices. Face-preservation (체면) is the social reason this indirect form exists; a blunt status demand is rude upward. The contrast: 왜 아직 확인 안 하셨어요? ('why haven't you checked yet?') is accusatory; 어떻게 되었을까요? frames the same query as innocent curiosity. Also 됐어요? (flat 'is it done?') is too direct upward. The English-speaker pitfall is the impatient calque 'any update?' as bare 업데이트 있어요? — Konglish and curt; Korean wraps the nudge in indirectness. Always lead with a face-saving softener (바쁘시겠지만, 죄송하지만) before the question when nudging a senior."
+     },
+     "sentence": {
+      "ko": "바쁘신 와중에 죄송하지만, 확인 부탁드린 건 어떻게 되었을까요?",
+      "en": "Sorry to bother you when you're busy, but how is the matter I asked about going?"
+     },
+     "target": "확인 부탁드린 건 어떻게 되었을까요?",
+     "options": [
+      "May I ask how the matter I requested is going?",
+      "Please take note / for your reference",
+      "I've attached it (please find attached)"
+     ],
+     "note": ""
+    }
+   ]
+  },
+  {
+   "id": "snack-admin",
+   "packId": "pack-admin",
+   "kind": "snack",
+   "title": "은행·행정 · Bank & Paperwork",
+   "shortTitle": "행정 Admin",
+   "afterChapter": 58,
+   "level": "B2",
+   "canDo": "Open an account, move money, and handle the counter questions.",
+   "index": 0,
+   "cardCount": 14,
+   "cards": [
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "계좌 만들고 싶어요",
+      "romanization": "gyejwa mandeulgo sipeoyo",
+      "en": "I'd like to open an account",
+      "pos": "expression",
+      "nuance": "계좌 만들고 싶어요 is 계좌 (計座, 'account') + 만들다 ('to make') + -고 싶어요 ('I want to'): the plain spoken way to tell a teller you want to open an account. Two nouns are in play: 계좌 is the technical term — the account number used on forms, apps, and bank systems — while 통장 literally means the physical passbook but in everyday speech doubles as 'account' (so 통장 만들고 싶어요 sounds just as natural and a bit more colloquial). The bank's own paperwork and staff prefer the verb 개설하다 ('to establish/open'), so mirroring that verb in 계좌 개설하려고요 puts you on the right register. For a salary account specifically, say 급여 계좌 만들고 싶어요. The English-speaker trap is translating 'open' literally as 열다 ('to open a door') — 계좌 열고 싶어요 is wrong; an account is 만들다 or 개설하다, never 열다. This phrase is always addressed to staff, so 존댓말 is the only appropriate register here."
+     },
+     "sentence": {
+      "ko": "계좌 만들고 싶어요.",
+      "en": "I'd like to open an account."
+     },
+     "target": "계좌 만들고 싶어요",
+     "options": [
+      "I'm going to withdraw some cash",
+      "I'd like to open an account",
+      "Is there a fee?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "잔액 확인하고 싶어요",
+      "romanization": "janae kwaginhago sipeoyo",
+      "en": "I'd like to check my balance",
+      "pos": "expression",
+      "nuance": "잔액 확인하고 싶어요 is 잔액 (殘額, 'remaining amount = balance') + 확인하다 ('to check/confirm') + -고 싶어요. Two near-synonyms matter: 잔액 is the formal term printed on receipts, ATM menus, and statements, while 잔고 ('balance / what's left') is the warmer everyday word in casual speech ('통장에 잔고가 없어' = 'my account's empty'). On machines and in apps, the action is labeled 잔액 조회 ('balance inquiry'), where 조회 specifically means looking up stored information — so 조회 is the word you tap, and 확인 is the broader 'check/confirm' you say aloud. The particle trap: it's 잔액을 확인하다 (object particle 을), not 잔액에 확인하다 (location particle 에). To a teller use polite speech; with a friend drop to 잔고 얼마야? The English-speaker trap is reaching for 균형 ('equilibrium, physical balance') for a bank balance — 통장 균형 is meaningless to Koreans; the bank term is 잔액 or 잔고 only."
+     },
+     "sentence": {
+      "ko": "잔액 확인하고 싶어요.",
+      "en": "I'd like to check my balance."
+     },
+     "target": "잔액 확인하고 싶어요",
+     "options": [
+      "I'd like to check my balance",
+      "I'm going to withdraw some cash",
+      "Is there a fee?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "현금 좀 뽑으려고요",
+      "romanization": "hyeongeum jom ppobeuryeogoyo",
+      "en": "I'm going to withdraw some cash",
+      "pos": "expression",
+      "nuance": "현금 좀 뽑으려고요 is 현금 (現金, 'cash') + 좀 (softener) + 뽑다 ('to pull/draw out') + -으려고요 ('I intend to'). Korean has three verbs for getting money out, and choosing right matters: 뽑다 is the breezy spoken verb for pulling cash from an ATM (돈 뽑다 = 'hit the ATM'); 찾다 — which elsewhere means 'find' — is the neutral standard 'withdraw' used at a counter or machine (돈을 찾다); and 출금하다 (出金) is the formal Sino-Korean word on screens and forms. The opposite — depositing — is 입금하다 or 넣다; keep 출금 (money out) vs 입금 (money in) firmly apart, since swapping them at a teller causes real mistakes. With a friend you'd say 돈 좀 뽑을게. The English-speaker traps: calquing 'withdraw' as 철수하다 (military 'retreat') is wrong; and the word 찾다 in a banking context means 'withdraw', not 'look for' — 돈 찾으러 가요 = 'going to withdraw money', not 'going to search for it'."
+     },
+     "sentence": {
+      "ko": "현금 좀 뽑으려고요.",
+      "en": "I'm going to take out some cash."
+     },
+     "target": "현금 좀 뽑으려고요",
+     "options": [
+      "I'd like to open an account",
+      "I'd like to check my balance",
+      "I'm going to withdraw some cash"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "수수료 있어요?",
+      "romanization": "susuryo isseoyo?",
+      "en": "Is there a fee?",
+      "pos": "expression",
+      "nuance": "수수료 있어요? is 수수료 (手數料, 'handling fee/commission') + 있어요? ('is there?'). 수수료 is the all-purpose word for a bank transaction fee — ATM fees, transfer fees, wire fees, exchange margins — making it the single most useful money word for navigating a Korean bank. The most idiomatic verb pairing is 붙다 ('to stick/attach'): Koreans say 수수료가 붙어요 ('a fee gets tacked on'), which sounds more natural than the textbook 수수료를 내다 ('to pay a fee'); both are correct, but 붙다 describes fees that appear automatically on a transaction. To ask about a fee waiver, use 면제되다: 수수료 면제돼요? The key dividing line from 요금: 요금 is a fare or utility charge (전기 요금, 택시 요금), while 수수료 is the bank's cut for handling your transaction. Don't ask a bank about 요금. The English-speaker trap is using 비용 or 가격 — too generic and off-register for a bank fee. Grammar note: 붙다 is intransitive, so the subject particle is 가: 수수료가 붙어요, not 수수료를 붙어요."
+     },
+     "sentence": {
+      "ko": "수수료 있어요?",
+      "en": "Is there a fee?"
+     },
+     "target": "수수료 있어요?",
+     "options": [
+      "I'd like to open an account",
+      "I'd like to check my balance",
+      "Is there a fee?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "비밀번호 입력해 주세요",
+      "romanization": "bimilbeonho imnyeokae juseyo",
+      "en": "Please enter your PIN/password",
+      "pos": "expression",
+      "nuance": "비밀번호 (秘密番號, lit. 'secret number') covers PIN, app password, and even door code — Korean does not split 'PIN' from 'password' the way English does. The same word serves your card PIN at the ATM, your banking app login, and the gym locker code. Two verbs go with it: 입력하다 ('to input', the formal screen word) and 누르다 ('to press', the spoken 'key it in'); 비밀번호 입력해 주세요 and 비밀번호 눌러 주세요 are interchangeable, the latter slightly warmer. This phrase is usually said TO you by staff or the machine — the honorific 주세요 makes it a polite request to the customer; when YOU forgot it you flip to 비밀번호 잊어버렸어요. Digit count uses 자리 ('place/digit'): 네 자리 = four digits. The English-speaker traps: calling it 패스워드 sounds IT/tech-only; using 암호 sounds like a spy cipher or encryption, not a bank PIN. Also don't confuse 비밀번호 (secret, never share) with 계좌번호 (account number, freely shared to receive money)."
+     },
+     "sentence": {
+      "ko": "비밀번호 입력해 주세요.",
+      "en": "Please enter your PIN."
+     },
+     "target": "비밀번호 입력해 주세요",
+     "options": [
+      "Please enter your PIN/password",
+      "I'd like to open an account",
+      "I'd like to check my balance"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "여기로 송금하고 싶어요",
+      "romanization": "yeogiro songgeumhago sipeoyo",
+      "en": "I'd like to send money here",
+      "pos": "expression",
+      "nuance": "여기로 송금하고 싶어요 uses 송금 (送金, 'send-money = remittance') + 하다 + -고 싶어요. Three terms cluster here: 송금 is the formal umbrella for sending money to someone (especially overseas wire transfers, 해외 송금); 계좌이체 (or just 이체) is specifically account-to-account electronic transfer done via app or ATM; 보내다 ('to send') is the plain casual verb. For a teller, either 송금하고 싶어요 or 이체하고 싶어요 works. The make-or-break point is particles for the destination: an account/bank/place takes 로/으로 — 이 계좌로 보내다; a PERSON takes 한테/에게 — 친구한테 송금하다. English speakers overuse 에 here: 이 계좌에 보내다 sounds unnatural to Koreans; native is 이 계좌로. Also keep 송금 (sending OUT) apart from 입금 (money coming IN): if you want to receive money, share your 계좌번호 so someone else can 입금/송금 to you. Don't translate 'transfer' as 옮기다 — that means physically moving objects."
+     },
+     "sentence": {
+      "ko": "여기로 송금하고 싶어요.",
+      "en": "I'd like to send money here."
+     },
+     "target": "여기로 송금하고 싶어요",
+     "options": [
+      "I'd like to send money here",
+      "I'm going to withdraw some cash",
+      "Is there a fee?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "이체할게요",
+      "romanization": "ichehalgeyo",
+      "en": "I'll make a transfer",
+      "pos": "expression",
+      "nuance": "이체할게요 is 이체 (移替, 'account-to-account transfer') + -할게요, the -ㄹ게요 ending that announces your own intended action politely. 이체 is the precise word for moving money electronically between accounts; 계좌이체 spells it out fully and is the label for 'pay by bank transfer' as a payment method — standard in Korea for rent, large purchases, and splitting bills. The everyday alternative is 보내다 ('send'), so 돈 보낼게요 and 이체할게요 mean the same in casual use, with 이체 sounding a touch more official. The crucial paired vocabulary: when you've SENT money you say 이체했어요 (active, you transferred), but confirming it ARRIVED uses 입금됐어요? (passive, deposited on their side) — the two verbs describe the same money from opposite perspectives. The English-speaker trap is register: 이체할게요 is natural conversational speech; 이체하겠습니다 is stiff/overly formal for everyday use. To send to someone senior, add the humble 드리다: 이체해 드릴게요. Don't confuse 이체 with 환전 (currency exchange)."
+     },
+     "sentence": {
+      "ko": "이체할게요.",
+      "en": "I'll make the transfer."
+     },
+     "target": "이체할게요",
+     "options": [
+      "I'd like to open an account",
+      "I'll make a transfer",
+      "I'd like to check my balance"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "계좌번호 좀 알려 주세요",
+      "romanization": "gyejwabeonho jom allyeo juseyo",
+      "en": "Could you give me your account number?",
+      "pos": "expression",
+      "nuance": "계좌번호 좀 알려 주세요 is 계좌번호 ('account number') + 좀 (softener) + 알려 주세요 ('please let me know', from 알리다 'to inform' + 주다 favor). This phrase is used constantly in Korea, where splitting bills and paying back by instant transfer is the social norm — you ask for the other person's 계좌번호 and 이체 immediately. A complete transfer request also needs the bank name (은행 이름) and the account holder name (예금주 이름), since apps ask you to confirm the holder before sending. Three ways to request it: 알려 주세요 ('let me know', standard); 불러 주세요 ('read it aloud', when you'll type as they talk); 찍어 줘 ('text it to me', the casual message shorthand). Note the sharp contrast: 계좌번호 (account number, freely shared to receive money) vs 비밀번호 (PIN/password, never share). The English-speaker trap is using 가르쳐 주세요 — 가르치다 means 'to teach a skill', not 'to inform'; for giving information, the verb is 알리다 → 알려 주세요."
+     },
+     "sentence": {
+      "ko": "계좌번호 좀 알려 주세요.",
+      "en": "Could you give me your account number?"
+     },
+     "target": "계좌번호 좀 알려 주세요",
+     "options": [
+      "Could you give me your account number?",
+      "I'd like to check my balance",
+      "I'm going to withdraw some cash"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "입금됐는지 확인해 주세요",
+      "romanization": "ipgeumdwaenneunji hwaginhae juseyo",
+      "en": "Please check if the deposit came in",
+      "pos": "expression",
+      "nuance": "입금됐는지 확인해 주세요 is 입금 (入金, 'money in = deposit') + 되다 (passive 'be done') + -는지 ('whether') + 확인해 주세요 ('please check'). 입금 is the word for money ARRIVING in an account — the receiving side of any transfer. It pairs naturally with 송금/이체 (the sending side): the sender says 이체했어요 ('I sent it'), the receiver checks 입금됐어요? ('did it come in?'). A warmer, common alternative is 들어오다 ('to come in'): 돈 들어왔어요? and 월급 들어왔어요? are everyday spoken forms. The grammar point: 입금되다 (passive, money arrives on its own) vs 입금하다 (active, you deposit money) — 'did it arrive?' is passive 입금됐어요?, while 'I'll deposit it' is active 입금할게요. The -는지 structure makes an indirect question embedded in 확인해 주세요 and attaches to the verb stem (됐는지), not as a separate word. Casually: 입금됐어? or 돈 들어왔어?"
+     },
+     "sentence": {
+      "ko": "입금됐는지 확인해 주세요.",
+      "en": "Please check if the deposit came in."
+     },
+     "target": "입금됐는지 확인해 주세요",
+     "options": [
+      "Please check if the deposit came in",
+      "I'd like to open an account",
+      "I'm going to withdraw some cash"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "카드 정지시켜 주세요",
+      "romanization": "kadeu jeongjisikyeo juseyo",
+      "en": "Please freeze/cancel my card",
+      "pos": "expression",
+      "nuance": "카드 정지시켜 주세요 is 카드 + 정지 (停止, 'suspension/halt') + 시키다 (causative, 'cause to happen') + 주세요. This is high-stakes vocabulary — get it right. 정지(시키다) means to SUSPEND/freeze the card (potentially reversible); for a lost or stolen card you'll also 분실 신고하다 ('file a loss report'), which permanently blocks it so you then 재발급 ('reissue') a new one. The spoken urgent verb is 막다 ('to block/stop up') — 카드 막아 주세요 is what a panicked person blurts at the call center. The grammar point: 정지하다 (intransitive, 'the card stops') vs 정지시키다 (causative, 'cause it to be stopped') — when asking the bank to freeze YOUR card, 정지시켜 주세요 is the cleaner choice. The English-speaker trap is calquing 'cancel' as 취소하다 — 취소하다 cancels a transaction or reservation, NOT a card; a card is 정지/해지/분실 신고, never 취소. Also distinguish 정지 (temporary freeze, reversible) vs 해지 (permanent termination of the card/account). Always 존댓말 to staff in this situation."
+     },
+     "sentence": {
+      "ko": "카드 정지시켜 주세요.",
+      "en": "Please freeze my card."
+     },
+     "target": "카드 정지시켜 주세요",
+     "options": [
+      "Please freeze/cancel my card",
+      "I'd like to open an account",
+      "I'd like to check my balance"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "카드가 안 됐어요",
+      "romanization": "kadeuga an dwaesseoyo",
+      "en": "My card didn't work / got declined",
+      "pos": "expression",
+      "nuance": "카드가 안 됐어요 is 카드 + 가 (subject particle) + 안 ('not') + 되다 ('to work/function') in past polite. 되다 is the workhorse verb for 'something functions/goes through', so 안 되다 ('doesn't work') is the first thing to say whenever a card fails — it covers a declined card, a frozen card, a dead chip, or a bad terminal. For more precision at checkout the noun is 결제 ('payment/settlement'): 결제가 안 돼요 ('the payment won't go through'). For an explicit 'declined', 거절되다 mirrors the error message. A common real cause is 한도 초과 ('limit exceeded'). Grammar trap: it must be 카드가 안 됐어요 (subject particle 가, past 됐), not 카드를 안 했어요 (object particle 를 means 'I didn't do the card' — nonsense). The English-speaker trap is translating 'work' as 일하다 ('to labor') — 카드가 일 안 해요 is wrong and confusing; a device 'working' is 되다, never 일하다. Also: 카드가 틀렸어요 ('the card is incorrect', like a wrong answer) is wrong for a declined card; use 안 됐어요. Casual: 카드 안 돼."
+     },
+     "sentence": {
+      "ko": "카드가 안 됐어요.",
+      "en": "My card didn't work."
+     },
+     "target": "카드가 안 됐어요",
+     "options": [
+      "I'd like to open an account",
+      "My card didn't work / got declined",
+      "I'd like to check my balance"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "환전하고 싶어요",
+      "romanization": "hwanjeonhago sipeoyo",
+      "en": "I'd like to exchange money",
+      "pos": "expression",
+      "nuance": "환전하고 싶어요 is 환전 (換錢, 'exchange-money = currency exchange') + 하다 + -고 싶어요. Currency exchange is done at a bank or a 환전소 (dedicated booth, often better rates). The essential partner word is 환율 (換率, 'exchange rate') — ask 환율 어떻게 돼요? and judge with 환율이 좋다/안 좋다 ('the rate is good/bad'). To name currencies, use 로/으로 for the target: 달러로 환전하다 ('exchange INTO dollars'), 원화로 바꾸다. A plainer synonym is 바꾸다 ('change/swap') — 달러로 바꾸고 싶어요 is natural and slightly more colloquial. The critical confusion to avoid: 환전 (換錢, 'exchange money') vs 환불 (還拂, 'refund') — they look and sound similar but 환불 means getting your money back for a returned purchase; never say 환전 at a store return counter. Another trap: 교환하다 ('exchange goods, swap sizes') is for trading items, not currency. Also keep 환율 (the rate) distinct from 수수료 (the fee charged for the exchange), which is a separate cost worth asking about. To staff use 존댓말 throughout."
+     },
+     "sentence": {
+      "ko": "환전하고 싶어요.",
+      "en": "I'd like to exchange money."
+     },
+     "target": "환전하고 싶어요",
+     "options": [
+      "I'm going to withdraw some cash",
+      "I'd like to exchange money",
+      "Is there a fee?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "환율 어떻게 돼요?",
+      "romanization": "hwanyul eotteoke dwaeyo?",
+      "en": "What's the exchange rate?",
+      "pos": "expression",
+      "nuance": "환율 어떻게 돼요? is 환율 (換率, 'exchange rate') + 어떻게 돼요? ('how does it come to be?'), the idiomatic Korean way to ask for a numeric figure or status. The construction 어떻게 돼요? is broadly useful — Koreans use it for rates, prices, totals, even your name (이름이 어떻게 되세요?) — and sounds more natural and polite than blunt 얼마예요? for abstract figures, though both work for 환율. A money-saving phrase: 환율 우대 ('preferential exchange rate') — banks and their apps give 우대 (優待, 'preferential treatment') to regulars or digital users, so asking 환율 우대 돼요? can get you a better deal. Don't confuse 환율 (the rate, a number) with 환전 (the act of exchanging). The English-speaker trap is calquing 'what is the exchange rate?' as 환율이 뭐예요? — but 뭐예요? asks 'what is it (by definition)?', so it sounds like you're asking the meaning of the term; use 어떻게 돼요? or 얼마예요? for the numeric value. Casual form with a friend: 환율 어떻게 돼?"
+     },
+     "sentence": {
+      "ko": "환율 어떻게 돼요?",
+      "en": "What's the exchange rate?"
+     },
+     "target": "환율 어떻게 돼요?",
+     "options": [
+      "I'd like to open an account",
+      "I'd like to check my balance",
+      "What's the exchange rate?"
+     ],
+     "note": ""
+    },
+    {
+     "kind": "guess",
+     "word": {
+      "ko": "잔돈으로 바꿔 주세요",
+      "romanization": "jandoneuro bakkwo juseyo",
+      "en": "Please change this into smaller bills/coins",
+      "pos": "expression",
+      "nuance": "잔돈으로 바꿔 주세요 is 잔돈 ('small change/change') + -으로 ('into') + 바꾸다 ('to change/swap') + 주세요. 잔돈 covers both small-denomination bills and coins, and is also the word for the change you get back after paying — though 거스름돈 is the more precise term for 'change returned by a cashier'. To specify the denomination you want, use -짜리 ('a thing worth ~'): 천 원짜리 ('a 1,000-won bill'), 만 원짜리 ('a 10,000-won bill'). For coins specifically say 동전. The verb 바꾸다 ('to swap/change') is the same one used casually for currency exchange — context tells the listener you mean breaking a bill. The particle trap: it's 잔돈으로 바꾸다 (target marked with 으로 = 'change INTO small bills'), not 잔돈을 바꾸다 (which would mean 'change the small bills themselves'). Confusing 잔돈 (physical small cash) with 잔액 (account balance figure) is a real learner mix-up despite both having 잔 (殘, 'remaining'). Casual: 잔돈으로 바꿔 줘."
+     },
+     "sentence": {
+      "ko": "잔돈으로 바꿔 주세요.",
+      "en": "Please break this into change."
+     },
+     "target": "잔돈으로 바꿔 주세요",
+     "options": [
+      "Please change this into smaller bills/coins",
+      "I'd like to open an account",
+      "I'd like to check my balance"
      ],
      "note": ""
     }

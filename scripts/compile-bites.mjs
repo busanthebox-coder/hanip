@@ -10,6 +10,7 @@ const outFile = join(root, 'src', 'lib', 'bites.json');
 const indexFile = join(root, 'src', 'lib', 'bites-index.json');
 const chunksDir = join(root, 'src', 'lib', 'bites');
 const packsFile = join(root, 'data', 'packs.json');
+const expressionPacksFile = join(root, 'data', 'expression-packs.json');
 const snacksFile = join(root, 'src', 'lib', 'snacks.json');
 
 function firstWord(bite) {
@@ -26,8 +27,16 @@ const chapters = files.map((f, i) => {
   const raw = JSON.parse(readFileSync(join(srcDir, f), 'utf8'));
   return compileChapter(raw, i + 1, overrides);
 });
+// The 12 vocab packs (order 09) and the 6 situational expression packs (order 26)
+// compile through the same snack path — an expression pack is just a pack whose
+// words happen to be whole sentences. Expression packs are appended, never
+// interleaved, so the shipped snack order stays exactly as it was.
 const packs = JSON.parse(readFileSync(packsFile, 'utf8')).packs;
-const snacks = packs.map((pack) => compileSnack(pack, overrides));
+const expressionPacks = existsSync(expressionPacksFile)
+  ? JSON.parse(readFileSync(expressionPacksFile, 'utf8')).packs
+  : [];
+const allPacks = [...packs, ...expressionPacks];
+const snacks = allPacks.map((pack) => compileSnack(pack, overrides));
 
 // The moment a learner has just guessed a word is the moment its nuance
 // lands — attach it to the guess card so the reveal can teach, not just
@@ -95,7 +104,10 @@ writeFileSync(indexFile, JSON.stringify({
   chapters: indexChapters,
   snacks: indexSnacks,
 }, null, 1));
-writeFileSync(snacksFile, JSON.stringify({ generatedFrom: packs.length + ' packs', snacks }, null, 1));
+writeFileSync(snacksFile, JSON.stringify({
+  generatedFrom: `${packs.length} vocab packs + ${expressionPacks.length} expression packs`,
+  snacks,
+}, null, 1));
 
 mkdirSync(chunksDir, { recursive: true });
 // B1 is the largest level (22 chapters) — as one lazy chunk it blew the

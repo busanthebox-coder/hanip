@@ -1082,6 +1082,20 @@
     ],
     "메시지": [
       "opinion"
+    ],
+    "머리가 아파요": [
+      "it hurts",
+      "am sick"
+    ],
+    "배가 아파요": [
+      "it hurts",
+      "am sick"
+    ],
+    "여기 어떻게 가요?": [
+      "ask you for directions"
+    ],
+    "길 좀 여쭤볼게요": [
+      "how do i get here"
     ]
   },
   "huntExampleBans": [

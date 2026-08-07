@@ -14,6 +14,7 @@ import {
   buildReadingBite,
   buildBossBite,
   compileChapter,
+  compileSnack,
 } from './compiler.mjs';
 import { chapterLevel } from '../../src/lib/levels.js';
 
@@ -985,5 +986,79 @@ describe('order 23 — free-word-order tiles carry a start hint', () => {
     const tile = bite.cards.find((c) => c.kind === 'order');
     expect(tile).toBeTruthy();
     expect(tile.prompt).toContain('아침에 시작 · Start with 아침에');
+  });
+});
+
+describe('order 26 — a pack of whole expressions compiles as snack guess cards', () => {
+  // Situational expressions ARE sentences: the headword is the whole phrase and
+  // the depth the reveal shows is the parent's own nuance paragraph (the survival
+  // packs already carry sentence-shaped headwords, so this is the same card kind).
+  const expressionPack = () => ({
+    id: 'pack-transport',
+    title: '교통 표현 · Getting Around',
+    shortTitle: '교통 Transport',
+    afterChapter: 23,
+    goal: 'Ask the way and ride without switching to English.',
+    words: [
+      {
+        hangul: '여기 어떻게 가요?',
+        english: 'How do I get there?',
+        romanization: 'yeogi eotteoke gayo?',
+        partOfSpeech: 'expression',
+        nuance: 'Asks for directions to a place you can point at.',
+        example: { ko: '저기요, 여기 어떻게 가요?', en: 'Excuse me, how do I get there?' },
+      },
+      {
+        hangul: '얼마나 걸려요?',
+        english: 'About what length of time does it take?',
+        romanization: 'eolmana geollyeoyo?',
+        partOfSpeech: 'expression',
+        nuance: 'Asks about duration, not distance.',
+        example: { ko: '버스로 얼마나 걸려요?', en: 'How long does it take by bus?' },
+      },
+      {
+        hangul: '여기서 내려요',
+        english: 'I am getting off here.',
+        romanization: 'yeogiseo naeryeoyo',
+        partOfSpeech: 'expression',
+        nuance: 'Say it to the driver as you stand up.',
+        example: { ko: '기사님, 여기서 내려요.', en: 'Driver, I am getting off here.' },
+      },
+    ],
+  });
+
+  it('keeps the whole expression as the guess target and reveals the parent nuance', () => {
+    const snack = compileSnack(expressionPack());
+    expect(snack.id).toBe('snack-transport');
+    expect(snack.level).toBe('A2');
+    expect(snack.cards).toHaveLength(3);
+    for (const card of snack.cards) {
+      expect(card.kind).toBe('guess');
+      expect(card.options).toHaveLength(3);
+      expect(card.options.filter((option) => option === card.word.en)).toHaveLength(1);
+    }
+    const [first] = snack.cards;
+    expect(first.word.ko).toBe('여기 어떻게 가요?');
+    expect(first.target).toBe('여기 어떻게 가요?');
+    expect(first.word.nuance).toBe('Asks for directions to a place you can point at.');
+  });
+
+  it('leaves a pack word without nuance alone, so the shipped vocab packs are untouched', () => {
+    const pack = expressionPack();
+    for (const word of pack.words) delete word.nuance;
+    const snack = compileSnack(pack);
+    expect(snack.cards.every((card) => !('nuance' in card.word))).toBe(true);
+  });
+
+  it('compiles deterministically and honours the audit ban list', () => {
+    const pack = expressionPack();
+    expect(compileSnack(pack)).toEqual(compileSnack(pack));
+
+    const banned = compileSnack(pack, {
+      guessDistractorBans: { '여기 어떻게 가요?': ['getting off'] },
+    });
+    const first = banned.cards[0];
+    expect(first.options).toContain('How do I get there?');
+    expect(first.options).not.toContain('I am getting off here.');
   });
 });

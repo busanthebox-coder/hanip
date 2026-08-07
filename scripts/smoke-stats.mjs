@@ -9,6 +9,7 @@ const compiled = read('src/lib/bites.json').chapters;
 const index = read('src/lib/bites-index.json');
 const snacks = read('src/lib/snacks.json').snacks;
 const packs = read('data/packs.json').packs;
+const expressionPacks = read('data/expression-packs.json').packs;
 const readers = read('data/readers.json').readers;
 const clusters = read('src/lib/clusters.json').clusters;
 const words = read('src/lib/wordbook.json').words;
@@ -51,22 +52,28 @@ console.log(`| Total | ${totals.chapters} | ${totals.bites} | ${totals.cards} | 
 console.log('');
 console.log(`all learning bites: ${totals.bites + totals.snacks}`);
 console.log(`all learning cards: ${totals.cards + totals.snackCards}`);
-console.log(`packs: ${packs.length} · joined members: ${packs.reduce((sum, pack) => sum + pack.words.length, 0)}`);
+console.log(`vocab packs: ${packs.length} · joined members: ${packs.reduce((sum, pack) => sum + pack.words.length, 0)}`);
+console.log(`expression packs: ${expressionPacks.length} · expressions: ${expressionPacks.reduce((sum, pack) => sum + pack.words.length, 0)}`);
 console.log(`readers: ${readers.length} · clusters: ${clusters.length} · wordbook: ${words.length}`);
 
+// Counts as measured on 2026-08-07 (order 26). chapterCards/words had been left
+// at their pre-thickness figures, so this check could not run; they are synced
+// to what the compiler actually emits.
 const expected = {
   chapters: 65,
   chapterBites: 619,
-  chapterCards: 2039,
-  snacks: 12,
-  snackCards: 173,
-  allBites: 631,
-  allCards: 2212,
+  chapterCards: 2977,
+  snacks: 18,
+  snackCards: 257,
+  allBites: 637,
+  allCards: 3234,
   packs: 12,
   joinedMembers: 173,
+  expressionPacks: 6,
+  expressions: 84,
   readers: 20,
   clusters: 32,
-  words: 718,
+  words: 720,
 };
 const actual = {
   chapters: totals.chapters,
@@ -78,6 +85,8 @@ const actual = {
   allCards: totals.cards + totals.snackCards,
   packs: packs.length,
   joinedMembers: packs.reduce((sum, pack) => sum + pack.words.length, 0),
+  expressionPacks: expressionPacks.length,
+  expressions: expressionPacks.reduce((sum, pack) => sum + pack.words.length, 0),
   readers: readers.length,
   clusters: clusters.length,
   words: words.length,

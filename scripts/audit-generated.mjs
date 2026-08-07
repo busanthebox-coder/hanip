@@ -91,6 +91,51 @@ for (const item of fresh) {
   }
 }
 
+/* ---------------- snack packs (order 26) ----------------
+ * The snapshot diff above only sees chapters. Pack cards are compiled by a
+ * different path and were never screened, so they get their own pass here:
+ * answer uniqueness, duplicate options, and meaning overlap. Findings on the
+ * 12 shipped vocab packs are recorded but do not block — they predate this
+ * order and fixing them would rewrite live cards; the situational expression
+ * packs this order adds must come out clean.
+ */
+const vocabPacks = JSON.parse(readFileSync(join(root, 'data', 'packs.json'), 'utf8')).packs;
+const expressionPacks = JSON.parse(readFileSync(join(root, 'data', 'expression-packs.json'), 'utf8')).packs;
+const packWords = [...vocabPacks, ...expressionPacks];
+const expressionPackIds = new Set(expressionPacks.map((pack) => pack.id));
+const { snacks } = JSON.parse(readFileSync(join(root, 'src', 'lib', 'snacks.json'), 'utf8'));
+const bareKo = (text) => String(text).replace(/[?!.]/g, '').trim();
+const snackBlockers = [];
+const snackPreexisting = [];
+for (const snack of snacks) {
+  const pack = packWords.find((candidate) => candidate.id === snack.packId);
+  const headByGloss = new Map((pack?.words || []).map((word) => [word.english, word.hangul]));
+  const isNew = expressionPackIds.has(snack.packId);
+  const sink = isNew ? snackBlockers : snackPreexisting;
+  const glosses = snack.cards.map((card) => card.word.en);
+  for (const [i, gloss] of glosses.entries()) {
+    if (glosses.indexOf(gloss) !== i) sink.push({ at: `${snack.id} :: ${gloss}`, why: 'two cards in one pack answer with the same meaning' });
+  }
+  for (const card of snack.cards) {
+    const at = `${snack.id} :: ${card.word.ko}`;
+    if (card.options.filter((option) => option === card.word.en).length !== 1) {
+      sink.push({ at, why: 'needs exactly one correct option' });
+    }
+    if (new Set(card.options).size !== card.options.length) sink.push({ at, why: 'duplicate options' });
+    if (card.options.length < 3) sink.push({ at, why: `only ${card.options.length} option(s) — the answer is unmissable` });
+    if (card.target && card.target !== card.word.ko) {
+      sink.push({ at, why: `highlight covers only part of the expression: ${card.target}` });
+    }
+    for (const option of card.options) {
+      if (option === card.word.en) continue;
+      const head = headByGloss.get(option);
+      if (head && bareKo(card.word.ko).includes(bareKo(head))) {
+        sink.push({ at, why: `distractor is a fair partial reading: ${head} ⊂ ${card.word.ko} (${option})` });
+      }
+    }
+  }
+}
+
 const drills = fresh.filter((f) => f.card.kind === 'drill');
 const sample = drills.filter((_, i) => i % 37 === 0);
 
@@ -99,6 +144,13 @@ console.log(`blockers: ${blockers.length}`);
 for (const b of blockers.slice(0, 40)) console.log(`  ✗ ${b.at} — ${b.why}`);
 console.log(`minors (accepted with reason): ${minors.length}`);
 for (const m of minors.slice(0, 20)) console.log(`  · ${m.at} — ${m.why}`);
+
+const snackCards = snacks.reduce((n, snack) => n + snack.cards.length, 0);
+console.log(`\nsnack pack cards: ${snackCards} across ${snacks.length} packs`);
+console.log(`snack blockers (expression packs): ${snackBlockers.length}`);
+for (const b of snackBlockers.slice(0, 40)) console.log(`  ✗ ${b.at} — ${b.why}`);
+console.log(`snack findings on pre-existing vocab packs (recorded, not blocking): ${snackPreexisting.length}`);
+for (const p of snackPreexisting.slice(0, 6)) console.log(`  · ${p.at} — ${p.why}`);
 console.log('\n--- human sample (every 37th drill) ---');
 for (const item of sample) {
   console.log(`■ ${item.bite} [${item.card.prompt.slice(0, 46)}]`);
@@ -106,7 +158,9 @@ for (const item of sample) {
 }
 
 mkdirSync(join(root, 'docs', 'harness', 'audit'), { recursive: true });
-writeFileSync(join(root, 'docs', 'harness', 'audit', 'phase3-generated.json'), JSON.stringify({
+// A later order that adds no chapter cards (order 26 only adds pack cards) must
+// not overwrite the thickness phase's findings with a row of zeroes.
+if (fresh.length) writeFileSync(join(root, 'docs', 'harness', 'audit', 'phase3-generated.json'), JSON.stringify({
   scope: 'orders 21-22 generated cards (snapshot-all diff)',
   date: new Date().toISOString().slice(0, 10),
   generated: { total: fresh.length, drill: drills.length, order: fresh.length - drills.length },
@@ -127,5 +181,24 @@ writeFileSync(join(root, 'docs', 'harness', 'audit', 'phase3-generated.json'), J
   minors,
   humanSample: { rule: 'every 37th generated drill', size: sample.length, verdict: 'read in-session; recall distractors weak-but-safe, grammar choices decidable by stem or EN gloss' },
 }, null, 2) + '\n');
-console.log('\nwrote docs/harness/audit/phase3-generated.json');
-process.exit(blockers.length ? 1 : 0);
+
+writeFileSync(join(root, 'docs', 'harness', 'audit', 'snack-cards.json'), JSON.stringify({
+  scope: 'every compiled pack card (order 26 added the pack screen)',
+  date: new Date().toISOString().slice(0, 10),
+  packs: snacks.length,
+  cards: snackCards,
+  screens: [
+    'exactly one correct option; no duplicate options; at least three options',
+    'no two cards in one pack answer with the same meaning',
+    'the highlight covers the whole expression, never part of it',
+    'no distractor whose headword the expression contains (아파요 ⊂ 머리가 아파요)',
+  ],
+  blockers: snackBlockers,
+  preexisting: {
+    note: 'findings on the 12 vocab packs shipped by order 09; recorded here, not fixed by order 26 because the fix would rewrite live cards',
+    findings: snackPreexisting,
+  },
+}, null, 2) + '\n');
+
+console.log(`\nwrote ${fresh.length ? 'docs/harness/audit/phase3-generated.json and ' : ''}docs/harness/audit/snack-cards.json`);
+process.exit(blockers.length + snackBlockers.length ? 1 : 0);

@@ -1,0 +1,1959 @@
+{
+ "order": 26,
+ "scope": "situational expression packs lifted from the parent expressions corpus",
+ "source": {
+  "file": "korean-core-starter/korean/data/expressions.json",
+  "entries": 889
+ },
+ "ranking": "parent `sort` ascending",
+ "rankingNote": "`learnerPriority` is generator boilerplate (\"Memorize {hangul} with one situation…\") on all 889 entries and `level` is 'A1' on all of them, so neither can rank. The parent's own `sort` key does order each topic by teaching priority and is used instead.",
+ "existingHeadwords": {
+  "snackPackWords": 171,
+  "wordbookWords": 720,
+  "merged": 823
+ },
+ "exclusionRules": {
+  "placeholder-hangul": "headword carries a ○ placeholder or is a two-turn Q—A pair",
+  "duplicate-hangul-in-source": "the same expression appears twice in the topic (parent duplication)",
+  "exact-duplicate": "headword already taught by a snack pack or the wordbook",
+  "inside-existing-headword": "an existing headword literally contains this expression",
+  "contains-existing-phrase": "this expression swallows an existing phrase headword (감사합니다 → 정말 감사합니다)",
+  "no-example-sentence": "parent entry ships no usable example",
+  "duplicate-english-in-pack": "another selected expression already answers with this meaning",
+  "no-fair-distractors": "meaning overlaps every other pack member, so the card cannot get two fair distractors",
+  "over-quota": "passes every rule but ranks below the pack quota"
+ },
+ "packs": [
+  {
+   "id": "pack-transport",
+   "topic": "transport",
+   "title": "교통 표현 · Getting Around",
+   "afterChapter": 23,
+   "pool": 69,
+   "selectedCount": 14,
+   "selected": [
+    {
+     "id": "expr-329",
+     "hangul": "길 좀 여쭤볼게요",
+     "english": "May I ask you for directions?"
+    },
+    {
+     "id": "expr-330",
+     "hangul": "여기 어떻게 가요?",
+     "english": "How do I get here?"
+    },
+    {
+     "id": "expr-331",
+     "hangul": "여기서 멀어요?",
+     "english": "Is it far from here?"
+    },
+    {
+     "id": "expr-332",
+     "hangul": "걸어서 갈 수 있어요?",
+     "english": "Can I get there on foot?"
+    },
+    {
+     "id": "expr-333",
+     "hangul": "얼마나 걸려요?",
+     "english": "How long does it take?"
+    },
+    {
+     "id": "expr-334",
+     "hangul": "몇 번 출구로 나가요?",
+     "english": "Which exit number do I go out?"
+    },
+    {
+     "id": "expr-335",
+     "hangul": "이거 시청 가요?",
+     "english": "Does this go to City Hall?"
+    },
+    {
+     "id": "expr-336",
+     "hangul": "어디서 갈아타요?",
+     "english": "Where do I transfer?"
+    },
+    {
+     "id": "expr-337",
+     "hangul": "여기서 내려요",
+     "english": "I get off here."
+    },
+    {
+     "id": "expr-338",
+     "hangul": "다음 역이 어디예요?",
+     "english": "What's the next station?"
+    },
+    {
+     "id": "expr-339",
+     "hangul": "지하철이 빨라요",
+     "english": "The subway is faster."
+    },
+    {
+     "id": "expr-340",
+     "hangul": "버스 정류장 어디예요?",
+     "english": "Where's the bus stop?"
+    },
+    {
+     "id": "expr-341",
+     "hangul": "길을 잃었어요",
+     "english": "I'm lost."
+    },
+    {
+     "id": "expr-342",
+     "hangul": "이 근처예요?",
+     "english": "Is it around here?"
+    }
+   ]
+  },
+  {
+   "id": "pack-restaurant",
+   "topic": "food",
+   "title": "식당·카페 주문 · Ordering Food & Drinks",
+   "afterChapter": 52,
+   "pool": 41,
+   "selectedCount": 14,
+   "selected": [
+    {
+     "id": "expr-012",
+     "hangul": "물 주세요",
+     "english": "Water, please."
+    },
+    {
+     "id": "expr-013",
+     "hangul": "계산해 주세요",
+     "english": "Check, please."
+    },
+    {
+     "id": "expr-119",
+     "hangul": "잘 먹겠습니다",
+     "english": "I will eat well (said before eating)."
+    },
+    {
+     "id": "expr-120",
+     "hangul": "잘 먹었습니다",
+     "english": "I ate well (said after eating)."
+    },
+    {
+     "id": "expr-127",
+     "hangul": "맛있게 드세요",
+     "english": "Enjoy your meal"
+    },
+    {
+     "id": "expr-217",
+     "hangul": "따뜻한 걸로 주세요",
+     "english": "I'll have it hot, please"
+    },
+    {
+     "id": "expr-218",
+     "hangul": "아이스로 주세요",
+     "english": "Iced, please"
+    },
+    {
+     "id": "expr-219",
+     "hangul": "사이즈 어떻게 드릴까요?",
+     "english": "What size would you like?"
+    },
+    {
+     "id": "expr-220",
+     "hangul": "적립해 주세요",
+     "english": "Please add my points"
+    },
+    {
+     "id": "expr-221",
+     "hangul": "봉투 드릴까요?",
+     "english": "Would you like a bag?"
+    },
+    {
+     "id": "expr-222",
+     "hangul": "봉투 주세요",
+     "english": "A bag, please"
+    },
+    {
+     "id": "expr-223",
+     "hangul": "데워 드릴까요?",
+     "english": "Shall I heat it up for you?"
+    },
+    {
+     "id": "expr-225",
+     "hangul": "일회용 컵에 주세요",
+     "english": "In a disposable cup, please"
+    },
+    {
+     "id": "expr-226",
+     "hangul": "텀블러에 담아 주세요",
+     "english": "Please put it in my tumbler"
+    }
+   ]
+  },
+  {
+   "id": "pack-shopping",
+   "topic": "shopping",
+   "title": "쇼핑 표현 · Shopping Talk",
+   "afterChapter": 51,
+   "pool": 41,
+   "selectedCount": 14,
+   "selected": [
+    {
+     "id": "expr-016",
+     "hangul": "카드 돼요?",
+     "english": "Can I pay by card?"
+    },
+    {
+     "id": "expr-134",
+     "hangul": "다음에 또 오세요",
+     "english": "Please come again"
+    },
+    {
+     "id": "expr-135",
+     "hangul": "여기 있어요",
+     "english": "Here it is"
+    },
+    {
+     "id": "expr-137",
+     "hangul": "이거 뭐예요?",
+     "english": "What is this?"
+    },
+    {
+     "id": "expr-258",
+     "hangul": "영수증 여기 있어요",
+     "english": "Here's the receipt"
+    },
+    {
+     "id": "expr-259",
+     "hangul": "이거 환불돼요?",
+     "english": "Can I get a refund on this?"
+    },
+    {
+     "id": "expr-260",
+     "hangul": "환불해 주세요",
+     "english": "Please give me a refund"
+    },
+    {
+     "id": "expr-261",
+     "hangul": "교환하고 싶어요",
+     "english": "I'd like to exchange this"
+    },
+    {
+     "id": "expr-262",
+     "hangul": "다른 걸로 바꿔 주세요",
+     "english": "Please swap it for a different one"
+    },
+    {
+     "id": "expr-263",
+     "hangul": "이거 불량인데요",
+     "english": "This one's defective"
+    },
+    {
+     "id": "expr-264",
+     "hangul": "여기 하자 있어요",
+     "english": "There's a flaw here"
+    },
+    {
+     "id": "expr-265",
+     "hangul": "이거 고장 났어요",
+     "english": "This is broken"
+    },
+    {
+     "id": "expr-266",
+     "hangul": "환불 규정이 어떻게 돼요?",
+     "english": "What's the refund policy?"
+    },
+    {
+     "id": "expr-267",
+     "hangul": "며칠 안에 환불해야 돼요?",
+     "english": "By how many days do I have to get a refund?"
+    }
+   ]
+  },
+  {
+   "id": "pack-clinic",
+   "topic": "health",
+   "title": "병원·약국 · At the Clinic",
+   "afterChapter": 48,
+   "pool": 36,
+   "selectedCount": 14,
+   "selected": [
+    {
+     "id": "expr-029",
+     "hangul": "아파요",
+     "english": "It hurts / I am sick."
+    },
+    {
+     "id": "expr-233",
+     "hangul": "어디가 아프세요?",
+     "english": "Where does it hurt?"
+    },
+    {
+     "id": "expr-234",
+     "hangul": "열이 나요",
+     "english": "I have a fever"
+    },
+    {
+     "id": "expr-235",
+     "hangul": "머리가 아파요",
+     "english": "I have a headache"
+    },
+    {
+     "id": "expr-236",
+     "hangul": "배가 아파요",
+     "english": "I have a stomachache"
+    },
+    {
+     "id": "expr-237",
+     "hangul": "감기에 걸렸어요",
+     "english": "I caught a cold"
+    },
+    {
+     "id": "expr-238",
+     "hangul": "기침이 나요",
+     "english": "I have a cough"
+    },
+    {
+     "id": "expr-239",
+     "hangul": "콧물이 나요",
+     "english": "I have a runny nose"
+    },
+    {
+     "id": "expr-241",
+     "hangul": "어지러워요",
+     "english": "I feel dizzy"
+    },
+    {
+     "id": "expr-242",
+     "hangul": "처방전 주세요",
+     "english": "Please give me the prescription"
+    },
+    {
+     "id": "expr-243",
+     "hangul": "약 좀 지어 주세요",
+     "english": "Could you fill this prescription / make up the medicine?"
+    },
+    {
+     "id": "expr-244",
+     "hangul": "하루 세 번 드세요",
+     "english": "Take it three times a day"
+    },
+    {
+     "id": "expr-245",
+     "hangul": "식후 삼십 분에 드세요",
+     "english": "Take it thirty minutes after meals"
+    },
+    {
+     "id": "expr-246",
+     "hangul": "진통제 있어요?",
+     "english": "Do you have painkillers?"
+    }
+   ]
+  },
+  {
+   "id": "pack-work",
+   "topic": "work",
+   "title": "직장 표현 · Office Korean",
+   "afterChapter": 40,
+   "pool": 54,
+   "selectedCount": 14,
+   "selected": [
+    {
+     "id": "expr-118",
+     "hangul": "처음 뵙겠습니다",
+     "english": "How do you do (formal first meeting)."
+    },
+    {
+     "id": "expr-200",
+     "hangul": "참고 부탁드립니다",
+     "english": "Please take note / for your reference"
+    },
+    {
+     "id": "expr-201",
+     "hangul": "첨부했습니다",
+     "english": "I've attached it (please find attached)"
+    },
+    {
+     "id": "expr-202",
+     "hangul": "확인 부탁드립니다",
+     "english": "Please check / kindly confirm"
+    },
+    {
+     "id": "expr-203",
+     "hangul": "회신 부탁드립니다",
+     "english": "Please reply / awaiting your response"
+    },
+    {
+     "id": "expr-204",
+     "hangul": "검토 부탁드립니다",
+     "english": "Please review (and give feedback)"
+    },
+    {
+     "id": "expr-205",
+     "hangul": "확인 후 회신 주시면 감사하겠습니다",
+     "english": "I'd be grateful if you could check and reply"
+    },
+    {
+     "id": "expr-206",
+     "hangul": "일정 조율이 필요할 것 같습니다",
+     "english": "I think we'll need to coordinate the schedule"
+    },
+    {
+     "id": "expr-207",
+     "hangul": "언제 시간 괜찮으세요?",
+     "english": "When would be a good time for you?"
+    },
+    {
+     "id": "expr-208",
+     "hangul": "회의 일정을 잡고 싶습니다",
+     "english": "I'd like to set up a meeting"
+    },
+    {
+     "id": "expr-209",
+     "hangul": "일정이 변경되었습니다",
+     "english": "The schedule has changed"
+    },
+    {
+     "id": "expr-210",
+     "hangul": "보고드리겠습니다",
+     "english": "I will report to you"
+    },
+    {
+     "id": "expr-211",
+     "hangul": "확인 후 다시 연락드리겠습니다",
+     "english": "I'll check and get back to you"
+    },
+    {
+     "id": "expr-212",
+     "hangul": "확인 부탁드린 건 어떻게 되었을까요?",
+     "english": "May I ask how the matter I requested is going?"
+    }
+   ]
+  },
+  {
+   "id": "pack-admin",
+   "topic": "admin",
+   "title": "은행·행정 · Bank & Paperwork",
+   "afterChapter": 58,
+   "pool": 46,
+   "selectedCount": 14,
+   "selected": [
+    {
+     "id": "expr-163",
+     "hangul": "계좌 만들고 싶어요",
+     "english": "I'd like to open an account"
+    },
+    {
+     "id": "expr-164",
+     "hangul": "잔액 확인하고 싶어요",
+     "english": "I'd like to check my balance"
+    },
+    {
+     "id": "expr-165",
+     "hangul": "현금 좀 뽑으려고요",
+     "english": "I'm going to withdraw some cash"
+    },
+    {
+     "id": "expr-166",
+     "hangul": "수수료 있어요?",
+     "english": "Is there a fee?"
+    },
+    {
+     "id": "expr-167",
+     "hangul": "비밀번호 입력해 주세요",
+     "english": "Please enter your PIN/password"
+    },
+    {
+     "id": "expr-168",
+     "hangul": "여기로 송금하고 싶어요",
+     "english": "I'd like to send money here"
+    },
+    {
+     "id": "expr-169",
+     "hangul": "이체할게요",
+     "english": "I'll make a transfer"
+    },
+    {
+     "id": "expr-170",
+     "hangul": "계좌번호 좀 알려 주세요",
+     "english": "Could you give me your account number?"
+    },
+    {
+     "id": "expr-171",
+     "hangul": "입금됐는지 확인해 주세요",
+     "english": "Please check if the deposit came in"
+    },
+    {
+     "id": "expr-172",
+     "hangul": "카드 정지시켜 주세요",
+     "english": "Please freeze/cancel my card"
+    },
+    {
+     "id": "expr-173",
+     "hangul": "카드가 안 됐어요",
+     "english": "My card didn't work / got declined"
+    },
+    {
+     "id": "expr-174",
+     "hangul": "환전하고 싶어요",
+     "english": "I'd like to exchange money"
+    },
+    {
+     "id": "expr-175",
+     "hangul": "환율 어떻게 돼요?",
+     "english": "What's the exchange rate?"
+    },
+    {
+     "id": "expr-176",
+     "hangul": "잔돈으로 바꿔 주세요",
+     "english": "Please change this into smaller bills/coins"
+    }
+   ]
+  }
+ ],
+ "excludedByReason": {
+  "contains-existing-phrase": 11,
+  "duplicate-hangul-in-source": 12,
+  "over-quota": 168,
+  "exact-duplicate": 9,
+  "multi-sentence-hangul": 1,
+  "placeholder-hangul": 2
+ },
+ "excluded": [
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-376",
+   "hangul": "주차비 얼마예요?",
+   "reason": "contains-existing-phrase",
+   "detail": "snack-pack: 얼마예요"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-772",
+   "hangul": "교통카드 주세요",
+   "reason": "contains-existing-phrase",
+   "detail": "wordbook: 교통카드"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-774",
+   "hangul": "잔액이 얼마예요?",
+   "reason": "contains-existing-phrase",
+   "detail": "snack-pack: 얼마예요"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-778",
+   "hangul": "다음 역이 어디예요?",
+   "reason": "duplicate-hangul-in-source"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-794",
+   "hangul": "얼마나 걸려요?",
+   "reason": "duplicate-hangul-in-source"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-797",
+   "hangul": "잔돈은 괜찮아요",
+   "reason": "contains-existing-phrase",
+   "detail": "snack-pack: 괜찮아요"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-801",
+   "hangul": "기본요금이 얼마예요?",
+   "reason": "contains-existing-phrase",
+   "detail": "snack-pack: 얼마예요"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-804",
+   "hangul": "감사합니다 수고하세요",
+   "reason": "contains-existing-phrase",
+   "detail": "snack-pack: 감사합니다"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-805",
+   "hangul": "택시 좀 불러 주세요",
+   "reason": "duplicate-hangul-in-source"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-343",
+   "hangul": "쭉 가세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-344",
+   "hangul": "택시 좀 불러 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-363",
+   "hangul": "주차 어디에 해요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-364",
+   "hangul": "주차장 있어요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-365",
+   "hangul": "가득이요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-366",
+   "hangul": "기름 넣어야 돼요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-367",
+   "hangul": "셀프예요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-368",
+   "hangul": "신호 바뀌었어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-369",
+   "hangul": "안전벨트 매세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-370",
+   "hangul": "여기 세워 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-371",
+   "hangul": "길이 막혀요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-372",
+   "hangul": "내비 좀 찍어 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-373",
+   "hangul": "막차 끊겼어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-374",
+   "hangul": "면허 딴 지 얼마 안 됐어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-375",
+   "hangul": "과속하지 마세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-377",
+   "hangul": "여기 주차하면 안 돼요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-378",
+   "hangul": "접촉사고 났어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-379",
+   "hangul": "여기서 좌회전해요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-380",
+   "hangul": "하이패스로 가세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-773",
+   "hangul": "충전해 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-775",
+   "hangul": "몇 호선이에요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-776",
+   "hangul": "이거 시청역 가요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-777",
+   "hangul": "어디서 내려요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-779",
+   "hangul": "환승하려면 어디로 가요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-780",
+   "hangul": "여기서 갈아타면 돼요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-781",
+   "hangul": "버스 카드 찍으셨어요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-782",
+   "hangul": "현금도 돼요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-783",
+   "hangul": "정류장이 어디예요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-784",
+   "hangul": "이 버스 자주 와요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-785",
+   "hangul": "막차 몇 시예요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-786",
+   "hangul": "이 자리 비었어요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-787",
+   "hangul": "좀 지나갈게요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-788",
+   "hangul": "이거 급행이에요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-789",
+   "hangul": "벨 눌러 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-790",
+   "hangul": "이 주소로 가 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-791",
+   "hangul": "여기로 가 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-792",
+   "hangul": "여기서 세워 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-793",
+   "hangul": "저 앞에서 내릴게요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-795",
+   "hangul": "좀 빨리 가 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-796",
+   "hangul": "카드 돼요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-798",
+   "hangul": "트렁크 좀 열어 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-799",
+   "hangul": "안전벨트 매 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-800",
+   "hangul": "미터기 켜 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-802",
+   "hangul": "돌아가지 말아 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-803",
+   "hangul": "다 왔어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-transport",
+   "topic": "transport",
+   "id": "expr-806",
+   "hangul": "기사님, 여기 어떻게 가요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-010",
+   "hangul": "여기요",
+   "reason": "exact-duplicate",
+   "detail": "snack-pack: 여기요"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-014",
+   "hangul": "포장해 주세요",
+   "reason": "exact-duplicate",
+   "detail": "wordbook: 포장해 주세요"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-224",
+   "hangul": "드시고 가세요? 가져가세요?",
+   "reason": "multi-sentence-hangul"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-227",
+   "hangul": "얼마예요?",
+   "reason": "exact-duplicate",
+   "detail": "snack-pack: 얼마예요"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-232",
+   "hangul": "포장해 주세요",
+   "reason": "duplicate-hangul-in-source"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-702",
+   "hangul": "여기요",
+   "reason": "duplicate-hangul-in-source"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-706",
+   "hangul": "이거 주세요",
+   "reason": "exact-duplicate",
+   "detail": "snack-pack: 이거 주세요"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-711",
+   "hangul": "계산해 주세요",
+   "reason": "duplicate-hangul-in-source"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-713",
+   "hangul": "잘 먹겠습니다",
+   "reason": "duplicate-hangul-in-source"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-714",
+   "hangul": "잘 먹었습니다",
+   "reason": "duplicate-hangul-in-source"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-877",
+   "hangul": "화장실이 어디예요?",
+   "reason": "exact-duplicate",
+   "detail": "snack-pack: 화장실이 어디예요"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-228",
+   "hangul": "카드로 할게요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-229",
+   "hangul": "현금영수증 해 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-230",
+   "hangul": "빨대 어디 있어요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-231",
+   "hangul": "자리 있어요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-703",
+   "hangul": "저기요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-704",
+   "hangul": "메뉴 좀 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-705",
+   "hangul": "주문할게요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-707",
+   "hangul": "물 좀 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-708",
+   "hangul": "추천 좀 해 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-709",
+   "hangul": "안 맵게 해 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-710",
+   "hangul": "포장돼요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-712",
+   "hangul": "따로 계산해 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-715",
+   "hangul": "리필 돼요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-716",
+   "hangul": "여기 화장실 어디예요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-717",
+   "hangul": "몇 명이요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-restaurant",
+   "topic": "food",
+   "id": "expr-718",
+   "hangul": "이거 안 시켰는데요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-011",
+   "hangul": "이거 주세요",
+   "reason": "exact-duplicate",
+   "detail": "snack-pack: 이거 주세요"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-015",
+   "hangul": "얼마예요?",
+   "reason": "exact-duplicate",
+   "detail": "snack-pack: 얼마예요"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-755",
+   "hangul": "얼마예요?",
+   "reason": "duplicate-hangul-in-source"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-756",
+   "hangul": "이거 얼마예요?",
+   "reason": "contains-existing-phrase",
+   "detail": "snack-pack: 얼마예요"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-769",
+   "hangul": "포장해 주세요",
+   "reason": "exact-duplicate",
+   "detail": "wordbook: 포장해 주세요"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-770",
+   "hangul": "카드 돼요?",
+   "reason": "duplicate-hangul-in-source"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-268",
+   "hangul": "이거 반품하고 싶어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-269",
+   "hangul": "영수증 없이도 환불돼요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-270",
+   "hangul": "그냥 환불받고 싶어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-271",
+   "hangul": "안 쓴 거예요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-272",
+   "hangul": "산 지 얼마 안 됐어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-273",
+   "hangul": "받았을 때부터 이랬어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-274",
+   "hangul": "환불 처리 좀 해 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-275",
+   "hangul": "이거 환불이 안 된다고요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-757",
+   "hangul": "좀 깎아 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-758",
+   "hangul": "너무 비싸요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-759",
+   "hangul": "입어 봐도 돼요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-760",
+   "hangul": "신어 봐도 돼요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-761",
+   "hangul": "다른 색 있어요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-762",
+   "hangul": "더 큰 거 있어요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-763",
+   "hangul": "이거 세일해요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-764",
+   "hangul": "환불돼요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-765",
+   "hangul": "교환돼요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-766",
+   "hangul": "영수증 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-767",
+   "hangul": "그냥 둘러볼게요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-768",
+   "hangul": "이걸로 할게요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-shopping",
+   "topic": "shopping",
+   "id": "expr-771",
+   "hangul": "봉투 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-240",
+   "hangul": "토할 것 같아요",
+   "reason": "contains-existing-phrase",
+   "detail": "wordbook: 것 같아요"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-434",
+   "hangul": "한 달에 얼마예요?",
+   "reason": "contains-existing-phrase",
+   "detail": "snack-pack: 얼마예요"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-247",
+   "hangul": "많이 안 좋으면 병원 가세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-248",
+   "hangul": "몸살이 났어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-249",
+   "hangul": "주사 맞아야 해요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-433",
+   "hangul": "헬스장 등록하려고요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-435",
+   "hangul": "운동복 갈아입을 데 있어요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-436",
+   "hangul": "오늘은 유산소만 할 거예요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-437",
+   "hangul": "스트레칭 먼저 하고 할게요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-438",
+   "hangul": "이 기구 어떻게 쓰는 거예요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-439",
+   "hangul": "PT 받아 보고 싶은데요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-440",
+   "hangul": "운동한 지 얼마나 되셨어요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-441",
+   "hangul": "근육통이 너무 심해요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-442",
+   "hangul": "오늘 무슨 운동해요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-443",
+   "hangul": "요즘 다이어트 중이에요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-444",
+   "hangul": "락커 키 어디서 받아요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-445",
+   "hangul": "샤워실은 어디예요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-446",
+   "hangul": "자세 좀 봐 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-447",
+   "hangul": "환불 규정이 어떻게 돼요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-448",
+   "hangul": "오늘은 좀 무리했나 봐요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-449",
+   "hangul": "이거 몇 세트 해요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-clinic",
+   "topic": "health",
+   "id": "expr-450",
+   "hangul": "회원권 잠깐 정지할 수 있어요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-125",
+   "hangul": "수고하셨습니다",
+   "reason": "exact-duplicate",
+   "detail": "wordbook: 수고하셨습니다"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-199",
+   "hangul": "안녕하세요, ○○팀 ○○○입니다",
+   "reason": "placeholder-hangul"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-214",
+   "hangul": "바쁘신 와중에 죄송하지만",
+   "reason": "contains-existing-phrase",
+   "detail": "wordbook: 죄송하지만"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-547",
+   "hangul": "보고드리겠습니다",
+   "reason": "duplicate-hangul-in-source"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-548",
+   "hangul": "수고하셨습니다",
+   "reason": "duplicate-hangul-in-source"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-213",
+   "hangul": "검토 후 의견 주시면 반영하겠습니다",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-215",
+   "hangul": "양해 부탁드립니다",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-216",
+   "hangul": "참조에 넣어 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-497",
+   "hangul": "지원하다",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-498",
+   "hangul": "면접 보다",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-499",
+   "hangul": "이력서",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-500",
+   "hangul": "자기소개 좀 해 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-501",
+   "hangul": "잘 부탁드립니다",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-502",
+   "hangul": "지원 동기가 뭐예요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-503",
+   "hangul": "경력이 어떻게 되세요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-504",
+   "hangul": "강점이 뭐예요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-505",
+   "hangul": "약점이 뭐예요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-506",
+   "hangul": "성격의 장단점",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-507",
+   "hangul": "연봉이 어떻게 되나요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-508",
+   "hangul": "언제부터 출근 가능하세요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-509",
+   "hangul": "궁금한 점 있으세요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-510",
+   "hangul": "합격했어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-511",
+   "hangul": "불합격했어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-512",
+   "hangul": "입사하다",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-513",
+   "hangul": "서류 전형",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-514",
+   "hangul": "이상입니다",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-533",
+   "hangul": "회의가 있어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-534",
+   "hangul": "자리에 안 계세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-535",
+   "hangul": "잠시 자리 비웠어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-536",
+   "hangul": "확인해 보겠습니다",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-537",
+   "hangul": "메일 보내 드렸어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-538",
+   "hangul": "다시 연락드리겠습니다",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-539",
+   "hangul": "고생하셨습니다",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-540",
+   "hangul": "먼저 들어가 보겠습니다",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-541",
+   "hangul": "잠깐 시간 괜찮으세요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-542",
+   "hangul": "마감이 언제예요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-543",
+   "hangul": "회의실 잡을게요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-544",
+   "hangul": "자료 공유해 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-545",
+   "hangul": "점심 같이 드실래요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-work",
+   "topic": "work",
+   "id": "expr-546",
+   "hangul": "좀 도와주실 수 있을까요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-869",
+   "hangul": "내용물이 뭐예요? — 옷이에요",
+   "reason": "placeholder-hangul"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-875",
+   "hangul": "박스 안 터지게 단단히 포장해 주세요",
+   "reason": "contains-existing-phrase",
+   "detail": "wordbook: 포장해 주세요"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-177",
+   "hangul": "통장 정리 좀 해 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-178",
+   "hangul": "자동이체 신청하고 싶어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-179",
+   "hangul": "근처에 ATM 있어요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-180",
+   "hangul": "이체 한도 좀 올려 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-487",
+   "hangul": "외국인등록증 발급받으러 왔어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-488",
+   "hangul": "체류 기간 연장하고 싶어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-489",
+   "hangul": "비자 종류가 뭐예요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-490",
+   "hangul": "신청서 어떻게 작성해요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-491",
+   "hangul": "어디에서 접수해요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-492",
+   "hangul": "방문 예약하고 왔어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-493",
+   "hangul": "번호표 뽑고 기다리시면 돼요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-494",
+   "hangul": "여기 서명하면 돼요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-495",
+   "hangul": "여권 사본 필요해요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-496",
+   "hangul": "이 서류 다 준비했어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-635",
+   "hangul": "택배 보내려고요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-636",
+   "hangul": "이거 등기로 보내 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-637",
+   "hangul": "송장 번호 좀 알려 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-638",
+   "hangul": "착불로 보내 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-639",
+   "hangul": "깨지는 거라서 조심히 다뤄 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-640",
+   "hangul": "박스 하나 살 수 있어요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-641",
+   "hangul": "받는 사람 주소는 여기 적으면 돼요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-642",
+   "hangul": "언제쯤 도착해요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-643",
+   "hangul": "택배 받으러 왔어요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-868",
+   "hangul": "이거 반송하고 싶은데요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-870",
+   "hangul": "제일 싼 걸로 보내 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-871",
+   "hangul": "국제 배송도 돼요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-872",
+   "hangul": "무게 좀 달아 주세요",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-873",
+   "hangul": "오늘 보내면 모레 도착해요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-874",
+   "hangul": "주소가 바뀌었는데 변경할 수 있어요?",
+   "reason": "over-quota"
+  },
+  {
+   "packId": "pack-admin",
+   "topic": "admin",
+   "id": "expr-876",
+   "hangul": "택배가 안 왔는데 어떻게 된 거예요?",
+   "reason": "over-quota"
+  }
+ ]
+}

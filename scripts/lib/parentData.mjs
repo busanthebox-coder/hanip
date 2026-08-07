@@ -28,6 +28,32 @@ export function resolveParentDataDir(root = projectRoot) {
     || join(root, '..', 'korean-core-starter', 'public', 'data');
 }
 
+// The parent ships two shelves: the built app data under public/data (the
+// dictionary, vocab packs, readers) and the authoring source under korean/data.
+// Situational expressions only exist on the authoring shelf, so its path
+// resolution lives here too instead of being re-derived by each extractor.
+export function resolveParentRepoDir(root = projectRoot) {
+  if (process.env.HANIP_PARENT_REPO_DIR) return process.env.HANIP_PARENT_REPO_DIR;
+  if (process.env.HANIP_PARENT_DATA_DIR) return join(process.env.HANIP_PARENT_DATA_DIR, '..', '..');
+  return join(root, '..', 'korean-core-starter');
+}
+
+export function loadExpressions({
+  root = projectRoot,
+  file = join(resolveParentRepoDir(root), 'korean', 'data', 'expressions.json'),
+  label = 'expressions',
+} = {}) {
+  if (!existsSync(file)) {
+    throw new Error(`${label}: required parent expression source not found: ${file}`);
+  }
+  const json = JSON.parse(readFileSync(file, 'utf8'));
+  const entries = Array.isArray(json.entries) ? json.entries : [];
+  if (!entries.length) {
+    throw new Error(`${label}: parent expression source contains no entries: ${file}`);
+  }
+  return { entries, file };
+}
+
 export function loadDictionary({ root = projectRoot, directory = resolveParentDataDir(root), label = 'parent data' } = {}) {
   if (!existsSync(directory)) {
     throw new Error(`${label}: required parent enrichment source not found: ${directory}`);

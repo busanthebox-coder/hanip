@@ -399,6 +399,11 @@ export function compileSnack(pack, overrides = {}) {
       romanization: word.romanization,
       en: word.english,
       pos: word.partOfSpeech,
+      // Expression packs (order 26) carry the parent's nuance on the pack word
+      // itself — there is no wordbook row to attach it from later, because a
+      // whole expression is never a wordbook headword. Vocab packs have no
+      // nuance here and keep taking theirs from wordbook-depth in compile-bites.
+      ...(word.nuance ? { nuance: word.nuance } : {}),
     },
     sentence: word.example ? { ko: word.example.ko, en: word.example.en } : null,
     target: word.example?.ko

@@ -33,14 +33,17 @@ describe('pack, reader, and snack extraction artifacts', () => {
     if (!Object.values(present).every(Boolean)) return;
 
     const packs = readJson(files.packs);
+    const expressionPacks = readJson(new URL('../data/expression-packs.json', import.meta.url));
+    const allPacks = [...packs.packs, ...expressionPacks.packs];
     const snacks = readJson(files.snacks);
     const index = readJson(new URL('../src/lib/bites-index.json', import.meta.url));
 
-    expect(index.snacks).toHaveLength(12);
-    expect(snacks.snacks).toHaveLength(12);
+    // 12 vocab packs (order 09) + 6 situational expression packs (order 26)
+    expect(index.snacks).toHaveLength(18);
+    expect(snacks.snacks).toHaveLength(18);
     expect(snacks.snacks.map((snack) => snack.id)).toEqual(index.snacks.map((snack) => snack.id));
     for (const snack of snacks.snacks) {
-      const pack = packs.packs.find((candidate) => candidate.id === snack.packId);
+      const pack = allPacks.find((candidate) => candidate.id === snack.packId);
       expect(pack).toBeTruthy();
       expect(snack.kind).toBe('snack');
       expect(snack.cards).toHaveLength(pack.words.length);
