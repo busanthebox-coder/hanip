@@ -21,7 +21,7 @@
      "id": "chapter-01-b2",
      "kind": "pattern",
      "title": "문법 Grammar · 자음 (Consonants)",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Tell consonants from vowels and name the ten core 자음 shapes",
      "firstWord": "자음 (Consonants)"
     },
@@ -37,7 +37,7 @@
      "id": "chapter-01-b4",
      "kind": "pattern",
      "title": "문법 Grammar · 모음 (Vowels)",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "See a vowel's lines and dots and read its direction (모음)",
      "firstWord": "모음 (Vowels)"
     },
@@ -95,7 +95,7 @@
      "id": "chapter-02-b2",
      "kind": "pattern",
      "title": "문법 Grammar · N은/는",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Greet, thank, and apologize politely (안녕하세요 · 감사합니다 · 죄송합니다)",
      "firstWord": "N은/는"
     },
@@ -111,7 +111,7 @@
      "id": "chapter-02-b4",
      "kind": "pattern",
      "title": "문법 Grammar · N이에요/예요",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Introduce myself with 저는 ___이에요/예요",
      "firstWord": "N이에요/예요"
     },
@@ -169,7 +169,7 @@
      "id": "chapter-03-b2",
      "kind": "pattern",
      "title": "문법 Grammar · N이에요/예요",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Say what someone or something is with N이에요/예요",
      "firstWord": "N이에요/예요"
     },
@@ -185,7 +185,7 @@
      "id": "chapter-03-b4",
      "kind": "pattern",
      "title": "문법 Grammar · N은/는",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Pick 이에요 or 예요 from the noun's final sound (받침 vs vowel)",
      "firstWord": "N은/는"
     },
@@ -243,7 +243,7 @@
      "id": "chapter-04-b2",
      "kind": "pattern",
      "title": "문법 Grammar · 있어요/없어요",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Say something exists or you have it with 있어요",
      "firstWord": "있어요/없어요"
     },
@@ -259,7 +259,7 @@
      "id": "chapter-04-b4",
      "kind": "pattern",
      "title": "문법 Grammar · N이/가",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Say something is missing or you don't have it with 없어요",
      "firstWord": "N이/가"
     },
@@ -317,7 +317,7 @@
      "id": "chapter-05-b2",
      "kind": "pattern",
      "title": "문법 Grammar · N을/를",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Mark what the action happens to with N을/를 (밥을, 커피를)",
      "firstWord": "N을/를"
     },
@@ -333,7 +333,7 @@
      "id": "chapter-05-b4",
      "kind": "pattern",
      "title": "문법 Grammar · 안 + verb",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Say everyday actions in the polite present tense (먹어요, 마셔요)",
      "firstWord": "안 + verb"
     },
@@ -349,7 +349,7 @@
      "id": "chapter-05-b6",
      "kind": "pattern",
      "title": "문법 Grammar · 자연스럽게 말하기",
-     "cardCount": 1,
+     "cardCount": 3,
      "canDo": "Make a verb negative with 안 + verb (안 먹어요)",
      "firstWord": "자연스럽게 말하기"
     },
@@ -399,7 +399,7 @@
      "id": "chapter-06-b2",
      "kind": "pattern",
      "title": "문법 Grammar · N에",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Mark a destination or time with N에 (학교에 가요)",
      "firstWord": "N에"
     },
@@ -415,7 +415,7 @@
      "id": "chapter-06-b4",
      "kind": "pattern",
      "title": "문법 Grammar · N에서",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Mark where an action happens with N에서 (집에서 일해요)",
      "firstWord": "N에서"
     },
@@ -473,7 +473,7 @@
      "id": "chapter-07-b2",
      "kind": "pattern",
      "title": "문법 Grammar · 도 vs 만",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Add one more thing with N도 and limit to one with N만",
      "firstWord": "도 vs 만"
     },
@@ -489,7 +489,7 @@
      "id": "chapter-07-b4",
      "kind": "pattern",
      "title": "문법 Grammar · (으)로",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Say the payment method or means with N(으)로 (카드로, 현금으로)",
      "firstWord": "(으)로"
     },
@@ -547,7 +547,7 @@
      "id": "chapter-08-b2",
      "kind": "pattern",
      "title": "문법 Grammar · -고 싶어요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Say what you want to do with V-고 싶어요 (가고 싶어요)",
      "firstWord": "-고 싶어요"
     },
@@ -563,7 +563,7 @@
      "id": "chapter-08-b4",
      "kind": "pattern",
      "title": "문법 Grammar · -(으)ㄹ 수 있어요 / 없어요",
-     "cardCount": 2,
+     "cardCount": 4,
      "canDo": "Say what you're able to do with V-(으)ㄹ 수 있어요",
      "firstWord": "-(으)ㄹ 수 있어요 / 없어요"
     },
@@ -621,7 +621,7 @@
      "id": "chapter-09-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V아/어 주세요 vs V아/어도 돼요?",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Ask someone to do something for you with V아/어 주세요 (도와주세요)",
      "firstWord": "V아/어 주세요 vs V아/어도 돼요?"
     },
@@ -637,7 +637,7 @@
      "id": "chapter-09-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V지 마세요 & V아/어야 돼요",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Ask or give permission with V아/어도 돼요? (앉아도 돼요?)",
      "firstWord": "V지 마세요 & V아/어야 돼요"
     },
@@ -695,7 +695,7 @@
      "id": "chapter-10-b2",
      "kind": "pattern",
      "title": "문법 Grammar · N부터 / N까지",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Give a time or place range with N부터 N까지 (아홉 시부터 여섯 시까지)",
      "firstWord": "N부터 / N까지"
     },
@@ -711,7 +711,7 @@
      "id": "chapter-10-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V아/어 주세요",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Ask someone to do something for me with V아/어 주세요 (말해 주세요)",
      "firstWord": "V아/어 주세요"
     },
@@ -769,7 +769,7 @@
      "id": "chapter-11-b2",
      "kind": "pattern",
      "title": "문법 Grammar · -아서/어서",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Link a reason to a result with -아서/어서 (아파서 못 가요)",
      "firstWord": "-아서/어서"
     },
@@ -785,7 +785,7 @@
      "id": "chapter-11-b4",
      "kind": "pattern",
      "title": "문법 Grammar · -고 / -(으)면 / -(으)ㄹ게요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "List or sequence two ideas with -고 (바쁘고 피곤해요)",
      "firstWord": "-고 / -(으)면 / -(으)ㄹ게요"
     },
@@ -843,7 +843,7 @@
      "id": "chapter-12-b2",
      "kind": "pattern",
      "title": "문법 Grammar · -는 것 같다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Soften an opinion so it sounds less blunt (-는 것 같다)",
      "firstWord": "-는 것 같다"
     },
@@ -859,7 +859,7 @@
      "id": "chapter-12-b4",
      "kind": "pattern",
      "title": "문법 Grammar · -잖아(요) vs -거든(요)",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Give a reason as new information the listener didn't know (-거든요)",
      "firstWord": "-잖아(요) vs -거든(요)"
     },
@@ -917,7 +917,7 @@
      "id": "chapter-13-b2",
      "kind": "pattern",
      "title": "문법 Grammar · -(ㄴ/는)다고 하다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Report what someone said using the plain form plus -(ㄴ/는)다고 하다",
      "firstWord": "-(ㄴ/는)다고 하다"
     },
@@ -933,7 +933,7 @@
      "id": "chapter-13-b4",
      "kind": "pattern",
      "title": "문법 Grammar · -냐고 하다",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Report a question someone asked (-냐고 하다 / 물어보다)",
      "firstWord": "-냐고 하다"
     },
@@ -991,7 +991,7 @@
      "id": "chapter-14-b2",
      "kind": "pattern",
      "title": "문법 Grammar · -기로 하다",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Say I've decided or agreed to do something (-기로 하다)",
      "firstWord": "-기로 하다"
     },
@@ -1007,7 +1007,7 @@
      "id": "chapter-14-b4",
      "kind": "pattern",
      "title": "문법 Grammar · -(으)ㄹ까 봐",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Explain that I act because I'm afraid something might happen (-(으)ㄹ까 봐)",
      "firstWord": "-(으)ㄹ까 봐"
     },
@@ -1023,7 +1023,7 @@
      "id": "chapter-14-b6",
      "kind": "pattern",
      "title": "문법 Grammar · -게 되다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Show a situation came about by circumstance, not my own choice (-게 되다)",
      "firstWord": "-게 되다"
     },
@@ -1073,7 +1073,7 @@
      "id": "chapter-15-b2",
      "kind": "pattern",
      "title": "문법 Grammar · -는 척하다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Say someone is faking or putting on an act (-는 척하다)",
      "firstWord": "-는 척하다"
     },
@@ -1089,7 +1089,7 @@
      "id": "chapter-15-b4",
      "kind": "pattern",
      "title": "문법 Grammar · -(으)ㄹ 뻔하다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Describe a close call that almost happened (-(으)ㄹ 뻔했다)",
      "firstWord": "-(으)ㄹ 뻔하다"
     },
@@ -1105,7 +1105,7 @@
      "id": "chapter-15-b6",
      "kind": "pattern",
      "title": "문법 Grammar · -나 보다 / -(으)ㄴ가 보다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Guess about a situation from what I see or hear (-나 보다 / -(으)ㄴ가 보다)",
      "firstWord": "-나 보다 / -(으)ㄴ가 보다"
     },
@@ -1155,7 +1155,7 @@
      "id": "chapter-16-b2",
      "kind": "pattern",
      "title": "문법 Grammar · -더니",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Link what I noticed to what followed (-더니)",
      "firstWord": "-더니"
     },
@@ -1171,7 +1171,7 @@
      "id": "chapter-16-b4",
      "kind": "pattern",
      "title": "문법 Grammar · -길래",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Give the outside trigger behind my own reaction (-길래)",
      "firstWord": "-길래"
     },
@@ -1187,7 +1187,7 @@
      "id": "chapter-16-b6",
      "kind": "pattern",
      "title": "문법 Grammar · -는 바람에",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Blame an unexpected cause for a bad result (-는 바람에)",
      "firstWord": "-는 바람에"
     },
@@ -1195,7 +1195,7 @@
      "id": "chapter-16-b7",
      "kind": "pattern",
      "title": "문법 Grammar · -(으)ㄹ수록",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Express 'the more…, the more…' (-(으)ㄹ수록) and state a purpose (-기 위해서)",
      "firstWord": "-(으)ㄹ수록"
     },
@@ -1203,7 +1203,7 @@
      "id": "chapter-16-b8",
      "kind": "pattern",
      "title": "문법 Grammar · -기 위해서",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Link what I noticed to what followed (-더니)",
      "firstWord": "-기 위해서"
     },
@@ -1253,7 +1253,7 @@
      "id": "chapter-17-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V았/었어요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Say a past action with the polite past tense V았/었어요 (먹었어요 · 갔어요)",
      "firstWord": "V았/었어요"
     },
@@ -1319,7 +1319,7 @@
      "id": "chapter-18-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V-(으)ㄹ 거예요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Say a future plan or intention with V-(으)ㄹ 거예요 (갈 거예요)",
      "firstWord": "V-(으)ㄹ 거예요"
     },
@@ -1385,7 +1385,7 @@
      "id": "chapter-19-b2",
      "kind": "pattern",
      "title": "문법 Grammar · Question words (누구, 뭐, 어디, 언제, 왜, 어떻게, 몇, 얼마)",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Ask who, what, where with question words in the answer's slot (누구 · 뭐 · 어디)",
      "firstWord": "Question words (누구, 뭐, 어디, 언제, 왜, 어떻게, 몇, 얼마)"
     },
@@ -1451,7 +1451,7 @@
      "id": "chapter-20-b2",
      "kind": "pattern",
      "title": "문법 Grammar · Two number systems: native (하나·둘·셋) vs. Sino-Korean (일·이·삼)",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Tell the o'clock hour with native numbers (세 시 · 네 시)",
      "firstWord": "Two number systems: native (하나·둘·셋) vs. Sino-Korean (일·이·삼)"
     },
@@ -1517,7 +1517,7 @@
      "id": "chapter-21-b2",
      "kind": "pattern",
      "title": "문법 Grammar · A-(으)ㄴ N",
-     "cardCount": 1,
+     "cardCount": 3,
      "canDo": "Put an adjective before a noun with A-(으)ㄴ N (작은 가방 · 예쁜 옷)",
      "firstWord": "A-(으)ㄴ N"
     },
@@ -1533,7 +1533,7 @@
      "id": "chapter-21-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V-는 N",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Describe a noun by a current or habitual action with V-는 N (찾는 가방)",
      "firstWord": "V-는 N"
     },
@@ -1549,7 +1549,7 @@
      "id": "chapter-21-b6",
      "kind": "pattern",
      "title": "문법 Grammar · V-(으)ㄴ N",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Describe a noun by a finished action with V-(으)ㄴ N (어제 본 영화)",
      "firstWord": "V-(으)ㄴ N"
     },
@@ -1599,7 +1599,7 @@
      "id": "chapter-22-b2",
      "kind": "pattern",
      "title": "문법 Grammar · N을/를 좋아해요",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Say what I like with the object marker, N을/를 좋아해요 (음악을 좋아해요)",
      "firstWord": "N을/를 좋아해요"
     },
@@ -1615,7 +1615,7 @@
      "id": "chapter-22-b4",
      "kind": "pattern",
      "title": "문법 Grammar · N보다 더",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Compare two things with N보다 더 (커피보다 더 좋아요)",
      "firstWord": "N보다 더"
     },
@@ -1631,7 +1631,7 @@
      "id": "chapter-22-b6",
      "kind": "pattern",
      "title": "문법 Grammar · N만큼",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Say something is as much / not as much as another with N만큼 (커피만큼)",
      "firstWord": "N만큼"
     },
@@ -1681,7 +1681,7 @@
      "id": "chapter-23-b2",
      "kind": "pattern",
      "title": "문법 Grammar · N(으)로",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Say how I travel and which way to go (지하철로, 2번 출구로)",
      "firstWord": "N(으)로"
     },
@@ -1697,7 +1697,7 @@
      "id": "chapter-23-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V-(으)러 가요/와요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Tell someone the purpose of a trip with V-(으)러 가요 (밥 먹으러 가요)",
      "firstWord": "V-(으)러 가요/와요"
     },
@@ -1755,7 +1755,7 @@
      "id": "chapter-24-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V-아/어 보다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Nudge someone to try something with V-아/어 보다 (한번 먹어 보세요)",
      "firstWord": "V-아/어 보다"
     },
@@ -1771,7 +1771,7 @@
      "id": "chapter-24-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V-아/어 주세요",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Make a polite request with V-아/어 주세요 (알려 주세요)",
      "firstWord": "V-아/어 주세요"
     },
@@ -1787,7 +1787,7 @@
      "id": "chapter-24-b6",
      "kind": "pattern",
      "title": "문법 Grammar · V-(으)ㄹ까요?",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Float a friendly suggestion with V-(으)ㄹ까요? (같이 갈까요?)",
      "firstWord": "V-(으)ㄹ까요?"
     },
@@ -1795,7 +1795,7 @@
      "id": "chapter-24-b7",
      "kind": "pattern",
      "title": "문법 Grammar · V-(으)ㅂ시다",
-     "cardCount": 1,
+     "cardCount": 3,
      "canDo": "Nudge someone to try something with V-아/어 보다 (한번 먹어 보세요)",
      "firstWord": "V-(으)ㅂ시다"
     },
@@ -1845,7 +1845,7 @@
      "id": "chapter-25-b2",
      "kind": "pattern",
      "title": "문법 Grammar · A/V-지만",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Join two opposing ideas with A/V-지만 (비싸지만 좋아요)",
      "firstWord": "A/V-지만"
     },
@@ -1861,7 +1861,7 @@
      "id": "chapter-25-b4",
      "kind": "pattern",
      "title": "문법 Grammar · A/V-(으)ㄴ/는데도",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Say something happened in spite of A with A/V-(으)ㄴ/는데도 (어려운데도 공부해요)",
      "firstWord": "A/V-(으)ㄴ/는데도"
     },
@@ -1877,7 +1877,7 @@
      "id": "chapter-25-b6",
      "kind": "pattern",
      "title": "문법 Grammar · V-아/어도",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Say a result holds no matter what with V-아/어도 (피곤해도 가요)",
      "firstWord": "V-아/어도"
     },
@@ -1927,7 +1927,7 @@
      "id": "chapter-26-b2",
      "kind": "pattern",
      "title": "문법 Grammar · A/V-(으)ㄹ 것 같아요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Make a soft guess with A/V-(으)ㄹ 것 같아요 (비가 올 것 같아요)",
      "firstWord": "A/V-(으)ㄹ 것 같아요"
     },
@@ -1943,7 +1943,7 @@
      "id": "chapter-26-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-나 봐요 / -(으)ㄴ가 봐요",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Guess from a clue I notice with V/A-나 봐요 (흐린가 봐요)",
      "firstWord": "V/A-나 봐요 / -(으)ㄴ가 봐요"
     },
@@ -1959,7 +1959,7 @@
      "id": "chapter-26-b6",
      "kind": "pattern",
      "title": "문법 Grammar · A/V-(으)ㄹ지도 몰라요",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Flag an uncertain possibility with A/V-(으)ㄹ지도 몰라요 (늦을지도 몰라요)",
      "firstWord": "A/V-(으)ㄹ지도 몰라요"
     },
@@ -2009,7 +2009,7 @@
      "id": "chapter-27-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V-고 있다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Say an action is in progress with V-고 있다 (공부하고 있어요)",
      "firstWord": "V-고 있다"
     },
@@ -2025,7 +2025,7 @@
      "id": "chapter-27-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V-는 중이에요 / N 중이에요",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Say I'm in the middle of something with V-는 중이에요 (회의 중이에요)",
      "firstWord": "V-는 중이에요 / N 중이에요"
     },
@@ -2041,7 +2041,7 @@
      "id": "chapter-27-b6",
      "kind": "pattern",
      "title": "문법 Grammar · V-는 동안",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Set one action against a stretch of time with V-는 동안 (기다리는 동안)",
      "firstWord": "V-는 동안"
     },
@@ -2091,7 +2091,7 @@
      "id": "chapter-28-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V-고 나서",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Order two actions with V-고 나서 (먹고 나서 가요)",
      "firstWord": "V-고 나서"
     },
@@ -2107,7 +2107,7 @@
      "id": "chapter-28-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V-자마자",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Say one thing follows another instantly with V-자마자 (도착하자마자 전화해요)",
      "firstWord": "V-자마자"
     },
@@ -2165,7 +2165,7 @@
      "id": "chapter-29-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V-다가",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Break off one action to switch to another with V-다가 (가다가 받았어요)",
      "firstWord": "V-다가"
     },
@@ -2181,7 +2181,7 @@
      "id": "chapter-29-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V-아/어 있다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Describe a state left after an action with V-아/어 있다 (앉아 있어요, 열려 있어요)",
      "firstWord": "V-아/어 있다"
     },
@@ -2239,7 +2239,7 @@
      "id": "chapter-30-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-아서/어서",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Link a cause to its result with V/A-아서/어서 (늦어서 미안해요)",
      "firstWord": "V/A-아서/어서"
     },
@@ -2255,7 +2255,7 @@
      "id": "chapter-30-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V-는 바람에",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Blame an unexpected mishap with V-는 바람에 (고장 나는 바람에 늦었어요)",
      "firstWord": "V-는 바람에"
     },
@@ -2271,7 +2271,7 @@
      "id": "chapter-30-b6",
      "kind": "pattern",
      "title": "문법 Grammar · N 때문에",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Point to a noun cause with N 때문에 (비 때문에 막혔어요)",
      "firstWord": "N 때문에"
     },
@@ -2321,7 +2321,7 @@
      "id": "chapter-31-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V-기 위해서 / N을 위해서",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "State a purpose before the action (V-기 위해서 · N을/를 위해서)",
      "firstWord": "V-기 위해서 / N을 위해서"
     },
@@ -2337,7 +2337,7 @@
      "id": "chapter-31-b4",
      "kind": "pattern",
      "title": "문법 Grammar · N 동안",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Say how long something lasts with a time-span noun (6개월 동안 · 방학 동안)",
      "firstWord": "N 동안"
     },
@@ -2353,7 +2353,7 @@
      "id": "chapter-31-b6",
      "kind": "pattern",
      "title": "문법 Grammar · V-는 동안",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Mark 'while something is happening' on a verb (공부하는 동안)",
      "firstWord": "V-는 동안"
     },
@@ -2403,7 +2403,7 @@
      "id": "chapter-32-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V-기로 했어요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Announce a decision you made (운동하기로 했어요)",
      "firstWord": "V-기로 했어요"
     },
@@ -2419,7 +2419,7 @@
      "id": "chapter-32-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V-게 됐어요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Describe a change that came about from circumstances (-게 됐어요)",
      "firstWord": "V-게 됐어요"
     },
@@ -2435,7 +2435,7 @@
      "id": "chapter-32-b6",
      "kind": "pattern",
      "title": "문법 Grammar · A-아/어졌어요",
-     "cardCount": 1,
+     "cardCount": 3,
      "canDo": "Say how a state changed over time (좋아졌어요 · 달라졌어요)",
      "firstWord": "A-아/어졌어요"
     },
@@ -2485,7 +2485,7 @@
      "id": "chapter-33-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V-(스)ㅂ니다",
-     "cardCount": 1,
+     "cardCount": 3,
      "canDo": "Use the formal polite ending in formal settings (-(스)ㅂ니다, 합니다체)",
      "firstWord": "V-(스)ㅂ니다"
     },
@@ -2501,7 +2501,7 @@
      "id": "chapter-33-b4",
      "kind": "pattern",
      "title": "문법 Grammar · Choosing the style",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Choose between 해요체, 합니다체, and 반말 to fit the listener",
      "firstWord": "Choosing the style"
     },
@@ -2517,7 +2517,7 @@
      "id": "chapter-33-b6",
      "kind": "pattern",
      "title": "문법 Grammar · 반말 4형",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Switch into casual 반말 with a close friend (drop -요)",
      "firstWord": "반말 4형"
     },
@@ -2567,7 +2567,7 @@
      "id": "chapter-34-b2",
      "kind": "pattern",
      "title": "문법 Grammar · -(으)시-",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Raise the subject with the honorific suffix (-(으)시-)",
      "firstWord": "-(으)시-"
     },
@@ -2583,7 +2583,7 @@
      "id": "chapter-34-b4",
      "kind": "pattern",
      "title": "문법 Grammar · N께서 V-(으)시-",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Use 께서 and special honorific verbs (계시다 · 드시다 · 주무시다)",
      "firstWord": "N께서 V-(으)시-"
     },
@@ -2591,7 +2591,7 @@
      "id": "chapter-34-b5",
      "kind": "pattern",
      "title": "문법 Grammar · N께 V-아/어 드리다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Honor the person I do something for (N께 V-아/어 드리다)",
      "firstWord": "N께 V-아/어 드리다"
     },
@@ -2641,7 +2641,7 @@
      "id": "chapter-35-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-(으)ㄴ/는데",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Lead with background before my real point using -(으)ㄴ/는데 (어제 못 왔는데...)",
      "firstWord": "V/A-(으)ㄴ/는데"
     },
@@ -2657,7 +2657,7 @@
      "id": "chapter-35-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-잖아요",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Remind someone of something we both know with -잖아요 (시험이 있잖아요)",
      "firstWord": "V/A-잖아요"
     },
@@ -2673,7 +2673,7 @@
      "id": "chapter-35-b6",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-지요/죠",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Add a reason they didn't know with -거든요 (감기에 걸렸거든요)",
      "firstWord": "V/A-지요/죠"
     },
@@ -2681,7 +2681,7 @@
      "id": "chapter-35-b7",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-거든요",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Soften a reply and leave room to react with trailing -는데요",
      "firstWord": "V/A-거든요"
     },
@@ -2689,7 +2689,7 @@
      "id": "chapter-35-b8",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-는데요",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Lead with background before my real point using -(으)ㄴ/는데 (어제 못 왔는데...)",
      "firstWord": "V/A-는데요"
     },
@@ -2739,7 +2739,7 @@
      "id": "chapter-36-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-더라고요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Report something I personally saw or felt, with mild surprise, using -더라고요 (붐비더라고요)",
      "firstWord": "V/A-더라고요"
     },
@@ -2755,7 +2755,7 @@
      "id": "chapter-36-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-더니",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Link 'I noticed X, and then Y followed' with -더니 (늘더니 붐비더라고요)",
      "firstWord": "V/A-더니"
     },
@@ -2813,7 +2813,7 @@
      "id": "chapter-37-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-다고 했어요",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Pass along what someone said with -다고 했어요 (어렵다고 했어요)",
      "firstWord": "V/A-다고 했어요"
     },
@@ -2829,7 +2829,7 @@
      "id": "chapter-37-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-냐고 물어봤어요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Relay an order with -(으)라고 하다 (제출하라고 했어요)",
      "firstWord": "V/A-냐고 물어봤어요"
     },
@@ -2845,7 +2845,7 @@
      "id": "chapter-37-b6",
      "kind": "pattern",
      "title": "문법 Grammar · V-는지 / A-(으)ㄴ지 / N인지",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Report a question someone asked with -냐고 물어봤어요",
      "firstWord": "V-는지 / A-(으)ㄴ지 / N인지"
     },
@@ -2895,7 +2895,7 @@
      "id": "chapter-38-b2",
      "kind": "pattern",
      "title": "문법 Grammar · Stacked Noun Modifiers: Packing a Clause Before a Noun",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Pack a whole clause before a noun to describe it (어제 올라온 공지, 변경된 일정)",
      "firstWord": "Stacked Noun Modifiers: Packing a Clause Before a Noun"
     },
@@ -2911,7 +2911,7 @@
      "id": "chapter-38-b4",
      "kind": "pattern",
      "title": "문법 Grammar · Passive Verbs (이/히/리/기): Focusing on What Happens, Not the Doer",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Describe what happens to something with passive verbs (바뀌다, 닫히다, 팔리다)",
      "firstWord": "Passive Verbs (이/히/리/기): Focusing on What Happens, Not the Doer"
     },
@@ -2927,7 +2927,7 @@
      "id": "chapter-38-b6",
      "kind": "pattern",
      "title": "문법 Grammar · Causative Verbs (이/히/리/기/우): Making or Helping Someone Do Something",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Say someone makes/lets another do something with causatives (알리다, 먹이다)",
      "firstWord": "Causative Verbs (이/히/리/기/우): Making or Helping Someone Do Something"
     },
@@ -2977,7 +2977,7 @@
      "id": "chapter-39-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V-(으)ㄹ 수밖에 없다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Say I have no other option with -(으)ㄹ 수밖에 없다 (야근할 수밖에 없어요)",
      "firstWord": "V-(으)ㄹ 수밖에 없다"
     },
@@ -2993,7 +2993,7 @@
      "id": "chapter-39-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V-(으)ㄹ 리가 없다",
-     "cardCount": 1,
+     "cardCount": 3,
      "canDo": "Reject something as impossible with -(으)ㄹ 리가 없다 (끝날 리가 없어요)",
      "firstWord": "V-(으)ㄹ 리가 없다"
     },
@@ -3009,7 +3009,7 @@
      "id": "chapter-39-b6",
      "kind": "pattern",
      "title": "문법 Grammar · V-(으)ㄹ 뿐이다 / N뿐이다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Limit things to just one with -(으)ㄹ 뿐이다 / N뿐이다 (이것뿐이에요)",
      "firstWord": "V-(으)ㄹ 뿐이다 / N뿐이다"
     },
@@ -3059,7 +3059,7 @@
      "id": "chapter-40-b2",
      "kind": "pattern",
      "title": "문법 Grammar · -(으)ㄹ걸요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Offer a soft but confident guess with -(으)ㄹ걸요 (괜찮을걸요)",
      "firstWord": "-(으)ㄹ걸요"
     },
@@ -3075,7 +3075,7 @@
      "id": "chapter-40-b4",
      "kind": "pattern",
      "title": "문법 Grammar · -(으)면 좋겠어요",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Express a hope or wish with -(으)면 좋겠어요 (괜찮으면 좋겠어요)",
      "firstWord": "-(으)면 좋겠어요"
     },
@@ -3091,7 +3091,7 @@
      "id": "chapter-40-b6",
      "kind": "pattern",
      "title": "문법 Grammar · -겠-",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Read -겠- as intention, a guess, or a set phrase (알 수 있겠죠)",
      "firstWord": "-겠-"
     },
@@ -3099,7 +3099,7 @@
      "id": "chapter-40-b7",
      "kind": "pattern",
      "title": "문법 Grammar · -다면 / N(이)라면",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Hedge and leave room with trailing -(으)ㄴ/는데요 and 아마 / 글쎄요",
      "firstWord": "-다면 / N(이)라면"
     },
@@ -3107,7 +3107,7 @@
      "id": "chapter-40-b8",
      "kind": "pattern",
      "title": "문법 Grammar · -(으)ㄴ/는데요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Offer a soft but confident guess with -(으)ㄹ걸요 (괜찮을걸요)",
      "firstWord": "-(으)ㄴ/는데요"
     },
@@ -3157,7 +3157,7 @@
      "id": "chapter-41-b2",
      "kind": "pattern",
      "title": "문법 Grammar · ㅂ Irregular: 춥다 → 추워요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Conjugate ㅂ-irregular adjectives correctly (춥다→추워요 · 어렵다→어려워요)",
      "firstWord": "ㅂ Irregular: 춥다 → 추워요"
     },
@@ -3173,7 +3173,7 @@
      "id": "chapter-41-b4",
      "kind": "pattern",
      "title": "문법 Grammar · ㄷ Irregular: 듣다 → 들어요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Conjugate ㄷ-irregular verbs correctly (듣다→들어요 · 걷다→걸어요)",
      "firstWord": "ㄷ Irregular: 듣다 → 들어요"
     },
@@ -3189,7 +3189,7 @@
      "id": "chapter-41-b6",
      "kind": "pattern",
      "title": "문법 Grammar · ㅅ Irregular: 낫다 → 나아요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Conjugate 르-irregular and ㅡ-irregular words (모르다→몰라요 · 바쁘다→바빠요)",
      "firstWord": "ㅅ Irregular: 낫다 → 나아요"
     },
@@ -3197,7 +3197,7 @@
      "id": "chapter-41-b7",
      "kind": "pattern",
      "title": "문법 Grammar · 르 Irregular: 모르다 → 몰라요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Conjugate ㅂ-irregular adjectives correctly (춥다→추워요 · 어렵다→어려워요)",
      "firstWord": "르 Irregular: 모르다 → 몰라요"
     },
@@ -3205,7 +3205,7 @@
      "id": "chapter-41-b8",
      "kind": "pattern",
      "title": "문법 Grammar · ㅡ Irregular: 바쁘다 → 바빠요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Conjugate ㄷ-irregular verbs correctly (듣다→들어요 · 걷다→걸어요)",
      "firstWord": "ㅡ Irregular: 바쁘다 → 바빠요"
     },
@@ -3213,7 +3213,7 @@
      "id": "chapter-41-b9",
      "kind": "pattern",
      "title": "문법 Grammar · ㅎ Irregular: 빨갛다 → 빨개요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Conjugate 르-irregular and ㅡ-irregular words (모르다→몰라요 · 바쁘다→바빠요)",
      "firstWord": "ㅎ Irregular: 빨갛다 → 빨개요"
     },
@@ -3263,7 +3263,7 @@
      "id": "chapter-42-b2",
      "kind": "pattern",
      "title": "문법 Grammar · 에게 / 한테 / 께",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Mark the person who receives an action (친구한테 · 선생님께)",
      "firstWord": "에게 / 한테 / 께"
     },
@@ -3279,7 +3279,7 @@
      "id": "chapter-42-b4",
      "kind": "pattern",
      "title": "문법 Grammar · 와/과 · 하고 · (이)랑",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Link nouns or a companion with 'and/with' (친구하고 · 친구랑)",
      "firstWord": "와/과 · 하고 · (이)랑"
     },
@@ -3295,7 +3295,7 @@
      "id": "chapter-42-b6",
      "kind": "pattern",
      "title": "문법 Grammar · 밖에 + negative",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Use 밖에 + negative for 'only', and 마다 for 'every' (한 시간밖에 없어요 · 주말마다)",
      "firstWord": "밖에 + negative"
     },
@@ -3303,7 +3303,7 @@
      "id": "chapter-42-b7",
      "kind": "pattern",
      "title": "문법 Grammar · (이)나",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Show means or direction with (으)로 (버스로 가요)",
      "firstWord": "(이)나"
     },
@@ -3311,7 +3311,7 @@
      "id": "chapter-42-b8",
      "kind": "pattern",
      "title": "문법 Grammar · (이)라도",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Mark the person who receives an action (친구한테 · 선생님께)",
      "firstWord": "(이)라도"
     },
@@ -3319,7 +3319,7 @@
      "id": "chapter-42-b9",
      "kind": "pattern",
      "title": "문법 Grammar · 의",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Link nouns or a companion with 'and/with' (친구하고 · 친구랑)",
      "firstWord": "의"
     },
@@ -3327,7 +3327,7 @@
      "id": "chapter-42-b10",
      "kind": "pattern",
      "title": "문법 Grammar · (으)로",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Use 밖에 + negative for 'only', and 마다 for 'every' (한 시간밖에 없어요 · 주말마다)",
      "firstWord": "(으)로"
     },
@@ -3335,7 +3335,7 @@
      "id": "chapter-42-b11",
      "kind": "pattern",
      "title": "문법 Grammar · 마다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Show means or direction with (으)로 (버스로 가요)",
      "firstWord": "마다"
     },
@@ -3385,7 +3385,7 @@
      "id": "chapter-43-b2",
      "kind": "pattern",
      "title": "문법 Grammar · Counting Word Order: Noun + Number + Counter",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Order a count as NOUN + NUMBER + COUNTER (학생이 세 명)",
      "firstWord": "Counting Word Order: Noun + Number + Counter"
     },
@@ -3401,7 +3401,7 @@
      "id": "chapter-43-b4",
      "kind": "pattern",
      "title": "문법 Grammar · Native-Number Contractions Before a Counter",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Contract native numbers before a counter (하나→한 · 둘→두 · 셋→세 · 넷→네)",
      "firstWord": "Native-Number Contractions Before a Counter"
     },
@@ -3417,7 +3417,7 @@
      "id": "chapter-43-b6",
      "kind": "pattern",
      "title": "문법 Grammar · Counting People and Animals: 명 / 분 / 마리",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Pick the right counter for people, animals, and objects (명 · 마리 · 잔 · 권 · 개)",
      "firstWord": "Counting People and Animals: 명 / 분 / 마리"
     },
@@ -3425,7 +3425,7 @@
      "id": "chapter-43-b7",
      "kind": "pattern",
      "title": "문법 Grammar · Counting Objects, Drinks, Books, and Sheets: 개 / 잔 / 권 / 장",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Order a count as NOUN + NUMBER + COUNTER (학생이 세 명)",
      "firstWord": "Counting Objects, Drinks, Books, and Sheets: 개 / 잔 / 권 / 장"
     },
@@ -3433,7 +3433,7 @@
      "id": "chapter-43-b8",
      "kind": "pattern",
      "title": "문법 Grammar · Counting Clothes and Machines: 벌 / 대",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Contract native numbers before a counter (하나→한 · 둘→두 · 셋→세 · 넷→네)",
      "firstWord": "Counting Clothes and Machines: 벌 / 대"
     },
@@ -3441,7 +3441,7 @@
      "id": "chapter-43-b9",
      "kind": "pattern",
      "title": "문법 Grammar · Counting Time and Frequency: 번 / 시간 / 살",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Pick the right counter for people, animals, and objects (명 · 마리 · 잔 · 권 · 개)",
      "firstWord": "Counting Time and Frequency: 번 / 시간 / 살"
     },
@@ -3491,7 +3491,7 @@
      "id": "chapter-44-b2",
      "kind": "pattern",
      "title": "문법 Grammar · 연음 (Linking): A Final Consonant Slides onto the Next Vowel",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Read a 받침 linking onto the next vowel (한국어 → [한구거], 연음)",
      "firstWord": "연음 (Linking): A Final Consonant Slides onto the Next Vowel"
     },
@@ -3507,7 +3507,7 @@
      "id": "chapter-44-b4",
      "kind": "pattern",
      "title": "문법 Grammar · 경음화 (Tensing): A Plain Consonant Tenses After a Stop",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Hear a plain consonant tense after a stop (학교 → [학꾜], 경음화)",
      "firstWord": "경음화 (Tensing): A Plain Consonant Tenses After a Stop"
     },
@@ -3515,7 +3515,7 @@
      "id": "chapter-44-b5",
      "kind": "pattern",
      "title": "문법 Grammar · 비음화 (Nasalization): A Stop Becomes Nasal Before ㄴ/ㅁ",
-     "cardCount": 1,
+     "cardCount": 3,
      "canDo": "Recognize nasalization and aspiration in speech (국민 → [궁민]; 좋다 → [조타])",
      "firstWord": "비음화 (Nasalization): A Stop Becomes Nasal Before ㄴ/ㅁ"
     },
@@ -3523,7 +3523,7 @@
      "id": "chapter-44-b6",
      "kind": "pattern",
      "title": "문법 Grammar · 격음화 (Aspiration): ㅎ Merges with a Plain Stop into an Aspirate",
-     "cardCount": 1,
+     "cardCount": 3,
      "canDo": "Read a 받침 linking onto the next vowel (한국어 → [한구거], 연음)",
      "firstWord": "격음화 (Aspiration): ㅎ Merges with a Plain Stop into an Aspirate"
     },
@@ -3573,7 +3573,7 @@
      "id": "chapter-45-b2",
      "kind": "pattern",
      "title": "문법 Grammar · 안 + verb/adjective",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Negate by choice or fact with 안 (안 먹어요)",
      "firstWord": "안 + verb/adjective"
     },
@@ -3589,7 +3589,7 @@
      "id": "chapter-45-b4",
      "kind": "pattern",
      "title": "문법 Grammar · 못 + verb",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Say you can't because something blocks you with 못 (시간이 없어서 못 가요)",
      "firstWord": "못 + verb"
     },
@@ -3597,7 +3597,7 @@
      "id": "chapter-45-b5",
      "kind": "pattern",
      "title": "문법 Grammar · -지 않아요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Use the longer written negation -지 않아요 (좋아하지 않아요)",
      "firstWord": "-지 않아요"
     },
@@ -3605,7 +3605,7 @@
      "id": "chapter-45-b6",
      "kind": "pattern",
      "title": "문법 Grammar · N이/가 없어요",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Express absence or 'don't have' with N이/가 없어요 (시간이 없어요)",
      "firstWord": "N이/가 없어요"
     },
@@ -3613,7 +3613,7 @@
      "id": "chapter-45-b7",
      "kind": "pattern",
      "title": "문법 Grammar · Boundary check",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Negate by choice or fact with 안 (안 먹어요)",
      "firstWord": "Boundary check"
     },
@@ -3663,7 +3663,7 @@
      "id": "chapter-46-b2",
      "kind": "pattern",
      "title": "문법 Grammar · N이었어요 / N였어요",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Say what something was in the past (학생이었어요 · 주말이었어요)",
      "firstWord": "N이었어요 / N였어요"
     },
@@ -3679,7 +3679,7 @@
      "id": "chapter-46-b4",
      "kind": "pattern",
      "title": "문법 Grammar · N인데 / N인데도",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Set the scene or mark mild contrast on a noun (회사원인데 · 주말인데도)",
      "firstWord": "N인데 / N인데도"
     },
@@ -3687,7 +3687,7 @@
      "id": "chapter-46-b5",
      "kind": "pattern",
      "title": "문법 Grammar · N이라서 / 라서",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Give a noun-based reason (주말이라서 · 주말이니까)",
      "firstWord": "N이라서 / 라서"
     },
@@ -3695,7 +3695,7 @@
      "id": "chapter-46-b6",
      "kind": "pattern",
      "title": "문법 Grammar · N이니까 / 니까",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Offer a fallback option with N이라도/라도 (커피라도 마셔요)",
      "firstWord": "N이니까 / 니까"
     },
@@ -3703,7 +3703,7 @@
      "id": "chapter-46-b7",
      "kind": "pattern",
      "title": "문법 Grammar · N이라도 / 라도",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Say what something was in the past (학생이었어요 · 주말이었어요)",
      "firstWord": "N이라도 / 라도"
     },
@@ -3753,7 +3753,7 @@
      "id": "chapter-47-b2",
      "kind": "pattern",
      "title": "문법 Grammar · 저희 가족은 ~ 명이에요",
-     "cardCount": 1,
+     "cardCount": 3,
      "canDo": "Say how big my family is politely (저희 가족은 ~ 명이에요)",
      "firstWord": "저희 가족은 ~ 명이에요"
     },
@@ -3769,7 +3769,7 @@
      "id": "chapter-47-b4",
      "kind": "pattern",
      "title": "문법 Grammar · 형 / 오빠 / 누나 / 언니",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Pick the right older-sibling word for my own gender (형 · 오빠 · 누나 · 언니)",
      "firstWord": "형 / 오빠 / 누나 / 언니"
     },
@@ -3785,7 +3785,7 @@
      "id": "chapter-47-b6",
      "kind": "pattern",
      "title": "문법 Grammar · 부모님 / 아버지 / 어머니",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Refer to my parents respectfully (부모님 · 아버지 · 어머니)",
      "firstWord": "부모님 / 아버지 / 어머니"
     },
@@ -3793,7 +3793,7 @@
      "id": "chapter-47-b7",
      "kind": "pattern",
      "title": "문법 Grammar · N께서 V-(으)시-",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Honor a family elder who does the action (아버지께서 ~하세요)",
      "firstWord": "N께서 V-(으)시-"
     },
@@ -3843,7 +3843,7 @@
      "id": "chapter-48-b2",
      "kind": "pattern",
      "title": "문법 Grammar · Symptom frame",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Say what hurts with body part + 이/가 아프다 (목이 아파요)",
      "firstWord": "Symptom frame"
     },
@@ -3859,7 +3859,7 @@
      "id": "chapter-48-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V-아/어야 해요",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Describe a symptom 'coming out' with 이/가 나다 (열이 나요, 기침이 나요)",
      "firstWord": "V-아/어야 해요"
     },
@@ -3875,7 +3875,7 @@
      "id": "chapter-48-b6",
      "kind": "pattern",
      "title": "문법 Grammar · A/V-아서/어서",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Explain the visit with cause-result -아서/어서 and N 때문에 (아파서 왔어요, 감기 때문에)",
      "firstWord": "A/V-아서/어서"
     },
@@ -3883,7 +3883,7 @@
      "id": "chapter-48-b7",
      "kind": "pattern",
      "title": "문법 Grammar · N 때문에",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Say what a symptom kept me from doing with 못 + V (잠을 못 잤어요)",
      "firstWord": "N 때문에"
     },
@@ -3891,7 +3891,7 @@
      "id": "chapter-48-b8",
      "kind": "pattern",
      "title": "문법 Grammar · A/V-(으)니까",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Say what hurts with body part + 이/가 아프다 (목이 아파요)",
      "firstWord": "A/V-(으)니까"
     },
@@ -3899,7 +3899,7 @@
      "id": "chapter-48-b9",
      "kind": "pattern",
      "title": "문법 Grammar · 열이 나다 / 기침이 나다",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Describe a symptom 'coming out' with 이/가 나다 (열이 나요, 기침이 나요)",
      "firstWord": "열이 나다 / 기침이 나다"
     },
@@ -3907,7 +3907,7 @@
      "id": "chapter-48-b10",
      "kind": "pattern",
      "title": "문법 Grammar · 못 + V",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Explain the visit with cause-result -아서/어서 and N 때문에 (아파서 왔어요, 감기 때문에)",
      "firstWord": "못 + V"
     },
@@ -3957,7 +3957,7 @@
      "id": "chapter-49-b2",
      "kind": "pattern",
      "title": "문법 Grammar · N이/가 있어요",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Say what a home has or lacks with N이/가 있어요/없어요 (주차장이 없어요)",
      "firstWord": "N이/가 있어요"
     },
@@ -3973,7 +3973,7 @@
      "id": "chapter-49-b4",
      "kind": "pattern",
      "title": "문법 Grammar · N이/가 없어요",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Describe a home with adjective + noun (넓은 방, 깨끗한 집, 조용한 동네)",
      "firstWord": "N이/가 없어요"
     },
@@ -3989,7 +3989,7 @@
      "id": "chapter-49-b6",
      "kind": "pattern",
      "title": "문법 Grammar · A-(으)ㄴ N",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "State a housing condition with -(으)면 (싸면 계약할 거예요)",
      "firstWord": "A-(으)ㄴ N"
     },
@@ -3997,7 +3997,7 @@
      "id": "chapter-49-b7",
      "kind": "pattern",
      "title": "문법 Grammar · A/V-(으)면",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Say where I live and where I'm moving with N에 살아요 / N(으)로 이사 가요",
      "firstWord": "A/V-(으)면"
     },
@@ -4005,7 +4005,7 @@
      "id": "chapter-49-b8",
      "kind": "pattern",
      "title": "문법 Grammar · V-(으)ㄹ 수 있어요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Say what a home has or lacks with N이/가 있어요/없어요 (주차장이 없어요)",
      "firstWord": "V-(으)ㄹ 수 있어요"
     },
@@ -4013,7 +4013,7 @@
      "id": "chapter-49-b9",
      "kind": "pattern",
      "title": "문법 Grammar · N에 살아요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Describe a home with adjective + noun (넓은 방, 깨끗한 집, 조용한 동네)",
      "firstWord": "N에 살아요"
     },
@@ -4021,7 +4021,7 @@
      "id": "chapter-49-b10",
      "kind": "pattern",
      "title": "문법 Grammar · N(으)로 이사 가요/와요",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "State a housing condition with -(으)면 (싸면 계약할 거예요)",
      "firstWord": "N(으)로 이사 가요/와요"
     },
@@ -4071,7 +4071,7 @@
      "id": "chapter-50-b2",
      "kind": "pattern",
      "title": "문법 Grammar · A/V-(으)ㄹ 것 같아요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Make a soft weather guess from what I see (비가 올 것 같아요)",
      "firstWord": "A/V-(으)ㄹ 것 같아요"
     },
@@ -4087,7 +4087,7 @@
      "id": "chapter-50-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-(으)ㄹ 텐데",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Forecast a likely situation and add advice (추울 텐데 우산을 가져오세요)",
      "firstWord": "V/A-(으)ㄹ 텐데"
     },
@@ -4103,7 +4103,7 @@
      "id": "chapter-50-b6",
      "kind": "pattern",
      "title": "문법 Grammar · A/V-(으)면",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Set up a weather condition and its result (비가 오면 집에 있어요)",
      "firstWord": "A/V-(으)면"
     },
@@ -4111,7 +4111,7 @@
      "id": "chapter-50-b7",
      "kind": "pattern",
      "title": "문법 Grammar · N 때문에",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Name a weather event as the cause (비 때문에, 황사 때문에)",
      "firstWord": "N 때문에"
     },
@@ -4119,7 +4119,7 @@
      "id": "chapter-50-b8",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-(으)ㄹ 때",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Point to a time or situation when something happens (추울 때)",
      "firstWord": "V/A-(으)ㄹ 때"
     },
@@ -4169,7 +4169,7 @@
      "id": "chapter-51-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V-아/어 보세요",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Invite someone to try something on (한번 입어 보세요)",
      "firstWord": "V-아/어 보세요"
     },
@@ -4185,7 +4185,7 @@
      "id": "chapter-51-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V-아/어 주시겠어요?",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Ask a clerk politely for help (다른 사이즈를 보여 주시겠어요?)",
      "firstWord": "V-아/어 주시겠어요?"
     },
@@ -4201,7 +4201,7 @@
      "id": "chapter-51-b6",
      "kind": "pattern",
      "title": "문법 Grammar · A-아/어 보이다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Say how clothes or a person look (따뜻해 보여요, 예뻐 보여요)",
      "firstWord": "A-아/어 보이다"
     },
@@ -4209,7 +4209,7 @@
      "id": "chapter-51-b7",
      "kind": "pattern",
      "title": "문법 Grammar · A-(으)ㄴ N",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Put a descriptive adjective before a noun (예쁜 치마, 긴 바지)",
      "firstWord": "A-(으)ㄴ N"
     },
@@ -4217,7 +4217,7 @@
      "id": "chapter-51-b8",
      "kind": "pattern",
      "title": "문법 Grammar · N보다 (더)",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Compare two items (이 옷이 저 옷보다 더 좋아요)",
      "firstWord": "N보다 (더)"
     },
@@ -4267,7 +4267,7 @@
      "id": "chapter-52-b2",
      "kind": "pattern",
      "title": "문법 Grammar · N 주세요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Order an item with a quantity (삼겹살 이 인분 주세요)",
      "firstWord": "N 주세요"
     },
@@ -4283,7 +4283,7 @@
      "id": "chapter-52-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V-아/어 주세요",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Ask the server to do something (잘라 주세요, 바꿔 주세요)",
      "firstWord": "V-아/어 주세요"
     },
@@ -4299,7 +4299,7 @@
      "id": "chapter-52-b6",
      "kind": "pattern",
      "title": "문법 Grammar · V-고",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Chain food actions in order (고기를 굽고 자르고)",
      "firstWord": "V-고"
     },
@@ -4307,7 +4307,7 @@
      "id": "chapter-52-b7",
      "kind": "pattern",
      "title": "문법 Grammar · A/V-아서/어서",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Give a food reason and result (매워서 물을 마셔요)",
      "firstWord": "A/V-아서/어서"
     },
@@ -4315,7 +4315,7 @@
      "id": "chapter-52-b8",
      "kind": "pattern",
      "title": "문법 Grammar · V-(으)ㄹ게요",
-     "cardCount": 1,
+     "cardCount": 3,
      "canDo": "Announce what you'll have on the spot (저는 비빔밥을 먹을게요)",
      "firstWord": "V-(으)ㄹ게요"
     },
@@ -4365,7 +4365,7 @@
      "id": "chapter-53-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V-(으)ㄴ 적이 있어요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Say whether I have ever done something (본 적이 있어요/없어요)",
      "firstWord": "V-(으)ㄴ 적이 있어요"
     },
@@ -4381,7 +4381,7 @@
      "id": "chapter-53-b4",
      "kind": "pattern",
      "title": "문법 Grammar · A/V-는 것 같아요",
-     "cardCount": 1,
+     "cardCount": 3,
      "canDo": "Give a soft impression or guess (재미있는 것 같아요)",
      "firstWord": "A/V-는 것 같아요"
     },
@@ -4397,7 +4397,7 @@
      "id": "chapter-53-b6",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-다고 했어요",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Relay what someone said (좋다고 했어요)",
      "firstWord": "V/A-다고 했어요"
     },
@@ -4405,7 +4405,7 @@
      "id": "chapter-53-b7",
      "kind": "pattern",
      "title": "문법 Grammar · A/V-지만",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Make a clean contrast (자막은 없지만 재미있어요)",
      "firstWord": "A/V-지만"
     },
@@ -4413,7 +4413,7 @@
      "id": "chapter-53-b8",
      "kind": "pattern",
      "title": "문법 Grammar · V-(으)ㄹ게요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Promise to do something and give the background (볼게요, 보고 싶었거든요)",
      "firstWord": "V-(으)ㄹ게요"
     },
@@ -4421,7 +4421,7 @@
      "id": "chapter-53-b9",
      "kind": "pattern",
      "title": "문법 Grammar · V-아/어 주세요",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Say whether I have ever done something (본 적이 있어요/없어요)",
      "firstWord": "V-아/어 주세요"
     },
@@ -4429,7 +4429,7 @@
      "id": "chapter-53-b10",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-거든요",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Give a soft impression or guess (재미있는 것 같아요)",
      "firstWord": "V/A-거든요"
     },
@@ -4479,7 +4479,7 @@
      "id": "chapter-54-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V-아/어야 해요",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Say what I have to do for school (과제를 내야 해요)",
      "firstWord": "V-아/어야 해요"
     },
@@ -4495,7 +4495,7 @@
      "id": "chapter-54-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V-기로 했어요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "State a decision or study plan (같이 공부하기로 했어요)",
      "firstWord": "V-기로 했어요"
     },
@@ -4511,7 +4511,7 @@
      "id": "chapter-54-b6",
      "kind": "pattern",
      "title": "문법 Grammar · V-기 시작하다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Say when an action started (공부하기 시작했어요)",
      "firstWord": "V-기 시작하다"
     },
@@ -4519,7 +4519,7 @@
      "id": "chapter-54-b7",
      "kind": "pattern",
      "title": "문법 Grammar · N 동안",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Give a reason that leads to a plan (시험이 있으니까 도서관에 가요)",
      "firstWord": "N 동안"
     },
@@ -4527,7 +4527,7 @@
      "id": "chapter-54-b8",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-(으)니까",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "State an academic purpose (장학금을 받기 위해서 공부해요)",
      "firstWord": "V/A-(으)니까"
     },
@@ -4535,7 +4535,7 @@
      "id": "chapter-54-b9",
      "kind": "pattern",
      "title": "문법 Grammar · V-기 위해서",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Say what I have to do for school (과제를 내야 해요)",
      "firstWord": "V-기 위해서"
     },
@@ -4585,7 +4585,7 @@
      "id": "chapter-55-b2",
      "kind": "pattern",
      "title": "문법 Grammar · N(으)로",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Say what I travel by or which way I go (버스로, 2호선으로)",
      "firstWord": "N(으)로"
     },
@@ -4601,7 +4601,7 @@
      "id": "chapter-55-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V-(으)러 가요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Give the purpose of a trip (표를 사러 가요)",
      "firstWord": "V-(으)러 가요"
     },
@@ -4617,7 +4617,7 @@
      "id": "chapter-55-b6",
      "kind": "pattern",
      "title": "문법 Grammar · V-(으)려고 해요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "State a travel intention (예매하려고 해요)",
      "firstWord": "V-(으)려고 해요"
     },
@@ -4625,7 +4625,7 @@
      "id": "chapter-55-b7",
      "kind": "pattern",
      "title": "문법 Grammar · A/V-(으)면",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Make a fallback plan with a condition (늦으면 버스로 가요)",
      "firstWord": "A/V-(으)면"
     },
@@ -4633,7 +4633,7 @@
      "id": "chapter-55-b8",
      "kind": "pattern",
      "title": "문법 Grammar · N 때문에",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Explain a delay's cause and tie a tip to a moment (사고 때문에, 갈아탈 때 조심하세요)",
      "firstWord": "N 때문에"
     },
@@ -4641,7 +4641,7 @@
      "id": "chapter-55-b9",
      "kind": "pattern",
      "title": "문법 Grammar · V-(으)ㄹ 때",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Say what I travel by or which way I go (버스로, 2호선으로)",
      "firstWord": "V-(으)ㄹ 때"
     },
@@ -4691,7 +4691,7 @@
      "id": "chapter-56-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-잖아요",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Remind someone of shared knowledge (선물하잖아요)",
      "firstWord": "V/A-잖아요"
     },
@@ -4707,7 +4707,7 @@
      "id": "chapter-56-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-거든요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Explain background or a reason (좋은 뜻이 있거든요)",
      "firstWord": "V/A-거든요"
     },
@@ -4723,7 +4723,7 @@
      "id": "chapter-56-b6",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-는데요",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Soften a statement or careful question (조심하는 게 좋은데요)",
      "firstWord": "V/A-는데요"
     },
@@ -4731,7 +4731,7 @@
      "id": "chapter-56-b7",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-(으)ㄴ/는 편이다",
-     "cardCount": 1,
+     "cardCount": 3,
      "canDo": "Describe a tendency modestly (나이가 많은 편이에요)",
      "firstWord": "V/A-(으)ㄴ/는 편이다"
     },
@@ -4739,7 +4739,7 @@
      "id": "chapter-56-b8",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-(으)니까",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Give a reason that leads into advice (선배니까 호칭을 조심하세요)",
      "firstWord": "V/A-(으)니까"
     },
@@ -4747,7 +4747,7 @@
      "id": "chapter-56-b9",
      "kind": "pattern",
      "title": "문법 Grammar · A/V-지만",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Remind someone of shared knowledge (선물하잖아요)",
      "firstWord": "A/V-지만"
     },
@@ -4797,7 +4797,7 @@
      "id": "chapter-57-b2",
      "kind": "pattern",
      "title": "문법 Grammar · Lexical causatives: V + -이/히/리/기/우/구/추-",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Use lexical causatives for everyday care (밥을 먹이다, 옷을 입히다, 재우다)",
      "firstWord": "Lexical causatives: V + -이/히/리/기/우/구/추-"
     },
@@ -4813,7 +4813,7 @@
      "id": "chapter-57-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V-게 하다",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Make or have someone do something with V-게 하다 (아이를 웃게 했어요)",
      "firstWord": "V-게 하다"
     },
@@ -4829,7 +4829,7 @@
      "id": "chapter-57-b6",
      "kind": "pattern",
      "title": "문법 Grammar · V-게 만들다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Say something brought about a result with V-게 만들다 (영화가 울게 만들었어요)",
      "firstWord": "V-게 만들다"
     },
@@ -4879,7 +4879,7 @@
      "id": "chapter-58-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V-겠어요 / V-겠습니다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "State my own intention politely with V-겠습니다 / V-겠어요 (확인하겠습니다)",
      "firstWord": "V-겠어요 / V-겠습니다"
     },
@@ -4895,7 +4895,7 @@
      "id": "chapter-58-b4",
      "kind": "pattern",
      "title": "문법 Grammar · A/V-겠네요 / A/V-겠군요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Make a careful inference from evidence with A/V-겠네요 (바쁘겠네요)",
      "firstWord": "A/V-겠네요 / A/V-겠군요"
     },
@@ -4911,7 +4911,7 @@
      "id": "chapter-58-b6",
      "kind": "pattern",
      "title": "문법 Grammar · V-(으)ㄹ 거예요",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Talk about a future plan with V-(으)ㄹ 거예요 (기다릴 거예요)",
      "firstWord": "V-(으)ㄹ 거예요"
     },
@@ -4919,7 +4919,7 @@
      "id": "chapter-58-b7",
      "kind": "pattern",
      "title": "문법 Grammar · A/V-(으)ㄹ 것 같아요",
-     "cardCount": 1,
+     "cardCount": 3,
      "canDo": "Soften a statement into a tentative guess with -(으)ㄹ 것 같아요 (끝날 것 같아요)",
      "firstWord": "A/V-(으)ㄹ 것 같아요"
     },
@@ -4969,7 +4969,7 @@
      "id": "chapter-59-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V-았/었으면 좋겠어요",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Express a wish that things were different with V-았/었으면 좋겠어요 (일찍 일어났으면 좋겠어요)",
      "firstWord": "V-았/었으면 좋겠어요"
     },
@@ -4985,7 +4985,7 @@
      "id": "chapter-59-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V-았/었으면 … -았/었을 텐데요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Regret a missed past with V-았/었으면 … -았/었을 텐데요 (도착했으면 … 봤을 텐데요)",
      "firstWord": "V-았/었으면 … -았/었을 텐데요"
     },
@@ -5001,7 +5001,7 @@
      "id": "chapter-59-b6",
      "kind": "pattern",
      "title": "문법 Grammar · V-았/었더라면 … -았/었을 거예요",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "State a reflective counterfactual with V-았/었더라면 … -았/었을 거예요 (준비했더라면 … 놓치지 않았을 거예요)",
      "firstWord": "V-았/었더라면 … -았/었을 거예요"
     },
@@ -5009,7 +5009,7 @@
      "id": "chapter-59-b7",
      "kind": "pattern",
      "title": "문법 Grammar · V-지 않았더라면",
-     "cardCount": 1,
+     "cardCount": 3,
      "canDo": "Tell an open condition (-(으)면) from a missed one (-았/었으면)",
      "firstWord": "V-지 않았더라면"
     },
@@ -5017,7 +5017,7 @@
      "id": "chapter-59-b8",
      "kind": "pattern",
      "title": "문법 Grammar · -(으)면 vs -았/었으면",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Express a wish that things were different with V-았/었으면 좋겠어요 (일찍 일어났으면 좋겠어요)",
      "firstWord": "-(으)면 vs -았/었으면"
     },
@@ -5067,7 +5067,7 @@
      "id": "chapter-60-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V-기",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Name an action as a noun with V-기 (운동하기) and V-는 것 (운동하는 것)",
      "firstWord": "V-기"
     },
@@ -5083,7 +5083,7 @@
      "id": "chapter-60-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V-는 것/거",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Express a decision or plan with V-기로 했어요 (운동하기로 했어요)",
      "firstWord": "V-는 것/거"
     },
@@ -5099,7 +5099,7 @@
      "id": "chapter-60-b6",
      "kind": "pattern",
      "title": "문법 Grammar · V-기로 했어요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Give the purpose of an action with V-기 위해(서) (건강해지기 위해서)",
      "firstWord": "V-기로 했어요"
     },
@@ -5107,7 +5107,7 @@
      "id": "chapter-60-b7",
      "kind": "pattern",
      "title": "문법 Grammar · V-기 위해(서)",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Say something happens before another action (V-기 전에) and that you start it (V-기 시작하다)",
      "firstWord": "V-기 위해(서)"
     },
@@ -5115,7 +5115,7 @@
      "id": "chapter-60-b8",
      "kind": "pattern",
      "title": "문법 Grammar · V-기 전에",
-     "cardCount": 1,
+     "cardCount": 3,
      "canDo": "Name an action as a noun with V-기 (운동하기) and V-는 것 (운동하는 것)",
      "firstWord": "V-기 전에"
     },
@@ -5123,7 +5123,7 @@
      "id": "chapter-60-b9",
      "kind": "pattern",
      "title": "문법 Grammar · V-기 시작하다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Express a decision or plan with V-기로 했어요 (운동하기로 했어요)",
      "firstWord": "V-기 시작하다"
     },
@@ -5173,7 +5173,7 @@
      "id": "chapter-61-b2",
      "kind": "pattern",
      "title": "문법 Grammar · A/V-네요: realizing or noticing something right now",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "React to something noticed right now with A/V-네요 (벌써 도착했네요)",
      "firstWord": "A/V-네요: realizing or noticing something right now"
     },
@@ -5189,7 +5189,7 @@
      "id": "chapter-61-b4",
      "kind": "pattern",
      "title": "문법 Grammar · A/V-군요 / -구나: \"I see, so that's how it is\"",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Acknowledge newly understood information with A/V-군요 / -구나 (안 막혔군요)",
      "firstWord": "A/V-군요 / -구나: \"I see, so that's how it is\""
     },
@@ -5205,7 +5205,7 @@
      "id": "chapter-61-b6",
      "kind": "pattern",
      "title": "문법 Grammar · V/A-(으)ㄹ걸요: \"probably,\" a soft guess",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Offer a soft, reasoned guess with V/A-(으)ㄹ걸요 (안 늦을걸요)",
      "firstWord": "V/A-(으)ㄹ걸요: \"probably,\" a soft guess"
     },
@@ -5213,7 +5213,7 @@
      "id": "chapter-61-b7",
      "kind": "pattern",
      "title": "문법 Grammar · V-았/었을 텐데(요): \"it would have ..., but\"",
-     "cardCount": 1,
+     "cardCount": 3,
      "canDo": "Suppose about an unrealized past with V-았/었을 텐데(요) (늦었을 텐데요)",
      "firstWord": "V-았/었을 텐데(요): \"it would have ..., but\""
     },
@@ -5221,7 +5221,7 @@
      "id": "chapter-61-b8",
      "kind": "pattern",
      "title": "문법 Grammar · -군요 vs -네요: both react, but not the same way",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "React to something noticed right now with A/V-네요 (벌써 도착했네요)",
      "firstWord": "-군요 vs -네요: both react, but not the same way"
     },
@@ -5271,7 +5271,7 @@
      "id": "chapter-62-b2",
      "kind": "pattern",
      "title": "문법 Grammar · 이/가",
-     "cardCount": 1,
+     "cardCount": 5,
      "canDo": "Spotlight a new or focused subject with 이/가 (친구가 보냈어요)",
      "firstWord": "이/가"
     },
@@ -5287,7 +5287,7 @@
      "id": "chapter-62-b4",
      "kind": "pattern",
      "title": "문법 Grammar · 은/는",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Set up an already-known topic with 은/는 (저는 …, 그 친구는 …)",
      "firstWord": "은/는"
     },
@@ -5303,7 +5303,7 @@
      "id": "chapter-62-b6",
      "kind": "pattern",
      "title": "문법 Grammar · 은/는",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Mark contrast or limited scope with 은/는 (평소에는 …)",
      "firstWord": "은/는"
     },
@@ -5311,7 +5311,7 @@
      "id": "chapter-62-b7",
      "kind": "pattern",
      "title": "문법 Grammar · 이/가",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Combine topic and inner subject in one sentence (N은/는 N이/가 …)",
      "firstWord": "이/가"
     },
@@ -5319,7 +5319,7 @@
      "id": "chapter-62-b8",
      "kind": "pattern",
      "title": "문법 Grammar · N은/는 N이/가 …",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Spotlight a new or focused subject with 이/가 (친구가 보냈어요)",
      "firstWord": "N은/는 N이/가 …"
     },
@@ -5369,7 +5369,7 @@
      "id": "chapter-63-b2",
      "kind": "pattern",
      "title": "문법 Grammar · V-아/어 주세요 / V-(으)면 연락 주세요",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Understand delivery requests and locate a parcel from a driver message",
      "firstWord": "V-아/어 주세요 / V-(으)면 연락 주세요"
     },
@@ -5385,7 +5385,7 @@
      "id": "chapter-63-b4",
      "kind": "pattern",
      "title": "문법 Grammar · N도 있으세요? / V-(으)세요",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Read symptom questions and medicine frequency, timing, and warnings",
      "firstWord": "N도 있으세요? / V-(으)세요"
     },
@@ -5393,7 +5393,7 @@
      "id": "chapter-63-b5",
      "kind": "pattern",
      "title": "문법 Grammar · V-아/어야 해요 / V-지 마세요",
-     "cardCount": 1,
+     "cardCount": 3,
      "canDo": "Find the time and required action in a building-management notice",
      "firstWord": "V-아/어야 해요 / V-지 마세요"
     },
@@ -5401,7 +5401,7 @@
      "id": "chapter-63-b6",
      "kind": "pattern",
      "title": "문법 Grammar · N부터 N까지 / N 동안",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Distinguish a transit delay, suspension, resumption, and transfer instruction",
      "firstWord": "N부터 N까지 / N 동안"
     },
@@ -5409,7 +5409,7 @@
      "id": "chapter-63-b7",
      "kind": "pattern",
      "title": "문법 Grammar · N이/가 지연되다 / V-는 중이다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Understand delivery requests and locate a parcel from a driver message",
      "firstWord": "N이/가 지연되다 / V-는 중이다"
     },
@@ -5459,7 +5459,7 @@
      "id": "chapter-64-b2",
      "kind": "pattern",
      "title": "문법 Grammar · Chat abbreviations: ㅋㅋ, ㅠㅠ, ㅇㅇ, ㄹㅇ, ㅇㅈ",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Read and use chat tokens like ㅋㅋ, ㅠㅠ, ㅇㅇ, ㄹㅇ, ㅇㅈ in casual messages",
      "firstWord": "Chat abbreviations: ㅋㅋ, ㅠㅠ, ㅇㅇ, ㄹㅇ, ㅇㅈ"
     },
@@ -5475,7 +5475,7 @@
      "id": "chapter-64-b4",
      "kind": "pattern",
      "title": "문법 Grammar · Colloquial intensifiers: 완전 / 진짜 / 너무 / 대박 / 레전드",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Crank up the feeling with colloquial intensifiers (완전 / 진짜 / 대박 / 레전드)",
      "firstWord": "Colloquial intensifiers: 완전 / 진짜 / 너무 / 대박 / 레전드"
     },
@@ -5483,7 +5483,7 @@
      "id": "chapter-64-b5",
      "kind": "pattern",
      "title": "문법 Grammar · Platform verbs: 댓글 달다, 좋아요 누르다, 공유하다, 구독하다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Use fixed platform verb pairings (좋아요 누르다, 댓글 달다, 공유하다)",
      "firstWord": "Platform verbs: 댓글 달다, 좋아요 누르다, 공유하다, 구독하다"
     },
@@ -5491,7 +5491,7 @@
      "id": "chapter-64-b6",
      "kind": "pattern",
      "title": "문법 Grammar · Register: ㅇㅇ vs 네 / 알겠어요",
-     "cardCount": 1,
+     "cardCount": 3,
      "canDo": "Switch register correctly — ㅇㅇ with friends vs 네 / 알겠어요 in formal replies",
      "firstWord": "Register: ㅇㅇ vs 네 / 알겠어요"
     },
@@ -5541,7 +5541,7 @@
      "id": "chapter-65-b2",
      "kind": "pattern",
      "title": "문법 Grammar · 아직 있나요? / 거래 가능할까요?",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Understand whether a secondhand item is available, reserved, defective, or negotiable",
      "firstWord": "아직 있나요? / 거래 가능할까요?"
     },
@@ -5557,7 +5557,7 @@
      "id": "chapter-65-b4",
      "kind": "pattern",
      "title": "문법 Grammar · V-아/어 놓다 / V-아/어 두다",
-     "cardCount": 1,
+     "cardCount": 4,
      "canDo": "Locate a parcel and identify a failed delivery or pickup deadline",
      "firstWord": "V-아/어 놓다 / V-아/어 두다"
     },
@@ -5565,7 +5565,7 @@
      "id": "chapter-65-b5",
      "kind": "pattern",
      "title": "문법 Grammar · 혹시 / 좀 / 괜찮으면",
-     "cardCount": 2,
+     "cardCount": 5,
      "canDo": "Recognize how 혹시, 좀, and 괜찮으면 soften a chat request",
      "firstWord": "혹시 / 좀 / 괜찮으면"
     },
@@ -5573,7 +5573,7 @@
      "id": "chapter-65-b6",
      "kind": "pattern",
      "title": "문법 Grammar · V-기는 어려울 것 같아요 / V-기 힘들 것 같아요",
-     "cardCount": 1,
+     "cardCount": 3,
      "canDo": "Distinguish a vague social closing from a refusal that offers a concrete alternative",
      "firstWord": "V-기는 어려울 것 같아요 / V-기 힘들 것 같아요"
     },

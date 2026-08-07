@@ -404,27 +404,47 @@ describe('buildPatternBites', () => {
     expect(bite.cards.some((card) => card.kind === 'drill')).toBe(false);
   });
   it('does not make -아/어 놓다 and -아/어 두다 mutually exclusive answers', () => {
+    // order 21 refinement: the audit's conclusion is that this PAIR must never
+    // be offered as mutually exclusive options — not that the bite may carry
+    // no questions at all (pitfall picks and rebuild tiles are fine).
     const chapter = JSON.parse(readFileSync(join(root, 'data', 'chapters', 'chapter-65.json'), 'utf8'));
     const overrides = JSON.parse(readFileSync(join(root, 'data', 'overrides.json'), 'utf8'));
     const bite = buildPatternBites(chapter, overrides)
       .find((candidate) => candidate.title.includes('V-아/어 놓다 / V-아/어 두다'));
 
-    expect(bite.cards.some((card) => card.kind === 'drill')).toBe(false);
+    for (const card of bite.cards.filter((c) => c.kind === 'drill')) {
+      const texts = card.options.map((o) => o.text);
+      const hasNota = texts.some((t) => t.includes('놓'));
+      const hasDuda = texts.some((t) => t.includes('두'));
+      expect(hasNota && hasDuda).toBe(false);
+    }
   });
   it('does not make -군요 and -네요 mutually exclusive in a natural reaction', () => {
+    // order 21 refinement — see the 놓다/두다 test above for the reasoning.
     const chapter = JSON.parse(readFileSync(join(root, 'data', 'chapters', 'chapter-61.json'), 'utf8'));
     const overrides = JSON.parse(readFileSync(join(root, 'data', 'overrides.json'), 'utf8'));
     const bite = buildPatternBites(chapter, overrides)
       .find((candidate) => candidate.title.includes('-군요 vs -네요'));
 
-    expect(bite.cards.some((card) => card.kind === 'drill')).toBe(false);
+    for (const card of bite.cards.filter((c) => c.kind === 'drill')) {
+      if (!card.sentence?.includes('___')) continue; // pitfall picks are fine
+      const texts = card.options.map((o) => o.text);
+      expect(texts.includes('군요') && texts.includes('네요')).toBe(false);
+    }
   });
   it('does not offer a fused past ending beside its valid longer form', () => {
+    // order 21 refinement: cloze options must never pair a form with its own
+    // substring/extension (았더라면 beside 더라면) — other question types are fine.
     const chapter = JSON.parse(readFileSync(join(root, 'data', 'chapters', 'chapter-59.json'), 'utf8'));
     const bite = buildPatternBites(chapter)
       .find((candidate) => candidate.title.includes('-았/었더라면 …'));
 
-    expect(bite.cards.some((card) => card.kind === 'drill')).toBe(false);
+    for (const card of bite.cards.filter((c) => c.kind === 'drill')) {
+      const texts = card.options.map((o) => o.text);
+      for (const a of texts) for (const b of texts) {
+        if (a !== b) expect(a.includes(b)).toBe(false);
+      }
+    }
   });
   it('highlights the condition and result in a past-counterfactual hunt', () => {
     const [bite] = buildPatternBites({
@@ -481,5 +501,207 @@ describe('compileChapter', () => {
     const compiled = compileChapter(chapter, 99);
     expect(compiled.bites.slice(0, 6).map((bite) => bite.canDo)).toEqual(['A', 'A', 'B', 'B', 'C', 'C']);
     expect(compiled.bites.slice(6).map((bite) => bite.canDo)).toEqual(['A', 'B', 'C']);
+  });
+});
+
+/* ---------------- order 21: grammar bites must end in questions ---------------- */
+
+const QUESTION_KINDS = new Set(['drill', 'order']);
+const questionsOf = (bite) => bite.cards.filter((c) => QUESTION_KINDS.has(c.kind));
+
+// A fully-loaded note: two variants, four examples, a suffix-decomposable
+// form table, and a pitfall — every generator has material here.
+const richChapter = {
+  id: 'chapter-97',
+  inlineExercises: [],
+  grammarNotes: [{
+    title: 'N을/를 — the object particle',
+    func: '을/를 marks the object of a verb. It attaches after the noun that receives the action.',
+    formTable: [
+      { when: 'Noun ends in a consonant (받침)', add: '을', ex: '밥 → 밥을' },
+      { when: 'Noun ends in a vowel', add: '를', ex: '커피 → 커피를' },
+    ],
+    examples: [
+      { ko: '밥을 먹어요.', en: 'I eat rice.' },
+      { ko: '커피를 마셔요.', en: 'I drink coffee.' },
+      { ko: '책을 읽어요.', en: 'I read a book.', note: '받침 → 을' },
+      { ko: '한국어를 공부해요.', en: 'I study Korean.' },
+    ],
+    englishSpeakerPitfall: {
+      wrong: '저는 밥 먹어요를 좋아해요.',
+      right: '저는 밥 먹는 것을 좋아해요.',
+      explanation: 'Attach 을/를 to nouns, not to finished sentences.',
+    },
+  }],
+};
+
+describe('order 21 — grammar bites end in questions', () => {
+  it('appends 2-4 questions after the rule card and keeps the rule first', () => {
+    const [bite] = buildPatternBites(richChapter);
+    expect(bite.cards[0].kind).toBe('hunt');
+    const questions = questionsOf(bite);
+    expect(questions.length).toBeGreaterThanOrEqual(2);
+    expect(questions.length).toBeLessThanOrEqual(4);
+    // every question sits after the rule card
+    expect(bite.cards.findIndex((c) => QUESTION_KINDS.has(c.kind))).toBeGreaterThan(0);
+  });
+
+  it('keeps the legacy hunt and drill cards byte-identical (additive rule)', () => {
+    const [bite] = buildPatternBites(richChapter);
+    const hunt = bite.cards[0];
+    const variants = hunt.lines.map((l) => l.tokens.find((t) => t.hit).mid).sort();
+    expect(variants).toEqual(['를', '을']);
+    const legacy = bite.cards[1];
+    expect(legacy.kind).toBe('drill');
+    expect(legacy.prompt).toBe('I read a book.');
+    expect(legacy.options.map((o) => o.text).sort()).toEqual(['를', '을']);
+  });
+
+  it('widened cloze pulls a sibling variant for short particles only, excluding candidates already in the sentence', () => {
+    const chapter = {
+      id: 'chapter-96',
+      inlineExercises: [],
+      grammarNotes: [
+        {
+          // spaced ending, single variant → NO sibling-based cloze (a sibling
+          // ending as distractor is garbage or accidentally valid); this note
+          // gets its questions from tiles/pitfall instead
+          title: 'V-고 싶어요 — want to',
+          func: 'States what the speaker wants to do.',
+          formTable: [],
+          examples: [
+            { ko: '물을 마시고 싶어요.', en: 'I want to drink water.' },
+            { ko: '친구를 만나고 싶어요.', en: 'I want to meet a friend.' },
+            { ko: '영화를 보고 싶어요.', en: 'I want to watch a movie.' },
+          ],
+        },
+        {
+          // short spaceless particle, single variant → sibling variants OK
+          title: 'N도 — also',
+          func: 'Adds "also".',
+          formTable: [],
+          examples: [
+            { ko: '물도 주세요.', en: 'Water too, please.' },
+            { ko: '저도 가요.', en: 'I go too.' },
+            { ko: '빵도 먹어요.', en: 'I eat bread too.' },
+          ],
+        },
+        {
+          title: 'N만 — only',
+          func: 'Limits to only.',
+          formTable: [],
+          examples: [{ ko: '물만 마셔요.', en: 'I only drink water.' }],
+        },
+      ],
+    };
+    const bites = buildPatternBites(chapter);
+    const wantBite = bites[0];
+    const wantClozes = wantBite.cards.filter((c) => c.kind === 'drill' && c.sentence?.includes('___'));
+    expect(wantClozes).toHaveLength(0);
+    // …but it still ends with questions via rebuild tiles
+    expect(wantBite.cards.filter((c) => c.kind === 'order').length).toBeGreaterThanOrEqual(1);
+
+    const doBite = bites[1];
+    const doClozes = doBite.cards.filter((c) => c.kind === 'drill' && c.sentence?.includes('___'));
+    expect(doClozes.length).toBeGreaterThanOrEqual(1);
+    for (const cloze of doClozes) {
+      expect(cloze.options.filter((o) => o.ok)).toHaveLength(1);
+      expect(cloze.options.length).toBeGreaterThanOrEqual(2);
+      // sibling 만 may appear; nothing already in the sentence may
+      for (const opt of cloze.options) {
+        if (!opt.ok) expect(cloze.sentence.includes(opt.text)).toBe(false);
+      }
+    }
+  });
+
+  it('turns hunt sentences into order tiles but never duplicates the chapter orderWords', () => {
+    const chapter = {
+      ...richChapter,
+      inlineExercises: [{ type: 'orderWords', prompt: 'x', tokens: ['밥을', '먹어요.'], correct: '밥을 먹어요.' }],
+    };
+    const [bite] = buildPatternBites(chapter);
+    const orders = bite.cards.filter((c) => c.kind === 'order');
+    // 밥을 먹어요 is the chapter's own orderWords — must not reappear here
+    for (const order of orders) expect(order.correct).not.toBe('밥을 먹어요.');
+    for (const order of orders) {
+      expect(order.tokens.join(' ')).toBe(order.correct);
+      expect(order.tokens.length).toBeGreaterThanOrEqual(3);
+    }
+  });
+
+  it('builds a form-table cloze from suffix-decomposable rows and skips fused rows', () => {
+    const [bite] = buildPatternBites(richChapter);
+    const formCloze = bite.cards.find((c) => c.kind === 'drill' && c.sentence === '밥___');
+    expect(formCloze).toBeTruthy();
+    expect(formCloze.options.find((o) => o.ok).text).toBe('을');
+    expect(formCloze.options.map((o) => o.text)).toContain('를');
+
+    const fusedOnly = {
+      id: 'chapter-95',
+      inlineExercises: [],
+      grammarNotes: [{
+        title: 'V-아/어야 해요 — must',
+        func: 'Obligation.',
+        formTable: [
+          { when: 'ㅏ/ㅗ stems', add: '-아야 해요', ex: '가다 → 가야 해요' },
+          { when: 'other stems', add: '-어야 해요', ex: '먹다 → 먹어야 해요' },
+        ],
+        examples: [{ ko: '집에 가야 해요.', en: 'I must go home.' }],
+      }],
+    };
+    const [fusedBite] = buildPatternBites(fusedOnly);
+    // 가다 → 가야 해요 is not X+suffix (다 is replaced), so no form cloze may exist
+    expect(fusedBite.cards.some((c) => c.kind === 'drill' && /다___$/.test(c.sentence || ''))).toBe(false);
+  });
+
+  it('offers the pitfall as a two-way natural-or-not pick and preserves it in more', () => {
+    const [bite] = buildPatternBites(richChapter);
+    const pick = bite.cards.find((c) => c.kind === 'drill' && c.options.length === 2
+      && c.options.some((o) => o.text === richChapter.grammarNotes[0].englishSpeakerPitfall.right));
+    expect(pick).toBeTruthy();
+    expect(pick.options.find((o) => o.ok).text).toBe(richChapter.grammarNotes[0].englishSpeakerPitfall.right);
+    expect(pick.explanation).toContain('Attach 을/를');
+    const ruleCard = bite.cards[0];
+    expect(ruleCard.more.pitfall).toEqual(richChapter.grammarNotes[0].englishSpeakerPitfall);
+  });
+
+  it('gives the Hangul-style teach fallback questions from readings and pitfall', () => {
+    const chapter = {
+      id: 'chapter-94',
+      inlineExercises: [],
+      grammarNotes: [{
+        title: '자음 (Consonants) — Ten Core Shapes',
+        func: '',
+        formTable: [],
+        examples: [
+          { ko: '가 / 고 / 구', romanization: 'ga / go / gu', en: 'k/g row' },
+          { ko: '나 / 노 / 누', romanization: 'na / no / nu', en: 'n row' },
+          { ko: '마 / 모 / 무', romanization: 'ma / mo / mu', en: 'm row' },
+        ],
+        englishSpeakerPitfall: {
+          wrong: "Reading 이 as 'ee' exactly like English",
+          right: '이 is close but shorter',
+          explanation: 'Vowel length differs.',
+        },
+      }],
+    };
+    const [bite] = buildPatternBites(chapter);
+    expect(bite.cards[0].kind).toBe('teach');
+    const questions = questionsOf(bite);
+    expect(questions.length).toBeGreaterThanOrEqual(2);
+    const reading = questions.find((c) => c.options?.some((o) => o.text === 'ga'));
+    expect(reading).toBeTruthy();
+    expect(reading.options.find((o) => o.ok).text).toBe('ga');
+  });
+
+  it('exposes the first sentence of func as funcLead, clamped', () => {
+    const [bite] = buildPatternBites(richChapter);
+    expect(bite.cards[0].more.funcLead).toBe('을/를 marks the object of a verb.');
+    const longFunc = {
+      ...richChapter,
+      grammarNotes: [{ ...richChapter.grammarNotes[0], func: 'x'.repeat(300) + '. tail.' }],
+    };
+    const [longBite] = buildPatternBites(longFunc);
+    expect(longBite.cards[0].more.funcLead.length).toBeLessThanOrEqual(160);
   });
 });

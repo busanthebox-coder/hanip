@@ -11,6 +11,9 @@
 
 <div class="step-label">배우기 · Learn — {card.name}</div>
 {#if card.sub}<div class="q">{card.sub}</div>{/if}
+{#if card.more?.funcLead}
+  <p class="func-lead">{card.more.funcLead}</p>
+{/if}
 
 {#if card.rows?.length}
   <div class="rule">
@@ -51,6 +54,8 @@
 <style>
   .step-label { font-size: 11px; font-weight: 850; letter-spacing: .16em; color: var(--accent); text-transform: uppercase; }
   .q { margin-top: 6px; font-size: 18px; font-weight: 800; word-break: keep-all; }
+  /* the one sentence that carries the concept — visible by default (order 21) */
+  .func-lead { margin: 8px 0 0; font-size: 13.5px; line-height: 1.6; color: var(--ink-2); word-break: keep-all; }
   .rule { margin-top: 14px; padding: 16px; border-radius: 18px; background: var(--card); border: 1px solid var(--line);
     box-shadow: var(--shadow-1); display: grid; gap: 12px; }
   .fork-row { display: grid; grid-template-columns: minmax(72px, auto) 1fr; gap: 12px; align-items: baseline; }

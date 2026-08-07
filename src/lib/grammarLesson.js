@@ -148,7 +148,21 @@ export function expandGrammarBite(note, originalCards = []) {
   const lesson = buildGrammarLesson(note);
   if (!lesson.length) return originalCards;
   const recap = lesson.at(-1)?.section === 'recap' ? lesson.at(-1) : null;
-  const learn = recap ? lesson.slice(0, -1) : lesson;
-  const practice = originalCards.filter((card) => card.kind === 'hunt' || card.kind === 'drill');
+  let learn = recap ? lesson.slice(0, -1) : lesson;
+  // order 21 widened the compiled question set: rebuild tiles (kind 'order')
+  // must survive into the lesson, and the compiled pitfall pick makes the
+  // runtime grammar-check a duplicate — the same wrong/right pair would be
+  // asked twice in one bite. Keep the runtime check only as a fallback for
+  // notes whose compiled pick was crowded out by the 4-question cap.
+  const practice = originalCards.filter(
+    (card) => card.kind === 'hunt' || card.kind === 'drill' || card.kind === 'order'
+  );
+  const pitfallRight = note.englishSpeakerPitfall?.right;
+  const compiledPitfallPick = pitfallRight
+    && practice.some((card) => card.kind === 'drill'
+      && (card.options || []).some((option) => option.text === pitfallRight));
+  if (compiledPitfallPick) {
+    learn = learn.filter((card) => card.kind !== 'grammar-check');
+  }
   return [...learn, ...practice, ...(recap ? [recap] : [])];
 }

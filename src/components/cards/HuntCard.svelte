@@ -65,6 +65,9 @@
 {#if ruleShown}
   <div class="rule" bind:this={revealElement}>
     <div class="rule-cap">발견한 규칙 · You found the rule — {card.rule.name}{#if card.sub} · {card.sub}{/if}</div>
+    {#if card.more?.funcLead}
+      <p class="func-lead">{card.more.funcLead}</p>
+    {/if}
     <div class="fork">
       {#each card.rule.rows as row}
         <div class="fork-row">
@@ -108,6 +111,8 @@
     box-shadow: var(--shadow-1); animation: rise .3s var(--ease); }
   @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
   .rule-cap { font-size: 11px; font-weight: 850; letter-spacing: .1em; color: var(--ink-3); text-transform: uppercase; }
+  /* the one sentence that carries the concept — visible by default (order 21) */
+  .func-lead { margin: 8px 0 0; font-size: 13.5px; line-height: 1.6; color: var(--ink-2); word-break: keep-all; }
   .fork { margin-top: 10px; display: grid; gap: 12px; }
   .fork-row { display: grid; grid-template-columns: minmax(72px, auto) 1fr; gap: 12px; align-items: baseline; }
   .fork-when { font-size: 11.5px; font-weight: 850; color: var(--ink-3); line-height: 1.4; }

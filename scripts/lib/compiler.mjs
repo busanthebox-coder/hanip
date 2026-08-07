@@ -467,10 +467,59 @@ export function buildWordBites(chapter, overrides = {}) {
 
 /* ---------------- pattern bites ---------------- */
 
+// The first sentence of the note's concept paragraph — shown on the rule card
+// by default (order 21: a two-word tag like "topic marker" can't carry the
+// concept alone, and no beginner opens a disclosure they have no reason to).
+function funcLeadOf(func) {
+  const clean = String(func || '').trim();
+  if (!clean) return '';
+  const at = clean.search(/(?<=[.!?])\s/);
+  const lead = at >= 0 ? clean.slice(0, at + 1).trim() : clean;
+  return lead.length > 160 ? lead.slice(0, 159).trimEnd() + '…' : lead;
+}
+
+// "밥 → 밥을 (rice)" pairs from a formTable ex cell. Only pairs where the
+// result literally extends the base (particle tables) decompose; fused
+// conjugations (가다 → 가야 해요) don't and are skipped — composing those
+// mechanically is how you teach a wrong form.
+function suffixPairs(exCell) {
+  const pairs = [];
+  for (const piece of String(exCell || '').split('·')) {
+    const m = piece.match(/(\S+)\s*→\s*([^(]+)/u);
+    if (!m) continue;
+    const base = m[1].trim();
+    const result = m[2].split('/')[0].trim();
+    if (result.startsWith(base) && result.length > base.length) {
+      pairs.push({ base, suffix: result.slice(base.length).trim() || result.slice(base.length) });
+    }
+  }
+  return pairs;
+}
+
+// Deterministic option placement, same trick guessOptions uses: the correct
+// answer's slot varies with content so it isn't always first, and identical
+// input always compiles to identical output.
+function placeOptions(correct, distractors, seed) {
+  const options = distractors.map((text) => ({ text, ok: false }));
+  options.splice(seed % (options.length + 1), 0, { text: correct, ok: true });
+  return options;
+}
+
+const normalizeOrderText = (text) => String(text).replace(/\s+/g, ' ').trim();
+
 export function buildPatternBites(chapter, overrides = {}) {
   const exampleBans = overrides.huntExampleBans || [];
-  return (chapter.grammarNotes || []).map((note) => {
-    const variants = expandVariants(note.title);
+  const notes = chapter.grammarNotes || [];
+  // sibling variants feed widened-cloze distractors when a note has one variant
+  const variantsByNote = notes.map((note) => expandVariants(note.title));
+  // the chapter's own orderWords must not be re-served as a grammar tile
+  const chapterOrderCorrects = new Set(
+    (chapter.inlineExercises || [])
+      .filter((e) => e.type === 'orderWords')
+      .map((e) => normalizeOrderText(e.correct))
+  );
+  return notes.map((note, noteIndex) => {
+    const variants = variantsByNote[noteIndex];
     const examples = note.examples || [];
     const hits = examples
       .filter((ex) => !exampleBans.some((ban) => ex.ko.includes(ban)))
@@ -478,18 +527,27 @@ export function buildPatternBites(chapter, overrides = {}) {
       .filter((h) => h.match);
     const name = note.title.split('—')[0].trim();
     const sub = note.title.includes('—') ? note.title.split('—').slice(1).join('—').trim() : '';
-    const more = { func: note.func || '', keyPoint: note.keyPoint || null, pronunciation: note.pronunciation || '' };
+    const more = {
+      func: note.func || '',
+      funcLead: funcLeadOf(note.func),
+      keyPoint: note.keyPoint || null,
+      pronunciation: note.pronunciation || '',
+      ...(note.englishSpeakerPitfall ? { pitfall: note.englishSpeakerPitfall } : {}),
+    };
     const rows = (note.formTable || []).map((r) => ({ when: r.when, add: r.add, ex: r.ex || '' }));
     const cards = [];
 
-    if (variants.length && hits.length >= 2) {
+    let huntPair = [];
+    let legacySpare = null;
+    const hunted = variants.length && hits.length >= 2;
+    if (hunted) {
       // the two hunt lines should CONTRAST when the rule alternates (one 을,
       // one 를) — pick the first hit of each distinct variant before repeats
       const byVariant = [];
       const seen = new Set();
       for (const h of hits) if (!seen.has(h.match.variant)) { seen.add(h.match.variant); byVariant.push(h); }
       for (const h of hits) if (!byVariant.includes(h)) byVariant.push(h);
-      const huntPair = byVariant.slice(0, 2);
+      huntPair = byVariant.slice(0, 2);
       cards.push({
         kind: 'hunt',
         name, sub,
@@ -509,6 +567,7 @@ export function buildPatternBites(chapter, overrides = {}) {
             || (/^[았었]/u.test(longer) && longer.endsWith(shorter))))
       );
       if (spare && optionSet.length >= 2 && !hasOptionalLongerVariant) {
+        legacySpare = spare;
         const cloze = spare.ex.ko.slice(0, spare.match.start) + '___' + spare.ex.ko.slice(spare.match.end);
         cards.push({
           kind: 'drill',
@@ -528,6 +587,156 @@ export function buildPatternBites(chapter, overrides = {}) {
         more,
       });
     }
+
+    /* ---- order 21: the rule check must be followed by questions (2-4) ----
+       Every generated question derives from material the note already carries
+       (examples, formTable, pitfall) — no new Korean is ever authored. New
+       cards are APPENDED so every pre-existing card key survives (additive). */
+    const QUESTION_KINDS = new Set(['drill', 'order']);
+    const questionCount = () => cards.filter((c) => QUESTION_KINDS.has(c.kind)).length;
+    const room = () => questionCount() < 4;
+    const seedOf = (text) => [...String(text)].reduce((sum, ch) => sum + ch.codePointAt(0), 0);
+
+    // ① widened cloze — every unused example with a pattern hit becomes a
+    // cloze; when the note has a single variant, distractors come from the
+    // note's own table suffixes first, then (for short particles only)
+    // sibling notes' variants. Guards, in audit order of importance:
+    //   - a candidate appearing in the sentence would also fit → excluded
+    //   - substring relations (기 위해 ⊂ 기 위해서) → excluded
+    //   - pairs the audit ruled interchangeable (군요↔네요, 어 놓다↔어 두다)
+    //     live in overrides.interchangeableVariants → excluded
+    //   - sibling variants only distract SHORT SPACELESS particles; offering
+    //     another note's ending against a spaced ending is either garbage or,
+    //     worse, occasionally also correct
+    const interchangeable = (overrides.interchangeableVariants || []).map((pair) => new Set(pair));
+    const clash = (a, b) =>
+      a === b || a.includes(b) || b.includes(a)
+      || interchangeable.some((set) => set.has(a) && set.has(b));
+    if (hunted) {
+      const noteVariants = [...new Set(hits.map((h) => h.match.variant))];
+      const tableSuffixes = rows.flatMap((r) => suffixPairs(r.ex).map((p) => p.suffix));
+      const siblingVariants = variantsByNote.flatMap((vs, i) => (i === noteIndex ? [] : vs));
+      for (const h of hits) {
+        if (!room()) break;
+        if (huntPair.includes(h) || h === legacySpare) continue;
+        const correct = h.match.variant;
+        const shortParticle = !correct.includes(' ') && correct.length <= 3;
+        const pool = [...noteVariants, ...tableSuffixes, ...(shortParticle ? siblingVariants : [])];
+        const distractors = [];
+        for (const cand of pool) {
+          if (distractors.length >= 2) break;
+          if (distractors.includes(cand)) continue;
+          if (h.ex.ko.includes(cand)) continue;
+          if (clash(correct, cand)) continue;
+          if (cand.includes(' ') !== correct.includes(' ')) continue;
+          distractors.push(cand);
+        }
+        if (!distractors.length) continue;
+        const cloze = h.ex.ko.slice(0, h.match.start) + '___' + h.ex.ko.slice(h.match.end);
+        cards.push({
+          kind: 'drill',
+          prompt: h.ex.en ? h.ex.en : '빈칸에 들어갈 문법 형태는? · Which form completes it?',
+          sentence: cloze,
+          options: placeOptions(correct, distractors.slice(0, 2), seedOf(h.ex.ko)),
+          explanation: h.ex.note || '',
+        });
+      }
+    }
+
+    // ② order tiles — rebuild a sentence the learner just hunted (or, on
+    // teach bites, one of the note's own examples). 3-6 words, and never a
+    // sentence the chapter already serves as its own orderWords exercise.
+    const tileSources = hunted ? huntPair.map((h) => h.ex) : examples.slice(0, 2);
+    const usedTileCorrects = new Set();
+    for (const ex of tileSources) {
+      if (!room()) break;
+      if (ex.ko.includes('/')) continue; // syllable rows (가 / 고 / 구) aren't sentences
+      const tokens = ex.ko.trim().split(/\s+/);
+      if (tokens.length < 3 || tokens.length > 6) continue;
+      const correct = ex.ko.trim();
+      const normalized = normalizeOrderText(correct);
+      if (chapterOrderCorrects.has(normalized) || usedTileCorrects.has(normalized)) continue;
+      usedTileCorrects.add(normalized);
+      cards.push({
+        kind: 'order',
+        prompt: ex.en
+          ? `방금 본 문장을 다시 조립하세요 · Rebuild: "${ex.en}"`
+          : '방금 본 문장을 다시 조립하세요 · Rebuild the sentence',
+        tokens,
+        correct,
+        explanation: '',
+      });
+    }
+
+    // ③ pitfall pick — the English-speaker trap the note already documents,
+    // served as a two-way judgement. Ahead of the form-table cloze because
+    // it's the most valuable question in the set and must not be crowded out
+    // by the 4-question cap; it also works when nothing else does (the
+    // Hangul chapter), which is exactly where the teach fallback lives.
+    const pitfall = note.englishSpeakerPitfall;
+    if (room() && pitfall?.wrong && pitfall?.right) {
+      cards.push({
+        kind: 'drill',
+        prompt: '어느 쪽이 자연스러워요? · Which one is natural?',
+        sentence: null,
+        options: placeOptions(pitfall.right, [pitfall.wrong], seedOf(pitfall.wrong)),
+        explanation: pitfall.explanation || '',
+      });
+    }
+
+    // ④ form-table cloze — 밥 → 밥__? with the other rows' suffixes as
+    // distractors. Only suffix-decomposable rows qualify (see suffixPairs),
+    // and interchangeable pairs are excluded here too.
+    const rowPairs = rows
+      .map((r) => ({ row: r, pair: suffixPairs(r.ex)[0] }))
+      .filter((entry) => entry.pair);
+    if (rowPairs.length >= 2) {
+      for (const { row, pair } of rowPairs.slice(0, 2)) {
+        if (!room()) break;
+        const distractors = rowPairs
+          .filter((other) => other.pair.suffix !== pair.suffix && !clash(pair.suffix, other.pair.suffix))
+          .map((other) => other.pair.suffix)
+          .slice(0, 2);
+        if (!distractors.length) continue;
+        cards.push({
+          kind: 'drill',
+          prompt: `빈칸을 채우세요 · Complete the form — ${row.when}`,
+          sentence: `${pair.base}___`,
+          options: placeOptions(pair.suffix, distractors, seedOf(pair.base)),
+          explanation: row.ex,
+        });
+      }
+    }
+
+    // ⑤ reading pick (teach fallback only) — the Hangul notes pair syllable
+    // rows with romanization ("가 / 고 / 구" ↔ "ga / go / gu"); asking "how do
+    // you read 가?" is derived entirely from that pairing.
+    if (!hunted && rows.length === 0 && questionCount() < 2) {
+      const readings = examples
+        .map((ex) => ({
+          syllables: String(ex.ko || '').split('/').map((s) => s.trim()).filter(Boolean),
+          sounds: String(ex.romanization || '').split('/').map((s) => s.trim()).filter(Boolean),
+        }))
+        .filter((r) => r.syllables.length >= 2 && r.syllables.length === r.sounds.length);
+      for (const [i, reading] of readings.entries()) {
+        if (!room() || questionCount() >= 3) break;
+        const correct = reading.sounds[0];
+        const distractors = readings
+          .filter((_, j) => j !== i)
+          .map((other) => other.sounds[0])
+          .filter((sound) => sound !== correct)
+          .slice(0, 2);
+        if (!distractors.length) continue;
+        cards.push({
+          kind: 'drill',
+          prompt: '어떻게 읽어요? · How do you read it?',
+          sentence: reading.syllables[0],
+          options: placeOptions(correct, distractors, seedOf(reading.syllables[0])),
+          explanation: `${reading.syllables.join(' / ')} = ${reading.sounds.join(' / ')}`,
+        });
+      }
+    }
+
     return { kind: 'pattern', title: `문법 Grammar · ${name}`, cards };
   });
 }

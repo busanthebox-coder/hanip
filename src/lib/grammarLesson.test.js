@@ -112,3 +112,37 @@ describe('grammar lesson expansion', () => {
     }
   });
 });
+
+describe('order 21 integration', () => {
+  const note = {
+    title: 'N을/를 — object',
+    func: 'Marks the object.',
+    formTable: [],
+    examples: [{ ko: '밥을 먹어요.', en: 'I eat rice.' }],
+    englishSpeakerPitfall: { wrong: '나쁜 문장', right: '좋은 문장', explanation: 'why' },
+  };
+
+  it('lets compiled rebuild tiles (order cards) survive into the lesson', () => {
+    const compiled = [
+      { kind: 'hunt', name: 'N을/를', lines: [] },
+      { kind: 'order', prompt: 'rebuild', tokens: ['밥을', '먹어요.'], correct: '밥을 먹어요.' },
+    ];
+    const cards = expandGrammarBite(note, compiled);
+    expect(cards.some((card) => card.kind === 'order')).toBe(true);
+  });
+
+  it('drops the runtime grammar-check when the compiled pitfall pick already covers it', () => {
+    const compiledWithPick = [
+      { kind: 'hunt', name: 'N을/를', lines: [] },
+      { kind: 'drill', prompt: '어느 쪽이 자연스러워요? · Which one is natural?', options: [{ text: '좋은 문장', ok: true }, { text: '나쁜 문장', ok: false }] },
+    ];
+    const deduped = expandGrammarBite(note, compiledWithPick);
+    expect(deduped.filter((card) => card.kind === 'grammar-check')).toHaveLength(0);
+    // the compiled pick itself is still there — the question is asked once
+    expect(deduped.some((card) => card.kind === 'drill' && card.options?.some((o) => o.text === '좋은 문장'))).toBe(true);
+
+    // …but with no compiled pick, the runtime check stays as the fallback
+    const kept = expandGrammarBite(note, [{ kind: 'hunt', name: 'N을/를', lines: [] }]);
+    expect(kept.filter((card) => card.kind === 'grammar-check')).toHaveLength(1);
+  });
+});
