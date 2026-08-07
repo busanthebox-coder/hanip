@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>한입 디자인 샘플 v4 — 영어 설명 위계</title>
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   한입 토큰 — src/styles/tokens.css 값 그대로.
+   색 값은 유지하고 "사용 밀도"만 낮춘다.
+   선택자는 무조건부 :root 를 포함해야 렌더 래퍼에서 변수가 죽지 않는다.
+   ═══════════════════════════════════════════════════════════════ */
+:root, :root[data-theme="light"], [data-theme="light"] {
+  --bg:#FAF6EE; --ink:#26221C; --ink-2:#5E5346; --ink-3:#8C7F6B;
+  --card:#FFFFFF; --wash:#F2E9DA; --line:#E5DCC8; --line-2:#D6C9AE;
+  --accent:#E4572E; --accent-deep:#C13D1B; --accent-soft:#FBE7DD;
+  --gold:#C9A227; --gold-soft:rgba(201,162,39,.16);
+  --good:#4E8D6E; --good-deep:#2E6B4E; --good-soft:#E2EFE6; --bad:#C4452E;
+  --on-accent:#FFF6EF; --progress-track:#EFE4CD;
+  --study-grid:rgba(140,127,107,.045);
+  --shadow-1:0 1px 2px rgba(38,34,28,.05), 0 10px 26px -14px rgba(38,34,28,.16);
+  --shadow-2:0 3px 8px rgba(38,34,28,.06), 0 20px 44px -20px rgba(38,34,28,.26);
+  --page:#EDECE8; --page-ink:#2A2724; --page-ink-2:#6E6A63; --page-line:#DCDAD4;
+  --page-soft:#F6F5F2; --bezel:#FFFFFF; --bezel-edge:rgba(38,34,28,.10);
+  color-scheme: light;
+}
+:root[data-theme="dark"], [data-theme="dark"] {
+  --bg:#17150F; --ink:#EDE6D6; --ink-2:#B5A98F; --ink-3:#8C8168;
+  --card:#201D15; --wash:#2A2618; --line:#383325; --line-2:#4A4330;
+  --accent:#F0603A; --accent-deep:#FF7A55; --accent-soft:#3A211A;
+  --gold:#D8B43F; --gold-soft:rgba(216,180,63,.2);
+  --good:#65A984; --good-deep:#85C8A3; --good-soft:#1C3026; --bad:#F06B51;
+  --on-accent:#FFF6EF; --progress-track:#332E20;
+  --study-grid:rgba(237,230,214,.035);
+  --shadow-1:0 1px 3px rgba(0,0,0,.28), 0 12px 30px -14px rgba(0,0,0,.58);
+  --shadow-2:0 4px 10px rgba(0,0,0,.3), 0 24px 52px -20px rgba(0,0,0,.72);
+  --page:#121110; --page-ink:#E7E3DC; --page-ink-2:#8E8880; --page-line:#2A2825;
+  --page-soft:#1B1A18; --bezel:#26241F; --bezel-edge:rgba(0,0,0,.5);
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{background:var(--page);color:var(--page-ink);
+  font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+  line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;word-break:keep-all;}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit;padding:0;text-align:inherit;}
+a{color:inherit;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+
+/* ── 문서 ────────────────────────────────────────────────────── */
+.doc{max-width:1780px;margin:0 auto;padding:52px 28px 110px;}
+.doc-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;}
+.doc-head h1{margin:0;font-size:26px;font-weight:800;letter-spacing:-.025em;}
+.doc-head p{margin:8px 0 0;max-width:60ch;font-size:14px;color:var(--page-ink-2);}
+.toggle{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 15px;border-radius:999px;
+  border:1px solid var(--page-line);color:var(--page-ink-2);font-size:13px;font-weight:700;white-space:nowrap;}
+.toggle:hover{color:var(--page-ink);}
+.toggle .knob{width:9px;height:9px;border-radius:999px;background:var(--page-ink-2);}
+
+/* 시스템 요약 + 목차 */
+.system{margin-top:28px;padding:18px 20px;border-radius:14px;background:var(--page-soft);
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px 26px;}
+.system div b{display:block;font-size:12px;font-weight:800;color:var(--page-ink);}
+.system div span{display:block;margin-top:3px;font-size:12px;line-height:1.6;color:var(--page-ink-2);}
+.toc{margin-top:18px;padding-top:16px;border-top:1px solid var(--page-line);
+  display:flex;flex-wrap:wrap;gap:6px 8px;}
+.toc a{font-size:12.5px;font-weight:650;color:var(--page-ink-2);text-decoration:none;
+  padding:5px 10px;border-radius:999px;border:1px solid var(--page-line);}
+.toc a:hover{color:var(--page-ink);border-color:var(--page-ink-2);}
+
+.frames{margin-top:44px;display:flex;flex-wrap:wrap;gap:56px 38px;align-items:flex-start;justify-content:center;}
+figure{margin:0;width:390px;max-width:100%;scroll-margin-top:24px;}
+figcaption{margin-top:18px;}
+figcaption b{display:block;font-size:13.5px;font-weight:800;color:var(--page-ink);}
+figcaption p{margin:5px 0 0;font-size:12.5px;line-height:1.65;color:var(--page-ink-2);}
+figcaption .ref{margin-top:5px;font-size:11.5px;color:var(--page-ink-2);opacity:.72;}
+
+/* ── 폰 ──────────────────────────────────────────────────────── */
+.phone{width:390px;max-width:100%;height:790px;border-radius:44px;padding:10px;background:var(--bezel);
+  box-shadow:0 0 0 1px var(--bezel-edge), 0 30px 60px -30px rgba(0,0,0,.35);}
+.screen{width:100%;height:100%;border-radius:35px;overflow:hidden;background:var(--bg);color:var(--ink);
+  display:flex;flex-direction:column;position:relative;}
+.paper{background:
+  repeating-linear-gradient(var(--study-grid) 0 1px, transparent 1px 30px),
+  repeating-linear-gradient(90deg, var(--study-grid) 0 1px, transparent 1px 30px),
+  var(--bg);}
+
+/* ═══ 공유 시스템 프리미티브 ═══════════════════════════════════ */
+/* 선: 구획은 전부 1px --line */
+.hr{height:1px;background:var(--line);border:0;margin:0;flex:none;}
+/* 타이포 */
+.t-hero{font-size:58px;font-weight:900;letter-spacing:-.035em;line-height:1.05;color:var(--ink);}
+.t-title{font-size:26px;font-weight:900;letter-spacing:-.03em;color:var(--ink);}
+.t-sect{font-size:15.5px;font-weight:850;letter-spacing:-.01em;color:var(--ink);}
+.t-lead{font-size:15.5px;font-weight:650;line-height:1.62;color:var(--ink-2);}
+.t-meta{font-size:12.5px;font-weight:650;color:var(--ink-3);}
+.t-en{font-size:11.5px;font-weight:650;color:var(--ink-3);letter-spacing:.01em;line-height:1.5;} /* 보조 라벨 — v4에서는 한국어 소형 보조도 이 토큰을 쓴다 */
+.num{font-variant-numeric:tabular-nums;}
+/* 버튼: 영어 한 줄 + 한국어 아주 작게 아래 (v3의 반대) */
+.cta{width:100%;padding:15px 16px 13px;border-radius:16px;background:var(--accent);color:var(--on-accent);
+  display:grid;gap:1px;text-align:center;box-shadow:0 3px 0 var(--accent-deep);
+  transition:transform .09s,box-shadow .09s;}
+.cta:active{transform:translateY(3px);box-shadow:0 0 0 var(--accent-deep);}
+.cta b{font-size:17px;font-weight:850;letter-spacing:-.01em;}
+.cta i{font-size:10.5px;font-style:normal;font-weight:700;opacity:.62;}
+.cta.off{background:var(--wash);color:var(--ink-3);box-shadow:none;}
+.cta.off i{opacity:.7;}
+.ghost{width:100%;min-height:44px;color:var(--ink-3);font-size:14px;font-weight:750;text-align:center;}
+.textbtn{font-size:12.5px;font-weight:700;color:var(--ink-3);}
+/* 필드 */
+.field{width:100%;padding:11px 14px;border-radius:14px;background:var(--wash);border:1px solid var(--line);
+  font-size:13.5px;font-weight:600;color:var(--ink-3);}
+/* 상단 바 (플레이어) */
+.bar{display:flex;align-items:center;gap:12px;height:34px;flex:none;}
+.bar .x{width:30px;height:30px;flex:none;display:grid;place-items:center;color:var(--ink-3);font-size:19px;line-height:1;}
+.track{flex:1;height:3px;border-radius:999px;background:var(--progress-track);overflow:hidden;}
+.track span{display:block;height:100%;background:var(--gold);border-radius:999px;}
+.bar .count{flex:none;font-size:11.5px;font-weight:750;color:var(--ink-3);font-variant-numeric:tabular-nums;}
+.dots{flex:1;display:flex;gap:4px;}
+.dots i{height:3px;flex:1;border-radius:999px;background:var(--progress-track);}
+.dots i.done{background:var(--gold);}
+.dots i.now{background:var(--ink-3);}
+/* 덱(카드 겹침) — 화면당 카드 윤곽 1겹 */
+.deck{position:relative;margin-top:16px;flex:1;min-height:0;}
+.deck::before,.deck::after{content:"";position:absolute;left:8px;right:8px;bottom:-6px;height:26px;
+  border:1px solid var(--line);border-radius:0 0 22px 22px;background:var(--card);z-index:0;}
+.deck::after{left:16px;right:16px;bottom:-12px;opacity:.7;}
+.sheet{position:relative;z-index:1;height:100%;border-radius:22px;background:var(--card);border:1px solid var(--line);
+  box-shadow:var(--shadow-1);padding:24px 22px 22px;overflow:hidden;display:flex;flex-direction:column;}
+/* 탭바 — 앱 기존 자산(이모지 아이콘) 유지, 라벨은 영어 한 줄.
+   .tko 는 v3에서 물려받은 클래스명이라 그대로 두고 내용만 영어로 바꿨다(값 동일 → 0px 변화). */
+.tabbar{flex:none;display:flex;border-top:1px solid var(--line);background:var(--card);padding:7px 0 10px;}
+.tabbar div{flex:1;display:grid;justify-items:center;gap:1px;color:var(--ink-3);}
+.tabbar div.on{color:var(--accent-deep);}
+.tabbar .ico{font-size:17px;line-height:1.2;font-weight:700;}
+.tabbar .tko{font-size:10.5px;font-weight:850;}
+/* 화면 본문 */
+.body{flex:1;min-height:0;display:flex;flex-direction:column;padding:22px 22px 18px;overflow:hidden;}
+.player{flex:1;min-height:0;display:flex;flex-direction:column;padding:14px 16px 18px;}
+.head{display:flex;align-items:center;justify-content:space-between;height:32px;flex:none;}
+.mark{font-size:16px;font-weight:900;letter-spacing:-.03em;color:var(--ink);}
+.gear{width:32px;height:32px;display:grid;place-items:center;color:var(--ink-3);}
+
+/* 산타식 선택지 행 */
+.opts{margin-top:18px;}
+.opt{display:flex;align-items:center;gap:10px;min-height:44px;padding:9px 22px;margin:0 -22px;
+  font-size:15px;font-weight:650;color:var(--ink);border-top:1px solid var(--line);}
+.opt:last-child{border-bottom:1px solid var(--line);}
+.opt.dim{color:var(--ink-3);font-weight:600;}
+.opt.picked{background:var(--wash);color:var(--ink);font-weight:800;}
+.opt .mark2{margin-left:auto;flex:none;font-size:13px;font-weight:900;color:var(--good);}
+
+/* 문제/리빌 조판 */
+.stem{font-size:26px;font-weight:800;color:var(--ink);line-height:1.45;letter-spacing:-.02em;}
+.stem.small{font-size:20px;font-weight:700;color:var(--ink-2);line-height:1.5;}
+.stem em,.tgt{font-style:normal;font-weight:850;color:var(--ink);border-bottom:2px solid var(--gold);padding-bottom:1px;}
+.ask{margin-top:14px;font-size:14px;font-weight:700;color:var(--ink-3);}
+.answer{margin-top:26px;}
+.gloss{margin-top:8px;font-size:15.5px;font-weight:800;color:var(--ink);letter-spacing:-.01em;}
+.rom{margin-top:3px;font-size:12px;font-weight:650;color:var(--ink-3);letter-spacing:.02em;}
+/* 뉘앙스 = 콜아웃 아님. 선 하나 두고 영어 본문으로 흐른다(앱 원문 그대로) */
+.note{margin-top:20px;padding-top:18px;border-top:1px solid var(--line);}
+.note p{margin:0;font-size:15px;font-weight:500;line-height:1.85;color:var(--ink-2);}
+.note p + p{margin-top:10px;font-size:12.5px;line-height:1.7;color:var(--ink-3);font-weight:600;}
+.srs{margin-top:auto;padding-top:16px;font-size:12.5px;font-weight:650;color:var(--ink-3);}
+.player .cta{margin-top:20px;flex:none;}
+
+/* 리스트 행 (책장·단어장·통계 공용) */
+.list{display:grid;}
+.li{display:flex;align-items:center;gap:12px;padding:12px 0;border-top:1px solid var(--line);}
+.li:first-child{border-top:0;}
+.li .grow{flex:1;min-width:0;}
+.li .r{flex:none;margin-left:auto;}
+.ell{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+/* 그릇 */
+.bowl-lg{width:96px;height:96px;}
+.bowl-sm{width:32px;height:32px;flex:none;}
+.pip{width:20px;height:15px;border:1px solid var(--line-2);border-radius:3px 3px 9px 9px;background:transparent;display:block;}
+.pip.half{background:linear-gradient(to top,var(--gold) 50%,transparent 50%);}
+.pip.full{border-color:var(--gold);background:var(--gold);}
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;}
+.week .d{display:grid;justify-items:center;gap:5px;}
+.week .d span{font-size:10px;font-weight:750;color:var(--ink-3);}
+
+@media (max-width:900px){ .doc{padding:34px 16px 80px;} .frames{gap:44px 22px;} }
+</style>
+</head>
+<body>
+<div class="doc">
+
+<header class="doc-head">
+  <div>
+    <h1>한입 디자인 샘플 v4 — 영어 설명 위계</h1>
+    <p>v3의 레이아웃·타이포 낙차·색·프레임 구성을 1px도 건드리지 않고 언어 위계만 뒤집었습니다. 학습자는 한국어를 배우는 영어 화자입니다. 배우는 대상인 한국어(단어·예문·대화·문법 형태)는 히어로로 남고, 설명·뉘앙스·버튼·상태·섹션 제목은 영어가 본문입니다.</p>
+  </div>
+  <button class="toggle" id="themeBtn" type="button"><span class="knob"></span><span id="themeLabel">다크로 보기</span></button>
+</header>
+
+<div class="system">
+  <div><b>타이포 낙차</b><span>화면당 지배 요소 하나 — 58~70 / 26 / 15.5 / 12.5 / 11.5px. 중간 크기를 두지 않습니다.</span></div>
+  <div><b>색 예산</b><span>무채색 + 상태 포인트 최대 2색 + 주 버튼 accent 하나. 골드=진행·타깃, good=정답, bad=오답.</span></div>
+  <div><b>구획</b><span>1px 선과 여백만. 카드 윤곽은 화면당 0~1겹, 중첩 없음.</span></div>
+  <div><b>언어 위계</b><span>설명·기능 문자열은 영어가 본문, 한국어는 11.5~12.5px ink-3 보조. 병기 점(·) 없이 항상 줄바꿈.</span></div>
+</div>
+
+<nav class="toc">
+  <a href="#f1">1 홈 A</a><a href="#f2">2 홈 B</a><a href="#f3">3 단어 카드 문제</a><a href="#f4">4 리빌 A</a>
+  <a href="#f5">5 리빌 B</a><a href="#f6">6 문법 헌트</a><a href="#f7">7 문법 레슨 덱</a><a href="#f8">8 어순 조립</a>
+  <a href="#f9">9 승리 + 오답 노트</a><a href="#f10">10 책장</a><a href="#f11">11 단어장</a><a href="#f12">12 단어 상세</a>
+  <a href="#f13">13 문법 수집 + 시트</a><a href="#f14">14 주간 학습</a>
+</nav>
+
+<div class="frames">
+
+<!-- ══ 1. 홈 A ══════════════════════════════════════════════ -->
+<figure id="f1">
+<div class="phone"><div class="screen">
+  <div class="body">
+    <div class="head">
+      <div class="mark">한입</div>
+      <span class="gear"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 7h9M17 7h3M4 12h3M11 12h9M4 17h9M17 17h3"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="15" cy="17" r="2"/></svg></span>
+    </div>
+
+    <div class="t-meta" style="margin-top:32px">A1 · Chapter 8 · Bite 2</div>
+    <h1 class="t-hero" style="font-size:70px;letter-spacing:-.045em;margin:6px 0 0">바쁘다</h1>
+    <p class="t-lead" style="margin:14px 0 0">Meet 5 new words by guessing first</p>
+    <p class="t-en" style="margin:4px 0 0">새 단어 5개를 추측으로 먼저 만나요</p>
+
+    <div style="margin-top:28px;padding-top:16px;border-top:1px solid var(--line);display:flex;align-items:center;gap:12px">
+      <svg class="bowl-sm" viewBox="0 0 48 48" aria-hidden="true">
+        <defs><clipPath id="bw1"><path d="M6 20 h36 a1 1 0 0 1 -4 16 a14 8 0 0 1 -28 0 a1 1 0 0 1 -4-16 z"/></clipPath></defs>
+        <g clip-path="url(#bw1)"><rect x="0" y="20" width="48" height="28" fill="var(--wash)"/><rect x="0" y="48" width="48" height="28" fill="var(--gold)"/></g>
+        <path d="M6 20 h36 a1 1 0 0 1 -4 16 a14 8 0 0 1 -28 0 a1 1 0 0 1 -4-16 z" fill="none" stroke="var(--ink)" stroke-width="2.4"/>
+      </svg>
+      <div>
+        <b style="display:block;font-size:14.5px;font-weight:800;letter-spacing:-.01em">4 bowls this week</b>
+        <span class="t-meta">Today's bowl is empty</span>
+      </div>
+    </div>
+
+    <div class="week" style="margin-top:14px">
+      <div class="d"><span>Mon</span><i class="pip full"></i></div><div class="d"><span>Tue</span><i class="pip full"></i></div>
+      <div class="d"><span>Wed</span><i class="pip half"></i></div><div class="d"><span>Thu</span><i class="pip full"></i></div>
+      <div class="d"><span>Fri</span><i class="pip full"></i></div><div class="d"><span>Sat</span><i class="pip"></i></div>
+      <div class="d"><span>Sun</span><i class="pip"></i></div>
+    </div>
+
+    <button style="margin-top:20px;padding:15px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);width:100%;display:flex;align-items:center;gap:12px">
+      <b style="font-size:14.5px;font-weight:750;letter-spacing:-.01em">8 reviews are waiting</b>
+      <i style="margin-left:auto;font-style:normal;font-size:15px;color:var(--ink-3)">›</i>
+    </button>
+
+    <button class="cta" style="margin-top:auto"><b>Start</b><i>시작하기</i></button>
+  </div>
+  <div class="tabbar">
+    <div class="on"><span class="ico">🍚</span><span class="tko">Today</span></div>
+    <div><span class="ico">📚</span><span class="tko">Shelf</span></div>
+    <div><span class="ico">가</span><span class="tko">Hangul</span></div>
+    <div><span class="ico">學</span><span class="tko">Hanja</span></div>
+    <div><span class="ico">📖</span><span class="tko">Words</span></div>
+  </div>
+</div></div>
+<figcaption><b>1 · 홈 A — 단어가 히어로</b>
+<p>레벨 칩과 주황 대문자 키커를 없애고 오늘의 단어 70px가 화면을 지배합니다. 히어로만 한국어이고 안내문·그릇·복습·버튼은 영어가 본문, 한국어는 11.5px 보조로 내려갑니다.</p>
+<p class="ref">참조 Home.svelte · stats.js</p></figcaption>
+</figure>
+
+<!-- ══ 2. 홈 B ══════════════════════════════════════════════ -->
+<figure id="f2">
+<div class="phone"><div class="screen">
+  <div style="flex:none;background:var(--wash);padding:20px 22px 16px">
+    <div class="head" style="height:auto">
+      <div class="mark">한입</div>
+      <span class="gear"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 7h9M17 7h3M4 12h3M11 12h9M4 17h9M17 17h3"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="15" cy="17" r="2"/></svg></span>
+    </div>
+    <div style="margin-top:14px;display:flex;align-items:center;gap:10px">
+      <svg class="bowl-sm" style="width:26px;height:26px" viewBox="0 0 48 48" aria-hidden="true">
+        <defs><clipPath id="bw2"><path d="M6 20 h36 a1 1 0 0 1 -4 16 a14 8 0 0 1 -28 0 a1 1 0 0 1 -4-16 z"/></clipPath></defs>
+        <g clip-path="url(#bw2)"><rect x="0" y="20" width="48" height="28" fill="var(--card)"/><rect x="0" y="48" width="48" height="28" fill="var(--gold)"/></g>
+        <path d="M6 20 h36 a1 1 0 0 1 -4 16 a14 8 0 0 1 -28 0 a1 1 0 0 1 -4-16 z" fill="none" stroke="var(--ink)" stroke-width="2.4"/>
+      </svg>
+      <span class="t-meta" style="font-weight:750;color:var(--ink-2)">4 bowls this week</span>
+      <span class="t-meta num" style="margin-left:auto">12-day streak</span>
+    </div>
+  </div>
+
+  <div class="body" style="padding-top:26px">
+    <div class="t-meta">A1 · Chapter 8 · Bite 2</div>
+    <p style="margin:10px 0 0;font-size:31px;font-weight:850;line-height:1.42;letter-spacing:-.03em;color:var(--ink)">
+      오늘 너무 <span class="tgt">바빠서</span><br>못 가요.
+    </p>
+    <p class="t-en" style="margin:10px 0 0">I'm too busy today so I can't go.</p>
+
+    <div class="list" style="margin-top:26px;border-top:1px solid var(--line)">
+      <div class="li"><span style="font-size:16px;font-weight:800">바쁘다</span><span class="t-meta r">to be busy</span></div>
+      <div class="li"><span style="font-size:16px;font-weight:800">너무</span><span class="t-meta r">too / very</span></div>
+      <div class="li"><span style="font-size:16px;font-weight:800">못</span><span class="t-meta r">cannot</span></div>
+      <div class="li"><span style="font-size:16px;font-weight:800">오늘</span><span class="t-meta r">today</span></div>
+      <div class="li" style="border-bottom:1px solid var(--line)"><span style="font-size:16px;font-weight:800">가다</span><span class="t-meta r">to go</span></div>
+    </div>
+
+    <button class="cta" style="margin-top:auto"><b>Start</b><i>시작하기</i></button>
+  </div>
+  <div class="tabbar">
+    <div class="on"><span class="ico">🍚</span><span class="tko">Today</span></div>
+    <div><span class="ico">📚</span><span class="tko">Shelf</span></div>
+    <div><span class="ico">가</span><span class="tko">Hangul</span></div>
+    <div><span class="ico">學</span><span class="tko">Hanja</span></div>
+    <div><span class="ico">📖</span><span class="tko">Words</span></div>
+  </div>
+</div></div>
+<figcaption><b>2 · 홈 B — 문장이 히어로</b>
+<p>A와 같은 규칙, 지배 요소만 교체 — 단어 대신 오늘 배울 문장을 31px로 세우고, 진행 상태는 무채색 풀블리드 상단으로 올려 본문에서 완전히 빼냈습니다. 새 단어는 예고 리스트로만.</p>
+<p class="ref">참조 Home.svelte · bites.json(8과)</p></figcaption>
+</figure>
+
+<!-- ══ 3. 단어 카드 — 문제 ═══════════════════════════════════ -->
+<figure id="f3">
+<div class="phone"><div class="screen paper">
+  <div class="player">
+    <div class="bar"><button class="x">×</button><div class="track"><span style="width:25%"></span></div><div class="count">2/8</div></div>
+    <div class="deck"><div class="sheet">
+      <div class="stem">물 <em>좀</em> 주세요.</div>
+      <div class="t-en" style="margin-top:6px">Some water, please.</div>
+      <div class="ask">밑줄 친 말은 무슨 뜻일까요?</div>
+      <div class="t-en" style="margin-top:4px">What does the highlighted word mean?</div>
+
+      <div class="opts">
+        <div class="opt">how much is it?</div>
+        <div class="opt">card (credit/debit)</div>
+        <div class="opt">a little / please (softener)</div>
+      </div>
+
+      <button class="textbtn" style="margin-top:auto;text-align:left">Don't know — just show me</button>
+    </div></div>
+    <button class="cta off"><b>Next</b><i>다음</i></button>
+  </div>
+</div></div>
+<figcaption><b>3 · 단어 카드 — 문제 상태</b>
+<p>예문이 26px로 지배하고 질문은 14px ink-3으로 후퇴합니다. 문제 지시문은 몰입 요소라 한국어를 유지하고 바로 아래 11.5px 영어를 답니다. 선택지는 pill 칩이 아니라 산타 문제지처럼 1px 선으로만 끊은 행입니다.</p>
+<p class="ref">참조 GuessCard.svelte · BitePlayer.svelte</p></figcaption>
+</figure>
+
+<!-- ══ 4. 리빌 A ════════════════════════════════════════════ -->
+<figure id="f4">
+<div class="phone"><div class="screen paper">
+  <div class="player">
+    <div class="bar"><button class="x">×</button><div class="track"><span style="width:37.5%"></span></div><div class="count">3/8</div></div>
+    <div class="deck"><div class="sheet">
+      <div class="stem small">물 <em>좀</em> 주세요.</div>
+      <div class="t-en" style="margin-top:5px">Some water, please.</div>
+
+      <div class="opts">
+        <div class="opt dim">how much is it?</div>
+        <div class="opt dim">card (credit/debit)</div>
+        <div class="opt picked">a little / please (softener)<span class="mark2">Correct</span></div>
+      </div>
+
+      <div class="answer">
+        <div class="t-hero">좀</div>
+        <div class="gloss">a little / please (softener)</div>
+        <div class="rom">jom</div>
+      </div>
+
+      <div class="note">
+        <p>좀 is the contracted, spoken form of 조금 and is everywhere in daily conversation.</p>
+        <p>Its key second life — the part that trips up English speakers — is as a request softener: in 물 좀 주세요 or 좀 도와주세요…</p>
+      </div>
+
+      <div class="srs">Next review in 3 days</div>
+    </div></div>
+    <button class="cta"><b>Next</b><i>다음</i></button>
+  </div>
+</div></div>
+<figcaption><b>4 · 리빌 A — 단어가 히어로</b>
+<p>「뉘앙스 · NUANCE」 캡과 골드 좌측 바를 없애고 선 하나 아래 본문 문단으로 내렸습니다. 이 문단은 앱 wordbook-depth의 영어 뉘앙스 원문 그대로이고, 단어 58px → 뜻 15.5px → 영어 해설 15px로 이어집니다.</p>
+<p class="ref">참조 GuessCard.svelte · srs.js(1·3·7일)</p></figcaption>
+</figure>
+
+<!-- ══ 5. 리빌 B ════════════════════════════════════════════ -->
+<figure id="f5">
+<div class="phone"><div class="screen paper">
+  <div class="player">
+    <div class="bar"><button class="x">×</button><div class="track"><span style="width:37.5%"></span></div><div class="count">3/8</div></div>
+    <div class="deck"><div class="sheet">
+
+      <div style="display:flex;align-items:baseline;gap:10px">
+        <span style="font-size:24px;font-weight:900;letter-spacing:-.03em">좀</span>
+        <span style="font-size:14px;font-weight:750;color:var(--ink-2)">a little / please</span>
+        <span class="mark2" style="margin-left:auto;font-size:12.5px;font-weight:850;color:var(--good)">Correct</span>
+      </div>
+      <div class="rom" style="margin-top:2px">jom</div>
+
+      <div style="margin-top:22px;padding-top:20px;border-top:1px solid var(--line)">
+        <div style="font-size:31px;font-weight:850;line-height:1.4;letter-spacing:-.03em;color:var(--ink)">물 <span class="tgt">좀</span> 주세요.</div>
+        <div class="t-en" style="margin-top:8px">Some water, please.</div>
+        <div class="t-meta" style="margin-top:6px">mul jom juseyo</div>
+      </div>
+
+      <div class="note">
+        <p>좀 is the contracted, spoken form of 조금 and is everywhere in daily conversation.</p>
+        <p>Its key second life — the part that trips up English speakers — is as a request softener: in 물 좀 주세요 or 좀 도와주세요…</p>
+      </div>
+
+      <div class="srs">Next review in 3 days</div>
+    </div></div>
+    <button class="cta"><b>Next</b><i>다음</i></button>
+  </div>
+</div></div>
+<figcaption><b>5 · 리빌 B — 예문이 히어로</b>
+<p>A와 같은 규칙, 낙차 배분만 교체 — 단어·정답은 24px 헤더 한 줄로 접고 예문을 31px로 세웠습니다. 뜻보다 “쓰이는 자리”를 먼저 각인시키는 해석입니다.</p>
+<p class="ref">참조 GuessCard.svelte</p></figcaption>
+</figure>
+
+<!-- ══ 6. 문법 헌트 ═════════════════════════════════════════ -->
+<figure id="f6">
+<div class="phone"><div class="screen paper">
+  <div class="player">
+    <div class="bar"><button class="x">×</button><div class="track"><span style="width:62.5%"></span></div><div class="count">5/8</div></div>
+    <div class="deck"><div class="sheet">
+      <div class="t-lead" style="font-size:15px">각 문장에서 오늘 배운 문법을 찾아 탭하세요</div>
+      <div class="t-en" style="margin-top:4px">Tap today's grammar form in each sentence</div>
+
+      <div style="margin-top:26px">
+        <div style="font-size:25px;font-weight:800;letter-spacing:-.02em;line-height:1.5">저<span class="tgt" style="border-bottom-width:3px">는</span> 마이클이에요.</div>
+        <div class="t-en" style="margin-top:5px">I'm Michael.</div>
+      </div>
+
+      <div style="margin-top:24px;padding-top:24px;border-top:1px solid var(--line)">
+        <div style="font-size:25px;font-weight:800;letter-spacing:-.02em;line-height:1.5;color:var(--ink-2)">이름<span style="border-bottom:2px dotted var(--line-2);padding-bottom:2px">은</span> 뭐예요?</div>
+        <div class="t-meta" style="margin-top:6px">Not found yet</div>
+      </div>
+
+      <div class="srs">1 of 2 found</div>
+    </div></div>
+    <button class="cta off"><b>Next</b><i>다음</i></button>
+  </div>
+</div></div>
+<figcaption><b>6 · 문법 헌트 — 형태소 탭</b>
+<p>토큰을 보더 칩으로 두르는 대신 문장을 그대로 두고 점선 밑줄만 탭 어포던스로 씁니다. 찾은 형태소만 골드 실선으로 확정돼 문장이 계속 히어로로 남습니다.</p>
+<p class="ref">참조 HuntCard.svelte(2과 N은/는)</p></figcaption>
+</figure>
+
+<!-- ══ 7. 문법 레슨 덱 ═══════════════════════════════════════ -->
+<figure id="f7">
+<div class="phone"><div class="screen paper">
+  <div class="player">
+    <div class="bar"><button class="x">×</button>
+      <div class="dots"><i class="done"></i><i class="now"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="count">2/9</div></div>
+    <div class="deck"><div class="sheet">
+      <div class="t-meta">Meaning</div>
+      <div style="margin-top:10px;font-size:44px;font-weight:900;letter-spacing:-.04em;line-height:1.1;color:var(--ink)">N은/는</div>
+      <div class="t-lead" style="margin-top:14px">은/는 marks the topic of a sentence — the thing you single out to talk about ("as for ___").</div>
+      <div class="t-en" style="margin-top:6px">It is the backbone of introductions and of saying what something is.</div>
+
+      <div class="list" style="margin-top:24px;border-top:1px solid var(--line)">
+        <div style="padding:15px 0;border-bottom:1px solid var(--line)">
+          <div style="font-size:20px;font-weight:820;line-height:1.45">저는 마이클이에요.</div>
+          <div style="margin-top:3px;font-size:13px;font-weight:700;color:var(--ink-2)">I'm Michael.</div>
+          <div class="t-en" style="margin-top:5px">Noun ends in a vowel → 는</div>
+        </div>
+        <div style="padding:15px 0;border-bottom:1px solid var(--line)">
+          <div style="font-size:20px;font-weight:820;line-height:1.45">이름은 뭐예요?</div>
+          <div style="margin-top:3px;font-size:13px;font-weight:700;color:var(--ink-2)">What's your name?</div>
+          <div class="t-en" style="margin-top:5px">Noun ends in a consonant (받침) → 은</div>
+        </div>
+      </div>
+
+      <div class="srs">Card 2 of 9</div>
+    </div></div>
+    <button class="cta"><b>Next</b><i>다음</i></button>
+  </div>
+</div></div>
+<figcaption><b>7 · 문법 레슨 덱 — 뜻·패턴 스텝</b>
+<p>uppercase 「MEANING · 뜻」 라벨을 영어 12.5px 한 단어로 줄이고, 패턴 자체를 44px 히어로로 올렸습니다. 뜻 설명은 bites.json의 funcLead 영어 원문이고, 예문 블록은 앱과 같은 1px 선 행 구조를 그대로 씁니다.</p>
+<p class="ref">참조 GrammarLessonCard.svelte · grammarLesson.js</p></figcaption>
+</figure>
+
+<!-- ══ 8. 어순 조립 ═════════════════════════════════════════ -->
+<figure id="f8">
+<div class="phone"><div class="screen paper">
+  <div class="player">
+    <div class="bar"><button class="x">×</button><div class="track"><span style="width:87.5%"></span></div><div class="count">7/8</div></div>
+    <div class="deck"><div class="sheet">
+      <div class="t-meta">Korean word order</div>
+      <div class="t-lead" style="margin-top:8px;font-size:16px;color:var(--ink);font-weight:750">“Please speak slowly.”</div>
+
+      <div style="margin-top:30px;min-height:56px;display:flex;flex-wrap:wrap;align-items:flex-end;gap:4px 14px;
+                  border-bottom:2px solid var(--line-2);padding-bottom:10px">
+        <span style="font-size:27px;font-weight:820;letter-spacing:-.02em">천천히</span>
+        <span style="font-size:27px;font-weight:820;letter-spacing:-.02em">말해</span>
+        <span style="font-size:27px;font-weight:400;color:var(--ink-3);letter-spacing:.1em">____</span>
+      </div>
+      <div class="t-meta" style="margin-top:9px">어절을 순서대로 탭하세요</div>
+      <div class="t-en" style="margin-top:4px">Tap the tiles in Korean order</div>
+
+      <div style="margin-top:26px;display:flex;flex-wrap:wrap;gap:9px">
+        <span style="padding:11px 16px;border:1px solid var(--line);border-radius:14px;background:var(--card);font-size:18px;font-weight:750">주세요</span>
+      </div>
+
+      <div class="srs">2 placed · 1 left</div>
+    </div></div>
+    <button class="cta"><b>Check</b><i>확인</i></button>
+  </div>
+</div></div>
+<figcaption><b>8 · 어순 카드 — 타일 조립</b>
+<p>점선 박스 슬롯을 없애고 시험지 빈칸처럼 밑줄 한 줄 위에 조립합니다. 스텝 라벨·상태는 영어, 조립 지시문만 한국어를 유지하고 아래 영어를 답니다. 남은 타일은 최소한의 1px 윤곽, 완성된 어절은 그냥 큰 글자입니다.</p>
+<p class="ref">참조 OrderCard.svelte(1과 천천히 말해 주세요)</p></figcaption>
+</figure>
+
+<!-- ══ 9. 승리 + 오답 노트 ═══════════════════════════════════ -->
+<figure id="f9">
+<div class="phone"><div class="screen paper">
+  <div class="body" style="padding:26px 22px 20px">
+    <div style="margin-top:auto;text-align:center">
+      <svg class="bowl-lg" viewBox="0 0 48 48" aria-hidden="true">
+        <defs><clipPath id="bw9"><path d="M6 20 h36 a1 1 0 0 1 -4 16 a14 8 0 0 1 -28 0 a1 1 0 0 1 -4-16 z"/></clipPath></defs>
+        <g clip-path="url(#bw9)"><rect x="0" y="20" width="48" height="28" fill="var(--wash)"/><rect x="0" y="25" width="48" height="28" fill="var(--gold)"/></g>
+        <path d="M6 20 h36 a1 1 0 0 1 -4 16 a14 8 0 0 1 -28 0 a1 1 0 0 1 -4-16 z" fill="none" stroke="var(--ink)" stroke-width="2.4"/>
+      </svg>
+      <h2 class="t-title" style="margin:16px 0 0;font-size:28px">Bite done!</h2>
+      <p style="margin:9px 0 0;font-size:13.5px;font-weight:700;color:var(--ink-2)">6 of 8 on your own</p>
+      <p class="t-meta" style="margin:3px 0 0">12-day streak</p>
+    </div>
+
+    <div style="margin-top:34px">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;padding-bottom:10px">
+        <b class="t-sect">Mistakes</b><span class="t-meta num">2</span>
+      </div>
+      <div style="padding:13px 0;border-top:1px solid var(--line)">
+        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:14px">
+          <span style="font-size:18px;font-weight:850;letter-spacing:-.02em">벌써</span>
+          <span style="font-size:13px;font-weight:650;color:var(--ink-2)">already</span>
+        </div>
+        <div class="t-meta" style="margin-top:5px">You said<b style="margin-left:7px;font-weight:750;color:var(--bad)">soon; in a moment</b></div>
+      </div>
+      <div style="padding:13px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:14px">
+          <span style="font-size:18px;font-weight:850;letter-spacing:-.02em">아직</span>
+          <span style="font-size:13px;font-weight:650;color:var(--ink-2)">still; yet</span>
+        </div>
+        <div class="t-meta" style="margin-top:5px">You said<b style="margin-left:7px;font-weight:750;color:var(--bad)">already</b></div>
+      </div>
+    </div>
+
+    <div style="margin-top:auto;padding-top:20px;display:grid;gap:2px">
+      <button class="cta"><b>One more bite</b><i>한 입 더</i></button>
+      <button class="ghost">Done for today</button>
+    </div>
+  </div>
+</div></div>
+<figcaption><b>9 · 승리 화면 + 오답 노트</b>
+<p>그릇 하나·굵은 문장 하나·회색 두 줄이 전부인 토스식 완료 구성. 완료·스트릭·섹션 제목은 영어이고 단어만 한국어로 남습니다. 오답 노트는 박스 없이 1px 선으로만 끊고 붉은색은 “You said” 뒤 오답 글자에만 씁니다.</p>
+<p class="ref">참조 BitePlayer.svelte(win) · stats.js</p></figcaption>
+</figure>
+
+<!-- ══ 10. 책장 ═════════════════════════════════════════════ -->
+<figure id="f10">
+<div class="phone"><div class="screen">
+  <div class="body">
+    <div class="mark">Shelf</div>
+    <p class="t-meta" style="margin:5px 0 14px">Browse all 65 chapters by level</p>
+    <div class="field">Search number or title</div>
+
+    <!-- A1 열림 -->
+    <div style="margin-top:20px;padding-bottom:12px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+      <div style="display:flex;align-items:center;gap:12px;padding:14px 0 10px">
+        <div class="grow">
+          <b style="display:block;font-size:15.5px;font-weight:850;letter-spacing:-.01em">A1</b>
+          <span class="t-en">Chapters 1–11</span>
+        </div>
+        <span class="t-meta num">12/88 bites</span>
+        <span style="color:var(--ink-3);font-size:13px">⌃</span>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 0;border-top:1px solid var(--line)">
+        <span class="num" style="flex:none;width:20px;font-size:14px;font-weight:800;color:var(--gold)">3</span>
+        <span class="grow"><b style="display:block;font-size:14.5px;font-weight:750;letter-spacing:-.01em" class="ell">N이에요/예요 · N은/는</b>
+          <span class="t-en ell" style="display:block">Ask and answer 이건 뭐예요?</span></span>
+        <span style="flex:none;display:flex;gap:3px">
+          <i class="pip" style="width:6px;height:6px;border-radius:99px;background:var(--gold);border-color:var(--gold)"></i>
+          <i class="pip" style="width:6px;height:6px;border-radius:99px;background:var(--gold);border-color:var(--gold)"></i>
+          <i class="pip" style="width:6px;height:6px;border-radius:99px"></i>
+          <i class="pip" style="width:6px;height:6px;border-radius:99px"></i>
+        </span>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 0;border-top:1px solid var(--line)">
+        <span class="num" style="flex:none;width:20px;font-size:14px;font-weight:800;color:var(--ink-3)">4</span>
+        <span class="grow"><b style="display:block;font-size:14.5px;font-weight:750;letter-spacing:-.01em" class="ell">있어요/없어요 · N이/가</b>
+          <span class="t-en ell" style="display:block">Say what there is and isn't</span></span>
+        <span style="flex:none;display:flex;gap:3px">
+          <i class="pip" style="width:6px;height:6px;border-radius:99px"></i><i class="pip" style="width:6px;height:6px;border-radius:99px"></i>
+          <i class="pip" style="width:6px;height:6px;border-radius:99px"></i><i class="pip" style="width:6px;height:6px;border-radius:99px"></i>
+        </span>
+      </div>
+
+      <!-- 간식 행: 들여쓰기 + 골드 점 하나로만 구분 -->
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 0 11px 20px;border-top:1px solid var(--line);background:var(--wash)">
+        <span class="t-en" style="flex:none">Snack</span>
+        <span class="grow"><b style="display:block;font-size:14px;font-weight:750" class="ell">Numbers Starter</b></span>
+        <span class="t-meta num">23 words</span>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:12px;padding:11px 0;border-top:1px solid var(--line)">
+        <span class="num" style="flex:none;width:20px;font-size:14px;font-weight:800;color:var(--ink-3)">5</span>
+        <span class="grow"><b style="display:block;font-size:14.5px;font-weight:750;letter-spacing:-.01em" class="ell">N을/를 · 안 + verb</b>
+          <span class="t-en ell" style="display:block">Mark the object, make negatives</span></span>
+        <span style="flex:none;display:flex;gap:3px">
+          <i class="pip" style="width:6px;height:6px;border-radius:99px"></i><i class="pip" style="width:6px;height:6px;border-radius:99px"></i>
+          <i class="pip" style="width:6px;height:6px;border-radius:99px"></i><i class="pip" style="width:6px;height:6px;border-radius:99px"></i>
+        </span>
+      </div>
+    </div>
+
+    <!-- 닫힌 레벨들 -->
+    <div style="display:flex;align-items:center;gap:12px;padding:15px 0;border-bottom:1px solid var(--line)">
+      <div class="grow"><b style="display:block;font-size:15.5px;font-weight:850">A2</b><span class="t-en">Chapters 12–34</span></div>
+      <span class="t-meta num">0/184 bites</span><span style="color:var(--ink-3);font-size:13px">⌄</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;padding:15px 0;border-bottom:1px solid var(--line)">
+      <div class="grow"><b style="display:block;font-size:15.5px;font-weight:850">B1</b><span class="t-en">Chapters 35–56</span></div>
+      <span class="t-meta num">0/176 bites</span><span style="color:var(--ink-3);font-size:13px">⌄</span>
+    </div>
+  </div>
+  <div class="tabbar">
+    <div><span class="ico">🍚</span><span class="tko">Today</span></div>
+    <div class="on"><span class="ico">📚</span><span class="tko">Shelf</span></div>
+    <div><span class="ico">가</span><span class="tko">Hangul</span></div>
+    <div><span class="ico">學</span><span class="tko">Hanja</span></div>
+    <div><span class="ico">📖</span><span class="tko">Words</span></div>
+  </div>
+</div></div>
+<figcaption><b>10 · 책장 — 레벨 아코디언</b>
+<p>레벨 카드 안에 챕터 카드, 그 안에 한입 카드가 겹치던 3중 구조를 전부 1px 선 행으로 폈습니다. 번호 원형 배지 대신 tabular 숫자, 완료는 골드 글자색으로만.</p>
+<p class="ref">참조 Shelf.svelte · ShelfLevelGroup.svelte · bites-index.json</p></figcaption>
+</figure>
+
+<!-- ══ 11. 단어장 ═══════════════════════════════════════════ -->
+<figure id="f11">
+<div class="phone"><div class="screen">
+  <div class="body">
+    <div class="mark">Wordbook</div>
+    <p class="t-meta" style="margin:5px 0 14px">720 words · 86 learned · 12 saved</p>
+    <div class="field">Search Korean, romanization, or English</div>
+
+    <!-- 필터: 파스텔 칩 대신 밑줄 탭 -->
+    <div style="margin-top:16px;display:flex;gap:18px;border-bottom:1px solid var(--line);overflow:hidden">
+      <span style="padding-bottom:9px;border-bottom:2px solid var(--ink);font-size:13.5px;font-weight:850;color:var(--ink)">All</span>
+      <span style="padding-bottom:9px;font-size:13.5px;font-weight:700;color:var(--ink-3)">Learned</span>
+      <span style="padding-bottom:9px;font-size:13.5px;font-weight:700;color:var(--ink-3)">Starred</span>
+      <span style="padding-bottom:9px;font-size:13.5px;font-weight:700;color:var(--ink-3)">Confusable</span>
+      <span style="padding-bottom:9px;font-size:13.5px;font-weight:700;color:var(--ink-3)">Verb</span>
+    </div>
+
+    <div class="t-en" style="margin-top:18px">Chapter 3</div>
+    <div class="list" style="margin-top:6px;border-top:1px solid var(--line)">
+      <div class="li" style="padding:11px 0"><span style="font-size:17px;font-weight:800">의사</span><span class="t-meta r ell">doctor</span></div>
+      <div class="li" style="padding:11px 0"><span style="font-size:17px;font-weight:800">회사원</span><span class="t-meta r ell">office worker</span></div>
+      <div class="li" style="padding:11px 0"><span style="font-size:17px;font-weight:800">나라</span>
+        <span style="flex:none;font-size:11px;font-weight:900;color:var(--good)">✓</span><span class="t-meta r ell">country</span></div>
+      <div class="li" style="padding:11px 0"><span style="font-size:17px;font-weight:800">사람</span>
+        <span style="flex:none;font-size:11px;font-weight:900;color:var(--good)">✓</span><span class="t-meta r ell">person / people</span></div>
+      <div class="li" style="padding:11px 0"><span style="font-size:17px;font-weight:800">직업</span><span class="t-meta r ell">job / occupation</span></div>
+      <div class="li" style="padding:11px 0;border-bottom:1px solid var(--line)"><span style="font-size:17px;font-weight:800">반갑습니다</span><span class="t-meta r ell">Nice to meet you</span></div>
+    </div>
+
+    <div class="t-en" style="margin-top:20px">Chapter 8</div>
+    <div class="list" style="margin-top:6px;border-top:1px solid var(--line)">
+      <div class="li" style="padding:11px 0"><span style="font-size:17px;font-weight:800">바쁘다</span>
+        <span style="flex:none;font-size:11px;font-weight:900;color:var(--good)">✓</span>
+        <span style="flex:none;font-size:11px;color:var(--gold)">★</span><span class="t-meta r ell">to be busy</span></div>
+      <div class="li" style="padding:11px 0;border-bottom:1px solid var(--line)"><span style="font-size:17px;font-weight:800">피곤하다</span><span class="t-meta r ell">to be tired</span></div>
+    </div>
+  </div>
+  <div class="tabbar">
+    <div><span class="ico">🍚</span><span class="tko">Today</span></div>
+    <div><span class="ico">📚</span><span class="tko">Shelf</span></div>
+    <div><span class="ico">가</span><span class="tko">Hangul</span></div>
+    <div><span class="ico">學</span><span class="tko">Hanja</span></div>
+    <div class="on"><span class="ico">📖</span><span class="tko">Words</span></div>
+  </div>
+</div></div>
+<figcaption><b>11 · 단어장 — 검색·필터·리스트</b>
+<p>주황 pill 필터 8개를 토스식 밑줄 탭으로 바꿔 색을 0개로 줄였습니다. 필터·헤더는 앱의 영어 라벨을 그대로 쓰고, 배운 것·저장은 배지 대신 초록 ✓와 골드 ★ 글리프 한 자로만 표시합니다.</p>
+<p class="ref">참조 WordbookTab.svelte · WordbookRow.svelte · wordbook.json</p></figcaption>
+</figure>
+
+<!-- ══ 12. 단어 상세 ═════════════════════════════════════════ -->
+<figure id="f12">
+<div class="phone"><div class="screen">
+  <div class="body">
+    <button class="textbtn" style="flex:none">← Wordbook</button>
+
+    <h1 style="margin:18px 0 0;font-size:52px;font-weight:900;letter-spacing:-.04em;line-height:1.08">바쁘다</h1>
+    <p class="t-meta" style="margin:8px 0 0">bappeuda</p>
+    <p style="margin:4px 0 0;font-size:16.5px;font-weight:750;color:var(--ink-2)">to be busy</p>
+    <p class="t-en" style="margin:8px 0 0">adjective&nbsp;&nbsp;·&nbsp;&nbsp;A1&nbsp;&nbsp;·&nbsp;&nbsp;Chapters 8, 11, 26</p>
+
+    <div class="note" style="margin-top:20px">
+      <p>바쁘다 becomes 바빠요 in polite speech.</p>
+      <p>It is a high-frequency reason word because 바빠서 못 가요 politely explains why a plan is impossible.</p>
+    </div>
+
+    <div style="margin-top:22px;padding-top:18px;border-top:1px solid var(--line)">
+      <b class="t-sect">In use</b>
+      <div style="padding:12px 0 0">
+        <div style="font-size:18.5px;font-weight:800;line-height:1.45">오늘은 바빠요.</div>
+        <div style="margin-top:2px;font-size:13.5px;font-weight:650;color:var(--ink-2)">I am busy today.</div>
+      </div>
+      <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--line)">
+        <div style="font-size:18.5px;font-weight:800;line-height:1.45">바빠서 못 가요.</div>
+        <div style="margin-top:2px;font-size:13.5px;font-weight:650;color:var(--ink-2)">I am busy, so I cannot go.</div>
+      </div>
+    </div>
+
+    <div style="margin-top:20px;padding-top:18px;border-top:1px solid var(--line)">
+      <b class="t-sect">Common mistakes</b>
+      <p style="margin:10px 0 0;font-size:13.5px;line-height:1.6;color:var(--ink-2)">
+        <span style="font-weight:850;color:var(--bad)">✕</span>&nbsp; 바쁘다 becomes 바빠요, not 바쁘어요.</p>
+    </div>
+
+    <div style="margin-top:20px;padding-top:18px;border-top:1px solid var(--line)">
+      <b class="t-sect">Forms</b>
+      <div style="margin-top:10px;display:grid;grid-template-columns:1fr 1fr;gap:12px 18px">
+        <div><span class="t-en" style="display:block">Polite</span><b style="font-size:15px;font-weight:800">바빠요</b></div>
+        <div><span class="t-en" style="display:block">Reason</span><b style="font-size:15px;font-weight:800">바빠서</b></div>
+        <div><span class="t-en" style="display:block">Negative</span><b style="font-size:15px;font-weight:800">바쁘지 않아요</b></div>
+        <div><span class="t-en" style="display:block">Before a noun</span><b style="font-size:15px;font-weight:800">바쁜</b></div>
+      </div>
+    </div>
+  </div>
+  <div class="tabbar">
+    <div><span class="ico">🍚</span><span class="tko">Today</span></div>
+    <div><span class="ico">📚</span><span class="tko">Shelf</span></div>
+    <div><span class="ico">가</span><span class="tko">Hangul</span></div>
+    <div><span class="ico">學</span><span class="tko">Hanja</span></div>
+    <div class="on"><span class="ico">📖</span><span class="tko">Words</span></div>
+  </div>
+</div></div>
+<figcaption><b>12 · 단어 상세 — 뉘앙스가 본문으로</b>
+<p>골드 좌측 바 콜아웃과 pos·레벨 pill 4개를 전부 없앴습니다. 메타는 ink-3 한 줄, 뉘앙스는 선 아래 첫 문단 — 화면에서 가장 먼저 읽히는 영어 산문입니다. 섹션 제목도 앱의 영어 캡(In use · Common mistakes · Forms)을 씁니다.</p>
+<p class="ref">참조 WordDetail.svelte · wordbook-depth/a1.json</p></figcaption>
+</figure>
+
+<!-- ══ 13. 문법 수집 + 시트 ══════════════════════════════════ -->
+<figure id="f13">
+<div class="phone"><div class="screen">
+  <div class="body" style="padding-bottom:0">
+    <button class="textbtn" style="flex:none">← Shelf</button>
+    <div style="margin-top:16px;font-size:44px;font-weight:900;letter-spacing:-.04em;line-height:1" class="num">7<span style="color:var(--ink-3);font-size:24px;font-weight:800">/22</span></div>
+    <p class="t-meta" style="margin:6px 0 0">Tap a card to open its rule sheet</p>
+
+    <div style="margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:9px">
+      <div style="position:relative;min-height:92px;padding:12px;border:1px solid var(--line);border-radius:14px;background:var(--card)">
+        <span class="t-en">A1 · Chapter 2</span><b style="display:block;margin-top:5px;font-size:15px;font-weight:820;line-height:1.35">N은/는</b>
+        <span style="position:absolute;right:9px;bottom:9px;width:32px;height:32px;display:grid;place-items:center;border:1.5px solid var(--gold);border-radius:7px;color:var(--gold);font-size:9px;font-weight:900;transform:rotate(-8deg)">한입</span>
+      </div>
+      <div style="position:relative;min-height:92px;padding:12px;border:1px solid var(--line);border-radius:14px;background:var(--card)">
+        <span class="t-en">A1 · Chapter 3</span><b style="display:block;margin-top:5px;font-size:15px;font-weight:820;line-height:1.35">N이에요/예요</b>
+        <span style="position:absolute;right:9px;bottom:9px;width:32px;height:32px;display:grid;place-items:center;border:1.5px solid var(--gold);border-radius:7px;color:var(--gold);font-size:9px;font-weight:900;transform:rotate(-8deg)">한입</span>
+      </div>
+      <div style="min-height:92px;padding:12px;border:1px solid var(--line);border-radius:14px;background:transparent;opacity:.5">
+        <span class="t-en">A1 · Chapter 4</span><b style="display:block;margin-top:5px;font-size:15px;font-weight:750;line-height:1.35;color:var(--ink-3)">N이/가</b>
+      </div>
+      <div style="min-height:92px;padding:12px;border:1px solid var(--line);border-radius:14px;background:transparent;opacity:.5">
+        <span class="t-en">A1 · Chapter 5</span><b style="display:block;margin-top:5px;font-size:15px;font-weight:750;line-height:1.35;color:var(--ink-3)">N을/를</b>
+      </div>
+    </div>
+  </div>
+
+  <!-- 스크림 + 반쯤 열린 레퍼런스 시트 -->
+  <div style="position:absolute;inset:0;background:var(--ink);opacity:.2"></div>
+  <div style="position:absolute;left:0;right:0;bottom:0;height:56%;border-top:1px solid var(--line);
+              border-radius:22px 22px 0 0;background:var(--bg);box-shadow:var(--shadow-2);padding:20px 22px 0;overflow:hidden">
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:14px">
+      <div>
+        <div class="t-meta">Grammar card · A1 · Chapter 2</div>
+        <h2 style="margin:4px 0 0;font-size:27px;font-weight:900;letter-spacing:-.03em">N은/는</h2>
+        <div class="t-en" style="margin-top:2px">topic marker</div>
+      </div>
+      <span style="flex:none;color:var(--ink-3);font-size:20px;line-height:1">×</span>
+    </div>
+
+    <p class="t-lead" style="margin:14px 0 0;font-size:14px">은/는 marks the topic of a sentence — the thing you single out to talk about ("as for ___"). It is the backbone of introductions and of saying what something is.</p>
+
+    <div style="margin-top:16px">
+      <div class="t-en">Form</div>
+      <div style="display:flex;align-items:baseline;gap:14px;padding:11px 0;border-top:1px solid var(--line)">
+        <span class="t-meta" style="flex:none;width:96px">Has 받침</span>
+        <b style="font-size:19px;font-weight:900">은</b>
+        <span class="t-meta r">이름 → 이름은</span>
+      </div>
+      <div style="display:flex;align-items:baseline;gap:14px;padding:11px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+        <span class="t-meta" style="flex:none;width:96px">No 받침</span>
+        <b style="font-size:19px;font-weight:900">는</b>
+        <span class="t-meta r">저 → 저는</span>
+      </div>
+    </div>
+
+    <div style="margin-top:16px">
+      <div class="t-en">Examples</div>
+      <div style="padding:10px 0;border-top:1px solid var(--line)">
+        <div style="font-size:17px;font-weight:800">저는 마이클이에요.</div>
+        <div class="t-en" style="margin-top:2px">I'm Michael.</div>
+      </div>
+    </div>
+  </div>
+</div></div>
+<figcaption><b>13 · 문법 수집 그리드 + 규칙 시트</b>
+<p>수집 카드는 그림자·점선을 빼고 1px 선 한 겹 + 골드 도장으로만 구분합니다. 시트 안 형태·예문도 박스가 아니라 선 행이라 그리드와 같은 시스템으로 읽힙니다.</p>
+<p class="ref">참조 GrammarCollection.svelte · GrammarRefSheet.svelte</p></figcaption>
+</figure>
+
+<!-- ══ 14. 주간 학습 ═════════════════════════════════════════ -->
+<figure id="f14">
+<div class="phone"><div class="screen">
+  <div class="body">
+    <div class="head">
+      <div class="mark">Progress</div>
+      <span class="gear"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 7h9M17 7h3M4 12h3M11 12h9M4 17h9M17 17h3"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="15" cy="17" r="2"/></svg></span>
+    </div>
+
+    <div class="t-meta" style="margin-top:28px">Current streak</div>
+    <div class="num" style="margin-top:4px;font-size:66px;font-weight:900;letter-spacing:-.05em;line-height:1">12 days</div>
+    <p style="margin:10px 0 0;font-size:14px;font-weight:700;color:var(--ink-2)">One bite today makes it 13</p>
+
+    <div style="margin-top:28px;padding-top:18px;border-top:1px solid var(--line)">
+      <div class="week" style="margin-bottom:8px">
+        <div class="d"><span>Mon</span></div><div class="d"><span>Tue</span></div><div class="d"><span>Wed</span></div>
+        <div class="d"><span>Thu</span></div><div class="d"><span>Fri</span></div><div class="d"><span>Sat</span></div><div class="d"><span>Sun</span></div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:7px;justify-items:center">
+        <i class="pip"></i><i class="pip full"></i><i class="pip half"></i><i class="pip full"></i><i class="pip full"></i><i class="pip"></i><i class="pip half"></i>
+        <i class="pip full"></i><i class="pip full"></i><i class="pip full"></i><i class="pip half"></i><i class="pip full"></i><i class="pip full"></i><i class="pip"></i>
+        <i class="pip half"></i><i class="pip full"></i><i class="pip full"></i><i class="pip full"></i><i class="pip full"></i><i class="pip half"></i><i class="pip full"></i>
+        <i class="pip full"></i><i class="pip full"></i><i class="pip half"></i><i class="pip full"></i><i class="pip full"></i><i class="pip full"></i><i class="pip full"></i>
+        <i class="pip full"></i><i class="pip full"></i><i class="pip half"></i><i class="pip full"></i><i class="pip full"></i><i class="pip"></i><i class="pip"></i>
+      </div>
+      <p class="t-en" style="margin:10px 0 0">Last 5 weeks · darker means a fuller bowl</p>
+    </div>
+
+    <div class="list" style="margin-top:22px;border-top:1px solid var(--line)">
+      <div class="li"><span style="font-size:14.5px;font-weight:700">Bowls this week</span><b class="r num" style="font-size:16px;font-weight:850">4</b></div>
+      <div class="li"><span style="font-size:14.5px;font-weight:700">Bites this month</span><b class="r num" style="font-size:16px;font-weight:850">23</b></div>
+      <div class="li"><span style="font-size:14.5px;font-weight:700">Words learned</span><b class="r num" style="font-size:16px;font-weight:850">86</b></div>
+      <div class="li" style="border-bottom:1px solid var(--line)"><span style="font-size:14.5px;font-weight:700">Reviews due</span><b class="r num" style="font-size:16px;font-weight:850">8</b></div>
+    </div>
+  </div>
+  <div class="tabbar">
+    <div class="on"><span class="ico">🍚</span><span class="tko">Today</span></div>
+    <div><span class="ico">📚</span><span class="tko">Shelf</span></div>
+    <div><span class="ico">가</span><span class="tko">Hangul</span></div>
+    <div><span class="ico">學</span><span class="tko">Hanja</span></div>
+    <div><span class="ico">📖</span><span class="tko">Words</span></div>
+  </div>
+</div></div>
+<figcaption><b>14 · 주간 학습 — 그릇 히트맵 + 스트릭</b>
+<p>🔥 이모지와 배지를 없애고 스트릭 숫자 66px를 지배 요소로 세웠습니다. 히트맵은 사각형 대신 홈·승리 화면과 같은 그릇 실루엣이라 은유가 화면끼리 이어집니다.</p>
+<p class="ref">참조 Home.svelte(week) · stats.js(weekActivity·streak)</p></figcaption>
+</figure>
+
+</div>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themeBtn'), label=document.getElementById('themeLabel');
+  function set(t){ root.setAttribute('data-theme',t); label.textContent=(t==='dark')?'라이트로 보기':'다크로 보기'; }
+  if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) set('dark');
+  btn.addEventListener('click', function(){ set(root.getAttribute('data-theme')==='dark'?'light':'dark'); });
+})();
+</script>
+</body>
+</html>
