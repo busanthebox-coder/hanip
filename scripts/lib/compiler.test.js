@@ -10,7 +10,9 @@ import {
   guessTarget,
   buildWordBites,
   buildPatternBites,
+  buildDialogueBite,
   buildReadingBite,
+  buildBossBite,
   compileChapter,
 } from './compiler.mjs';
 import { chapterLevel } from '../../src/lib/levels.js';
@@ -703,5 +705,125 @@ describe('order 21 — grammar bites end in questions', () => {
     };
     const [longBite] = buildPatternBites(longFunc);
     expect(longBite.cards[0].more.funcLead.length).toBeLessThanOrEqual(160);
+  });
+});
+
+/* ---------------- order 22: dialogue/reading thickness + order dedup ---------------- */
+
+describe('order 22 — dialogue and reading end in questions, orders serve once', () => {
+  const talkChapter = {
+    id: 'chapter-93',
+    extendedVocabulary: [
+      { hangul: '아침', romanization: 'achim', english: 'morning; breakfast', partOfSpeech: 'noun', exampleSentence: { ko: '아침을 먹어요.', en: 'I eat breakfast.' } },
+      { hangul: '저녁', romanization: 'jeonyeok', english: 'evening; dinner', partOfSpeech: 'noun', exampleSentence: { ko: '저녁을 먹어요.', en: 'I eat dinner.' } },
+      { hangul: '커피', romanization: 'keopi', english: 'coffee', partOfSpeech: 'noun', exampleSentence: { ko: '커피를 마셔요.', en: 'I drink coffee.' } },
+    ],
+    extendedDialogue: {
+      setting: 'lunch chat',
+      lines: [
+        { speaker: '지희', ko: '민호 씨, 매일 아침을 먹어요?', en: 'Minho, do you eat breakfast every day?' },
+        { speaker: '민호', ko: '아니요, 잘 안 먹어요.', en: 'No, I usually skip it.' },
+        { speaker: '지희', ko: '그럼 커피를 마셔요?', en: 'Then do you drink coffee?' },
+      ],
+    },
+    inlineExercises: [
+      { type: 'orderWords', prompt: 'build', tokens: ['아침을', '먹어요.'], correct: '아침을 먹어요.', explanation: '' },
+      { type: 'multipleChoice', prompt: 'pick', options: ['하나', '둘'], correct: '하나', explanation: '' },
+    ],
+    readingText: {
+      title: '아침 일기',
+      body: '저는 매일 아침을 먹어요. 주말에는 커피를 마셔요. 오늘도 좋은 하루예요.',
+      bodyTranslation: 'I eat breakfast every day. On weekends I drink coffee. Today is a good day too.',
+      comprehensionQuestions: [{ question: 'What does the writer eat?', answer: '아침' }],
+    },
+  };
+
+  it('gives the dialogue bite a who-said-it and a line cloze after the chat', () => {
+    const bite = buildDialogueBite(talkChapter, {});
+    expect(bite.cards[0].kind).toBe('chat');
+    const who = bite.cards.find((c) => c.kind === 'drill' && c.options.some((o) => o.text === '지희'));
+    expect(who).toBeTruthy();
+    expect(who.options).toHaveLength(2);
+    expect(who.options.find((o) => o.ok)).toBeTruthy();
+    const cloze = bite.cards.find((c) => c.kind === 'drill' && c.sentence?.includes('___'));
+    expect(cloze).toBeTruthy();
+    expect(cloze.options.filter((o) => o.ok)).toHaveLength(1);
+    // distractors must not already sit in the clozed line
+    for (const opt of cloze.options) {
+      if (!opt.ok) expect(cloze.sentence.includes(opt.text)).toBe(false);
+    }
+  });
+
+  it('skips who-said-it when the dialogue has a single speaker', () => {
+    const solo = {
+      ...talkChapter,
+      extendedDialogue: { lines: [
+        { speaker: '나', ko: '아침을 먹어요.', en: 'I eat breakfast.' },
+        { speaker: '나', ko: '커피를 마셔요.', en: 'I drink coffee.' },
+      ] },
+    };
+    const bite = buildDialogueBite(solo, {});
+    expect(bite.cards.some((c) => c.kind === 'drill' && c.options?.some((o) => o.text === '나'))).toBe(false);
+  });
+
+  it('adds two passage clozes to the reading bite, after the read card', () => {
+    const bite = buildReadingBite(talkChapter, {});
+    expect(bite.cards[0].kind).toBe('read');
+    const clozes = bite.cards.filter((c) => c.kind === 'drill' && c.sentence?.includes('___'));
+    expect(clozes.length).toBe(2);
+    for (const cloze of clozes) {
+      expect(cloze.options.filter((o) => o.ok)).toHaveLength(1);
+      for (const opt of cloze.options) {
+        if (!opt.ok) expect(cloze.sentence.includes(opt.text)).toBe(false);
+      }
+    }
+    // two different target words, not the same blank twice
+    const answers = clozes.map((c) => c.options.find((o) => o.ok).text);
+    expect(new Set(answers).size).toBe(2);
+  });
+
+  it('drops the dialogue-served orderWords from the boss bite, keeping the rest', () => {
+    const dialogue = buildDialogueBite(talkChapter, {});
+    const served = new Set(
+      dialogue.cards.filter((c) => c.kind === 'order').map((c) => c.correct.replace(/\s+/g, ' ').trim())
+    );
+    const boss = buildBossBite(talkChapter, {}, { excludeOrderCorrects: served });
+    expect(boss.cards.some((c) => c.kind === 'order' && c.correct === '아침을 먹어요.')).toBe(false);
+    expect(boss.cards.some((c) => c.kind === 'drill')).toBe(true);
+  });
+
+  it('end-to-end: no order sentence appears in both dialogue and boss (real chapter 5)', () => {
+    const chapter = JSON.parse(readFileSync(join(root, 'data', 'chapters', 'chapter-05.json'), 'utf8'));
+    const overrides = JSON.parse(readFileSync(join(root, 'data', 'overrides.json'), 'utf8'));
+    const compiled = compileChapter(chapter, 5, overrides);
+    const norm = (t) => String(t).replace(/\s+/g, ' ').trim();
+    const inDialogue = compiled.bites.filter((b) => b.kind === 'dialogue')
+      .flatMap((b) => b.cards).filter((c) => c.kind === 'order').map((c) => norm(c.correct));
+    const inBoss = compiled.bites.filter((b) => b.kind === 'boss')
+      .flatMap((b) => b.cards).filter((c) => c.kind === 'order').map((c) => norm(c.correct));
+    for (const correct of inDialogue) expect(inBoss).not.toContain(correct);
+    expect(inDialogue.length).toBeGreaterThan(0);
+  });
+});
+
+describe('order 22 — reading fallback', () => {
+  it('rebuilds a passage line as tiles when no vocabulary matches literally', () => {
+    const bite = buildReadingBite({
+      extendedVocabulary: [
+        { hangul: '가다', romanization: 'gada', english: 'to go', partOfSpeech: 'verb' },
+        { hangul: '오다', romanization: 'oda', english: 'to come', partOfSpeech: 'verb' },
+      ],
+      readingText: {
+        title: '주말',
+        body: '지은: 이번 주말에 같이 가고 싶어요. 유진: 저도 갈 수 있어요.',
+        bodyTranslation: 'x',
+        comprehensionQuestions: [],
+      },
+    }, {});
+    expect(bite.cards.length).toBeGreaterThanOrEqual(2);
+    const order = bite.cards.find((c) => c.kind === 'order');
+    expect(order).toBeTruthy();
+    expect(order.correct.startsWith('지은')).toBe(false); // speaker prefix stripped
+    expect(order.tokens.length).toBeGreaterThanOrEqual(3);
   });
 });

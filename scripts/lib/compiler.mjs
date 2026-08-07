@@ -506,6 +506,50 @@ function placeOptions(correct, distractors, seed) {
 }
 
 const normalizeOrderText = (text) => String(text).replace(/\s+/g, ' ').trim();
+const seedOfText = (text) => [...String(text)].reduce((sum, ch) => sum + ch.codePointAt(0), 0);
+
+// A chapter word that literally appears in a piece of text (nouns/adverbs do;
+// conjugating verbs mostly don't and we don't force them). Longest surface
+// form first so 아침 in 아침을 wins over shorter accidental matches.
+function literalVocabMatch(text, words) {
+  const candidates = [];
+  for (const word of words || []) {
+    for (const form of String(word.hangul).split('/').map((s) => s.trim()).filter(Boolean)) {
+      if (form.length >= 2 && text.includes(form)) candidates.push({ word, form });
+    }
+  }
+  candidates.sort((a, b) => b.form.length - a.form.length);
+  return candidates[0] || null;
+}
+
+// Korean-option distractors for a cloze whose answer is a chapter word.
+// Same POS first, no duplicate meanings, both directions of the audit ban
+// list respected, and nothing that already appears in the forbidden text
+// (it would make the distractor defensible).
+function koDistractors(target, pool, { overrides = {}, forbidText = '', count = 2 } = {}) {
+  const bans = overrides.guessDistractorBans || {};
+  const bannedFor = (word) => bans[word.hangul] || [];
+  const blocked = (cand) =>
+    bannedFor(target).some((ban) => cand.english.toLowerCase().includes(ban.toLowerCase()))
+    || bannedFor(cand).some((ban) => target.english.toLowerCase().includes(ban.toLowerCase()));
+  const usable = (pool || []).filter((cand) =>
+    cand !== target
+    && cand.hangul !== target.hangul
+    && cand.english !== target.english
+    && !forbidText.includes(cand.hangul)
+    && !blocked(cand));
+  const same = usable.filter((cand) => cand.partOfSpeech === target.partOfSpeech);
+  const rest = usable.filter((cand) => !same.includes(cand));
+  const picks = [];
+  const seen = new Set([target.english]);
+  for (const cand of [...same, ...rest]) {
+    if (picks.length >= count) break;
+    if (seen.has(cand.english)) continue;
+    seen.add(cand.english);
+    picks.push(cand.hangul.split('/')[0].trim());
+  }
+  return picks;
+}
 
 export function buildPatternBites(chapter, overrides = {}) {
   const exampleBans = overrides.huntExampleBans || [];
@@ -743,7 +787,7 @@ export function buildPatternBites(chapter, overrides = {}) {
 
 /* ---------------- dialogue / reading / boss ---------------- */
 
-export function buildDialogueBite(chapter) {
+export function buildDialogueBite(chapter, overrides = {}) {
   const lines = chapter.extendedDialogue?.lines || [];
   if (!lines.length) return null;
   const cards = [{
@@ -755,10 +799,50 @@ export function buildDialogueBite(chapter) {
   if (order) {
     cards.push({ kind: 'order', prompt: order.prompt, tokens: order.tokens, correct: order.correct, explanation: order.explanation || '' });
   }
+
+  /* order 22: the conversation must be USED after it is read. Both questions
+     derive purely from the dialogue's own lines. */
+  const words = chapter.extendedVocabulary || [];
+
+  // who-said-it — the longest line, judged between the two speakers involved
+  const speakers = [...new Set(lines.map((l) => l.speaker).filter(Boolean))];
+  let whoLine = null;
+  if (speakers.length >= 2) {
+    whoLine = [...lines].sort((a, b) => b.ko.length - a.ko.length)[0];
+    const other = speakers.find((s) => s !== whoLine.speaker);
+    cards.push({
+      kind: 'drill',
+      prompt: '누가 한 말일까요? · Who said this?',
+      sentence: whoLine.ko,
+      options: placeOptions(whoLine.speaker, [other], seedOfText(whoLine.ko)),
+      explanation: whoLine.en || '',
+    });
+  }
+
+  // line cloze — blank a chapter word inside a translated line; the English
+  // gloss in the prompt is what makes the blank unambiguous
+  for (const line of lines) {
+    if (line === whoLine) continue;
+    if (!line.en) continue;
+    const match = literalVocabMatch(line.ko, words);
+    if (!match) continue;
+    const distractors = koDistractors(match.word, words, { overrides, forbidText: line.ko });
+    if (!distractors.length) continue;
+    const at = line.ko.indexOf(match.form);
+    cards.push({
+      kind: 'drill',
+      prompt: `무엇이 들어갈까요? · "${line.en}"`,
+      sentence: line.ko.slice(0, at) + '___' + line.ko.slice(at + match.form.length),
+      options: placeOptions(match.form, distractors, seedOfText(line.ko)),
+      explanation: '',
+    });
+    break;
+  }
+
   return { kind: 'dialogue', title: '대화 Dialogue · 진짜 한국어', cards };
 }
 
-export function buildReadingBite(chapter) {
+export function buildReadingBite(chapter, overrides = {}) {
   const rt = chapter.readingText;
   if (!rt || !rt.body) return null;
   const sentences = splitReadingSentences(rt.body);
@@ -770,6 +854,52 @@ export function buildReadingBite(chapter) {
     translation: rt.bodyTranslation || '',
     qas: (rt.comprehensionQuestions || []).map((q) => ({ q: q.question, a: q.answer })),
   }];
+
+  /* order 22: reading is recall, not just exposure — after the passage, two
+     of its own sentences come back with a taught word blanked. The question
+     is explicitly about what the passage said, so a distractor that appears
+     ANYWHERE in the body is excluded (recalling the text must settle it). */
+  const words = chapter.extendedVocabulary || [];
+  const usedWords = new Set();
+  let made = 0;
+  for (const sentence of sentences) {
+    if (made >= 2) break;
+    const match = literalVocabMatch(sentence, words);
+    if (!match || usedWords.has(match.word.hangul)) continue;
+    const distractors = koDistractors(match.word, words, { overrides, forbidText: rt.body });
+    if (!distractors.length) continue;
+    usedWords.add(match.word.hangul);
+    made += 1;
+    const at = sentence.indexOf(match.form);
+    cards.push({
+      kind: 'drill',
+      prompt: '지문에서 뭐라고 했어요? · What did the passage say?',
+      sentence: sentence.slice(0, at) + '___' + sentence.slice(at + match.form.length),
+      options: placeOptions(match.form, distractors, seedOfText(sentence)),
+      explanation: '',
+    });
+  }
+
+  // fallback: an all-verb vocabulary never matches literally (지문은 활용형뿐)
+  // — rebuild one passage line as order tiles instead, so no reading bite is
+  // ever a single passive card. Speaker prefixes ("지은:") are stripped;
+  // mechanical conjugation stays forbidden.
+  if (made === 0) {
+    for (const sentence of sentences) {
+      const line = sentence.replace(/^[가-힣A-Za-z]+\s*:\s*/u, '').trim();
+      const tokens = line.split(/\s+/);
+      if (tokens.length < 3 || tokens.length > 6) continue;
+      cards.push({
+        kind: 'order',
+        prompt: '지문 문장을 다시 조립하세요 · Rebuild a line from the passage',
+        tokens,
+        correct: line,
+        explanation: '',
+      });
+      break;
+    }
+  }
+
   return { kind: 'reading', title: '읽기 Reading · ' + (rt.title || ''), cards };
 }
 
@@ -794,8 +924,14 @@ function splitReadingSentences(body) {
 
 const BOSS_TYPES = new Set(['multipleChoice', 'particleChoice', 'orderWords']);
 
-export function buildBossBite(chapter) {
-  const items = (chapter.inlineExercises || []).filter((e) => BOSS_TYPES.has(e.type));
+export function buildBossBite(chapter, overrides = {}, { excludeOrderCorrects = new Set() } = {}) {
+  // order 22: the dialogue bite serves the chapter's orderWords in context —
+  // the boss must not re-serve the very same sentence (63/65 chapters did).
+  const items = (chapter.inlineExercises || []).filter((e) => {
+    if (!BOSS_TYPES.has(e.type)) return false;
+    if (e.type === 'orderWords' && excludeOrderCorrects.has(normalizeOrderText(e.correct))) return false;
+    return true;
+  });
   if (!items.length) return null;
   const cards = items.map((ex) => {
     if (ex.type === 'orderWords') {
@@ -826,7 +962,18 @@ export function compileChapter(chapter, number, overrides = {}) {
     if (wordBites[i]) woven.push({ ...wordBites[i], canDo: skill });
     if (patternBites[i]) woven.push({ ...patternBites[i], canDo: skill });
   }
-  const tail = [buildDialogueBite(chapter), buildReadingBite(chapter), buildBossBite(chapter)]
+  const dialogueBite = buildDialogueBite(chapter, overrides);
+  // whatever order sentences the dialogue serves, the boss must not repeat
+  const servedOrders = new Set(
+    (dialogueBite?.cards || [])
+      .filter((card) => card.kind === 'order')
+      .map((card) => normalizeOrderText(card.correct))
+  );
+  const tail = [
+    dialogueBite,
+    buildReadingBite(chapter, overrides),
+    buildBossBite(chapter, overrides, { excludeOrderCorrects: servedOrders }),
+  ]
     .filter(Boolean)
     .map((bite, i) => ({ ...bite, canDo: canDo.length ? canDo[i % canDo.length] : '' }));
   const bites = [...woven, ...tail];
