@@ -1,0 +1,1194 @@
+<!doctype html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>한입 디자인 보완 시안 v5 — 재질과 구조를 되채우기</title>
+<style>
+/* ═══════════════════════════════════════════════════════════════════════════
+   한입 토큰 — src/styles/tokens.css 값 그대로. 색 값은 한 글자도 바꾸지 않았고
+   바뀐 것은 "사용 밀도"뿐이다(--study-grid를 2겹으로 깔고 종이 결 도트를 추가).
+   렌더 폴백: 무조건부 :root 를 반드시 포함해야 래퍼 안에서 변수가 죽지 않는다.
+   ═══════════════════════════════════════════════════════════════════════════ */
+:root, :root[data-theme="light"], [data-theme="light"] {
+  --bg:#FAF6EE; --ink:#26221C; --ink-2:#5E5346; --ink-3:#8C7F6B;
+  --card:#FFFFFF; --wash:#F2E9DA; --line:#E5DCC8; --line-2:#D6C9AE;
+  --accent:#E4572E; --accent-deep:#C13D1B; --accent-soft:#FBE7DD;
+  --gold:#C9A227; --gold-soft:rgba(201,162,39,.16);
+  --good:#4E8D6E; --good-deep:#2E6B4E; --good-soft:#E2EFE6; --bad:#C4452E;
+  --on-accent:#FFF6EF; --chat-canvas:#EFE6D4; --chat-self:#F4DE72; --chat-self-ink:#26221C;
+  --progress-track:#EFE4CD;
+  --study-grid:rgba(140,127,107,.045);
+  --chat-shadow:0 2px 8px -4px rgba(38,34,28,.2);
+  --shadow-1:0 1px 2px rgba(38,34,28,.05), 0 10px 26px -14px rgba(38,34,28,.16);
+  --shadow-2:0 3px 8px rgba(38,34,28,.06), 0 20px 44px -20px rgba(38,34,28,.26);
+  --ease:cubic-bezier(.22,.61,.36,1);
+  /* 문서(스펙 페이지) 전용 — 앱 토큰 아님 */
+  --page:#EDECE8; --page-ink:#2A2724; --page-ink-2:#6E6A63; --page-line:#DCDAD4;
+  --page-soft:#F6F5F2; --bezel:#FFFFFF; --bezel-edge:rgba(38,34,28,.10);
+  color-scheme: light;
+}
+:root[data-theme="dark"], [data-theme="dark"] {
+  --bg:#17150F; --ink:#EDE6D6; --ink-2:#B5A98F; --ink-3:#8C8168;
+  --card:#201D15; --wash:#2A2618; --line:#383325; --line-2:#4A4330;
+  --accent:#F0603A; --accent-deep:#FF7A55; --accent-soft:#3A211A;
+  --gold:#D8B43F; --gold-soft:rgba(216,180,63,.2);
+  --good:#65A984; --good-deep:#85C8A3; --good-soft:#1C3026; --bad:#F06B51;
+  --on-accent:#FFF6EF; --chat-canvas:#2A2618; --chat-self:#5B4A16; --chat-self-ink:#F4EBC8;
+  --progress-track:#332E20;
+  --study-grid:rgba(237,230,214,.035);
+  --chat-shadow:0 2px 10px -3px rgba(0,0,0,.55);
+  --shadow-1:0 1px 3px rgba(0,0,0,.28), 0 12px 30px -14px rgba(0,0,0,.58);
+  --shadow-2:0 4px 10px rgba(0,0,0,.3), 0 24px 52px -20px rgba(0,0,0,.72);
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --page:#121110; --page-ink:#E7E3DC; --page-ink-2:#8E8880; --page-line:#2A2825;
+  --page-soft:#1B1A18; --bezel:#26241F; --bezel-edge:rgba(0,0,0,.5);
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{background:var(--page);color:var(--page-ink);
+  font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+  line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;word-break:keep-all;}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit;padding:0;text-align:inherit;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.sprite{position:absolute;width:0;height:0;overflow:hidden;}
+
+/* ── 문서 셸 ──────────────────────────────────────────────────────────── */
+.doc{max-width:1840px;margin:0 auto;padding:52px 28px 120px;}
+.doc-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;}
+.doc-head h1{margin:0;font-size:26px;font-weight:800;letter-spacing:-.025em;}
+.doc-head p{margin:9px 0 0;max-width:64ch;font-size:14px;color:var(--page-ink-2);}
+.toggle{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 15px;border-radius:999px;
+  border:1px solid var(--page-line);color:var(--page-ink-2);font-size:13px;font-weight:700;white-space:nowrap;}
+.toggle:hover{color:var(--page-ink);}
+.toggle .knob{width:9px;height:9px;border-radius:999px;background:var(--page-ink-2);}
+
+.system{margin-top:28px;padding:18px 20px;border-radius:14px;background:var(--page-soft);
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px 26px;}
+.system div b{display:block;font-size:12px;font-weight:800;color:var(--page-ink);}
+.system div span{display:block;margin-top:3px;font-size:12px;line-height:1.62;color:var(--page-ink-2);}
+.toc{margin-top:18px;padding-top:16px;border-top:1px solid var(--page-line);display:flex;flex-wrap:wrap;gap:6px 8px;}
+.toc a{font-size:12.5px;font-weight:650;color:var(--page-ink-2);text-decoration:none;
+  padding:5px 10px;border-radius:999px;border:1px solid var(--page-line);}
+.toc a:hover{color:var(--page-ink);border-color:var(--page-ink-2);}
+
+.frames{margin-top:46px;display:flex;flex-wrap:wrap;gap:60px 40px;align-items:flex-start;justify-content:center;}
+figure{margin:0;width:390px;max-width:100%;scroll-margin-top:24px;}
+figure.wide{width:830px;}
+figcaption{margin-top:18px;}
+figcaption > b{display:block;font-size:13.5px;font-weight:800;color:var(--page-ink);}
+figcaption p{margin:5px 0 0;font-size:12.5px;line-height:1.66;color:var(--page-ink-2);}
+figcaption p b{font-weight:800;color:var(--page-ink);}
+figcaption .ref{margin-top:6px;font-size:11.5px;color:var(--page-ink-2);opacity:.72;}
+figcaption .fix{display:inline-block;margin-top:7px;padding:2px 8px;border-radius:999px;
+  border:1px solid var(--page-line);font-size:11px;font-weight:750;color:var(--page-ink-2);}
+
+/* ── 폰 ───────────────────────────────────────────────────────────────── */
+.phone{width:390px;max-width:100%;height:844px;border-radius:44px;padding:10px;background:var(--bezel);
+  box-shadow:0 0 0 1px var(--bezel-edge), 0 30px 60px -30px rgba(0,0,0,.35);}
+.screen{width:100%;height:100%;border-radius:35px;overflow:hidden;background:var(--bg);color:var(--ink);
+  display:flex;flex-direction:column;position:relative;
+  font-family:'Pretendard Variable',Pretendard,'Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;}
+
+/* ═══ 재질: 종이 ═══════════════════════════════════════════════════════
+   결함 6 대응. --study-grid 값(4.5%)은 그대로 두고 같은 선을 2겹으로 깔아
+   실효 대비를 약 2배로 올린다. 여기에 3px 도트 격자를 얹어 종이 "결(tooth)"을
+   만든다. 새 색 토큰은 없다 — 같은 토큰의 밀도만 올렸다.                    */
+.paper{
+  background-color:var(--bg);
+  background-image:
+    radial-gradient(var(--study-grid) .6px, transparent .7px),
+    repeating-linear-gradient(var(--study-grid) 0 1px, transparent 1px 30px),
+    repeating-linear-gradient(var(--study-grid) 0 1px, transparent 1px 30px),
+    repeating-linear-gradient(90deg, var(--study-grid) 0 1px, transparent 1px 30px),
+    repeating-linear-gradient(90deg, var(--study-grid) 0 1px, transparent 1px 30px);
+  background-size:3px 3px, auto, auto, auto, auto;
+}
+/* 카드도 흰 사각형이 아니라 종이 — 같은 결이 카드 안까지 이어진다 */
+.tooth{
+  background-color:var(--card);
+  background-image:radial-gradient(var(--study-grid) .6px, transparent .7px);
+  background-size:3px 3px;
+}
+
+/* ═══ 그릇 — 붓/잉크 실루엣 ════════════════════════════════════════════
+   결함 2 대응. 기하학 선 아이콘 대신 리본(가변 두께 채움) + 붓 획 전(rim) +
+   굽(foot). 밥은 --gold. 100%에서는 고봉으로 전을 넘긴다.                   */
+.bowl{display:block;width:var(--bw,86px);height:var(--bw,86px);flex:none;}
+.bowl .ink{fill:var(--ink);}
+.bowl .foot{fill:none;stroke:var(--ink);stroke-width:5.6;stroke-linecap:round;stroke-linejoin:round;}
+.bowl .rice{fill:var(--gold);}
+/* 작은 크기에서도 실루엣이 살도록 획을 광학 보정 */
+.bowl--sm .ink{stroke:var(--ink);stroke-width:2.6;stroke-linejoin:round;}
+.bowl--sm .foot{stroke-width:7.6;}
+.bowl--xs .ink{stroke:var(--ink);stroke-width:4;stroke-linejoin:round;}
+.bowl--xs .foot{stroke-width:9.5;}
+.bowl--muted .ink{fill:var(--line-2);}
+.bowl--muted .foot{stroke:var(--line-2);}
+.bowl--muted.bowl--sm .ink{stroke:var(--line-2);}
+
+@keyframes riceRise{from{transform:translateY(26px);}to{transform:translateY(0);}}
+.bowl--fillup .rice,.bowl--fillup .heap{animation:riceRise 1.05s var(--ease) .15s both;}
+
+/* ═══ 도장(seal) — 여권 스탬프 ════════════════════════════════════════ */
+.seal{display:grid;place-items:center;border:1.5px solid var(--gold);border-radius:7px;color:var(--gold);
+  font-weight:900;transform:rotate(-8deg);flex:none;line-height:1;}
+.seal--xs{width:24px;height:24px;font-size:7.5px;border-width:1.2px;border-radius:5px;}
+.seal--sm{width:32px;height:32px;font-size:9px;}
+.seal--lg{position:relative;width:62px;height:62px;align-content:center;gap:2px;font-size:15px;
+  letter-spacing:-.02em;border-width:1.8px;border-radius:11px;opacity:.92;}
+.seal--lg::before{content:"";position:absolute;inset:4px;border:.8px solid var(--gold);border-radius:8px;opacity:.6;}
+.seal--lg em{font-style:normal;font-size:7.5px;font-weight:750;letter-spacing:.04em;opacity:.8;}
+
+/* ═══ 탭바 — 커스텀 SVG 아이콘 ════════════════════════════════════════ */
+.tabbar{flex:none;display:flex;background:var(--card);border-top:1px solid var(--line);
+  padding:7px 0 10px;}
+.tabbar button{flex:1;min-width:0;min-height:44px;display:grid;justify-items:center;gap:2px;padding:2px 0;
+  color:var(--ink-3);}
+.tabbar button.on{color:var(--accent-deep);}
+.ti{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
+.ti--dense{stroke-width:1.5;}
+.tabbar .t-label{font-size:10.5px;font-weight:850;line-height:1.25;}
+.tabbar--emoji .ico{font-size:17px;line-height:1.35;font-weight:700;}
+
+/* ═══ 공유 프리미티브 ═════════════════════════════════════════════════ */
+.pad{padding:0 22px;}
+.hd{flex:none;min-height:44px;display:flex;align-items:center;justify-content:space-between;padding:14px 22px 0;}
+.mark{font-size:16px;font-weight:900;letter-spacing:-.03em;color:var(--ink);}
+.gear{width:44px;height:44px;margin-right:-10px;display:grid;place-items:center;color:var(--ink-3);}
+.place{margin-top:20px;font-size:12.5px;font-weight:650;color:var(--ink-3);}
+.word{margin:5px 0 0;font-size:70px;font-weight:900;letter-spacing:-.045em;line-height:1.05;color:var(--ink);}
+.word.long{font-size:46px;letter-spacing:-.03em;line-height:1.12;}
+.lead{margin:13px 0 0;font-size:15.5px;font-weight:650;line-height:1.6;color:var(--ink-2);}
+.lead-ko{margin:4px 0 0;font-size:11.5px;font-weight:650;line-height:1.5;color:var(--ink-3);}
+.rule{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;}
+.sec-head b{font-size:15.5px;font-weight:800;letter-spacing:-.01em;color:var(--ink);}
+.sec-head span{font-size:11.5px;font-weight:650;color:var(--ink-3);font-variant-numeric:tabular-nums;}
+.sec-ko{margin:2px 0 0;font-size:11.5px;font-weight:650;color:var(--ink-3);}
+.cta{width:100%;padding:15px 16px 13px;border-radius:16px;background:var(--accent);color:var(--on-accent);
+  display:grid;gap:1px;text-align:center;box-shadow:0 3px 0 var(--accent-deep);}
+.cta b{font-size:17px;font-weight:850;letter-spacing:-.01em;}
+.cta i{font-size:10.5px;font-style:normal;font-weight:700;opacity:.62;}
+.cta.off{background:var(--wash);color:var(--ink-3);box-shadow:none;}
+.ghost{width:100%;min-height:44px;color:var(--ink-3);font-size:14px;font-weight:750;text-align:center;}
+.spring{margin-top:auto;}
+
+/* 주간 그릇 7개 (결함 3) */
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;}
+.week .d{display:grid;justify-items:center;gap:4px;}
+.week .d span{font-size:10px;font-weight:750;color:var(--ink-3);}
+.week .d.today span{color:var(--ink);}
+.week .d.today{position:relative;}
+.week .d.today::after{content:"";position:absolute;left:50%;bottom:-6px;width:16px;height:1.5px;
+  transform:translateX(-50%);background:var(--ink);}
+
+/* 진행 모듈 — 8개 미세 원의 대체 (결함 3) */
+.prog{flex:none;display:grid;justify-items:end;gap:4px;font-variant-numeric:tabular-nums;}
+.prog .n{font-size:13.5px;font-weight:800;letter-spacing:-.02em;color:var(--ink);line-height:1;}
+.prog .n i{font-style:normal;font-size:11.5px;font-weight:650;color:var(--ink-3);}
+.prog .bar{width:38px;height:3px;border-radius:999px;background:var(--progress-track);overflow:hidden;}
+.prog .bar b{display:block;height:100%;background:var(--gold);border-radius:999px;}
+.prog--off .n{color:var(--ink-3);font-weight:700;}
+.prog--off .n i{opacity:.7;}
+
+/* ═══ 프레임 1 · 홈 A ═════════════════════════════════════════════════ */
+.wordflow{display:flex;flex-wrap:wrap;gap:6px 0;}
+.wordflow b{flex:0 0 33.333%;padding:5px 8px 5px 0;font-size:19px;font-weight:800;letter-spacing:-.02em;
+  color:var(--ink);line-height:1.3;}
+.wordflow b.wide{flex-basis:66.666%;}
+.canline{font-size:13.5px;font-weight:650;line-height:1.55;color:var(--ink-2);}
+.canline-ko{margin-top:3px;font-size:11.5px;font-weight:650;color:var(--ink-3);}
+.bowlrow{display:flex;align-items:center;gap:14px;}
+.bowlcap b{display:block;font-size:15px;font-weight:800;letter-spacing:-.01em;color:var(--ink);}
+.bowlcap span{display:block;margin-top:2px;font-size:12.5px;font-weight:650;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;}
+.bowlcap em{display:block;margin-top:6px;font-style:normal;font-size:11.5px;font-weight:650;color:var(--ink-3);}
+
+/* ═══ 프레임 2 · 홈 B — 코스 척추 ════════════════════════════════════ */
+.spine{position:relative;padding-left:44px;}
+.spine::before{content:"";position:absolute;left:21px;top:6px;bottom:16px;width:1px;background:var(--line);}
+.node{position:relative;min-height:44px;padding:9px 0;display:flex;align-items:center;gap:10px;}
+.node + .node{border-top:1px solid var(--line);}
+.node .marker{position:absolute;left:-44px;top:50%;transform:translateY(-50%);width:44px;display:grid;
+  place-items:center;}
+.node .dot{width:9px;height:9px;border-radius:999px;border:1.5px solid var(--line-2);background:var(--bg);}
+.node .num{flex:none;width:19px;font-size:13px;font-weight:800;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;}
+.node .ttl{flex:1;min-width:0;}
+.node .ttl b{display:block;font-size:14px;font-weight:750;letter-spacing:-.01em;color:var(--ink);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.node .ttl span{display:block;font-size:11.5px;font-weight:650;color:var(--ink-3);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.node.done .ttl b,.node.done .num{color:var(--ink-3);font-weight:700;}
+.node.here{padding:14px 0;}
+.node.here .marker{left:-52px;width:52px;}
+.node.here .num{color:var(--ink);}
+.node.here .ttl b{font-size:16px;font-weight:850;white-space:normal;color:var(--ink);}
+.node.here .ttl span{white-space:normal;}
+.node.side{padding-left:16px;}
+.node.side .ttl b{font-size:13px;font-weight:700;color:var(--ink-2);}
+.node.side .kindlab{flex:none;font-size:11px;font-weight:650;color:var(--ink-3);}
+.spine.deep{padding-left:52px;}
+.spine.deep::before{left:25px;}
+
+/* ═══ 프레임 3 · 책장 ════════════════════════════════════════════════ */
+.lvl{border-top:1px solid var(--line);}
+.lvl-head{width:100%;min-height:56px;display:flex;align-items:center;gap:12px;padding:14px 0 12px;}
+.lvl-head .m{flex:1;min-width:0;display:grid;}
+.lvl-head .m b{font-size:15.5px;font-weight:850;letter-spacing:-.01em;color:var(--ink);}
+.lvl-head .m span{font-size:11.5px;font-weight:650;color:var(--ink-3);}
+.lvl-head .chev{flex:none;color:var(--ink-3);font-size:13px;line-height:1;}
+/* 본편 챕터 행 — 시각적으로 가장 무겁다 */
+.chap{width:100%;display:flex;align-items:flex-start;gap:12px;padding:14px 0;border-top:1px solid var(--line);}
+.chap .num{flex:none;width:20px;padding-top:1px;font-size:14.5px;font-weight:800;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;}
+.chap.done .num{color:var(--gold);}
+.chap .m{flex:1;min-width:0;}
+.chap .m b{display:block;font-size:15px;font-weight:820;letter-spacing:-.012em;color:var(--ink);line-height:1.35;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+/* 결함 5 — 목표는 2줄까지 흐른다. 한 줄 잘림은 미니멀이 아니라 고장이다. */
+.chap .goal{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  margin-top:2px;font-size:11.5px;font-weight:650;line-height:1.5;color:var(--ink-3);}
+.chap .right{flex:none;padding-top:2px;}
+/* 부속 행(바이트·간식) — 배경 없이 들여쓰기 + 약한 잉크로 종속시킨다 (결함 4) */
+.subrow{width:100%;min-height:44px;display:flex;align-items:center;gap:10px;padding:10px 0 10px 32px;
+  border-top:1px solid var(--line);}
+.subrow .kind{flex:none;width:58px;font-size:11px;font-weight:650;color:var(--ink-3);}
+.subrow .t{flex:1;min-width:0;font-size:13.5px;font-weight:700;color:var(--ink-2);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.subrow .st{flex:none;font-size:11px;font-weight:650;color:var(--ink-3);white-space:nowrap;}
+.subrow.snack .t{font-weight:650;}
+.subrow.snack .kind{font-style:italic;}
+.entry{width:100%;min-height:44px;display:grid;grid-template-columns:1fr auto;align-items:center;
+  padding:13px 0;border-top:1px solid var(--line);}
+.entry:last-of-type{border-bottom:1px solid var(--line);}
+.entry b{font-size:14.5px;font-weight:750;letter-spacing:-.01em;color:var(--ink);}
+.entry .s{grid-column:1;font-size:11.5px;font-weight:650;color:var(--ink-3);}
+.entry .n{grid-row:1/-1;grid-column:2;font-size:12.5px;font-weight:650;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;}
+.search{margin-top:14px;height:40px;display:flex;align-items:center;gap:8px;padding:0 12px;
+  border:1px solid var(--line);border-radius:12px;color:var(--ink-3);font-size:13.5px;font-weight:650;}
+
+/* ═══ 프레임 4·5 · 플레이어 ══════════════════════════════════════════ */
+.bp{--sheet-pad:22px;flex:1;display:flex;flex-direction:column;padding:14px 16px 16px;min-height:0;}
+.playbar{display:flex;align-items:center;gap:12px;min-height:34px;flex:none;}
+.x{width:34px;height:34px;margin-left:-7px;display:grid;place-items:center;color:var(--ink-3);font-size:19px;}
+.dots{flex:1;display:flex;gap:4px;}
+.dots i{height:3px;flex:1;border-radius:999px;background:var(--progress-track);}
+.dots i.done{background:var(--gold);}
+.dots i.now{background:var(--ink-3);}
+.count{flex:none;font-size:11.5px;font-weight:750;color:var(--ink-3);font-variant-numeric:tabular-nums;}
+.deck{position:relative;margin-top:16px;}
+/* 뒤에 겹친 두 장은 살짝 어긋나게 — UI 스택이 아니라 흐트러진 종이로 읽히도록 */
+.deck::before,.deck::after{content:"";position:absolute;left:8px;right:8px;bottom:-6px;height:28px;
+  border:1px solid var(--line);border-radius:0 0 22px 22px;background:var(--card);z-index:0;
+  transform:rotate(-.35deg);transform-origin:50% 0;}
+.deck::after{left:16px;right:16px;bottom:-12px;opacity:.72;transform:rotate(.5deg);}
+.sheet{position:relative;z-index:1;border-radius:22px;border:1px solid var(--line);box-shadow:var(--shadow-1);
+  padding:24px var(--sheet-pad) 22px;}
+.stem{font-size:26px;font-weight:800;line-height:1.45;letter-spacing:-.02em;color:var(--ink);}
+.stem.small{font-size:20px;font-weight:700;line-height:1.5;color:var(--ink-2);}
+.tgt{font-weight:850;color:var(--ink);border-bottom:2px solid var(--gold);padding-bottom:1px;}
+.stem-en{margin-top:5px;font-size:11.5px;font-weight:650;line-height:1.5;color:var(--ink-3);}
+.ask{margin-top:14px;font-size:14px;font-weight:700;color:var(--ink-3);}
+.ask-en{margin-top:4px;font-size:11.5px;font-weight:650;line-height:1.5;color:var(--ink-3);}
+.opts{margin-top:18px;}
+.opt{position:relative;display:flex;align-items:center;gap:10px;min-height:44px;
+  width:calc(100% + var(--sheet-pad) * 2);margin:0 calc(var(--sheet-pad) * -1);
+  padding:9px var(--sheet-pad);border-top:1px solid var(--line);
+  font-size:15px;font-weight:650;color:var(--ink);}
+.opt:last-of-type{border-bottom:1px solid var(--line);}
+.opt .mk{margin-left:auto;flex:none;font-size:13px;font-weight:900;}
+.opt .mk.good{color:var(--good);}
+.opt .mk.bad{color:var(--bad);}
+.opt.dim{color:var(--ink-3);font-weight:600;}
+.opt.wrong{color:var(--bad);}
+/* 모션 1 — 정답 잉크 번짐: 탭 지점에서 --good-soft 가 종이에 스미듯 퍼진다 */
+.opt.correct{font-weight:800;}
+.opt.correct::before{content:"";position:absolute;inset:0;z-index:-1;
+  background:radial-gradient(130% 200% at 16% 50%, var(--good-soft) 0 52%, transparent 76%);
+  transform-origin:16% 50%;animation:bleed .46s var(--ease) both;}
+@keyframes bleed{0%{transform:scale(.14);opacity:0;}30%{opacity:1;}100%{transform:scale(1);opacity:1;}}
+.textbtn{min-height:44px;font-size:12.5px;font-weight:700;color:var(--ink-3);text-align:left;}
+.answer{margin-top:24px;}
+.answer-head{display:flex;align-items:center;gap:12px;}
+.hero{font-size:58px;font-weight:900;letter-spacing:-.035em;line-height:1.05;color:var(--ink);}
+.dot-audio{width:30px;height:30px;flex:none;display:grid;place-items:center;border:1px solid var(--line-2);
+  border-radius:999px;color:var(--ink-3);}
+.star{margin-left:auto;flex:none;font-size:22px;line-height:1;color:var(--gold);}
+.gloss{margin-top:8px;font-size:15.5px;font-weight:800;letter-spacing:-.01em;color:var(--ink);}
+.rom{margin-top:3px;font-size:12px;font-weight:650;letter-spacing:.02em;color:var(--ink-3);}
+.pos{margin-top:3px;font-size:11.5px;font-weight:650;color:var(--ink-3);}
+.note{margin-top:18px;padding-top:16px;border-top:1px solid var(--line);}
+.note p{margin:0;font-size:15px;font-weight:500;line-height:1.82;color:var(--ink-2);}
+.note p.sub{margin-top:9px;font-size:12.5px;font-weight:600;line-height:1.68;color:var(--ink-3);}
+.srs{margin-top:16px;font-size:12.5px;font-weight:650;color:var(--ink-3);}
+.srs span{display:block;font-size:11.5px;font-weight:650;}
+.nav{margin-top:auto;padding-top:22px;}
+
+/* ═══ 프레임 6 · 승리 ════════════════════════════════════════════════ */
+.win{flex:1;display:flex;flex-direction:column;padding:16px 22px 16px;min-height:0;}
+.win-head{margin-top:auto;display:grid;justify-items:center;text-align:center;}
+.win h2{margin:14px 0 0;font-size:28px;font-weight:900;letter-spacing:-.03em;color:var(--ink);}
+.win .score{margin:9px 0 0;font-size:13.5px;font-weight:700;color:var(--ink-2);}
+.win .meta{margin:3px 0 0;font-size:12.5px;font-weight:650;color:var(--ink-3);font-variant-numeric:tabular-nums;}
+.win .cando{margin:10px 0 0;font-size:12.5px;font-weight:650;line-height:1.6;color:var(--ink-3);}
+.sealrow{margin-top:24px;padding-top:16px;border-top:1px solid var(--line);display:flex;align-items:center;gap:14px;}
+.sealrow .t b{display:block;font-size:14.5px;font-weight:800;letter-spacing:-.01em;color:var(--ink);}
+.sealrow .t span{display:block;margin-top:2px;font-size:11.5px;font-weight:650;color:var(--ink-3);}
+@keyframes stampIn{0%{transform:rotate(-8deg) scale(1.7);opacity:0;}
+  62%{transform:rotate(-8deg) scale(.94);opacity:1;}100%{transform:rotate(-8deg) scale(1);opacity:.92;}}
+.seal--stamp{animation:stampIn .34s var(--ease) .5s both;}
+.misses{margin-top:22px;}
+.misses-head{display:flex;align-items:baseline;justify-content:space-between;padding-bottom:9px;}
+.misses-head b{font-size:15.5px;font-weight:850;letter-spacing:-.01em;color:var(--ink);}
+.misses-head .n{font-size:12.5px;font-weight:650;color:var(--ink-3);font-variant-numeric:tabular-nums;}
+.miss{padding:12px 0;border-top:1px solid var(--line);}
+.miss:last-of-type{border-bottom:1px solid var(--line);}
+.miss-top{display:flex;align-items:baseline;justify-content:space-between;gap:14px;}
+.miss-ko{flex:none;max-width:55%;font-size:18px;font-weight:850;letter-spacing:-.02em;color:var(--ink);}
+.miss-en{flex:1;min-width:0;font-size:13px;font-weight:650;color:var(--ink-2);text-align:right;}
+.said{margin-top:5px;font-size:12.5px;font-weight:650;color:var(--ink-3);}
+.said b{margin-left:7px;font-weight:750;color:var(--bad);}
+.misses-ko{margin:9px 0 0;font-size:11.5px;font-weight:650;color:var(--ink-3);}
+.nextrow{margin-top:20px;min-height:44px;padding:13px 0;border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px;}
+.nextrow .t{flex:1;min-width:0;display:grid;}
+.nextrow .t b{font-size:14.5px;font-weight:800;letter-spacing:-.01em;color:var(--ink);}
+.nextrow .t span{font-size:11.5px;font-weight:650;color:var(--ink-3);}
+.nextrow .n{flex:none;font-size:12.5px;font-weight:650;color:var(--ink-3);font-variant-numeric:tabular-nums;}
+
+/* ═══ 프레임 7 · 아이콘 비교판 ══════════════════════════════════════ */
+.板{display:grid;gap:0;}
+.cmp{border:1px solid var(--page-line);border-radius:20px;overflow:hidden;background:var(--bg);}
+.cmp-row{padding:18px 20px;border-bottom:1px solid var(--line);}
+.cmp-row:last-child{border-bottom:0;}
+.cmp-lab{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:12px;}
+.cmp-lab b{font-size:13.5px;font-weight:800;color:var(--ink);}
+.cmp-lab span{font-size:11.5px;font-weight:650;color:var(--ink-3);}
+.big-icons{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;}
+.big-icons .cell{display:grid;justify-items:center;gap:9px;text-align:center;}
+.big-icons .ti{width:60px;height:60px;stroke-width:1.7;color:var(--ink);}
+.big-icons .ti.ti--dense{stroke-width:1.55;}
+.big-icons .nm{font-size:12.5px;font-weight:800;color:var(--ink);}
+.big-icons .why{font-size:11px;font-weight:650;line-height:1.5;color:var(--ink-3);}
+.reject{display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+.reject .spec{display:grid;justify-items:center;gap:6px;}
+.reject .spec .cap{font-size:11px;font-weight:700;color:var(--ink-3);}
+.reject .glyph{color:var(--ink);font-weight:700;line-height:1;display:grid;place-items:center;}
+.reject .txt{flex:1;min-width:230px;font-size:12.5px;font-weight:650;line-height:1.62;color:var(--ink-2);}
+
+/* ═══ 프레임 8 · 그릇 시퀀스 ════════════════════════════════════════ */
+.seq{border:1px solid var(--page-line);border-radius:20px;background:var(--bg);padding:22px 20px;}
+.seq-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;text-align:center;}
+.seq-row .cell b{display:block;margin-top:8px;font-size:12.5px;font-weight:800;color:var(--ink);}
+.seq-row .cell span{display:block;margin-top:2px;font-size:11px;font-weight:650;line-height:1.5;color:var(--ink-3);}
+.seq-row .cell .bowl{margin:0 auto;}
+.scale-row{display:flex;align-items:flex-end;justify-content:center;gap:26px;}
+.scale-row .cell{display:grid;justify-items:center;gap:7px;}
+.scale-row .cap{font-size:11px;font-weight:700;color:var(--ink-3);}
+
+/* 프레임별 밀도 보정 — 척추/리빌은 행이 많아 리듬을 한 단계 촘촘하게 쓴다 */
+#f1 .wordflow b{padding:4px 8px 4px 0;}
+#f1 .spring{padding-top:17px !important;}
+/* 짧은 덱은 세로 중앙에 — 카드 아래 200px 공백이 남지 않게 (홈의 결함 1과 같은 병) */
+#f4 .deck{margin-top:auto;margin-bottom:auto;}
+#f2 .node{padding:4px 0;}
+#f2 .node.here{padding:8px 0;}
+#f2 .rule{margin-top:12px;padding-top:10px;}
+#f2 .word.long{font-size:42px;}
+#f2 .place{margin-top:16px;}
+#f2 .lead{margin-top:11px;}
+#f2 .spring{padding-top:6px;}
+#f2 .week .bowl{--bw:22px;}
+
+#f5 .deck{margin-top:12px;}
+#f5 .sheet{padding:20px var(--sheet-pad) 18px;}
+#f5 .answer{margin-top:16px;}
+#f5 .note{margin-top:13px;padding-top:12px;}
+#f5 .note p{font-size:14.5px;line-height:1.72;}
+#f5 .note p.sub{font-size:12.5px;line-height:1.62;}
+#f5 .srs{margin-top:13px;}
+#f5 .textbtn{min-height:34px;}
+#f5 .nav{padding-top:14px;}
+
+/* 유틸 */
+.mt6{margin-top:6px;}.mt8{margin-top:8px;}.mt10{margin-top:10px;}.mt12{margin-top:12px;}
+.mt14{margin-top:14px;}.mt16{margin-top:16px;}.mt18{margin-top:18px;}.mt20{margin-top:20px;}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms !important;}}
+</style>
+</head>
+<body>
+
+<!-- ═══ SVG 스프라이트 — 그릇 내부 클립 + 탭 아이콘 5종 ═══════════════ -->
+<svg class="sprite" aria-hidden="true" focusable="false"><defs>
+  <clipPath id="bowlIn"><path d="M15.8 30C16.4 50 27.5 72 50 72C72.5 72 83.6 50 84.2 30Z"/></clipPath>
+
+  <!-- 1 Today = 그릇. 홈·승리·주간과 같은 실루엣(전-몸통-굽)을 선으로 축약 -->
+  <symbol id="i-today" viewBox="0 0 24 24">
+    <path d="M2.2 7.4H21.8"/>
+    <path d="M3.2 7.4C3.4 12.5 6.2 18.7 12 18.7C17.8 18.7 20.6 12.5 20.8 7.4"/>
+    <path d="M8.6 17.6V19.9Q8.6 21.2 10 21.2H14Q15.4 21.2 15.4 19.9V17.6"/>
+  </symbol>
+  <!-- 2 Shelf = 책등 3개. 하나는 기대어 서 있다(손그림 결) -->
+  <symbol id="i-shelf" viewBox="0 0 24 24">
+    <path d="M3 21.2H21"/>
+    <path d="M5.4 21.2V9H8.6V21.2"/>
+    <path d="M10.2 21.2V6.8H13.4V21.2"/>
+    <path d="M10.2 12H13.4"/>
+    <path d="M15.2 21.2L16.7 9.5L19.9 10.1L18.8 21.2"/>
+  </symbol>
+  <!-- 3 Hangul = 가. 폰트 글자가 아니라 획(ㄱ 2획 + ㅏ 2획) -->
+  <symbol id="i-hangul" viewBox="0 0 24 24">
+    <path d="M4.2 5.4H10.9"/>
+    <path d="M10.9 5.4L8.3 18.8"/>
+    <path d="M15.4 4.4V19.8"/>
+    <path d="M15.4 12.1H19.6"/>
+  </symbol>
+  <!-- 4 Hanja = 文(4획). 學(16획)은 24px에서 뭉개진다 — 프레임 7 참조 -->
+  <symbol id="i-hanja" viewBox="0 0 24 24">
+    <path d="M12 3.1V5.4"/>
+    <path d="M5.2 7.5H18.8"/>
+    <path d="M15.4 9.6C13 14.6 9.2 18.4 5.4 20.7"/>
+    <path d="M8.8 9.6C11 14.2 14.8 18 18.8 20.5"/>
+  </symbol>
+  <!-- 5 Words = 펼친 책. Shelf(닫힌 책등)와 한눈에 갈라지도록 -->
+  <symbol id="i-words" viewBox="0 0 24 24">
+    <path d="M12 7.4V19.8"/>
+    <path d="M12 7.4C10 5.7 7 5.1 3.4 5.3V17.8C7 17.6 10 18.2 12 19.8"/>
+    <path d="M12 7.4C14 5.7 17 5.1 20.6 5.3V17.8C17 17.6 14 18.2 12 19.8"/>
+    <path d="M14.9 10.4H18.2"/>
+    <path d="M14.9 13.2H17.1"/>
+  </symbol>
+  <!-- 설정(줄+노브) — 기존 Home.svelte 그대로 -->
+  <symbol id="i-gear" viewBox="0 0 24 24">
+    <path d="M4 7h9M17 7h3M4 12h3M11 12h9M4 17h9M17 17h3"/>
+    <circle cx="15" cy="7" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="15" cy="17" r="2"/>
+  </symbol>
+</defs></svg>
+
+<div class="doc">
+  <header class="doc-head">
+    <div>
+      <h1>한입 디자인 보완 시안 v5 — 재질과 구조를 되채우기</h1>
+      <p>v4의 규율(킬 리스트)은 하나도 풀지 않는다. 대신 v4가 덜어내면서 같이 빠져나간 <b>재질</b>(종이 결·붓 잉크·도장)과
+        <b>구조</b>(실제 정보 밀도·판독 가능한 진행·위계)를 되채운다. 색 토큰 값은 한 글자도 바꾸지 않았고, 바뀐 것은 사용 밀도뿐이다.</p>
+    </div>
+    <button class="toggle" id="themeBtn" type="button"><span class="knob"></span><span id="themeLabel">다크로 보기</span></button>
+  </header>
+
+  <div class="system">
+    <div><b>더한 것 1 — 붓 그릇</b><span>44px 선 픽토그램을 폐기하고 전(rim)·몸통·굽(굽)을 가진 가변 두께 잉크 실루엣으로 교체. 밥은 --gold, 100%는 고봉으로 전을 넘는다.</span></div>
+    <div><b>더한 것 2 — 종이 결</b><span>--study-grid 값은 그대로, 같은 선을 2겹으로 깔아 실효 대비를 2배로. 여기에 3px 도트 결을 얹고 <em>카드 안쪽까지</em> 이어 붙였다.</span></div>
+    <div><b>더한 것 3 — 판독 가능한 진행</b><span>8개 미세 원 → <b>n/8 숫자 + 38px 바</b>. 완료 챕터는 숫자 대신 한입 도장.</span></div>
+    <div><b>더한 것 4 — 정보로 채운 여백</b><span>홈 A는 오늘 만날 실제 단어 6개, 홈 B는 72과 안의 내 위치(코스 척추). 카드로 때우지 않는다.</span></div>
+    <div><b>더한 것 5 — 커스텀 탭 아이콘</b><span>이모지 5종 폐기. 그릇·책등·가·文·펼친 책을 같은 획 두께로 직접 그렸다.</span></div>
+    <div><b>지킨 것</b><span>색 좌측 바 없음 · uppercase 없음 · 파스텔 칩 없음 · 카드 중첩 없음 · 「A · B」 병기 없음 · 타이포 낙차 유지 · 화면당 포인트색 2개.</span></div>
+  </div>
+
+  <nav class="toc">
+    <a href="#f1">1 홈 A — 오늘의 상</a>
+    <a href="#f2">2 홈 B — 코스 척추</a>
+    <a href="#f3">3 책장 — 위계·진행</a>
+    <a href="#f4">4 단어 카드 문제</a>
+    <a href="#f5">5 단어 카드 리빌</a>
+    <a href="#f6">6 승리 + 챕터 도장</a>
+    <a href="#f7">7 탭 아이콘 5종</a>
+    <a href="#f8">8 그릇 상태 시퀀스</a>
+  </nav>
+
+  <div class="frames">
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       1 · 홈 A — 오늘의 상 (줌 인: 오늘 무엇을 먹는가)
+       ══════════════════════════════════════════════════════════════════ -->
+  <figure id="f1">
+    <div class="phone"><div class="screen paper">
+
+      <div class="hd">
+        <div class="mark">한입</div>
+        <button class="gear"><svg class="ti" width="20" height="20" viewBox="0 0 24 24"><use href="#i-gear"/></svg></button>
+      </div>
+
+      <div class="pad" style="display:flex;flex-direction:column;flex:1;min-height:0;padding-bottom:14px;">
+        <div class="place">A1 · Chapter 8 · Bite 1</div>
+        <h1 class="word">먹다</h1>
+        <p class="lead">Meet new words by guessing first</p>
+        <p class="lead-ko">새 단어를 추측으로 먼저 만나요</p>
+
+        <!-- 채움 ①: 오늘 만날 실제 단어. 뜻은 감춘다 — 추측이 이 한입의 방식이므로. -->
+        <div class="rule">
+          <div class="sec-head"><b>Today's words</b><span>6</span></div>
+          <div class="sec-ko">오늘 만날 말 · 뜻은 카드에서</div>
+          <div class="wordflow mt10">
+            <b>먹다</b><b>마시다</b><b>가다</b>
+            <b>하다</b><b>말하다</b><b>먹을 수 있다</b>
+          </div>
+        </div>
+
+        <!-- 채움 ②: 이 한입이 끝나면 할 수 있게 되는 것 (bites.json canDo) -->
+        <div class="rule">
+          <p class="canline" style="margin:0">After this bite you can say what you want to do — 먹고 싶어요.</p>
+          <p class="canline-ko" style="margin:0">이 한입이 끝나면 「하고 싶어요」를 쓸 수 있어요</p>
+        </div>
+
+        <!-- 채움 ③: 그릇을 실제 크기로. 86px, 붓 실루엣, 오늘 채운 만큼 금색 밥. -->
+        <div class="rule">
+          <div class="bowlrow">
+            <svg class="bowl" style="--bw:86px" viewBox="0 0 100 100" aria-hidden="true">
+              <g clip-path="url(#bowlIn)"><path class="rice" d="M2 61.5Q50 58.3 98 61.5L98 99 2 99Z"/></g>
+              <path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/>
+              <path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/>
+              <path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/>
+            </svg>
+            <div class="bowlcap">
+              <b>Today's bowl</b>
+              <span>1 of 2 bites · 3-day streak</span>
+              <em>한 입만 더 먹으면 오늘 그릇이 차요</em>
+            </div>
+          </div>
+        </div>
+
+        <!-- 채움 ④: 주간 7일도 같은 실루엣의 그릇 — 동일한 은유가 크기만 바뀐다 -->
+        <div class="mt18">
+          <div class="week">
+            <div class="d"><span>M</span>
+              <svg class="bowl bowl--sm" style="--bw:26px" viewBox="0 0 100 100"><g clip-path="url(#bowlIn)"><path class="rice" d="M2 30Q50 26.8 98 30L98 99 2 99Z"/></g><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+            <div class="d"><span>T</span>
+              <svg class="bowl bowl--sm" style="--bw:26px" viewBox="0 0 100 100"><g clip-path="url(#bowlIn)"><path class="rice" d="M2 30Q50 26.8 98 30L98 99 2 99Z"/></g><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+            <div class="d"><span>W</span>
+              <svg class="bowl bowl--sm" style="--bw:26px" viewBox="0 0 100 100"><g clip-path="url(#bowlIn)"><path class="rice" d="M2 51Q50 47.8 98 51L98 99 2 99Z"/></g><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+            <div class="d today"><span>T</span>
+              <svg class="bowl bowl--sm" style="--bw:26px" viewBox="0 0 100 100"><g clip-path="url(#bowlIn)"><path class="rice" d="M2 61.5Q50 58.3 98 61.5L98 99 2 99Z"/></g><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+            <div class="d"><span>F</span>
+              <svg class="bowl bowl--sm bowl--muted" style="--bw:26px" viewBox="0 0 100 100"><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+            <div class="d"><span>S</span>
+              <svg class="bowl bowl--sm bowl--muted" style="--bw:26px" viewBox="0 0 100 100"><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+            <div class="d"><span>S</span>
+              <svg class="bowl bowl--sm bowl--muted" style="--bw:26px" viewBox="0 0 100 100"><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+          </div>
+        </div>
+
+        <div class="spring" style="padding-top:11px">
+          <button class="cta"><b>Start</b><i>시작하기</i></button>
+        </div>
+      </div>
+
+      <nav class="tabbar">
+        <button class="on"><svg class="ti" viewBox="0 0 24 24"><use href="#i-today"/></svg><span class="t-label">Today</span></button>
+        <button><svg class="ti" viewBox="0 0 24 24"><use href="#i-shelf"/></svg><span class="t-label">Shelf</span></button>
+        <button><svg class="ti" viewBox="0 0 24 24"><use href="#i-hangul"/></svg><span class="t-label">Hangul</span></button>
+        <button><svg class="ti ti--dense" viewBox="0 0 24 24"><use href="#i-hanja"/></svg><span class="t-label">Hanja</span></button>
+        <button><svg class="ti" viewBox="0 0 24 24"><use href="#i-words"/></svg><span class="t-label">Words</span></button>
+      </nav>
+
+    </div></div>
+    <figcaption>
+      <b>1 · 홈 A — 오늘의 상</b>
+      <p>500px 공백을 <b>오늘 만날 실제 단어 6개 + 이 한입의 결과 문장 + 86px 그릇</b>으로 채웠다. 단어는 뜻을 감춘 한국어만 —
+        정보를 주면서도 「추측으로 먼저 만나요」라는 학습 설계를 깨지 않는다. 카드 한 장 더 얹은 게 아니라 bites.json이 이미 가진 데이터를 꺼낸 것이다.</p>
+      <p>그릇은 44px 픽토그램에서 86px 붓 실루엣으로 복원됐고, 주간 7일도 같은 실루엣의 26px 그릇이 실제로 차오른다 — 은유가 크기만 바꿔 반복된다.</p>
+      <span class="fix">해결: 결함 1 · 2 · 3 · 6 · 7</span>
+      <p class="ref">데이터 bites.json(8과 단어1 6장) · bites-index.json · stats.js(bowlFill·weekActivity)</p>
+    </figcaption>
+  </figure>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       2 · 홈 B — 코스 척추 (줌 아웃: 72과 중 나는 어디인가)
+       ══════════════════════════════════════════════════════════════════ -->
+  <figure id="f2">
+    <div class="phone"><div class="screen paper">
+
+      <div class="hd">
+        <div class="mark">한입</div>
+        <button class="gear"><svg class="ti" width="20" height="20" viewBox="0 0 24 24"><use href="#i-gear"/></svg></button>
+      </div>
+
+      <div class="pad" style="display:flex;flex-direction:column;flex:1;min-height:0;padding-bottom:14px;">
+        <div class="place">A1 · Chapter 8 of 72</div>
+        <h1 class="word long">-고 싶어요</h1>
+        <p class="lead">Spot the grammar pattern yourself</p>
+        <p class="lead-ko">문법 규칙을 직접 찾아요</p>
+
+        <!-- 채움: 코스 척추. 지나온 챕터엔 도장, 지금 자리엔 그릇, 앞은 빈 링. -->
+        <div class="rule">
+          <div class="sec-head"><b>Where you are</b><span>A1 · 38/88 bites</span></div>
+          <div class="sec-ko">지금 어디쯤 왔는지</div>
+
+          <div class="spine deep mt12">
+            <div class="node done">
+              <span class="marker"><span class="seal seal--xs">한입</span></span>
+              <span class="num">6</span>
+              <span class="ttl"><b>N에 · N에서</b><span>Destinations and static locations</span></span>
+            </div>
+            <div class="node done">
+              <span class="marker"><span class="seal seal--xs">한입</span></span>
+              <span class="num">7</span>
+              <span class="ttl"><b>도 vs 만 · (으)로</b><span>Adding one more item to an order</span></span>
+            </div>
+
+            <div class="node here">
+              <span class="marker">
+                <svg class="bowl bowl--sm" style="--bw:34px" viewBox="0 0 100 100"><g clip-path="url(#bowlIn)"><path class="rice" d="M2 66.8Q50 63.6 98 66.8L98 99 2 99Z"/></g><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg>
+              </span>
+              <span class="num">8</span>
+              <span class="ttl">
+                <b>-고 싶어요 · -(으)ㄹ 수 있어요 / 없어요</b>
+                <span>Say what you want to do, and what you can or cannot do</span>
+              </span>
+              <span class="prog"><span class="n">1<i>/8</i></span><span class="bar"><b style="width:12.5%"></b></span></span>
+            </div>
+
+            <div class="node side">
+              <span class="marker"><span class="dot"></span></span>
+              <span class="kindlab">Snack</span>
+              <span class="ttl"><b>Food Basics</b></span>
+              <span class="st" style="font-size:11px;font-weight:650;color:var(--ink-3)">16 words</span>
+            </div>
+
+            <div class="node">
+              <span class="marker"><span class="dot"></span></span>
+              <span class="num">9</span>
+              <span class="ttl"><b>V아/어 주세요 vs V아/어도 돼요?</b><span>Asking someone to do something</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="rule">
+          <div class="sec-head"><b>This week</b><span>3-day streak</span></div>
+          <div class="week mt10">
+            <div class="d"><span>M</span>
+              <svg class="bowl bowl--sm" style="--bw:24px" viewBox="0 0 100 100"><g clip-path="url(#bowlIn)"><path class="rice" d="M2 30Q50 26.8 98 30L98 99 2 99Z"/></g><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+            <div class="d"><span>T</span>
+              <svg class="bowl bowl--sm" style="--bw:24px" viewBox="0 0 100 100"><g clip-path="url(#bowlIn)"><path class="rice" d="M2 30Q50 26.8 98 30L98 99 2 99Z"/></g><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+            <div class="d"><span>W</span>
+              <svg class="bowl bowl--sm" style="--bw:24px" viewBox="0 0 100 100"><g clip-path="url(#bowlIn)"><path class="rice" d="M2 51Q50 47.8 98 51L98 99 2 99Z"/></g><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+            <div class="d today"><span>T</span>
+              <svg class="bowl bowl--sm" style="--bw:24px" viewBox="0 0 100 100"><g clip-path="url(#bowlIn)"><path class="rice" d="M2 66.8Q50 63.6 98 66.8L98 99 2 99Z"/></g><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+            <div class="d"><span>F</span>
+              <svg class="bowl bowl--sm bowl--muted" style="--bw:24px" viewBox="0 0 100 100"><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+            <div class="d"><span>S</span>
+              <svg class="bowl bowl--sm bowl--muted" style="--bw:24px" viewBox="0 0 100 100"><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+            <div class="d"><span>S</span>
+              <svg class="bowl bowl--sm bowl--muted" style="--bw:24px" viewBox="0 0 100 100"><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+          </div>
+        </div>
+
+        <div class="spring" style="padding-top:4px">
+          <button class="cta"><b>Start</b><i>시작하기</i></button>
+        </div>
+      </div>
+
+      <nav class="tabbar">
+        <button class="on"><svg class="ti" viewBox="0 0 24 24"><use href="#i-today"/></svg><span class="t-label">Today</span></button>
+        <button><svg class="ti" viewBox="0 0 24 24"><use href="#i-shelf"/></svg><span class="t-label">Shelf</span></button>
+        <button><svg class="ti" viewBox="0 0 24 24"><use href="#i-hangul"/></svg><span class="t-label">Hangul</span></button>
+        <button><svg class="ti ti--dense" viewBox="0 0 24 24"><use href="#i-hanja"/></svg><span class="t-label">Hanja</span></button>
+        <button><svg class="ti" viewBox="0 0 24 24"><use href="#i-words"/></svg><span class="t-label">Words</span></button>
+      </nav>
+
+    </div></div>
+    <figcaption>
+      <b>2 · 홈 B — 코스 척추 (대안: 다른 채움 전략)</b>
+      <p>A가 <b>오늘 안쪽</b>을 보여준다면 B는 <b>코스 안쪽</b>을 보여준다. 세로 척추 하나에 지나온 챕터(도장) · 지금 자리(차오르는 그릇) ·
+        건너뛸 수 있는 간식 · 다음 챕터를 얹어서, 72과짜리 코스에서 오늘이 어디쯤인지가 한 화면에 잡힌다.</p>
+      <p>여백을 카드로 때우지 않고 <b>위치 정보</b>로 채웠다. 도장이 여기서 여권 스탬프처럼 쌓이므로 「완료」가 숫자가 아니라 흔적으로 남는다.</p>
+      <span class="fix">해결: 결함 1 · 2 · 3 · 7</span>
+      <p class="ref">데이터 bites-index.json(6·7·8·9과, Food Basics 간식) · store.js(done) · GrammarCollection.svelte(도장)</p>
+    </figcaption>
+  </figure>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       3 · 책장 — 위계 교정 + 판독 가능한 진행
+       ══════════════════════════════════════════════════════════════════ -->
+  <figure id="f3">
+    <div class="phone"><div class="screen paper">
+
+      <div class="hd" style="padding-bottom:0"><div class="mark">Shelf</div></div>
+
+      <div class="pad" style="flex:1;min-height:0;overflow:hidden;padding-bottom:8px;">
+        <p style="margin:5px 0 0;font-size:12.5px;font-weight:650;color:var(--ink-3)">Browse all 72 chapters by level</p>
+        <div class="search">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          Search number or title
+        </div>
+
+        <div class="mt16">
+          <div class="entry"><b>Grammar collection</b><span class="s">모은 문법 카드</span><span class="n">14/72</span></div>
+          <div class="entry"><b>Korea guides</b><span class="s">Arrival, transport, food, emergencies</span><span class="n">20</span></div>
+        </div>
+
+        <div class="mt18">
+          <div class="lvl">
+            <div class="lvl-head">
+              <span class="m"><b>A1 — Getting started</b><span>Chapters 1–11</span></span>
+              <span class="prog"><span class="n">38<i>/88</i></span><span class="bar"><b style="width:43%"></b></span></span>
+              <span class="chev">⌄</span>
+            </div>
+
+            <!-- 완료 챕터: 숫자+바 대신 도장. 스캔할 때 "끝난 것"이 즉시 튄다. -->
+            <div class="chap done">
+              <span class="num">1</span>
+              <span class="m">
+                <b>자음 (Consonants) · 모음 (Vowels)</b>
+                <span class="goal">Read any syllable block by identifying its consonant and vowel components</span>
+              </span>
+              <span class="right"><span class="seal seal--xs">한입</span></span>
+            </div>
+
+            <div class="chap done">
+              <span class="num">7</span>
+              <span class="m">
+                <b>도 vs 만 · (으)로</b>
+                <span class="goal">Use 도 to add one more item to an order ('and this too, please')</span>
+              </span>
+              <span class="right"><span class="seal seal--xs">한입</span></span>
+            </div>
+
+            <!-- 간식: 배경 없음 · 들여쓰기 · 약한 잉크. 본편보다 반드시 가벼워야 한다. -->
+            <div class="subrow snack">
+              <span class="kind">Snack</span>
+              <span class="t">Food Basics</span>
+              <span class="st">16 words</span>
+            </div>
+            <div class="subrow snack">
+              <span class="kind">Snack</span>
+              <span class="t">Reacting &amp; Surprise</span>
+              <span class="st">10 words</span>
+            </div>
+
+            <!-- 진행 중 챕터: n/8 + 38px 바. 8개 미세 원의 자리를 대신한다. -->
+            <div class="chap">
+              <span class="num">8</span>
+              <span class="m">
+                <b>-고 싶어요 · -(으)ㄹ 수 있어요 / 없어요</b>
+                <span class="goal">Use 고 싶어요 correctly to express what you want or desire to do</span>
+              </span>
+              <span class="right"><span class="prog"><span class="n">5<i>/8</i></span><span class="bar"><b style="width:62.5%"></b></span></span></span>
+            </div>
+
+            <div class="subrow"><span class="kind">Words</span><span class="t">단어 Words 1 · 먹다~</span><span class="st">Done</span></div>
+            <div class="subrow"><span class="kind">Grammar</span><span class="t">문법 Grammar · -고 싶어요</span><span class="st">Done</span></div>
+            <div class="subrow"><span class="kind">Words</span><span class="t">단어 Words 2 · 맵다~</span><span class="st">7 cards</span></div>
+            <div class="subrow"><span class="kind">Boss</span><span class="t">보스 Boss bite · 다 걸어요</span><span class="st">3 cards</span></div>
+
+            <div class="chap">
+              <span class="num">9</span>
+              <span class="m">
+                <b>V아/어 주세요 vs V아/어도 돼요? · V지 마세요</b>
+                <span class="goal">Ask someone to do something with V아/어 주세요 (please do)</span>
+              </span>
+              <span class="right"><span class="prog prog--off"><span class="n">0<i>/8</i></span><span class="bar"></span></span></span>
+            </div>
+
+            <div class="chap">
+              <span class="num">10</span>
+              <span class="m">
+                <b>N부터 / N까지 · V아/어 주세요</b>
+                <span class="goal">Ask where something is using 이/가 어디예요? and 이/가 있어요?</span>
+              </span>
+              <span class="right"><span class="prog prog--off"><span class="n">0<i>/8</i></span><span class="bar"></span></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="tabbar">
+        <button><svg class="ti" viewBox="0 0 24 24"><use href="#i-today"/></svg><span class="t-label">Today</span></button>
+        <button class="on"><svg class="ti" viewBox="0 0 24 24"><use href="#i-shelf"/></svg><span class="t-label">Shelf</span></button>
+        <button><svg class="ti" viewBox="0 0 24 24"><use href="#i-hangul"/></svg><span class="t-label">Hangul</span></button>
+        <button><svg class="ti ti--dense" viewBox="0 0 24 24"><use href="#i-hanja"/></svg><span class="t-label">Hanja</span></button>
+        <button><svg class="ti" viewBox="0 0 24 24"><use href="#i-words"/></svg><span class="t-label">Words</span></button>
+      </nav>
+
+    </div></div>
+    <figcaption>
+      <b>3 · 책장 — 위계 교정과 판독 가능한 진행</b>
+      <p><b>위계 역전 수정</b>: 간식 행에서 wash 배경을 제거하고 들여쓰기(32px) · 13.5px · --ink-2로 종속시켰다. 본편 챕터 행은 15px/820 · 14px 패딩 ·
+        2줄 목표로 더 무거워졌다. 이제 스크롤하면 챕터가 먼저 읽히고 간식은 그 사이에 낀 부속으로 읽힌다.</p>
+      <p><b>진행 표시</b>: 8개 미세 원 → 완료는 <b>한입 도장</b>, 진행 중은 <b>5/8 + 38px 바</b>, 미착수는 흐린 0/8. 목표 문구는 2줄까지 흐르게 풀어 「…identifying」 잘림이 사라졌다.</p>
+      <span class="fix">해결: 결함 3 · 4 · 5 · 7</span>
+      <p class="ref">데이터 bites-index.json(1·7·8·9·10과, Food Basics·Reacting &amp; Surprise) · ShelfLevelGroup.svelte</p>
+    </figcaption>
+  </figure>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       4 · 단어 카드 — 문제 상태 (종이 재질)
+       ══════════════════════════════════════════════════════════════════ -->
+  <figure id="f4">
+    <div class="phone"><div class="screen paper">
+      <div class="bp">
+        <div class="playbar">
+          <span class="x">×</span>
+          <span class="dots"><i class="done"></i><i class="done"></i><i class="now"></i><i></i><i></i><i></i><i></i></span>
+          <span class="count">3/7</span>
+        </div>
+
+        <div class="deck">
+          <div class="sheet tooth">
+            <div class="stem">오늘은 못 가요. 내일 <span class="tgt">갈</span> 수 있어요.</div>
+            <div class="ask">밑줄 친 말은 무슨 뜻일까요?</div>
+            <div class="ask-en">What does the highlighted word mean?</div>
+
+            <div class="opts">
+              <div class="opt"><span>to eat</span></div>
+              <div class="opt"><span>to go</span></div>
+              <div class="opt"><span>to drink</span></div>
+            </div>
+
+            <div class="textbtn" style="margin-top:4px">Don't know — just show me</div>
+          </div>
+        </div>
+
+        <div class="nav"><button class="cta off"><b>Next</b><i>다음</i></button></div>
+      </div>
+
+      <nav class="tabbar" style="visibility:hidden;height:0;padding:0;border:0"></nav>
+    </div></div>
+    <figcaption>
+      <b>4 · 단어 카드 문제 — 종이가 종이로 보이게</b>
+      <p>격자 선을 같은 토큰으로 <b>2겹</b> 깔아 실효 대비를 약 4.5% → 9%로 올리고, 3px 도트 「결」을 얹어 종이 섬유감을 만들었다.
+        결정적으로 그 결을 <b>카드 안쪽까지</b> 이어 붙여서 카드가 흰 사각형이 아니라 책상 위에 놓인 낱장으로 읽힌다.</p>
+      <p>뒤에 겹친 두 장은 각각 -0.35° / +0.5° 어긋나 있다 — UI 스택이 아니라 흐트러진 종이 더미. 색 토큰 값은 하나도 바뀌지 않았고 사용 밀도만 올렸다.</p>
+      <span class="fix">해결: 결함 6</span>
+      <p class="ref">데이터 bites.json(8과 가다 · 오늘은 못 가요. 내일 갈 수 있어요.) · BitePlayer.svelte(.bp·.deck·.sheet)</p>
+    </figcaption>
+  </figure>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       5 · 단어 카드 — 리빌 (잉크 번짐 모션)
+       ══════════════════════════════════════════════════════════════════ -->
+  <figure id="f5">
+    <div class="phone"><div class="screen paper">
+      <div class="bp" id="revealStage">
+        <div class="playbar">
+          <span class="x">×</span>
+          <span class="dots"><i class="done"></i><i class="done"></i><i class="now"></i><i></i><i></i><i></i><i></i></span>
+          <span class="count">3/7</span>
+        </div>
+
+        <div class="deck">
+          <div class="sheet tooth">
+            <div class="stem small">오늘은 못 가요. 내일 <span class="tgt">갈</span> 수 있어요.</div>
+            <div class="stem-en">I can't go today. I can go tomorrow.</div>
+
+            <div class="opts" style="margin-top:16px">
+              <div class="opt dim"><span>to eat</span></div>
+              <div class="opt correct"><span>to go</span><span class="mk good">Correct</span></div>
+              <div class="opt dim"><span>to drink</span></div>
+            </div>
+
+            <div class="answer">
+              <div class="answer-head">
+                <span class="hero">가다</span>
+                <span class="dot-audio"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H3v6h3l5 4V5z"/><path d="M16 9a4 4 0 010 6"/></svg></span>
+                <span class="star">★</span>
+              </div>
+              <div class="gloss">to go</div>
+              <div class="rom">gada</div>
+              <div class="pos">verb</div>
+
+              <div class="note">
+                <p>Use 에 for destination: 학교에 가요, 집에 가요. Do not use 에서 for destination.</p>
+                <p class="sub">Two patterns in one sentence: 못 가요 (blocked today) vs 갈 수 있어요 (open tomorrow)</p>
+              </div>
+
+              <div class="srs">
+                Next review tomorrow
+                <span>내일 다시 나와요</span>
+              </div>
+              <div class="textbtn">See this word in the wordbook →</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav"><button class="cta"><b>Next</b><i>다음</i></button></div>
+      </div>
+
+      <nav class="tabbar" style="visibility:hidden;height:0;padding:0;border:0"></nav>
+    </div></div>
+    <figcaption>
+      <b>5 · 단어 카드 리빌 — 모션 하나: 잉크 번짐</b>
+      <p>정답 행에 <b>--good-soft</b>가 탭 지점(왼쪽 16%)에서 종이에 스미듯 460ms 동안 퍼진다. 채도 있는 배경 칠이 아니라 <b>번짐</b>이라
+        「먹이 종이에 앉는」 재질 사건으로 읽히고, 끝나면 다시 1px 선 행으로 가라앉는다. 오답 표시는 글자색만 --bad로 — 배경·테두리로 번지지 않는다.</p>
+      <p>뉘앙스는 좌측 색 바나 캡 라벨 없이 선 하나 아래 영어 본문으로 흐른다(킬 리스트 3항 준수).
+        <button class="toggle" id="replayBtn" type="button" style="height:30px;padding:0 12px;font-size:12px;margin-top:6px"><span class="knob"></span>번짐 다시 재생</button></p>
+      <span class="fix">해결: 결함 6 + 모션 보강</span>
+      <p class="ref">데이터 bites.json(8과 가다) · GuessCard.svelte · srs.js(1·3·7일 사다리)</p>
+    </figcaption>
+  </figure>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       6 · 승리 화면 — 110px 그릇 + 챕터 도장
+       ══════════════════════════════════════════════════════════════════ -->
+  <figure id="f6">
+    <div class="phone"><div class="screen paper">
+      <div class="win">
+        <div class="win-head">
+          <svg class="bowl bowl--fillup" style="--bw:112px" viewBox="0 0 100 100" aria-hidden="true">
+            <g clip-path="url(#bowlIn)"><path class="rice" d="M2 30Q50 26.8 98 30L98 99 2 99Z"/></g>
+            <path class="rice heap" d="M22 31C30 8.5 70 8.5 78 31Z"/>
+            <path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/>
+            <path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/>
+            <path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/>
+          </svg>
+          <h2>Bite done!</h2>
+          <p class="score">5 of 6 on your own</p>
+          <p class="meta">4-day streak</p>
+          <p class="cando">Use 고 싶어요 correctly to express what you want or desire to do</p>
+        </div>
+
+        <!-- 도장 확장: 챕터를 다 먹으면 여권 스탬프가 찍힌다 -->
+        <div class="sealrow">
+          <span class="seal seal--lg seal--stamp">한입<em>CH 8</em></span>
+          <span class="t">
+            <b>Chapter 8 sealed</b>
+            <span>8과를 다 먹었어요 · A1에서 7번째 도장</span>
+          </span>
+        </div>
+
+        <div class="misses">
+          <div class="misses-head"><b>Mistakes</b><span class="n">1</span></div>
+          <div class="miss">
+            <div class="miss-top">
+              <span class="miss-ko">마시다</span>
+              <span class="miss-en">to drink</span>
+            </div>
+            <div class="said">You said<b>to eat</b></div>
+          </div>
+          <p class="misses-ko">틀렸던 카드는 곧 복습으로 다시 나와요</p>
+        </div>
+
+        <!-- 「한 입 더」가 무엇인지 미리 말해 준다 — 승리 화면 아래 공백을 정보로 채운다 -->
+        <div class="nextrow">
+          <span class="t">
+            <b>Next: Food Basics</b>
+            <span>Snack after Chapter 8 · 16 words</span>
+          </span>
+          <span class="n">16</span>
+        </div>
+
+        <div class="spring" style="padding-top:18px">
+          <button class="cta"><b>One more bite</b><i>한 입 더</i></button>
+          <div class="ghost" style="padding-top:10px">Done for today</div>
+        </div>
+      </div>
+
+      <nav class="tabbar" style="visibility:hidden;height:0;padding:0;border:0"></nav>
+    </div></div>
+    <figcaption>
+      <b>6 · 승리 화면 — 그릇을 다 채우고, 도장을 찍는다</b>
+      <p>112px 붓 그릇에 밥이 <b>고봉</b>으로 전을 넘고(=오늘 목표 달성), 전 획이 밥 위를 가로질러 「퍼담은」 상태가 된다.
+        기존 fillup 모션(밥이 1.05초에 걸쳐 차오르는)은 그대로 두고, 김·반짝임 같은 장식은 넣지 않았다 — 「고봉」 자체가 목표 달성 신호다.</p>
+      <p>챕터를 다 먹으면 <b>한입 도장</b>이 340ms 만에 내려찍힌다(scale 1.7 → 0.94 → 1). 지금 문법 수집에만 있던 모티프를
+        여권 스탬프처럼 챕터 단위로 확장한 것 — 완료가 숫자가 아니라 <b>흔적</b>으로 남는다.</p>
+      <span class="fix">해결: 결함 2 + 도장 모티프 확장</span>
+      <p class="ref">데이터 bites-index.json(8과 goal) · BitePlayer.svelte(win·misses) · GrammarCollection.svelte(.seal)</p>
+    </figcaption>
+  </figure>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       7 · 탭 아이콘 5종 비교
+       ══════════════════════════════════════════════════════════════════ -->
+  <figure id="f7" class="wide">
+    <div class="cmp">
+      <div class="cmp-row" style="background:var(--bg)">
+        <div class="cmp-lab"><b>현재 — 이모지 + 글자 혼합</b><span>🍚 📚 가 學 📖 · 화면의 유일한 이모지 잔재</span></div>
+        <nav class="tabbar tabbar--emoji" style="border-radius:14px;border:1px solid var(--line)">
+          <button class="on"><span class="ico">🍚</span><span class="t-label">Today</span></button>
+          <button><span class="ico">📚</span><span class="t-label">Shelf</span></button>
+          <button><span class="ico">가</span><span class="t-label">Hangul</span></button>
+          <button><span class="ico">學</span><span class="t-label">Hanja</span></button>
+          <button><span class="ico">📖</span><span class="t-label">Words</span></button>
+        </nav>
+        <p style="margin:10px 0 0;font-size:12px;font-weight:650;line-height:1.6;color:var(--ink-3)">
+          문제: 이모지 3개는 OS가 그린 <b>컬러 비트맵</b>이라 무채색 예산 밖이고, 나머지 2개는 <b>본문 폰트 글자</b>라 광학 두께가 따로 논다.
+          다섯 칸이 세 개의 다른 그리기 시스템으로 그려져 있다.
+        </p>
+      </div>
+
+      <div class="cmp-row" style="background:var(--bg)">
+        <div class="cmp-lab"><b>신규 — 직접 그린 SVG 선 아이콘 5종</b><span>24×24 · stroke 1.7(文만 1.55) · round cap/join · currentColor</span></div>
+        <nav class="tabbar" style="border-radius:14px;border:1px solid var(--line)">
+          <button class="on"><svg class="ti" viewBox="0 0 24 24"><use href="#i-today"/></svg><span class="t-label">Today</span></button>
+          <button><svg class="ti" viewBox="0 0 24 24"><use href="#i-shelf"/></svg><span class="t-label">Shelf</span></button>
+          <button><svg class="ti" viewBox="0 0 24 24"><use href="#i-hangul"/></svg><span class="t-label">Hangul</span></button>
+          <button><svg class="ti ti--dense" viewBox="0 0 24 24"><use href="#i-hanja"/></svg><span class="t-label">Hanja</span></button>
+          <button><svg class="ti" viewBox="0 0 24 24"><use href="#i-words"/></svg><span class="t-label">Words</span></button>
+        </nav>
+        <p style="margin:10px 0 0;font-size:12px;font-weight:650;line-height:1.6;color:var(--ink-3)">
+          다섯 칸이 하나의 그리기 시스템 — 같은 획 두께, 같은 캡, 같은 currentColor. 선택 시 --accent-deep 하나만 바뀐다.
+        </p>
+      </div>
+
+      <div class="cmp-row" style="background:var(--bg)">
+        <div class="cmp-lab"><b>확대 60px — 설계 근거</b><span>한국적이되 유아틱하지 않게: 캐릭터·스파클·원색 없음</span></div>
+        <div class="big-icons">
+          <div class="cell">
+            <svg class="ti" viewBox="0 0 24 24"><use href="#i-today"/></svg>
+            <span class="nm">Today · 그릇</span>
+            <span class="why">홈·승리·주간의 그릇과 <b>같은 실루엣</b>(전–몸통–굽)을 선으로 축약. 탭을 누르는 행위 = 그릇을 채우는 행위.</span>
+          </div>
+          <div class="cell">
+            <svg class="ti" viewBox="0 0 24 24"><use href="#i-shelf"/></svg>
+            <span class="nm">Shelf · 책등</span>
+            <span class="why">정면에서 본 책등 3개, 한 권은 기대어 서 있다. 기울기 하나가 「손으로 꽂은 책장」의 결을 만든다.</span>
+          </div>
+          <div class="cell">
+            <svg class="ti" viewBox="0 0 24 24"><use href="#i-hangul"/></svg>
+            <span class="nm">Hangul · 가</span>
+            <span class="why">폰트 글자가 아니라 <b>획</b>으로 그렸다(ㄱ 2획 + ㅏ 2획). 이 탭이 「글자가 어떻게 만들어지는가」임을 형태가 말한다.</span>
+          </div>
+          <div class="cell">
+            <svg class="ti ti--dense" viewBox="0 0 24 24"><use href="#i-hanja"/></svg>
+            <span class="nm">Hanja · 文</span>
+            <span class="why">4획. 한자 탭의 의미(한문·글자)를 그대로 지키면서 24px에서 살아남는 유일한 후보. 아래 기각 사유 참조.</span>
+          </div>
+          <div class="cell">
+            <svg class="ti" viewBox="0 0 24 24"><use href="#i-words"/></svg>
+            <span class="nm">Words · 펼친 책</span>
+            <span class="why">Shelf가 <b>닫힌 책등</b>이면 Words는 <b>펼친 책</b> — 둘이 형태로 갈린다. 오른쪽 두 줄은 표제어 줄.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cmp-row" style="background:var(--bg)">
+        <div class="cmp-lab"><b>기각 — 學을 그대로 아이콘화</b><span>지시안의 제안 중 유일하게 대체한 항목</span></div>
+        <div class="reject">
+          <div class="spec"><span class="glyph" style="font-size:23px;width:34px;height:34px">學</span><span class="cap">學 · 23px</span></div>
+          <div class="spec"><span class="glyph" style="font-size:60px;width:70px;height:70px">學</span><span class="cap">學 · 60px</span></div>
+          <div class="spec"><svg class="ti ti--dense" viewBox="0 0 24 24" style="width:34px;height:34px"><use href="#i-hanja"/></svg><span class="cap">文 · 23px 상당</span></div>
+          <div class="spec"><svg class="ti ti--dense" viewBox="0 0 24 24" style="width:70px;height:70px"><use href="#i-hanja"/></svg><span class="cap">文 · 60px</span></div>
+          <p class="txt">學은 <b>16획</b>이다. 60px에서는 아름답지만 23px에서는 위쪽 다섯 획이 한 덩어리로 뭉개져
+            나머지 네 아이콘(3~5획)과 광학 밀도가 두 배 이상 벌어진다. 획을 쳐내 단순화하면 <b>学</b>(일본 신자체)이 되는데 이건 한국어 앱에서 틀린 글자다.
+            그래서 <b>文</b>(4획)으로 간다 — 한자 탭의 의미(한문·글자)를 그대로 지키면서 24px에서 다섯 칸의 밀도가 맞는다.</p>
+        </div>
+      </div>
+    </div>
+    <figcaption>
+      <b>7 · 탭바 아이콘 5종 — 이모지 제거</b>
+      <p>세 개의 서로 다른 그리기 시스템(컬러 이모지 · 본문 폰트 글자 · 없음)을 <b>하나의 선 시스템</b>으로 통일했다.
+        모두 24×24, stroke 1.7, currentColor — 광학 밀도가 높은 文만 1.55로 보정했다.</p>
+      <p>Today 아이콘은 홈·승리·주간의 그릇과 같은 실루엣을 공유한다. 은유가 탭바까지 내려온다는 뜻이고, 이게 아이콘을 「장식」이 아니라 <b>시스템의 일부</b>로 만든다.</p>
+      <span class="fix">해결: 결함 7 · 2</span>
+      <p class="ref">참조 App.svelte(TABS·.tabs·.ico)</p>
+    </figcaption>
+  </figure>
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       8 · 그릇 상태 시퀀스
+       ══════════════════════════════════════════════════════════════════ -->
+  <figure id="f8" class="wide">
+    <div class="seq">
+      <div class="seq-row">
+        <div class="cell">
+          <svg class="bowl" style="--bw:132px" viewBox="0 0 100 100" aria-hidden="true">
+            <path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/>
+            <path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/>
+            <path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/>
+          </svg>
+          <b>0% — 빈 그릇</b>
+          <span>오늘 아직 한 입도 안 먹음.<br>선만 남고 금색은 없다.</span>
+        </div>
+        <div class="cell">
+          <svg class="bowl" style="--bw:132px" viewBox="0 0 100 100" aria-hidden="true">
+            <g clip-path="url(#bowlIn)"><path class="rice" d="M2 55.2Q50 52 98 55.2L98 99 2 99Z"/></g>
+            <path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/>
+            <path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/>
+            <path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/>
+          </svg>
+          <b>40% — 먹는 중</b>
+          <span>밥 표면은 평면이 아니라 살짝 볼록하다.<br>bowlFill(count, dailyGoal) 그대로.</span>
+        </div>
+        <div class="cell">
+          <svg class="bowl bowl--fillup" style="--bw:132px" viewBox="0 0 100 100" aria-hidden="true">
+            <g clip-path="url(#bowlIn)"><path class="rice" d="M2 30Q50 26.8 98 30L98 99 2 99Z"/></g>
+            <path class="rice heap" d="M22 31C30 8.5 70 8.5 78 31Z"/>
+            <path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/>
+            <path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/>
+            <path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/>
+          </svg>
+          <b>100% — 고봉</b>
+          <span>밥이 전을 넘고, 전 획이 그 위를 가로지른다.<br>「고봉」 자체가 목표 달성 신호다.</span>
+        </div>
+      </div>
+
+      <div style="margin-top:26px;padding-top:20px;border-top:1px solid var(--line)">
+        <div class="cmp-lab"><b>주간 7개 — 실제로 차오르는 그릇</b><span>동일 실루엣 26px · 현재 코드의 20×15px 둥근 사각형 pip을 대체</span></div>
+        <div class="week" style="max-width:330px;margin:14px auto 0">
+          <div class="d"><span>M</span><svg class="bowl bowl--sm" style="--bw:30px" viewBox="0 0 100 100"><g clip-path="url(#bowlIn)"><path class="rice" d="M2 30Q50 26.8 98 30L98 99 2 99Z"/></g><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+          <div class="d"><span>T</span><svg class="bowl bowl--sm" style="--bw:30px" viewBox="0 0 100 100"><g clip-path="url(#bowlIn)"><path class="rice" d="M2 30Q50 26.8 98 30L98 99 2 99Z"/></g><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+          <div class="d"><span>W</span><svg class="bowl bowl--sm" style="--bw:30px" viewBox="0 0 100 100"><g clip-path="url(#bowlIn)"><path class="rice" d="M2 51Q50 47.8 98 51L98 99 2 99Z"/></g><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+          <div class="d today"><span>T</span><svg class="bowl bowl--sm" style="--bw:30px" viewBox="0 0 100 100"><g clip-path="url(#bowlIn)"><path class="rice" d="M2 61.5Q50 58.3 98 61.5L98 99 2 99Z"/></g><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+          <div class="d"><span>F</span><svg class="bowl bowl--sm bowl--muted" style="--bw:30px" viewBox="0 0 100 100"><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+          <div class="d"><span>S</span><svg class="bowl bowl--sm bowl--muted" style="--bw:30px" viewBox="0 0 100 100"><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+          <div class="d"><span>S</span><svg class="bowl bowl--sm bowl--muted" style="--bw:30px" viewBox="0 0 100 100"><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg></div>
+        </div>
+      </div>
+
+      <div style="margin-top:26px;padding-top:20px;border-top:1px solid var(--line)">
+        <div class="cmp-lab"><b>축척 검증 — 같은 패스, 획만 광학 보정</b><span>132 / 86 / 34 / 26 / 23px(탭)</span></div>
+        <div class="scale-row" style="margin-top:16px">
+          <div class="cell">
+            <svg class="bowl" style="--bw:86px" viewBox="0 0 100 100"><g clip-path="url(#bowlIn)"><path class="rice" d="M2 55.2Q50 52 98 55.2L98 99 2 99Z"/></g><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg>
+            <span class="cap">86px 홈</span>
+          </div>
+          <div class="cell">
+            <svg class="bowl bowl--sm" style="--bw:34px" viewBox="0 0 100 100"><g clip-path="url(#bowlIn)"><path class="rice" d="M2 55.2Q50 52 98 55.2L98 99 2 99Z"/></g><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg>
+            <span class="cap">34px 척추</span>
+          </div>
+          <div class="cell">
+            <svg class="bowl bowl--sm" style="--bw:26px" viewBox="0 0 100 100"><g clip-path="url(#bowlIn)"><path class="rice" d="M2 55.2Q50 52 98 55.2L98 99 2 99Z"/></g><path class="ink" d="M10 30C10.6 52 22 78 50 78C78 78 89.4 52 90 30L84.2 30C83.6 50 72.5 72 50 72C27.5 72 16.4 50 15.8 30Z"/><path class="ink" d="M6.5 29.4C22 25 78 25 93.5 28.6C78 32.8 22 32.8 6.5 29.4Z"/><path class="foot" d="M38 70V80Q38 83 41.5 83H58.5Q62 83 62 80V70"/></svg>
+            <span class="cap">26px 주간</span>
+          </div>
+          <div class="cell">
+            <svg class="ti" viewBox="0 0 24 24" style="width:23px;height:23px;color:var(--ink)"><use href="#i-today"/></svg>
+            <span class="cap">23px 탭(선)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <figcaption>
+      <b>8 · 그릇 상태 시퀀스 — 은유의 전 구간</b>
+      <p>그릇은 <b>가변 두께 잉크 리본</b>(몸통) + <b>붓 획 전</b>(가운데가 두껍고 양끝이 사라지는 렌즈) + <b>굽</b>으로 구성된다.
+        굽이 있어서 컵이 아니라 <b>밥그릇</b>으로 읽히고, 전이 있어서 유기그릇의 인상이 난다. 밥은 --gold 하나뿐 — 알갱이도 하이라이트도 없다.</p>
+      <p>132px부터 23px 탭 아이콘까지 같은 패스를 쓰고, 작은 크기에서만 채움 도형에 stroke를 얹어 광학 두께를 보정한다.
+        「홈에만 큰 그릇」이 아니라 앱 전체에서 하나의 은유가 크기만 바꾸며 반복된다.</p>
+      <span class="fix">해결: 결함 2 · 3</span>
+      <p class="ref">참조 stats.js(bowlFill·weekActivity) · Home.svelte(.bowl·.week) · BitePlayer.svelte(@keyframes fillup)</p>
+    </figcaption>
+  </figure>
+
+  </div>
+</div>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var btn = document.getElementById('themeBtn');
+  var label = document.getElementById('themeLabel');
+  if (btn) {
+    btn.addEventListener('click', function () {
+      var dark = root.getAttribute('data-theme') === 'dark';
+      root.setAttribute('data-theme', dark ? 'light' : 'dark');
+      if (label) label.textContent = dark ? '다크로 보기' : '라이트로 보기';
+    });
+  }
+  var replay = document.getElementById('replayBtn');
+  var stage = document.getElementById('revealStage');
+  if (replay && stage) {
+    replay.addEventListener('click', function () {
+      var opt = stage.querySelector('.opt.correct');
+      if (!opt) return;
+      opt.classList.remove('correct');
+      void opt.offsetWidth;      // reflow so the animation restarts
+      opt.classList.add('correct');
+    });
+  }
+})();
+</script>
+</body>
+</html>
