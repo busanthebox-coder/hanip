@@ -1,8 +1,8 @@
 <script>
   import { onMount } from 'svelte';
   import { progress } from '../lib/store.js';
+  import { activeKey } from '../lib/profiles.js';
   import {
-    SHELF_OPEN_KEY,
     buildShelfGroups,
     defaultOpenLevels,
     filterShelfGroups,
@@ -66,7 +66,7 @@
 
   onMount(() => {
     const fallback = defaultOpenLevels(chapters, state.done);
-    openLevels = parseStoredOpenLevels(localStorage.getItem(SHELF_OPEN_KEY), fallback);
+    openLevels = parseStoredOpenLevels(localStorage.getItem(activeKey('shelf-open-v1')), fallback);
   });
 
   function toggleLevel(level) {
@@ -74,7 +74,7 @@
       ? openLevels.filter((item) => item !== level)
       : [...openLevels, level];
     try {
-      localStorage.setItem(SHELF_OPEN_KEY, JSON.stringify(openLevels));
+      localStorage.setItem(activeKey('shelf-open-v1'), JSON.stringify(openLevels));
     } catch {
       // Private browsing may disable storage; the in-memory accordion still works.
     }

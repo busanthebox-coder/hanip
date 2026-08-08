@@ -1,6 +1,9 @@
 import { get, writable } from 'svelte/store';
+import { activeKey } from './profiles.js';
 
+// Legacy name — still the real key while no profile exists (order 29).
 export const SRS_KEY = 'hanip.srs-v1';
+const key = () => activeKey('srs-v1');
 export const INTERVALS = Object.freeze([1, 3, 7, 14, 30, 60]);
 const DAY_MS = 86_400_000;
 
@@ -16,13 +19,13 @@ function normalize(raw) {
 }
 
 function load() {
-  try { return normalize(JSON.parse(localStorage.getItem(SRS_KEY) || '{}')); }
+  try { return normalize(JSON.parse(localStorage.getItem(key()) || '{}')); }
   catch { return {}; }
 }
 
 export const srs = writable(load());
 srs.subscribe((state) => {
-  try { localStorage.setItem(SRS_KEY, JSON.stringify(normalize(state))); } catch { /* private mode */ }
+  try { localStorage.setItem(key(), JSON.stringify(normalize(state))); } catch { /* private mode */ }
 });
 
 export function nextInterval(currentInterval) {

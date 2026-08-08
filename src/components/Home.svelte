@@ -5,6 +5,7 @@
   import { prefs, setPref } from '../lib/prefs.js';
   import { installPrompt, promptInstall, shouldOfferInstall } from '../lib/pwa.js';
   import { progress, todayKey } from '../lib/store.js';
+  import { activeId as activeProfileId, profiles } from '../lib/profiles.js';
   import { bowlFill, streak, weekActivity } from '../lib/stats.js';
   import { learnedDueEntries, srs } from '../lib/srs.js';
   import { findById, findNext } from '../lib/nextBite.js';
@@ -122,7 +123,14 @@
 
 <section class="home">
   <div class="home-head">
-    <div class="mark">한입</div>
+    <!-- whose progress this is, said out loud: a shared phone must never let a
+         learner answer 40 cards into somebody else's bowl -->
+    <button class="mark-row" aria-label="Profiles and settings" on:click={() => { settingsOpen = true; }}>
+      <span class="mark">한입</span>
+      {#if $activeProfileId}
+        <span class="whose">{$profiles.find((item) => item.id === $activeProfileId)?.name ?? ''} #{$profiles.find((item) => item.id === $activeProfileId)?.code ?? ''}</span>
+      {/if}
+    </button>
     <button class="gear" aria-label="Open settings" on:click={() => { settingsOpen = true; }}>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
         <path d="M4 7h9M17 7h3M4 12h3M11 12h9M4 17h9M17 17h3"/>
@@ -232,7 +240,10 @@
   .home { min-height: calc(100dvh - 78px); max-width: 480px; margin: 0 auto; padding: 16px 22px 14px;
     display: flex; flex-direction: column; }
   .home-head { min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
+  .mark-row { min-width: 0; min-height: 44px; display: grid; justify-items: start; gap: 1px; text-align: left; }
   .mark { font-size: 16px; font-weight: 900; letter-spacing: -.03em; color: var(--ink); }
+  .whose { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    font-size: 11.5px; font-weight: 650; color: var(--ink-3); font-variant-numeric: tabular-nums; }
   .gear { width: 44px; height: 44px; flex: none; display: grid; place-items: center; color: var(--ink-3);
     transition: color .12s var(--ease); }
   .gear:hover { color: var(--ink); }

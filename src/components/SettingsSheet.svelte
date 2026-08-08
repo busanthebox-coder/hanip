@@ -2,6 +2,12 @@
   import { tick } from 'svelte';
   import { prefs, setPref } from '../lib/prefs.js';
   import { resetProgress } from '../lib/store.js';
+  import ProfilesPanel from './ProfilesPanel.svelte';
+
+  // The codec and the course chunks it needs to rebuild word cards are only
+  // pulled when a learner actually asks to move progress (order 29 budget note).
+  let transferModule;
+  const loadTransfer = () => (transferModule ||= import('./TransferSheet.svelte'));
 
   export let open = false;
   export let onClose = () => {};
@@ -13,11 +19,13 @@
   let wasOpen = false;
   let resetArmed = false;
   let resetDone = false;
+  let transferOpen = false;
 
   $: if (open && !wasOpen) {
     wasOpen = true;
     resetArmed = false;
     resetDone = false;
+    transferOpen = false;
     returnFocus = typeof document === 'undefined' ? null : document.activeElement;
     tick().then(() => closeButton?.focus());
   }
@@ -30,14 +38,14 @@
   }
 
   function keydown(event) {
-    if (!open) return;
+    if (!open || transferOpen) return;
     if (event.key === 'Escape') {
       event.preventDefault();
       close();
       return;
     }
     if (event.key !== 'Tab' || !sheet) return;
-    const controls = [...sheet.querySelectorAll('button:not([disabled])')];
+    const controls = [...sheet.querySelectorAll('button:not([disabled]), input:not([type="file"])')];
     if (!controls.length) return;
     const first = controls[0];
     const last = controls.at(-1);
@@ -159,6 +167,8 @@
         </button>
       </div>
 
+      <ProfilesPanel onOpenTransfer={() => { transferOpen = true; }} />
+
       <section class="danger" aria-labelledby="danger-title">
         <div class="danger-cap" id="danger-title">Danger zone</div>
         {#if resetArmed}
@@ -174,6 +184,16 @@
       </section>
     </section>
   </div>
+
+  {#if transferOpen}
+    {#await loadTransfer()}
+      <p class="transfer-loading" role="status">Loading…</p>
+    {:then module}
+      <svelte:component this={module.default} onClose={() => { transferOpen = false; }} />
+    {:catch}
+      <p class="transfer-loading" role="alert">Could not open progress transfer. Check your connection and try again.</p>
+    {/await}
+  {/if}
 {/if}
 
 <style>
@@ -230,4 +250,9 @@
   .cancel { min-height: 44px; margin-top: 8px; font-size: 13.5px; font-weight: 750; color: var(--ink-3); }
   .cancel:hover { color: var(--ink); }
   .reset-done { color: var(--good-deep) !important; font-weight: 700; }
+
+  .transfer-loading { position: fixed; inset: auto 0 0; z-index: 110; margin: 0;
+    padding: 20px 22px calc(24px + env(safe-area-inset-bottom, 0px)); background: var(--bg);
+    border-top: 1px solid var(--line); border-radius: 22px 22px 0 0; box-shadow: var(--shadow-2);
+    color: var(--ink-3); font-size: 12.5px; font-weight: 650; text-align: center; }
 </style>

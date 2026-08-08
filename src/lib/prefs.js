@@ -1,6 +1,10 @@
 import { get, writable } from 'svelte/store';
+import { activeKey } from './profiles.js';
 
+// The legacy name. It is still the real key until a profile exists (order 29),
+// so it keeps working as the fallback and as the name tests read back.
 export const PREFS_KEY = 'hanip.prefs-v1';
+const key = () => activeKey('prefs-v1');
 export const DEFAULT_PREFS = Object.freeze({
   romaja: 'hidden',
   autoSpeak: true,
@@ -42,7 +46,7 @@ function normalize(raw) {
 
 function loadPrefs() {
   try {
-    return normalize(JSON.parse(localStorage.getItem(PREFS_KEY) || '{}'));
+    return normalize(JSON.parse(localStorage.getItem(key()) || '{}'));
   } catch {
     return { ...DEFAULT_PREFS };
   }
@@ -50,7 +54,7 @@ function loadPrefs() {
 
 export const prefs = writable(loadPrefs());
 prefs.subscribe((state) => {
-  try { localStorage.setItem(PREFS_KEY, JSON.stringify(normalize(state))); } catch { /* private mode */ }
+  try { localStorage.setItem(key(), JSON.stringify(normalize(state))); } catch { /* private mode */ }
 });
 
 export function setPref(key, value) {

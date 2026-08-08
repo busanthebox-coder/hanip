@@ -1,11 +1,15 @@
 import { writable, get } from 'svelte/store';
 import { dueCards, prepareReviewCards, resetSrs } from './srs.js';
+import { activeKey, touchActive } from './profiles.js';
 
-const KEY = 'hanip.v1';
+// Order 29: the key now depends on which learner is active. Importing profiles.js
+// is what guarantees the migration has run before this module reads anything.
+export const PROGRESS_BASE = 'v1';
+const key = () => activeKey(PROGRESS_BASE);
 
 function load() {
   try {
-    const raw = JSON.parse(localStorage.getItem(KEY) || '{}');
+    const raw = JSON.parse(localStorage.getItem(key()) || '{}');
     return {
       done: raw.done || {},
       learned: raw.learned || [],
@@ -21,7 +25,7 @@ function load() {
 
 export const progress = writable(load());
 progress.subscribe((state) => {
-  try { localStorage.setItem(KEY, JSON.stringify(state)); } catch { /* private mode */ }
+  try { localStorage.setItem(key(), JSON.stringify(state)); } catch { /* private mode */ }
 });
 
 export function todayKey(now = new Date()) {
@@ -29,6 +33,8 @@ export function todayKey(now = new Date()) {
 }
 
 export function markBiteDone(bite) {
+  // "마지막 학습일" on the profile list means a finished bite, not an app open
+  touchActive();
   progress.update((state) => {
     const done = { ...state.done, [bite.id]: Date.now() };
     const day = todayKey();

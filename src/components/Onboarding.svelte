@@ -2,30 +2,49 @@
   import { tick } from 'svelte';
   import Bowl from './Bowl.svelte';
   import { setPref } from '../lib/prefs.js';
+  import { activeId, rename } from '../lib/profiles.js';
+  import { get } from 'svelte/store';
 
   export let onComplete = () => {};
 
   let step = 0;
   let title;
+  let name = '';
 
   $: step, tick().then(() => title?.focus());
 
-  function finish(startChapter) {
+  // Chapter choice first, name last: the name only matters once there is progress
+  // to attach it to, and a shared classroom phone is exactly where it matters.
+  function chooseStart(startChapter) {
     setPref('startChapter', startChapter);
     if (startChapter === 1) setPref('romaja', 'shown');
+    step = 3;
+  }
+
+  function finish(named) {
+    if (named && name.trim()) {
+      const id = get(activeId);
+      if (id) rename(id, name);
+    }
     setPref('onboardingDone', true);
     onComplete();
+  }
+
+  function skipAll() {
+    setPref('startChapter', 1);
+    setPref('romaja', 'shown');
+    finish(false);
   }
 </script>
 
 <main class="onboarding">
   <div class="topbar">
     <div class="mark">한입</div>
-    <button class="skip" on:click={() => finish(1)}>Skip</button>
+    <button class="skip" on:click={skipAll}>Skip</button>
   </div>
 
-  <div class="steps" aria-label={`Onboarding ${step + 1} of 3`}>
-    {#each [0, 1, 2] as index}
+  <div class="steps" aria-label={`Onboarding ${step + 1} of 4`}>
+    {#each [0, 1, 2, 3] as index}
       <span class:on={index === step} class:done={index < step}></span>
     {/each}
   </div>
@@ -50,25 +69,42 @@
       <p>Guess first, then read the explanation. “Don't know” costs you nothing.</p>
       <p class="lead-ko">먼저 추측하고 바로 설명을 확인해요</p>
       <button class="cta" on:click={() => { step = 2; }}><b>Choose a start</b><i>시작점 고르기</i></button>
-    {:else}
+    {:else if step === 2}
       <div class="place">Your first chapter</div>
       <h1 bind:this={title} tabindex="-1">Where should we start?</h1>
       <p>Pick whichever is closest to you right now.</p>
       <p class="lead-ko">지금 가장 가까운 상태를 골라 주세요</p>
       <div class="choices">
-        <button on:click={() => finish(1)}>
+        <button on:click={() => chooseStart(1)}>
           <b>Brand new to Korean</b>
           <span>Start at Chapter 1</span>
         </button>
-        <button on:click={() => finish(2)}>
+        <button on:click={() => chooseStart(2)}>
           <b>I can read Hangul</b>
           <span>Start at Chapter 2</span>
         </button>
-        <button on:click={() => finish(12)}>
+        <button on:click={() => chooseStart(12)}>
           <b>I know the basics</b>
           <span>Start at A2, Chapter 12</span>
         </button>
       </div>
+    {:else}
+      <div class="place">Who is studying?</div>
+      <h1 bind:this={title} tabindex="-1">What should we call you?</h1>
+      <p>Only so a shared phone can tell learners apart. The name stays on this device
+        and is never sent anywhere.</p>
+      <p class="lead-ko">이름은 이 기기에만 저장돼요</p>
+      <input
+        class="name"
+        type="text"
+        maxlength="24"
+        placeholder="Name"
+        aria-label="Your name"
+        bind:value={name}
+        on:keydown={(event) => event.key === 'Enter' && finish(true)}
+      />
+      <button class="cta" on:click={() => finish(true)}><b>Start learning</b><i>학습 시작</i></button>
+      <button class="later" on:click={() => finish(false)}>Not now</button>
     {/if}
   </section>
 </main>
@@ -110,6 +146,16 @@
   .cta:active { transform: translateY(3px); box-shadow: 0 0 0 var(--accent-deep); }
   .cta b { font-size: 17px; font-weight: 850; letter-spacing: -.01em; }
   .cta i { font-size: 10.5px; font-style: normal; font-weight: 700; opacity: .62; }
+
+  .name { width: 100%; min-height: 52px; margin-top: 26px; padding: 13px 15px; border: 1px solid var(--line-2);
+    border-radius: var(--r-chip); background: var(--card); color: var(--ink);
+    font: inherit; font-size: 17px; font-weight: 750; letter-spacing: -.01em;
+    transition: border-color .12s var(--ease); }
+  .name:focus { outline: none; border-color: var(--accent); }
+  .name + .cta { margin-top: 16px; }
+  .later { width: 100%; min-height: 44px; margin-top: 4px; color: var(--ink-3); font-size: 13.5px;
+    font-weight: 750; text-align: center; }
+  .later:hover { color: var(--ink); }
 
   .choices { margin-top: 26px; }
   .choices button { width: 100%; min-height: 60px; display: grid; gap: 2px; padding: 15px 0; text-align: left;

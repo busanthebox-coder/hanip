@@ -74,6 +74,37 @@ Home recommends the next chapter bite or boundary snack from one shared calculat
 level, and restores an unfinished item through Continue. Progress, learned-word pool, daily bowls, and
 the last-played item live in localStorage; snack skips last only for the current session.
 
+## Several learners, one phone
+
+A classroom phone holds one **profile** per learner — a free-text name plus a four-digit number, so
+two 민수 are still two people. Each profile owns a private copy of all four storage keys under
+`hanip.p.<id>.*`, and switching writes the active pointer and reloads, because every store reads its
+key once at module init. Names never leave the device: there is no account, no password, no server.
+
+Upgrading an existing install moves the four legacy keys under a profile in one direction only —
+**copy, verify byte for byte, then clean up**. If any legacy value fails to parse or a copy cannot be
+read back, nothing is created, copied, or deleted, and the app keeps reading the legacy key names, so
+a learner's progress can never be lost by upgrading. The four migration cases are pinned in
+`src/lib/profiles.test.js`.
+
+**A number alone does not move progress.** To carry a learner to another device you export a
+**progress code** — `HANIP1.` plus deflated, base64url'd state — and paste it (or load the saved
+`.txt`) on the other phone. Settings → *Move progress to another device*; the screen says this
+limitation in as many words rather than implying the number syncs anything.
+
+The code is small enough to paste because `learned` ships as Korean keys only and the cards are
+rebuilt from the compiled chunks on arrival, and because finished bites fold to one bitmask per
+chapter. The worst progress this course can produce is 219kB of JSON, still 92kB after a naive
+deflate+base64 — the shipped encoding brings the same state to **3.7kB**, a typical learner to ~1kB.
+Browsers without `CompressionStream` fall back to an uncompressed code that still works, with a note
+that it is long.
+
+Importing **merges, never overwrites**, and only after the whole payload has validated — a damaged
+code changes nothing at all. Finished bites, collected grammar, saved words and learned words union;
+each day's bowl takes the larger count; a review card is taken whole from whichever side has the
+larger interval, the earlier due date breaking ties. Preferences, shelf state and the Continue pointer
+stay with the device. A preview names the counts before anything is applied.
+
 ## How the interface reads
 
 The learner is an English speaker studying Korean, so the two languages are stacked, never
