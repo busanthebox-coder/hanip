@@ -1,0 +1,938 @@
+<!doctype html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>한입 Shelf 재설계 시안 — 목차 표면의 규칙</title>
+<style>
+/* ═══════════════════════════════════════════════════════════════════════════
+   토큰 — src/styles/tokens.css 값 그대로. 색 값은 한 글자도 바꾸지 않았다.
+   렌더 폴백: 무조건부 :root 를 반드시 포함해야 래퍼 안에서 변수가 죽지 않는다.
+   ═══════════════════════════════════════════════════════════════════════════ */
+:root, :root[data-theme="light"], [data-theme="light"] {
+  --bg:#FAF6EE; --ink:#26221C; --ink-2:#5E5346; --ink-3:#8C7F6B;
+  --card:#FFFFFF; --wash:#F2E9DA; --line:#E5DCC8; --line-2:#D6C9AE;
+  --accent:#E4572E; --accent-deep:#C13D1B; --accent-soft:#FBE7DD;
+  --gold:#C9A227; --gold-soft:rgba(201,162,39,.16);
+  --good:#4E8D6E; --good-deep:#2E6B4E; --good-soft:#E2EFE6; --bad:#C4452E;
+  --on-accent:#FFF6EF; --chat-canvas:#EFE6D4; --chat-self:#F4DE72; --chat-self-ink:#26221C;
+  --progress-track:#EFE4CD;
+  --study-grid:rgba(140,127,107,.045);
+  --chat-shadow:0 2px 8px -4px rgba(38,34,28,.2);
+  --shadow-1:0 1px 2px rgba(38,34,28,.05), 0 10px 26px -14px rgba(38,34,28,.16);
+  --shadow-2:0 3px 8px rgba(38,34,28,.06), 0 20px 44px -20px rgba(38,34,28,.26);
+  --ease:cubic-bezier(.22,.61,.36,1);
+  /* 문서(시안 페이지) 전용 — 앱 토큰 아님 */
+  --page:#EDECE8; --page-ink:#2A2724; --page-ink-2:#6E6A63; --page-line:#DCDAD4;
+  --page-soft:#F6F5F2; --bezel:#FFFFFF; --bezel-edge:rgba(38,34,28,.10);
+  color-scheme: light;
+}
+:root[data-theme="dark"], [data-theme="dark"] {
+  --bg:#17150F; --ink:#EDE6D6; --ink-2:#B5A98F; --ink-3:#8C8168;
+  --card:#201D15; --wash:#2A2618; --line:#383325; --line-2:#4A4330;
+  --accent:#F0603A; --accent-deep:#FF7A55; --accent-soft:#3A211A;
+  --gold:#D8B43F; --gold-soft:rgba(216,180,63,.2);
+  --good:#65A984; --good-deep:#85C8A3; --good-soft:#1C3026; --bad:#F06B51;
+  --on-accent:#FFF6EF; --chat-canvas:#2A2618; --chat-self:#5B4A16; --chat-self-ink:#F4EBC8;
+  --progress-track:#332E20;
+  --study-grid:rgba(237,230,214,.035);
+  --chat-shadow:0 2px 10px -3px rgba(0,0,0,.55);
+  --shadow-1:0 1px 3px rgba(0,0,0,.28), 0 12px 30px -14px rgba(0,0,0,.58);
+  --shadow-2:0 4px 10px rgba(0,0,0,.3), 0 24px 52px -20px rgba(0,0,0,.72);
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --page:#121110; --page-ink:#E7E3DC; --page-ink-2:#8E8880; --page-line:#2A2825;
+  --page-soft:#1B1A18; --bezel:#26241F; --bezel-edge:rgba(0,0,0,.5);
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{background:var(--page);color:var(--page-ink);
+  font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+  line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;word-break:keep-all;}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit;padding:0;text-align:inherit;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.sprite{position:absolute;width:0;height:0;overflow:hidden;}
+
+/* ── 문서 셸 ──────────────────────────────────────────────────────────── */
+.doc{max-width:1760px;margin:0 auto;padding:52px 28px 120px;}
+.doc-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;}
+.doc-head h1{margin:0;font-size:26px;font-weight:800;letter-spacing:-.025em;}
+.doc-head p{margin:9px 0 0;max-width:70ch;font-size:14px;color:var(--page-ink-2);}
+.toggle{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 15px;border-radius:999px;
+  border:1px solid var(--page-line);color:var(--page-ink-2);font-size:13px;font-weight:700;white-space:nowrap;}
+.toggle:hover{color:var(--page-ink);}
+.toggle .knob{width:9px;height:9px;border-radius:999px;background:var(--page-ink-2);}
+
+.block{margin-top:34px;padding:20px 22px;border-radius:14px;background:var(--page-soft);}
+.block > h2{margin:0 0 4px;font-size:16px;font-weight:800;letter-spacing:-.015em;}
+.block > p{margin:8px 0 0;max-width:96ch;font-size:13px;line-height:1.72;color:var(--page-ink-2);}
+.block > p b{color:var(--page-ink);font-weight:800;}
+.block h3{margin:22px 0 6px;font-size:13.5px;font-weight:800;}
+
+table.rules{width:100%;margin-top:14px;border-collapse:collapse;font-size:12.5px;}
+table.rules th,table.rules td{padding:9px 12px;text-align:left;vertical-align:top;
+  border-bottom:1px solid var(--page-line);line-height:1.62;}
+table.rules th{font-weight:800;color:var(--page-ink);font-size:12px;background:rgba(0,0,0,.02);}
+table.rules td:first-child{white-space:nowrap;font-weight:800;color:var(--page-ink);}
+table.rules td{color:var(--page-ink-2);}
+table.rules td b{color:var(--page-ink);}
+
+.swatches{margin-top:16px;display:flex;gap:16px;flex-wrap:wrap;}
+.sw{width:264px;}
+.sw .box{height:132px;border-radius:12px;overflow:hidden;border:1px solid var(--page-line);padding:12px 14px;}
+.sw .cap{margin-top:8px;font-size:11.5px;line-height:1.6;color:var(--page-ink-2);}
+.sw .cap b{display:block;color:var(--page-ink);font-size:12.5px;font-weight:800;}
+.sw .demo-row{display:flex;align-items:center;gap:8px;padding:8px 0;border-top:1px solid var(--line);
+  font-size:12.5px;font-weight:750;color:var(--ink);}
+.sw .demo-row:first-child{border-top:0;}
+.sw .demo-card{height:100%;border-radius:10px;border:1px solid var(--line);padding:12px;
+  display:grid;align-content:center;gap:6px;}
+.sw .demo-card b{font-size:22px;font-weight:900;letter-spacing:-.03em;color:var(--ink);}
+.sw .demo-card span{font-size:11.5px;font-weight:650;color:var(--ink-3);}
+
+ul.list{margin:10px 0 0;padding-left:18px;font-size:13px;line-height:1.78;color:var(--page-ink-2);}
+ul.list li{margin-bottom:3px;}
+ul.list b{color:var(--page-ink);font-weight:800;}
+ul.list code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;
+  padding:1px 5px;border-radius:5px;background:rgba(0,0,0,.05);color:var(--page-ink);}
+[data-theme="dark"] ul.list code{background:rgba(255,255,255,.07);}
+[data-theme="dark"] table.rules th{background:rgba(255,255,255,.04);}
+
+.frames{margin-top:44px;display:flex;flex-wrap:wrap;gap:56px 36px;align-items:flex-start;}
+figure{margin:0;width:390px;max-width:100%;scroll-margin-top:24px;}
+figcaption{margin-top:16px;}
+figcaption > b{display:block;font-size:13.5px;font-weight:800;color:var(--page-ink);}
+figcaption .state{margin-top:3px;font-size:11.5px;font-weight:700;color:var(--page-ink-2);opacity:.8;}
+figcaption p{margin:8px 0 0;font-size:12.5px;line-height:1.68;color:var(--page-ink-2);}
+figcaption p b{font-weight:800;color:var(--page-ink);}
+figcaption .fixrow{margin-top:9px;display:flex;flex-wrap:wrap;gap:5px;}
+figcaption .fix{padding:2px 8px;border-radius:999px;border:1px solid var(--page-line);
+  font-size:11px;font-weight:750;color:var(--page-ink-2);white-space:nowrap;}
+figcaption .fix.bad{border-color:var(--bad);color:var(--bad);}
+figcaption .num{margin-top:9px;padding:8px 11px;border-radius:9px;background:rgba(0,0,0,.035);
+  font-size:11.5px;line-height:1.6;color:var(--page-ink-2);}
+[data-theme="dark"] figcaption .num{background:rgba(255,255,255,.05);}
+figcaption .num b{color:var(--page-ink);font-weight:800;}
+
+/* ── 폰 ───────────────────────────────────────────────────────────────── */
+.phone{width:390px;max-width:100%;height:844px;border-radius:44px;padding:10px;background:var(--bezel);
+  box-shadow:0 0 0 1px var(--bezel-edge), 0 30px 60px -30px rgba(0,0,0,.35);}
+.screen{width:100%;height:100%;border-radius:35px;overflow:hidden;background:var(--bg);color:var(--ink);
+  display:flex;flex-direction:column;position:relative;
+  font-family:'Pretendard Variable',Pretendard,'Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;}
+
+/* ═══ 재질 ════════════════════════════════════════════════════════════
+   .paper  = 학습 표면. 괘선 2겹(가로·세로) + 3px 도트 결. 현재 앱 전역 값 그대로.
+   .plain  = 목차 표면. 같은 종이에서 괘선만 걷고 3px 도트 결만 남긴 "무지".
+   토큰은 --study-grid 하나로 동일하다. 바뀌는 것은 레이어 수뿐이다.         */
+.paper{
+  background-color:var(--bg);
+  background-image:
+    radial-gradient(var(--study-grid) .6px, transparent .7px),
+    repeating-linear-gradient(var(--study-grid) 0 1px, transparent 1px 30px),
+    repeating-linear-gradient(var(--study-grid) 0 1px, transparent 1px 30px),
+    repeating-linear-gradient(90deg, var(--study-grid) 0 1px, transparent 1px 30px),
+    repeating-linear-gradient(90deg, var(--study-grid) 0 1px, transparent 1px 30px);
+  background-size:3px 3px, auto, auto, auto, auto;
+}
+.plain{
+  background-color:var(--bg);
+  background-image:radial-gradient(var(--study-grid) .6px, transparent .7px);
+  background-size:3px 3px;
+}
+.tooth{
+  background-color:var(--card);
+  background-image:radial-gradient(var(--study-grid) .6px, transparent .7px);
+  background-size:3px 3px;
+}
+
+/* ═══ 탭바 ════════════════════════════════════════════════════════════ */
+.tabbar{flex:none;display:flex;background:var(--card);border-top:1px solid var(--line);padding:7px 0 10px;}
+.tabbar button{flex:1;min-width:0;min-height:44px;display:grid;justify-items:center;gap:2px;padding:2px 0;
+  color:var(--ink-3);}
+.tabbar button.on{color:var(--accent-deep);}
+.ti{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
+.ti--dense{stroke-width:1.55;}
+.tabbar .t-label{font-size:10.5px;font-weight:850;line-height:1.25;}
+
+/* ═══ 화면 공통 ═══════════════════════════════════════════════════════ */
+.view{flex:1;min-height:0;overflow:hidden;display:flex;flex-direction:column;}
+.pad{padding:0 22px;}
+.mark{font-size:16px;font-weight:900;letter-spacing:-.03em;color:var(--ink);}
+.sub{margin:5px 0 0;font-size:12.5px;font-weight:650;color:var(--ink-3);}
+.search{width:100%;min-height:44px;padding:11px 15px;font:inherit;font-size:13.5px;font-weight:600;
+  color:var(--ink-3);background:var(--wash);border:1px solid var(--line);border-radius:14px;display:block;}
+.cut{position:absolute;left:0;right:0;bottom:66px;height:56px;pointer-events:none;
+  background:linear-gradient(transparent, var(--bg));}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   프레임 ① — 현재 구현 재현 (Shelf.svelte + ShelfLevelGroup.svelte 그대로)
+   ═════════════════════════════════════════════════════════════════════ */
+.cur{padding:26px 22px 40px;}
+.cur .entries{margin-top:18px;}
+.cur .entry{width:100%;min-height:44px;display:grid;grid-template-columns:1fr auto;align-items:center;
+  padding:13px 0;border-top:1px solid var(--line);text-align:left;}
+.cur .entry:last-child{border-bottom:1px solid var(--line);}
+.cur .entry b{font-size:14.5px;font-weight:750;letter-spacing:-.01em;}
+.cur .entry-sub{grid-column:1;font-size:11.5px;font-weight:650;color:var(--ink-3);}
+.cur .entry-num{grid-row:1 / -1;grid-column:2;font-size:12.5px;font-weight:650;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;}
+.cur .groups{margin-top:20px;}
+.cur .level{border-top:1px solid var(--line);}
+.cur .level-head{width:100%;min-height:56px;display:flex;align-items:center;gap:12px;padding:14px 0 12px;}
+.cur .level-main{flex:1;min-width:0;display:grid;}
+.cur .level-main b{font-size:15.5px;font-weight:850;letter-spacing:-.01em;}
+.cur .range{font-size:11.5px;font-weight:650;color:var(--ink-3);}
+.cur .chevron{flex:none;color:var(--ink-3);font-size:13px;line-height:1;transform:rotate(180deg);}
+.cur .prog{flex:none;display:grid;justify-items:end;gap:4px;font-variant-numeric:tabular-nums;}
+.cur .prog-n{font-size:13.5px;font-weight:800;letter-spacing:-.02em;color:var(--ink);line-height:1;}
+.cur .prog-n i{font-style:normal;font-size:11.5px;font-weight:650;color:var(--ink-3);}
+.cur .progbar{width:38px;height:3px;border-radius:999px;background:var(--progress-track);overflow:hidden;}
+.cur .progbar b{display:block;height:100%;background:var(--gold);border-radius:999px;}
+.cur .prog--off .prog-n{color:var(--ink-3);font-weight:700;}
+.cur .prog--off .prog-n i{opacity:.7;}
+.cur .seal{width:24px;height:24px;display:grid;place-items:center;border:1.2px solid var(--gold);
+  border-radius:5px;color:var(--gold);font-size:7.5px;font-weight:900;line-height:1;transform:rotate(-8deg);}
+.cur .chapter{width:100%;display:flex;align-items:flex-start;gap:12px;padding:14px 0;
+  border-top:1px solid var(--line);text-align:left;}
+.cur .num{flex:none;width:20px;padding-top:1px;font-size:14.5px;font-weight:800;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;}
+.cur .num.done{color:var(--gold);}
+.cur .chapter-main{flex:1;min-width:0;display:grid;}
+.cur .chapter-main b{font-size:15px;font-weight:820;letter-spacing:-.012em;line-height:1.35;}
+.cur .goal{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  margin-top:2px;font-size:11.5px;font-weight:650;line-height:1.5;color:var(--ink-3);}
+.cur .ell{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.cur .chapter-right{flex:none;padding-top:2px;}
+.cur .subrow{width:100%;min-height:44px;display:flex;align-items:center;gap:10px;
+  padding:10px 0 10px 32px;border-top:1px solid var(--line);text-align:left;}
+.cur .kind{flex:none;width:58px;font-size:11px;font-weight:650;color:var(--ink-3);}
+.cur .subrow-title{flex:1;min-width:0;font-size:13.5px;font-weight:700;color:var(--ink-2);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.cur .snack .subrow-title{font-weight:650;}
+.cur .snack .kind{font-style:italic;}
+.cur .state{flex:none;font-size:11px;font-weight:650;color:var(--ink-3);white-space:nowrap;}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   새 목차 프리미티브 — A안·B안·레벨 접힘·단어장이 전부 공유한다
+   거터 = [식별자 24px][상태 22px] · 오른쪽 끝에는 chevron 말고 아무것도 없다
+   ═════════════════════════════════════════════════════════════════════ */
+.nx{padding:20px 22px 40px;}
+.nx .top{display:flex;align-items:baseline;justify-content:space-between;gap:10px;}
+.nx .top .count{font-size:11.5px;font-weight:700;color:var(--ink-3);font-variant-numeric:tabular-nums;}
+
+/* 코스 레일 — 72과를 72눈금으로. "내가 어디쯤인가"를 한 줄로 답한다 */
+.rail-wrap{margin-top:11px;}
+.rail{display:flex;align-items:flex-end;height:15px;}
+.rail .lv{display:flex;gap:1.8px;}
+.rail .lv + .lv{margin-left:5.4px;}
+.rail i{display:block;width:2.6px;height:9px;border-radius:1.3px;background:var(--progress-track);}
+.rail i.on{background:var(--gold);}
+.rail i.now{background:var(--ink);height:15px;width:3px;border-radius:1.5px;}
+.rail-ticks{margin-top:4px;display:flex;font-size:9.5px;font-weight:750;color:var(--ink-3);
+  letter-spacing:.02em;line-height:1.2;}
+.rail-ticks .lv{flex:none;}
+.rail-ticks .lv + .lv{margin-left:5.4px;}
+
+/* 미니 내비 — 목차 화면의 주인공은 72과지 진입점이 아니다. 3열 한 행. */
+.mininav{margin-top:12px;display:grid;grid-template-columns:repeat(3,1fr);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.mininav button{min-height:44px;display:grid;align-content:center;gap:1px;padding:8px 0;}
+.mininav b{font-size:12.5px;font-weight:780;letter-spacing:-.01em;}
+.mininav span{font-size:11px;font-weight:650;color:var(--ink-3);font-variant-numeric:tabular-nums;}
+
+/* 상태 셀 — 세 상태가 같은 22px 정사각형을 쓴다 */
+.st{flex:none;width:22px;height:19px;display:grid;place-items:center;}
+.ring{width:20px;height:20px;display:block;}
+.ring .trk{fill:none;stroke:var(--line-2);stroke-width:1.7;}
+.ring .arc{fill:none;stroke:var(--gold);stroke-width:2.6;stroke-linecap:round;}
+.seal22{width:22px;height:22px;display:grid;place-items:center;border:1.2px solid var(--gold);
+  border-radius:5px;color:var(--gold);font-size:7.5px;font-weight:900;line-height:1;transform:rotate(-8deg);}
+.glyph{font-size:13px;font-weight:800;line-height:1;}
+.glyph.ok{color:var(--good);}
+.glyph.star{color:var(--gold);}
+.glyph.off{color:var(--line-2);}
+
+/* 레벨 헤더 */
+.lvl{width:100%;display:flex;align-items:flex-start;gap:8px;padding:13px 0 12px;
+  border-top:1px solid var(--line);text-align:left;}
+.lvl .id{flex:none;width:24px;font-size:12.5px;font-weight:850;color:var(--ink-3);line-height:19px;
+  letter-spacing:-.01em;}
+.lvl .col{flex:1;min-width:0;}
+.lvl .col b{display:block;font-size:15.5px;font-weight:850;letter-spacing:-.015em;line-height:19px;}
+.lvl .col span{display:block;margin-top:2px;font-size:11.5px;font-weight:650;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;}
+.lvl .col em{display:block;margin-top:3px;font-style:normal;font-size:11.5px;font-weight:700;color:var(--ink-2);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.lvl .chev{flex:none;color:var(--ink-3);font-size:13px;line-height:19px;}
+.lvl.open .chev{transform:rotate(180deg);}
+.lvl.here .id{color:var(--ink);}
+.lvl.here .col b{color:var(--ink);}
+
+/* 챕터 행 — 식별자·상태가 모두 왼쪽 54px 안에 있다 */
+.chap{width:100%;display:flex;align-items:flex-start;gap:8px;padding:12px 0;
+  border-top:1px solid var(--line);text-align:left;}
+.chap .n{flex:none;width:24px;text-align:right;font-size:12.5px;font-weight:750;color:var(--ink-3);
+  line-height:19px;font-variant-numeric:tabular-nums;}
+.chap .col{flex:1;min-width:0;}
+.chap .col b{display:block;font-size:14.5px;font-weight:780;letter-spacing:-.012em;line-height:19px;
+  color:var(--ink-2);}
+.chap .col .meta{display:block;margin-top:2px;font-size:11.5px;font-weight:650;line-height:1.45;
+  color:var(--ink-3);}
+.chap.done .col b{color:var(--ink-3);font-weight:700;}
+.chap.done .n{color:var(--gold);}
+.chap.here .col b{color:var(--ink);font-weight:850;}
+.chap.here .n{color:var(--ink);font-weight:850;}
+.one b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.two b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+
+/* 현재 챕터 앵커 — 72행 중 딱 하나만 잉크 레일을 갖는다 */
+.chap.here{position:relative;}
+.chap.here::before{content:"";position:absolute;left:-22px;top:8px;bottom:8px;width:2px;background:var(--ink);}
+
+/* 간식 — 행이 아니라 챕터의 부속. 구분선이 없다는 것이 종속의 증거다 */
+.snk{width:100%;min-height:44px;display:flex;align-items:center;gap:9px;padding:8px 0 8px 54px;
+  text-align:left;border:0;}
+.snk .lbl{flex:none;font-size:11px;font-weight:650;color:var(--ink-3);font-style:italic;}
+.snk .t{flex:1;min-width:0;font-size:12.5px;font-weight:650;color:var(--ink-2);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.snk .c{flex:none;font-size:11px;font-weight:650;color:var(--ink-3);font-variant-numeric:tabular-nums;}
+.snk.done .t{color:var(--ink-3);}
+.block-wrap{padding-bottom:4px;}
+
+/* 단어장 — 같은 거터, 다른 어휘(✓ / ★) */
+.wb .tabs{margin-top:14px;display:flex;gap:18px;border-bottom:1px solid var(--line);overflow:hidden;}
+.wb .tab{flex:none;min-height:38px;padding-bottom:8px;font-size:13.5px;font-weight:700;color:var(--ink-3);
+  white-space:nowrap;border-bottom:2px solid transparent;}
+.wb .tab.on{color:var(--ink);font-weight:850;border-bottom-color:var(--ink);}
+.wb .ghead{margin-top:16px;padding:5px 0 4px;font-size:11.5px;font-weight:700;color:var(--ink-3);}
+.wb .wrow{width:100%;display:flex;align-items:flex-start;gap:8px;padding:9px 0;
+  border-top:1px solid var(--line);text-align:left;}
+.wb .wrow .col{flex:1;min-width:0;}
+.wb .wrow .col b{display:block;font-size:15px;font-weight:800;letter-spacing:-.01em;line-height:20px;}
+.wb .wrow .col span{display:block;margin-top:1px;font-size:11.5px;font-weight:650;color:var(--ink-3);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.wb .wrow .col span i{font-style:normal;color:var(--ink-2);}
+.wb .st{height:20px;}
+</style>
+</head>
+<body>
+
+<!-- ═══ SVG 스프라이트 — 탭 아이콘 5종 (TabIcon.svelte / Bowl.svelte 패스 그대로) ═══ -->
+<svg class="sprite" aria-hidden="true" focusable="false"><defs>
+  <symbol id="i-today" viewBox="0 0 24 24">
+    <path d="M2.2 7.4H21.8"/>
+    <path d="M3.2 7.4C3.4 12.5 6.2 18.7 12 18.7C17.8 18.7 20.6 12.5 20.8 7.4"/>
+    <path d="M8.6 17.6V19.9Q8.6 21.2 10 21.2H14Q15.4 21.2 15.4 19.9V17.6"/>
+  </symbol>
+  <symbol id="i-shelf" viewBox="0 0 24 24">
+    <path d="M3 21.2H21"/><path d="M5.4 21.2V9H8.6V21.2"/><path d="M10.2 21.2V6.8H13.4V21.2"/>
+    <path d="M10.2 12H13.4"/><path d="M15.2 21.2L16.7 9.5L19.9 10.1L18.8 21.2"/>
+  </symbol>
+  <symbol id="i-hangul" viewBox="0 0 24 24">
+    <path d="M4.2 5.4H10.9"/><path d="M10.9 5.4L8.3 18.8"/><path d="M15.4 4.4V19.8"/><path d="M15.4 12.1H19.6"/>
+  </symbol>
+  <symbol id="i-hanja" viewBox="0 0 24 24">
+    <path d="M12 3.1V5.4"/><path d="M5.2 7.5H18.8"/>
+    <path d="M15.4 9.6C13 14.6 9.2 18.4 5.4 20.7"/><path d="M8.8 9.6C11 14.2 14.8 18 18.8 20.5"/>
+  </symbol>
+  <symbol id="i-words" viewBox="0 0 24 24">
+    <path d="M12 7.4V19.8"/>
+    <path d="M12 7.4C10 5.7 7 5.1 3.4 5.3V17.8C7 17.6 10 18.2 12 19.8"/>
+    <path d="M12 7.4C14 5.7 17 5.1 20.6 5.3V17.8C17 17.6 14 18.2 12 19.8"/>
+    <path d="M14.9 10.4H18.2"/><path d="M14.9 13.2H17.1"/>
+  </symbol>
+</defs></svg>
+
+<main class="doc">
+  <div class="doc-head">
+    <div>
+      <h1>한입 Shelf 재설계 시안 — 목차 표면의 규칙</h1>
+      <p>감독자 실측 진단 6건에 대한 답이다. 핵심 주장은 하나다: <b>Shelf는 종이가 문제가 아니라 「괘선」이 문제다.</b>
+         앱의 표면을 <b>학습 표면</b>과 <b>목차 표면</b>으로 가르고, 목차 표면에서는 괘선을 걷고 결(도트)만 남긴다.
+         그 위에 목차 전용 프리미티브(왼쪽 거터 · 22px 상태 셀 · 코스 레일)를 세운다.
+         토큰 값은 <code style="font-family:ui-monospace,monospace">src/styles/tokens.css</code> 그대로다.</p>
+    </div>
+    <button class="toggle" id="themeBtn"><span class="knob"></span><span id="themeLbl">다크로 보기</span></button>
+  </div>
+
+  <!-- ═══ 규칙 ═══════════════════════════════════════════════════════════ -->
+  <section class="block">
+    <h2>규칙 — 종이는 「머무는 표면」에만 깐다</h2>
+    <p>손가락이 하는 일로 가른다. <b>읽고 생각하는 화면이면 괘선 있는 종이</b>,
+       <b>찾고 고르는 화면이면 괘선 없는 무지</b>, <b>설정하는 화면이면 종이가 아니다.</b>
+       재질을 버리는 게 아니라 <b>같은 종이의 다른 지질</b>을 쓰는 것이다 — 노트는 줄이 있고, 색인은 줄이 없다.</p>
+
+    <table class="rules">
+      <thead><tr><th style="width:120px">층</th><th style="width:190px">재질</th><th style="width:300px">해당 표면</th><th>근거</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>1 · 학습 표면</td>
+          <td>괘선 2겹 + 3px 도트<br><span style="opacity:.75">현재 <code style="font-family:ui-monospace,monospace">html</code> 값 그대로</span></td>
+          <td>BitePlayer 카드, 문법 레슨(GrammarLessonShowcase), 단어 상세(WordDetail),
+              문법 규칙 시트(GrammarRefSheet), 읽을거리 <b>본문</b>(ReaderView), 가이드 <b>본문</b>,
+              온보딩, 완료/리빌 화면, 홈</td>
+          <td>화면 안의 대상이 <b>하나</b>다. 선 요소는 카드 테두리 한 겹뿐이라 괘선이 경쟁할 상대가 없고,
+              그래서 「선」이 아니라 「재질」로 읽힌다. 학습은 실제로 종이 위에서 하는 행위이므로 은유가 행동과 일치한다.</td>
+        </tr>
+        <tr>
+          <td>2 · 목차 표면</td>
+          <td>3px 도트만 (무지)<br><span style="opacity:.75">같은 <code style="font-family:ui-monospace,monospace">--study-grid</code>, 레이어 4개 제거</span></td>
+          <td>Shelf 목록, 단어장 목록(WordbookTab), 문법 수집 그리드(GrammarCollection),
+              가이드 목록(GuideTab 인덱스), 읽을거리 목록(ReadersShelf), 검색 결과, 헷갈리는 짝 목록</td>
+          <td>목록은 <b>그 자체가 선 체계</b>다. 행 높이는 내용에 따라 44~86px로 변하는데 괘선은 30px 등간격이다.
+              두 주기는 공약수가 없어 <b>어떤 행에서도 정렬되지 않는다</b> — 괘선이 매 행마다 다른 위치를 지난다.
+              이건 결이 아니라 진동이다. 도트만 남기면 「종이다」는 사실은 유지되고 충돌만 사라진다.</td>
+        </tr>
+        <tr>
+          <td>3 · 시스템 표면</td>
+          <td>없음 (<code style="font-family:ui-monospace,monospace">--bg</code> 평면)</td>
+          <td>설정 시트, 프로필 패널, 전송 시트, 토스트, 탭바</td>
+          <td>앱의 기계 부분이고 학습 은유 바깥이다. 여기에 종이를 깔면 은유가 「전부에 붙은 배경」이 되어
+              의미를 잃는다.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="swatches">
+      <div class="sw">
+        <div class="box paper">
+          <div class="demo-card tooth">
+            <b>-고 싶어요</b>
+            <span>I want to · 하고 싶어요</span>
+          </div>
+        </div>
+        <div class="cap"><b>1층 — 학습 표면</b>괘선이 카드 테두리 한 겹과만 만난다. 결로 읽힌다.</div>
+      </div>
+      <div class="sw">
+        <div class="box paper">
+          <div class="demo-row">8 · -고 싶어요</div>
+          <div class="demo-row">9 · V아/어 주세요</div>
+          <div class="demo-row">10 · N부터 / N까지</div>
+        </div>
+        <div class="cap" style="color:var(--bad)"><b style="color:var(--bad)">현재 Shelf (금지)</b>괘선 30px와 행 62px가 절대 안 맞는다. 행마다 다른 위치에 선이 걸린다.</div>
+      </div>
+      <div class="sw">
+        <div class="box plain">
+          <div class="demo-row">8 · -고 싶어요</div>
+          <div class="demo-row">9 · V아/어 주세요</div>
+          <div class="demo-row">10 · N부터 / N까지</div>
+        </div>
+        <div class="cap"><b>2층 — 목차 표면</b>같은 종이, 괘선만 걷음. 선 체계는 행 구분선 하나뿐이다.</div>
+      </div>
+    </div>
+
+    <h3>구현 노트</h3>
+    <ul class="list">
+      <li><code>html</code>의 배경은 그대로 둔다(1층이 기본값). 2층 표면은 <b>탭 컨테이너(전체 폭)</b>에
+          <code>background-color: var(--bg)</code> + 도트 레이어만 다시 깔아 괘선을 덮는다.
+          480px 칼럼에 걸면 좌우 여백에 괘선이 남는다.</li>
+      <li>카드 안쪽 결(<code>.tooth</code>)은 2층에서도 유지한다 — 카드는 낱장이고, 낱장은 어디서든 종이다.</li>
+      <li>새 토큰을 만들지 않는다. <code>--study-grid</code> 하나가 두 지질을 다 만든다.</li>
+    </ul>
+  </section>
+
+  <!-- ═══ 프레임 ═════════════════════════════════════════════════════════ -->
+  <div class="frames" id="frames"></div>
+
+  <!-- ═══ 판단 ═══════════════════════════════════════════════════════════ -->
+  <section class="block">
+    <h2>판단 요청 4건에 대한 답</h2>
+
+    <h3>1. 완료 · 진행중 · 미착수를 같은 열·같은 무게로</h3>
+    <ul class="list">
+      <li><b>같은 22px 정사각 셀</b>을 세 상태가 공유한다. 미착수 = 빈 링(<code>--line-2</code> 1.7px),
+          진행중 = 같은 링 위의 <code>--gold</code> 호(12시부터 시계방향, done/total 비율),
+          완료 = 22px 한입 도장. 링이 한 바퀴를 다 채우면 도장이 되는 서사라 전이가 자연스럽다.</li>
+      <li><b>「같은 무게」는 면적과 열의 동일함으로 해석했다.</b> 잉크량까지 똑같이 만들면 완료가 보상으로 읽히지 않는다.
+          면적·위치·형태 문법을 통일하고, 잉크량만 미착수 &lt; 진행중 &lt; 완료로 <b>단조 증가</b>시킨다.
+          이러면 훑을 때 「밝아지는 순서」로 읽혀서 상태 비교가 가능하다.</li>
+      <li><b>정확한 분수(5/9)는 72행에 뿌리지 않는다.</b> 링이 양을, 숫자는 「지금 하고 있는 한 과」에만 붙는다.
+          38과가 5/9인지 6/9인지는 그 과를 열 때 알면 되고, 목록에서 궁금한 건 「손댔나 / 끝냈나」뿐이다.</li>
+    </ul>
+
+    <h3>2. 챕터 번호와 진행 표시의 배치</h3>
+    <ul class="list">
+      <li>거터를 <b>[식별자 24px][상태 22px]</b> 두 칸으로 붙여 <b>왼쪽 54px</b> 안에 끝낸다.
+          번호는 tabular-nums로 자리를 맞추므로 「38」을 찾는 수직 스캔이 살아 있고,
+          상태는 바로 옆 칸이라 시선이 가로로 이동하지 않는다.</li>
+      <li>오른쪽 끝에는 <b>레벨 헤더의 chevron 말고 아무것도 두지 않는다</b>(화면당 5개).
+          챕터 72행의 오른쪽 끝은 비운다 — 제목이 잘리는 지점이 곧 행의 끝이면 된다.</li>
+      <li>같은 거터를 레벨 헤더·단어장에도 쓴다. 레벨은 [A1][링], 단어장은 [✓/★]. 목차 표면의 왼쪽 54px은 앱 공용 규격이 된다.</li>
+    </ul>
+
+    <h3>3. 간식을 챕터에 종속시키는 최소 장치</h3>
+    <ul class="list">
+      <li>셋(들여쓰기·크기·라벨)을 하나씩 시험하면 <b>어느 것도 단독으로는 부족하다</b>.
+          진짜 원인은 넷째 요소, <b>구분선</b>이다. <code>border-top</code>이 붙는 순간 무엇이든 「목록 항목」으로 승격되고,
+          13.5px든 15px든 옆 챕터의 형제로 읽힌다.</li>
+      <li>따라서 최소 장치는 <b>구분선 제거 + 들여쓰기(54px, 거터 폭과 정렬)</b> 두 개다. 크기 축소는 이미 있으니 유지한다.
+          라벨은 <b>접힌 요약 줄에만</b> 「Snacks 3」로 남기고(개수가 곧 요약이다),
+          펼쳐서 개별 행이 되면 <b>지운다</b> — 그때는 챕터 덩어리 안에 있다는 위치가 라벨을 대신한다.</li>
+      <li>버린 대안: 간식 행에 배경색(지시 28이 이미 뺐다), 아이콘, 좌측 컬러 바(킬 리스트 3).</li>
+    </ul>
+
+    <h3>4. 72과에서 현재 위치를 잃지 않는 방법 — 세 겹</h3>
+    <ul class="list">
+      <li><b>코스 레일</b>(전역): 72과 = 72눈금, 레벨 사이만 5.4px 벌린다. 완료는 <code>--gold</code>,
+          현재 과는 <code>--ink</code> 한 눈금이 6px 더 길다. 「37/72 · 51%」를 문장이 아니라 <b>길이</b>로 답한다.
+          접힘·펼침·검색 어느 상태에서도 헤더에 붙어 있다.</li>
+      <li><b>현재 챕터 앵커</b>(국소): 72행 중 <b>딱 한 행</b>만 왼쪽에 2px <code>--ink</code> 레일을 갖고,
+          <b>딱 한 행</b>만 목표 문장을 갖는다. 스크롤하다 잉크 레일을 만나면 거기가 「지금」이다.</li>
+      <li><b>레벨 스티키 헤더</b>: 스크롤 중 레벨명이 상단에 남는다(<code>position: sticky</code>).
+          「몇 과인지」와 별개로 「어느 구간인지」가 안 사라진다.</li>
+    </ul>
+  </section>
+
+  <section class="block">
+    <h2>임의로 정한 것 · 안 하는 게 낫다고 판단한 것</h2>
+    <h3>임의 결정 (감독자 확인 필요)</h3>
+    <ul class="list">
+      <li>학습 상태는 시안용 가정이다 — ①②③은 「3과 진행 중(5/8)」, ④⑤는 「38과 진행 중(5/9)」.
+          두 시점을 쓴 이유는 ①②③이 같은 내용으로 밀도를 비교해야 하고(A1이 간식 밀집 구간),
+          ④는 코스 중반이라야 「어디쯤인가」가 시험되기 때문이다.</li>
+      <li>레벨 진행 단위를 <b>한입(bite)에서 챕터로</b> 바꿨다. 현재 <code>buildShelfGroups</code>는 A1을 100 bites로 센다.
+          사람이 세는 단위는 과다 — 「11/11 chapters」가 「100/100 bites」보다 위치 감각을 준다.
+          bite 수는 챕터를 펼치면 나온다.</li>
+      <li>링 지름 20px · 눈금 pitch 4.4px · 거터 24+22px · 간식 들여쓰기 54px.</li>
+      <li>「Grammar collection / Korea guides」 두 진입점을 3열 미니 내비 한 행으로 압축(A안은 Snack packs 추가).
+          현재는 두 행 120px을 쓴다.</li>
+      <li>문안: <code>Snacks 3</code>, <code>Chapter 38 of 72</code>, <code>In progress</code>.</li>
+    </ul>
+    <h3>안 하는 게 낫다</h3>
+    <ul class="list">
+      <li><b>목차에서 종이를 100% 제거</b> — 탭 사이 재질 연속성이 끊긴다. 괘선만 걷는다.</li>
+      <li><b>챕터 행마다 그릇 아이콘</b> — 은유 남용이고 잉크가 너무 많다. STYLE §8 사용처 목록에도 없다(112/108/86/26/23).
+          그릇은 「오늘 얼마나 먹었나」이지 「이 과를 끝냈나」가 아니다.</li>
+      <li><b>레벨/상태 pill 필터</b> — 킬 리스트 4. 레벨은 이미 아코디언이고, 상태 필터는 72과에서 쓸 일이 드물다.</li>
+      <li><b>진행률 % 숫자</b> — 72행 × 숫자 = 소음. 링이 이미 비율이다.</li>
+      <li><b>스티키 2단 헤더(레벨+챕터)</b> — 레벨 한 단이면 충분하고, 두 단은 목록 높이를 88px 먹는다.</li>
+      <li><b>챕터 제목 2줄 허용을 A안에도 적용</b> — A안의 유일한 무기가 밀도인데 제목 2줄이면 B안과 같아진다.
+          A안은 1줄 클램프를 유지하고, 잘린 제목은 검색으로 푼다.</li>
+      <li><b>A안의 「간식 분리」를 최종안으로 채택</b> — 아래 추천 참조. 밀도는 이기지만 발견성을 잃는다.</li>
+    </ul>
+    <h3>추천</h3>
+    <p><b>B안(그룹형)을 기본으로 하고, A안의 두 결정을 흡수한다.</b>
+       (i) 목표 설명문은 <b>진행중 챕터 1개에만</b>, (ii) 거터·상태 셀·코스 레일은 A안 그대로.
+       진단 6건 중 4건(2·4·5·6)이 밀도가 아니라 <b>위계</b>의 실패이고, 밀도 문제(3)는 목표 설명문 하나를 없애면
+       대부분 해결된다. A안이 이기는 지점은 A1처럼 간식이 몰린 구간뿐인데, 그 대가로 A1 학습자가 자기 레벨의 간식 11개를
+       목차에서 못 만난다 — <code>afterChapter</code>는 「이때쯤 먹으면 좋다」는 추천이고, 추천은 문맥 안에 있을 때만 작동한다.</p>
+  </section>
+</main>
+
+<script>
+/* ═══ 실데이터 — src/lib/bites-index.json ═══════════════════════════════ */
+const A1 = [
+  {n:1,  t:"자음 (Consonants) · 모음 (Vowels)", g:"Read any syllable block by identifying its consonant and vowel components", b:8},
+  {n:2,  t:"N은/는 · N이에요/예요", g:"Greet, thank, and apologize using the five most essential Korean phrases", b:8},
+  {n:3,  t:"N이에요/예요 · N은/는", g:"Use 이에요 after a noun ending in a consonant and 예요 after a noun ending in a vowel", b:8},
+  {n:4,  t:"있어요/없어요 · N이/가", g:"Use 있어요 and 없어요 to express existence ('there is / there isn't') and possession ('I have / I don't have')", b:8},
+  {n:5,  t:"N을/를 · 안 + verb", g:"Attach 을 or 를 correctly after the object in any present-tense sentence", b:9},
+  {n:6,  t:"N에 · N에서", g:"Use 에 correctly for destinations and static locations", b:8},
+  {n:7,  t:"도 vs 만 · (으)로", g:"Use 도 to add one more item to an order ('and this too, please')", b:8},
+  {n:8,  t:"-고 싶어요 · -(으)ㄹ 수 있어요 / 없어요", g:"Use 고 싶어요 correctly to express what you want or desire to do", b:8},
+  {n:9,  t:"V아/어 주세요 vs V아/어도 돼요? · V지 마세요 & V아/어야 돼요", g:"Ask someone to do something with V아/어 주세요 (please do)", b:8},
+  {n:10, t:"N부터 / N까지 · V아/어 주세요", g:"Ask where something is using 이/가 어디예요? and 이/가 있어요?", b:8},
+  {n:11, t:"-아서/어서 · -고 / -(으)면 / -(으)ㄹ게요", g:"Use 아서/어서 to connect a reason to its result in a single sentence", b:8}
+];
+/* 데이터 순서 그대로 — group.snacks.filter(afterChapter === n)이 이 순서를 쓴다 */
+const SNACKS_A1 = [
+  {t:"Survival Basics", a:1, c:12},
+  {t:"Survival Help",   a:2, c:10},
+  {t:"Numbers Starter", a:3, c:23},
+  {t:"Family Words",    a:2, c:14},
+  {t:"Body Basics",     a:3, c:16},
+  {t:"Time And Days",   a:5, c:18},
+  {t:"People And Places", a:4, c:16},
+  {t:"Home And Things", a:6, c:16},
+  {t:"Food Basics",     a:7, c:16},
+  {t:"Agreeing & Understanding", a:2, c:10},
+  {t:"Reacting & Surprise", a:7, c:10}
+];
+const CH1_BITES = [
+  {k:"Words",    t:"단어 Words 1 · 한글~", c:7},
+  {k:"Grammar",  t:"문법 Grammar · 자음 (Consonants)", c:4},
+  {k:"Words",    t:"단어 Words 2 · 발음~", c:6},
+  {k:"Grammar",  t:"문법 Grammar · 모음 (Vowels)", c:4},
+  {k:"Words",    t:"단어 Words 3 · 천천히~", c:6},
+  {k:"Dialogue", t:"대화 Dialogue · 진짜 한국어", c:4},
+  {k:"Reading",  t:"읽기 Reading · 민준의 첫 한글 공부 (Minjun's First Hangul Study)", c:3},
+  {k:"Boss",     t:"보스 Boss bite · 다 걸어요", c:8}
+];
+const LEVELS = [
+  {id:"A1", label:"A1 Foundation",   range:"Chapters 1–11",          ch:11, from:1,  to:11},
+  {id:"A2", label:"A2 Builder",      range:"Chapters 12–34",         ch:23, from:12, to:34},
+  {id:"B1", label:"B1 Independent",  range:"Chapters 35–56",         ch:22, from:35, to:56},
+  {id:"B2", label:"B2 Control",      range:"Chapters 57–63, 66–69",  ch:11, from:57, to:69},
+  {id:"C1", label:"C1 Written",      range:"Chapters 64–65, 70–72",  ch:5,  from:64, to:72}
+];
+const CH38 = {n:38, l:"B1",
+  t:"Stacked Noun Modifiers: Packing a Clause Before a Noun · Passive Verbs (이/히/리/기)",
+  g:"Unpack long noun phrases such as 어제 올라온 공지 and 변경된 일정.", b:9};
+const WORDS_CH1 = [
+  {ko:"한글", r:"hangeul", en:"Hangul (Korean writing system)", s:"ok"},
+  {ko:"자음", r:"jaeum", en:"consonant", s:"ok"},
+  {ko:"모음", r:"moeum", en:"vowel", s:"ok"},
+  {ko:"글자", r:"geulja", en:"letter / character", s:"ok"},
+  {ko:"소리", r:"sori", en:"sound", s:"off"},
+  {ko:"받침", r:"batchim", en:"final consonant (bottom of syllable block)", s:"star"},
+  {ko:"발음", r:"bareum", en:"pronunciation", s:"ok"},
+  {ko:"읽다", r:"ikda", en:"to read", s:"ok"},
+  {ko:"쓰다", r:"sseuda", en:"to write / use", s:"ok"},
+  {ko:"듣다", r:"deutda", en:"to listen", s:"off"},
+  {ko:"말하다", r:"malhada", en:"to say, to speak", s:"star"},
+  {ko:"따라 하다", r:"ttara hada", en:"to repeat / follow along", s:"ok"},
+  {ko:"천천히", r:"cheoncheonhi", en:"slowly", s:"ok"},
+  {ko:"다시", r:"dasi", en:"again", s:"off"},
+  {ko:"알겠어요", r:"algesseoyo", en:"I understand / I see / okay", s:"star"},
+  {ko:"모르겠어요", r:"moreugesseoyo", en:"I don't know / I'm not sure", s:"ok"}
+];
+const WORDS_CH2 = [
+  {ko:"안녕하세요", r:"annyeonghaseyo", en:"Hello / Hi (polite)", s:"ok"},
+  {ko:"안녕히 계세요", r:"annyeonghi gyeseyo", en:"Goodbye (said by the one leaving)", s:"star"},
+  {ko:"감사합니다", r:"gamsahamnida", en:"Thank you (formal)", s:"ok"}
+];
+
+/* ─ 학습 상태 ─────────────────────────────────────────────────────────── */
+/* 학습자 A: 3과 진행 중 (①②③) */
+const A = {cur:3, doneCh:[1,2], curDone:5, curTotal:8, doneSnacks:["Survival Basics"]};
+/* 학습자 B: 38과 진행 중 (④⑤) */
+const B = {cur:38, doneUpTo:37, curDone:5, curTotal:9};
+
+const esc = (s) => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+const C = 2 * Math.PI * 8.2;   // 링 둘레
+
+function ring(done, total){
+  if(total > 0 && done >= total) return '<span class="seal22">한입</span>';
+  const arc = total ? C * (done/total) : 0;
+  return '<svg class="ring" viewBox="0 0 20 20" aria-hidden="true">'
+    + '<circle class="trk" cx="10" cy="10" r="8.2"/>'
+    + (arc > 0 ? '<circle class="arc" cx="10" cy="10" r="8.2" transform="rotate(-90 10 10)" '
+        + 'stroke-dasharray="' + arc.toFixed(2) + ' 999"/>' : '')
+    + '</svg>';
+}
+function stateOf(n, st){
+  if(st.doneCh) {
+    if(st.doneCh.includes(n)) return {kind:"done", d:1, t:1};
+    if(n === st.cur) return {kind:"here", d:st.curDone, t:st.curTotal};
+    return {kind:"off", d:0, t:1};
+  }
+  if(n <= st.doneUpTo) return {kind:"done", d:1, t:1};
+  if(n === st.cur) return {kind:"here", d:st.curDone, t:st.curTotal};
+  return {kind:"off", d:0, t:1};
+}
+function snacksAfter(n){ return SNACKS_A1.filter(s => s.a === n); }
+
+/* ─ 탭바 ──────────────────────────────────────────────────────────────── */
+function tabbar(on){
+  const t = [["today","Today"],["shelf","Shelf"],["hangul","Hangul"],["hanja","Hanja"],["words","Words"]];
+  return '<div class="tabbar">' + t.map(([id,l]) =>
+    '<button class="' + (id === on ? 'on' : '') + '">'
+    + '<svg class="ti' + (id === "hanja" ? " ti--dense" : "") + '" viewBox="0 0 24 24"><use href="#i-' + id + '"/></svg>'
+    + '<span class="t-label">' + l + '</span></button>').join('') + '</div>';
+}
+
+/* ─ 코스 레일 ─────────────────────────────────────────────────────────── */
+const TICK_W = 2.6, TICK_GAP = 1.8, LV_GAP = 5.4;
+const lvWidth = (n) => n * TICK_W + (n - 1) * TICK_GAP;
+
+function courseRail(st){
+  const done = st.doneUpTo || Math.max(...(st.doneCh || [0]));
+  let rail = '<div class="rail">';
+  let ticks = '<div class="rail-ticks">';
+  for(const lv of LEVELS){
+    rail += '<span class="lv">';
+    for(let i = 0; i < lv.ch; i++){
+      /* B2·C1은 교차 배치되지만 레일은 레벨별 묶음으로 그린다(코스 순서가 아니라 구간 감각이 목적) */
+      const num = lv.from + i;
+      const cls = num === st.cur ? 'now' : (num <= done ? 'on' : '');
+      rail += '<i class="' + cls + '"></i>';
+    }
+    rail += '</span>';
+    ticks += '<span class="lv" style="width:' + lvWidth(lv.ch).toFixed(1) + 'px">' + lv.id + '</span>';
+  }
+  rail += '</div>';
+  ticks += '</div>';
+  return '<div class="rail-wrap">' + rail + ticks + '</div>';
+}
+/* 헤더 한 줄이 화면 이름 + 현재 위치를 같이 진다 — 레일 위에 라벨 줄을 따로 두지 않는다 */
+function topbar(st){
+  return '<div class="top"><span class="mark">Shelf</span>'
+    + '<span class="count">Chapter <b>' + st.cur + '</b> of 72 · ' + (st.doneUpTo || Math.max(...(st.doneCh || [0])))
+    + ' done</span></div>';
+}
+
+function mininav(withSnacks){
+  const items = withSnacks
+    ? [["Grammar","41/122"],["Guides","20"],["Snacks","18"]]
+    : [["Grammar","41/122"],["Guides","20"],["Readers","12"]];
+  return '<div class="mininav">' + items.map(([a,b]) =>
+    '<button><b>' + a + '</b><span>' + b + '</span></button>').join('') + '</div>';
+}
+
+/* ═══ 프레임 ① — 현재 구현 재현 ══════════════════════════════════════ */
+function frame1(){
+  let rows = '';
+  for(const c of A1){
+    const s = stateOf(c.n, A);
+    const right = s.kind === "done"
+      ? '<span class="seal">한입</span>'
+      : '<span class="prog' + (s.kind === "off" ? ' prog--off' : '') + '">'
+        + '<span class="prog-n">' + (s.kind === "off" ? 0 : A.curDone) + '<i>/' + c.b + '</i></span>'
+        + '<span class="progbar">' + (s.kind === "here"
+            ? '<b style="width:' + (A.curDone / c.b * 100) + '%"></b>' : '') + '</span></span>';
+    rows += '<button class="chapter">'
+      + '<span class="num' + (s.kind === "done" ? ' done' : '') + '">' + c.n + '</span>'
+      + '<span class="chapter-main"><b class="ell">' + esc(c.t) + '</b>'
+      + '<span class="goal">' + esc(c.g) + '</span></span>'
+      + '<span class="chapter-right">' + right + '</span></button>';
+    for(const sn of snacksAfter(c.n)){
+      rows += '<button class="subrow snack"><span class="kind">Snack</span>'
+        + '<span class="subrow-title">' + esc(sn.t) + '</span>'
+        + '<span class="state">' + (A.doneSnacks.includes(sn.t) ? 'Done' : sn.c + ' words') + '</span></button>';
+    }
+  }
+  return '<div class="screen paper"><div class="view"><div class="cur">'
+    + '<div class="mark">Shelf</div>'
+    + '<p class="sub" style="margin-bottom:14px">Browse all 72 chapters by level</p>'
+    + '<input class="search" value="" placeholder="Search number or title" readonly>'
+    + '<div class="entries">'
+    +   '<button class="entry"><b>Grammar collection</b><span class="entry-sub">모은 문법 카드</span>'
+    +     '<span class="entry-num">41/122</span></button>'
+    +   '<button class="entry"><b>Korea guides</b>'
+    +     '<span class="entry-sub">Arrival, transport, food, emergencies</span>'
+    +     '<span class="entry-num">20</span></button>'
+    + '</div>'
+    + '<div class="groups"><section class="level open">'
+    +   '<button class="level-head"><span class="level-main"><b>A1 Foundation</b>'
+    +     '<span class="range">Chapters 1–11</span></span>'
+    +     '<span class="prog"><span class="prog-n">22<i>/100</i></span>'
+    +     '<span class="progbar"><b style="width:22%"></b></span></span>'
+    +     '<span class="chevron">⌄</span></button>'
+    +   '<div class="chapters">' + rows + '</div></section></div>'
+    + '</div></div><div class="cut"></div>' + tabbar("shelf") + '</div>';
+}
+
+/* ═══ 프레임 ② — A안 압축형 ══════════════════════════════════════════ */
+function frame2(){
+  let rows = '';
+  for(const c of A1){
+    const s = stateOf(c.n, A);
+    const cls = 'chap one ' + (s.kind === "done" ? 'done' : s.kind === "here" ? 'here' : '');
+    rows += '<button class="' + cls + '">'
+      + '<span class="n">' + c.n + '</span>'
+      + '<span class="st">' + ring(s.d, s.t) + '</span>'
+      + '<span class="col"><b>' + esc(c.t) + '</b>'
+      + (s.kind === "here"
+          ? '<span class="meta">' + A.curDone + '/' + c.b + ' bites · ' + esc(c.g) + '</span>' : '')
+      + '</span></button>';
+  }
+  return '<div class="screen plain"><div class="view"><div class="nx">'
+    + topbar(A)
+    + courseRail(A)
+    + '<div style="margin-top:12px"><input class="search" value="" placeholder="Search number or title" readonly></div>'
+    + mininav(true)
+    + '<div style="margin-top:10px">'
+    +   '<div class="lvl open"><span class="id">A1</span><span class="st">' + ring(2,11) + '</span>'
+    +     '<span class="col"><b>Foundation</b><span>Chapters 1–11 · 2 of 11 done</span></span>'
+    +     '<span class="chev">⌄</span></div>'
+    +   rows
+    +   '<div class="lvl"><span class="id">A2</span><span class="st">' + ring(0,23) + '</span>'
+    +     '<span class="col"><b>Builder</b><span>Chapters 12–34 · 0 of 23 done</span></span>'
+    +     '<span class="chev">⌄</span></div>'
+    + '</div></div></div><div class="cut"></div>' + tabbar("shelf") + '</div>';
+}
+
+/* ═══ 프레임 ③ — B안 그룹형 ══════════════════════════════════════════ */
+function frame3(){
+  let rows = '';
+  for(const c of A1){
+    const s = stateOf(c.n, A);
+    const cls = 'chap two ' + (s.kind === "done" ? 'done' : s.kind === "here" ? 'here' : '');
+    let block = '<button class="' + cls + '">'
+      + '<span class="n">' + c.n + '</span>'
+      + '<span class="st">' + ring(s.d, s.t) + '</span>'
+      + '<span class="col"><b>' + esc(c.t) + '</b>'
+      + (s.kind === "here"
+          ? '<span class="meta">' + A.curDone + '/' + c.b + ' bites · ' + esc(c.g) + '</span>' : '')
+      + '</span></button>';
+    const sns = snacksAfter(c.n);
+    if(sns.length){
+      if(c.n === 2){
+        /* 2과만 펼친 상태 — 진단 2가 지목한 「간식 3개 연달아」를 새 규칙으로 다시 그린 것 */
+        for(const sn of sns){
+          const d = A.doneSnacks.includes(sn.t);
+          block += '<button class="snk' + (d ? ' done' : '') + '">'
+            + '<span class="t">' + esc(sn.t) + '</span>'
+            + '<span class="c">' + (d ? '<span class="glyph ok">✓</span>' : sn.c + ' words') + '</span></button>';
+        }
+      } else {
+        block += '<button class="snk"><span class="lbl">Snacks ' + sns.length + '</span>'
+          + '<span class="t">' + esc(sns.map(s => s.t).join(", ")) + '</span></button>';
+      }
+    }
+    rows += '<div class="block-wrap">' + block + '</div>';
+  }
+  return '<div class="screen plain"><div class="view"><div class="nx">'
+    + topbar(A)
+    + courseRail(A)
+    + '<div style="margin-top:12px"><input class="search" value="" placeholder="Search number or title" readonly></div>'
+    + mininav(false)
+    + '<div style="margin-top:10px">'
+    +   '<div class="lvl open"><span class="id">A1</span><span class="st">' + ring(2,11) + '</span>'
+    +     '<span class="col"><b>Foundation</b><span>Chapters 1–11 · 2 of 11 done · 11 snacks</span></span>'
+    +     '<span class="chev">⌄</span></div>'
+    +   rows
+    + '</div></div></div><div class="cut"></div>' + tabbar("shelf") + '</div>';
+}
+
+/* ═══ 프레임 ④ — 레벨 5개 전부 접힘 ═════════════════════════════════ */
+function frame4(){
+  const doneByLevel = {A1:11, A2:23, B1:3, B2:0, C1:0};
+  let rows = '';
+  for(const lv of LEVELS){
+    const d = doneByLevel[lv.id];
+    const here = lv.id === "B1";
+    rows += '<div class="lvl' + (here ? ' here' : '') + '">'
+      + '<span class="id">' + lv.id + '</span>'
+      + '<span class="st">' + ring(d, lv.ch) + '</span>'
+      + '<span class="col"><b>' + lv.label.replace(lv.id + " ", "") + '</b>'
+      + '<span>' + lv.range + ' · ' + d + ' of ' + lv.ch + ' done</span>'
+      + (here ? '<em>In progress — Chapter 38 · ' + esc(CH38.t.split(" · ")[0]) + '</em>' : '')
+      + '</span><span class="chev">⌄</span></div>';
+  }
+  return '<div class="screen plain"><div class="view"><div class="nx">'
+    + topbar(B)
+    + courseRail(B)
+    + '<div style="margin-top:12px"><input class="search" value="" placeholder="Search number or title" readonly></div>'
+    + mininav(false)
+    + '<div style="margin-top:12px">' + rows + '</div>'
+    + '<div style="margin-top:26px;padding-top:14px;border-top:1px solid var(--line)">'
+    +   '<div style="font-size:15.5px;font-weight:800;letter-spacing:-.01em">Readers</div>'
+    +   '<div style="margin-top:2px;font-size:11.5px;font-weight:650;color:var(--ink-3)">'
+    +     '12 graded stories · 3 read</div>'
+    + '</div>'
+    + '</div></div>' + tabbar("shelf") + '</div>';
+}
+
+/* ═══ 프레임 ⑤ — 단어장 (같은 규칙 적용) ═══════════════════════════ */
+function frame5(){
+  const glyph = (s) => s === "ok" ? '<span class="glyph ok">✓</span>'
+    : s === "star" ? '<span class="glyph star">★</span>' : '<span class="glyph off">☆</span>';
+  const rows = (arr) => arr.map(w =>
+    '<button class="wrow"><span class="st">' + glyph(w.s) + '</span>'
+    + '<span class="col"><b>' + esc(w.ko) + '</b>'
+    + '<span><i>' + esc(w.r) + '</i> · ' + esc(w.en) + '</span></span></button>').join('');
+  return '<div class="screen plain"><div class="view"><div class="nx wb">'
+    + '<div class="top"><span class="mark">Wordbook</span><span class="count">803 words</span></div>'
+    + '<p class="sub">214 learned · 12 saved</p>'
+    + '<div style="margin-top:12px"><input class="search" value="" '
+    +   'placeholder="Search Korean, romanization, or English" readonly></div>'
+    + '<div class="tabs">'
+    +   '<button class="tab on">All levels</button><button class="tab">A1</button>'
+    +   '<button class="tab">A2</button><button class="tab">B1</button><button class="tab">B2</button>'
+    + '</div>'
+    + '<div class="mininav" style="margin-top:12px;grid-template-columns:repeat(2,1fr)">'
+    +   '<button><b>Confusable sets</b><span>헷갈리는 짝 · 96</span></button>'
+    +   '<button><b>Starred</b><span>12</span></button>'
+    + '</div>'
+    + '<div class="ghead">Chapter 1</div><div>' + rows(WORDS_CH1) + '</div>'
+    + '<div class="ghead">Chapter 2</div><div>' + rows(WORDS_CH2) + '</div>'
+    + '</div></div><div class="cut"></div>' + tabbar("words") + '</div>';
+}
+
+/* ═══ 캡션 + 조립 ═══════════════════════════════════════════════════ */
+const FRAMES = [
+  {html: frame1, title:"① 현재 상태 재현 — 비교 기준",
+   state:"학습자 A · 3과 진행 중 · A1 펼침 (Shelf.svelte + ShelfLevelGroup.svelte 그대로)",
+   fixes:[["1 괘선 충돌","bad"],["2 간식 = 챕터","bad"],["3 목표 2줄","bad"],
+          ["4 좌↔우 시선","bad"],["5 무게 불일치","bad"],["6 전 행 구분선","bad"]],
+   body:"<p>진단 6건이 전부 보이는 화면이다. <b>①</b> 30px 괘선이 62~86px 행 구분선과 어긋난 채 매 행을 가로지른다. "
+     + "<b>②</b> 2과 뒤에 Survival Help · Family Words · Agreeing &amp; Understanding 세 간식이 각자 구분선을 달고 "
+     + "챕터와 같은 흐름에 선다 — 13.5px과 15px의 차이는 팔 길이에서 사라진다. "
+     + "<b>③</b> 회색 목표 문장이 챕터마다 2줄(34px)을 먹어 제목(20px)보다 덩치가 크다. "
+     + "<b>④</b> 번호는 왼쪽 끝, 진행은 오른쪽 끝이라 한 행을 읽으려면 시선이 왕복한다. "
+     + "<b>⑤</b> 24px 도장 / 「5/8 + 38px 바」 / 흐린 「0/8」이 폭도 형태도 달라 같은 열에서 비교되지 않는다. "
+     + "<b>⑥</b> 챕터·간식이 똑같은 <code style='font-family:ui-monospace,monospace'>border-top</code>을 가져 덩어리가 안 생긴다.</p>",
+   num:"<b>한 화면에 들어오는 챕터: 약 2.5개.</b> 헤더·검색·진입점 2행·레벨 헤더가 339px, "
+     + "남는 439px에 챕터 85px + 간식 44px가 섞여 들어간다."},
+
+  {html: frame2, title:"② A안 — 압축형",
+   state:"학습자 A · 3과 진행 중 · A1 펼침 · 챕터 1줄 클램프",
+   fixes:[["1 괘선 제거","" ],["2 간식 분리","" ],["3 목표 = 현재 1개만","" ],
+          ["4 거터 통합","" ],["5 22px 링/도장","" ],["6 챕터 사이만","" ]],
+   body:"<p><b>목표 설명문 처리 = 전면 숨김 + 현재 챕터 1행에만 노출.</b> 근거: 목표는 <b>플레이어의 관심사</b>지 색인의 관심사가 아니다. "
+     + "72과 × 2줄 = 144줄의 회색 문장을 아무도 읽지 않으면서 화면의 60%를 먹는다. "
+     + "제목이 이미 문법 형태(<b>-고 싶어요 · -(으)ㄹ 수 있어요</b>)를 그대로 말하고 있고, 그게 실제 색인 키다. "
+     + "목표는 「지금 하고 있는 한 과」에서만 <b>약속</b>으로 기능한다 — 끝난 과에는 기억이고, 안 한 과에는 스포일러다. "
+     + "그 한 행에는 <b>5/8 bites</b>도 같이 붙는다.</p>"
+     + "<p><b>간식은 목차에서 뺐다.</b> 데이터상 <code style='font-family:ui-monospace,monospace'>afterChapter</code>는 소속이 아니라 "
+     + "「이때쯤 먹으면 좋다」는 추천이고, 18개뿐인데 11개가 A1에 몰려 있다. 목차에서 빼면 72행이 순수 챕터 목록이 되고, "
+     + "미니 내비의 <b>Snacks 18</b>이 진입점을 유지한다.</p>",
+   num:"<b>실측 — 한 화면에 챕터 9개가 온전히, 10번째가 하단에 걸린다.</b> 행 높이 44px 고정(제목 1줄), "
+     + "헤더는 코스 레일까지 포함해 223px로 현재(383px)보다 <b>160px 짧다</b>. <b>2.5개 → 9.5개, 약 3.8배.</b>"},
+
+  {html: frame3, title:"③ B안 — 그룹형",
+   state:"학습자 A · 3과 진행 중 · A1 펼침 · 챕터 최대 2줄",
+   fixes:[["1 괘선 제거",""],["2 간식 = 부속",""],["3 목표 = 현재 1개만",""],
+          ["4 거터 통합",""],["5 22px 링/도장",""],["6 챕터 사이만",""]],
+   body:"<p><b>A안과의 차이는 두 가지다.</b> (i) 간식이 목차 안에 남아 <b>챕터 덩어리</b>에 종속된다 — "
+     + "54px 들여쓰기로 거터 폭과 정렬하고 <b>구분선을 주지 않는다</b>. 접힌 상태는 「Snacks 2 · 이름 나열」 한 줄이고, "
+     + "펼치면 개별 행이 되면서 라벨이 사라진다(2과가 그 예다 — 진단 2가 지목한 바로 그 자리). "
+     + "구분선 하나를 빼는 것만으로 간식 3개가 「3개의 형제 행」에서 「2과의 부속 3줄」로 바뀐다. "
+     + "(ii) 제목이 2줄까지 흐른다 — 9과·38과처럼 긴 제목이 잘리지 않는다.</p>"
+     + "<p>구분선은 <b>챕터 사이에만</b> 있다. 그래서 「선 → 챕터 → 간식들 → 선」이 한 덩어리로 읽히고, "
+     + "간식이 몇 개든 덩어리 수는 챕터 수와 같다.</p>",
+   num:"<b>실측 — A1에서 챕터 4개(2과를 펼친 상태 기준).</b> A1이 최악의 구간이다: 간식 18개 중 11개가 "
+     + "여기 몰려 있어 11과에 22개의 탭 대상이 있다. 간식 4개뿐인 B1(22과)에서는 챕터 <b>7~8개</b>로 A안(9~10개)에 근접한다. "
+     + "밀도 차이는 레이아웃이 아니라 <b>데이터 분포</b>가 만든다."},
+
+  {html: frame4, title:"④ 레벨 5개 전부 접힘",
+   state:"학습자 B · 38과 진행 중 (B1) · 코스 중반",
+   fixes:[["4 거터 통합",""],["5 링 = 레벨에도 동일",""],["72과 위치",""]],
+   body:"<p>접힘 화면의 임무는 하나다 — <b>내가 72과 중 어디쯤인가.</b> 세 겹으로 답한다. "
+     + "<b>코스 레일</b>이 72눈금으로 「37 done」을 길이로 보여주고 현재 과 한 눈금만 잉크색으로 6px 더 길다. "
+     + "<b>레벨 행</b>은 챕터 단위(11/11, 23/23, 3/22)로 세고, 같은 22px 링을 쓴다 — "
+     + "A1·A2는 도장, B1은 3/22 호, B2·C1은 빈 링이라 <b>다섯 줄이 한눈에 비교된다</b>. "
+     + "<b>현재 레벨 한 줄</b>만 잉크색이고, 그 아래에만 「In progress — Chapter 38」이 붙는다.</p>"
+     + "<p>레벨 진행을 bite에서 <b>챕터</b>로 바꾼 이유: 「100/100 bites」는 위치가 아니라 노동량이다. "
+     + "사람은 과로 센다.</p>",
+   num:"<b>다섯 줄 + 레일 하나로 72과 전체가 요약된다.</b> B2가 57–63·66–69로 끊기는 것도 "
+     + "<code style='font-family:ui-monospace,monospace'>chapterRangeLabel</code> 그대로 표기했다."},
+
+  {html: frame5, title:"⑤ 다른 목차 표면 — 단어장",
+   state:"학습자 B · 803단어 · 214 learned · 12 saved",
+   fixes:[["1 괘선 제거",""],["4 거터 통합",""],["5 상태 = 한 열",""],["6 위계 경계에만 선",""]],
+   body:"<p>같은 규칙이 그대로 걸린다. 배경은 <b>무지 종이</b>, 상태는 <b>왼쪽 22px 한 열</b>. "
+     + "단어의 상태는 양이 아니라 이분(learned / not)이므로 링 대신 STYLE §4가 허용한 글리프 한 자를 쓴다 — "
+     + "<span style='color:var(--good);font-weight:800'>✓</span> learned, "
+     + "<span style='color:var(--gold);font-weight:800'>★</span> starred, ☆ 미학습. "
+     + "<b>기하는 같고 어휘만 표면에 맞게 갈린다</b>는 것이 이 규칙의 요점이다.</p>"
+     + "<p>구분선 규칙도 그대로다: <b>같은 급끼리만 긋는다.</b> 단어는 서로 형제라 행마다 선이 있고, "
+     + "「Chapter 1」 그룹 헤더는 부모라서 선이 없고 여백으로만 끊는다. Shelf에서 간식에 선을 안 주는 것과 같은 규칙이다.</p>",
+   num:"현재 WordbookTab은 이미 밑줄 탭·무채색 필터를 쓰고 있어 바꿀 게 <b>배경(괘선 제거)과 상태 열 두 가지</b>뿐이다. "
+     + "문법 수집(GrammarCollection) 그리드도 같은 2층이며, 카드 안쪽 <code style='font-family:ui-monospace,monospace'>.tooth</code>는 유지한다."}
+];
+
+document.getElementById("frames").innerHTML = FRAMES.map(f =>
+  '<figure><div class="phone">' + f.html() + '</div>'
+  + '<figcaption><b>' + f.title + '</b>'
+  + '<div class="state">' + f.state + '</div>'
+  + '<div class="fixrow">' + f.fixes.map(([t,c]) =>
+      '<span class="fix ' + c + '">진단 ' + t + '</span>').join('') + '</div>'
+  + f.body
+  + '<div class="num">' + f.num + '</div>'
+  + '</figcaption></figure>').join('');
+
+/* ─ 다크 토글 ─────────────────────────────────────────────────────────── */
+const btn = document.getElementById("themeBtn");
+const lbl = document.getElementById("themeLbl");
+btn.addEventListener("click", () => {
+  const dark = document.documentElement.getAttribute("data-theme") === "dark";
+  document.documentElement.setAttribute("data-theme", dark ? "light" : "dark");
+  lbl.textContent = dark ? "다크로 보기" : "라이트로 보기";
+});
+</script>
+</body>
+</html>
