@@ -1143,7 +1143,15 @@
     [
       "기 위해서",
       "기 위하여"
+    ],
+    [
+      "으나",
+      "나"
+    ],
+    [
+      "으므로",
+      "므로"
     ]
   ],
-  "_interchangeable_comment": "audit-ruled interchangeable grammar pairs: never offer both members of a pair as mutually exclusive cloze options (order 21 generators consult this)."
+  "_interchangeable_comment": "audit-ruled interchangeable grammar pairs: never offer both members of a pair as mutually exclusive cloze options (order 21 generators consult this). The last two are order 25: written endings whose optional 으 is decided by the stem, so offering them against each other is a spelling coin-flip, not a contrast."
 }

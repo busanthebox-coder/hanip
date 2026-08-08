@@ -1,0 +1,929 @@
+{
+  "id": "chapter-71",
+  "hook": {
+    "situation": "You open a Korean news app and the headline has no particles, the first sentence names no one, and every other word ends in 적, 화, or 성. Nothing here is new grammar exactly — it is the passive you already know, wearing a Sino-Korean coat.",
+    "objectives": [
+      "Read the news passives — 밝혀지다, 알려지다, 전해지다, 예상되다 — and see who has been left out of the sentence.",
+      "Decode the three suffixes that build most news vocabulary: -적(的), -화(化), and -성(性).",
+      "Parse a headline with its particles dropped and its verb replaced by a bare noun."
+    ],
+    "whyItMatters": "Korean journalism is written almost entirely in the passive, and its vocabulary is assembled from Sino-Korean roots plus three suffixes. Learners who can hold a fluent conversation still stall on a two-line headline, because headline Korean removes exactly the particles they were taught to rely on."
+  },
+  "grammarNotes": [
+    {
+      "title": "News passives — 밝혀지다, 알려지다, 전해지다",
+      "func": "Journalism reports what is known without naming who knows it. Alongside the -이/히/리/기- passives you have already met, news Korean leans on two other families: 되다 attached to a Sino-Korean noun (발표되다, 예상되다, 확인되다), and -아/어지다 attached to a verb of knowing or telling (밝혀지다, 알려지다, 전해지다). The source, when it appears at all, comes in as N에 따르면.",
+      "formTable": [
+        {
+          "when": "Sino-Korean noun + 되다",
+          "add": "N되다",
+          "ex": "발표 → 새 정책이 발표됐다 (a new policy was announced)"
+        },
+        {
+          "when": "Verb of knowing or telling + -아/어지다",
+          "add": "V-아/어지다",
+          "ex": "밝히다 → 원인이 밝혀졌다 (the cause was uncovered)"
+        },
+        {
+          "when": "Hedged report — 'it is understood that'",
+          "add": "-(으)ㄴ/는 것으로 알려졌다",
+          "ex": "검토하다 → 검토 중인 것으로 알려졌다"
+        },
+        {
+          "when": "Forecast",
+          "add": "-(으)ㄹ 것으로 예상된다 / 전망된다",
+          "ex": "오르다 → 가격이 오를 것으로 전망된다"
+        },
+        {
+          "when": "Naming the source",
+          "add": "N에 따르면 … -다고 밝혔다",
+          "ex": "정부 → 정부에 따르면 지원이 확대된다고 밝혔다"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "조사 결과 사고의 원인이 정비 불량으로 밝혀졌다.",
+          "romanization": "josa gyeolgwa sagoui wonini jeongbi bullyangeuro balkyeojyeotda.",
+          "en": "The investigation found that the cause of the accident was poor maintenance.",
+          "note": "밝혀지다 reports a finding; nobody is named as having found it."
+        },
+        {
+          "ko": "해당 기업은 내년부터 생산 시설을 확대할 것으로 알려졌다.",
+          "romanization": "haedang gieobeun naenyeonbuteo saengsan siseoreul hwakdaehal geoseuro allyeojyeotda.",
+          "en": "The company is understood to be expanding its production facilities from next year.",
+          "note": "-(으)ㄹ 것으로 알려졌다 is the standard hedge: reported, but not confirmed."
+        },
+        {
+          "ko": "정부에 따르면 지원 대상은 다음 달부터 확대된다.",
+          "romanization": "jeongbue ttareumyeon jiwon daesangeun daeum dalbuteo hwakdaedoenda.",
+          "en": "According to the government, the range of recipients will expand from next month.",
+          "note": "N에 따르면 is how a source enters a Korean news sentence."
+        },
+        {
+          "ko": "전문가들은 올해 물가가 더 오를 것으로 전망된다고 말했다.",
+          "romanization": "jeonmungadeureun olhae mulgaga deo oreul geoseuro jeonmangdoendago malhaetda.",
+          "en": "Experts said prices are forecast to rise further this year.",
+          "note": "전망되다 for forecasts, 예상되다 for expectations — nearly interchangeable in news."
+        }
+      ],
+      "keyPoint": {
+        "label": "The passive is doing editorial work",
+        "body": "밝혀졌다 and 알려졌다 are not just grammar — they mark how solid the claim is. 확인됐다 means verified; 밝혀졌다 means uncovered by an investigation; 알려졌다 means reported but not confirmed, and is what a paper writes when it does not want to vouch for the claim. Reading the passive tells you how much the writer is willing to stand behind."
+      },
+      "pronunciation": "밝혀지다 is [발켜지다]: the ㄺ of 밝 and the ㅎ of 혀 fuse into an aspirated [ㅋ], exactly as in 읽히다 [일키다]. 알려졌다 is [알려젇따] and 전해졌다 is [전해젇따].",
+      "drill": {
+        "instruction": "Rewrite each active news sentence as the passive a Korean paper would print.",
+        "model": "조사팀이 원인을 밝혔다. → 원인이 밝혀졌다.",
+        "items": [
+          "정부가 새 정책을 발표했다. → 새 정책이 _______.",
+          "기자들이 그 기업의 계획을 알았다. → 그 기업의 계획이 _______.",
+          "전문가들이 물가 상승을 예상한다. → 물가가 오를 것으로 _______."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "정부에 의하면 지원이 확대한다.",
+        "right": "정부에 따르면 지원이 확대된다.",
+        "explanation": "Two slips in one line. 확대하다 is transitive — something expands something else — so a subject like 지원 needs the passive 확대되다. And while 에 의하면 exists, everyday news Korean uses N에 따르면 for 'according to'; 에 의해 is reserved for naming the agent of a passive."
+      }
+    },
+    {
+      "title": "-적(的) — turning a noun into a modifier",
+      "func": "-적 attaches to a Sino-Korean noun and turns it into something that can describe: 경제 (economy) becomes 경제적 (economic). It has three shapes with different weights — N적 directly before a noun is the terse written form, N적인 is slightly softer, and N적으로 works as an adverb. It attaches only to Sino-Korean roots, never to native Korean words.",
+      "formTable": [
+        {
+          "when": "Before a noun — terse, written",
+          "add": "N적 + N",
+          "ex": "경제 → 경제적 부담 (an economic burden)"
+        },
+        {
+          "when": "Before a noun — slightly softer",
+          "add": "N적인 + N",
+          "ex": "구체 → 구체적인 방안 (a concrete plan)"
+        },
+        {
+          "when": "As an adverb",
+          "add": "N적으로",
+          "ex": "사회 → 사회적으로 (socially, in social terms)"
+        },
+        {
+          "when": "As a predicate",
+          "add": "N적이다",
+          "ex": "적극 → 반응이 적극적이다 (the response is enthusiastic)"
+        },
+        {
+          "when": "Native Korean words cannot take it",
+          "add": "✗ N적",
+          "ex": "마음 → 마음적 ✗ / 정신적 ✓"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "이번 조치는 일시적인 대책일 뿐이라는 비판이 나왔다.",
+          "romanization": "ibeon jochineun ilsijeogin daechaegil ppuniraneun bipani nawatda.",
+          "en": "Criticism emerged that this measure is nothing more than a temporary fix.",
+          "note": "일시적 (temporary) is one of the highest-frequency 적 words in news."
+        },
+        {
+          "ko": "정부는 보다 구체적 방안을 다음 주에 내놓기로 했다.",
+          "romanization": "jeongbuneun boda guchejeok bangeaneul daeum jue naenokiro haetda.",
+          "en": "The government decided to put forward a more concrete plan next week.",
+          "note": "구체적 방안 with no 인 — the compressed form that headlines and reports prefer."
+        },
+        {
+          "ko": "물가 상승은 사회적으로도 큰 부담이 되고 있다.",
+          "romanization": "mulga sangseungeun sahoejeogeurodo keun budami doego itda.",
+          "en": "Rising prices are becoming a heavy burden socially as well.",
+          "note": "-적으로 turns the modifier into an adverb: 'in social terms'."
+        },
+        {
+          "ko": "주민들의 반응은 대체로 긍정적이었다.",
+          "romanization": "jumindeurui baneungeun daechero geungjeongjeogieotda.",
+          "en": "Residents' reactions were on the whole positive.",
+          "note": "N적이다 as a full predicate, here in the past: 긍정적이었다."
+        }
+      ],
+      "keyPoint": {
+        "label": "N적 vs N적인 — how much you compress",
+        "body": "Both sit in front of a noun and mean the same thing. Bare N적 is denser and belongs to headlines, reports, and academic prose: 경제적 부담, 구체적 방안. N적인 is a little more relaxed and is what you would say out loud: 경제적인 부담. If you are unsure in speech, 적인 is the safer choice; in a written report, drop the 인."
+      },
+      "pronunciation": "적 is [적], and before a vowel it links: 경제적인 is [경제저긴], 사회적으로 is [사회저그로], 긍정적이었다 is [긍정저기얻따].",
+      "drill": {
+        "instruction": "Build the 적 form the sentence needs — modifier, adverb, or predicate.",
+        "model": "경제 / 부담이 크다 → 경제적 부담이 크다.",
+        "items": [
+          "일시 / 대책이다 → 이번 조치는 _______ 대책일 뿐이다.",
+          "사회 / 부담이 되다 → 물가 상승은 _______ 큰 부담이 된다.",
+          "긍정 / 반응이다 → 주민들의 반응은 대체로 _______."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "마음적 부담이 크다.",
+        "right": "정신적 부담이 크다.",
+        "explanation": "-적 attaches only to Sino-Korean roots. 마음 is a native Korean word, so 마음적 does not exist; the Sino-Korean equivalent 정신 gives 정신적. When you want a 적 word, check that the base is a Sino-Korean noun — 경제, 사회, 정신, 구체 — not a native one like 마음, 몸, or 일."
+      }
+    },
+    {
+      "title": "-화(化) — the '-ization' suffix",
+      "func": "-화 turns a noun into a process of becoming: 자동 (automatic) plus 화 gives 자동화 (automation). It usually appears as a verb with 되다 — 자동화되다, 'to become automated' — and it is how Korean names any large social or technical shift, which is why news writing is full of it.",
+      "formTable": [
+        {
+          "when": "The process itself, as a noun",
+          "add": "N화",
+          "ex": "자동 → 자동화 (automation)"
+        },
+        {
+          "when": "Something undergoes it",
+          "add": "N화되다",
+          "ex": "고령 → 사회가 고령화되다 (society ages)"
+        },
+        {
+          "when": "Someone brings it about",
+          "add": "N화하다",
+          "ex": "다양 → 상품을 다양화하다 (to diversify the products)"
+        },
+        {
+          "when": "As a modifier",
+          "add": "N화된 + N",
+          "ex": "자동 → 자동화된 설비 (automated equipment)"
+        },
+        {
+          "when": "Frequent in the news",
+          "add": "고령화 · 국제화 · 다양화 · 본격화",
+          "ex": "본격 → 복구 작업이 본격화됐다"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "생산 공정이 자동화되면서 인력 수요가 크게 줄었다.",
+          "romanization": "saengsan gongjeongi jadonghwadoemyeonseo illyeok suyoga keuge jureotda.",
+          "en": "As the production process became automated, demand for workers fell sharply.",
+          "note": "자동화되다 for the thing that changes; the people who automated it go unmentioned."
+        },
+        {
+          "ko": "인구 고령화가 빠르게 진행되고 있는 것으로 나타났다.",
+          "romanization": "ingu goryeonghwaga ppareuge jinhaengdoego inneun geoseuro natanatda.",
+          "en": "Population ageing is found to be progressing rapidly.",
+          "note": "-(으)ㄴ/는 것으로 나타나다 is another standard reporting frame."
+        },
+        {
+          "ko": "폭우 피해가 커지면서 복구 작업이 본격화됐다.",
+          "romanization": "pogu pihaega keojimyeonseo bokgu jageobi bongyeokwadwaetda.",
+          "en": "As the storm damage grew, recovery work got fully under way.",
+          "note": "본격화되다 — 'to move into full swing' — is a news fixture."
+        },
+        {
+          "ko": "회사는 판매 경로를 다양화하기로 결정했다.",
+          "romanization": "hoesaneun panmae gyeongnoreul dayanghwahagiro gyeoljeonghaetda.",
+          "en": "The company decided to diversify its sales channels.",
+          "note": "N화하다 when somebody does it on purpose, N화되다 when it simply happens."
+        }
+      ],
+      "keyPoint": {
+        "label": "N화되다 vs N화하다",
+        "body": "The pair works like every other 되다/하다 split you know. N화되다 describes something undergoing the change with no agent named — 사회가 고령화되다, 공정이 자동화되다. N화하다 names somebody doing it deliberately — 상품을 다양화하다. News uses 되다 far more often, because the whole register is built on leaving the actor out."
+      },
+      "pronunciation": "화 is [화], but after a ㄱ it aspirates: 본격화 is [본겨콰] and 자동화 stays [자동화]. 고령화 is [고령화], with no change.",
+      "drill": {
+        "instruction": "Build the 화 form: 되다 when it simply happens, 하다 when somebody does it.",
+        "model": "공정 / 자동 → 공정이 자동화됐다.",
+        "items": [
+          "사회 / 고령 → 사회가 빠르게 _______.",
+          "복구 작업 / 본격 → 복구 작업이 _______.",
+          "회사가 판매 경로 / 다양 → 회사가 판매 경로를 _______."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "생산 공정이 자동화했다.",
+        "right": "생산 공정이 자동화됐다.",
+        "explanation": "English says \"the process automated,\" using one verb for both sides. Korean splits them: the thing that undergoes the change takes N화되다, and only a deliberate actor takes N화하다. A production process does not automate itself on purpose, so it needs 자동화됐다."
+      }
+    },
+    {
+      "title": "-성(性) — the '-ness' noun, and what verbs it takes",
+      "func": "-성 turns a noun or a root into an abstract quality: 가능 plus 성 gives 가능성, 'possibility'. Unlike -적 it produces a full noun, so it takes particles and pairs with a small, fixed set of predicates — 있다, 없다, 높다, 크다, 제기되다. Getting that pairing right is most of the work.",
+      "formTable": [
+        {
+          "when": "The quality, as a noun",
+          "add": "N성",
+          "ex": "가능 → 가능성 (possibility)"
+        },
+        {
+          "when": "It exists or does not",
+          "add": "N성이 있다 / 없다",
+          "ex": "위험 → 위험성이 있다"
+        },
+        {
+          "when": "Its degree",
+          "add": "N성이 높다 / 크다",
+          "ex": "가능 → 가능성이 높다 (it is likely)"
+        },
+        {
+          "when": "Someone raises it as an issue",
+          "add": "N성이 제기되다",
+          "ex": "필요 → 제도 개선의 필요성이 제기됐다"
+        },
+        {
+          "when": "Frequent in the news",
+          "add": "안정성 · 위험성 · 중요성 · 다양성",
+          "ex": "안정 → 시설의 안정성이 확인됐다"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "올해 안에 제도가 바뀔 가능성이 높다고 보도됐다.",
+          "romanization": "olhae ane jedoga bakkwil ganeungseongi noptago bododwaetda.",
+          "en": "It was reported that the system is likely to change within the year.",
+          "note": "가능성이 높다, not 크다 — this pairing is fixed."
+        },
+        {
+          "ko": "조사 이후 제도 개선의 필요성이 다시 제기됐다.",
+          "romanization": "josa ihu jedo gaeseonui piryoseongi dasi jegidwaetda.",
+          "en": "After the investigation, the need for reform was raised again.",
+          "note": "필요성이 제기되다 is how news says somebody made the case for something."
+        },
+        {
+          "ko": "점검 결과 시설의 안정성에는 문제가 없는 것으로 확인됐다.",
+          "romanization": "jeomgeom gyeolgwa siseorui anjeongseongeneun munjega eomneun geoseuro hwagindwaetda.",
+          "en": "The inspection confirmed there is no problem with the facility's stability.",
+          "note": "Three chapter patterns in one line: 성, a 되다 passive, and 것으로 확인되다."
+        },
+        {
+          "ko": "전문가들은 이 방식의 위험성을 여러 차례 경고해 왔다.",
+          "romanization": "jeonmungadeureun i bangsigui wiheomseongeul yeoreo charye gyeonggohae watda.",
+          "en": "Experts have repeatedly warned of the risks of this approach.",
+          "note": "As a full noun, 위험성 takes 을/를 when it is the object."
+        }
+      ],
+      "keyPoint": {
+        "label": "-성 is a noun, -적 is a modifier",
+        "body": "The two suffixes attach to the same roots but do opposite jobs. 가능성 is a thing you can have, count, and mark with a particle: 가능성이 높다. 가능적 does not exist, but where a 적 form does — 경제적, 사회적 — it can only describe, never stand alone as a subject. If the slot needs a noun, reach for 성; if it needs a modifier, reach for 적."
+      },
+      "pronunciation": "성 links straight into a following particle: 가능성이 is [가능성이], 필요성이 is [피료성이], 안정성에는 is [안정성에는]. 위험성을 is [위험성을].",
+      "drill": {
+        "instruction": "Pick the predicate that goes with each -성 noun.",
+        "model": "가능성 / likely → 가능성이 높다.",
+        "items": [
+          "필요성 / somebody raised it → 제도 개선의 _______ 제기됐다.",
+          "안정성 / no problem with it → 시설의 _______ 문제가 없다.",
+          "위험성 / experts warned of it → 전문가들이 이 방식의 _______ 경고했다."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "제도가 바뀔 가능성이 크다고 보도됐다.",
+        "right": "제도가 바뀔 가능성이 높다고 보도됐다.",
+        "explanation": "가능성 pairs with 높다, not 크다 — Korean measures a probability by height, not size. Learners reach for 크다 because English says \"a big possibility.\" Compare 필요성이 크다, which does take 크다. These pairings are fixed and worth memorising as chunks."
+      }
+    },
+    {
+      "title": "Headline grammar — dropped particles and noun-final sentences",
+      "func": "A Korean headline is a sentence with its joints removed. Subject and object particles disappear, the verb is replaced by a bare noun or a nominal form, and a comma after the opening noun marks it as the topic. Once you know what has been deleted, you can put it back and read the headline as an ordinary sentence.",
+      "formTable": [
+        {
+          "when": "Topic marked by a comma instead of 은/는",
+          "add": "N, …",
+          "ex": "정부, 지원 대상 확대 → 정부는 지원 대상을 확대한다"
+        },
+        {
+          "when": "Object particle dropped",
+          "add": "(을/를 deleted)",
+          "ex": "요금 인상 검토 → 요금 인상을 검토한다"
+        },
+        {
+          "when": "Verb replaced by a bare noun",
+          "add": "… 확대 / 검토 / 예상",
+          "ex": "반발 예상 → 반발이 예상된다"
+        },
+        {
+          "when": "Ellipsis for a second, linked clause",
+          "add": "… (separates two clauses)",
+          "ex": "요금 인상 검토… 이용객 반발 예상"
+        },
+        {
+          "when": "Quoting without 고",
+          "add": "N, \"…\"라며",
+          "ex": "정부, \"검토 중\"이라며 확답 피해"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "정부, 내년부터 지원 대상 확대",
+          "romanization": "jeongbu, naenyeonbuteo jiwon daesang hwakdae",
+          "en": "Government to expand eligibility from next year",
+          "note": "Unpacked: 정부는 내년부터 지원 대상을 확대한다."
+        },
+        {
+          "ko": "지하철 요금 인상 검토… 이용객 반발 예상",
+          "romanization": "jihacheol yogeum insang geomto… iyonggaek banbal yesang",
+          "en": "Subway fare rise under review… backlash from passengers expected",
+          "note": "Unpacked: 지하철 요금 인상을 검토한다. 이용객의 반발이 예상된다."
+        },
+        {
+          "ko": "폭우 피해 확산, 복구 작업 본격화",
+          "romanization": "pogu pihae hwaksan, bokgu jageop bongyeokwa",
+          "en": "Storm damage spreads, recovery work moves into full swing",
+          "note": "Two noun-final clauses; the comma here joins them rather than marking a topic."
+        },
+        {
+          "ko": "전문가들 \"물가 더 오를 것\"이라며 대책 촉구",
+          "romanization": "jeonmungadeul \"mulga deo oreul geot\"iramyeo daechaek chokgu",
+          "en": "Experts urge action, saying prices will rise further",
+          "note": "라며 compresses -라고 하며; the quote keeps its own grammar intact."
+        }
+      ],
+      "keyPoint": {
+        "label": "Read a headline by putting the particles back",
+        "body": "Work from the end. The final noun is the verb: 확대 means 확대한다 or 확대된다, 예상 means 예상된다, 검토 means 검토한다. Then the noun before it is usually the object, so restore 을/를. Then whatever sits before the comma is the topic, so restore 은/는. 정부, 지원 대상 확대 unpacks to 정부는 지원 대상을 확대한다."
+      },
+      "pronunciation": "Headlines are read aloud with a pause where each particle was deleted, not run together: 정부 / 지원 대상 / 확대. The ellipsis … is read as a longer pause, and it usually separates two whole clauses.",
+      "drill": {
+        "instruction": "Unpack each headline into a full sentence, restoring the particles and the verb.",
+        "model": "정부, 지원 대상 확대 → 정부는 지원 대상을 확대한다.",
+        "items": [
+          "지하철 요금 인상 검토 → 지하철 요금 인상_ _______.",
+          "이용객 반발 예상 → 이용객의 반발_ _______.",
+          "복구 작업 본격화 → 복구 작업_ _______."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "정부는 지원 대상 확대한다.",
+        "right": "정부는 지원 대상을 확대한다.",
+        "explanation": "Headline Korean drops particles, but ordinary Korean does not. Learners who read a lot of headlines start deleting 을/를 in their own writing, which reads as clipped or careless. Treat the dropped particles as a headline convention only, and restore them the moment you write a full sentence."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "기사",
+      "romanization": "gisa",
+      "english": "(news) article, report",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "그 기사에 따르면 제도가 올해 안에 바뀔 가능성이 높다.",
+        "en": "According to the article, the system is likely to change within the year.",
+        "note": "N에 따르면 plus 가능성이 높다 — two news frames in one sentence."
+      },
+      "collocations": [
+        "기사를 읽다",
+        "기사가 나오다",
+        "관련 기사"
+      ]
+    },
+    {
+      "hangul": "보도",
+      "romanization": "bodo",
+      "english": "news coverage, reporting",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "해당 내용은 어제 여러 매체를 통해 보도됐다.",
+        "en": "The matter was reported yesterday across several outlets.",
+        "note": "보도되다 is the 되다 passive: the outlets do it, but they are not the subject."
+      },
+      "collocations": [
+        "보도가 나오다",
+        "보도되다",
+        "언론 보도"
+      ]
+    },
+    {
+      "hangul": "발표",
+      "romanization": "balpyo",
+      "english": "announcement",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "새 정책은 다음 주 월요일에 발표될 것으로 알려졌다.",
+        "en": "The new policy is understood to be announced next Monday.",
+        "note": "-(으)ㄹ 것으로 알려졌다: reported, but not confirmed by the paper."
+      },
+      "collocations": [
+        "발표를 하다",
+        "발표되다",
+        "공식 발표"
+      ]
+    },
+    {
+      "hangul": "밝히다",
+      "romanization": "balkida",
+      "english": "to state, to reveal",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "정부는 지원을 확대하겠다고 밝혔다.",
+        "en": "The government stated that it will expand support.",
+        "note": "-다고 밝혔다 is how news quotes an official statement. Its passive is 밝혀지다."
+      },
+      "collocations": [
+        "입장을 밝히다",
+        "-다고 밝혔다",
+        "원인이 밝혀지다"
+      ]
+    },
+    {
+      "hangul": "결과",
+      "romanization": "gyeolgwa",
+      "english": "result, findings",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "조사 결과 이용자 만족도가 지난해보다 높아진 것으로 나타났다.",
+        "en": "The survey found that user satisfaction had risen compared with last year.",
+        "note": "N 결과 with no particle is itself a compressed news frame."
+      },
+      "collocations": [
+        "조사 결과",
+        "결과가 나오다",
+        "점검 결과"
+      ]
+    },
+    {
+      "hangul": "정부",
+      "romanization": "jeongbu",
+      "english": "the government",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "정부에 따르면 이번 조치는 내년 상반기에 시행된다.",
+        "en": "According to the government, this measure takes effect in the first half of next year.",
+        "note": "N에 따르면 introduces the source, and 시행되다 keeps the actor out."
+      },
+      "collocations": [
+        "정부가 발표하다",
+        "정부에 따르면",
+        "정부 정책"
+      ]
+    },
+    {
+      "hangul": "확대",
+      "romanization": "hwakdae",
+      "english": "expansion, widening",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "지원 대상이 다음 달부터 확대된다.",
+        "en": "The range of recipients expands from next month.",
+        "note": "확대하다 is transitive; a thing that expands on its own takes 확대되다."
+      },
+      "collocations": [
+        "대상을 확대하다",
+        "확대되다",
+        "지원 확대"
+      ]
+    },
+    {
+      "hangul": "증가",
+      "romanization": "jeungga",
+      "english": "increase",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "이용객 수가 지난해보다 증가한 것으로 나타났다.",
+        "en": "Passenger numbers were found to have risen compared with last year.",
+        "note": "-(으)ㄴ 것으로 나타나다: 'was found to have', a standard reporting frame."
+      },
+      "collocations": [
+        "증가하다",
+        "증가세",
+        "큰 폭으로 증가하다"
+      ]
+    },
+    {
+      "hangul": "감소",
+      "romanization": "gamso",
+      "english": "decrease",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "생산 공정이 자동화되면서 인력 수요가 크게 감소했다.",
+        "en": "As the production process was automated, demand for workers fell sharply.",
+        "note": "자동화되다 and 감소하다 — the 화 suffix and its usual consequence."
+      },
+      "collocations": [
+        "감소하다",
+        "크게 감소하다",
+        "인구 감소"
+      ]
+    },
+    {
+      "hangul": "전망",
+      "romanization": "jeonmang",
+      "english": "outlook, forecast",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "올해 물가가 더 오를 것으로 전망된다.",
+        "en": "Prices are forecast to rise further this year.",
+        "note": "-(으)ㄹ 것으로 전망된다 is the fixed forecast frame."
+      },
+      "collocations": [
+        "전망이 나오다",
+        "전망되다",
+        "올해 전망"
+      ]
+    },
+    {
+      "hangul": "예정",
+      "romanization": "yejeong",
+      "english": "scheduled, planned",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "복구 작업은 이달 말까지 이어질 예정이다.",
+        "en": "Recovery work is scheduled to continue until the end of this month.",
+        "note": "-(으)ㄹ 예정이다 states a plan; notices shorten it to 예정임."
+      },
+      "collocations": [
+        "-(으)ㄹ 예정이다",
+        "예정대로",
+        "발표 예정"
+      ]
+    },
+    {
+      "hangul": "가능성",
+      "romanization": "ganeungseong",
+      "english": "possibility, likelihood",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "제도가 올해 안에 바뀔 가능성이 높다.",
+        "en": "The system is likely to change within the year.",
+        "note": "가능성 pairs with 높다, never 크다."
+      },
+      "collocations": [
+        "가능성이 높다",
+        "가능성이 없다",
+        "가능성을 열어 두다"
+      ]
+    },
+    {
+      "hangul": "필요성",
+      "romanization": "piryoseong",
+      "english": "necessity, the need for something",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "안전 기준 강화의 필요성이 크다는 지적이 이어지고 있다.",
+        "en": "Criticism continues that there is a strong need to tighten safety standards.",
+        "note": "필요성 takes 크다, unlike 가능성, which takes 높다."
+      },
+      "collocations": [
+        "필요성이 제기되다",
+        "필요성이 크다",
+        "필요성을 강조하다"
+      ]
+    },
+    {
+      "hangul": "경제",
+      "romanization": "gyeongje",
+      "english": "the economy",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "물가 상승이 가계에 경제적 부담을 주고 있다.",
+        "en": "Rising prices are placing an economic burden on households.",
+        "note": "경제적 with no 인 — the compressed modifier form of written Korean."
+      },
+      "collocations": [
+        "경제가 어렵다",
+        "경제적 부담",
+        "경제 성장"
+      ]
+    },
+    {
+      "hangul": "사회",
+      "romanization": "sahoe",
+      "english": "society",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "인구 고령화는 사회적으로도 큰 변화를 가져온다.",
+        "en": "Population ageing brings large changes socially as well.",
+        "note": "-적으로 turns the modifier into an adverb: 'in social terms'."
+      },
+      "collocations": [
+        "사회적 문제",
+        "사회적으로",
+        "고령화 사회"
+      ]
+    },
+    {
+      "hangul": "변화",
+      "romanization": "byeonhwa",
+      "english": "change",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "제도 변화가 시장에 미칠 영향이 주목되고 있다.",
+        "en": "The effect the change in the system will have on the market is drawing attention.",
+        "note": "변화 is itself a 화 word: 변 plus 화, 'becoming different'."
+      },
+      "collocations": [
+        "변화가 생기다",
+        "변화에 대응하다",
+        "큰 변화"
+      ]
+    },
+    {
+      "hangul": "영향",
+      "romanization": "yeonghyang",
+      "english": "effect, influence",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "이번 조치가 물가에 미친 영향은 아직 크지 않은 것으로 분석됐다.",
+        "en": "The effect of this measure on prices is analysed as not yet significant.",
+        "note": "영향을 미치다 is the fixed collocation, not 영향을 주다 in formal writing."
+      },
+      "collocations": [
+        "영향을 미치다",
+        "영향을 받다",
+        "영향이 크다"
+      ]
+    },
+    {
+      "hangul": "시장",
+      "romanization": "sijang",
+      "english": "market",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "시장에서는 가격이 더 오를 것으로 예상된다는 반응이 나왔다.",
+        "en": "The market reaction was that prices are expected to rise further.",
+        "note": "예상되다 keeps the forecaster anonymous — standard in market reporting."
+      },
+      "collocations": [
+        "시장이 반응하다",
+        "시장 상황",
+        "국내 시장"
+      ]
+    },
+    {
+      "hangul": "가격",
+      "romanization": "gagyeok",
+      "english": "price",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "원자재 가격이 오르면서 제품 가격도 인상될 전망이다.",
+        "en": "As raw material prices rise, product prices are also expected to be raised.",
+        "note": "인상되다 is the formal passive of 인상하다; news avoids the plain 오르다 for deliberate rises."
+      },
+      "collocations": [
+        "가격이 오르다",
+        "가격 인상",
+        "가격이 내리다"
+      ]
+    },
+    {
+      "hangul": "지역",
+      "romanization": "jiyeok",
+      "english": "region, area",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "피해가 큰 지역부터 복구 작업이 본격화될 예정이다.",
+        "en": "Recovery work is scheduled to begin in earnest in the worst-hit areas first.",
+        "note": "본격화되다 plus -(으)ㄹ 예정이다 — two news frames stacked."
+      },
+      "collocations": [
+        "지역 주민",
+        "피해 지역",
+        "지역별"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Two colleagues are looking at the morning news on their phones. One of them is learning to read past the headline into the article underneath.",
+    "lines": [
+      {
+        "speaker": "유진",
+        "ko": "이 헤드라인 좀 보세요. '정부, 내년부터 지원 대상 확대'. 조사가 하나도 없네요.",
+        "romanization": "i hedeurain jom boseyo. 'jeongbu, naenyeonbuteo jiwon daesang hwakdae'. josaga hanado eomneyo.",
+        "en": "Look at this headline: \"Government to expand eligibility from next year.\" There isn't a single particle.",
+        "grammarNote": "The learner notices the deletions before she can undo them."
+      },
+      {
+        "speaker": "지원",
+        "ko": "뒤에서부터 풀면 돼요. 마지막 '확대'가 동사예요. '정부는 지원 대상을 확대한다'가 되는 거죠.",
+        "romanization": "dwieseobuteo pulmyeon dwaeyo. majimak 'hwakdae'ga dongsayeyo. 'jeongbuneun jiwon daesangeul hwakdaehanda'ga doeneun geojyo.",
+        "en": "Unpack it from the back. The last word, 확대, is the verb. It becomes \"The government will expand the range of recipients.\"",
+        "grammarNote": "The reading strategy: final noun first, then object, then topic."
+      },
+      {
+        "speaker": "유진",
+        "ko": "아, 쉼표가 '은/는' 자리였군요. 그럼 본문은요?",
+        "romanization": "a, swimpyoga 'eun/neun' jariyeotgunyo. geureom bonmuneunnyo?",
+        "en": "Ah, so the comma was where 은/는 goes. Then what about the body text?",
+        "grammarNote": "-군요 marks the realisation, exactly as in the written-style chapter."
+      },
+      {
+        "speaker": "지원",
+        "ko": "'정부에 따르면 지원 대상은 다음 달부터 확대된다'예요. 본문에서는 조사가 다시 살아나요.",
+        "romanization": "'jeongbue ttareumyeon jiwon daesangeun daeum dalbuteo hwakdaedoenda'yeyo. bonmuneseoneun josaga dasi saranayo.",
+        "en": "It reads \"According to the government, the range of recipients expands from next month.\" In the body the particles come back.",
+        "grammarNote": "N에 따르면 for the source, 확대되다 for the passive."
+      },
+      {
+        "speaker": "유진",
+        "ko": "그런데 왜 '확대한다'가 아니라 '확대된다'예요?",
+        "romanization": "geureonde wae 'hwakdaehanda'ga anira 'hwakdaedoenda'yeyo?",
+        "en": "But why 확대된다 rather than 확대한다?",
+        "grammarNote": "The question the whole chapter turns on."
+      },
+      {
+        "speaker": "지원",
+        "ko": "주어가 '지원 대상'이니까요. 대상이 스스로 넓히는 게 아니라 넓혀지는 거잖아요.",
+        "romanization": "jueoga 'jiwon daesang'inikkayo. daesangi seuseuro neolpineun ge anira neolpyeojineun geojanayo.",
+        "en": "Because the subject is 지원 대상. The scope doesn't widen anything itself — it gets widened.",
+        "grammarNote": "The passive test from the passive chapter, applied to a 되다 verb."
+      },
+      {
+        "speaker": "유진",
+        "ko": "이해했어요. 밑에 '반발 예상'도 '반발이 예상된다'겠네요.",
+        "romanization": "ihaehaesseoyo. mite 'banbal yesang'do 'banbari yesangdoenda'genneyo.",
+        "en": "I get it. So 반발 예상 below must be 반발이 예상된다 too.",
+        "grammarNote": "The learner generalises the rule to a second headline without help."
+      },
+      {
+        "speaker": "지원",
+        "ko": "맞아요. 그렇게 읽으면 기사 절반은 이미 읽은 거예요.",
+        "romanization": "majayo. geureoke ilgeumyeon gisa jeolbaneun imi ilgeun geoyeyo.",
+        "en": "Exactly. Read it that way and you're already halfway through the article.",
+        "grammarNote": "A closing encouragement in plain 해요체."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "지원 대상 확대, 무엇이 달라지나",
+    "body": "정부는 내년부터 지원 대상을 확대한다고 밝혔다. 이번 조치로 약 이십만 가구가 새로 지원을 받게 될 것으로 예상된다. 물가 상승이 가계에 경제적 부담을 주고 있다는 지적이 이어지면서 제도 개선의 필요성이 꾸준히 제기돼 왔다. 다만 예산이 늘지 않아 지원 금액은 줄어들 가능성이 높다는 분석도 나온다. 신청 절차는 대부분 자동화될 예정이며, 자세한 기준은 다음 달에 발표될 것으로 알려졌다.",
+    "bodyTranslation": "The government has stated that it will expand the range of support recipients from next year. Around two hundred thousand households are expected to newly receive support as a result of this measure. As criticism continued that rising prices are placing an economic burden on households, the need for reform of the system has steadily been raised. However, some analysis suggests that because the budget is not growing, the amount of support is likely to fall. The application process is scheduled to be largely automated, and the detailed criteria are understood to be announced next month.",
+    "comprehensionQuestions": [
+      {
+        "question": "정부는 무엇을 하겠다고 밝혔어요?",
+        "answer": "내년부터 지원 대상을 확대하겠다고 밝혔어요."
+      },
+      {
+        "question": "지원 금액에 대해서는 어떤 분석이 나왔어요?",
+        "answer": "예산이 늘지 않아서 지원 금액이 줄어들 가능성이 높다는 분석이 나왔어요."
+      },
+      {
+        "question": "'발표될 것으로 알려졌다'는 확정된 사실이에요?",
+        "answer": "아니에요. '알려졌다'는 전해 들은 내용이라서 아직 확정되지 않았다는 뜻이에요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "누가 말했는지 끝까지 밝히지 않는 기사",
+    "body": "Korean news writing goes further than English in hiding its sources. An article can run several paragraphs on 알려졌다, 전해졌다, and 관측된다 without ever naming a person, and readers are expected to grade the claim by which passive was chosen: 확인됐다 is verified, 밝혀졌다 was uncovered, 알려졌다 is secondhand, and 관측된다 is barely more than the writer's own reading. Learners who translate all four as \"it is said\" lose the entire scale. The same habit shows up in company announcements, where 결정됐습니다 lets nobody be responsible for the decision.",
+    "tip": "When you read 알려졌다, ask who would know. If the article never says, treat the claim as unconfirmed — that is precisely what the writer signalled by choosing that verb."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Unpack the headline '정부, 내년부터 지원 대상 확대'.",
+      "options": [
+        "정부는 내년부터 지원 대상을 확대한다.",
+        "정부가 내년부터 지원 대상이 확대한다.",
+        "정부는 내년부터 지원 대상 확대한다."
+      ],
+      "correct": "정부는 내년부터 지원 대상을 확대한다.",
+      "explanation": "The comma stands in for 은/는, the final noun 확대 is the verb, and the noun before it is the object, so 을 comes back."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which verb form does 지원 대상 need as a subject?",
+      "options": [
+        "확대된다",
+        "확대한다",
+        "확대하고 있다"
+      ],
+      "correct": "확대된다",
+      "explanation": "확대하다 is transitive — somebody expands something. When the thing being expanded is the subject, the passive 확대되다 is required."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the suffix: '마음적 부담이 크다.'",
+      "correct": "정신적 부담이 크다.",
+      "explanation": "-적 attaches only to Sino-Korean roots. 마음 is a native Korean word, so the 적 form is built on the Sino-Korean 정신 instead."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which predicate goes with 가능성?",
+      "options": [
+        "가능성이 높다",
+        "가능성이 크다",
+        "가능성이 많다"
+      ],
+      "correct": "가능성이 높다",
+      "explanation": "Korean measures likelihood by height: 가능성이 높다. 필요성 is the one that takes 크다."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "생산 공정이 ___ 인력 수요가 줄었다. (자동화 → passive, -면서)",
+      "base": "자동화",
+      "form": "hwaDoemyeonseo",
+      "correct": "자동화되면서",
+      "explanation": "A process undergoes the change rather than causing it, so it takes N화되다: 자동화되면서."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Complete the hedge: 해당 기업은 생산 시설을 확대할 것으로 ____. (알리다 → news passive, past)",
+      "correct": "알려졌다",
+      "explanation": "-(으)ㄹ 것으로 알려졌다 reports something secondhand that the paper is not vouching for."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence signals the LEAST confirmed claim?",
+      "options": [
+        "다음 달에 발표될 것으로 알려졌다.",
+        "다음 달에 발표된다고 확인됐다.",
+        "다음 달에 발표된다."
+      ],
+      "correct": "다음 달에 발표될 것으로 알려졌다.",
+      "explanation": "알려졌다 is secondhand and unverified, 확인됐다 is verified, and a flat 발표된다 states it as settled fact."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'According to the government, eligibility expands from next month.' (Start with 정부에 따르면.)",
+      "tokens": [
+        "정부에 따르면",
+        "지원 대상은",
+        "다음 달부터",
+        "확대된다"
+      ],
+      "correct": "정부에 따르면 지원 대상은 다음 달부터 확대된다",
+      "explanation": "N에 따르면 opens the sentence with the source, and the passive 확대된다 closes it without naming an actor."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "제도 개선의 필요성___ 다시 제기됐다.",
+      "options": [
+        "이",
+        "을",
+        "에"
+      ],
+      "correct": "이",
+      "explanation": "제기되다 is passive, so the thing raised is the subject and takes 이/가: 필요성이 제기됐다."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which one is the adverb form meaning 'socially'?",
+      "options": [
+        "사회적으로",
+        "사회적인",
+        "사회성"
+      ],
+      "correct": "사회적으로",
+      "explanation": "-적으로 makes the adverb, -적인 makes a modifier before a noun, and -성 makes an abstract noun."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the verb: '생산 공정이 자동화했다.'",
+      "correct": "생산 공정이 자동화됐다.",
+      "explanation": "A process undergoes automation rather than performing it, so it needs N화되다. N화하다 is only for a deliberate actor."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "News Korean has three passive families: -이/히/리/기-, Sino-Korean noun + 되다 (발표되다, 예상되다), and -아/어지다 on verbs of knowing (밝혀지다, 알려지다).",
+      "The passive grades the claim: 확인됐다 verified · 밝혀졌다 uncovered · 알려졌다 secondhand · 전망된다 forecast.",
+      "-적 makes a modifier (경제적 부담, 사회적으로) and attaches only to Sino-Korean roots — never 마음적.",
+      "-화 makes a process, usually with 되다 for what changes (자동화되다) and 하다 for who changes it (다양화하다). -성 makes a noun with fixed partners: 가능성이 높다, 필요성이 크다.",
+      "Read a headline from the back: the final noun is the verb, the noun before it is the object, and the comma is 은/는."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Write a three-line news item about a fare rise: a headline with the particles dropped, one sentence citing a source, and one sentence forecasting a reaction.",
+    "hint": "Use noun-final headline style for the first line, N에 따르면 with a 되다 passive for the second, and -(으)ㄹ 것으로 예상된다 for the third. Fit in one 적, 화, or 성 word.",
+    "model": "지하철 요금 인상 검토… 이용객 반발 예상. 서울시에 따르면 인상 폭은 다음 달에 발표될 예정이다. 요금이 오르면 경제적 부담이 커져 이용객의 반발이 이어질 것으로 전망된다.",
+    "modelEn": "Subway fare rise under review… backlash from passengers expected. According to the city, the scale of the increase is scheduled to be announced next month. If fares rise, the economic burden will grow and continued opposition from passengers is forecast."
+  },
+  "canDo": [
+    "Read the news passives 밝혀지다, 알려지다, 전해지다, 예상되다 and judge how confirmed the claim is",
+    "Use N에 따르면 to cite a source and -(으)ㄹ 것으로 알려졌다 to hedge a report",
+    "Build and read -적 modifiers, -화 processes, and -성 abstract nouns with their fixed partners",
+    "Unpack a headline by restoring the dropped particles and the deleted verb",
+    "Keep headline ellipsis out of your own full sentences"
+  ]
+}

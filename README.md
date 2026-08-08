@@ -3,7 +3,7 @@
 **하루 한 입, 3분.** Korean in bites, not chapters.
 
 A phone-first Korean course that reslices [Korean Core Starter](https://github.com/busanthebox-coder/korean-core-starter)'s
-65-chapter A1–C1 course into ~3-minute tap-only rounds. Same content, inverted order:
+72-chapter A1–C1 course into ~3-minute tap-only rounds. Same content, inverted order:
 **you guess before you're told.**
 
 ## The idea
@@ -56,12 +56,15 @@ npm run smoke:stats
 
 ## Status
 
-65 chapters across A1–C1 compile to 619 chapter bites and 2,977 chapter cards — after the thickness
-phase, every grammar bite ends in at least two questions, no bite is a single card, and the median
-bite is 5 cards. The shelf also carries 18 snack bites (257 cards) — 12 vocab packs plus 6
+72 chapters across A1–C1 compile to 696 chapter bites and 3,340 chapter cards — after the thickness
+phase, every grammar bite ends in at least two questions, and the median bite is 4 cards (5 across
+chapters 1–65, 4 across the written B2/C1 chapters 66–72, whose passages yield fewer recall
+clozes; one reading bite, 67, is a single card because its passage carries no literally matching
+vocabulary). Levels stop being contiguous at 66: B2 holds 57–63 and 66–69, C1 holds 64–65 and
+70–72. The shelf also carries 18 snack bites (257 cards) — 12 vocab packs plus 6
 situational expression packs (교통·주문·쇼핑·병원·직장·행정, 84 whole phrases lifted from the
 parent corpus) — 20 short readers, and all 32
-confusable expression sets. The bilingual wordbook contains 720 course words with lazy-loaded
+confusable expression sets. The bilingual wordbook contains 803 course words with lazy-loaded
 nuance, mistakes, forms, examples, and contrast cards. Warmup recall scales with the lesson:
 2 cards before a full bite, 1 before a thin one, none on direct shelf entry.
 (`guard:thin` in `package.json` is the thickness-phase gate that skips the baseline check — it

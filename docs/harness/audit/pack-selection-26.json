@@ -9,8 +9,8 @@
  "rankingNote": "`learnerPriority` is generator boilerplate (\"Memorize {hangul} with one situation…\") on all 889 entries and `level` is 'A1' on all of them, so neither can rank. The parent's own `sort` key does order each topic by teaching priority and is used instead.",
  "existingHeadwords": {
   "snackPackWords": 171,
-  "wordbookWords": 720,
-  "merged": 823
+  "wordbookWords": 803,
+  "merged": 899
  },
  "exclusionRules": {
   "placeholder-hangul": "headword carries a ○ placeholder or is a two-turn Q—A pair",

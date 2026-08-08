@@ -75,7 +75,8 @@ describe('grammar lesson expansion', () => {
 
   it('matches every compiled grammar bite to exactly one source note', () => {
     const entries = chapterGrammarEntries();
-    expect(entries.flatMap((entry) => entry.bites)).toHaveLength(236);
+    // census of the shipped corpus: 236 notes in chapters 1-65 + 35 in 66-72
+    expect(entries.flatMap((entry) => entry.bites)).toHaveLength(271);
 
     for (const { chapterId, notes, bites } of entries) {
       expect(bites, chapterId).toHaveLength(notes.length);
@@ -83,9 +84,9 @@ describe('grammar lesson expansion', () => {
     }
   });
 
-  it('expands all 236 source notes without dropping examples or form rows', () => {
+  it('expands all 271 source notes without dropping examples or form rows', () => {
     const notes = allGrammarNotes();
-    expect(notes).toHaveLength(236);
+    expect(notes).toHaveLength(271);
 
     for (const note of notes) {
       const cards = buildGrammarLesson(note);

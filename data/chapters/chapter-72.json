@@ -1,0 +1,929 @@
+{
+  "id": "chapter-72",
+  "hook": {
+    "situation": "Somebody tells you 발이 넓으시네요 and you look down at your shoes. Korean describes character by borrowing body parts — a big hand, a wide foot, a high eye — and none of it means what the words say.",
+    "objectives": [
+      "Use the core body-part idioms for character: 손이 크다, 발이 넓다, 눈이 높다, 입이 무겁다, 귀가 얇다.",
+      "Keep them in their fixed clause shape — [body part]이/가 [adjective] — instead of rebuilding them as modifiers.",
+      "Quote five common proverbs whole, with 라고, 더니, or 이다 attached to the outside."
+    ],
+    "whyItMatters": "These are not decoration. 발이 넓다 and 입이 무겁다 are the ordinary, everyday way Koreans describe people — a learner who only knows 사교적이다 and 비밀을 잘 지키다 sounds like a textbook. And because the words are all A1 vocabulary, the sentences are easy to say once you know what they mean."
+  },
+  "grammarNotes": [
+    {
+      "title": "손이 크다 — the generous hand, and the rest of the 손 idioms",
+      "func": "손이 크다 says somebody does things on a generous scale — cooks too much, gives too much, spends freely. It has nothing to do with hand size. Like every idiom in this chapter it is a complete clause, [body part]이/가 [adjective], and you conjugate the adjective at the end.",
+      "formTable": [
+        {
+          "when": "Word for word",
+          "add": "손 (hand) + 이 + 크다 (big)",
+          "ex": "literally 'the hand is big'"
+        },
+        {
+          "when": "What it actually means",
+          "add": "generous, does things on a large scale",
+          "ex": "어머니는 손이 크시다 (Mum always makes far too much)"
+        },
+        {
+          "when": "How it inflects",
+          "add": "손이 커요 / 손이 커서 / 손이 크신",
+          "ex": "손이 커서 늘 음식이 남아요"
+        },
+        {
+          "when": "The opposite",
+          "add": "손이 작다",
+          "ex": "저는 손이 작아서 딱 먹을 만큼만 해요"
+        },
+        {
+          "when": "Other 손 idioms",
+          "add": "손을 떼다 · 손이 빠르다 · 손이 많이 가다",
+          "ex": "그 일에서는 손을 뗐어요 (I've stepped away from it)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "어머니는 손이 크셔서 명절만 되면 음식이 늘 남아요.",
+          "romanization": "eomeonineun soni keusyeoseo myeongjeolman doemyeon eumsigi neul namayo.",
+          "en": "My mother cooks on such a scale that there are always leftovers at the holidays.",
+          "note": "The honorific goes on the adjective: 손이 크시다 → 손이 크셔서."
+        },
+        {
+          "ko": "손이 크신 건 좋은데 이번엔 좀 줄이는 게 어때요?",
+          "romanization": "soni keusin geon joeunde ibeonen jom jurineun ge eottaeyo?",
+          "en": "It's lovely that you do things so generously, but how about scaling back this time?",
+          "note": "손이 크신 as a modifier before 건 — the clause keeps its shape inside."
+        },
+        {
+          "ko": "그 일에서는 작년에 이미 손을 뗐어요.",
+          "romanization": "geu ireseoneun jangnyeone imi soneul tteosseoyo.",
+          "en": "I stepped away from that project last year.",
+          "note": "손을 떼다 takes 을/를 because 떼다 is a transitive verb, unlike 손이 크다."
+        },
+        {
+          "ko": "김치는 손이 많이 가는 음식이라 하루 만에는 못 만들어요.",
+          "romanization": "gimchineun soni mani ganeun eumsigira haru maneneun mot mandeureoyo.",
+          "en": "Kimchi takes so much work that you can't make it in a day.",
+          "note": "손이 많이 가다 = 'requires a lot of hands-on effort', said of tasks and dishes."
+        }
+      ],
+      "keyPoint": {
+        "label": "The shape is a clause, not a phrase",
+        "body": "Every idiom of this family is [body part]이/가 [adjective] — a whole clause. English would build a noun phrase ('a generous hand'), which is why learners produce 큰 손이에요. Korean does not work that way here: keep 손이 크다, 발이 넓다, 눈이 높다 intact and conjugate the adjective on the end."
+      },
+      "pronunciation": "손을 뗐어요 links as [소늘 떠써요]. 손이 많이 가는 is [소니 마니 가는], with the ㅎ of 많 silent before the 이.",
+      "drill": {
+        "instruction": "Complete each 손 idiom with the right form.",
+        "model": "어머니 / 음식이 남다 → 어머니는 손이 크셔서 음식이 늘 남아요.",
+        "items": [
+          "그 일 / 작년에 그만두다 → 그 일에서는 작년에 이미 손을 _______.",
+          "김치 / 만들기 어렵다 → 김치는 손이 많이 _______ 음식이에요.",
+          "저 / 딱 먹을 만큼만 하다 → 저는 손이 _______ 딱 먹을 만큼만 해요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "그분은 큰 손이에요.",
+        "right": "그분은 손이 크세요.",
+        "explanation": "English would say 'a big hand', a noun phrase, so learners build 큰 손이에요. Korean body-part idioms are always a clause: the body part takes 이/가 and the adjective carries the ending. 손이 크세요, 발이 넓으세요, 눈이 높으세요."
+      }
+    },
+    {
+      "title": "발이 넓다 — a wide circle, and where else 발 turns up",
+      "func": "발이 넓다 means somebody knows everybody — a wide social circle, not wide feet. 발 also supplies three more idioms you will hear constantly: 발이 묶이다 for being stranded, 발등에 불이 떨어지다 for a deadline finally biting, and 발 벗고 나서다 for pitching in wholeheartedly.",
+      "formTable": [
+        {
+          "when": "Word for word",
+          "add": "발 (foot) + 이 + 넓다 (wide)",
+          "ex": "literally 'the foot is wide'"
+        },
+        {
+          "when": "What it actually means",
+          "add": "well connected, knows a lot of people",
+          "ex": "지훈 씨는 발이 넓다 (Jihoon knows everyone)"
+        },
+        {
+          "when": "The noun form",
+          "add": "마당발",
+          "ex": "그 사람은 우리 동네 마당발이에요"
+        },
+        {
+          "when": "Stranded — passive",
+          "add": "발이 묶이다",
+          "ex": "눈 때문에 공항에서 발이 묶였어요"
+        },
+        {
+          "when": "Other 발 idioms",
+          "add": "발등에 불이 떨어지다 · 발 벗고 나서다",
+          "ex": "발등에 불이 떨어져야 시작해요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "지훈 씨는 발이 넓어서 이 동네에 모르는 사람이 없어요.",
+          "romanization": "jihun ssineun bari neolbeoseo i dongnee moreuneun sarami eopseoyo.",
+          "en": "Jihoon is so well connected that there's nobody in this neighbourhood he doesn't know.",
+          "note": "넓다 is [널따], so 넓어서 links as [널버서]."
+        },
+        {
+          "ko": "눈이 많이 와서 어제는 공항에서 발이 묶였어요.",
+          "romanization": "nuni mani waseo eojeneun gonghangeseo bari mukkyeosseoyo.",
+          "en": "It snowed heavily, so I was stranded at the airport yesterday.",
+          "note": "묶이다 is the passive of 묶다 — the snow does the tying, so 발이 takes 이."
+        },
+        {
+          "ko": "저는 발등에 불이 떨어져야 시작하는 성격이에요.",
+          "romanization": "jeoneun baldeunge buri tteoreojyeoya sijakaneun seonggyeogieyo.",
+          "en": "I'm the kind of person who only starts once the deadline is on top of me.",
+          "note": "Literally 'fire falls on the top of the foot' — the moment something becomes urgent."
+        },
+        {
+          "ko": "동네 사람들이 발 벗고 나서서 도와줬어요.",
+          "romanization": "dongne saramdeuri bal beotgo naseoseo dowajwosseoyo.",
+          "en": "The neighbours pitched in wholeheartedly and helped out.",
+          "note": "발 벗고 나서다 carries warmth: not just helping, but throwing yourself in."
+        }
+      ],
+      "keyPoint": {
+        "label": "발이 넓다 is a compliment; 마당발 is the person",
+        "body": "발이 넓다 describes the quality and is safely complimentary — 발이 넓으시네요 is a normal thing to say to someone who just introduced you to three people. 마당발 is the noun for the person themselves: 그 사람은 마당발이에요. Neither implies anything about being pushy; Korean treats a wide network as straightforwardly good."
+      },
+      "pronunciation": "넓다 is [널따] and 넓어서 is [널버서] — the ㅂ of ㄼ only surfaces before a vowel. 발 벗고 is [발 벋꼬], and 묶였어요 is [무껴써요].",
+      "drill": {
+        "instruction": "Choose the 발 idiom each situation calls for.",
+        "model": "아는 사람이 아주 많다 → 발이 넓어요.",
+        "items": [
+          "눈 때문에 공항에서 못 움직였다 → 공항에서 발이 _______.",
+          "마감이 코앞에 와야 겨우 시작한다 → 발등에 불이 _______ 시작해요.",
+          "동네 사람들이 적극적으로 도왔다 → 동네 사람들이 발 벗고 _______ 도와줬어요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "어제 공항에서 발을 묶었어요.",
+        "right": "어제 공항에서 발이 묶였어요.",
+        "explanation": "발이 묶이다 is passive — the snow, the strike, or the weather strands you. Learners make it active because English says 'I got stuck', which looks like something you did. The thing that traps you is the cause; your foot takes 이/가 and the verb stays 묶이다."
+      }
+    },
+    {
+      "title": "눈이 높다 — high standards, and what the eyes do",
+      "func": "눈이 높다 means somebody is hard to please — fussy about partners, flats, or clothes. The eyes also give you 눈에 띄다 for standing out, and 눈코 뜰 새 없다 for being flat out. None of them is about eyesight.",
+      "formTable": [
+        {
+          "when": "Word for word",
+          "add": "눈 (eye) + 이 + 높다 (high)",
+          "ex": "literally 'the eye is high'"
+        },
+        {
+          "when": "What it actually means",
+          "add": "has high standards, is hard to please",
+          "ex": "눈이 높아서 아직 못 골랐어요"
+        },
+        {
+          "when": "Standing out — passive",
+          "add": "눈에 띄다",
+          "ex": "빨간 표지가 눈에 띄었어요"
+        },
+        {
+          "when": "Flat out busy",
+          "add": "눈코 뜰 새 없다",
+          "ex": "요즘 눈코 뜰 새가 없어요"
+        },
+        {
+          "when": "Careful — a different word",
+          "add": "눈치가 빠르다 (quick to read a room)",
+          "ex": "눈치가 빨라서 분위기를 금방 알아채요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "눈이 높아서 아직 마음에 드는 집을 못 찾았대요.",
+          "romanization": "nuni nopaseo ajik maeume deuneun jibeul mot chajatdaeyo.",
+          "en": "They say she's so particular that she still hasn't found a flat she likes.",
+          "note": "-대요 from the reported-speech chapter: this is somebody else's assessment."
+        },
+        {
+          "ko": "표지가 빨개서 책장에서 바로 눈에 띄었어요.",
+          "romanization": "pyojiga ppalgaeseo chaekjangeseo baro nune ttuieosseoyo.",
+          "en": "The cover was red, so it stood out on the shelf immediately.",
+          "note": "눈에 띄다 takes 에, not 을 — the thing catches the eye by itself."
+        },
+        {
+          "ko": "요즘 일이 몰려서 눈코 뜰 새가 없어요.",
+          "romanization": "yojeum iri mollyeoseo nunko tteul saega eopseoyo.",
+          "en": "Work has piled up lately, so I'm absolutely flat out.",
+          "note": "Literally 'no gap to open eyes or nose' — the strongest everyday 'too busy'."
+        },
+        {
+          "ko": "눈이 높은 게 아니라 기준이 분명한 거예요.",
+          "romanization": "nuni nopeun ge anira gijuni bunmyeonghan geoyeyo.",
+          "en": "It's not that she's fussy — she just knows what she wants.",
+          "note": "A useful defence, since 눈이 높다 can sound like a mild dig."
+        }
+      ],
+      "keyPoint": {
+        "label": "눈이 높다 is gentler about yourself than about others",
+        "body": "Said of yourself, 눈이 높다 is a wry admission: 제가 눈이 좀 높아요. Said of somebody else — especially about dating — it can land as a criticism, close to 'too picky for their own good'. If you mean it warmly, 기준이 분명하다 is the safe alternative."
+      },
+      "pronunciation": "높다 is [놉따] and 높아서 is [노파서]. 눈코 뜰 새 is [눈코 뜰 쌔], with the ㅅ tensing after ㄹ.",
+      "drill": {
+        "instruction": "Fill in the eye idiom that fits.",
+        "model": "고르는 기준이 까다롭다 → 눈이 높아요.",
+        "items": [
+          "빨간 표지가 금방 보였다 → 표지가 빨개서 바로 눈에 _______.",
+          "너무 바빠서 쉴 틈이 없다 → 요즘 눈코 뜰 새가 _______.",
+          "아직 마음에 드는 집을 못 찾았다 → _______ 아직 못 찾았어요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "빨간 표지가 눈을 띄었어요.",
+        "right": "빨간 표지가 눈에 띄었어요.",
+        "explanation": "띄다 here is a contraction of 뜨이다, a passive: the thing gets itself noticed. So the eye is where it lands and takes 에. Learners write 눈을 띄다 by analogy with 눈을 뜨다 ('to open one's eyes'), which is a different verb entirely."
+      }
+    },
+    {
+      "title": "입이 무겁다 · 귀가 얇다 — the mouth that keeps a secret and the ear that doesn't",
+      "func": "입이 무겁다 means somebody can be trusted with a secret; its opposite 입이 가볍다 means they cannot. 귀가 얇다 means they are easily talked into things. The weight-and-thickness metaphor is consistent: a heavy mouth stays shut, a thin ear lets everything through.",
+      "formTable": [
+        {
+          "when": "Keeps a secret",
+          "add": "입이 무겁다",
+          "ex": "그 사람은 입이 무거워요 (he's discreet)"
+        },
+        {
+          "when": "Cannot keep a secret",
+          "add": "입이 가볍다",
+          "ex": "입이 가벼운 사람한테는 말하지 마세요"
+        },
+        {
+          "when": "Easily persuaded",
+          "add": "귀가 얇다",
+          "ex": "귀가 얇아서 광고만 보면 사고 싶어져요"
+        },
+        {
+          "when": "A picky eater",
+          "add": "입이 짧다",
+          "ex": "동생은 입이 짧아요"
+        },
+        {
+          "when": "Careful — hearing is different",
+          "add": "귀가 밝다 / 귀가 어둡다",
+          "ex": "할머니가 귀가 어두우세요 (grandma is hard of hearing)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "그 사람은 입이 무거우니까 말해도 괜찮아요.",
+          "romanization": "geu sarameun ibi mugeounikka malhaedo gwaenchanayo.",
+          "en": "He's discreet, so it's fine to tell him.",
+          "note": "무겁다 is a ㅂ-irregular: 무거우니까, 무거워요."
+        },
+        {
+          "ko": "입이 가벼운 사람한테는 비밀을 말하지 마세요.",
+          "romanization": "ibi gabyeoun saramhanteneun bimireul malhaji maseyo.",
+          "en": "Don't tell your secrets to someone who can't keep them.",
+          "note": "입이 가벼운 as a modifier before 사람 — the clause survives intact."
+        },
+        {
+          "ko": "저는 귀가 얇아서 광고만 보면 다 사고 싶어져요.",
+          "romanization": "jeoneun gwiga yalbaseo gwanggoman bomyeon da sago sipeojyeoyo.",
+          "en": "I'm so easily swayed that I want to buy everything I see advertised.",
+          "note": "얇다 is [얄따] and 얇아서 is [얄바서]."
+        },
+        {
+          "ko": "동생은 입이 짧아서 먹는 게 늘 정해져 있어요.",
+          "romanization": "dongsaengeun ibi jjalbaseo meokneun ge neul jeonghaejyeo isseoyo.",
+          "en": "My younger sibling is such a picky eater that they always eat the same things.",
+          "note": "입이 짧다 is only about food, never about talking briefly."
+        }
+      ],
+      "keyPoint": {
+        "label": "귀가 얇다 is not about hearing",
+        "body": "The 얇다/두껍다 pair on 귀 measures how easily influence gets through, not sound. 귀가 얇다 = easily persuaded. For actual hearing Korean uses a completely different pair: 귀가 밝다 for sharp hearing and 귀가 어둡다 for poor hearing. Mixing them up produces a sentence that sounds like nonsense to a Korean ear."
+      },
+      "pronunciation": "무겁다 is a ㅂ-irregular, so 무거워요 and 무거우니까 lose the ㅂ. 얇다 is [얄따] and 짧다 is [짤따]; both restore the ㅂ before a vowel — [얄바서], [짤바서].",
+      "drill": {
+        "instruction": "Pick the mouth or ear idiom the description calls for.",
+        "model": "비밀을 잘 지킨다 → 입이 무거워요.",
+        "items": [
+          "비밀을 못 지킨다 → 그 사람은 입이 _______.",
+          "광고를 보면 바로 사고 싶어진다 → 저는 귀가 _______.",
+          "먹는 음식이 정해져 있다 → 동생은 입이 _______."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "할머니는 귀가 얇아서 잘 못 들으세요.",
+        "right": "할머니는 귀가 어두우셔서 잘 못 들으세요.",
+        "explanation": "귀가 얇다 means easily persuaded and says nothing about hearing. Poor hearing is 귀가 어둡다 and sharp hearing is 귀가 밝다. The thin-ear image is about influence getting through, not sound."
+      }
+    },
+    {
+      "title": "속담 다섯 — the proverbs you will actually hear",
+      "func": "Korean proverbs are fixed strings. You quote them whole and attach the grammar to the outside — 이다, -이라고, or -(이)라더니 — rather than rebuilding them into a sentence. These five turn up in ordinary conversation, not just in writing.",
+      "formTable": [
+        {
+          "when": "Small amounts add up",
+          "add": "티끌 모아 태산",
+          "ex": "티끌 모아 태산이라고 조금씩 모았어요"
+        },
+        {
+          "when": "Word travels fast",
+          "add": "발 없는 말이 천 리 간다",
+          "ex": "발 없는 말이 천 리 간다더니 소문이 다 퍼졌어요"
+        },
+        {
+          "when": "Someone with a narrow view",
+          "add": "우물 안 개구리",
+          "ex": "제가 우물 안 개구리였어요"
+        },
+        {
+          "when": "Nearly impossible",
+          "add": "하늘의 별 따기",
+          "ex": "그 표를 구하는 건 하늘의 별 따기예요"
+        },
+        {
+          "when": "Extremely easy",
+          "add": "식은 죽 먹기",
+          "ex": "이 정도는 식은 죽 먹기죠"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "티끌 모아 태산이라고, 매달 조금씩 모았더니 꽤 됐어요.",
+          "romanization": "tikkeul moa taesanirago, maedal jogeumssik moatdeoni kkwae dwaesseoyo.",
+          "en": "Little by little makes a lot — I put a bit aside every month and it's added up.",
+          "note": "-이라고 quotes the proverb, and -았더니 reports what you found by doing it."
+        },
+        {
+          "ko": "발 없는 말이 천 리 간다더니 소문이 벌써 다 퍼졌네요.",
+          "romanization": "bal eomneun mari cheolli gandadeoni somuni beolsseo da peojyeonneyo.",
+          "en": "Word really does travel — the rumour has already gone everywhere.",
+          "note": "-다더니 is the standard way to say 'as the saying goes, and sure enough'."
+        },
+        {
+          "ko": "그 공연 표를 구하는 건 하늘의 별 따기예요.",
+          "romanization": "geu gongyeon pyoreul guhaneun geon haneurui byeol ttagiyeyo.",
+          "en": "Getting a ticket to that show is next to impossible.",
+          "note": "The proverb behaves as a noun here, so it simply takes 예요."
+        },
+        {
+          "ko": "이 정도 문제는 식은 죽 먹기죠.",
+          "romanization": "i jeongdo munjeneun sigeun juk meokgijyo.",
+          "en": "A problem at this level is a piece of cake.",
+          "note": "식은 죽 먹기 also acts as a noun: 먹기 is already a nominal form."
+        }
+      ],
+      "keyPoint": {
+        "label": "Three ways to hang a proverb on your sentence",
+        "body": "Attach 이다 when the proverb IS your point: 하늘의 별 따기예요. Attach -(이)라고 when you are invoking it as received wisdom before your own clause: 티끌 모아 태산이라고, …. Attach -다더니 when reality has just confirmed it: 발 없는 말이 천 리 간다더니, …. What you never do is take the proverb apart."
+      },
+      "pronunciation": "천 리 is [철리], with the ㄴ assimilating to the ㄹ. 식은 죽 먹기 is [시근 죽 먹끼], and 없는 in 발 없는 말이 is [엄는].",
+      "drill": {
+        "instruction": "Choose the proverb each situation calls for.",
+        "model": "아주 쉬운 일이다 → 식은 죽 먹기예요.",
+        "items": [
+          "조금씩 모은 돈이 꽤 커졌다 → _______이라고, 조금씩 모았더니 꽤 됐어요.",
+          "소문이 순식간에 퍼졌다 → _______더니 소문이 벌써 다 퍼졌네요.",
+          "표를 구하기가 거의 불가능하다 → 그 표를 구하는 건 _______예요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "티끌을 모아서 태산을 만들어요.",
+        "right": "티끌 모아 태산이에요.",
+        "explanation": "Proverbs are fixed strings, so you quote them rather than rebuild them. 티끌 모아 태산 keeps its bare nouns with no particles and its 모아 with nothing attached. Say the whole thing as one unit and hang 이에요, -이라고, or -다더니 on the outside."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "손",
+      "romanization": "son",
+      "english": "hand",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "어머니는 손이 크셔서 늘 음식을 넉넉히 하세요.",
+        "en": "My mother does things on such a scale that she always makes plenty of food.",
+        "note": "손이 크다 is about generosity, never about the size of anyone's hand."
+      },
+      "collocations": [
+        "손이 크다",
+        "손을 떼다",
+        "손이 많이 가다"
+      ]
+    },
+    {
+      "hangul": "발",
+      "romanization": "bal",
+      "english": "foot",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "지훈 씨는 발이 넓어서 모르는 사람이 없어요.",
+        "en": "Jihoon is so well connected that there's nobody he doesn't know.",
+        "note": "발이 넓다 is a compliment about someone's social circle."
+      },
+      "collocations": [
+        "발이 넓다",
+        "발이 묶이다",
+        "발 벗고 나서다"
+      ]
+    },
+    {
+      "hangul": "눈",
+      "romanization": "nun",
+      "english": "eye",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "눈이 높아서 아직 마음에 드는 집을 못 찾았어요.",
+        "en": "I'm particular, so I still haven't found a flat I like.",
+        "note": "눈이 높다 is about standards, not eyesight."
+      },
+      "collocations": [
+        "눈이 높다",
+        "눈에 띄다",
+        "눈코 뜰 새 없다"
+      ]
+    },
+    {
+      "hangul": "입",
+      "romanization": "ip",
+      "english": "mouth",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "그 사람은 입이 무거우니까 비밀을 말해도 괜찮아요.",
+        "en": "He's discreet, so it's fine to tell him a secret.",
+        "note": "입이 무겁다 keeps a secret; 입이 가볍다 does not."
+      },
+      "collocations": [
+        "입이 무겁다",
+        "입이 가볍다",
+        "입이 짧다"
+      ]
+    },
+    {
+      "hangul": "귀",
+      "romanization": "gwi",
+      "english": "ear",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "할머니는 귀가 밝으셔서 작은 소리도 다 들으세요.",
+        "en": "My grandmother has sharp hearing and catches even the faintest sound.",
+        "note": "귀가 밝다 is about hearing — a different pair from 귀가 얇다."
+      },
+      "collocations": [
+        "귀가 얇다",
+        "귀가 밝다",
+        "귀가 어둡다"
+      ]
+    },
+    {
+      "hangul": "얼굴",
+      "romanization": "eolgul",
+      "english": "face",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "그렇게 부탁해 놓고 또 오다니, 얼굴이 두껍네요.",
+        "en": "Turning up again after asking for all that — what nerve.",
+        "note": "얼굴이 두껍다 means shameless, the same image as English 'thick-skinned'."
+      },
+      "collocations": [
+        "얼굴이 두껍다",
+        "얼굴이 빨개지다",
+        "얼굴을 보다"
+      ]
+    },
+    {
+      "hangul": "머리",
+      "romanization": "meori",
+      "english": "head",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "머리가 좋은 것보다 꾸준한 게 더 중요해요.",
+        "en": "Being consistent matters more than being clever.",
+        "note": "머리가 좋다 is 'smart'; 머리가 아프다 covers both a headache and a hassle."
+      },
+      "collocations": [
+        "머리가 좋다",
+        "머리가 아프다",
+        "머리를 쓰다"
+      ]
+    },
+    {
+      "hangul": "코",
+      "romanization": "ko",
+      "english": "nose",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "코가 높은 사람은 먼저 다가가기가 좀 어려워요.",
+        "en": "Someone haughty is a little hard to approach first.",
+        "note": "코가 높다 means haughty; save it for people who are not in the room."
+      },
+      "collocations": [
+        "코가 막히다",
+        "코가 높다",
+        "눈코 뜰 새 없다"
+      ]
+    },
+    {
+      "hangul": "성격",
+      "romanization": "seonggyeok",
+      "english": "personality, temperament",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "성격이 급해서 손이 빠른 대신 실수도 잦아요.",
+        "en": "I'm impatient, so I work fast but also make frequent mistakes.",
+        "note": "손이 빠르다 — quick-handed — is another member of the 손 family."
+      },
+      "collocations": [
+        "성격이 좋다",
+        "성격이 급하다",
+        "-는 성격이다"
+      ]
+    },
+    {
+      "hangul": "사람",
+      "romanization": "saram",
+      "english": "person",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "발이 넓은 사람은 어디를 가도 아는 얼굴을 만나요.",
+        "en": "Someone well connected runs into a familiar face wherever they go.",
+        "note": "The idiom becomes a modifier in front of 사람 without changing shape."
+      },
+      "collocations": [
+        "좋은 사람",
+        "아는 사람",
+        "-(으)ㄴ 사람"
+      ]
+    },
+    {
+      "hangul": "친구",
+      "romanization": "chingu",
+      "english": "friend",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "발이 넓은 친구 덕분에 좋은 사람을 많이 소개받았어요.",
+        "en": "Thanks to a well-connected friend I've been introduced to a lot of good people.",
+        "note": "덕분에 credits the cause, as in the reason-connector chapter."
+      },
+      "collocations": [
+        "친구를 사귀다",
+        "오랜 친구",
+        "친구 덕분에"
+      ]
+    },
+    {
+      "hangul": "비밀",
+      "romanization": "bimil",
+      "english": "secret",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "입이 무거운 사람이라 비밀을 맡겨도 안심이 돼요.",
+        "en": "He's discreet, so I feel safe trusting him with a secret.",
+        "note": "비밀을 맡기다 and 비밀을 지키다 are the two standard collocations."
+      },
+      "collocations": [
+        "비밀을 지키다",
+        "비밀을 맡기다",
+        "비밀로 하다"
+      ]
+    },
+    {
+      "hangul": "마음",
+      "romanization": "maeum",
+      "english": "heart, mind",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "눈이 높아서 아직 마음에 드는 걸 못 골랐어요.",
+        "en": "I'm particular, so I haven't found one I like yet.",
+        "note": "마음에 들다 is itself an idiom: 'it enters the heart' = you like it."
+      },
+      "collocations": [
+        "마음에 들다",
+        "마음이 넓다",
+        "마음을 먹다"
+      ]
+    },
+    {
+      "hangul": "실력",
+      "romanization": "sillyeok",
+      "english": "ability, skill",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "이 정도 문제는 그 사람 실력이면 식은 죽 먹기예요.",
+        "en": "With his ability, a problem at this level is a piece of cake.",
+        "note": "식은 죽 먹기 acts as a noun and simply takes 예요."
+      },
+      "collocations": [
+        "실력이 늘다",
+        "실력이 좋다",
+        "실력을 쌓다"
+      ]
+    },
+    {
+      "hangul": "관용구",
+      "romanization": "gwanyonggu",
+      "english": "idiom, set phrase",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "관용구는 글자 그대로 풀면 뜻이 통하지 않으므로 통째로 외우는 게 좋아요.",
+        "en": "Idioms don't make sense word by word, so it's best to memorise them whole.",
+        "note": "-(으)므로 from the written-style chapter, used here in ordinary speech."
+      },
+      "collocations": [
+        "관용구를 외우다",
+        "관용 표현",
+        "자주 쓰는 관용구"
+      ]
+    },
+    {
+      "hangul": "속담",
+      "romanization": "sokdam",
+      "english": "proverb",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "속담은 문장을 새로 만들지 않고 통째로 인용해요.",
+        "en": "You quote a proverb whole rather than building a new sentence out of it.",
+        "note": "This is the single most useful rule for using proverbs correctly."
+      },
+      "collocations": [
+        "속담이 있다",
+        "속담을 인용하다",
+        "옛날 속담"
+      ]
+    },
+    {
+      "hangul": "소문",
+      "romanization": "somun",
+      "english": "rumour, word going around",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "소문이 도는 속도를 보면 발 없는 말이 천 리 간다는 말이 맞아요.",
+        "en": "Judging by how fast rumours travel, the saying about words going a thousand li is right.",
+        "note": "A proverb quoted inside a -는 말이 맞다 frame."
+      },
+      "collocations": [
+        "소문이 나다",
+        "소문이 퍼지다",
+        "소문을 듣다"
+      ]
+    },
+    {
+      "hangul": "마당발",
+      "romanization": "madangbal",
+      "english": "a very well-connected person",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "그 사람은 우리 동네 마당발이라 모르는 가게가 없어요.",
+        "en": "He's the neighbourhood's great connector — there's no shop he doesn't know.",
+        "note": "마당발 is the noun for the person; 발이 넓다 describes the quality."
+      },
+      "collocations": [
+        "동네 마당발",
+        "마당발이다",
+        "소문난 마당발"
+      ]
+    },
+    {
+      "hangul": "우물",
+      "romanization": "umul",
+      "english": "a well (for water)",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "외국에 나가 보고 나서야 제가 우물 안 개구리였다는 걸 알았어요.",
+        "en": "It was only after going abroad that I realised how narrow my world had been.",
+        "note": "우물 안 개구리 is said about oneself far more comfortably than about others."
+      },
+      "collocations": [
+        "우물 안 개구리",
+        "우물을 파다",
+        "우물가"
+      ]
+    },
+    {
+      "hangul": "태산",
+      "romanization": "taesan",
+      "english": "a huge mountain (in the proverb 티끌 모아 태산)",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "할 일이 태산인데 아직 시작도 못 했어요.",
+        "en": "I have a mountain of things to do and haven't even started.",
+        "note": "할 일이 태산이다 is the other everyday use of 태산."
+      },
+      "collocations": [
+        "티끌 모아 태산",
+        "걱정이 태산이다",
+        "할 일이 태산이다"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Two friends catching up over coffee. They end up describing three different people, and every description comes out as a body-part idiom.",
+    "lines": [
+      {
+        "speaker": "유진",
+        "ko": "지원 씨는 진짜 발이 넓은 것 같아요. 어제 모임에서도 절반은 아는 사이던데요.",
+        "romanization": "jiwon ssineun jinjja bari neolbeun geot gatayo. eoje moimeseodo jeolbaneun aneun saideondeyo.",
+        "en": "You really do know everyone, Jiwon. Half the people at yesterday's gathering were already friends of yours.",
+        "grammarNote": "발이 넓다 as a modifier: 발이 넓은 것 같아요."
+      },
+      {
+        "speaker": "지원",
+        "ko": "그냥 사람을 좋아해서 그래요. 대신 저는 입이 좀 가벼운 편이에요.",
+        "romanization": "geunyang sarameul joahaeseo geuraeyo. daesin jeoneun ibi jom gabyeoun pyeonieyo.",
+        "en": "I just like people, that's all. On the other hand, I'm not great at keeping things to myself.",
+        "grammarNote": "-(으)ㄴ 편이다 softens the admission: 'I'm rather on the … side'."
+      },
+      {
+        "speaker": "유진",
+        "ko": "그건 아니에요. 지난번에 제 얘기 아무한테도 안 하셨잖아요.",
+        "romanization": "geugeon anieyo. jinanbeone je yaegi amuhantedo an hasyeotjanayo.",
+        "en": "That's not true. You didn't tell a soul about my situation last time.",
+        "grammarNote": "-잖아요 appeals to something they both know."
+      },
+      {
+        "speaker": "지원",
+        "ko": "그때는 참았죠. 사실 유진 씨야말로 입이 무거운 사람이잖아요.",
+        "romanization": "geuttaeneun chamatjyo. sasil yujin ssiyamallo ibi mugeoun saramijanayo.",
+        "en": "I held it in that time. Honestly, you're the discreet one.",
+        "grammarNote": "입이 무거운 사람 — the idiom modifying a noun."
+      },
+      {
+        "speaker": "유진",
+        "ko": "저는 귀가 얇은 게 문제예요. 광고만 보면 다 사고 싶어지거든요.",
+        "romanization": "jeoneun gwiga yalbeun ge munjeyeyo. gwanggoman bomyeon da sago sipeojigeodeunyo.",
+        "en": "My problem is that I'm too easily swayed. One advert and I want to buy everything.",
+        "grammarNote": "귀가 얇다 is about being persuadable, never about hearing."
+      },
+      {
+        "speaker": "지원",
+        "ko": "저도요. 티끌 모아 태산이라고 조금씩 모으려고 했는데 벌써 다 썼어요.",
+        "romanization": "jeodoyo. tikkeul moa taesanirago jogeumssik moeuryeogo haenneunde beolsseo da sseosseoyo.",
+        "en": "Me too. I meant to save little by little, but I've already spent it all.",
+        "grammarNote": "-이라고 quotes the proverb before the speaker's own clause."
+      },
+      {
+        "speaker": "유진",
+        "ko": "저는 눈이 높아서 그런지 사고 싶은 게 별로 없긴 해요.",
+        "romanization": "jeoneun nuni nopaseo geureonji sago sipeun ge byeollo eopgin haeyo.",
+        "en": "Maybe because I'm so particular, there isn't much I actually want to buy.",
+        "grammarNote": "눈이 높다 said of oneself sounds wry rather than boastful."
+      },
+      {
+        "speaker": "지원",
+        "ko": "부럽네요. 저는 발등에 불이 떨어져야 겨우 정신을 차리거든요.",
+        "romanization": "bureomneyo. jeoneun baldeunge buri tteoreojyeoya gyeou jeongsineul charigeodeunyo.",
+        "en": "I'm jealous. I only pull myself together once the deadline is right on top of me.",
+        "grammarNote": "발등에 불이 떨어지다 plus -아/어야 for 'only once X happens'."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "몸으로 말하는 성격",
+    "body": "한국어에는 몸을 빌려 성격을 말하는 표현이 많다. 손이 큰 사람은 인심이 후하고, 발이 넓은 사람은 아는 사람이 많다. 입이 무거운 사람에게는 비밀을 맡길 수 있으나, 귀가 얇은 사람은 남의 말에 쉽게 흔들린다. 눈이 높다는 말은 기준이 까다롭다는 뜻이지 시력과는 관계가 없다. 이런 표현은 글자 그대로 풀면 뜻이 통하지 않으므로 통째로 외우는 편이 낫다. 속담도 마찬가지다. '티끌 모아 태산'은 조사도 없이 그대로 쓰며, 문장을 새로 만들지 않는다.",
+    "bodyTranslation": "Korean has many expressions that borrow the body to talk about character. A person with a big hand is open-handed, and a person with a wide foot knows a lot of people. You can trust a secret to someone with a heavy mouth, but someone with a thin ear is easily swayed by what others say. Saying that someone's eye is high means their standards are demanding — it has nothing to do with eyesight. Expressions like these do not make sense when unpacked word by word, so it is better to memorise them whole. The same goes for proverbs. 티끌 모아 태산 is used exactly as it stands, with no particles, and you do not build a new sentence out of it.",
+    "comprehensionQuestions": [
+      {
+        "question": "'눈이 높다'는 시력과 관계가 있어요?",
+        "answer": "아니요. 기준이 까다롭다는 뜻이지 시력과는 관계가 없어요."
+      },
+      {
+        "question": "관용구를 왜 통째로 외우는 게 좋아요?",
+        "answer": "글자 그대로 풀면 뜻이 통하지 않기 때문이에요."
+      },
+      {
+        "question": "속담은 어떻게 써요?",
+        "answer": "조사도 없이 그대로 쓰고, 문장을 새로 만들지 않아요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "관용구를 쓰면 갑자기 가까워진다",
+    "body": "Dropping one of these into a conversation changes how you are heard. 발이 넓으시네요 or 입이 무거우시잖아요 signals that you are inside the language rather than translating into it, and Koreans notice it immediately. Two cautions, though. 눈이 높다 said about somebody else's dating life can sting, and 손이 크다 said about a manager's spending can read as a complaint rather than a compliment — context decides. And 얼굴이 두껍다 is a genuine insult, not a tease, unless you know the person very well.",
+    "tip": "Start with the safely positive ones — 발이 넓다, 입이 무겁다, 손이 크다 about someone's cooking — and keep 얼굴이 두껍다 and 코가 높다 for describing people who are not in the room."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence correctly says 'she is very generous'?",
+      "options": [
+        "그분은 손이 크세요.",
+        "그분은 큰 손이에요.",
+        "그분은 손을 크세요."
+      ],
+      "correct": "그분은 손이 크세요.",
+      "explanation": "These idioms are a full clause: the body part takes 이/가 and the adjective carries the ending. A noun phrase like 큰 손이에요 would just describe hand size."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "지훈 씨는 아는 사람이 정말 많아요. Which idiom fits?",
+      "options": [
+        "발이 넓어요",
+        "발이 묶였어요",
+        "발등에 불이 떨어졌어요"
+      ],
+      "correct": "발이 넓어요",
+      "explanation": "발이 넓다 is a wide social circle. 발이 묶이다 is being stranded, and 발등에 불이 떨어지다 is a deadline suddenly biting."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the voice: '어제 공항에서 발을 묶었어요.'",
+      "correct": "어제 공항에서 발이 묶였어요.",
+      "explanation": "발이 묶이다 is passive — the weather or the strike strands you. English 'I got stuck' looks agentive, but in Korean your foot takes 이/가."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "What does 귀가 얇다 mean?",
+      "options": [
+        "쉽게 설득당해요",
+        "잘 못 들어요",
+        "귀가 아주 밝아요"
+      ],
+      "correct": "쉽게 설득당해요",
+      "explanation": "귀가 얇다 means easily persuaded. Poor hearing is 귀가 어둡다 and sharp hearing is 귀가 밝다."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "표지가 빨개서 책장에서 바로 눈___ 띄었어요.",
+      "options": [
+        "에",
+        "을",
+        "이"
+      ],
+      "correct": "에",
+      "explanation": "띄다 is a contraction of the passive 뜨이다, so the eye is where the thing lands: 눈에 띄다. 눈을 뜨다 is a different verb meaning 'to open one's eyes'."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "그 사람은 입이 ___ 비밀을 말해도 괜찮아요. (무겁다 → -(으)니까)",
+      "base": "무겁다",
+      "form": "euNikka",
+      "correct": "무거우니까",
+      "explanation": "무겁다 is a ㅂ-irregular, so the ㅂ becomes 우 before a vowel ending: 무거우니까, 무거워요."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Complete the proverb: 조금씩 모았더니 꽤 됐어요. ____ 모아 태산이네요.",
+      "correct": "티끌",
+      "explanation": "티끌 모아 태산 — 'specks gathered make a great mountain'. The proverb keeps its bare nouns with no particles."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which proverb means 'nearly impossible'?",
+      "options": [
+        "하늘의 별 따기",
+        "식은 죽 먹기",
+        "우물 안 개구리"
+      ],
+      "correct": "하늘의 별 따기",
+      "explanation": "하늘의 별 따기 is picking a star from the sky. 식은 죽 먹기 is the opposite — very easy — and 우물 안 개구리 describes a narrow outlook."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'Word travels fast, and the rumour has already spread.' (Start with 발 없는 말이.)",
+      "tokens": [
+        "발 없는 말이",
+        "천 리 간다더니",
+        "소문이",
+        "벌써 다 퍼졌네요"
+      ],
+      "correct": "발 없는 말이 천 리 간다더니 소문이 벌써 다 퍼졌네요",
+      "explanation": "-다더니 hangs on the outside of the proverb and means reality has just confirmed it."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the proverb: '티끌을 모아서 태산을 만들어요.'",
+      "correct": "티끌 모아 태산이에요.",
+      "explanation": "Proverbs are quoted whole, not rebuilt. 티끌 모아 태산 takes no particles inside; attach 이에요, -이라고, or -다더니 on the outside."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which one would you NOT say to someone's face?",
+      "options": [
+        "얼굴이 두꺼우시네요.",
+        "발이 넓으시네요.",
+        "입이 무거우시네요."
+      ],
+      "correct": "얼굴이 두꺼우시네요.",
+      "explanation": "얼굴이 두껍다 means shameless and is a real insult. 발이 넓다 and 입이 무겁다 are both compliments."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "Body-part idioms are a clause, not a phrase: [body part]이/가 [adjective]. Say 손이 크세요, never 큰 손이에요.",
+      "The core five for character: 손이 크다 generous · 발이 넓다 well connected · 눈이 높다 particular · 입이 무겁다 discreet · 귀가 얇다 easily swayed.",
+      "Two are passives and take their own particles: 발이 묶이다 (stranded) and 눈에 띄다 (stands out) — 눈에, not 눈을.",
+      "귀가 얇다 is about influence, not hearing. Poor hearing is 귀가 어둡다 and sharp hearing is 귀가 밝다.",
+      "Quote a proverb whole and hang the grammar outside it: 하늘의 별 따기예요 · 티끌 모아 태산이라고, … · 발 없는 말이 천 리 간다더니, …"
+    ]
+  },
+  "writingTask": {
+    "prompt": "Describe three people you know using body-part idioms — one generous, one well connected, one discreet or easily swayed — then close with a proverb that fits one of them.",
+    "hint": "Keep each idiom in its clause shape ([body part]이/가 [adjective]) and attach the proverb with 이에요, -이라고, or -다더니.",
+    "model": "우리 어머니는 손이 크셔서 명절만 되면 음식이 늘 남아요. 제 친구 지훈이는 발이 넓어서 모르는 사람이 없고요. 저는 귀가 얇아서 광고만 보면 다 사고 싶어져요. 그래도 티끌 모아 태산이라고, 조금씩 모으는 중이에요.",
+    "modelEn": "My mother cooks on such a scale that there are always leftovers at the holidays. My friend Jihoon is so well connected there's nobody he doesn't know. As for me, I'm easily swayed and want to buy everything I see advertised. Still, little by little makes a lot, so I'm saving bit by bit."
+  },
+  "canDo": [
+    "Describe someone's character with 손이 크다, 발이 넓다, 눈이 높다, 입이 무겁다, and 귀가 얇다",
+    "Keep a body-part idiom in its clause shape instead of turning it into a modifier plus noun",
+    "Use the passive idioms 발이 묶이다 and 눈에 띄다 with the right particles",
+    "Quote 티끌 모아 태산, 발 없는 말이 천 리 간다, 우물 안 개구리, 하늘의 별 따기, and 식은 죽 먹기 whole",
+    "Judge which idioms are compliments and which are insults before using them to someone's face"
+  ]
+}

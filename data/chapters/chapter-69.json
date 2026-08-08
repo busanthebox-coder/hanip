@@ -1,0 +1,909 @@
+{
+  "id": "chapter-69",
+  "hook": {
+    "situation": "Looking back at one day: something you finished off for good, something that beat you in the end, something that very nearly went wrong, and something you put a brave face on. Korean marks all four with a different auxiliary.",
+    "objectives": [
+      "Carry an action right through with V-아/어 버리다 and hear whether it lands as relief or as regret.",
+      "Report an outcome that arrived against your will with V-고 말다, and flip it to determination with -고 말겠어요.",
+      "Describe a near miss with 하마터면 …-(으)ㄹ 뻔했어요, and pick the right modifier for -(으)ㄴ/는 척하다."
+    ],
+    "whyItMatters": "English flattens all of this into \"ended up,\" \"almost,\" and \"pretended.\" Korean keeps them apart by feeling: -아/어 버리다 can be a relief, -고 말다 never is, -(으)ㄹ 뻔하다 means it did NOT happen, and 척하다 is frequently good manners rather than dishonesty."
+  },
+  "grammarNotes": [
+    {
+      "title": "V-아/어 버리다 — finish it off, for better or worse",
+      "func": "버리다 on its own means \"to throw away.\" As an auxiliary after the -아/어 form it means the action was carried all the way through, with nothing left over — and it always leaves an emotional trace. Finish a burden and it feels like relief; use up something you wanted to keep and it feels like loss.",
+      "formTable": [
+        {
+          "when": "Stem ends in ㅏ/ㅗ",
+          "add": "-아 버리다",
+          "ex": "팔다 → 팔아 버리다 (to sell it off)"
+        },
+        {
+          "when": "Stem ends in any other vowel",
+          "add": "-어 버리다",
+          "ex": "쓰다 → 써 버리다 (to use it all up)"
+        },
+        {
+          "when": "하다 verbs",
+          "add": "-해 버리다",
+          "ex": "말하다 → 말해 버리다 (to just come out and say it)"
+        },
+        {
+          "when": "Lexicalized — written as one word",
+          "add": "잊어버리다 / 잃어버리다",
+          "ex": "잊다 → 약속을 잊어버렸어요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "고민하다가 그냥 다 말해 버렸어요.",
+          "romanization": "gominhadaga geunyang da malhae beoryeosseoyo.",
+          "en": "I agonised over it and then just came out with the whole thing.",
+          "note": "그냥 is the giveaway for the impulsive version — you stopped holding back."
+        },
+        {
+          "ko": "지훈 씨가 인사도 없이 가 버렸어요.",
+          "romanization": "jihun ssiga insado eopsi ga beoryeosseoyo.",
+          "en": "Jihoon left without so much as a goodbye.",
+          "note": "가 버리다 adds the sting of finality: he's gone, and that's that."
+        },
+        {
+          "ko": "밀린 일을 오늘 다 끝내 버렸어요. 속이 다 시원하네요.",
+          "romanization": "millin ireul oneul da kkeunnae beoryeosseoyo. sogi da siwonhaneyo.",
+          "en": "I knocked out all my backlog today. What a relief.",
+          "note": "속이 시원하다 shows this is the relief reading, not regret."
+        },
+        {
+          "ko": "월급을 이틀 만에 다 써 버렸어요.",
+          "romanization": "wolgeubeul iteul mane da sseo beoryeosseoyo.",
+          "en": "I blew my whole salary in two days.",
+          "note": "Same ending, opposite feeling — because what got used up was something you wanted."
+        }
+      ],
+      "keyPoint": {
+        "label": "Relief or regret — what got used up decides",
+        "body": "-아/어 버리다 always means \"and it is completely done.\" The feeling comes from the object, not the ending. Finish a burden and it is relief (다 끝내 버렸어요); finish something you wanted to keep and it is regret (다 써 버렸어요). Korean adds 그냥 for the impulsive reading and 다 for the exhaustive one."
+      },
+      "pronunciation": "버리다 contracts hard in speech: 해 버렸어요 comes out as [해버려써요] with no gap, and 팔아 버렸어요 as [파라버려써요] with the ㄹ linking through.",
+      "drill": {
+        "instruction": "Add -아/어 버리다 to show the action was carried right through.",
+        "model": "다 먹다 → 다 먹어 버렸어요.",
+        "items": [
+          "그냥 다 말하다 → 그냥 다 _______.",
+          "인사도 없이 가다 → 인사도 없이 _______.",
+          "밀린 일을 다 끝내다 → 밀린 일을 다 _______."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "월급을 다 쓰다 버렸어요.",
+        "right": "월급을 다 써 버렸어요.",
+        "explanation": "버리다 is an auxiliary, so it attaches to the -아/어 form, never to the dictionary form. 쓰다 becomes 써, giving 써 버렸어요. Learners leave the base verb intact because English \"spend it all\" does not reshape the verb at all."
+      }
+    },
+    {
+      "title": "V-고 말다 — it ended up happening after all",
+      "func": "-고 말다 reports an outcome that arrived DESPITE what you wanted or what you tried. It nearly always appears in the past as -고 말았어요, and it carries resignation or regret — never relief. In the future, -고 말겠어요 flips to fierce determination: it WILL happen, whatever stands in the way.",
+      "formTable": [
+        {
+          "when": "Verb stem + 고 말다, usually past",
+          "add": "-고 말았어요",
+          "ex": "울다 → 울고 말았어요 (I ended up in tears)"
+        },
+        {
+          "when": "With 결국 for the build-up",
+          "add": "결국 V-고 말았어요",
+          "ex": "포기하다 → 결국 포기하고 말았어요"
+        },
+        {
+          "when": "Future — determination, not regret",
+          "add": "-고 말겠어요",
+          "ex": "따다 → 자격증을 따고 말겠어요"
+        },
+        {
+          "when": "Casual past",
+          "add": "-고 말았어 / -고 말았다",
+          "ex": "깨다 → 컵을 깨고 말았어"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "참으려고 했는데 결국 울고 말았어요.",
+          "romanization": "chameuryeogo haenneunde gyeolguk ulgo marasseoyo.",
+          "en": "I tried to hold it in, but in the end I broke down.",
+          "note": "참으려고 했는데 supplies the resistance that -고 말다 needs."
+        },
+        {
+          "ko": "조심했는데도 컵을 깨고 말았어요.",
+          "romanization": "josimhaenneundedo keobeul kkaego marasseoyo.",
+          "en": "I was careful, and I still went and broke the cup.",
+          "note": "-는데도 (\"even though\") is a natural lead-in for this ending."
+        },
+        {
+          "ko": "몇 년을 준비했는데 마지막에 포기하고 말았어요.",
+          "romanization": "myeot nyeoneul junbihaenneunde majimage pogihago marasseoyo.",
+          "en": "I prepared for years and then gave up right at the end.",
+          "note": "The longer the effort, the heavier -고 말다 lands."
+        },
+        {
+          "ko": "올해는 꼭 자격증을 따고 말겠어요.",
+          "romanization": "olhaeneun kkok jagyeokjeungeul ttago malgesseoyo.",
+          "en": "This year I'm getting that certificate, no matter what.",
+          "note": "The future form is pure resolve — the only reading with no regret in it."
+        }
+      ],
+      "keyPoint": {
+        "label": "-고 말다 needs something you were resisting",
+        "body": "-고 말다 only works when the outcome went against your effort or your wish. 참으려고 했는데 울고 말았어요 makes sense because you were fighting it. An ordinary action cannot take it: 점심을 먹고 말았어요 sounds absurd unless lunch was somehow a defeat. If nothing was being resisted, plain past tense is all you need."
+      },
+      "pronunciation": "말았어요 links as [마라써요]. In casual speech it shortens to 말았어 [마라써], and the future 말겠어요 tenses to [말게써요].",
+      "drill": {
+        "instruction": "Say that it happened in the end, despite your efforts, with -고 말다.",
+        "model": "참으려고 했다 / 울다 → 참으려고 했는데 결국 울고 말았어요.",
+        "items": [
+          "조심했다 / 컵을 깨다 → 조심했는데도 컵을 _______.",
+          "몇 년을 준비했다 / 포기하다 → 몇 년을 준비했는데 마지막에 _______.",
+          "안 그러려고 했다 / 실수하다 → 안 그러려고 했는데 또 _______."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "어제 점심을 먹고 말았어요.",
+        "right": "어제 점심을 먹었어요.",
+        "explanation": "-고 말다 marks an outcome you were trying to avoid, so an ordinary action cannot carry it. Learners use it as a general-purpose \"ended up\" because that is how the English gloss reads. When nothing was being resisted, plain past tense is the whole answer."
+      }
+    },
+    {
+      "title": "V-(으)ㄹ 뻔했다 — the thing that almost happened",
+      "func": "-(으)ㄹ 뻔했다 reports a near miss: the event came close and then did NOT happen. It is always past — 뻔했어요, never 뻔해요 — because a near miss is by definition already over. The event is nearly always something bad, and 하마터면 is its fixed partner at the front of the sentence.",
+      "formTable": [
+        {
+          "when": "Verb stem, no 받침",
+          "add": "-ㄹ 뻔했어요",
+          "ex": "가다 → 갈 뻔했어요 (I almost went)"
+        },
+        {
+          "when": "Verb stem with 받침",
+          "add": "-을 뻔했어요",
+          "ex": "죽다 → 죽을 뻔했어요 (I almost died)"
+        },
+        {
+          "when": "Always past — never 뻔해요",
+          "add": "-(으)ㄹ 뻔했어요",
+          "ex": "넘어지다 → 넘어질 뻔해요 ✗ / 넘어질 뻔했어요 ✓"
+        },
+        {
+          "when": "The set collocation",
+          "add": "하마터면 V-(으)ㄹ 뻔했어요",
+          "ex": "두다 → 하마터면 지갑을 두고 나올 뻔했어요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "하마터면 지갑을 두고 나올 뻔했어요.",
+          "romanization": "hamateomyeon jigabeul dugo naol ppeonhaesseoyo.",
+          "en": "I very nearly walked out and left my wallet behind.",
+          "note": "하마터면 signals the near miss before the verb even arrives."
+        },
+        {
+          "ko": "계단에서 미끄러져서 크게 다칠 뻔했어요.",
+          "romanization": "gyedaneseo mikkeureojyeoseo keuge dachil ppeonhaesseoyo.",
+          "en": "I slipped on the stairs and nearly hurt myself badly.",
+          "note": "The slipping did happen; only the injury is the near miss."
+        },
+        {
+          "ko": "하마터면 회의 시간을 잊어버릴 뻔했는데, 알림 덕분에 살았어요.",
+          "romanization": "hamateomyeon hoeui siganeul ijeobeoril ppeonhaenneunde, allim deokbune sarasseoyo.",
+          "en": "I nearly forgot the meeting time, but the reminder saved me.",
+          "note": "덕분에 credits what rescued you — the natural follow-up to a near miss."
+        },
+        {
+          "ko": "너무 졸려서 지하철에서 내릴 역을 지나칠 뻔했어요.",
+          "romanization": "neomu jollyeoseo jihacheoreseo naeril yeogeul jinachil ppeonhaesseoyo.",
+          "en": "I was so sleepy I almost rode past my stop on the subway.",
+          "note": "-(으)ㄹ 뻔했어요 keeps the object particle: 역을 지나칠 뻔했어요."
+        }
+      ],
+      "keyPoint": {
+        "label": "뻔하다 has a completely separate life as an adjective",
+        "body": "V-(으)ㄹ 뻔했다 is a near miss: 늦을 뻔했어요 means you almost were late, but you weren't. Standalone 뻔하다 is an unrelated adjective meaning \"obvious, predictable\": 결말이 너무 뻔해요, 뻔한 변명. The giveaway is the -(으)ㄹ in front — with it, near miss; without it, obvious."
+      },
+      "pronunciation": "뻔했어요 is [뻔해써요]. Because 뻔 already begins with a tense ㅃ, nothing tenses further: 갈 뻔했어요 is simply [갈 뻔해써요].",
+      "drill": {
+        "instruction": "Report each near miss with -(으)ㄹ 뻔했어요.",
+        "model": "지갑을 두고 나오다 → 하마터면 지갑을 두고 나올 뻔했어요.",
+        "items": [
+          "계단에서 크게 다치다 → 계단에서 미끄러져서 크게 _______.",
+          "회의 시간을 잊어버리다 → 하마터면 회의 시간을 _______.",
+          "내릴 역을 지나치다 → 너무 졸려서 내릴 역을 _______."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "어제 계단에서 넘어질 뻔해요.",
+        "right": "어제 계단에서 넘어질 뻔했어요.",
+        "explanation": "A near miss is already over, so -(으)ㄹ 뻔하다 lives in the past: 뻔했어요. Learners write 뻔해요 because English \"I almost fall\" feels present-shaped while telling the story. Worse, present-tense 뻔해요 is a different word entirely — the adjective meaning \"that's so predictable.\""
+      }
+    },
+    {
+      "title": "A/V-(으)ㄴ/는 척하다 — putting on an act",
+      "func": "척하다 says the outward behaviour did not match the inside. The modifier in front follows the ordinary rules you already know: -는 for a verb happening now, -(으)ㄴ for a finished action or for any adjective, and 인 for a noun. -(으)ㄴ/는 체하다 is an interchangeable variant.",
+      "formTable": [
+        {
+          "when": "Verb — action in progress",
+          "add": "V-는 척하다",
+          "ex": "자다 → 자는 척하다 (to pretend to be asleep)"
+        },
+        {
+          "when": "Verb — action already finished",
+          "add": "V-(으)ㄴ 척하다",
+          "ex": "듣다 → 못 들은 척하다 (to pretend not to have heard)"
+        },
+        {
+          "when": "Adjective",
+          "add": "A-(으)ㄴ 척하다",
+          "ex": "바쁘다 → 바쁜 척하다 (to pretend to be busy)"
+        },
+        {
+          "when": "Noun",
+          "add": "N인 척하다",
+          "ex": "전문가 → 전문가인 척하다"
+        },
+        {
+          "when": "Interchangeable variant",
+          "add": "-(으)ㄴ/는 체하다",
+          "ex": "알다 → 아는 체하다"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "부장님이 지나가시길래 바쁜 척했어요.",
+          "romanization": "bujangnimi jinagasigillae bappeun cheokaesseoyo.",
+          "en": "The department head was walking past, so I acted busy.",
+          "note": "바쁘다 is an adjective, so the modifier is -(으)ㄴ: 바쁜 척."
+        },
+        {
+          "ko": "다 들었으면서 못 들은 척하지 마세요.",
+          "romanization": "da deureosseumyeonseo mot deureun cheokaji maseyo.",
+          "en": "Don't pretend you didn't hear when you heard every word.",
+          "note": "The hearing is already finished, so the modifier is -(으)ㄴ: 못 들은 척."
+        },
+        {
+          "ko": "속상했지만 아무렇지 않은 척했어요.",
+          "romanization": "soksanghaetjiman amureochi aneun cheokaesseoyo.",
+          "en": "I was upset, but I acted as if it were nothing.",
+          "note": "아무렇지 않다 is an adjective phrase, hence 않은 척."
+        },
+        {
+          "ko": "동생이 자는 척하고 있길래 그냥 두고 나왔어요.",
+          "romanization": "dongsaengi janeun cheokago itgillae geunyang dugo nawasseoyo.",
+          "en": "My sibling was pretending to be asleep, so I just left them be.",
+          "note": "자다 is a verb in progress, so this one really does take -는."
+        }
+      ],
+      "keyPoint": {
+        "label": "Adjectives take -(으)ㄴ, not -는",
+        "body": "This is where English speakers slip. \"Pretend to be sick\" is 아픈 척하다, not 아프는 척하다, because 아프다 is an adjective and adjectives take -(으)ㄴ. Only verbs describing an ongoing action take -는: 자는 척하다, 일하는 척하다. Check what the base word is before you pick the modifier."
+      },
+      "pronunciation": "척하다 is [처카다] — the ㄱ of 척 and the ㅎ of 하 fuse into an aspirated [ㅋ]. So 척했어요 is [처캐써요] and 바쁜 척해요 is [바쁜 처캐요].",
+      "drill": {
+        "instruction": "Say what the person was pretending, choosing -(으)ㄴ or -는.",
+        "model": "자다 (동생) → 동생이 자는 척했어요.",
+        "items": [
+          "바쁘다 → 부장님이 지나가시길래 _______ 척했어요.",
+          "못 듣다 (already finished) → 다 들었으면서 _______ 척하지 마세요.",
+          "아무렇지 않다 → 속상했지만 _______ 척했어요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "사실 아픈데 안 아프는 척했어요.",
+        "right": "사실 아픈데 안 아픈 척했어요.",
+        "explanation": "아프다 is an adjective, so it takes -(으)ㄴ 척하다: 아픈 척, 안 아픈 척. Learners attach -는 because English \"pretending\" looks continuous. Keep -는 척하다 for verbs describing an action in progress, like 자는 척 and 일하는 척."
+      }
+    },
+    {
+      "title": "-아/어 버리다 vs -고 말다 — same event, different feeling",
+      "func": "Both say the action reached its end and both often carry regret, so learners treat them as interchangeable. They are not. -아/어 버리다 usually reports something YOU did, deliberately, and can just as easily feel like relief. -고 말다 reports an outcome that arrived despite you, and never feels like relief.",
+      "formTable": [
+        {
+          "when": "You did it on purpose; often relief",
+          "add": "V-아/어 버리다",
+          "ex": "끝내다 → 다 끝내 버렸어요 (and good riddance)"
+        },
+        {
+          "when": "It happened against your will; always regret",
+          "add": "V-고 말았어요",
+          "ex": "울다 → 결국 울고 말았어요"
+        },
+        {
+          "when": "Same verb, two readings",
+          "add": "말해 버렸어요 / 말하고 말았어요",
+          "ex": "말하다 → 그냥 말해 버렸어요 (I let it out) vs 결국 말하고 말았어요 (it got out despite me)"
+        },
+        {
+          "when": "Determination — only -고 말다 does this",
+          "add": "V-고 말겠어요",
+          "ex": "붙다 → 이번엔 꼭 붙고 말겠어요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "미련 없이 그 가방을 팔아 버렸어요.",
+          "romanization": "miryeon eopsi geu gabangeul para beoryeosseoyo.",
+          "en": "I sold that bag off without a second thought.",
+          "note": "미련 없이 makes it clear this was your decision and you feel lighter."
+        },
+        {
+          "ko": "숨기려고 했는데 결국 말하고 말았어요.",
+          "romanization": "sumgiryeogo haenneunde gyeolguk malhago marasseoyo.",
+          "en": "I meant to keep it hidden, but in the end it came out.",
+          "note": "Same verb as 말해 버렸어요, but here the telling defeated you."
+        },
+        {
+          "ko": "밀린 설거지를 다 해 버리니까 속이 시원하네요.",
+          "romanization": "millin seolgeojireul da hae beorinikka sogi siwonhaneyo.",
+          "en": "Getting all the piled-up dishes done feels wonderful.",
+          "note": "-고 말다 could never appear here — there is no defeat in it."
+        },
+        {
+          "ko": "이번 시험은 꼭 붙고 말겠어요.",
+          "romanization": "ibeon siheomeun kkok butgo malgesseoyo.",
+          "en": "I am going to pass this exam, whatever it takes.",
+          "note": "The future -고 말겠어요 is resolve, and 버리다 has no equivalent."
+        }
+      ],
+      "keyPoint": {
+        "label": "Ask whether you wanted it",
+        "body": "If you chose the ending and feel lighter for it, use -아/어 버리다. If the ending beat you, use -고 말다. And only -고 말다 turns into determination in the future (-고 말겠어요), because that reading comes from the same core idea: the outcome arrives whether anyone likes it or not."
+      },
+      "pronunciation": "해 버리니까 runs together as [해버리니까]. 붙고 말겠어요 tenses to [붇꼬 말게써요], since the ㅌ of 붙 closes as [ㄷ] and tenses the following ㄱ.",
+      "drill": {
+        "instruction": "Choose -아/어 버리다 or -고 말다 to match the feeling described.",
+        "model": "미련 없이 팔았고 후련하다 → 그 가방을 팔아 버렸어요.",
+        "items": [
+          "숨기려고 했는데 말이 나왔다 → 숨기려고 했는데 결국 _______.",
+          "밀린 설거지를 다 하고 후련하다 → 밀린 설거지를 다 _______.",
+          "이번 시험은 꼭 붙겠다는 각오 → 이번 시험은 꼭 _______."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "일이 다 끝나서 기분 좋게 끝내고 말았어요.",
+        "right": "일이 다 끝나서 기분 좋게 끝내 버렸어요.",
+        "explanation": "-고 말다 always carries defeat, so pairing it with 기분 좋게 contradicts itself. When you finished something and feel good about it, -아/어 버리다 is the auxiliary you want. Learners swap the two because both come out as \"ended up\" in English."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "버리다",
+      "romanization": "beorida",
+      "english": "to throw away; (auxiliary) to do completely",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "옛날 사진을 다 지워 버렸어요.",
+        "en": "I deleted all the old photos.",
+        "note": "As an auxiliary, -아/어 버리다 means the action went right through to the end."
+      },
+      "collocations": [
+        "쓰레기를 버리다",
+        "다 써 버리다",
+        "가 버리다"
+      ]
+    },
+    {
+      "hangul": "참다",
+      "romanization": "chamda",
+      "english": "to endure, to hold back",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "끝까지 참다가 결국 울고 말았어요.",
+        "en": "I held out to the very end, and then broke down anyway.",
+        "note": "참다 supplies exactly the resistance that -고 말다 requires."
+      },
+      "collocations": [
+        "화를 참다",
+        "눈물을 참다",
+        "참으려고 하다"
+      ]
+    },
+    {
+      "hangul": "하마터면",
+      "romanization": "hamateomyeon",
+      "english": "very nearly, by a hair",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "하마터면 여권을 두고 공항에 갈 뻔했어요.",
+        "en": "I very nearly went to the airport without my passport.",
+        "note": "하마터면 almost always goes first and demands -(으)ㄹ 뻔했어요 at the end."
+      },
+      "collocations": [
+        "하마터면 늦을 뻔하다",
+        "하마터면 넘어질 뻔하다",
+        "하마터면 큰일 날 뻔하다"
+      ]
+    },
+    {
+      "hangul": "아쉽다",
+      "romanization": "aswipda",
+      "english": "to feel it's a shame, to feel a pang of regret",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "다 끝내 버리고 나니까 시원하면서도 좀 아쉬워요.",
+        "en": "Now that I've finished it all off, I feel relieved but also a little wistful.",
+        "note": "아쉽다 is the mild regret that often trails -아/어 버리다."
+      },
+      "collocations": [
+        "너무 아쉽다",
+        "아쉽게도",
+        "헤어지기 아쉽다"
+      ]
+    },
+    {
+      "hangul": "잊어버리다",
+      "romanization": "ijeobeorida",
+      "english": "to forget (completely)",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "하마터면 약속을 잊어버릴 뻔했어요.",
+        "en": "I very nearly forgot our plans.",
+        "note": "One of the lexicalized 버리다 verbs — written as a single word."
+      },
+      "collocations": [
+        "이름을 잊어버리다",
+        "완전히 잊어버리다",
+        "잊어버리기 전에"
+      ]
+    },
+    {
+      "hangul": "울다",
+      "romanization": "ulda",
+      "english": "to cry",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "영화가 너무 슬퍼서 참다가 울고 말았어요.",
+        "en": "The film was so sad that I held out and then cried anyway.",
+        "note": "울고 말다 is one of the most frequent pairings of this ending."
+      },
+      "collocations": [
+        "펑펑 울다",
+        "울음을 참다",
+        "울고 말다"
+      ]
+    },
+    {
+      "hangul": "모르다",
+      "romanization": "moreuda",
+      "english": "to not know",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "다 알면서 모르는 척하지 마세요.",
+        "en": "Don't act clueless when you know perfectly well.",
+        "note": "모르는 척하다 also means deliberately ignoring somebody you recognise."
+      },
+      "collocations": [
+        "모르는 척하다",
+        "잘 모르겠어요",
+        "모르는 사이에"
+      ]
+    },
+    {
+      "hangul": "자다",
+      "romanization": "jada",
+      "english": "to sleep",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "동생은 눈을 감고 자는 척하고 있었어요.",
+        "en": "My sibling had their eyes shut, pretending to be asleep.",
+        "note": "A verb in progress, so it takes -는 척하다 rather than -(으)ㄴ."
+      },
+      "collocations": [
+        "푹 자다",
+        "자는 척하다",
+        "일찍 자다"
+      ]
+    },
+    {
+      "hangul": "깨지다",
+      "romanization": "kkaejida",
+      "english": "to break, to get broken",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "조심했는데도 컵이 깨지고 말았어요.",
+        "en": "I was careful, and the cup still ended up broken.",
+        "note": "깨지다 takes 이/가 (it breaks); the transitive 깨다 takes 을/를."
+      },
+      "collocations": [
+        "유리가 깨지다",
+        "화면이 깨지다",
+        "약속이 깨지다"
+      ]
+    },
+    {
+      "hangul": "후회하다",
+      "romanization": "huhoehada",
+      "english": "to regret",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "화가 나서 다 말해 버렸는데 지금은 후회해요.",
+        "en": "I was angry and blurted it all out, and now I regret it.",
+        "note": "The regret reading of -아/어 버리다 often gets spelled out this way."
+      },
+      "collocations": [
+        "나중에 후회하다",
+        "후회하지 않다",
+        "두고두고 후회하다"
+      ]
+    },
+    {
+      "hangul": "다치다",
+      "romanization": "dachida",
+      "english": "to get hurt, to injure oneself",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "빙판길에서 미끄러져서 크게 다칠 뻔했어요.",
+        "en": "I slipped on the icy path and nearly hurt myself badly.",
+        "note": "Injuries are the most common thing to almost happen."
+      },
+      "collocations": [
+        "크게 다치다",
+        "다칠 뻔하다",
+        "다치지 않게 조심하다"
+      ]
+    },
+    {
+      "hangul": "포기하다",
+      "romanization": "pogihada",
+      "english": "to give up",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "여기까지 왔는데 지금 포기해 버리면 너무 아깝잖아요.",
+        "en": "It'd be such a waste to just give up now after coming this far.",
+        "note": "-아/어 버리다 makes giving up sound abrupt and final."
+      },
+      "collocations": [
+        "쉽게 포기하다",
+        "결국 포기하다",
+        "포기하지 마세요"
+      ]
+    },
+    {
+      "hangul": "화내다",
+      "romanization": "hwanaeda",
+      "english": "to get angry, to lose one's temper",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "참으려고 했는데 회의에서 결국 화를 내고 말았어요.",
+        "en": "I tried to hold back, but in the end I lost my temper in the meeting.",
+        "note": "화를 내다 splits into 화 + 를 + 내다 inside a sentence."
+      },
+      "collocations": [
+        "화를 내다",
+        "화가 나다",
+        "화내지 마세요"
+      ]
+    },
+    {
+      "hangul": "미끄러지다",
+      "romanization": "mikkeureojida",
+      "english": "to slip, to slide",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "계단에서 미끄러져서 넘어질 뻔했어요.",
+        "en": "I slipped on the stairs and nearly went down.",
+        "note": "The slip is real; only what follows it is the near miss."
+      },
+      "collocations": [
+        "빙판에서 미끄러지다",
+        "발이 미끄러지다",
+        "미끄러워서 조심하다"
+      ]
+    },
+    {
+      "hangul": "후련하다",
+      "romanization": "huryeonhada",
+      "english": "to feel relieved, to feel unburdened",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "밀린 일을 다 끝내 버리니까 정말 후련해요.",
+        "en": "Now that I've finished off all the backlog, I feel genuinely unburdened.",
+        "note": "후련하다 is the feeling that marks the relief reading of -아/어 버리다."
+      },
+      "collocations": [
+        "속이 후련하다",
+        "말하고 나니 후련하다",
+        "후련한 기분"
+      ]
+    },
+    {
+      "hangul": "들키다",
+      "romanization": "deulkida",
+      "english": "to be caught out, to be found out",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "자는 척하다가 결국 들키고 말았어요.",
+        "en": "I was pretending to be asleep, and in the end I got caught.",
+        "note": "들키다 is itself a passive-shaped verb — you are the one found out."
+      },
+      "collocations": [
+        "거짓말이 들키다",
+        "들킬 뻔하다",
+        "결국 들키다"
+      ]
+    },
+    {
+      "hangul": "잃어버리다",
+      "romanization": "ireobeorida",
+      "english": "to lose (an object)",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "하마터면 여권을 잃어버릴 뻔했어요.",
+        "en": "I very nearly lost my passport.",
+        "note": "Another lexicalized 버리다 verb; 잊어버리다 is for facts, 잃어버리다 for things."
+      },
+      "collocations": [
+        "지갑을 잃어버리다",
+        "길을 잃어버리다",
+        "잃어버릴 뻔하다"
+      ]
+    },
+    {
+      "hangul": "실수하다",
+      "romanization": "silsuhada",
+      "english": "to make a mistake, to slip up",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "안 그러려고 했는데 또 실수하고 말았어요.",
+        "en": "I meant not to, and I went and slipped up again.",
+        "note": "안 그러려고 했는데 is the standard lead-in for a -고 말다 confession."
+      },
+      "collocations": [
+        "실수를 하다",
+        "큰 실수",
+        "실수로 보내다"
+      ]
+    },
+    {
+      "hangul": "부딪히다",
+      "romanization": "budichida",
+      "english": "to bump into, to collide with",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "앞차가 급정거하는 바람에 부딪힐 뻔했어요.",
+        "en": "The car in front braked hard, and I nearly hit it.",
+        "note": "부딪히다 is the passive of 부딪다 — the collision happens to you."
+      },
+      "collocations": [
+        "차에 부딪히다",
+        "어깨를 부딪히다",
+        "부딪힐 뻔하다"
+      ]
+    },
+    {
+      "hangul": "숨기다",
+      "romanization": "sumgida",
+      "english": "to hide (something), to keep something from someone",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "숨기려고 했는데 표정에서 다 드러나 버렸어요.",
+        "en": "I meant to hide it, but my face gave the whole thing away.",
+        "note": "숨기다 is the causative-shaped partner of 숨다 (to hide oneself)."
+      },
+      "collocations": [
+        "사실을 숨기다",
+        "감정을 숨기다",
+        "숨기려고 하다"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Two friends catch up the day after one of them left a gathering abruptly. It turns out she had been putting a brave face on all evening.",
+    "lines": [
+      {
+        "speaker": "지원",
+        "ko": "어제 왜 그렇게 일찍 갔어요? 인사도 없이 가 버렸잖아요.",
+        "romanization": "eoje wae geureoke iljjik gasseoyo? insado eopsi ga beoryeotjanayo.",
+        "en": "Why did you leave so early yesterday? You just took off without saying goodbye.",
+        "grammarNote": "가 버렸잖아요 carries the sting of an abrupt, complete departure."
+      },
+      {
+        "speaker": "유진",
+        "ko": "죄송해요. 사실 그때 너무 졸려서 지하철에서 내릴 역을 지나칠 뻔했어요.",
+        "romanization": "joesonghaeyo. sasil geuttae neomu jollyeoseo jihacheoreseo naeril yeogeul jinachil ppeonhaesseoyo.",
+        "en": "Sorry. Honestly, I was so sleepy I almost rode past my stop on the subway.",
+        "grammarNote": "지나칠 뻔했어요 — she came close, but she did not actually miss it."
+      },
+      {
+        "speaker": "지원",
+        "ko": "괜찮아요? 요즘 계속 늦게까지 일하시더니 무리하시는 거 아니에요?",
+        "romanization": "gwaenchanayo? yojeum gyesok neutgekkaji ilhasideoni murihasineun geo anieyo?",
+        "en": "Are you okay? You've been working late constantly — aren't you overdoing it?",
+        "grammarNote": "-더니 from the previous chapter: something she has been watching happen."
+      },
+      {
+        "speaker": "유진",
+        "ko": "괜찮은 척했는데 사실 어제 계단에서 미끄러져서 크게 다칠 뻔했어요.",
+        "romanization": "gwaenchaneun cheokaenneunde sasil eoje gyedaneseo mikkeureojyeoseo keuge dachil ppeonhaesseoyo.",
+        "en": "I was putting on a brave face, but I actually slipped on the stairs yesterday and nearly hurt myself badly.",
+        "grammarNote": "괜찮다 is an adjective, so the modifier is -(으)ㄴ: 괜찮은 척."
+      },
+      {
+        "speaker": "지원",
+        "ko": "네? 그걸 왜 이제 말해요? 그러다 진짜 사고 나요.",
+        "romanization": "ne? geugeol wae ije malhaeyo? geureoda jinjja sago nayo.",
+        "en": "What? Why are you only telling me now? You'll actually have an accident at this rate.",
+        "grammarNote": "A genuine scolding — no auxiliary needed when the point is blunt."
+      },
+      {
+        "speaker": "유진",
+        "ko": "말하면 걱정하실까 봐 숨기려고 했는데, 결국 말하고 말았네요.",
+        "romanization": "malhamyeon geokjeonghasilkka bwa sumgiryeogo haenneunde, gyeolguk malhago mallanneyo.",
+        "en": "I wanted to keep it from you in case you worried, but in the end it came out anyway.",
+        "grammarNote": "숨기려고 했는데 supplies the resistance, so 말하고 말았네요 is the right auxiliary."
+      },
+      {
+        "speaker": "지원",
+        "ko": "잘했어요. 오늘은 밀린 일 다 끝내 버리고 일찍 들어가세요.",
+        "romanization": "jalhaesseoyo. oneureun millin il da kkeunnae beorigo iljjik deureogaseyo.",
+        "en": "Good. Today, get all your backlog done and dusted and go home early.",
+        "grammarNote": "끝내 버리고 — clear it completely, with the relief reading."
+      },
+      {
+        "speaker": "유진",
+        "ko": "네. 오늘은 무슨 일이 있어도 일찍 자고 말겠어요.",
+        "romanization": "ne. oneureun museun iri isseodo iljjik jago malgesseoyo.",
+        "en": "Okay. Tonight I'm getting to bed early no matter what happens.",
+        "grammarNote": "The future -고 말겠어요: determination, not regret."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "다 해 버린 일과 못 한 일",
+    "body": "하루를 돌아보면 끝낸 일, 어쩔 수 없이 벌어진 일, 겨우 피한 일이 섞여 있다. 한국어는 이 셋을 다른 어미로 나눈다. 내가 마음먹고 끝까지 해치웠으면 -아/어 버리다를 쓴다. 후련할 수도 있고 아까울 수도 있다. 막으려고 애썼는데도 그렇게 됐으면 -고 말다를 쓴다. 여기에는 후련함이 없다. 일어날 뻔했지만 결국 일어나지 않았으면 -(으)ㄹ 뻔했다를 쓴다. 이 표현은 항상 과거형이다. 그리고 속마음과 다른 표정을 지었다면 -(으)ㄴ/는 척하다를 쓴다.",
+    "bodyTranslation": "Look back over a day and you find things you finished, things that happened whether you liked it or not, and things you only just avoided. Korean sorts those three with different endings. If you set your mind to it and saw it through, you use -아/어 버리다 — which may feel unburdening or may feel like a waste. If you fought to prevent it and it happened anyway, you use -고 말다, and there is no relief in that one. If it nearly happened but in the end did not, you use -(으)ㄹ 뻔했다, which is always in the past. And if the face you showed did not match what was going on inside, you use -(으)ㄴ/는 척하다.",
+    "comprehensionQuestions": [
+      {
+        "question": "내가 마음먹고 끝까지 한 일에는 어떤 어미를 써요?",
+        "answer": "-아/어 버리다를 써요. 후련할 수도 있고 아까울 수도 있어요."
+      },
+      {
+        "question": "-고 말다에는 어떤 느낌이 없어요?",
+        "answer": "후련함이 없어요. 막으려고 애썼는데도 그렇게 된 일에만 써요."
+      },
+      {
+        "question": "-(으)ㄹ 뻔했다는 왜 항상 과거형이에요?",
+        "answer": "일어날 뻔했지만 결국 일어나지 않은 일이라서 이미 끝난 이야기이기 때문이에요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "괜찮은 척이 예의가 될 때",
+    "body": "척하다 comes out badly in English, where \"pretending\" sounds dishonest. In Korean it is frequently plain courtesy. 괜찮은 척하다 keeps your problem from becoming everyone else's; 못 들은 척하다 lets somebody save face after an awkward remark; 모르는 척해 주세요 is a sincere request for discretion. The one that really is an insult is 아는 척하다 — acting like you know when you do not. And watch out for 모르는 척하다 with a person as its object: 길에서 모르는 척했어요 does not mean you feigned ignorance, it means you walked past somebody you recognised.",
+    "tip": "못 들은 척해 주세요 and 모르는 척해 주세요 are polite ways to ask someone to let something drop. Said about a person rather than a remark, though, 모르는 척했어요 means you snubbed them."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which is correct for 'I blew my whole salary in two days'?",
+      "options": [
+        "월급을 이틀 만에 다 써 버렸어요.",
+        "월급을 이틀 만에 다 쓰다 버렸어요.",
+        "월급을 이틀 만에 다 써 말았어요."
+      ],
+      "correct": "월급을 이틀 만에 다 써 버렸어요.",
+      "explanation": "버리다 attaches to the -아/어 form, so 쓰다 becomes 써. And 말다 needs -고 in front of it, never -아/어."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "You held back the tears and in fact did NOT cry. Which fits?",
+      "options": [
+        "울 뻔했어요",
+        "울고 말았어요",
+        "울어 버렸어요"
+      ],
+      "correct": "울 뻔했어요",
+      "explanation": "-(으)ㄹ 뻔했다 is the only one of the three where the event did not actually happen. Both 울고 말았어요 and 울어 버렸어요 mean you really did cry."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence attaches 척하다 to an adjective correctly?",
+      "options": [
+        "사실 아픈데 안 아픈 척했어요.",
+        "사실 아픈데 안 아프는 척했어요.",
+        "사실 아픈데 안 아팠는 척했어요."
+      ],
+      "correct": "사실 아픈데 안 아픈 척했어요.",
+      "explanation": "아프다 is an adjective, so it takes -(으)ㄴ 척하다: 안 아픈 척했어요. -는 척하다 is reserved for verbs describing an ongoing action, like 자는 척하다."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the tense: '어제 계단에서 넘어질 뻔해요.'",
+      "correct": "어제 계단에서 넘어질 뻔했어요.",
+      "explanation": "A near miss is already over, so -(으)ㄹ 뻔하다 always appears as 뻔했어요. Present-tense 뻔해요 is a different word — the adjective meaning 'obvious'."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "밀린 일을 오늘 다 ___. (끝내다 → -아/어 버리다, polite past)",
+      "base": "끝내다",
+      "form": "eoBeoridaPast",
+      "correct": "끝내 버렸어요",
+      "explanation": "끝내다 already ends in ㅐ, so the -어 is absorbed: 끝내 + 버렸어요 gives 끝내 버렸어요."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'I very nearly left my wallet behind.' (Start with 하마터면.)",
+      "tokens": [
+        "하마터면",
+        "지갑을",
+        "두고",
+        "나올 뻔했어요"
+      ],
+      "correct": "하마터면 지갑을 두고 나올 뻔했어요",
+      "explanation": "하마터면 is the fixed partner of -(으)ㄹ 뻔했어요 and goes at the front of the sentence."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Complete with the right modifier: 동생이 ____ 척하고 있길래 그냥 두고 나왔어요. (자다)",
+      "correct": "자는",
+      "explanation": "자다 is a verb describing an action in progress, so it takes -는 척하다: 자는 척하다."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which one expresses determination ('I'll do it no matter what')?",
+      "options": [
+        "이번엔 꼭 이기고 말겠어요.",
+        "이번엔 꼭 이겨 버리겠어요.",
+        "이번엔 꼭 이길 뻔했어요."
+      ],
+      "correct": "이번엔 꼭 이기고 말겠어요.",
+      "explanation": "Only -고 말다 flips to determination in the future: -고 말겠어요. -아/어 버리다 stays a report of completion, and -(으)ㄹ 뻔했다 is always a past near miss."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "조심했는데도 컵___ 깨지고 말았어요. (the cup ended up broken)",
+      "options": [
+        "이",
+        "을",
+        "에"
+      ],
+      "correct": "이",
+      "explanation": "깨지다 means 'it breaks', so the cup is the subject: 컵이. 컵을 would need the transitive 깨다 — 컵을 깨고 말았어요."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the auxiliary — you finished the work and feel good about it: '일을 다 끝내고 말았어요.'",
+      "correct": "일을 다 끝내 버렸어요.",
+      "explanation": "-고 말다 always carries defeat, so it clashes with a good feeling. Completion you are happy about takes -아/어 버리다."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "다 들었으면서 ____ 척하지 마세요. (pretend not to have heard)",
+      "options": [
+        "못 들은",
+        "못 듣는",
+        "못 들을"
+      ],
+      "correct": "못 들은",
+      "explanation": "The hearing already happened, so the completed-action modifier -(으)ㄴ is right: 못 들은 척하다."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "-아/어 버리다 says the action went right through to the end. The feeling comes from the object: 다 끝내 버렸어요 is relief, 다 써 버렸어요 is regret.",
+      "-고 말다 only fits an outcome that beat you: 참으려고 했는데 울고 말았어요. In the future it flips to determination — 이기고 말겠어요.",
+      "-(으)ㄹ 뻔했다 means it did NOT happen, and it is always past. 하마터면 is its fixed partner at the front of the sentence.",
+      "척하다 takes -는 for a verb in progress (자는 척), -(으)ㄴ for a finished action or any adjective (못 들은 척, 아픈 척), and 인 for a noun (전문가인 척).",
+      "Standalone 뻔하다 is an unrelated adjective meaning 'obvious': 결말이 너무 뻔해요."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Write four sentences about yesterday: one thing you finished off completely, one thing that happened despite your efforts, one thing that almost happened but didn't, and one thing you put a brave face on.",
+    "hint": "Use -아/어 버리다, -고 말다, 하마터면 …-(으)ㄹ 뻔했어요, and -(으)ㄴ/는 척하다. Watch the modifier on 척하다: -는 for verbs in progress, -(으)ㄴ for adjectives.",
+    "model": "어제는 밀린 일을 다 끝내 버렸어요. 그런데 참으려고 했는데도 회의에서 결국 화를 내고 말았어요. 퇴근길에는 하마터면 지갑을 두고 나올 뻔했고요. 집에 와서는 힘든데도 괜찮은 척했어요.",
+    "modelEn": "Yesterday I knocked out all my backlog. But even though I tried to hold back, I ended up losing my temper in the meeting. On the way home I very nearly walked out and left my wallet behind. And once I got home, I acted fine even though I wasn't."
+  },
+  "canDo": [
+    "Carry an action right through with V-아/어 버리다, and hear whether it lands as relief or as regret",
+    "Report an outcome that beat you with V-고 말다, and flip it to resolve with -고 말겠어요",
+    "Describe a near miss with 하마터면 …-(으)ㄹ 뻔했어요, always in the past",
+    "Pick the right modifier for 척하다: 자는 척, 못 들은 척, 아픈 척, 전문가인 척",
+    "Keep V-(으)ㄹ 뻔하다 apart from the adjective 뻔하다 ('obvious, predictable')"
+  ]
+}

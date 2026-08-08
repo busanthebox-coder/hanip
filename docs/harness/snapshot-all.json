@@ -7700,6 +7700,950 @@
      ]
     }
    ]
+  },
+  {
+   "id": "chapter-66",
+   "biteCount": 11,
+   "bites": [
+    {
+     "id": "chapter-66-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 보이다~",
+     "cards": [
+      "guess:보이다:보여:to be heard, to be audible|to be visible; to show|to open, to be opened",
+      "guess:들리다:들려:to be visible; to show|to open, to be opened|to be heard, to be audible",
+      "guess:열리다:열려:to open, to be opened|to be visible; to show|to be heard, to be audible",
+      "guess:닫히다:닫혀:to shut, to be closed|to be visible; to show|to be heard, to be audible",
+      "guess:막히다:막혀:to be visible; to show|to get blocked, to be jammed|to be heard, to be audible",
+      "guess:팔리다:팔려:to be visible; to show|to be heard, to be audible|to be sold, to sell out",
+      "payoff:보이:네? 저는 그 공지가 안 보이는데요."
+     ]
+    },
+    {
+     "id": "chapter-66-b2",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-이/히/리/기-",
+     "cards": [
+      "teach:V-이/히/리/기-:2ex",
+      "order:지금 출근 시간이라 도로가 꽉 막혔어요.",
+      "order:지하철에서 통화하다가 갑자기 전화가 끊겼어요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:문을 닫혔어요.|문이 닫혔어요.*"
+     ]
+    },
+    {
+     "id": "chapter-66-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 걸리다~",
+     "cards": [
+      "guess:걸리다:걸려:to be visible; to show|to be heard, to be audible|to be hung; to get caught; to take (time)",
+      "guess:잡히다:잡혔:to be caught|to be visible; to show|to be heard, to be audible",
+      "guess:끊기다:끊겨:to be cut off, to be disconnected|to be visible; to show|to be heard, to be audible",
+      "guess:쓰이다:쓰여:to be visible; to show|to be used; to be written|to be heard, to be audible",
+      "guess:켜지다:켜져:to come on, to be turned on|to be visible; to show|to be heard, to be audible",
+      "guess:바뀌다:바뀌:to be changed, to change|to be visible; to show|to be heard, to be audible",
+      "payoff:바뀌:아니요, 안 하셔도 돼요. 회의 장소가 3층으로 바뀌었어요. 방금 공지가 올라왔거든요."
+     ]
+    },
+    {
+     "id": "chapter-66-b4",
+     "kind": "pattern",
+     "title": "문법 Grammar · N에/에게 + 피동",
+     "cards": [
+      "teach:N에/에게 + 피동:2ex",
+      "order:도둑이 경찰한테 바로 잡혔어요.",
+      "order:창문이 바람에 쾅 닫혔어요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:창문이 바람에 닫혔어요.*|창문이 바람에게 닫혔어요."
+     ]
+    },
+    {
+     "id": "chapter-66-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 놓이다~",
+     "cards": [
+      "guess:놓이다:놓여:to be visible; to show|to be placed, to be set down|to be heard, to be audible",
+      "guess:밟히다:밟혔:to be visible; to show|to be heard, to be audible|to get stepped on",
+      "guess:쫓기다:쫓겨:to be visible; to show|to be heard, to be audible|to be chased; to be pressed (for time)",
+      "guess:정해지다:정해졌:to be visible; to show|to be decided, to be set|to be heard, to be audible",
+      "guess:알려지다:알려졌:to be visible; to show|to become known, to get out|to be heard, to be audible",
+      "guess:지워지다:지워져:to get erased, to come off|to be visible; to show|to be heard, to be audible"
+     ]
+    },
+    {
+     "id": "chapter-66-b6",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-아/어지다",
+     "cards": [
+      "teach:V-아/어지다:2ex",
+      "order:칠판에 쓴 글씨가 잘 안 지워져요.",
+      "order:회식 날짜가 다음 주 금요일로 정해졌어요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:문이 안 열려서 한참 서 있었어요.*|문이 안 열려져서 한참 서 있었어요."
+     ]
+    },
+    {
+     "id": "chapter-66-b7",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-게 되다",
+     "cards": [
+      "teach:V-게 되다:2ex",
+      "order:한국 드라마를 보다가 한국어를 배우게 됐어요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:문이 닫게 됐어요.|문이 닫혔어요.*"
+     ]
+    },
+    {
+     "id": "chapter-66-b8",
+     "kind": "pattern",
+     "title": "문법 Grammar · 보이다·읽히다",
+     "cards": [
+      "teach:보이다·읽히다:2ex",
+      "order:옥상에 올라가면 한강이 다 보여요.",
+      "order:병원에서 의사 선생님한테 다친 손을 보였어요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:친구에게 사진을 보여 줬어요.*|친구에게 사진이 보였어요."
+     ]
+    },
+    {
+     "id": "chapter-66-b9",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cards": [
+      "chat:8",
+      "order:터널에서 전화가 끊겼어요",
+      "drill:누가 한 말일까요? · Who said this?:유진*|지원"
+     ]
+    },
+    {
+     "id": "chapter-66-b10",
+     "kind": "reading",
+     "title": "읽기 Reading · 문이 닫히고, 길이 막히고",
+     "cards": [
+      "read:2:3qa",
+      "order:누가 그렇게 만들었는지는 굳이 밝히지 않는다."
+     ]
+    },
+    {
+     "id": "chapter-66-b11",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cards": [
+      "drill:Which sentence is correct Korean for 'The window suddenly closed'?:창문이 갑자기 닫혔어요.*|창문을 갑자기 닫혔어요.|창문이 갑자기 닫게 됐어요.",
+      "drill:창문이 바람___ 닫혔어요. (The window was blown shut by the wind.):에*|한테|이",
+      "drill:Choose the natural way to say 'The tickets all sold out in ten minutes.':표가 십 분 만에 다 팔렸어요.*|표를 십 분 만에 다 팔렸어요.|표가 십 분 만에 다 팔아졌어요.",
+      "drill:Which one means 'I showed the doctor my hand' (not 'my hand was visible')?:의사 선생님한테 손을 보였어요.*|의사 선생님한테 손이 보였어요.|의사 선생님한테 손이 보여졌어요.",
+      "drill:Which sentence uses -게 되다 correctly for 'something came up, so I can't go to this meetup'?:일이 생겨서 이번 모임에는 못 가게 됐어요.*|일이 생겨서 이번 모임에는 못 가게 했어요.|일이 생겨서 이번 모임이 못 가게 됐어요.",
+      "drill:Which verb needs -아/어지다 because it has no -이/히/리/기- passive?:지우다*|닫다|팔다"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chapter-67",
+   "biteCount": 11,
+   "bites": [
+    {
+     "id": "chapter-67-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 전하다~",
+     "cards": [
+      "guess:전하다:전하:to pass on, to convey (a message)|to take along, to look after|to check, to confirm",
+      "guess:소식:소식:news, word (from someone)|notice, announcement|contact, getting in touch",
+      "guess:공지:공지:news, word (from someone)|notice, announcement|contact, getting in touch",
+      "guess:연락:연락:contact, getting in touch|news, word (from someone)|notice, announcement",
+      "guess:회식:회식:news, word (from someone)|notice, announcement|team dinner, company get-together",
+      "guess:야근:야근:working late, overtime|news, word (from someone)|notice, announcement",
+      "guess:챙기다:챙기:to pass on, to convey (a message)|to take along, to look after|to check, to confirm",
+      "payoff:야근:오늘요? 저는 야근할 것 같은데요. 어디서 먹재요?"
+     ]
+    },
+    {
+     "id": "chapter-67-b2",
+     "kind": "pattern",
+     "title": "문법 Grammar · V/A-대요",
+     "cards": [
+      "hunt:V/A-대요:대요;대요",
+      "drill:My younger sibling says he did well on yesterday's exam.:이래요|대요*|으래요",
+      "order:지훈이 오늘 회식에 못 온대요.",
+      "order:요즘 그 카페는 사람이 진짜 많대요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:친구가 매일 운동하대요.|친구가 매일 운동한대요.*"
+     ]
+    },
+    {
+     "id": "chapter-67-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 확인하다~",
+     "cards": [
+      "guess:확인하다:확인해:to check, to confirm|to pass on, to convey (a message)|to take along, to look after",
+      "guess:물어보다:물어볼:to pass on, to convey (a message)|to take along, to look after|to ask (a question)",
+      "guess:대답하다:대답할:to pass on, to convey (a message)|to take along, to look after|to answer, to reply",
+      "guess:바쁘다:바쁘:to be free, to have time on one's hands|to be busy|to pass on, to convey (a message)",
+      "guess:마감:마감:news, word (from someone)|deadline, closing|notice, announcement",
+      "guess:발표:발표:news, word (from someone)|presentation; announcement|contact, getting in touch",
+      "guess:세일:세일:sale (discount period)|news, word (from someone)|notice, announcement"
+     ]
+    },
+    {
+     "id": "chapter-67-b4",
+     "kind": "pattern",
+     "title": "문법 Grammar · N(이)래요 vs V-(으)래요",
+     "cards": [
+      "hunt:N(이)래요 vs V-(으)래요:이래요;으래요",
+      "drill:Mom says to be sure to call if I'm going to be late.:이래요|으래요|래요*",
+      "drill:The team lead says not to work late today.:래요*|대요|냬요",
+      "order:저분이 이 식당 사장님이래요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:친구가 의사래요.*|친구가 의사대요."
+     ]
+    },
+    {
+     "id": "chapter-67-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 소문~",
+     "cards": [
+      "guess:소문:소문:rumour, word going around|notice, announcement|contact, getting in touch",
+      "guess:미루다:미루:to pass on, to convey (a message)|to postpone, to push back|to take along, to look after",
+      "guess:한가하다:한가하:to be busy|to be free, to have time on one's hands|to pass on, to convey (a message)",
+      "guess:맛집:맛집:news, word (from someone)|a really good place to eat|notice, announcement",
+      "guess:예매:예매:advance booking (tickets)|news, word (from someone)|notice, announcement",
+      "payoff:맛집:회사 앞에 새로 생긴 데래요. 거기가 요즘 진짜 맛집이라던데요."
+     ]
+    },
+    {
+     "id": "chapter-67-b6",
+     "kind": "pattern",
+     "title": "문법 Grammar · V/A-냬요",
+     "cards": [
+      "hunt:V/A-냬요:냬요;냬요",
+      "drill:A customer is asking whether it's okay to sit here.:냬요*|대요|이래요",
+      "drill:Mom is asking whether you've eaten.:냬요*|대요|이래요",
+      "order:팀장님이 보고서 언제 끝나냬요.",
+      "order:친구가 이번 주말에 시간 있냬요."
+     ]
+    },
+    {
+     "id": "chapter-67-b7",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-재요",
+     "cards": [
+      "hunt:V-재요:재요;재요",
+      "drill:Jihoon says let's not drink tonight.:대요|재요*|이래요",
+      "drill:The team says let's push the dinner back to next week.:대요|이래요|재요*",
+      "order:친구들이 이번 주말에 등산 가재요.",
+      "order:동기들이 점심은 구내식당에서 먹재요."
+     ]
+    },
+    {
+     "id": "chapter-67-b8",
+     "kind": "pattern",
+     "title": "문법 Grammar · -다던데(요)",
+     "cards": [
+      "hunt:-다던데(요):다던데요;다던데요",
+      "order:내일부터 비가 온다던데요. 우산 챙기세요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:제가 어제 거기 갔는데요.*|제가 어제 거기 갔다던데요."
+     ]
+    },
+    {
+     "id": "chapter-67-b9",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cards": [
+      "chat:8",
+      "order:의사 선생님이 이 약을 하루에 두 번 먹으래요",
+      "drill:누가 한 말일까요? · Who said this?:유진|지원*",
+      "drill:무엇이 들어갈까요? · \"Tonight? I think I'll be working late. Where do they say we're eating?\":소식|공지|야근*"
+     ]
+    },
+    {
+     "id": "chapter-67-b10",
+     "kind": "reading",
+     "title": "읽기 Reading · 전하는 사람의 말",
+     "cards": [
+      "read:2:3qa"
+     ]
+    },
+    {
+     "id": "chapter-67-b11",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cards": [
+      "drill:Contract this into everyday speech: '친구가 매일 운동한다고 해요.':친구가 매일 운동한대요.*|친구가 매일 운동하대요.|친구가 매일 운동이래요.",
+      "drill:'They say she's a student' — which contraction is right?:학생이래요.*|학생이대요.|학생인대요.",
+      "drill:Which one means 'they told me to go' (not 'I want to go')?:가래요*|갈래요|가재요",
+      "drill:The team lead asked '언제 끝나요?'. Relay it.:팀장님이 언제 끝나냬요.*|팀장님이 언제 끝난대요.|팀장님이 언제 끝나재요.",
+      "drill:A colleague said '같이 점심 먹자.' Relay it.:같이 점심 먹재요.*|같이 점심 먹는대요.|같이 점심 먹으래요.",
+      "drill:팀장님___ 회의 시간이 바뀌었대요. (The team lead says the meeting time changed.):이*|을|에서"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chapter-68",
+   "biteCount": 11,
+   "bites": [
+    {
+     "id": "chapter-68-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 숙제~",
+     "cards": [
+      "guess:숙제:숙제:aches and exhaustion (from overdoing it)|homework, assignment|a sudden shower, a downpour",
+      "guess:서두르다:서둘렀:to hurry, to rush|to be crowded, to be packed|to miss (a train, a chance, a stop)",
+      "guess:몸살:몸살:aches and exhaustion (from overdoing it)|homework, assignment|a sudden shower, a downpour",
+      "guess:붐비다:붐비:to be crowded, to be packed|to hurry, to rush|to miss (a train, a chance, a stop)",
+      "guess:놓치다:놓쳤:to hurry, to rush|to be crowded, to be packed|to miss (a train, a chance, a stop)",
+      "guess:쏟다:쏟는:to hurry, to rush|to be crowded, to be packed|to spill, to pour out",
+      "guess:넘어지다:넘어질:to hurry, to rush|to fall over, to trip|to be crowded, to be packed"
+     ]
+    },
+    {
+     "id": "chapter-68-b2",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-느라고",
+     "cards": [
+      "hunt:V-느라고:느라고;느라고",
+      "drill:Thank you for making the trip all the way here.:느라고*|더니|아서",
+      "drill:I was busy getting ready to move this month, so I was all over the place.:더니|아서|느라고*",
+      "order:어제 보고서 쓰느라고 한숨도 못 잤어요.",
+      "order:게임하느라고 엄마가 부르는 소리를 못 들었어요."
+     ]
+    },
+    {
+     "id": "chapter-68-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 지각하다~",
+     "cards": [
+      "guess:지각하다:지각했:to hurry, to rush|to be crowded, to be packed|to be late (for school or work)",
+      "guess:결국:결국:in the end, finally|homework, assignment|to hurry, to rush",
+      "guess:소나기:소나기:a sudden shower, a downpour|homework, assignment|aches and exhaustion (from overdoing it)",
+      "guess:재택근무:재택근무:working from home|homework, assignment|a sudden shower, a downpour",
+      "guess:다치다:다쳤:to get hurt, to injure oneself|to hurry, to rush|to be crowded, to be packed",
+      "guess:쉬다:쉬었:to hurry, to rush|to be crowded, to be packed|to rest, to take a break",
+      "guess:끝내다:끝내:to finish (something)|to hurry, to rush|to be crowded, to be packed",
+      "payoff:쉬었:왜 이렇게 피곤해 보여요? 주말에 못 쉬었어요?"
+     ]
+    },
+    {
+     "id": "chapter-68-b4",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-는 바람에",
+     "cards": [
+      "hunt:V-는 바람에:는,바람에;는,바람에",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:동생이 떠드느라고 제가 잠을 못 잤어요.|동생이 떠드는 바람에 제가 잠을 못 잤어요.*"
+     ]
+    },
+    {
+     "id": "chapter-68-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 늦잠~",
+     "cards": [
+      "guess:늦잠:늦잠:oversleeping, a lie-in|homework, assignment|aches and exhaustion (from overdoing it)",
+      "guess:정신없다::to be hectic, to be all over the place|homework, assignment|to hurry, to rush",
+      "guess:배탈:배탈:an upset stomach|homework, assignment|aches and exhaustion (from overdoing it)",
+      "guess:지치다:지쳐:to hurry, to rush|to be crowded, to be packed|to be worn out, to be drained",
+      "guess:취소되다:취소됐:to hurry, to rush|to be cancelled|to be crowded, to be packed",
+      "guess:고장:고장:homework, assignment|a breakdown, a malfunction|aches and exhaustion (from overdoing it)",
+      "payoff:늦잠:짐 싸느라고 못 봤어요. 그리고 오늘 아침엔 늦잠까지 자는 바람에 첫차를 놓쳤고요."
+     ]
+    },
+    {
+     "id": "chapter-68-b6",
+     "kind": "pattern",
+     "title": "문법 Grammar · V/A-더니",
+     "cards": [
+      "hunt:V/A-더니:더니;더니",
+      "drill:That shop had no customers for a while, and then it closed last month.:느라고|아서|더니*",
+      "drill:My younger sibling bought new shoes, and now wears nothing else.:느라고|더니*|아서",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:제가 어제 늦게 잤더니 오늘 너무 피곤해요.*|제가 어제 늦게 자더니 오늘 너무 피곤해요."
+     ]
+    },
+    {
+     "id": "chapter-68-b7",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-았/었더니",
+     "cards": [
+      "hunt:V-았/었더니:었더니;더니",
+      "drill:I took cold medicine, and I was fine within a day.:느라고|었더니*|아서",
+      "drill:I got to the office early, and there was nobody there.:느라고|더니*|아서",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:약을 먹었더니 푹 쉬세요.|약을 먹었더니 좀 나아졌어요.*"
+     ]
+    },
+    {
+     "id": "chapter-68-b8",
+     "kind": "pattern",
+     "title": "문법 Grammar · -느라고 vs -는 바람에 vs -아서/어서",
+     "cards": [
+      "hunt:-느라고 vs -는 바람에 vs -아서/어서:느라고;는,바람에",
+      "order:발표 준비하느라고 점심도 못 먹었어요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:배가 아파서 학교에 못 갔어요.*|배가 아프느라고 학교에 못 갔어요."
+     ]
+    },
+    {
+     "id": "chapter-68-b9",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cards": [
+      "chat:8",
+      "order:엘리베이터가 고장 나는 바람에 십오 층까지 걸어 올라갔어요",
+      "drill:누가 한 말일까요? · Who said this?:유진|지원*",
+      "drill:무엇이 들어갈까요? · \"Same here — the lift broke down, so I walked up to the fifteenth floor.\":숙제|고장*|몸살"
+     ]
+    },
+    {
+     "id": "chapter-68-b10",
+     "kind": "reading",
+     "title": "읽기 Reading · 핑계와 원인 사이",
+     "cards": [
+      "read:2:3qa",
+      "order:한국어에는 '왜'를 말하는 방법이 여러 가지다."
+     ]
+    },
+    {
+     "id": "chapter-68-b11",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cards": [
+      "drill:Which sentence is correct Korean?:보고서를 쓰느라고 한숨도 못 잤어요.*|보고서를 썼느라고 한숨도 못 잤어요.|보고서를 쓰느라고 한숨도 못 자세요.",
+      "drill:동생이 떠들었어요. 그래서 제가 잠을 못 잤어요. Which connector fits?:떠드는 바람에*|떠드느라고|떠들었느라고",
+      "drill:Which one can follow 제가 (a first-person subject)?:어제 늦게 잤더니*|어제 늦게 자더니|어제 늦게 잤느라고",
+      "drill:You want to report what you watched happen to 지훈 씨. Which is natural?:지훈 씨가 계속 야근하더니 몸살이 났어요.*|지훈 씨가 계속 야근했더니 몸살이 났어요.|제가 계속 야근하더니 몸살이 났어요.",
+      "drill:늦잠___ 자는 바람에 첫차를 놓쳤어요. (I overslept, so I missed the first train.):을*|이|에",
+      "drill:Which ending fits a welcome result: '일찍 도착___ 좋은 자리를 잡았어요'?:해서*|하느라고|하는 바람에"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chapter-69",
+   "biteCount": 11,
+   "bites": [
+    {
+     "id": "chapter-69-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 버리다~",
+     "cards": [
+      "guess:버리다:버렸:to endure, to hold back|to throw away; (auxiliary) to do completely|to cry",
+      "guess:참다:참다:to throw away; (auxiliary) to do completely|to endure, to hold back|to forget (completely)",
+      "guess:하마터면:하마터면:to throw away; (auxiliary) to do completely|to endure, to hold back|very nearly, by a hair",
+      "guess:아쉽다:아쉬워:to throw away; (auxiliary) to do completely|to feel it's a shame, to feel a pang of regret|to endure, to hold back",
+      "guess:잊어버리다:잊어버릴:to forget (completely)|to endure, to hold back|to cry",
+      "guess:울다:울고:to throw away; (auxiliary) to do completely|to endure, to hold back|to cry",
+      "guess:모르다:모르:to throw away; (auxiliary) to do completely|to endure, to hold back|to not know",
+      "payoff:버리:잘했어요. 오늘은 밀린 일 다 끝내 버리고 일찍 들어가세요."
+     ]
+    },
+    {
+     "id": "chapter-69-b2",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-아/어 버리다",
+     "cards": [
+      "teach:V-아/어 버리다:2ex",
+      "order:고민하다가 그냥 다 말해 버렸어요.",
+      "order:지훈 씨가 인사도 없이 가 버렸어요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:월급을 다 쓰다 버렸어요.|월급을 다 써 버렸어요.*"
+     ]
+    },
+    {
+     "id": "chapter-69-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 자다~",
+     "cards": [
+      "guess:자다:자는:to throw away; (auxiliary) to do completely|to sleep|to endure, to hold back",
+      "guess:깨지다:깨지:to throw away; (auxiliary) to do completely|to endure, to hold back|to break, to get broken",
+      "guess:후회하다:후회해:to throw away; (auxiliary) to do completely|to regret|to endure, to hold back",
+      "guess:다치다:다칠:to get hurt, to injure oneself|to throw away; (auxiliary) to do completely|to endure, to hold back",
+      "guess:포기하다:포기해:to throw away; (auxiliary) to do completely|to endure, to hold back|to give up",
+      "guess:화내다::to throw away; (auxiliary) to do completely|to get angry, to lose one's temper|to endure, to hold back",
+      "guess:미끄러지다:미끄러져:to throw away; (auxiliary) to do completely|to slip, to slide|to endure, to hold back",
+      "payoff:자고:네. 오늘은 무슨 일이 있어도 일찍 자고 말겠어요."
+     ]
+    },
+    {
+     "id": "chapter-69-b4",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-고 말다",
+     "cards": [
+      "teach:V-고 말다:2ex",
+      "order:참으려고 했는데 결국 울고 말았어요.",
+      "order:조심했는데도 컵을 깨고 말았어요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:어제 점심을 먹고 말았어요.|어제 점심을 먹었어요.*"
+     ]
+    },
+    {
+     "id": "chapter-69-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 후련하다~",
+     "cards": [
+      "guess:후련하다:후련해:to throw away; (auxiliary) to do completely|to feel relieved, to feel unburdened|to endure, to hold back",
+      "guess:들키다:들키:to be caught out, to be found out|to throw away; (auxiliary) to do completely|to endure, to hold back",
+      "guess:잃어버리다:잃어버릴:to lose (an object)|to throw away; (auxiliary) to do completely|to endure, to hold back",
+      "guess:실수하다:실수하:to make a mistake, to slip up|to throw away; (auxiliary) to do completely|to endure, to hold back",
+      "guess:부딪히다:부딪힐:to bump into, to collide with|to throw away; (auxiliary) to do completely|to endure, to hold back",
+      "guess:숨기다:숨기:to hide (something), to keep something from someone|to throw away; (auxiliary) to do completely|to endure, to hold back",
+      "payoff:숨기:말하면 걱정하실까 봐 숨기려고 했는데, 결국 말하고 말았네요."
+     ]
+    },
+    {
+     "id": "chapter-69-b6",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-(으)ㄹ 뻔했다",
+     "cards": [
+      "teach:V-(으)ㄹ 뻔했다:2ex",
+      "order:하마터면 지갑을 두고 나올 뻔했어요.",
+      "order:계단에서 미끄러져서 크게 다칠 뻔했어요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:어제 계단에서 넘어질 뻔했어요.*|어제 계단에서 넘어질 뻔해요."
+     ]
+    },
+    {
+     "id": "chapter-69-b7",
+     "kind": "pattern",
+     "title": "문법 Grammar · A/V-(으)ㄴ/는 척하다",
+     "cards": [
+      "teach:A/V-(으)ㄴ/는 척하다:2ex",
+      "order:부장님이 지나가시길래 바쁜 척했어요.",
+      "order:다 들었으면서 못 들은 척하지 마세요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:사실 아픈데 안 아프는 척했어요.|사실 아픈데 안 아픈 척했어요.*"
+     ]
+    },
+    {
+     "id": "chapter-69-b8",
+     "kind": "pattern",
+     "title": "문법 Grammar · -아/어 버리다 vs -고 말다",
+     "cards": [
+      "teach:-아/어 버리다 vs -고 말다:2ex",
+      "order:미련 없이 그 가방을 팔아 버렸어요.",
+      "order:숨기려고 했는데 결국 말하고 말았어요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:일이 다 끝나서 기분 좋게 끝내고 말았어요.|일이 다 끝나서 기분 좋게 끝내 버렸어요.*"
+     ]
+    },
+    {
+     "id": "chapter-69-b9",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cards": [
+      "chat:8",
+      "order:하마터면 지갑을 두고 나올 뻔했어요",
+      "drill:누가 한 말일까요? · Who said this?:유진*|지원"
+     ]
+    },
+    {
+     "id": "chapter-69-b10",
+     "kind": "reading",
+     "title": "읽기 Reading · 다 해 버린 일과 못 한 일",
+     "cards": [
+      "read:2:3qa",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:참다|버리다*|울다"
+     ]
+    },
+    {
+     "id": "chapter-69-b11",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cards": [
+      "drill:Which is correct for 'I blew my whole salary in two days'?:월급을 이틀 만에 다 써 버렸어요.*|월급을 이틀 만에 다 쓰다 버렸어요.|월급을 이틀 만에 다 써 말았어요.",
+      "drill:You held back the tears and in fact did NOT cry. Which fits?:울 뻔했어요*|울고 말았어요|울어 버렸어요",
+      "drill:Which sentence attaches 척하다 to an adjective correctly?:사실 아픈데 안 아픈 척했어요.*|사실 아픈데 안 아프는 척했어요.|사실 아픈데 안 아팠는 척했어요.",
+      "drill:Which one expresses determination ('I'll do it no matter what')?:이번엔 꼭 이기고 말겠어요.*|이번엔 꼭 이겨 버리겠어요.|이번엔 꼭 이길 뻔했어요.",
+      "drill:조심했는데도 컵___ 깨지고 말았어요. (the cup ended up broken):이*|을|에",
+      "drill:다 들었으면서 ____ 척하지 마세요. (pretend not to have heard):못 들은*|못 듣는|못 들을"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chapter-70",
+   "biteCount": 11,
+   "bites": [
+    {
+     "id": "chapter-70-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 공지~",
+     "cards": [
+      "guess:공지:공지:guidance, information (for the public)|notice, announcement|application, request",
+      "guess:안내:안내:notice, announcement|guidance, information (for the public)|application, request",
+      "guess:신청:신청:notice, announcement|application, request|guidance, information (for the public)",
+      "guess:접수:접수:notice, announcement|guidance, information (for the public)|receipt, intake (of applications)",
+      "guess:제출:제출:submission, handing in|notice, announcement|guidance, information (for the public)",
+      "guess:규정:규정:rule, regulation|notice, announcement|guidance, information (for the public)",
+      "guess:기한:기한:notice, announcement|deadline, time limit|guidance, information (for the public)",
+      "payoff:공지:공지 초안 보셨어요? 문장이 자꾸 끊겨서 좀 딱딱해요."
+     ]
+    },
+    {
+     "id": "chapter-70-b2",
+     "kind": "pattern",
+     "title": "문법 Grammar · V/A-(으)며",
+     "cards": [
+      "hunt:V/A-(으)며:며;며",
+      "drill:He is a researcher and at the same time also teaches at a university.:며*|으나|으므로",
+      "drill:We reviewed the next schedule together while looking at the meeting materials.:으나|으므로|며*",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:회의를 마친 후 자료를 배포했다.*|회의를 마치며 자료를 배포했다."
+     ]
+    },
+    {
+     "id": "chapter-70-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 변경~",
+     "cards": [
+      "guess:변경:변경:notice, announcement|guidance, information (for the public)|change, alteration (formal)",
+      "guess:문의:문의:enquiry|notice, announcement|guidance, information (for the public)",
+      "guess:서류:서류:notice, announcement|documents, paperwork|guidance, information (for the public)",
+      "guess:자료:자료:notice, announcement|guidance, information (for the public)|materials, data",
+      "guess:회의:회의:meeting|notice, announcement|guidance, information (for the public)",
+      "guess:일정:일정:notice, announcement|schedule|guidance, information (for the public)",
+      "guess:장소:장소:notice, announcement|guidance, information (for the public)|venue, place",
+      "payoff:서류:네. '접수는 온라인으로 합니다. 그리고 서류는 방문 제출도 됩니다.' 이 두 문장을 하나로 합치면 어때요?"
+     ]
+    },
+    {
+     "id": "chapter-70-b4",
+     "kind": "pattern",
+     "title": "문법 Grammar · V/A-(으)나",
+     "cards": [
+      "hunt:V/A-(으)나:으나;나,나",
+      "drill:We reviewed the material several times but could not find the error.:으며|으므로|으나*",
+      "drill:He is new, but his grasp of the work is very high.:으며|나*|으므로",
+      "order:예산은 늘었으나 인력은 그대로이다.",
+      "order:신청은 누구나 가능하나 선정은 심사를 거친다."
+     ]
+    },
+    {
+     "id": "chapter-70-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 등록~",
+     "cards": [
+      "guess:등록:등록:notice, announcement|registration, enrolment|guidance, information (for the public)",
+      "guess:마감:마감:notice, announcement|closing, deadline|guidance, information (for the public)",
+      "guess:연기:연기:notice, announcement|guidance, information (for the public)|postponement",
+      "guess:첨부:첨부:notice, announcement|attachment (to a document or email)|guidance, information (for the public)",
+      "guess:시간::notice, announcement|time, hours|guidance, information (for the public)",
+      "guess:참석하다:참석했:notice, announcement|to attend|guidance, information (for the public)"
+     ]
+    },
+    {
+     "id": "chapter-70-b6",
+     "kind": "pattern",
+     "title": "문법 Grammar · V/A-(으)므로",
+     "cards": [
+      "hunt:V/A-(으)므로:으므로;므로",
+      "drill:The submission deadline has passed, so this application will not be accepted.:으므로*|으며|으나",
+      "drill:The material is not sufficient, so we are holding off on a conclusion.:으며|으므로*|으나",
+      "order:해당 구역은 공사 중이므로 출입을 금한다.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:규정이 바뀌었으므로 확인해야 한다.*|규정이 바뀌었음으로 확인해야 한다."
+     ]
+    },
+    {
+     "id": "chapter-70-b7",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-고자",
+     "cards": [
+      "hunt:V-고자:고자;고자",
+      "drill:I enquired with the department in charge in order to confirm the details.:고자*|으며|으나",
+      "drill:We intend to introduce a new system from next semester.:으며|으나|고자*",
+      "order:행사 일정을 안내드리고자 메일을 드립니다.",
+      "order:본 조사는 이용자의 의견을 파악하고자 실시되었다."
+     ]
+    },
+    {
+     "id": "chapter-70-b8",
+     "kind": "pattern",
+     "title": "문법 Grammar · Nominal -(으)ㅁ",
+     "cards": [
+      "teach:Nominal -(으)ㅁ:2ex",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:참석하기가 확인되었습니다.|참석했음이 확인되었습니다.*"
+     ]
+    },
+    {
+     "id": "chapter-70-b9",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cards": [
+      "chat:8",
+      "order:제출 기한이 지났으므로 이번 신청은 접수되지 않는다",
+      "drill:누가 한 말일까요? · Who said this?:유진|지원*",
+      "drill:무엇이 들어갈까요? · \"Did you see the draft notice? The sentences keep breaking up, so it reads a bit stiff.\":공지*|안내|신청"
+     ]
+    },
+    {
+     "id": "chapter-70-b10",
+     "kind": "reading",
+     "title": "읽기 Reading · 시설 이용 안내",
+     "cards": [
+      "read:2:3qa",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:공지|변경*|접수",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:공지|접수|신청*"
+     ]
+    },
+    {
+     "id": "chapter-70-b11",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cards": [
+      "drill:Join into one written sentence: '값이 쌉니다. 그리고 품질도 좋습니다.':값이 싸며 품질도 좋다.*|값이 싸으며 품질도 좋다.|값이 싸므로 품질도 좋다.",
+      "drill:Which is the correct written contrast for '예산은 늘었지만 인력은 그대로예요'?:예산은 늘었으나 인력은 그대로이다.*|예산은 늘었나 인력은 그대로이다.|예산은 늘었으며 인력은 그대로이다.",
+      "drill:Which sentence means 'he succeeded BY making an effort' (method, not reason)?:그는 노력함으로써 성공했다.*|그는 노력했으므로 성공했다.|그는 노력하고자 성공했다.",
+      "drill:Which one does 확인되다 require in front of it?:참석했음이*|참석하기가|참석하고자",
+      "drill:응답자의 절반이 제도 변경을 모르고 있음___ 확인되었다.:이*|을|에",
+      "drill:Which sentence uses -(으)며 correctly for two things happening at once?:회의 자료를 보며 다음 일정을 검토했다.*|회의를 마치며 자료를 배포했다.|회의를 하며 어제 자료를 만들었다."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chapter-71",
+   "biteCount": 11,
+   "bites": [
+    {
+     "id": "chapter-71-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 기사~",
+     "cards": [
+      "guess:기사:기사:(news) article, report|announcement|result, findings",
+      "guess:보도:보도:announcement|result, findings|news coverage, reporting",
+      "guess:발표:발표:(news) article, report|news coverage, reporting|announcement",
+      "guess:밝히다:밝혔:(news) article, report|to state, to reveal|news coverage, reporting",
+      "guess:결과:결과:result, findings|(news) article, report|news coverage, reporting",
+      "guess:정부:정부:(news) article, report|the government|news coverage, reporting",
+      "guess:확대:확대:expansion, widening|(news) article, report|news coverage, reporting",
+      "payoff:정부:이 헤드라인 좀 보세요. '정부, 내년부터 지원 대상 확대'. 조사가 하나도 없네요."
+     ]
+    },
+    {
+     "id": "chapter-71-b2",
+     "kind": "pattern",
+     "title": "문법 Grammar · News passives",
+     "cards": [
+      "teach:News passives:2ex",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:정부에 따르면 지원이 확대된다.*|정부에 의하면 지원이 확대한다."
+     ]
+    },
+    {
+     "id": "chapter-71-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 증가~",
+     "cards": [
+      "guess:증가:증가:(news) article, report|increase|news coverage, reporting",
+      "guess:감소:감소:(news) article, report|decrease|news coverage, reporting",
+      "guess:전망:전망:(news) article, report|outlook, forecast|news coverage, reporting",
+      "guess:예정:예정:(news) article, report|news coverage, reporting|scheduled, planned",
+      "guess:가능성:가능성:(news) article, report|news coverage, reporting|possibility, likelihood",
+      "guess:필요성:필요성:necessity, the need for something|(news) article, report|news coverage, reporting",
+      "guess:경제:경제:(news) article, report|the economy|news coverage, reporting"
+     ]
+    },
+    {
+     "id": "chapter-71-b4",
+     "kind": "pattern",
+     "title": "문법 Grammar · -적(的)",
+     "cards": [
+      "teach:-적(的):2ex",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:마음적 부담이 크다.|정신적 부담이 크다.*",
+      "drill:빈칸을 채우세요 · Complete the form — Before a noun — terse, written:적인 방안|적 부담*|적으로",
+      "drill:빈칸을 채우세요 · Complete the form — Before a noun — slightly softer:적 부담|적으로|적인 방안*"
+     ]
+    },
+    {
+     "id": "chapter-71-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 사회~",
+     "cards": [
+      "guess:사회:사회:society|(news) article, report|news coverage, reporting",
+      "guess:변화:변화:(news) article, report|news coverage, reporting|change",
+      "guess:영향:영향:(news) article, report|effect, influence|news coverage, reporting",
+      "guess:시장:시장:(news) article, report|news coverage, reporting|market",
+      "guess:가격:가격:(news) article, report|price|news coverage, reporting",
+      "guess:지역:지역:(news) article, report|news coverage, reporting|region, area"
+     ]
+    },
+    {
+     "id": "chapter-71-b6",
+     "kind": "pattern",
+     "title": "문법 Grammar · -화(化)",
+     "cards": [
+      "teach:-화(化):2ex",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:생산 공정이 자동화됐다.*|생산 공정이 자동화했다."
+     ]
+    },
+    {
+     "id": "chapter-71-b7",
+     "kind": "pattern",
+     "title": "문법 Grammar · -성(性)",
+     "cards": [
+      "teach:-성(性):2ex",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:제도가 바뀔 가능성이 높다고 보도됐다.*|제도가 바뀔 가능성이 크다고 보도됐다.",
+      "drill:빈칸을 채우세요 · Complete the form — It exists or does not:성이 있다*|성이 높다"
+     ]
+    },
+    {
+     "id": "chapter-71-b8",
+     "kind": "pattern",
+     "title": "문법 Grammar · Headline grammar",
+     "cards": [
+      "teach:Headline grammar:2ex",
+      "order:정부, 내년부터 지원 대상 확대",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:정부는 지원 대상 확대한다.|정부는 지원 대상을 확대한다.*"
+     ]
+    },
+    {
+     "id": "chapter-71-b9",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cards": [
+      "chat:8",
+      "order:정부에 따르면 지원 대상은 다음 달부터 확대된다",
+      "drill:누가 한 말일까요? · Who said this?:지원*|유진",
+      "drill:무엇이 들어갈까요? · \"Look at this headline: \"Government to expand eligibility from next year.\" There isn't a single particle.\":기사|보도|정부*"
+     ]
+    },
+    {
+     "id": "chapter-71-b10",
+     "kind": "reading",
+     "title": "읽기 Reading · 지원 대상 확대, 무엇이 달라지나",
+     "cards": [
+      "read:2:3qa",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:기사|보도|정부*",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:기사|보도|필요성*"
+     ]
+    },
+    {
+     "id": "chapter-71-b11",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cards": [
+      "drill:Unpack the headline '정부, 내년부터 지원 대상 확대'.:정부는 내년부터 지원 대상을 확대한다.*|정부가 내년부터 지원 대상이 확대한다.|정부는 내년부터 지원 대상 확대한다.",
+      "drill:Which verb form does 지원 대상 need as a subject?:확대된다*|확대한다|확대하고 있다",
+      "drill:Which predicate goes with 가능성?:가능성이 높다*|가능성이 크다|가능성이 많다",
+      "drill:Which sentence signals the LEAST confirmed claim?:다음 달에 발표될 것으로 알려졌다.*|다음 달에 발표된다고 확인됐다.|다음 달에 발표된다.",
+      "drill:제도 개선의 필요성___ 다시 제기됐다.:이*|을|에",
+      "drill:Which one is the adverb form meaning 'socially'?:사회적으로*|사회적인|사회성"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chapter-72",
+   "biteCount": 11,
+   "bites": [
+    {
+     "id": "chapter-72-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 손~",
+     "cards": [
+      "guess:손:손:foot|eye|hand",
+      "guess:발:발:hand|eye|foot",
+      "guess:눈:눈:hand|eye|foot",
+      "guess:입:입:mouth|hand|foot",
+      "guess:귀:귀:hand|ear|foot",
+      "guess:얼굴:얼굴:face|hand|foot",
+      "guess:머리:머리:head|hand|foot"
+     ]
+    },
+    {
+     "id": "chapter-72-b2",
+     "kind": "pattern",
+     "title": "문법 Grammar · 손이 크다",
+     "cards": [
+      "teach:손이 크다:2ex",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:그분은 손이 크세요.*|그분은 큰 손이에요."
+     ]
+    },
+    {
+     "id": "chapter-72-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 코~",
+     "cards": [
+      "guess:코:코:hand|foot|nose",
+      "guess:성격:성격:hand|foot|personality, temperament",
+      "guess:사람:사람:hand|foot|person",
+      "guess:친구:친구:hand|foot|friend",
+      "guess:비밀:비밀:hand|foot|secret",
+      "guess:마음:마음:hand|heart, mind|foot",
+      "guess:실력:실력:hand|ability, skill|foot",
+      "payoff:사람:그냥 사람을 좋아해서 그래요. 대신 저는 입이 좀 가벼운 편이에요."
+     ]
+    },
+    {
+     "id": "chapter-72-b4",
+     "kind": "pattern",
+     "title": "문법 Grammar · 발이 넓다",
+     "cards": [
+      "teach:발이 넓다:2ex",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:어제 공항에서 발이 묶였어요.*|어제 공항에서 발을 묶었어요."
+     ]
+    },
+    {
+     "id": "chapter-72-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 관용구~",
+     "cards": [
+      "guess:관용구:관용구:hand|foot|idiom, set phrase",
+      "guess:속담:속담:proverb|hand|foot",
+      "guess:소문:소문:rumour, word going around|hand|foot",
+      "guess:마당발:마당발:hand|a very well-connected person|foot",
+      "guess:우물:우물:hand|foot|a well (for water)",
+      "guess:태산:태산:hand|a huge mountain (in the proverb 티끌 모아 태산)|foot",
+      "payoff:태산:저도요. 티끌 모아 태산이라고 조금씩 모으려고 했는데 벌써 다 썼어요."
+     ]
+    },
+    {
+     "id": "chapter-72-b6",
+     "kind": "pattern",
+     "title": "문법 Grammar · 눈이 높다",
+     "cards": [
+      "teach:눈이 높다:2ex",
+      "order:표지가 빨개서 책장에서 바로 눈에 띄었어요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:빨간 표지가 눈에 띄었어요.*|빨간 표지가 눈을 띄었어요."
+     ]
+    },
+    {
+     "id": "chapter-72-b7",
+     "kind": "pattern",
+     "title": "문법 Grammar · 입이 무겁다 · 귀가 얇다",
+     "cards": [
+      "teach:입이 무겁다 · 귀가 얇다:2ex",
+      "order:그 사람은 입이 무거우니까 말해도 괜찮아요.",
+      "order:입이 가벼운 사람한테는 비밀을 말하지 마세요.",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:할머니는 귀가 어두우셔서 잘 못 들으세요.*|할머니는 귀가 얇아서 잘 못 들으세요."
+     ]
+    },
+    {
+     "id": "chapter-72-b8",
+     "kind": "pattern",
+     "title": "문법 Grammar · 속담 다섯",
+     "cards": [
+      "teach:속담 다섯:2ex",
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:티끌 모아 태산이에요.*|티끌을 모아서 태산을 만들어요."
+     ]
+    },
+    {
+     "id": "chapter-72-b9",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cards": [
+      "chat:8",
+      "order:발 없는 말이 천 리 간다더니 소문이 벌써 다 퍼졌네요",
+      "drill:누가 한 말일까요? · Who said this?:지원|유진*",
+      "drill:무엇이 들어갈까요? · \"I just like people, that's all. On the other hand, I'm not great at keeping things to myself.\":사람*|손|발"
+     ]
+    },
+    {
+     "id": "chapter-72-b10",
+     "kind": "reading",
+     "title": "읽기 Reading · 몸으로 말하는 성격",
+     "cards": [
+      "read:2:3qa",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:얼굴|머리|성격*",
+      "drill:지문에서 뭐라고 했어요? · What did the passage say?:얼굴|사람*|머리"
+     ]
+    },
+    {
+     "id": "chapter-72-b11",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cards": [
+      "drill:Which sentence correctly says 'she is very generous'?:그분은 손이 크세요.*|그분은 큰 손이에요.|그분은 손을 크세요.",
+      "drill:지훈 씨는 아는 사람이 정말 많아요. Which idiom fits?:발이 넓어요*|발이 묶였어요|발등에 불이 떨어졌어요",
+      "drill:What does 귀가 얇다 mean?:쉽게 설득당해요*|잘 못 들어요|귀가 아주 밝아요",
+      "drill:표지가 빨개서 책장에서 바로 눈___ 띄었어요.:에*|을|이",
+      "drill:Which proverb means 'nearly impossible'?:하늘의 별 따기*|식은 죽 먹기|우물 안 개구리",
+      "drill:Which one would you NOT say to someone's face?:얼굴이 두꺼우시네요.*|발이 넓으시네요.|입이 무거우시네요."
+     ]
+    }
+   ]
   }
  ]
 }

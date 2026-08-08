@@ -1,10 +1,10 @@
 {
   "scope": "orders 21-22 generated cards (snapshot-all diff)",
-  "date": "2026-08-07",
+  "date": "2026-08-08",
   "generated": {
-    "total": 1028,
-    "drill": 610,
-    "order": 418
+    "total": 363,
+    "drill": 115,
+    "order": 248
   },
   "screens": [
     "exactly one correct option; no duplicate options",
@@ -22,13 +22,17 @@
   "blockers": [],
   "minors": [
     {
-      "at": "chapter-44-b9 :: drill:학교___ 가요. (I go to school.):에*|에서|가",
-      "why": "containment pair kept — EN anchor disambiguates (에 vs 에서)"
+      "at": "chapter-67-b4 :: drill:Mom says to be sure to call if I'm going to be late.:이래요|으래요|래요*",
+      "why": "containment pair kept — EN anchor disambiguates (래요 vs 이래요)"
+    },
+    {
+      "at": "chapter-67-b4 :: drill:Mom says to be sure to call if I'm going to be late.:이래요|으래요|래요*",
+      "why": "containment pair kept — EN anchor disambiguates (래요 vs 으래요)"
     }
   ],
   "humanSample": {
     "rule": "every 37th generated drill",
-    "size": 17,
+    "size": 4,
     "verdict": "read in-session; recall distractors weak-but-safe, grammar choices decidable by stem or EN gloss"
   }
 }

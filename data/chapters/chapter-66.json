@@ -1,0 +1,876 @@
+{
+  "id": "chapter-66",
+  "hook": {
+    "situation": "The subway door shuts in your face, your call drops in the tunnel, the road is jammed, and the tickets are gone. None of it was anybody's decision — and Korean has a whole set of one-word verbs for exactly that.",
+    "objectives": [
+      "Build passive verbs with -이/히/리/기- and re-mark the sentence so the affected thing takes 이/가.",
+      "Name the cause with the right particle: 에게/한테 for a person or animal, 에 for a thing, a force, or an event.",
+      "Choose between -이/히/리/기-, -아/어지다, and -게 되다 for three different kinds of \"it ended up that way.\""
+    ],
+    "whyItMatters": "English speakers reach for \"was + past participle\" and translate \"by\" as 에게. Korean's most common passives are single words (막히다, 들리다, 팔리다), the doer is usually dropped entirely, and a non-living cause takes 에. 문이 바람에게 열렸어요 is understandable but instantly marks you as a learner."
+  },
+  "grammarNotes": [
+    {
+      "title": "V-이/히/리/기- — the built-in passive (it happened, nobody to blame)",
+      "func": "A set of transitive verbs takes an inner suffix -이-, -히-, -리-, or -기- and becomes intransitive. The thing that was acted on moves into the 이/가 subject slot, the object particle 을/를 disappears, and the doer usually drops out of the sentence completely. This is the passive Koreans actually use in daily speech — one word, not a construction.",
+      "formTable": [
+        {
+          "when": "Stem ends in a vowel or ㅎ",
+          "add": "-이-",
+          "ex": "보다 → 보이다 (to be visible), 놓다 → 놓이다 (to be placed)"
+        },
+        {
+          "when": "Stem ends in ㄱ, ㄷ, ㅂ",
+          "add": "-히-",
+          "ex": "막다 → 막히다 (to get blocked), 잡다 → 잡히다 (to get caught)"
+        },
+        {
+          "when": "Stem ends in ㄹ (and ㄷ-irregular 듣다)",
+          "add": "-리-",
+          "ex": "팔다 → 팔리다 (to be sold), 듣다 → 들리다 (to be heard)"
+        },
+        {
+          "when": "Stem ends in ㄴ, ㅁ, ㅅ, ㅊ",
+          "add": "-기-",
+          "ex": "끊다 → 끊기다 (to get cut off), 쫓다 → 쫓기다 (to be chased)"
+        },
+        {
+          "when": "Rewriting an active sentence",
+          "add": "N을/를 V → N이/가 V-피동",
+          "ex": "직원이 문을 닫았어요 → 문이 닫혔어요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "지금 출근 시간이라 도로가 꽉 막혔어요.",
+          "romanization": "jigeum chulgeun siganira doroga kkwak makyeosseoyo.",
+          "en": "It's rush hour, so the road is completely jammed right now.",
+          "note": "막다 (to block) → 막히다. Nobody blocked the road on purpose, and 막히다 is simply the word Koreans use for traffic."
+        },
+        {
+          "ko": "지하철에서 통화하다가 갑자기 전화가 끊겼어요.",
+          "romanization": "jihacheoreseo tonghwahadaga gapjagi jeonhwaga kkeunkyeosseoyo.",
+          "en": "I was on a call on the subway and it suddenly got cut off.",
+          "note": "끊다 (to cut) → 끊기다. The phone is the subject; no one is accused of hanging up."
+        },
+        {
+          "ko": "위층에서 발소리가 계속 들려요.",
+          "romanization": "wicheungeseo balsoriga gyesok deullyeoyo.",
+          "en": "I keep hearing footsteps from upstairs.",
+          "note": "듣다 is a ㄷ-irregular verb, so the passive is 들리다, never 듣히다."
+        },
+        {
+          "ko": "표가 예매 시작 십 분 만에 다 팔렸어요.",
+          "romanization": "pyoga yemae sijak sip bun mane da pallyeosseoyo.",
+          "en": "The tickets were all gone ten minutes after booking opened.",
+          "note": "English says \"sold out\" with no subject; Korean makes the tickets the subject — 표가 팔렸어요."
+        }
+      ],
+      "keyPoint": {
+        "label": "The object particle has to go",
+        "body": "When a verb turns passive, 을/를 disappears with it. 문을 닫았어요 (someone shut the door) becomes 문이 닫혔어요 — never 문을 닫혔어요. If you still see 을/를 in front of a passive verb, the sentence is broken. The one regular exception is a body part or a possession you were affected through: 지하철에서 발을 밟혔어요 (I got my foot stepped on)."
+      },
+      "pronunciation": "Three of these hide a sound change. 막히다 is [마키다] and 잡히다 is [자피다] — the ㅎ fuses with the stop into an aspirate. 끊기다 is [끈키다] for the same reason. 밟히다 is [발피다].",
+      "drill": {
+        "instruction": "Turn each active sentence into a passive one: drop the doer and re-mark the subject.",
+        "model": "직원이 창문을 열었어요. → 창문이 열렸어요.",
+        "items": [
+          "직원이 가게 문을 닫았어요. → 가게 문이 _______.",
+          "사고가 길을 막았어요. → 길이 _______.",
+          "가게에서 그 책을 다 팔았어요. → 그 책이 다 _______."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "문을 닫혔어요.",
+        "right": "문이 닫혔어요.",
+        "explanation": "In English \"the door was closed,\" the door still feels like the thing being acted on, so learners keep 을/를 on it. A Korean passive verb cannot take an object at all — the affected thing becomes the 이/가 subject. The moment you swap 닫다 for 닫히다, swap 문을 for 문이."
+      }
+    },
+    {
+      "title": "N에/에게 + 피동 — naming what caused it (\"by\")",
+      "func": "Korean usually leaves the doer out of a passive sentence entirely. When you do name it, the particle depends on what it is: a person or an animal takes 에게, or 한테 in speech, while a thing, a force, or an event takes plain 에. Formal writing has a third option, N에 의해(서), but in conversation it sounds like you are reading a news bulletin.",
+      "formTable": [
+        {
+          "when": "A person or animal caused it",
+          "add": "N에게 / N한테 (spoken)",
+          "ex": "경찰 → 도둑이 경찰한테 잡혔어요"
+        },
+        {
+          "when": "A thing, force, or event caused it",
+          "add": "N에",
+          "ex": "바람 → 창문이 바람에 닫혔어요"
+        },
+        {
+          "when": "Formal writing or news",
+          "add": "N에 의해(서)",
+          "ex": "국회 → 이 법은 국회에 의해 개정되었다"
+        },
+        {
+          "when": "No cause named — the normal case",
+          "add": "(just leave it out)",
+          "ex": "문이 닫혔어요 (the door shut)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "도둑이 경찰한테 바로 잡혔어요.",
+          "romanization": "dodugi gyeongchalhante baro japyeosseoyo.",
+          "en": "The thief was caught by the police right away.",
+          "note": "A person did it, so 한테 in speech (에게 if you are writing)."
+        },
+        {
+          "ko": "창문이 바람에 쾅 닫혔어요.",
+          "romanization": "changmuni barame kwang dachyeosseoyo.",
+          "en": "The window slammed shut in the wind.",
+          "note": "바람 cannot decide anything, so it takes 에 — 바람에게 is the classic learner error."
+        },
+        {
+          "ko": "아기가 아빠한테 안겨서 울음을 그쳤어요.",
+          "romanization": "agiga appahante angyeoseo ureumeul geuchyeosseoyo.",
+          "en": "The baby stopped crying once it was picked up by its dad.",
+          "note": "안다 (to hold) → 안기다. 아빠 is a person, so 한테 again."
+        },
+        {
+          "ko": "요즘은 마감에 쫓겨서 점심도 제대로 못 먹어요.",
+          "romanization": "yojeumeun magame jjotgyeoseo jeomsimdo jedaero mon meogeoyo.",
+          "en": "These days I'm so pressed by deadlines I can't even eat a proper lunch.",
+          "note": "시간에 쫓기다 and 마감에 쫓기다 are set phrases. A deadline is not alive, so 에."
+        }
+      ],
+      "keyPoint": {
+        "label": "에게 is only for something alive",
+        "body": "The single most common passive error is copying English \"by\" onto 에게/한테 for everything. 에게 and 한테 attach only to a person or an animal — something that could have acted on purpose. Wind, rain, noise, traffic, time, a deadline, an accident: all take 에. 바람에 닫혔어요, 마감에 쫓겨요, 소음에 시달려요."
+      },
+      "pronunciation": "에게 and 한테 mean the same thing; 한테 is what you say out loud and 에게 is what you write. 잡혔어요 is [자펴써요] and 쫓겨서 is [쫃껴서].",
+      "drill": {
+        "instruction": "Add the right particle to the cause: 에게 or 한테 for a person or animal, 에 for a thing or a force.",
+        "model": "고양이 / 쥐가 잡히다 → 쥐가 고양이한테 잡혔어요.",
+        "items": [
+          "경찰 / 도둑이 잡히다 → 도둑이 경찰____ 잡혔어요.",
+          "바람 / 문이 닫히다 → 문이 바람____ 닫혔어요.",
+          "시간 / 요즘 쫓기다 → 요즘 시간____ 쫓겨요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "창문이 바람에게 닫혔어요.",
+        "right": "창문이 바람에 닫혔어요.",
+        "explanation": "English has one word, \"by,\" for people and for weather alike, so learners map it straight onto 에게/한테. Korean splits them, and 에게/한테 need something animate. 바람, 비, 소음, 시간, 사고 all take plain 에. If you cannot picture it deciding to act, use 에."
+      }
+    },
+    {
+      "title": "V-아/어지다 — it gets done, it turns out that way",
+      "func": "The -이/히/리/기- passive exists only for a closed list of verbs. -아/어지다 covers almost everything else: it takes a transitive verb and makes the action something that simply happens to the thing. 지우다 (to erase) → 지워지다 (to get erased). It carries a shade of \"it came out this way on its own,\" which is why Korean uses it for schedules, decisions, and settings.",
+      "formTable": [
+        {
+          "when": "Verb stem ends in ㅏ/ㅗ",
+          "add": "-아지다",
+          "ex": "닦다 → 닦아지다 (to come clean)"
+        },
+        {
+          "when": "Verb stem ends in any other vowel",
+          "add": "-어지다",
+          "ex": "지우다 → 지워지다 (to get erased)"
+        },
+        {
+          "when": "하다 verbs",
+          "add": "-해지다",
+          "ex": "정하다 → 정해지다 (to be decided)"
+        },
+        {
+          "when": "On an adjective the meaning changes to \"become\"",
+          "add": "A-아/어지다",
+          "ex": "따뜻하다 → 따뜻해지다 (to get warm)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "칠판에 쓴 글씨가 잘 안 지워져요.",
+          "romanization": "chilpane sseun geulssiga jal an jiwojyeoyo.",
+          "en": "The writing on the board won't come off properly.",
+          "note": "지우다 has no -이/히/리/기- passive, so it uses 지워지다."
+        },
+        {
+          "ko": "회식 날짜가 다음 주 금요일로 정해졌어요.",
+          "romanization": "hoesik naljjaga daeum ju geumyoillo jeonghaejyeosseoyo.",
+          "en": "The date for the team dinner has been set for next Friday.",
+          "note": "Office Korean at its most typical: the date got decided, and nobody is named as deciding it."
+        },
+        {
+          "ko": "이 빵은 국산 밀가루로만 만들어져요.",
+          "romanization": "i ppangeun guksan milgaruroman mandeureojyeoyo.",
+          "en": "This bread is made only with domestic flour.",
+          "note": "만들다 → 만들어지다 for products, recipes, and materials."
+        },
+        {
+          "ko": "휴대폰 화면이 갑자기 꺼졌다가 다시 켜졌어요.",
+          "romanization": "hyudaepon hwamyeoni gapjagi kkeojyeotdaga dasi kyeojyeosseoyo.",
+          "en": "My phone screen suddenly went dark and then came back on.",
+          "note": "끄다 → 꺼지다 and 켜다 → 켜지다: the device does it, not you."
+        }
+      ],
+      "keyPoint": {
+        "label": "-아/어지다 does two different jobs",
+        "body": "On a transitive verb it builds a passive: 지우다 (erase) → 지워지다 (get erased). On an adjective it means \"become\": 따뜻하다 (be warm) → 따뜻해지다 (get warm). That second job is the 좋아졌어요 / 추워졌어요 you already know. Look at the base word, not the ending, to know which reading you have."
+      },
+      "pronunciation": "The 져 in these forms flattens after ㅈ: 지워져요 is [지워저요], 만들어져요 is [만드러저요], 정해졌어요 is [정해저써요]. Never pronounce a full [여] there.",
+      "drill": {
+        "instruction": "Rewrite each active sentence with -아/어지다 so the thing itself becomes the subject.",
+        "model": "제가 날짜를 정했어요. → 날짜가 정해졌어요.",
+        "items": [
+          "제가 글씨를 지웠어요. → 글씨가 _______.",
+          "제가 불을 켰어요. → 불이 _______.",
+          "공장에서 이 빵을 만들어요. → 이 빵이 _______."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "문이 안 열려져서 한참 서 있었어요.",
+        "right": "문이 안 열려서 한참 서 있었어요.",
+        "explanation": "열리다 is already the passive of 열다, so -어지다 stacks a second passive on top of it. English \"was opened\" feels like it needs a helper verb, which is what tempts learners into this. Pick one route: either the -이/히/리/기- verb (열리다, 닫히다, 보이다) or -아/어지다 on the plain verb — never both. The same trap produces 잊혀지다 and 쓰여지다, which careful speakers avoid."
+      }
+    },
+    {
+      "title": "V-게 되다 — how it ended up (circumstances took the decision)",
+      "func": "-게 되다 does not move an object into the subject slot. It changes WHY. The same person still performs the action, but circumstances, not their own choice, brought it about. English reaches for \"ended up,\" \"came to,\" or \"it turns out that.\" It is also the polite way to announce your own news without sounding boastful or blaming.",
+      "formTable": [
+        {
+          "when": "Any verb stem",
+          "add": "V-게 되다",
+          "ex": "알다 → 알게 되다 (to come to know)"
+        },
+        {
+          "when": "Past — by far the most common form",
+          "add": "V-게 됐어요",
+          "ex": "가다 → 가게 됐어요 (I ended up going)"
+        },
+        {
+          "when": "Announcing news politely",
+          "add": "V-게 됐습니다",
+          "ex": "일하다 → 부산에서 일하게 됐습니다"
+        },
+        {
+          "when": "Ended up NOT doing it",
+          "add": "못 V-게 되다 / V-지 않게 되다",
+          "ex": "가다 → 못 가게 됐어요 (it turns out I can't go)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "일이 갑자기 생겨서 이번 모임에는 못 가게 됐어요.",
+          "romanization": "iri gapjagi saenggyeoseo ibeon moimeneun mot gage dwaesseoyo.",
+          "en": "Something came up, so it turns out I can't make this meetup.",
+          "note": "The standard polite way to cancel: circumstances, not you, cancelled it."
+        },
+        {
+          "ko": "한국 드라마를 보다가 한국어를 배우게 됐어요.",
+          "romanization": "hanguk deuramareul bodaga hangugeoreul baeuge dwaesseoyo.",
+          "en": "I got into watching Korean dramas and ended up learning Korean.",
+          "note": "You are still the one learning — 게 되다 only says it wasn't a plan."
+        },
+        {
+          "ko": "다음 달부터 부산에서 일하게 됐습니다.",
+          "romanization": "daeum dalbuteo busaneseo ilhage dwaetseumnida.",
+          "en": "As it turns out, I'll be working in Busan from next month.",
+          "note": "Announcement register. 일합니다 would sound like you arranged it yourself."
+        },
+        {
+          "ko": "매일 같은 시간에 마주치다 보니 인사를 하게 됐어요.",
+          "romanization": "maeil gateun sigane majuchida boni insareul hage dwaesseoyo.",
+          "en": "We kept running into each other at the same time every day, so we ended up saying hello.",
+          "note": "A gradual, unplanned change — one of 게 되다's favourite jobs."
+        }
+      ],
+      "keyPoint": {
+        "label": "피동 vs 사동 vs -게 되다",
+        "body": "Three jobs that blur together. 피동 (문이 닫혔어요) removes the doer — the thing is simply affected. 사동, the causative chapter's 아이에게 옷을 입혔어요, adds a doer — you make someone else act. -게 되다 keeps the same doer but hands the decision to circumstances (부산에서 일하게 됐어요 — I am the one working, but I did not pick it). Ask yourself: did the doer disappear, get added, or just stop being in charge?"
+      },
+      "pronunciation": "게 되다 is spoken as one chunk with no pause: 하게 됐어요 is [하게 돼써요], 못 가게 됐어요 is [몯 까게 돼써요].",
+      "drill": {
+        "instruction": "Rewrite each plain statement so that circumstances, not your decision, brought it about.",
+        "model": "부산에서 일해요. → 부산에서 일하게 됐어요.",
+        "items": [
+          "이번 주 모임에 못 가요. → 이번 주 모임에 못 _______.",
+          "한국어를 배워요. → 한국어를 _______.",
+          "그 사실을 알아요. → 그 사실을 _______."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "문이 닫게 됐어요.",
+        "right": "문이 닫혔어요.",
+        "explanation": "Because 되다 means \"become,\" learners treat -게 되다 as a general-purpose passive. It is not. -게 되다 keeps the doer and only says the decision wasn't theirs, so it needs a subject that could in principle decide. A door decides nothing — it needs the real passive 닫히다."
+      }
+    },
+    {
+      "title": "보이다·읽히다 — one form, passive or causative",
+      "func": "Several -이/히/리/기- verbs are the passive AND the causative of the same root, and only the particles tell them apart. 보이다 is \"be visible\" and \"show\"; 읽히다 is \"be read\" and \"make someone read\"; 안기다 is \"be held\" and \"hand over to be held.\" Read the particles: a 이/가 subject with no object is passive, while a 을/를 object is causative.",
+      "formTable": [
+        {
+          "when": "보다 → 보이다, passive",
+          "add": "N이/가 보이다",
+          "ex": "바다 → 여기서 바다가 보여요 (the sea is visible from here)"
+        },
+        {
+          "when": "보다 → 보이다, causative",
+          "add": "N에게 N을/를 보이다",
+          "ex": "손 → 의사에게 손을 보였어요 (I showed the doctor my hand)"
+        },
+        {
+          "when": "읽다 → 읽히다, passive",
+          "add": "N이/가 읽히다",
+          "ex": "소설 → 그 소설이 많이 읽혀요 (that novel gets read a lot)"
+        },
+        {
+          "when": "읽다 → 읽히다, causative",
+          "add": "N에게 N을/를 읽히다",
+          "ex": "동화책 → 아이에게 동화책을 읽혔어요 (I had my child read a storybook)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "옥상에 올라가면 한강이 다 보여요.",
+          "romanization": "oksange ollagamyeon hangangi da boyeoyo.",
+          "en": "If you go up to the roof, you can see the whole Han River.",
+          "note": "Passive: 한강이 takes 이/가 and there is no object anywhere."
+        },
+        {
+          "ko": "병원에서 의사 선생님한테 다친 손을 보였어요.",
+          "romanization": "byeongwoneseo uisa seonsaengnimhante dachin soneul boyeosseoyo.",
+          "en": "At the hospital I showed the doctor my injured hand.",
+          "note": "Causative: 손을 is an object, so this is \"show,\" not \"be visible.\""
+        },
+        {
+          "ko": "그 소설은 요즘도 학생들에게 널리 읽혀요.",
+          "romanization": "geu soseoreun yojeumdo haksaengdeurege neolli ilkyeoyo.",
+          "en": "That novel is still widely read by students today.",
+          "note": "Passive: 학생들에게 is the reader, and the novel is the subject."
+        },
+        {
+          "ko": "엄마가 자기 전에 아이에게 동화책을 읽혔어요.",
+          "romanization": "eommaga jagi jeone aiege donghwachaegeul ilkyeosseoyo.",
+          "en": "Mom had her child read a storybook before bed.",
+          "note": "Causative: 동화책을 is an object, so 엄마 makes the child do the reading."
+        }
+      ],
+      "keyPoint": {
+        "label": "The object particle decides",
+        "body": "When one form does both jobs, look for 을/를. 사진이 잘 보여요 has no object → passive, \"the photo shows up clearly.\" 사진을 보여 줬어요 has an object → causative, \"I showed the photo.\" 에게/한테 turns up in both, so it can never settle the question; only 을/를 can. And for \"show,\" everyday Korean almost always adds 주다: 보여 주다, not bare 보이다."
+      },
+      "pronunciation": "읽히다 is [일키다]: the ㄺ and the ㅎ fuse into [ㅋ]. So 읽혀요 is [일켜요] and 읽혔어요 is [일켜써요].",
+      "drill": {
+        "instruction": "Decide whether each sentence is passive or causative, then fill in the missing particle.",
+        "model": "여기서 산____ 잘 보여요. → 산이 (passive: nothing is being shown to anyone)",
+        "items": [
+          "옥상에서 한강____ 다 보여요. → passive or causative?",
+          "의사 선생님한테 손____ 보였어요. → passive or causative?",
+          "아이에게 동화책____ 읽혔어요. → passive or causative?"
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "친구에게 사진이 보였어요.",
+        "right": "친구에게 사진을 보여 줬어요.",
+        "explanation": "Learners learn 보이다 as \"be visible,\" then discover it can also mean \"show,\" and build the \"show\" sentence with 이/가 out of habit. If YOU are doing the showing, the photo is an object (사진을) and natural Korean adds 주다. Keep 사진이 보여요 for \"the photo is visible.\""
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "보이다",
+      "romanization": "boida",
+      "english": "to be visible; to show",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "안경을 쓰니까 칠판 글씨가 훨씬 잘 보여요.",
+        "en": "With my glasses on I can see the writing on the board much better.",
+        "note": "With 이/가 and no object it is the passive of 보다."
+      },
+      "collocations": [
+        "잘 보이다",
+        "안 보이다",
+        "보여 주다"
+      ]
+    },
+    {
+      "hangul": "들리다",
+      "romanization": "deullida",
+      "english": "to be heard, to be audible",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "밖이 시끄러워서 목소리가 잘 안 들려요.",
+        "en": "It's noisy outside, so I can't hear your voice well.",
+        "note": "듣다 is ㄷ-irregular, so its passive is 들리다."
+      },
+      "collocations": [
+        "소리가 들리다",
+        "잘 안 들리다",
+        "소문이 들리다"
+      ]
+    },
+    {
+      "hangul": "열리다",
+      "romanization": "yeollida",
+      "english": "to open, to be opened",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "이 문은 사원증을 대야 열려요.",
+        "en": "This door only opens if you tap your employee card.",
+        "note": "Never say 열려지다 — that stacks two passives."
+      },
+      "collocations": [
+        "문이 열리다",
+        "가게가 열리다",
+        "행사가 열리다"
+      ]
+    },
+    {
+      "hangul": "닫히다",
+      "romanization": "dachida",
+      "english": "to shut, to be closed",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "지하철 문이 눈앞에서 닫혀서 한 대를 놓쳤어요.",
+        "en": "The subway door shut right in front of me, so I missed a train.",
+        "note": "Pronounced [다치다]: ㄷ plus ㅎ fuse and then palatalize."
+      },
+      "collocations": [
+        "문이 닫히다",
+        "쾅 닫히다",
+        "가게가 닫히다"
+      ]
+    },
+    {
+      "hangul": "막히다",
+      "romanization": "makida",
+      "english": "to get blocked, to be jammed",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "주말이라 고속도로가 많이 막혀요.",
+        "en": "It's the weekend, so the highway is really jammed.",
+        "note": "길이 막히다 is the everyday way to talk about traffic."
+      },
+      "collocations": [
+        "길이 막히다",
+        "꽉 막히다",
+        "코가 막히다"
+      ]
+    },
+    {
+      "hangul": "팔리다",
+      "romanization": "pallida",
+      "english": "to be sold, to sell out",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "인기 메뉴라서 점심 전에 다 팔려요.",
+        "en": "It's a popular item, so it sells out before lunch.",
+        "note": "The goods are the subject; the seller is not mentioned."
+      },
+      "collocations": [
+        "다 팔리다",
+        "잘 팔리다",
+        "매진되다"
+      ]
+    },
+    {
+      "hangul": "걸리다",
+      "romanization": "geollida",
+      "english": "to be hung; to get caught; to take (time)",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "저 그림은 작년부터 저 벽에 걸려 있어요.",
+        "en": "That painting has been hanging on that wall since last year.",
+        "note": "걸다 → 걸리다. The same verb also gives 감기에 걸리다 and 시간이 걸리다."
+      },
+      "collocations": [
+        "벽에 걸리다",
+        "감기에 걸리다",
+        "시간이 걸리다"
+      ]
+    },
+    {
+      "hangul": "잡히다",
+      "romanization": "japida",
+      "english": "to be caught",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "소매치기가 지하철역에서 경찰한테 잡혔어요.",
+        "en": "The pickpocket was caught by the police at the subway station.",
+        "note": "A human agent, so 한테 in speech and 에게 in writing."
+      },
+      "collocations": [
+        "경찰한테 잡히다",
+        "일정이 잡히다",
+        "손에 잡히다"
+      ]
+    },
+    {
+      "hangul": "끊기다",
+      "romanization": "kkeunkida",
+      "english": "to be cut off, to be disconnected",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "터널에 들어가면 전화가 끊겨요.",
+        "en": "The call cuts out when you go into a tunnel.",
+        "note": "Pronounced [끈키다]. Also used for 연락이 끊기다 (to lose touch)."
+      },
+      "collocations": [
+        "전화가 끊기다",
+        "연락이 끊기다",
+        "인터넷이 끊기다"
+      ]
+    },
+    {
+      "hangul": "쓰이다",
+      "romanization": "sseuida",
+      "english": "to be used; to be written",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "이 단어는 요즘 뉴스에서 자주 쓰여요.",
+        "en": "This word gets used a lot in the news these days.",
+        "note": "쓰다 covers both \"use\" and \"write,\" and so does 쓰이다."
+      },
+      "collocations": [
+        "자주 쓰이다",
+        "많이 쓰이다",
+        "한글로 쓰이다"
+      ]
+    },
+    {
+      "hangul": "켜지다",
+      "romanization": "kyeojida",
+      "english": "to come on, to be turned on",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "센서가 있어서 사람이 지나가면 불이 켜져요.",
+        "en": "There's a sensor, so the light comes on when someone walks past.",
+        "note": "켜다 has no -이/히/리/기- passive, so it uses -어지다."
+      },
+      "collocations": [
+        "불이 켜지다",
+        "화면이 켜지다",
+        "저절로 켜지다"
+      ]
+    },
+    {
+      "hangul": "바뀌다",
+      "romanization": "bakkwida",
+      "english": "to be changed, to change",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "회의 장소가 갑자기 3층으로 바뀌었어요.",
+        "en": "The meeting room was suddenly changed to the third floor.",
+        "note": "바꾸다 plus -이- gives 바뀌다; nobody has to be blamed for the change."
+      },
+      "collocations": [
+        "장소가 바뀌다",
+        "일정이 바뀌다",
+        "번호가 바뀌다"
+      ]
+    },
+    {
+      "hangul": "놓이다",
+      "romanization": "nohida",
+      "english": "to be placed, to be set down",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "책상 위에 처음 보는 봉투가 놓여 있었어요.",
+        "en": "There was an envelope I'd never seen sitting on the desk.",
+        "note": "놓이다 usually appears as 놓여 있다 for a state that stays."
+      },
+      "collocations": [
+        "책상 위에 놓이다",
+        "놓여 있다",
+        "마음이 놓이다"
+      ]
+    },
+    {
+      "hangul": "밟히다",
+      "romanization": "balpida",
+      "english": "to get stepped on",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "출근길 지하철에서 발을 밟혔어요.",
+        "en": "I got my foot stepped on in the subway on the way to work.",
+        "note": "One of the few passives that keeps a 을/를 — the body part you were affected through."
+      },
+      "collocations": [
+        "발을 밟히다",
+        "발이 밟히다",
+        "밟히지 않게"
+      ]
+    },
+    {
+      "hangul": "쫓기다",
+      "romanization": "jjotgida",
+      "english": "to be chased; to be pressed (for time)",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "마감에 쫓겨서 점심도 못 먹었어요.",
+        "en": "I was so pressed by the deadline that I couldn't even eat lunch.",
+        "note": "시간에 쫓기다 and 마감에 쫓기다 take 에, because neither is alive."
+      },
+      "collocations": [
+        "시간에 쫓기다",
+        "마감에 쫓기다",
+        "경찰에게 쫓기다"
+      ]
+    },
+    {
+      "hangul": "정해지다",
+      "romanization": "jeonghaejida",
+      "english": "to be decided, to be set",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "메뉴는 이미 정해졌으니까 그냥 오시면 돼요.",
+        "en": "The menu's already been decided, so just come on over.",
+        "note": "정하다 → 정해지다. Extremely common for schedules and plans at work."
+      },
+      "collocations": [
+        "날짜가 정해지다",
+        "순서가 정해지다",
+        "아직 안 정해지다"
+      ]
+    },
+    {
+      "hangul": "알려지다",
+      "romanization": "allyeojida",
+      "english": "to become known, to get out",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "그 가게는 방송에 나온 뒤로 널리 알려졌어요.",
+        "en": "That shop became widely known after it appeared on TV.",
+        "note": "알리다 (to inform) plus -어지다. Use 알려지다 for reputations and news."
+      },
+      "collocations": [
+        "널리 알려지다",
+        "잘 알려진",
+        "사실이 알려지다"
+      ]
+    },
+    {
+      "hangul": "지워지다",
+      "romanization": "jiwojida",
+      "english": "to get erased, to come off",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "이 펜으로 쓰면 잘 안 지워져요.",
+        "en": "If you write with this pen it doesn't come off easily.",
+        "note": "지우다 has no built-in passive, so -어지다 does the work."
+      },
+      "collocations": [
+        "잘 안 지워지다",
+        "저절로 지워지다",
+        "기록이 지워지다"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Two colleagues at the office on a Monday morning. One of them has just arrived late and everything on the way in happened TO her.",
+    "lines": [
+      {
+        "speaker": "지원",
+        "ko": "얼굴이 왜 그래요? 무슨 일 있었어요?",
+        "romanization": "eolguri wae geuraeyo? museun il isseosseoyo?",
+        "en": "What's with your face? Did something happen?",
+        "grammarNote": "A neutral opener; the passives all land in the reply."
+      },
+      {
+        "speaker": "유진",
+        "ko": "출근길에 지하철 문이 눈앞에서 닫혔어요. 다음 열차는 사람이 너무 많아서 발까지 밟혔고요.",
+        "romanization": "chulgeungire jihacheol muni nunapeseo dachyeosseoyo. daeum yeolchaneun sarami neomu manaseo balkkaji balpyeotgoyo.",
+        "en": "The subway door shut right in front of me on the way in. And the next train was so packed I even got my foot stepped on.",
+        "grammarNote": "닫혔어요 drops the doer entirely; 발까지 밟혔고요 keeps 을/를 because it is a body part."
+      },
+      {
+        "speaker": "지원",
+        "ko": "아이고. 그래도 지하철이 나아요. 지금 도로는 사고 때문에 꽉 막혔어요.",
+        "romanization": "aigo. geuraedo jihacheori naayo. jigeum doroneun sago ttaemune kkwak makyeosseoyo.",
+        "en": "Oh no. Still, the subway's better — the roads are completely jammed because of an accident right now.",
+        "grammarNote": "막혔어요 again: nobody blocked the road, it simply is blocked."
+      },
+      {
+        "speaker": "유진",
+        "ko": "그러게요. 아, 아까 팀장님이랑 통화하다가 터널에서 전화가 끊겼는데, 다시 걸어야 할까요?",
+        "romanization": "geureugeyo. a, akka timjangnimirang tonghwahadaga teoneoreseo jeonhwaga kkeunkyeonneunde, dasi georeoya halkkayo?",
+        "en": "Right? Oh, and my call with the team lead got cut off in the tunnel earlier — should I call back?",
+        "grammarNote": "전화가 끊겼는데: the phone is the subject, so no one is accused of hanging up."
+      },
+      {
+        "speaker": "지원",
+        "ko": "아니요, 안 하셔도 돼요. 회의 장소가 3층으로 바뀌었어요. 방금 공지가 올라왔거든요.",
+        "romanization": "aniyo, an hasyeodo dwaeyo. hoeui jangsoga sam cheungeuro bakkwieosseoyo. banggeum gongjiga ollawatgeodeunyo.",
+        "en": "No, you don't have to. The meeting room got changed to the third floor — the notice just went up.",
+        "grammarNote": "바뀌었어요 is how a Korean office reports a change without naming who made it."
+      },
+      {
+        "speaker": "유진",
+        "ko": "네? 저는 그 공지가 안 보이는데요.",
+        "romanization": "ne? jeoneun geu gongjiga an boineundeyo.",
+        "en": "Huh? I don't see that notice.",
+        "grammarNote": "공지가 안 보여요, not 공지를 안 봐요 — the notice fails to show up for her."
+      },
+      {
+        "speaker": "지원",
+        "ko": "사내 게시판에 올라와 있어요. 새로고침하면 보일 거예요.",
+        "romanization": "sanae gesipane ollawa isseoyo. saerogochimhamyeon boil geoyeyo.",
+        "en": "It's up on the company board. It should show up if you refresh.",
+        "grammarNote": "보일 거예요 keeps the passive into the future."
+      },
+      {
+        "speaker": "유진",
+        "ko": "아, 이제 보이네요. 오늘은 뭐 하나도 제 뜻대로 안 되네요.",
+        "romanization": "a, ije boineyo. oneureun mwo hanado je tteutdaero an doeneyo.",
+        "en": "Ah, now I see it. Nothing's going my way today.",
+        "grammarNote": "뜻대로 안 되네요 sums up a whole chapter of things happening to you."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "문이 닫히고, 길이 막히고",
+    "body": "한국어를 배우다 보면 한국 사람들이 '누가 했다'보다 '그렇게 됐다'를 훨씬 자주 말한다는 것을 알게 된다. 길이 막히고, 전화가 끊기고, 표가 다 팔린다. 누가 그렇게 만들었는지는 굳이 밝히지 않는다. 이런 문장에서는 행동을 당한 쪽이 주어가 되고, 목적격 조사 '을/를'은 사라진다. 원인이 사람이나 동물이면 '에게'나 '한테'를 쓰지만, 바람이나 시간처럼 사람이 아닌 것이면 '에'를 쓴다. 여기까지 익히면 신문 기사도 훨씬 쉽게 읽힌다. 기사 문장은 대부분 피동으로 쓰여 있기 때문이다.",
+    "bodyTranslation": "Once you have been learning Korean for a while, you notice that Korean speakers say \"it turned out that way\" far more often than \"someone did it.\" The road gets blocked, the call gets cut off, the tickets all sell out. Who made it happen is simply not spelled out. In sentences like these, the thing that was acted on becomes the subject, and the object particle 을/를 disappears. If the cause is a person or an animal you use 에게 or 한테, but if it is something inanimate like wind or time you use 에. Once you have this much, newspaper articles read much more easily too — because most sentences in an article are written in the passive.",
+    "comprehensionQuestions": [
+      {
+        "question": "피동 문장이 되면 목적격 조사 '을/를'은 어떻게 되나요?",
+        "answer": "사라져요. 그리고 행동을 당한 쪽이 '이/가' 주어가 돼요."
+      },
+      {
+        "question": "원인이 바람이나 시간일 때는 어떤 조사를 써요?",
+        "answer": "'에'를 써요. '에게'와 '한테'는 사람이나 동물에만 써요."
+      },
+      {
+        "question": "피동을 알면 신문 기사를 읽을 때 왜 도움이 돼요?",
+        "answer": "기사 문장이 대부분 피동으로 쓰여 있기 때문이에요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "누가 했는지 말하지 않는 말투",
+    "body": "In Korean workplaces and public notices, the passive is as much a politeness tool as a grammar point. 일정이 바뀌었습니다 reports the problem without naming who dropped the ball. Announcements almost never say 제가 바꿨습니다 — they say 변경되었습니다. If a Korean colleague tells you 결정이 됐어요 instead of 팀장님이 결정하셨어요, they are usually not hiding information from you; they are keeping the sentence from pointing at anybody. Learners who name the doer every time can sound blunt or even accusatory without meaning to.",
+    "tip": "In a message to your team, prefer 일정이 바뀌었습니다 over 제가 일정을 바꿨습니다 — unless you actually want to take the credit or the responsibility."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence is correct Korean for 'The window suddenly closed'?",
+      "options": [
+        "창문이 갑자기 닫혔어요.",
+        "창문을 갑자기 닫혔어요.",
+        "창문이 갑자기 닫게 됐어요."
+      ],
+      "correct": "창문이 갑자기 닫혔어요.",
+      "explanation": "A passive verb cannot take 을/를, which rules out 창문을. -게 되다 needs a subject that could decide something, and a window cannot. 닫히다 is the passive of 닫다."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "창문이 바람___ 닫혔어요. (The window was blown shut by the wind.)",
+      "options": [
+        "에",
+        "한테",
+        "이"
+      ],
+      "correct": "에",
+      "explanation": "바람 is not alive, so the cause takes 에. 한테 is only for people and animals, and 바람이 would make the wind the thing that got shut."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Choose the natural way to say 'The tickets all sold out in ten minutes.'",
+      "options": [
+        "표가 십 분 만에 다 팔렸어요.",
+        "표를 십 분 만에 다 팔렸어요.",
+        "표가 십 분 만에 다 팔아졌어요."
+      ],
+      "correct": "표가 십 분 만에 다 팔렸어요.",
+      "explanation": "팔다 already has a built-in passive, 팔리다, so 팔아지다 is not used. And a passive subject takes 이/가, never 을/를."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the double passive: '문이 안 열려져서 한참 서 있었어요.'",
+      "correct": "문이 안 열려서 한참 서 있었어요.",
+      "explanation": "열리다 is already passive, so -어지다 stacks a second passive on top (이중피동). Use 열리다 on its own."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "지하철에서 발을 ___. (밟다 → passive, polite past)",
+      "base": "밟다",
+      "form": "passivePolitePast",
+      "correct": "밟혔어요",
+      "explanation": "밟다 ends in a ㅂ-type final, so it takes -히-: 밟히다 → 밟혔어요, pronounced [발펴써요]."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which one means 'I showed the doctor my hand' (not 'my hand was visible')?",
+      "options": [
+        "의사 선생님한테 손을 보였어요.",
+        "의사 선생님한테 손이 보였어요.",
+        "의사 선생님한테 손이 보여졌어요."
+      ],
+      "correct": "의사 선생님한테 손을 보였어요.",
+      "explanation": "Only 을/를 separates the two readings of 보이다. 손을 보였어요 is causative, 'I showed my hand'; 손이 보였어요 is passive, 'the hand was visible'. 보여졌어요 stacks two passives and is not used."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'The call got cut off in the tunnel.' (Start with 터널에서.)",
+      "tokens": [
+        "터널에서",
+        "전화가",
+        "끊겼어요"
+      ],
+      "correct": "터널에서 전화가 끊겼어요",
+      "explanation": "The phone is the subject of the passive verb, so it takes 이/가. 끊기다 is pronounced [끈키다]."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Complete with the passive of 막다: 주말이라 고속도로가 많이 ____.",
+      "correct": "막혀요",
+      "explanation": "막다 → 막히다, pronounced [마키다]. 도로가 막혀요 is the everyday way to say the traffic is bad."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence uses -게 되다 correctly for 'something came up, so I can't go to this meetup'?",
+      "options": [
+        "일이 생겨서 이번 모임에는 못 가게 됐어요.",
+        "일이 생겨서 이번 모임에는 못 가게 했어요.",
+        "일이 생겨서 이번 모임이 못 가게 됐어요."
+      ],
+      "correct": "일이 생겨서 이번 모임에는 못 가게 됐어요.",
+      "explanation": "-게 되다 means circumstances decided it. -게 했어요 is causative, 'I made someone not go'. And the person, not the meetup, is the one who cannot go, so 모임에는 stays."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which verb needs -아/어지다 because it has no -이/히/리/기- passive?",
+      "options": [
+        "지우다",
+        "닫다",
+        "팔다"
+      ],
+      "correct": "지우다",
+      "explanation": "닫다 → 닫히다 and 팔다 → 팔리다 have built-in passives. 지우다 has none, so it uses 지워지다."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the particle: '요즘 마감에게 쫓겨서 너무 바빠요.'",
+      "correct": "요즘 마감에 쫓겨서 너무 바빠요.",
+      "explanation": "마감 is a deadline, not a person, so it takes 에. 에게 and 한테 need something animate."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "The everyday Korean passive is one word: 막히다, 들리다, 팔리다, 끊기다. The affected thing becomes the 이/가 subject and 을/를 disappears with the active verb.",
+      "Name the cause only when you need it: 에게 or 한테 for a person or animal, plain 에 for wind, time, a deadline, or an accident.",
+      "-아/어지다 covers the verbs with no built-in passive (지워지다, 정해지다, 만들어지다). Never stack the two — 열려지다 is a double passive.",
+      "-게 되다 is not a passive at all: the doer stays, but circumstances take the decision (부산에서 일하게 됐어요).",
+      "When one form does both jobs (보이다, 읽히다), a 을/를 object means causative and no object means passive."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Write four sentences about a morning that went wrong, without naming who caused any of it: something that shut, something that got cut off, something that was jammed, and one thing you ended up doing instead.",
+    "hint": "Use -이/히/리/기- passives for the first three (닫히다, 끊기다, 막히다), 에 for any non-human cause, and -게 되다 for the last sentence.",
+    "model": "지하철 문이 눈앞에서 닫혔어요. 다음 열차에서는 통화하다가 전화가 끊겼고요. 밖에는 사고 때문에 도로가 꽉 막혔어요. 그래서 오늘은 걸어서 출근하게 됐어요.",
+    "modelEn": "The subway door shut right in front of me. On the next train my call got cut off. Outside, the road was completely jammed because of an accident. So today I ended up walking to work."
+  },
+  "canDo": [
+    "Turn an active sentence into a passive one with -이/히/리/기- (직원이 문을 닫았어요 → 문이 닫혔어요)",
+    "Mark the cause correctly: 경찰한테 잡혔어요 for a person, 바람에 닫혔어요 for a force",
+    "Use -아/어지다 for verbs with no built-in passive (지워지다, 정해지다) and avoid double passives like 열려지다",
+    "Say how something ended up with -게 되다 without mistaking it for a passive",
+    "Tell passive 보이다/읽히다 from causative 보이다/읽히다 by looking for a 을/를 object"
+  ]
+}

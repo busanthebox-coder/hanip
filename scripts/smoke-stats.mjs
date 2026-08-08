@@ -56,24 +56,24 @@ console.log(`vocab packs: ${packs.length} · joined members: ${packs.reduce((sum
 console.log(`expression packs: ${expressionPacks.length} · expressions: ${expressionPacks.reduce((sum, pack) => sum + pack.words.length, 0)}`);
 console.log(`readers: ${readers.length} · clusters: ${clusters.length} · wordbook: ${words.length}`);
 
-// Counts as measured on 2026-08-07 (order 26). chapterCards/words had been left
-// at their pre-thickness figures, so this check could not run; they are synced
-// to what the compiler actually emits.
+// Counts as measured on 2026-08-08 (order 25 — chapters 66-72 ingested; the
+// previous figures were the 65-chapter course of order 26). Everything here is
+// what the compiler actually emits, so a silent content change trips it.
 const expected = {
-  chapters: 65,
-  chapterBites: 619,
-  chapterCards: 2977,
+  chapters: 72,
+  chapterBites: 696,
+  chapterCards: 3340,
   snacks: 18,
   snackCards: 257,
-  allBites: 637,
-  allCards: 3234,
+  allBites: 714,
+  allCards: 3597,
   packs: 12,
   joinedMembers: 173,
   expressionPacks: 6,
   expressions: 84,
   readers: 20,
   clusters: 32,
-  words: 720,
+  words: 803,
 };
 const actual = {
   chapters: totals.chapters,

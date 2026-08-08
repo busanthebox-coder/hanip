@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import {
   LEVEL_GROUPS,
   buildShelfGroups,
+  chapterRangeLabel,
   defaultOpenLevels,
   filterShelfGroups,
   parseStoredOpenLevels,
@@ -54,6 +55,19 @@ describe('shelf level grouping', () => {
       ['B2', 'B2 Control'],
       ['C1', 'C1 Written'],
     ]);
+  });
+
+  /* order 25: from chapter 66 on the course interleaves B2 and C1, so a group's
+     chapters are no longer one unbroken run — "Chapters 57–69" would claim 64
+     and 65 for B2 when they are C1. */
+  it('names a level\'s chapters as runs, so an interleaved group cannot overclaim', () => {
+    const numbered = (numbers) => numbers.map((number) => ({ number }));
+    expect(chapterRangeLabel(numbered([57, 58, 59, 60, 61, 62, 63, 66, 67, 68, 69])))
+      .toBe('Chapters 57–63, 66–69');
+    expect(chapterRangeLabel(numbered([64, 65, 70, 71, 72]))).toBe('Chapters 64–65, 70–72');
+    expect(chapterRangeLabel(numbered([1, 2, 3]))).toBe('Chapters 1–3');
+    expect(chapterRangeLabel(numbered([7]))).toBe('Chapter 7');
+    expect(chapterRangeLabel([])).toBe('No chapters');
   });
 
   it('counts completed and total bites within each level', () => {

@@ -1,4 +1,6 @@
 <script>
+  import { chapterRangeLabel } from '../lib/shelf.js';
+
   export let group;
   export let open = false;
   export let forceOpen = false;
@@ -14,9 +16,7 @@
 
   $: triggerId = `${idPrefix}-${group.id}-trigger`;
   $: contentId = `${idPrefix}-${group.id}-content`;
-  $: chapterRange = group.chapters.length
-    ? `Chapters ${group.chapters[0].number}–${group.chapters[group.chapters.length - 1].number}`
-    : 'No chapters';
+  $: chapterRange = chapterRangeLabel(group.chapters);
 
   function doneCount(chapter) {
     return chapter.bites.filter((bite) => doneMap[bite.id]).length;

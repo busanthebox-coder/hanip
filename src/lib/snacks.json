@@ -1255,7 +1255,8 @@
       "ko": "머리",
       "romanization": "meori",
       "en": "head; also hair",
-      "pos": "noun"
+      "pos": "noun",
+      "nuance": "머리 covers both the head and the hair on it, and only context (the verb or adjective) tells them apart: 머리가 아프다 = head hurts, but 머리가 길다 / 머리를 감다 = hair. The strict word for a single strand is 머리카락, yet in speech Koreans almost always shorten it to 머리, so 'cut my hair' is 머리를 자르다, not 머리카락을 자르다. The pitfall for English speakers is the washing verb: hair takes 감다 (머리를 감다), never the 씻다 you use for hands or face, so 머리를 씻다 sounds childish or wrong. Also note 머리가 좋다/나쁘다 is a fixed idiom for being smart/dim, not a comment on hair quality, and the body part is always marked with 가 (머리가 아파요), not 을."
      },
      "sentence": {
       "ko": "머리가 아파요.",
@@ -1275,7 +1276,8 @@
       "ko": "얼굴",
       "romanization": "eolgul",
       "en": "face",
-      "pos": "noun"
+      "pos": "noun",
+      "nuance": "얼굴 is the whole human face — both its looks and its surface you wash — and is the everyday word with no formality issue; you use it equally with friends and elders. Its near-synonym 낯 (as in 낯이 익다 'the face looks familiar', 낯설다 'unfamiliar') is old-fashioned and survives mostly in set idioms, so for plain 'face' always reach for 얼굴. Two pitfalls trip up English speakers. First, hair on the head is 감다 (감다 = wash hair) but the FACE is 씻다, the same verb as for hands and dishes — never say 얼굴을 감다. Second, English 'big face' does not transfer: a flattering 'small face' is 얼굴이 작다 (a real Korean compliment about proportion), and you do not say 얼굴이 커요 to mean handsome. Color uses 빨갛다 (얼굴이 빨개요), and to feel for fever Koreans touch the 이마, not the whole 얼굴."
      },
      "sentence": {
       "ko": "언니 얼굴이 정말 예뻐요.",
@@ -1316,7 +1318,8 @@
       "ko": "코",
       "romanization": "ko",
       "en": "nose",
-      "pos": "noun"
+      "pos": "noun",
+      "nuance": "코 is the nose, but cold symptoms split into precise collocations English speakers must memorize: a blocked nose is 코가 막히다 (막히다 = be blocked) and a runny nose is 콧물이 나다, where 콧물 literally stitches 코(nose)+물(water) into 'nose-water' = snot. Saying 코가 아프다 actually means the nose physically hurts (an injury), so it does NOT convey a cold — that is the classic 직역 trap. To blow your nose is 코를 풀다 (풀다 'to release/undo'); beware 코를 불다, which means to blow air out like a whistle and sounds absurd here. For looks, a tall nose bridge (admired in Korea) is 코가 높다, with 코가 낮다 as the flat-bridge opposite, paralleling how 키가 크다 works for height."
      },
      "sentence": {
       "ko": "코가 막혀요.",
@@ -1336,7 +1339,8 @@
       "ko": "입",
       "romanization": "ip",
       "en": "mouth",
-      "pos": "noun"
+      "pos": "noun",
+      "nuance": "입 is the mouth, but its most useful expressions are idioms that won't survive word-for-word translation. 입에 맞다 means food 'suits your taste' (lit. 'fits the mouth') — it judges flavor, so 'this fits in my mouth' is a beginner mistranslation. 입이 짧다 ('short mouth') describes a picky or light eater, while 입이 무겁다 ('heavy mouth') means tight-lipped/discreet and 입이 가볍다 ('light mouth') means a blabbermouth — none are about physical size. To physically open the mouth is 입을 벌리다 (벌리다 = spread apart), as a dentist commands; do not use 열다 ('open' a door/box) for the mouth. Note also that 입 (mouth, the organ) is different from 말 (speech/words), so 'watch your mouth' as in language is 말조심하다, not anything with 입."
      },
      "sentence": {
       "ko": "입을 크게 벌리세요.",
@@ -1356,7 +1360,8 @@
       "ko": "귀",
       "romanization": "gwi",
       "en": "ear",
-      "pos": "noun"
+      "pos": "noun",
+      "nuance": "귀 is the ear, and the key English-speaker pitfall is the verb of hearing. Korean splits 듣다 (to listen actively, by choice) from 들리다 (to be heard / reach the ear, passively, beyond control). So 'I can't hear' is 귀가 안 들려요 with the passive 들리다 — using 못 듣다 implies you deliberately didn't listen, which is rude when talking about someone's deafness. There are two natural ways to describe hard-of-hearing: the plain 귀가 안 들리다 and the gentler idiom 귀가 어둡다 ('the ear is dark'), whose opposite 귀가 밝다 ('bright ear') means keen hearing. To plug your ears against noise is 귀를 막다 (막다 = block), the same 막다 as a blocked nose (코가 막히다). When speaking about elders, pair this with honorifics, e.g. 귀가 어두우세요."
      },
      "sentence": {
       "ko": "귀가 아파요.",
@@ -1437,7 +1442,8 @@
       "ko": "손",
       "romanization": "son",
       "en": "hand",
-      "pos": "noun"
+      "pos": "noun",
+      "nuance": "손 is the hand, and the first thing to fix is the washing verb: hands take 씻다 (손을 씻다), in deliberate contrast to hair, which uses 감다 — mixing them (손을 감다) is a classic beginner slip. Beyond the literal organ, 손 powers vivid idioms that aren't about anatomy: 손이 크다 ('big hand') means generous, especially someone who cooks or gives a lot, not someone with large hands; 손이 가다 ('the hand goes') means a task or person takes a lot of effort/attention; and 손이 모자라다 ('hands are short') means short-staffed. To hold someone's hand is 손을 잡다 (잡다 = grasp), used both romantically and to guide a child across the road. Note the hand is usually the object of an action, so it pairs with 을/를 (손을 씻다, 손을 잡다) rather than 가."
      },
      "sentence": {
       "ko": "손을 씻어요.",
@@ -1538,7 +1544,8 @@
       "ko": "발",
       "romanization": "bal",
       "en": "foot",
-      "pos": "noun"
+      "pos": "noun",
+      "nuance": "발 is specifically the foot — the part below the ankle — and Korean keeps it strictly separate from 다리 (the leg, the whole limb above), so pointing at your ankle and saying 다리 is wrong; that is the core mix-up for English speakers who blur 'leg/foot'. Useful collocations: 발을 다치다 (injure the foot, with 다치다 taking 을/를) and 발이 붓다 (the foot swells), where 붓다 is a ㅅ-irregular verb that drops ㅅ before a vowel → 부어요, 부었어요, not 붓어요. Idiomatically 발이 넓다 ('wide foot') means well-connected with a broad social network, never literally big feet (for that you'd say 발이 크다). When you cause an injury yourself, prefer the active 다치다 (발을 다쳤어요) over a passive construction."
      },
      "sentence": {
       "ko": "발이 아파요.",

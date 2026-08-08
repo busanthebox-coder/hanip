@@ -1,0 +1,909 @@
+{
+  "id": "chapter-68",
+  "hook": {
+    "situation": "A Monday where nothing worked: you were up all night packing, the lift broke, a colleague finally burned out, and the coffee you drank at noon is the only reason you are still standing. Korean has a different \"because\" for each of those.",
+    "objectives": [
+      "Excuse a failure with V-느라고, keeping one subject across both clauses and no tense marker on the ending.",
+      "Blame a sudden outside cause with V-는 바람에, where the subjects may differ and the result is past and unwelcome.",
+      "Separate -더니 (what you watched someone else do) from -았/었더니 (what you did yourself and then discovered)."
+    ],
+    "whyItMatters": "English uses one word, \"because,\" for all of these, so learners reach for -아서/어서 every time and sound flat — or reach for -느라고 whenever the news is bad and produce sentences Koreans do not say. Each of these four carries information about who caused it and whether you were watching."
+  },
+  "grammarNotes": [
+    {
+      "title": "V-느라고 — \"I was busy V-ing,\" and what didn't get done",
+      "func": "-느라고 names a time-consuming activity you were absorbed in, and the second clause says what suffered for it. Three conditions have to hold at once: both clauses share the same subject, the first action genuinely eats the time the second one needed, and the second clause is normally something that failed to happen. Only action verbs qualify.",
+      "formTable": [
+        {
+          "when": "Any action verb stem",
+          "add": "-느라고",
+          "ex": "쓰다 → 보고서를 쓰느라고 (busy writing the report)"
+        },
+        {
+          "when": "ㄹ-final stem — the ㄹ drops",
+          "add": "-느라고",
+          "ex": "놀다 → 노느라고 (busy playing around)"
+        },
+        {
+          "when": "Never take a tense marker",
+          "add": "V-느라고 (the tense lives in clause 2)",
+          "ex": "쓰다 → 썼느라고 ✗ / 쓰느라고 못 잤어요 ✓"
+        },
+        {
+          "when": "Thanking someone for their effort",
+          "add": "V-느라고 고생하셨어요",
+          "ex": "오다 → 오시느라고 고생하셨어요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "어제 보고서 쓰느라고 한숨도 못 잤어요.",
+          "romanization": "eoje bogoseo sseuneurago hansumdo mot jasseoyo.",
+          "en": "I was writing a report yesterday, so I didn't sleep a wink.",
+          "note": "Same subject in both halves, and the result is a plain failure to sleep."
+        },
+        {
+          "ko": "게임하느라고 엄마가 부르는 소리를 못 들었어요.",
+          "romanization": "geimhaneurago eommaga bureuneun sorireul mot deureosseoyo.",
+          "en": "I was gaming, so I didn't hear my mom calling me.",
+          "note": "엄마가 sits inside a relative clause, so the main subject is still 저 in both halves."
+        },
+        {
+          "ko": "여기까지 오시느라고 고생하셨어요.",
+          "romanization": "yeogikkaji osineurago gosaenghasyeosseoyo.",
+          "en": "Thank you for making the trip all the way here.",
+          "note": "The warm use of -느라고: naming the effort somebody spent on you."
+        },
+        {
+          "ko": "이번 달에는 이사 준비하느라고 정신이 없었어요.",
+          "romanization": "ibeon dareneun isa junbihaneurago jeongsini eopseosseoyo.",
+          "en": "I was busy getting ready to move this month, so I was all over the place.",
+          "note": "정신이 없다 is one of the most common results after -느라고."
+        }
+      ],
+      "keyPoint": {
+        "label": "One subject, one stretch of time, one thing that failed",
+        "body": "All three conditions have to hold. 동생이 떠드느라고 제가 못 잤어요 breaks the first one — the noisy person is 동생 and the sleepless one is 저 — so it needs -는 바람에 instead. And 배가 아프느라고 breaks the third: 아프다 is an adjective, not something you spend time doing."
+      },
+      "pronunciation": "In fast speech the 고 often drops: 쓰느라 못 잤어요. After a ㄹ-stem the ㄹ disappears entirely — 놀다 → 노느라고, 만들다 → 만드느라고 — the same drop you see in 노는, 만드는.",
+      "drill": {
+        "instruction": "Give the excuse with -느라고, keeping the tense out of the ending.",
+        "model": "보고서를 쓰다 / 못 자다 → 보고서를 쓰느라고 못 잤어요.",
+        "items": [
+          "게임하다 / 전화를 못 받다 → _______ 전화를 못 받았어요.",
+          "이사 준비하다 / 정신이 없다 → _______ 정신이 없었어요.",
+          "친구랑 놀다 / 숙제를 못 하다 → 친구랑 _______ 숙제를 못 했어요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "어제 보고서를 썼느라고 못 잤어요.",
+        "right": "어제 보고서를 쓰느라고 못 잤어요.",
+        "explanation": "English marks the past on both halves — \"I was writing… so I couldn't sleep\" — so learners add -았/었- to 느라고 as well. Korean marks the tense only once, in the final clause. -느라고 always sits on the bare stem: 쓰느라고, 하느라고, 보느라고."
+      }
+    },
+    {
+      "title": "V-는 바람에 — a sudden cause that derailed you",
+      "func": "-는 바람에 blames something that happened TO you: abrupt, outside your control, and it wrecked the outcome. Unlike -느라고 the two clauses may have different subjects, and the second clause is almost always past tense and unwelcome. The ending stays in the -는 shape no matter when the event happened.",
+      "formTable": [
+        {
+          "when": "Verb stem, no 받침",
+          "add": "-는 바람에",
+          "ex": "서다 → 앞차가 갑자기 서는 바람에"
+        },
+        {
+          "when": "Verb stem with 받침",
+          "add": "-는 바람에",
+          "ex": "먹다 → 급하게 먹는 바람에"
+        },
+        {
+          "when": "ㄹ-final stem — the ㄹ drops",
+          "add": "-는 바람에",
+          "ex": "울다 → 아이가 우는 바람에"
+        },
+        {
+          "when": "The result clause is past and unwelcome",
+          "add": "-는 바람에 + -았/었어요",
+          "ex": "고장 나다 → 고장 나는 바람에 늦었어요"
+        },
+        {
+          "when": "Never an order or a proposal after it",
+          "add": "✗ -는 바람에 + -(으)세요 / -(으)ㅂ시다",
+          "ex": "늦는 바람에 서두르세요 ✗"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "앞차가 갑자기 서는 바람에 뒤에서 부딪힐 뻔했어요.",
+          "romanization": "apchaga gapjagi seoneun barame dwieseo budichil ppeonhaesseoyo.",
+          "en": "The car in front stopped suddenly, so I nearly hit it from behind.",
+          "note": "Different subjects — 앞차 caused it, 저 suffered it — which -느라고 could never do."
+        },
+        {
+          "ko": "엘리베이터가 고장 나는 바람에 십오 층까지 걸어 올라갔어요.",
+          "romanization": "ellibeiteoga gojang naneun barame sibo cheungkkaji georeo ollagasseoyo.",
+          "en": "The lift broke down, so I walked all the way up to the fifteenth floor.",
+          "note": "A breakdown is the textbook 바람에 cause: sudden and nobody's choice."
+        },
+        {
+          "ko": "지하철이 멈추는 바람에 면접에 이십 분이나 늦었어요.",
+          "romanization": "jihacheori meomchuneun barame myeonjeobe isip bunina neujeosseoyo.",
+          "en": "The subway stopped, so I was a full twenty minutes late to the interview.",
+          "note": "이십 분이나 adds the sting; -는 바람에 sentences usually carry some regret."
+        },
+        {
+          "ko": "옆에서 아이가 뛰어드는 바람에 커피를 다 쏟았어요.",
+          "romanization": "yeopeseo aiga ttwieodeuneun barame keopireul da ssodasseoyo.",
+          "en": "A kid darted in beside me, so I spilled my whole coffee.",
+          "note": "The child acted, you paid for it — exactly the split -는 바람에 exists for."
+        }
+      ],
+      "keyPoint": {
+        "label": "-는 바람에 vs -느라고 — who is responsible",
+        "body": "-느라고 pins it on your own absorbing activity: 게임하느라고 못 들었어요 — you chose to play. -는 바람에 pins it on something that hit you: 엘리베이터가 고장 나는 바람에 늦었어요 — the lift broke, not you. That is also why the subjects may differ with -는 바람에 and never may with -느라고."
+      },
+      "pronunciation": "바람에 links as [바라메], and the whole chunk runs together with no pause: 고장 나는 바람에 is [고장나는 바라메].",
+      "drill": {
+        "instruction": "Blame the sudden cause with -는 바람에.",
+        "model": "엘리베이터가 고장 나다 / 걸어 올라가다 → 엘리베이터가 고장 나는 바람에 걸어 올라갔어요.",
+        "items": [
+          "앞차가 갑자기 서다 / 부딪힐 뻔하다 → 앞차가 갑자기 _______ 부딪힐 뻔했어요.",
+          "지하철이 멈추다 / 면접에 늦다 → 지하철이 _______ 면접에 늦었어요.",
+          "아이가 뛰어들다 / 커피를 쏟다 → 아이가 _______ 커피를 다 쏟았어요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "동생이 떠드느라고 제가 잠을 못 잤어요.",
+        "right": "동생이 떠드는 바람에 제가 잠을 못 잤어요.",
+        "explanation": "-느라고 demands one subject across both clauses. Here the noisy one is 동생 and the sleepless one is 저, so -느라고 is simply ungrammatical. Whenever somebody else's action is what ruined your plan, switch to -는 바람에."
+      }
+    },
+    {
+      "title": "V/A-더니 — what I watched happen, and what came of it",
+      "func": "-더니 links something you personally observed in the past to what followed from it. Because you had to be watching, the subject is nearly always somebody or something other than yourself. It also handles then-versus-now contrast: 아까는 춥더니 지금은 괜찮네요.",
+      "formTable": [
+        {
+          "when": "Verb stem — an action you watched",
+          "add": "-더니",
+          "ex": "야근하다 → 계속 야근하더니"
+        },
+        {
+          "when": "Adjective stem — a state you observed",
+          "add": "-더니",
+          "ex": "맑다 → 아침에는 하늘이 맑더니"
+        },
+        {
+          "when": "Then versus now",
+          "add": "A/V-더니 지금은 …",
+          "ex": "춥다 → 아까는 춥더니 지금은 괜찮네요"
+        },
+        {
+          "when": "The subject is normally not 저/제가",
+          "add": "(for yourself, use -았/었더니)",
+          "ex": "제가 야근하더니 ✗ / 제가 야근했더니 ✓"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "아침에는 하늘이 맑더니 오후에 갑자기 소나기가 쏟아졌어요.",
+          "romanization": "achimeneun haneuri makdeoni ohue gapjagi sonagiga ssodajyeosseoyo.",
+          "en": "The sky was clear in the morning, and then a shower came down out of nowhere in the afternoon.",
+          "note": "An adjective works fine with -더니 when you watched the state yourself."
+        },
+        {
+          "ko": "지훈 씨가 요즘 계속 야근하더니 결국 몸살이 났어요.",
+          "romanization": "jihun ssiga yojeum gyesok yageunhadeoni gyeolguk momsari nasseoyo.",
+          "en": "Jihoon has been working late constantly, and in the end he came down with something.",
+          "note": "결국 is a natural partner for -더니 when the outcome was building up."
+        },
+        {
+          "ko": "그 가게가 한동안 손님이 없더니 지난달에 문을 닫았어요.",
+          "romanization": "geu gagega handongan sonnimi eopdeoni jinandare muneul dadasseoyo.",
+          "en": "That shop had no customers for a while, and then it closed last month.",
+          "note": "The subject can be a thing, as long as you were the one observing it."
+        },
+        {
+          "ko": "동생이 새 신발을 사더니 매일 그것만 신고 다녀요.",
+          "romanization": "dongsaengi sae sinbareul sadeoni maeil geugeonman singo danyeoyo.",
+          "en": "My younger sibling bought new shoes, and now wears nothing else.",
+          "note": "The result clause can stay in the present when the state is still going on."
+        }
+      ],
+      "keyPoint": {
+        "label": "-더니 needs a witness",
+        "body": "-더니 says \"I saw this happen, and then this followed.\" Since you have to have been watching, the subject is almost always somebody or something else — 지훈 씨가, 하늘이, 그 가게가. You cannot stand outside yourself and watch yourself, which is exactly why Korean switches to -았/었더니 for your own actions."
+      },
+      "pronunciation": "The ㄷ tenses after a stop: 없더니 is [업떠니] and 맑더니 is [막떠니]. After a vowel it stays plain, as in 사더니 [사더니].",
+      "drill": {
+        "instruction": "Link what you observed to what followed, using -더니.",
+        "model": "지훈 씨가 계속 야근했어요. 그리고 몸살이 났어요. → 지훈 씨가 계속 야근하더니 몸살이 났어요.",
+        "items": [
+          "아침에 하늘이 맑았어요. 그런데 오후에 소나기가 왔어요. → 아침에는 하늘이 _______ 오후에 소나기가 왔어요.",
+          "그 가게에 손님이 없었어요. 그리고 문을 닫았어요. → 그 가게에 손님이 _______ 문을 닫았어요.",
+          "동생이 새 신발을 샀어요. 그리고 매일 그것만 신어요. → 동생이 새 신발을 _______ 매일 그것만 신어요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "제가 어제 늦게 자더니 오늘 너무 피곤해요.",
+        "right": "제가 어제 늦게 잤더니 오늘 너무 피곤해요.",
+        "explanation": "-더니 reports something you observed happening to someone else, so it clashes with a 저/제가 subject. Your own past action leading to a present result takes -았/었더니. Learners pick 더니 because English says \"I stayed up late and now I'm tired\" with no such distinction."
+      }
+    },
+    {
+      "title": "V-았/었더니 — I did it, and then I found out",
+      "func": "-았/었더니 reports your own past action and the consequence you discovered from it. The first clause is normally 제가/저는, and the second clause is the result — often a small revelation rather than a plain cause and effect. Like -더니, it cannot be followed by an order or a suggestion.",
+      "formTable": [
+        {
+          "when": "Your own past action (stem + 았/었)",
+          "add": "-았/었더니",
+          "ex": "먹다 → 아침을 안 먹었더니"
+        },
+        {
+          "when": "하다 verbs",
+          "add": "-했더니",
+          "ex": "등산하다 → 오랜만에 등산했더니"
+        },
+        {
+          "when": "The result may be present or past",
+          "add": "-았/었더니 + 어요 / 았어요",
+          "ex": "가다 → 일찍 갔더니 아무도 없었어요"
+        },
+        {
+          "when": "Contrast with -더니 (somebody else)",
+          "add": "V-더니 / V-았/었더니",
+          "ex": "지훈 씨가 야근하더니 / 제가 야근했더니"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "아침을 안 먹었더니 지금 배가 너무 고파요.",
+          "romanization": "achimeul an meogeotdeoni jigeum baega neomu gopayo.",
+          "en": "I skipped breakfast, and now I'm starving.",
+          "note": "The classic shape: my own past action, and the state I'm in because of it."
+        },
+        {
+          "ko": "감기약을 먹었더니 하루 만에 괜찮아졌어요.",
+          "romanization": "gamgiyageul meogeotdeoni haru mane gwaenchanajyeosseoyo.",
+          "en": "I took cold medicine, and I was fine within a day.",
+          "note": "A discovery about what worked, not just a bare cause."
+        },
+        {
+          "ko": "오랜만에 등산했더니 다음 날 다리가 너무 아팠어요.",
+          "romanization": "oraenmane deungsanhaetdeoni daeum nal dariga neomu apasseoyo.",
+          "en": "I went hiking for the first time in ages, and the next day my legs were killing me.",
+          "note": "Here both clauses are past, which is perfectly normal."
+        },
+        {
+          "ko": "사무실에 일찍 갔더니 아무도 없었어요.",
+          "romanization": "samusire iljjik gatdeoni amudo eopseosseoyo.",
+          "en": "I got to the office early, and there was nobody there.",
+          "note": "A pure discovery: going early is what let you find that out."
+        }
+      ],
+      "keyPoint": {
+        "label": "-았/었더니 vs -아서/어서 — result or discovery",
+        "body": "아침을 안 먹어서 배가 고파요 states a cause and its effect, and everyone could have predicted it. 아침을 안 먹었더니 배가 고파요 adds that you noticed the consequence afterwards — \"I skipped breakfast, and sure enough…\". Use -아서/어서 when the link is obvious and -았/었더니 when you are reporting what you found out by doing it."
+      },
+      "pronunciation": "The ㄷ tenses after 았/었 every time: 먹었더니 is [머걷떠니], 갔더니 is [갇떠니], 했더니 is [핻떠니].",
+      "drill": {
+        "instruction": "Report your own past action and what you then found, using -았/었더니.",
+        "model": "약을 먹다 / 괜찮아지다 → 약을 먹었더니 괜찮아졌어요.",
+        "items": [
+          "아침을 안 먹다 / 배가 고프다 → 아침을 안 _______ 배가 고파요.",
+          "오랜만에 등산하다 / 다리가 아프다 → 오랜만에 _______ 다리가 아팠어요.",
+          "사무실에 일찍 가다 / 아무도 없다 → 사무실에 일찍 _______ 아무도 없었어요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "약을 먹었더니 푹 쉬세요.",
+        "right": "약을 먹었더니 좀 나아졌어요.",
+        "explanation": "-았/었더니 reports a result you have already observed, so the clause after it cannot be a command or a suggestion. Learners try to give advice with it because English \"once you've taken the medicine, get some rest\" is fine. For advice, use -(으)면 or -고 나서 instead."
+      }
+    },
+    {
+      "title": "-느라고 vs -는 바람에 vs -아서/어서 — picking the right \"because\"",
+      "func": "All three give a reason, and they are not interchangeable. -아서/어서 is the neutral default and fits almost anywhere. -느라고 says the reason was your own time-consuming activity and the result is what you failed to do. -는 바람에 says something sudden hit you and spoiled the outcome. Choose by asking who caused it and whether the result was bad.",
+      "formTable": [
+        {
+          "when": "Neutral reason, any kind of result",
+          "add": "V/A-아서/어서",
+          "ex": "오다 → 눈이 많이 와서 재택근무를 했어요"
+        },
+        {
+          "when": "My own absorbing activity, a result that failed",
+          "add": "V-느라고",
+          "ex": "준비하다 → 발표 준비하느라고 점심도 못 먹었어요"
+        },
+        {
+          "when": "A sudden outside cause, a spoiled result",
+          "add": "V-는 바람에",
+          "ex": "꺼지다 → 노트북이 꺼지는 바람에 다 날렸어요"
+        },
+        {
+          "when": "A welcome result — credit the cause instead",
+          "add": "V/A-아서/어서, or N 덕분에",
+          "ex": "도착하다 → 일찍 도착한 덕분에 좋은 자리를 잡았어요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "눈이 많이 와서 오늘은 재택근무를 했어요.",
+          "romanization": "nuni mani waseo oneureun jaetaekgeunmureul haesseoyo.",
+          "en": "It snowed heavily, so I worked from home today.",
+          "note": "Neutral cause and a perfectly fine outcome — plain -아서 is right."
+        },
+        {
+          "ko": "발표 준비하느라고 점심도 못 먹었어요.",
+          "romanization": "balpyo junbihaneurago jeomsimdo mot meogeosseoyo.",
+          "en": "I was preparing my presentation, so I didn't even get lunch.",
+          "note": "My own activity, and the result is something that did not happen."
+        },
+        {
+          "ko": "노트북이 갑자기 꺼지는 바람에 쓰던 걸 다 날렸어요.",
+          "romanization": "noteubugi gapjagi kkeojineun barame sseudeon geol da nallyeosseoyo.",
+          "en": "My laptop died out of nowhere, so I lost everything I'd been writing.",
+          "note": "Sudden, outside your control, and the result is a loss."
+        },
+        {
+          "ko": "일찍 도착한 덕분에 좋은 자리를 잡았어요.",
+          "romanization": "iljjik dochakan deokbune joeun jarireul jabasseoyo.",
+          "en": "Thanks to arriving early, I got a good seat.",
+          "note": "덕분에 is the positive counterpart of 바람에 — never use 바람에 for good news."
+        }
+      ],
+      "keyPoint": {
+        "label": "A three-question test",
+        "body": "Ask in this order. Did something fail to happen, and was the cause your own activity? → -느라고. Did something sudden happen to you and spoil it? → -는 바람에. Neither, or the result is fine? → -아서/어서, and 덕분에 when you want to credit the cause for a good outcome."
+      },
+      "pronunciation": "-느라고 and -는 바람에 both attach to the plain stem, so nothing in front of them changes shape. Only -아서/어서 reshapes the stem: 오다 → 와서, 먹다 → 먹어서, 도착하다 → 도착해서.",
+      "drill": {
+        "instruction": "Choose -느라고, -는 바람에, or -아서/어서 for each pair, then complete the sentence.",
+        "model": "발표 준비하다 / 점심을 못 먹다 → 발표 준비하느라고 점심을 못 먹었어요.",
+        "items": [
+          "노트북이 갑자기 꺼지다 / 파일을 다 날리다 → 노트북이 갑자기 _______ 파일을 다 날렸어요.",
+          "눈이 많이 오다 / 재택근무를 하다 → 눈이 많이 _______ 재택근무를 했어요.",
+          "게임하다 / 전화를 못 받다 → _______ 전화를 못 받았어요."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "배가 아프느라고 학교에 못 갔어요.",
+        "right": "배가 아파서 학교에 못 갔어요.",
+        "explanation": "-느라고 only attaches to ACTION verbs, never to adjectives. 아프다 is an adjective, so a reason built on it uses -아서/어서. Learners reach for -느라고 whenever the result is negative, but a negative result is not what licenses it — a deliberate, time-consuming action is."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "숙제",
+      "romanization": "sukje",
+      "english": "homework, assignment",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "친구랑 노느라고 숙제를 하나도 못 했어요.",
+        "en": "I was messing around with a friend, so I didn't do any of my homework.",
+        "note": "놀다 loses its ㄹ before -느라고, giving 노느라고."
+      },
+      "collocations": [
+        "숙제를 하다",
+        "숙제가 밀리다",
+        "숙제를 내다"
+      ]
+    },
+    {
+      "hangul": "서두르다",
+      "romanization": "seodureuda",
+      "english": "to hurry, to rush",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "늦잠을 자는 바람에 아침 내내 서둘렀어요.",
+        "en": "I overslept, so I was rushing the whole morning.",
+        "note": "서두르다 is a 르-irregular verb: 서둘러요, 서둘렀어요."
+      },
+      "collocations": [
+        "서둘러 나가다",
+        "너무 서두르다",
+        "서두르지 마세요"
+      ]
+    },
+    {
+      "hangul": "몸살",
+      "romanization": "momsal",
+      "english": "aches and exhaustion (from overdoing it)",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "며칠 계속 야근하더니 결국 몸살이 났어요.",
+        "en": "He kept working late for days, and in the end he came down with aches all over.",
+        "note": "몸살이 나다 is the fixed phrase, and 결국 pairs naturally with -더니."
+      },
+      "collocations": [
+        "몸살이 나다",
+        "몸살감기",
+        "몸살로 눕다"
+      ]
+    },
+    {
+      "hangul": "붐비다",
+      "romanization": "bumbida",
+      "english": "to be crowded, to be packed",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "지하철이 너무 붐비는 바람에 한 대를 그냥 보냈어요.",
+        "en": "The subway was so packed that I just let one train go.",
+        "note": "A crowd is not your doing, so -는 바람에 is the natural connector."
+      },
+      "collocations": [
+        "길이 붐비다",
+        "가게가 붐비다",
+        "붐비는 시간"
+      ]
+    },
+    {
+      "hangul": "놓치다",
+      "romanization": "nochida",
+      "english": "to miss (a train, a chance, a stop)",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "통화하느라고 내릴 역을 놓쳤어요.",
+        "en": "I was on the phone, so I missed my stop.",
+        "note": "One subject, one absorbing activity, one thing that went wrong — textbook -느라고."
+      },
+      "collocations": [
+        "기회를 놓치다",
+        "역을 놓치다",
+        "때를 놓치다"
+      ]
+    },
+    {
+      "hangul": "쏟다",
+      "romanization": "ssotda",
+      "english": "to spill, to pour out",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "서두르다가 국물을 쏟는 바람에 옷을 갈아입었어요.",
+        "en": "I was rushing and spilled soup, so I had to change clothes.",
+        "note": "쏟다 is transitive; the intransitive 쏟아지다 is what rain does."
+      },
+      "collocations": [
+        "커피를 쏟다",
+        "물을 쏟다",
+        "비가 쏟아지다"
+      ]
+    },
+    {
+      "hangul": "넘어지다",
+      "romanization": "neomeojida",
+      "english": "to fall over, to trip",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "앞사람이 갑자기 멈추는 바람에 넘어질 뻔했어요.",
+        "en": "The person in front stopped suddenly, so I nearly fell over.",
+        "note": "Near-misses and -는 바람에 belong together: sudden cause, bad near-outcome."
+      },
+      "collocations": [
+        "길에서 넘어지다",
+        "넘어질 뻔하다",
+        "넘어져서 다치다"
+      ]
+    },
+    {
+      "hangul": "지각하다",
+      "romanization": "jigakada",
+      "english": "to be late (for school or work)",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "알람을 못 듣는 바람에 오늘도 지각했어요.",
+        "en": "I didn't hear my alarm, so I was late again today.",
+        "note": "지각하다 is specifically institutional lateness; 늦다 is the general word."
+      },
+      "collocations": [
+        "학교에 지각하다",
+        "또 지각하다",
+        "지각을 하다"
+      ]
+    },
+    {
+      "hangul": "결국",
+      "romanization": "gyeolguk",
+      "english": "in the end, finally",
+      "partOfSpeech": "adverb",
+      "exampleSentence": {
+        "ko": "계속 미루더니 결국 마감을 넘겼어요.",
+        "en": "He kept putting it off, and in the end he blew the deadline.",
+        "note": "결국 marks the outcome of a build-up, which is why -더니 loves it."
+      },
+      "collocations": [
+        "결국 포기하다",
+        "결국 이렇게 되다",
+        "결국에는"
+      ]
+    },
+    {
+      "hangul": "소나기",
+      "romanization": "sonagi",
+      "english": "a sudden shower, a downpour",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "소나기가 갑자기 쏟아지는 바람에 빨래가 다 젖었어요.",
+        "en": "A downpour came out of nowhere, so all the laundry got soaked.",
+        "note": "Weather is the purest -는 바람에 cause: sudden and entirely outside your control."
+      },
+      "collocations": [
+        "소나기가 오다",
+        "소나기가 쏟아지다",
+        "소나기를 맞다"
+      ]
+    },
+    {
+      "hangul": "재택근무",
+      "romanization": "jaetaekgeunmu",
+      "english": "working from home",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "지하철이 멈추는 바람에 그냥 재택근무로 바꿨어요.",
+        "en": "The subway stopped running, so I just switched to working from home.",
+        "note": "The outcome here is a fallback, not a good result, so 바람에 still fits."
+      },
+      "collocations": [
+        "재택근무를 하다",
+        "재택근무로 전환하다",
+        "재택근무 중이다"
+      ]
+    },
+    {
+      "hangul": "다치다",
+      "romanization": "dachida",
+      "english": "to get hurt, to injure oneself",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "무리해서 운동하더니 결국 무릎을 다쳤어요.",
+        "en": "He pushed too hard at the gym, and in the end he hurt his knee.",
+        "note": "You watched the overtraining, so -더니 carries the whole build-up."
+      },
+      "collocations": [
+        "다리를 다치다",
+        "크게 다치다",
+        "다치지 않게 조심하다"
+      ]
+    },
+    {
+      "hangul": "쉬다",
+      "romanization": "swida",
+      "english": "to rest, to take a break",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "이틀 푹 쉬었더니 몸이 훨씬 가벼워졌어요.",
+        "en": "I rested properly for two days, and my body feels much lighter.",
+        "note": "A discovery about what worked — exactly what -았/었더니 is for."
+      },
+      "collocations": [
+        "푹 쉬다",
+        "좀 쉬다",
+        "쉬는 날"
+      ]
+    },
+    {
+      "hangul": "끝내다",
+      "romanization": "kkeunnaeda",
+      "english": "to finish (something)",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "밤늦게까지 보고서를 끝내느라고 한숨도 못 잤어요.",
+        "en": "I was finishing the report until late at night, so I didn't sleep at all.",
+        "note": "끝내다 is transitive ('finish it'); 끝나다 is what the thing itself does."
+      },
+      "collocations": [
+        "일을 끝내다",
+        "제시간에 끝내다",
+        "빨리 끝내다"
+      ]
+    },
+    {
+      "hangul": "늦잠",
+      "romanization": "neutjam",
+      "english": "oversleeping, a lie-in",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "늦잠을 자는 바람에 첫차를 놓쳤어요.",
+        "en": "I overslept, so I missed the first train.",
+        "note": "늦잠을 자다 keeps its 을 even inside -는 바람에."
+      },
+      "collocations": [
+        "늦잠을 자다",
+        "늦잠을 자서 늦다",
+        "주말 늦잠"
+      ]
+    },
+    {
+      "hangul": "정신없다",
+      "romanization": "jeongsineopda",
+      "english": "to be hectic, to be all over the place",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "이사 준비하느라고 이번 주 내내 정신이 없었어요.",
+        "en": "I was getting ready to move, so I was frazzled all week.",
+        "note": "정신이 없다 is the most common result clause after -느라고."
+      },
+      "collocations": [
+        "정신이 없다",
+        "정신없이 바쁘다",
+        "아침부터 정신없다"
+      ]
+    },
+    {
+      "hangul": "배탈",
+      "romanization": "baetal",
+      "english": "an upset stomach",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "찬 음식을 많이 먹었더니 배탈이 났어요.",
+        "en": "I ate a lot of cold food, and I ended up with an upset stomach.",
+        "note": "배탈이 나다, like 몸살이 나다, uses 나다 rather than 하다."
+      },
+      "collocations": [
+        "배탈이 나다",
+        "배탈 약",
+        "배탈로 고생하다"
+      ]
+    },
+    {
+      "hangul": "지치다",
+      "romanization": "jichida",
+      "english": "to be worn out, to be drained",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "며칠 무리하더니 완전히 지쳐 보여요.",
+        "en": "He overdid it for a few days, and now he looks completely drained.",
+        "note": "지치다 describes a state you can see, so it sits well in a -더니 result."
+      },
+      "collocations": [
+        "몸이 지치다",
+        "지쳐 보이다",
+        "지쳐서 쓰러지다"
+      ]
+    },
+    {
+      "hangul": "취소되다",
+      "romanization": "chwisodoeda",
+      "english": "to be cancelled",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "태풍이 오는 바람에 항공편이 취소됐어요.",
+        "en": "A typhoon came in, so the flight was cancelled.",
+        "note": "취소되다 is itself a passive, which is why nobody is blamed for the cancellation."
+      },
+      "collocations": [
+        "일정이 취소되다",
+        "예약이 취소되다",
+        "갑자기 취소되다"
+      ]
+    },
+    {
+      "hangul": "고장",
+      "romanization": "gojang",
+      "english": "a breakdown, a malfunction",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "엘리베이터가 고장 나는 바람에 계단으로 올라갔어요.",
+        "en": "The lift broke down, so I took the stairs up.",
+        "note": "고장 나다 (it breaks) and 고장 내다 (you break it) are worth keeping apart."
+      },
+      "collocations": [
+        "고장이 나다",
+        "고장 났어요",
+        "고장 신고"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Monday morning at the office. Two colleagues compare how their weekend and their commute went, and neither of them is having a good day.",
+    "lines": [
+      {
+        "speaker": "유진",
+        "ko": "왜 이렇게 피곤해 보여요? 주말에 못 쉬었어요?",
+        "romanization": "wae ireoke pigonhae boyeoyo? jumare mot swieosseoyo?",
+        "en": "Why do you look so wiped out? Didn't you get any rest this weekend?",
+        "grammarNote": "The opening question; the reasons all arrive in the replies."
+      },
+      {
+        "speaker": "지원",
+        "ko": "네. 이사 준비하느라고 주말 내내 정신이 없었어요.",
+        "romanization": "ne. isa junbihaneurago jumal naenae jeongsini eopseosseoyo.",
+        "en": "Right. I was getting ready to move, so I was frazzled all weekend.",
+        "grammarNote": "-느라고 with one subject throughout and 정신이 없다 as the result."
+      },
+      {
+        "speaker": "유진",
+        "ko": "아, 그래서 어제 전화를 안 받으셨군요.",
+        "romanization": "a, geuraeseo eoje jeonhwareul an badeusyeotgunyo.",
+        "en": "Ah, so that's why you didn't pick up yesterday.",
+        "grammarNote": "그래서 accepts the excuse; -군요 marks the realisation."
+      },
+      {
+        "speaker": "지원",
+        "ko": "짐 싸느라고 못 봤어요. 그리고 오늘 아침엔 늦잠까지 자는 바람에 첫차를 놓쳤고요.",
+        "romanization": "jim ssaneurago mot bwasseoyo. geurigo oneul achimen neutjamkkaji janeun barame cheotchareul notchyeotgoyo.",
+        "en": "I was packing, so I didn't see it. And this morning I overslept on top of that, so I missed the first train.",
+        "grammarNote": "Both connectors side by side: my own activity, then something that happened to me."
+      },
+      {
+        "speaker": "유진",
+        "ko": "저도 오늘 엘리베이터가 고장 나는 바람에 십오 층까지 걸어 올라왔어요.",
+        "romanization": "jeodo oneul ellibeiteoga gojang naneun barame sibo cheungkkaji georeo ollawasseoyo.",
+        "en": "Same here — the lift broke down, so I walked up to the fifteenth floor.",
+        "grammarNote": "Different subjects across the clauses, which only -는 바람에 permits."
+      },
+      {
+        "speaker": "지원",
+        "ko": "진짜요? 그 엘리베이터가 요즘 자꾸 멈추더니 결국 고장 났네요.",
+        "romanization": "jinjjayo? geu ellibeiteoga yojeum jakku meomchudeoni gyeolguk gojang nanneyo.",
+        "en": "Really? That lift kept stopping lately, and now it's finally gone and broken.",
+        "grammarNote": "-더니 on something she had been watching, with 결국 for the build-up."
+      },
+      {
+        "speaker": "유진",
+        "ko": "그러니까요. 아침부터 십오 층을 걸어 올라왔더니 다리가 후들거려요.",
+        "romanization": "geureonikkayo. achimbuteo sibo cheungeul georeo ollawatdeoni dariga hudeulgeoryeoyo.",
+        "en": "Tell me about it. Walking up fifteen floors first thing has left my legs shaking.",
+        "grammarNote": "Her own action, so -았/었더니 rather than -더니."
+      },
+      {
+        "speaker": "지원",
+        "ko": "점심 먹고 좀 쉬세요. 저도 커피 마셨더니 이제야 좀 살 것 같아요.",
+        "romanization": "jeomsim meokgo jom swiseyo. jeodo keopi masyeotdeoni ijeya jom sal geot gatayo.",
+        "en": "Get some rest after lunch. I had a coffee, and I'm only now starting to feel human.",
+        "grammarNote": "The advice sits in its own sentence — you cannot put a command after -았/었더니."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "핑계와 원인 사이",
+    "body": "한국어에는 '왜'를 말하는 방법이 여러 가지다. 그중에서 -느라고와 -는 바람에가 자주 헷갈린다. -느라고는 내가 무언가에 매달려 있어서 다른 일을 못 했을 때 쓴다. 그래서 두 문장의 주어가 같아야 하고, 뒤에는 보통 '못 했다'가 온다. -는 바람에는 반대로 갑자기 벌어진 일이 내 계획을 망쳤을 때 쓴다. 주어가 달라도 되고, 결과는 대개 나쁘다. -더니와 -았더니는 순서를 말한다. 남이 하는 일을 지켜보고 그 결과를 말할 때는 -더니, 내가 한 일과 그 결과를 말할 때는 -았더니를 쓴다.",
+    "bodyTranslation": "Korean has several ways of saying \"why.\" Among them, -느라고 and -는 바람에 get mixed up constantly. -느라고 is for when you were tied up in something and therefore failed to do something else. That is why both clauses have to share a subject, and why what follows is usually \"couldn't.\" -는 바람에 is the opposite: something that happened out of nowhere wrecked your plan. The subjects may differ, and the result is generally bad. -더니 and -았더니 are about sequence. When you watched somebody else do something and are reporting what came of it, you use -더니; when it was your own action and your own result, you use -았더니.",
+    "comprehensionQuestions": [
+      {
+        "question": "-느라고를 쓰려면 두 문장의 주어가 어때야 해요?",
+        "answer": "같아야 해요. 주어가 다르면 -는 바람에를 써요."
+      },
+      {
+        "question": "-는 바람에 뒤에는 보통 어떤 결과가 와요?",
+        "answer": "갑자기 벌어진 일 때문에 생긴 나쁜 결과가 와요."
+      },
+      {
+        "question": "내가 한 일과 그 결과를 말할 때는 무엇을 써요?",
+        "answer": "-았/었더니를 써요. 남이 하는 일을 지켜본 경우에는 -더니를 써요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "핑계와 감사 사이의 -느라고",
+    "body": "-느라고 does double duty in Korean. It excuses you — 숙제하느라고 못 갔어요 — but paired with 고생하다 it becomes one of the warmest things you can say: 오시느라고 고생하셨어요, 준비하느라고 고생 많으셨어요. Naming the time and effort somebody spent on you is standard courtesy at weddings, funerals, moving days, and the end of any long meeting. A bare -는 바람에 excuse, by contrast, usually comes with an apology attached, because it still concedes that the outcome was bad: 늦잠을 자는 바람에 늦었습니다. 죄송합니다.",
+    "tip": "When somebody has gone to trouble for you, 고생하셨어요 alone is fine — but adding -느라고 names what they actually did and lands as noticeably more sincere."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence is correct Korean?",
+      "options": [
+        "보고서를 쓰느라고 한숨도 못 잤어요.",
+        "보고서를 썼느라고 한숨도 못 잤어요.",
+        "보고서를 쓰느라고 한숨도 못 자세요."
+      ],
+      "correct": "보고서를 쓰느라고 한숨도 못 잤어요.",
+      "explanation": "-느라고 never carries a tense marker, so 썼느라고 is out; the tense belongs in the final clause. And the clause after -느라고 cannot be a command, which rules out 못 자세요."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "동생이 떠들었어요. 그래서 제가 잠을 못 잤어요. Which connector fits?",
+      "options": [
+        "떠드는 바람에",
+        "떠드느라고",
+        "떠들었느라고"
+      ],
+      "correct": "떠드는 바람에",
+      "explanation": "-느라고 requires both clauses to share one subject. Here 동생 makes the noise and 저 loses the sleep, so only -는 바람에 works."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which one can follow 제가 (a first-person subject)?",
+      "options": [
+        "어제 늦게 잤더니",
+        "어제 늦게 자더니",
+        "어제 늦게 잤느라고"
+      ],
+      "correct": "어제 늦게 잤더니",
+      "explanation": "-더니 reports what you watched somebody else do, so it clashes with 제가. Your own past action leading to a present result takes -았/었더니, and -느라고 never carries a tense marker."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the connector: '배가 아프느라고 학교에 못 갔어요.'",
+      "correct": "배가 아파서 학교에 못 갔어요.",
+      "explanation": "-느라고 attaches only to action verbs. 아프다 is an adjective, so the reason takes -아서/어서."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "아침을 안 ___ 지금 배가 너무 고파요. (먹다 → -았/었더니)",
+      "base": "먹다",
+      "form": "eotdeoni",
+      "correct": "먹었더니",
+      "explanation": "Your own past action plus the result you noticed afterwards: 먹었더니, pronounced [머걷떠니]."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'The lift broke down, so I walked up to the fifteenth floor.' (Start with 엘리베이터가.)",
+      "tokens": [
+        "엘리베이터가",
+        "고장 나는 바람에",
+        "십오 층까지",
+        "걸어 올라갔어요"
+      ],
+      "correct": "엘리베이터가 고장 나는 바람에 십오 층까지 걸어 올라갔어요",
+      "explanation": "The cause names its own subject (엘리베이터가) and the result clause is past — the standard -는 바람에 shape."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Complete with -느라고: 친구랑 ____ 숙제를 하나도 못 했어요. (놀다)",
+      "correct": "노느라고",
+      "explanation": "놀다 is a ㄹ-stem, so the ㄹ drops before -느라고: 노느라고, the same drop you see in 노는."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "You want to report what you watched happen to 지훈 씨. Which is natural?",
+      "options": [
+        "지훈 씨가 계속 야근하더니 몸살이 났어요.",
+        "지훈 씨가 계속 야근했더니 몸살이 났어요.",
+        "제가 계속 야근하더니 몸살이 났어요."
+      ],
+      "correct": "지훈 씨가 계속 야근하더니 몸살이 났어요.",
+      "explanation": "-더니 needs a subject you observed from the outside, so 지훈 씨가 …하더니 is right. -았/었더니 belongs to your own action (제가 야근했더니), and 제가 …하더니 mixes the two."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "늦잠___ 자는 바람에 첫차를 놓쳤어요. (I overslept, so I missed the first train.)",
+      "options": [
+        "을",
+        "이",
+        "에"
+      ],
+      "correct": "을",
+      "explanation": "늦잠을 자다 is a fixed phrase, and the object particle stays put inside -는 바람에."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the second clause — you mean that the medicine helped: '약을 먹었더니 푹 쉬세요.'",
+      "correct": "약을 먹었더니 좀 나아졌어요.",
+      "explanation": "-았/었더니 reports a result you already observed, so the clause after it cannot be a command. For advice, start a new sentence or use -(으)면."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which ending fits a welcome result: '일찍 도착___ 좋은 자리를 잡았어요'?",
+      "options": [
+        "해서",
+        "하느라고",
+        "하는 바람에"
+      ],
+      "correct": "해서",
+      "explanation": "-느라고 and -는 바람에 both point at something that went wrong. A good outcome takes plain -아서/어서, or 덕분에 if you want to credit the cause."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "-느라고 needs three things at once: one subject across both clauses, a deliberate activity that eats the time, and a result that failed to happen. It never carries a tense marker.",
+      "-는 바람에 blames something sudden that happened TO you. The subjects may differ, and the result clause is past and unwelcome.",
+      "-더니 reports what you watched somebody else do and what followed, so it does not take 제가.",
+      "-았/었더니 reports your own past action and the result you then discovered: 아침을 안 먹었더니 배가 고파요.",
+      "When the result is actually fine, drop all three and use -아서/어서 — or 덕분에 to credit the cause."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Write four sentences about a bad Monday: one thing you were too busy to do, one thing that hit you out of nowhere, one thing you watched somebody else do and what came of it, and one thing you did yourself and what you then found out.",
+    "hint": "Use -느라고, -는 바람에, -더니, and -았/었더니 in that order. Keep the tense marker off -느라고 and -는 바람에.",
+    "model": "주말 내내 이사 준비하느라고 한숨도 못 잤어요. 오늘 아침엔 엘리베이터가 고장 나는 바람에 십오 층까지 걸어 올라갔고요. 지훈 씨는 계속 야근하더니 결국 몸살이 났어요. 저는 점심때 커피를 마셨더니 이제야 좀 살 것 같아요.",
+    "modelEn": "I was getting ready to move all weekend, so I didn't sleep a wink. This morning the lift broke down, so I walked up to the fifteenth floor. Jihoon kept working late, and in the end he came down with something. As for me, I had a coffee at lunch and I'm only now starting to feel human."
+  },
+  "canDo": [
+    "Excuse a failure with V-느라고 while keeping one subject and no tense marker (숙제하느라고 못 갔어요)",
+    "Blame a sudden outside cause with V-는 바람에 (엘리베이터가 고장 나는 바람에 늦었어요)",
+    "Report what you watched somebody else do, and its outcome, with -더니",
+    "Report your own past action and what you discovered with -았/었더니",
+    "Fall back on -아서/어서 or 덕분에 when the result is actually fine"
+  ]
+}

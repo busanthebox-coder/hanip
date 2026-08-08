@@ -1,0 +1,924 @@
+{
+  "id": "chapter-70",
+  "hook": {
+    "situation": "You are editing a notice for your team and every sentence is short, blunt, and starts with 그리고 or 그래서. Korean written style joins those clauses INSIDE one sentence instead — with -(으)며, -(으)나, -(으)므로, -고자, and a bare -(으)ㅁ at the end.",
+    "objectives": [
+      "Join two clauses inside one sentence with -(으)며 for parallel facts and -(으)나 for contrast.",
+      "State a written reason with -(으)므로, and keep it apart from the instrumental -(으)ㅁ으로(써).",
+      "Write a purpose with -고자 and close a notice line with the nominal -(으)ㅁ or -기 바람."
+    ],
+    "whyItMatters": "You already know the connectors that join sentence to sentence — 따라서 and 그러나. This chapter is the layer underneath: the endings that join clause to clause without starting a new sentence. Notices, reports, and official email run on it, and a paragraph built only from short sentences plus 그리고 reads like a beginner wrote it."
+  },
+  "grammarNotes": [
+    {
+      "title": "V/A-(으)며 — listing and simultaneity inside one sentence",
+      "func": "-(으)며 is the written counterpart of two spoken endings at once: -고 when it lists parallel facts, and -(으)면서 when the two things happen together. It keeps both clauses under a single final ending, which is what makes a report read as connected prose rather than a list of short statements.",
+      "formTable": [
+        {
+          "when": "Stem ends in a vowel or ㄹ",
+          "add": "-며",
+          "ex": "비싸다 → 값은 비싸며 (it is expensive, and…)"
+        },
+        {
+          "when": "Stem ends in a consonant",
+          "add": "-으며",
+          "ex": "좋다 → 품질이 좋으며 (the quality is good, and…)"
+        },
+        {
+          "when": "Past tense",
+          "add": "-았/었으며",
+          "ex": "끝나다 → 회의는 끝났으며 (the meeting has ended, and…)"
+        },
+        {
+          "when": "Simultaneity — the written -(으)면서",
+          "add": "-(으)며",
+          "ex": "보다 → 자료를 보며 (while looking at the materials)"
+        },
+        {
+          "when": "The spoken forms you are replacing",
+          "add": "-고 / -(으)면서",
+          "ex": "값이 싸고 품질도 좋아요 → 값이 싸며 품질도 좋다"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "이번 행사는 다음 달에 시작되며 총 사 주간 진행된다.",
+          "romanization": "ibeon haengsaneun daeum dare sijakdoemyeo chong sa jugan jinhaengdoenda.",
+          "en": "This event begins next month and runs for a total of four weeks.",
+          "note": "Two facts about one subject, joined without a second sentence."
+        },
+        {
+          "ko": "신청서는 온라인으로 접수하며, 서류는 방문 제출도 가능하다.",
+          "romanization": "sincheongseoneun onnaineuro jeopsuhamyeo, seoryuneun bangmun jechuldo ganeunghada.",
+          "en": "Applications are received online, and documents may also be submitted in person.",
+          "note": "A comma after -(으)며 is normal when the two clauses have different subjects."
+        },
+        {
+          "ko": "그는 연구원이며 동시에 대학에서 강의도 맡고 있다.",
+          "romanization": "geuneun yeonguwonimyeo dongsie daehageseo gangeuido matgo itda.",
+          "en": "He is a researcher and at the same time also teaches at a university.",
+          "note": "이다 takes -며 directly: 연구원이며, 학생이며."
+        },
+        {
+          "ko": "회의 자료를 보며 다음 일정을 함께 검토했다.",
+          "romanization": "hoeui jaryoreul bomyeo daeum iljeongeul hamkke geomtohaetda.",
+          "en": "We reviewed the next schedule together while looking at the meeting materials.",
+          "note": "The simultaneity reading — here -(으)며 is doing the job of -(으)면서."
+        }
+      ],
+      "keyPoint": {
+        "label": "Two different layers of written Korean",
+        "body": "The written connectors you already know — 따라서 and 그러나 — stand BETWEEN sentences and begin a new one. (즉 is the exception that proves the rule: it can start a sentence, but it just as often sits mid-sentence right after the term it defines.) -(으)며 and everything else in this chapter work INSIDE a sentence, joining clauses under one ending. Formal prose uses both at once: 값이 싸며 품질도 좋다. 따라서 수요가 늘고 있다."
+      },
+      "pronunciation": "After a ㄹ-stem the ㄹ survives, because 며 begins with ㅁ: 알다 → 알며 [알며], 만들다 → 만들며 [만들며]. 좋으며 is [조으며], with the ㅎ silent between vowels.",
+      "drill": {
+        "instruction": "Join each pair into one written sentence with -(으)며.",
+        "model": "값이 싸다 / 품질도 좋다 → 값이 싸며 품질도 좋다.",
+        "items": [
+          "행사는 다음 달에 시작되다 / 사 주간 진행되다 → 행사는 다음 달에 _______ 사 주간 진행된다.",
+          "품질이 좋다 / 가격도 적당하다 → 품질이 _______ 가격도 적당하다.",
+          "그는 연구원이다 / 대학에서 강의도 하다 → 그는 _______ 대학에서 강의도 한다."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "회의를 마치며 자료를 배포했다.",
+        "right": "회의를 마친 후 자료를 배포했다.",
+        "explanation": "-(으)며 means the two things are true together or happen at the same time — never one after the other. English \"and\" covers both, so learners reach for -(으)며 to mean \"and then.\" For sequence use -(으)ㄴ 후(에) or -고 나서, and keep -(으)며 for parallel or simultaneous facts."
+      }
+    },
+    {
+      "title": "V/A-(으)나 — the written \"but\" inside a sentence",
+      "func": "-(으)나 is the clause-internal contrast, the written equivalent of -지만. It sets the second clause against the first without breaking the sentence, which is why reports prefer it when the two halves belong to a single point rather than two separate beats.",
+      "formTable": [
+        {
+          "when": "Stem ends in a vowel",
+          "add": "-나",
+          "ex": "비싸다 → 값은 비싸나 (it is expensive, but…)"
+        },
+        {
+          "when": "Stem ends in a consonant",
+          "add": "-으나",
+          "ex": "좋다 → 품질은 좋으나 (the quality is good, but…)"
+        },
+        {
+          "when": "Past tense",
+          "add": "-았/었으나",
+          "ex": "늘다 → 예산은 늘었으나 (the budget grew, but…)"
+        },
+        {
+          "when": "이다 — contrast on a noun",
+          "add": "N(이)나",
+          "ex": "신입 → 그는 신입이나 (he is new, but…)"
+        },
+        {
+          "when": "The spoken form you are replacing",
+          "add": "-지만",
+          "ex": "예산은 늘었지만 → 예산은 늘었으나"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "예산은 늘었으나 인력은 그대로이다.",
+          "romanization": "yesaneun neureosseuna illyeogeun geudaeroida.",
+          "en": "The budget has grown, but the staffing is unchanged.",
+          "note": "One sentence, one point: the growth and the shortfall belong together."
+        },
+        {
+          "ko": "신청은 누구나 가능하나 선정은 심사를 거친다.",
+          "romanization": "sincheongeun nuguna ganeunghana seonjeongeun simsareul geochinda.",
+          "en": "Anyone may apply, but selection goes through a review.",
+          "note": "A very common notice shape: an open door, then the condition on it."
+        },
+        {
+          "ko": "자료를 여러 번 검토했으나 오류를 찾지 못했다.",
+          "romanization": "jaryoreul yeoreo beon geomtohaesseuna oryureul chatji motaetda.",
+          "en": "We reviewed the material several times but could not find the error.",
+          "note": "Past tense sits inside the ending: 검토했으나."
+        },
+        {
+          "ko": "그는 신입이나 업무 이해도가 매우 높다.",
+          "romanization": "geuneun sinibina eommu ihaedoga maeu nopda.",
+          "en": "He is new, but his grasp of the work is very high.",
+          "note": "After a noun the form is N(이)나 — here 신입이나."
+        }
+      ],
+      "keyPoint": {
+        "label": "-(으)나 vs 그러나 — one sentence or two",
+        "body": "그러나 starts a new sentence; -(으)나 keeps both halves inside one. 예산은 늘었다. 그러나 인력은 그대로이다 gives the contrast its own beat. 예산은 늘었으나 인력은 그대로이다 presents it as a single observation. Neither is more correct — choose by how much weight the contrast deserves."
+      },
+      "pronunciation": "Because -(으)나 begins with ㄴ, a ㄹ-stem drops its ㄹ: 알다 → 아나, 살다 → 사나. That is the same drop you already know from 압니다 and 사는. 늘었으나 links as [느러쓰나].",
+      "drill": {
+        "instruction": "Rewrite each -지만 sentence in the written register with -(으)나.",
+        "model": "예산은 늘었지만 인력은 그대로예요. → 예산은 늘었으나 인력은 그대로이다.",
+        "items": [
+          "신청은 누구나 가능하지만 선정은 심사를 거쳐요. → 신청은 누구나 _______ 선정은 심사를 거친다.",
+          "여러 번 검토했지만 오류를 못 찾았어요. → 여러 번 _______ 오류를 찾지 못했다.",
+          "그는 신입이지만 이해도가 높아요. → 그는 _______ 이해도가 높다."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "값은 비싸으나 품질이 좋다.",
+        "right": "값은 비싸나 품질이 좋다.",
+        "explanation": "비싸다 ends in a vowel, so it takes plain -나. Learners insert 으 everywhere because they memorise the ending as \"-으나,\" but the 으 appears only after a consonant: 좋으나, 늘었으나. After a vowel it is 비싸나, 가나, 하나."
+      }
+    },
+    {
+      "title": "V/A-(으)므로 — the written \"because,\" and why it is not -(으)ㅁ으로",
+      "func": "-(으)므로 states a reason in the written register, more logical and less personal than -아서/어서 or -(으)니까. It is the everyday reason ending of notices, regulations, and reports — and unlike -아서/어서 it can be followed by a command or a prohibition.",
+      "formTable": [
+        {
+          "when": "Stem ends in a vowel or ㄹ",
+          "add": "-므로",
+          "ex": "하다 → 공사 중이므로 (since it is under construction)"
+        },
+        {
+          "when": "Stem ends in a consonant",
+          "add": "-으므로",
+          "ex": "좋다 → 상태가 좋으므로 (since the condition is good)"
+        },
+        {
+          "when": "Past tense",
+          "add": "-았/었으므로",
+          "ex": "지나다 → 기한이 지났으므로 (since the deadline has passed)"
+        },
+        {
+          "when": "A command may follow — unlike -아서/어서",
+          "add": "-(으)므로 + 금한다 / 하십시오",
+          "ex": "위험하다 → 위험하므로 출입을 금한다"
+        },
+        {
+          "when": "NOT the same word: 'by means of'",
+          "add": "-(으)ㅁ으로(써)",
+          "ex": "노력하다 → 노력함으로써 (by making an effort)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "관련 규정이 바뀌었으므로 신청 전에 반드시 확인해야 한다.",
+          "romanization": "gwallyeon gyujeongi bakkwieosseumeuro sincheong jeone bandeusi hwaginhaeya handa.",
+          "en": "The relevant rules have changed, so you must check before applying.",
+          "note": "The reason comes first, the obligation second — standard notice order."
+        },
+        {
+          "ko": "해당 구역은 공사 중이므로 출입을 금한다.",
+          "romanization": "haedang guyeogeun gongsa jungimeuro churibeul geumhanda.",
+          "en": "This area is under construction, so entry is prohibited.",
+          "note": "A prohibition may follow -(으)므로; it could not follow -아서/어서."
+        },
+        {
+          "ko": "제출 기한이 지났으므로 이번 신청은 접수되지 않는다.",
+          "romanization": "jechul gihani jinasseumeuro ibeon sincheongeun jeopsudoeji anneunda.",
+          "en": "The submission deadline has passed, so this application will not be accepted.",
+          "note": "Past inside the ending, present result — the usual shape for a rule."
+        },
+        {
+          "ko": "자료가 충분하지 않으므로 결론을 유보한다.",
+          "romanization": "jaryoga chungbunhaji aneumeuro gyeolloneul yubohanda.",
+          "en": "The material is not sufficient, so we are holding off on a conclusion.",
+          "note": "Negation goes inside: -지 않으므로."
+        }
+      ],
+      "keyPoint": {
+        "label": "-(으)므로 vs -(으)ㅁ으로(써)",
+        "body": "One is a reason, the other is a method, and Korean writers confuse them constantly. 노력했으므로 성공했다 means \"he succeeded BECAUSE he made an effort.\" 노력함으로써 성공했다 means \"he succeeded BY making an effort.\" The tell is the ㅁ: -(으)므로 contains no noun, while -(으)ㅁ으로 is the nominal -(으)ㅁ plus the instrumental particle 으로."
+      },
+      "pronunciation": "않으므로 is [아느므로] and 좋으므로 is [조으므로] — the ㅎ goes silent before the 으. 바뀌었으므로 links as [바뀌어쓰므로].",
+      "drill": {
+        "instruction": "Give the written reason with -(으)므로.",
+        "model": "기한이 지났어요 / 접수되지 않아요 → 기한이 지났으므로 접수되지 않는다.",
+        "items": [
+          "규정이 바뀌었어요 / 확인해야 해요 → 규정이 _______ 반드시 확인해야 한다.",
+          "공사 중이에요 / 출입을 금해요 → 해당 구역은 공사 _______ 출입을 금한다.",
+          "자료가 충분하지 않아요 / 결론을 유보해요 → 자료가 충분하지 _______ 결론을 유보한다."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "규정이 바뀌었음으로 확인해야 한다.",
+        "right": "규정이 바뀌었으므로 확인해야 한다.",
+        "explanation": "The reason ending is -(으)므로, with no 음 in it. 바뀌었음으로 literally reads \"by the fact of having changed,\" which is the nominal -(으)ㅁ plus 으로. Korean writers make this slip too, so learn the split rather than copying what you see online: reason = -(으)므로, method = -(으)ㅁ으로써."
+      }
+    },
+    {
+      "title": "V-고자 — \"in order to,\" the written form of -(으)려고",
+      "func": "-고자 states a purpose in formal writing and official speech. It behaves exactly like -(으)려고: the person who intends and the person who acts must be the same, and it attaches only to action verbs. In email and announcements, -고자 followed by 연락드렸습니다 or 안내드립니다 is close to a fixed opening formula.",
+      "formTable": [
+        {
+          "when": "Any action verb stem",
+          "add": "-고자",
+          "ex": "문의하다 → 문의하고자 (in order to enquire)"
+        },
+        {
+          "when": "Stating an intention",
+          "add": "V-고자 하다",
+          "ex": "도입하다 → 새 제도를 도입하고자 한다"
+        },
+        {
+          "when": "The opening line of a formal email",
+          "add": "V-고자 연락드렸습니다 / 메일을 드립니다",
+          "ex": "안내드리다 → 일정을 안내드리고자 메일을 드립니다"
+        },
+        {
+          "when": "The spoken form you are replacing",
+          "add": "-(으)려고",
+          "ex": "물어보려고 전화했어요 → 문의하고자 연락드렸습니다"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "행사 일정을 안내드리고자 메일을 드립니다.",
+          "romanization": "haengsa iljeongeul annaedeurigoja meireul deurimnida.",
+          "en": "I am writing to let you know the event schedule.",
+          "note": "The standard opening of a Korean business email."
+        },
+        {
+          "ko": "본 조사는 이용자의 의견을 파악하고자 실시되었다.",
+          "romanization": "bon josaneun iyongjaui uigyeoneul paakagoja silsidoeeotda.",
+          "en": "This survey was conducted in order to understand users' opinions.",
+          "note": "Report register: the purpose of the study stated in one clause."
+        },
+        {
+          "ko": "자세한 내용을 확인하고자 담당 부서에 문의했다.",
+          "romanization": "jasehan naeyongeul hwaginhagoja damdang buseoe munuihaetda.",
+          "en": "I enquired with the department in charge in order to confirm the details.",
+          "note": "One subject throughout — the same person confirms and enquires."
+        },
+        {
+          "ko": "다음 학기부터 새로운 제도를 도입하고자 한다.",
+          "romanization": "daeum hakgibuteo saeroun jedoreul doipagoja handa.",
+          "en": "We intend to introduce a new system from next semester.",
+          "note": "-고자 하다 states the intention itself rather than a purpose clause."
+        }
+      ],
+      "keyPoint": {
+        "label": "One subject, and a real intention",
+        "body": "-고자 carries the same two restrictions as -(으)려고. The intender and the doer have to be the same, and the verb has to be something you can decide to do — so an adjective or an involuntary event cannot take it. When the purpose belongs to somebody or something else, Korean switches to -도록."
+      },
+      "pronunciation": "-고자 behaves like the plain connective -고. After a vowel-final stem nothing changes: 하고자 is [하고자] and 확인하고자 is [화긴하고자]. After an obstruent coda the ㄱ tenses, exactly as in 먹고 [먹꼬] — so 찾고자 is [찯꼬자].",
+      "drill": {
+        "instruction": "State the purpose in the written register with -고자.",
+        "model": "일정을 안내하려고 메일을 써요. → 일정을 안내드리고자 메일을 드립니다.",
+        "items": [
+          "의견을 파악하려고 조사했어요. → 이용자의 의견을 _______ 조사를 실시했다.",
+          "내용을 확인하려고 문의했어요. → 자세한 내용을 _______ 담당 부서에 문의했다.",
+          "새 제도를 도입하려고 해요. → 새로운 제도를 _______ 한다."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "회사가 발전하고자 직원들이 노력했다.",
+        "right": "회사가 발전하도록 직원들이 노력했다.",
+        "explanation": "-고자, like -(으)려고, needs the intender and the doer to be the same. Here the company is what develops but the employees are what act, so the clauses have different subjects. When the goal belongs to someone else, use -도록 instead."
+      }
+    },
+    {
+      "title": "Nominal -(으)ㅁ — how notices end their sentences",
+      "func": "-(으)ㅁ turns a whole clause into a noun. Two places you meet it constantly: as the subject or object of verbs like 확인되다 and 밝혀지다, and as the closing of a terse notice line, where the sentence simply stops on the noun form instead of taking a polite ending.",
+      "formTable": [
+        {
+          "when": "Stem ends in a vowel",
+          "add": "-ㅁ",
+          "ex": "하다 → 함, 바라다 → 바람"
+        },
+        {
+          "when": "Stem ends in a consonant",
+          "add": "-음",
+          "ex": "있다 → 있음, 없다 → 없음"
+        },
+        {
+          "when": "ㄹ-final stem",
+          "add": "-ㅁ (written on the ㄹ)",
+          "ex": "알다 → 앎, 만들다 → 만듦"
+        },
+        {
+          "when": "Closing a notice line",
+          "add": "-(으)ㅁ. / -기 바람.",
+          "ex": "제출하다 → 기한 내 제출하기 바람"
+        },
+        {
+          "when": "-(으)ㅁ vs -기",
+          "add": "-(으)ㅁ = a settled fact · -기 = an activity or a not-yet event",
+          "ex": "참석했음이 확인되었다 / 참석하기가 어렵다"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "본 행사는 우천 시 취소될 수 있음.",
+          "romanization": "bon haengsaneun ucheon si chwisodoel su isseum.",
+          "en": "This event may be cancelled in the event of rain.",
+          "note": "A notice line closes on the noun form — no 습니다, no 요."
+        },
+        {
+          "ko": "신청자는 아래 서류를 기한 내에 제출하기 바람.",
+          "romanization": "sincheongjaneun arae seoryureul gihan naee jechulhagi baram.",
+          "en": "Applicants are asked to submit the documents below by the deadline.",
+          "note": "-기 바람 is the terse written form of -기 바랍니다."
+        },
+        {
+          "ko": "추가 안내는 추후 공지 예정임.",
+          "romanization": "chuga annaeneun chuhu gongji yejeongim.",
+          "en": "Further guidance is scheduled to be announced at a later date.",
+          "note": "이다 becomes 임 — one of the most common notice endings of all."
+        },
+        {
+          "ko": "응답자의 절반이 제도 변경을 모르고 있음이 확인되었다.",
+          "romanization": "eungdapjaui jeolbani jedo byeongyeongeul moreugo isseumi hwagindoeeotda.",
+          "en": "It was confirmed that half of the respondents were unaware of the change.",
+          "note": "확인되다 reports an established fact, so the clause takes -(으)ㅁ, not -기."
+        }
+      ],
+      "keyPoint": {
+        "label": "-(으)ㅁ vs -기 — settled fact or activity",
+        "body": "-(으)ㅁ turns a clause into something already established, confirmed, or observed: 사실임이 밝혀졌다, 참석했음을 확인했다. -기 turns it into an activity or something not yet done: 참석하기가 어렵다, 매일 운동하기. Verbs like 밝혀지다, 확인되다, and 드러나다 take -(으)ㅁ; 바라다, 시작하다, and 어렵다 take -기."
+      },
+      "pronunciation": "있음 is [이씀] and 없음 is [업씀]. 만들다 → 만듦 keeps the ㄻ in writing but is pronounced [만듬], and 앎 is [암].",
+      "drill": {
+        "instruction": "Close each notice line with -(으)ㅁ or -기 바람.",
+        "model": "우천 시 취소될 수 있어요. → 우천 시 취소될 수 있음.",
+        "items": [
+          "추가 안내는 나중에 공지할 예정이에요. → 추가 안내는 추후 공지 _______.",
+          "서류를 기한 내에 제출해 주세요. → 서류를 기한 내에 _______.",
+          "3층은 당분간 이용할 수 없어요. → 3층은 당분간 이용할 수 _______."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "참석하기가 확인되었습니다.",
+        "right": "참석했음이 확인되었습니다.",
+        "explanation": "확인되다, 밝혀지다, and 드러나다 all report an established fact, so the clause in front of them takes -(으)ㅁ. Learners default to -기 because it is the nominalizer they met first. Keep -기 for activities and things not yet done — 참석하기가 어렵다 — and use -(으)ㅁ for what has been confirmed."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "공지",
+      "romanization": "gongji",
+      "english": "notice, announcement",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "공지 내용이 변경되었으므로 최신 글을 다시 확인하기 바람.",
+        "en": "The content of the notice has changed, so please check the most recent post again.",
+        "note": "-(으)므로 for the reason and -기 바람 for the request."
+      },
+      "collocations": [
+        "공지가 올라오다",
+        "공지 예정임",
+        "공지사항"
+      ]
+    },
+    {
+      "hangul": "안내",
+      "romanization": "annae",
+      "english": "guidance, information (for the public)",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "이용 안내는 게시판에 게시되어 있으며 변경 시 다시 공지된다.",
+        "en": "The usage guidance is posted on the board, and it is announced again if it changes.",
+        "note": "-(으)며 joins two facts about one notice."
+      },
+      "collocations": [
+        "안내를 드리다",
+        "이용 안내",
+        "안내 데스크"
+      ]
+    },
+    {
+      "hangul": "신청",
+      "romanization": "sincheong",
+      "english": "application, request",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "신청은 이번 주까지 받으며, 결과는 다음 주에 발표된다.",
+        "en": "Applications are taken until the end of this week, and results are announced next week.",
+        "note": "-(으)며 lists two stages of one process in a single sentence."
+      },
+      "collocations": [
+        "신청을 하다",
+        "신청서",
+        "신청 기간"
+      ]
+    },
+    {
+      "hangul": "접수",
+      "romanization": "jeopsu",
+      "english": "receipt, intake (of applications)",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "접수는 선착순으로 진행되므로 서둘러 신청하기 바랍니다.",
+        "en": "Intake is first come, first served, so please apply promptly.",
+        "note": "-(으)므로 may be followed by a request, which -아서/어서 could not."
+      },
+      "collocations": [
+        "접수를 받다",
+        "접수가 되다",
+        "접수 마감"
+      ]
+    },
+    {
+      "hangul": "제출",
+      "romanization": "jechul",
+      "english": "submission, handing in",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "제출 방법은 두 가지이며, 온라인 제출을 권장함.",
+        "en": "There are two submission methods, and online submission is recommended.",
+        "note": "-(으)며 in the middle and a bare -(으)ㅁ at the close."
+      },
+      "collocations": [
+        "서류를 제출하다",
+        "제출 기한",
+        "방문 제출"
+      ]
+    },
+    {
+      "hangul": "규정",
+      "romanization": "gyujeong",
+      "english": "rule, regulation",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "규정은 개정되었으나 시행일은 아직 정해지지 않았다.",
+        "en": "The rules have been revised, but the date they take effect has not yet been set.",
+        "note": "-(으)나 gives the written contrast inside one sentence."
+      },
+      "collocations": [
+        "규정이 바뀌다",
+        "규정에 따라",
+        "관련 규정"
+      ]
+    },
+    {
+      "hangul": "기한",
+      "romanization": "gihan",
+      "english": "deadline, time limit",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "대출 기한은 기존과 동일하며 연장은 일 회만 가능하다.",
+        "en": "The loan period is the same as before, and one renewal is permitted.",
+        "note": "기존과 동일하다 is stock notice phrasing for 'unchanged'."
+      },
+      "collocations": [
+        "기한이 지나다",
+        "기한 내에",
+        "제출 기한"
+      ]
+    },
+    {
+      "hangul": "변경",
+      "romanization": "byeongyeong",
+      "english": "change, alteration (formal)",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "주말 개관 시간도 함께 변경되며 자세한 내용은 홈페이지에 게시된다.",
+        "en": "The weekend opening hours change as well, and details are posted on the website.",
+        "note": "변경되다 is the formal written cousin of the everyday 바뀌다."
+      },
+      "collocations": [
+        "일정이 변경되다",
+        "변경 사항",
+        "변경 안내"
+      ]
+    },
+    {
+      "hangul": "문의",
+      "romanization": "munui",
+      "english": "enquiry",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "자세한 내용을 확인하고자 하는 이용자는 안내 데스크에 문의하기 바람.",
+        "en": "Users wishing to confirm the details are asked to enquire at the information desk.",
+        "note": "문의하기 바람 closes almost every Korean public notice."
+      },
+      "collocations": [
+        "문의를 하다",
+        "문의 사항",
+        "문의 바람"
+      ]
+    },
+    {
+      "hangul": "서류",
+      "romanization": "seoryu",
+      "english": "documents, paperwork",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "필요한 서류를 모두 갖추었으며 원본은 따로 보관 중이다.",
+        "en": "All the required documents have been assembled, and the originals are kept separately.",
+        "note": "-(으)며 joins two facts about the same paperwork."
+      },
+      "collocations": [
+        "서류를 내다",
+        "서류를 준비하다",
+        "제출 서류"
+      ]
+    },
+    {
+      "hangul": "자료",
+      "romanization": "jaryo",
+      "english": "materials, data",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "자료를 검토하고자 담당자에게 원본을 요청했다.",
+        "en": "I requested the originals from the person in charge in order to review the materials.",
+        "note": "-고자 states the purpose, with one subject across both clauses."
+      },
+      "collocations": [
+        "자료를 검토하다",
+        "자료가 부족하다",
+        "참고 자료"
+      ]
+    },
+    {
+      "hangul": "회의",
+      "romanization": "hoeui",
+      "english": "meeting",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "회의는 이미 끝났으며 결과는 곧 공유될 예정임.",
+        "en": "The meeting has already ended, and the outcome will be shared shortly.",
+        "note": "-(으)며 plus a -(으)ㅁ close: two written layers in one short line."
+      },
+      "collocations": [
+        "회의를 하다",
+        "회의 자료",
+        "회의가 끝나다"
+      ]
+    },
+    {
+      "hangul": "일정",
+      "romanization": "iljeong",
+      "english": "schedule",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "일정이 변경되었으므로 참석자 전원에게 다시 안내해야 한다.",
+        "en": "The schedule has changed, so all attendees must be notified again.",
+        "note": "-(으)므로 supplies the reason a notice needs before an obligation."
+      },
+      "collocations": [
+        "일정을 잡다",
+        "일정이 변경되다",
+        "행사 일정"
+      ]
+    },
+    {
+      "hangul": "장소",
+      "romanization": "jangso",
+      "english": "venue, place",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "장소는 변경되지 않으나 시간은 한 시간 앞당겨진다.",
+        "en": "The venue does not change, but the time is being moved an hour earlier.",
+        "note": "-(으)나 keeps the unchanged part and the changed part in one sentence."
+      },
+      "collocations": [
+        "장소를 정하다",
+        "행사 장소",
+        "장소가 바뀌다"
+      ]
+    },
+    {
+      "hangul": "등록",
+      "romanization": "deungnok",
+      "english": "registration, enrolment",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "등록은 선착순으로 진행되며 정원이 차면 마감된다.",
+        "en": "Registration runs first come, first served, and closes once the quota is filled.",
+        "note": "선착순 is the fixed word for first-come-first-served in notices."
+      },
+      "collocations": [
+        "등록을 하다",
+        "등록 기간",
+        "선착순 등록"
+      ]
+    },
+    {
+      "hangul": "마감",
+      "romanization": "magam",
+      "english": "closing, deadline",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "접수는 오늘 오후 여섯 시에 마감되므로 서둘러 주시기 바랍니다.",
+        "en": "Intake closes at six this afternoon, so please hurry.",
+        "note": "-(으)므로 can be followed by a request, which -아서/어서 could not."
+      },
+      "collocations": [
+        "마감이 되다",
+        "마감 기한",
+        "접수 마감"
+      ]
+    },
+    {
+      "hangul": "연기",
+      "romanization": "yeongi",
+      "english": "postponement",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "행사는 우천으로 연기되었으며 새 일정은 추후 공지 예정임.",
+        "en": "The event was postponed because of rain, and the new schedule will be announced later.",
+        "note": "우천으로 is the written way to say 'due to rain'."
+      },
+      "collocations": [
+        "일정이 연기되다",
+        "무기한 연기",
+        "연기 안내"
+      ]
+    },
+    {
+      "hangul": "첨부",
+      "romanization": "cheombu",
+      "english": "attachment (to a document or email)",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "자세한 내용은 첨부 파일을 참고하기 바람.",
+        "en": "Please refer to the attached file for details.",
+        "note": "참고하기 바람 is the terse notice version of 참고해 주시기 바랍니다."
+      },
+      "collocations": [
+        "파일을 첨부하다",
+        "첨부 파일",
+        "첨부 서류"
+      ]
+    },
+    {
+      "hangul": "시간",
+      "romanization": "sigan",
+      "english": "time, hours",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "평일은 아홉 시에 문을 여나 주말에는 여섯 시에 닫는다.",
+        "en": "On weekdays it opens at nine, but at weekends it closes at six.",
+        "note": "여다 is not a word — 열다 loses its ㄹ before -나, giving 여나."
+      },
+      "collocations": [
+        "운영 시간",
+        "시간이 변경되다",
+        "개관 시간"
+      ]
+    },
+    {
+      "hangul": "참석하다",
+      "romanization": "chamseokada",
+      "english": "to attend",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "전원 참석했음이 확인되었으므로 별도 안내는 생략한다.",
+        "en": "It was confirmed that everyone attended, so separate guidance is omitted.",
+        "note": "확인되다 takes -(으)ㅁ, never -기: 참석했음이 확인되었다."
+      },
+      "collocations": [
+        "회의에 참석하다",
+        "전원 참석",
+        "참석 여부"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Two colleagues are editing a draft notice before it goes out. One of them keeps writing the way she speaks, and the other walks her through the written layer.",
+    "lines": [
+      {
+        "speaker": "유진",
+        "ko": "공지 초안 보셨어요? 문장이 자꾸 끊겨서 좀 딱딱해요.",
+        "romanization": "gongji chotan bosyeosseoyo? munjangi jakku kkeungyeoseo jom ttakttakaeyo.",
+        "en": "Did you see the draft notice? The sentences keep breaking up, so it reads a bit stiff.",
+        "grammarNote": "The problem the chapter solves: too many short sentences, no clause-internal joins."
+      },
+      {
+        "speaker": "지원",
+        "ko": "네. '접수는 온라인으로 합니다. 그리고 서류는 방문 제출도 됩니다.' 이 두 문장을 하나로 합치면 어때요?",
+        "romanization": "ne. 'jeopsuneun onnaineuro hamnida. geurigo seoryuneun bangmun jechuldo doemnida.' i du munjangeul hanaro hapchimyeon eottaeyo?",
+        "en": "Right. \"Applications are taken online. And documents can also be handed in in person.\" How about merging those two?",
+        "grammarNote": "그리고 between sentences is exactly what -(으)며 replaces."
+      },
+      {
+        "speaker": "유진",
+        "ko": "'접수는 온라인으로 하며, 서류는 방문 제출도 가능하다'로 가죠.",
+        "romanization": "'jeopsuneun onnaineuro hamyeo, seoryuneun bangmun jechuldo ganeunghada'ro gajyo.",
+        "en": "Let's go with \"Applications are taken online, and documents may also be handed in in person.\"",
+        "grammarNote": "-(으)며 joins the two clauses under one final ending."
+      },
+      {
+        "speaker": "지원",
+        "ko": "좋네요. 그다음 문장은 '기한이 지났습니다. 그래서 접수가 안 됩니다'인데요.",
+        "romanization": "jonneyo. geudaeum munjangeun 'gihani jinatseumnida. geuraeseo jeopsuga an doemnida'indeyo.",
+        "en": "Nice. The next one is \"The deadline has passed. So we can't accept it.\"",
+        "grammarNote": "그래서 is the spoken reason connector that formal notices avoid."
+      },
+      {
+        "speaker": "유진",
+        "ko": "공지에서는 '기한이 지났으므로 접수되지 않음'이 자연스러워요.",
+        "romanization": "gongjieseoneun 'gihani jinasseumeuro jeopsudoeji aneum'i jayeonseureowoyo.",
+        "en": "In a notice, \"As the deadline has passed, it will not be accepted\" reads more naturally.",
+        "grammarNote": "-(으)므로 for the reason, and a bare -(으)ㅁ to close the line."
+      },
+      {
+        "speaker": "지원",
+        "ko": "아, 끝을 '-음'으로 닫는 거군요. 그럼 마지막 줄은요?",
+        "romanization": "a, kkeuteul '-eum'euro danneun geogunyo. geureom majimak jureunnyo?",
+        "en": "Ah, so you close it on -음. Then what about the last line?",
+        "grammarNote": "-군요 marks the realisation; the written form is being learned, not spoken."
+      },
+      {
+        "speaker": "유진",
+        "ko": "'서류를 기한 내에 제출하기 바람'으로 하면 됩니다. 안내드리고자 쓴 글이니까 너무 차갑지 않게요.",
+        "romanization": "'seoryureul gihan naee jechulhagi baram'euro hamyeon doemnida. annaedeurigoja sseun geurinikka neomu chagapji ankeyo.",
+        "en": "\"Documents are to be submitted by the deadline\" will do. It's written to inform people, so let's keep it from sounding cold.",
+        "grammarNote": "-기 바람 for the request, and -고자 for why the notice exists at all."
+      },
+      {
+        "speaker": "지원",
+        "ko": "알겠습니다. 문장 사이는 '따라서'로, 문장 안은 '-며'랑 '-므로'로 정리할게요.",
+        "romanization": "algetseumnida. munjang saineun 'ttaraseo'ro, munjang aneun '-myeo'rang '-meuro'ro jeongnihalgeyo.",
+        "en": "Got it. Between sentences I'll use 따라서, and inside sentences -며 and -므로.",
+        "grammarNote": "The two-layer summary, stated by the learner rather than the teacher."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "시설 이용 안내",
+    "body": "본 도서관은 다음 달부터 새 운영 시간을 적용하며, 주말 개관 시간도 함께 변경된다. 평일은 오전 아홉 시에 문을 열어 오후 열 시에 닫으나, 주말에는 오후 여섯 시에 닫는다. 열람실은 좌석 예약제로 운영되므로 이용 전에 반드시 좌석을 신청해야 한다. 자료 대출 기한은 기존과 동일하며, 연장은 한 번만 가능함. 공사 중인 삼 층은 당분간 이용할 수 없음. 자세한 내용을 확인하고자 하는 이용자는 안내 데스크에 문의하기 바람.",
+    "bodyTranslation": "From next month this library will apply new opening hours, and the weekend opening times change as well. On weekdays it opens at nine in the morning, but at weekends it closes at six in the evening. The reading room runs on a seat-reservation basis, so you must book a seat before using it. The loan period for materials is unchanged, and one renewal is permitted. The third floor, which is under construction, cannot be used for the time being. Users who wish to confirm the details are asked to enquire at the information desk.",
+    "comprehensionQuestions": [
+      {
+        "question": "평일과 주말의 닫는 시간이 어떻게 달라요?",
+        "answer": "평일은 오후 열 시에 닫고, 주말에는 오후 여섯 시에 닫아요. 안내문에서는 '닫으나'로 두 경우를 대조했어요."
+      },
+      {
+        "question": "열람실을 이용하기 전에 무엇을 해야 해요?",
+        "answer": "좌석 예약제로 운영되므로 먼저 좌석을 신청해야 해요."
+      },
+      {
+        "question": "안내문의 마지막 문장은 왜 '-기 바람'으로 끝나요?",
+        "answer": "공지문에서는 '-기 바랍니다'를 짧게 줄여 '-기 바람'으로 닫기 때문이에요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "공지문이 차가운 이유",
+    "body": "A Korean public notice drops almost every politeness marker: no 요, no 습니다, often no final verb at all — just 취소될 수 있음, 문의 바람, 공지 예정임. To an English speaker this can read as curt or even rude, but it is a register, not an attitude. The terse form signals that the text is institutional rather than personal: nobody in particular is speaking, so nobody's politeness level applies. The moment a real person writes to a real person, the register flips back — which is why an email that opens 안내드리고자 메일을 드립니다 will still close with 감사합니다.",
+    "tip": "Read the closing line to tell the two apart. If it ends in 바람 or 예정임, it is an institutional notice. If it ends in 바랍니다 or 감사합니다, a person is addressing you and you should reply in kind."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Join into one written sentence: '값이 쌉니다. 그리고 품질도 좋습니다.'",
+      "options": [
+        "값이 싸며 품질도 좋다.",
+        "값이 싸으며 품질도 좋다.",
+        "값이 싸므로 품질도 좋다."
+      ],
+      "correct": "값이 싸며 품질도 좋다.",
+      "explanation": "싸다 ends in a vowel, so it takes plain -며. -(으)므로 would claim the low price causes the quality, which is a different meaning."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which is the correct written contrast for '예산은 늘었지만 인력은 그대로예요'?",
+      "options": [
+        "예산은 늘었으나 인력은 그대로이다.",
+        "예산은 늘었나 인력은 그대로이다.",
+        "예산은 늘었으며 인력은 그대로이다."
+      ],
+      "correct": "예산은 늘었으나 인력은 그대로이다.",
+      "explanation": "After the past marker 었 the ending takes 으: 늘었으나. -(으)며 would list the two as parallel facts instead of contrasting them."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the reason ending: '규정이 바뀌었음으로 확인해야 한다.'",
+      "correct": "규정이 바뀌었으므로 확인해야 한다.",
+      "explanation": "The reason ending is -(으)므로, with no 음 in it. -(으)ㅁ으로 is the nominal form plus 으로 and means 'by means of', not 'because'."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence means 'he succeeded BY making an effort' (method, not reason)?",
+      "options": [
+        "그는 노력함으로써 성공했다.",
+        "그는 노력했으므로 성공했다.",
+        "그는 노력하고자 성공했다."
+      ],
+      "correct": "그는 노력함으로써 성공했다.",
+      "explanation": "-(으)ㅁ으로써 states the means. -(으)므로 states the reason, and -고자 states a purpose, which cannot sit in front of a completed result."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "본 조사는 이용자의 의견을 ___ 실시되었다. (파악하다 → written purpose)",
+      "base": "파악하다",
+      "form": "goja",
+      "correct": "파악하고자",
+      "explanation": "-고자 is the written form of -(으)려고 and attaches straight to the verb stem: 파악하고자."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Close the notice line: 본 행사는 우천 시 취소될 수 ____. (있다 → nominal -(으)ㅁ)",
+      "correct": "있음",
+      "explanation": "있다 ends in a consonant, so it takes -음: 있음, pronounced [이씀]. Notice lines close on the noun form with no polite ending."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which one does 확인되다 require in front of it?",
+      "options": [
+        "참석했음이",
+        "참석하기가",
+        "참석하고자"
+      ],
+      "correct": "참석했음이",
+      "explanation": "확인되다, 밝혀지다, and 드러나다 report a settled fact, so they take -(으)ㅁ. -기 is for activities and things not yet done."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'As the deadline has passed, this application will not be accepted.' (Start with 제출 기한이.)",
+      "tokens": [
+        "제출 기한이",
+        "지났으므로",
+        "이번 신청은",
+        "접수되지 않는다"
+      ],
+      "correct": "제출 기한이 지났으므로 이번 신청은 접수되지 않는다",
+      "explanation": "The reason clause comes first and the result second — the standard order for a written rule."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the purpose clause: '회사가 발전하고자 직원들이 노력했다.'",
+      "correct": "회사가 발전하도록 직원들이 노력했다.",
+      "explanation": "-고자 needs the intender and the doer to be the same. Here the company develops but the employees act, so the sentence needs -도록."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "응답자의 절반이 제도 변경을 모르고 있음___ 확인되었다.",
+      "options": [
+        "이",
+        "을",
+        "에"
+      ],
+      "correct": "이",
+      "explanation": "확인되다 is passive, so the nominalised clause is its subject and takes 이/가: 있음이 확인되었다."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which sentence uses -(으)며 correctly for two things happening at once?",
+      "options": [
+        "회의 자료를 보며 다음 일정을 검토했다.",
+        "회의를 마치며 자료를 배포했다.",
+        "회의를 하며 어제 자료를 만들었다."
+      ],
+      "correct": "회의 자료를 보며 다음 일정을 검토했다.",
+      "explanation": "-(으)며 means the two things overlap in time. 마치며 would wrongly mean 'after finishing', and 어제 in the third option puts the two clauses in different timeframes."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "This chapter joins clauses INSIDE a sentence; 따라서 and 그러나 join sentences to each other. Formal prose uses both layers at once.",
+      "-(으)며 lists parallel facts or marks simultaneity — the written -고 and -(으)면서. It never means 'and then'.",
+      "-(으)나 is the written -지만. The 으 appears only after a consonant, and a ㄹ-stem drops its ㄹ: 열다 → 여나.",
+      "-(으)므로 states a written reason and may be followed by a command. -(으)ㅁ으로(써) is a different thing entirely: 'by means of'.",
+      "-고자 is the written -(으)려고 and needs one subject. Notices close on nominal -(으)ㅁ or -기 바람, and 확인되다 takes -(으)ㅁ, never -기."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Write a five-line notice announcing that a room booking has changed: one line joining two facts, one line contrasting old and new, one line giving the reason, one line saying why you are writing, and one line closing with a request.",
+    "hint": "Use -(으)며 for the first, -(으)나 for the contrast, -(으)므로 for the reason, -고자 for the purpose, and -기 바람 for the closing request.",
+    "model": "회의 장소가 변경되며 시작 시간도 삼십 분 앞당겨진다. 장소는 바뀌나 층은 그대로이다. 기존 회의실이 공사 중이므로 이번 주는 사용할 수 없다. 변경 사항을 안내드리고자 공지를 올린다. 참석자는 새 장소를 미리 확인하기 바람.",
+    "modelEn": "The meeting venue is changing and the start time is being moved thirty minutes earlier. The venue changes, but the floor stays the same. The existing meeting room is under construction, so it cannot be used this week. This notice is posted in order to inform you of the changes. Attendees are asked to check the new venue in advance."
+  },
+  "canDo": [
+    "Join two clauses inside one sentence with -(으)며 for parallel facts and simultaneity",
+    "Contrast inside a sentence with -(으)나, adding 으 only after a consonant",
+    "State a written reason with -(으)므로 and keep it apart from -(으)ㅁ으로(써)",
+    "Open a formal email or report with V-고자 while keeping one subject",
+    "Close a notice line with nominal -(으)ㅁ or -기 바람, and choose -(으)ㅁ over -기 after 확인되다"
+  ]
+}

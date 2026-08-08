@@ -606,6 +606,11 @@ export function buildPatternBites(chapter, overrides = {}) {
     const rows = (note.formTable || []).map((r) => ({ when: r.when, add: r.add, ex: r.ex || '' }));
     const cards = [];
 
+    // pairs the audit ruled must never be offered against each other
+    // (군요/네요, and from order 25 the written allomorphs 으나/나, 으므로/므로)
+    const interchangeable = (overrides.interchangeableVariants || []).map((pair) => new Set(pair));
+    const ruledInterchangeable = (a, b) => interchangeable.some((set) => set.has(a) && set.has(b));
+
     let huntPair = [];
     let legacySpare = null;
     const hunted = variants.length && hits.length >= 2;
@@ -635,7 +640,11 @@ export function buildPatternBites(chapter, overrides = {}) {
           && (longer.startsWith(shorter)
             || (/^[았었]/u.test(longer) && longer.endsWith(shorter))))
       );
-      if (spare && optionSet.length >= 2 && !hasOptionalLongerVariant) {
+      // this generator predates order 21, so it kept its own shape guard and
+      // never asked the audit's ruling — the written endings from chapter 66 on
+      // ((으)나, (으)므로) are the same ending twice in a shape it can't see
+      const offersRuledPair = optionSet.some((a) => optionSet.some((b) => a !== b && ruledInterchangeable(a, b)));
+      if (spare && optionSet.length >= 2 && !hasOptionalLongerVariant && !offersRuledPair) {
         legacySpare = spare;
         const cloze = spare.ex.ko.slice(0, spare.match.start) + '___' + spare.ex.ko.slice(spare.match.end);
         cards.push({
@@ -677,10 +686,8 @@ export function buildPatternBites(chapter, overrides = {}) {
     //   - sibling variants only distract SHORT SPACELESS particles; offering
     //     another note's ending against a spaced ending is either garbage or,
     //     worse, occasionally also correct
-    const interchangeable = (overrides.interchangeableVariants || []).map((pair) => new Set(pair));
     const clash = (a, b) =>
-      a === b || a.includes(b) || b.includes(a)
-      || interchangeable.some((set) => set.has(a) && set.has(b));
+      a === b || a.includes(b) || b.includes(a) || ruledInterchangeable(a, b);
     if (hunted) {
       const noteVariants = [...new Set(hits.map((h) => h.match.variant))];
       const tableSuffixes = rows.flatMap((r) => suffixPairs(r.ex).map((p) => p.suffix));

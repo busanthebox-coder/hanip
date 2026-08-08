@@ -1,0 +1,902 @@
+{
+  "id": "chapter-67",
+  "hook": {
+    "situation": "You are the middle of a group chat, a team notice, and three people who all said something you now have to pass on. Nobody actually says the full -다고 해요 out loud — it collapses into -대요, -래요, -냬요, -재요.",
+    "objectives": [
+      "Contract the four reported-speech frames you already know into -대요, -래요, -냬요, and -재요.",
+      "Keep 래요 straight: after a noun it means \"they say it is\", after a verb stem it means \"they told me to\".",
+      "Float hearsay politely with -다던데(요) instead of claiming it as your own."
+    ],
+    "whyItMatters": "You learned -다고 하다, -라고 하다, -냐고 하다, and -자고 하다 as full forms, but almost nobody speaks that way. Every Korean group chat and office corridor runs on the contractions, and a learner who only knows the long forms understands half of what is being relayed."
+  },
+  "grammarNotes": [
+    {
+      "title": "V/A-대요 — the contracted \"they say…\"",
+      "func": "In real speech the full -다고 해요 squeezes down to -대요. What comes BEFORE the ending does not change at all: a present-tense verb still needs its -ㄴ/는-, an adjective still attaches bare, and any past tense still uses -았/었-. Only the tail is shorter.",
+      "formTable": [
+        {
+          "when": "Verb, present, stem with no 받침",
+          "add": "-ㄴ대요",
+          "ex": "가다 → 간대요 (they say he's going)"
+        },
+        {
+          "when": "Verb, present, stem with 받침",
+          "add": "-는대요",
+          "ex": "먹다 → 먹는대요 (they say she eats it)"
+        },
+        {
+          "when": "Adjective, present",
+          "add": "-대요",
+          "ex": "바쁘다 → 바쁘대요 (they say he's busy)"
+        },
+        {
+          "when": "Any past tense",
+          "add": "-았/었대요",
+          "ex": "보다 → 봤대요 (they say she saw it)"
+        },
+        {
+          "when": "Future or plan",
+          "add": "-(으)ㄹ 거래요",
+          "ex": "가다 → 갈 거래요 (they say he'll go)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "지훈이 오늘 회식에 못 온대요.",
+          "romanization": "jihuni oneul hoesige mot ondaeyo.",
+          "en": "Jihoon says he can't make the team dinner today.",
+          "note": "오다 has no 받침, so it takes -ㄴ대요 → 온대요."
+        },
+        {
+          "ko": "요즘 그 카페는 사람이 진짜 많대요.",
+          "romanization": "yojeum geu kapeneun sarami jinjja mantaeyo.",
+          "en": "They say that café is really packed these days.",
+          "note": "많다 is an adjective, so -대요 attaches bare — no -ㄴ/는-."
+        },
+        {
+          "ko": "동생이 어제 시험을 잘 봤대요.",
+          "romanization": "dongsaengi eoje siheomeul jal bwatdaeyo.",
+          "en": "My younger sibling says he did well on yesterday's exam.",
+          "note": "Past tense keeps 았/었 and simply adds -대요."
+        },
+        {
+          "ko": "민서는 다음 달에 부산으로 이사 갈 거래요.",
+          "romanization": "minseoneun daeum dare busaneuro isa gal georaeyo.",
+          "en": "Minseo says she's moving to Busan next month.",
+          "note": "A plan reported second-hand: -(으)ㄹ 거라고 해요 → -(으)ㄹ 거래요."
+        }
+      ],
+      "keyPoint": {
+        "label": "-대요 vs -데요 — one letter, a completely different source",
+        "body": "-대요 passes on somebody else's words: 그 집 맛있대요 means \"they say it's good.\" -데요 reports what YOU saw or experienced yourself and is short for -더라고요: 그 집 맛있데요 means \"I tried it, and it was good.\" Korean adults mix these two up in writing constantly, so lock it in now: 대 = 다른 사람 말, 데 = 내가 본 것."
+      },
+      "pronunciation": "After a ㅎ-final adjective the two sounds fuse: 많대요 is [만태요] and 좋대요 is [조태요]. 봤대요 tenses to [봗때요].",
+      "drill": {
+        "instruction": "Contract each full -다고 해요 sentence into its spoken form.",
+        "model": "친구가 바쁘다고 해요. → 친구가 바쁘대요.",
+        "items": [
+          "지훈이가 못 온다고 해요. → 지훈이가 못 _______.",
+          "그 카페에 사람이 많다고 해요. → 그 카페에 사람이 _______.",
+          "동생이 시험을 잘 봤다고 해요. → 동생이 시험을 잘 _______."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "친구가 매일 운동하대요.",
+        "right": "친구가 매일 운동한대요.",
+        "explanation": "With a present-tense VERB, -대요 keeps the -ㄴ/는- that -다고 하다 always carried: 운동한대요, 먹는대요. Only ADJECTIVES attach bare, as in 바쁘대요. English speakers drop the -ㄴ/는- because English draws no line between \"he exercises\" and \"it's busy.\""
+      }
+    },
+    {
+      "title": "N(이)래요 vs V-(으)래요 — one shape, two jobs",
+      "func": "래요 is the contraction of two different things. After a NOUN it comes from -(이)라고 해요 and means \"they say it IS N.\" After a VERB STEM it comes from -(으)라고 해요 and reports a command: \"they told (me) to V.\" Nothing but the word in front of it tells them apart, so Korean listeners rely entirely on that.",
+      "formTable": [
+        {
+          "when": "Noun with no 받침",
+          "add": "N래요",
+          "ex": "의사 → 저분이 의사래요 (they say she's a doctor)"
+        },
+        {
+          "when": "Noun with 받침",
+          "add": "N이래요",
+          "ex": "학생 → 옆집 사람이 학생이래요"
+        },
+        {
+          "when": "Verb stem with no 받침 — reported command",
+          "add": "V-래요",
+          "ex": "가다 → 지금 가래요 (they're telling me to go now)"
+        },
+        {
+          "when": "Verb stem with 받침 — reported command",
+          "add": "V-으래요",
+          "ex": "먹다 → 약을 먹으래요 (they say to take the medicine)"
+        },
+        {
+          "when": "Negative command",
+          "add": "V-지 말래요",
+          "ex": "가다 → 오늘은 가지 말래요 (they say not to go today)"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "저분이 이 식당 사장님이래요.",
+          "romanization": "jeobuni i sikdang sajangnimiraeyo.",
+          "en": "They say that person is the owner of this restaurant.",
+          "note": "A noun with 받침, so 이래요 — never 사장님대요."
+        },
+        {
+          "ko": "의사 선생님이 이 약을 하루에 두 번 먹으래요.",
+          "romanization": "uisa seonsaengnimi i yageul harue du beon meogeuraeyo.",
+          "en": "The doctor says to take this medicine twice a day.",
+          "note": "먹다 has a 받침, so the reported command is 먹으래요."
+        },
+        {
+          "ko": "엄마가 늦으면 꼭 연락하래요.",
+          "romanization": "eommaga neujeumyeon kkok yeollakaraeyo.",
+          "en": "Mom says to be sure to call if I'm going to be late.",
+          "note": "하다 verbs simply become 하래요; the person giving the order is the subject."
+        },
+        {
+          "ko": "팀장님이 오늘은 야근하지 말래요.",
+          "romanization": "timjangnimi oneureun yageunhaji mallaeyo.",
+          "en": "The team lead says not to work late today.",
+          "note": "A negative instruction goes through -지 말라고 해요 → -지 말래요."
+        }
+      ],
+      "keyPoint": {
+        "label": "래요 vs ㄹ래요 — whose idea is it?",
+        "body": "저는 갈래요 means \"I'll go / I want to go\" — your own will, and it takes a first-person subject. 가래요 means \"they're telling me to go\" — someone else's instruction. One ㄹ flips the sentence from your decision to theirs. Quick test: if you could put 저는 in front of it, you need 갈래요."
+      },
+      "pronunciation": "말래요 doubles the ㄹ as [말래요]. 먹으래요 links straight through as [머그래요], and 연락하래요 is [열라카래요].",
+      "drill": {
+        "instruction": "Turn each full form into its 래요 contraction.",
+        "model": "엄마가 연락하라고 해요. → 엄마가 연락하래요.",
+        "items": [
+          "저분이 사장님이라고 해요. → 저분이 _______.",
+          "의사 선생님이 약을 먹으라고 해요. → 의사 선생님이 약을 _______.",
+          "팀장님이 야근하지 말라고 해요. → 팀장님이 야근하지 _______."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "친구가 의사대요.",
+        "right": "친구가 의사래요.",
+        "explanation": "A noun never takes -대요. The full form behind it is 의사라고 해요, not 의사다고 해요, so the contraction has to be 의사래요 — or 학생이래요 after a 받침. Learners default to -대요 because it is the contraction they met first."
+      }
+    },
+    {
+      "title": "V/A-냬요 — passing on someone else's question",
+      "func": "-냬요 is -냐고 해요 squeezed down. Use it when you are relaying a question somebody asked, usually to the person who can actually answer it. The question word — 뭐, 언제, 어디, 왜 — stays exactly where it stood in the original question, and the polite 요 of that question disappears.",
+      "formTable": [
+        {
+          "when": "Verb or adjective, present",
+          "add": "-냬요",
+          "ex": "가다 → 어디 가냬요 (they're asking where you're going)"
+        },
+        {
+          "when": "Any past tense",
+          "add": "-았/었냬요",
+          "ex": "오다 → 언제 왔냬요 (they're asking when you came)"
+        },
+        {
+          "when": "Noun",
+          "add": "N(이)냬요",
+          "ex": "학생 → 학생이냬요 (they're asking if you're a student)"
+        },
+        {
+          "when": "Full form, for writing or careful speech",
+          "add": "-냐고 해요 / -냐고 물어봐요",
+          "ex": "가다 → 어디 가냐고 물어봐요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "팀장님이 보고서 언제 끝나냬요.",
+          "romanization": "timjangnimi bogoseo eonje kkeunnanaeyo.",
+          "en": "The team lead is asking when the report will be done.",
+          "note": "언제 keeps its original position; only the ending changes."
+        },
+        {
+          "ko": "친구가 이번 주말에 시간 있냬요.",
+          "romanization": "chinguga ibeon jumare sigan innaeyo.",
+          "en": "My friend is asking whether you're free this weekend.",
+          "note": "A yes/no question needs no question word — 있냬요 carries it."
+        },
+        {
+          "ko": "손님이 이 자리 앉아도 되냬요.",
+          "romanization": "sonnimi i jari anjado doenaeyo.",
+          "en": "A customer is asking whether it's okay to sit here.",
+          "note": "-아/어도 돼요? becomes -아/어도 되냬요 when relayed."
+        },
+        {
+          "ko": "어머니가 밥은 먹었냬요.",
+          "romanization": "eomeoniga babeun meogeonnaeyo.",
+          "en": "Mom is asking whether you've eaten.",
+          "note": "The past stays inside: 먹었냐고 해요 → 먹었냬요."
+        }
+      ],
+      "keyPoint": {
+        "label": "냬요 is for somebody else's question, never your own",
+        "body": "If you want to ask the question yourself, just ask it: 언제 끝나요? Use -냬요 only when you are the middleman — A asked, and you are handing the question to B. That is why almost every -냬요 sentence names the asker up front: 팀장님이…, 친구가…, 손님이…"
+      },
+      "pronunciation": "The ㄴ of 냬 nasalizes whatever closes the syllable before it: 있냬요 is [인내요], 먹었냬요 is [머건내요], and 끝나냬요 is [끈나내요].",
+      "drill": {
+        "instruction": "Relay each question with -냬요, naming the person who asked.",
+        "model": "친구: '주말에 시간 있어요?' → 친구가 주말에 시간 있냬요.",
+        "items": [
+          "팀장님: '보고서 언제 끝나요?' → 팀장님이 보고서 언제 _______.",
+          "손님: '여기 앉아도 돼요?' → 손님이 여기 앉아도 _______.",
+          "어머니: '밥 먹었어?' → 어머니가 밥 _______."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "팀장님이 보고서 언제 끝나요라고 해요.",
+        "right": "팀장님이 보고서 언제 끝나냬요.",
+        "explanation": "Learners quote the question word for word, the way English uses quotation marks: 'He asked, when is it done?' Korean reported questions strip the polite ending first and run through -냐고 해요, which contracts to -냬요. The 요 of the original question always disappears."
+      }
+    },
+    {
+      "title": "V-재요 — passing on someone's suggestion",
+      "func": "-재요 is -자고 해요 contracted: somebody proposed doing something together, and you are relaying the proposal. Because 자 is the \"let's\" ending, -재요 can only ever attach to an action verb — never to an adjective, and never to a noun.",
+      "formTable": [
+        {
+          "when": "Any verb stem",
+          "add": "-재요",
+          "ex": "가다 → 같이 가재요 (they say let's go together)"
+        },
+        {
+          "when": "Verb stem with 받침 — the ending does not change",
+          "add": "-재요",
+          "ex": "먹다 → 점심 먹재요 (they say let's have lunch)"
+        },
+        {
+          "when": "Negative proposal",
+          "add": "V-지 말재요",
+          "ex": "가다 → 오늘은 가지 말재요 (they say let's not go today)"
+        },
+        {
+          "when": "Full form, for writing or careful speech",
+          "add": "V-자고 해요",
+          "ex": "가다 → 같이 가자고 해요"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "친구들이 이번 주말에 등산 가재요.",
+          "romanization": "chingudeuri ibeon jumare deungsan gajaeyo.",
+          "en": "My friends say let's go hiking this weekend.",
+          "note": "The proposers are the subject, and you are only the messenger."
+        },
+        {
+          "ko": "동기들이 점심은 구내식당에서 먹재요.",
+          "romanization": "donggideuri jeomsimeun gunaesikdangeseo meokjaeyo.",
+          "en": "My colleagues say let's eat lunch in the cafeteria.",
+          "note": "먹자고 해요 → 먹재요, pronounced [먹째요]."
+        },
+        {
+          "ko": "지훈이가 오늘은 술은 마시지 말재요.",
+          "romanization": "jihuniga oneureun sureun masiji maljaeyo.",
+          "en": "Jihoon says let's not drink tonight.",
+          "note": "The negative goes inside: -지 말자고 해요 → -지 말재요."
+        },
+        {
+          "ko": "팀에서 회식 날짜를 다음 주로 미루재요.",
+          "romanization": "timeseo hoesik naljjareul daeum juro mirujaeyo.",
+          "en": "The team says let's push the dinner back to next week.",
+          "note": "팀에서 marks a group acting as one, which is common with relayed proposals."
+        }
+      ],
+      "keyPoint": {
+        "label": "The four contractions in one line",
+        "body": "-대요 for a statement (간대요 — they say he's going), -래요 for a command or a noun (가래요 — they say to go / 학생이래요 — they say he's a student), -냬요 for a question (가냬요 — they're asking if you're going), -재요 for a proposal (가재요 — they say let's go). They are the same four sentence types you already learned with -다고/-라고/-냐고/-자고 하다, just squeezed."
+      },
+      "pronunciation": "After a ㄱ or ㅂ final the ㅈ of 재 tenses: 먹재요 is [먹째요] and 입재요 is [입째요]. A ㄹ-final stem does not tense it — 말재요 stays [말재요].",
+      "drill": {
+        "instruction": "Relay each suggestion with -재요.",
+        "model": "친구: '같이 등산 가자.' → 친구가 같이 등산 가재요.",
+        "items": [
+          "동기: '점심은 구내식당에서 먹자.' → 동기가 점심은 구내식당에서 _______.",
+          "지훈: '오늘은 술 마시지 말자.' → 지훈이가 오늘은 술 마시지 _______.",
+          "팀장님: '회식을 다음 주로 미루자.' → 팀장님이 회식을 다음 주로 _______."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "친구가 주말에 한가하재요.",
+        "right": "친구가 주말에 한가하대요.",
+        "explanation": "-재요 comes from -자고, the \"let's\" ending, so it only attaches to an action verb. 한가하다 is an adjective — you cannot propose \"let's be free\" — so a statement about it takes -대요. Rule of thumb: if the English is \"let's…\", use -재요; if it is \"they say it is…\", use -대요."
+      }
+    },
+    {
+      "title": "-다던데(요) — hearsay you drop in as background",
+      "func": "-다던데요 is -다고 하던데요: you heard it somewhere, you are passing it on, and the 던데요 tail leaves room for the other person to react. It turns hearsay into background information rather than a flat claim, which is exactly why Koreans use it to suggest things without pushing. The casual version is -다더라.",
+      "formTable": [
+        {
+          "when": "Verb, present",
+          "add": "-ㄴ/는다던데요",
+          "ex": "오다 → 내일부터 비가 온다던데요"
+        },
+        {
+          "when": "Adjective, present",
+          "add": "-다던데요",
+          "ex": "맛있다 → 거기 맛있다던데요"
+        },
+        {
+          "when": "Any past tense",
+          "add": "-았/었다던데요",
+          "ex": "닫다 → 벌써 문을 닫았다던데요"
+        },
+        {
+          "when": "Noun",
+          "add": "N(이)라던데요",
+          "ex": "맛집 → 거기가 유명한 맛집이라던데요"
+        },
+        {
+          "when": "Casual (반말)",
+          "add": "-다더라",
+          "ex": "편하다 → 그 앱이 제일 편하다더라"
+        }
+      ],
+      "examples": [
+        {
+          "ko": "그 집 칼국수가 그렇게 맛있다던데요. 한번 가 볼까요?",
+          "romanization": "geu jip kalguksuga geureoke masitdadeondeyo. hanbeon ga bolkkayo?",
+          "en": "I hear the kalguksu there is really something. Shall we try it?",
+          "note": "The classic indirect suggestion: state the hearsay, then leave the decision open."
+        },
+        {
+          "ko": "내일부터 비가 온다던데요. 우산 챙기세요.",
+          "romanization": "naeilbuteo biga ondadeondeyo. usan chaenggiseyo.",
+          "en": "I hear it's going to rain from tomorrow. Bring an umbrella.",
+          "note": "A present-tense verb keeps its -ㄴ/는- here too: 온다던데요."
+        },
+        {
+          "ko": "그 카페 지난달에 문 닫았다던데요.",
+          "romanization": "geu kape jinandare mun dadatdadeondeyo.",
+          "en": "I heard that café closed last month.",
+          "note": "Past hearsay: 닫았다고 하던데요 → 닫았다던데요."
+        },
+        {
+          "ko": "요즘 그 앱이 제일 편하다더라. 너도 한번 써 봐.",
+          "romanization": "yojeum geu aebi jeil pyeonhadadeora. neodo hanbeon sseo bwa.",
+          "en": "I hear that app is the handiest these days. Give it a try.",
+          "note": "-다더라 is the 반말 version, used with close friends."
+        }
+      ],
+      "keyPoint": {
+        "label": "Why Koreans suggest things with 던데요",
+        "body": "-다던데요 lets you float an idea without owning it. 거기 맛있다던데요 says \"apparently it's good\" and hands the decision to the listener, whereas 거기 맛있어요 is your own claim and 거기 가요 is a direct proposal. It is the natural move when you are the junior person in the room and do not want to decide for everyone."
+      },
+      "pronunciation": "던데요 is [던데요]. After a past 았/었 the ㄷ tenses: 닫았다던데요 is [다닫따던데요] and 맛있다던데요 is [마싣따던데요].",
+      "drill": {
+        "instruction": "Rewrite each flat fact as softened hearsay with -다던데요.",
+        "model": "거기 맛있어요. → 거기 맛있다던데요.",
+        "items": [
+          "내일부터 비가 와요. → 내일부터 비가 _______.",
+          "그 카페가 문을 닫았어요. → 그 카페가 문을 _______.",
+          "거기가 유명한 맛집이에요. → 거기가 유명한 _______."
+        ]
+      },
+      "englishSpeakerPitfall": {
+        "wrong": "제가 어제 거기 갔다던데요.",
+        "right": "제가 어제 거기 갔는데요.",
+        "explanation": "-다던데요 says you heard it from somebody else, so it cannot report your own first-hand experience. Learners reach for it as a general softener because the 던데요 tail sounds friendly. For something you did yourself, use plain -는데요."
+      }
+    }
+  ],
+  "extendedVocabulary": [
+    {
+      "hangul": "전하다",
+      "romanization": "jeonhada",
+      "english": "to pass on, to convey (a message)",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "팀장님이 회의 시간이 바뀌었다고 팀원들한테 전하래요.",
+        "en": "The team lead says to tell the team members that the meeting time has changed.",
+        "note": "전하다 is the verb for being the messenger, which is exactly what these endings do."
+      },
+      "collocations": [
+        "말을 전하다",
+        "전해 주세요",
+        "소식을 전하다"
+      ]
+    },
+    {
+      "hangul": "소식",
+      "romanization": "sosik",
+      "english": "news, word (from someone)",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "지훈이 소식 들었어요? 다음 달에 부산으로 간대요.",
+        "en": "Did you hear about Jihoon? They say he's going to Busan next month.",
+        "note": "소식 + -대요 is the standard shape for relaying news about a person."
+      },
+      "collocations": [
+        "소식을 듣다",
+        "좋은 소식",
+        "소식이 없다"
+      ]
+    },
+    {
+      "hangul": "공지",
+      "romanization": "gongji",
+      "english": "notice, announcement",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "공지 확인하셨어요? 마감이 하루 미뤄졌대요.",
+        "en": "Did you check the notice? They say the deadline got pushed back a day.",
+        "note": "Notices are almost always relayed with -대요 rather than claimed directly."
+      },
+      "collocations": [
+        "공지가 올라오다",
+        "공지를 확인하다",
+        "공지사항"
+      ]
+    },
+    {
+      "hangul": "연락",
+      "romanization": "yeollak",
+      "english": "contact, getting in touch",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "엄마가 도착하면 꼭 연락하래요.",
+        "en": "Mom says to be sure to get in touch when I arrive.",
+        "note": "연락하다 is one of the most common verbs inside a reported command."
+      },
+      "collocations": [
+        "연락하다",
+        "연락이 오다",
+        "연락 주세요"
+      ]
+    },
+    {
+      "hangul": "회식",
+      "romanization": "hoesik",
+      "english": "team dinner, company get-together",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "동기들이 회식 끝나고 이차 가재요.",
+        "en": "My colleagues say let's go for a second round after the team dinner.",
+        "note": "회식 plans travel through the group chat, so -재요 fits naturally."
+      },
+      "collocations": [
+        "회식이 있다",
+        "회식 자리",
+        "회식 날짜"
+      ]
+    },
+    {
+      "hangul": "야근",
+      "romanization": "yageun",
+      "english": "working late, overtime",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "요즘 그 팀은 매일 야근한대요.",
+        "en": "They say that team works late every single day.",
+        "note": "야근하다 is a verb, so the present tense needs -ㄴ대요."
+      },
+      "collocations": [
+        "야근하다",
+        "야근이 많다",
+        "야근 수당"
+      ]
+    },
+    {
+      "hangul": "챙기다",
+      "romanization": "chaenggida",
+      "english": "to take along, to look after",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "선배가 신분증 꼭 챙기래요.",
+        "en": "My senior says to be sure to bring your ID.",
+        "note": "Reminders from a senior almost always arrive as -래요."
+      },
+      "collocations": [
+        "짐을 챙기다",
+        "우산을 챙기다",
+        "밥 챙겨 먹다"
+      ]
+    },
+    {
+      "hangul": "확인하다",
+      "romanization": "hwaginhada",
+      "english": "to check, to confirm",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "지훈이가 예매 시간 다시 확인해 보래요.",
+        "en": "Jihoon says to double-check the booking time.",
+        "note": "-아/어 보라고 해요 contracts to -아/어 보래요."
+      },
+      "collocations": [
+        "다시 확인하다",
+        "확인해 주세요",
+        "확인 부탁드립니다"
+      ]
+    },
+    {
+      "hangul": "물어보다",
+      "romanization": "mureoboda",
+      "english": "to ask (a question)",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "손님이 주차가 되냬요. 제가 물어볼까요?",
+        "en": "A customer is asking whether there's parking. Shall I go ask?",
+        "note": "-냬요 already means \"is asking\", so you rarely need 물어보다 twice in one sentence."
+      },
+      "collocations": [
+        "한번 물어보다",
+        "물어봐 주세요",
+        "물어볼 게 있어요"
+      ]
+    },
+    {
+      "hangul": "대답하다",
+      "romanization": "daedapada",
+      "english": "to answer, to reply",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "친구가 언제 오냬요. 뭐라고 대답할까요?",
+        "en": "My friend is asking when you're coming. What should I tell them?",
+        "note": "The natural pair for -냬요: relay the question, then decide the answer."
+      },
+      "collocations": [
+        "바로 대답하다",
+        "대답이 없다",
+        "뭐라고 대답해요?"
+      ]
+    },
+    {
+      "hangul": "바쁘다",
+      "romanization": "bappeuda",
+      "english": "to be busy",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "지훈이는 요즘 프로젝트 때문에 진짜 바쁘대요.",
+        "en": "They say Jihoon is really busy these days because of a project.",
+        "note": "An adjective, so -대요 attaches bare: 바쁘대요, never 바쁜대요."
+      },
+      "collocations": [
+        "요즘 바쁘다",
+        "바쁘시겠어요",
+        "바빠서 못 가다"
+      ]
+    },
+    {
+      "hangul": "마감",
+      "romanization": "magam",
+      "english": "deadline, closing",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "마감이 이번 주 금요일이래요.",
+        "en": "They say the deadline is this Friday.",
+        "note": "A noun, so the contraction is 이래요 — the 래요 that comes from -이라고 해요."
+      },
+      "collocations": [
+        "마감이 지나다",
+        "마감을 미루다",
+        "마감 기한"
+      ]
+    },
+    {
+      "hangul": "발표",
+      "romanization": "balpyo",
+      "english": "presentation; announcement",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "교수님이 발표를 다음 주로 미루래요.",
+        "en": "The professor says to push the presentation back to next week.",
+        "note": "An instruction from above arrives as -래요, not -재요."
+      },
+      "collocations": [
+        "발표를 하다",
+        "발표 순서",
+        "발표 자료"
+      ]
+    },
+    {
+      "hangul": "세일",
+      "romanization": "seil",
+      "english": "sale (discount period)",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "그 브랜드가 다음 주부터 세일한다던데요.",
+        "en": "I hear that brand starts a sale next week.",
+        "note": "Shopping tips are usually floated as hearsay with -다던데요."
+      },
+      "collocations": [
+        "세일하다",
+        "세일 기간",
+        "세일 중이다"
+      ]
+    },
+    {
+      "hangul": "소문",
+      "romanization": "somun",
+      "english": "rumour, word going around",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "소문으로는 그 가게가 다음 달에 문 닫는대요.",
+        "en": "Word going around is that the shop is closing next month.",
+        "note": "소문 and the -대요 family belong together: neither claims to be first-hand."
+      },
+      "collocations": [
+        "소문이 나다",
+        "소문을 듣다",
+        "소문에 따르면"
+      ]
+    },
+    {
+      "hangul": "미루다",
+      "romanization": "miruda",
+      "english": "to postpone, to push back",
+      "partOfSpeech": "verb",
+      "exampleSentence": {
+        "ko": "지훈이가 약속을 이번 주말로 미루재요.",
+        "en": "Jihoon says let's push our plans to this weekend.",
+        "note": "A proposal to postpone, so -재요; an order to postpone would be 미루래요."
+      },
+      "collocations": [
+        "일정을 미루다",
+        "약속을 미루다",
+        "다음으로 미루다"
+      ]
+    },
+    {
+      "hangul": "한가하다",
+      "romanization": "hangahada",
+      "english": "to be free, to have time on one's hands",
+      "partOfSpeech": "adjective",
+      "exampleSentence": {
+        "ko": "친구가 이번 주말에는 한가하대요.",
+        "en": "My friend says she's free this weekend.",
+        "note": "An adjective, so 한가하대요 — 한가하재요 would be nonsense."
+      },
+      "collocations": [
+        "요즘 한가하다",
+        "한가한 시간",
+        "한가할 때"
+      ]
+    },
+    {
+      "hangul": "맛집",
+      "romanization": "matjip",
+      "english": "a really good place to eat",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "회사 앞에 새로 생긴 데가 진짜 맛집이라던데요.",
+        "en": "I hear the new place in front of the office is a real find.",
+        "note": "A noun, so hearsay about it takes 이라던데요."
+      },
+      "collocations": [
+        "맛집을 찾다",
+        "동네 맛집",
+        "숨은 맛집"
+      ]
+    },
+    {
+      "hangul": "예매",
+      "romanization": "yemae",
+      "english": "advance booking (tickets)",
+      "partOfSpeech": "noun",
+      "exampleSentence": {
+        "ko": "지훈이가 예매는 자기가 한대요.",
+        "en": "Jihoon says he'll handle the booking himself.",
+        "note": "자기가 marks that the reported speaker means himself, not you."
+      },
+      "collocations": [
+        "예매하다",
+        "예매가 시작되다",
+        "예매 사이트"
+      ]
+    }
+  ],
+  "extendedDialogue": {
+    "setting": "Two colleagues at their desks. One of them missed the team lead's announcement and the group chat, so everything has to be relayed second-hand.",
+    "lines": [
+      {
+        "speaker": "유진",
+        "ko": "지원 씨, 팀장님이 방금 뭐라고 하셨어요?",
+        "romanization": "jiwon ssi, timjangnimi banggeum mworago hasyeosseoyo?",
+        "en": "Jiwon, what did the team lead just say?",
+        "grammarNote": "The setup question; everything after this is relayed speech."
+      },
+      {
+        "speaker": "지원",
+        "ko": "오후 회의가 세 시로 미뤄졌대요. 그리고 자료는 미리 올려 놓으래요.",
+        "romanization": "ohu hoeuiga se siro mirwojyeotdaeyo. geurigo jaryoneun miri ollyeo noeuraeyo.",
+        "en": "She says the afternoon meeting got pushed to three. And she says to upload the materials in advance.",
+        "grammarNote": "One statement (-대요) and one instruction (-래요) in a single breath."
+      },
+      {
+        "speaker": "유진",
+        "ko": "네. 아, 그리고 지훈 씨가 저한테 회의 자료 다 됐냬요.",
+        "romanization": "ne. a, geurigo jihun ssiga jeohante hoeui jaryo da dwaennaeyo.",
+        "en": "Okay. Oh, and Jihoon was asking me whether the meeting materials are ready.",
+        "grammarNote": "됐냬요 relays his question; 유진 is only the middleman."
+      },
+      {
+        "speaker": "지원",
+        "ko": "거의 다 됐다고 전해 주세요. 아, 그리고 동기들이 오늘 저녁에 같이 밥 먹재요.",
+        "romanization": "geoui da dwaetdago jeonhae juseyo. a, geurigo donggideuri oneul jeonyeoge gachi bap meokjaeyo.",
+        "en": "Tell him it's almost done. Oh, and the others say let's have dinner together tonight.",
+        "grammarNote": "먹재요 = 먹자고 해요: a proposal being passed along."
+      },
+      {
+        "speaker": "유진",
+        "ko": "오늘요? 저는 야근할 것 같은데요. 어디서 먹재요?",
+        "romanization": "oneuryo? jeoneun yageunhal geot gateundeyo. eodiseo meokjaeyo?",
+        "en": "Tonight? I think I'll be working late. Where do they say we're eating?",
+        "grammarNote": "You can question a relayed proposal by simply adding a question word."
+      },
+      {
+        "speaker": "지원",
+        "ko": "회사 앞에 새로 생긴 데래요. 거기가 요즘 진짜 맛집이라던데요.",
+        "romanization": "hoesa ape saero saenggin deraeyo. geogiga yojeum jinjja matjibiradeondeyo.",
+        "en": "They say it's the new place in front of the office. I hear it's really good these days.",
+        "grammarNote": "데래요 is the noun 래요; 맛집이라던데요 softens the recommendation into hearsay."
+      },
+      {
+        "speaker": "유진",
+        "ko": "그럼 가야죠. 몇 시에 모이재요?",
+        "romanization": "geureom gayajyo. myeot sie moijaeyo?",
+        "en": "Then I have to go. What time do they say we're meeting?",
+        "grammarNote": "모이재요 keeps the proposal frame while asking for a detail."
+      },
+      {
+        "speaker": "지원",
+        "ko": "일곱 시래요. 늦으면 먼저 시작한다던데요.",
+        "romanization": "ilgop siraeyo. neujeumyeon meonjeo sijakandadeondeyo.",
+        "en": "They say seven. And apparently they'll start without us if we're late.",
+        "grammarNote": "시래요 is again the noun 래요; 시작한다던데요 is a gentle warning, not a claim."
+      }
+    ]
+  },
+  "readingText": {
+    "title": "전하는 사람의 말",
+    "body": "한국 사람들은 하루에도 몇 번씩 다른 사람의 말을 옮긴다. 그럴 때 -다고 해요를 그대로 말하는 경우는 거의 없다. 말이 빨라지면서 -대요, -래요, -냬요, -재요로 줄어들기 때문이다. 네 가지는 원래 문장의 종류를 그대로 따라간다. 설명하는 말은 -대요, 시키는 말은 -래요, 묻는 말은 -냬요, 같이 하자는 말은 -재요가 된다. 명사 뒤에는 -이래요를 쓴다는 것도 잊으면 안 된다. 여기에 -다던데요까지 익히면, 들은 이야기를 조심스럽게 꺼내면서 판단은 상대방에게 맡길 수 있다.",
+    "bodyTranslation": "Koreans relay other people's words several times a day. When they do, they almost never say the full -다고 해요. As speech speeds up it shrinks into -대요, -래요, -냬요, and -재요. All four follow the type of the original sentence exactly: a statement becomes -대요, an instruction becomes -래요, a question becomes -냬요, and a \"let's\" becomes -재요. You also must not forget that after a noun you use -이래요. Add -다던데요 on top of that, and you can raise something you heard carefully while leaving the judgement to the other person.",
+    "comprehensionQuestions": [
+      {
+        "question": "설명하는 말을 옮길 때는 어떤 어미를 써요?",
+        "answer": "-대요를 써요. 예를 들어 '간다고 해요'는 '간대요'가 돼요."
+      },
+      {
+        "question": "명사 뒤에는 무엇을 써요?",
+        "answer": "-이래요를 써요. '학생이라고 해요'가 '학생이래요'가 돼요."
+      },
+      {
+        "question": "-다던데요는 왜 써요?",
+        "answer": "들은 이야기를 조심스럽게 꺼내고 판단은 상대방에게 맡기려고 써요."
+      }
+    ]
+  },
+  "culturalNote": {
+    "title": "말을 옮길 때 책임을 나누는 법",
+    "body": "Korean conversation runs on relayed information: group chats, team notices, what a senior said in a meeting. Marking something as somebody else's words with -대요 or -래요 is not only grammar — it distributes responsibility. 세 시에 시작해요 sounds like your decision, while 세 시에 시작한대요 makes clear you are the messenger. Junior staff lean on this constantly. The flip side is real too: use -대요 for something you actually decided yourself and you can sound evasive, as though you are hiding behind someone senior.",
+    "tip": "When you pass on an instruction, name the source: 팀장님이 …래요. Without the source, a bare -래요 can land as though you are the one giving the order."
+  },
+  "inlineExercises": [
+    {
+      "type": "multipleChoice",
+      "prompt": "Contract this into everyday speech: '친구가 매일 운동한다고 해요.'",
+      "options": [
+        "친구가 매일 운동한대요.",
+        "친구가 매일 운동하대요.",
+        "친구가 매일 운동이래요."
+      ],
+      "correct": "친구가 매일 운동한대요.",
+      "explanation": "A present-tense verb keeps the -ㄴ/는- it had in -다고 하다: 운동한다고 해요 → 운동한대요. Bare -대요 belongs to adjectives only."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "'They say she's a student' — which contraction is right?",
+      "options": [
+        "학생이래요.",
+        "학생이대요.",
+        "학생인대요."
+      ],
+      "correct": "학생이래요.",
+      "explanation": "Nouns run through -(이)라고 해요, so the contraction is -(이)래요. A noun never takes -대요."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "Which one means 'they told me to go' (not 'I want to go')?",
+      "options": [
+        "가래요",
+        "갈래요",
+        "가재요"
+      ],
+      "correct": "가래요",
+      "explanation": "가래요 is 가라고 해요, somebody else's instruction. 갈래요 is your own will ('I'll go'). 가재요 is 가자고 해요 ('they say let's go')."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "The team lead asked '언제 끝나요?'. Relay it.",
+      "options": [
+        "팀장님이 언제 끝나냬요.",
+        "팀장님이 언제 끝난대요.",
+        "팀장님이 언제 끝나재요."
+      ],
+      "correct": "팀장님이 언제 끝나냬요.",
+      "explanation": "A reported question uses -냐고 해요 → -냬요. -ㄴ대요 would report a statement, and -재요 a proposal."
+    },
+    {
+      "type": "multipleChoice",
+      "prompt": "A colleague said '같이 점심 먹자.' Relay it.",
+      "options": [
+        "같이 점심 먹재요.",
+        "같이 점심 먹는대요.",
+        "같이 점심 먹으래요."
+      ],
+      "correct": "같이 점심 먹재요.",
+      "explanation": "-자고 해요 contracts to -재요 for a proposal. -는대요 would report a statement and -으래요 an order."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix the ending: '친구가 주말에 한가하재요.'",
+      "correct": "친구가 주말에 한가하대요.",
+      "explanation": "-재요 comes from the 'let's' ending, so it only attaches to action verbs. 한가하다 is an adjective, so a statement about it takes -대요."
+    },
+    {
+      "type": "conjugate",
+      "prompt": "동생이 어제 시험을 잘 ___. (보다 → contracted report, past)",
+      "base": "보다",
+      "form": "reportedPastContracted",
+      "correct": "봤대요",
+      "explanation": "봤다고 해요 contracts to 봤대요. Past tense keeps -았/었- and simply adds -대요."
+    },
+    {
+      "type": "orderWords",
+      "prompt": "Build: 'The doctor says to take this medicine twice a day.' (Start with 의사 선생님이.)",
+      "tokens": [
+        "의사 선생님이",
+        "이 약을 하루에 두 번",
+        "먹으래요"
+      ],
+      "correct": "의사 선생님이 이 약을 하루에 두 번 먹으래요",
+      "explanation": "A reported command from a person: 먹으라고 해요 → 먹으래요, with the doctor as the subject."
+    },
+    {
+      "type": "fillBlank",
+      "prompt": "Contract the hearsay: 내일부터 비가 온다고 하던데요. → 내일부터 비가 ____.",
+      "correct": "온다던데요",
+      "explanation": "-다고 하던데요 contracts to -다던데요, and a present-tense verb keeps its -ㄴ/는-: 온다던데요."
+    },
+    {
+      "type": "particleChoice",
+      "prompt": "팀장님___ 회의 시간이 바뀌었대요. (The team lead says the meeting time changed.)",
+      "options": [
+        "이",
+        "을",
+        "에서"
+      ],
+      "correct": "이",
+      "explanation": "The person whose words you are relaying is the subject of -대요, so 팀장님이. 을 would make the team lead the object, and 에서 marks a place or an organisation."
+    },
+    {
+      "type": "errorCorrect",
+      "prompt": "Fix: '제가 어제 거기 갔다던데요.'",
+      "correct": "제가 어제 거기 갔는데요.",
+      "explanation": "-다던데요 means you heard it from somebody else, so it cannot report your own experience. Use plain -는데요 for something you did yourself."
+    }
+  ],
+  "summaryCard": {
+    "bullets": [
+      "Spoken Korean almost never uses the full -다고 해요. It contracts to -대요 (statement), -래요 (command), -냬요 (question), and -재요 (proposal).",
+      "What comes before the ending is unchanged: a present-tense verb keeps -ㄴ/는- (운동한대요), an adjective attaches bare (바쁘대요), and any past keeps -았/었- (봤대요).",
+      "래요 has two sources. After a noun it is -(이)라고 해요 (학생이래요, 'they say he's a student'); after a verb stem it is -(으)라고 해요 (가래요, 'they told me to go').",
+      "Keep 갈래요 (my own will) apart from 가래요 (their instruction), and -대요 (their words) apart from -데요 (what I saw myself).",
+      "-다던데요 turns hearsay into background and hands the decision to your listener: 거기 맛있다던데요."
+    ]
+  },
+  "writingTask": {
+    "prompt": "Your team lead sent two messages, a coworker asked something, and a group of colleagues made a plan. Relay all four to another colleague: a piece of news, an instruction, a question, and an invitation.",
+    "hint": "Use -대요 for the news, -래요 for the instruction, -냬요 for the question, and -재요 for the invitation. Name the source at the start of each sentence.",
+    "model": "팀장님이 오후 회의가 세 시로 미뤄졌대요. 그리고 자료는 미리 올려 놓으래요. 지훈 씨는 발표 순서가 정해졌냬요. 아, 동기들이 저녁에 같이 밥 먹재요.",
+    "modelEn": "The team lead says the afternoon meeting got pushed to three. And she says to upload the materials in advance. Jihoon is asking whether the presentation order has been decided. Oh, and the others say let's have dinner together tonight."
+  },
+  "canDo": [
+    "Contract -다고 해요 into -대요 and keep the -ㄴ/는- on present-tense verbs (운동한대요)",
+    "Choose between N(이)래요 ('they say it's N') and V-(으)래요 ('they told me to V')",
+    "Relay someone else's question with -냬요 and someone else's proposal with -재요",
+    "Tell 갈래요 (my own will) apart from 가래요 (their instruction)",
+    "Float something you heard with -다던데요 instead of claiming it yourself"
+  ]
+}

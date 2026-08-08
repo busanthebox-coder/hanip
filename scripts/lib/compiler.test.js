@@ -901,6 +901,39 @@ describe('order 23 — no redundant or mutually-inclusive distractors', () => {
     }
   });
 
+  /* order 25: the spare cloze predates order 21 and was the one generator that
+     never consulted overrides.interchangeableVariants — its own shape guard
+     knows 면/면서 and 았어요/어요 but not the optional-vowel written endings
+     that arrive with chapters 66+ ((으)나, (으)므로), so "지났___ + 으므로/므로"
+     reached the learner as a spelling coin-flip. The audit ruling lives in
+     overrides, exactly as it does for 군요/네요. */
+  it('spare cloze honours overrides.interchangeableVariants (으나 vs 나)', () => {
+    const chapter = {
+      id: 'chapter-93',
+      inlineExercises: [],
+      grammarNotes: [{
+        title: 'V/A-(으)나 — but (written)',
+        func: 'Contrast in written Korean.',
+        formTable: [
+          { when: 'consonant stem', add: '으나', ex: '늘었 → 늘었으나' },
+          { when: 'vowel stem', add: '나', ex: '신입이 → 신입이나' },
+        ],
+        examples: [
+          { ko: '예산은 늘었으나 인력은 그대로이다.', en: 'The budget grew but staffing stayed the same.' },
+          { ko: '그는 신입이나 업무 이해도가 매우 높다.', en: 'He is new but his grasp of the work is high.' },
+          { ko: '자료를 여러 번 검토했으나 오류를 찾지 못했다.', en: 'We reviewed the material but found no error.' },
+        ],
+      }],
+    };
+    const [bite] = buildPatternBites(chapter, { interchangeableVariants: [['으나', '나']] });
+    for (const card of bite.cards.filter((c) => c.kind === 'drill')) {
+      expect([card.sentence, mutualSubstring(card)]).toEqual([card.sentence, false]);
+    }
+    // suppressing a question must not strand the bite without any (order 21)
+    const questions = bite.cards.filter((c) => c.kind === 'drill' || c.kind === 'order');
+    expect(questions.length).toBeGreaterThanOrEqual(2);
+  });
+
   it('vocab clozes refuse distractors that contain (or sit inside) the answer', () => {
     const chapter = {
       id: 'chapter-90',

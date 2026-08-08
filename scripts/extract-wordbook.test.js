@@ -57,7 +57,8 @@ describe('wordbook extraction artifacts', () => {
       }
     }
     const duplicateUnions = [...occurrences.values()].filter((chapters) => chapters.size > 1);
-    expect(duplicateUnions).toHaveLength(183);
+    // census of the shipped corpus: 183 across chapters 1-65, 217 with 66-72
+    expect(duplicateUnions).toHaveLength(217);
     for (const word of list) {
       expect(word.chapters).toEqual([...(occurrences.get(word.ko) || [])].sort((a, b) => a - b));
     }
@@ -154,6 +155,7 @@ describe('wordbook extraction artifacts', () => {
       }
     }
 
-    expect(attachmentCount).toBe(1003);
+    // census of the shipped corpus: 1,003 attachments across 1-65, 1,101 with 66-72
+    expect(attachmentCount).toBe(1101);
   });
 });

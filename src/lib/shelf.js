@@ -12,6 +12,22 @@ function isDone(done, bite) {
   return Boolean(done && done[bite.id]);
 }
 
+// A level used to own one unbroken run of chapters; from 66 on the course
+// interleaves B2 and C1, so the header names each run instead of spanning the
+// gap and claiming chapters that belong to the neighbouring level.
+export function chapterRangeLabel(chapters) {
+  const numbers = [...new Set((chapters || []).map((chapter) => chapter.number))].sort((a, b) => a - b);
+  if (!numbers.length) return 'No chapters';
+  const runs = [];
+  for (const number of numbers) {
+    const last = runs[runs.length - 1];
+    if (last && number === last[1] + 1) last[1] = number;
+    else runs.push([number, number]);
+  }
+  const body = runs.map(([from, to]) => (from === to ? `${from}` : `${from}–${to}`)).join(', ');
+  return `${numbers.length === 1 ? 'Chapter' : 'Chapters'} ${body}`;
+}
+
 export function buildShelfGroups(chapters, done, snacks = []) {
   return LEVEL_GROUPS.map((level) => {
     const groupedChapters = chapters.filter((chapter) => chapter.level === level.id);
