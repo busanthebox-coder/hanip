@@ -5,8 +5,16 @@
 
   const tracks = Array.isArray(guideData && guideData.tracks) ? guideData.tracks : [];
 
+  /* order 31: the guide index is a place to choose (no ruling), a guide unit is
+     a place to read (ruled study paper). The tab wrapper in App.svelte is the
+     full-width container that has to carry the surface, so it is told which one
+     to draw rather than guessing from the outside. */
+  export let onSurfaceChange = () => {};
+
   let selectedTrack = null;
   let selectedUnit = null;
+
+  $: onSurfaceChange(selectedUnit ? 'study' : 'index');
 
   let openGuide = 0; // beginnerGuide accordion — first item open
   let shownEn = {}; // dialogue bubble index -> english visible

@@ -48,6 +48,7 @@
 
   let tab = 'today';           // TABS key
   let showGuide = false;       // guidebooks live on the shelf
+  let guideSurface = 'index';  // 'index' (choosing) | 'study' (reading a unit)
   let playing = null;          // { chapter, bite }
   let loadingBite = false;
   let loadError = '';
@@ -237,12 +238,14 @@
         />
       {:else if tab === 'shelf'}
         {#if showGuide}
-          <div class="guide-wrap">
+          <!-- full width, because the index surface's dot layer has to cover the
+               ruling out to both margins — not just under the 480px column -->
+          <div class="guide-wrap" class:index-surface={guideSurface === 'index'}>
             <button class="back-shelf" on:click={() => { showGuide = false; window.scrollTo(0, 0); }}>← Shelf</button>
             {#await loadTab('guide')}
               <p class="loading">Loading…</p>
             {:then mod}
-              <svelte:component this={mod.default} />
+              <svelte:component this={mod.default} onSurfaceChange={(kind) => { guideSurface = kind; }} />
             {/await}
           </div>
         {:else}
@@ -251,7 +254,7 @@
             {snacks}
             onPlay={(chapter, bite) => play(chapter, bite, { withWarmup: false })}
             onPlaySnack={(snack) => playSnack(snack, { withWarmup: false })}
-            onOpenGuide={() => { showGuide = true; window.scrollTo(0, 0); }}
+            onOpenGuide={() => { guideSurface = 'index'; showGuide = true; window.scrollTo(0, 0); }}
           />
         {/if}
       {:else}
@@ -287,8 +290,11 @@
     padding: 2px 0; color: var(--ink-3); }
   .tabs button.on { color: var(--accent-deep); }
   .t-label { font-size: 10.5px; font-weight: 850; line-height: 1.25; }
-  .guide-wrap { max-width: 480px; margin: 0 auto; }
-  .back-shelf { margin: 18px 22px 0; min-height: 44px; color: var(--ink-3); font-size: 12.5px; font-weight: 700; }
+  /* 520 = the guide's own 480px column plus its 20px padding on each side, so
+     the back button keeps its left edge over the content it returns from */
+  .back-shelf { display: block; box-sizing: border-box; width: 100%; max-width: 520px; margin: 0 auto;
+    padding: 18px 20px 0; min-height: 44px; text-align: left;
+    color: var(--ink-3); font-size: 12.5px; font-weight: 700; }
   .back-shelf:hover { color: var(--ink); }
   .loading { max-width: 480px; margin: 0 auto; padding: 40px 22px; color: var(--ink-3);
     font-size: 12.5px; font-weight: 650; text-align: center; }

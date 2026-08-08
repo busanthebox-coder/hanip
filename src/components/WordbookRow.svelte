@@ -11,6 +11,13 @@
   export let onOpen = () => {};
 
   $: detailId = `word-detail-${encodeURIComponent(word.ko).replaceAll('%', '')}`;
+  /* order 31: the same left 22px cell the shelf uses, with the vocabulary this
+     surface needs. A word's state is a yes/no, not an amount, so the ring gives
+     way to the single glyph STYLE §4 allows. Starred wins over learned — 12
+     saved against 214 learned, so the deliberate mark is the rarer signal. */
+  $: mark = starred ? { glyph: '★', tone: 'star', label: 'Saved' }
+    : learned ? { glyph: '✓', tone: 'ok', label: 'Learned' }
+    : { glyph: '☆', tone: 'off', label: 'Not learned yet' };
 </script>
 
 <div class="entry" class:open>
@@ -21,9 +28,8 @@
       aria-controls={detailId}
       on:click={onToggle}
     >
+      <span class="st glyph {mark.tone}" role="img" aria-label={mark.label}>{mark.glyph}</span>
       <span class="ko">{word.ko}</span>
-      {#if learned}<span class="tick" title="Learned" aria-label="Learned">✓</span>{/if}
-      {#if starred}<span class="star" title="Saved" aria-label="Saved">★</span>{/if}
       <span class="en ell">{word.en}</span>
     </button>
     <AudioDot text={word.ko} size={44} />
@@ -53,9 +59,13 @@
   }
   .row-main:hover { background: var(--wash); }
   .row-main:focus-visible, .full-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* the shelf's gutter geometry, this surface's vocabulary */
+  .st { flex: none; width: 22px; height: 20px; display: grid; place-items: center; }
+  .glyph { font-size: 13px; font-weight: 800; line-height: 1; }
+  .glyph.ok { color: var(--good); }
+  .glyph.star { color: var(--gold); }
+  .glyph.off { color: var(--line-2); }
   .ko { flex: none; font-size: 17px; font-weight: 800; word-break: keep-all; }
-  .tick { flex: none; color: var(--good); font-size: 11px; font-weight: 900; line-height: 1; }
-  .star { flex: none; color: var(--gold); font-size: 11px; line-height: 1; }
   .en {
     flex: 1; min-width: 0; margin-left: auto; text-align: right;
     font-size: 12.5px; font-weight: 650; color: var(--ink-3);

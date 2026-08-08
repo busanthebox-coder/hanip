@@ -28,20 +28,87 @@ export function chapterRangeLabel(chapters) {
   return `${numbers.length === 1 ? 'Chapter' : 'Chapters'} ${body}`;
 }
 
+// Order 31: three states share one 22px cell — an empty ring, a gold arc, a
+// seal. Naming the state here is what lets the level header, the chapter row
+// and the course rail all compare in the same column.
+export function chapterProgress(chapter, done) {
+  const bites = (chapter && chapter.bites) || [];
+  const total = bites.length;
+  const finished = bites.filter((bite) => isDone(done, bite)).length;
+  return { done: finished, total, state: total && finished >= total ? 'done' : finished ? 'active' : 'idle' };
+}
+
+// The one chapter the learner is standing in: the first still holding an
+// unfinished bite. Exactly one row in 72 earns the ink rail, the goal sentence
+// and the exact fraction — a finished chapter's goal is a memory and an
+// untouched one's is a spoiler.
+export function currentChapterId(chapters, done) {
+  const chapter = (chapters || []).find((item) => (item.bites || []).some((bite) => !isDone(done, bite)));
+  return chapter ? chapter.id : null;
+}
+
 export function buildShelfGroups(chapters, done, snacks = []) {
   return LEVEL_GROUPS.map((level) => {
-    const groupedChapters = chapters.filter((chapter) => chapter.level === level.id);
-    const bites = groupedChapters.flatMap((chapter) => chapter.bites);
-    const groupedSnacks = snacks.filter((snack) => snack.level === level.id);
+    const groupedChapters = (chapters || []).filter((chapter) => chapter.level === level.id);
+    const groupedSnacks = (snacks || []).filter((snack) => snack.level === level.id);
     return {
       ...level,
       chapters: groupedChapters,
       snacks: groupedSnacks,
-      done: bites.filter((bite) => isDone(done, bite)).length
-        + groupedSnacks.filter((snack) => isDone(done, snack)).length,
-      total: bites.length + groupedSnacks.length,
+      // Order 31: count chapters, not bites. "3 of 22 done" places you on the
+      // course; "100/100 bites" is a workload. Snacks are listed beside the
+      // chapters but are recommendations, not course positions, so they do not
+      // move this number — the bite counts live one tap down, inside a chapter.
+      done: groupedChapters.filter((chapter) => chapterProgress(chapter, done).state === 'done').length,
+      total: groupedChapters.length,
     };
   });
+}
+
+// Order 31, defect 6: 72 chapters drawn as 72 ticks, so "where am I in the
+// course" is answered by a length instead of a sentence. Grouped by level
+// rather than by course order — the rail gives a sense of which stretch you are
+// in, and B2/C1 interleave from 66 on, which a single run could not show.
+export function buildCourseRail(chapters, done) {
+  const currentId = currentChapterId(chapters, done);
+  let current = 0;
+  const levels = LEVEL_GROUPS
+    .map((level) => ({
+      id: level.id,
+      ticks: (chapters || [])
+        .filter((chapter) => chapter.level === level.id)
+        .map((chapter) => {
+          const finished = chapterProgress(chapter, done).state === 'done';
+          const state = chapter.id === currentId ? 'now' : finished ? 'done' : 'idle';
+          if (state === 'now') current = chapter.number;
+          return { number: chapter.number, state };
+        }),
+    }))
+    .filter((level) => level.ticks.length > 0);
+  return {
+    levels,
+    total: (chapters || []).length,
+    done: (chapters || []).filter((chapter) => chapterProgress(chapter, done).state === 'done').length,
+    current,
+  };
+}
+
+// Order 31, defect 2: a snack was reading as a sibling of the chapter, and the
+// cause was the `border-top`, not the type size. It now rides inside the
+// chapter block — collapsed to one summary line by default, expanded into rows
+// on tap. Expanded, the rows carry no "Snack" label: sitting inside the block
+// is the label.
+export function buildSnackBlock(snacks, chapterNumber, expanded = []) {
+  const items = (snacks || []).filter((snack) => snack.afterChapter === chapterNumber);
+  if (!items.length) return null;
+  const open = (expanded || []).includes(chapterNumber);
+  return {
+    open,
+    count: items.length,
+    label: `Snacks ${items.length}`,
+    summary: items.map((snack) => snack.title).join(', '),
+    items: open ? items : [],
+  };
 }
 
 // Order 28: finishing the last bite of a chapter stamps it. Called from the win
@@ -61,7 +128,8 @@ export function chapterSealInfo(chapters, chapterId, done, finishedId) {
 }
 
 export function defaultOpenLevels(chapters, done) {
-  const nextChapter = chapters.find((chapter) => chapter.bites.some((bite) => !isDone(done, bite)));
+  const currentId = currentChapterId(chapters, done);
+  const nextChapter = (chapters || []).find((chapter) => chapter.id === currentId);
   return [nextChapter ? nextChapter.level : LEVEL_GROUPS[0].id];
 }
 

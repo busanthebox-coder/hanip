@@ -21,6 +21,10 @@ four components built in parallel integrate without edits.
   --line --line-2 --accent --accent-deep --accent-soft --gold --gold-soft
   --good --good-deep --good-soft --r-card --r-chip --shadow-1 --ease`.
 - Section shell: `max-width: 480px; margin: 0 auto; padding: 30px 20px 40px;`
+- **표면(종이) 판정은 STYLE.md §10-1이 정본이다.** 찾고 고르는 화면(목록·인덱스·검색 결과)은
+  전체 폭 래퍼에 `.index-surface`를 걸어 괘선을 걷고 도트만 남긴다 — 480px 칼럼에 걸면
+  좌우 여백에 괘선이 남는다. 읽고 생각하는 화면은 기본값(괘선 있는 종이)을 그대로 둔다.
+- 목록 행의 식별자·상태는 왼쪽 거터 `[24px][22px]`에서 끝내고 오른쪽 끝은 비운다(STYLE.md §10-2).
 - Section header: 화면 이름을 16px/900 한 단어로 두고, 그 아래 `--ink-3` 12.5px 한 줄.
   **uppercase 키커 금지.**
 - 구획은 여백과 1px `--line`만. 카드 윤곽은 화면당 0~1겹이고 중첩하지 않는다.
@@ -51,6 +55,7 @@ four components built in parallel integrate without edits.
 |---|---|---|
 | (초기) | 하네스 구축 | "새 UI 문자열은 전부 `한국어 · English` 병기" |
 | 2026-08-08 | 27 | 병기 폐지 → 위 5항 위계로 교체. 섹션 헤더의 uppercase 키커 규칙도 폐지(STYLE.md §4) |
+| 2026-08-08 | 31 | 종이 3층 규칙과 목차 거터 규격을 계약에 편입(STYLE.md §10-1·§10-2) |
 
 ## Shared utilities
 

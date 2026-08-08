@@ -181,6 +181,21 @@ html {
   background-size: 3px 3px, auto, auto, auto, auto;
 }
 body { background: none; }
+
+/* Paper in three layers (order 31). <html> above is layer 1, the study sheet.
+   Layer 2 — the index surface — is the same sheet with the ruling lifted and
+   only the 3px tooth left: a list is already a line system, and 30px ruling
+   shares no common factor with 44–86px rows, so the rules cross every row at a
+   different place. No new token; --study-grid makes both weights of paper.
+   Must be laid on a full-width container — hang it on the 480px column and the
+   margins keep their ruling. The 78px is App.svelte's tab-bar clearance, so a
+   short index screen still covers the viewport without adding scroll. */
+.index-surface {
+  min-height: calc(100vh - 78px);
+  background-color: var(--bg);
+  background-image: radial-gradient(var(--study-grid) 0.6px, transparent 0.7px);
+  background-size: 3px 3px;
+}
 button { font: inherit; cursor: pointer; border: 0; background: none; color: inherit; padding: 0; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
 ::selection { background: var(--accent-soft); color: var(--accent-deep); }

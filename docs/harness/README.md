@@ -46,7 +46,8 @@ scripts/baseline.mjs            A1 무회귀 게이트 (--write로 재스냅샷)
 scripts/check-budget.mjs        번들 예산 게이트 (entry 150kB·청크 220kB·총 2.5MB gzip)
 src/App.svelte                  5탭 셸 (참고 탭 4개는 lazy import)
 src/components/                 Home/Shelf/BitePlayer + cards/ + 참고 탭 4개
-docs/tab-contract.md            UI 계약 (스타일·토큰·접근성)
+docs/design/STYLE.md            디자인 정본 (타이포·색 예산·킬 리스트·재질·종이 3층). 지시 27부터 UI 게이트
+docs/tab-contract.md            UI 계약 (스타일·토큰·접근성) — STYLE.md의 최소 하위집합
 docs/harness/audit-protocol.md  콘텐츠 감사 프로토콜 (지시 03·06·07에서 실행)
 ../korean-core-starter/         부모 저장소 (형제 체크아웃). 읽기 전용으로만 접근.
   scripts/rich-chapters/chapter-NN.json   챕터 원본 (여기서 복사해 온다)
@@ -105,5 +106,17 @@ npm run deploy       # guard:full 통과 시에만 gh-pages 발행
 | 22 | 대화·읽기 두께 + 어순 이중 출제 제거 | |
 | 23 | 워밍업 비율·신규 카드 재감사·재스냅샷·배포 | ✅ |
 | 24 | 문법 레퍼런스 뷰 (자습 검증 후속, 23 뒤 실행) | |
+
+### 4단계 — 확장·앱 품질 (지시서는 `orders/`, 결과는 PROGRESS.md 4단계 표)
+
+| # | 제목 | 배포 |
+|---|---|---|
+| 25 | 신규 챕터 반입 (66~72) | ✅ |
+| 26 | 상황별 표현 팩 6개 | ✅ |
+| 27 | 디자인 개편 (프로덕트 톤·영어 메인) — `docs/design/STYLE.md` 신설 | ✅ |
+| 28 | 재질·구조 복원 (v5) — 그릇·아이콘·종이 결 | ✅ |
+| 29 | 학생 프로필 + 진도 코드 이전 | ✅ |
+| 30 | 단어 첫 만남은 설명 (teach/quiz 분기) | ✅ |
+| 31 | 목차 표면 — Shelf 재설계 + 종이 3층 규칙 | |
 
 의문이 생기면: 게이트를 통과하는 가장 보수적인 해석을 택하고, PROGRESS.md 특이사항에 기록하라.

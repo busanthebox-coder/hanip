@@ -52,7 +52,11 @@
     overflow: hidden; text-align: left; border: 1px solid var(--line); border-radius: 14px;
     background: transparent; color: var(--ink-3); opacity: .5;
     transition: opacity .12s var(--ease), border-color .12s var(--ease); }
-  .card.collected { background: var(--card); color: var(--ink); opacity: 1; }
+  /* order 31: the grid sits on the index surface, which has no ruling — but a
+     collected card is a sheet, and a sheet has tooth wherever it lands */
+  .card.collected { background-color: var(--card); color: var(--ink); opacity: 1;
+    background-image: radial-gradient(var(--study-grid) 0.6px, transparent 0.7px);
+    background-size: 3px 3px; }
   .card:hover { border-color: var(--line-2); opacity: 1; }
   .meta { font-size: 11.5px; font-weight: 650; color: var(--ink-3); }
   .card b { padding-right: 30px; font-size: 15px; font-weight: 750; line-height: 1.35; word-break: keep-all; }

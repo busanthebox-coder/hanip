@@ -144,15 +144,21 @@
   })();
 </script>
 
+<!-- order 31: the word list, the confusable sets and the search results are all
+     index surfaces — no ruling, tooth only. The full entry underneath is a
+     reading screen, so it keeps the ruled study paper. -->
 {#if showClusters}
-  {#await clusterBrowserModule}
-    <p class="cluster-loading" role="status">Loading all sets…</p>
-  {:then mod}
-    <svelte:component this={mod.default} onBack={closeClusterBrowser} />
-  {/await}
+  <div class="index-surface">
+    {#await clusterBrowserModule}
+      <p class="cluster-loading" role="status">Loading all sets…</p>
+    {:then mod}
+      <svelte:component this={mod.default} onBack={closeClusterBrowser} />
+    {/await}
+  </div>
 {:else if selected}
   <WordDetail word={selected} onBack={closeDetail} />
 {:else}
+<div class="index-surface">
 <section class="wordbook">
   <div class="mark">Wordbook</div>
   <p class="sub">{words.length} words · {learnedCount} learned · {starredSet.size} saved</p>
@@ -223,6 +229,7 @@
     {/each}
   {/if}
 </section>
+</div>
 {/if}
 
 <style>
