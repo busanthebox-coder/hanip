@@ -1,10 +1,10 @@
-const CACHE_VERSION = 'hanip-pwa-7a638e6650b9';
+const CACHE_VERSION = 'hanip-pwa-154cefdf9d78';
 const PRECACHE_URLS = [
   "./",
   "./assets/a1-BRrjr23S.js",
   "./assets/a1-eWQzbGHB.json",
-  "./assets/index-D3SLn5U5.js",
-  "./assets/index-DiNE-LlO.css",
+  "./assets/index-CanPdxer.js",
+  "./assets/index-DPycJ_BM.css",
   "./data/bites-index.json",
   "./icons/apple-touch-icon-180.png",
   "./icons/hanip-bowl.svg",
