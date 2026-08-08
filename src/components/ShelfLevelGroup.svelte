@@ -40,8 +40,9 @@
       <b>{group.label}</b>
       <span class="range">{chapterRange}</span>
     </span>
-    <span class="count" aria-label={`${group.done} of ${group.total} bites completed`}>
-      {group.done}/{group.total} bites
+    <span class="prog" aria-label={`${group.done} of ${group.total} bites completed`}>
+      <span class="prog-n">{group.done}<i>/{group.total}</i></span>
+      <span class="progbar"><b style="width:{group.total ? (group.done / group.total) * 100 : 0}%"></b></span>
     </span>
     <span class="chevron" aria-hidden="true">⌄</span>
   </button>
@@ -63,21 +64,31 @@
           <span class="num" class:done={done === chapter.biteCount}>{chapter.number}</span>
           <span class="chapter-main">
             <b class="ell">{chapter.title}</b>
-            <span class="goal ell">{chapter.goal}</span>
+            <!-- order 28: the goal runs to two lines. A one-line "…" reads as a
+                 broken row, not as restraint. -->
+            <span class="goal">{chapter.goal}</span>
           </span>
-          <span class="pips" aria-hidden="true">
-            {#each chapter.bites as bite}
-              <i class:on={!!doneMap[bite.id]}></i>
-            {/each}
+          <span class="chapter-right">
+            {#if done === chapter.biteCount}
+              <span class="seal" aria-label="Chapter complete">한입</span>
+            {:else}
+              <span class="prog" class:prog--off={done === 0}
+                aria-label={`${done} of ${chapter.biteCount} bites completed`}>
+                <span class="prog-n">{done}<i>/{chapter.biteCount}</i></span>
+                <span class="progbar">
+                  {#if done > 0}<b style="width:{(done / chapter.biteCount) * 100}%"></b>{/if}
+                </span>
+              </span>
+            {/if}
           </span>
         </button>
 
         {#if chapterOpen}
           <div class="bites" id={bitesId} role="region" aria-labelledby={chapterTriggerId}>
             {#each chapter.bites as bite (bite.id)}
-              <button class="bite" on:click={() => onPlay(chapter, bite)}>
+              <button class="subrow" on:click={() => onPlay(chapter, bite)}>
                 <span class="kind">{KIND_EN[bite.kind] || bite.kind}</span>
-                <span class="bite-title ell">{bite.title}</span>
+                <span class="subrow-title ell">{bite.title}</span>
                 <span class="state">
                   {doneMap[bite.id] ? 'Done' : bite.kind === 'pattern' ? 'Lesson' : `${bite.cardCount} cards`}
                 </span>
@@ -87,9 +98,9 @@
         {/if}
 
         {#each group.snacks.filter((snack) => snack.afterChapter === chapter.number) as snack (snack.id)}
-          <button class="snack" data-snack-id={snack.id} on:click={() => onPlaySnack(snack)}>
+          <button class="subrow snack" data-snack-id={snack.id} on:click={() => onPlaySnack(snack)}>
             <span class="kind">Snack</span>
-            <span class="bite-title ell">{snack.title}</span>
+            <span class="subrow-title ell">{snack.title}</span>
             <span class="state">{doneMap[snack.id] ? 'Done' : `${snack.cardCount} words`}</span>
           </button>
         {/each}
@@ -110,38 +121,55 @@
   .level-main { flex: 1; min-width: 0; display: grid; }
   .level-main b { font-size: 15.5px; font-weight: 850; letter-spacing: -.01em; }
   .range { font-size: 11.5px; font-weight: 650; color: var(--ink-3); }
-  .count { flex: none; font-size: 12.5px; font-weight: 650; color: var(--ink-3);
-    font-variant-numeric: tabular-nums; white-space: nowrap; }
   .chevron { flex: none; color: var(--ink-3); font-size: 13px; line-height: 1;
     transition: transform .24s var(--ease); }
   .open .chevron { transform: rotate(180deg); }
 
+  /* Progress in three readable states: a seal when the chapter is finished,
+     n/8 over a 38px bar while it is running, a faded 0/8 before it starts.
+     Eight 6px circles said nothing at arm's length. Named .progbar, not .bar —
+     .bar already belongs to the player's top rail. */
+  .prog { flex: none; display: grid; justify-items: end; gap: 4px; font-variant-numeric: tabular-nums; }
+  .prog-n { font-size: 13.5px; font-weight: 800; letter-spacing: -.02em; color: var(--ink); line-height: 1; }
+  .prog-n i { font-style: normal; font-size: 11.5px; font-weight: 650; color: var(--ink-3); }
+  .progbar { width: 38px; height: 3px; border-radius: 999px; background: var(--progress-track); overflow: hidden; }
+  .progbar b { display: block; height: 100%; background: var(--gold); border-radius: 999px; }
+  .prog--off .prog-n { color: var(--ink-3); font-weight: 700; }
+  .prog--off .prog-n i { opacity: .7; }
+  .seal { width: 24px; height: 24px; display: grid; place-items: center; border: 1.2px solid var(--gold);
+    border-radius: 5px; color: var(--gold); font-size: 7.5px; font-weight: 900; line-height: 1;
+    transform: rotate(-8deg); }
+
   .chapters { animation: reveal .24s var(--ease); }
   @keyframes reveal { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
 
-  .chapter { width: 100%; min-height: 44px; display: flex; align-items: center; gap: 12px; padding: 11px 0;
+  /* the chapter row is the heaviest thing in the list — everything filed under
+     it has to read as lighter, or the shelf inverts */
+  .chapter { width: 100%; display: flex; align-items: flex-start; gap: 12px; padding: 14px 0;
     border-top: 1px solid var(--line); text-align: left; transition: background-color .12s var(--ease); }
   .chapter:hover { background: var(--wash); }
-  .num { flex: none; width: 20px; font-size: 14px; font-weight: 800; color: var(--ink-3);
+  .num { flex: none; width: 20px; padding-top: 1px; font-size: 14.5px; font-weight: 800; color: var(--ink-3);
     font-variant-numeric: tabular-nums; }
   .num.done { color: var(--gold); }
   .chapter-main { flex: 1; min-width: 0; display: grid; }
-  .chapter-main b { font-size: 14.5px; font-weight: 750; letter-spacing: -.01em; }
-  .goal { font-size: 11.5px; font-weight: 650; color: var(--ink-3); }
+  .chapter-main b { font-size: 15px; font-weight: 820; letter-spacing: -.012em; line-height: 1.35; }
+  .goal { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    margin-top: 2px; font-size: 11.5px; font-weight: 650; line-height: 1.5; color: var(--ink-3);
+    word-break: keep-all; }
   .ell { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .pips { flex: none; display: flex; gap: 3px; }
-  .pips i { width: 6px; height: 6px; border-radius: 999px; border: 1px solid var(--line-2); }
-  .pips i.on { background: var(--gold); border-color: var(--gold); }
+  .chapter-right { flex: none; padding-top: 2px; }
 
   .bites { animation: reveal .24s var(--ease); }
-  .bite, .snack { width: 100%; min-height: 44px; display: flex; align-items: center; gap: 10px;
-    padding: 10px 0 10px 20px; border-top: 1px solid var(--line); text-align: left;
+  /* bites and snacks are parts of a chapter, so they are indented and quieter —
+     no filled background, which is what used to make a snack out-weigh a chapter */
+  .subrow { width: 100%; min-height: 44px; display: flex; align-items: center; gap: 10px;
+    padding: 10px 0 10px 32px; border-top: 1px solid var(--line); text-align: left;
     transition: background-color .12s var(--ease); }
-  .bite:hover, .snack:hover { background: var(--wash); }
-  .snack { background: var(--wash); }
-  .snack:hover { background: var(--line); }
-  .kind { flex: none; width: 62px; font-size: 11.5px; font-weight: 650; color: var(--ink-3); }
-  .bite-title { flex: 1; min-width: 0; font-size: 14px; font-weight: 750; }
-  .state { flex: none; font-size: 11.5px; font-weight: 650; color: var(--ink-3); white-space: nowrap; }
+  .subrow:hover { background: var(--wash); }
+  .kind { flex: none; width: 58px; font-size: 11px; font-weight: 650; color: var(--ink-3); }
+  .subrow-title { flex: 1; min-width: 0; font-size: 13.5px; font-weight: 700; color: var(--ink-2); }
+  .snack .subrow-title { font-weight: 650; }
+  .snack .kind { font-style: italic; }
+  .state { flex: none; font-size: 11px; font-weight: 650; color: var(--ink-3); white-space: nowrap; }
 
 </style>

@@ -1,5 +1,6 @@
 <script>
   import { onDestroy } from 'svelte';
+  import Bowl from './Bowl.svelte';
   import GuessCard from './cards/GuessCard.svelte';
   import HuntCard from './cards/HuntCard.svelte';
   import TeachCard from './cards/TeachCard.svelte';
@@ -15,13 +16,17 @@
   import { prefs } from '../lib/prefs.js';
   import { record } from '../lib/srs.js';
   import { markLastPlayed, progress, todayKey, warmupCards } from '../lib/store.js';
-  import { streak } from '../lib/stats.js';
+  import { bowlFill, streak } from '../lib/stats.js';
   import { speak } from '../lib/tts.js';
 
   export let bite;
   export let onExit = () => {};      // (finished: boolean, wantMore: boolean)
   export let onOpenWord = () => {};
   export let withWarmup = true;
+  export let nextUp = null;          // what "한 입 더" will actually serve
+  export let chapterSeal = null;     // { number, level, ordinal } when this bite closes a chapter
+
+  const KIND_EN = { words: 'Words', pattern: 'Grammar', dialogue: 'Dialogue', reading: 'Reading', boss: 'Boss' };
 
   const studyCards = bite.lessonCards?.length ? bite.lessonCards : bite.cards;
   let cards = [...(withWarmup ? warmupCards(bite) : []), ...studyCards];
@@ -60,6 +65,20 @@
     ? { ...$progress.bowls, [todayKey()]: ($progress.bowls[todayKey()] || 0) + 1 }
     : $progress.bowls;
   $: winStreak = streak(projectedBowls);
+  // the bowl on the win screen is the real one: it heaps only when the day's
+  // goal is actually met, so 고봉 stays a signal instead of a decoration
+  $: winFill = bowlFill(projectedBowls[todayKey()] || 0, $prefs.dailyGoal);
+  $: nextLabel = !nextUp ? null : nextUp.type === 'snack'
+    ? {
+        title: nextUp.snack.title,
+        sub: `Snack after Chapter ${nextUp.snack.afterChapter}`,
+        count: nextUp.snack.cardCount,
+      }
+    : {
+        title: nextUp.bite.firstWord || nextUp.bite.title,
+        sub: `${nextUp.level} · Chapter ${nextUp.chapterNumber} · ${KIND_EN[nextUp.bite.kind] || nextUp.bite.kind}`,
+        count: nextUp.bite.cardCount,
+      };
 
   function resolve(correct, meta = {}) {
     if (resolved) return;
@@ -131,7 +150,7 @@
 
 <section class="bp">
   {#if !finished && cur}
-    <div class="bar">
+    <div class="playbar">
       <button class="x" aria-label="Close" on:click={() => onExit(false, false)}>×</button>
       {#if cards.length > 12}
         <div class="track" aria-hidden="true"><span style="width:{((i + 1) / cards.length) * 100}%"></span></div>
@@ -147,7 +166,7 @@
 
     {#key i}
       <div class="deck">
-        <div class="sheet">
+        <div class="sheet tooth">
           {#if cur.requeued}<div class="again">Again</div>{/if}
           {#if cur.kind === 'guess'}<GuessCard card={cur} onResolve={resolve} {onOpenWord} />
           {:else if cur.kind === 'hunt'}<HuntCard card={cur} onResolve={resolve} />
@@ -178,14 +197,7 @@
   {:else if finished}
     <div class="win">
       <div class="win-head">
-        <svg class="bowl" viewBox="0 0 48 48" aria-hidden="true">
-          <defs><clipPath id="winclip"><path d="M6 20 h36 a1 1 0 0 1 -4 16 a14 8 0 0 1 -28 0 a1 1 0 0 1 -4-16 z"/></clipPath></defs>
-          <g clip-path="url(#winclip)">
-            <rect x="0" y="20" width="48" height="28" fill="var(--wash)"/>
-            <rect class="fill" x="0" y="20" width="48" height="28" fill="var(--gold)"/>
-          </g>
-          <path d="M6 20 h36 a1 1 0 0 1 -4 16 a14 8 0 0 1 -28 0 a1 1 0 0 1 -4-16 z" fill="none" stroke="var(--ink)" stroke-width="2.4"/>
-        </svg>
+        <Bowl size={112} fill={winFill} animate />
         <h2>Bite done!</h2>
         {#if answeredCount}
           <p class="score">{correctCount} of {answeredCount} on your own</p>
@@ -193,6 +205,17 @@
         <p class="meta">{winStreak}-day streak</p>
         {#if bite.canDo}<p class="cando">{bite.canDo}</p>{/if}
       </div>
+
+      {#if chapterSeal}
+        <!-- a finished chapter leaves a mark, not a number -->
+        <div class="sealrow">
+          <span class="seal stamp" aria-hidden="true">한입<em>CH {chapterSeal.number}</em></span>
+          <span class="seal-t">
+            <b>Chapter {chapterSeal.number} sealed</b>
+            <span>{chapterSeal.number}과를 다 먹었어요 · {chapterSeal.level}에서 {chapterSeal.ordinal}번째 도장</span>
+          </span>
+        </div>
+      {/if}
 
       {#if mistakes.length}
         <!-- order 27: the last thing on screen is what tripped you up -->
@@ -222,6 +245,17 @@
         </button>
       {/if}
 
+      {#if nextLabel}
+        <!-- naming the next item turns "한 입 더" into a choice -->
+        <div class="nextrow">
+          <span class="next-t">
+            <b>Next: {nextLabel.title}</b>
+            <span>{nextLabel.sub}</span>
+          </span>
+          {#if nextLabel.count}<span class="next-n">{nextLabel.count}</span>{/if}
+        </div>
+      {/if}
+
       <div class="actions">
         <button class="cta" on:click={() => onExit(true, true)}><b>One more bite</b><i>한 입 더</i></button>
         <button class="ghost" on:click={() => onExit(true, false)}>Done for today</button>
@@ -240,14 +274,13 @@
 </section>
 
 <style>
+  /* the ruled paper is painted on <html> now, so the player just sits on it */
   .bp { --sheet-pad: 22px;
-    min-height: 100dvh; max-width: 480px; margin: 0 auto; padding: 14px 16px 18px; display: flex; flex-direction: column;
-    background:
-      repeating-linear-gradient(var(--study-grid) 0 1px, transparent 1px 30px),
-      repeating-linear-gradient(90deg, var(--study-grid) 0 1px, transparent 1px 30px),
-      var(--bg); }
+    min-height: 100dvh; max-width: 480px; margin: 0 auto; padding: 14px 16px 18px; display: flex; flex-direction: column; }
 
-  .bar { display: flex; align-items: center; gap: 12px; min-height: 34px; flex: none; }
+  /* .playbar, not .bar: a progress module elsewhere claimed .bar once and
+     turned this 3px rail into a 34px circle */
+  .playbar { display: flex; align-items: center; gap: 12px; min-height: 34px; flex: none; }
   .x { width: 44px; height: 34px; flex: none; margin-left: -7px; display: grid; place-items: center;
     color: var(--ink-3); font-size: 19px; line-height: 1; }
   .x:hover { color: var(--ink); }
@@ -261,13 +294,22 @@
   .dots i.now { background: var(--ink-3); }
   .count { flex: none; font-size: 11.5px; font-weight: 750; color: var(--ink-3); font-variant-numeric: tabular-nums; }
 
-  /* one card outline per screen — the two edges below are the rest of the deck */
-  .deck { position: relative; margin-top: 16px; animation: deal .28s var(--ease); }
-  .deck::before, .deck::after { content: ""; position: absolute; left: 8px; right: 8px; bottom: -6px; height: 26px;
-    border: 1px solid var(--line); border-radius: 0 0 22px 22px; background: var(--card); z-index: 0; }
-  .deck::after { left: 16px; right: 16px; bottom: -12px; opacity: .7; }
-  .sheet { position: relative; z-index: 1; border-radius: 22px; background: var(--card); border: 1px solid var(--line);
+  /* one card outline per screen — the two edges below are the rest of the deck.
+     A short deck centres itself instead of leaving 200px of dead space below. */
+  .deck { position: relative; margin: auto 0; animation: deal .28s var(--ease); }
+  /* each back sheet sits at a slightly different angle: a stack of loose paper,
+     not a UI stack */
+  .deck::before, .deck::after { content: ""; position: absolute; left: 8px; right: 8px; bottom: -6px; height: 28px;
+    border: 1px solid var(--line); border-radius: 0 0 22px 22px; background: var(--card); z-index: 0;
+    transform: rotate(-.35deg); transform-origin: 50% 0; }
+  .deck::after { left: 16px; right: 16px; bottom: -12px; opacity: .72; transform: rotate(.5deg); }
+  .sheet { position: relative; z-index: 1; border-radius: 22px; border: 1px solid var(--line);
     box-shadow: var(--shadow-1); padding: 24px var(--sheet-pad) 22px; }
+  /* the card is paper too: the same 3px tooth runs on through it, so it reads
+     as a sheet on the desk rather than a white rectangle over it */
+  .tooth { background-color: var(--card);
+    background-image: radial-gradient(var(--study-grid) 0.6px, transparent 0.7px);
+    background-size: 3px 3px; }
   @keyframes deal { from { opacity: 0; transform: translateY(12px) rotate(.4deg); } to { opacity: 1; transform: none; } }
 
   .again { margin-bottom: 12px; font-size: 11.5px; font-weight: 750; color: var(--ink-3); }
@@ -275,7 +317,7 @@
     font-size: 12.5px; font-weight: 650; color: var(--ink-3); }
   .retry span { display: block; font-size: 11.5px; font-weight: 650; }
 
-  .nav { margin-top: auto; padding: 26px 0 4px; position: sticky; bottom: 0;
+  .nav { flex: none; padding: 26px 0 4px; position: sticky; bottom: 0;
     background: linear-gradient(to top, var(--bg) 72%, transparent); }
 
   .cta { width: 100%; padding: 15px 16px 13px; border-radius: 16px; background: var(--accent); color: var(--on-accent);
@@ -289,17 +331,33 @@
   .cta.off i { opacity: .7; }
 
   .win { flex: 1; display: flex; flex-direction: column; padding: 12px 6px 4px; }
-  .win-head { margin-top: auto; text-align: center; }
-  .bowl { width: 96px; height: 96px; }
-  .bowl .fill { transform: translateY(28px); animation: fillup 1.1s var(--ease) .15s forwards; }
-  @keyframes fillup { to { transform: translateY(5px); } }
-  .win h2 { margin: 16px 0 0; font-size: 28px; font-weight: 900; letter-spacing: -.03em; }
+  .win-head { margin-top: auto; display: grid; justify-items: center; text-align: center; }
+  .win h2 { margin: 14px 0 0; font-size: 28px; font-weight: 900; letter-spacing: -.03em; }
   .score { margin: 9px 0 0; font-size: 13.5px; font-weight: 700; color: var(--ink-2); }
   .meta { margin: 3px 0 0; font-size: 12.5px; font-weight: 650; color: var(--ink-3); font-variant-numeric: tabular-nums; }
   .cando { margin: 10px 0 0; font-size: 12.5px; font-weight: 650; line-height: 1.6; color: var(--ink-3);
     word-break: keep-all; }
 
-  .misses { margin-top: 34px; }
+  /* the collection stamp, scaled up from the grammar grid to the whole chapter */
+  .sealrow { margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--line);
+    display: flex; align-items: center; gap: 14px; }
+  .seal { position: relative; flex: none; width: 62px; height: 62px; display: grid; place-items: center;
+    align-content: center; gap: 2px; border: 1.8px solid var(--gold); border-radius: 11px; color: var(--gold);
+    font-size: 15px; font-weight: 900; letter-spacing: -.02em; line-height: 1;
+    transform: rotate(-8deg); opacity: .92; }
+  .seal::before { content: ""; position: absolute; inset: 4px; border: .8px solid var(--gold);
+    border-radius: 8px; opacity: .6; }
+  .seal em { font-style: normal; font-size: 7.5px; font-weight: 750; letter-spacing: .04em; opacity: .8; }
+  @keyframes stampIn { 0% { transform: rotate(-8deg) scale(1.7); opacity: 0; }
+    62% { transform: rotate(-8deg) scale(.94); opacity: 1; }
+    100% { transform: rotate(-8deg) scale(1); opacity: .92; } }
+  .stamp { animation: stampIn .34s var(--ease) .5s both; }
+  .seal-t { min-width: 0; display: grid; }
+  .seal-t b { font-size: 14.5px; font-weight: 800; letter-spacing: -.01em; }
+  .seal-t span { margin-top: 2px; font-size: 11.5px; font-weight: 650; color: var(--ink-3);
+    word-break: keep-all; }
+
+  .misses { margin-top: 22px; }
   .misses-head { display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 10px; }
   .misses-head b { font-size: 15.5px; font-weight: 850; letter-spacing: -.01em; }
   .num { font-size: 12.5px; font-weight: 650; color: var(--ink-3); font-variant-numeric: tabular-nums; }
@@ -322,6 +380,15 @@
   .grammar-row b { font-size: 14.5px; font-weight: 750; letter-spacing: -.01em; }
   .grammar-row span { grid-column: 1; font-size: 11.5px; font-weight: 650; color: var(--ink-3); }
   .grammar-row i { grid-row: 1 / -1; grid-column: 2; font-style: normal; font-size: 15px; color: var(--ink-3); }
+
+  .nextrow { margin-top: 20px; min-height: 44px; padding: 13px 0;
+    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+    display: flex; align-items: center; gap: 12px; }
+  .next-t { flex: 1; min-width: 0; display: grid; }
+  .next-t b { font-size: 14.5px; font-weight: 800; letter-spacing: -.01em; word-break: keep-all; }
+  .next-t span { font-size: 11.5px; font-weight: 650; color: var(--ink-3); word-break: keep-all; }
+  .next-n { flex: none; font-size: 12.5px; font-weight: 650; color: var(--ink-3);
+    font-variant-numeric: tabular-nums; }
 
   .actions { margin-top: auto; padding-top: 24px; display: grid; gap: 2px; }
   .ghost { width: 100%; min-height: 44px; color: var(--ink-3); font-size: 14px; font-weight: 750; text-align: center; }

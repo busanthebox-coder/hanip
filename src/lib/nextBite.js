@@ -31,6 +31,12 @@ export function findById({ index, id }) {
   return snack ? snackItem(snack) : null;
 }
 
+// What comes after the bite the learner is finishing right now. The win screen
+// names it while that bite is still open, so it has to count as done first.
+export function findAfter({ index, done = {}, skippedSnacks = new Set(), startChapter = 1, finishedId }) {
+  return findNext({ index, done: { ...done, [finishedId]: 1 }, skippedSnacks, startChapter });
+}
+
 export function findNext({ index, done = {}, skippedSnacks = new Set(), startChapter = 1 }) {
   const allChapters = index.chapters || [];
   const selectedIndex = Object.keys(done).length === 0

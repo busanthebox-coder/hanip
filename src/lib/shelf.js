@@ -44,6 +44,22 @@ export function buildShelfGroups(chapters, done, snacks = []) {
   });
 }
 
+// Order 28: finishing the last bite of a chapter stamps it. Called from the win
+// screen while the closing bite is still open, so that bite counts as done here
+// — and the ordinal says how many seals the level has collected, because a
+// completion the learner can see stacking up is a trace, not a number.
+export function chapterSealInfo(chapters, chapterId, done, finishedId) {
+  const chapter = (chapters || []).find((item) => item.id === chapterId);
+  if (!chapter?.bites?.length) return null;
+  const closed = (item) => isDone(done, item) || item.id === finishedId;
+  if (!chapter.bites.every(closed)) return null;
+  const ordinal = (chapters || [])
+    .filter((item) => item.level === chapter.level && item.number <= chapter.number)
+    .filter((item) => (item.bites || []).length && item.bites.every(closed))
+    .length;
+  return { number: chapter.number, level: chapter.level, ordinal };
+}
+
 export function defaultOpenLevels(chapters, done) {
   const nextChapter = chapters.find((chapter) => chapter.bites.some((bite) => !isDone(done, bite)));
   return [nextChapter ? nextChapter.level : LEVEL_GROUPS[0].id];

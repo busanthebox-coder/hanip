@@ -1,5 +1,6 @@
 <script>
   import { onDestroy } from 'svelte';
+  import Bowl from './Bowl.svelte';
   import SettingsSheet from './SettingsSheet.svelte';
   import { prefs, setPref } from '../lib/prefs.js';
   import { installPrompt, promptInstall, shouldOfferInstall } from '../lib/pwa.js';
@@ -7,6 +8,7 @@
   import { bowlFill, streak, weekActivity } from '../lib/stats.js';
   import { learnedDueEntries, srs } from '../lib/srs.js';
   import { findById, findNext } from '../lib/nextBite.js';
+  import { biteHeadwords, createLatestRequest, loadChapterCards, loadSnackCards } from '../lib/courseData.js';
 
   export let index = { chapters: [], snacks: [] };
   export let skippedSnacks = new Set();
@@ -19,6 +21,12 @@
   let dayToast = '';
   let toastTimer;
 
+  // The words today's bite will hand over. Korean only — the meaning is still
+  // the thing the learner has to guess on the card.
+  let todayWords = [];
+  let wordsFor = '';
+  const beginWordsRequest = createLatestRequest();
+
   onDestroy(() => clearTimeout(toastTimer));
 
   $: state = $progress;
@@ -29,15 +37,48 @@
   $: bitesToday = state.bowls[todayKey()] || 0;
   $: currentStreak = streak(state.bowls);
   $: week = weekActivity(state.bowls, $prefs.dailyGoal);
-  $: bowls = week.filter((day) => day.count > 0).length;
   $: todayPending = bitesToday === 0;
   $: fill = bowlFill(bitesToday, $prefs.dailyGoal);
   $: dueCount = learnedDueEntries(state.learned, $srs).length;
+  $: remaining = Math.max(0, ($prefs.dailyGoal || 1) - bitesToday);
   $: showInstall = shouldOfferInstall({
     installEvent: $installPrompt,
     prefsState: $prefs,
     progressState: state,
   });
+
+  $: itemKey = nextItem ? (nextItem.biteId || nextItem.snackId || '') : '';
+  $: if (itemKey !== wordsFor) loadTodayWords(nextItem, itemKey);
+
+  // Reading the words means touching the level chunk Start needs anyway, so the
+  // preview doubles as a prefetch. If it is not there yet the section is simply
+  // absent — it previews the bite, it is never a gate on opening one.
+  async function loadTodayWords(item, key) {
+    wordsFor = key;
+    todayWords = [];
+    if (!item) return;
+    const isLatest = beginWordsRequest();
+    try {
+      if (item.type === 'snack') {
+        const cards = await loadSnackCards(item.snack.id);
+        if (isLatest()) todayWords = biteHeadwords({ cards });
+      } else {
+        const bites = await loadChapterCards(item.chapter.id);
+        if (isLatest()) todayWords = biteHeadwords(bites.find((bite) => bite.id === item.bite.id));
+      }
+    } catch {
+      if (isLatest()) todayWords = [];
+    }
+  }
+
+  function canDoLine(item) {
+    return item ? (item.type === 'snack' ? item.snack.canDo : item.bite.canDo) : '';
+  }
+  function bowlHint(left) {
+    if (left <= 0) return '오늘 그릇을 다 채웠어요';
+    if (left === 1) return '한 입만 더 먹으면 오늘 그릇이 차요';
+    return `${left}입 더 먹으면 오늘 그릇이 차요`;
+  }
 
   async function installApp() {
     setPref('installPromptDismissed', true);
@@ -106,27 +147,41 @@
     <p class="lead-ko">새 한입을 모두 마쳤어요</p>
   {/if}
 
-  <div class="bowl-row">
-    <svg class="bowl" viewBox="0 0 48 48" aria-hidden="true">
-      <defs><clipPath id="homeclip"><path d="M6 20 h36 a1 1 0 0 1 -4 16 a14 8 0 0 1 -28 0 a1 1 0 0 1 -4-16 z"/></clipPath></defs>
-      <g clip-path="url(#homeclip)">
-        <rect x="0" y="20" width="48" height="28" fill="var(--wash)"/>
-        <rect x="0" y={48 - 28 * fill} width="48" height="28" fill="var(--gold)"/>
-      </g>
-      <path d="M6 20 h36 a1 1 0 0 1 -4 16 a14 8 0 0 1 -28 0 a1 1 0 0 1 -4-16 z" fill="none" stroke="var(--ink)" stroke-width="2.4"/>
-    </svg>
-    <div class="bowl-cap">
-      <b>{bowls} bowl{bowls === 1 ? '' : 's'} this week</b>
-      <span>{bitesToday > 0 ? `Today: ${bitesToday} bite${bitesToday === 1 ? '' : 's'}` : "Today's bowl is empty"}</span>
+  {#if todayWords.length > 1}
+    <!-- the gap the redesign left behind, filled with the bite's own contents:
+         no extra card, just what bites.json already holds -->
+    <section class="rule" aria-label="Today's words">
+      <div class="sec-head"><b>Today's words</b><span>{todayWords.length}</span></div>
+      <p class="sec-ko">오늘 만날 말 · 뜻은 카드에서</p>
+      <div class="wordflow">
+        {#each todayWords as word}<b class:wide={word.length > 5}>{word}</b>{/each}
+      </div>
+    </section>
+  {/if}
+
+  {#if nextItem && canDoLine(nextItem)}
+    <div class="rule">
+      <p class="canline">{canDoLine(nextItem)}</p>
+      <p class="canline-ko">이 한입이 끝나면 할 수 있게 되는 것</p>
     </div>
-    {#if currentStreak > 0}<span class="streak">{currentStreak}-day streak</span>{/if}
+  {/if}
+
+  <div class="rule bowl-row">
+    <Bowl size={86} {fill} />
+    <div class="bowl-cap">
+      <b>Today's bowl</b>
+      <span>
+        {bitesToday} of {$prefs.dailyGoal || 1} bite{($prefs.dailyGoal || 1) === 1 ? '' : 's'}{currentStreak > 0 ? ` · ${currentStreak}-day streak` : ''}
+      </span>
+      <em>{bowlHint(remaining)}</em>
+    </div>
   </div>
 
   <div class="week" aria-label="This week">
     {#each week as day (day.key)}
       <button class="day" class:today={day.today} on:click={() => showDay(day)} aria-label={`${day.key}, ${day.count} bites`}>
         <span>{day.label}</span>
-        <i class:partial={day.state === 'partial'} class:full={day.state === 'full'}></i>
+        <Bowl size={26} fill={bowlFill(day.count, $prefs.dailyGoal)} muted={day.count === 0} />
       </button>
     {/each}
   </div>
@@ -174,7 +229,7 @@
 </section>
 
 <style>
-  .home { min-height: calc(100dvh - 64px); max-width: 480px; margin: 0 auto; padding: 26px 22px 20px;
+  .home { min-height: calc(100dvh - 78px); max-width: 480px; margin: 0 auto; padding: 16px 22px 14px;
     display: flex; flex-direction: column; }
   .home-head { min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
   .mark { font-size: 16px; font-weight: 900; letter-spacing: -.03em; color: var(--ink); }
@@ -182,31 +237,47 @@
     transition: color .12s var(--ease); }
   .gear:hover { color: var(--ink); }
 
-  .place { margin-top: 26px; font-size: 12.5px; font-weight: 650; color: var(--ink-3); }
-  .word { margin: 6px 0 0; font-size: clamp(52px, 17vw, 70px); font-weight: 900; letter-spacing: -.045em;
+  .place { margin-top: 20px; font-size: 12.5px; font-weight: 650; color: var(--ink-3); }
+  .word { margin: 5px 0 0; font-size: clamp(52px, 17vw, 70px); font-weight: 900; letter-spacing: -.045em;
     line-height: 1.05; word-break: keep-all; text-wrap: balance; }
   .word.long { font-size: clamp(34px, 11vw, 48px); letter-spacing: -.03em; line-height: 1.12; }
-  .lead { margin: 14px 0 0; font-size: 15.5px; font-weight: 650; line-height: 1.62; color: var(--ink-2);
+  .lead { margin: 13px 0 0; font-size: 15.5px; font-weight: 650; line-height: 1.6; color: var(--ink-2);
     word-break: keep-all; text-wrap: pretty; }
   .lead-ko { margin: 4px 0 0; font-size: 11.5px; font-weight: 650; line-height: 1.5; color: var(--ink-3);
     word-break: keep-all; }
 
-  .bowl-row { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--line);
-    display: flex; align-items: center; gap: 12px; }
-  .bowl { width: 32px; height: 32px; flex: none; }
-  .bowl-cap { min-width: 0; display: grid; }
-  .bowl-cap b { font-size: 14.5px; font-weight: 800; letter-spacing: -.01em; color: var(--ink); }
-  .bowl-cap span { font-size: 12.5px; font-weight: 650; color: var(--ink-3); }
-  .streak { flex: none; margin-left: auto; font-size: 12.5px; font-weight: 650; color: var(--ink-3);
-    font-variant-numeric: tabular-nums; }
+  /* sections are separated by one rule and whitespace — no boxes */
+  .rule { margin-top: 16px; padding-top: 13px; border-top: 1px solid var(--line); }
+  .sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+  .sec-head b { font-size: 15.5px; font-weight: 800; letter-spacing: -.01em; color: var(--ink); }
+  .sec-head span { font-size: 11.5px; font-weight: 650; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+  .sec-ko { margin: 2px 0 0; font-size: 11.5px; font-weight: 650; color: var(--ink-3); }
 
-  .week { margin-top: 14px; display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
-  .day { min-width: 0; padding: 5px 3px; display: grid; justify-items: center; gap: 5px; }
+  .wordflow { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px 0; }
+  .wordflow b { flex: 0 0 33.333%; padding: 4px 8px 4px 0; font-size: 19px; font-weight: 800;
+    letter-spacing: -.02em; line-height: 1.3; color: var(--ink); word-break: keep-all; }
+  .wordflow b.wide { flex-basis: 66.666%; }
+
+  .canline { margin: 0; font-size: 13.5px; font-weight: 650; line-height: 1.55; color: var(--ink-2);
+    word-break: keep-all; }
+  .canline-ko { margin: 3px 0 0; font-size: 11.5px; font-weight: 650; color: var(--ink-3); }
+
+  .bowl-row { display: flex; align-items: center; gap: 14px; }
+  .bowl-cap { min-width: 0; display: grid; }
+  .bowl-cap b { font-size: 15px; font-weight: 800; letter-spacing: -.01em; color: var(--ink); }
+  .bowl-cap span { margin-top: 2px; font-size: 12.5px; font-weight: 650; color: var(--ink-3);
+    font-variant-numeric: tabular-nums; }
+  .bowl-cap em { margin-top: 6px; font-style: normal; font-size: 11.5px; font-weight: 650;
+    color: var(--ink-3); word-break: keep-all; }
+
+  .week { margin-top: 12px; display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+  /* the same bowl as above, only smaller — the metaphor repeats at every scale */
+  .day { min-width: 0; padding: 5px 3px; display: grid; justify-items: center; gap: 4px; }
   .day span { font-size: 10px; font-weight: 750; color: var(--ink-3); }
+  .day.today { position: relative; }
   .day.today span { color: var(--ink); }
-  .day i { width: 20px; height: 15px; border: 1px solid var(--line-2); border-radius: 3px 3px 9px 9px; background: transparent; }
-  .day i.partial { background: linear-gradient(to top, var(--gold) 50%, transparent 50%); }
-  .day i.full { border-color: var(--gold); background: var(--gold); }
+  .day.today::after { content: ""; position: absolute; left: 50%; bottom: -2px; width: 16px; height: 1.5px;
+    transform: translateX(-50%); background: var(--ink); }
   .day-toast { margin-top: 8px; font-size: 11.5px; font-weight: 650; color: var(--ink-3); text-align: center;
     font-variant-numeric: tabular-nums; }
   .streak-next { margin: 9px 0 0; font-size: 11.5px; font-weight: 650; color: var(--ink-3); }
@@ -220,7 +291,7 @@
     font-size: 11.5px; font-weight: 650; color: var(--ink-3); }
   .line-row i { grid-row: 1 / -1; grid-column: 2; font-style: normal; font-size: 15px; color: var(--ink-3); }
 
-  .start-actions { margin-top: auto; padding-top: 20px; display: grid; gap: 2px; }
+  .start-actions { margin-top: auto; padding-top: 11px; display: grid; gap: 2px; }
   .cta { width: 100%; padding: 15px 16px 13px; border-radius: 16px; background: var(--accent); color: var(--on-accent);
     display: grid; gap: 1px; text-align: center; box-shadow: 0 3px 0 var(--accent-deep);
     transition: transform .09s var(--ease), box-shadow .09s var(--ease); }

@@ -6,10 +6,12 @@
   import BitePlayer from './components/BitePlayer.svelte';
   import Onboarding from './components/Onboarding.svelte';
   import PwaUpdateToast from './components/PwaUpdateToast.svelte';
+  import TabIcon from './components/TabIcon.svelte';
   import { createLatestRequest, loadChapterCards, loadSnackCards } from './lib/courseData.js';
-  import { findNext } from './lib/nextBite.js';
+  import { findAfter, findNext } from './lib/nextBite.js';
   import { prefs } from './lib/prefs.js';
   import { buildDueReviewCards, migrateLearnedSchedules, srs } from './lib/srs.js';
+  import { chapterSealInfo } from './lib/shelf.js';
   import { applyTheme } from './lib/theme.js';
   import { markBiteDone, migrateCollected, progress, todayKey } from './lib/store.js';
 
@@ -35,12 +37,13 @@
   const snacks = courseIndex.snacks || [];
   migrateCollected(courseIndex);
 
+  // order 28: the five glyphs are drawn, not typed — Today is the bowl itself
   const TABS = [
-    { key: 'today', ico: '🍚', en: 'Today' },
-    { key: 'shelf', ico: '📚', en: 'Shelf' },
-    { key: 'hangul', ico: '가', en: 'Hangul' },
-    { key: 'hanja', ico: '學', en: 'Hanja' },
-    { key: 'words', ico: '📖', en: 'Words' },
+    { key: 'today', en: 'Today' },
+    { key: 'shelf', en: 'Shelf' },
+    { key: 'hangul', en: 'Hangul' },
+    { key: 'hanja', en: 'Hanja' },
+    { key: 'words', en: 'Words' },
   ];
 
   let tab = 'today';           // TABS key
@@ -67,6 +70,21 @@
 
   $: showOnboarding = onboardingRequested
     || (Object.keys($progress.done).length === 0 && !$prefs.onboardingDone);
+
+  // The win screen names what "한 입 더" will actually serve, so the learner is
+  // choosing something instead of pressing a blind button.
+  $: nextUp = playing
+    ? findAfter({
+        index: courseIndex,
+        done: $progress.done,
+        skippedSnacks,
+        startChapter: $prefs.startChapter,
+        finishedId: playing.bite.id,
+      })
+    : null;
+  $: chapterSeal = playing
+    ? chapterSealInfo(chapters, playing.chapter?.id, $progress.done, playing.bite.id)
+    : null;
 
   function cancelBiteRequest() {
     beginBiteRequest();
@@ -195,6 +213,8 @@
   {#key playing.bite.id}
     <BitePlayer
       bite={playing.bite}
+      {nextUp}
+      {chapterSeal}
       onExit={exitBite}
       onOpenWord={openWordbook}
       withWarmup={playing.withWarmup}
@@ -250,7 +270,7 @@
   <nav class="tabs">
     {#each TABS as t}
       <button class:on={tab === t.key} on:click={() => { cancelBiteRequest(); tab = t.key; showGuide = false; window.scrollTo(0, 0); }}>
-        <span class="ico">{t.ico}</span>
+        <TabIcon name={t.key} />
         <span class="t-label">{t.en}</span>
       </button>
     {/each}
@@ -263,10 +283,9 @@
   main { padding-bottom: 78px; }
   .tabs { position: fixed; bottom: 0; left: 0; right: 0; display: flex; background: var(--card);
     border-top: 1px solid var(--line); padding: 7px 0 calc(9px + env(safe-area-inset-bottom, 0px)); z-index: 40; }
-  .tabs button { flex: 1; min-width: 0; min-height: 44px; display: grid; justify-items: center; gap: 1px;
+  .tabs button { flex: 1; min-width: 0; min-height: 44px; display: grid; justify-items: center; gap: 2px;
     padding: 2px 0; color: var(--ink-3); }
   .tabs button.on { color: var(--accent-deep); }
-  .ico { font-size: 17px; line-height: 1.2; font-weight: 700; }
   .t-label { font-size: 10.5px; font-weight: 850; line-height: 1.25; }
   .guide-wrap { max-width: 480px; margin: 0 auto; }
   .back-shelf { margin: 18px 22px 0; min-height: 44px; color: var(--ink-3); font-size: 12.5px; font-weight: 700; }

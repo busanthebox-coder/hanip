@@ -51,6 +51,19 @@ export function hydrateChapterRomanization(bites) {
   });
 }
 
+// The Korean forms today's bite will put in front of the learner, in the order
+// the cards will ask for them. Meanings are deliberately left out — guessing
+// first is the whole method, so Home may name the words but never gloss them.
+export function biteHeadwords(bite, limit = 6) {
+  const seen = new Set();
+  for (const card of bite?.cards || []) {
+    const ko = card.kind === 'guess' ? card.word?.ko : card.kind === 'hunt' ? card.name : '';
+    if (ko && !seen.has(ko)) seen.add(ko);
+    if (seen.size >= limit) break;
+  }
+  return [...seen];
+}
+
 function loadChunk(chunk) {
   if (!levelPromises[chunk]) {
     const promise = LOAD_CHUNK[chunk]().then((module) => module.default);

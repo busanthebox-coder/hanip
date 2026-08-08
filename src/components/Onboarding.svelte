@@ -1,5 +1,6 @@
 <script>
   import { tick } from 'svelte';
+  import Bowl from './Bowl.svelte';
   import { setPref } from '../lib/prefs.js';
 
   export let onComplete = () => {};
@@ -31,11 +32,8 @@
 
   <section class="card" aria-live="polite">
     {#if step === 0}
-      <svg class="bowl" viewBox="0 0 120 120" aria-hidden="true">
-        <path d="M18 48h84c0 29-18 47-42 47S18 77 18 48Z" fill="none" stroke="var(--ink)" stroke-width="5"/>
-        <path d="M30 48c4-14 14-22 30-22s26 8 30 22" fill="none" stroke="var(--gold)" stroke-width="5" stroke-linecap="round"/>
-        <path d="M40 101h40" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>
-      </svg>
+      <!-- the same bowl the rest of the app fills — one bite heaps it -->
+      <div class="bowl-wrap"><Bowl size={108} fill={1} animate /></div>
       <div class="place">3-minute microlearning</div>
       <h1 bind:this={title} tabindex="-1">One bite is enough</h1>
       <p>Finish one small bite a day instead of sitting through a long lesson.</p>
@@ -90,7 +88,7 @@
   .card { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 30px 0;
     animation: enter var(--duration-standard) var(--ease); }
   @keyframes enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-  .bowl { width: 108px; height: 108px; margin-bottom: 26px; }
+  .bowl-wrap { margin-bottom: 26px; }
   .place { font-size: 12.5px; font-weight: 650; color: var(--ink-3); }
   h1 { margin: 8px 0 0; font-size: clamp(34px, 10vw, 46px); font-weight: 900; line-height: 1.12;
     letter-spacing: -.04em; word-break: keep-all; }

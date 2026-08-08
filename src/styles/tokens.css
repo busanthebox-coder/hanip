@@ -159,13 +159,28 @@
 html, body {
   margin: 0;
   min-height: 100%;
-  background: var(--bg);
   color: var(--ink);
   font-family: var(--sans);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
+/* Study paper. --study-grid keeps its value; the same line is laid down twice
+   so its effective contrast roughly doubles and the ruling becomes visible at
+   all, and a 3px dot lattice on top gives the sheet its tooth. Painted on
+   <html> so it propagates to the canvas and no screen is left blank white. */
+html {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(var(--study-grid) 0.6px, transparent 0.7px),
+    repeating-linear-gradient(var(--study-grid) 0 1px, transparent 1px 30px),
+    repeating-linear-gradient(var(--study-grid) 0 1px, transparent 1px 30px),
+    repeating-linear-gradient(90deg, var(--study-grid) 0 1px, transparent 1px 30px),
+    repeating-linear-gradient(90deg, var(--study-grid) 0 1px, transparent 1px 30px);
+  background-size: 3px 3px, auto, auto, auto, auto;
+}
+body { background: none; }
 button { font: inherit; cursor: pointer; border: 0; background: none; color: inherit; padding: 0; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
 ::selection { background: var(--accent-soft); color: var(--accent-deep); }

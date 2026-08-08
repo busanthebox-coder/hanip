@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { findNext } from './nextBite.js';
+import { findAfter, findNext } from './nextBite.js';
 
 const index = {
   chapters: [
@@ -101,5 +101,40 @@ describe('findNext', () => {
       chapterId: 'chapter-01',
       biteId: 'chapter-01-b2',
     });
+  });
+});
+
+describe('findAfter', () => {
+  // The win screen names what comes next while the bite it announces is still
+  // open, so the finished bite has to count as done before the search runs.
+  it('looks past the bite that is being finished right now', () => {
+    expect(findAfter({ index, done: {}, finishedId: 'chapter-01-b1' })).toMatchObject({
+      type: 'bite',
+      biteId: 'chapter-01-b2',
+    });
+  });
+
+  it('announces the boundary snack once the chapter closes', () => {
+    expect(findAfter({
+      index,
+      done: { 'chapter-01-b1': 1 },
+      finishedId: 'chapter-01-b2',
+    })).toMatchObject({ type: 'snack', snackId: 'snack-one' });
+  });
+
+  it('returns null when the finished bite was the last one', () => {
+    const done = {
+      'chapter-01-b1': 1,
+      'chapter-01-b2': 1,
+      'snack-one': 1,
+      'snack-two': 1,
+    };
+    expect(findAfter({ index, done, finishedId: 'chapter-02-b1' })).toBeNull();
+  });
+
+  it('does not mutate the progress map it was handed', () => {
+    const done = { 'chapter-01-b1': 1 };
+    findAfter({ index, done, finishedId: 'chapter-01-b2' });
+    expect(done).toEqual({ 'chapter-01-b1': 1 });
   });
 });

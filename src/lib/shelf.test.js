@@ -3,6 +3,7 @@ import {
   LEVEL_GROUPS,
   buildShelfGroups,
   chapterRangeLabel,
+  chapterSealInfo,
   defaultOpenLevels,
   filterShelfGroups,
   parseStoredOpenLevels,
@@ -117,5 +118,36 @@ describe('shelf level grouping', () => {
     expect(filterShelfGroups(groups, '64').flatMap((group) => group.chapters).map((ch) => ch.number)).toEqual([64]);
     expect(filterShelfGroups(groups, '사동').flatMap((group) => group.chapters).map((ch) => ch.number)).toEqual([57]);
     expect(filterShelfGroups(groups, '부탁').flatMap((group) => group.chapters).map((ch) => ch.number)).toEqual([12]);
+  });
+});
+
+describe('chapterSealInfo', () => {
+  const sealChapters = [
+    { id: 'chapter-01', number: 1, level: 'A1', bites: [{ id: 'c1-b1' }, { id: 'c1-b2' }] },
+    { id: 'chapter-02', number: 2, level: 'A1', bites: [{ id: 'c2-b1' }] },
+    { id: 'chapter-12', number: 12, level: 'A2', bites: [{ id: 'c12-b1' }] },
+  ];
+
+  it('stays silent while the chapter still has bites left', () => {
+    expect(chapterSealInfo(sealChapters, 'chapter-01', {}, 'c1-b1')).toBe(null);
+  });
+
+  it('seals the chapter on the bite that closes it', () => {
+    expect(chapterSealInfo(sealChapters, 'chapter-01', { 'c1-b1': 1 }, 'c1-b2'))
+      .toEqual({ number: 1, level: 'A1', ordinal: 1 });
+  });
+
+  it('counts the seal among the ones already earned in that level', () => {
+    const done = { 'c1-b1': 1, 'c1-b2': 1 };
+    expect(chapterSealInfo(sealChapters, 'chapter-02', done, 'c2-b1'))
+      .toEqual({ number: 2, level: 'A1', ordinal: 2 });
+    // a different level counts its own seals, not the whole course
+    expect(chapterSealInfo(sealChapters, 'chapter-12', done, 'c12-b1'))
+      .toEqual({ number: 12, level: 'A2', ordinal: 1 });
+  });
+
+  it('ignores snacks and reviews, which belong to no chapter', () => {
+    expect(chapterSealInfo(sealChapters, 'snack-food-basic', {}, 'snack-food-basic')).toBe(null);
+    expect(chapterSealInfo(sealChapters, 'review', {}, 'review-2026-08-08')).toBe(null);
   });
 });

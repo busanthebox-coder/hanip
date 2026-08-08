@@ -85,12 +85,28 @@ There is no `한국어 · English` one-line pairing anywhere.
 
 The surface is built from whitespace and 1px rules: one card outline per screen, one dominant type
 size per screen, greyscale plus at most two accent colours (gold for progress and the target
-morpheme, green for correct, red only on the wrong answer itself). A bite reads as a paper deck on
-a grid-ruled desk; finishing one fills a bowl and ends on the cards you missed.
+morpheme, green for correct, red only on the wrong answer itself). There are no emoji anywhere,
+including the tab bar.
+
+What keeps that restraint from reading as unfinished is **material**. Every screen sits on ruled
+study paper — the same `--study-grid` token laid down twice for legible contrast, with a 3px dot
+lattice for tooth — and the grain carries on **through the card**, so a bite reads as loose sheets on
+a desk rather than white rectangles floating over it. The back sheets of the deck sit a third of a
+degree off true. Answering correctly makes `--good-soft` seep out from where the finger landed and
+settle, like ink into paper.
+
+The bowl is the one repeated metaphor, and it exists **once**: a brush silhouette of ribbon body,
+lens rim and foot, drawn from a single path in `src/lib/bowl.js` and rendered only by
+`src/components/Bowl.svelte`. Home, the week strip, the win screen, onboarding and the Today tab icon
+are all that component at different sizes; rice fills linearly with the day's goal and heaps over the
+rim when it is met. The five tab glyphs are one hand-drawn stroke system at 24×24 — bowl, spines,
+가, 文, open book. Progress reads in three states: a 한입 seal when a chapter is finished, `5/8` over
+a 38px bar while it runs, a faded `0/8` before it starts.
 
 [`docs/design/STYLE.md`](docs/design/STYLE.md) is the binding style guide (type scale, colour budget,
-kill list); [`docs/tab-contract.md`](docs/tab-contract.md) carries the language policy that any new
-tab must follow; [`docs/design/spec-v4.html`](docs/design/spec-v4.html) is the 14-frame mockup the
-current interface was built against.
+kill list, bowl/icon/paper rules); [`docs/tab-contract.md`](docs/tab-contract.md) carries the language
+policy that any new tab must follow; [`docs/design/spec-v4.html`](docs/design/spec-v4.html) is the
+14-frame product-tone mockup and [`docs/design/spec-v5.html`](docs/design/spec-v5.html) the 8-frame
+material pass the current interface was built against.
 
 Migration evidence and known extraction limits are recorded in [`docs/harness/RELEASE.md`](docs/harness/RELEASE.md).

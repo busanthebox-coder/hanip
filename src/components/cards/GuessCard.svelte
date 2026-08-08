@@ -157,7 +157,7 @@
   .opts { margin-top: 18px; }
   /* santa-style answer sheet: the row rules run the full width of the screen,
      so the options read as a list and not as a stack of pills */
-  .opt { display: flex; align-items: center; gap: 10px; min-height: 44px;
+  .opt { position: relative; display: flex; align-items: center; gap: 10px; min-height: 44px;
     width: calc(100% + var(--sheet-pad, 20px) * 2);
     margin: 0 calc(var(--sheet-pad, 20px) * -1); padding: 9px var(--sheet-pad, 20px);
     border-top: 1px solid var(--line); font-size: 15px; font-weight: 650; color: var(--ink); text-align: left;
@@ -167,7 +167,15 @@
   .opt-text { min-width: 0; word-break: keep-all; }
   .opt.dim { color: var(--ink-3); font-weight: 600; }
   .opt.dim:hover { background: none; }
-  .opt.picked { background: var(--wash); color: var(--ink); font-weight: 800; }
+  /* the one motion in the app: --good-soft seeps out from where the finger
+     landed, like ink into paper, then settles back into a 1px rule */
+  .opt.picked { color: var(--ink); font-weight: 800; }
+  .opt.picked:hover { background: none; }
+  .opt.picked::before { content: ""; position: absolute; inset: 0; z-index: -1;
+    background: radial-gradient(130% 200% at 16% 50%, var(--good-soft) 0 52%, transparent 76%);
+    transform-origin: 16% 50%; animation: bleed .46s var(--ease) both; }
+  @keyframes bleed { 0% { transform: scale(.14); opacity: 0; } 30% { opacity: 1; }
+    100% { transform: scale(1); opacity: 1; } }
   .opt.wrong { color: var(--bad); }
   .opt.wrong:hover { background: none; }
   .mark { margin-left: auto; flex: none; font-size: 13px; font-weight: 900; }
