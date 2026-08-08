@@ -104,36 +104,32 @@
   />
 {:else}
 <section class="shelf">
-  <div class="cap">책장 · Bookshelf</div>
-  <p class="sub">65개 챕터를 레벨별로 열어 보세요. · Browse all 65 chapters by level.</p>
+  <div class="mark">Shelf</div>
+  <p class="sub">Browse all {chapters.length} chapters by level</p>
 
-  <button class="guide-card" on:click={onOpenGuide}>
-    <span class="g-ico">🧭</span>
-    <span class="g-main">
-      <strong>가이드북 · Korea guides</strong>
-      <span>Real-life survival guides — arrival, transport, food, emergencies · 실전 생활 가이드 20편</span>
-    </span>
-    <span class="g-chev">▸</span>
-  </button>
+  <SearchField
+    bind:value={query}
+    label="Search chapters"
+    placeholder="Search number or title"
+  />
 
-  <button class="grammar-entry" on:click={() => { showCollection = true; window.scrollTo(0, 0); }}>
-    <span>📜</span>
-    <strong>모은 문법 {grammarCollected}/{grammarTotal} · Grammar collection</strong>
-    <span class="g-chev">▸</span>
-  </button>
-
-  <div class="search-wrap">
-    <SearchField
-      bind:value={query}
-      label="챕터 검색 · Search chapters"
-      placeholder="챕터 번호나 제목 검색 · Search number or title"
-    />
+  <div class="entries">
+    <button class="entry" on:click={() => { showCollection = true; window.scrollTo(0, 0); }}>
+      <b>Grammar collection</b>
+      <span class="entry-sub">모은 문법 카드</span>
+      <span class="entry-num">{grammarCollected}/{grammarTotal}</span>
+    </button>
+    <button class="entry" on:click={onOpenGuide}>
+      <b>Korea guides</b>
+      <span class="entry-sub">Arrival, transport, food, emergencies</span>
+      <span class="entry-num">20</span>
+    </button>
   </div>
 
   {#if visibleGroups.length === 0}
     <div class="empty" role="status">
-      <strong>검색 결과가 없어요 · No matching chapters</strong>
-      <span>다른 번호나 제목을 입력해 보세요. · Try another number or title.</span>
+      <b>No matching chapters</b>
+      <span>Try another number or title</span>
     </div>
   {:else}
     <div class="groups">
@@ -153,7 +149,7 @@
 
   <div class="readers-wrap">
     {#await import('./ReadersShelf.svelte')}
-      <p class="readers-loading" role="status">읽을거리 불러오는 중 · Loading readers…</p>
+      <p class="readers-loading" role="status">Loading readers…</p>
     {:then mod}
       <svelte:component this={mod.default} />
     {/await}
@@ -162,28 +158,26 @@
 {/if}
 
 <style>
-  .shelf { max-width: 480px; margin: 0 auto; padding: 30px 20px 40px; }
-  .cap { font-size: 11.5px; font-weight: 850; letter-spacing: .2em; color: var(--accent); text-transform: uppercase; }
-  .sub { margin: 6px 0 18px; font-size: 13.5px; color: var(--ink-3); word-break: keep-all; }
-  .guide-card { width: 100%; display: flex; align-items: center; gap: 12px; margin-bottom: 14px; padding: 15px 16px;
-    border-radius: 18px; background: var(--card); border: 1px solid var(--line); box-shadow: var(--shadow-1);
-    text-align: left; transition: border-color .12s var(--ease); }
-  .guide-card:hover { border-color: var(--ink-3); }
-  .grammar-entry { width: 100%; min-height: 52px; margin: -4px 0 14px; padding: 11px 15px; display: flex; align-items: center;
-    gap: 10px; border: 1px solid var(--line); border-radius: 16px; background: var(--wash); text-align: left; }
-  .grammar-entry strong { min-width: 0; flex: 1; color: var(--ink-2); font-size: 13px; }
-  .g-ico { font-size: 26px; flex: none; }
-  .g-main { flex: 1; min-width: 0; display: grid; gap: 1px; }
-  .g-main strong { font-size: 15px; font-weight: 850; }
-  .g-main span { font-size: 12px; color: var(--ink-3); line-height: 1.45; word-break: keep-all; }
-  .g-chev { color: var(--ink-3); flex: none; }
-  .search-wrap { margin-bottom: 14px; }
-  .groups { display: grid; gap: 12px; }
-  .empty { display: grid; gap: 4px; padding: 28px 16px; border: 1px solid var(--line); border-radius: 18px;
-    background: var(--card); box-shadow: var(--shadow-1); text-align: center; word-break: keep-all; }
-  .empty strong { font-size: 15px; }
-  .empty span { color: var(--ink-3); font-size: 13px; }
-  .readers-wrap { margin-top: 24px; }
-  .readers-loading { margin: 0; padding: 24px 16px; border: 1px solid var(--line); border-radius: 18px;
-    color: var(--ink-3); font-size: 13px; text-align: center; }
+  .shelf { max-width: 480px; margin: 0 auto; padding: 26px 22px 40px; }
+  .mark { font-size: 16px; font-weight: 900; letter-spacing: -.03em; }
+  .sub { margin: 5px 0 14px; font-size: 12.5px; font-weight: 650; color: var(--ink-3); word-break: keep-all; }
+
+  .entries { margin-top: 18px; }
+  .entry { width: 100%; min-height: 44px; display: grid; grid-template-columns: 1fr auto; align-items: center;
+    padding: 13px 0; border-top: 1px solid var(--line); text-align: left;
+    transition: background-color .12s var(--ease); }
+  .entry:last-child { border-bottom: 1px solid var(--line); }
+  .entry:hover { background: var(--wash); }
+  .entry b { font-size: 14.5px; font-weight: 750; letter-spacing: -.01em; }
+  .entry-sub { grid-column: 1; font-size: 11.5px; font-weight: 650; color: var(--ink-3); word-break: keep-all; }
+  .entry-num { grid-row: 1 / -1; grid-column: 2; font-size: 12.5px; font-weight: 650; color: var(--ink-3);
+    font-variant-numeric: tabular-nums; }
+
+  .groups { margin-top: 20px; }
+  .empty { margin-top: 26px; display: grid; gap: 4px; text-align: center; word-break: keep-all; }
+  .empty b { font-size: 15px; font-weight: 800; }
+  .empty span { font-size: 12.5px; font-weight: 650; color: var(--ink-3); }
+  .readers-wrap { margin-top: 28px; }
+  .readers-loading { margin: 0; padding: 24px 0; font-size: 12.5px; font-weight: 650; color: var(--ink-3);
+    text-align: center; }
 </style>

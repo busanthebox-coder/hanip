@@ -1,7 +1,7 @@
 <script>
   export let value = '';
-  export let label = '검색 · Search';
-  export let placeholder = '검색 · Search';
+  export let label = 'Search';
+  export let placeholder = 'Search';
 </script>
 
 <input
@@ -15,8 +15,8 @@
 <style>
   .search {
     width: 100%; min-height: 44px; padding: 11px 15px;
-    font: inherit; font-size: 13.5px; color: var(--ink);
-    background: var(--wash); border: 1px solid var(--line); border-radius: var(--r-chip);
+    font: inherit; font-size: 13.5px; font-weight: 600; color: var(--ink);
+    background: var(--wash); border: 1px solid var(--line); border-radius: 14px;
     transition: border-color .15s var(--ease), background-color .15s var(--ease);
   }
   .search::placeholder { color: var(--ink-3); }

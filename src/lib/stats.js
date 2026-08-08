@@ -1,4 +1,4 @@
-const DAY_LABELS = ['월', '화', '수', '목', '금', '토', '일'];
+const DAY_LABELS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
 export function dayKey(date) {
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
@@ -24,6 +24,16 @@ export function streak(bowls, now = new Date()) {
 
 export function goalMet(day, bowls, dailyGoal = 1) {
   return (bowls?.[day] || 0) >= dailyGoal;
+}
+
+// How full today's bowl is drawn, 0…1. Derived from the bowls map the app
+// already stores against the saved daily goal — the bowl and the week strip
+// therefore agree about what "a full day" means.
+export function bowlFill(count = 0, dailyGoal = 1) {
+  const done = Number(count) || 0;
+  const goal = Number(dailyGoal) > 0 ? Number(dailyGoal) : 1;
+  if (done <= 0) return 0;
+  return Math.min(1, done / goal);
 }
 
 export function weekActivity(bowls, dailyGoal = 1, now = new Date()) {

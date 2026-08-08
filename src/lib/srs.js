@@ -30,10 +30,17 @@ export function nextInterval(currentInterval) {
   return INTERVALS.find((interval) => interval > currentInterval) || INTERVALS.at(-1);
 }
 
+// The one place the ladder is walked. record() writes what this returns and the
+// reveal line reads it, so "Next review in N days" can never drift from reality.
+export function nextIntervalDays(schedule, ko, correct, starred = false) {
+  if (correct) return nextInterval(schedule?.[ko]?.interval);
+  return starred ? 0.5 : 1;
+}
+
 export function applyRecord(schedule, ko, correct, now = Date.now(), starred = false) {
   if (!ko) return { ...schedule };
   const at = timestamp(now);
-  const interval = correct ? nextInterval(schedule?.[ko]?.interval) : starred ? 0.5 : 1;
+  const interval = nextIntervalDays(schedule, ko, correct, starred);
   return {
     ...(schedule || {}),
     [ko]: { interval, due: at + interval * DAY_MS },

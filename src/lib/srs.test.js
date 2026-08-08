@@ -5,6 +5,7 @@ import {
   buildDueReviewCards,
   dueCards,
   INTERVALS,
+  nextIntervalDays,
   prepareReviewCards,
   record,
   srs,
@@ -75,6 +76,21 @@ describe('spaced repetition schedule', () => {
     const cards = buildDueReviewCards(learned, schedule, NOW, 8);
     expect(cards).toHaveLength(8);
     expect(cards[0].word.ko).toBe('단어0');
+  });
+
+  // order 27: the reveal tells the learner when the word comes back. It must be
+  // the exact number record() is about to write, never a second guess at it.
+  it('previews the same interval record would store for a first correct answer', () => {
+    expect(nextIntervalDays({}, '한글', true)).toBe(INTERVALS[0]);
+    expect(nextIntervalDays({ 한글: { interval: 1, due: NOW } }, '한글', true)).toBe(INTERVALS[1]);
+    expect(nextIntervalDays({}, '한글', true)).toBe(applyRecord({}, '한글', true, NOW).한글.interval);
+  });
+
+  it('previews the reset interval after a miss, halved for a starred word', () => {
+    const schedule = { 한글: { interval: 30, due: NOW } };
+    expect(nextIntervalDays(schedule, '한글', false)).toBe(1);
+    expect(nextIntervalDays(schedule, '한글', false, true)).toBe(0.5);
+    expect(nextIntervalDays(schedule, '한글', false)).toBe(applyRecord(schedule, '한글', false, NOW).한글.interval);
   });
 
   it('backfills existing learned words as immediately due without replacing schedules', () => {

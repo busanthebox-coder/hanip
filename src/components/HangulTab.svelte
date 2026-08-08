@@ -54,13 +54,14 @@
 </script>
 
 <section class="hangul">
-  <div class="cap">한글 · The Korean alphabet</div>
-  <p class="sub">Tap any letter to hear it · 아무 글자나 탭하면 소리가 나요</p>
+  <div class="mark">The Korean alphabet</div>
+  <p class="sub">Tap any letter to hear it</p>
+  <p class="sub-ko">아무 글자나 탭하면 소리가 나요</p>
 
   <!-- ── 자음 Consonants ─────────────────────────── -->
   <div class="block">
-    <h3 class="sec">자음 · Consonants <span class="cnt">14</span></h3>
-    <p class="note">Consonants are voiced with ㅏ so you can hear them · 자음은 ㅏ를 붙여 들려드려요</p>
+    <h3 class="sec">Consonants <span class="cnt">14</span></h3>
+    <p class="note">Voiced with ㅏ so you can hear them — 자음</p>
     <div class="grid">
       {#each BASIC_LEADS as idx (idx)}
         <button
@@ -76,7 +77,7 @@
       {/each}
     </div>
 
-    <h4 class="mini">쌍자음 · Double consonants</h4>
+    <h4 class="mini">Double consonants</h4>
     <div class="grid">
       {#each DOUBLE_LEADS as idx (idx)}
         <button
@@ -95,8 +96,8 @@
 
   <!-- ── 모음 Vowels ─────────────────────────────── -->
   <div class="block">
-    <h3 class="sec">모음 · Vowels <span class="cnt">21</span></h3>
-    <h4 class="mini first">기본 모음 · Basic vowels</h4>
+    <h3 class="sec">Vowels <span class="cnt">21</span></h3>
+    <h4 class="mini first">Basic vowels</h4>
     <div class="grid">
       {#each BASIC_VOWELS as idx (idx)}
         <button
@@ -112,7 +113,7 @@
       {/each}
     </div>
 
-    <h4 class="mini divided">복합 모음 · Compound vowels</h4>
+    <h4 class="mini divided">Compound vowels</h4>
     <div class="grid">
       {#each COMPOUND_VOWELS as idx (idx)}
         <button
@@ -131,11 +132,11 @@
 
   <!-- ── 글자 조립 Build a syllable ──────────────── -->
   <div class="block">
-    <h3 class="sec">글자 조립 · Build a syllable</h3>
-    <p class="note">Pick a lead, a vowel, and an optional final · 첫소리, 모음, 받침(선택)을 골라요</p>
+    <h3 class="sec">Build a syllable</h3>
+    <p class="note">Pick a lead, a vowel, and an optional final</p>
 
     <div class="builder">
-      <div class="row-lab">첫소리 · Lead</div>
+      <div class="row-lab">Lead 첫소리</div>
       <div class="chips">
         {#each BASIC_LEADS as idx (idx)}
           <button class="chip" class:on={leadSel === idx} on:click={() => pickLead(idx)}>
@@ -144,7 +145,7 @@
         {/each}
       </div>
 
-      <div class="row-lab">모음 · Vowel</div>
+      <div class="row-lab">Vowel 모음</div>
       <div class="chips">
         {#each BASIC_VOWELS as idx (idx)}
           <button class="chip" class:on={vowelSel === idx} on:click={() => pickVowel(idx)}>
@@ -153,11 +154,11 @@
         {/each}
       </div>
 
-      <div class="row-lab">받침 · Final <span class="opt">(optional · 선택)</span></div>
+      <div class="row-lab">Final 받침 <span class="opt">(optional)</span></div>
       <div class="chips">
         {#each TAIL_CHOICES as idx (idx)}
           <button class="chip" class:none={idx === 0} class:on={tailSel === idx} on:click={() => pickTail(idx)}>
-            {idx === 0 ? '없음 · none' : TAILS[idx]}
+            {idx === 0 ? 'none' : TAILS[idx]}
           </button>
         {/each}
       </div>
@@ -175,26 +176,26 @@
 
   <!-- ── closing tip ─────────────────────────────── -->
   <div class="tip">
-    <div class="tip-cap">읽는 법 · How blocks read</div>
-    <p class="tip-line">글자 블록은 왼쪽→오른쪽, 위→아래로 읽어요 · Syllable blocks read left→right, top→bottom.</p>
-    <p class="tip-line">모든 블록은 자음으로 시작해요 — 모음 앞의 ㅇ은 소리가 없어요 · Every block starts with a consonant (ㅇ is silent before a vowel).</p>
+    <div class="tip-cap">How blocks read</div>
+    <p class="tip-line">Syllable blocks read left→right, top→bottom.</p>
+    <p class="tip-line">Every block starts with a consonant — ㅇ is silent before a vowel.</p>
   </div>
 </section>
 
 <style>
   .hangul { max-width: 480px; margin: 0 auto; padding: 30px 20px 40px; }
-  .cap { font-size: 11.5px; font-weight: 850; letter-spacing: .2em; color: var(--accent); text-transform: uppercase; }
+  .mark { font-size: 16px; font-weight: 900; letter-spacing: -.03em; }
+  .sub-ko { margin: 2px 0 14px; font-size: 11.5px; font-weight: 650; color: var(--ink-3); word-break: keep-all; }
   .sub { margin: 6px 0 18px; font-size: 13.5px; color: var(--ink-3); word-break: keep-all; }
 
   .block { margin-top: 26px; }
-  .sub + .block { margin-top: 0; }
+  .sub-ko + .block { margin-top: 0; }
   .sec { margin: 0 0 4px; font-size: 15.5px; font-weight: 800; word-break: keep-all; }
   .cnt { font-size: 11px; font-weight: 850; color: var(--ink-3); background: var(--wash);
     border: 1px solid var(--line); border-radius: 999px; padding: 2px 8px; vertical-align: 2px; }
   .note { margin: 0 0 12px; font-size: 12.5px; color: var(--ink-3); word-break: keep-all; }
 
-  .mini { margin: 18px 0 10px; font-size: 11px; font-weight: 850; letter-spacing: .12em;
-    text-transform: uppercase; color: var(--ink-3); word-break: keep-all; }
+  .mini { margin: 18px 0 10px; font-size: 11px; font-weight: 850; letter-spacing: .01em; color: var(--ink-3); word-break: keep-all; }
   .mini.first { margin-top: 12px; }
   .mini.divided { border-top: 1px solid var(--line); padding-top: 16px; margin-top: 20px; }
 
@@ -217,7 +218,7 @@
   /* builder card */
   .builder { background: var(--card); border: 1px solid var(--line); border-radius: 18px;
     box-shadow: var(--shadow-1); padding: 16px 15px 18px; }
-  .row-lab { font-size: 11px; font-weight: 850; letter-spacing: .12em; text-transform: uppercase;
+  .row-lab { font-size: 11px; font-weight: 850; letter-spacing: .01em;
     color: var(--ink-2); margin: 14px 0 8px; word-break: keep-all; }
   .row-lab:first-child { margin-top: 0; }
   .opt { font-weight: 700; letter-spacing: .04em; color: var(--ink-3); text-transform: none; }
@@ -242,7 +243,7 @@
   /* closing tip */
   .tip { margin-top: 26px; background: var(--card); border: 1px solid var(--line);
     border-radius: 18px; box-shadow: var(--shadow-1); padding: 15px 16px; }
-  .tip-cap { font-size: 11px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase;
+  .tip-cap { font-size: 11px; font-weight: 850; letter-spacing: .01em;
     color: var(--gold); margin-bottom: 6px; }
   .tip-line { margin: 6px 0 0; font-size: 13.5px; color: var(--ink-2); word-break: keep-all; }
 </style>

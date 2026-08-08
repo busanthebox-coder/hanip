@@ -2,6 +2,7 @@
   import { tick as afterUpdate } from 'svelte';
   import AudioDot from './AudioDot.svelte';
   import { prefs } from '../../lib/prefs.js';
+  import { srs } from '../../lib/srs.js';
   import { progress, toggleStarred } from '../../lib/store.js';
 
   export let card;
@@ -10,6 +11,7 @@
 
   let picked = null;      // option text the learner tapped
   let revealed = false;
+  let skipped = false;
   let romajaShown = false;
   let revealElement;
 
@@ -19,6 +21,9 @@
   $: starred = ($progress.starred || []).includes(card.word.ko);
   $: direction = card.direction || 'ko→en';
   $: correctOption = direction === 'en→ko' ? card.word.ko : card.word.en;
+  // The player records the answer before the reveal renders, so the schedule
+  // already holds the real next due date — no second guess at the ladder.
+  $: dueInterval = revealed && !skipped ? $srs[card.word.ko]?.interval ?? null : null;
 
   function splitOnce(text, needle) {
     const at = text.indexOf(needle);
@@ -26,16 +31,28 @@
     return { pre: text.slice(0, at), mid: needle, post: text.slice(at + needle.length) };
   }
 
+  function nextReviewEn(days) {
+    if (days < 1) return 'Next review later today';
+    if (days === 1) return 'Next review tomorrow';
+    return `Next review in ${days} days`;
+  }
+  function nextReviewKo(days) {
+    if (days < 1) return '오늘 안에 다시 나와요';
+    if (days === 1) return '내일 다시 나와요';
+    return `${days}일 뒤에 다시 나와요`;
+  }
+
   function pick(opt) {
     if (revealed) return;
     picked = opt;
     revealed = true;
-    onResolve(opt === correctOption);
+    onResolve(opt === correctOption, { picked: opt });
     showReveal();
   }
   function giveUp() {
     if (revealed) return;
     revealed = true;
+    skipped = true;
     onResolve(false, { skipped: true });
     showReveal();
   }
@@ -45,93 +62,141 @@
   }
 </script>
 
-<div class="step-label">{card.warmup || card.review ? '복습 · Review' : '단어 · Guess first'}</div>
-
 {#if direction === 'en→ko'}
-  <div class="sent"><span class="target">{card.word.en}</span></div>
-  <div class="q">어떤 한국어 단어일까요? <span class="q-en">Which Korean word matches this meaning?</span></div>
+  <div class="stem" class:small={revealed}>{card.word.en}</div>
 {:else if parts}
-  <div class="sent">{parts.pre}<span class="target">{parts.mid}</span>{parts.post}</div>
+  <div class="stem" class:small={revealed}>{parts.pre}<span class="tgt">{parts.mid}</span>{parts.post}</div>
 {:else}
-  <div class="sent"><span class="target">{card.word.ko}</span></div>
+  <div class="stem" class:small={revealed}><span class="tgt">{card.word.ko}</span></div>
 {/if}
-{#if direction !== 'en→ko'}<div class="q">무슨 뜻일까요? <span class="q-en">What does the highlighted word mean?</span></div>{/if}
+{#if revealed && card.sentence?.en && direction !== 'en→ko'}
+  <div class="stem-en">{card.sentence.en}</div>
+{/if}
 
-<div class="chips">
+{#if !revealed}
+  {#if direction === 'en→ko'}
+    <div class="ask">어떤 한국어 단어일까요?</div>
+    <div class="ask-en">Which Korean word matches this meaning?</div>
+  {:else}
+    <div class="ask">{parts ? '밑줄 친 말은 무슨 뜻일까요?' : '무슨 뜻일까요?'}</div>
+    <div class="ask-en">What does the highlighted word mean?</div>
+  {/if}
+{/if}
+
+<div class="opts">
   {#each card.options as opt}
     <button
-      class="chip"
-      class:good={revealed && opt === correctOption}
-      class:bad={revealed && picked === opt && opt !== correctOption}
+      class="opt"
+      class:dim={revealed && opt !== correctOption && opt !== picked}
+      class:picked={revealed && opt === correctOption}
+      class:wrong={revealed && picked === opt && opt !== correctOption}
       on:click={() => pick(opt)}
-    >{opt}</button>
+    >
+      <span class="opt-text">{opt}</span>
+      {#if revealed && opt === correctOption}<span class="mark good">Correct</span>
+      {:else if revealed && picked === opt}<span class="mark bad">Your answer</span>{/if}
+    </button>
   {/each}
 </div>
+
 {#if !revealed}
-  <button class="dunno" on:click={giveUp}>몰라요 · Don't know — just show me</button>
+  <button class="textbtn dunno" on:click={giveUp}>Don't know — just show me</button>
 {/if}
 
 {#if revealed}
-  <div class="reveal" bind:this={revealElement}>
-    <div class="reveal-head">
-      <span class="big">{card.word.ko}</span>
+  <div class="answer" bind:this={revealElement}>
+    <div class="answer-head">
+      <span class="hero">{card.word.ko}</span>
       <AudioDot text={card.word.ko} />
-      <button class="star" class:on={starred} aria-pressed={starred} aria-label={`${card.word.ko} ${starred ? '저장 해제 · Remove saved word' : '저장 · Save word'}`} on:click={() => toggleStarred(card.word.ko)}>{starred ? '★' : '☆'}</button>
+      <button
+        class="star"
+        class:on={starred}
+        aria-pressed={starred}
+        aria-label={starred ? `Remove ${card.word.ko} from saved words` : `Save ${card.word.ko}`}
+        on:click={() => toggleStarred(card.word.ko)}
+      >{starred ? '★' : '☆'}</button>
     </div>
-    <div class="mean">{card.word.en}{#if card.word.pos}<span class="pos"> · {card.word.pos}</span>{/if}</div>
-    {#if card.sentence}
-      <div class="note">{card.sentence.ko}{#if card.sentence.en} = {card.sentence.en}{/if}</div>
-    {/if}
-    {#if card.note}<div class="note sub">{card.note}</div>{/if}
-    {#if card.word.nuance}
-      <!-- The instant after a guess is when nuance actually lands, so the
-           reveal teaches the distinction instead of only confirming. -->
-      <div class="nuance"><span class="n-cap">뉘앙스 · Nuance</span>{card.word.nuance}</div>
-    {/if}
+    <div class="gloss">{card.word.en}</div>
     {#if $prefs.romaja === 'shown' || romajaShown}
-      <div class="note sub">{card.word.romanization}</div>
+      <div class="rom">{card.word.romanization}</div>
     {:else}
-      <button class="romaja" on:click={() => { romajaShown = true; }}>발음 · Show romanization</button>
+      <button class="textbtn rom-btn" on:click={() => { romajaShown = true; }}>Show romanization</button>
     {/if}
-    <button class="wordbook-link" on:click={() => onOpenWord(card.word.ko)}>단어장에서 자세히 · See in wordbook →</button>
+    {#if card.word.pos}<div class="pos">{card.word.pos}</div>{/if}
+
+    {#if card.word.nuance || card.note}
+      <!-- The instant after a guess is when nuance actually lands, so the reveal
+           teaches the distinction instead of only confirming. Plain English
+           prose under a single rule — no caption, no coloured gutter. -->
+      <div class="note">
+        {#if card.word.nuance}<p>{card.word.nuance}</p>{/if}
+        {#if card.note}<p class="sub">{card.note}</p>{/if}
+      </div>
+    {/if}
+
+    {#if dueInterval}
+      <div class="srs">
+        {nextReviewEn(dueInterval)}
+        <span>{nextReviewKo(dueInterval)}</span>
+      </div>
+    {/if}
+
+    <button class="textbtn book" on:click={() => onOpenWord(card.word.ko)}>See this word in the wordbook →</button>
   </div>
 {/if}
 
 <style>
-  .step-label { font-size: 11px; font-weight: 850; letter-spacing: .16em; color: var(--accent); text-transform: uppercase; }
-  .sent { margin: 16px 0 4px; font-size: 26px; font-weight: 750; line-height: 1.5; word-break: keep-all; }
-  .target { background: var(--gold-soft); border-bottom: 3px solid var(--gold); border-radius: 4px 4px 0 0; padding: 0 2px; }
-  .q { font-size: 19px; font-weight: 800; }
-  .q-en { display: block; font-size: 12.5px; font-weight: 650; color: var(--ink-3); }
-  .chips { margin-top: 14px; display: grid; gap: 9px; }
-  .chip { padding: 14px 16px; border-radius: var(--r-chip); background: var(--card); border: 1.5px solid var(--line);
-    font-size: 16px; font-weight: 700; text-align: left;
-    transition: border-color .12s var(--ease), background .12s var(--ease), transform .12s var(--ease); }
-  .chip:hover { border-color: var(--ink-3); }
-  .chip:active { transform: scale(.98); }
-  .chip.good { border-color: var(--good); background: var(--good-soft); color: var(--good-deep); }
-  .chip.bad { border-color: var(--bad); color: var(--bad); animation: shake .28s ease; }
-  @keyframes shake { 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
-  .dunno { justify-self: start; margin-top: 10px; padding: 8px 15px; border-radius: 999px;
-    border: 1.5px dashed var(--line-2); color: var(--ink-3); font-size: 13px; font-weight: 800; }
-  .dunno:hover { border-color: var(--ink-3); }
-  .reveal { margin-top: 14px; padding: 16px; border-radius: 18px; background: var(--card); border: 1px solid var(--line);
-    box-shadow: var(--shadow-1); animation: rise .25s var(--ease); }
+  .stem { font-size: 26px; font-weight: 800; line-height: 1.45; letter-spacing: -.02em; color: var(--ink);
+    word-break: keep-all; transition: font-size .18s var(--ease), color .18s var(--ease); }
+  .stem.small { font-size: 20px; font-weight: 700; line-height: 1.5; color: var(--ink-2); }
+  .tgt { font-weight: 850; color: var(--ink); border-bottom: 2px solid var(--gold); padding-bottom: 1px; }
+  .stem-en { margin-top: 5px; font-size: 11.5px; font-weight: 650; line-height: 1.5; color: var(--ink-3); }
+  .ask { margin-top: 14px; font-size: 14px; font-weight: 700; color: var(--ink-3); word-break: keep-all; }
+  .ask-en { margin-top: 4px; font-size: 11.5px; font-weight: 650; line-height: 1.5; color: var(--ink-3); }
+
+  .opts { margin-top: 18px; }
+  /* santa-style answer sheet: the row rules run the full width of the screen,
+     so the options read as a list and not as a stack of pills */
+  .opt { display: flex; align-items: center; gap: 10px; min-height: 44px;
+    width: calc(100% + var(--sheet-pad, 20px) * 2);
+    margin: 0 calc(var(--sheet-pad, 20px) * -1); padding: 9px var(--sheet-pad, 20px);
+    border-top: 1px solid var(--line); font-size: 15px; font-weight: 650; color: var(--ink); text-align: left;
+    transition: background-color .12s var(--ease), color .12s var(--ease); }
+  .opt:last-child { border-bottom: 1px solid var(--line); }
+  .opt:hover { background: var(--wash); }
+  .opt-text { min-width: 0; word-break: keep-all; }
+  .opt.dim { color: var(--ink-3); font-weight: 600; }
+  .opt.dim:hover { background: none; }
+  .opt.picked { background: var(--wash); color: var(--ink); font-weight: 800; }
+  .opt.wrong { color: var(--bad); }
+  .opt.wrong:hover { background: none; }
+  .mark { margin-left: auto; flex: none; font-size: 13px; font-weight: 900; }
+  .mark.good { color: var(--good); }
+  .mark.bad { color: var(--bad); }
+
+  .textbtn { min-height: 44px; font-size: 12.5px; font-weight: 700; color: var(--ink-3); text-align: left; }
+  .textbtn:hover { color: var(--ink); }
+  .dunno { margin-top: 4px; }
+
+  .answer { margin-top: 26px; animation: rise .25s var(--ease); }
   @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-  .reveal-head { display: flex; align-items: center; gap: 10px; }
-  .star { width: 44px; height: 44px; flex: none; margin-left: auto; display: grid; place-items: center; border-radius: 999px;
-    color: var(--ink-3); font-size: 28px; line-height: 1; }
+  .answer-head { display: flex; align-items: center; gap: 12px; }
+  .hero { font-size: clamp(42px, 14vw, 58px); font-weight: 900; letter-spacing: -.035em; line-height: 1.05;
+    word-break: keep-all; }
+  .star { width: 44px; height: 44px; flex: none; margin-left: auto; display: grid; place-items: center;
+    color: var(--ink-3); font-size: 22px; line-height: 1; }
   .star.on { color: var(--gold); }
-  .big { font-size: 34px; font-weight: 850; letter-spacing: -.01em; }
-  .mean { margin-top: 2px; font-size: 16.5px; font-weight: 750; }
-  .pos { color: var(--ink-3); font-weight: 650; font-size: 13px; }
-  .note { margin-top: 7px; font-size: 13.5px; color: var(--ink-2); line-height: 1.55; word-break: keep-all; }
-  .note.sub { color: var(--ink-3); font-size: 12.5px; }
-  .romaja { margin-top: 8px; padding: 5px 12px; border-radius: 999px; background: var(--wash); color: var(--ink-3);
-    font-size: 12px; font-weight: 800; }
-  .nuance { margin-top: 10px; padding: 10px 12px; border-radius: 10px; background: var(--gold-soft);
-    border-left: 3px solid var(--gold); font-size: 13px; line-height: 1.6; color: var(--ink); word-break: keep-all; }
-  .n-cap { display: block; margin-bottom: 3px; font-size: 10px; font-weight: 850; letter-spacing: .1em;
-    text-transform: uppercase; color: var(--ink-3); }
-  .wordbook-link { min-height: 44px; margin-top: 10px; color: var(--accent-deep); font-size: 12.5px; font-weight: 850; }
+  .gloss { margin-top: 8px; font-size: 15.5px; font-weight: 800; letter-spacing: -.01em; color: var(--ink);
+    word-break: keep-all; }
+  .rom { margin-top: 3px; font-size: 12px; font-weight: 650; letter-spacing: .02em; color: var(--ink-3); }
+  .rom-btn { min-height: 32px; margin-top: 2px; display: block; }
+  .pos { margin-top: 3px; font-size: 11.5px; font-weight: 650; color: var(--ink-3); }
+
+  .note { margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--line); }
+  .note p { margin: 0; font-size: 15px; font-weight: 500; line-height: 1.85; color: var(--ink-2); word-break: keep-all; }
+  .note p + p, .note p.sub { margin-top: 10px; font-size: 12.5px; font-weight: 600; line-height: 1.7; color: var(--ink-3); }
+
+  .srs { margin-top: 20px; font-size: 12.5px; font-weight: 650; color: var(--ink-3); }
+  .srs span { display: block; font-size: 11.5px; font-weight: 650; }
+  .book { display: block; margin-top: 6px; }
 </style>

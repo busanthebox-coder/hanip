@@ -1,6 +1,4 @@
 <script>
-  import AudioDot from './AudioDot.svelte';
-
   export let card;
   export let onResolve = () => {};
 
@@ -12,24 +10,27 @@
   $: if (allRead) onResolve(true);
 </script>
 
-<div class="step-label">읽기 · Reading — {card.title}</div>
+<div class="label">Reading</div>
+<h1>{card.title}</h1>
 
-<div class="paper">
+<!-- already inside the player's card — the passage needs no frame of its own -->
+<div class="passage">
   {#each card.chunks.slice(0, chunkShown) as chunk}
     <p class="chunk">{chunk}</p>
   {/each}
-  {#if chunkShown < card.chunks.length}
-    <button class="more" on:click={() => { chunkShown += 1; }}>계속 읽기 · Keep reading ⌄</button>
-  {:else if card.translation}
-    <button class="more ghost" on:click={() => { translationOpen = !translationOpen; }}>
-      {translationOpen ? '번역 접기 · Hide translation ⌃' : '번역 보기 · Show translation ⌄'}
-    </button>
-    {#if translationOpen}<p class="trans">{card.translation}</p>{/if}
-  {/if}
 </div>
 
+{#if chunkShown < card.chunks.length}
+  <button class="line-btn" on:click={() => { chunkShown += 1; }}>Keep reading</button>
+{:else if card.translation}
+  <button class="line-btn" on:click={() => { translationOpen = !translationOpen; }}>
+    {translationOpen ? 'Hide translation' : 'Show translation'}
+  </button>
+  {#if translationOpen}<p class="trans">{card.translation}</p>{/if}
+{/if}
+
 {#if allRead && card.qas.length}
-  <div class="qa-cap">스스로 확인 · Check yourself — tap a question to flip the answer</div>
+  <div class="qa-cap">Check yourself — tap a question to flip the answer</div>
   <div class="qas">
     {#each card.qas as qa, i}
       <button class="qa" class:open={flipped[i]} on:click={() => { flipped = { ...flipped, [i]: !flipped[i] }; }}>
@@ -41,18 +42,25 @@
 {/if}
 
 <style>
-  .step-label { font-size: 11px; font-weight: 850; letter-spacing: .16em; color: var(--accent); text-transform: uppercase; }
-  .paper { margin-top: 12px; padding: 18px; border-radius: 18px; background: var(--card); border: 1px solid var(--line); box-shadow: var(--shadow-1); }
-  .chunk { margin: 0 0 12px; font-size: 17.5px; font-weight: 650; line-height: 1.8; word-break: keep-all; }
-  .more { padding: 8px 16px; border-radius: 999px; background: var(--wash); font-size: 13px; font-weight: 800; color: var(--ink-2); }
-  .more.ghost { background: none; border: 1.5px dashed var(--line-2); color: var(--ink-3); }
-  .trans { margin: 10px 0 0; font-size: 13.5px; color: var(--ink-2); line-height: 1.7; }
-  .qa-cap { margin-top: 16px; font-size: 11px; font-weight: 850; letter-spacing: .1em; color: var(--ink-3); text-transform: uppercase; }
-  .qas { margin-top: 8px; display: grid; gap: 8px; }
-  .qa { padding: 13px 15px; border-radius: 14px; background: var(--card); border: 1.5px solid var(--line);
-    text-align: left; display: grid; gap: 5px; transition: border-color .12s var(--ease); }
-  .qa:hover { border-color: var(--ink-3); }
-  .qa.open { border-color: var(--good); }
+  .label { font-size: 12.5px; font-weight: 650; color: var(--ink-3); }
+  h1 { margin: 8px 0 0; font-size: 26px; font-weight: 900; letter-spacing: -.03em; line-height: 1.25;
+    word-break: keep-all; }
+  .passage { margin-top: 20px; }
+  .chunk { margin: 0 0 14px; font-size: 17.5px; font-weight: 650; line-height: 1.8; word-break: keep-all; }
+  .line-btn { width: 100%; min-height: 44px; padding: 13px 0;
+    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+    font-size: 14px; font-weight: 750; color: var(--ink); text-align: center;
+    transition: background-color .12s var(--ease); }
+  .line-btn:hover { background: var(--wash); }
+  .trans { margin: 14px 0 0; font-size: 13.5px; font-weight: 600; line-height: 1.75; color: var(--ink-3);
+    word-break: keep-all; }
+
+  .qa-cap { margin-top: 24px; font-size: 12.5px; font-weight: 650; color: var(--ink-3); word-break: keep-all; }
+  .qas { margin-top: 8px; }
+  .qa { width: 100%; min-height: 44px; display: grid; gap: 5px; padding: 13px 0; text-align: left;
+    border-top: 1px solid var(--line); transition: background-color .12s var(--ease); }
+  .qa:last-child { border-bottom: 1px solid var(--line); }
+  .qa:hover { background: var(--wash); }
   .qa-q { font-size: 15px; font-weight: 750; word-break: keep-all; }
-  .qa-a { font-size: 14px; color: var(--good-deep); font-weight: 700; word-break: keep-all; }
+  .qa-a { font-size: 13.5px; font-weight: 700; color: var(--good-deep); word-break: keep-all; }
 </style>

@@ -71,4 +71,23 @@ Home recommends the next chapter bite or boundary snack from one shared calculat
 level, and restores an unfinished item through Continue. Progress, learned-word pool, daily bowls, and
 the last-played item live in localStorage; snack skips last only for the current session.
 
+## How the interface reads
+
+The learner is an English speaker studying Korean, so the two languages are stacked, never
+juxtaposed. **Korean is the hero** wherever it is the thing being learned — the word on Home,
+the sentence on a guess card, the form in a grammar lesson. **English is the body text** for every
+explanation and nuance note (straight from the source data, untranslated), and it leads every
+functional string — buttons, section titles, filters, stats — with a small Korean line underneath.
+There is no `한국어 · English` one-line pairing anywhere.
+
+The surface is built from whitespace and 1px rules: one card outline per screen, one dominant type
+size per screen, greyscale plus at most two accent colours (gold for progress and the target
+morpheme, green for correct, red only on the wrong answer itself). A bite reads as a paper deck on
+a grid-ruled desk; finishing one fills a bowl and ends on the cards you missed.
+
+[`docs/design/STYLE.md`](docs/design/STYLE.md) is the binding style guide (type scale, colour budget,
+kill list); [`docs/tab-contract.md`](docs/tab-contract.md) carries the language policy that any new
+tab must follow; [`docs/design/spec-v4.html`](docs/design/spec-v4.html) is the 14-frame mockup the
+current interface was built against.
+
 Migration evidence and known extraction limits are recorded in [`docs/harness/RELEASE.md`](docs/harness/RELEASE.md).

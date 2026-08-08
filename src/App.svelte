@@ -36,11 +36,11 @@
   migrateCollected(courseIndex);
 
   const TABS = [
-    { key: 'today', ico: '🍚', ko: '오늘', en: 'Today' },
-    { key: 'shelf', ico: '📚', ko: '책장', en: 'Shelf' },
-    { key: 'hangul', ico: '가', ko: '한글', en: 'Hangul' },
-    { key: 'hanja', ico: '學', ko: '한자', en: 'Hanja' },
-    { key: 'words', ico: '📖', ko: '단어장', en: 'Words' },
+    { key: 'today', ico: '🍚', en: 'Today' },
+    { key: 'shelf', ico: '📚', en: 'Shelf' },
+    { key: 'hangul', ico: '가', en: 'Hangul' },
+    { key: 'hanja', ico: '學', en: 'Hanja' },
+    { key: 'words', ico: '📖', en: 'Words' },
   ];
 
   let tab = 'today';           // TABS key
@@ -96,7 +96,7 @@
     } catch (error) {
       if (!isLatest()) return;
       playing = null;
-      loadError = '한입을 불러오지 못했어요. 다시 시도해 주세요. · Could not load this bite. Please try again.';
+      loadError = 'Could not load this bite. Please try again.';
       console.error(error);
     } finally {
       if (isLatest()) loadingBite = false;
@@ -118,7 +118,7 @@
     } catch (error) {
       if (!isLatest()) return;
       playing = null;
-      loadError = '간식을 불러오지 못했어요. 다시 시도해 주세요. · Could not load this snack. Please try again.';
+      loadError = 'Could not load this snack. Please try again.';
       console.error(error);
     } finally {
       if (isLatest()) loadingBite = false;
@@ -149,8 +149,8 @@
         id: `review-${todayKey()}`,
         kind: 'review',
         index: 0,
-        title: '복습 한 입 · Review bite',
-        canDo: 'Review the words that are due today · 오늘 복습할 단어를 다시 확인해요',
+        title: 'Review bite',
+        canDo: 'Review the words that are due today.',
         cards,
       },
       withWarmup: false,
@@ -178,13 +178,13 @@
 
 {#if showcaseName === 'grammar'}
   {#await loadGrammarShowcase()}
-    <p class="loading">문법 미리보기 불러오는 중 · Loading grammar preview…</p>
+    <p class="loading">Loading grammar preview…</p>
   {:then mod}
     <svelte:component this={mod.default} />
   {/await}
 {:else if showcaseName === 'shelf'}
   {#await loadShowcase()}
-    <p class="loading">컴포넌트 불러오는 중 · Loading showcase…</p>
+    <p class="loading">Loading showcase…</p>
   {:then mod}
     <svelte:component this={mod.default} />
   {/await}
@@ -195,8 +195,6 @@
   {#key playing.bite.id}
     <BitePlayer
       bite={playing.bite}
-      biteNumber={playing.bite.index + 1}
-      biteTotal={playing.chapter.biteCount}
       onExit={exitBite}
       onOpenWord={openWordbook}
       withWarmup={playing.withWarmup}
@@ -205,7 +203,7 @@
 {:else}
   <main>
     {#if loadingBite}
-      <p class="loading" role="status">한입 불러오는 중 · Loading bite…</p>
+      <p class="loading" role="status">Loading bite…</p>
     {:else}
       {#if loadError}<p class="load-error" role="alert">{loadError}</p>{/if}
       {#if tab === 'today'}
@@ -220,9 +218,9 @@
       {:else if tab === 'shelf'}
         {#if showGuide}
           <div class="guide-wrap">
-            <button class="back-shelf" on:click={() => { showGuide = false; window.scrollTo(0, 0); }}>← 책장 · Back to shelf</button>
+            <button class="back-shelf" on:click={() => { showGuide = false; window.scrollTo(0, 0); }}>← Shelf</button>
             {#await loadTab('guide')}
-              <p class="loading">불러오는 중 · Loading…</p>
+              <p class="loading">Loading…</p>
             {:then mod}
               <svelte:component this={mod.default} />
             {/await}
@@ -238,7 +236,7 @@
         {/if}
       {:else}
         {#await loadTab(tab)}
-          <p class="loading">불러오는 중 · Loading…</p>
+          <p class="loading">Loading…</p>
         {:then mod}
           {#if tab === 'words'}
             <svelte:component this={mod.default} targetWord={wordbookTarget} onTargetHandled={() => { wordbookTarget = ''; }} />
@@ -253,8 +251,7 @@
     {#each TABS as t}
       <button class:on={tab === t.key} on:click={() => { cancelBiteRequest(); tab = t.key; showGuide = false; window.scrollTo(0, 0); }}>
         <span class="ico">{t.ico}</span>
-        <span class="t-ko">{t.ko}</span>
-        <span class="t-en">{t.en}</span>
+        <span class="t-label">{t.en}</span>
       </button>
     {/each}
   </nav>
@@ -265,20 +262,17 @@
 <style>
   main { padding-bottom: 78px; }
   .tabs { position: fixed; bottom: 0; left: 0; right: 0; display: flex; background: var(--card);
-    border-top: 1px solid var(--line); padding: 6px 0 calc(5px + env(safe-area-inset-bottom, 0px)); z-index: 40; }
-  .tabs button { flex: 1; min-width: 0; display: grid; justify-items: center; gap: 0; padding: 4px 0 2px;
-    color: var(--ink-3); }
+    border-top: 1px solid var(--line); padding: 7px 0 calc(9px + env(safe-area-inset-bottom, 0px)); z-index: 40; }
+  .tabs button { flex: 1; min-width: 0; min-height: 44px; display: grid; justify-items: center; gap: 1px;
+    padding: 2px 0; color: var(--ink-3); }
   .tabs button.on { color: var(--accent-deep); }
   .ico { font-size: 17px; line-height: 1.2; font-weight: 700; }
-  .t-ko { font-size: 11px; font-weight: 850; line-height: 1.25; }
-  .t-en { font-size: 8.5px; font-weight: 750; letter-spacing: .04em; opacity: .75; line-height: 1.2; }
+  .t-label { font-size: 10.5px; font-weight: 850; line-height: 1.25; }
   .guide-wrap { max-width: 480px; margin: 0 auto; }
-  .back-shelf { margin: 18px 20px 0; padding: 8px 15px; border-radius: 999px; background: var(--card);
-    border: 1px solid var(--line); color: var(--ink-2); font-size: 12.5px; font-weight: 800; }
-  .back-shelf:hover { border-color: var(--ink-3); }
-  .loading { max-width: 480px; margin: 0 auto; padding: 40px 20px; color: var(--ink-3);
-    font-size: 13px; font-weight: 750; text-align: center; }
-  .load-error { max-width: 440px; margin: 16px auto 0; padding: 12px 16px; border: 1px solid var(--line);
-    border-radius: var(--r-chip); background: var(--card); color: var(--ink-2); font-size: 13px; font-weight: 750;
-    text-align: center; word-break: keep-all; }
+  .back-shelf { margin: 18px 22px 0; min-height: 44px; color: var(--ink-3); font-size: 12.5px; font-weight: 700; }
+  .back-shelf:hover { color: var(--ink); }
+  .loading { max-width: 480px; margin: 0 auto; padding: 40px 22px; color: var(--ink-3);
+    font-size: 12.5px; font-weight: 650; text-align: center; }
+  .load-error { max-width: 440px; margin: 16px auto 0; padding: 14px 22px; color: var(--bad);
+    font-size: 13px; font-weight: 700; text-align: center; word-break: keep-all; }
 </style>

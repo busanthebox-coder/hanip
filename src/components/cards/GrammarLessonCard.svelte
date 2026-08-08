@@ -12,153 +12,181 @@
   function choose(option) {
     if (chosen) return;
     chosen = option;
-    onResolve(option.ok);
+    onResolve(option.ok, { picked: option.text });
   }
 </script>
 
-<div class="lesson-label">{card.label}</div>
-<h1>{card.heading}</h1>
+<div class="label">{card.label}</div>
 
 {#if card.section === 'intro'}
+  <!-- the pattern itself is the hero; the English heading recedes to a lead -->
   <div class="pattern">{card.pattern}</div>
   <p class="lead">{card.body}</p>
+  <p class="lead-sub">{card.heading}</p>
 
 {:else if card.section === 'pattern' || card.section === 'examples' || card.section === 'recap'}
   {#if card.pattern}<div class="pattern compact">{card.pattern}</div>{/if}
-  {#if card.body}<p class="lead recap-body">{card.body}</p>{/if}
-  <div class="examples">
+  <h1>{card.heading}</h1>
+  {#if card.body}<p class="lead">{card.body}</p>{/if}
+  <div class="rows">
     {#each card.examples || [] as example}
-      <article class="example">
-        <div class="example-ko">{example.ko} <AudioDot text={example.ko} size={25} /></div>
-        {#if $prefs.romaja === 'shown' && example.romanization}<div class="romaja">{example.romanization}</div>{/if}
-        <div class="example-en">{example.en}</div>
-        {#if example.note}<p>{example.note}</p>{/if}
-      </article>
+      <div class="row">
+        <div class="row-ko">{example.ko} <AudioDot text={example.ko} size={25} /></div>
+        {#if $prefs.romaja === 'shown' && example.romanization}<div class="row-rom">{example.romanization}</div>{/if}
+        <div class="row-en">{example.en}</div>
+        {#if example.note}<div class="row-note">{example.note}</div>{/if}
+      </div>
     {/each}
   </div>
 
 {:else if card.section === 'key-point' || card.section === 'formation'}
-  <div class="explanation">{card.body}</div>
+  <h1>{card.heading}</h1>
+  <p class="lead">{card.body}</p>
 
 {:else if card.section === 'form'}
-  <div class="form-list">
+  <h1>{card.heading}</h1>
+  <div class="rows">
     {#each card.rows || [] as row}
-      <article>
-        <span>{row.when}</span>
-        <strong>{row.add}</strong>
-        {#if row.ex}<p>{row.ex}</p>{/if}
-      </article>
+      <div class="row form-row">
+        <span class="when">{row.when}</span>
+        <b class="add">{row.add}</b>
+        {#if row.ex}<span class="ex">{row.ex}</span>{/if}
+      </div>
     {/each}
   </div>
 
 {:else if card.section === 'pronunciation'}
-  <div class="sound-copy">{card.body}</div>
+  <h1>{card.heading}</h1>
+  <p class="lead">{card.body}</p>
   {#if card.examples?.[0]}
-    <div class="sound-example">
+    <div class="sound">
       <span>{card.examples[0].ko}</span>
       <AudioDot text={card.examples[0].ko} size={28} />
     </div>
   {/if}
 
 {:else if card.section === 'exceptions'}
-  <div class="item-list">
+  <h1>{card.heading}</h1>
+  <div class="rows">
     {#each card.items || [] as item, index}
-      <div><span>{index + 1}</span><p>{item}</p></div>
+      <div class="row numbered"><span class="n">{index + 1}</span><p>{item}</p></div>
     {/each}
   </div>
 
 {:else if card.section === 'pitfall'}
-  <div class="correction">
-    <div class="wrong"><span>NOT THIS</span><p>{card.wrong}</p></div>
-    <div class="right"><span>USE THIS</span><p>{card.right}</p></div>
+  <h1>{card.heading}</h1>
+  <div class="rows">
+    <div class="row correction">
+      <span class="c-lab bad">Not this</span>
+      <p class="bad">{card.wrong}</p>
+    </div>
+    <div class="row correction">
+      <span class="c-lab good">Use this</span>
+      <p>{card.right}</p>
+    </div>
   </div>
   <p class="reason">{card.body}</p>
 
 {:else if card.section === 'worked'}
-  <div class="worked">
-    <span>MODEL</span>
-    <p>{card.model}</p>
-  </div>
+  <h1>{card.heading}</h1>
+  <p class="model">{card.model}</p>
   {#if card.items?.length}
-    <div class="practice-frames">
-      <span>TRY THESE FRAMES</span>
-      {#each card.items as item}<p>{item}</p>{/each}
+    <div class="rows">
+      <div class="frames-cap">Try these frames</div>
+      {#each card.items as item}<div class="row"><p class="frame">{item}</p></div>{/each}
     </div>
   {/if}
 
 {:else if card.section === 'check'}
-  <div class="choices">
+  <h1>{card.heading}</h1>
+  <div class="opts">
     {#each card.options || [] as option}
       <button
-        class:correct={chosen && option.ok}
+        class="opt"
+        class:picked={chosen && option.ok}
         class:wrong={chosen === option && !option.ok}
+        class:dim={chosen && !option.ok && chosen !== option}
         disabled={!!chosen}
         on:click={() => choose(option)}
-      >{option.text}</button>
+      >
+        <span class="opt-text">{option.text}</span>
+        {#if chosen && option.ok}<span class="mark good">Correct</span>
+        {:else if chosen === option}<span class="mark bad">Your answer</span>{/if}
+      </button>
     {/each}
   </div>
   {#if chosen}
-    <div class:good={chosen.ok} class:bad={!chosen.ok} class="feedback">
-      <strong>{chosen.ok ? 'Correct · 맞아요' : 'Not this one · 다시 확인'}</strong>
-      <p>{card.explanation}</p>
-    </div>
+    <p class="explain">{card.explanation}</p>
   {/if}
 {/if}
 
 <style>
-  .lesson-label { color: var(--accent); font-size: 10.5px; font-weight: 900; letter-spacing: .16em; text-transform: uppercase; }
-  h1 { margin: 8px 0 0; max-width: 410px; font-size: clamp(27px, 7vw, 35px); line-height: 1.2; letter-spacing: -.04em; word-break: keep-all; }
-  .pattern { margin-top: 24px; color: var(--accent-deep); font-size: clamp(26px, 7.4vw, 36px); font-weight: 900; line-height: 1.25; word-break: keep-all; }
-  .pattern.compact { margin-top: 18px; font-size: 22px; }
-  .lead { margin: 16px 0 0; color: var(--ink-2); font-size: 15px; line-height: 1.7; }
-  .recap-body { font-size: 13px; }
+  .label { font-size: 12.5px; font-weight: 650; color: var(--ink-3); }
+  h1 { margin: 10px 0 0; font-size: 26px; font-weight: 900; line-height: 1.25; letter-spacing: -.03em;
+    word-break: keep-all; }
+  .pattern { margin-top: 10px; font-size: clamp(34px, 10vw, 44px); font-weight: 900; letter-spacing: -.04em;
+    line-height: 1.1; color: var(--ink); word-break: keep-all; }
+  .pattern.compact { font-size: 26px; letter-spacing: -.03em; line-height: 1.25; }
+  .lead { margin: 14px 0 0; font-size: 15.5px; font-weight: 650; line-height: 1.62; color: var(--ink-2);
+    word-break: keep-all; }
+  .lead-sub { margin: 6px 0 0; font-size: 11.5px; font-weight: 650; line-height: 1.5; color: var(--ink-3);
+    word-break: keep-all; }
 
-  .examples { margin-top: 22px; border-top: 1px solid var(--line); }
-  .example { padding: 15px 0; border-bottom: 1px solid var(--line); }
-  .example-ko { display: flex; align-items: center; flex-wrap: wrap; gap: 5px; color: var(--ink); font-size: 20px; font-weight: 820; line-height: 1.45; }
-  .romaja { margin-top: 2px; color: var(--gold); font-size: 10.5px; font-style: italic; }
-  .example-en { margin-top: 2px; color: var(--ink-2); font-size: 13px; font-weight: 720; }
-  .example p { margin: 5px 0 0; color: var(--ink-3); font-size: 11.5px; line-height: 1.55; }
+  .rows { margin-top: 24px; }
+  .row { padding: 15px 0; border-top: 1px solid var(--line); }
+  .row:last-child { border-bottom: 1px solid var(--line); }
+  .row-ko { display: flex; align-items: center; flex-wrap: wrap; gap: 5px; font-size: 20px; font-weight: 820;
+    line-height: 1.45; word-break: keep-all; }
+  .row-rom { margin-top: 3px; font-size: 12px; font-weight: 650; letter-spacing: .02em; color: var(--ink-3); }
+  .row-en { margin-top: 3px; font-size: 13px; font-weight: 700; color: var(--ink-2); word-break: keep-all; }
+  .row-note { margin-top: 5px; font-size: 11.5px; font-weight: 650; line-height: 1.5; color: var(--ink-3);
+    word-break: keep-all; }
 
-  .explanation, .sound-copy { margin-top: 25px; padding-left: 17px; border-left: 3px solid var(--gold); color: var(--ink-2); font-size: 15px; line-height: 1.78; }
-  .sound-example { margin-top: 24px; padding: 18px 0; display: flex; align-items: center; gap: 9px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: 22px; font-weight: 850; }
+  .form-row { display: flex; align-items: baseline; gap: 14px; padding: 13px 0; }
+  .when { flex: none; width: 96px; font-size: 12.5px; font-weight: 650; color: var(--ink-3); line-height: 1.4;
+    word-break: keep-all; }
+  .add { font-size: 22px; font-weight: 900; color: var(--ink); word-break: keep-all; }
+  .ex { margin-left: auto; font-size: 12.5px; font-weight: 650; color: var(--ink-3); text-align: right;
+    word-break: keep-all; }
 
-  .form-list { margin-top: 24px; border-top: 1px solid var(--line); }
-  .form-list article { padding: 17px 0; border-bottom: 1px solid var(--line); }
-  .form-list span { display: block; color: var(--ink-3); font-size: 11px; font-weight: 820; }
-  .form-list strong { display: block; margin-top: 2px; color: var(--accent-deep); font-size: 23px; line-height: 1.4; }
-  .form-list p { margin: 5px 0 0; color: var(--ink-2); font-size: 12.5px; line-height: 1.55; }
+  .sound { margin-top: 24px; padding: 16px 0; display: flex; align-items: center; gap: 10px;
+    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: 22px; font-weight: 850; }
 
-  .item-list { margin-top: 24px; border-top: 1px solid var(--line); }
-  .item-list > div { display: grid; grid-template-columns: 28px 1fr; gap: 11px; padding: 15px 0; border-bottom: 1px solid var(--line); }
-  .item-list span { width: 26px; height: 26px; display: grid; place-items: center; border-radius: 999px; background: var(--accent-soft); color: var(--accent-deep); font-size: 11px; font-weight: 900; }
-  .item-list p { margin: 0; color: var(--ink-2); font-size: 13px; line-height: 1.55; }
+  .numbered { display: grid; grid-template-columns: 20px 1fr; gap: 12px; }
+  .numbered .n { font-size: 13px; font-weight: 800; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+  .numbered p { margin: 0; font-size: 13.5px; font-weight: 650; line-height: 1.6; color: var(--ink-2);
+    word-break: keep-all; }
 
-  .correction { margin-top: 24px; border-top: 1px solid var(--line); }
-  .correction > div { padding: 16px 0; border-bottom: 1px solid var(--line); }
-  .correction span { font-size: 9px; font-weight: 900; letter-spacing: .14em; }
-  .correction p { margin: 3px 0 0; font-size: 20px; font-weight: 830; line-height: 1.45; }
-  .correction .wrong span, .correction .wrong p { color: var(--bad); }
-  .correction .right span { color: var(--good-deep); }
-  .reason { margin: 16px 0 0; color: var(--ink-2); font-size: 12.5px; line-height: 1.62; }
+  .correction { display: grid; grid-template-columns: 76px 1fr; gap: 12px; align-items: baseline; }
+  .c-lab { font-size: 11.5px; font-weight: 750; }
+  .c-lab.bad { color: var(--bad); }
+  .c-lab.good { color: var(--good); }
+  .correction p { margin: 0; font-size: 19px; font-weight: 820; line-height: 1.45; word-break: keep-all; }
+  .correction p.bad { color: var(--bad); }
+  .reason { margin: 16px 0 0; font-size: 12.5px; font-weight: 600; line-height: 1.7; color: var(--ink-3);
+    word-break: keep-all; }
 
-  .worked { margin-top: 24px; padding: 18px; border: 1.5px solid var(--gold); border-radius: 18px; background: var(--gold-soft); }
-  .worked span, .practice-frames > span { color: var(--gold); font-size: 9px; font-weight: 900; letter-spacing: .14em; }
-  .worked p { margin: 6px 0 0; color: var(--ink); font-size: 16px; font-weight: 760; line-height: 1.65; }
-  .practice-frames { margin-top: 18px; }
-  .practice-frames p { margin: 8px 0 0; padding-bottom: 8px; border-bottom: 1px solid var(--line); color: var(--ink-2); font-size: 12px; }
+  .model { margin: 16px 0 0; font-size: 16px; font-weight: 750; line-height: 1.65; color: var(--ink);
+    word-break: keep-all; }
+  .frames-cap { padding-bottom: 8px; font-size: 12.5px; font-weight: 650; color: var(--ink-3); }
+  .frame { margin: 0; font-size: 13px; font-weight: 650; line-height: 1.6; color: var(--ink-2); word-break: keep-all; }
 
-  .choices { margin-top: 24px; display: grid; gap: 11px; }
-  .choices button { min-height: 70px; padding: 14px 17px; border: 1.5px solid var(--line); border-radius: 17px; background: var(--card); color: var(--ink); font-size: 17px; font-weight: 800; text-align: left; line-height: 1.45; transition: border-color .15s var(--ease), background .15s var(--ease), transform .09s var(--ease); }
-  .choices button:active { transform: scale(.985); }
-  .choices button:disabled { opacity: 1; cursor: default; }
-  .choices button.correct { border-color: var(--good); background: var(--good-soft); }
-  .choices button.wrong { border-color: var(--bad); background: var(--accent-soft); }
-  .feedback { margin-top: 14px; padding: 14px 16px; border-radius: 15px; }
-  .feedback strong { font-size: 13px; }
-  .feedback p { margin: 4px 0 0; color: var(--ink-2); font-size: 11.5px; line-height: 1.55; }
-  .feedback.good { background: var(--good-soft); }
-  .feedback.good strong { color: var(--good-deep); }
-  .feedback.bad { background: var(--accent-soft); }
-  .feedback.bad strong { color: var(--accent-deep); }
+  .opts { margin-top: 24px; }
+  .opt { display: flex; align-items: center; gap: 10px; min-height: 44px;
+    width: calc(100% + var(--sheet-pad, 20px) * 2);
+    margin: 0 calc(var(--sheet-pad, 20px) * -1); padding: 12px var(--sheet-pad, 20px);
+    border-top: 1px solid var(--line); font-size: 16px; font-weight: 650; line-height: 1.45; color: var(--ink);
+    text-align: left; transition: background-color .12s var(--ease), color .12s var(--ease); }
+  .opt:last-child { border-bottom: 1px solid var(--line); }
+  .opt:hover:not(:disabled) { background: var(--wash); }
+  .opt:disabled { cursor: default; }
+  .opt-text { min-width: 0; word-break: keep-all; }
+  .opt.dim { color: var(--ink-3); font-weight: 600; }
+  .opt.picked { background: var(--wash); font-weight: 800; }
+  .opt.wrong { color: var(--bad); }
+  .mark { margin-left: auto; flex: none; font-size: 13px; font-weight: 900; }
+  .mark.good { color: var(--good); }
+  .mark.bad { color: var(--bad); }
+  .explain { margin: 16px 0 0; font-size: 12.5px; font-weight: 600; line-height: 1.7; color: var(--ink-3);
+    word-break: keep-all; }
 </style>

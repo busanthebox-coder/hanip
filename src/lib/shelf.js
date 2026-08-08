@@ -1,11 +1,11 @@
 export const SHELF_OPEN_KEY = 'hanip.shelf-open-v1';
 
 export const LEVEL_GROUPS = [
-  { id: 'A1', label: 'A1 기초 Foundation' },
-  { id: 'A2', label: 'A2 쌓기 Builder' },
-  { id: 'B1', label: 'B1 홀로서기 Independent' },
-  { id: 'B2', label: 'B2 정밀 Control' },
-  { id: 'C1', label: 'C1 글말 Written' },
+  { id: 'A1', label: 'A1 Foundation' },
+  { id: 'A2', label: 'A2 Builder' },
+  { id: 'B1', label: 'B1 Independent' },
+  { id: 'B2', label: 'B2 Control' },
+  { id: 'C1', label: 'C1 Written' },
 ];
 
 function isDone(done, bite) {

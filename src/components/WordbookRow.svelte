@@ -22,26 +22,18 @@
       on:click={onToggle}
     >
       <span class="ko">{word.ko}</span>
-      {#if learned}
-        <span class="learned-dot" title="배운 단어 · Learned">✓</span>
-      {/if}
-      {#if starred}<span class="starred-dot" title="저장한 단어 · Starred">★</span>{/if}
-      {#if word.hasCluster}
-        <span class="depth-dot" title="헷갈리는 짝이 있어요 · Has a confusable twin" aria-label="헷갈리는 짝 있음">💡</span>
-      {/if}
-      <span class="chapter">{word.chapter}과</span>
-      <span class="en">{word.en}</span>
+      {#if learned}<span class="tick" title="Learned" aria-label="Learned">✓</span>{/if}
+      {#if starred}<span class="star" title="Saved" aria-label="Saved">★</span>{/if}
+      <span class="en ell">{word.en}</span>
     </button>
     <AudioDot text={word.ko} size={44} />
   </div>
   {#if open}
     <div class="detail" id={detailId}>
       <div class="rom">{word.romanization}</div>
+      {#if word.hasCluster}<div class="twin">Has a confusable twin</div>{/if}
       <button class="full-link" disabled={loading} on:click={onOpen}>
-        {loading
-          ? '불러오는 중 · Loading…'
-          : error ? '다시 시도 · Retry'
-          : word.hasDepth ? '뉘앙스 · 자세히 보기 →' : '자세히 보기 · Full entry →'}
+        {loading ? 'Loading…' : error ? 'Retry' : 'Open the full entry →'}
       </button>
       {#if error}
         <p class="detail-error" role="alert">{error}</p>
@@ -52,38 +44,31 @@
 
 <style>
   .entry { border-top: 1px solid var(--line); }
-  .entry:first-child { border-top: 0; }
-  .entry.open { background: var(--bg); }
-  .row { display: flex; align-items: center; gap: 10px; padding-right: 14px; }
+  .entry:last-child { border-bottom: 1px solid var(--line); }
+  .row { display: flex; align-items: center; gap: 8px; }
   .row-main {
     flex: 1; min-width: 0; display: flex; align-items: center; gap: 8px;
-    min-height: 48px; padding: 10px 0 10px 15px; text-align: left;
-    transition: background-color .15s var(--ease);
+    min-height: 44px; padding: 11px 0; text-align: left;
+    transition: background-color .12s var(--ease);
   }
-  .row-main:hover { background: var(--bg); }
-  .entry.open .row-main:hover { background: var(--wash); }
+  .row-main:hover { background: var(--wash); }
   .row-main:focus-visible, .full-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .ko { flex: none; font-size: 17px; font-weight: 800; word-break: keep-all; }
-  .learned-dot {
-    flex: none; width: 16px; height: 16px; display: grid; place-items: center;
-    border-radius: 999px; background: var(--good-soft); color: var(--good-deep);
-    font-size: 10px; font-weight: 850; line-height: 1;
-  }
-  .depth-dot { flex: none; font-size: 13px; line-height: 1; }
-  .starred-dot { flex: none; color: var(--gold); font-size: 13px; line-height: 1; }
-  .chapter { flex: none; font-size: 10.5px; font-weight: 800; color: var(--ink-3); white-space: nowrap; }
+  .tick { flex: none; color: var(--good); font-size: 11px; font-weight: 900; line-height: 1; }
+  .star { flex: none; color: var(--gold); font-size: 11px; line-height: 1; }
   .en {
     flex: 1; min-width: 0; margin-left: auto; text-align: right;
-    font-size: 12.5px; color: var(--ink-2);
-    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    font-size: 12.5px; font-weight: 650; color: var(--ink-3);
   }
-  .detail { padding: 0 15px 13px; }
-  .rom { font-size: 12.5px; font-style: italic; color: var(--ink-3); letter-spacing: .02em; }
+  .ell { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .detail { padding: 0 0 13px; }
+  .rom { font-size: 12px; font-weight: 650; letter-spacing: .02em; color: var(--ink-3); }
+  .twin { margin-top: 3px; font-size: 11.5px; font-weight: 650; color: var(--ink-3); }
   .full-link {
-    margin-top: 10px; min-height: 44px; justify-self: start; padding: 8px 14px; border-radius: 999px;
-    background: var(--wash); color: var(--accent-deep); font-size: 12.5px; font-weight: 850;
-    transition: background .12s var(--ease);
+    min-height: 44px; margin-top: 4px; display: block;
+    font-size: 12.5px; font-weight: 700; color: var(--ink-3); text-align: left;
+    transition: color .12s var(--ease);
   }
-  .full-link:hover { background: var(--accent-soft); }
-  .detail-error { margin: 8px 0 0; font-size: 12px; line-height: 1.45; color: var(--bad); }
+  .full-link:hover { color: var(--ink); }
+  .detail-error { margin: 4px 0 0; font-size: 12px; line-height: 1.45; color: var(--bad); }
 </style>

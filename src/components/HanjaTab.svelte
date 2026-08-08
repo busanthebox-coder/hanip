@@ -31,10 +31,11 @@
 </script>
 
 <section class="hanja">
-  <div class="cap">한자 뿌리 · Hanja roots</div>
-  <p class="sub">One root unlocks a whole word family · 뿌리 하나로 단어 가족이 열려요.</p>
+  <div class="mark">Hanja roots</div>
+  <p class="sub">One root unlocks a whole word family</p>
+  <p class="sub-ko">뿌리 하나로 단어 가족이 열려요</p>
 
-  <div class="chips" role="group" aria-label="레벨 필터 · Level filter">
+  <div class="chips" role="group" aria-label="Level filter">
     <button class="chip" class:on={level === 'all'} aria-pressed={level === 'all'} on:click={() => pickLevel('all')}>전체 All</button>
     {#each levels as l}
       <button class="chip" class:on={level === l} aria-pressed={level === l} on:click={() => pickLevel(l)}>{l}</button>
@@ -89,7 +90,8 @@
 
 <style>
   .hanja { max-width: 480px; margin: 0 auto; padding: 30px 20px 40px; }
-  .cap { font-size: 11.5px; font-weight: 850; letter-spacing: .2em; color: var(--accent); text-transform: uppercase; }
+  .mark { font-size: 16px; font-weight: 900; letter-spacing: -.03em; }
+  .sub-ko { margin: 2px 0 0; font-size: 11.5px; font-weight: 650; color: var(--ink-3); word-break: keep-all; }
   .sub { margin: 6px 0 18px; font-size: 13.5px; color: var(--ink-3); word-break: keep-all; }
 
   .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
@@ -111,7 +113,7 @@
   .main { flex: 1; min-width: 0; display: grid; gap: 3px; }
   .main strong { font-size: 15px; font-weight: 800; word-break: keep-all; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .meta { display: flex; align-items: center; gap: 8px; }
-  .lvl { flex: none; font-size: 10.5px; font-weight: 850; letter-spacing: .08em; color: var(--accent-deep);
+  .lvl { flex: none; font-size: 10.5px; font-weight: 850; letter-spacing: .01em; color: var(--accent-deep);
     background: var(--accent-soft); padding: 2px 8px; border-radius: 999px; }
   .fam { font-size: 12px; color: var(--ink-3); }
   .arrow { flex: none; font-size: 18px; font-weight: 800; color: var(--ink-3); }

@@ -53,8 +53,9 @@
 <section class="guide">
   {#if !selectedUnit}
     <!-- ===== List view: tracks → units ===== -->
-    <div class="cap">가이드 · Korea Guides</div>
-    <p class="sub">Real-life situations, ready to use · 실전 상황별 한국 생활 가이드</p>
+    <div class="mark">Korea guides</div>
+    <p class="sub">Real-life situations, ready to use</p>
+    <p class="sub-ko">실전 상황별 한국 생활 가이드</p>
 
     <div class="tracks">
       {#each tracks as track (track.id)}
@@ -82,7 +83,7 @@
     </div>
   {:else}
     <!-- ===== Reader view: one unit ===== -->
-    <button class="back" on:click={goBack}>← 가이드 · Back</button>
+    <button class="back" on:click={goBack}>← Guides</button>
 
     {#if selectedTrack}
       <div class="crumb">{selectedTrack.letter} · {selectedTrack.title}</div>
@@ -96,7 +97,7 @@
       <div class="goal">
         <span class="goal-box" aria-hidden="true">✓</span>
         <div class="goal-body">
-          <span class="sec-cap goal-cap">목표 · Goal</span>
+          <span class="sec-cap goal-cap">Goal</span>
           <p>{selectedUnit.goal}</p>
         </div>
       </div>
@@ -104,7 +105,7 @@
 
     {#if list(selectedUnit, 'beginnerGuide').length}
       <div class="sec">
-        <div class="sec-cap">먼저 알아두기 · Before you start</div>
+        <div class="sec-cap">Before you start</div>
         <div class="acc">
           {#each list(selectedUnit, 'beginnerGuide') as g, i (i)}
             <div class="acc-item" class:open={openGuide === i}>
@@ -127,7 +128,7 @@
 
     {#if list(selectedUnit, 'steps').length}
       <div class="sec">
-        <div class="sec-cap">순서 · Steps</div>
+        <div class="sec-cap">Steps</div>
         <ol class="steps">
           {#each list(selectedUnit, 'steps') as step, i (i)}
             <li class="step">
@@ -141,8 +142,8 @@
 
     {#if list(selectedUnit, 'keyPhrases').length}
       <div class="sec">
-        <div class="sec-cap">핵심 표현 · Key phrases</div>
-        <p class="sec-sub">탭하면 발음과 메모가 나와요 · Tap a phrase to hear it and see the tip.</p>
+        <div class="sec-cap">Key phrases</div>
+        <p class="sec-sub">Tap a phrase to hear it and see the tip</p>
         <div class="phrases">
           {#each list(selectedUnit, 'keyPhrases') as p, i (i)}
             <div class="phrase" class:noted={!!openNote[i]}>
@@ -165,8 +166,8 @@
 
     {#if list(selectedUnit, 'dialogue').length}
       <div class="sec">
-        <div class="sec-cap">대화 · Dialogue</div>
-        <p class="sec-sub">말풍선을 누르면 영어가 보여요 · Tap a bubble to show its English.</p>
+        <div class="sec-cap">Dialogue</div>
+        <p class="sec-sub">Tap a bubble to show its English</p>
         <div class="chat">
           {#each list(selectedUnit, 'dialogue') as b, i (i)}
             {@const me = isMe(b, i)}
@@ -185,7 +186,7 @@
 
     {#if list(selectedUnit, 'checkpoints').length}
       <div class="sec">
-        <div class="sec-cap">체크포인트 · Can-do check</div>
+        <div class="sec-cap">Can-do check</div>
         <ul class="checks">
           {#each list(selectedUnit, 'checkpoints') as c, i (i)}
             <li class="check">
@@ -199,7 +200,7 @@
 
     {#if selectedUnit.costs || selectedUnit.notes}
       <div class="sec">
-        <div class="sec-cap">메모 · Good to know</div>
+        <div class="sec-cap">Good to know</div>
         <div class="memo">
           {#if selectedUnit.costs}<p>{selectedUnit.costs}</p>{/if}
           {#if selectedUnit.notes}<p>{selectedUnit.notes}</p>{/if}
@@ -207,13 +208,14 @@
       </div>
     {/if}
 
-    <button class="back back-bottom" on:click={goBack}>← 가이드 · Back</button>
+    <button class="back back-bottom" on:click={goBack}>← Guides</button>
   {/if}
 </section>
 
 <style>
   .guide { max-width: 480px; margin: 0 auto; padding: 30px 20px 40px; }
-  .cap { font-size: 11.5px; font-weight: 850; letter-spacing: .2em; color: var(--accent); text-transform: uppercase; }
+  .mark { font-size: 16px; font-weight: 900; letter-spacing: -.03em; }
+  .sub-ko { margin: 2px 0 0; font-size: 11.5px; font-weight: 650; color: var(--ink-3); word-break: keep-all; }
   .sub { margin: 6px 0 20px; font-size: 13.5px; color: var(--ink-3); word-break: keep-all; }
 
   /* ===== List view ===== */
@@ -240,7 +242,7 @@
     font-size: 13px; font-weight: 800; color: var(--accent-deep); }
   .back:hover { color: var(--accent); }
   .back-bottom { margin-top: 26px; }
-  .crumb { margin-top: 8px; font-size: 11px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
+  .crumb { margin-top: 8px; font-size: 11px; font-weight: 850; letter-spacing: .01em; color: var(--ink-3); }
   .u-h { margin: 4px 0 0; font-size: 22px; font-weight: 850; line-height: 1.3; word-break: keep-all; }
   .situation { margin: 8px 0 0; font-size: 14px; color: var(--ink-2); word-break: keep-all; }
 
@@ -253,7 +255,7 @@
   .goal-body p { margin: 3px 0 0; font-size: 13.5px; color: var(--ink-2); word-break: keep-all; }
 
   .sec { margin-top: 26px; }
-  .sec-cap { display: block; font-size: 11px; font-weight: 850; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-3); }
+  .sec-cap { display: block; font-size: 11px; font-weight: 850; letter-spacing: .01em; color: var(--ink-3); }
   .sec-sub { margin: 4px 0 0; font-size: 12.5px; color: var(--ink-3); word-break: keep-all; }
   .sec > .acc, .sec > .steps, .sec > .phrases, .sec > .chat, .sec > .checks, .sec > .memo { margin-top: 10px; }
 
@@ -295,7 +297,7 @@
   .chat { display: grid; gap: 12px; }
   .msg { display: grid; justify-items: start; max-width: 86%; }
   .msg.me { justify-items: end; margin-left: auto; }
-  .who { font-size: 10.5px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase;
+  .who { font-size: 10.5px; font-weight: 850; letter-spacing: .01em;
     color: var(--ink-3); margin: 0 4px 3px; }
   .bubble { display: grid; gap: 2px; text-align: left; min-height: 44px; align-content: center;
     padding: 10px 14px; border-radius: 16px; background: var(--card); border: 1px solid var(--line);

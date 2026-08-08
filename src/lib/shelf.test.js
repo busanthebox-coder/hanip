@@ -48,11 +48,11 @@ const chapters = [
 describe('shelf level grouping', () => {
   it('defines the five ordered course groups with the required labels', () => {
     expect(LEVEL_GROUPS.map(({ id, label }) => [id, label])).toEqual([
-      ['A1', 'A1 기초 Foundation'],
-      ['A2', 'A2 쌓기 Builder'],
-      ['B1', 'B1 홀로서기 Independent'],
-      ['B2', 'B2 정밀 Control'],
-      ['C1', 'C1 글말 Written'],
+      ['A1', 'A1 Foundation'],
+      ['A2', 'A2 Builder'],
+      ['B1', 'B1 Independent'],
+      ['B2', 'B2 Control'],
+      ['C1', 'C1 Written'],
     ]);
   });
 

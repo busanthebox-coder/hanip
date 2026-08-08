@@ -36,7 +36,7 @@ export function buildGrammarLesson(note) {
   const cards = [];
 
   cards.push(lessonCard('intro', {
-    label: 'MEANING · 뜻',
+    label: 'Meaning',
     heading,
     pattern,
     body: note.func || note.mentalModel || '',
@@ -44,7 +44,7 @@ export function buildGrammarLesson(note) {
 
   if (examples.length) {
     cards.push(lessonCard('pattern', {
-      label: 'PATTERN FIRST · 패턴 먼저',
+      label: 'Pattern first',
       heading: 'See it in real sentences first',
       pattern,
       examples: examples.slice(0, EXAMPLES_PER_CARD),
@@ -53,13 +53,13 @@ export function buildGrammarLesson(note) {
 
   if (note.keyPoint) {
     cards.push(lessonCard('key-point', {
-      label: 'KEY DIFFERENCE · 핵심 차이',
+      label: 'Key difference',
       heading: note.keyPoint.label,
       body: note.keyPoint.body,
     }));
   } else if (note.formation) {
     cards.push(lessonCard('formation', {
-      label: 'HOW IT IS BUILT · 만드는 법',
+      label: 'How it is built',
       heading: 'Build the complete message',
       body: note.formation,
     }));
@@ -67,7 +67,7 @@ export function buildGrammarLesson(note) {
 
   formGroups.forEach((rows, index) => {
     cards.push(lessonCard('form', {
-      label: `FORM ${index + 1} OF ${formGroups.length} · 형태`,
+      label: `Form ${index + 1} of ${formGroups.length}`,
       heading: formGroups.length > 1 ? 'Choose the form by what comes before it' : 'How to build the pattern',
       rows,
     }));
@@ -76,7 +76,7 @@ export function buildGrammarLesson(note) {
   const laterExamples = examples.slice(EXAMPLES_PER_CARD);
   chunks(laterExamples, EXAMPLES_PER_CARD).forEach((group, index) => {
     cards.push(lessonCard('examples', {
-      label: 'REAL-LIFE EXAMPLES · 실생활 예문',
+      label: 'Real-life examples',
       heading: index ? 'One more pair to recognize' : 'Read it in everyday Korean',
       examples: group,
     }));
@@ -84,7 +84,7 @@ export function buildGrammarLesson(note) {
 
   if (note.pronunciation) {
     cards.push(lessonCard('pronunciation', {
-      label: 'PRONUNCIATION · 발음',
+      label: 'Pronunciation',
       heading: 'What you will actually hear',
       body: note.pronunciation,
       examples: examples.slice(0, 1),
@@ -93,7 +93,7 @@ export function buildGrammarLesson(note) {
 
   if (note.exceptions?.length) {
     cards.push(lessonCard('exceptions', {
-      label: 'LIMITS · 예외와 범위',
+      label: 'Limits',
       heading: 'Where this rule stops',
       items: note.exceptions,
     }));
@@ -101,7 +101,7 @@ export function buildGrammarLesson(note) {
 
   if (note.englishSpeakerPitfall) {
     cards.push(lessonCard('pitfall', {
-      label: 'COMMON MISTAKE · 자주 하는 실수',
+      label: 'Common mistake',
       heading: 'Avoid the English-shaped sentence',
       wrong: note.englishSpeakerPitfall.wrong,
       right: note.englishSpeakerPitfall.right,
@@ -111,7 +111,7 @@ export function buildGrammarLesson(note) {
 
   if (note.drill) {
     cards.push(lessonCard('worked', {
-      label: 'WORKED EXAMPLE · 같이 보기',
+      label: 'Worked example',
       heading: note.drill.instruction,
       model: note.drill.model,
       items: note.drill.items || [],
@@ -122,7 +122,7 @@ export function buildGrammarLesson(note) {
     cards.push({
       kind: 'grammar-check',
       section: 'check',
-      label: 'CHECK · 직접 확인',
+      label: 'Check yourself',
       heading: 'Which sentence is natural Korean?',
       prompt: `${pattern}: natural sentence`,
       options: [
@@ -134,7 +134,7 @@ export function buildGrammarLesson(note) {
   }
 
   cards.push(lessonCard('recap', {
-    label: 'ONE-BITE RECAP · 한입 정리',
+    label: 'Recap',
     heading: 'Keep the pattern and two examples',
     pattern,
     body: note.keyPoint?.label || note.mentalModel || note.func || '',

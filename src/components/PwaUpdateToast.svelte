@@ -5,8 +5,8 @@
 {#if $updateReady}
   <div class="update-toast" role="status">
     <button type="button" on:click={applyPwaUpdate}>
-      <strong>새 버전이 있어요 · Update ready</strong>
-      <span>눌러서 업데이트 · Tap to update</span>
+      <strong>Update ready</strong>
+      <span>Tap to reload the newest version</span>
     </button>
   </div>
 {/if}

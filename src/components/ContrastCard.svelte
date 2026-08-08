@@ -29,7 +29,7 @@
 
 {#if hasContent}
   <section class="contrast" class:compact>
-    <div class="cap">헷갈리는 짝 · Easily confused</div>
+    <b class="cap">Easily confused</b>
 
     {#if titleParts.length}
       <h3 class="title">
@@ -63,7 +63,7 @@
                 <span class="m-ko" lang="ko">{ko}</span>
                 <AudioDot text={ko} size={26} />
                 {#if m.self === true}
-                  <span class="chip anchor">지금 이 단어 · this one</span>
+                  <span class="anchor">this one</span>
                 {/if}
               </div>
             {/if}
@@ -77,7 +77,7 @@
             {/if}
 
             {#if when}
-              <div class="m-when"><span class="chip">{when}</span></div>
+              <div class="m-when">{when}</div>
             {/if}
 
             {#if !compact && hint}
@@ -105,124 +105,44 @@
 {/if}
 
 <style>
-  .contrast {
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 18px;
-    box-shadow: var(--shadow-1);
-    padding: 16px 16px 15px;
-  }
-  .contrast.compact { padding: 13px 13px 12px; }
+  /* rows under one rule — never a card inside the card that hosts it */
+  .contrast { padding: 0; }
 
-  .cap {
-    font-size: 11.5px;
-    font-weight: 850;
-    letter-spacing: .2em;
-    color: var(--accent);
-    text-transform: uppercase;
-  }
+  .cap { display: block; font-size: 15.5px; font-weight: 850; letter-spacing: -.01em; color: var(--ink); }
+  .compact .cap { font-size: 13.5px; }
 
-  .title {
-    margin: 7px 0 0;
-    font-size: 19px;
-    font-weight: 850;
-    line-height: 1.35;
-    color: var(--ink);
-    word-break: keep-all;
-  }
+  .title { margin: 6px 0 0; font-size: 19px; font-weight: 850; line-height: 1.35; color: var(--ink);
+    word-break: keep-all; }
   .compact .title { font-size: 17px; }
   .title .word { margin-right: 2px; }
-  .title .vs {
-    margin: 0 6px 0 4px;
-    font-size: 12.5px;
-    font-weight: 700;
-    color: var(--ink-3);
-    text-transform: lowercase;
-    letter-spacing: .04em;
-  }
+  .title .vs { margin: 0 6px 0 4px; font-size: 12.5px; font-weight: 700; color: var(--ink-3);
+    text-transform: lowercase; letter-spacing: .04em; }
 
-  .rule {
-    margin: 11px 0 0;
-    padding: 12px 13px;
-    background: var(--wash);
-    border-radius: 14px;
-    font-size: 14px;
-    line-height: 1.65;
-    color: var(--ink);
-    word-break: keep-all;
-  }
-  .compact .rule {
-    margin-top: 9px;
-    padding: 10px 11px;
-    font-size: 13px;
-    line-height: 1.6;
-  }
+  .rule { margin: 10px 0 0; font-size: 14px; font-weight: 600; line-height: 1.7; color: var(--ink-2);
+    word-break: keep-all; }
+  .compact .rule { margin-top: 8px; font-size: 13px; line-height: 1.6; }
 
-  .members { display: grid; gap: 9px; margin-top: 12px; }
-  .compact .members { gap: 6px; margin-top: 9px; }
-
-  .m {
-    padding: 11px 12px 12px;
-    border: 1px solid var(--line);
-    border-left: 3px solid var(--line);
-    border-radius: 14px;
-    background: var(--card);
-  }
-  .compact .m { padding: 9px 10px 10px; }
-  .m.is-self {
-    border-color: var(--line-2);
-    border-left-color: var(--accent);
-    background: var(--accent-soft);
-  }
+  .members { margin-top: 12px; }
+  .m { padding: 13px 0; border-top: 1px solid var(--line); }
+  .m:last-child { border-bottom: 1px solid var(--line); }
+  .compact .m { padding: 10px 0; }
 
   .m-head { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; min-height: 28px; }
-  .m-ko {
-    font-size: 20px;
-    font-weight: 850;
-    line-height: 1.3;
-    color: var(--ink);
-    word-break: keep-all;
-  }
+  .m-ko { font-size: 20px; font-weight: 850; line-height: 1.3; color: var(--ink); word-break: keep-all; }
   .compact .m-ko { font-size: 18px; }
+  .m.is-self .m-ko { border-bottom: 2px solid var(--gold); padding-bottom: 1px; }
+  .anchor { font-size: 11.5px; font-weight: 700; color: var(--ink-3); }
 
-  .m-rom { margin-top: 2px; font-size: 12px; color: var(--ink-3); letter-spacing: .01em; }
-  .m-en { margin-top: 4px; font-size: 13.5px; line-height: 1.5; color: var(--ink-2); }
+  .m-rom { margin-top: 2px; font-size: 12px; font-weight: 650; letter-spacing: .02em; color: var(--ink-3); }
+  .m-en { margin-top: 4px; font-size: 13.5px; font-weight: 650; line-height: 1.5; color: var(--ink-2); }
   .compact .m-en { margin-top: 3px; font-size: 12.5px; }
 
-  .m-when { margin-top: 7px; }
-  .compact .m-when { margin-top: 5px; }
+  .m-when { margin-top: 6px; font-size: 11.5px; font-weight: 700; color: var(--ink-3); word-break: keep-all; }
+  .m-hint { margin-top: 6px; font-size: 12.5px; font-weight: 600; line-height: 1.55; color: var(--ink-3);
+    word-break: keep-all; }
 
-  .chip {
-    display: inline-block;
-    padding: 3px 9px;
-    border-radius: 999px;
-    background: var(--wash);
-    border: 1px solid var(--line);
-    font-size: 11px;
-    font-weight: 750;
-    line-height: 1.45;
-    color: var(--ink-2);
-    word-break: keep-all;
-  }
-  .m.is-self .chip { background: var(--card); border-color: var(--line-2); }
-  .chip.anchor {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: var(--on-accent);
-    font-weight: 800;
-    letter-spacing: .01em;
-  }
-  .m.is-self .chip.anchor { background: var(--accent); border-color: var(--accent); }
-
-  .m-hint { margin-top: 7px; font-size: 12.5px; line-height: 1.5; color: var(--ink-3); word-break: keep-all; }
-
-  .m-ex {
-    margin-top: 9px;
-    padding-left: 10px;
-    border-left: 2px solid var(--line);
-  }
-  .m.is-self .m-ex { border-left-color: var(--line-2); }
+  .m-ex { margin-top: 9px; }
   .ex-ko-row { display: flex; align-items: center; gap: 7px; }
   .ex-ko { font-size: 13.5px; font-weight: 700; color: var(--ink-2); word-break: keep-all; }
-  .ex-en { margin-top: 1px; font-size: 12px; line-height: 1.45; color: var(--ink-3); }
+  .ex-en { margin-top: 1px; font-size: 12px; font-weight: 650; line-height: 1.45; color: var(--ink-3); }
 </style>

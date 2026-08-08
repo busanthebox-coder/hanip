@@ -19,8 +19,8 @@
   }
 </script>
 
-<div class="step-label">대화 · Real dialogue, line by line</div>
-{#if card.setting}<div class="setting">{card.setting}</div>{/if}
+<div class="label">Real dialogue, line by line</div>
+{#if card.setting}<p class="setting">{card.setting}</p>{/if}
 
 <div class="thread">
   {#each card.lines.slice(0, shown) as line, i}
@@ -37,15 +37,17 @@
 </div>
 
 {#if shown < card.lines.length}
-  <button class="reveal-next" on:click={reveal}>다음 줄 · Next line ⌄ ({shown}/{card.lines.length})</button>
+  <button class="reveal-next" on:click={reveal}>Next line ({shown}/{card.lines.length})</button>
 {:else}
-  <div class="done-hint">말풍선 탭 = 번역 · Tap a bubble for English</div>
+  <div class="hint">Tap a bubble for English</div>
 {/if}
 
 <style>
-  .step-label { font-size: 11px; font-weight: 850; letter-spacing: .16em; color: var(--accent); text-transform: uppercase; }
-  .setting { margin-top: 4px; font-size: 13px; color: var(--ink-3); word-break: keep-all; }
-  .thread { margin-top: 14px; background: var(--chat-canvas); border-radius: 18px; padding: 14px 12px; display: grid; gap: 10px; }
+  .label { font-size: 12.5px; font-weight: 650; color: var(--ink-3); }
+  .setting { margin: 6px 0 0; font-size: 13.5px; font-weight: 650; color: var(--ink-2); word-break: keep-all; }
+  /* the chat canvas is the metaphor, not a card frame — it stays */
+  .thread { margin-top: 18px; background: var(--chat-canvas); border-radius: 18px; padding: 14px 12px;
+    display: grid; gap: 10px; }
   .row { display: grid; grid-template-columns: 1fr auto; gap: 6px; justify-items: start; align-items: end; }
   .row.mine { justify-items: end; }
   .name { grid-column: 1 / -1; font-size: 11px; font-weight: 800; color: var(--ink-3); margin: 0 4px; }
@@ -56,8 +58,10 @@
   @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
   .en { display: block; margin-top: 5px; font-size: 12.5px; color: var(--ink-2); font-weight: 600; }
   .rom { display: block; margin-top: 4px; color: var(--ink-3); font-size: 12px; font-weight: 650; letter-spacing: .01em; }
-  .reveal-next { margin-top: 12px; justify-self: center; padding: 10px 20px; border-radius: 999px;
-    background: var(--card); border: 1.5px solid var(--line); font-size: 14px; font-weight: 800; color: var(--ink-2); }
-  .reveal-next:hover { border-color: var(--ink-3); }
-  .done-hint { margin-top: 10px; text-align: center; font-size: 12px; color: var(--ink-3); }
+  .reveal-next { width: 100%; min-height: 44px; margin-top: 16px; padding: 13px 0;
+    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+    font-size: 14px; font-weight: 750; color: var(--ink); text-align: center;
+    transition: background-color .12s var(--ease); }
+  .reveal-next:hover { background: var(--wash); }
+  .hint { margin-top: 14px; font-size: 11.5px; font-weight: 650; color: var(--ink-3); text-align: center; }
 </style>

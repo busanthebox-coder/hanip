@@ -60,7 +60,7 @@
 
 <style>
   .showcase { max-width: 480px; margin: 0 auto; padding: var(--space-8) var(--space-5) var(--space-10); }
-  .cap, .label { color: var(--accent); font-size: var(--type-overline); font-weight: 850; letter-spacing: .16em; text-transform: uppercase; }
+  .cap, .label { color: var(--accent); font-size: var(--type-overline); font-weight: 850; letter-spacing: .01em; }
   h1 { margin: var(--space-2) 0 0; font-size: var(--type-heading); line-height: 1.35; }
   .sub { margin: var(--space-1) 0 0; color: var(--ink-3); font-size: var(--type-body-sm); }
   .theme-switch { margin-top: var(--space-4); display: inline-flex; gap: 2px; padding: 3px; border-radius: 12px; background: var(--wash); }

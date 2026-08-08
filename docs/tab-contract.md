@@ -14,18 +14,43 @@ four components built in parallel integrate without edits.
 
 ## Design language (Hanip)
 
+**전체 규칙은 `docs/design/STYLE.md`가 정본이다** (타이포 낙차·색 예산·킬 리스트).
+아래는 새 탭을 만들 때 반드시 지켜야 하는 최소 계약이다.
+
 - Tokens only — no hard-coded colors: `--bg --ink --ink-2 --ink-3 --card --wash
   --line --line-2 --accent --accent-deep --accent-soft --gold --gold-soft
   --good --good-deep --good-soft --r-card --r-chip --shadow-1 --ease`.
 - Section shell: `max-width: 480px; margin: 0 auto; padding: 30px 20px 40px;`
-- Section header: caps label 11.5px/850/letter-spacing .2em/uppercase in
-  `--accent`, then a one-line sub in `--ink-3` 13.5px.
-- Cards: `background: var(--card); border: 1px solid var(--line);
-  border-radius: 18px; box-shadow: var(--shadow-1);`
+- Section header: 화면 이름을 16px/900 한 단어로 두고, 그 아래 `--ink-3` 12.5px 한 줄.
+  **uppercase 키커 금지.**
+- 구획은 여백과 1px `--line`만. 카드 윤곽은 화면당 0~1겹이고 중첩하지 않는다.
 - Korean text: `word-break: keep-all`. Interactive rows ≥44px tall.
-- **Bilingual everywhere**: labels and instructions are `한국어 · English`
-  (e.g. "한글 · The Korean alphabet"). Content English comes from data.
 - Transitions: explicit properties only (never `transition: all`).
+
+## 언어 정책 (개정 2026-08-08 · 지시 27)
+
+학습자는 **한국어를 배우는 영어 화자**다. 두 언어는 나란히 놓지 않고 위계로 나눈다.
+
+1. **학습 콘텐츠**(단어·예문·대화·문법 형태·타일·토큰·로마자)는 **한국어가 히어로** —
+   크게, 화면을 지배하도록.
+2. **설명·해설·뉘앙스**는 **영어 본문**이다. 실데이터의 영어 원문을 그대로 흘린다.
+3. **기능성 UI 문자열**(버튼·상태·섹션 제목·탭·필터·메타·통계)은
+   **영어 메인 + 한국어 11.5px `--ink-3` 보조**, 반드시 **줄바꿈**으로 분리한다.
+   짧은 수치·상태는 영어만 써도 된다.
+4. **학습 지시문**(「무슨 뜻일까요?」류)은 한국어를 유지하고 바로 아래 작은 영어 보조를 단다.
+5. **`「A · B」`식 한 줄 병기 도장 금지.** 두 언어가 한 줄에 점(·)으로 붙는 표기는 만들지 않는다.
+
+```html
+<!-- 금지 -->  <button>시작 · Start →</button>
+<!-- 권장 -->  <button><b>Start</b><i>시작하기</i></button>
+```
+
+### 개정 이력
+
+| 날짜 | 지시 | 바뀐 것 |
+|---|---|---|
+| (초기) | 하네스 구축 | "새 UI 문자열은 전부 `한국어 · English` 병기" |
+| 2026-08-08 | 27 | 병기 폐지 → 위 5항 위계로 교체. 섹션 헤더의 uppercase 키커 규칙도 폐지(STYLE.md §4) |
 
 ## Shared utilities
 

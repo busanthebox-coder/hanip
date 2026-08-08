@@ -11,6 +11,7 @@
   import GrammarLessonCard from './cards/GrammarLessonCard.svelte';
   import GrammarRefSheet from './GrammarRefSheet.svelte';
   import { buzz, fanfare, thud, tick } from '../lib/feedback.js';
+  import { collectMistake } from '../lib/mistakes.js';
   import { prefs } from '../lib/prefs.js';
   import { record } from '../lib/srs.js';
   import { markLastPlayed, progress, todayKey, warmupCards } from '../lib/store.js';
@@ -18,8 +19,6 @@
   import { speak } from '../lib/tts.js';
 
   export let bite;
-  export let biteNumber = 1;   // 1-based position in its chapter
-  export let biteTotal = 1;
   export let onExit = () => {};      // (finished: boolean, wantMore: boolean)
   export let onOpenWord = () => {};
   export let withWarmup = true;
@@ -33,6 +32,7 @@
   let requeuedIds = new Set();
   let correctCount = 0;
   let answeredCount = 0;
+  let mistakes = [];
   let resolutionCorrect = null;
   let speechTimer = null;
   let showRefSheet = false;
@@ -48,6 +48,7 @@
     requeuedIds = new Set();
     correctCount = 0;
     answeredCount = 0;
+    mistakes = [];
   }
 
   const ACTIVE_KINDS = new Set(['guess', 'drill', 'order', 'grammar-check']);
@@ -64,6 +65,7 @@
     if (resolved) return;
     resolved = true;
     resolutionCorrect = correct;
+    mistakes = collectMistake(mistakes, cur, correct, meta);
     if (ACTIVE_KINDS.has(cur.kind)) {
       // "몰라요" is a neutral reveal, not a wrong-answer penalty.
       if (!meta.skipped) {
@@ -129,64 +131,100 @@
 
 <section class="bp">
   {#if !finished && cur}
-    <div class="top">
-      <button class="x" aria-label="닫기" on:click={() => onExit(false, false)}>×</button>
-      <div class="dots" aria-hidden="true">
-        {#each cards as _, di}
-          <span class="dot" class:done={di < i} class:now={di === i}></span>
-        {/each}
-      </div>
-      <span class="count">{biteNumber}/{biteTotal}입</span>
+    <div class="bar">
+      <button class="x" aria-label="Close" on:click={() => onExit(false, false)}>×</button>
+      {#if cards.length > 12}
+        <div class="track" aria-hidden="true"><span style="width:{((i + 1) / cards.length) * 100}%"></span></div>
+      {:else}
+        <div class="dots" aria-hidden="true">
+          {#each cards as _, di}
+            <i class:done={di < i} class:now={di === i}></i>
+          {/each}
+        </div>
+      {/if}
+      <span class="count">{i + 1}/{cards.length}</span>
     </div>
 
     {#key i}
-      <div class="card-area">
-        {#if cur.requeued}<div class="again-chip">다시 · Again</div>{/if}
-        {#if cur.kind === 'guess'}<GuessCard card={cur} onResolve={resolve} {onOpenWord} />
-        {:else if cur.kind === 'hunt'}<HuntCard card={cur} onResolve={resolve} />
-        {:else if cur.kind === 'teach'}<TeachCard card={cur} onResolve={resolve} />
-        {:else if cur.kind === 'drill'}<DrillCard card={cur} onResolve={resolve} />
-        {:else if cur.kind === 'order'}<OrderCard card={cur} onResolve={resolve} />
-        {:else if cur.kind === 'chat'}<ChatCard card={cur} onResolve={resolve} />
-        {:else if cur.kind === 'read'}<ReadCard card={cur} onResolve={resolve} />
-        {:else if cur.kind === 'payoff'}<PayoffCard card={cur} onResolve={resolve} />
-        {:else if cur.kind === 'grammar-lesson' || cur.kind === 'grammar-check'}<GrammarLessonCard card={cur} onResolve={resolve} />
-        {/if}
-        {#if resolved && resolutionCorrect === false && ACTIVE_KINDS.has(cur.kind)}
-          <div class="retry-chip">3장 뒤에 다시 나와요 · You'll see this again</div>
-        {/if}
+      <div class="deck">
+        <div class="sheet">
+          {#if cur.requeued}<div class="again">Again</div>{/if}
+          {#if cur.kind === 'guess'}<GuessCard card={cur} onResolve={resolve} {onOpenWord} />
+          {:else if cur.kind === 'hunt'}<HuntCard card={cur} onResolve={resolve} />
+          {:else if cur.kind === 'teach'}<TeachCard card={cur} onResolve={resolve} />
+          {:else if cur.kind === 'drill'}<DrillCard card={cur} onResolve={resolve} />
+          {:else if cur.kind === 'order'}<OrderCard card={cur} onResolve={resolve} />
+          {:else if cur.kind === 'chat'}<ChatCard card={cur} onResolve={resolve} />
+          {:else if cur.kind === 'read'}<ReadCard card={cur} onResolve={resolve} />
+          {:else if cur.kind === 'payoff'}<PayoffCard card={cur} onResolve={resolve} />
+          {:else if cur.kind === 'grammar-lesson' || cur.kind === 'grammar-check'}<GrammarLessonCard card={cur} onResolve={resolve} />
+          {/if}
+          {#if resolved && resolutionCorrect === false && ACTIVE_KINDS.has(cur.kind)}
+            <div class="retry">
+              This one comes back in a moment
+              <span>잠시 뒤에 다시 나와요</span>
+            </div>
+          {/if}
+        </div>
       </div>
     {/key}
 
     <div class="nav">
-      <button class="go" disabled={!resolved} on:click={next}>
-        {i === cards.length - 1 ? '한 입 끝 · Finish →' : '다음 · Next →'}
+      <button class="cta" class:off={!resolved} disabled={!resolved} on:click={next}>
+        <b>{i === cards.length - 1 ? 'Finish' : 'Next'}</b>
+        <i>{i === cards.length - 1 ? '한 입 끝' : '다음'}</i>
       </button>
     </div>
   {:else if finished}
     <div class="win">
-      <svg class="bowl" viewBox="0 0 48 48" aria-hidden="true">
-        <defs><clipPath id="winclip"><path d="M6 20 h36 a1 1 0 0 1 -4 16 a14 8 0 0 1 -28 0 a1 1 0 0 1 -4-16 z"/></clipPath></defs>
-        <g clip-path="url(#winclip)">
-          <rect x="0" y="20" width="48" height="28" fill="var(--wash)"/>
-          <rect class="fill" x="0" y="20" width="48" height="28" fill="var(--gold)"/>
-        </g>
-        <path d="M6 20 h36 a1 1 0 0 1 -4 16 a14 8 0 0 1 -28 0 a1 1 0 0 1 -4-16 z" fill="none" stroke="var(--ink)" stroke-width="2.4"/>
-      </svg>
-      <h2>한 입 끝! <span class="h-en">Bite done!</span></h2>
-      {#if answeredCount}
-        <div class="score">{correctCount} of {answeredCount} on your own · {answeredCount}문제 중 {correctCount}개</div>
+      <div class="win-head">
+        <svg class="bowl" viewBox="0 0 48 48" aria-hidden="true">
+          <defs><clipPath id="winclip"><path d="M6 20 h36 a1 1 0 0 1 -4 16 a14 8 0 0 1 -28 0 a1 1 0 0 1 -4-16 z"/></clipPath></defs>
+          <g clip-path="url(#winclip)">
+            <rect x="0" y="20" width="48" height="28" fill="var(--wash)"/>
+            <rect class="fill" x="0" y="20" width="48" height="28" fill="var(--gold)"/>
+          </g>
+          <path d="M6 20 h36 a1 1 0 0 1 -4 16 a14 8 0 0 1 -28 0 a1 1 0 0 1 -4-16 z" fill="none" stroke="var(--ink)" stroke-width="2.4"/>
+        </svg>
+        <h2>Bite done!</h2>
+        {#if answeredCount}
+          <p class="score">{correctCount} of {answeredCount} on your own</p>
+        {/if}
+        <p class="meta">{winStreak}-day streak</p>
+        {#if bite.canDo}<p class="cando">{bite.canDo}</p>{/if}
+      </div>
+
+      {#if mistakes.length}
+        <!-- order 27: the last thing on screen is what tripped you up -->
+        <section class="misses" aria-label="Mistakes">
+          <div class="misses-head">
+            <b>Mistakes</b>
+            <span class="num">{mistakes.length}</span>
+          </div>
+          {#each mistakes as miss (miss.key)}
+            <div class="miss">
+              <div class="miss-top">
+                <span class="miss-ko">{miss.ko}</span>
+                {#if miss.en}<span class="miss-en">{miss.en}</span>{/if}
+              </div>
+              {#if miss.said}<div class="said">You said<b>{miss.said}</b></div>{/if}
+            </div>
+          {/each}
+          <p class="misses-ko">틀렸던 카드는 곧 복습으로 다시 나와요</p>
+        </section>
       {/if}
-      <div class="win-stat">🔥 {winStreak}일째 · {winStreak}-day streak</div>
+
       {#if bite.kind === 'pattern'}
-        <button class="win-stat grammar" on:click={() => { showRefSheet = true; }}>
-          📜 문법 카드 획득! · Grammar card collected! <span class="peek">규칙 보기 · View rule ▸</span>
+        <button class="grammar-row" on:click={() => { showRefSheet = true; }}>
+          <b>Grammar card collected</b>
+          <span>규칙 다시 보기</span>
+          <i aria-hidden="true">›</i>
         </button>
       {/if}
-      {#if bite.canDo}<div class="cando">☑ {bite.canDo}</div>{/if}
+
       <div class="actions">
-        <button class="go" on:click={() => onExit(true, true)}>한 입 더 · One more bite →</button>
-        <button class="ghost" on:click={() => onExit(true, false)}>오늘은 여기까지 · Done for today</button>
+        <button class="cta" on:click={() => onExit(true, true)}><b>One more bite</b><i>한 입 더</i></button>
+        <button class="ghost" on:click={() => onExit(true, false)}>Done for today</button>
       </div>
     </div>
   {/if}
@@ -202,46 +240,90 @@
 </section>
 
 <style>
-  .bp { min-height: 100dvh; max-width: 480px; margin: 0 auto; padding: 20px 20px 24px; display: flex; flex-direction: column;
+  .bp { --sheet-pad: 22px;
+    min-height: 100dvh; max-width: 480px; margin: 0 auto; padding: 14px 16px 18px; display: flex; flex-direction: column;
     background:
       repeating-linear-gradient(var(--study-grid) 0 1px, transparent 1px 30px),
       repeating-linear-gradient(90deg, var(--study-grid) 0 1px, transparent 1px 30px),
       var(--bg); }
-  .top { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
-  .x { width: 34px; height: 34px; flex: none; border-radius: 999px; background: var(--card); border: 1px solid var(--line);
-    color: var(--ink-3); font-size: 17px; font-weight: 700; display: grid; place-items: center; }
-  .x:hover { border-color: var(--ink-3); }
-  .dots { flex: 1; display: flex; gap: 5px; }
-  .dot { height: 7px; flex: 1; border-radius: 999px; background: var(--progress-track); transition: background .2s var(--ease); }
-  .dot.done { background: var(--gold); }
-  .dot.now { background: var(--accent); }
-  .count { flex: none; font-size: 12px; font-weight: 800; color: var(--ink-3); font-variant-numeric: tabular-nums; }
-  .card-area { display: grid; align-content: start; animation: deal .28s var(--ease); }
-  .again-chip { justify-self: start; margin-bottom: 9px; padding: 4px 10px; border-radius: 999px; background: var(--gold-soft);
-    color: var(--ink-2); font-size: 11px; font-weight: 850; letter-spacing: .06em; }
-  .retry-chip { justify-self: start; margin-top: 12px; padding: 6px 11px; border-radius: 999px; background: var(--accent-soft);
-    color: var(--accent-deep); font-size: 12px; font-weight: 800; }
+
+  .bar { display: flex; align-items: center; gap: 12px; min-height: 34px; flex: none; }
+  .x { width: 44px; height: 34px; flex: none; margin-left: -7px; display: grid; place-items: center;
+    color: var(--ink-3); font-size: 19px; line-height: 1; }
+  .x:hover { color: var(--ink); }
+  .track { flex: 1; height: 3px; border-radius: 999px; background: var(--progress-track); overflow: hidden; }
+  .track span { display: block; height: 100%; background: var(--gold); border-radius: 999px;
+    transition: width .2s var(--ease); }
+  .dots { flex: 1; display: flex; gap: 4px; }
+  .dots i { height: 3px; flex: 1; border-radius: 999px; background: var(--progress-track);
+    transition: background .2s var(--ease); }
+  .dots i.done { background: var(--gold); }
+  .dots i.now { background: var(--ink-3); }
+  .count { flex: none; font-size: 11.5px; font-weight: 750; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+
+  /* one card outline per screen — the two edges below are the rest of the deck */
+  .deck { position: relative; margin-top: 16px; animation: deal .28s var(--ease); }
+  .deck::before, .deck::after { content: ""; position: absolute; left: 8px; right: 8px; bottom: -6px; height: 26px;
+    border: 1px solid var(--line); border-radius: 0 0 22px 22px; background: var(--card); z-index: 0; }
+  .deck::after { left: 16px; right: 16px; bottom: -12px; opacity: .7; }
+  .sheet { position: relative; z-index: 1; border-radius: 22px; background: var(--card); border: 1px solid var(--line);
+    box-shadow: var(--shadow-1); padding: 24px var(--sheet-pad) 22px; }
   @keyframes deal { from { opacity: 0; transform: translateY(12px) rotate(.4deg); } to { opacity: 1; transform: none; } }
-  .nav { margin-top: auto; padding-top: 18px; position: sticky; bottom: 0;
-    background: linear-gradient(to top, var(--bg) 75%, transparent); padding-bottom: 4px; }
-  .go { width: 100%; padding: 16px; border-radius: 16px; background: var(--accent); color: var(--on-accent);
-    font-size: 17px; font-weight: 850; box-shadow: 0 4px 0 var(--accent-deep);
-    transition: transform .09s var(--ease), box-shadow .09s var(--ease), opacity .15s var(--ease); }
-  .go:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--accent-deep); }
-  .go:disabled { opacity: .35; pointer-events: none; }
-  .win { margin: auto 0; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; padding: 40px 0; }
-  .bowl { width: 110px; height: 110px; }
+
+  .again { margin-bottom: 12px; font-size: 11.5px; font-weight: 750; color: var(--ink-3); }
+  .retry { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line);
+    font-size: 12.5px; font-weight: 650; color: var(--ink-3); }
+  .retry span { display: block; font-size: 11.5px; font-weight: 650; }
+
+  .nav { margin-top: auto; padding: 26px 0 4px; position: sticky; bottom: 0;
+    background: linear-gradient(to top, var(--bg) 72%, transparent); }
+
+  .cta { width: 100%; padding: 15px 16px 13px; border-radius: 16px; background: var(--accent); color: var(--on-accent);
+    display: grid; gap: 1px; text-align: center; box-shadow: 0 3px 0 var(--accent-deep);
+    transition: transform .09s var(--ease), box-shadow .09s var(--ease), background-color .15s var(--ease),
+      color .15s var(--ease); }
+  .cta:active { transform: translateY(3px); box-shadow: 0 0 0 var(--accent-deep); }
+  .cta b { font-size: 17px; font-weight: 850; letter-spacing: -.01em; }
+  .cta i { font-size: 10.5px; font-style: normal; font-weight: 700; opacity: .62; }
+  .cta.off { background: var(--wash); color: var(--ink-3); box-shadow: none; pointer-events: none; }
+  .cta.off i { opacity: .7; }
+
+  .win { flex: 1; display: flex; flex-direction: column; padding: 12px 6px 4px; }
+  .win-head { margin-top: auto; text-align: center; }
+  .bowl { width: 96px; height: 96px; }
   .bowl .fill { transform: translateY(28px); animation: fillup 1.1s var(--ease) .15s forwards; }
   @keyframes fillup { to { transform: translateY(5px); } }
-  .win h2 { margin: 14px 0 0; font-size: 27px; font-weight: 900; }
-  .h-en { display: block; font-size: 14px; font-weight: 800; color: var(--ink-3); }
-  .score { margin-top: 6px; font-size: 13.5px; color: var(--ink-2); font-weight: 700; }
-  .win-stat { margin-top: 7px; color: var(--ink-2); font-size: 13px; font-weight: 800; }
-  .win-stat.grammar { color: var(--bad); }
-  button.win-stat.grammar { padding: 8px 14px; border: 1px dashed var(--bad); border-radius: 12px; background: transparent; }
-  .peek { display: block; margin-top: 2px; color: var(--ink-3); font-size: 11.5px; font-weight: 800; }
-  .cando { margin-top: 12px; padding: 11px 16px; border-radius: 14px; background: var(--good-soft); color: var(--good-deep);
-    font-size: 14px; font-weight: 750; word-break: keep-all; }
-  .actions { margin-top: 26px; align-self: stretch; display: grid; gap: 10px; }
-  .ghost { padding: 13px; border-radius: 16px; border: 1.5px solid var(--line); color: var(--ink-3); font-size: 15px; font-weight: 800; }
+  .win h2 { margin: 16px 0 0; font-size: 28px; font-weight: 900; letter-spacing: -.03em; }
+  .score { margin: 9px 0 0; font-size: 13.5px; font-weight: 700; color: var(--ink-2); }
+  .meta { margin: 3px 0 0; font-size: 12.5px; font-weight: 650; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+  .cando { margin: 10px 0 0; font-size: 12.5px; font-weight: 650; line-height: 1.6; color: var(--ink-3);
+    word-break: keep-all; }
+
+  .misses { margin-top: 34px; }
+  .misses-head { display: flex; align-items: baseline; justify-content: space-between; padding-bottom: 10px; }
+  .misses-head b { font-size: 15.5px; font-weight: 850; letter-spacing: -.01em; }
+  .num { font-size: 12.5px; font-weight: 650; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+  .miss { padding: 13px 0; border-top: 1px solid var(--line); }
+  .miss:last-of-type { border-bottom: 1px solid var(--line); }
+  .miss-top { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; }
+  /* a compiled prompt can be a full sentence — it must wrap, never widen the page */
+  .miss-ko { flex: none; max-width: 55%; font-size: 18px; font-weight: 850; letter-spacing: -.02em;
+    word-break: keep-all; overflow-wrap: anywhere; }
+  .miss-en { flex: 1 1 auto; min-width: 0; font-size: 13px; font-weight: 650; color: var(--ink-2);
+    text-align: right; word-break: keep-all; overflow-wrap: anywhere; }
+  .said { margin-top: 5px; font-size: 12.5px; font-weight: 650; color: var(--ink-3);
+    word-break: keep-all; overflow-wrap: anywhere; }
+  .said b { margin-left: 7px; font-weight: 750; color: var(--bad); }
+  .misses-ko { margin: 10px 0 0; font-size: 11.5px; font-weight: 650; color: var(--ink-3); }
+
+  .grammar-row { width: 100%; min-height: 44px; margin-top: 22px; padding: 14px 0;
+    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+    display: grid; grid-template-columns: 1fr auto; align-items: center; text-align: left; }
+  .grammar-row b { font-size: 14.5px; font-weight: 750; letter-spacing: -.01em; }
+  .grammar-row span { grid-column: 1; font-size: 11.5px; font-weight: 650; color: var(--ink-3); }
+  .grammar-row i { grid-row: 1 / -1; grid-column: 2; font-style: normal; font-size: 15px; color: var(--ink-3); }
+
+  .actions { margin-top: auto; padding-top: 24px; display: grid; gap: 2px; }
+  .ghost { width: 100%; min-height: 44px; color: var(--ink-3); font-size: 14px; font-weight: 750; text-align: center; }
+  .ghost:hover { color: var(--ink); }
 </style>

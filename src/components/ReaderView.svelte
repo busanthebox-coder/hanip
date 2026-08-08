@@ -23,7 +23,7 @@
 </script>
 
 <article class="reader-view">
-  <button class="back" on:click={onBack}>← 읽을거리 · Back to readers</button>
+  <button class="back" on:click={onBack}>← Readers</button>
   <div class="level">{reader.level} · {reader.genre}</div>
   <h2>{reader.title} · {reader.titleEn}</h2>
 
@@ -42,21 +42,21 @@
   <div class="actions">
     {#if shown < reader.body.length}
       <button class="action" on:click={() => { shown += 1; }}>
-        계속 읽기 · Keep reading ({shown}/{reader.body.length})
+        Keep reading ({shown}/{reader.body.length})
       </button>
     {/if}
     <button class="action quiet" aria-pressed={translationOpen} on:click={() => { translationOpen = !translationOpen; }}>
-      {translationOpen ? '번역 숨기기 · Hide translation' : '번역 보기 · Show translation'}
+      {translationOpen ? 'Hide translation' : 'Show translation'}
     </button>
   </div>
 
   {#if shown === reader.body.length}
     <section class="questions">
-      <h3>이해 확인 · Check your reading</h3>
+      <h3>Check your reading</h3>
       {#each reader.comprehensionQuestions as question, index}
         <button class="question" class:open={answers[index]} on:click={() => toggleAnswer(index)}>
           <strong>{question.prompt}</strong>
-          <span>{answers[index] ? `${question.correct} — ${question.explanation}` : '답 보기 · Reveal answer'}</span>
+          <span>{answers[index] ? `${question.correct} — ${question.explanation}` : 'Reveal answer'}</span>
         </button>
       {/each}
     </section>
@@ -67,7 +67,7 @@
   .reader-view { display: grid; gap: 14px; }
   .back { justify-self: start; min-height: 44px; padding: 8px 13px; border: 1px solid var(--line); border-radius: 999px;
     background: var(--card); color: var(--ink-2); font-size: 12.5px; font-weight: 800; }
-  .level { color: var(--accent); font-size: 11px; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+  .level { color: var(--ink-3); font-size: 11.5px; font-weight: 650; }
   h2 { margin: -8px 0 0; font-size: 22px; line-height: 1.35; word-break: keep-all; }
   .body { display: grid; gap: 12px; }
   .paragraph { padding: 16px; border: 1px solid var(--line); border-radius: 18px; background: var(--card); box-shadow: var(--shadow-1); }
