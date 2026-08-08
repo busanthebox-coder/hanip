@@ -1,0 +1,338 @@
+{
+ "어색하다": {
+  "ko": "어색하다",
+  "romanization": "eosaekada",
+  "en": "to be awkward",
+  "pos": "adjective",
+  "chapter": "56",
+  "ex": {
+   "ko": "처음 만난 자리라서 조금 어색해요.",
+   "en": "It is a little awkward because it is the first meeting.",
+   "note": "Linked to dictionary card word-ext-1265."
+  },
+  "collocations": [
+   "조금 어색하다",
+   "분위기가 어색하다",
+   "어색하지 않게"
+  ],
+  "nuance": "어색하다 traces to the Sino-Korean 語塞 (어 語 'speech' + 색 塞 'blocked/stuck') — the picture of words getting jammed — and names two feelings: the stiff, uneasy awkwardness between people who aren't yet close, and the sense that something looks or feels unnatural or out of place (a forced smile, a new haircut, an odd-sounding sentence). It is the antonym of 자연스럽다 (natural). Draw the line from 부끄럽다 and 창피하다: those are shyness/embarrassment about YOURSELF (blushing, shame), whereas 어색하다 is the awkwardness of an unfamiliar situation or relationship — no shame, just lack of ease; and 불편하다 is broader discomfort, while 어색하다 specifically flags social unfamiliarity. As a 하다 adjective it conjugates to 어색해요. English-speaker pitfall: don't use 어색하다 for personal embarrassment ('I was so embarrassed' is 창피했어요); reserve 어색하다 for that not-yet-comfortable-together or 'this looks unnatural' feeling.",
+  "explanation": "어색하다 (eosaekada) means \"to be awkward; unnatural\". Learn it inside a frame, not as a bare word: a useful first chunk is 어색해요 (\"It's awkward\"). In Korean the particle or ending next to 어색하다 signals its job — topic, subject, object, place, time, method, or description — so read the examples for the small piece beside it. Start with one real sentence about basic everyday communication, then change a single part.",
+  "shortExplanation": "어색하다 means \"to be awkward; unnatural\" and is learned through practical beginner sentence frames.",
+  "commonMistakes": [
+   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
+   "Confusing it with 부끄럽다/창피하다 (shy/embarrassed) — 어색하다 is awkward unfamiliarity, not personal shame.",
+   "Conjugating as 어색하요; 하다 adjectives become 어색해요.",
+   "Treating it as a synonym of 불편하다 — 어색하다 is narrower: specifically the social awkwardness of not being close yet."
+  ],
+  "conjugationTips": [],
+  "usagePhrases": [
+   {
+    "ko": "어색해요",
+    "romanization": "eosaekaeyo",
+    "en": "It's awkward",
+    "note": "present 요-form (어색하 → 어색해요)"
+   },
+   {
+    "ko": "분위기가 어색해요",
+    "romanization": "bunwigiga eosaekaeyo",
+    "en": "The mood is awkward",
+    "note": "분위기 = atmosphere/mood collocation"
+   },
+   {
+    "ko": "어색하게 웃다",
+    "romanization": "eosaekage utda",
+    "en": "to smile awkwardly",
+    "note": "어색하게 = awkwardly (adverb)"
+   },
+   {
+    "ko": "어색한 사이",
+    "romanization": "eosaekan sai",
+    "en": "an awkward relationship",
+    "note": "-(으)ㄴ attributive + 사이 (relationship)"
+   }
+  ],
+  "examples": [
+   {
+    "ko": "오늘 처음 만나서 좀 어색해요.",
+    "romanization": "oneul cheoeum mannaseo jom eosaekaeyo.",
+    "en": "We just met today, so it's a bit awkward.",
+    "note": "simple: -아서/어서 cause + 좀 softener"
+   },
+   {
+    "ko": "오랜만에 봐서 그런지 둘이 좀 어색해요.",
+    "romanization": "oraenmane bwaseo geureonji duri jom eosaekaeyo.",
+    "en": "Maybe because it's been a while, the two of them seem a bit awkward.",
+    "note": "everyday: -아서 그런지 = perhaps because"
+   },
+   {
+    "ko": "머리를 자르니까 거울 속 내가 어색해 보여요.",
+    "romanization": "meorireul jareunikka geoul song naega eosaekae boyeoyo.",
+    "en": "After the haircut, the me in the mirror looks unfamiliar/odd.",
+    "note": "real-situation: 'looks unnatural' sense + -아 보이다"
+   }
+  ],
+  "forms": null,
+  "irregular": null,
+  "level": "B1",
+  "cluster": null,
+  "chapters": [
+   56
+  ]
+ },
+ "도와드리다": {
+  "ko": "도와드리다",
+  "romanization": "dowadeurida",
+  "en": "to help politely",
+  "pos": "verb",
+  "chapter": "56·58",
+  "ex": {
+   "ko": "도와드릴까요? 하고 먼저 물어보세요.",
+   "en": "Ask first, 'May I help?'",
+   "note": "Linked to verb card word-verb-265."
+  },
+  "collocations": [
+   "도와드릴까요?",
+   "도와드리고 싶어요",
+   "어르신을 도와드리다"
+  ],
+  "nuance": "도와드리다 is the humble form of 도와주다 ('help (as a favour)'), where 돕다 (to help) becomes 도와- by the ㅂ-irregular (돕 + 아 → 도와), and the helper-benefit 주다 is upgraded to its humble twin 드리다. So it literally means 'humbly do the favour of helping' — you lower yourself to help someone above you: a customer, elder, or guest. Contrast the three levels you must keep straight: 돕다 (bare dictionary 'help'), 도와주다 (help someone, neutral/friendly), 도와드리다 (help a superior, humble). English flattens all of these to 'help', so the pitfall is using 도와주다 with a customer (too casual for service) or, conversely, 도와드리다 with a buddy (oddly stiff). The phrase 무엇을 도와드릴까요? is the fixed, must-know service line. Conjugation follows 드리다: 도와드려요, 도와드렸어요.",
+  "explanation": "도와드리다 (dowadeurida) means \"to help (politely)\". Start from the polite form 도와드려요 — it is safe with almost anyone, so use it before the dictionary form 도와드리다. A strong first sentence is 무엇을 도와드릴까요? (\"How may I help you?\"); once that feels natural, swap the noun, place, or time and reuse the verb everywhere. Korean changes the ending rather than the word, so the same 도와드리다 also becomes 도와드리고 싶어요 (want), 도와드릴 수 있어요 (can), and 못 도와드려요 (cannot). Say one true sentence about basic everyday communication, then bend it.",
+  "shortExplanation": "도와드리다 means \"to help (politely)\" and is practiced through polite conversation forms.",
+  "commonMistakes": [
+   "Do not use the dictionary form 도와드리다 as a complete polite sentence.",
+   "Use 도와드려요 as the default until you know the relationship is casual.",
+   "Saying 도와줄까요? to a customer or elder — it's too casual for service; the polite form is 도와드릴까요?.",
+   "Forgetting the ㅂ-irregular and writing 돕아드려요; 돕다 + 아 becomes 도와-, so it's 도와드려요.",
+   "Using 도와드리다 toward a younger friend; among peers 도와줄게 (도와주다) is natural and 도와드릴게 sounds over-formal."
+  ],
+  "conjugationTips": [
+   {
+    "title": "ㄹ / 을 — can & will",
+    "body": "To say \"can\" or the future, attach ㄹ/을 to the stem: a vowel-final stem takes ㄹ and a consonant-final stem takes 을. 도와드리다 becomes 도와드릴 수 있어요 (\"can\") and 도와드릴 거예요 (\"will\"). That is why 가다 → 갈 수 있어요 (not 가을), while 먹다 → 먹을 수 있어요. The same ㄹ/을 choice drives 거예요 and the noun-describing form."
+   },
+   {
+    "title": "Irregular stem",
+    "body": "도와드리다 has an irregular stem (ㅂ irregular (돕다)). Memorize its polite form 도와드려요 as the anchor and build the other forms from there."
+   }
+  ],
+  "usagePhrases": [
+   {
+    "ko": "도와드려요",
+    "romanization": "dowadeuryeoyo",
+    "en": "I help (politely).",
+    "note": "Safe polite present form."
+   },
+   {
+    "ko": "안 도와드려요",
+    "romanization": "an dowadeuryeoyo",
+    "en": "I do not help (politely).",
+    "note": "Short everyday negative."
+   },
+   {
+    "ko": "도와드리고 싶어요",
+    "romanization": "dowadeurigo sipeoyo",
+    "en": "I want to help (politely).",
+    "note": "Useful for choices and plans."
+   },
+   {
+    "ko": "도와드릴 수 있어요",
+    "romanization": "dowadeuril su isseoyo",
+    "en": "I can help (politely).",
+    "note": "Ability or possibility."
+   },
+   {
+    "ko": "도와드려야 해요",
+    "romanization": "dowadeuryeoya haeyo",
+    "en": "I have to help (politely).",
+    "note": "Requirement or obligation."
+   },
+   {
+    "ko": "무엇을 도와드릴까요?",
+    "romanization": "mueoseul dowadeurilkkayo?",
+    "en": "How may I help you?",
+    "note": "The standard customer-service opener"
+   }
+  ],
+  "examples": [
+   {
+    "ko": "제가 도와드릴게요.",
+    "romanization": "jega dowadeurilgeyo.",
+    "en": "Let me help you.",
+    "note": "Offering help to an elder/customer; 제가 = humble 'I'"
+   },
+   {
+    "ko": "짐이 무거우면 도와드릴까요?",
+    "romanization": "jimi mugeoumyeon dowadeurilkkayo?",
+    "en": "If your bags are heavy, shall I help?",
+    "note": "-ㄹ까요 politely offers without imposing"
+   },
+   {
+    "ko": "고객님, 무엇을 도와드릴까요?",
+    "romanization": "gogaengnim, mueoseul dowadeurilkkayo?",
+    "en": "How may I help you, sir/ma'am?",
+    "note": "Verbatim shop/call-center phrase"
+   }
+  ],
+  "forms": {
+   "dictionary": "도와드리다",
+   "casualPresent": "도와드려",
+   "politePresent": "도와드려요",
+   "formalPresent": "도와드립니다",
+   "negative": "안 도와드려요",
+   "past": "도와드렸어요",
+   "future": "도와드릴 거예요",
+   "want": "도와드리고 싶어요",
+   "can": "도와드릴 수 있어요",
+   "cannot": "못 도와드려요",
+   "must": "도와드려야 해요",
+   "dontHaveTo": "안 도와드려도 돼요",
+   "pleaseDo": "도와드려 주세요",
+   "pleaseDont": "도와드리지 마세요",
+   "shallWe": "도와드릴까요?"
+  },
+  "irregular": "ㅂ irregular (돕다)",
+  "level": "A2",
+  "cluster": null,
+  "chapters": [
+   56,
+   58
+  ]
+ },
+ "수고하셨습니다": {
+  "ko": "수고하셨습니다",
+  "romanization": "sugohasyeotseumnida",
+  "en": "thank you for your hard work",
+  "pos": "expression",
+  "chapter": "56",
+  "ex": {
+   "ko": "오늘 초대해 주셔서 감사합니다. 수고하셨습니다.",
+   "en": "Thank you for inviting me today. Thank you for your hard work.",
+   "note": "Linked to expression card expr-125."
+  },
+  "collocations": [
+   "수고하셨습니다",
+   "수고 많으셨어요",
+   "오늘 수고하셨어요"
+  ],
+  "nuance": "수고하셨습니다 acknowledges finished effort. 수고(受苦 / loosely) means 'trouble, effort, hard work'; 하시— is the honorific stem of 하다 'to do'; and the past -셨- marks completion, so the phrase means '(you) have done hard work'. The make-or-break contrast is TENSE and DIRECTION. Tense: 수고하셨습니다 (past, work is finished) vs 수고하세요 (present, person is still at it — used as you leave). Mix these and you are either congratulating someone mid-task or urging a finished person to keep going. Direction: 수고하셨습니다 flows naturally downward (superior to junior) or sideways (peers), but upward to a clearly senior boss it can sound presumptuous, as if you are evaluating their effort from a position of authority you don't have — to a superior, 감사합니다 or 고생 많으셨습니다 is safer. The near-synonym 고생하셨습니다 (고생 'hardship/toil') feels warmer and more empathetic about the difficulty of the work, not just the fact of effort. Casual register: 수고했어 (반말, to a junior or close peer). The English-speaker pitfall is conflating it with a casual 'thanks' and dropping it on anyone regardless of rank or whether the work is done.",
+  "explanation": "\"Thank you for your hard work.\" — that is 수고하셨습니다 (sugohasyeotseumnida). It is a fixed expression you use as a chunk, like 수고하셨습니다 (\"thank you for your hard work\"). Match it to the right moment and the right listener; the examples show when it fits and what usually comes next.",
+  "shortExplanation": "수고하셨습니다 is a practical expression meaning \"Thank you for your hard work.\".",
+  "commonMistakes": [
+   "Do not add another polite ending to a phrase that is already complete.",
+   "Use the whole expression in the situation shown by the examples.",
+   "Saying 수고하셨습니다 upward to a clearly higher-ranking boss — directed upward it can sound presumptuous, as if you are evaluating their effort; to a superior use 감사합니다 or 고생 많으셨습니다 with care.",
+   "Confusing the tenses — 수고하셨습니다 is for FINISHED work; if the person is still working, the present-tense 수고하세요 is the correct phrase.",
+   "Using casual 반말 수고했어 with someone you owe politeness to — that form is only for juniors or close peers; otherwise keep 수고하셨습니다 or at least 수고하셨어요."
+  ],
+  "conjugationTips": [],
+  "usagePhrases": [
+   {
+    "ko": "수고하셨습니다",
+    "romanization": "sugohasyeotseumnida",
+    "en": "thank you for your hard work",
+    "note": "formal (합쇼체 + honorific) — after completed work, best from a superior or peer, not directed upward"
+   },
+   {
+    "ko": "수고하셨어요",
+    "romanization": "sugohasyeosseoyo",
+    "en": "thanks for your hard work",
+    "note": "softer polite version (해요체) — same situation, slightly less formal"
+   },
+   {
+    "ko": "수고하세요",
+    "romanization": "sugohaseyo",
+    "en": "keep up the good work",
+    "note": "present tense — to someone STILL working as you depart; this is NOT the same phrase as 하셨습니다"
+   },
+   {
+    "ko": "고생하셨습니다",
+    "romanization": "gosaenghasyeotseumnida",
+    "en": "thank you for all your hard effort",
+    "note": "warmer near-synonym — 고생 ('hardship/toil') feels more heartfelt about the difficulty endured than 수고"
+   }
+  ],
+  "examples": [
+   {
+    "ko": "A: 발표 정말 수고하셨습니다. 덕분에 잘 됐어요. / B: 감사합니다. 열심히 준비했습니다.",
+    "romanization": "A: balpyo jeongmal sugohasyeotseumnida. deokbune jal dwaesseoyo. / B: gamsahamnida. yeolsimhi junbihaetseumnida.",
+    "en": "A: You really worked hard on that presentation. It went great thanks to you. / B: Thank you. I prepared hard for it.",
+    "note": "supervisor (A) thanks the presenter (B) after the presentation — 수고하셨습니다 flows naturally downward from A to B after completed work"
+   },
+   {
+    "ko": "오늘 회의 수고하셨습니다. 내일 뵙겠습니다.",
+    "romanization": "oneul hoeui sugohasyeotseumnida. naeil boepgetseumnida.",
+    "en": "Thank you for your work in today's meeting. See you tomorrow.",
+    "note": "wrapping up a meeting — 수고하셨습니다 marks the task as finished; pairs with the next-meeting farewell"
+   },
+   {
+    "ko": "A: 다들 수고하세요. 저 먼저 퇴근합니다. / B: 네, 안녕히 가세요.",
+    "romanization": "A: dadeul sugohaseyo. jeo meonjeo toegeunhamnida. / B: ne, annyeonghi gaseyo.",
+    "en": "A: Everyone, keep at it. I'm heading home first. / B: Yes, take care. Goodbye.",
+    "note": "present-tense 수고하세요 directed at colleagues who are still working — notice the tense difference from 하셨습니다"
+   }
+  ],
+  "forms": null,
+  "irregular": null,
+  "level": "A1",
+  "cluster": null,
+  "chapters": [
+   56
+  ]
+ },
+ "덕분에": {
+  "ko": "덕분에",
+  "romanization": "deokbune",
+  "en": "thanks to",
+  "pos": "expression",
+  "chapter": "56",
+  "ex": {
+   "ko": "선배님 덕분에 분위기가 편해졌어요.",
+   "en": "Thanks to you, the atmosphere became comfortable.",
+   "note": "Chapter card word-ext-ch56-deokbune."
+  },
+  "collocations": [
+   "선배님 덕분에",
+   "덕분에 잘 됐어요",
+   "덕분에 편했어요"
+  ],
+  "nuance": "덕분에 is for welcome causes. 때문에 often sounds neutral or negative, so 선배님 때문에 잘 됐어요 can sound like blame even with a good result.",
+  "explanation": "덕분에 (deokbune) means \"thanks to\". Learn it inside a frame, not as a bare word: a useful first chunk is 선배님 덕분에 (\"thanks to you / thanks to the senior colleague\"). In Korean the particle or ending next to 덕분에 signals its job — topic, subject, object, place, time, method, or description — so read the examples for the small piece beside it. Start with one real sentence about basic everyday communication, then change a single part.",
+  "shortExplanation": "덕분에 means \"thanks to\" and is learned through practical beginner sentence frames.",
+  "commonMistakes": [
+   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
+   "Using 때문에 to thank someone. Use 덕분에 for a positive cause.",
+   "Forgetting the person before 덕분에: 선배님 덕분에, 친구 덕분에.",
+   "Using 덕분에 for a bad result. For bad results, 때문에 is usually natural."
+  ],
+  "conjugationTips": [],
+  "usagePhrases": [
+   {
+    "ko": "선배님 덕분에",
+    "romanization": "seonbaenim deokbune",
+    "en": "thanks to you / thanks to the senior colleague",
+    "note": "Respectful gratitude."
+   },
+   {
+    "ko": "덕분에 잘 됐어요.",
+    "romanization": "deokbune jal dwaesseoyo.",
+    "en": "It went well thanks to you.",
+    "note": "Common closing thanks."
+   }
+  ],
+  "examples": [
+   {
+    "ko": "선배님 덕분에 분위기가 편해졌어요.",
+    "romanization": "seonbaenim deokbune bunwigiga pyeonhaejyeosseoyo.",
+    "en": "Thanks to you, the atmosphere became comfortable.",
+    "note": "Positive cause in a social setting."
+   }
+  ],
+  "forms": null,
+  "irregular": null,
+  "level": "B1",
+  "cluster": null,
+  "chapters": [
+   56
+  ]
+ }
+}

@@ -1,5 +1,5 @@
 {
- "generatedFrom": "65 chapters + 18 snacks",
+ "generatedFrom": "72 chapters + 18 snacks",
  "chapters": [
   {
    "id": "chapter-01",
@@ -5599,6 +5599,692 @@
      "title": "보스 Boss bite · 다 걸어요",
      "cardCount": 10,
      "canDo": "Recognize how 혹시, 좀, and 괜찮으면 soften a chat request",
+     "firstWord": "다 걸어요"
+    }
+   ]
+  },
+  {
+   "id": "chapter-66",
+   "number": 66,
+   "title": "V-이/히/리/기- · N에/에게 + 피동",
+   "goal": "Build passive verbs with -이/히/리/기- and re-mark the sentence so the affected thing takes 이/가.",
+   "level": "B2",
+   "biteCount": 11,
+   "bites": [
+    {
+     "id": "chapter-66-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 보이다~",
+     "cardCount": 7,
+     "canDo": "Turn an active sentence into a passive one with -이/히/리/기- (직원이 문을 닫았어요 → 문이 닫혔어요)",
+     "firstWord": "보이다"
+    },
+    {
+     "id": "chapter-66-b2",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-이/히/리/기-",
+     "cardCount": 4,
+     "canDo": "Turn an active sentence into a passive one with -이/히/리/기- (직원이 문을 닫았어요 → 문이 닫혔어요)",
+     "firstWord": "V-이/히/리/기-"
+    },
+    {
+     "id": "chapter-66-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 걸리다~",
+     "cardCount": 7,
+     "canDo": "Mark the cause correctly: 경찰한테 잡혔어요 for a person, 바람에 닫혔어요 for a force",
+     "firstWord": "걸리다"
+    },
+    {
+     "id": "chapter-66-b4",
+     "kind": "pattern",
+     "title": "문법 Grammar · N에/에게 + 피동",
+     "cardCount": 4,
+     "canDo": "Mark the cause correctly: 경찰한테 잡혔어요 for a person, 바람에 닫혔어요 for a force",
+     "firstWord": "N에/에게 + 피동"
+    },
+    {
+     "id": "chapter-66-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 놓이다~",
+     "cardCount": 6,
+     "canDo": "Use -아/어지다 for verbs with no built-in passive (지워지다, 정해지다) and avoid double passives like 열려지다",
+     "firstWord": "놓이다"
+    },
+    {
+     "id": "chapter-66-b6",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-아/어지다",
+     "cardCount": 4,
+     "canDo": "Use -아/어지다 for verbs with no built-in passive (지워지다, 정해지다) and avoid double passives like 열려지다",
+     "firstWord": "V-아/어지다"
+    },
+    {
+     "id": "chapter-66-b7",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-게 되다",
+     "cardCount": 3,
+     "canDo": "Say how something ended up with -게 되다 without mistaking it for a passive",
+     "firstWord": "V-게 되다"
+    },
+    {
+     "id": "chapter-66-b8",
+     "kind": "pattern",
+     "title": "문법 Grammar · 보이다·읽히다",
+     "cardCount": 4,
+     "canDo": "Tell passive 보이다/읽히다 from causative 보이다/읽히다 by looking for a 을/를 object",
+     "firstWord": "보이다·읽히다"
+    },
+    {
+     "id": "chapter-66-b9",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cardCount": 3,
+     "canDo": "Turn an active sentence into a passive one with -이/히/리/기- (직원이 문을 닫았어요 → 문이 닫혔어요)",
+     "firstWord": "진짜 한국어"
+    },
+    {
+     "id": "chapter-66-b10",
+     "kind": "reading",
+     "title": "읽기 Reading · 문이 닫히고, 길이 막히고",
+     "cardCount": 2,
+     "canDo": "Mark the cause correctly: 경찰한테 잡혔어요 for a person, 바람에 닫혔어요 for a force",
+     "firstWord": "문이 닫히고, 길이 막히고"
+    },
+    {
+     "id": "chapter-66-b11",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cardCount": 6,
+     "canDo": "Use -아/어지다 for verbs with no built-in passive (지워지다, 정해지다) and avoid double passives like 열려지다",
+     "firstWord": "다 걸어요"
+    }
+   ]
+  },
+  {
+   "id": "chapter-67",
+   "number": 67,
+   "title": "V/A-대요 · N(이)래요 vs V-(으)래요",
+   "goal": "Contract the four reported-speech frames you already know into -대요, -래요, -냬요, and -재요.",
+   "level": "B2",
+   "biteCount": 11,
+   "bites": [
+    {
+     "id": "chapter-67-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 전하다~",
+     "cardCount": 8,
+     "canDo": "Contract -다고 해요 into -대요 and keep the -ㄴ/는- on present-tense verbs (운동한대요)",
+     "firstWord": "전하다"
+    },
+    {
+     "id": "chapter-67-b2",
+     "kind": "pattern",
+     "title": "문법 Grammar · V/A-대요",
+     "cardCount": 5,
+     "canDo": "Contract -다고 해요 into -대요 and keep the -ㄴ/는- on present-tense verbs (운동한대요)",
+     "firstWord": "V/A-대요"
+    },
+    {
+     "id": "chapter-67-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 확인하다~",
+     "cardCount": 7,
+     "canDo": "Choose between N(이)래요 ('they say it's N') and V-(으)래요 ('they told me to V')",
+     "firstWord": "확인하다"
+    },
+    {
+     "id": "chapter-67-b4",
+     "kind": "pattern",
+     "title": "문법 Grammar · N(이)래요 vs V-(으)래요",
+     "cardCount": 5,
+     "canDo": "Choose between N(이)래요 ('they say it's N') and V-(으)래요 ('they told me to V')",
+     "firstWord": "N(이)래요 vs V-(으)래요"
+    },
+    {
+     "id": "chapter-67-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 소문~",
+     "cardCount": 6,
+     "canDo": "Relay someone else's question with -냬요 and someone else's proposal with -재요",
+     "firstWord": "소문"
+    },
+    {
+     "id": "chapter-67-b6",
+     "kind": "pattern",
+     "title": "문법 Grammar · V/A-냬요",
+     "cardCount": 5,
+     "canDo": "Relay someone else's question with -냬요 and someone else's proposal with -재요",
+     "firstWord": "V/A-냬요"
+    },
+    {
+     "id": "chapter-67-b7",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-재요",
+     "cardCount": 5,
+     "canDo": "Tell 갈래요 (my own will) apart from 가래요 (their instruction)",
+     "firstWord": "V-재요"
+    },
+    {
+     "id": "chapter-67-b8",
+     "kind": "pattern",
+     "title": "문법 Grammar · -다던데(요)",
+     "cardCount": 3,
+     "canDo": "Float something you heard with -다던데요 instead of claiming it yourself",
+     "firstWord": "-다던데(요)"
+    },
+    {
+     "id": "chapter-67-b9",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cardCount": 4,
+     "canDo": "Contract -다고 해요 into -대요 and keep the -ㄴ/는- on present-tense verbs (운동한대요)",
+     "firstWord": "진짜 한국어"
+    },
+    {
+     "id": "chapter-67-b10",
+     "kind": "reading",
+     "title": "읽기 Reading · 전하는 사람의 말",
+     "cardCount": 1,
+     "canDo": "Choose between N(이)래요 ('they say it's N') and V-(으)래요 ('they told me to V')",
+     "firstWord": "전하는 사람의 말"
+    },
+    {
+     "id": "chapter-67-b11",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cardCount": 6,
+     "canDo": "Relay someone else's question with -냬요 and someone else's proposal with -재요",
+     "firstWord": "다 걸어요"
+    }
+   ]
+  },
+  {
+   "id": "chapter-68",
+   "number": 68,
+   "title": "V-느라고 · V-는 바람에",
+   "goal": "Excuse a failure with V-느라고, keeping one subject across both clauses and no tense marker on the ending.",
+   "level": "B2",
+   "biteCount": 11,
+   "bites": [
+    {
+     "id": "chapter-68-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 숙제~",
+     "cardCount": 7,
+     "canDo": "Excuse a failure with V-느라고 while keeping one subject and no tense marker (숙제하느라고 못 갔어요)",
+     "firstWord": "숙제"
+    },
+    {
+     "id": "chapter-68-b2",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-느라고",
+     "cardCount": 5,
+     "canDo": "Excuse a failure with V-느라고 while keeping one subject and no tense marker (숙제하느라고 못 갔어요)",
+     "firstWord": "V-느라고"
+    },
+    {
+     "id": "chapter-68-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 지각하다~",
+     "cardCount": 8,
+     "canDo": "Blame a sudden outside cause with V-는 바람에 (엘리베이터가 고장 나는 바람에 늦었어요)",
+     "firstWord": "지각하다"
+    },
+    {
+     "id": "chapter-68-b4",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-는 바람에",
+     "cardCount": 2,
+     "canDo": "Blame a sudden outside cause with V-는 바람에 (엘리베이터가 고장 나는 바람에 늦었어요)",
+     "firstWord": "V-는 바람에"
+    },
+    {
+     "id": "chapter-68-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 늦잠~",
+     "cardCount": 7,
+     "canDo": "Report what you watched somebody else do, and its outcome, with -더니",
+     "firstWord": "늦잠"
+    },
+    {
+     "id": "chapter-68-b6",
+     "kind": "pattern",
+     "title": "문법 Grammar · V/A-더니",
+     "cardCount": 4,
+     "canDo": "Report what you watched somebody else do, and its outcome, with -더니",
+     "firstWord": "V/A-더니"
+    },
+    {
+     "id": "chapter-68-b7",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-았/었더니",
+     "cardCount": 4,
+     "canDo": "Report your own past action and what you discovered with -았/었더니",
+     "firstWord": "V-았/었더니"
+    },
+    {
+     "id": "chapter-68-b8",
+     "kind": "pattern",
+     "title": "문법 Grammar · -느라고 vs -는 바람에 vs -아서/어서",
+     "cardCount": 3,
+     "canDo": "Fall back on -아서/어서 or 덕분에 when the result is actually fine",
+     "firstWord": "-느라고 vs -는 바람에 vs -아서/어서"
+    },
+    {
+     "id": "chapter-68-b9",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cardCount": 4,
+     "canDo": "Excuse a failure with V-느라고 while keeping one subject and no tense marker (숙제하느라고 못 갔어요)",
+     "firstWord": "진짜 한국어"
+    },
+    {
+     "id": "chapter-68-b10",
+     "kind": "reading",
+     "title": "읽기 Reading · 핑계와 원인 사이",
+     "cardCount": 2,
+     "canDo": "Blame a sudden outside cause with V-는 바람에 (엘리베이터가 고장 나는 바람에 늦었어요)",
+     "firstWord": "핑계와 원인 사이"
+    },
+    {
+     "id": "chapter-68-b11",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cardCount": 6,
+     "canDo": "Report what you watched somebody else do, and its outcome, with -더니",
+     "firstWord": "다 걸어요"
+    }
+   ]
+  },
+  {
+   "id": "chapter-69",
+   "number": 69,
+   "title": "V-아/어 버리다 · V-고 말다",
+   "goal": "Carry an action right through with V-아/어 버리다 and hear whether it lands as relief or as regret.",
+   "level": "B2",
+   "biteCount": 11,
+   "bites": [
+    {
+     "id": "chapter-69-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 버리다~",
+     "cardCount": 8,
+     "canDo": "Carry an action right through with V-아/어 버리다, and hear whether it lands as relief or as regret",
+     "firstWord": "버리다"
+    },
+    {
+     "id": "chapter-69-b2",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-아/어 버리다",
+     "cardCount": 4,
+     "canDo": "Carry an action right through with V-아/어 버리다, and hear whether it lands as relief or as regret",
+     "firstWord": "V-아/어 버리다"
+    },
+    {
+     "id": "chapter-69-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 자다~",
+     "cardCount": 8,
+     "canDo": "Report an outcome that beat you with V-고 말다, and flip it to resolve with -고 말겠어요",
+     "firstWord": "자다"
+    },
+    {
+     "id": "chapter-69-b4",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-고 말다",
+     "cardCount": 4,
+     "canDo": "Report an outcome that beat you with V-고 말다, and flip it to resolve with -고 말겠어요",
+     "firstWord": "V-고 말다"
+    },
+    {
+     "id": "chapter-69-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 후련하다~",
+     "cardCount": 7,
+     "canDo": "Describe a near miss with 하마터면 …-(으)ㄹ 뻔했어요, always in the past",
+     "firstWord": "후련하다"
+    },
+    {
+     "id": "chapter-69-b6",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-(으)ㄹ 뻔했다",
+     "cardCount": 4,
+     "canDo": "Describe a near miss with 하마터면 …-(으)ㄹ 뻔했어요, always in the past",
+     "firstWord": "V-(으)ㄹ 뻔했다"
+    },
+    {
+     "id": "chapter-69-b7",
+     "kind": "pattern",
+     "title": "문법 Grammar · A/V-(으)ㄴ/는 척하다",
+     "cardCount": 4,
+     "canDo": "Pick the right modifier for 척하다: 자는 척, 못 들은 척, 아픈 척, 전문가인 척",
+     "firstWord": "A/V-(으)ㄴ/는 척하다"
+    },
+    {
+     "id": "chapter-69-b8",
+     "kind": "pattern",
+     "title": "문법 Grammar · -아/어 버리다 vs -고 말다",
+     "cardCount": 4,
+     "canDo": "Keep V-(으)ㄹ 뻔하다 apart from the adjective 뻔하다 ('obvious, predictable')",
+     "firstWord": "-아/어 버리다 vs -고 말다"
+    },
+    {
+     "id": "chapter-69-b9",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cardCount": 3,
+     "canDo": "Carry an action right through with V-아/어 버리다, and hear whether it lands as relief or as regret",
+     "firstWord": "진짜 한국어"
+    },
+    {
+     "id": "chapter-69-b10",
+     "kind": "reading",
+     "title": "읽기 Reading · 다 해 버린 일과 못 한 일",
+     "cardCount": 2,
+     "canDo": "Report an outcome that beat you with V-고 말다, and flip it to resolve with -고 말겠어요",
+     "firstWord": "다 해 버린 일과 못 한 일"
+    },
+    {
+     "id": "chapter-69-b11",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cardCount": 6,
+     "canDo": "Describe a near miss with 하마터면 …-(으)ㄹ 뻔했어요, always in the past",
+     "firstWord": "다 걸어요"
+    }
+   ]
+  },
+  {
+   "id": "chapter-70",
+   "number": 70,
+   "title": "V/A-(으)며 · V/A-(으)나",
+   "goal": "Join two clauses inside one sentence with -(으)며 for parallel facts and -(으)나 for contrast.",
+   "level": "C1",
+   "biteCount": 11,
+   "bites": [
+    {
+     "id": "chapter-70-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 공지~",
+     "cardCount": 8,
+     "canDo": "Join two clauses inside one sentence with -(으)며 for parallel facts and simultaneity",
+     "firstWord": "공지"
+    },
+    {
+     "id": "chapter-70-b2",
+     "kind": "pattern",
+     "title": "문법 Grammar · V/A-(으)며",
+     "cardCount": 4,
+     "canDo": "Join two clauses inside one sentence with -(으)며 for parallel facts and simultaneity",
+     "firstWord": "V/A-(으)며"
+    },
+    {
+     "id": "chapter-70-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 변경~",
+     "cardCount": 8,
+     "canDo": "Contrast inside a sentence with -(으)나, adding 으 only after a consonant",
+     "firstWord": "변경"
+    },
+    {
+     "id": "chapter-70-b4",
+     "kind": "pattern",
+     "title": "문법 Grammar · V/A-(으)나",
+     "cardCount": 5,
+     "canDo": "Contrast inside a sentence with -(으)나, adding 으 only after a consonant",
+     "firstWord": "V/A-(으)나"
+    },
+    {
+     "id": "chapter-70-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 등록~",
+     "cardCount": 6,
+     "canDo": "State a written reason with -(으)므로 and keep it apart from -(으)ㅁ으로(써)",
+     "firstWord": "등록"
+    },
+    {
+     "id": "chapter-70-b6",
+     "kind": "pattern",
+     "title": "문법 Grammar · V/A-(으)므로",
+     "cardCount": 5,
+     "canDo": "State a written reason with -(으)므로 and keep it apart from -(으)ㅁ으로(써)",
+     "firstWord": "V/A-(으)므로"
+    },
+    {
+     "id": "chapter-70-b7",
+     "kind": "pattern",
+     "title": "문법 Grammar · V-고자",
+     "cardCount": 5,
+     "canDo": "Open a formal email or report with V-고자 while keeping one subject",
+     "firstWord": "V-고자"
+    },
+    {
+     "id": "chapter-70-b8",
+     "kind": "pattern",
+     "title": "문법 Grammar · Nominal -(으)ㅁ",
+     "cardCount": 2,
+     "canDo": "Close a notice line with nominal -(으)ㅁ or -기 바람, and choose -(으)ㅁ over -기 after 확인되다",
+     "firstWord": "Nominal -(으)ㅁ"
+    },
+    {
+     "id": "chapter-70-b9",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cardCount": 4,
+     "canDo": "Join two clauses inside one sentence with -(으)며 for parallel facts and simultaneity",
+     "firstWord": "진짜 한국어"
+    },
+    {
+     "id": "chapter-70-b10",
+     "kind": "reading",
+     "title": "읽기 Reading · 시설 이용 안내",
+     "cardCount": 3,
+     "canDo": "Contrast inside a sentence with -(으)나, adding 으 only after a consonant",
+     "firstWord": "시설 이용 안내"
+    },
+    {
+     "id": "chapter-70-b11",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cardCount": 6,
+     "canDo": "State a written reason with -(으)므로 and keep it apart from -(으)ㅁ으로(써)",
+     "firstWord": "다 걸어요"
+    }
+   ]
+  },
+  {
+   "id": "chapter-71",
+   "number": 71,
+   "title": "News passives · -적(的)",
+   "goal": "Read the news passives — 밝혀지다, 알려지다, 전해지다, 예상되다 — and see who has been left out of the sentence.",
+   "level": "C1",
+   "biteCount": 11,
+   "bites": [
+    {
+     "id": "chapter-71-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 기사~",
+     "cardCount": 8,
+     "canDo": "Read the news passives 밝혀지다, 알려지다, 전해지다, 예상되다 and judge how confirmed the claim is",
+     "firstWord": "기사"
+    },
+    {
+     "id": "chapter-71-b2",
+     "kind": "pattern",
+     "title": "문법 Grammar · News passives",
+     "cardCount": 2,
+     "canDo": "Read the news passives 밝혀지다, 알려지다, 전해지다, 예상되다 and judge how confirmed the claim is",
+     "firstWord": "News passives"
+    },
+    {
+     "id": "chapter-71-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 증가~",
+     "cardCount": 7,
+     "canDo": "Use N에 따르면 to cite a source and -(으)ㄹ 것으로 알려졌다 to hedge a report",
+     "firstWord": "증가"
+    },
+    {
+     "id": "chapter-71-b4",
+     "kind": "pattern",
+     "title": "문법 Grammar · -적(的)",
+     "cardCount": 4,
+     "canDo": "Use N에 따르면 to cite a source and -(으)ㄹ 것으로 알려졌다 to hedge a report",
+     "firstWord": "-적(的)"
+    },
+    {
+     "id": "chapter-71-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 사회~",
+     "cardCount": 6,
+     "canDo": "Build and read -적 modifiers, -화 processes, and -성 abstract nouns with their fixed partners",
+     "firstWord": "사회"
+    },
+    {
+     "id": "chapter-71-b6",
+     "kind": "pattern",
+     "title": "문법 Grammar · -화(化)",
+     "cardCount": 2,
+     "canDo": "Build and read -적 modifiers, -화 processes, and -성 abstract nouns with their fixed partners",
+     "firstWord": "-화(化)"
+    },
+    {
+     "id": "chapter-71-b7",
+     "kind": "pattern",
+     "title": "문법 Grammar · -성(性)",
+     "cardCount": 3,
+     "canDo": "Unpack a headline by restoring the dropped particles and the deleted verb",
+     "firstWord": "-성(性)"
+    },
+    {
+     "id": "chapter-71-b8",
+     "kind": "pattern",
+     "title": "문법 Grammar · Headline grammar",
+     "cardCount": 3,
+     "canDo": "Keep headline ellipsis out of your own full sentences",
+     "firstWord": "Headline grammar"
+    },
+    {
+     "id": "chapter-71-b9",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cardCount": 4,
+     "canDo": "Read the news passives 밝혀지다, 알려지다, 전해지다, 예상되다 and judge how confirmed the claim is",
+     "firstWord": "진짜 한국어"
+    },
+    {
+     "id": "chapter-71-b10",
+     "kind": "reading",
+     "title": "읽기 Reading · 지원 대상 확대, 무엇이 달라지나",
+     "cardCount": 3,
+     "canDo": "Use N에 따르면 to cite a source and -(으)ㄹ 것으로 알려졌다 to hedge a report",
+     "firstWord": "지원 대상 확대, 무엇이 달라지나"
+    },
+    {
+     "id": "chapter-71-b11",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cardCount": 6,
+     "canDo": "Build and read -적 modifiers, -화 processes, and -성 abstract nouns with their fixed partners",
+     "firstWord": "다 걸어요"
+    }
+   ]
+  },
+  {
+   "id": "chapter-72",
+   "number": 72,
+   "title": "손이 크다 · 발이 넓다",
+   "goal": "Use the core body-part idioms for character: 손이 크다, 발이 넓다, 눈이 높다, 입이 무겁다, 귀가 얇다.",
+   "level": "C1",
+   "biteCount": 11,
+   "bites": [
+    {
+     "id": "chapter-72-b1",
+     "kind": "words",
+     "title": "단어 Words 1 · 손~",
+     "cardCount": 7,
+     "canDo": "Describe someone's character with 손이 크다, 발이 넓다, 눈이 높다, 입이 무겁다, and 귀가 얇다",
+     "firstWord": "손"
+    },
+    {
+     "id": "chapter-72-b2",
+     "kind": "pattern",
+     "title": "문법 Grammar · 손이 크다",
+     "cardCount": 2,
+     "canDo": "Describe someone's character with 손이 크다, 발이 넓다, 눈이 높다, 입이 무겁다, and 귀가 얇다",
+     "firstWord": "손이 크다"
+    },
+    {
+     "id": "chapter-72-b3",
+     "kind": "words",
+     "title": "단어 Words 2 · 코~",
+     "cardCount": 8,
+     "canDo": "Keep a body-part idiom in its clause shape instead of turning it into a modifier plus noun",
+     "firstWord": "코"
+    },
+    {
+     "id": "chapter-72-b4",
+     "kind": "pattern",
+     "title": "문법 Grammar · 발이 넓다",
+     "cardCount": 2,
+     "canDo": "Keep a body-part idiom in its clause shape instead of turning it into a modifier plus noun",
+     "firstWord": "발이 넓다"
+    },
+    {
+     "id": "chapter-72-b5",
+     "kind": "words",
+     "title": "단어 Words 3 · 관용구~",
+     "cardCount": 7,
+     "canDo": "Use the passive idioms 발이 묶이다 and 눈에 띄다 with the right particles",
+     "firstWord": "관용구"
+    },
+    {
+     "id": "chapter-72-b6",
+     "kind": "pattern",
+     "title": "문법 Grammar · 눈이 높다",
+     "cardCount": 3,
+     "canDo": "Use the passive idioms 발이 묶이다 and 눈에 띄다 with the right particles",
+     "firstWord": "눈이 높다"
+    },
+    {
+     "id": "chapter-72-b7",
+     "kind": "pattern",
+     "title": "문법 Grammar · 입이 무겁다 · 귀가 얇다",
+     "cardCount": 4,
+     "canDo": "Quote 티끌 모아 태산, 발 없는 말이 천 리 간다, 우물 안 개구리, 하늘의 별 따기, and 식은 죽 먹기 whole",
+     "firstWord": "입이 무겁다 · 귀가 얇다"
+    },
+    {
+     "id": "chapter-72-b8",
+     "kind": "pattern",
+     "title": "문법 Grammar · 속담 다섯",
+     "cardCount": 2,
+     "canDo": "Judge which idioms are compliments and which are insults before using them to someone's face",
+     "firstWord": "속담 다섯"
+    },
+    {
+     "id": "chapter-72-b9",
+     "kind": "dialogue",
+     "title": "대화 Dialogue · 진짜 한국어",
+     "cardCount": 4,
+     "canDo": "Describe someone's character with 손이 크다, 발이 넓다, 눈이 높다, 입이 무겁다, and 귀가 얇다",
+     "firstWord": "진짜 한국어"
+    },
+    {
+     "id": "chapter-72-b10",
+     "kind": "reading",
+     "title": "읽기 Reading · 몸으로 말하는 성격",
+     "cardCount": 3,
+     "canDo": "Keep a body-part idiom in its clause shape instead of turning it into a modifier plus noun",
+     "firstWord": "몸으로 말하는 성격"
+    },
+    {
+     "id": "chapter-72-b11",
+     "kind": "boss",
+     "title": "보스 Boss bite · 다 걸어요",
+     "cardCount": 6,
+     "canDo": "Use the passive idioms 발이 묶이다 and 눈에 띄다 with the right particles",
      "firstWord": "다 걸어요"
     }
    ]

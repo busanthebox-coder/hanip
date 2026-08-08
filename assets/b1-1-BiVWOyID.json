@@ -161,91 +161,6 @@
    46
   ]
  },
- "시간": {
-  "ko": "시간",
-  "romanization": "sigan",
-  "en": "time; hour",
-  "pos": "noun",
-  "chapter": "4·6·11·20·42·45·46·61",
-  "ex": {
-   "ko": "한 시간이라도 공부해요.",
-   "en": "Let's study even if it is just one hour.",
-   "note": "A high-value noun for 라도 because learners often negotiate minimum time."
-  },
-  "collocations": [
-   "한 시간이라도",
-   "시간이 있어요",
-   "시간이 없어요"
-  ],
-  "nuance": "시간 works with 있어요/없어요 and is essential for scheduling.",
-  "explanation": "시간 (sigan) = \"time\". Treat it as a building block that needs a frame: 시간이 있어요 (\"I have time.\") shows how it actually behaves. The grammar lives in the particle or ending beside 시간, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about basic everyday communication and swap just one element to make it yours.",
-  "shortExplanation": "시간 means \"time\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Do not use 시간을 있어요 for “have time”; say 시간이 있어요."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "시간이 있어요",
-    "romanization": "sigani isseoyo",
-    "en": "I have time.",
-    "note": "Existence/possession."
-   },
-   {
-    "ko": "시간이 없어요",
-    "romanization": "sigani eopseoyo",
-    "en": "I do not have time.",
-    "note": "Absence."
-   },
-   {
-    "ko": "시간이 있으면",
-    "romanization": "sigani isseumyeon",
-    "en": "if you have time.",
-    "note": "Condition."
-   },
-   {
-    "ko": "몇 시예요?",
-    "romanization": "myeot siyeyo?",
-    "en": "What time is it?",
-    "note": "Related question."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "시간이 있어요?",
-    "romanization": "sigani isseoyo?",
-    "en": "Do you have time?",
-    "note": "Question."
-   },
-   {
-    "ko": "오늘은 시간이 없어요.",
-    "romanization": "oneureun sigani eopseoyo.",
-    "en": "I do not have time today.",
-    "note": "Topic + subject."
-   },
-   {
-    "ko": "시간이 있으면 전화해 주세요.",
-    "romanization": "sigani isseumyeon jeonhwahae juseyo.",
-    "en": "If you have time, please call.",
-    "note": "Condition."
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A1",
-  "cluster": null,
-  "chapters": [
-   4,
-   6,
-   11,
-   20,
-   42,
-   45,
-   46,
-   61
-  ]
- },
  "책": {
   "ko": "책",
   "romanization": "chaek",
@@ -1132,87 +1047,6 @@
    46
   ]
  },
- "숙제": {
-  "ko": "숙제",
-  "romanization": "sukje",
-  "en": "homework",
-  "pos": "noun",
-  "chapter": "18·37",
-  "ex": {
-   "ko": "내일까지 숙제를 제출하라고 하셨어요.",
-   "en": "They told us to submit the homework by tomorrow.",
-   "note": "Classroom reporting content."
-  },
-  "collocations": [
-   "숙제를 하다",
-   "숙제를 제출하다",
-   "숙제를 내다"
-  ],
-  "nuance": "숙제 is Sino-Korean 宿題 — 宿 'lodging/stay overnight' + 題 'topic/problem', literally a 'problem to take home overnight', i.e. work a teacher assigns to be done outside class. The verb is locked: Koreans say 숙제를 하다 'do homework', and 숙제를 내다 means a student turns it in (while a teacher 내다 a 숙제 means 'assign/set' it — context decides). Contrast 숙제 with 공부(工夫, 'study') and 과제(課題, 'assignment/coursework'): 공부하다 is the broad act of studying anything, whereas 숙제 is a specific assigned task, and 과제 is the more formal university word for a project or paper. The big English-speaker pitfall is translating 'do my homework' as 숙제를 만들다 'make homework' (✗ — that sounds like you created the assignment) or 숙제를 공부하다 (✗); the only natural pairing is 숙제를 하다.",
-  "explanation": "\"homework\" is 숙제 (sukje). The word itself is easy; what matters is the company it keeps, like 숙제를 하다 (\"do homework\"). Watch the particle attached to 숙제 in each example — that little marker, not the word, tells you whether it is the topic, the subject, the object, or a place. Copy one full sentence about classroom communication, study plans, and asking for repetition or help first, then vary one word.",
-  "shortExplanation": "숙제 means \"homework\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Saying 숙제를 만들다 ('make homework') instead of 숙제를 하다 — 만들다 means create the task itself, not complete it.",
-   "Using 숙제를 공부하다 ✗. 공부하다 is general study; the set phrase to complete assigned work is 숙제를 하다.",
-   "Treating 숙제 as countable English plural and dropping the particle. You still need 를: 숙제를 했어요, not 숙제 했어요 in writing/formal speech."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "숙제를 하다",
-    "romanization": "sukjereul hada",
-    "en": "do homework",
-    "note": "The fixed verb is 하다, never 만들다; object takes 를"
-   },
-   {
-    "ko": "숙제가 많다",
-    "romanization": "sukjega manta",
-    "en": "have a lot of homework",
-    "note": "많다 = many/much; the amount is the subject, so 가"
-   },
-   {
-    "ko": "숙제를 내다",
-    "romanization": "sukjereul naeda",
-    "en": "hand in homework",
-    "note": "내다 = submit/turn in (also 제출하다, more formal)"
-   },
-   {
-    "ko": "수학 숙제",
-    "romanization": "suhak sukje",
-    "en": "math homework",
-    "note": "Noun-noun compound; 숙제 takes the subject as a modifier"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "숙제 다 했어요?",
-    "romanization": "sukje da haesseoyo?",
-    "en": "Did you finish all your homework?",
-    "note": "Casual question; 다 = 'all/completely', a very common collocation with 하다"
-   },
-   {
-    "ko": "오늘은 숙제가 별로 없어요.",
-    "romanization": "oneureun sukjega byeollo eopseoyo.",
-    "en": "Today there isn't much homework.",
-    "note": "별로 + negative = 'not really/not much'; amount is the subject (가)"
-   },
-   {
-    "ko": "숙제를 깜빡하고 안 가져왔어요.",
-    "romanization": "sukjereul kkamppakago an gajyeowasseoyo.",
-    "en": "I forgot the homework and didn't bring it.",
-    "note": "깜빡하다 = 'absent-mindedly forget', the natural verb students use"
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A2",
-  "cluster": null,
-  "chapters": [
-   18,
-   37
-  ]
- },
  "질문": {
   "ko": "질문",
   "romanization": "jilmun",
@@ -1996,7 +1830,7 @@
   "romanization": "ganeungseong",
   "en": "possibility; chance",
   "pos": "noun",
-  "chapter": "26·40",
+  "chapter": "26·40·71",
   "ex": {
    "ko": "그럴 가능성도 있는 것 같아요.",
    "en": "I think there is also a possibility of that.",
@@ -2044,7 +1878,8 @@
   "cluster": null,
   "chapters": [
    26,
-   40
+   40,
+   71
   ]
  },
  "추측하다": {
@@ -4235,61 +4070,6 @@
    36
   ]
  },
- "붐비다": {
-  "ko": "붐비다",
-  "romanization": "bumbida",
-  "en": "to be crowded",
-  "pos": "verb",
-  "chapter": "36",
-  "ex": {
-   "ko": "점심시간이 되니까 식당이 붐비더라고요.",
-   "en": "When it became lunchtime, the restaurant got crowded, I noticed.",
-   "note": "Place-focused crowding."
-  },
-  "collocations": [
-   "식당이 붐비다",
-   "길이 붐비다",
-   "금방 붐비다"
-  ],
-  "nuance": "붐비다 describes the place or route becoming crowded. 사람이 많다 describes the number of people more directly.",
-  "explanation": "붐비다 (bumbida) = \"to be crowded\". Treat it as a building block that needs a frame: 식당이 붐비다 (\"the restaurant is crowded\") shows how it actually behaves. The grammar lives in the particle or ending beside 붐비다, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about basic everyday communication and swap just one element to make it yours.",
-  "shortExplanation": "붐비다 means \"to be crowded\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Using 붐비다 for one person being busy. For a busy person, use 바쁘다.",
-   "Forgetting that 붐비다 usually needs a place or traffic-like subject."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "식당이 붐비다",
-    "romanization": "sikdangi bumbida",
-    "en": "the restaurant is crowded",
-    "note": "Place-focused crowding."
-   },
-   {
-    "ko": "금방 붐비다",
-    "romanization": "geumbang bumbida",
-    "en": "to get crowded quickly",
-    "note": "Observed change."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "처음에는 조용하더니 금방 붐비더라고요.",
-    "romanization": "cheoeumeneun joyonghadeoni geumbang bumbideoragoyo.",
-    "en": "It was quiet at first, and then it quickly got crowded, I noticed.",
-    "note": "A natural restaurant or event observation."
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A2",
-  "cluster": null,
-  "chapters": [
-   36
-  ]
- },
  "조용하다": {
   "ko": "조용하다",
   "romanization": "joyonghada",
@@ -4700,103 +4480,6 @@
    37
   ]
  },
- "물어보다": {
-  "ko": "물어보다",
-  "romanization": "mureoboda",
-  "en": "to ask; to ask and find out",
-  "pos": "verb phrase",
-  "chapter": "37·40",
-  "ex": {
-   "ko": "확실하지 않으니까 조심스럽게 물어볼게요.",
-   "en": "Since I am not sure, I will ask carefully.",
-   "note": "Linked to dictionary card word-ext-ch37-mureoboda."
-  },
-  "collocations": [
-   "먼저 물어보다",
-   "조심스럽게 물어보다",
-   "담당자에게 물어보다"
-  ],
-  "nuance": "묻다 is the dictionary/base verb. 물어보다 is often the natural spoken choice for asking someone.",
-  "explanation": "물어보다 (mureoboda) = \"to ask; to ask and find out\". Treat it as a building block that needs a frame: 친구한테 물어보다 (\"to ask a friend\") shows how it actually behaves. The grammar lives in the particle or ending beside 물어보다, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about basic everyday communication and swap just one element to make it yours.",
-  "shortExplanation": "물어보다 means \"to ask; to ask and find out\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Using 묻다 forms mechanically when 물어보다 sounds more natural in conversation.",
-   "Forgetting the person marker: 친구한테 물어봤어요 or 선생님께 물어봤어요."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "친구한테 물어보다",
-    "romanization": "chinguhante mureoboda",
-    "en": "to ask a friend",
-    "note": "Everyday spoken phrase."
-   },
-   {
-    "ko": "몇 시인지 물어보다",
-    "romanization": "myeot siinji mureoboda",
-    "en": "to ask what time it is",
-    "note": "Embedded question plus 물어보다."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "친구가 몇 시에 만나냐고 물어봤어요.",
-    "romanization": "chinguga myeot sie mannanyago mureobwasseoyo.",
-    "en": "My friend asked what time we are meeting.",
-    "note": "Reported question with the everyday verb 물어보다."
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "B1",
-  "cluster": {
-   "title": "묻다 vs 물어보다 vs 질문하다",
-   "rule": "물어보다 is what people actually say out loud; 묻다 is the same act but terser and more written (and ㄷ-irregular, so it becomes 물어요). 질문하다 is \"ask a question\" where questions are a formal event — a class, a meeting, a Q&A.",
-   "members": [
-    {
-     "ko": "묻다",
-     "en": "to ask",
-     "romanization": "mutda",
-     "when": "writing, or terse phrasing",
-     "hint": "the bookish \"ask\" — ㄷ-irregular, 물어요",
-     "example": {
-      "ko": "역에서 길을 물었어요.",
-      "en": "I asked for directions at the station."
-     },
-     "self": false
-    },
-    {
-     "ko": "물어보다",
-     "en": "to ask; to ask and find out",
-     "romanization": "mureoboda",
-     "when": "everyday spoken asking",
-     "hint": "the normal spoken \"ask\" — use this one",
-     "example": {
-      "ko": "선생님한테 물어볼게요.",
-      "en": "I'll ask the teacher."
-     },
-     "self": true
-    },
-    {
-     "ko": "질문하다",
-     "en": "to ask a question",
-     "romanization": "jilmunhada",
-     "when": "class, meeting, or q&a",
-     "hint": "asking a question in a formal setting",
-     "example": {
-      "ko": "수업 시간에 질문했어요.",
-      "en": "I asked a question during class."
-     },
-     "self": false
-    }
-   ]
-  },
-  "chapters": [
-   37,
-   40
-  ]
- },
  "다시 말하다": {
   "ko": "다시 말하다",
   "romanization": "dasi malhada",
@@ -5075,119 +4758,6 @@
    37
   ]
  },
- "전하다": {
-  "ko": "전하다",
-  "romanization": "jeonhada",
-  "en": "to convey; to pass on",
-  "pos": "verb",
-  "chapter": "37",
-  "ex": {
-   "ko": "제가 친구한테 내용을 전할게요.",
-   "en": "I will pass the details on to my friend.",
-   "note": "The communication job of reported speech."
-  },
-  "collocations": [
-   "소식을 전하다",
-   "내용을 전하다",
-   "메시지를 전하다"
-  ],
-  "nuance": "전하다 (Sino-Korean 傳, 'transmit/hand down') means relaying something from a sender to a receiver: a message, regards, an item, news, or even a feeling, so the receiver takes 에게/한테 or honorific 께 while the thing passed takes 을/를. The nearest rival is 말하다, but 말하다 is you simply saying something yourself, whereas 전하다 stresses that you are the go-between carrying someone else's words or goods to a third party — '사장님이 잘했다고 전하래요' (the boss told me to tell you 'well done'). Everyday set phrases include 안부를 전하다 (send one's regards), 말씀 전해 주세요 (please pass on the message), and 소식을 전하다 (deliver news). The big English-speaker trap is hearing 전 and thinking 전화하다 ('to make a phone call'): they share the 전 syllable but are unrelated, so '전해 주세요' is 'please relay it', not 'please call them'.",
-  "explanation": "\"to convey / pass on (a message)\" in Korean is 전하다 (jeonha-da). In real conversation you will lean on the polite form 전해요, so make that your default and leave the bare dictionary form 전하다 for study notes. Grow outward from one concrete line — 말 좀 전해 주세요. (\"Please pass on a message for me.\") — then reshape the same stem into 전하고 싶어요 (desire), 전할 수 있어요 (ability), and 못 전해요 (a real limit) as the moment needs. The stem stays put; only the ending moves.",
-  "shortExplanation": "전하다 means \"to convey / pass on (a message)\" and is practiced through polite conversation forms.",
-  "commonMistakes": [
-   "Do not use the dictionary form 전하다 as a complete polite sentence.",
-   "Use 전해요 as the default until you know the relationship is casual.",
-   "Do not confuse 전하다 (pass on / convey a message) with 전화하다 (make a phone call); '말 전해 주세요' means 'relay my words', not 'phone them'.",
-   "The receiver of the message takes 에게/한테/께, not 을/를: '친구에게 전해 주세요', and the message itself is what takes 을/를."
-  ],
-  "conjugationTips": [
-   {
-    "title": "ㄹ / 을 — can & will",
-    "body": "To say \"can\" or the future, attach ㄹ/을 to the stem: a vowel-final stem takes ㄹ and a consonant-final stem takes 을. 전하다 becomes 전할 수 있어요 (\"can\") and 전할 거예요 (\"will\"). That is why 가다 → 갈 수 있어요 (not 가을), while 먹다 → 먹을 수 있어요. The same ㄹ/을 choice drives 거예요 and the noun-describing form."
-   }
-  ],
-  "usagePhrases": [
-   {
-    "ko": "전해요",
-    "romanization": "jeonhaeyo",
-    "en": "I convey / pass on (a message).",
-    "note": "Safe polite present form."
-   },
-   {
-    "ko": "안 전해요",
-    "romanization": "an jeonhaeyo",
-    "en": "I do not convey / pass on (a message).",
-    "note": "Short everyday negative."
-   },
-   {
-    "ko": "전하고 싶어요",
-    "romanization": "jeonhago sipeoyo",
-    "en": "I want to convey / pass on (a message).",
-    "note": "Useful for choices and plans."
-   },
-   {
-    "ko": "전할 수 있어요",
-    "romanization": "jeonhal su isseoyo",
-    "en": "I can convey / pass on (a message).",
-    "note": "Ability or possibility."
-   },
-   {
-    "ko": "전해야 해요",
-    "romanization": "jeonhaeya haeyo",
-    "en": "I have to convey / pass on (a message).",
-    "note": "Requirement or obligation."
-   },
-   {
-    "ko": "말 좀 전해 주세요.",
-    "romanization": "mal jom jeonhae juseyo.",
-    "en": "Please pass on a message for me.",
-    "note": "Set phrase for relaying spoken words to someone"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "부장님께 이 서류 좀 전해 주세요.",
-    "romanization": "bujangnimkke i seoryu jom jeonhae juseyo.",
-    "en": "Please hand this document to the manager for me.",
-    "note": "Note honorific 께 because the receiver is senior"
-   },
-   {
-    "ko": "친구한테 안부 좀 전해 줘.",
-    "romanization": "chinguhante anbu jom jeonhae jwo.",
-    "en": "Tell my friend I said hi.",
-    "note": "Casual 한테 + 줘; passing on regards between friends"
-   },
-   {
-    "ko": "제 마음을 어떻게 전해야 할지 모르겠어요.",
-    "romanization": "je maeumeul eotteoke jeonhaeya halji moreugesseoyo.",
-    "en": "I do not know how to convey how I feel.",
-    "note": "전하다 also carries abstract things like feelings"
-   }
-  ],
-  "forms": {
-   "dictionary": "전하다",
-   "casualPresent": "전해",
-   "politePresent": "전해요",
-   "formalPresent": "전합니다",
-   "negative": "안 전해요",
-   "past": "전했어요",
-   "future": "전할 거예요",
-   "want": "전하고 싶어요",
-   "can": "전할 수 있어요",
-   "cannot": "못 전해요",
-   "must": "전해야 해요",
-   "dontHaveTo": "안 전해도 돼요",
-   "pleaseDo": "전해 주세요",
-   "pleaseDont": "전하지 마세요",
-   "shallWe": "전할까요?"
-  },
-  "irregular": null,
-  "level": "A2",
-  "cluster": null,
-  "chapters": [
-   37
-  ]
- },
  "올라온 공지": {
   "ko": "올라온 공지",
   "romanization": "ollaon gongji",
@@ -5341,150 +4911,6 @@
   "forms": null,
   "irregular": null,
   "level": "B1",
-  "cluster": null,
-  "chapters": [
-   38
-  ]
- },
- "팔리다": {
-  "ko": "팔리다",
-  "romanization": "pallida",
-  "en": "to be sold",
-  "pos": "verb",
-  "chapter": "38",
-  "ex": {
-   "ko": "인기 상품이 하루 만에 다 팔렸어요.",
-   "en": "The popular item sold out in one day.",
-   "note": "The product is the subject; the seller is not important."
-  },
-  "collocations": [
-   "상품이 팔리다",
-   "다 팔리다",
-   "잘 팔리다"
-  ],
-  "nuance": "Use 팔리다 when the seller is not important or not known.",
-  "explanation": "팔리다 (pallida) = \"to be sold\". Treat it as a building block that needs a frame: 다 팔리다 (\"to be sold out\") shows how it actually behaves. The grammar lives in the particle or ending beside 팔리다, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about buying things, checking prices, quantities, and payment options and swap just one element to make it yours.",
-  "shortExplanation": "팔리다 means \"to be sold\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Do not use 팔다 when the product itself should be the subject."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "다 팔리다",
-    "romanization": "da pallida",
-    "en": "to be sold out",
-    "note": "result focus"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "인기 상품이 하루 만에 다 팔렸어요.",
-    "romanization": "ingi sangpumi haru mane da pallyeosseoyo.",
-    "en": "The popular product sold out in one day.",
-    "note": "The product is the subject."
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A2",
-  "cluster": null,
-  "chapters": [
-   38
-  ]
- },
- "잡히다": {
-  "ko": "잡히다",
-  "romanization": "japida",
-  "en": "to be caught / to be set",
-  "pos": "verb",
-  "chapter": "38",
-  "ex": {
-   "ko": "회의 일정이 다음 주로 잡혔어요.",
-   "en": "The meeting schedule was set for next week.",
-   "note": "For schedules, 잡히다 means it has been fixed/set."
-  },
-  "collocations": [
-   "일정이 잡히다",
-   "약속이 잡히다",
-   "손에 잡히다"
-  ],
-  "nuance": "잡히다 is natural for appointments, schedules, reservations, and plans.",
-  "explanation": "잡히다 (japida) means \"to be set / to be scheduled\". Learn it inside a frame, not as a bare word: a useful first chunk is 일정이 잡히다 (\"a schedule gets set\"). In Korean the particle or ending next to 잡히다 signals its job — topic, subject, object, place, time, method, or description — so read the examples for the small piece beside it. Start with one real sentence about basic everyday communication, then change a single part.",
-  "shortExplanation": "잡히다 means \"to be set / to be scheduled\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Do not translate it literally as “be grabbed” in schedule contexts."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "일정이 잡히다",
-    "romanization": "iljeongi japida",
-    "en": "a schedule gets set",
-    "note": "schedule-focused passive/result use"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "회의 일정이 다음 주로 잡혔어요.",
-    "romanization": "hoeui iljeongi daeum juro japyeosseoyo.",
-    "en": "The meeting schedule was set for next week.",
-    "note": "The sentence focuses on the schedule result."
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A2",
-  "cluster": null,
-  "chapters": [
-   38
-  ]
- },
- "닫히다": {
-  "ko": "닫히다",
-  "romanization": "datida",
-  "en": "to be closed",
-  "pos": "verb",
-  "chapter": "38",
-  "ex": {
-   "ko": "문이 자동으로 닫혔어요.",
-   "en": "The door closed automatically.",
-   "note": "The door is the subject; the closing result is highlighted."
-  },
-  "collocations": [
-   "문이 닫히다",
-   "가게가 닫히다",
-   "자동으로 닫히다"
-  ],
-  "nuance": "Use 닫히다 when you care about the closed state/result more than the person closing it.",
-  "explanation": "\"to be closed\" is 닫히다 (datida). The word itself is easy; what matters is the company it keeps, like 문이 닫히다 (\"the door closes / is closed\"). Watch the particle attached to 닫히다 in each example — that little marker, not the word, tells you whether it is the topic, the subject, the object, or a place. Copy one full sentence about basic everyday communication first, then vary one word.",
-  "shortExplanation": "닫히다 means \"to be closed\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "닫다 needs an actor; 닫히다 lets the object become the subject."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "문이 닫히다",
-    "romanization": "muni datida",
-    "en": "the door closes / is closed",
-    "note": "result focus"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "문이 자동으로 닫혔어요.",
-    "romanization": "muni jadongeuro datyeosseoyo.",
-    "en": "The door closed automatically.",
-    "note": "The door is the subject."
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A2",
   "cluster": null,
   "chapters": [
    38
@@ -5787,7 +5213,7 @@
   "romanization": "gisa",
   "en": "news article / report",
   "pos": "noun",
-  "chapter": "38",
+  "chapter": "38·71",
   "ex": {
    "ko": "기사에는 변경된 일정과 새 규칙이 함께 나왔어요.",
    "en": "The article included the changed schedule and the new rule together.",
@@ -5859,7 +5285,8 @@
   "level": "B1",
   "cluster": null,
   "chapters": [
-   38
+   38,
+   71
   ]
  },
  "수밖에 없다": {
@@ -6098,86 +5525,6 @@
     "romanization": "momi an joeumyeon swieoyajyo, eojjeol su eopseoyo.",
     "en": "If you're not well you have to rest — there's no other way.",
     "note": "어쩔 수 없어요 = flatter, plainer final statement; used when the concession has already been discussed"
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "B1",
-  "cluster": null,
-  "chapters": [
-   39
-  ]
- },
- "마감": {
-  "ko": "마감",
-  "romanization": "magam",
-  "en": "deadline; closing date",
-  "pos": "noun",
-  "chapter": "39",
-  "ex": {
-   "ko": "마감이 오늘이라서 선택지가 별로 없어요.",
-   "en": "The deadline is today, so there are not many choices.",
-   "note": "The pressure that creates the no-choice frame."
-  },
-  "collocations": [
-   "마감이 다가오다",
-   "마감을 지키다",
-   "마감이 오늘이다"
-  ],
-  "nuance": "마감 is a native Korean noun (from the verb 막다 'to block/close off') meaning the point at which something is sealed shut: a report's due date, an application cutoff, a shop's last order, even a magazine going to press. The near-synonym confusion is with 기한 and 데드라인: 기한 (期限) is the dry, official 'time limit/term' you see on documents (제출 기한), while 마감 feels more like the live moment things close, and 데드라인 is a borrowed buzzword. Its signature collocation is the idiom 마감에 쫓기다 (chased by the deadline), the universal way to describe last-minute panic. The English-speaker pitfall is mapping 'meet a deadline' onto 만나다 ('meet a person'): you do NOT 마감을 만나다 — you 마감을 지키다 (keep/protect it). Note 지키다 is the same verb used for keeping a promise (약속을 지키다), which is the right mental image.",
-  "explanation": "\"deadline; closing (date)\" is 마감 (magam). The word itself is easy; what matters is the company it keeps, like 마감이 언제예요? (\"when is the deadline?\"). Watch the particle attached to 마감 in each example — that little marker, not the word, tells you whether it is the topic, the subject, the object, or a place. Copy one full sentence about talking about work, schedules, tasks, and obligations first, then vary one word.",
-  "shortExplanation": "마감 means \"deadline; closing (date)\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Saying 마감을 만나다 from English 'meet the deadline' — 만나다 is only for meeting people; the correct collocation is 마감을 지키다 ('protect/keep')",
-   "Defaulting to 데드라인 in formal writing — it sounds like office slang; written/official Korean prefers 마감 or 기한",
-   "Saying 마감했다 to mean you personally finished your task — 마감하다 means to close/wrap up an operation (a shop, an event); for finishing your own work use 끝냈어요 or 마감을 지켰어요"
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "마감이 언제예요?",
-    "romanization": "magami eonjeyeyo?",
-    "en": "when is the deadline?",
-    "note": "the default way to ask the due date"
-   },
-   {
-    "ko": "마감을 지키다",
-    "romanization": "magameul jikida",
-    "en": "to meet/keep the deadline",
-    "note": "지키다 literally 'protect/keep', the set partner verb"
-   },
-   {
-    "ko": "마감이 다가오다",
-    "romanization": "magami dagaoda",
-    "en": "the deadline is approaching",
-    "note": "다가오다 paints it as nearing you"
-   },
-   {
-    "ko": "마감에 쫓기다",
-    "romanization": "magame jjotgida",
-    "en": "to be chased by a deadline",
-    "note": "쫓기다 'be chased', the idiom for crunch"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "마감이 언제예요?",
-    "romanization": "magami eonjeyeyo?",
-    "en": "When's the deadline?",
-    "note": "simple: 언제 'when' + 예요"
-   },
-   {
-    "ko": "이번엔 꼭 마감을 지킬게요.",
-    "romanization": "ibeonen kkong magameul jikilgeyo.",
-    "en": "This time I'll definitely meet the deadline.",
-    "note": "everyday: ㄹ게요 is a personal promise to the listener"
-   },
-   {
-    "ko": "마감에 쫓겨서 점심도 못 먹었어요.",
-    "romanization": "magame jjotgyeoseo jeomsimdo mon meogeosseoyo.",
-    "en": "Chased by the deadline, I couldn't even eat lunch.",
-    "note": "real situation: 도 'even' + 못 'couldn't' stacks the hardship"
    }
   ],
   "forms": null,
@@ -9646,86 +8993,6 @@
    44
   ]
  },
- "야근": {
-  "ko": "야근",
-  "romanization": "yageun",
-  "en": "working overtime",
-  "pos": "noun",
-  "chapter": "45",
-  "ex": {
-   "ko": "야근 때문에 못 가요.",
-   "en": "I cannot go because of overtime.",
-   "note": "Linked to dictionary card word-ext-548."
-  },
-  "collocations": [
-   "야근 때문에",
-   "야근이 있어요",
-   "야근 때문에 못 가요"
-  ],
-  "nuance": "야근 specifically means staying at the office working late into the night — the iconic symbol of old-school Korean work culture. It is Sino-Korean 夜勤, literally 'night-duty', sharing the 勤 ('duty/labor') of 외근 and 출근. The contrast to nail: 야근 is overtime that runs LATE/at night, whereas 특근 (特勤, 'special duty') and 추가 근무 cover extra work generally, including daytime, weekends, or holidays — so weekend morning work is 특근, not 야근. Its cultural foil is the slang 칼퇴 ('knife-exit' = leaving on the dot at quitting time), the thing everyone dreams of instead. And the carrot is 야근 수당 (overtime pay), which is 나오다 (paid out), not 받다-only. The English-speaker pitfall is using 야근 as a blanket word for all 'overtime' — keep the time-of-day nuance — and saying 야근을 가다 ('go to overtime'); you don't go to it, you 야근을 하다.",
-  "explanation": "\"working overtime (late into the night)\" is 야근 (yageun). The word itself is easy; what matters is the company it keeps, like 야근을 하다 (\"to work overtime at night\"). Watch the particle attached to 야근 in each example — that little marker, not the word, tells you whether it is the topic, the subject, the object, or a place. Copy one full sentence about talking about work, schedules, tasks, and obligations first, then vary one word.",
-  "shortExplanation": "야근 means \"working overtime (late into the night)\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Using 야근 for all overtime — it specifically means working LATE at night; daytime, weekend, or holiday extra work is 특근 or 추가 근무",
-   "Saying 야근을 가다 ('go to overtime') — you don't travel to it; the verb is 야근을 하다 (or just 야근해요)",
-   "Assuming 야근 수당 is automatic — note the natural opposite 칼퇴 (leaving exactly on time); also overtime pay 나오다 (is paid out) only if the company provides it"
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "야근을 하다",
-    "romanization": "yageuneul hada",
-    "en": "to work overtime at night",
-    "note": "the noun takes 하다 for the verb"
-   },
-   {
-    "ko": "야근이 많다",
-    "romanization": "yageuni manta",
-    "en": "to have lots of overtime",
-    "note": "많다 describes how often it happens"
-   },
-   {
-    "ko": "야근 수당",
-    "romanization": "yageun sudang",
-    "en": "overtime pay",
-    "note": "수당 (手當) 'allowance/extra pay'"
-   },
-   {
-    "ko": "맨날 야근",
-    "romanization": "maennal yageun",
-    "en": "overtime every single day",
-    "note": "맨날 is casual 'every day', exasperated tone"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "오늘도 야근이에요.",
-    "romanization": "oneuldo yageunieyo.",
-    "en": "I'm working late again today.",
-    "note": "simple: 도 'also/again' hints this is a pattern"
-   },
-   {
-    "ko": "야근하면 야근 수당 나와요?",
-    "romanization": "yageunhamyeon yageun sudang nawayo?",
-    "en": "If I work late, do I get overtime pay?",
-    "note": "everyday: 나오다 'come out (be paid)' is the set verb for 수당"
-   },
-   {
-    "ko": "요즘 프로젝트 때문에 매일 야근해서 너무 피곤해요.",
-    "romanization": "yojeum peurojekteu ttaemune maeil yageunhaeseo neomu pigonhaeyo.",
-    "en": "Lately I work late every day because of a project, so I'm exhausted.",
-    "note": "real situation: 때문에 'because of (a noun)' pins the cause"
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A2",
-  "cluster": null,
-  "chapters": [
-   45
-  ]
- },
  "고기": {
   "ko": "고기",
   "romanization": "gogi",
@@ -13012,7 +12279,7 @@
   "romanization": "nun",
   "en": "snow",
   "pos": "noun",
-  "chapter": "50",
+  "chapter": "50·72",
   "ex": {
    "ko": "눈이 올 때 길이 미끄러워요.",
    "en": "When it snows, the roads are slippery.",
@@ -13084,7 +12351,8 @@
   "level": "A1",
   "cluster": null,
   "chapters": [
-   50
+   50,
+   72
   ]
  },
  "태풍": {
@@ -13561,86 +12829,6 @@
    50
   ]
  },
- "소나기": {
-  "ko": "소나기",
-  "romanization": "sonagi",
-  "en": "sudden shower",
-  "pos": "noun",
-  "chapter": "50",
-  "ex": {
-   "ko": "오후에 소나기가 올 수도 있어요.",
-   "en": "There may be a sudden shower in the afternoon.",
-   "note": "Linked to dictionary card word-ext-817."
-  },
-  "collocations": [
-   "소나기가 오다",
-   "소나기가 내리다",
-   "소나기가 그치다"
-  ],
-  "nuance": "소나기 is a pure native Korean word for a brief, intense burst of rain that arrives and departs suddenly — the classic summer-afternoon downpour. The dividing line from plain 비 is duration and character: 비 is rain in general (steady, all-day, or light), while 소나기 is specifically short-lived and abrupt, so Koreans typically wait it out under an awning rather than buy an umbrella. It contrasts too with 장맛비 (the long monsoon rains) and 이슬비 (drizzle). Natural partners are 내리다/오다, 그치다 (the proper verb for rain stopping — not 끝나다), and 만나다 ('get caught in'). The English-speaker pitfall is using 소나기 for any rain: it must be brief and sudden, and remember it takes the ordinary rain verbs 오다/내리다, with no special verb of its own.",
-  "explanation": "소나기 (sonagi) means \"sudden shower\". Learn it inside a frame, not as a bare word: a useful first chunk is 소나기가 내리다 (\"a sudden shower falls\"). In Korean the particle or ending next to 소나기 signals its job — topic, subject, object, place, time, method, or description — so read the examples for the small piece beside it. Start with one real sentence about basic everyday communication, then change a single part.",
-  "shortExplanation": "소나기 means \"sudden shower\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Using 소나기 for long, steady rain. It specifically means a short, sudden burst; for general or all-day rain say 비.",
-   "Saying 소나기가 끝났어요 when the rain stops. Rain 'lets up' with 그치다: 소나기가 그쳤어요.",
-   "Forgetting it takes the normal rain verbs. There is no exotic verb — say 소나기가 와요 / 소나기가 내려요, just like 비."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "소나기가 내리다",
-    "romanization": "sonagiga naerida",
-    "en": "a sudden shower falls",
-    "note": "standard rain verb 내리다 (or 오다)"
-   },
-   {
-    "ko": "소나기를 만나다",
-    "romanization": "sonagireul mannada",
-    "en": "get caught in a shower",
-    "note": "만나다 idiomatically = run into the rain"
-   },
-   {
-    "ko": "소나기가 그치다",
-    "romanization": "sonagiga geuchida",
-    "en": "the shower lets up",
-    "note": "그치다 = stop (of rain), not 끝나다"
-   },
-   {
-    "ko": "갑작스러운 소나기",
-    "romanization": "gapjakseureoun sonagi",
-    "en": "an abrupt downpour",
-    "note": "emphasizes the surprise element"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "갑자기 소나기가 와요.",
-    "romanization": "gapjagi sonagiga wayo.",
-    "en": "A sudden shower is coming out of nowhere.",
-    "note": "simplest form: 갑자기 + 오다 for rain"
-   },
-   {
-    "ko": "여름에는 오후에 소나기가 자주 내려요.",
-    "romanization": "yeoreumeneun ohue sonagiga jaju naeryeoyo.",
-    "en": "In summer, sudden showers often fall in the afternoon.",
-    "note": "자주 = often; describing the seasonal pattern"
-   },
-   {
-    "ko": "소나기는 금방 그치니까 잠깐만 기다려요.",
-    "romanization": "sonagineun geumbang geuchinikka jamkkanman gidaryeoyo.",
-    "en": "A sudden shower lets up quickly, so just wait a bit.",
-    "note": "그치다 + -니까 reasoning; reassuring someone"
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "B1",
-  "cluster": null,
-  "chapters": [
-   50
-  ]
- },
  "안개": {
   "ko": "안개",
   "romanization": "angae",
@@ -13711,85 +12899,6 @@
     "romanization": "angaega geotimyeon unjeonhagi hangyeol naayo.",
     "en": "Once the fog lifts, driving is much easier.",
     "note": "conditional 면 + 걷히다 in a real situation"
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "B1",
-  "cluster": null,
-  "chapters": [
-   50
-  ]
- },
- "일정": {
-  "ko": "일정",
-  "romanization": "iljeong",
-  "en": "schedule; plan",
-  "pos": "noun",
-  "chapter": "50",
-  "ex": {
-   "ko": "미세먼지 때문에 일정을 취소했어요.",
-   "en": "We canceled the plan because of fine dust.",
-   "note": "Linked to dictionary card word-ext-440."
-  },
-  "collocations": [
-   "일정을 취소하다",
-   "일정을 미루다",
-   "일정을 다시 잡다"
-  ],
-  "nuance": "일정 is the planned schedule of where you go and what you do, day by day — for a trip, but equally for work or events. The hanja 日程 is 日 (day) + 程 (journey/measure), an 'apportioning of the days'. Distinguish it from 시간 (time, clock time) and 계획 (plan): 시간 is just the hour on the clock, 계획 is the broad intention ('I plan to save money'), while 일정 is the concrete time-tabled sequence of items. Note the signature verb 짜다 — you 일정을 짜다 (literally 'weave a schedule'), the same verb used for 계획을 짜다. Watch the adjective 빡빡하다 / 바쁘다 for a packed itinerary. English-speaker pitfall: don't reach for 시간 when you mean the agenda — '오늘 시간이 어때요?' asks if someone is free, but '오늘 일정이 어때요?' asks about the day's plan.",
-  "explanation": "\"itinerary\" is 일정 (iljeong). The word itself is easy; what matters is the company it keeps, like 일정을 짜다 (\"to make a schedule\"). Watch the particle attached to 일정 in each example — that little marker, not the word, tells you whether it is the topic, the subject, the object, or a place. Copy one full sentence about getting around, reservations, directions, photos, and emergency help first, then vary one word.",
-  "shortExplanation": "일정 means \"itinerary\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Using 시간 when you mean the itinerary. 시간 = clock time / availability; 일정 = the planned agenda. '시간 있어요?' means 'are you free?', whereas '일정 어때요?' asks about the schedule.",
-   "Pairing 일정 with 만들다. Korean weaves a schedule, so the verb is 짜다 — '일정을 짜다'. '일정을 만들다' (make a schedule) sounds unnatural for trip-planning."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "일정을 짜다",
-    "romanization": "iljeongeul jjada",
-    "en": "to make a schedule",
-    "note": "plan out the days"
-   },
-   {
-    "ko": "일정이 빡빡하다",
-    "romanization": "iljeongi ppakppakada",
-    "en": "to have a packed schedule",
-    "note": "tightly-booked day"
-   },
-   {
-    "ko": "일정을 잡다",
-    "romanization": "iljeongeul japda",
-    "en": "to set a schedule/date",
-    "note": "fix the timing"
-   },
-   {
-    "ko": "일정이 바뀌다",
-    "romanization": "iljeongi bakkwida",
-    "en": "the schedule changes",
-    "note": "plans shift"
-   }
-  ],
-  "examples": [
-   {
-    "ko": "오늘 일정 어때요?",
-    "romanization": "oneul iljeong eottaeyo?",
-    "en": "What's today's schedule like?",
-    "note": "Bare 일정 + 어때요? asks casually about the day's plan."
-   },
-   {
-    "ko": "여행 일정을 미리 짰어요.",
-    "romanization": "yeohaeng iljeongeul miri jjasseoyo.",
-    "en": "I planned out the travel itinerary in advance.",
-    "note": "일정을 짜다 = work out a schedule; 짜다 means 'weave/assemble' a plan."
-   },
-   {
-    "ko": "회의 때문에 내일 일정이 다 바뀌었어요.",
-    "romanization": "hoeui ttaemune naeil iljeongi da bakkwieosseoyo.",
-    "en": "Because of a meeting, tomorrow's whole schedule changed.",
-    "note": "일정이 바뀌다 (intransitive) = the plan changes on its own; 이 marks subject."
    }
   ],
   "forms": null,
@@ -16447,62 +15556,6 @@
    64
   ]
  },
- "끊기다": {
-  "ko": "끊기다",
-  "romanization": "kkeunhgida",
-  "en": "to cut out; disconnect; buffer",
-  "pos": "verb",
-  "chapter": "53",
-  "ex": {
-   "ko": "영상이 계속 끊기는데요.",
-   "en": "The video keeps cutting out, though.",
-   "note": "Linked to chapter card word-ext-ch53-kkeunhgida."
-  },
-  "collocations": [
-   "영상이 끊기다",
-   "와이파이가 끊기다",
-   "계속 끊기다"
-  ],
-  "nuance": "끊기다 is passive/intransitive: the video or connection cuts out. 끊다 is what someone actively cuts or ends.",
-  "explanation": "\"to cut out; disconnect; buffer\" is 끊기다 (kkeunkida). The word itself is easy; what matters is the company it keeps, like 영상이 계속 끊겨요. (\"The video keeps cutting out.\"). Watch the particle attached to 끊기다 in each example — that little marker, not the word, tells you whether it is the topic, the subject, the object, or a place. Copy one full sentence about basic everyday communication first, then vary one word.",
-  "shortExplanation": "끊기다 means \"to cut out; disconnect; buffer\" and is learned through practical beginner sentence frames.",
-  "commonMistakes": [
-   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
-   "Using 끊다 for a video problem. Say 영상이 끊겨요, not 영상을 끊어요.",
-   "Confusing 끊기다 with 느리다. 느리다 is slow; 끊기다 is stopping/cutting out.",
-   "Forgetting the subject: 영상이 끊겨요, 와이파이가 끊겨요."
-  ],
-  "conjugationTips": [],
-  "usagePhrases": [
-   {
-    "ko": "영상이 계속 끊겨요.",
-    "romanization": "yeongsangi gyesok kkeunkyeoyo.",
-    "en": "The video keeps cutting out.",
-    "note": "Streaming problem."
-   },
-   {
-    "ko": "와이파이가 끊겼어요.",
-    "romanization": "waipaiga kkeunkyeosseoyo.",
-    "en": "The Wi-Fi disconnected.",
-    "note": "Connection problem."
-   }
-  ],
-  "examples": [
-   {
-    "ko": "영상이 계속 끊기는데요.",
-    "romanization": "yeongsangi gyesok kkeunkineundeyo.",
-    "en": "The video keeps cutting out, though.",
-    "note": "-는데요 softly raises the problem."
-   }
-  ],
-  "forms": null,
-  "irregular": null,
-  "level": "A2",
-  "cluster": null,
-  "chapters": [
-   53
-  ]
- },
  "와이파이": {
   "ko": "와이파이",
   "romanization": "waipai",
@@ -18784,6 +17837,719 @@
   "cluster": null,
   "chapters": [
    55
+  ]
+ },
+ "막차": {
+  "ko": "막차",
+  "romanization": "makcha",
+  "en": "last train or bus",
+  "pos": "noun",
+  "chapter": "55",
+  "ex": {
+   "ko": "막차를 놓치면 첫차를 타야 해요.",
+   "en": "If you miss the last train, you have to take the first train.",
+   "note": "Linked to dictionary card word-ext-624."
+  },
+  "collocations": [
+   "막차 시간",
+   "막차를 놓치다",
+   "막차가 끊기다"
+  ],
+  "nuance": "막차 fuses the native prefix 막- 'last/final' with 차(車) 'vehicle', literally 'the last vehicle', and it dominates Korean nightlife because the subway stops near midnight and missing it means a pricey taxi. Its exact opposite is 첫차 'first vehicle'. Two collocations are everywhere: 막차 끊기다 'the last service is cut off (gone)' and 막차 놓치다 'miss the last one'. The key pitfall is the English verb 'miss' — Korean uses 놓치다 'let slip', NEVER 잃어버리다 'lose (an object)', so 막차를 잃어버렸어요 sounds like you misplaced a train. Also note 막차 시간 is the DEPARTURE time, so a learner who reads it as an arrival time will stroll up just as the doors close.",
+  "explanation": "막차 (makcha) = \"last train / last bus\". Treat it as a building block that needs a frame: 막차를 놓쳤어요. (\"I missed the last train.\") shows how it actually behaves. The grammar lives in the particle or ending beside 막차, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about using buses, subways, taxis, and asking where to get on or off and swap just one element to make it yours.",
+  "shortExplanation": "막차 means \"last train / last bus\" and is learned through practical beginner sentence frames.",
+  "commonMistakes": [
+   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
+   [
+    "Saying 막차를 잃어버렸어요 for missing the last train.",
+    "잃어버리다 = lose a physical object. Failing to catch a train is 놓치다. → 막차를 놓쳤어요."
+   ],
+   [
+    "Treating 막차 시간 as the arrival time.",
+    "It is the departure time of the final train. Arrive a few minutes early or you literally watch it leave."
+   ],
+   [
+    "Saying 막 차 with a space or as 마지막 차 in casual speech.",
+    "The fixed word is one token, 막차. 마지막 차 is grammatical but stilted; locals just say 막차."
+   ]
+  ],
+  "conjugationTips": [],
+  "usagePhrases": [
+   {
+    "ko": "막차를 놓쳤어요.",
+    "romanization": "makchareul notchyeosseoyo.",
+    "en": "I missed the last train.",
+    "note": "놓치다 = to miss (let slip) a vehicle you meant to catch"
+   },
+   {
+    "ko": "막차 시간",
+    "romanization": "makcha sigan",
+    "en": "the last-train time",
+    "note": "means its DEPARTURE time, not arrival — leave early"
+   },
+   {
+    "ko": "막차를 타야 해요.",
+    "romanization": "makchareul taya haeyo.",
+    "en": "I have to catch the last train.",
+    "note": "아야 하다 = obligation 'must'"
+   },
+   {
+    "ko": "막차가 끊겼어요.",
+    "romanization": "makchaga kkeunkyeosseoyo.",
+    "en": "The last train is gone (service has ended).",
+    "note": "끊기다 = service is cut off for the night"
+   }
+  ],
+  "examples": [
+   {
+    "ko": "막차가 몇 시예요?",
+    "romanization": "makchaga myeot siyeyo?",
+    "en": "What time is the last train?",
+    "note": "bare schedule question, the survival phrase"
+   },
+   {
+    "ko": "막차 끊기기 전에 빨리 가자.",
+    "romanization": "makcha kkeunkigi jeone ppalli gaja.",
+    "en": "Let's hurry before the last train is gone.",
+    "note": "기 전에 = 'before ~'; classic end-of-night line"
+   },
+   {
+    "ko": "막차 놓쳐서 결국 택시 타고 왔어요.",
+    "romanization": "makcha notchyeoseo gyeolguk taeksi tago wasseoyo.",
+    "en": "I missed the last train, so in the end I came by taxi.",
+    "note": "아서 = cause→result; 결국 'in the end' adds the resignation"
+   }
+  ],
+  "forms": null,
+  "irregular": null,
+  "level": "B1",
+  "cluster": null,
+  "chapters": [
+   55
+  ]
+ },
+ "집들이": {
+  "ko": "집들이",
+  "romanization": "jipdeuri",
+  "en": "housewarming party",
+  "pos": "noun",
+  "chapter": "56",
+  "ex": {
+   "ko": "주말에 회사 선배 집들이에 가요.",
+   "en": "I am going to a senior coworker's housewarming this weekend.",
+   "note": "Linked to dictionary card word-ext-1109."
+  },
+  "collocations": [
+   "집들이에 가다",
+   "집들이를 하다",
+   "집들이 선물"
+  ],
+  "nuance": "집들이 is a pure native-Korean word (no hanja): 집 'house' + 들이 (from 들이다, 'to bring/take in'), so it literally evokes 'bringing people into the house' — the housewarming party thrown after an 이사 (移徙, moving). Don't confuse the event with the move itself: you do 이사 first (the act of relocating), THEN 집들이 (the celebration). Also distinguish it from 집들이 선물 vs a generic 선물 — the classic gifts are pointed: 휴지 (toilet paper), because it 'unrolls smoothly' (everything in the new home going smoothly), and 세제 (laundry detergent), whose bubbles symbolize prosperity 'bubbling up.' These are warm, traditional choices, not cheap ones — an English speaker may misread practical household items as an awkward gift. It's a relaxed gathering where the host usually cooks or orders in for friends.",
+  "explanation": "집들이 (jipdeuri) means \"housewarming party\". Learn it inside a frame, not as a bare word: a useful first chunk is 집들이를 하다 (\"have a housewarming\"). In Korean the particle or ending next to 집들이 signals its job — topic, subject, object, place, time, method, or description — so read the examples for the small piece beside it. Start with one real sentence about basic everyday communication, then change a single part.",
+  "shortExplanation": "집들이 means \"housewarming party\" and is learned through practical beginner sentence frames.",
+  "commonMistakes": [
+   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
+   "Don't read 휴지 or 세제 as a cheap or odd gift — they're traditional, well-wishing choices (smooth unrolling / bubbling prosperity), and bringing them is the thoughtful, expected move.",
+   "Don't confuse 집들이 (the party) with 이사 (the act of moving): the sequence is 이사 first, then 집들이. Saying 집들이 when you mean the move itself is wrong.",
+   "Don't take the particle 을 for attendance — you 집들이에 가다 (go TO it); 집들이를 하다 is only for the host throwing it."
+  ],
+  "conjugationTips": [],
+  "usagePhrases": [
+   {
+    "ko": "집들이를 하다",
+    "romanization": "jipdeurireul hada",
+    "en": "have a housewarming",
+    "note": "Said of the host throwing the party"
+   },
+   {
+    "ko": "집들이에 가다",
+    "romanization": "jipdeurie gada",
+    "en": "go to a housewarming",
+    "note": "Particle 에 for the event; you attend as a guest"
+   },
+   {
+    "ko": "집들이 선물",
+    "romanization": "jipdeuri seonmul",
+    "en": "housewarming gift",
+    "note": "Classic choices: 휴지 (toilet paper) and 세제 (detergent)"
+   },
+   {
+    "ko": "집들이에 초대하다",
+    "romanization": "jipdeurie chodaehada",
+    "en": "invite (someone) to a housewarming",
+    "note": "The host inviting friends over to the new place"
+   }
+  ],
+  "examples": [
+   {
+    "ko": "주말에 집들이가 있어요.",
+    "romanization": "jumare jipdeuriga isseoyo.",
+    "en": "There's a housewarming this weekend.",
+    "note": "Basic 있다 sentence; 집들이 takes the subject marker 가"
+   },
+   {
+    "ko": "집들이에 갈 때 보통 휴지나 세제를 사 가요.",
+    "romanization": "jipdeurie gal ttae botong hyujina sejereul sa gayo.",
+    "en": "When going to a housewarming, people usually buy toilet paper or detergent to bring.",
+    "note": "사 가다 = 'buy and bring'; these gifts carry traditional good-luck meaning"
+   },
+   {
+    "ko": "이사하고 친구들 불러서 집들이를 했는데 분위기가 정말 좋았어요.",
+    "romanization": "isahago chingudeul bulleoseo jipdeurireul haenneunde bunwigiga jeongmal joasseoyo.",
+    "en": "After moving I invited friends over for a housewarming, and the mood was really nice.",
+    "note": "Real situation; -는데 links the setup to the warm, casual atmosphere of the event"
+   }
+  ],
+  "forms": null,
+  "irregular": null,
+  "level": "B1",
+  "cluster": null,
+  "chapters": [
+   56
+  ]
+ },
+ "휴지": {
+  "ko": "휴지",
+  "romanization": "hyuji",
+  "en": "toilet paper / tissue",
+  "pos": "noun",
+  "chapter": "56",
+  "ex": {
+   "ko": "휴지는 집들이 선물로 많이 가져가잖아요.",
+   "en": "People often bring toilet paper as a housewarming gift, you know.",
+   "note": "Linked to dictionary card word-ext-378."
+  },
+  "collocations": [
+   "휴지를 사다",
+   "휴지를 가져가다",
+   "휴지 선물"
+  ],
+  "nuance": "휴지 is the hanja word 休紙 — literally '休 rest/discard + 紙 paper,' i.e. 'paper to be used up and tossed' — and in real life it covers BOTH rolled toilet paper and the flat table tissue you wipe your mouth with; context tells you which. The contrast to learn is 휴지 vs 티슈 vs 화장지: 티슈 is the soft pop-up/pocket pack you carry, 화장지 is the more formal/printed label for toilet roll, and 휴지 is the broad everyday word. Note 휴지통 ('휴지 + bin') means the wastebasket, so don't picture only paper. The pitfall is the particle and the verb: you wipe WITH it, so 휴지로 닦다 (means 로, vowel-final), never 휴지를 닦다 (which would mean wiping the paper itself). Also 휴지 is uncountable-feeling but a torn square is 한 칸 and a roll is 한 통/한 롤.",
+  "explanation": "휴지 (hyuji) = \"toilet paper\". Treat it as a building block that needs a frame: 휴지로 닦다 (\"to wipe with tissue/toilet paper\") shows how it actually behaves. The grammar lives in the particle or ending beside 휴지, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about daily routines at home, sleep, doors, windows, and simple requests and swap just one element to make it yours.",
+  "shortExplanation": "휴지 means \"toilet paper\" and is learned through practical beginner sentence frames.",
+  "commonMistakes": [
+   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
+   "Don't say 휴지를 닦아요 to mean 'wipe with tissue'; the tool takes 로 — 휴지로 닦아요.",
+   "Don't equate 휴지 only with toilet paper; it also means table tissue. The pocket pack you carry is 티슈.",
+   "Don't write 휴지으로; 휴지 ends in a vowel, so it's 휴지로."
+  ],
+  "conjugationTips": [],
+  "usagePhrases": [
+   {
+    "ko": "휴지로 닦다",
+    "romanization": "hyujiro dakda",
+    "en": "to wipe with tissue/toilet paper",
+    "note": "휴지 ends in a vowel → 로; 닦다 = to wipe clean"
+   },
+   {
+    "ko": "휴지 한 칸",
+    "romanization": "hyuji han kan",
+    "en": "one square/sheet of toilet paper",
+    "note": "칸 = a partition/square; the perforated section you tear off"
+   },
+   {
+    "ko": "휴지가 다 떨어지다",
+    "romanization": "hyujiga da tteoreojida",
+    "en": "to completely run out of toilet paper",
+    "note": "떨어지다 = run out; the panic phrase in a stall"
+   },
+   {
+    "ko": "휴지통",
+    "romanization": "hyujitong",
+    "en": "wastebasket / trash bin",
+    "note": "휴지 + 통(bin); the small trash can, often beside the toilet"
+   }
+  ],
+  "examples": [
+   {
+    "ko": "휴지 좀 주세요.",
+    "romanization": "hyuji jom juseyo.",
+    "en": "Please pass me some tissue.",
+    "note": "simple: 좀 softens the request; 주세요 = please give"
+   },
+   {
+    "ko": "화장실에 휴지가 없어요.",
+    "romanization": "hwajangsire hyujiga eopseoyo.",
+    "en": "There's no toilet paper in the restroom.",
+    "note": "everyday: existence with 없다, subject 가; the stall-emergency line"
+   },
+   {
+    "ko": "휴지로 입을 닦고 휴지통에 버렸어요.",
+    "romanization": "hyujiro ibeul dakgo hyujitonge beoryeosseoyo.",
+    "en": "I wiped my mouth with a tissue and threw it in the trash.",
+    "note": "real-situation: shows 휴지 as table tissue + 휴지통 (bin) in one breath"
+   }
+  ],
+  "forms": null,
+  "irregular": null,
+  "level": "B1",
+  "cluster": null,
+  "chapters": [
+   56
+  ]
+ },
+ "세제": {
+  "ko": "세제",
+  "romanization": "seje",
+  "en": "detergent",
+  "pos": "noun",
+  "chapter": "56",
+  "ex": {
+   "ko": "집들이 선물로 세제를 샀거든요.",
+   "en": "I bought detergent as the housewarming gift, you see.",
+   "note": "Chapter card word-ext-ch56-seje."
+  },
+  "collocations": [
+   "세제를 사다",
+   "세제를 가져가다",
+   "휴지나 세제"
+  ],
+  "nuance": "세제 is practical rather than fancy. In 집들이 culture, practical household gifts can feel considerate because they help the new home run smoothly.",
+  "explanation": "세제 (seje) = \"detergent\". Treat it as a building block that needs a frame: 세제를 사다 (\"to buy detergent\") shows how it actually behaves. The grammar lives in the particle or ending beside 세제, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about daily routines at home, sleep, doors, windows, and simple requests and swap just one element to make it yours.",
+  "shortExplanation": "세제 means \"detergent\" and is learned through practical beginner sentence frames.",
+  "commonMistakes": [
+   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
+   "Confusing 세제 with 세금. 세제 is detergent; 세금 is tax.",
+   "Using it for soap in general. Soap is 비누; detergent is 세제.",
+   "Forgetting that gift role uses 로: 선물로 세제를 가져가요."
+  ],
+  "conjugationTips": [],
+  "usagePhrases": [
+   {
+    "ko": "세제를 사다",
+    "romanization": "sejereul sada",
+    "en": "to buy detergent",
+    "note": "Object marker 를."
+   },
+   {
+    "ko": "집들이 선물로 세제를 가져가다",
+    "romanization": "jipdeuri seonmullo sejereul gajyeogada",
+    "en": "to bring detergent as a housewarming gift",
+    "note": "선물로 marks the gift role."
+   }
+  ],
+  "examples": [
+   {
+    "ko": "집들이 선물로 세제를 가져가도 괜찮아요.",
+    "romanization": "jipdeuri seonmullo sejereul gajyeogado gwaenchanayo.",
+    "en": "It is okay to bring detergent as a housewarming gift.",
+    "note": "Practical gift sentence."
+   }
+  ],
+  "forms": null,
+  "irregular": null,
+  "level": "B1",
+  "cluster": null,
+  "chapters": [
+   56
+  ]
+ },
+ "동갑": {
+  "ko": "동갑",
+  "romanization": "donggap",
+  "en": "same age",
+  "pos": "noun",
+  "chapter": "56",
+  "ex": {
+   "ko": "동갑이지만 처음엔 존댓말을 써요.",
+   "en": "We are the same age, but at first I use polite speech.",
+   "note": "Chapter card word-ext-ch56-donggap."
+  },
+  "collocations": [
+   "우리 동갑이에요",
+   "동갑 친구",
+   "동갑이면"
+  ],
+  "nuance": "동갑 is useful because Korean relationships often adjust around age. Still, being 동갑 does not mean you immediately use 반말; closeness and setting matter too.",
+  "explanation": "동갑 (donggap) = \"same age\". Treat it as a building block that needs a frame: 우리 동갑이에요. (\"We are the same age.\") shows how it actually behaves. The grammar lives in the particle or ending beside 동갑, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about basic everyday communication and swap just one element to make it yours.",
+  "shortExplanation": "동갑 means \"same age\" and is learned through practical beginner sentence frames.",
+  "commonMistakes": [
+   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
+   "Assuming 동갑 means you can use 반말 immediately. Ask or wait for the other person to suggest it.",
+   "Using 친구 only because someone is the same age. 친구 implies relationship, not just age.",
+   "Forgetting final consonant pronunciation: 동갑 sounds like dong-gap, with the final ㅂ pronounced clearly before a vowel."
+  ],
+  "conjugationTips": [],
+  "usagePhrases": [
+   {
+    "ko": "우리 동갑이에요.",
+    "romanization": "uri donggabieyo.",
+    "en": "We are the same age.",
+    "note": "Common age-discovery sentence."
+   },
+   {
+    "ko": "동갑이면 말을 편하게 해도 돼요?",
+    "romanization": "donggabimyeon mareul pyeonhage haedo dwaeyo?",
+    "en": "If we are the same age, can we speak casually?",
+    "note": "Age does not automatically remove politeness; you still check."
+   }
+  ],
+  "examples": [
+   {
+    "ko": "나이가 비슷하면 동갑이라고 말해도 돼요?",
+    "romanization": "naiga biseutamyeon donggabirago malhaedo dwaeyo?",
+    "en": "If we are about the same age, can I say we are the same age?",
+    "note": "Socially careful age question."
+   }
+  ],
+  "forms": null,
+  "irregular": null,
+  "level": "B1",
+  "cluster": null,
+  "chapters": [
+   56
+  ]
+ },
+ "선배": {
+  "ko": "선배",
+  "romanization": "seonbae",
+  "en": "senior colleague or schoolmate",
+  "pos": "noun",
+  "chapter": "56",
+  "ex": {
+   "ko": "처음엔 선배님이라고 부르는 편이에요.",
+   "en": "At first, I tend to call them seonbaenim.",
+   "note": "Linked to dictionary card word-ext-1624."
+  },
+  "collocations": [
+   "회사 선배",
+   "선배님",
+   "선배 앞에서"
+  ],
+  "nuance": "선배 (先輩, 'earlier-generation/fellow') means someone senior to you who entered the same school, university, company, or field BEFORE you — a relationship that structures enormous amounts of Korean social life. The sharp contrast: a 선배 is defined by entering EARLIER, while a 상사 is defined by RANK — your 선배 may or may not be your boss, and your boss may not be your 선배 if they transferred in. Also distinguish 선배 from 어른 (an elder/adult by age generally). Unlike 상사, you CAN and do address a 선배 directly, adding 님 for politeness: 선배님. A 선배 traditionally looks after their 후배 (junior), often picking up the meal tab. Register: warm but respectful, deeply tied to hierarchy. The English-speaker pitfall: English has no real equivalent and learners default to 'senior' = 'boss' — but 선배 is about timing, not authority; treating every 선배 as a 상사 (or vice versa) misreads the relationship. Mark whom you learn from with 한테/에게.",
+  "explanation": "선배 (seonbae) = \"senior (colleague or schoolmate)\". Treat it as a building block that needs a frame: 회사 선배 (\"a senior at work\") shows how it actually behaves. The grammar lives in the particle or ending beside 선배, so notice that piece as you read, not just the dictionary meaning. Begin from a complete sentence about talking about work, schedules, tasks, and obligations and swap just one element to make it yours.",
+  "shortExplanation": "선배 means \"senior (colleague or schoolmate)\" and is learned through practical beginner sentence frames.",
+  "commonMistakes": [
+   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
+   "Equating 선배 with 'boss.' A 선배 joined before you but may hold no authority; a boss with power is a 상사.",
+   "Confusing 선배 (joined before you) with 후배 (joined after you). They are mirror opposites — get the direction right.",
+   "Dropping 님 when speaking TO a senior. To their face it's 선배님; bare 선배 in direct address can sound too casual."
+  ],
+  "conjugationTips": [],
+  "usagePhrases": [
+   {
+    "ko": "회사 선배",
+    "romanization": "hoesa seonbae",
+    "en": "a senior at work",
+    "note": "회사 (company) + 선배 — someone who joined before you, not necessarily your boss."
+   },
+   {
+    "ko": "선배님",
+    "romanization": "seonbaenim",
+    "en": "senior (polite direct address)",
+    "note": "Add 님 to address a 선배 respectfully to their face."
+   },
+   {
+    "ko": "선배한테 배우다",
+    "romanization": "seonbaehante baeuda",
+    "en": "to learn from a senior",
+    "note": "한테 marks the source you learn FROM; 배우다 = learn."
+   },
+   {
+    "ko": "대학 선배",
+    "romanization": "daehak seonbae",
+    "en": "a university senior",
+    "note": "대학 (university) + 선배 — an older schoolmate from the same university."
+   }
+  ],
+  "examples": [
+   {
+    "ko": "회사 선배가 많이 도와줬어요.",
+    "romanization": "hoesa seonbaega mani dowajwosseoyo.",
+    "en": "A senior at work helped me a lot.",
+    "note": "선배가 + 도와주다 (help, with benefit); past 도와줬어요."
+   },
+   {
+    "ko": "선배님, 이것 좀 알려 주세요.",
+    "romanization": "seonbaenim, igeot jom allyeo juseyo.",
+    "en": "Senior, please show me this.",
+    "note": "Direct address 선배님 + 알려 주세요 (kindly tell/show me)."
+   },
+   {
+    "ko": "저는 그 선배를 정말 존경해요.",
+    "romanization": "jeoneun geu seonbaereul jeongmal jongyeonghaeyo.",
+    "en": "I really respect that senior.",
+    "note": "선배를 + 존경하다 (respect); 를 marks the object of respect."
+   }
+  ],
+  "forms": null,
+  "irregular": null,
+  "level": "B1",
+  "cluster": null,
+  "chapters": [
+   56
+  ]
+ },
+ "후배": {
+  "ko": "후배",
+  "romanization": "hubae",
+  "en": "junior colleague or schoolmate",
+  "pos": "noun",
+  "chapter": "56",
+  "ex": {
+   "ko": "후배라도 처음엔 존댓말을 쓰면 좋아요.",
+   "en": "Even with a junior, it is good to use polite speech at first.",
+   "note": "Linked to dictionary card word-ext-1625."
+  },
+  "collocations": [
+   "회사 후배",
+   "후배한테",
+   "선배와 후배"
+  ],
+  "nuance": "후배 (後輩, 'later-generation/fellow') is the mirror image of 선배: someone who entered the same school, company, or field AFTER you, regardless of their age in some cases (entry timing usually outweighs age). The contrast to keep straight is purely directional — 선배 = earlier, 후배 = later — and neither word is about workplace RANK (that's 상사 vs 부하). Within Korea's senior-junior culture, the 선배 is expected to look after the 후배: guiding them at work, answering questions, and famously treating them to meals or coffee (후배한테 밥 사 주다). Register: friendly and caring, but still hierarchy-aware. The key English-speaker pitfall is honorifics: you do NOT attach 님 to 후배 — 님 elevates seniors, so '후배님' is unnatural; you address a junior by name or with 씨. Many learners over-apply 님 to everyone out of caution, which actually misfires here. Also, don't assume a 후배 is younger or lower-ranked — they're simply LATER to the group.",
+  "explanation": "후배 (hubae) means \"junior (colleague or schoolmate)\". Learn it inside a frame, not as a bare word: a useful first chunk is 회사 후배 (\"a junior at work\"). In Korean the particle or ending next to 후배 signals its job — topic, subject, object, place, time, method, or description — so read the examples for the small piece beside it. Start with one real sentence about talking about work, schedules, tasks, and obligations, then change a single part.",
+  "shortExplanation": "후배 means \"junior (colleague or schoolmate)\" and is learned through practical beginner sentence frames.",
+  "commonMistakes": [
+   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
+   "Adding 님 to 후배 ('후배님'). 님 honors seniors; a junior is addressed by name or with ~씨, not 님.",
+   "Mixing up 후배 (joined after you) and 선배 (joined before you). They are exact opposites — direction matters.",
+   "Assuming 후배 means 'younger.' It marks LATER entry to the group, not necessarily a younger age."
+  ],
+  "conjugationTips": [],
+  "usagePhrases": [
+   {
+    "ko": "회사 후배",
+    "romanization": "hoesa hubae",
+    "en": "a junior at work",
+    "note": "회사 + 후배 — someone who joined the company after you."
+   },
+   {
+    "ko": "후배를 가르치다",
+    "romanization": "hubaereul gareuchida",
+    "en": "to teach/mentor a junior",
+    "note": "가르치다 = teach; seniors often guide their 후배."
+   },
+   {
+    "ko": "후배한테 사 주다",
+    "romanization": "hubaehante sa juda",
+    "en": "to treat a junior (buy for them)",
+    "note": "한테 marks the receiver; 사 주다 = buy (for someone's benefit)."
+   },
+   {
+    "ko": "대학 후배",
+    "romanization": "daeha kubae",
+    "en": "a university junior",
+    "note": "대학 + 후배 — a younger schoolmate from the same university."
+   }
+  ],
+  "examples": [
+   {
+    "ko": "저는 후배가 한 명 있어요.",
+    "romanization": "jeoneun hubaega han myeong isseoyo.",
+    "en": "I have one junior.",
+    "note": "후배가 + 한 명 (one person) + 있다; 명 is the counter for people."
+   },
+   {
+    "ko": "후배한테 커피를 사 줬어요.",
+    "romanization": "hubaehante keopireul sa jwosseoyo.",
+    "en": "I bought my junior a coffee.",
+    "note": "후배한테 + 사 주다, past 사 줬어요; the 줬 shows you did it FOR them."
+   },
+   {
+    "ko": "그 후배는 일을 정말 잘해요.",
+    "romanization": "geu hubaeneun ireul jeongmal jalhaeyo.",
+    "en": "That junior is really good at their work.",
+    "note": "후배는 + 일을 잘하다 (be good at work)."
+   }
+  ],
+  "forms": null,
+  "irregular": null,
+  "level": "B1",
+  "cluster": null,
+  "chapters": [
+   56
+  ]
+ },
+ "호칭": {
+  "ko": "호칭",
+  "romanization": "hoching",
+  "en": "form of address / title",
+  "pos": "noun",
+  "chapter": "56",
+  "ex": {
+   "ko": "어떤 호칭을 쓰면 될까요?",
+   "en": "What title should I use?",
+   "note": "Chapter card word-ext-ch56-hoching."
+  },
+  "collocations": [
+   "호칭을 쓰다",
+   "호칭을 정하다",
+   "호칭을 조심하다"
+  ],
+  "nuance": "호칭 is not just a word choice; it signals age, role, closeness, and respect. When unsure, asking 어떤 호칭을 쓰면 될까요? is safer than guessing too casually.",
+  "explanation": "호칭 (hoching) means \"form of address / title\". Learn it inside a frame, not as a bare word: a useful first chunk is 호칭을 정하다 (\"to decide on a title/form of address\"). In Korean the particle or ending next to 호칭 signals its job — topic, subject, object, place, time, method, or description — so read the examples for the small piece beside it. Start with one real sentence about basic everyday communication, then change a single part.",
+  "shortExplanation": "호칭 means \"form of address / title\" and is learned through practical beginner sentence frames.",
+  "commonMistakes": [
+   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
+   "Calling an older coworker by first name without checking. Use a title or ask first.",
+   "Using 씨 with everyone. It can be neutral, distant, or awkward depending on workplace hierarchy.",
+   "Forgetting 님 in respectful titles such as 선배님, 사장님, 교수님."
+  ],
+  "conjugationTips": [],
+  "usagePhrases": [
+   {
+    "ko": "호칭을 정하다",
+    "romanization": "hochingeul jeonghada",
+    "en": "to decide on a title/form of address",
+    "note": "Common after age or role is known."
+   },
+   {
+    "ko": "어떤 호칭을 쓰면 돼요?",
+    "romanization": "eotteon hochingeul sseumyeon dwaeyo?",
+    "en": "What title should I use?",
+    "note": "Safe learner question."
+   }
+  ],
+  "examples": [
+   {
+    "ko": "처음엔 선배님 같은 호칭을 쓰는 편이에요.",
+    "romanization": "cheoeumen seonbaenim gateun hochingeul sseuneun pyeonieyo.",
+    "en": "At first, people tend to use a title like seonbaenim.",
+    "note": "Polite title choice."
+   }
+  ],
+  "forms": null,
+  "irregular": null,
+  "level": "B1",
+  "cluster": null,
+  "chapters": [
+   56
+  ]
+ },
+ "어르신": {
+  "ko": "어르신",
+  "romanization": "eoreusin",
+  "en": "elder; older person respectfully",
+  "pos": "noun",
+  "chapter": "56",
+  "ex": {
+   "ko": "어르신도 계시면 말투를 조심하세요.",
+   "en": "If elders are there too, be careful with your tone.",
+   "note": "Chapter card word-ext-ch56-eoreusin."
+  },
+  "collocations": [
+   "어르신이 계시다",
+   "어르신께",
+   "어르신 앞에서"
+  ],
+  "nuance": "어르신 is respectful and warm. 어른 simply means adult or grown-up; 어르신 adds social respect for age.",
+  "explanation": "\"elder; older person respectfully\" is 어르신 (eoreusin). The word itself is easy; what matters is the company it keeps, like 어르신이 계세요. (\"An elder is there.\"). Watch the particle attached to 어르신 in each example — that little marker, not the word, tells you whether it is the topic, the subject, the object, or a place. Copy one full sentence about basic everyday communication first, then vary one word.",
+  "shortExplanation": "어르신 means \"elder; older person respectfully\" and is learned through practical beginner sentence frames.",
+  "commonMistakes": [
+   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
+   "Using 어른 when you need respectful tone. 어르신 is safer for elders.",
+   "Pairing 어르신 with 있다 in polite speech. Use 계시다: 어르신이 계세요.",
+   "Using 반말 around elders just because the setting is casual."
+  ],
+  "conjugationTips": [],
+  "usagePhrases": [
+   {
+    "ko": "어르신이 계세요.",
+    "romanization": "eoreusini gyeseyo.",
+    "en": "An elder is there.",
+    "note": "계시다 is the honorific form of 있다."
+   },
+   {
+    "ko": "어르신께 여쭤보다",
+    "romanization": "eoreusinkke yeojjwoboda",
+    "en": "to ask an elder respectfully",
+    "note": "께 and 여쭤보다 both add respect."
+   }
+  ],
+  "examples": [
+   {
+    "ko": "어르신도 계시면 도와드릴까요? 하고 물어볼게요.",
+    "romanization": "eoreusindo gyesimyeon dowadeurilkkayo? hago mureobolgeyo.",
+    "en": "If elders are there too, I will ask, 'May I help?'",
+    "note": "Respectful presence plus polite help offer."
+   }
+  ],
+  "forms": null,
+  "irregular": null,
+  "level": "B1",
+  "cluster": null,
+  "chapters": [
+   56
+  ]
+ },
+ "눈치": {
+  "ko": "눈치",
+  "romanization": "nunchi",
+  "en": "social awareness / reading the room",
+  "pos": "noun",
+  "chapter": "56",
+  "ex": {
+   "ko": "눈치 있게 챙기면 분위기가 덜 어색해요.",
+   "en": "If you take care of things tactfully, the mood is less awkward.",
+   "note": "Linked to dictionary card word-ext-797."
+  },
+  "collocations": [
+   "눈치가 빠르다",
+   "눈치를 보다",
+   "눈치 있게"
+  ],
+  "nuance": "눈치 is a native-Korean word (눈 'eye' + 치) and one of the most essential Korean social concepts: the radar for sensing what others feel and what's appropriate without being told. The distinctions learners trip on are between its set phrases: 눈치가 빠르다 ('quick eye') is high praise, 눈치가 없다 is a real social criticism, 눈치를 보다 means cautiously reading someone's mood (often a boss's, with a slightly self-conscious feel), and 눈치(를) 채다 means to catch on / notice something. So 보다 and 채다 are not interchangeable — one is ongoing wariness, the other is a moment of realization. The English-speaker pitfall is mapping 눈치 to 'eyes' or vision because of 눈; it has nothing to do with eyesight and everything to do with social perceptiveness. Living in Korea you'll use and need this word daily.",
+  "explanation": "\"social awareness, ability to read the room\" is 눈치 (nunchi). The word itself is easy; what matters is the company it keeps, like 눈치가 빠르다 (\"to be quick to read situations\"). Watch the particle attached to 눈치 in each example — that little marker, not the word, tells you whether it is the topic, the subject, the object, or a place. Copy one full sentence about basic everyday communication first, then vary one word.",
+  "shortExplanation": "눈치 means \"social awareness, ability to read the room\" and is learned through practical beginner sentence frames.",
+  "commonMistakes": [
+   "Do not memorize this only as an English translation; memorize one Korean sentence frame.",
+   "Translating it as 'eyes' or eyesight because of 눈 — 눈치 is the social skill of reading people, not vision",
+   "Confusing 눈치를 보다 (cautiously read someone's mood) with 눈치를 채다 (notice/catch on to something)",
+   "Saying 눈치가 좋다 for 'quick-witted' — the set phrase is 눈치가 빠르다; 좋다 sounds off here"
+  ],
+  "conjugationTips": [],
+  "usagePhrases": [
+   {
+    "ko": "눈치가 빠르다",
+    "romanization": "nunchiga ppareuda",
+    "en": "to be quick to read situations",
+    "note": "빠르다 (fast) is the highest compliment — your social radar is sharp"
+   },
+   {
+    "ko": "눈치가 없다",
+    "romanization": "nunchiga eopsda",
+    "en": "to be socially oblivious",
+    "note": "없다 (lacking) = can't read the room at all; a genuine criticism"
+   },
+   {
+    "ko": "눈치를 보다",
+    "romanization": "nunchireul boda",
+    "en": "to read someone's mood / walk on eggshells",
+    "note": "보다 (watch) = checking how others feel, often a superior, before acting"
+   },
+   {
+    "ko": "눈치(를) 채다",
+    "romanization": "nunchi(reul) chaeda",
+    "en": "to catch on / notice",
+    "note": "채다 = to catch (on); 눈치챘어 = I noticed / I figured it out"
+   }
+  ],
+  "examples": [
+   {
+    "ko": "걔 진짜 눈치 빠르다.",
+    "romanization": "gyae jinjja nunchi ppareuda.",
+    "en": "He's really quick to pick up on things.",
+    "note": "눈치 빠르다 drops 가 in casual speech; the go-to banmal compliment for social sharpness"
+   },
+   {
+    "ko": "저는 눈치가 없어서 분위기를 잘 못 읽어요.",
+    "romanization": "jeoneun nunchiga eopseoseo bunwigireul jal mot ilgeoyo.",
+    "en": "I'm a bit clueless, so I don't read the mood well.",
+    "note": "분위기를 읽다 = read the atmosphere; a humble self-description in polite speech"
+   },
+   {
+    "ko": "사장님 눈치 보느라 일찍 못 가요.",
+    "romanization": "sajangnim nunchi boneura iljjing mot gayo.",
+    "en": "I can't leave early because I'm watching the boss's mood.",
+    "note": "-느라 = on account of (doing); 눈치 보다 toward a superior is classic office reality"
+   }
+  ],
+  "forms": null,
+  "irregular": null,
+  "level": "B1",
+  "cluster": null,
+  "chapters": [
+   56
   ]
  }
 }
