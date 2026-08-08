@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { collectMistake } from './mistakes.js';
+import { GUESS_QUIZ, GUESS_TEACH } from './srs.js';
 
 const guess = {
   kind: 'guess',
@@ -33,6 +34,17 @@ describe('session mistake note', () => {
     const warmup = { ...guess, warmup: true, word: { ko: '아직', en: 'still; yet' } };
     const list = collectMistake([], warmup, false, { picked: 'already' });
     expect(list.map((entry) => entry.ko)).toEqual(['아직']);
+  });
+
+  // order 30: a first meeting is an explanation, not an attempt. There is
+  // nothing to have got wrong, so it can never reach the note — not even if a
+  // caller hands it a false verdict.
+  it('never lists a first-meeting card, whatever verdict it is handed', () => {
+    expect(collectMistake([], guess, false, { picked: 'soon' }, GUESS_TEACH)).toEqual([]);
+    expect(collectMistake([], guess, false, {}, GUESS_TEACH)).toEqual([]);
+    expect(collectMistake([], guess, false, { picked: 'soon' }, GUESS_QUIZ)).toHaveLength(1);
+    // the mode only ever silences a guess card
+    expect(collectMistake([], { kind: 'order', correct: '가요.' }, false, {}, GUESS_TEACH)).toHaveLength(1);
   });
 
   it('describes order and drill misses from their own fields', () => {

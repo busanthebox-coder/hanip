@@ -28,6 +28,55 @@ srs.subscribe((state) => {
   try { localStorage.setItem(key(), JSON.stringify(normalize(state))); } catch { /* private mode */ }
 });
 
+// ---------------------------------------------------------------------------
+// Order 30 — teach a word first, quiz it on review.
+//
+// A compiled guess card holds the word, its meaning and an example sentence.
+// Until now the sentence *was* the question: the learner met a sentence of
+// unknown words and had to infer one of them. Inferring from context is a skill
+// that needs the surrounding vocabulary, so at A1 it is guessing, not reading.
+//
+// So the card renders two ways, and which way is not a property of the card —
+// it is a question asked of the schedule. Never met this word? Teach it: word,
+// meaning, then the sentence as an example of use. Already on the schedule?
+// Ask it exactly as before, because by then the surrounding words are known.
+//
+// Nothing about the compiled card changes, and nothing new is stored. The three
+// functions below are the whole rule; every caller goes through them so the
+// judgment cannot drift between the renderer, the score and the schedule.
+export const GUESS_TEACH = 'teach';
+export const GUESS_QUIZ = 'quiz';
+
+export function guessMode(card, schedule) {
+  if (card?.kind !== 'guess') return GUESS_QUIZ;
+  // Recall by definition: a warmup, a review-bite card, and the end-of-bite
+  // confirmation are all re-askings of a word the learner has already met — the
+  // warmup fallback can even hand back a word that never reached the schedule.
+  if (card.warmup || card.review || card.confirm) return GUESS_QUIZ;
+  const ko = card.word?.ko;
+  if (!ko) return GUESS_QUIZ;
+  return schedule?.[ko] ? GUESS_QUIZ : GUESS_TEACH;
+}
+
+// The one gate on a played card writing to the schedule.
+export function writesSchedule(card, mode, correct) {
+  if (card?.kind !== 'guess' || !card.word?.ko) return false;
+  // A first meeting is an explanation, not an answer. Scheduling it would put a
+  // word onto the review ladder that the learner was never tested on.
+  if (mode === GUESS_TEACH) return false;
+  // A same-session retry confirms the earlier reset; it must not jump straight
+  // from a miss to the three-day rung.
+  return !(card.requeued && correct);
+}
+
+// The one gate on a played card producing a right/wrong verdict at all — the
+// score, the sound, the requeue and the mistake note all hang off this.
+export function scoresAnswer(card, mode) {
+  if (!card) return false;
+  return !(card.kind === 'guess' && mode === GUESS_TEACH);
+}
+// ---------------------------------------------------------------------------
+
 export function nextInterval(currentInterval) {
   if (!currentInterval) return INTERVALS[0];
   return INTERVALS.find((interval) => interval > currentInterval) || INTERVALS.at(-1);

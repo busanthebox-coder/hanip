@@ -11,6 +11,14 @@
 //
 // 몰라요 (meta.skipped) is not a miss: it is a no-penalty reveal everywhere else
 // in the player, and it has no "you said" to show.
+//
+// Order 30 adds a third: a first-meeting guess card is an explanation, not an
+// attempt. There is nothing to have got wrong, so it never reaches the note.
+// The mode is passed in rather than derived here, so the teach/quiz judgment
+// stays in the one place that makes it (`guessMode`), and the default keeps
+// every existing caller on the old behaviour.
+
+import { GUESS_QUIZ, GUESS_TEACH } from './srs.js';
 
 const SCORED_KINDS = new Set(['guess', 'drill', 'order', 'grammar-check']);
 
@@ -30,9 +38,10 @@ function describe(card) {
   return { key: `${card.kind}:${card.prompt || answer.text}`, ko: answer.text, en: card.prompt || '' };
 }
 
-export function collectMistake(list, card, correct, meta = {}) {
+export function collectMistake(list, card, correct, meta = {}, mode = GUESS_QUIZ) {
   const current = list || [];
   if (correct || meta.skipped || !card || !SCORED_KINDS.has(card.kind)) return current;
+  if (card.kind === 'guess' && mode === GUESS_TEACH) return current;
   const entry = describe(card);
   if (!entry || current.some((item) => item.key === entry.key)) return current;
   return [...current, { ...entry, said: meta.picked || '' }];

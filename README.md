@@ -4,7 +4,7 @@
 
 A phone-first Korean course that reslices [Korean Core Starter](https://github.com/busanthebox-coder/korean-core-starter)'s
 72-chapter A1–C1 course into ~3-minute tap-only rounds. Same content, inverted order:
-**you guess before you're told.**
+**you guess before you're told — from the second meeting on.**
 
 ## The idea
 
@@ -16,10 +16,16 @@ each a self-contained round with a fixed arc:
 3. **Active taps** — guess, hunt, drill, arrange
 4. **A payoff** — a real dialogue line you couldn't read three minutes ago
 
-Nothing is read-only. Word cards ask you to guess the meaning from the word's
-own example sentence (with a no-penalty 몰라요 escape). Grammar isn't presented
-as a table — you tap the repeating morpheme across two contrasting sentences,
-and the rule card appears as confirmation of what you just found.
+Nothing is read-only, but guessing has a floor. The **first** time a word turns
+up you are simply told it — the word, its meaning, then its sentence as an
+example of use — because inferring a word from its context needs the words
+around it, and at A1 there aren't any yet. **Every meeting after that is a
+question**: the sentence becomes the prompt and you pick the meaning from three
+options, with a no-penalty 몰라요 escape. That second meeting comes fast — the
+word bite that taught a word closes by re-asking two of them, and the rest come
+back as warm-ups and in the review bite. Grammar isn't presented as a table —
+you tap the repeating morpheme across two contrasting sentences, and the rule
+card appears as confirmation of what you just found.
 
 English translations, romanization, and the full original grammar notes are all
 still here — they're **pulled, not pushed**: tap a bubble, tap 발음, tap
@@ -109,7 +115,7 @@ stay with the device. A preview names the counts before anything is applied.
 
 The learner is an English speaker studying Korean, so the two languages are stacked, never
 juxtaposed. **Korean is the hero** wherever it is the thing being learned — the word on Home,
-the sentence on a guess card, the form in a grammar lesson. **English is the body text** for every
+the word (or, once it is being quizzed, the sentence) on a guess card, the form in a grammar lesson. **English is the body text** for every
 explanation and nuance note (straight from the source data, untranslated), and it leads every
 functional string — buttons, section titles, filters, stats — with a small Korean line underneath.
 There is no `한국어 · English` one-line pairing anywhere.

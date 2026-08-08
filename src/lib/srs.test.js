@@ -4,11 +4,16 @@ import {
   backfillLearnedSchedules,
   buildDueReviewCards,
   dueCards,
+  GUESS_QUIZ,
+  GUESS_TEACH,
+  guessMode,
   INTERVALS,
   nextIntervalDays,
   prepareReviewCards,
   record,
+  scoresAnswer,
   srs,
+  writesSchedule,
 } from './srs.js';
 
 const DAY = 86_400_000;
@@ -103,5 +108,68 @@ describe('spaced repetition schedule', () => {
 
     expect(next.한글).toEqual(schedule.한글);
     expect(next.문법).toEqual({ interval: 1, due: NOW });
+  });
+});
+
+// Order 30 — the same compiled guess card renders two ways. Which way is not a
+// property of the card: it is a question asked of the schedule. These tests pin
+// that question down, because the failure mode is silent — a first meeting that
+// quietly recorded would drop a word onto the review ladder the learner was
+// never actually tested on, and the whole schedule drifts from there.
+describe('order 30 — first meeting teaches, review quizzes', () => {
+  const card = (extra = {}) => ({ kind: 'guess', word: { ko: '한글', en: 'Hangul' }, ...extra });
+
+  it('teaches a word the schedule has never seen', () => {
+    expect(guessMode(card(), {})).toBe(GUESS_TEACH);
+  });
+
+  it('quizzes a word that is already on the schedule', () => {
+    expect(guessMode(card(), { 한글: { interval: 1, due: NOW } })).toBe(GUESS_QUIZ);
+  });
+
+  it('always quizzes a warmup, whatever the schedule says', () => {
+    // a warmup is recall by definition; the fallback picker can hand back a
+    // learned word that never made it onto the schedule, and it is still recall
+    expect(guessMode(card({ warmup: true }), {})).toBe(GUESS_QUIZ);
+    expect(guessMode(card({ warmup: true }), { 한글: { interval: 3, due: NOW } })).toBe(GUESS_QUIZ);
+  });
+
+  it('always quizzes a review-bite card and an end-of-bite confirmation', () => {
+    expect(guessMode(card({ review: true }), {})).toBe(GUESS_QUIZ);
+    expect(guessMode(card({ confirm: true }), {})).toBe(GUESS_QUIZ);
+  });
+
+  it('quizzes every card of a bite played a second time', () => {
+    // replay: the words went onto the schedule the first time through
+    const bite = [card(), card({ word: { ko: '문법', en: 'grammar' } })];
+    const schedule = { 한글: { interval: 1, due: NOW }, 문법: { interval: 1, due: NOW } };
+    expect(bite.map((c) => guessMode(c, schedule))).toEqual([GUESS_QUIZ, GUESS_QUIZ]);
+    expect(bite.map((c) => guessMode(c, {}))).toEqual([GUESS_TEACH, GUESS_TEACH]);
+  });
+
+  it('never treats a non-guess card as a first meeting', () => {
+    expect(guessMode({ kind: 'payoff', line: { ko: '안녕' } }, {})).toBe(GUESS_QUIZ);
+    expect(guessMode(null, {})).toBe(GUESS_QUIZ);
+  });
+
+  it('keeps a first meeting out of the schedule', () => {
+    expect(writesSchedule(card(), GUESS_TEACH, true)).toBe(false);
+    expect(writesSchedule(card(), GUESS_TEACH, false)).toBe(false);
+    expect(writesSchedule(card(), GUESS_QUIZ, true)).toBe(true);
+    expect(writesSchedule(card(), GUESS_QUIZ, false)).toBe(true);
+  });
+
+  it('keeps the existing same-session retry rule intact', () => {
+    expect(writesSchedule(card({ requeued: true }), GUESS_QUIZ, true)).toBe(false);
+    expect(writesSchedule(card({ requeued: true }), GUESS_QUIZ, false)).toBe(true);
+    expect(writesSchedule({ kind: 'drill' }, GUESS_QUIZ, true)).toBe(false);
+  });
+
+  it('keeps a first meeting out of the score', () => {
+    expect(scoresAnswer(card(), GUESS_TEACH)).toBe(false);
+    expect(scoresAnswer(card(), GUESS_QUIZ)).toBe(true);
+    // every other kind resolves exactly as it always has
+    expect(scoresAnswer({ kind: 'drill' }, GUESS_TEACH)).toBe(true);
+    expect(scoresAnswer({ kind: 'payoff' }, GUESS_TEACH)).toBe(true);
   });
 });

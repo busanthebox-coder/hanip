@@ -1,5 +1,6 @@
 <script>
   import { onDestroy } from 'svelte';
+  import { get } from 'svelte/store';
   import Bowl from './Bowl.svelte';
   import GuessCard from './cards/GuessCard.svelte';
   import HuntCard from './cards/HuntCard.svelte';
@@ -12,9 +13,10 @@
   import GrammarLessonCard from './cards/GrammarLessonCard.svelte';
   import GrammarRefSheet from './GrammarRefSheet.svelte';
   import { buzz, fanfare, thud, tick } from '../lib/feedback.js';
+  import { withConfirmations } from '../lib/confirm.js';
   import { collectMistake } from '../lib/mistakes.js';
   import { prefs } from '../lib/prefs.js';
-  import { record } from '../lib/srs.js';
+  import { guessMode, record, scoresAnswer, srs, writesSchedule } from '../lib/srs.js';
   import { markLastPlayed, progress, todayKey, warmupCards } from '../lib/store.js';
   import { bowlFill, streak } from '../lib/stats.js';
   import { speak } from '../lib/tts.js';
@@ -29,7 +31,12 @@
   const KIND_EN = { words: 'Words', pattern: 'Grammar', dialogue: 'Dialogue', reading: 'Reading', boss: 'Boss' };
 
   const studyCards = bite.lessonCards?.length ? bite.lessonCards : bite.cards;
-  let cards = [...(withWarmup ? warmupCards(bite) : []), ...studyCards];
+  // Order 30: the schedule as it stood when the bite opened decides which words
+  // are first meetings. It is frozen on purpose — answering one card writes to
+  // the schedule, and a live read would silently reclassify a later card of the
+  // same run from teach to quiz halfway through.
+  let openingSchedule = get(srs);
+  let cards = [...(withWarmup ? warmupCards(bite) : []), ...withConfirmations(studyCards, openingSchedule)];
   markLastPlayed(bite.id);
   let i = 0;
   let resolved = false;
@@ -45,7 +52,8 @@
   // replay from the rule sheet: same bite from the top, no warmups (it's review)
   function replayBite() {
     showRefSheet = false;
-    cards = [...studyCards];
+    openingSchedule = get(srs);
+    cards = [...withConfirmations(studyCards, openingSchedule)];
     i = 0;
     resolved = false;
     resolutionCorrect = null;
@@ -61,6 +69,7 @@
   onDestroy(() => clearTimeout(speechTimer));
 
   $: cur = cards[i] || null;
+  $: curMode = guessMode(cur, openingSchedule);
   $: projectedBowls = finished
     ? { ...$progress.bowls, [todayKey()]: ($progress.bowls[todayKey()] || 0) + 1 }
     : $progress.bowls;
@@ -83,8 +92,17 @@
   function resolve(correct, meta = {}) {
     if (resolved) return;
     resolved = true;
+    // Order 30: a first meeting is an explanation, not an attempt. It settles
+    // the card so the Next button lights up, and stops there — no verdict, no
+    // sound, no score, no mistake note, and above all no schedule write. A
+    // teach card that recorded would drop a word onto the review ladder that
+    // the learner was never tested on, and the whole schedule drifts from it.
+    if (!scoresAnswer(cur, curMode)) {
+      speakSoon(cur.word?.ko);
+      return;
+    }
     resolutionCorrect = correct;
-    mistakes = collectMistake(mistakes, cur, correct, meta);
+    mistakes = collectMistake(mistakes, cur, correct, meta, curMode);
     if (ACTIVE_KINDS.has(cur.kind)) {
       // "몰라요" is a neutral reveal, not a wrong-answer penalty.
       if (!meta.skipped) {
@@ -115,9 +133,7 @@
       buzz(15);
     }
     if (cur.kind === 'guess') {
-      // A same-session retry confirms the earlier reset; it must not jump
-      // straight from a miss to the three-day rung.
-      if (!cur.requeued || !correct) {
+      if (writesSchedule(cur, curMode, correct)) {
         record(cur.word?.ko, correct, Date.now(), ($progress.starred || []).includes(cur.word?.ko));
       }
       speakSoon(cur.word?.ko);
@@ -168,7 +184,7 @@
       <div class="deck">
         <div class="sheet tooth">
           {#if cur.requeued}<div class="again">Again</div>{/if}
-          {#if cur.kind === 'guess'}<GuessCard card={cur} onResolve={resolve} {onOpenWord} />
+          {#if cur.kind === 'guess'}<GuessCard card={cur} mode={curMode} onResolve={resolve} {onOpenWord} />
           {:else if cur.kind === 'hunt'}<HuntCard card={cur} onResolve={resolve} />
           {:else if cur.kind === 'teach'}<TeachCard card={cur} onResolve={resolve} />
           {:else if cur.kind === 'drill'}<DrillCard card={cur} onResolve={resolve} />

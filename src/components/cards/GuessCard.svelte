@@ -1,11 +1,15 @@
 <script>
-  import { tick as afterUpdate } from 'svelte';
+  import { tick as afterUpdate, onMount } from 'svelte';
   import AudioDot from './AudioDot.svelte';
   import { prefs } from '../../lib/prefs.js';
-  import { srs } from '../../lib/srs.js';
+  import { GUESS_QUIZ, GUESS_TEACH, srs } from '../../lib/srs.js';
   import { progress, toggleStarred } from '../../lib/store.js';
 
   export let card;
+  // Order 30: the player asks the schedule (`guessMode`) and hands the answer
+  // down. Defaulting to quiz means a caller that forgets can only ever get the
+  // old behaviour — never an inert card that silently skips the schedule.
+  export let mode = GUESS_QUIZ;
   export let onResolve = () => {};
   export let onOpenWord = () => {};
 
@@ -15,6 +19,7 @@
   let romajaShown = false;
   let revealElement;
 
+  $: teach = mode === GUESS_TEACH;
   $: parts = card.sentence && card.target
     ? splitOnce(card.sentence.ko, card.target)
     : null;
@@ -23,7 +28,15 @@
   $: correctOption = direction === 'en→ko' ? card.word.ko : card.word.en;
   // The player records the answer before the reveal renders, so the schedule
   // already holds the real next due date — no second guess at the ladder.
-  $: dueInterval = revealed && !skipped ? $srs[card.word.ko]?.interval ?? null : null;
+  // A first meeting schedules nothing, so it has no line to show.
+  $: dueInterval = !teach && revealed && !skipped ? $srs[card.word.ko]?.interval ?? null : null;
+
+  // A first meeting has nothing to answer, so it is settled the moment it
+  // appears and the player's own Next button becomes its progress control.
+  // Inventing a second in-card button would put two CTAs on one screen.
+  onMount(() => {
+    if (teach) onResolve(true, { teach: true });
+  });
 
   function splitOnce(text, needle) {
     const at = text.indexOf(needle);
@@ -62,49 +75,54 @@
   }
 </script>
 
-{#if direction === 'en→ko'}
-  <div class="stem" class:small={revealed}>{card.word.en}</div>
-{:else if parts}
-  <div class="stem" class:small={revealed}>{parts.pre}<span class="tgt">{parts.mid}</span>{parts.post}</div>
-{:else}
-  <div class="stem" class:small={revealed}><span class="tgt">{card.word.ko}</span></div>
-{/if}
-{#if revealed && card.sentence?.en && direction !== 'en→ko'}
-  <div class="stem-en">{card.sentence.en}</div>
-{/if}
-
-{#if !revealed}
+<!-- Order 30: on a first meeting the sentence is not the question. Everything
+     above the fold here is the quiz; the block below is the same reveal markup,
+     shown up front when the card is teaching. -->
+{#if !teach}
   {#if direction === 'en→ko'}
-    <div class="ask">어떤 한국어 단어일까요?</div>
-    <div class="ask-en">Which Korean word matches this meaning?</div>
+    <div class="stem" class:small={revealed}>{card.word.en}</div>
+  {:else if parts}
+    <div class="stem" class:small={revealed}>{parts.pre}<span class="tgt">{parts.mid}</span>{parts.post}</div>
   {:else}
-    <div class="ask">{parts ? '밑줄 친 말은 무슨 뜻일까요?' : '무슨 뜻일까요?'}</div>
-    <div class="ask-en">What does the highlighted word mean?</div>
+    <div class="stem" class:small={revealed}><span class="tgt">{card.word.ko}</span></div>
+  {/if}
+  {#if revealed && card.sentence?.en && direction !== 'en→ko'}
+    <div class="stem-en">{card.sentence.en}</div>
+  {/if}
+
+  {#if !revealed}
+    {#if direction === 'en→ko'}
+      <div class="ask">어떤 한국어 단어일까요?</div>
+      <div class="ask-en">Which Korean word matches this meaning?</div>
+    {:else}
+      <div class="ask">{parts ? '밑줄 친 말은 무슨 뜻일까요?' : '무슨 뜻일까요?'}</div>
+      <div class="ask-en">What does the highlighted word mean?</div>
+    {/if}
+  {/if}
+
+  <div class="opts">
+    {#each card.options as opt}
+      <button
+        class="opt"
+        class:dim={revealed && opt !== correctOption && opt !== picked}
+        class:picked={revealed && opt === correctOption}
+        class:wrong={revealed && picked === opt && opt !== correctOption}
+        on:click={() => pick(opt)}
+      >
+        <span class="opt-text">{opt}</span>
+        {#if revealed && opt === correctOption}<span class="mark good">Correct</span>
+        {:else if revealed && picked === opt}<span class="mark bad">Your answer</span>{/if}
+      </button>
+    {/each}
+  </div>
+
+  {#if !revealed}
+    <button class="textbtn dunno" on:click={giveUp}>Don't know — just show me</button>
   {/if}
 {/if}
 
-<div class="opts">
-  {#each card.options as opt}
-    <button
-      class="opt"
-      class:dim={revealed && opt !== correctOption && opt !== picked}
-      class:picked={revealed && opt === correctOption}
-      class:wrong={revealed && picked === opt && opt !== correctOption}
-      on:click={() => pick(opt)}
-    >
-      <span class="opt-text">{opt}</span>
-      {#if revealed && opt === correctOption}<span class="mark good">Correct</span>
-      {:else if revealed && picked === opt}<span class="mark bad">Your answer</span>{/if}
-    </button>
-  {/each}
-</div>
-
-{#if !revealed}
-  <button class="textbtn dunno" on:click={giveUp}>Don't know — just show me</button>
-{/if}
-
-{#if revealed}
-  <div class="answer" bind:this={revealElement}>
+{#if teach || revealed}
+  <div class="answer" class:teach bind:this={revealElement}>
     <div class="answer-head">
       <span class="hero">{card.word.ko}</span>
       <AudioDot text={card.word.ko} />
@@ -123,6 +141,19 @@
       <button class="textbtn rom-btn" on:click={() => { romajaShown = true; }}>Show romanization</button>
     {/if}
     {#if card.word.pos}<div class="pos">{card.word.pos}</div>{/if}
+
+    {#if teach && card.sentence?.ko}
+      <!-- word → meaning → example. The sentence keeps its gold target so the
+           hero above and its use below read as the same word. A card with no
+           sentence simply has no example paragraph. -->
+      <div class="ex">
+        <div class="ex-head">Used like this<span>이렇게 써요</span></div>
+        <div class="ex-ko">
+          {#if parts}{parts.pre}<span class="tgt">{parts.mid}</span>{parts.post}{:else}{card.sentence.ko}{/if}
+        </div>
+        {#if card.sentence.en}<div class="ex-en">{card.sentence.en}</div>{/if}
+      </div>
+    {/if}
 
     {#if card.word.nuance || card.note}
       <!-- The instant after a guess is when nuance actually lands, so the reveal
@@ -187,6 +218,9 @@
   .dunno { margin-top: 4px; }
 
   .answer { margin-top: 26px; animation: rise .25s var(--ease); }
+  /* a teach card opens on this block, so there is nothing to rise away from and
+     nothing above it to clear — the deck's own deal animation covers entry */
+  .answer.teach { margin-top: 0; animation: none; }
   @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
   .answer-head { display: flex; align-items: center; gap: 12px; }
   .hero { font-size: clamp(42px, 14vw, 58px); font-weight: 900; letter-spacing: -.035em; line-height: 1.05;
@@ -199,6 +233,15 @@
   .rom { margin-top: 3px; font-size: 12px; font-weight: 650; letter-spacing: .02em; color: var(--ink-3); }
   .rom-btn { min-height: 32px; margin-top: 2px; display: block; }
   .pos { margin-top: 3px; font-size: 11.5px; font-weight: 650; color: var(--ink-3); }
+
+  /* the example reuses the sizes the quiz already owns: the 20px stem band that
+     STYLE.md reserves for example sentences, and the 11.5px translation line */
+  .ex { margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--line); }
+  .ex-head { font-size: 12.5px; font-weight: 650; color: var(--ink-3); }
+  .ex-head span { display: block; font-size: 11.5px; font-weight: 650; }
+  .ex-ko { margin-top: 9px; font-size: 20px; font-weight: 700; line-height: 1.5; letter-spacing: -.02em;
+    color: var(--ink); word-break: keep-all; }
+  .ex-en { margin-top: 5px; font-size: 11.5px; font-weight: 650; line-height: 1.5; color: var(--ink-3); }
 
   .note { margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--line); }
   .note p { margin: 0; font-size: 15px; font-weight: 500; line-height: 1.85; color: var(--ink-2); word-break: keep-all; }
