@@ -504,7 +504,9 @@
      },
      "target": "하나",
      "options": [
-      "one (native number)"
+      "one (native number)",
+      "two (native number)",
+      "three (native number)"
      ],
      "note": ""
     },
@@ -523,6 +525,8 @@
      },
      "target": "둘",
      "options": [
+      "one (native number)",
+      "three (native number)",
       "two (native number)"
      ],
      "note": ""
@@ -542,7 +546,9 @@
      },
      "target": "셋",
      "options": [
-      "three (native number)"
+      "one (native number)",
+      "three (native number)",
+      "two (native number)"
      ],
      "note": ""
     },
@@ -560,7 +566,9 @@
      },
      "target": "넷",
      "options": [
-      "four (native number)"
+      "four (native number)",
+      "one (native number)",
+      "two (native number)"
      ],
      "note": ""
     },
@@ -578,7 +586,9 @@
      },
      "target": "다섯",
      "options": [
-      "five (native number)"
+      "one (native number)",
+      "five (native number)",
+      "two (native number)"
      ],
      "note": ""
     },
@@ -596,7 +606,9 @@
      },
      "target": "여섯",
      "options": [
-      "six (native number)"
+      "six (native number)",
+      "one (native number)",
+      "two (native number)"
      ],
      "note": ""
     },
@@ -614,6 +626,8 @@
      },
      "target": "일곱",
      "options": [
+      "one (native number)",
+      "two (native number)",
       "seven (native number)"
      ],
      "note": ""
@@ -632,6 +646,8 @@
      },
      "target": "여덟",
      "options": [
+      "one (native number)",
+      "two (native number)",
       "eight (native number)"
      ],
      "note": ""
@@ -650,7 +666,9 @@
      },
      "target": "아홉",
      "options": [
-      "nine (native number)"
+      "one (native number)",
+      "nine (native number)",
+      "two (native number)"
      ],
      "note": ""
     },
@@ -669,6 +687,8 @@
      },
      "target": "열",
      "options": [
+      "one (native number)",
+      "two (native number)",
       "ten (native number)"
      ],
      "note": ""
@@ -688,7 +708,9 @@
      },
      "target": "일",
      "options": [
-      "one (Sino number)"
+      "one (Sino number)",
+      "two (native number)",
+      "three (native number)"
      ],
      "note": ""
     },
@@ -707,7 +729,9 @@
      },
      "target": "이",
      "options": [
-      "two (Sino number)"
+      "two (Sino number)",
+      "one (native number)",
+      "three (native number)"
      ],
      "note": ""
     },
@@ -726,6 +750,8 @@
      },
      "target": "삼",
      "options": [
+      "one (native number)",
+      "two (native number)",
       "three (Sino number)"
      ],
      "note": ""
@@ -744,7 +770,9 @@
      },
      "target": "사",
      "options": [
-      "four (Sino number)"
+      "one (native number)",
+      "four (Sino number)",
+      "two (native number)"
      ],
      "note": ""
     },
@@ -762,7 +790,9 @@
      },
      "target": "오",
      "options": [
-      "five (Sino number)"
+      "one (native number)",
+      "five (Sino number)",
+      "two (native number)"
      ],
      "note": ""
     },
@@ -780,7 +810,9 @@
      },
      "target": "육",
      "options": [
-      "six (Sino number)"
+      "six (Sino number)",
+      "one (native number)",
+      "two (native number)"
      ],
      "note": ""
     },
@@ -798,6 +830,8 @@
      },
      "target": "칠",
      "options": [
+      "one (native number)",
+      "two (native number)",
       "seven (Sino number)"
      ],
      "note": ""
@@ -816,6 +850,8 @@
      },
      "target": "팔",
      "options": [
+      "one (native number)",
+      "two (native number)",
       "eight (Sino number)"
      ],
      "note": ""
@@ -834,7 +870,9 @@
      },
      "target": "구",
      "options": [
-      "nine (Sino number)"
+      "one (native number)",
+      "nine (Sino number)",
+      "two (native number)"
      ],
      "note": ""
     },
@@ -852,7 +890,9 @@
      },
      "target": "십",
      "options": [
-      "ten (Sino number)"
+      "ten (Sino number)",
+      "one (native number)",
+      "two (native number)"
      ],
      "note": ""
     },
@@ -870,7 +910,9 @@
      },
      "target": "백",
      "options": [
-      "(one) hundred (Sino number)"
+      "one (native number)",
+      "(one) hundred (Sino number)",
+      "two (native number)"
      ],
      "note": ""
     },
@@ -888,6 +930,8 @@
      },
      "target": "천",
      "options": [
+      "one (native number)",
+      "two (native number)",
       "(one) thousand (Sino number)"
      ],
      "note": ""
@@ -906,7 +950,9 @@
      },
      "target": "만",
      "options": [
-      "ten thousand (Sino number)"
+      "ten thousand (Sino number)",
+      "one (native number)",
+      "two (native number)"
      ],
      "note": ""
     }
@@ -2501,7 +2547,7 @@
      "target": "가방",
      "options": [
       "home / house",
-      "room",
+      "door",
       "bag"
      ],
      "note": ""
@@ -3253,7 +3299,8 @@
      "target": "맞아요",
      "options": [
       "I understand / okay.",
-      "That's right / You're right."
+      "That's right / You're right.",
+      "Me too / same here — saying that what they just said about themselves is true of you as well."
      ],
      "note": ""
     },
@@ -3272,6 +3319,7 @@
      "target": null,
      "options": [
       "I understand / okay.",
+      "I see / so that's how it is — calmly taking in information you've just been told.",
       "Right? / exactly / I know, right — agreeing that you feel the same, often a bit helplessly."
      ],
      "note": ""
@@ -3291,6 +3339,7 @@
      "target": "그러니까요",
      "options": [
       "I understand / okay.",
+      "Me too / same here — saying that what they just said about themselves is true of you as well.",
       "Exactly / that's what I'm saying — emphatic agreement with someone's opinion or complaint."
      ],
      "note": ""
@@ -3310,7 +3359,8 @@
      "target": "그렇군요",
      "options": [
       "I understand / okay.",
-      "I see / so that's how it is — calmly taking in information you've just been told."
+      "I see / so that's how it is — calmly taking in information you've just been told.",
+      "Right? / exactly / I know, right — agreeing that you feel the same, often a bit helplessly."
      ],
      "note": ""
     },
@@ -3329,7 +3379,8 @@
      "target": "저도요",
      "options": [
       "Me too / same here — saying that what they just said about themselves is true of you as well.",
-      "I understand / okay."
+      "I understand / okay.",
+      "That's right / You're right."
      ],
      "note": ""
     },
@@ -3347,8 +3398,9 @@
      },
      "target": "그런 것 같아요",
      "options": [
+      "I think so / It seems that way.",
       "I understand / okay.",
-      "I think so / It seems that way."
+      "Right? / exactly / I know, right — agreeing that you feel the same, often a bit helplessly."
      ],
      "note": ""
     },
@@ -3366,7 +3418,9 @@
      },
      "target": "다행이네요",
      "options": [
-      "Oh good / What a relief / I'm glad to hear that (relieved that things turned out okay)"
+      "Right? / exactly / I know, right — agreeing that you feel the same, often a bit helplessly.",
+      "Oh good / What a relief / I'm glad to hear that (relieved that things turned out okay)",
+      "Me too / same here — saying that what they just said about themselves is true of you as well."
      ],
      "note": ""
     },
@@ -3385,7 +3439,8 @@
      "target": "잘됐네요",
      "options": [
       "Oh good, that worked out — reacting on the spot to a situation turning out well.",
-      "I understand / okay."
+      "I understand / okay.",
+      "Right? / exactly / I know, right — agreeing that you feel the same, often a bit helplessly."
      ],
      "note": ""
     },
@@ -3404,7 +3459,8 @@
      "target": "그렇죠",
      "options": [
       "That's right, isn't it / Exactly.",
-      "I understand / okay."
+      "I understand / okay.",
+      "Me too / same here — saying that what they just said about themselves is true of you as well."
      ],
      "note": ""
     },

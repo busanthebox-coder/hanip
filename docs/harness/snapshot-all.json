@@ -7954,7 +7954,8 @@
      "kind": "reading",
      "title": "읽기 Reading · 전하는 사람의 말",
      "cards": [
-      "read:2:3qa"
+      "read:2:3qa",
+      "order:네 가지는 원래 문장의 종류를 그대로 따라간다."
      ]
     },
     {
@@ -8023,7 +8024,8 @@
      "title": "문법 Grammar · V-는 바람에",
      "cards": [
       "hunt:V-는 바람에:는,바람에;는,바람에",
-      "drill:어느 쪽이 자연스러워요? · Which one is natural?:동생이 떠드느라고 제가 잠을 못 잤어요.|동생이 떠드는 바람에 제가 잠을 못 잤어요.*"
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:동생이 떠드느라고 제가 잠을 못 잤어요.|동생이 떠드는 바람에 제가 잠을 못 잤어요.*",
+      "order:앞차가 갑자기 서는 바람에 뒤에서 부딪힐 뻔했어요."
      ]
     },
     {
@@ -8344,7 +8346,8 @@
      "title": "문법 Grammar · Nominal -(으)ㅁ",
      "cards": [
       "teach:Nominal -(으)ㅁ:2ex",
-      "drill:어느 쪽이 자연스러워요? · Which one is natural?:참석하기가 확인되었습니다.|참석했음이 확인되었습니다.*"
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:참석하기가 확인되었습니다.|참석했음이 확인되었습니다.*",
+      "drill:This event may be cancelled in the event of rain.:바람|있음*|없음"
      ]
     },
     {
@@ -8408,7 +8411,8 @@
      "title": "문법 Grammar · News passives",
      "cards": [
       "teach:News passives:2ex",
-      "drill:어느 쪽이 자연스러워요? · Which one is natural?:정부에 따르면 지원이 확대된다.*|정부에 의하면 지원이 확대한다."
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:정부에 따르면 지원이 확대된다.*|정부에 의하면 지원이 확대한다.",
+      "order:조사 결과 사고의 원인이 정비 불량으로 밝혀졌다."
      ]
     },
     {
@@ -8455,7 +8459,8 @@
      "title": "문법 Grammar · -화(化)",
      "cards": [
       "teach:-화(化):2ex",
-      "drill:어느 쪽이 자연스러워요? · Which one is natural?:생산 공정이 자동화됐다.*|생산 공정이 자동화했다."
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:생산 공정이 자동화됐다.*|생산 공정이 자동화했다.",
+      "drill:As the production process became automated, demand for workers fell sharply.:자동화*|고령화|국제화"
      ]
     },
     {
@@ -8538,7 +8543,8 @@
      "title": "문법 Grammar · 손이 크다",
      "cards": [
       "teach:손이 크다:2ex",
-      "drill:어느 쪽이 자연스러워요? · Which one is natural?:그분은 손이 크세요.*|그분은 큰 손이에요."
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:그분은 손이 크세요.*|그분은 큰 손이에요.",
+      "drill:It's lovely that you do things so generously, but how about scaling back this time?:손이 크신*|손을 떼다"
      ]
     },
     {
@@ -8562,7 +8568,8 @@
      "title": "문법 Grammar · 발이 넓다",
      "cards": [
       "teach:발이 넓다:2ex",
-      "drill:어느 쪽이 자연스러워요? · Which one is natural?:어제 공항에서 발이 묶였어요.*|어제 공항에서 발을 묶었어요."
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:어제 공항에서 발이 묶였어요.*|어제 공항에서 발을 묶었어요.",
+      "order:눈이 많이 와서 어제는 공항에서 발이 묶였어요."
      ]
     },
     {
@@ -8606,7 +8613,8 @@
      "title": "문법 Grammar · 속담 다섯",
      "cards": [
       "teach:속담 다섯:2ex",
-      "drill:어느 쪽이 자연스러워요? · Which one is natural?:티끌 모아 태산이에요.*|티끌을 모아서 태산을 만들어요."
+      "drill:어느 쪽이 자연스러워요? · Which one is natural?:티끌 모아 태산이에요.*|티끌을 모아서 태산을 만들어요.",
+      "drill:Little by little makes a lot — I put a bit aside every month and it's added up.:티끌 모아 태산*|우물 안 개구리|하늘의 별 따기"
      ]
     },
     {

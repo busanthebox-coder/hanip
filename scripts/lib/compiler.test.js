@@ -1095,3 +1095,267 @@ describe('order 26 — a pack of whole expressions compiles as snack guess cards
     expect(first.options).not.toContain('I am getting off here.');
   });
 });
+
+/* ---------------- order 32: the live packs whose cards cannot be missed ---------------- */
+
+describe('order 32 — a pack whose glosses share a classifier still offers three options', () => {
+  // The shipped numbers pack: every gloss ends in the same annotation, so the
+  // shared-content-word screen banned the entire pool and 23 live cards went
+  // out with a single option. The annotation classifies the pack; it is not
+  // what the card is asking about.
+  const numbersPack = () => ({
+    id: 'pack-numbers',
+    title: '숫자 · Numbers',
+    shortTitle: '숫자 Numbers',
+    afterChapter: 3,
+    goal: 'Count things and read prices.',
+    words: [
+      { hangul: '하나', english: 'one (native number)', romanization: 'hana', partOfSpeech: 'noun' },
+      { hangul: '둘', english: 'two (native number)', romanization: 'dul', partOfSpeech: 'noun' },
+      { hangul: '셋', english: 'three (native number)', romanization: 'set', partOfSpeech: 'noun' },
+      { hangul: '일', english: 'one (Sino number)', romanization: 'il', partOfSpeech: 'noun' },
+      { hangul: '이', english: 'two (Sino number)', romanization: 'i', partOfSpeech: 'noun' },
+    ],
+  });
+
+  it('gives every card three options', () => {
+    const snack = compileSnack(numbersPack());
+    for (const card of snack.cards) {
+      expect(card.options).toHaveLength(3);
+      expect(card.options.filter((option) => option === card.word.en)).toHaveLength(1);
+      expect(new Set(card.options).size).toBe(3);
+    }
+  });
+
+  it('never offers the other numeral series as a distractor for the same value', () => {
+    const snack = compileSnack(numbersPack());
+    const byKo = new Map(snack.cards.map((card) => [card.word.ko, card.options]));
+    // 하나 and 일 are both "one" — a learner picking the other one is right
+    expect(byKo.get('하나')).not.toContain('one (Sino number)');
+    expect(byKo.get('일')).not.toContain('one (native number)');
+    expect(byKo.get('둘')).not.toContain('two (Sino number)');
+    expect(byKo.get('이')).not.toContain('two (native number)');
+  });
+
+  it('still refuses a distractor the audit ban list forbids', () => {
+    const snack = compileSnack(numbersPack(), {
+      guessDistractorBans: { 하나: ['three'] },
+    });
+    expect(snack.cards[0].options).not.toContain('three (native number)');
+    expect(snack.cards[0].options).toHaveLength(3);
+  });
+});
+
+describe('order 32 — a pack of reactions whose glosses carry usage notes', () => {
+  // Expression glosses are a meaning plus a paragraph about when to say it.
+  // Sharing a word with someone else's usage note is not synonymy.
+  const reactionsPack = () => ({
+    id: 'pack-reactions-agree',
+    title: '맞장구 · Agreeing',
+    shortTitle: '맞장구 Agreeing',
+    afterChapter: 20,
+    goal: 'React the way a Korean speaker reacts.',
+    words: [
+      { hangul: '맞아요', english: "That's right / You're right.", romanization: 'majayo', partOfSpeech: 'expression' },
+      { hangul: '저도요', english: 'Me too / same here — saying that what they just said about themselves is true of you as well.', romanization: 'jeodoyo', partOfSpeech: 'expression' },
+      { hangul: '다행이네요', english: "Oh good / What a relief / I'm glad to hear that (relieved that things turned out okay)", romanization: 'dahaengineyo', partOfSpeech: 'expression' },
+      { hangul: '그렇군요', english: "I see / so that's how it is — calmly taking in information you've just been told.", romanization: 'geureokunyo', partOfSpeech: 'expression' },
+      { hangul: '알겠어요', english: 'I understand / okay.', romanization: 'algesseoyo', partOfSpeech: 'expression' },
+    ],
+  });
+
+  it('gives every card three options', () => {
+    const snack = compileSnack(reactionsPack());
+    for (const card of snack.cards) {
+      expect(card.options).toHaveLength(3);
+      expect(card.options.filter((option) => option === card.word.en)).toHaveLength(1);
+    }
+  });
+});
+
+describe('order 32 — a pack distractor whose headword sits inside the answer never plays', () => {
+  const homePack = () => ({
+    id: 'pack-home-things',
+    title: '집 · Home things',
+    shortTitle: '집 Home',
+    afterChapter: 5,
+    goal: 'Name what is around the house.',
+    words: [
+      { hangul: '집', english: 'home / house', romanization: 'jip', partOfSpeech: 'noun' },
+      { hangul: '방', english: 'room', romanization: 'bang', partOfSpeech: 'noun' },
+      { hangul: '가방', english: 'bag', romanization: 'gabang', partOfSpeech: 'noun' },
+      { hangul: '의자', english: 'chair', romanization: 'uija', partOfSpeech: 'noun' },
+      { hangul: '우산', english: 'umbrella', romanization: 'usan', partOfSpeech: 'noun' },
+    ],
+  });
+
+  it('drops 방 from 가방 and still fills the card to three', () => {
+    const snack = compileSnack(homePack());
+    const bag = snack.cards.find((card) => card.word.ko === '가방');
+    expect(bag.options).not.toContain('room');
+    expect(bag.options).toHaveLength(3);
+    const room = snack.cards.find((card) => card.word.ko === '방');
+    expect(room.options).not.toContain('bag');
+  });
+});
+
+describe('order 32 — a healthy pool compiles exactly as before', () => {
+  // The relaxations are a LAST RESORT: a card the strict rule could already
+  // fill must come out with the same two distractors, in the same slots.
+  const healthy = () => ({
+    id: 'pack-food-basic',
+    title: '음식 · Food',
+    shortTitle: '음식 Food',
+    afterChapter: 4,
+    goal: 'Order and name food.',
+    words: [
+      { hangul: '밥', english: 'rice; a meal', romanization: 'bap', partOfSpeech: 'noun' },
+      { hangul: '물', english: 'water', romanization: 'mul', partOfSpeech: 'noun' },
+      { hangul: '고기', english: 'meat', romanization: 'gogi', partOfSpeech: 'noun' },
+      { hangul: '김치', english: 'kimchi', romanization: 'gimchi', partOfSpeech: 'noun' },
+    ],
+  });
+
+  it('keeps the strict-rule picks and their order', () => {
+    const snack = compileSnack(healthy());
+    const rice = snack.cards.find((card) => card.word.ko === '밥');
+    expect(rice.options).toEqual(['water', 'rice; a meal', 'meat']);
+  });
+});
+
+/* ---------------- order 32: chapters 66-72 grammar types ---------------- */
+
+describe('order 32 — notes whose title carries no morpheme still end in two questions', () => {
+  // An idiom chapter: nothing to extract from "손이 크다 — the generous hand",
+  // no suffix-decomposable form rows, and every example is seven tokens long,
+  // so orders 21-22 left the bite with the pitfall pick alone.
+  const idiomChapter = () => ({
+    id: 'chapter-72',
+    inlineExercises: [],
+    grammarNotes: [{
+      title: '속담 다섯 — the proverbs you will actually hear',
+      func: 'Five proverbs that turn up in ordinary conversation.',
+      formTable: [
+        { when: 'Small amounts add up', add: '티끌 모아 태산', ex: '티끌 모아 태산이라고 조금씩 모았어요' },
+        { when: 'Someone with a narrow view', add: '우물 안 개구리', ex: '제가 우물 안 개구리였어요' },
+        { when: 'Nearly impossible', add: '하늘의 별 따기', ex: '그 표를 구하는 건 하늘의 별 따기예요' },
+        { when: 'Extremely easy', add: '식은 죽 먹기', ex: '이 정도는 식은 죽 먹기죠' },
+      ],
+      examples: [
+        { ko: '티끌 모아 태산이라고, 매달 조금씩 모았더니 꽤 됐어요.', en: "Little by little makes a lot — I put a bit aside every month and it's added up." },
+        { ko: '이 정도 문제는 식은 죽 먹기죠.', en: 'A problem at this level is a piece of cake.' },
+      ],
+    }],
+  });
+
+  it('clozes a form-table surface out of the note\'s own example', () => {
+    const [bite] = buildPatternBites(idiomChapter());
+    const cloze = bite.cards.find((c) => c.kind === 'drill' && c.sentence?.includes('___'));
+    expect(cloze).toBeTruthy();
+    expect(cloze.sentence).toBe('___이라고, 매달 조금씩 모았더니 꽤 됐어요.');
+    const correct = cloze.options.find((o) => o.ok);
+    expect(correct.text).toBe('티끌 모아 태산');
+    expect(cloze.options.length).toBeGreaterThanOrEqual(2);
+    for (const option of cloze.options) {
+      if (option.ok) continue;
+      // a wrong answer must be a string the note already carries, and must not
+      // already sit in the line
+      expect(['우물 안 개구리', '하늘의 별 따기', '식은 죽 먹기']).toContain(option.text);
+      expect(cloze.sentence.includes(option.text)).toBe(false);
+    }
+    expect(questionsOf(bite).length).toBeGreaterThanOrEqual(2);
+  });
+
+  it('rebuilds a longer example as tiles when nothing else reaches two questions', () => {
+    const chapter = {
+      id: 'chapter-71',
+      inlineExercises: [],
+      grammarNotes: [{
+        title: 'News passives — 밝혀지다, 알려지다, 전해지다',
+        func: 'How Korean news reports a finding without naming who found it.',
+        formTable: [
+          { when: 'Sino-Korean noun + 되다', add: 'N되다', ex: '발표 → 새 정책이 발표됐다 (a new policy was announced)' },
+          { when: 'Forecast', add: '-(으)ㄹ 것으로 예상된다 / 전망된다', ex: '오르다 → 가격이 오를 것으로 전망된다' },
+        ],
+        examples: [
+          { ko: '조사 결과 사고의 원인이 정비 불량으로 밝혀졌다.', en: 'The investigation found that the cause of the accident was poor maintenance.' },
+        ],
+        englishSpeakerPitfall: {
+          wrong: '정부에 의하면 지원이 확대한다.',
+          right: '정부에 따르면 지원이 확대된다.',
+          explanation: '확대하다 is transitive.',
+        },
+      }],
+    };
+    const [bite] = buildPatternBites(chapter);
+    const tile = bite.cards.find((c) => c.kind === 'order');
+    expect(tile).toBeTruthy();
+    expect(tile.tokens).toHaveLength(7);
+    expect(tile.tokens.join(' ')).toBe(tile.correct);
+    expect(questionsOf(bite).length).toBeGreaterThanOrEqual(2);
+  });
+
+  it('does not widen the tile cap for a note that already has two questions', () => {
+    // richChapter's 을/를 note reaches four questions on its own; a seven-token
+    // example must not be pulled in behind them
+    const [bite] = buildPatternBites(richChapter);
+    for (const card of bite.cards) {
+      if (card.kind !== 'order') continue;
+      expect(card.tokens.length).toBeLessThanOrEqual(6);
+    }
+  });
+});
+
+describe('order 32 — a reading whose sentences are all long still gets a question', () => {
+  it('rebuilds a longer passage line when no 3-6 token line exists', () => {
+    const bite = buildReadingBite({
+      extendedVocabulary: [
+        { hangul: '소식', romanization: 'sosik', english: 'news', partOfSpeech: 'noun' },
+        { hangul: '공지', romanization: 'gongji', english: 'notice', partOfSpeech: 'noun' },
+      ],
+      readingText: {
+        title: '전하는 사람의 말',
+        body: '한국 사람들은 하루에도 몇 번씩 다른 사람의 말을 옮긴다. 네 가지는 원래 문장의 종류를 그대로 따라간다.',
+        bodyTranslation: 'x',
+        comprehensionQuestions: [],
+      },
+    }, {});
+    expect(bite.cards.length).toBeGreaterThanOrEqual(2);
+    const order = bite.cards.find((c) => c.kind === 'order');
+    expect(order).toBeTruthy();
+    expect(order.tokens.join(' ')).toBe(order.correct);
+    expect(order.tokens.length).toBeGreaterThanOrEqual(3);
+  });
+
+  it('never rebuilds a comma list — its order is not decidable', () => {
+    const bite = buildReadingBite({
+      extendedVocabulary: [
+        { hangul: '소식', romanization: 'sosik', english: 'news', partOfSpeech: 'noun' },
+      ],
+      readingText: {
+        title: '전하는 사람의 말',
+        body: '말이 빨라지면서 -대요, -래요, -냬요, -재요로 줄어들기 때문이다. 네 가지는 원래 문장의 종류를 그대로 따라간다.',
+        bodyTranslation: 'x',
+        comprehensionQuestions: [],
+      },
+    }, {});
+    const order = bite.cards.find((c) => c.kind === 'order');
+    expect(order.correct).toBe('네 가지는 원래 문장의 종류를 그대로 따라간다.');
+  });
+
+  it('still prefers a short line when the passage has one', () => {
+    const bite = buildReadingBite({
+      extendedVocabulary: [
+        { hangul: '가다', romanization: 'gada', english: 'to go', partOfSpeech: 'verb' },
+      ],
+      readingText: {
+        title: '주말',
+        body: '한국 사람들은 하루에도 몇 번씩 다른 사람의 말을 옮긴다. 저도 갈 수 있어요.',
+        bodyTranslation: 'x',
+        comprehensionQuestions: [],
+      },
+    }, {});
+    const order = bite.cards.find((c) => c.kind === 'order');
+    expect(order.correct).toBe('저도 갈 수 있어요.');
+  });
+});

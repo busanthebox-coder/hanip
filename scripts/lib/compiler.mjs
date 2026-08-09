@@ -358,30 +358,94 @@ function stemMatchIn(lineKo, word) {
 // A distractor that would ALSO be a fair answer teaches nothing. Two guards:
 // shared content words (consonant ⊂ "final consonant …") and the audit-built
 // ban list for semantically interchangeable pairs (천천히↔다시, 학생↔선생님…).
-function sharesContentWord(a, b) {
-  const words = (s) => new Set(
-    String(s).toLowerCase().split(/[^a-z]+/).filter((w) => w.length > 2 && !['the', 'and', 'for', 'you', 'your'].includes(w))
+const GLOSS_STOP = ['the', 'and', 'for', 'you', 'your'];
+const EMPTY_SET = new Set();
+function contentWords(text, ignore = EMPTY_SET) {
+  return new Set(
+    String(text).toLowerCase().split(/[^a-z]+/)
+      .filter((w) => w.length > 2 && !GLOSS_STOP.includes(w) && !ignore.has(w))
   );
-  const A = words(a);
-  for (const w of words(b)) if (A.has(w)) return true;
+}
+function sharesContentWord(a, b, ignore = EMPTY_SET) {
+  const A = contentWords(a, ignore);
+  for (const w of contentWords(b, ignore)) if (A.has(w)) return true;
   return false;
 }
 
-function guessOptions(word, pool, overrides = {}) {
+// A gloss is a MEANING plus, often, an annotation about it: "one (native
+// number)", "Right? / exactly — agreeing that you feel the same". Only the
+// meaning answers the card; the annotation classifies it. Reading the two as
+// one string is what banned entire packs (order 26 recorded 33 such cards).
+function glossSense(en) {
+  return String(en)
+    .replace(/\([^)]*\)/g, ' ')       // "(native number)", "(auxiliary)"
+    .split(/[—–]/)[0]                 // the usage note after an em dash
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+// The first sense a gloss offers, normalised — 하나 "one (native number)" and
+// 일 "one (Sino number)" both mean "one", so neither may distract the other.
+function primarySense(en) {
+  return glossSense(en).split('/')[0].toLowerCase().replace(/[^a-z0-9 ]+/g, '').replace(/\s+/g, ' ').trim();
+}
+
+// Words carried by most glosses in a pack name the pack, they do not separate
+// its cards: "number" in the numerals, "that" across the agreement reactions.
+function packClassifiers(pool) {
+  const counts = new Map();
+  for (const w of pool) {
+    for (const token of contentWords(glossSense(w.english))) counts.set(token, (counts.get(token) || 0) + 1);
+  }
+  const floor = Math.max(3, Math.ceil(pool.length * 0.4));
+  return new Set([...counts].filter(([, n]) => n >= floor).map(([token]) => token));
+}
+
+const koHead = (hangul) => String(hangul || '').split('/')[0].replace(/[?!.]/g, '').trim();
+
+// Distractor admission is TIERED, and tier 0 is the rule exactly as it shipped,
+// so a card the strict rule could already fill compiles byte-identically. The
+// looser tiers only ever ADD candidates the strict rule refused, and only to a
+// card that would otherwise go out unmissable:
+//   1 — compare senses, not annotations
+//   2 — additionally ignore the words the whole pack shares
+// No tier can admit a synonym: an identical primary sense, an audit ban-list
+// hit, and (in packs) a headword the answer contains are refused at every tier.
+function guessOptions(word, pool, overrides = {}, { pack = false } = {}) {
   const bans = (overrides.guessDistractorBans || {})[word.hangul] || [];
-  const banned = (en) =>
-    sharesContentWord(en, word.english) ||
-    bans.some((b) => en.toLowerCase().includes(b.toLowerCase()));
-  const usable = pool.filter((w) => w !== word && w.english !== word.english && !banned(w.english));
-  const same = usable.filter((w) => w.partOfSpeech === word.partOfSpeech);
-  const rest = usable.filter((w) => !same.includes(w));
+  const listed = (en) => bans.some((b) => en.toLowerCase().includes(b.toLowerCase()));
+  const targetHead = koHead(word.hangul);
+  // 방 ⊂ 가방: the distractor names a part of the answer, so picking it is a
+  // fair partial reading rather than a mistake (the order-26 pack screen)
+  const readsAsPartOf = (cand) => {
+    if (!pack) return false;
+    const head = koHead(cand.hangul);
+    return !!head && !!targetHead && (targetHead.includes(head) || head.includes(targetHead));
+  };
+  const admissible = (cand) =>
+    cand !== word && cand.english !== word.english && !listed(cand.english) && !readsAsPartOf(cand);
+  const classifiers = packClassifiers(pool);
+  const tiers = [
+    (cand) => !sharesContentWord(cand.english, word.english),
+    (cand) => primarySense(cand.english) !== primarySense(word.english)
+      && !sharesContentWord(glossSense(cand.english), glossSense(word.english)),
+    (cand) => primarySense(cand.english) !== primarySense(word.english)
+      && !sharesContentWord(glossSense(cand.english), glossSense(word.english), classifiers),
+  ];
+
   const picks = [];
   const seen = new Set([word.english]);
-  for (const cand of [...same, ...rest]) {
+  for (const accepts of tiers) {
     if (picks.length >= 2) break;
-    if (seen.has(cand.english)) continue;
-    seen.add(cand.english);
-    picks.push(cand.english);
+    const usable = pool.filter((cand) => admissible(cand) && accepts(cand));
+    const same = usable.filter((cand) => cand.partOfSpeech === word.partOfSpeech);
+    const rest = usable.filter((cand) => !same.includes(cand));
+    for (const cand of [...same, ...rest]) {
+      if (picks.length >= 2) break;
+      if (seen.has(cand.english)) continue;
+      seen.add(cand.english);
+      picks.push(cand.english);
+    }
   }
   // deterministic order: correct answer's slot varies by word length so it
   // isn't always first (no Date/random — compiler output must be stable)
@@ -409,7 +473,7 @@ export function compileSnack(pack, overrides = {}) {
     target: word.example?.ko
       ? guessTarget(word, word.example.ko, { advanced: pack.afterChapter >= 12 })
       : null,
-    options: guessOptions(word, words, overrides),
+    options: guessOptions(word, words, overrides, { pack: true }),
     note: '',
   }));
   return {
@@ -501,6 +565,51 @@ function suffixPairs(exCell) {
   return pairs;
 }
 
+// Orders 21-22 capped a rebuild tile at six words because A1-B1 examples are
+// short. The B2/C1 notes brought in by order 25 run seven to nine, which is why
+// seven of their grammar bites shipped with one question. The wider cap is a
+// LAST RESORT, applied only to a note still short of two questions.
+const TILE_MAX = 6;
+const WIDE_TILE_MAX = 8;
+
+// The Korean surfaces a form table names: 티끌 모아 태산, 있음, 자동화, 손을 떼다.
+// Idioms, derivational suffixes and written connectives put nothing extractable
+// in the note title, but every one of them spells its forms out in the table —
+// the `add` column names them and the `ex` column shows the result of an arrow.
+// Nothing is composed here: a surface is a substring of a cell the note wrote.
+const KO_PHRASE = /^[가-힣][가-힣 ]*$/u;
+export function tableSurfaces(rows) {
+  const out = [];
+  const push = (raw) => {
+    const clean = String(raw)
+      .replace(/\([^)]*\)/g, ' ')
+      .replace(/\s+/g, ' ')
+      .replace(/^[\s\-‐-―]+/, '')
+      .replace(/[\s.,·]+$/, '')
+      .trim();
+    if (clean.length >= 2 && KO_PHRASE.test(clean) && !out.includes(clean)) out.push(clean);
+  };
+  for (const row of rows || []) {
+    // a row that exists to show what NEVER to write is not a source of answers
+    if (`${row.add || ''} ${row.ex || ''}`.includes('✗')) continue;
+    for (const piece of String(row.add || '').split(/·|\s\/\s/u)) push(piece);
+    for (const piece of String(row.ex || '').split(/·|,|\s\/\s/u)) {
+      const arrow = piece.split('→');
+      push(arrow[arrow.length - 1]);
+    }
+  }
+  return out;
+}
+
+// Two surfaces that open with the same two syllables are one form twice
+// (손이 크신 / 손이 커요), so offering them against each other tests nothing.
+function sharesOpening(a, b) {
+  const limit = Math.min(a.length, b.length);
+  let i = 0;
+  while (i < limit && a[i] === b[i]) i += 1;
+  return i >= 2;
+}
+
 // Deterministic option placement, same trick guessOptions uses: the correct
 // answer's slot varies with content so it isn't always first, and identical
 // input always compiles to identical output.
@@ -517,6 +626,11 @@ const normalizeOrderText = (text) => String(text).replace(/\s+/g, ' ').trim();
 // sit elsewhere we pin the opening word in the prompt (the chapter-54 fix).
 const MOVABLE_CHUNK = /(에|에는|에서|에서는|마다|부터|까지|에게|한테|께|같이|하고|이랑|랑)$/;
 const bareToken = (token) => String(token).replace(/[.,!?…'"’”」』)]+$/u, '');
+
+// A comma-separated list has no single right order — "-대요, -래요, -냬요" is as
+// good in any sequence — so a sentence carrying one can never be a tile: the
+// exercise would mark a correct answer wrong.
+const listsItems = (tokens) => tokens.filter((t) => /,$/.test(String(t))).length >= 2;
 function orderStartHint(tokens) {
   const heads = tokens.slice(0, -1).map(bareToken);
   if (heads.length < 2) return '';
@@ -726,14 +840,14 @@ export function buildPatternBites(chapter, overrides = {}) {
     // sentence the chapter already serves as its own orderWords exercise.
     const tileSources = hunted ? huntPair.map((h) => h.ex) : examples.slice(0, 2);
     const usedTileCorrects = new Set();
-    for (const ex of tileSources) {
-      if (!room()) break;
-      if (ex.ko.includes('/')) continue; // syllable rows (가 / 고 / 구) aren't sentences
+    const addTile = (ex, maxTokens) => {
+      if (!ex?.ko) return;
+      if (ex.ko.includes('/')) return; // syllable rows (가 / 고 / 구) aren't sentences
       const tokens = ex.ko.trim().split(/\s+/);
-      if (tokens.length < 3 || tokens.length > 6) continue;
+      if (tokens.length < 3 || tokens.length > maxTokens || listsItems(tokens)) return;
       const correct = ex.ko.trim();
       const normalized = normalizeOrderText(correct);
-      if (chapterOrderCorrects.has(normalized) || usedTileCorrects.has(normalized)) continue;
+      if (chapterOrderCorrects.has(normalized) || usedTileCorrects.has(normalized)) return;
       usedTileCorrects.add(normalized);
       cards.push({
         kind: 'order',
@@ -744,6 +858,10 @@ export function buildPatternBites(chapter, overrides = {}) {
         correct,
         explanation: '',
       });
+    };
+    for (const ex of tileSources) {
+      if (!room()) break;
+      addTile(ex, TILE_MAX);
     }
 
     // ③ pitfall pick — the English-speaker trap the note already documents,
@@ -817,6 +935,66 @@ export function buildPatternBites(chapter, overrides = {}) {
           options: placeOptions(correct, distractors, seedOf(reading.syllables[0])),
           explanation: `${reading.syllables.join(' / ')} = ${reading.sounds.join(' / ')}`,
         });
+      }
+    }
+
+    /* ---- order 32: the note types chapters 66-72 introduced ----
+       Idioms (손이 크다), proverbs, derivational suffixes (-화, -적) and the
+       written connectives put no extractable morpheme in their titles, so
+       ①-⑤ left seven of their bites with the pitfall pick alone. ⑥ and ⑦ read
+       the OTHER evidence a note carries — its form table and its examples —
+       and both fire only while the bite is still short of two questions, so no
+       bite that orders 21-22 already served can pick up a card behind them. */
+
+    // ⑥ form-table surface cloze — a form the table names, blanked out of the
+    // example that actually uses it, with the table's other forms as the wrong
+    // answers. Every string on the card is text the note already wrote.
+    if (questionCount() < 2) {
+      const surfaces = tableSurfaces(rows);
+      const huntedExamples = new Set(huntPair.map((h) => h.ex));
+      for (const ex of examples) {
+        if (questionCount() >= 2 || !room()) break;
+        if (!ex.ko || ex.ko.includes('/') || huntedExamples.has(ex)) continue;
+        const correct = surfaces
+          .filter((surface) => ex.ko.includes(surface))
+          .sort((a, b) => b.length - a.length)[0];
+        if (!correct) continue;
+        const distractors = [];
+        const rivals = surfaces
+          .filter((cand) => cand !== correct
+            && !ex.ko.includes(cand)
+            && !clash(correct, cand)
+            && !sharesOpening(cand, correct)
+            // a spaced phrase and a bare ending are not alternatives, and a
+            // wrong answer twice the length of the right one gives itself away
+            && cand.includes(' ') === correct.includes(' ')
+            && cand.length <= correct.length * 2
+            && correct.length <= cand.length * 2)
+          .sort((a, b) => Math.abs(a.length - correct.length) - Math.abs(b.length - correct.length));
+        for (const cand of rivals) {
+          if (distractors.length >= 2) break;
+          if (distractors.some((d) => clash(d, cand) || sharesOpening(d, cand))) continue;
+          distractors.push(cand);
+        }
+        if (!distractors.length) continue;
+        const at = ex.ko.indexOf(correct);
+        cards.push({
+          kind: 'drill',
+          prompt: ex.en ? ex.en : '빈칸에 들어갈 표현은? · Which one completes it?',
+          sentence: ex.ko.slice(0, at) + '___' + ex.ko.slice(at + correct.length),
+          options: placeOptions(correct, distractors, seedOf(ex.ko)),
+          explanation: ex.note || '',
+        });
+      }
+    }
+
+    // ⑦ wide rebuild — the floor. A C1 example runs seven to nine words, which
+    // the six-word tile cap refused; rebuilding one is still a reordering of a
+    // sentence the learner has just read.
+    if (questionCount() < 2) {
+      for (const ex of examples) {
+        if (questionCount() >= 2 || !room()) break;
+        addTile(ex, WIDE_TILE_MAX);
       }
     }
 
@@ -923,19 +1101,28 @@ export function buildReadingBite(chapter, overrides = {}) {
   // — rebuild one passage line as order tiles instead, so no reading bite is
   // ever a single passive card. Speaker prefixes ("지은:") are stripped;
   // mechanical conjugation stays forbidden.
+  // Order 32: a B2/C1 passage can be written entirely in seven-to-nine word
+  // sentences (chapter 67), which left its reading bite a single passive card.
+  // The six-word pass runs first and unchanged; the wider one is only reached
+  // when it found nothing, so no existing reading bite swaps its line.
   if (made === 0) {
-    for (const sentence of sentences) {
-      const line = sentence.replace(/^[가-힣A-Za-z]+\s*:\s*/u, '').trim();
-      const tokens = line.split(/\s+/);
-      if (tokens.length < 3 || tokens.length > 6) continue;
-      cards.push({
-        kind: 'order',
-        prompt: '지문 문장을 다시 조립하세요 · Rebuild a line from the passage' + orderStartHint(tokens),
-        tokens,
-        correct: line,
-        explanation: '',
-      });
-      break;
+    for (const maxTokens of [6, WIDE_TILE_MAX]) {
+      let built = false;
+      for (const sentence of sentences) {
+        const line = sentence.replace(/^[가-힣A-Za-z]+\s*:\s*/u, '').trim();
+        const tokens = line.split(/\s+/);
+        if (tokens.length < 3 || tokens.length > maxTokens || listsItems(tokens)) continue;
+        cards.push({
+          kind: 'order',
+          prompt: '지문 문장을 다시 조립하세요 · Rebuild a line from the passage' + orderStartHint(tokens),
+          tokens,
+          correct: line,
+          explanation: '',
+        });
+        built = true;
+        break;
+      }
+      if (built) break;
     }
   }
 
