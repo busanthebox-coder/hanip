@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>한입 Shelf UX 재설계 시안 v2 — 레벨을 컨트롤로, 현재 챕터를 주인공으로</title>
+<style>
+/* ═══════════════════════════════════════════════════════════════════════════
+   토큰 — src/styles/tokens.css 값 그대로. 색 값은 한 글자도 바꾸지 않았다.
+   렌더 폴백: 무조건부 :root 를 반드시 포함해야 래퍼 안에서 변수가 죽지 않는다.
+   ═══════════════════════════════════════════════════════════════════════════ */
+:root, :root[data-theme="light"], [data-theme="light"] {
+  --bg:#FAF6EE; --ink:#26221C; --ink-2:#5E5346; --ink-3:#8C7F6B;
+  --card:#FFFFFF; --wash:#F2E9DA; --line:#E5DCC8; --line-2:#D6C9AE;
+  --accent:#E4572E; --accent-deep:#C13D1B; --accent-soft:#FBE7DD;
+  --gold:#C9A227; --gold-soft:rgba(201,162,39,.16);
+  --good:#4E8D6E; --good-deep:#2E6B4E; --good-soft:#E2EFE6; --bad:#C4452E;
+  --on-accent:#FFF6EF; --chat-canvas:#EFE6D4; --chat-self:#F4DE72; --chat-self-ink:#26221C;
+  --progress-track:#EFE4CD;
+  --study-grid:rgba(140,127,107,.045);
+  --chat-shadow:0 2px 8px -4px rgba(38,34,28,.2);
+  --shadow-1:0 1px 2px rgba(38,34,28,.05), 0 10px 26px -14px rgba(38,34,28,.16);
+  --shadow-2:0 3px 8px rgba(38,34,28,.06), 0 20px 44px -20px rgba(38,34,28,.26);
+  --r-card:20px; --r-chip:16px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  /* 문서(시안 페이지) 전용 — 앱 토큰 아님 */
+  --page:#EDECE8; --page-ink:#2A2724; --page-ink-2:#6E6A63; --page-line:#DCDAD4;
+  --page-soft:#F6F5F2; --bezel:#FFFFFF; --bezel-edge:rgba(38,34,28,.10);
+  color-scheme: light;
+}
+:root[data-theme="dark"], [data-theme="dark"] {
+  --bg:#17150F; --ink:#EDE6D6; --ink-2:#B5A98F; --ink-3:#8C8168;
+  --card:#201D15; --wash:#2A2618; --line:#383325; --line-2:#4A4330;
+  --accent:#F0603A; --accent-deep:#FF7A55; --accent-soft:#3A211A;
+  --gold:#D8B43F; --gold-soft:rgba(216,180,63,.2);
+  --good:#65A984; --good-deep:#85C8A3; --good-soft:#1C3026; --bad:#F06B51;
+  --on-accent:#FFF6EF; --chat-canvas:#2A2618; --chat-self:#5B4A16; --chat-self-ink:#F4EBC8;
+  --progress-track:#332E20;
+  --study-grid:rgba(237,230,214,.035);
+  --chat-shadow:0 2px 10px -3px rgba(0,0,0,.55);
+  --shadow-1:0 1px 3px rgba(0,0,0,.28), 0 12px 30px -14px rgba(0,0,0,.58);
+  --shadow-2:0 4px 10px rgba(0,0,0,.3), 0 24px 52px -20px rgba(0,0,0,.72);
+  --r-card:20px; --r-chip:16px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --page:#121110; --page-ink:#E7E3DC; --page-ink-2:#8E8880; --page-line:#2A2825;
+  --page-soft:#1B1A18; --bezel:#26241F; --bezel-edge:rgba(0,0,0,.5);
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{background:var(--page);color:var(--page-ink);
+  font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+  line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;word-break:keep-all;}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit;padding:0;text-align:inherit;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.sprite{position:absolute;width:0;height:0;overflow:hidden;}
+
+/* ── 문서 셸 ──────────────────────────────────────────────────────────── */
+.doc{max-width:1180px;margin:0 auto;padding:44px 26px 90px;}
+.doc-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;}
+.doc-head h1{margin:0;font-size:25px;font-weight:800;letter-spacing:-.025em;line-height:1.3;}
+.doc-head p{margin:9px 0 0;max-width:76ch;font-size:13.5px;color:var(--page-ink-2);}
+.doc-head p b{color:var(--page-ink);font-weight:800;}
+.toggle{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 15px;border-radius:999px;
+  border:1px solid var(--page-line);color:var(--page-ink-2);font-size:13px;font-weight:700;white-space:nowrap;}
+.toggle:hover{color:var(--page-ink);}
+.toggle .knob{width:9px;height:9px;border-radius:999px;background:var(--page-ink-2);}
+
+.block{margin-top:30px;padding:20px 22px;border-radius:14px;background:var(--page-soft);
+  break-inside:avoid;page-break-inside:avoid;}
+.block > h2{margin:0 0 4px;font-size:16px;font-weight:800;letter-spacing:-.015em;}
+.block > p{margin:8px 0 0;max-width:100ch;font-size:13px;line-height:1.72;color:var(--page-ink-2);}
+.block > p b{color:var(--page-ink);font-weight:800;}
+.block h3{margin:22px 0 6px;font-size:13.5px;font-weight:800;}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;
+  padding:1px 5px;border-radius:5px;background:rgba(0,0,0,.05);color:var(--page-ink);}
+[data-theme="dark"] code{background:rgba(255,255,255,.07);}
+
+table.rules{width:100%;margin-top:14px;border-collapse:collapse;font-size:12.5px;}
+table.rules th,table.rules td{padding:9px 12px;text-align:left;vertical-align:top;
+  border-bottom:1px solid var(--page-line);line-height:1.62;}
+table.rules th{font-weight:800;color:var(--page-ink);font-size:12px;background:rgba(0,0,0,.02);}
+[data-theme="dark"] table.rules th{background:rgba(255,255,255,.04);}
+table.rules td:first-child{white-space:nowrap;font-weight:800;color:var(--page-ink);}
+table.rules td{color:var(--page-ink-2);}
+table.rules td b{color:var(--page-ink);}
+table.rules td.n{font-variant-numeric:tabular-nums;white-space:nowrap;}
+
+ul.list{margin:10px 0 0;padding-left:18px;font-size:13px;line-height:1.78;color:var(--page-ink-2);}
+ul.list li{margin-bottom:4px;}
+ul.list b{color:var(--page-ink);font-weight:800;}
+
+.verdict{margin-top:14px;padding:14px 16px;border-radius:11px;border:1px solid var(--page-line);
+  background:rgba(0,0,0,.02);}
+[data-theme="dark"] .verdict{background:rgba(255,255,255,.03);}
+.verdict b.q{display:block;font-size:13px;font-weight:800;color:var(--page-ink);}
+.verdict p{margin:6px 0 0;font-size:12.5px;line-height:1.72;color:var(--page-ink-2);}
+.verdict p b{color:var(--page-ink);font-weight:800;}
+.verdict + .verdict{margin-top:10px;}
+
+/* ── 프레임: 1단 세로 스택. 2단 그리드 금지. ─────────────────────────── */
+.frames{margin-top:40px;display:block;}
+figure{margin:0 0 46px;display:flex;gap:34px;align-items:flex-start;flex-wrap:wrap;
+  break-inside:avoid;page-break-inside:avoid;}
+figure .cap{flex:1;min-width:300px;max-width:640px;}
+figcaption{display:block;}
+figcaption > b{display:block;font-size:15px;font-weight:800;color:var(--page-ink);letter-spacing:-.015em;}
+figcaption .state{margin-top:3px;font-size:11.5px;font-weight:700;color:var(--page-ink-2);opacity:.85;}
+figcaption p{margin:9px 0 0;font-size:12.5px;line-height:1.7;color:var(--page-ink-2);}
+figcaption p b{font-weight:800;color:var(--page-ink);}
+figcaption .fixrow{margin-top:10px;display:flex;flex-wrap:wrap;gap:5px;}
+figcaption .fix{padding:2px 9px;border-radius:999px;border:1px solid var(--page-line);
+  font-size:11px;font-weight:750;color:var(--page-ink-2);white-space:nowrap;}
+figcaption .fix.bad{border-color:var(--bad);color:var(--bad);}
+figcaption .num{margin-top:10px;padding:9px 12px;border-radius:9px;background:rgba(0,0,0,.035);
+  font-size:11.5px;line-height:1.66;color:var(--page-ink-2);}
+[data-theme="dark"] figcaption .num{background:rgba(255,255,255,.05);}
+figcaption .num b{color:var(--page-ink);font-weight:800;}
+figcaption .tradeoff{margin-top:10px;padding:9px 12px;border-radius:9px;
+  border:1px solid var(--page-line);border-left:3px solid var(--page-ink-2);
+  font-size:11.5px;line-height:1.66;color:var(--page-ink-2);}
+figcaption .tradeoff b{color:var(--page-ink);font-weight:800;}
+
+/* ── 폰 — 화면 390×763. 아이폰 13/14 논리 폭 390, 높이는 상태바·홈
+      인디케이터를 뺀 실사용 뷰포트. 실측은 전부 이 치수 기준이다. ─────── */
+.phone{flex:none;width:410px;height:783px;border-radius:44px;padding:10px;background:var(--bezel);
+  box-shadow:0 0 0 1px var(--bezel-edge), 0 30px 60px -30px rgba(0,0,0,.35);}
+.screen{width:390px;height:763px;border-radius:35px;overflow:hidden;background:var(--bg);color:var(--ink);
+  display:flex;flex-direction:column;position:relative;line-height:1.6;
+  font-family:'Pretendard Variable',Pretendard,'Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;}
+
+/* ═══ 재질 (STYLE §10-1) ═══════════════════════════════════════════════ */
+.plain{background-color:var(--bg);
+  background-image:radial-gradient(var(--study-grid) .6px, transparent .7px);background-size:3px 3px;}
+.tooth{background-color:var(--card);
+  background-image:radial-gradient(var(--study-grid) .6px, transparent .7px);background-size:3px 3px;}
+
+/* ═══ 탭바 ════════════════════════════════════════════════════════════ */
+.tabbar{flex:none;display:flex;background:var(--card);border-top:1px solid var(--line);padding:7px 0 10px;}
+.tabbar button{flex:1;min-width:0;min-height:44px;display:grid;justify-items:center;gap:2px;padding:2px 0;
+  color:var(--ink-3);}
+.tabbar button.on{color:var(--accent-deep);}
+.ti{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
+.ti--dense{stroke-width:1.55;}
+.tabbar .t-label{font-size:10.5px;font-weight:850;line-height:1.25;}
+
+/* ═══ 화면 공통 ═══════════════════════════════════════════════════════ */
+.view{flex:1;min-height:0;overflow:hidden;display:flex;flex-direction:column;}
+.pad{padding:0 22px;}
+.cut{position:absolute;left:0;right:0;bottom:62px;height:52px;pointer-events:none;
+  background:linear-gradient(transparent, var(--bg));}
+.mark{font-size:16px;font-weight:900;letter-spacing:-.03em;color:var(--ink);line-height:1.3;}
+.count{font-size:11.5px;font-weight:700;color:var(--ink-3);font-variant-numeric:tabular-nums;white-space:nowrap;}
+.count b{font-weight:850;color:var(--ink);}
+
+/* ═══ 유지 자산 — 22px 상태 셀 (StatusCell.svelte 그대로) ═══════════════ */
+.st{flex:none;width:22px;height:19px;display:grid;place-items:center;}
+.ring{width:20px;height:20px;display:block;}
+.ring .trk{fill:none;stroke:var(--line-2);stroke-width:1.7;}
+.ring .arc{fill:none;stroke:var(--gold);stroke-width:2.6;stroke-linecap:round;}
+.seal22{width:22px;height:22px;display:grid;place-items:center;border:1.2px solid var(--gold);
+  border-radius:5px;color:var(--gold);font-size:7.5px;font-weight:900;line-height:1;transform:rotate(-8deg);}
+
+/* ═══ 유지 자산 — 거터 [식별자 24px][상태 22px] (STYLE §10-2) ═══════════ */
+.lvl{width:100%;display:flex;align-items:flex-start;gap:8px;padding:13px 0 12px;
+  border-top:1px solid var(--line);text-align:left;background:var(--bg);}
+.lvl .id{flex:none;width:24px;font-size:12.5px;font-weight:850;color:var(--ink-3);line-height:19px;
+  letter-spacing:-.01em;}
+.lvl .col{flex:1;min-width:0;}
+.lvl .col b{display:block;font-size:15.5px;font-weight:850;letter-spacing:-.015em;line-height:19px;}
+.lvl .col span{display:block;margin-top:2px;font-size:11.5px;font-weight:650;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;}
+.lvl .col em{display:block;margin-top:3px;font-style:normal;font-size:11.5px;font-weight:700;color:var(--ink-2);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.lvl .chev{flex:none;color:var(--ink-3);font-size:13px;line-height:19px;}
+.lvl.open .chev{transform:rotate(180deg);}
+.lvl.here .id, .lvl.here .col b{color:var(--ink);}
+.lvl.pinned{position:relative;z-index:2;}
+
+.blk{border-top:1px solid var(--line);padding-bottom:4px;}
+.chap{position:relative;width:100%;display:flex;align-items:flex-start;gap:8px;padding:12px 0;text-align:left;}
+.chap .n{flex:none;width:24px;text-align:right;font-size:12.5px;font-weight:750;color:var(--ink-3);
+  line-height:19px;font-variant-numeric:tabular-nums;}
+.chap .col{flex:1;min-width:0;}
+.chap .col b{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  font-size:14.5px;font-weight:780;letter-spacing:-.012em;line-height:19px;color:var(--ink-2);}
+.chap .col .meta{display:block;margin-top:2px;font-size:11.5px;font-weight:650;line-height:1.45;color:var(--ink-3);}
+.chap.done .n{color:var(--gold);}
+.chap.done .col b{color:var(--ink-3);font-weight:700;}
+.chap.here .n, .chap.here .col b{color:var(--ink);font-weight:850;}
+.chap.here::before{content:"";position:absolute;left:-22px;top:8px;bottom:8px;width:2px;background:var(--ink);}
+
+.snk{width:100%;min-height:36px;display:flex;align-items:center;gap:9px;padding:8px 0 8px 54px;text-align:left;}
+.snk .lbl{flex:none;font-size:11px;font-weight:650;color:var(--ink-3);font-style:italic;}
+.snk .t{flex:1;min-width:0;font-size:12.5px;font-weight:650;color:var(--ink-2);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   프레임 ① — 현재 라이브(지시 31 반영본) 재현
+   Shelf.svelte + ShelfLevelGroup.svelte 값 그대로
+   ═════════════════════════════════════════════════════════════════════ */
+.cur{padding:20px 22px 40px;}
+.cur .top{display:flex;align-items:baseline;justify-content:space-between;gap:10px;}
+.rail{margin-top:11px;display:grid;column-gap:1.8px;align-items:end;height:15px;}
+.rail i{height:9px;border-radius:1.3px;background:var(--progress-track);}
+.rail i.done{background:var(--gold);}
+.rail i.now{height:15px;border-radius:1.5px;background:var(--ink);}
+.rail-ticks{margin:4px 0 12px;display:grid;column-gap:1.8px;font-size:9.5px;font-weight:750;
+  color:var(--ink-3);letter-spacing:.02em;line-height:1.2;}
+.rail-ticks .lv-id{min-width:0;overflow:hidden;}
+.searchbox{width:100%;min-height:44px;padding:11px 15px;font-size:13.5px;font-weight:600;
+  color:var(--ink-3);background:var(--wash);border:1px solid var(--line);border-radius:14px;display:block;}
+.mininav{margin-top:12px;display:grid;grid-template-columns:repeat(2,1fr);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.mininav div{min-height:44px;display:grid;align-content:center;gap:1px;padding:8px 0;}
+.mininav b{font-size:12.5px;font-weight:780;letter-spacing:-.01em;}
+.mininav span{font-size:11px;font-weight:650;color:var(--ink-3);font-variant-numeric:tabular-nums;}
+.cur .groups{margin-top:10px;}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   새 부품 1 — 상단 한 줄: 이름 + 위치 + 검색 아이콘
+   검색 필드(44px)와 미니내비(58px)가 헤더에서 빠진 자리다
+   ═════════════════════════════════════════════════════════════════════ */
+.top1{min-height:44px;display:flex;align-items:center;gap:10px;}
+.top1 .grow{flex:1;min-width:0;display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;}
+.iconbtn{flex:none;width:44px;height:44px;margin-right:-11px;display:grid;place-items:center;color:var(--ink-3);}
+.iconbtn svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;
+  stroke-linecap:round;stroke-linejoin:round;}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   새 부품 2 — 레벨 스트립 (지시의 「레벨 칩」)
+   ⚠ pill 이 아니다. STYLE §4 킬리스트 4번(파스텔 칩)을 피해 §7 의 밑줄 탭 어휘로
+   그렸다. 밑줄은 선택 표시가 아니라 그 레벨의 진행(gold/track)이고,
+   「지금 여기」는 앱이 이미 쓰는 --ink / --ink-3 대비로만 말한다.
+   ═════════════════════════════════════════════════════════════════════ */
+.lvstrip{margin-top:6px;display:grid;grid-template-columns:repeat(5,1fr);gap:6px;}
+.lvcell{min-height:44px;display:grid;align-content:center;gap:5px;}
+.lvcell .lab{display:flex;align-items:baseline;gap:4px;}
+.lvcell .lab b{font-size:12.5px;font-weight:850;letter-spacing:-.01em;color:var(--ink-3);line-height:1.25;}
+.lvcell .lab span{font-size:10.5px;font-weight:700;color:var(--ink-3);font-variant-numeric:tabular-nums;line-height:1.25;}
+.lvcell .bar{height:3px;border-radius:999px;background:var(--progress-track);overflow:hidden;}
+.lvcell .bar i{display:block;height:100%;background:var(--gold);border-radius:999px;}
+.lvcell.here .lab b, .lvcell.here .lab span{color:var(--ink);}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   A안 — 「이어서」 블록. 카드가 아니다(면·테두리 없음).
+   지배는 크기가 아니라 화면에 하나뿐인 --accent CTA 로 만든다(STYLE §1·§3).
+   ═════════════════════════════════════════════════════════════════════ */
+.cont{margin-top:14px;padding-bottom:16px;border-bottom:1px solid var(--line);}
+.cont .kick{font-size:11.5px;font-weight:700;color:var(--ink-3);}
+.cont .row{margin-top:5px;display:flex;align-items:flex-start;gap:8px;}
+.cont .row .n{flex:none;width:24px;text-align:right;font-size:12.5px;font-weight:850;color:var(--ink);
+  line-height:19px;font-variant-numeric:tabular-nums;}
+.cont .row .col{flex:1;min-width:0;}
+.cont .row .col b{display:block;font-size:15.5px;font-weight:850;letter-spacing:-.015em;line-height:20px;color:var(--ink);}
+.cont .row .col span{display:block;margin-top:3px;font-size:11.5px;font-weight:650;line-height:1.5;color:var(--ink-3);}
+.cta{width:100%;min-height:52px;margin-top:13px;display:grid;justify-items:center;align-content:center;gap:1px;
+  padding:8px 16px;border-radius:var(--r-chip);background:var(--accent);color:var(--on-accent);
+  box-shadow:0 4px 0 var(--accent-deep);}
+.cta b{font-size:17px;font-weight:850;letter-spacing:-.015em;line-height:1.25;}
+.cta i{font-style:normal;font-size:10.5px;font-weight:700;opacity:.62;line-height:1.25;}
+.cta.sm{min-height:46px;margin-top:12px;}
+.cta.sm b{font-size:15.5px;}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   B안 — 진행 중 챕터 한 행만 실제 카드.
+   좌우로 10px 내밀고 안쪽 패딩 10px 을 줘서 카드 안의 거터가 목록의 거터와
+   같은 x 에 선다 — 번호 열의 수직 스캔이 카드에서 끊기지 않는다.
+   ═════════════════════════════════════════════════════════════════════ */
+.cardwrap{border-top:1px solid var(--line);padding:10px 0 6px;}
+.cardrow{margin:0 -10px;padding:14px 10px 13px;border:1px solid var(--line-2);border-radius:var(--r-card);
+  box-shadow:var(--shadow-1);}
+.cardrow .row{display:flex;align-items:flex-start;gap:8px;}
+.cardrow .row .n{flex:none;width:24px;text-align:right;font-size:12.5px;font-weight:850;color:var(--ink);
+  line-height:19px;font-variant-numeric:tabular-nums;}
+.cardrow .row .col{flex:1;min-width:0;}
+.cardrow .row .col .kick{display:block;font-size:11px;font-weight:700;color:var(--ink-3);line-height:1.3;}
+.cardrow .row .col b{display:block;margin-top:2px;font-size:15.5px;font-weight:850;letter-spacing:-.015em;
+  line-height:20px;color:var(--ink);}
+.cardrow .goal{margin:7px 0 0 54px;font-size:12.5px;font-weight:650;line-height:1.5;color:var(--ink-2);}
+.cardrow .ledger{margin:6px 0 0 54px;font-size:11.5px;font-weight:700;color:var(--ink-3);
+  font-variant-numeric:tabular-nums;}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   C안 — 세그먼트. 이것도 pill 이 아니라 STYLE §7 의 밑줄 탭이다.
+   ═════════════════════════════════════════════════════════════════════ */
+.seg{margin-top:8px;display:grid;grid-template-columns:repeat(5,1fr);border-bottom:1px solid var(--line);}
+.seg button{min-height:46px;display:grid;justify-items:center;align-content:center;gap:1px;
+  padding-bottom:7px;border-bottom:2px solid transparent;margin-bottom:-1px;}
+.seg b{font-size:13.5px;font-weight:800;color:var(--ink-3);letter-spacing:-.01em;line-height:1.25;}
+.seg span{font-size:10.5px;font-weight:700;color:var(--ink-3);font-variant-numeric:tabular-nums;line-height:1.25;}
+.seg button.on{border-bottom-color:var(--ink);}
+.seg button.on b{color:var(--ink);font-weight:850;}
+.seg button.on span{color:var(--ink-2);}
+.leveline{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:12px 0 10px;}
+.leveline b{font-size:15.5px;font-weight:850;letter-spacing:-.015em;}
+.leveline span{font-size:11.5px;font-weight:650;color:var(--ink-3);font-variant-numeric:tabular-nums;white-space:nowrap;}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   목록 하단 — 옆문 3개. 챕터가 아니므로 거터를 쓰지 않고 x=0 에서 시작한다.
+   서로는 형제라 행마다 선이 있고, 「More」 는 부모라 선이 없다(STYLE §10-2).
+   ═════════════════════════════════════════════════════════════════════ */
+.more{margin-top:26px;}
+.more .h{font-size:11.5px;font-weight:700;color:var(--ink-3);padding-bottom:4px;}
+.mrow{width:100%;min-height:48px;display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:12px 0;border-top:1px solid var(--line);text-align:left;}
+.mrow:last-child{border-bottom:1px solid var(--line);}
+.mrow b{font-size:14.5px;font-weight:800;letter-spacing:-.012em;}
+.mrow span{font-size:11.5px;font-weight:650;color:var(--ink-3);font-variant-numeric:tabular-nums;white-space:nowrap;}
+
+/* ── 인쇄 / headless Chrome PDF ────────────────────────────────────────
+   ⚠ print-color-adjust:exact 가 없으면 크롬 PDF가 배경색·배경이미지를 버린다.
+   그러면 종이 결(3px 도트)·--wash·--accent CTA·금색 진행바가 전부 사라져
+   시안이 아니라 와이어프레임이 된다. 프레임은 1단 세로 스택이고
+   figure 는 break-inside:avoid 이므로 한 프레임이 페이지에 걸쳐 잘리지 않는다.
+   폰은 zoom .8 로 줄여 「폰 + 캡션」 한 벌이 Letter 세로 한 장에 들어가게 한다. */
+@media print {
+  *, *::before, *::after { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .doc { max-width: none; padding: 8px 12px 0; }
+  .toggle { display: none; }
+  .phone { zoom: .8; box-shadow: 0 0 0 1px var(--bezel-edge); }
+  figure { gap: 22px; margin-bottom: 24px; }
+  figure .cap { min-width: 0; }
+  .block, figure, .verdict, table.rules { break-inside: avoid; page-break-inside: avoid; }
+}
+
+/* ── 스티키 교대 설명용 미니 스트립 ─────────────────────────────────── */
+.handoff{margin-top:16px;display:flex;gap:14px;flex-wrap:wrap;}
+.ho{width:186px;}
+.ho .win{height:150px;border:1px solid var(--page-line);border-radius:10px;overflow:hidden;
+  background:var(--bg);color:var(--ink);padding:0 12px;position:relative;}
+.ho .win .lvl{padding:8px 0 7px;}
+.ho .win .lvl .col b{font-size:12.5px;line-height:15px;}
+.ho .win .lvl .col span{font-size:9.5px;}
+.ho .win .lvl .id{font-size:10.5px;line-height:15px;width:20px;}
+.ho .win .st{width:18px;height:15px;}
+.ho .win .ring{width:16px;height:16px;}
+.ho .win .seal22{width:17px;height:17px;font-size:6px;}
+.ho .win .chap{padding:8px 0;}
+.ho .win .chap .n{font-size:10.5px;line-height:15px;width:20px;}
+.ho .win .chap .col b{font-size:11.5px;line-height:15px;-webkit-line-clamp:1;}
+.ho .cp{margin-top:7px;font-size:11px;line-height:1.55;color:var(--page-ink-2);}
+.ho .cp b{display:block;color:var(--page-ink);font-size:11.5px;font-weight:800;}
+</style>
+</head>
+<body>
+
+<!-- ═══ SVG 스프라이트 — 탭 아이콘 5종은 TabIcon.svelte / Bowl.svelte 패스 그대로 ═══ -->
+<svg class="sprite" aria-hidden="true" focusable="false"><defs>
+  <symbol id="i-today" viewBox="0 0 24 24">
+    <path d="M2.2 7.4H21.8"/>
+    <path d="M3.2 7.4C3.4 12.5 6.2 18.7 12 18.7C17.8 18.7 20.6 12.5 20.8 7.4"/>
+    <path d="M8.6 17.6V19.9Q8.6 21.2 10 21.2H14Q15.4 21.2 15.4 19.9V17.6"/>
+  </symbol>
+  <symbol id="i-shelf" viewBox="0 0 24 24">
+    <path d="M3 21.2H21"/><path d="M5.4 21.2V9H8.6V21.2"/><path d="M10.2 21.2V6.8H13.4V21.2"/>
+    <path d="M10.2 12H13.4"/><path d="M15.2 21.2L16.7 9.5L19.9 10.1L18.8 21.2"/>
+  </symbol>
+  <symbol id="i-hangul" viewBox="0 0 24 24">
+    <path d="M4.2 5.4H10.9"/><path d="M10.9 5.4L8.3 18.8"/><path d="M15.4 4.4V19.8"/><path d="M15.4 12.1H19.6"/>
+  </symbol>
+  <symbol id="i-hanja" viewBox="0 0 24 24">
+    <path d="M12 3.1V5.4"/><path d="M5.2 7.5H18.8"/>
+    <path d="M15.4 9.6C13 14.6 9.2 18.4 5.4 20.7"/><path d="M8.8 9.6C11 14.2 14.8 18 18.8 20.5"/>
+  </symbol>
+  <symbol id="i-words" viewBox="0 0 24 24">
+    <path d="M12 7.4V19.8"/>
+    <path d="M12 7.4C10 5.7 7 5.1 3.4 5.3V17.8C7 17.6 10 18.2 12 19.8"/>
+    <path d="M12 7.4C14 5.7 17 5.1 20.6 5.3V17.8C17 17.6 14 18.2 12 19.8"/>
+    <path d="M14.9 10.4H18.2"/><path d="M14.9 13.2H17.1"/>
+  </symbol>
+</defs></svg>
+
+<main class="doc">
+  <div class="doc-head">
+    <div>
+      <h1>한입 Shelf UX 재설계 시안 v2 — 레벨을 컨트롤로, 현재 챕터를 주인공으로</h1>
+      <p>지시 31이 고친 것(괘선 제거 · 거터 · 22px 상태 셀 · 간식 접힘)은 <b>전부 유지 자산</b>이고 여기서 되돌리지 않는다.
+         이번에 답할 것은 사용자의 판정 한 문장이다 — <b>「A1~C1이 항상 떠 있고, 뭐가 눈에 띄지도 않는다.」</b>
+         명제는 둘이다: <b>레벨을 장식이 아니라 조작 가능한 컨트롤로 만든다.</b>
+         <b>현재 챕터를 화면의 주인공으로 만든다.</b>
+         토큰은 <code>src/styles/tokens.css</code> 값 그대로다.</p>
+    </div>
+    <button class="toggle" id="themeBtn"><span class="knob"></span><span id="themeLbl">다크로 보기</span></button>
+  </div>
+
+  <!-- ═══ 진단 ═══════════════════════════════════════════════════════════ -->
+  <section class="block">
+    <h2>진단 3건 — 실측</h2>
+    <p>실측 기준은 <b>390×763 논리 뷰포트</b>(아이폰 13/14 폭 390, 상태바·홈 인디케이터 제외)이고,
+       탭바 62px을 뺀 <b>목록 가시 영역 701px</b>이다. 학습자 상태는 다섯 프레임 전부 동일하다 —
+       <b>1~13과 완료, 14과 진행 중(9한입 중 4개)</b>. 비교가 성립하려면 상태가 같아야 한다.</p>
+    <table class="rules">
+      <thead><tr><th style="width:150px">진단</th><th style="width:130px">현재 비용</th><th>왜 문제인가</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>1 · 하는 일 없는 레일</td>
+          <td class="n">레일 15px<br>+ 라벨 11.4px<br>+ 여백 27px<br><b>= 53.4px</b></td>
+          <td>390px 폭에서 눈금 하나가 <b>2.8px</b>다(실측). 72개 중 실제로 읽히는 건 왼쪽 끝 금색 덩어리 하나와
+              잉크 눈금 하나뿐이고, 나머지 59개는 회색 띠다. A1~C1 라벨 5개는 <b>탭도 안 되고 필터도 아니다</b> —
+              레일의 길이를 구획하는 자막일 뿐이다. 「내가 어디쯤인가」에 답하는 데 화면 폭 전체 × 53px을 쓰면서
+              정작 <b>레벨별 진행률(2/23 같은 수)은 한 개도 말하지 못한다</b>.</td>
+        </tr>
+        <tr>
+          <td>2 · 초점 부재</td>
+          <td class="n">진행 중 표시<br>= 2px 잉크선<br>+ 회색 1줄</td>
+          <td>72행이 전부 같은 활자·같은 높이·같은 거터다. 진행 중인 한 행이 얻는 것은
+              화면 밖으로 나가는 <b>2px 세로선</b>과 11.5px <code>--ink-3</code> 한 줄뿐인데,
+              둘 다 <b>스캔 속도에서 지는 신호</b>다. 화면에 CTA가 없으므로
+              「여기서 이어서 하면 된다」를 말하는 요소가 <b>하나도 없다</b>.</td>
+        </tr>
+        <tr>
+          <td>3 · 헤더 5겹</td>
+          <td class="n">상하 패딩 30<br>제목 20.8<br>레일 53.4<br>검색 45.6<br>미니내비 68.6<br><b>크롬 218.4px</b><br>+ 레벨헤더 ×2<br><b>= 349.2px</b></td>
+          <td>목록이 시작되기까지 <b>218.4px</b>, 거기서 레벨 헤더 두 개(65.4×2)를 더 지나야
+              <b>첫 챕터가 y=349.2px</b>에 나온다 — 목록 가시 영역 701px의 <b>49.8%</b>다.
+              화면 절반을 지나야 첫 과가 보인다. 그중 <b>레일 53.4 + 검색 45.6 + 미니내비 68.6 = 167.6px</b>은
+              매 방문마다 부과되지만 72과를 <b>순서대로 걷는</b> 학습자에게는 거의 쓰이지 않는다.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <div class="frames" id="frames"></div>
+
+  <!-- ═══ 스티키 교대 ═════════════════════════════════════════════════ -->
+  <section class="block">
+    <h2>스티키 헤더 교대 — 프레임 ⑤가 잡은 순간의 앞뒤</h2>
+    <p>레벨 헤더는 지금도 <code>position:sticky; top:0</code>이다(<code>ShelfLevelGroup.svelte</code>).
+       바뀌는 것은 <b>무엇이 함께 붙느냐</b>다. 결론: <b>레벨 스트립은 붙지 않는다.</b>
+       스트립은 도착했을 때 쓰는 점프 컨트롤이고, 붙이는 순간 진단 1이 그대로 되살아난다
+       — 「항상 떠 있는 A1~C1」이 다시 생긴다. 붙는 것은 <b>레벨 헤더 하나(실측 65.4px · 가시 영역의 9.3%)</b>뿐이다.</p>
+    <div class="handoff" id="handoff"></div>
+  </section>
+
+  <!-- ═══ 판단 ═════════════════════════════════════════════════════════ -->
+  <section class="block">
+    <h2>판단 요청 3건에 대한 답</h2>
+
+    <div class="verdict">
+      <b class="q">1. 검색을 상시 노출할 가치가 있는가?</b>
+      <p><b>없다. 아이콘으로 접는다.</b> 근거는 빈도가 아니라 <b>구조</b>다.
+         Shelf는 72과를 <b>순서대로 걷는</b> 코스의 목차이지 임의 접근하는 사전이 아니다.
+         번호로 점프해야 하는 경우는 실제로 셋뿐이다 — ① 아는 과를 복습, ② 문법을 찾아보기, ③ 남에게 들은 과 확인.
+         ②는 이미 Grammar 컬렉션(271패턴)이 전담하고, ①·③은 <b>레벨 스트립 한 탭 + 스크롤</b>로 닿는다.
+         반대로 검색은 <b>매 방문 44px + 여백 12px = 56px</b>을 걷어간다.
+         <b>56px은 챕터 한 행(48~67px)이다</b> — 「가끔 쓰는 필드」와 「항상 보이는 챕터 한 과」를 맞바꾸는 거래다.
+         아이콘은 제목 줄(44px 탭 타깃)에 얹히므로 <b>세로 비용이 0</b>이고, 탭하면 그 자리에서 필드로 펼쳐진다.</p>
+      <p><b>단, 검색을 없애지는 않는다.</b> 지금 <code>filterShelfGroups</code>는 번호·제목·목표·한입 제목·첫 단어까지
+         뒤지는 꽤 좋은 검색이고, 이건 자산이다. 접는 것과 죽이는 것은 다르다.</p>
+    </div>
+
+    <div class="verdict">
+      <b class="q">2. 미니내비(Grammar · Guides · Readers)의 자리는 어디인가?</b>
+      <p><b>목록 하단. 셋을 한 「More」 블록으로 합친다.</b> 지금은 <b>Grammar·Guides는 헤더</b>(미니내비 58px),
+         <b>Readers는 목록 하단</b>(ReadersShelf)으로 <b>같은 급의 옆문 셋이 두 곳에 흩어져 있다</b>.
+         이게 진짜 결함이다 — 위치가 급을 말하는데 급이 같으니 위치도 같아야 한다.</p>
+      <p>왜 하단인가: 이 탭의 주어는 <b>72과</b>다. Grammar 271패턴·Guides 20편·Readers 20편은
+         <b>다른 색인</b>이지 이 색인의 항목이 아니다. 헤더에 두면 「72과를 보러 온 사람」이
+         매번 통행세를 낸다. 하단에 두면 <b>레벨이 접혀 있는 것이 전제일 때</b>
+         (기본값 = 현재 레벨 하나만 열림) 바닥까지 두세 번 스와이프면 닿는다.
+         <b>별도 탭은 반대다</b> — 탭바 5개는 지시 28이 아이콘 체계까지 확정했고,
+         옆문 셋을 위해 여섯 번째를 만드는 건 주력 동선을 희생하는 것이다.</p>
+      <p><b>비용 인정:</b> 다섯 레벨을 다 펼친 학습자에게는 하단이 아주 멀다. 그건 받아들인다 —
+         다섯 레벨을 다 펼치는 것은 <b>의도적인 훑어보기</b>이고, 그때 사람이 찾는 건 옆문이 아니라 과다.</p>
+    </div>
+
+    <div class="verdict">
+      <b class="q">3. 「이어서」를 Shelf에 두는 게 Home과 중복인가?</b>
+      <p><b>입자가 다르면 중복이 아니다. 그리고 그 차이가 A안과 B안을 가른다.</b></p>
+      <p>Home은 <b>한입(bite) 단위</b>로 「지금 5분 뭐 할까」에 답한다(<code>nextBite.js</code>).
+         Shelf가 답해야 하는 것은 <b>챕터 단위</b>의 「코스에서 내가 어디 서 있나」다.
+         그러니 Shelf의 이어서는 <b>다음 한입을 바로 시작하는 버튼이 아니라 그 챕터를 여는 버튼</b>이어야 하고,
+         본문에는 <code>4 of 9 bites</code>와 챕터 목표가 실려야 한다. 이러면 두 화면은 <b>목적지가 다르다</b>.</p>
+      <p><b>그런데 A안처럼 「탭 최상단의 진행 블록」으로 만들면 위치가 중복을 만든다.</b>
+         탭을 열자마자 나오는 큰 블록 + CTA는 <b>Home 카드와 구조적으로 같은 제스처</b>여서,
+         입자가 달라도 사용자는 「또 이 화면이네」로 읽는다.
+         B안은 이 문제가 원천적으로 없다 — 카드가 <b>목록 안 제자리(14과 자리)</b>에 있어서
+         「이어서」와 「어디쯤」이 <b>같은 하나의 물체</b>이기 때문이다. 이게 내가 B안을 미는 첫 번째 이유다.</p>
+    </div>
+  </section>
+
+  <!-- ═══ 추천 ═════════════════════════════════════════════════════════ -->
+  <section class="block">
+    <h2>추천 — B안 + 레벨 스트립 (프레임 ⑤가 그 안이다)</h2>
+    <p><b>B안을 뼈대로 하고, A안에서 레벨 스트립 하나만 수입한다.</b>
+       순수 B안은 레일을 「접힌 레벨 헤더로 흡수」하는데, 그러면 레벨이 여전히
+       <b>탭해서 여닫는 헤더</b>일 뿐 <b>건너뛰는 컨트롤</b>은 못 된다 — 명제의 절반이 미달이다.
+       스트립 하나(여백 포함 <b>50px</b>)를 얹으면 레일(<b>53.4px</b>)보다 <b>3.4px 싸면서</b>
+       다섯 레벨의 진행률을 숫자로 말하고 전부 44px 탭 타깃이 된다.</p>
+    <table class="rules">
+      <thead><tr><th style="width:120px"></th><th style="width:140px">A안 레벨 칩</th><th style="width:140px">B안 카드</th><th style="width:140px">C안 한 레벨</th><th>추천 = B + 스트립</th></tr></thead>
+      <tbody>
+        <tr><td>진단 1 (레일)</td><td>스트립이 대체. 5개 분수가 읽힌다</td><td>레벨 헤더가 흡수. 컨트롤은 안 됨</td><td>세그먼트가 대체. 가장 강함</td><td><b>스트립이 대체</b></td></tr>
+        <tr><td>진단 2 (초점)</td><td>상단 블록 + CTA. 강하지만 Home과 겹침</td><td><b>제자리 카드. 가장 강함</b></td><td>여전히 목록의 한 행</td><td><b>제자리 카드</b></td></tr>
+        <tr><td>진단 3 (헤더)</td><td>2겹 + 이어서 블록 → <b>오히려 +74.5px</b></td><td><b>1겹. −154.4px</b></td><td>2겹. −152.4px</td><td>2겹. −104.4px</td></tr>
+        <tr><td>Home 중복</td><td class="n"><b>있음</b></td><td class="n">없음</td><td class="n">없음</td><td class="n">없음</td></tr>
+        <tr><td>구현 위험</td><td>중 — 새 블록 + 스트립</td><td><b>하 — 카드 1개 + 헤더 정리</b></td><td>상 — 목록 모델 자체가 바뀜</td><td>중하</td></tr>
+      </tbody>
+    </table>
+
+    <h3>실측 한 장 (390×763 뷰포트 · 목록 가시 영역 701px · 학습자 상태 동일)</h3>
+    <table class="rules">
+      <thead><tr><th style="width:170px">안</th><th style="width:110px">목록 시작 y</th><th style="width:130px">첫 챕터 행 y</th>
+        <th style="width:120px">온전한 챕터</th><th style="width:120px">페이드 위</th><th>한 줄 평</th></tr></thead>
+      <tbody>
+        <tr><td>① 현재</td><td class="n">218.4px</td><td class="n">349.2px (49.8%)</td><td class="n">5</td><td class="n">5</td>
+            <td>화면 절반을 지나야 첫 과가 나온다</td></tr>
+        <tr><td>② A안 레벨 칩</td><td class="n">292.9px</td><td class="n">423.7px (60.4%)</td><td class="n">5</td><td class="n">4</td>
+            <td>초점은 최고, <b>밀도는 현재보다 나쁨</b></td></tr>
+        <tr><td>③ B안 카드</td><td class="n"><b>64.0px</b></td><td class="n">194.8px (27.8%)</td><td class="n"><b>6</b> (카드 1 포함)</td><td class="n">5</td>
+            <td>가장 싸게 초점을 만든다</td></tr>
+        <tr><td>④ C안 한 레벨</td><td class="n">66.0px</td><td class="n"><b>158.8px (22.7%)</b></td><td class="n"><b>8</b></td><td class="n"><b>8</b></td>
+            <td>밀도 최고, <b>초점은 미해결</b></td></tr>
+        <tr><td>⑤ 추천 B+스트립</td><td class="n">114.0px</td><td class="n">244.8px (34.9%)</td><td class="n">5 (카드 1 포함)</td><td class="n">4</td>
+            <td>카드 + 조작 가능한 레벨을 둘 다 가진 유일한 안</td></tr>
+      </tbody>
+    </table>
+    <p>행 높이는 <b>실제 챕터 제목</b>에 따라 48~67px로 달라지므로(9·38과처럼 두 줄로 감기는 제목이 있다)
+       위 「온전한 챕터」 수는 이 학습자 상태에서의 실측이지 고정값이 아니다.
+       <b>추천안이 현재와 같은 5행</b>인 것은 사실이고 숨기지 않는다 — 다만 현재의 5행은
+       <b>죽은 크롬 167.6px</b>을 지불하고 얻은 5행이고, 추천안의 5행은 그중 <b>하나가 「지금 할 챕터」 카드</b>이며
+       나머지 크롬은 전부 탭되는 픽셀이다. 바뀐 것은 개수가 아니라 <b>그 자리가 무슨 일을 하느냐</b>다.</p>
+    <h3>C안을 먼저 만들지 않는 이유</h3>
+    <ul class="list">
+      <li>레벨 분포가 <b>11 / 23 / 22 / 11 / 5</b>다. A2·B1은 한 레벨만 봐도 <b>22~23과</b>라
+          「72를 하나의 목록으로 다루지 않는다」의 효과가 절반만 난다. 반대로 C1은 <b>5과</b>라 화면이 텅 빈다.</li>
+      <li>B2가 <b>57–63, 66–69</b>로, C1이 <b>64–65, 70–72</b>로 <b>교차</b>한다. 한 번에 한 레벨만 보여주면
+          64·65과가 B2 화면에서 사라져 <b>코스 순서에 구멍이 뚫린 것처럼 읽힌다</b>. 지금 구조는 이 교차를
+          <code>chapterRangeLabel</code>이 한 줄로 정직하게 처리하는데, C안은 그 장치를 못 쓴다.</li>
+      <li>「72과짜리 코스를 하고 있다」는 감각 자체가 이 앱의 자산이다. C안은 그걸 다섯 개의 별개 목록으로 쪼갠다.</li>
+    </ul>
+    <h3>안 하는 게 낫다고 판단한 것</h3>
+    <ul class="list">
+      <li><b>「현재 챕터로 돌아가기」 떠다니는 버튼.</b> 카드에서 멀어졌을 때를 위한 상시 부유 요소는
+          <b>진단 1을 다른 이름으로 다시 만드는 짓</b>이다. 되돌아가는 길은 이미 둘 있다 —
+          탭을 나갔다 들어오면 카드로 다시 스크롤되고, 레벨 스트립의 현재 레벨을 탭하면 카드로 간다.</li>
+      <li><b>레벨 스트립을 스티키로 붙이기.</b> 붙이는 순간 「항상 떠 있는 A1~C1」이 부활한다.</li>
+      <li><b>레벨 칩을 pill 로 그리기.</b> STYLE §4 킬리스트 4번(필터·레벨을 pill로 두르지 않는다)에 정면으로 걸린다.
+          지시의 「칩」은 <b>§7의 밑줄 탭</b>으로 옮겨 그렸다 — 아래 각 프레임 캡션에 명시.</li>
+      <li><b>카드에 그릇·도장 같은 장식 얹기.</b> 카드 윤곽은 화면당 0~1겹(§2)이고 이미 1겹을 썼다.
+          그 위에 은유를 더 얹으면 초점이 카드가 아니라 그림으로 간다.</li>
+      <li><b>진행 중 챕터의 목표 문장을 72행 전체로 확장.</b> 지시 31이 이미 죽인 것이고 되살릴 이유가 없다.</li>
+    </ul>
+
+    <h3>임의로 정한 것 (지시에 없어서 내가 결정한 값 — 뒤집어도 안이 무너지지 않는다)</h3>
+    <ul class="list">
+      <li><b>지시의 「레벨 칩」을 pill 이 아니라 밑줄 탭으로 그렸다.</b> STYLE §4 킬리스트 4번과 정면 충돌해서다.
+          §7이 필터에 허용한 어휘가 밑줄 탭이므로 그쪽으로 옮겼다. 밑줄은 <b>선택 표시가 아니라 진행</b>(gold/track)이고,
+          「지금 여기」는 앱이 이미 쓰는 <code>--ink</code>/<code>--ink-3</code> 대비로만 말한다.</li>
+      <li><b>학습자 상태를 「1~13과 완료, 14과 4/9」로 고정</b>했다. 다섯 프레임 전부 동일하다 — 비교가 성립하려면 상태가 같아야 한다.
+          A2(23과)는 가장 긴 레벨이고 학습자가 가장 오래 머무는 구간이라 대표성이 있다.</li>
+      <li><b>카드가 좌우로 10px 내밀고 안쪽 패딩 10px</b>을 갖는다. 이 두 값이 같아야 카드 안 거터가
+          목록 거터와 같은 x에 선다. 12px·14px 어느 쌍이든 같기만 하면 성립한다.</li>
+      <li><b>카드 CTA 문구는 <code>Continue / 이어서 하기</code></b>로 두고 목적지를 <b>챕터</b>로 잡았다.
+          Home이 한입을 시작하므로 여기는 챕터를 여는 게 맞다는 판단이지만, 「바로 다음 한입 시작」으로 바꾸면
+          Home과의 경계가 흐려진다 — 이건 제품 결정이라 감독자 확인이 필요하다.</li>
+      <li><b>스트립이 있으면 레벨 헤더의 <code>2 of 23 done</code>은 중복</b>이다.
+          지금 시안은 둘 다 두었다(안전). 지우면 헤더 메타가 <code>Chapters 12–34 · 2 snacks</code>로 짧아지는데
+          세로 높이는 그대로라 이득이 크지 않아 손대지 않았다.</li>
+      <li><b>「More」 라벨</b>은 임시다. STYLE §4가 uppercase 마이크로 라벨을 금지하므로 11.5px 문장형 한 단어로 뒀는데,
+          <code>Elsewhere</code>·<code>Other shelves</code> 등으로 바꿔도 구조는 같다.</li>
+      <li><b>프레임 ①의 간식 블록 마크업을 챕터 블록 바깥 형제로 뒀다.</b> 실제 앱은 챕터 <code>.block</code> 안에 있다.
+          높이·시각 결과는 같지만 「온전한 챕터 행」 실측에서 간식 줄이 별도로 세어지지 않는다는 차이가 있다.</li>
+    </ul>
+  </section>
+</main>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════════════════
+   실데이터 — src/lib/bites-index.json (72챕터 / 18간식)
+   레벨 분포 A1 11 · A2 23 · B1 22 · B2 11 · C1 5
+   B2 = 57–63, 66–69 / C1 = 64–65, 70–72 (교차)
+   ═════════════════════════════════════════════════════════════════════════ */
+const LEVELS = [
+  {id:"A1", name:"Foundation",  range:"Chapters 1–11",           done:11, total:11, snacks:11},
+  {id:"A2", name:"Builder",     range:"Chapters 12–34",          done:2,  total:23, snacks:2},
+  {id:"B1", name:"Independent", range:"Chapters 35–56",          done:0,  total:22, snacks:4},
+  {id:"B2", name:"Control",     range:"Chapters 57–63, 66–69",   done:0,  total:11, snacks:1},
+  {id:"C1", name:"Written",     range:"Chapters 64–65, 70–72",   done:0,  total:5,  snacks:0}
+];
+const CH = {
+  12:{lv:"A2", t:"-는 것 같다 · -잖아(요) vs -거든(요)", n:8},
+  13:{lv:"A2", t:"-(ㄴ/는)다고 하다 · -냐고 하다", n:8},
+  14:{lv:"A2", t:"-기로 하다 · -(으)ㄹ까 봐", n:9,
+      goal:"Use -기로 하다 to announce a firm decision or agreed-upon plan"},
+  15:{lv:"A2", t:"-는 척하다 · -(으)ㄹ 뻔하다", n:9},
+  16:{lv:"A2", t:"-더니 · -길래", n:11},
+  17:{lv:"A2", t:"V았/었어요", n:7},
+  18:{lv:"A2", t:"V-(으)ㄹ 거예요", n:7},
+  19:{lv:"A2", t:"Question words (누구, 뭐, 어디, 언제, 왜, 어떻게, 몇, 얼마)", n:7},
+  20:{lv:"A2", t:"Two number systems: native (하나·둘·셋) vs. Sino-Korean (일·이·삼)", n:7},
+  32:{lv:"A2", t:"V-기로 했어요 · V-게 됐어요", n:9},
+  33:{lv:"A2", t:"V-(스)ㅂ니다 · Choosing the style", n:9},
+  34:{lv:"A2", t:"-(으)시- · N께서 V-(으)시-", n:8},
+  35:{lv:"B1", t:"V/A-(으)ㄴ/는데 · V/A-잖아요", n:11},
+  36:{lv:"B1", t:"V/A-더라고요 · V/A-더니", n:8}
+};
+const CUR = 14, CUR_DONE = 4, CUR_TOTAL = 9;   /* 1~13과 완료, 14과 4/9 진행 */
+const SNACK16 = {label:"Snacks 1", summary:"Color Words"};
+
+const C = 2 * Math.PI * 8.2;                    /* StatusCell 원주 그대로 */
+const esc = (s) => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");
+
+/* ─ 22px 상태 셀 ──────────────────────────────────────────────────────── */
+function stat(d, t){
+  if(t > 0 && d >= t) return '<span class="st"><span class="seal22">한입</span></span>';
+  const a = t > 0 ? C * Math.min(d/t, 1) : 0;
+  return '<span class="st"><svg class="ring" viewBox="0 0 20 20">'
+    + '<circle class="trk" cx="10" cy="10" r="8.2"/>'
+    + (a > 0 ? '<circle class="arc" cx="10" cy="10" r="8.2" transform="rotate(-90 10 10)" '
+        + 'stroke-dasharray="' + a.toFixed(2) + ' 999"/>' : '')
+    + '</svg></span>';
+}
+
+/* ─ 탭바 ──────────────────────────────────────────────────────────────── */
+function tabbar(on){
+  const t = [["today","Today"],["shelf","Shelf"],["hangul","Hangul"],["hanja","Hanja"],["words","Words"]];
+  return '<div class="tabbar">' + t.map(([id,l]) =>
+    '<button class="' + (id === on ? "on" : "") + '">'
+    + '<svg class="ti' + (id === "hanja" ? " ti--dense" : "") + '" viewBox="0 0 24 24"><use href="#i-' + id + '"/></svg>'
+    + '<span class="t-label">' + l + '</span></button>').join("") + '</div>';
+}
+const SEARCH_ICON = '<svg viewBox="0 0 24 24"><circle cx="10.6" cy="10.6" r="6.4"/><path d="M15.3 15.3L20 20"/></svg>';
+
+/* ─ 레벨 헤더 (유지 자산: 거터 + 22px 상태 셀 + 우측 chevron) ────────── */
+function lvlHead(lv, opts){
+  const o = opts || {};
+  const here = o.here;
+  const snk = lv.snacks ? " · " + lv.snacks + " snack" + (lv.snacks === 1 ? "" : "s") : "";
+  return '<div class="lvl' + (o.open ? " open" : "") + (here ? " here" : "")
+    + (o.pinned ? " pinned" : "") + '">'
+    + '<span class="id">' + lv.id + '</span>' + stat(lv.done, lv.total)
+    + '<span class="col"><b>' + esc(lv.name) + '</b>'
+    + '<span>' + esc(lv.range) + ' · ' + lv.done + ' of ' + lv.total + ' done' + snk + '</span>'
+    + (here && !o.open && !o.noHere
+        ? '<em>In progress — Chapter ' + CUR + ' · ' + esc(CH[CUR].t) + '</em>' : '')
+    + '</span><span class="chev">⌄</span></div>';
+}
+
+/* ─ 챕터 행 ───────────────────────────────────────────────────────────── */
+function chapRow(num, mode){
+  const c = CH[num];
+  const isDone = num < CUR;
+  const isHere = num === CUR && mode !== "quiet" && mode !== "none";
+  const cls = isHere ? "here" : (isDone ? "done" : "");
+  return '<div class="blk"><div class="chap ' + cls + '">'
+    + '<span class="n">' + num + '</span>'
+    + stat(isDone ? c.n : (num === CUR ? CUR_DONE : 0), c.n)
+    + '<span class="col"><b>' + esc(c.t) + '</b>'
+    + (isHere && c.goal ? '<span class="meta">' + CUR_DONE + '/' + CUR_TOTAL + ' bites · ' + esc(c.goal) + '</span>' : '')
+    + '</span></div></div>';
+}
+function chapPlain(num){          /* 카드로 승격된 14과를 뺀 나머지 행 */
+  const c = CH[num];
+  const isDone = num < CUR;
+  return '<div class="blk"><div class="chap ' + (isDone ? "done" : "") + '">'
+    + '<span class="n">' + num + '</span>' + stat(isDone ? c.n : 0, c.n)
+    + '<span class="col"><b>' + esc(c.t) + '</b></span></div></div>';
+}
+function snackHead(){
+  return '<div class="snk"><span class="lbl">' + SNACK16.label + '</span>'
+    + '<span class="t">' + SNACK16.summary + '</span></div>';
+}
+
+/* ─ 레벨 스트립 (지시의 「레벨 칩」 = STYLE §7 밑줄 탭 어휘) ──────────── */
+function levelStrip(){
+  return '<div class="lvstrip">' + LEVELS.map(lv => {
+    const p = Math.round(lv.done / lv.total * 100);
+    return '<button class="lvcell' + (lv.id === CH[CUR].lv ? " here" : "") + '">'
+      + '<span class="lab"><b>' + lv.id + '</b><span>' + lv.done + '/' + lv.total + '</span></span>'
+      + '<span class="bar"><i style="width:' + p + '%"></i></span></button>';
+  }).join("") + '</div>';
+}
+function topBar(){
+  return '<div class="top1"><span class="grow"><span class="mark">Shelf</span>'
+    + '<span class="count">Chapter <b>' + CUR + '</b> of 72 · 13 done</span></span>'
+    + '<button class="iconbtn" aria-label="Search chapters">' + SEARCH_ICON + '</button></div>';
+}
+function moreBlock(){
+  return '<div class="more"><div class="h">More</div>'
+    + '<button class="mrow"><b>Grammar</b><span>29 of 271 collected</span></button>'
+    + '<button class="mrow"><b>Guides</b><span>20 guides</span></button>'
+    + '<button class="mrow"><b>Readers</b><span>20 short texts</span></button></div>';
+}
+
+/* ═══ ① 현재 라이브 재현 ═══════════════════════════════════════════════ */
+function frame1(){
+  let rail = "", ticks = "", cols = [];
+  LEVELS.forEach((lv, i) => {
+    if(i > 0){ rail += '<span></span>'; ticks += '<span></span>'; cols.push("1.8px"); }
+    cols.push("repeat(" + lv.total + ",minmax(0,1fr))");
+    for(let k = 0; k < lv.total; k++){
+      const num = k + 1;
+      const st = (lv.id === "A1") ? "done"
+        : (lv.id === "A2" ? (num <= 2 ? "done" : (num === 3 ? "now" : "")) : "");
+      rail += '<i class="' + st + '"></i>';
+    }
+    ticks += '<span class="lv-id" style="grid-column:span ' + lv.total + '">' + lv.id + '</span>';
+  });
+  const gt = cols.join(" ");
+  return '<div class="screen plain"><div class="view"><div class="cur">'
+    + '<div class="top"><span class="mark">Shelf</span>'
+    + '<span class="count">Chapter <b>14</b> of 72 · 13 done</span></div>'
+    + '<div class="rail" style="grid-template-columns:' + gt + '">' + rail + '</div>'
+    + '<div class="rail-ticks" style="grid-template-columns:' + gt + '">' + ticks + '</div>'
+    + '<div class="searchbox">Search number or title</div>'
+    + '<div class="mininav"><div><b>Grammar</b><span>29/271</span></div>'
+    + '<div><b>Guides</b><span>20</span></div></div>'
+    + '<div class="groups">'
+    + lvlHead(LEVELS[0], {})
+    + lvlHead(LEVELS[1], {open:true, here:true})
+    + chapRow(12) + chapRow(13) + chapRow(14) + chapRow(15) + chapRow(16) + snackHead() + chapRow(17)
+    + '</div></div></div><div class="cut"></div>' + tabbar("shelf") + '</div>';
+}
+
+/* ═══ ② A안 — 레벨 칩(밑줄 탭) + 상단 「이어서」 블록 ═════════════════ */
+function frame2(){
+  return '<div class="screen plain"><div class="view"><div class="pad" style="padding-top:14px;padding-bottom:40px">'
+    + topBar()
+    + levelStrip()
+    + '<div class="cont"><div class="kick">Continue</div>'
+    + '<div class="row"><span class="n">' + CUR + '</span>' + stat(CUR_DONE, CUR_TOTAL)
+    + '<span class="col"><b>' + esc(CH[14].t) + '</b>'
+    + '<span>A2 Builder · ' + CUR_DONE + ' of ' + CUR_TOTAL + ' bites · ' + esc(CH[14].goal) + '</span>'
+    + '</span></div>'
+    + '<button class="cta"><b>Open Chapter 14</b><i>14과 이어서 하기</i></button></div>'
+    + '<div style="margin-top:8px">'
+    + lvlHead(LEVELS[0], {})
+    + lvlHead(LEVELS[1], {open:true, here:true})
+    + chapRow(12) + chapRow(13) + chapRow(14, "quiet") + chapRow(15) + chapRow(16)
+    + '</div></div></div><div class="cut"></div>' + tabbar("shelf") + '</div>';
+}
+
+/* ═══ ③ B안 — 진행 중 챕터 한 행만 실제 카드 ═════════════════════════ */
+function frame3(){
+  return '<div class="screen plain"><div class="view"><div class="pad" style="padding-top:14px;padding-bottom:40px">'
+    + topBar()
+    + '<div style="margin-top:6px">'
+    + lvlHead(LEVELS[0], {})
+    + lvlHead(LEVELS[1], {open:true, here:true})
+    + chapPlain(12) + chapPlain(13)
+    + '<div class="cardwrap"><div class="cardrow tooth">'
+    + '<div class="row"><span class="n">' + CUR + '</span>' + stat(CUR_DONE, CUR_TOTAL)
+    + '<span class="col"><span class="kick">In progress</span><b>' + esc(CH[14].t) + '</b></span></div>'
+    + '<p class="goal">' + esc(CH[14].goal) + '</p>'
+    + '<div class="ledger">' + CUR_DONE + ' of ' + CUR_TOTAL + ' bites · next: 단어 Words 3</div>'
+    + '<button class="cta sm"><b>Continue</b><i>이어서 하기</i></button>'
+    + '</div></div>'
+    + chapPlain(15) + chapPlain(16) + snackHead() + chapPlain(17) + chapPlain(18)
+    + '</div></div></div><div class="cut"></div>' + tabbar("shelf") + '</div>';
+}
+
+/* ═══ ④ C안 — 한 번에 한 레벨 ═════════════════════════════════════════ */
+function frame4(){
+  const seg = '<div class="seg">' + LEVELS.map(lv =>
+    '<button class="' + (lv.id === "A2" ? "on" : "") + '"><b>' + lv.id + '</b>'
+    + '<span>' + lv.done + '/' + lv.total + '</span></button>').join("") + '</div>';
+  return '<div class="screen plain"><div class="view"><div class="pad" style="padding-top:14px;padding-bottom:40px">'
+    + topBar() + seg
+    + '<div class="leveline"><b>A2 Builder</b><span>Chapters 12–34 · 2 of 23 done</span></div>'
+    + chapRow(12) + chapRow(13) + chapRow(14) + chapRow(15) + chapRow(16) + snackHead()
+    + chapRow(17) + chapRow(18) + chapRow(19)
+    + '</div></div><div class="cut"></div>' + tabbar("shelf") + '</div>';
+}
+
+/* ═══ ⑤ 추천안(B + 스트립)의 스크롤 하단 — 레벨 경계 ═════════════════ */
+function frame5(){
+  return '<div class="screen plain"><div class="view"><div class="pad" style="padding-bottom:40px">'
+    + lvlHead(LEVELS[1], {open:true, here:true, pinned:true, noHere:true})
+    + chapPlain(32) + chapPlain(33) + chapPlain(34)
+    + lvlHead(LEVELS[2], {})
+    + lvlHead(LEVELS[3], {})
+    + lvlHead(LEVELS[4], {})
+    /* 목록의 마지막 항목은 닫는 선을 갖는다 (.level:last-child { border-bottom }) */
+    + '<div style="border-top:1px solid var(--line)"></div>'
+    + moreBlock()
+    + '</div></div>' + tabbar("shelf") + '</div>';
+}
+
+/* ═══ 캡션 ═════════════════════════════════════════════════════════════ */
+const FRAMES = [
+{html:frame1, title:"① 현재 상태 재현 — 비교 기준",
+ state:"학습자 A · 1~13과 완료 · 14과 진행 중(4/9) · A2 펼침(기본값)",
+ fixes:[["1 레일","bad"],["2 초점","bad"],["3 헤더 5겹","bad"]],
+ body:"<p>지시 31의 성과는 그대로 보인다 — 괘선 없는 무지 종이, 왼쪽 54px 거터, 22px 상태 셀, 간식 한 줄 접힘. "
+   + "문제는 그 위에 얹힌 <b>헤더 다섯 겹</b>이다.</p>"
+   + "<p><b>진단 1</b> — 레일 72눈금 중 읽히는 것은 A1 구간의 금색 덩어리와 A2 왼쪽 끝의 잉크 눈금 하나뿐이다. "
+   + "나머지 59개는 회색 띠고, A1~C1 라벨은 그 띠의 자막이다. <b>탭할 수 없고 필터도 아니다.</b> "
+   + "「A2에서 2/23 했다」는 사실은 레일 어디에도 없다 — 레벨 헤더를 열어야 나온다.</p>"
+   + "<p><b>진단 2</b> — 14과가 얻는 신호는 화면 왼쪽 밖으로 나가는 2px 잉크선과 회색 한 줄뿐이다. "
+   + "12·13과의 금색 도장이 <b>완료</b>라는 이유로 더 밝게 읽혀서, 스캔에서는 <b>끝난 과가 진행 중인 과를 이긴다</b>.</p>"
+   + "<p><b>진단 3</b> — 검색 45.6 + 미니내비 68.6 = 114.2px. 첫 챕터(12과)가 y=349.2px에서 시작한다.</p>",
+ num:"<b>실측 — 목록 시작 y=218.4px, 첫 챕터 행 시작 y=349.2px(가시 영역 701px의 49.8%). "
+   + "화면에 온전히 들어오는 챕터 행 = 5개.</b> 16과 아래 간식 한 줄과 17과는 절반만 걸친다. "
+   + "크롬 218.4px 중 <b>레일 53.4 + 검색 45.6 + 미니내비 68.6 = 167.6px</b>이 「72과를 걷는 사람」에게 매번 부과된다. "
+   + "레일 눈금 하나의 실제 폭은 <b>2.8px</b>다.",
+ trade:"<b>이 프레임은 되돌릴 대상이 아니다.</b> 종이·거터·상태 셀·간식 접힘은 전부 유지 자산이고, "
+   + "아래 세 안은 <b>헤더와 초점만</b> 손댄다."},
+
+{html:frame2, title:"② A안 — 레벨 칩(=밑줄 탭) + 상단 「이어서」 블록",
+ state:"동일 상태 · 레일 제거 · 검색 아이콘화 · 미니내비 하단 이동",
+ fixes:[["1 해결",""],["2 해결",""],["3 헤더만 해결 · 목록 시작은 악화","bad"]],
+ body:"<p><b>진단 1 →</b> 레일 72눈금을 <b>레벨 셀 5개</b>로 바꿨다. 각 셀은 "
+   + "<code>A1 11/11</code>처럼 <b>레벨과 분수를 글자로</b> 말하고, 아래 3px 밑줄이 그 레벨의 진행이다"
+   + "(트랙 <code>--progress-track</code> · 채움 <code>--gold</code>). <b>탭하면 그 레벨로 점프·펼침</b>한다. "
+   + "72개의 3px 눈금이 <b>읽히는 숫자 5개</b>가 되고, 전부 44px 탭 타깃이다.</p>"
+   + "<p><b>진단 2 →</b> 14과를 목록 위 「이어서」 블록으로 승격했다. 지배는 <b>글자 크기가 아니라 CTA</b>로 만든다 — "
+   + "Shelf에서 <code>--accent</code>를 쓰는 요소는 이것 하나뿐이라 화면에서 가장 큰 소리다(STYLE §3, 포인트색 2개: gold+accent). "
+   + "블록에는 챕터 목표와 <code>4 of 9 bites</code>가 실리고, 버튼은 <b>다음 한입이 아니라 챕터를 연다</b>.</p>"
+   + "<p><b>진단 3 →</b> 검색은 제목 줄 오른쪽 44px 아이콘으로 접혔고(세로 비용 0), 미니내비는 목록 하단으로 갔다. "
+   + "남은 크롬은 <b>제목 44 + 스트립 44 + 여백 20 = 108px</b>(현재 218.4px 대비 −110.4px).</p>"
+   + "<p>「칩」을 pill 로 그리지 않은 이유는 STYLE §4 킬리스트 4번이다 — 필터·레벨을 pill로 두르지 않는다. "
+   + "대신 §7의 <b>밑줄 탭</b> 어휘를 썼고, 「지금 여기」는 앱이 이미 쓰는 <code>--ink</code> / <code>--ink-3</code> 대비로만 말한다.</p>",
+ num:"<b>실측 — 제목 44 + 스트립 44 = 크롬 88px(현재 218.4px 대비 −130.4px). 그런데 「이어서」 블록이 162.9px다. "
+   + "그 결과 목록 시작 y=292.9px, 첫 챕터 행 시작 y=423.7px. 온전한 챕터 행 = 5개(하단 페이드 위로는 4개).</b> "
+   + "<b>여기가 A안의 급소다</b> — 죽은 크롬 167.6px을 걷어냈는데 그 자리를 이어서 블록이 도로 먹어서, "
+   + "<b>첫 챕터가 현재보다 74.5px 더 아래로 내려간다</b>. 초점은 확실히 생기지만 밀도는 오히려 나빠진다.",
+ trade:"<b>트레이드오프 —</b> ① <b>14과가 한 화면에 두 번 나온다</b>(블록 + 목록의 그 행). 목록 쪽은 잉크선만 남겨 "
+   + "죽였지만 중복 자체는 사라지지 않는다. ② <b>레벨 어포던스가 두 곳</b>(스트립 + 목록의 레벨 헤더)이라 "
+   + "「어느 쪽을 눌러야 하나」가 생긴다. ③ <b>Home과 겹친다</b> — 탭을 열자마자 나오는 진행 블록 + CTA는 "
+   + "입자가 달라도 Home 카드와 같은 제스처로 읽힌다."},
+
+{html:frame3, title:"③ B안 — 현재 챕터가 카드",
+ state:"동일 상태 · 레일 제거(레벨 헤더가 흡수) · 스크롤 없음(진입 직후 그대로)",
+ fixes:[["1 부분 해결",""],["2 해결",""],["3 해결",""]],
+ body:"<p><b>진단 3 →</b> 헤더가 <b>한 겹</b>이다. 제목 줄 44px에 위치(<code>Chapter 14 of 72 · 13 done</code>)와 "
+   + "검색 아이콘이 같이 타고, 그 아래는 바로 목록이다. 레일이 답하던 「어디쯤」은 <b>이 한 줄</b>과 "
+   + "<b>레벨 헤더의 22px 상태 셀 + <code>2 of 23 done</code></b>이 나눠 가진다 — 새 부품이 하나도 안 생긴다.</p>"
+   + "<p><b>진단 2 →</b> 14과 한 행만 <b>진짜 카드</b>가 된다: <code>--card</code> 면 + 카드 안쪽 결(<code>.tooth</code>) + "
+   + "1px <code>--line-2</code> 테두리 + <code>--r-card</code> 20px + <code>--shadow-1</code> + CTA. "
+   + "화면당 카드 윤곽 0~1겹(STYLE §2)의 <b>그 1겹</b>이고, 다른 71행은 지금의 담백한 목록 그대로다. "
+   + "「하나만 카드」라는 사실 자체가 초점이다.</p>"
+   + "<p>중요한 디테일 — 카드는 좌우로 <b>10px 내밀고 안쪽 패딩 10px</b>을 준다. 그래서 카드 안의 "
+   + "<code>[번호 24px][상태 22px]</code> 거터가 <b>목록의 거터와 같은 x</b>에 선다. 번호 열의 수직 스캔이 카드에서 끊기지 않는다.</p>"
+   + "<p><b>진단 1 →</b> 레일은 사라졌지만 <b>레벨이 컨트롤이 되지는 않았다</b> — 여전히 여닫는 헤더다. "
+   + "이게 순수 B안의 미달점이고, 프레임 ⑤에서 스트립 하나를 수입해 메운다.</p>",
+ num:"<b>실측 — 목록 시작 y=64px(현재 218.4px 대비 −154.4px). 첫 챕터 행 시작 y=194.8px. "
+   + "카드 시작 y=290.8px, 카드 높이 195.7px. 온전히 들어오는 챕터 = 카드 1 + 일반 행 5 = 6개.</b> "
+   + "카드(195.7px)가 A안의 이어서 블록(162.9px)보다 <b>큰데도</b> 보이는 챕터가 더 많다 — "
+   + "카드가 <b>목록 안 제자리에 있어서 다른 챕터를 위에서 밀어내지 않기 때문</b>이다. "
+   + "같은 정보를 목록 위로 올리면 비용이고, 목록 안에 두면 그냥 그 챕터의 자리다.",
+ trade:"<b>트레이드오프 —</b> ① 카드가 제자리에 있으므로 <b>진입 시 카드로 자동 스크롤</b>이 필요하다(레벨 상단이 아니라 카드로). "
+   + "이 상태(14과, A2 세 번째)에서는 y=277px라 스크롤 없이 보이지만, 56과처럼 레벨 안쪽 깊은 곳이면 필수다 — "
+   + "<b>레이아웃만이 아니라 동작을 하나 추가하는 안</b>이다. ② Shelf가 「맨 위」로 열리지 않게 된다. "
+   + "책갈피가 하는 일이라 나는 옳다고 보지만, 명시적 선택이다. ③ 카드에서 멀어지면 돌아갈 길이 스크롤뿐이다 "
+   + "(부유 버튼을 만들지 않기로 한 대가 — ⑤에서 스트립이 그 길을 준다)."},
+
+{html:frame4, title:"④ C안 — 한 번에 한 레벨",
+ state:"동일 상태 · A2 선택 · 72과를 하나의 목록으로 다루지 않음",
+ fixes:[["1 해결",""],["2 미해결",""],["3 해결",""]],
+ body:"<p><b>진단 1 →</b> 가장 강하게 해결한다. 레벨이 <b>이 화면의 유일한 내비게이션</b>이 되므로 "
+   + "「장식이 아니라 컨트롤」이라는 명제를 문자 그대로 만족한다. 세그먼트도 pill 이 아니라 §7 밑줄 탭이다 — "
+   + "선택된 것만 <code>border-bottom: 2px solid var(--ink)</code>.</p>"
+   + "<p><b>진단 3 →</b> 제목 44 + 세그먼트 46 + 레벨 한 줄 40 = 130px. 레벨 헤더가 사라진 대신 "
+   + "세그먼트가 그 자리를 받는다. 검색은 아이콘.</p>"
+   + "<p><b>진단 2 →</b> <b>해결하지 못한다.</b> 14과는 여전히 목록의 한 행이고, 얻는 것은 잉크선 + 목표 한 줄로 "
+   + "① 프레임과 같다. 이 안은 「어디쯤」은 고치지만 「무엇이 눈에 띄나」는 안 고친다. "
+   + "카드를 얹으면 B안이 되고, 그러면 C안의 존재 이유(스크롤 단축)가 카드에 먹힌다.</p>"
+   + "<p>부가 이득 — 스티키 레벨 헤더가 <b>아예 필요 없다</b>. 세그먼트가 곧 헤더이므로 스크롤 중 "
+   + "「어느 레벨인가」가 흔들릴 일이 없다.</p>",
+ num:"<b>실측 — 제목 44 + 세그먼트 46 + 레벨 한 줄 46.8 → 첫 챕터 행 시작 y=158.8px(가시 영역의 22.7%). "
+   + "온전히 들어오는 챕터 행 = 8개 — 네 안 중 최다다.</b> "
+   + "밀도의 진짜 원인은 세그먼트가 얇아서가 아니라 <b>목록 안의 레벨 헤더(65.4px×5)가 통째로 사라졌기</b> 때문이다. "
+   + "다만 <b>레벨 하나가 여전히 23과</b>(A2)라 스크롤 길이는 1/5이 아니라 대략 1/3로만 줄고, C1은 5과라 화면이 절반 빈다.",
+ trade:"<b>트레이드오프 —</b> ① <b>B2·C1 교차가 깨진다.</b> B2는 57–63·66–69, C1은 64–65·70–72다. "
+   + "B2만 보여주면 64·65과가 사라져 <b>코스 순서에 구멍이 난 것처럼</b> 읽힌다. "
+   + "지금 <code>chapterRangeLabel</code>이 한 줄로 정직하게 처리하는 사실을 이 안은 표현할 자리가 없다. "
+   + "② 「72과짜리 코스」라는 감각이 다섯 개의 별개 목록으로 쪼개진다. "
+   + "③ 현재 챕터가 <b>지금 보고 있지 않은 레벨</b>에 있을 수 있다 — 「지금 어디」가 한 탭 뒤로 숨는다. "
+   + "④ 셋 중 구현 위험이 가장 크다(목록 모델 자체가 바뀐다)."},
+
+{html:frame5, title:"⑤ 추천안(B안 + 레벨 스트립)의 스크롤 하단 — 레벨 경계와 스티키",
+ state:"동일 상태 · A2 하단(32~34과)까지 스크롤 · 제목 줄과 스트립은 이미 위로 빠짐",
+ fixes:[["1 해결",""],["2 해결",""],["3 해결",""]],
+ body:"<p>내려온 결과 화면 맨 위에 붙어 있는 것은 <b>A2 레벨 헤더 하나</b>다. 제목 줄도, 레벨 스트립도 함께 스크롤돼 나갔다 — "
+   + "<b>스트립은 스티키가 아니다.</b> 붙이는 순간 「항상 떠 있는 A1~C1」이 그대로 부활하기 때문이고, "
+   + "이게 이번 라운드의 출발점이었다.</p>"
+   + "<p><b>스티키 교대</b> — A2 헤더는 자기 챕터들이 지나가는 동안 <code>top:0</code>에 박혀 있다가, "
+   + "B1 헤더의 윗변이 A2 헤더의 아랫변에 닿는 순간 위로 밀려 나가고 B1이 그 자리에 박힌다. "
+   + "화면에는 <b>언제나 레벨 헤더가 정확히 하나</b>만 붙어 있다(문서 아래 3단 스트립 참조). "
+   + "헤더 배경이 <code>var(--bg)</code>라서 밑을 지나는 행이 비치지 않는다.</p>"
+   + "<p><b>레벨 경계</b> — A2가 끝나면 접힌 B1·B2·C1 헤더가 연달아 나온다. 이 세 줄이 "
+   + "「남은 코스가 이만큼」을 <b>레일 없이</b> 말한다 — 각각 <code>Chapters 35–56 · 0 of 22 done</code>, "
+   + "<code>57–63, 66–69</code>, <code>64–65, 70–72</code>. B2·C1의 교차가 여기서 정직하게 드러난다.</p>"
+   + "<p><b>목록 하단 = 옆문 셋</b>. Grammar·Guides·Readers를 한 「More」 블록으로 합쳤다. "
+   + "챕터가 아니므로 <b>거터를 쓰지 않고 x=0에서 시작</b>해 형태가 급을 말한다. "
+   + "셋은 서로 형제라 행마다 <code>border-top</code>이 있고, 「More」는 부모라 선 없이 여백으로만 끊는다(STYLE §10-2).</p>",
+ num:"<b>실측 — 스티키 레벨 헤더 65.4px(가시 영역 701px의 9.3%). 이 화면에 챕터 3 + 접힌 레벨 3 + 옆문 3 = 9행, "
+   + "「More」 블록 시작 y=431.6px.</b> 추천안의 <b>상단</b>은 ③의 제목 줄 아래에 ②의 스트립 44px을 끼운 모습이고, "
+   + "그 실측은 <b>목록 시작 y=114px · 첫 챕터 y=244.8px · 카드 y=340.8px · 온전한 챕터 5개(그중 1개가 카드)</b>다. "
+   + "스트립이 챕터 한 행을 먹는다 — 그 대가로 다섯 레벨이 전부 탭 가능해진다. "
+   + "기본값이 <b>현재 레벨 하나만 펼침</b>이라 A2(23과)를 다 지나면 바로 바닥이다.",
+ trade:"<b>추천의 근거 요약 —</b> B안은 <b>진단 2를 가장 강하게, 진단 3을 가장 싸게</b> 고치고 Home과 겹치지 않는다. "
+   + "약점이 진단 1(레벨이 컨트롤이 아님) 하나였는데, A안의 스트립(여백 포함 50px) 하나로 메워진다 — "
+   + "<b>레일 53.4px보다 3.4px 싸면서</b> 다섯 개의 분수를 글자로 말하고 전부 44px 탭 타깃이다. "
+   + "<b>남는 비용</b>: ① 스트립이 챕터 한 행을 먹어 온전한 챕터가 6 → 5로 줄어든다. "
+   + "② 진입 시 카드로 자동 스크롤이라는 <b>동작</b>이 하나 는다. ③ Shelf가 맨 위로 열리지 않는다."}
+];
+
+document.getElementById("frames").innerHTML = FRAMES.map((f, i) =>
+  '<figure><div class="phone">' + f.html() + '</div>'
+  + '<div class="cap"><figcaption><b>' + f.title + '</b>'
+  + '<div class="state">' + f.state + '</div>'
+  + '<div class="fixrow">' + f.fixes.map(([t,c]) =>
+      '<span class="fix ' + c + '">진단 ' + t + '</span>').join("") + '</div>'
+  + f.body
+  + '<div class="num">' + f.num + '</div>'
+  + '<div class="tradeoff">' + f.trade + '</div>'
+  + '</figcaption></div></figure>').join("");
+
+/* ─ 스티키 교대 3단 스트립 ────────────────────────────────────────────── */
+function hoWin(step){
+  const a2 = lvlHead(LEVELS[1], {open:true, here:true, pinned:true, noHere:true});
+  const b1pin = lvlHead(LEVELS[2], {pinned:true});
+  const b1 = lvlHead(LEVELS[2], {});
+  if(step === 0) return a2 + chapPlain(32) + chapPlain(33) + chapPlain(34);
+  /* 밀려 나가는 순간 — A2 헤더가 창 위쪽으로 잘려 나가고 B1 이 바로 밑에 닿아 있다 */
+  if(step === 1) return '<div style="margin-top:-26px">' + a2 + '</div>' + b1 + chapPlain(35);
+  return b1pin + chapPlain(35) + chapPlain(36);
+}
+const HO = [
+  ["1 · A2가 박혀 있다", "A2 헤더가 <code>top:0</code>에 고정된 채 32~34과가 그 밑을 지나간다."],
+  ["2 · B1이 밀어낸다", "B1 헤더의 윗변이 A2 헤더의 아랫변에 닿는 순간부터 A2가 <b>창 위로 잘려</b> 나간다."],
+  ["3 · B1이 자리를 받는다", "교대 완료. 화면에 붙어 있는 레벨 헤더는 <b>언제나 정확히 하나</b>다."]
+];
+document.getElementById("handoff").innerHTML = HO.map(([t,d], i) =>
+  '<div class="ho"><div class="win plain">' + hoWin(i) + '</div>'
+  + '<div class="cp"><b>' + t + '</b>' + d + '</div></div>').join("");
+
+/* ─ 다크 토글 ─────────────────────────────────────────────────────────── */
+const btn = document.getElementById("themeBtn");
+const lbl = document.getElementById("themeLbl");
+btn.addEventListener("click", () => {
+  const dark = document.documentElement.getAttribute("data-theme") === "dark";
+  document.documentElement.setAttribute("data-theme", dark ? "light" : "dark");
+  lbl.textContent = dark ? "다크로 보기" : "라이트로 보기";
+});
+</script>
+</body>
+</html>
