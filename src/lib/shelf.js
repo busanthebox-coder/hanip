@@ -38,15 +38,6 @@ export function chapterProgress(chapter, done) {
   return { done: finished, total, state: total && finished >= total ? 'done' : finished ? 'active' : 'idle' };
 }
 
-// The one chapter the learner is standing in: the first still holding an
-// unfinished bite. Exactly one row in 72 earns the ink rail, the goal sentence
-// and the exact fraction — a finished chapter's goal is a memory and an
-// untouched one's is a spoiler.
-export function currentChapterId(chapters, done) {
-  const chapter = (chapters || []).find((item) => (item.bites || []).some((bite) => !isDone(done, bite)));
-  return chapter ? chapter.id : null;
-}
-
 export function buildShelfGroups(chapters, done, snacks = []) {
   return LEVEL_GROUPS.map((level) => {
     const groupedChapters = (chapters || []).filter((chapter) => chapter.level === level.id);
@@ -65,32 +56,103 @@ export function buildShelfGroups(chapters, done, snacks = []) {
   });
 }
 
-// Order 31, defect 6: 72 chapters drawn as 72 ticks, so "where am I in the
-// course" is answered by a length instead of a sentence. Grouped by level
-// rather than by course order — the rail gives a sense of which stretch you are
-// in, and B2/C1 interleave from 66 on, which a single run could not show.
-export function buildCourseRail(chapters, done) {
-  const currentId = currentChapterId(chapters, done);
-  let current = 0;
-  const levels = LEVEL_GROUPS
-    .map((level) => ({
-      id: level.id,
-      ticks: (chapters || [])
-        .filter((chapter) => chapter.level === level.id)
-        .map((chapter) => {
-          const finished = chapterProgress(chapter, done).state === 'done';
-          const state = chapter.id === currentId ? 'now' : finished ? 'done' : 'idle';
-          if (state === 'now') current = chapter.number;
-          return { number: chapter.number, state };
-        }),
-    }))
-    .filter((level) => level.ticks.length > 0);
+// Order 33, diagnosis 2: every one of the 72 rows weighed the same, so "carry on
+// here" lost the scan to each finished chapter above it. Exactly one chapter is
+// promoted to a card, and choosing it is a three-way decision:
+//   1. the chapter already under way — the hand's place, wherever it is;
+//   2. failing that, the next chapter to start;
+//   3. on a finished course, none — the list stands on its own.
+// Branch 1 outranks course order on purpose. currentChapterId walks 1→72 and
+// stops at the first chapter still holding an unfinished bite, so a learner who
+// skipped ahead gets an untouched chapter named as "current". The card follows
+// the hand instead: a started chapter beats an untouched one sitting above it.
+export function shelfFocusChapter(chapters, done) {
+  const list = chapters || [];
+  const started = list.find((chapter) => chapterProgress(chapter, done).state === 'active');
+  if (started) return started;
+  const next = list.find((chapter) => {
+    const progress = chapterProgress(chapter, done);
+    return progress.total > 0 && progress.state !== 'done';
+  });
+  return next || null;
+}
+
+// The card's own ledger. `nextBite` is this chapter's next unfinished bite —
+// not the course's. Home answers "what are my five minutes" over all 72
+// chapters (nextBite.js); the shelf answers "carry on inside this one", and the
+// two land in different places for the same learner at the same moment.
+export function shelfFocusCard(chapters, done) {
+  const chapter = shelfFocusChapter(chapters, done);
+  if (!chapter) return null;
+  const progress = chapterProgress(chapter, done);
   return {
-    levels,
+    chapter,
+    done: progress.done,
+    total: progress.total,
+    state: progress.state,
+    kicker: progress.state === 'active' ? 'In progress' : 'Up next',
+    nextBite: (chapter.bites || []).find((bite) => !isDone(done, bite)) || null,
+  };
+}
+
+// Order 33, diagnosis 1: the rail spent the full screen width on 72 ticks of
+// 2.8px and still could not say "2 of 23". Five cells say the fraction in
+// words, and each one is a 44px tap target that jumps to its level. Counted in
+// chapters, like the level header — a level is a stretch of the course, not a
+// pile of bites.
+export function buildLevelStrip(chapters, done) {
+  const focus = shelfFocusChapter(chapters, done);
+  return LEVEL_GROUPS
+    .map((level) => {
+      const owned = (chapters || []).filter((chapter) => chapter.level === level.id);
+      const finished = owned.filter((chapter) => chapterProgress(chapter, done).state === 'done').length;
+      return {
+        id: level.id,
+        done: finished,
+        total: owned.length,
+        percent: owned.length ? Math.round((finished / owned.length) * 100) : 0,
+        here: Boolean(focus) && focus.level === level.id,
+      };
+    })
+    .filter((cell) => cell.total > 0);
+}
+
+// What survives of the rail: the three numbers the title line carries.
+export function shelfPosition(chapters, done) {
+  const focus = shelfFocusChapter(chapters, done);
+  return {
+    current: focus ? focus.number : 0,
     total: (chapters || []).length,
     done: (chapters || []).filter((chapter) => chapterProgress(chapter, done).state === 'done').length,
-    current,
   };
+}
+
+// The tab bar covers the foot of the viewport, so the readable band stops
+// short of it. tokens.css reserves the same 78px for `.index-surface`.
+export const TAB_BAR_CLEARANCE = 78;
+
+// Order 33: opening the shelf puts the card in reach — but only when it is not
+// already there. Centring a card that the learner can see anyway would push the
+// title line and the level strip off the top on every single visit, and the
+// strip is the control you most want in reach the moment you arrive; scrolling
+// past it would rebuild diagnosis 1 by another route. Chapter 14 sits 356px
+// down and needs no scroll. Chapter 56 sits 1,400px down and would never be
+// found. The threshold is share-of-card-visible, not distance, because a card
+// two thirds on screen with its CTA cut off is not "there" either.
+export function cardNeedsScroll(box, viewportHeight, clearance = TAB_BAR_CLEARANCE) {
+  if (!box || !(box.height > 0) || !(viewportHeight > 0)) return false;
+  const floor = viewportHeight - clearance;
+  const visible = Math.min(box.bottom, floor) - Math.max(box.top, 0);
+  return visible < box.height * 0.8;
+}
+
+// Order 33: search folds into a 44px icon on the title line — 56px of vertical
+// cost for a field this course rarely needs, when 56px is a chapter row. It is
+// folded, not killed: filterShelfGroups below is untouched. Closing clears the
+// query, because a filter still running behind a shut field would hide chapters
+// with nothing left on screen to explain the gap.
+export function toggleShelfSearch(open, query) {
+  return open ? { open: false, query: '' } : { open: true, query };
 }
 
 // Order 31, defect 2: a snack was reading as a sibling of the chapter, and the
@@ -127,10 +189,12 @@ export function chapterSealInfo(chapters, chapterId, done, finishedId) {
   return { number: chapter.number, level: chapter.level, ordinal };
 }
 
+// Order 33: the level that opens is the card's level, not the first unfinished
+// one — otherwise a learner who skipped ahead lands on a shelf whose card is
+// inside a folded level, and the entry scroll has nothing to find.
 export function defaultOpenLevels(chapters, done) {
-  const currentId = currentChapterId(chapters, done);
-  const nextChapter = (chapters || []).find((chapter) => chapter.id === currentId);
-  return [nextChapter ? nextChapter.level : LEVEL_GROUPS[0].id];
+  const focus = shelfFocusChapter(chapters, done);
+  return [focus ? focus.level : LEVEL_GROUPS[0].id];
 }
 
 export function parseStoredOpenLevels(raw, fallback) {

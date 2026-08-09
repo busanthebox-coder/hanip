@@ -2,6 +2,10 @@
   import readersData from '../../data/readers.json';
   import ReaderView from './ReaderView.svelte';
 
+  // order 33: Readers is one of three side doors reached from the foot of the
+  // shelf, so it now owns the screen and needs a way back out of it
+  export let onBack = null;
+
   let selected = null;
 </script>
 
@@ -9,6 +13,7 @@
   <ReaderView reader={selected} onBack={() => { selected = null; window.scrollTo(0, 0); }} />
 {:else}
   <section class="readers">
+    {#if onBack}<button class="back" on:click={onBack}>← Shelf</button>{/if}
     <b class="cap">Readers</b>
     <p class="sub">20 short texts, sorted by level</p>
     <div class="list">
@@ -28,7 +33,12 @@
 {/if}
 
 <style>
-  .readers { display: block; }
+  /* the 480px column used to come from the shelf this list was nested inside;
+     standing on its own it carries its own, like GrammarCollection */
+  .readers { max-width: 480px; margin: 0 auto; padding: 18px 22px 44px; }
+  .back { min-height: 44px; margin-bottom: 6px; font-size: 12.5px; font-weight: 700; color: var(--ink-3);
+    text-align: left; transition: color .12s var(--ease); }
+  .back:hover { color: var(--ink); }
   .cap { display: block; font-size: 15.5px; font-weight: 850; letter-spacing: -.01em; color: var(--ink); }
   .sub { margin: 4px 0 10px; color: var(--ink-3); font-size: 12.5px; font-weight: 650; word-break: keep-all; }
   .list { display: block; }

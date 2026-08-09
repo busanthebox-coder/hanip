@@ -6,7 +6,9 @@
   export let open = false;
   export let forceOpen = false;
   export let doneMap = {};
-  export let currentId = null;   // the one chapter in 72 the learner is standing in
+  // order 33: the one chapter in 72 that is drawn as a card, with its ledger and
+  // its own next bite. Null on a finished course — then no row is promoted.
+  export let focus = null;
   export let onToggle = () => {};
   export let onPlay = () => {};
   export let onPlaySnack = () => {};
@@ -22,7 +24,8 @@
   $: chapterRange = chapterRangeLabel(group.chapters);
   // the id column already says "A1", so the name drops the prefix
   $: levelName = group.label.replace(`${group.id} `, '');
-  $: currentChapter = group.chapters.find((chapter) => chapter.id === currentId) || null;
+  $: focusId = focus ? focus.chapter.id : null;
+  $: currentChapter = group.chapters.find((chapter) => chapter.id === focusId) || null;
   $: snackNote = group.snacks.length
     ? ` · ${group.snacks.length} snack${group.snacks.length === 1 ? '' : 's'}`
     : '';
@@ -73,7 +76,7 @@
     <div class="chapters" id={contentId} role="region" aria-labelledby={triggerId}>
       {#each group.chapters as chapter (chapter.id)}
         {@const prog = chapterProgress(chapter, doneMap)}
-        {@const here = chapter.id === currentId}
+        {@const here = chapter.id === focusId}
         {@const chapterOpen = openChapterId === chapter.id}
         {@const chapterTriggerId = `${idPrefix}-${chapter.id}-trigger`}
         {@const bitesId = `${idPrefix}-${chapter.id}-bites`}
@@ -82,11 +85,51 @@
         <!-- one rule per chapter, and none inside: line → chapter → its parts →
              line, so the block count equals the chapter count no matter how many
              snacks or bites hang underneath -->
-        <div class="block">
+        <div class="block" class:block--card={here}>
+          {#if here}
+            <!-- order 33: one row in 72 is an actual card — the screen's single
+                 card outline (STYLE §2). It sits in its own place in the list
+                 rather than above it, so "carry on" and "where am I" are one
+                 object and no other chapter is pushed off the screen for it.
+                 ±10px: the card reaches out by exactly the padding it takes
+                 back, so its [number][status] gutter stands on the same vertical
+                 as the other 71 rows and the number column stays scannable. -->
+            <div class="cardrow" data-shelf-card>
+              <button
+                class="crow"
+                id={chapterTriggerId}
+                aria-expanded={chapterOpen}
+                aria-controls={bitesId}
+                on:click={() => toggleChapter(chapter)}
+              >
+                <span class="n">{chapter.number}</span>
+                <StatusCell
+                  done={prog.done}
+                  total={prog.total}
+                  label={`${prog.done} of ${prog.total} bites done`}
+                />
+                <span class="col">
+                  <span class="kick">{focus.kicker}</span>
+                  <b>{chapter.title}</b>
+                </span>
+              </button>
+              {#if chapter.goal}<p class="goal">{chapter.goal}</p>{/if}
+              <div class="ledger">
+                {prog.done} of {prog.total} bites
+                {#if focus.nextBite}· next: {focus.nextBite.title}{/if}
+              </div>
+              {#if focus.nextBite}
+                <!-- the shelf continues *this chapter*; Home picks the next bite
+                     in the whole course. Same learner, different destination. -->
+                <button class="cta" on:click={() => onPlay(chapter, focus.nextBite)}>
+                  <b>Continue</b><i>이어서 하기</i>
+                </button>
+              {/if}
+            </div>
+          {:else}
           <button
             class="chap"
             class:done={prog.state === 'done'}
-            class:here
             id={chapterTriggerId}
             aria-expanded={chapterOpen}
             aria-controls={bitesId}
@@ -102,13 +145,9 @@
             />
             <span class="col">
               <b>{chapter.title}</b>
-              <!-- order 31: the goal and the exact fraction ride on this row only.
-                   72 goals × 2 lines is 144 grey lines nobody reads. -->
-              {#if here}
-                <span class="meta">{prog.done}/{prog.total} bites · {chapter.goal}</span>
-              {/if}
             </span>
           </button>
+          {/if}
 
           {#if chapterOpen}
             <div class="parts" id={bitesId} role="region" aria-labelledby={chapterTriggerId}>
@@ -188,7 +227,7 @@
      round trip to the right edge — and the right edge stays empty, which is what
      lets a title run to two lines without colliding with anything */
   .block { border-top: 1px solid var(--line); padding-bottom: 4px; }
-  .chap { position: relative; width: 100%; display: flex; align-items: flex-start; gap: 8px;
+  .chap { width: 100%; display: flex; align-items: flex-start; gap: 8px;
     padding: 12px 0; text-align: left; transition: background-color .12s var(--ease); }
   .chap:hover { background: var(--wash); }
   .chap .n { flex: none; width: 24px; text-align: right; font-size: 12.5px; font-weight: 750;
@@ -199,15 +238,39 @@
   .chap .col b { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
     font-size: 14.5px; font-weight: 780; letter-spacing: -.012em; line-height: 19px; color: var(--ink-2);
     word-break: keep-all; }
-  .chap .col .meta { display: block; margin-top: 2px; font-size: 11.5px; font-weight: 650; line-height: 1.45;
-    color: var(--ink-3); word-break: keep-all; }
   .chap.done .n { color: var(--gold); }
   .chap.done .col b { color: var(--ink-3); font-weight: 700; }
-  .chap.here .n, .chap.here .col b { color: var(--ink); font-weight: 850; }
-  /* exactly one row in 72 carries an ink rail: meet it while scrolling and that
-     is "now". -22px reaches past the 22px column padding to the screen edge. */
-  .chap.here::before { content: ""; position: absolute; left: -22px; top: 8px; bottom: 8px; width: 2px;
-    background: var(--ink); }
+
+  /* order 33: the one card on the screen (STYLE §2). It reaches out by 10px and
+     takes 10px back as padding, so the gutter inside it stands on the same
+     vertical as the other 71 rows — the number column is one unbroken scan.
+     The tooth carries on through it (§10-1): a card is a sheet, and a sheet has
+     paper grain wherever it lands. */
+  .block--card { padding-bottom: 6px; }
+  .cardrow { margin: 10px -10px 0; padding: 14px 10px 13px; border: 1px solid var(--line-2);
+    border-radius: var(--r-card); box-shadow: var(--shadow-1); background-color: var(--card);
+    background-image: radial-gradient(var(--study-grid) 0.6px, transparent 0.7px);
+    background-size: 3px 3px; }
+  .crow { width: 100%; display: flex; align-items: flex-start; gap: 8px; text-align: left; }
+  .crow .n { flex: none; width: 24px; text-align: right; font-size: 12.5px; font-weight: 850;
+    color: var(--ink); line-height: 19px; font-variant-numeric: tabular-nums; }
+  .crow .col { flex: 1; min-width: 0; }
+  .crow .kick { display: block; font-size: 11px; font-weight: 700; color: var(--ink-3); line-height: 1.3; }
+  .crow .col b { display: block; margin-top: 2px; font-size: 15.5px; font-weight: 850; letter-spacing: -.015em;
+    line-height: 20px; color: var(--ink); word-break: keep-all; }
+  /* 54px is the gutter, so the sentence starts under the title, not under the number */
+  .goal { margin: 7px 0 0 54px; font-size: 12.5px; font-weight: 650; line-height: 1.5; color: var(--ink-2);
+    word-break: keep-all; }
+  .ledger { margin: 6px 0 0 54px; font-size: 11.5px; font-weight: 700; color: var(--ink-3);
+    font-variant-numeric: tabular-nums; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  /* the screen's only --accent, and the only CTA on the shelf (STYLE §3) */
+  .cta { width: 100%; min-height: 46px; margin-top: 12px; display: grid; justify-items: center;
+    align-content: center; gap: 1px; padding: 8px 16px; border-radius: var(--r-chip);
+    background: var(--accent); color: var(--on-accent); box-shadow: 0 4px 0 var(--accent-deep);
+    transition: transform .12s var(--ease), box-shadow .12s var(--ease); }
+  .cta:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--accent-deep); }
+  .cta b { font-size: 15.5px; font-weight: 850; letter-spacing: -.015em; line-height: 1.25; }
+  .cta i { font-style: normal; font-size: 10.5px; font-weight: 700; opacity: .62; line-height: 1.25; }
 
   .parts { animation: reveal .24s var(--ease); }
   /* bites and snacks are parts of a chapter. They carry no rule of their own —
