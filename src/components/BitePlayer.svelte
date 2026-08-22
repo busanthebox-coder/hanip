@@ -14,6 +14,7 @@
   import GrammarRefSheet from './GrammarRefSheet.svelte';
   import { buzz, fanfare, thud, tick } from '../lib/feedback.js';
   import { withConfirmations } from '../lib/confirm.js';
+  import { instructionLeadFor } from '../lib/instructions.js';
   import { collectMistake } from '../lib/mistakes.js';
   import { prefs } from '../lib/prefs.js';
   import { guessMode, record, scoresAnswer, srs, writesSchedule } from '../lib/srs.js';
@@ -29,6 +30,10 @@
   export let chapterSeal = null;     // { number, level, ordinal } when this bite closes a chapter
 
   const KIND_EN = { words: 'Words', pattern: 'Grammar', dialogue: 'Dialogue', reading: 'Reading', boss: 'Boss' };
+  // Order 34: A1 leads instructions in English, A2+ in Korean. Read from the
+  // bite, so warmups pulled in from other chapters follow the bite the learner
+  // actually opened rather than flipping language mid-run.
+  const lead = instructionLeadFor(bite);
 
   const studyCards = bite.lessonCards?.length ? bite.lessonCards : bite.cards;
   // Order 30: the schedule as it stood when the bite opened decides which words
@@ -164,7 +169,7 @@
   }
 </script>
 
-<section class="bp">
+<section class="bp" class:playing={!finished && cur}>
   {#if !finished && cur}
     <div class="playbar">
       <button class="x" aria-label="Close" on:click={() => onExit(false, false)}>×</button>
@@ -180,15 +185,16 @@
       <span class="count">{i + 1}/{cards.length}</span>
     </div>
 
-    {#key i}
-      <div class="deck">
+    <div class="stage">
+      {#key i}
+        <div class="deck">
         <div class="sheet tooth">
           {#if cur.requeued}<div class="again">Again</div>{/if}
-          {#if cur.kind === 'guess'}<GuessCard card={cur} mode={curMode} onResolve={resolve} {onOpenWord} />
-          {:else if cur.kind === 'hunt'}<HuntCard card={cur} onResolve={resolve} />
+          {#if cur.kind === 'guess'}<GuessCard card={cur} mode={curMode} onResolve={resolve} {onOpenWord} {lead} />
+          {:else if cur.kind === 'hunt'}<HuntCard card={cur} onResolve={resolve} {lead} />
           {:else if cur.kind === 'teach'}<TeachCard card={cur} onResolve={resolve} />
           {:else if cur.kind === 'drill'}<DrillCard card={cur} onResolve={resolve} />
-          {:else if cur.kind === 'order'}<OrderCard card={cur} onResolve={resolve} />
+          {:else if cur.kind === 'order'}<OrderCard card={cur} onResolve={resolve} {lead} />
           {:else if cur.kind === 'chat'}<ChatCard card={cur} onResolve={resolve} />
           {:else if cur.kind === 'read'}<ReadCard card={cur} onResolve={resolve} />
           {:else if cur.kind === 'payoff'}<PayoffCard card={cur} onResolve={resolve} />
@@ -200,9 +206,10 @@
               <span>잠시 뒤에 다시 나와요</span>
             </div>
           {/if}
+          </div>
         </div>
-      </div>
-    {/key}
+      {/key}
+    </div>
 
     <div class="nav">
       <button class="cta" class:off={!resolved} disabled={!resolved} on:click={next}>
@@ -249,7 +256,8 @@
               {#if miss.said}<div class="said">You said<b>{miss.said}</b></div>{/if}
             </div>
           {/each}
-          <p class="misses-ko">틀렸던 카드는 곧 복습으로 다시 나와요</p>
+          <p class="misses-note">Cards you missed come back in review soon
+            <span>틀렸던 카드는 곧 복습으로 다시 나와요</span></p>
         </section>
       {/if}
 
@@ -293,6 +301,8 @@
   /* the ruled paper is painted on <html> now, so the player just sits on it */
   .bp { --sheet-pad: 22px;
     min-height: 100dvh; max-width: 480px; margin: 0 auto; padding: 14px 16px 18px; display: flex; flex-direction: column; }
+  /* the win screen keeps growing past the fold; only the card run is pinned */
+  .bp.playing { height: 100dvh; }
 
   /* .playbar, not .bar: a progress module elsewhere claimed .bar once and
      turned this 3px rail into a 34px circle */
@@ -312,7 +322,20 @@
 
   /* one card outline per screen — the two edges below are the rest of the deck.
      A short deck centres itself instead of leaving 200px of dead space below. */
-  .deck { position: relative; margin: auto 0; animation: deal .28s var(--ease); }
+  /* Order 34: the deck used to be centred (`margin: auto 0`) inside a
+     min-height column. A short card floated in ~210px of nothing above it and
+     ~138px below — 43% of a 812px screen — while a tall card scrolled under
+     the sticky CTA and buried its own last row by 30px. Now the playing screen
+     is exactly one viewport: playbar, a stage that owns the scroll, then the
+     CTA. The card anchors to the top of the stage instead of floating in the
+     middle of it, and the CTA is outside the scroll so it can never cover a
+     row again. */
+  .stage { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain;
+    display: flex; flex-direction: column; padding-bottom: 14px; }
+  /* the sheet hugs its content and anchors to the top of the stage: a card on
+     a desk, with the loose-paper stack below it still visible. Filling the
+     stage instead would stretch it into a tall empty page and hide the stack. */
+  .deck { position: relative; flex: none; animation: deal .28s var(--ease); }
   /* each back sheet sits at a slightly different angle: a stack of loose paper,
      not a UI stack */
   .deck::before, .deck::after { content: ""; position: absolute; left: 8px; right: 8px; bottom: -6px; height: 28px;
@@ -333,8 +356,9 @@
     font-size: 12.5px; font-weight: 650; color: var(--ink-3); }
   .retry span { display: block; font-size: 11.5px; font-weight: 650; }
 
-  .nav { flex: none; padding: 26px 0 4px; position: sticky; bottom: 0;
-    background: linear-gradient(to top, var(--bg) 72%, transparent); }
+  /* Outside the stage, so it can no longer overlap the card. That also
+     retires the fade that used to hide the collision. */
+  .nav { flex: none; padding: 16px 0 4px; background: var(--bg); }
 
   .cta { width: 100%; padding: 15px 16px 13px; border-radius: 16px; background: var(--accent); color: var(--on-accent);
     display: grid; gap: 1px; text-align: center; box-shadow: 0 3px 0 var(--accent-deep);
@@ -388,7 +412,9 @@
   .said { margin-top: 5px; font-size: 12.5px; font-weight: 650; color: var(--ink-3);
     word-break: keep-all; overflow-wrap: anywhere; }
   .said b { margin-left: 7px; font-weight: 750; color: var(--bad); }
-  .misses-ko { margin: 10px 0 0; font-size: 11.5px; font-weight: 650; color: var(--ink-3); }
+  .misses-note { margin: 10px 0 0; font-size: 12.5px; font-weight: 650; color: var(--ink-3);
+    word-break: keep-all; }
+  .misses-note span { display: block; margin-top: 2px; font-size: 11.5px; }
 
   .grammar-row { width: 100%; min-height: 44px; margin-top: 22px; padding: 14px 0;
     border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);

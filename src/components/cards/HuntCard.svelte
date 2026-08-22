@@ -36,10 +36,15 @@
     void el.offsetWidth;
     el.classList.add('miss');
   }
+  // Order 34: which language leads the instruction (see lib/instructions.js).
+  export let lead = 'ko';
+
+  const ASK_KO = '각 문장에서 오늘 배운 문법을 찾아 탭하세요';
+  const ASK_EN = "Tap today's grammar form in each sentence";
 </script>
 
-<div class="ask">각 문장에서 오늘 배운 문법을 찾아 탭하세요</div>
-<div class="ask-en">Tap today's grammar form in each sentence</div>
+<div class="ask">{lead === 'en' ? ASK_EN : ASK_KO}</div>
+<div class="ask-en">{lead === 'en' ? ASK_KO : ASK_EN}</div>
 
 <div class="hunt">
   {#each card.lines as line, li}
@@ -98,7 +103,7 @@
 
 <style>
   .ask { font-size: 15px; font-weight: 700; line-height: 1.55; color: var(--ink); word-break: keep-all; }
-  .ask-en { margin-top: 4px; font-size: 11.5px; font-weight: 650; line-height: 1.5; color: var(--ink-3); }
+  .ask-en { margin-top: 4px; font-size: 11.5px; font-weight: 650; line-height: 1.5; color: var(--ink-3); word-break: keep-all; }
 
   .hunt { margin-top: 26px; }
   .hunt-row + .hunt-row { margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--line); }

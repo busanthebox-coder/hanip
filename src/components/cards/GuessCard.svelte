@@ -12,6 +12,9 @@
   export let mode = GUESS_QUIZ;
   export let onResolve = () => {};
   export let onOpenWord = () => {};
+  // Order 34: which language leads the instruction. The player derives it from
+  // the level; 'ko' is the order-27 default so a caller that forgets keeps it.
+  export let lead = 'ko';
 
   let picked = null;      // option text the learner tapped
   let revealed = false;
@@ -23,6 +26,12 @@
   $: parts = card.sentence && card.target
     ? splitOnce(card.sentence.ko, card.target)
     : null;
+  $: askKo = direction === 'en→ko'
+    ? '어떤 한국어 단어일까요?'
+    : (parts ? '밑줄 친 말은 무슨 뜻일까요?' : '무슨 뜻일까요?');
+  $: askEn = direction === 'en→ko'
+    ? 'Which Korean word matches this meaning?'
+    : 'What does the highlighted word mean?';
   $: starred = ($progress.starred || []).includes(card.word.ko);
   $: direction = card.direction || 'ko→en';
   $: correctOption = direction === 'en→ko' ? card.word.ko : card.word.en;
@@ -91,13 +100,8 @@
   {/if}
 
   {#if !revealed}
-    {#if direction === 'en→ko'}
-      <div class="ask">어떤 한국어 단어일까요?</div>
-      <div class="ask-en">Which Korean word matches this meaning?</div>
-    {:else}
-      <div class="ask">{parts ? '밑줄 친 말은 무슨 뜻일까요?' : '무슨 뜻일까요?'}</div>
-      <div class="ask-en">What does the highlighted word mean?</div>
-    {/if}
+    <div class="ask">{lead === 'en' ? askEn : askKo}</div>
+    <div class="ask-en">{lead === 'en' ? askKo : askEn}</div>
   {/if}
 
   <div class="opts">
@@ -183,7 +187,7 @@
   .tgt { font-weight: 850; color: var(--ink); border-bottom: 2px solid var(--gold); padding-bottom: 1px; }
   .stem-en { margin-top: 5px; font-size: 11.5px; font-weight: 650; line-height: 1.5; color: var(--ink-3); }
   .ask { margin-top: 14px; font-size: 14px; font-weight: 700; color: var(--ink-3); word-break: keep-all; }
-  .ask-en { margin-top: 4px; font-size: 11.5px; font-weight: 650; line-height: 1.5; color: var(--ink-3); }
+  .ask-en { margin-top: 4px; font-size: 11.5px; font-weight: 650; line-height: 1.5; color: var(--ink-3); word-break: keep-all; }
 
   .opts { margin-top: 18px; }
   /* santa-style answer sheet: the row rules run the full width of the screen,

@@ -46,6 +46,11 @@
     await afterUpdate();
     revealElement?.scrollIntoView?.({ block: 'nearest' });
   }
+  // Order 34: which language leads the instruction (see lib/instructions.js).
+  export let lead = 'ko';
+
+  const ASK_KO = '어절을 순서대로 탭하세요';
+  const ASK_EN = "Tap the tiles in Korean order";
 </script>
 
 <div class="label">Korean word order</div>
@@ -61,8 +66,8 @@
   {/each}
 </div>
 
-<div class="ask">어절을 순서대로 탭하세요</div>
-<div class="ask-en">Tap the tiles in Korean order</div>
+<div class="ask">{lead === 'en' ? ASK_EN : ASK_KO}</div>
+<div class="ask-en">{lead === 'en' ? ASK_KO : ASK_EN}</div>
 
 {#if bank.length}
   <div class="bank">
@@ -106,7 +111,7 @@
   .blank { font-size: 27px; font-weight: 400; letter-spacing: .1em; line-height: 1.3; color: var(--ink-3); }
 
   .ask { margin-top: 9px; font-size: 12.5px; font-weight: 650; color: var(--ink-3); word-break: keep-all; }
-  .ask-en { margin-top: 4px; font-size: 11.5px; font-weight: 650; color: var(--ink-3); }
+  .ask-en { margin-top: 4px; font-size: 11.5px; font-weight: 650; color: var(--ink-3); word-break: keep-all; }
 
   .bank { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 9px; }
   .tile { min-height: 44px; padding: 11px 16px; border: 1px solid var(--line); border-radius: 14px;

@@ -76,9 +76,9 @@
     return item ? (item.type === 'snack' ? item.snack.canDo : item.bite.canDo) : '';
   }
   function bowlHint(left) {
-    if (left <= 0) return '오늘 그릇을 다 채웠어요';
-    if (left === 1) return '한 입만 더 먹으면 오늘 그릇이 차요';
-    return `${left}입 더 먹으면 오늘 그릇이 차요`;
+    if (left <= 0) return { en: "Today's bowl is full", ko: '오늘 그릇을 다 채웠어요' };
+    if (left === 1) return { en: 'One more bite fills it', ko: '한 입만 더 먹으면 오늘 그릇이 차요' };
+    return { en: `${left} more bites fill it`, ko: `${left}입 더 먹으면 오늘 그릇이 차요` };
   }
 
   async function installApp() {
@@ -181,7 +181,7 @@
       <span>
         {bitesToday} of {$prefs.dailyGoal || 1} bite{($prefs.dailyGoal || 1) === 1 ? '' : 's'}{currentStreak > 0 ? ` · ${currentStreak}-day streak` : ''}
       </span>
-      <em>{bowlHint(remaining)}</em>
+      <em>{bowlHint(remaining).en}<i>{bowlHint(remaining).ko}</i></em>
     </div>
   </div>
 
@@ -278,8 +278,9 @@
   .bowl-cap b { font-size: 15px; font-weight: 800; letter-spacing: -.01em; color: var(--ink); }
   .bowl-cap span { margin-top: 2px; font-size: 12.5px; font-weight: 650; color: var(--ink-3);
     font-variant-numeric: tabular-nums; }
-  .bowl-cap em { margin-top: 6px; font-style: normal; font-size: 11.5px; font-weight: 650;
+  .bowl-cap em { margin-top: 6px; font-style: normal; font-size: 12.5px; font-weight: 650;
     color: var(--ink-3); word-break: keep-all; }
+  .bowl-cap em i { display: block; margin-top: 2px; font-style: normal; font-size: 11.5px; }
 
   .week { margin-top: 12px; display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
   /* the same bowl as above, only smaller — the metaphor repeats at every scale */
