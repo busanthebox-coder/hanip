@@ -32,7 +32,7 @@ describe('preferences', () => {
       autoSpeak: true,
       sound: true,
       haptics: true,
-      theme: 'auto',
+      theme: 'light',
       dailyGoal: 1,
       startChapter: 1,
       onboardingDone: false,
@@ -51,6 +51,9 @@ describe('preferences', () => {
   it('rejects unknown keys and values outside the preference contract', () => {
     setPref('dailyGoal', 4);
     setPref('theme', 'sepia');
+    // 'auto' left the contract with the light default: the system no longer
+    // decides the theme, so a stored 'auto' has to normalize back to light.
+    setPref('theme', 'auto');
     setPref('startChapter', 3);
     setPref('unknown', true);
 

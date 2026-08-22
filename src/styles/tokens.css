@@ -63,37 +63,9 @@
   color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #17150F;
-    --ink: #EDE6D6;
-    --ink-2: #B5A98F;
-    --ink-3: #8C8168;
-    --card: #201D15;
-    --wash: #2A2618;
-    --line: #383325;
-    --line-2: #4A4330;
-    --accent: #F0603A;
-    --accent-deep: #FF7A55;
-    --accent-soft: #3A211A;
-    --gold: #D8B43F;
-    --gold-soft: rgba(216, 180, 63, 0.2);
-    --good: #65A984;
-    --good-deep: #85C8A3;
-    --good-soft: #1C3026;
-    --bad: #F06B51;
-    --on-accent: #FFF6EF;
-    --chat-canvas: #2A2618;
-    --chat-self: #5B4A16;
-    --chat-self-ink: #F4EBC8;
-    --progress-track: #332E20;
-    --study-grid: rgba(237, 230, 214, 0.035);
-    --chat-shadow: 0 2px 10px -3px rgba(0, 0, 0, 0.55);
-    --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.28), 0 12px 30px -14px rgba(0, 0, 0, 0.58);
-    --shadow-2: 0 4px 10px rgba(0, 0, 0, 0.3), 0 24px 52px -20px rgba(0, 0, 0, 0.72);
-    color-scheme: dark;
-  }
-}
+/* 2026-08-22 (사용자 요청): the OS-preference dark block is gone. Light is the
+   ground state; dark lives only under :root[data-theme="dark"] below, which
+   the settings sheet sets. The two palettes were identical — nothing lost. */
 
 :root[data-theme="light"] {
   --bg: #FAF6EE;

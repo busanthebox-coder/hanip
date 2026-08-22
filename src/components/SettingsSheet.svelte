@@ -138,7 +138,7 @@
             <small>Saved for every screen</small>
           </div>
           <div class="segments" role="group" aria-label="Theme">
-            {#each [['auto', 'Auto'], ['light', 'Light'], ['dark', 'Dark']] as option}
+            {#each [['light', 'Light'], ['dark', 'Dark']] as option}
               <button class:on={$prefs.theme === option[0]} aria-pressed={$prefs.theme === option[0]}
                 on:click={() => setPref('theme', option[0])}>{option[1]}</button>
             {/each}
